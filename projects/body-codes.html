@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Master-Then-Reorganise Does Not Buy &mdash; Mu-Hua Wang</title>
+<meta name="description" content="With the dynamics core frozen and only a body code adapted, an algebraic identity rules out a whole family of reorganisation proposals before any experiment runs. Then the two conditions that identity needs are measured.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container">
+
+<nav>
+  <ul>
+    <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#identity">The identity</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#boundaries">Boundaries</a></li>
+    <li><a href="#scope">Where it stops</a></li>
+    <li><a href="#record">The record</a></li>
+    <li><a href="../cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<header>
+  <p class="note">Draft &middot; 2026 &middot; sole author</p>
+  <h1>What Master-Then-Reorganise Does Not Buy:<br>
+  An Invariance Argument for Body Codes and Its Two Boundaries</h1>
+  <p class="kicker">For a large family of &ldquo;reorganise the
+  code&rdquo; proposals, an algebraic identity settles the question before any experiment runs.
+  The interesting part is the two places it stops.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua (Maurice) Wang &middot; National Yang Ming
+  Chiao Tung University</p>
+  <div class="links">
+    <a href="mailto:mauricewang1128@gmail.com?subject=Master-Then-Reorganise%20%E2%80%94%20draft%20request">[Request the draft]</a>
+    <a href="../index.html">[All projects]</a>
+  </div>
+  <p class="note" style="margin-top:1rem">Not posted to any preprint server, and no public code
+  repository yet. Targeting <em>IEEE Transactions on Cognitive and Developmental Systems</em>.</p>
+</header>
+
+<hr>
+<section>
+  <figure class="fig">
+    <video src="../assets/body-codes/vid_full.mp4" controls playsinline preload="metadata"
+           poster="../assets/body-codes/fig1_identity.png"></video>
+    <p class="cap"><b>The same result, assembled from the stored run</b> (32&nbsp;s, sound not
+    needed). The premise, then what the identity claims, then the twenty seeds of the decisive
+    experiment added one at a time, each arm's running mean and 95&nbsp;% interval updating as
+    they arrive. The vertical axis is fixed from the first frame and nothing is smoothed, so the
+    separation you see is the separation the numbers have.</p>
+  </figure>
+</section>
+
+<hr>
+<section>
+  <h2>Abstract</h2>
+  <div style="color:var(--ink-2)">
+    <p>Developmental robotics proposes mastering a competence then <em>reorganising</em> it for a
+    new body. For a large family of interventions an identity settles it in advance. With the
+    dynamics core frozen and only a low-dimensional body code &theta; adapted, replacing &theta;
+    by <em>M</em>&theta; for any invertible <em>M</em> and the code's weight block by
+    <em>W</em><sub>&theta;</sub><em>M</em><sup>&minus;1</sup> leaves the function unchanged, so
+    adaptation begun at <em>M</em>&theta;<sub>0</sub> under an equivariant rule cannot change
+    held-out error. We measure both conditions.</p>
+    <p><b>Linearity:</b> function-preserving <em>nonlinear</em> re-encodings cost +0.653 and
+    +0.875&nbsp;mm (n&nbsp;=&nbsp;20, p&nbsp;&le;&nbsp;4&nbsp;&times;&nbsp;10<sup>&minus;4</sup>),
+    while linear ones are bounded above by 0.020&nbsp;mm, not resolved from zero. One is the
+    identity at every training code, so it preserves leave-one-body-out decodability by
+    construction, stays nonlinear where adaptation runs, and still costs +0.875&nbsp;mm: probe and
+    error come apart. <b>Optimiser equivariance:</b> under Adam even a rotation displaces error
+    cell by cell.</p>
+    <p>An ill-conditioned code's absolute cost grows with evaluation horizon on two disjoint seed
+    blocks (+6.67 and +10.86&nbsp;mm per log unit,
+    p&nbsp;&le;&nbsp;2&nbsp;&times;&nbsp;10<sup>&minus;4</sup>); the relative cost is unresolved.
+    Whitening the code costs +0.025&nbsp;mm (p&nbsp;=&nbsp;0.68) against a positive control
+    resolving +1.234&nbsp;mm. The code decodes named morphology scalars, though mass decodes only
+    unstably. A fixed master-then-differentiate schedule is <em>worse</em> than joint training at
+    20 seeds on two of three bodies, under a post-hoc manipulation check. Our nulls are scoped to
+    open-loop prediction on arm2. Whether it pays under a control objective is open; two attempts
+    failed their pre-registered checks.</p>
+  </div>
+</section>
+
+<hr>
+<section id="identity">
+  <h2>The argument, in three layers</h2>
+  <div class="stats">
+    <div><span class="big">1</span>
+      <h3>An identity rules out a whole family in advance</h3>
+      <p>Core frozen, only &theta; adapted. Send &theta; to <em>M</em>&theta; and the code's weight
+      block to <em>W</em><sub>&theta;</sub><em>M</em><sup>&minus;1</sup>: the network computes the
+      same function, so held-out error cannot change. Orthogonalising, rescaling and whitening are
+      all out before the first experiment runs.</p></div>
+    <div><span class="big">2</span>
+      <h3>That argument has two boundaries, and both are measured</h3>
+      <p>Nonlinear re-encodings are not protected, and cost +0.875&nbsp;mm. And for the identity
+      to travel from the <em>function</em> to the <em>estimate</em>, the update rule has to be
+      equivariant to the map &mdash; Adam is not.</p></div>
+    <div><span class="big">3</span>
+      <h3>The one directional empirical result runs the other way</h3>
+      <p>A fixed master-then-differentiate schedule is <b>worse</b> than joint training.</p></div>
+  </div>
+  <p class="note" style="margin-top:1.4rem;margin-left:0">Neither ingredient of the identity
+  is mine: the GL(<em>n</em>) symmetry of a layer's input block and the optimiser-equivariance
+  taxonomy are both established, and both are cited. The corollary for a conditioning code, and
+  its magnitude, are.</p>
+</section>
+
+<hr>
+<section id="results">
+  <h2>The finding, in five pictures</h2>
+  <div class="figrow">
+    <figure class="fig">
+      <img src="../assets/body-codes/fig1_identity.png" alt="Linear versus nonlinear re-encoding">
+      <p class="cap"><b>All four maps leave the network's function unchanged</b> (largest
+      disagreement 3.8&nbsp;&times;&nbsp;10<sup>&minus;6</sup> over 20 seeds). Under L&#8209;BFGS
+      the two <em>linear</em> maps are inert, as the identity requires; the two <em>nonlinear</em>
+      ones cost about a millimetre. Linearity is what the identity actually buys. Under Adam even
+      the linear maps stop being free.</p>
+    </figure>
+    <figure class="fig">
+      <img src="../assets/body-codes/fig3_calibrated_null.png" alt="The calibrated null">
+      <p class="cap"><b>A null with a working positive control.</b> Whitening the code &mdash; the
+      most natural way to &ldquo;organise&rdquo; it &mdash; is worth +0.025&nbsp;mm
+      (p&nbsp;=&nbsp;0.68) on the same instrument that resolves +1.234&nbsp;mm of damage from
+      ill-conditioning. Without that control a null cannot be told apart from a measurement too
+      coarse to see anything.</p>
+    </figure>
+  </div>
+  <div class="figrow three" style="margin-top:2rem">
+    <figure class="fig">
+      <img src="../assets/body-codes/fig2_decodability.png" alt="Factor-specific decodability">
+      <p class="cap"><b>Which factor breaks.</b> Damping and gain decode from &theta; on every
+      body we measured; mass is unstable across seeds, reaching 0.805 on arm2 (12/12 seeds
+      significant) against medians of &minus;0.16 on arm3 and &minus;0.17 on arm4. What fails is
+      reliability, not decodability.</p>
+    </figure>
+    <figure class="fig">
+      <img src="../assets/body-codes/fig4_horizon.png" alt="Horizon scaling">
+      <p class="cap"><b>The cost of a badly conditioned code grows with the horizon.</b> About
+      thirteenfold from k&nbsp;=&nbsp;6 to k&nbsp;=&nbsp;50, on two disjoint seed blocks (+6.67
+      and +10.86&nbsp;mm per log unit,
+      p&nbsp;&le;&nbsp;2&nbsp;&times;&nbsp;10<sup>&minus;4</sup>). Whether the <em>relative</em>
+      cost grows is unresolved.</p>
+    </figure>
+    <figure class="fig">
+      <img src="../assets/body-codes/fig5_dv_amplification.png" alt="Dependent-variable amplification">
+      <p class="cap"><b>The same adapted codes, scored two ways.</b> Start-point spread is
+      0.001630 of a minimum detectable effect under open-loop prediction and 2.1441 under
+      closed-loop control, a 1316-fold amplification, both at the twenty seeds the round ran
+      under L&#8209;BFGS. It is a statement about which metric can resolve a start-point
+      difference, not an effect size.</p>
+    </figure>
+  </div>
+</section>
+
+<hr>
+<section id="boundaries">
+  <h2>Findings and their boundaries</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Result</th><th>Estimate (95&nbsp;% CI)</th><th>Holds on</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Linear re-encoding of the code is inert under a curvature-aware rule
+            <span class="sub">An identity, not a measurement: the function is bit-identical, so
+            held-out error cannot change. The measured bound is the interval endpoint,
+            0.020&nbsp;mm, not the point estimate.</span></td>
+          <td class="n">&minus;0.00007 mm<br>+0.006 mm</td>
+          <td><span class="tag hit">identity</span></td>
+        </tr>
+        <tr>
+          <td>Function-preserving <b>nonlinear</b> re-encoding is not inert
+            <span class="sub">n&nbsp;=&nbsp;20 seeds, three adaptation budgets, L&#8209;BFGS.</span></td>
+          <td class="n">+0.875 [+0.474, +1.275]<br>+0.653 [+0.333, +0.973]</td>
+          <td><span class="tag hit">arm2</span></td>
+        </tr>
+        <tr>
+          <td>A code kept exactly as decodable is not kept as useful
+            <span class="sub">I <em>constructed</em> a map that equals the identity at every
+            training code and stays nonlinear elsewhere. A standard leave-one-body-out probe,
+            evaluated only at those training codes, cannot see it by construction &mdash;
+            difference 0.000 on all 20 seeds &mdash; and it still costs the full penalty. So a
+            decodability metric evaluated only at training codes is blind to the region adaptation
+            actually runs in.</span></td>
+          <td class="n">+0.875 mm at<br>&Delta;R&sup2; = 0.000</td>
+          <td><span class="tag hit">arm2</span></td>
+        </tr>
+        <tr>
+          <td>Organising the code by whitening buys nothing, against a positive control
+            <span class="sub">The control resolves +1.234&nbsp;mm
+            (p&nbsp;=&nbsp;2.2&nbsp;&times;&nbsp;10<sup>&minus;6</sup>) on the same seeds and
+            budgets. Its map has condition number <b>300</b> against the whitening map's
+            <b>5.2</b> at the median seed (15.6 at worst), so the bound rests on the measured
+            interval and not on a ratio between two magnitudes that differ by roughly sixtyfold.</span></td>
+          <td class="n">+0.025 [&minus;0.0986, +0.1479]<br>p = 0.68</td>
+          <td><span class="tag hit">arm2</span></td>
+        </tr>
+        <tr>
+          <td>A fixed master-then-differentiate schedule is <b>worse</b> than joint training
+            <span class="sub">Step-controlled: the joint arm is cut to 1121 optimiser steps
+            against staged's 1150. Weighted by learning rate the staged arm still receives only
+            40&ndash;69&nbsp;% of the joint arm's budget. The direction holds at every weighted
+            budget tested (40&nbsp;%, 50&nbsp;%, 69&nbsp;%, on two bodies), but
+            <b>we cannot say it is independent of the remaining budget gap</b>.</span></td>
+          <td class="n">&minus;1.150 [&minus;1.713, &minus;0.586]<br>&minus;1.238 [&minus;1.706, &minus;0.771]</td>
+          <td><span class="tag hit">two bodies</span></td>
+        </tr>
+        <tr>
+          <td>The unsupervised code decodes named morphology, factor-specifically
+            <span class="sub">Damping and gain travel across every body tested; mass does not.
+            12 seeds, 20 bodies each, 200-permutation null per cell.</span></td>
+          <td class="n">damping/gain 12/12<br>mass 12/12, 5/12, 4/12</td>
+          <td><span class="tag hit">three bodies</span></td>
+        </tr>
+        <tr class="off">
+          <td>Whether reorganisation pays under a <b>control</b> objective
+            <span class="sub">Attempted twice; both attempts failed their own pre-registered
+            checks. The instrument &mdash; budget-10 code adaptation scored by random-shooting MPC
+            &mdash; cannot answer the question, which is not the same as answering it
+            negatively.</span></td>
+          <td class="n">&mdash;</td>
+          <td><span class="tag">open</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="box mark" style="margin-top:2rem">
+    <h3>Where the whitening result is bounded, and where it is not</h3>
+    <p>The net effect of conditioning, <b>pooled over seeds and cells</b>, is bounded at
+    <b>0.099&nbsp;mm</b>, taken from the interval end most favourable to whitening. A benefit
+    concentrated on the worst-conditioned seeds is <b>neither established nor excluded</b>. This
+    route is bounded, not closed.</p>
+  </div>
+</section>
+
+<hr>
+<section id="scope">
+  <h2>Where it stops</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Body</th><th>Links / DoF</th><th>Seeds</th><th>Result</th></tr></thead>
+      <tbody>
+        <tr><td>arm2</td><td class="n">2</td><td class="n">20</td>
+            <td>Carries every headline result</td></tr>
+        <tr><td>arm3</td><td class="n">3</td><td class="n">20</td>
+            <td>Staging result replicates; the conditioning effect is not resolvable at the
+            horizon the pre-registered entry criterion tested, so the body is excluded from that
+            section</td></tr>
+        <tr class="off"><td>arm4</td><td class="n">4</td><td class="n">20</td>
+            <td><b>Excluded by its own manipulation check</b> &mdash; even though its unused
+            numbers pointed our way</td></tr>
+        <tr class="off"><td>myoArm</td><td class="n">20 joints, 34 muscles</td><td class="n">4</td>
+            <td>Decodability extends; the staging replication has a minimum detectable effect of
+            about 21&nbsp;mm against a 0.90&nbsp;mm target &mdash; uninformative by a factor of
+            23. Reaching that target <em>in absolute millimetres</em> would need of order two
+            thousand seeds; if the effect instead scales with this body's larger error, tens would
+            do. We cannot tell which</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note" style="margin-top:1.2rem;margin-left:0">Every result is scored by six-step
+  open-loop prediction error. A pre-registered test shows that choice is not neutral: the same
+  adapted codes show start-point differences worth 0.001630 of a minimum detectable effect under
+  prediction and 2.1441 under closed-loop control, a 1316-fold difference in what the two metrics
+  resolve, measured at twenty seeds under L&#8209;BFGS. The negative results are therefore scoped
+  to the prediction metric, and the paper says so rather than generalising.</p>
+
+  <figure class="fig">
+    <video src="../assets/body-codes/vid_bodies.mp4" autoplay muted loop playsinline></video>
+    <p class="cap"><b>Three bodies, one set of movements</b> (6&nbsp;s). Bodies are
+    dimension-preserving parametric perturbations &mdash; mass and inertia, joint damping, muscle
+    force gain &mdash; so state and action spaces never change and transfer is well-posed. This
+    illustrates the premise; it claims no result.</p>
+  </figure>
+</section>
+
+<hr>
+<section id="record">
+  <h2>The record</h2>
+  <p class="desc">The most valuable thing in this
+  project is not the result. It is what was done when the result did not cooperate.</p>
+  <div class="stats">
+    <div>
+      <h3>A failed manipulation check is never interpreted</h3>
+      <p>Including when the failing cell's unused numbers would have supported us. Two sections
+      contain such a cell &mdash; arm4 is excluded on exactly these grounds.</p></div>
+    <div>
+      <h3>Withdrawn rather than reported weakly</h3>
+      <p>Three of five planned mechanisms ran at two seeds with no stored result file, and the
+      surviving lab note disagrees with the closest stored JSON. Those numbers are withdrawn
+      entirely.</p></div>
+    <div>
+      <h3>The pre-registration label is withdrawn where it does not hold</h3>
+      <p>Four of ten settings in one round have design documents that postdate their results. The
+      measurements stand; the pre-registration guarantee does not extend to them, and the paper
+      says which.</p></div>
+    <div>
+      <h3>One round's own test does not score</h3>
+      <p>In the MPC round, adapted codes were taken as the minimum of 8 restarts while unadapted
+      codes were evaluated once. Those are not comparable statistics, so that check was withdrawn
+      rather than counted.</p></div>
+  </div>
+  <p class="note" style="margin-top:1.4rem;margin-left:0">Every figure regenerates from
+  stored JSON; no number in the paper is hard-coded into a plot. The whole pipeline runs in
+  minutes on one consumer laptop.</p>
+</section>
+
+<footer>
+  <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua (Maurice) Wang
+  &middot; <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
+  <p style="margin-top:.6rem">Four bodies, one simulator: three planar muscle-driven arms and
+  MyoSuite's <code>myoArm</code>. No 3D morphology, no hardware, one task family. The scope is
+  narrow and stated rather than implied.</p>
+</footer>
+
+
+
+</div>
+</body>
+</html>

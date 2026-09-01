@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mu-Hua (Maurice) Wang</title>
+<meta name="description" content="Mu-Hua (Maurice) Wang — physical assistive robotics for long-term care. Markerless motion capture, learned body models, and measurements of what motor priors actually buy.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+
+<nav>
+  <ul>
+    <li><a href="index.html" aria-current="page">Home</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<h1>Mu-Hua (Maurice) Wang</h1>
+
+<div class="intro">
+  <div class="photo">
+    <img src="assets/profile.jpg" alt="Mu-Hua Wang"
+         onerror="this.closest('.photo').style.display='none'">
+  </div>
+  <div class="bio">
+    <p>I work on <b>physical assistive robotics for long-term care</b>: robots that carry out
+    contact-rich care tasks on a bedridden human body, starting with diaper changing. That task
+    demands three things at once &mdash; perceiving a body that will not cooperate, predicting how
+    it moves when it is touched, and manipulating deformable material safely against skin.</p>
+
+    <p>My work so far covers all three. I built and clinically validated an RGB multi-view
+    markerless motion capture system at National Yang Ming Chiao Tung University, wrote learned
+    dynamics models of musculoskeletal bodies, and measured whether compositional motion priors
+    survive transfer to a robot hand. I hold a B.S. in Biomedical Engineering from NYCU and an
+    M.S. place there on approved leave; I am looking for a lab where these pieces can be
+    assembled into a machine that does the task.</p>
+
+    <p class="tight"><b>Note on how the projects below are written.</b> Each one lists the
+    boundary it stops at next to the result. Every number traces to a stored run artifact,
+    non-significant cells are reported as not detected rather than as absent, and the negative
+    findings are reported as findings.</p>
+  </div>
+</div>
+
+<p class="note" style="margin-top:14px">
+  <b>Contact:</b> mauricewang1128@gmail.com &nbsp;&middot;&nbsp; +886 931 250 860
+  &nbsp;&middot;&nbsp; Taipei, Taiwan &nbsp;&middot;&nbsp;
+  <a href="cv.html">CV</a> &nbsp;&middot;&nbsp;
+  <a href="assets/cv/WangMuHua_CV_2page.pdf">CV (PDF, 2 pages)</a> &nbsp;&middot;&nbsp;
+  <a href="assets/cv/WangMuHua_CV_full.pdf">CV (PDF, full)</a>
+</p>
+
+<hr>
+
+<!-- ===================== RESEARCH ===================== -->
+<h2 id="research">Research</h2>
+
+<p class="divider">&mdash; Robot learning and embodied AI &mdash;</p>
+<p class="note" style="margin-top:-8px">Independent, October 2025 onward. Sole author on all
+three. Full drafts on request.</p>
+
+<div class="entry">
+  <div class="thumb">
+    <img src="assets/motor-prior/fig7_learning_curves.png"
+         alt="Held-out reach error against training steps for three arms">
+  </div>
+  <div class="meta">
+    <a class="title" href="projects/motor-prior.html">Two Routes to a Motor Prior: Guidance
+      Versus a Frozen Body Model</a>
+    <div class="authors"><b>Mu-Hua Wang</b></div>
+    <div class="venue">Manuscript, 2026</div>
+    <p class="desc">A frozen forward model learned from task-agnostic, reward-free motor babbling,
+    against a distilled teacher policy, under one SAC backbone on MyoSuite musculoskeletal bodies.
+    Seven controls and a matched withdrawal at a common training step. Guidance buys the early
+    speed; on myoFinger that lead reverses inside the budget.</p>
+    <p class="against"><b>Against itself:</b> on myoFinger no condition is shown to beat model-free
+    SAC at the endpoint, the coach included. One matched control was never run, and the paper says
+    so.</p>
+    <div class="links">
+      <a href="projects/motor-prior.html">[Project page]</a>
+      <span class="off">[Paper on request]</span>
+    </div>
+  </div>
+</div>
+
+<div class="entry">
+  <div class="thumb">
+    <video src="assets/hand-composition/grasp_real_seen_unseen.mp4" autoplay muted loop
+           playsinline preload="metadata"></video>
+  </div>
+  <div class="meta">
+    <a class="title" href="projects/hand-composition.html">Which Hand-Motion Composition Axes Are
+      Worth Measuring</a>
+    <div class="authors"><b>Mu-Hua Wang</b></div>
+    <div class="venue">Manuscript, under review, 2026</div>
+    <p class="desc">Modular motion priors rest on one premise: novel recombinations of the
+    primitives stay usable. It is almost never measured. This builds the measurement &mdash; a
+    paired split over six axes of three public hand datasets, behind five gates &mdash; plus a
+    raw-data interaction statistic that runs in minutes, before any model is trained.</p>
+    <p class="against"><b>Against itself:</b> the paper's own negative control removed its
+    strongest result. On a bundle whose compositional penalty is zero by construction, the
+    normalised metric still returns 90&nbsp;% of the headline figure.</p>
+    <div class="links">
+      <a href="projects/hand-composition.html">[Project page]</a>
+      <span class="off">[Paper on request]</span>
+    </div>
+  </div>
+</div>
+
+<div class="entry">
+  <div class="thumb">
+    <img src="assets/body-codes/fig1_identity.png"
+         alt="Cost of linear versus nonlinear function-preserving re-encodings">
+  </div>
+  <div class="meta">
+    <a class="title" href="projects/body-codes.html">What Master-Then-Reorganise Does Not Buy:
+      An Invariance Argument for Body Codes and Its Two Boundaries</a>
+    <div class="authors"><b>Mu-Hua Wang</b></div>
+    <div class="venue">Manuscript, 2026</div>
+    <p class="desc">With the dynamics core frozen and only a low-dimensional body code &theta;
+    adapted, replacing &theta; by <i>M</i>&theta; and the code's weight block by
+    <i>W</i><sub>&theta;</sub><i>M</i><sup>&minus;1</sup> leaves the function unchanged. A large
+    family of "reorganise the code" proposals is settled before any experiment runs. Then the two
+    conditions that identity needs are measured.</p>
+    <p class="against"><b>Against itself:</b> three of five planned mechanisms ran at two seeds
+    with no stored result file, and their numbers are withdrawn entirely rather than reported
+    weakly.</p>
+    <div class="links">
+      <a href="projects/body-codes.html">[Project page]</a>
+      <span class="off">[Paper on request]</span>
+    </div>
+  </div>
+</div>
+
+<p class="divider">&mdash; Clinical biomechanics and predictive simulation &mdash;</p>
+<p class="note" style="margin-top:-8px">Both put a clinical decision, not a measurement, on the
+dependent axis, in forward dynamics where ground truth is known by construction.</p>
+
+<div class="entry">
+  <div class="thumb">
+    <video src="assets/capture-error/PF60.mp4" autoplay muted loop playsinline
+           preload="metadata"></video>
+  </div>
+  <div class="meta">
+    <a class="title" href="projects/capture-error.html">How Much Joint-Angle Error Can the
+      Identification of a Weak Muscle Group Tolerate? A Predictive-Simulation Study</a>
+    <div class="authors"><b>Mu-Hua Wang</b>, Hui-Ting Shih</div>
+    <div class="venue">Under review, Journal of Biomechanics</div>
+    <p class="desc">The field's rule for good-enough motion capture &mdash; 2&deg; acceptable,
+    2&ndash;5&deg; needs consideration &mdash; scores measurement quality and had never been tested
+    against a decision. Weakness is imposed one muscle group at a time and error added in
+    controlled amounts: top-1 identification falls 0.845 &rarr; 0.549 as joint-angle error grows
+    0&deg; &rarr; 12&deg;, over 66 design cells.</p>
+    <p class="against"><b>Against itself:</b> the largest observed loss is the moderate deficit,
+    not the mild one &mdash; but with five model variants that difference is not statistically
+    separable, and the page says so.</p>
+    <div class="links">
+      <a href="projects/capture-error.html">[Project page]</a>
+      <a href="projects/capture-error.html#interactive">[Interactive demo]</a>
+      <span class="off">[Paper on request]</span>
+    </div>
+  </div>
+</div>
+
+<div class="entry">
+  <div class="thumb">
+    <img src="assets/spasticity/fig4_asymmetry.png"
+         alt="Peak swing dorsiflexion against reflex gain and against tibialis anterior scaling">
+  </div>
+  <div class="meta">
+    <a class="title" href="projects/spasticity.html">Distinguishing Graded Plantarflexor
+      Hyperreflexia from Graded Dorsiflexor Weakness in Simulated Post-Stroke Gait: A Search over
+      81 Sagittal Kinematic Variables</a>
+    <div class="authors"><b>Mu-Hua Wang</b></div>
+    <div class="venue">Manuscript in preparation</div>
+    <p class="desc">Post-stroke equinovarus has two opposite causes calling for opposite
+    treatments, and telling them apart currently needs an invasive diagnostic nerve block. 81
+    sagittal candidates scanned across three joints and the whole gait cycle, in a 19-DoF,
+    22-muscle model where both lesion magnitudes are known.</p>
+    <p class="against"><b>Against itself:</b> the two lesion groups are completely confounded with
+    falling &mdash; 23 of 23 hyperreflexia runs fell, 36 of 36 weakness runs finished &mdash; and
+    that confound cannot be closed.</p>
+    <div class="links">
+      <a href="projects/spasticity.html">[Project page]</a>
+      <span class="off">[Paper on request]</span>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- ===================== SYSTEMS ===================== -->
+<h2 id="systems">Systems</h2>
+
+<div class="entry">
+  <div class="meta">
+    <span class="title">RGB Multi-View 3D Markerless Motion Capture (NTKCAP)</span>
+    <div class="authors">NYCU &middot; research assistant Oct 2023 &ndash; Sep 2024, team lead Oct
+    2024 &ndash; Sep 2025 &middot; advisor Prof. Hui-Ting Shih</div>
+    <p class="desc">Real-time whole-body pose sensing for clinical use &mdash; the perception layer
+    a robot working over a bed has to have. I wrote the pipeline, ran the validation experiments,
+    and collected the clinical data myself.</p>
+    <ul style="margin:6px 0 0;padding-left:20px;color:var(--ink-2)">
+      <li>GPU acceleration and CPU parallelism across capture, inference, triangulation and inverse
+      kinematics; DLT triangulation with occlusion handling; and <b>ROWV</b>, an outlier-rejection
+      algorithm for small-sample settings, faster and more accurate than KNN and RANSAC on this
+      problem.</li>
+      <li>VICON comparison over 21 participants, plus 104 walking trials from 11 participants on a
+      nine-camera ring.</li>
+      <li>Shipped the product, not only the algorithm: clinician-facing PyQt6 GUI, SQL and cloud
+      pipeline with ICD-10 coding, Unreal Engine rehabilitation game.</li>
+      <li>Field deployment: 2 signed hospital MOUs (Taipei Veterans General; Taipei City Hospital),
+      200+ stroke and knee-pain patients in Vietnam, 40+ stroke patients with exoskeleton at
+      Kaohsiung Chang Gung, 20+ elderly at a Kaohsiung daycare centre, amputee feedback trials with
+      NYCU Physical Therapy. Led a 5-person team; 4 conference presentations, 6 media features.</li>
+    </ul>
+    <div class="links"><a href="cv.html#research">[Details in CV]</a></div>
+  </div>
+</div>
+
+<hr>
+
+<!-- ===================== PUBLICATIONS ===================== -->
+<h2 id="publications">Publications</h2>
+
+<p class="divider">&mdash; Peer-reviewed conference papers &mdash;</p>
+<ol class="pubs">
+  <li><b>Wang, M.-H.</b>, Tsai, K.-T., Chen, B.-H., Huang, L.-W., Tsai, C.-H., Hsu, C.-S., &amp;
+    Chen, Y.-Y. <i>Markerless Gait Analysis for Lower Back Pain: A Cost-Effective Solution to
+    Assess Pelvis&ndash;Trunk Coordination.</i> SEMBA 2025. <b>First author.</b></li>
+  <li>Huang, L.-W., <b>Wang, M.-H.</b>, Chen, B.-H., Su, K.-H., Tsai, C.-H., Chen, Y.-Y., &amp;
+    Shih, H.-T. <i>A Real-Time Algorithm for Detecting Gait Events in Lower-Limb Prosthesis Users
+    Using a Markerless Motion Capture System.</i> ASB 2025.</li>
+  <li>Huang, A.-Y., <b>Wang, M.-H.</b>, Huang, L.-W., Chen, B.-H., Wang, H.-H., Kuo, C.-H.,
+    Lu, S.-W., &amp; Lo, Y.-C. <i>Spatiotemporal Cortical-Synergy Connectivity in the Gait
+    Cycle.</i> SEMBA 2025.</li>
+  <li>Chang, C.-W., <b>Wang, M.-H.</b>, Lin, Y.-C., Wang, C.-Y., Li, S.-J., Chen, T.-C.,
+    Liang, Y.-W., Chen, C.-T., Chen, Y.-Y., &amp; Lin, S.-H. <i>Investigating the Effect of Central
+    Thalamic Deep Brain Stimulation on Sleep in an Alzheimer's Disease Model.</i> ISMRM 2024.</li>
+  <li>Chen, B.-H., Tsai, C.-H., Huang, L.-W., <b>Wang, M.-H.</b>, Hsu, C.-S., &amp; Chen, Y.-Y.
+    <i>Robust Self-Occlusion Mitigation for Enhanced Accuracy in Multi-View 3D Markerless Motion
+    Capture Systems.</i> ICMST 2024.</li>
+</ol>
+
+<p class="divider">&mdash; Manuscripts &mdash;</p>
+<p class="note" style="margin-top:-8px">Full drafts available on request. None is posted to a
+preprint server; nothing below is published.</p>
+<div class="tw">
+<table>
+  <thead><tr><th>Manuscript</th><th>Role</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr><td><a href="projects/motor-prior.html">Two Routes to a Motor Prior: Guidance Versus a
+        Frozen Body Model</a></td>
+        <td class="n">sole author</td><td><span class="tag">draft</span></td></tr>
+    <tr><td><a href="projects/hand-composition.html">Which Hand-Motion Composition Axes Are Worth
+        Measuring</a></td>
+        <td class="n">sole author</td><td><span class="tag hit">under review</span></td></tr>
+    <tr><td><a href="projects/body-codes.html">What Master-Then-Reorganise Does Not Buy: An
+        Invariance Argument for Body Codes and Its Two Boundaries</a></td>
+        <td class="n">sole author</td><td><span class="tag">draft</span></td></tr>
+    <tr><td><a href="projects/capture-error.html">How Much Joint-Angle Error Can the Identification
+        of a Weak Muscle Group Tolerate?</a> &middot; with H.-T. Shih</td>
+        <td class="n">first author</td><td><span class="tag hit">under review</span></td></tr>
+    <tr><td>Per-Joint Position Verdicts Between Markerless Triangulation Variants Depend on the
+        Joint-Centre Offset They Contain</td>
+        <td class="n">first author</td><td><span class="tag">in preparation</span></td></tr>
+    <tr><td><a href="projects/spasticity.html">Distinguishing Graded Plantarflexor Hyperreflexia
+        from Graded Dorsiflexor Weakness in Simulated Post-Stroke Gait</a></td>
+        <td class="n">first author</td><td><span class="tag">in preparation</span></td></tr>
+    <tr><td>Validation of the NTKCAP Markerless Motion Capture System in Gait Kinematics</td>
+        <td class="n">first author</td><td><span class="tag">in preparation</span></td></tr>
+    <tr><td>Consumed Methadone Dose Patterns Around Randomly Scheduled Urine Testing &middot;
+        with T.-J. Wang</td>
+        <td class="n">first author</td><td><span class="tag">in preparation</span></td></tr>
+  </tbody>
+</table>
+</div>
+
+<hr>
+
+<!-- ===================== CONTACT ===================== -->
+<h2 id="contact">Contact</h2>
+<dl class="facts">
+  <dt>Email</dt><dd>mauricewang1128@gmail.com</dd>
+  <dt>Phone</dt><dd>+886 931 250 860</dd>
+  <dt>Location</dt><dd>Taipei, Taiwan</dd>
+  <dt>Looking for</dt><dd>An M.S. place in robot learning / embodied AI</dd>
+  <dt>CV</dt><dd><a href="assets/cv/WangMuHua_CV_2page.pdf">two-page PDF</a> &middot; <a href="assets/cv/WangMuHua_CV_full.pdf">full PDF</a> &middot; <a href="cv.html">web version</a></dd>
+  <dt>Available</dt><dd>Manuscript drafts, run artifacts and code, on request. The manuscripts are still under revision, so none is posted here yet.</dd>
+</dl>
+
+<footer>
+  Mu-Hua (Maurice) Wang &middot; last updated September 2026 &middot;
+  <a href="cv.html">CV</a>
+</footer>
+
+</div>
+</body>
+</html>

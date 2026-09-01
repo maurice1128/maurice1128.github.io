@@ -1,0 +1,190 @@
+/* =============================================================
+   Mu-Hua (Maurice) Wang
+   Plain academic layout. Times body, Helvetica bold headings,
+   grey links, square corners, no ornament.
+   ============================================================= */
+
+:root{
+  --bg:#ffffff;
+  --ink:#000000;
+  --ink-2:#333333;
+  --ink-3:#767676;
+  --link:#8a8a8a;
+  --link-hover:#000000;
+  --rule:#cccccc;
+  --rule-2:#e4e4e4;
+  --box:#f7f7f7;
+  --plot-a:#000000;
+  --plot-b:#c1361f;
+
+  --serif:"Times New Roman",Times,serif;
+  --sans:Helvetica,Arial,sans-serif;
+  --mono:Consolas,"Courier New",monospace;
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+  --bg:#111111; --ink:#e8e8e8; --ink-2:#c0c0c0; --ink-3:#8f8f8f;
+  --link:#9a9a9a; --link-hover:#ffffff;
+  --rule:#3a3a3a; --rule-2:#2a2a2a; --box:#1a1a1a;
+  --plot-a:#e8e8e8; --plot-b:#e8785e;
+}}
+:root[data-theme="dark"]{
+  --bg:#111111; --ink:#e8e8e8; --ink-2:#c0c0c0; --ink-3:#8f8f8f;
+  --link:#9a9a9a; --link-hover:#ffffff;
+  --rule:#3a3a3a; --rule-2:#2a2a2a; --box:#1a1a1a;
+  --plot-a:#e8e8e8; --plot-b:#e8785e;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:1rem}
+body{margin:0;padding:0 15px 60px;background:var(--bg);color:var(--ink);
+  font-family:var(--serif);font-size:16px;line-height:1.45;overflow-x:hidden}
+.container{max-width:830px;margin:0 auto}
+
+h1,h2,h3{font-family:var(--sans);font-weight:700;margin:0}
+h1{font-size:1.8em;margin:18px 0 14px}
+h2{font-size:1.5em;margin:0 0 12px}
+h3{font-size:1.05em;margin:0 0 4px}
+p{margin:0 0 10px}
+a{color:var(--link);text-decoration:none}
+a:hover{color:var(--link-hover)}
+b,strong{color:var(--ink)}
+img,video{max-width:100%}
+hr{border:0;border-top:1px solid var(--rule);margin:28px 0 18px}
+:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+
+/* -- nav ---------------------------------------------------- */
+nav{padding-top:16px}
+nav ul{list-style:none;margin:0;padding:0}
+nav li{display:inline-block;margin-right:18px}
+nav a{font-family:var(--sans);font-weight:700;font-size:1em;color:var(--link)}
+nav a[aria-current]{color:var(--ink)}
+nav .back{margin-right:22px}
+
+/* -- intro: photo left, bio right ---------------------------- */
+.intro{display:flex;gap:22px;align-items:flex-start}
+.intro .photo{width:150px;flex:none}
+.intro .photo img{width:150px;display:block;border:1px solid var(--rule-2)}
+.intro .bio{flex:1;min-width:0}
+.note{color:var(--ink-3);font-size:.95em}
+.kicker{color:var(--ink-2);font-style:italic;margin-bottom:10px}
+.desc{color:var(--ink-2)}
+.tight{margin-bottom:4px}
+
+/* -- entry rows: thumbnail left, text right ------------------ */
+.entry{display:flex;gap:20px;align-items:flex-start;margin-bottom:26px}
+.entry .thumb{width:220px;flex:none}
+.entry .thumb img,.entry .thumb video{width:220px;display:block;
+  border:1px solid var(--rule-2);background:var(--box)}
+.entry .meta{flex:1;min-width:0}
+.entry .title{font-weight:700;color:var(--ink);display:block;margin-bottom:2px}
+a.title:hover{text-decoration:underline}
+.entry .authors{color:var(--ink-2)}
+.entry .venue{font-style:italic;color:var(--ink-2)}
+.entry .desc{color:var(--ink-2);margin-top:5px}
+.entry .against{margin-top:5px;color:var(--ink-2)}
+.entry .against b{color:var(--ink)}
+.links{margin-top:4px;font-size:.95em}
+.links a,.links span{margin-right:4px}
+.links .off{color:var(--ink-3)}
+
+/* -- year / group divider ------------------------------------ */
+.divider{font-weight:700;color:var(--ink-3);font-size:1.2em;margin:22px 0 14px}
+
+/* -- numbered list (publications) ---------------------------- */
+ol.pubs{margin:0;padding-left:22px}
+ol.pubs li{margin-bottom:10px;color:var(--ink-2)}
+ol.pubs li b{color:var(--ink)}
+ol.pubs li i{color:var(--ink-2)}
+
+/* -- tables --------------------------------------------------- */
+.tw{overflow-x:auto;margin:0 0 14px;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.95em;min-width:30rem}
+th,td{text-align:left;padding:5px 14px 5px 0;vertical-align:top;
+  border-bottom:1px solid var(--rule-2)}
+thead th{font-family:var(--sans);font-size:.78em;font-weight:700;
+  text-transform:uppercase;letter-spacing:.04em;color:var(--ink-3);
+  border-bottom:1px solid var(--rule)}
+td.n{font-family:var(--mono);font-size:.88em;white-space:nowrap;color:var(--ink-2)}
+tr.off td{color:var(--ink-3)}
+td .sub{display:block;color:var(--ink-3);font-size:.94em;margin-top:2px}
+.tag{font-family:var(--mono);font-size:.82em;color:var(--ink-3);white-space:nowrap}
+.tag::before{content:"["}
+.tag::after{content:"]"}
+.tag.hit{color:var(--ink)}
+
+/* -- plain bordered box (replaces coloured callouts) ---------- */
+.box{border:1px solid var(--rule);padding:12px 14px;margin:0 0 14px;background:var(--box)}
+.box h3{font-size:1em;margin-bottom:6px}
+.box p{margin-bottom:8px}
+.box p:last-child,.box ul:last-child{margin-bottom:0}
+.box ul{margin:6px 0 0;padding-left:20px}
+.box li{margin-bottom:5px;color:var(--ink-2)}
+.box li b{color:var(--ink)}
+.box.mark{border-left:4px solid var(--ink)}
+
+/* -- key/value fact list -------------------------------------- */
+dl.facts{margin:0;display:grid;grid-template-columns:auto 1fr;gap:3px 16px}
+dl.facts dt{font-family:var(--sans);font-size:.8em;font-weight:700;
+  text-transform:uppercase;letter-spacing:.03em;color:var(--ink-3);padding-top:3px}
+dl.facts dd{margin:0;color:var(--ink-2)}
+
+/* -- figures --------------------------------------------------- */
+figure{margin:0 0 18px}
+figure img,figure video{width:100%;display:block;border:1px solid var(--rule-2)}
+figure video{background:#000}
+figcaption,.cap{margin-top:6px;font-size:.93em;color:var(--ink-3);line-height:1.4}
+.cap b{color:var(--ink-2)}
+.figrow{display:grid;gap:18px 20px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.figrow.three{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+
+/* -- stat strip ------------------------------------------------ */
+.stats{display:grid;gap:0;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  border:1px solid var(--rule);margin-bottom:14px}
+.stats>div{padding:10px 13px;border-right:1px solid var(--rule-2)}
+.stats>div:last-child{border-right:0}
+.stats .big{font-family:var(--mono);font-size:1.15em;color:var(--ink);display:block;
+  margin-bottom:2px}
+.stats h3{font-size:.88em;margin-bottom:3px}
+.stats p{font-size:.92em;color:var(--ink-3);margin:0;line-height:1.4}
+
+/* -- CV rows ---------------------------------------------------- */
+.cvrow{display:grid;grid-template-columns:150px minmax(0,1fr);gap:6px 22px;
+  padding:12px 0;border-bottom:1px solid var(--rule-2)}
+.cvrow:last-child{border-bottom:0}
+.cvrow .when{font-family:var(--mono);font-size:.82em;color:var(--ink-3);padding-top:3px}
+.cvrow .where{color:var(--ink-3);margin-bottom:6px}
+.cvrow ul{margin:6px 0 0;padding-left:20px;color:var(--ink-2)}
+.cvrow li{margin-bottom:4px}
+.cvrow p{color:var(--ink-2)}
+
+/* -- interactive control (capture-error) ------------------------ */
+.ctrl{border:1px solid var(--rule);padding:12px 14px}
+.ctrl-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+input[type=range]{flex:1;min-width:150px;accent-color:var(--ink)}
+.readout{font-family:var(--mono);font-size:1.35em;color:var(--ink);min-width:88px}
+.readout small{display:block;font-family:var(--sans);font-size:.5em;font-weight:700;
+  letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3)}
+
+pre{margin:0 0 14px;background:var(--box);border:1px solid var(--rule);
+  padding:10px 12px;overflow-x:auto;font-family:var(--mono);font-size:.82em;
+  line-height:1.5;color:var(--ink-2)}
+code{font-family:var(--mono);font-size:.9em}
+
+footer{margin-top:30px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.93em;color:var(--ink-3)}
+
+@media (max-width:720px){
+  .intro{flex-direction:column;gap:14px}
+  .intro .photo,.intro .photo img{width:130px}
+  .entry{gap:14px}
+  .entry .thumb,.entry .thumb img,.entry .thumb video{width:150px}
+  .cvrow{grid-template-columns:1fr;gap:2px}
+  nav li{margin-right:14px}
+}
+@media (max-width:520px){
+  .entry{flex-direction:column}
+  .entry .thumb,.entry .thumb img,.entry .thumb video{width:100%}
+  dl.facts{grid-template-columns:1fr;gap:1px}
+  dl.facts dt{padding-top:8px}
+  .stats>div{border-right:0;border-bottom:1px solid var(--rule-2)}
+}

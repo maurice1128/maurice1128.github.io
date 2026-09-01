@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hyperreflexia or Weakness? &mdash; Mu-Hua Wang</title>
+<meta name="description" content="Post-stroke equinovarus has two opposite causes. A search over 81 sagittal kinematic variables in a simulation where both lesion magnitudes are known — and the asymmetry it uncovers.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container">
+
+<nav>
+  <ul>
+    <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#question">The question</a></li>
+    <li><a href="#scan">The scan</a></li>
+    <li><a href="#asymmetry">The asymmetry</a></li>
+    <li><a href="#why">Why weakness hides</a></li>
+    <li><a href="#limits">What this is not</a></li>
+    <li><a href="../cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<header>
+  <p class="note">Manuscript in preparation</p>
+  <h1>Distinguishing graded plantarflexor
+  hyperreflexia from graded dorsiflexor weakness in simulated post-stroke gait</h1>
+  <p class="kicker">A search over 81 sagittal kinematic variables
+  &mdash; and the reason only one of the two lesions can be graded from any of them.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; National Yang Ming Chiao Tung
+  University</p>
+  <div class="links">
+    <a href="mailto:mauricewang1128@gmail.com?subject=Hyperreflexia%20vs%20weakness%20%E2%80%94%20draft%20request">[Request the draft]</a>
+    <a href="../index.html">[All projects]</a>
+  </div>
+</header>
+
+<hr>
+<section id="question">
+  <h2>The clinical problem</h2>
+  <div style="color:var(--ink-2)">
+    <p>Post-stroke equinovarus has two opposite causes. Calf muscles that are <b>over-active</b>
+    call for botulinum toxin. Dorsiflexors that are <b>weak</b> call for an orthosis or a tendon
+    transfer. Telling them apart currently requires an invasive diagnostic nerve block.</p>
+    <p><b>The question:</b> is there any angle in the gait record that could stand in for it?</p>
+    <p>In a 19-DoF, 22-muscle 3D musculoskeletal model, each lesion is imposed separately and the
+    controller re-optimised after every imposition &mdash; so both lesion magnitudes are known,
+    which is never true in a patient. Then, rather than assuming an endpoint, all three joints
+    across the whole gait cycle are scanned: <b>81 candidate variables</b>.</p>
+  </div>
+  <div class="box" style="margin-top:1.6rem">
+    <p><b>The direction is not new.</b> Jansen et&nbsp;al. 2014 already reported reduced swing
+    dorsiflexion, and already noted that the literature attributes the deficit to tibialis
+    anterior weakness without specifically considering hyperreflexia. What is new here is
+    <em>measuring its size against a weakness arm of independently known depth</em>.</p>
+  </div>
+</section>
+
+<hr>
+<section id="scan">
+  <h2>The scan: 81 candidates, not one chosen endpoint</h2>
+  <div class="figrow">
+    <figure class="fig">
+      <img src="../assets/spasticity/fig3_scan.png" alt="Cell-level gap for 81 candidate variables">
+      <p class="cap">Cell-level gap, in units of each candidate's own within-condition seed SD,
+      for the knee, ankle and hip sampled at every five per cent of the gait cycle. Rings mark the
+      candidates that are also two-sided. The star is the reported endpoint, plotted at its mean
+      phase because it is a landmark rather than a fixed phase. <b>This figure is the selection:
+      the reported endpoint is its maximum, and every figure derived from that choice is an upper
+      estimate.</b></p>
+    </figure>
+    <figure class="fig">
+      <img src="../assets/spasticity/fig2_endpoint_cells.png" alt="Peak swing dorsiflexion, cell by cell">
+      <p class="cap">Peak ankle dorsiflexion in swing, cell by cell, with the control chain at the
+      top and the two lesion series below. Each point is one optimisation seed. The shaded band is
+      the run-level gap. Note that <b>the weakness series sits 0.43&deg; from control while the
+      hyperreflexia series sits 9.16&deg; from it, on the same side</b> &mdash; the two lesions
+      stand unequally far from normal, not on opposite sides of it.</p>
+    </figure>
+  </div>
+
+  <div class="stats" style="margin-top:2rem">
+    <div><span class="big">6.265&deg;</span>
+      <h3>gap between the nearest two runs</h3>
+      <p>Peak swing dorsiflexion separates the two lesions with no overlap at all. That gap is
+      <b>76.5&times;</b> the variable's own seed noise and <b>175&times;</b> the measured protocol
+      artefact.</p></div>
+    <div><span class="big">59 / 59</span>
+      <h3>leave-one-condition-out</h3>
+      <p>Re-run with variable selection inside each fold, 11 folds selected the same variable
+      &mdash; still 59/59.</p></div>
+    <div><span class="big">&rho; = &minus;1.000</span>
+      <h3>against delivered reflex gain</h3>
+      <p>Across five gain levels. Perfect rank agreement with the tone lesion's depth.</p></div>
+    <div><span class="big">0.995</span>
+      <h3>under 3&deg; capture jitter</h3>
+      <p>Still separates the two lesions at simulated motion-capture noise. Knee angle at contact
+      manages 0.939.</p></div>
+  </div>
+
+  <div class="box mark" style="margin-top:2rem">
+    <h3>Two limits attached to every number above</h3>
+    <ul>
+      <li><b>This is separation within the range that was tested, not a solved clinical problem.</b>
+      The weakness ladder is a &times;0.80 to &times;0.95 scaling of tibialis anterior force
+      &mdash; a loss of only 5&nbsp;% to 20&nbsp;% (the mixed grid reaches &times;0.60). For
+      comparison, the methodological parent study's &ldquo;mild&rdquo; weakness reduces force to
+      25&nbsp;%, and real patients' median manual muscle test for dorsiflexion is 1/5.</li>
+      <li><b>The two lesion groups are completely confounded with falling.</b> All 23
+      hyperreflexia runs fell before the simulation ended; all 36 weakness runs walked to the end.
+      That confound cannot be closed, and the paper says so.</li>
+    </ul>
+  </div>
+</section>
+
+<hr>
+<section>
+  <h2>Two controls on the falling confound</h2>
+  <p class="desc">They show falling early is
+  <em>not sufficient</em> to produce the signal. That is not the same as showing falling
+  contributes nothing.</p>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Control</th><th>Lesion</th><th>t<sub>end</sub></th><th>Swing ankle</th>
+        <th>Distance from control</th></tr></thead>
+      <tbody>
+        <tr><td>17 runs</td><td>Plantarflexor weakness</td><td class="n">9.93&ndash;17.56 s</td>
+            <td class="n">9.572&deg;</td><td class="n">+0.017&deg;</td></tr>
+        <tr><td>5 runs</td><td><b>Hamstring</b> weakness &times;0.60</td><td class="n">6.46&ndash;9.03 s</td>
+            <td class="n">9.470&deg;</td><td class="n">&minus;0.086&deg;</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note" style="margin-top:1rem">The second matters most: the hamstrings cross the hip and
+  the knee but <b>not the ankle</b>, and these runs fall <em>earlier</em> than any hyperreflexia
+  run &mdash; yet they read as normal on this landmark.</p>
+</section>
+
+<hr>
+<section id="asymmetry">
+  <h2>The asymmetry &mdash; the more valuable half of the result</h2>
+  <div class="figrow">
+    <figure class="fig">
+      <img src="../assets/spasticity/fig4_asymmetry.png" alt="Peak swing dorsiflexion against reflex gain, and against tibialis anterior scaling">
+      <p class="cap"><b>A</b>: peak swing dorsiflexion against delivered reflex gain, one line per
+      tibialis anterior scaling &mdash; the lines move together and span 8.21&deg;. <b>B</b>: the
+      same values against tibialis anterior scaling, one line per gain &mdash; the lines are
+      nearly flat, span at most 1.45&deg; within any gain column, and <b>change direction across
+      the gain range</b>. The contrast between the two panels is the paper's principal result.</p>
+    </figure>
+    <div>
+      <p class="desc" style="margin-bottom:1.2rem">Of the 81 candidates, <b>14 to 28 can usably
+      grade tone. Only 1 to 7 can grade weakness.</b></p>
+      <p style="color:var(--ink-2);font-size:.95rem">The range comes from nine combinations:
+      three published measurement-error thresholds crossed with three rank-correlation
+      conventions. The ratio lies between <b>3.7 and 14</b>, and never inverts.</p>
+      <div class="box mark" style="margin-top:1.2rem">
+        <p><b>That upper bound holds only for those nine combinations.</b> Sweeping common
+        thresholds instead, weakness drops to zero above 3&deg; and the ratio has no upper
+        bound.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+<section id="why">
+  <h2>Why weakness cannot be graded: the signal changes sign</h2>
+  <p class="desc">Hold the reflex gain fixed and
+  vary only tibialis anterior force. Whether weakening the dorsiflexors makes swing dorsiflexion
+  <em>larger</em> or <em>smaller</em> depends on how hard the plantarflexors are pulling.</p>
+
+  <div class="figrow">
+    <div class="tw">
+      <table>
+        <thead><tr><th>Delivered gain K<sub>V</sub></th><th>&rho;</th><th>Span</th></tr></thead>
+        <tbody>
+          <tr><td class="n">0.025</td><td class="n"><b>+1.000</b></td><td class="n">1.201&deg;</td></tr>
+          <tr><td class="n">0.050</td><td class="n">&minus;0.400</td><td class="n">0.191&deg;</td></tr>
+          <tr><td class="n">0.100</td><td class="n"><b>&minus;1.000</b></td><td class="n">1.449&deg;</td></tr>
+          <tr><td class="n">0.220</td><td class="n"><b>&minus;1.000</b></td><td class="n">0.753&deg;</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <p style="color:var(--ink-2)">An estimator that does not already know the tone level cannot
+      use a signal whose sign it cannot predict. That is why the leave-one-weakness-level-out
+      R&sup2; is <b>negative for all four feature sets</b> &mdash; worse than simply reporting the
+      mean.</p>
+      <div class="box" style="margin-top:1.2rem">
+        <p><b>This result does not depend on the endpoint choice, and does not depend on how
+        human-like the model is.</b> What it says is that no single sagittal angle can carry a
+        second quantity.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 style="margin-top:3rem">What that means clinically</h2>
+  <div class="figrow">
+    <div class="stats" style="grid-template-columns:1fr 1fr">
+      <div><span class="big">0.59 &rarr; 1.50</span>
+        <h3>standardised effect</h3>
+        <p>Moving from knee angle at contact to peak swing ankle dorsiflexion.</p></div>
+      <div><span class="big">38.4 &rarr; 22.7 %</span>
+        <h3>single-reading misclassification</h3>
+        <p>Using a variable a gait laboratory already records.</p></div>
+    </div>
+    <div class="box mark">
+      <h3>Where those two numbers come from</h3>
+      <p>Both are scaled by a between-patient SD of 5.55&deg;, which was <b>reconstructed</b> from
+      two subgroup means and SDs in a 34-person cohort &mdash; the original paper does not report
+      it &mdash; and that cohort had already excluded 67 of 116 screened patients because they
+      used an orthosis or a walking aid. <b>These are not numbers to take to a patient.</b></p>
+    </div>
+  </div>
+  <p class="desc">The honest summary: <b>half of the
+  assignment problem can be answered from gait. The other half has to be answered by measuring
+  strength.</b></p>
+</section>
+
+<hr>
+<section id="limits">
+  <h2>What the paper puts in writing against itself</h2>
+  <div class="stats">
+    <div>
+      <h3>The endpoint is a maximum over 81 candidates</h3>
+      <p>Selected after seeing the data. Every number derived from that choice is stated as an
+      upper bound.</p></div>
+    <div>
+      <h3>Withdrawn claims stay in the text</h3>
+      <p>Together with the reason they were withdrawn, rather than being quietly deleted.</p></div>
+    <div>
+      <h3>A pre-registration was edited after its results existed</h3>
+      <p>The version that actually ran cannot be recovered, and hash verification would not have
+      caught it. The paper reports this itself.</p></div>
+    <div>
+      <h3>A patient study contradicts it on its own endpoint</h3>
+      <p>r&nbsp;=&nbsp;&minus;0.32, p&nbsp;=&nbsp;0.039, n&nbsp;=&nbsp;55 &mdash; written into
+      Limitations rather than left out.</p></div>
+    <div>
+      <h3>The simulation licence expired on 27 Aug 2026</h3>
+      <p>So any reviewer request for additional simulation cannot be executed. Stated up front.</p></div>
+    <div>
+      <h3>No stance-phase variable is reported</h3>
+      <p>The unlesioned model shows non-physiological stance features &mdash; it dorsiflexes to
+      +10.7&deg; by 15&nbsp;% of the cycle, where a normal ankle is near neutral &mdash; so those
+      variables are excluded rather than used.</p></div>
+  </div>
+
+  <figure class="fig">
+    <img src="../assets/spasticity/fig1_ankle_trace.png" alt="Ankle angle over the gait cycle, three groups">
+    <p class="cap">Ankle angle over the gait cycle for the three groups. <b>A</b> the whole cycle;
+    <b>B</b> swing, where the reported endpoint is taken. Bands are &plusmn;1 SD across seeds of
+    the pooled group, not across subjects. Dorsiflexion is positive; the dotted line marks mean
+    toe-off at 59.5&nbsp;% of the cycle. <b>Read the two lesion groups against each other, not
+    against normality:</b> in this model the unlesioned control's swing peak (9.56&deg;) sits
+    <em>outside</em> the normal adult range of 0&ndash;5&deg;, while the hyperreflexia group
+    (0.39&deg;) sits inside it. The two groups separate cleanly, but both are mis-sited relative
+    to a real ankle.</p>
+  </figure>
+
+  <figure class="fig">
+    <img src="../assets/spasticity/fig5_mocap.png" alt="Effect of simulated capture noise on two of the three claims">
+    <p class="cap">What a simulated motion-capture error leaves of two of the three claims.
+    <b>A</b> leave-one-condition-out accuracy in distinguishing the two lesions; <b>B</b> Spearman
+    correlation between the reading and delivered reflex gain. The horizontal axis is per-frame
+    Gaussian jitter at 100&nbsp;Hz with yaw &le; 10&deg; and event error &le; 1 frame.
+    <b>The third claim, grading weakness, is not plotted because it does not rise above chance at
+    any noise level.</b> These are simulation resolutions and contain no between-patient variance.</p>
+  </figure>
+</section>
+
+<footer>
+  <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang &middot;
+  <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
+  <p style="margin-top:.6rem">Figures are reproduced from the manuscript as generated; none has
+  been redrawn for this page.</p>
+</footer>
+
+
+
+</div>
+</body>
+</html>

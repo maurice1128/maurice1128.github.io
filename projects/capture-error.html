@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>An Error Budget for a Diagnosis &mdash; Mu-Hua Wang</title>
+<meta name="description" content="How much joint-angle error can the identification of a weak muscle group tolerate? A predictive-simulation study. Wang & Shih, under review at Journal of Biomechanics.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  .clips{display:grid;gap:1rem;grid-template-columns:repeat(5,minmax(0,1fr))}
+  @media (max-width:1080px){.clips{grid-template-columns:repeat(3,minmax(0,1fr))}}
+  @media (max-width:680px){.clips{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  .clip video{width:100%;display:block;border:1px solid var(--rule);border-radius:4px;background:#0B0E0F}
+  .clip .lab{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--ink-3);margin-top:.5rem}
+  .clip .lab b{color:var(--ink)}
+  #traceSvg{width:100%;height:auto;display:block}
+  #traceSvg .grid{stroke:var(--rule-2);stroke-width:1}
+  #traceSvg .ax{fill:var(--ink-3);font-family:var(--mono);font-size:9px}
+  #traceSvg .clean{fill:none;stroke:var(--plot-a);stroke-width:2.2;stroke-linejoin:round}
+  #traceSvg .noisy{fill:none;stroke:var(--plot-b);stroke-width:1.2;stroke-linejoin:round;opacity:.9}
+</style>
+</head>
+<body>
+<div class="container">
+
+<nav>
+  <ul>
+    <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#deficits">The five deficits</a></li>
+    <li><a href="#interactive">Try it</a></li>
+    <li><a href="#numbers">Numbers</a></li>
+    <li><a href="#limits">Limits</a></li>
+    <li><a href="../cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<header>
+  <p class="note">Under review &middot; Journal of Biomechanics</p>
+  <h1>How much joint-angle error can the
+  identification of a weak muscle group tolerate?</h1>
+  <p class="kicker">The field's rule for &ldquo;good enough&rdquo;
+  motion capture scores the measurement. Nobody had scored the decision.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; Hui-Ting Shih<br>
+  Institute of Biomedical Engineering, National Yang Ming Chiao Tung University</p>
+  <div class="links">
+    <a href="#interactive">[Add the error yourself]</a>
+    <a href="../index.html">[All projects]</a>
+  </div>
+</header>
+
+<!-- ===================== 1. THE FIVE DEFICITS ===================== -->
+<hr>
+<section id="deficits">
+  <h2>Five weaknesses, five different walks</h2>
+  <p class="desc">After a neurological injury,
+  weakness is group-specific, and which group is weak determines which strengthening programme is
+  indicated. Each clip shows healthy gait beside the weakened condition on a shared clock. Muscle
+  activation is colour-coded on the skeleton, the weakened group is drawn in red, and the green
+  arrows are the ground reaction force. <b>Watch them before reading a single number: the five
+  patterns are obviously different.</b></p>
+
+  <div class="clips">
+    <div class="clip"><video src="../assets/capture-error/PF60.mp4" autoplay muted loop playsinline></video>
+      <p class="lab"><b>Plantarflexors</b> &middot; 60&nbsp;% force loss</p></div>
+    <div class="clip"><video src="../assets/capture-error/DF60.mp4" autoplay muted loop playsinline></video>
+      <p class="lab"><b>Dorsiflexors</b> &middot; 60&nbsp;%</p></div>
+    <div class="clip"><video src="../assets/capture-error/KE60.mp4" autoplay muted loop playsinline></video>
+      <p class="lab"><b>Knee extensors</b> &middot; 60&nbsp;%</p></div>
+    <div class="clip"><video src="../assets/capture-error/KF40.mp4" autoplay muted loop playsinline></video>
+      <p class="lab"><b>Knee flexors</b> &middot; 40&nbsp;%</p></div>
+    <div class="clip"><video src="../assets/capture-error/HF60.mp4" autoplay muted loop playsinline></video>
+      <p class="lab"><b>Hip flexors</b> &middot; 60&nbsp;%</p></div>
+  </div>
+</section>
+
+<!-- ===================== 2. TAKE THE MEASUREMENT AWAY ===================== -->
+<hr>
+<section id="interactive">
+  <h2>Now take the measurement away</h2>
+  <p class="desc">Markerless motion capture is
+  making it possible to measure gait outside a laboratory &mdash; at a cost in accuracy. The trace
+  below is the real simulated ankle trajectory from the 60&nbsp;% plantarflexor condition, 200
+  samples over the analysis window. Drag the slider to add zero-mean Gaussian error at the
+  &sigma; you choose, exactly as the study does, and watch what the classifier is left with.</p>
+
+  <div class="figrow" style="margin-top:0">
+    <figure class="fig" style="margin:0">
+      <svg id="traceSvg" viewBox="0 0 640 300" role="img"
+           aria-label="Simulated ankle angle with added capture error"></svg>
+      <p class="cap"><b>Black: the true trajectory. Red: what a camera at this error level
+      hands the classifier.</b> The noise is seeded, so the trace is stable while you drag.</p>
+    </figure>
+
+    <div>
+      <div class="ctrl">
+        <div class="ctrl-row">
+          <div class="readout"><span id="sigOut">0.0&deg;</span><small>capture error &sigma;</small></div>
+          <input id="sig" type="range" min="0" max="12" step="0.1" value="0"
+                 aria-label="Capture error sigma in degrees">
+        </div>
+        <div class="ctrl-row" style="margin-top:1.2rem;border-top:1px solid var(--rule-2);padding-top:1.2rem">
+          <div class="readout"><span id="accOut">0.845</span><small>top-1 accuracy</small></div>
+          <p class="note" style="flex:1;min-width:11rem">Interpolated between the five measured
+          levels: 0.845, 0.824, 0.659, 0.600 and 0.549 at 0&deg;, 2&deg;, 5&deg;, 8&deg; and
+          12&deg;. Majority-class baseline is <b>0.227</b>. Each decision pools a condition's four
+          independent noise realisations.</p>
+        </div>
+      </div>
+      <div class="box">
+        <p><b>The gap you just opened is the whole paper.</b> You can still see which walk is
+        which. The classifier increasingly cannot. Accuracy nevertheless stays above twice the
+        majority-class baseline at every level tested.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 3. NUMBERS ===================== -->
+<hr>
+<section id="numbers">
+  <h2>What the study measured</h2>
+  <p class="desc">Weakness is imposed one muscle
+  group at a time in forward-dynamic simulation, where the answer is known by construction. Then
+  joint-angle error is added in controlled amounts. <b>The interesting result is that the answer
+  is not one number.</b> Tolerance depends on how severe the deficit is &mdash; and the case
+  measurement quality matters most for is the <em>moderate</em> one, not the mild one.</p>
+
+  <div class="figrow">
+    <div>
+      <h3>Identification against capture error</h3>
+      <div class="tw">
+        <table style="min-width:0">
+          <thead><tr><th>Capture error</th><th>Top-1 accuracy</th></tr></thead>
+          <tbody>
+            <tr><td class="n">0&deg;</td><td class="n">0.845</td></tr>
+            <tr><td class="n">2&deg;</td><td class="n">0.824</td></tr>
+            <tr><td class="n">5&deg;</td><td class="n">0.659</td></tr>
+            <tr><td class="n">8&deg;</td><td class="n">0.600</td></tr>
+            <tr><td class="n">12&deg;</td><td class="n">0.549</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note" style="margin-top:.8rem">Camera tier, pooling four captures per decision.
+      Majority-class baseline 0.227 top-1, 0.667 top-3. Scoring one capture at a time &mdash;
+      what a clinic actually gets &mdash; gives 0.845, 0.767, 0.643, 0.553 and 0.504. Either
+      curve supports the same conclusions.</p>
+    </div>
+
+    <div>
+      <h3>By severity &mdash; the moderate case is the exposed one</h3>
+      <div class="tw">
+        <table style="min-width:0">
+          <thead><tr><th>Force loss</th><th>at 2&deg;</th><th>at 8&deg;</th><th>loss</th></tr></thead>
+          <tbody>
+            <tr><td class="n">60&nbsp;%</td><td class="n">0.963</td><td class="n">0.831</td><td class="n">&minus;0.132</td></tr>
+            <tr><td class="n"><b>40&nbsp;%</b></td><td class="n">0.948</td><td class="n">0.562</td><td class="n"><b>&minus;0.385</b></td></tr>
+            <tr><td class="n">20&nbsp;%</td><td class="n">0.61&ndash;0.80</td><td class="n">0.480</td><td class="n">&minus;0.130</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note" style="margin-top:.8rem">Top-3 at 2&deg;: 1.000, 1.000, 0.970. At 8&deg;:
+      1.000, 0.958, 0.855. The 20&nbsp;% figure is the least stable number in the study &mdash;
+      0.799, 0.650 and 0.610 across three independent rebuilds of the dataset &mdash; so it is
+      quoted here as a range. <b>The moderate case shows about three times the loss of either
+      extreme; with five model variants that difference is not statistically separable.</b></p>
+    </div>
+  </div>
+
+  <div class="figrow" style="margin-top:2.4rem">
+    <div>
+      <h3>By muscle group, and how the mistakes are structured</h3>
+      <div class="tw">
+        <table style="min-width:0">
+          <thead><tr><th>Group</th><th>2&deg;</th><th>8&deg;</th></tr></thead>
+          <tbody>
+            <tr><td>Plantarflexors</td><td class="n">0.90</td><td class="n">0.90</td></tr>
+            <tr><td>Dorsiflexors</td><td class="n">0.84</td><td class="n">0.50</td></tr>
+            <tr><td>Knee extensors</td><td class="n">0.60</td><td class="n">0.38</td></tr>
+            <tr><td>Knee flexors</td><td class="n">0.69</td><td class="n">0.57</td></tr>
+            <tr><td>Hip flexors</td><td class="n">1.00</td><td class="n">0.57</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note" style="margin-top:.8rem"><b>The mistakes are not random.</b> At 2&deg; the
+      dominant substitutions are knee extensors called plantarflexors (22&nbsp;%), knee flexors
+      called hip flexors (18&nbsp;%) and dorsiflexors called hip flexors (13&nbsp;%) &mdash; pairs
+      that share a role in stance support or limb advancement. The same pairs dominate at 8&deg;.</p>
+    </div>
+
+    <div>
+      <h3>Does a force plate help?</h3>
+      <div class="tw">
+        <table style="min-width:0">
+          <thead><tr><th>Error</th><th>Gain</th><th>95&nbsp;% CI</th><th>Excl. 0</th></tr></thead>
+          <tbody>
+            <tr><td class="n">0&deg;</td><td class="n">+0.032</td><td class="n">[&minus;0.068, +0.134]</td><td>no</td></tr>
+            <tr><td class="n">2&deg;</td><td class="n">&minus;0.002</td><td class="n">[&minus;0.101, +0.096]</td><td>no</td></tr>
+            <tr><td class="n">5&deg;</td><td class="n">+0.116</td><td class="n">[+0.018, +0.223]</td><td>yes</td></tr>
+            <tr><td class="n">8&deg;</td><td class="n">+0.159</td><td class="n">[+0.035, +0.293]</td><td>yes</td></tr>
+            <tr><td class="n">12&deg;</td><td class="n">+0.182</td><td class="n">[+0.075, +0.300]</td><td>yes</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="box mark" style="margin-top:1rem">
+        <h3>A correction the authors made against themselves</h3>
+        <p>The camera tier contains six timing features that in this model derive from vertical
+        ground reaction force &mdash; which a camera alone would not supply. Priced against the
+        <b>27 purely kinematic features a camera really does deliver</b> (scoring 0.824, 0.875,
+        0.742, 0.623, 0.536), the plate adds +0.032, &minus;0.053, <b>+0.033</b>, <b>+0.136</b>
+        and <b>+0.182</b>. The 5&deg; gain falls from +0.116 to +0.033. <b>The honest crossover is
+        8&deg;, not 5&deg;.</b></p>
+      </div>
+    </div>
+  </div>
+
+  <figure class="fig" style="margin-top:2.4rem">
+    <img src="../assets/capture-error/figure1.png" alt="Figure 1, four panels">
+    <p class="cap"><b>Figure 1 of the paper</b>, panels (a) to (d).</p>
+  </figure>
+
+  <div class="stats" style="margin-top:2.4rem">
+    <div><span class="big">66 / 75</span>
+      <h3>design cells</h3>
+      <p>Five muscle groups &times; three severities (20, 40, 60&nbsp;% reduction in maximum
+      isometric muscle force) &times; five model variants. Nine cells failed quality control, and
+      the missing ones sit at the higher severities.</p></div>
+    <div><span class="big">SCONE</span>
+      <h3>Geyer&ndash;Herr reflex controller</h3>
+      <p>Re-optimised by CMA-ES after each imposed weakness, so the walker <em>adapts</em> rather
+      than merely deviating.</p></div>
+    <div><span class="big">&rho; = 0.65 / 0.73 / 0.55</span>
+      <h3>not a simulator fingerprint</h3>
+      <p>The off-diagonal confusion pattern at 2&deg; predicts the pattern at 5&deg;, 8&deg; and
+      12&deg;, each above a permutation null. A simulator artefact would be destroyed by added
+      error rather than degraded.</p></div>
+    <div><span class="big">LOVO</span>
+      <h3>leave-one-variant-out</h3>
+      <p>Extremely randomised trees, no hyperparameter tuning. A &ldquo;model variant&rdquo; is a
+      whole-body rescaling by a single strength factor (0.85, 0.95, 1.00, 1.05, 1.10) &mdash; it
+      is not a separate person.</p></div>
+  </div>
+</section>
+
+<!-- ===================== 4. LIMITS ===================== -->
+<hr>
+<section id="limits">
+  <h2>What this does not show</h2>
+  <p class="desc">Two of the paper's claims were
+  downgraded during review after the authors' own stricter tests failed to support them. These
+  limits are load-bearing, not boilerplate.</p>
+
+  <div class="figrow">
+    <div class="box mark">
+      <ul>
+        <li><b>The severity difference is not statistically separable.</b> The moderate case shows
+        the largest loss and the direction holds in four of the five model variants, but with five
+        variants no interval separates it. It is the largest <em>observed</em> loss, never a
+        significantly greater one.</li>
+        <li><b>The convention is not shown to be well placed.</b> The steepest per-degree loss
+        does fall inside the 2&ndash;5&deg; band in all three rebuilds, but no interval separates
+        that band from the one adjoining it. It is an observation.</li>
+        <li><b>8&deg; is not a purchasing threshold.</b> It is the level this design supports.
+        With five variants and between-variant variation larger than the effect, the ordering of
+        the levels is better determined than their values.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <ul>
+        <li><b>This is not clinical accuracy.</b> The study is entirely <em>in silico</em>. It
+        bounds what is identifiable in principle from a model with known ground truth.</li>
+        <li><b>The degree axis is not an RMSE.</b> Error was applied to joint angles rather than
+        propagated through a capture pipeline, and a nominal &sigma; induces only 0.4&ndash;0.9
+        &sigma; of perturbation in a feature.</li>
+        <li><b>The model is planar</b>, so no frontal-plane mechanism was imposed; leave-one-
+        variant-out tests generalisation across strength rather than across people; and no
+        unimpaired condition was included, so detecting weakness &mdash; as distinct from locating
+        it &mdash; was not tested.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 style="margin-top:3rem">Where the 2&deg; convention comes from</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Source</th><th>What it reports</th></tr></thead>
+      <tbody>
+        <tr><td>McGinley et al. 2009</td>
+            <td>The convention: 2&deg; or less acceptable, 2&ndash;5&deg; needs consideration,
+            above 5&deg; large enough to mislead. It scores <em>measurement quality</em>, and had
+            never been tested against a decision.</td></tr>
+        <tr><td>Uhlrich et al. 2023</td>
+            <td>OpenCap smartphone capture: 4.5&deg; mean absolute error, pooled over eighteen
+            degrees of freedom and four activities, ten healthy adults.</td></tr>
+        <tr><td>Horsak et al. 2023</td>
+            <td>Smartphone markerless, normal gait plus imitated crouch, circumduction and
+            equinus, 21 healthy volunteers: 5.8&deg; RMSE, 11.3&deg; mean peak error, lowest for
+            normal gait.</td></tr>
+        <tr><td>Slijepcevic et al. 2023</td>
+            <td>Classifying cerebral-palsy gait patterns: kinematics far outperformed ground
+            reaction force, 93.4&nbsp;% against 47.2&nbsp;%, and adding force on top of kinematics
+            gave no advantage.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note" style="margin-top:1rem">Markerless capture today sits at roughly 4.5&ndash;5.8&deg;
+  &mdash; on the wrong side of the convention, and, by this study, on the wrong side of the
+  moderate deficit too.</p>
+</section>
+
+<footer>
+  <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang and Hui-Ting
+  Shih &middot; <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
+  <p style="margin-top:.6rem">The manuscript is under review and is not reproduced here. The
+  research question, the figures, the videos and the findings are on this page; the full text is
+  available on request.</p>
+</footer>
+
+<script>
+var WAVE = {"ankle_paretic":[10.499,6.26,-0.241,-4.934,-4.61,-1.9,1.957,6.63,11.521,15.475,17.886,18.727,18.235,16.419,13.947,13.867,14.793,15.495,15.78,15.743,15.52,15.246,15.644,7.318,-0.402,1.874,5.685,8.334,9.248,9.111,8.483,7.967,7.909,8.311,9.004,9.757,10.307,11.065,12.102,13.242,14.388,14.873,14.719,13.74,11.251,7.144,0.258,-4.601,-4.285,-1.65,2.101,6.682,11.436,15.341,17.742,18.58,18.065,16.162,13.738,14.175,14.954,15.569,15.791,15.716,15.476,15.209,15.091,12.206,0.45,1.355,5.411,8.576,10.007,10.13,9.552,8.892,8.63,8.866,9.457,10.153,10.689,11.532,12.581,13.716,14.81,15.355,15.243,14.094,11.17,6.052,-2.133,-4.332,-3.132,-0.104,3.917,8.572,13.036,16.387,18.171,18.49,17.474,15.24,13.369,14.397,15.21,15.663,15.752,15.603,15.348,15.114,14.924,3.82,-0.107,3.87,7.516,9.562,10.06,9.69,9.032,8.641,8.725,9.198,9.842,10.36,11.113,12.1,13.222,14.295,15.092,15.229,14.395,11.868,7.307,-0.655,-4.574,-4.085,-1.24,2.636,7.257,11.938,15.684,17.903,18.592,17.922,15.903,13.565,14.282,15.049,15.583,15.748,15.651,15.419,15.175,14.375,2.289,-0.291,4.317,8.005,9.885,10.034,9.108,7.757,6.627,5.946,6.166,7.233,8.675,10.166,11.616,13.047,14.319,15.25,15.398,14.446,11.668,7.67,1.618,-4.409,-4.4,-2.075,1.507,5.985,10.817,14.932,17.598,18.671,18.377,16.77,14.319,13.545,14.649,15.435,15.791,15.79,15.577,15.294,15.402,9.799,-1.523,1.879],"ankle_sound":[1.337,3.613,3.788,2.621,0.55,-1.965,-4.509,-6.27,-6.774,-6.759,-6.643,-6.539,-6.371,-5.997,-5.347,-4.454,-3.698,-3.435,-3.499,-3.765,-4.242,-4.899,-5.677,-5.982,-5.965,-7.918,-11.389,-11.0,-9.007,-6.186,-2.938,0.357,3.526,6.485,8.992,10.679,11.624,11.879,11.48,10.888,10.745,0.938,-14.433,-4.364,0.482,3.521,4.577,4.039,2.414,0.126,-2.399,-4.966,-6.422,-6.799,-6.672,-6.394,-6.097,-5.717,-5.172,-4.424,-3.908,-3.815,-3.964,-4.273,-4.752,-5.36,-6.038,-6.312,-6.207,-7.577,-11.339,-11.144,-9.404,-6.717,-3.522,-0.218,3.002,6.052,8.732,10.623,11.739,12.193,11.942,11.221,9.932,-7.293,-10.454,-2.103,1.591,3.949,4.263,3.262,1.37,-1.014,-3.474,-5.813,-6.845,-6.991,-6.714,-6.321,-5.893,-5.368,-4.708,-3.982,-3.685,-3.774,-4.052,-4.479,-5.048,-5.713,-6.317,-6.171,-6.68,-9.826,-11.498,-10.363,-7.965,-4.905,-1.598,1.672,4.805,7.676,9.911,11.332,12.044,12.078,11.512,10.758,-2.563,-12.813,-3.124,1.157,3.853,4.483,3.712,1.968,-0.354,-2.764,-5.117,-6.475,-6.755,-6.49,-6.043,-5.553,-4.993,-4.328,-3.562,-3.189,-3.266,-3.58,-4.063,-4.704,-5.462,-6.072,-5.991,-6.814,-10.274,-11.163,-9.688,-7.187,-4.106,-0.841,2.378,5.471,8.263,10.368,11.67,12.295,12.199,11.541,10.866,1.631,-15.215,-4.833,0.315,3.294,4.32,3.687,1.949,-0.476,-3.116,-5.698,-6.947,-7.177,-6.991,-6.731,-6.482,-6.143,-5.601,-4.85,-4.133,-3.891,-4.001,-4.276,-4.729,-5.348,-6.093,-6.579,-6.514,-8.014],"knee_paretic":[-6.725,-13.196,-23.055,-33.69,-43.755,-52.712,-60.026,-65.146,-67.433,-66.249,-61.401,-53.196,-41.861,-28.048,-13.15,-2.181,-2.447,-3.368,-4.037,-4.488,-4.766,-4.928,-4.689,-5.164,-11.16,-17.252,-19.408,-20.235,-19.207,-17.661,-16.064,-14.37,-12.693,-11.108,-9.557,-7.805,-5.417,-3.65,-3.133,-2.944,-2.938,-2.872,-3.966,-5.8,-8.915,-15.903,-26.423,-37.511,-47.392,-55.647,-61.849,-65.507,-66.49,-64.466,-59.208,-50.753,-39.142,-25.118,-10.284,-2.071,-2.787,-3.646,-4.26,-4.665,-4.904,-5.066,-5.438,-4.332,-7.495,-14.625,-18.389,-19.84,-19.437,-17.79,-16.193,-14.504,-12.742,-10.999,-9.271,-7.356,-4.874,-3.387,-2.837,-2.65,-2.742,-3.32,-4.86,-7.463,-12.302,-21.361,-32.614,-43.319,-52.52,-59.848,-64.805,-67.026,-66.482,-62.829,-56.074,-46.235,-33.532,-19.016,-4.942,-2.249,-3.179,-3.915,-4.429,-4.756,-4.946,-5.129,-4.417,-6.042,-12.687,-17.495,-19.336,-19.638,-18.243,-16.707,-15.08,-13.332,-11.543,-9.746,-7.791,-5.297,-3.44,-2.648,-2.343,-2.318,-2.879,-4.338,-6.688,-10.91,-19.323,-30.594,-41.491,-50.972,-58.744,-64.269,-67.113,-67.172,-64.186,-58.059,-48.899,-36.81,-22.598,-7.954,-2.099,-2.95,-3.74,-4.301,-4.667,-4.887,-5.024,-4.409,-6.551,-13.992,-19.293,-21.264,-21.177,-18.98,-15.909,-12.872,-9.615,-6.019,-3.434,-2.512,-1.814,-1.133,-0.677,-0.764,-1.058,-1.593,-2.892,-4.632,-6.237,-11.626,-21.101,-32.018,-42.382,-51.445,-58.8,-63.938,-66.551,-66.018,-62.0,-54.603,-43.965,-30.583,-15.788,-2.996,-2.4,-3.342,-4.038,-4.514,-4.807,-4.974,-5.07,-4.595,-9.25,-17.164]};
+(function(){
+  
+  // ---- measured accuracy curve, §4.1 pooled -------------------------------
+  var LV=[0,2,5,8,12], AC=[0.845,0.824,0.659,0.600,0.549];
+  function accuracy(s){
+    if(s<=0) return AC[0];
+    if(s>=12) return AC[4];
+    for(var i=1;i<LV.length;i++){
+      if(s<=LV[i]){
+        var t=(s-LV[i-1])/(LV[i]-LV[i-1]);
+        return AC[i-1]+t*(AC[i]-AC[i-1]);
+      }
+    }
+    return AC[4];
+  }
+
+  // ---- fixed seeded standard normals, so dragging is stable ---------------
+  var seed=20260901, N=WAVE.ankle_paretic.length, Z=new Array(N);
+  function rnd(){ seed=(seed*1103515245+12345)&0x7fffffff; return seed/0x7fffffff; }
+  for(var i=0;i<N;i++){
+    var u=Math.max(rnd(),1e-9), v=rnd();
+    Z[i]=Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);
+  }
+
+  var svg=document.getElementById("traceSvg");
+  var W=640,H=300,PL=42,PR=12,PT=16,PB=30;
+  var y=WAVE.ankle_paretic, lo=-42, hi=32;
+  function X(i){ return PL+(i/(N-1))*(W-PL-PR); }
+  function Y(v){ return PT+(1-(v-lo)/(hi-lo))*(H-PT-PB); }
+  function path(arr){
+    var d="";
+    for(var i=0;i<N;i++) d+=(i?"L":"M")+X(i).toFixed(1)+" "+Y(arr[i]).toFixed(1);
+    return d;
+  }
+
+  var base="";
+  for(var g=-30;g<=20;g+=10){
+    base+='<line class="grid" x1="'+PL+'" y1="'+Y(g).toFixed(1)+'" x2="'+(W-PR)+'" y2="'+Y(g).toFixed(1)+'"/>'
+        + '<text class="ax" x="'+(PL-6)+'" y="'+(Y(g)+3).toFixed(1)+'" text-anchor="end">'+g+'&#176;</text>';
+  }
+  base+='<text class="ax" x="'+PL+'" y="'+(H-8)+'">0 % of window</text>'
+      + '<text class="ax" x="'+(W-PR)+'" y="'+(H-8)+'" text-anchor="end">100 %</text>'
+      + '<text class="ax" x="'+PL+'" y="'+(PT-4)+'">ankle angle, 60 % plantarflexor weakness</text>';
+
+  var sig=document.getElementById("sig"),
+      sigOut=document.getElementById("sigOut"),
+      accOut=document.getElementById("accOut");
+
+  function draw(){
+    var s=parseFloat(sig.value);
+    var noisy=new Array(N);
+    for(var i=0;i<N;i++) noisy[i]=y[i]+s*Z[i];
+    svg.innerHTML = base
+      + (s>0 ? '<path class="noisy" d="'+path(noisy)+'"/>' : '')
+      + '<path class="clean" d="'+path(y)+'"/>';
+    sigOut.innerHTML = s.toFixed(1)+"&#176;";
+    accOut.textContent = accuracy(s).toFixed(3);
+  }
+  sig.addEventListener("input",draw);
+  draw();
+})();
+</script>
+
+</div>
+</body>
+</html>

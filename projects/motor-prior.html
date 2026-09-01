@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two Routes to a Motor Prior &mdash; Mu-Hua Wang</title>
+<meta name="description" content="A frozen babble-learned body model against a distilled teacher policy under one SAC backbone on MyoSuite bodies. Guidance buys the early speed; on myoFinger that lead reverses inside the budget.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container">
+
+<nav>
+  <ul>
+    <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#boundaries">Boundaries</a></li>
+    <li><a href="#method">Method</a></li>
+    <li><a href="#checked">How it was checked</a></li>
+    <li><a href="../cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<header>
+  <p class="note">Draft &middot; 2026 &middot; sole author</p>
+  <h1>Two Routes to a Motor Prior:<br>
+  Guidance versus a Frozen Body Model</h1>
+  <p class="kicker">A distilled coach leads a frozen body model
+  early, and on myoFinger that lead reverses by the endpoint.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua (Maurice) Wang &middot; National Yang Ming
+  Chiao Tung University</p>
+  <div class="links">
+    <a href="mailto:mauricewang1128@gmail.com?subject=Two%20Routes%20to%20a%20Motor%20Prior%20%E2%80%94%20draft%20request">[Request the draft]</a>
+    <a href="../index.html">[All projects]</a>
+  </div>
+  <p class="note" style="margin-top:1rem">Not posted to any preprint server. A manuscript and
+  code repository will be linked here once released.</p>
+</header>
+
+<hr>
+<section>
+  <figure class="fig">
+    <video src="../assets/motor-prior/explainer.mp4" autoplay muted loop playsinline controls
+           preload="metadata"></video>
+    <p class="cap"><b>The whole study, no sound needed.</b> Where a body model comes from, what
+    the other route does instead, where the two end up, what happens when each is taken away,
+    and where it all stops working.</p>
+  </figure>
+</section>
+
+<hr>
+<section>
+  <h2>Abstract</h2>
+  <div style="color:var(--ink-2)">
+    <p>Biological motor learning is far more sample-efficient than reinforcement learning, and
+    two computational-sensorimotor traditions offer complementary explanations: the nervous
+    system carries internal forward models of the body, and augmented guidance accelerates the
+    acquisition phase without necessarily changing what is retained. We instantiate both under a
+    single SAC backbone on MyoSuite musculoskeletal bodies and subject them to a matched set of
+    controls.</p>
+    <p>With n&nbsp;=&nbsp;12 matched seeds and paired-<em>t</em> 95&nbsp;% intervals throughout,
+    guidance buys the early speed; that lead decays even while the coach stays attached, and
+    cutting the coach is separately costly. The body model's advantage over the coach arrives
+    late &mdash; on myoFinger late enough to reverse the sign by the endpoint, though neither arm
+    beats model-free RL there. And an actively wrong model is no substitute: a random-initialised
+    frozen model in identical machinery loses to the babble-trained one on both bodies.</p>
+  </div>
+</section>
+
+<hr>
+<section id="results">
+  <h2>The finding, in one picture</h2>
+  <figure class="fig">
+    <img src="../assets/motor-prior/fig7_learning_curves.png"
+         alt="Learning curves for the distilled coach, the frozen body model, and model-free SAC">
+    <p class="cap"><b>Held-out reach error against training steps</b>; each point is a mean over
+    12 matched seeds, lower is better. <b>myoElbow</b> (1 DoF, 6 muscles): the coach stays ahead
+    throughout, and both aids end below model-free RL. <b>myoFinger</b> (4 DoF, 5 muscles): the
+    coach bottoms out at 8k and rises again while the body model keeps falling; the lines cross.
+    The model-free baseline ends between them &mdash; on this body neither aid is shown to beat
+    it.</p>
+  </figure>
+
+  <p class="note" style="margin-top:1.4rem"><b>A unit warning that matters throughout this
+  page.</b> myoElbow error is in milliradians and myoFinger error is in millimetres. The two
+  are not comparable in magnitude, and nothing on this page compares them.</p>
+</section>
+
+<hr>
+<section>
+  <h2>The three experiments, on video</h2>
+  <div class="figrow">
+    <figure class="fig">
+      <video src="../assets/motor-prior/crossover_seeds.mp4" autoplay muted loop playsinline></video>
+      <p class="cap"><b>The crossover, seed by seed.</b> Left: the distilled coach. Right: the
+      frozen body model. Same held-out target, same start, frame for frame, over four training
+      seeds &mdash; because a single seed can run opposite to a 12-seed mean.</p>
+    </figure>
+    <figure class="fig">
+      <video src="../assets/motor-prior/withdrawal.mp4" autoplay muted loop playsinline></video>
+      <p class="cap"><b>Cutting the aid, matched on both routes.</b> Rows are the route, columns
+      are kept versus cut at 8k of a 12k budget. Both seeds lose the coach badly. The body-model
+      row disagrees with itself &mdash; one seed worse, one better &mdash; which is exactly the
+      shape of an interval that contains zero. <b>The asymmetry is the finding:</b> guidance has
+      to stay attached to keep paying, and we cannot show the same of the model.</p>
+    </figure>
+  </div>
+  <div class="figrow" style="margin-top:1.8rem">
+    <figure class="fig">
+      <video src="../assets/motor-prior/randprior_control.mp4" autoplay muted loop playsinline></video>
+      <p class="cap"><b>The control that separates content from machinery.</b> Left: the
+      babble-trained frozen model. Right: a random-initialised one, same Dyna loop, same budget,
+      same seeds. Both cells of this control survive every multiplicity family we ran, on both
+      bodies. <em>Scored on training targets, at the endpoint only.</em></p>
+    </figure>
+    <figure class="fig">
+      <video src="../assets/motor-prior/randcoach_control.mp4" autoplay muted loop playsinline></video>
+      <p class="cap"><b>The same control, on the other route.</b> Left: the distilled coach.
+      Right: a teacher of identical architecture with random weights, in the same distillation
+      loss at the same constant weight. A random teacher is itself a fixed non-flailing target,
+      and it does not reproduce the coach's early gain &mdash; &minus;19.0&nbsp;mm
+      [&minus;24.4, &minus;13.7] in the coach's favour on myoFinger, and
+      &minus;108.6&nbsp;mrad on myoElbow, where an uninformative teacher is worse than no teacher
+      at all. <em>Scored on held-out targets.</em></p>
+    </figure>
+  </div>
+  <p class="note" style="margin-top:1.5rem">The two random-initialised controls are
+  <b>not</b> the same experiment read twice. The random <em>model</em> is scored on training
+  targets and at the endpoint only; the random <em>teacher</em> is scored on held-out targets
+  across all four windows. They agree in direction, and that is all that may be read from them
+  jointly.</p>
+</section>
+
+<hr>
+<section id="boundaries">
+  <h2>Findings and their boundaries</h2>
+  <p class="note" style="margin-bottom:1.2rem">Every non-significant cell below is to be read as
+  <em>not detected at this power</em>, never as <em>equal</em>. The paper enforces that rule and
+  so does this page.</p>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Result</th><th>Estimate (95&nbsp;% CI)</th><th>Holds on</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>A constant-weight coach leads the frozen body model early
+            <span class="sub">EARLY window, held-out targets.</span></td>
+          <td class="n">&minus;50.56 [&minus;72.36, &minus;28.76] mrad<br>&minus;11.7 [&minus;19.3, &minus;4.1] mm</td>
+          <td><span class="tag hit">both bodies</span></td>
+        </tr>
+        <tr>
+          <td>Cutting the coach at 8k is costly
+            <span class="sub">On myoFinger the withdrawn agent ends worse than one that never
+            had a coach. <b>Cutting the body model is not shown to cost anything</b> &mdash; that
+            interval contains zero and is wide enough to contain the study's own headline effect,
+            so it bounds nothing.</span></td>
+          <td class="n">+16.0 mrad<br>+46.4 mm</td>
+          <td><span class="tag hit">both bodies</span></td>
+        </tr>
+        <tr>
+          <td>The lead decays, and on myoFinger reverses by the endpoint
+            <span class="sub">Carried by the last 2k of a 12k budget, and not a verified
+            asymptote. Survives four of six multiplicity families; fails the strictest, and the
+            paper prints it failing.</span></td>
+          <td class="n">interaction +38.7 / +31.7<br>endpoint +32.3 [+16.5, +48.1] mm</td>
+          <td><span class="tag">finger only</span></td>
+        </tr>
+        <tr>
+          <td>An actively wrong aid does not substitute for a right one &mdash; on either route
+            <span class="sub">A random-initialised model loses to the babble-trained one on both
+            bodies. A random-initialised teacher in the identical distillation loss does not
+            reproduce the coach's early gain, and is worse than no teacher at all on myoElbow
+            (+49.6 [+23.4, +75.8] mrad).</span></td>
+          <td class="n">model &minus;49.3 / &minus;40.8<br>teacher &minus;108.6 / &minus;19.0</td>
+          <td><span class="tag hit">survives every correction family</span></td>
+        </tr>
+        <tr>
+          <td>Freezing the model, which the title commits to, is not detected to change anything
+            <span class="sub">Tested on its own body at 12 matched seeds. The interval is narrow
+            against that arm's own &minus;25.5&nbsp;mrad effect over model-free RL &mdash; which
+            is what makes this null informative rather than merely underpowered.</span></td>
+          <td class="n">+0.68 [&minus;2.64, +4.01] mrad</td>
+          <td><span class="tag hit">tight null</span></td>
+        </tr>
+        <tr class="off">
+          <td>An aid still attached compresses seed-to-seed spread</td>
+          <td class="n">3 of 4 cells on SD<br>2 of 4 on scale-free CV</td>
+          <td><span class="tag">post hoc</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="box mark">
+    <h3>Two scope statements that travel with every number above</h3>
+    <ul>
+      <li>Every claim of the form <em>&ldquo;beats model-free RL&rdquo;</em> on this page is a
+      <b>myoElbow</b> claim. On myoFinger no condition is shown to beat model-free SAC at the
+      endpoint, the coach included.</li>
+      <li>The frozen-body-model arm reads the environment's <b>analytic reward function</b> on
+      its imagined states. That is information the other arms do not receive: this route gets
+      both a body model <em>and</em> a known reward function, and its results are scoped
+      accordingly.</li>
+    </ul>
+  </div>
+</section>
+
+<hr>
+<section>
+  <h2>Where it stops</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Body</th><th>Joints</th><th>Muscles</th><th>Budget</th><th>Result</th></tr></thead>
+      <tbody>
+        <tr><td>myoElbow</td><td class="n">1</td><td class="n">6</td><td class="n">12,000</td>
+            <td>Both aids beat model-free RL at the endpoint</td></tr>
+        <tr><td>myoFinger</td><td class="n">4</td><td class="n">5</td><td class="n">12,000</td>
+            <td>No condition beats model-free RL; the two routes still separate</td></tr>
+        <tr class="off"><td>myoHand</td><td class="n">23</td><td class="n">39</td><td class="n">60,000</td>
+            <td>No improvement detected on either arm</td></tr>
+        <tr class="off"><td>myoArm</td><td class="n">&mdash;</td><td class="n">34</td><td class="n">10,000</td>
+            <td>Single seed, truncated; carries no claim</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note" style="margin-top:1.2rem;margin-left:0">The paper opens by noting that
+  muscle-actuated bodies can need hundreds of millions of environment steps. It trains for twelve
+  thousand. Whether the larger bodies fail because the method does not scale, or because the
+  budget does not, is a question these data cannot separate &mdash; and the paper says so rather
+  than reporting the two small bodies alone.</p>
+</section>
+
+<hr>
+<section id="method">
+  <h2>Method</h2>
+  <div style="color:var(--ink-2)">
+    <p>One SAC backbone, 12,000 environment steps, 12 matched seeds per condition, and held-out
+    target sets disjoint from the training targets. The body model is an MLP forward model
+    learned once from task-agnostic, reward-free motor babbling, then frozen and used for
+    short-horizon Dyna rollouts. The coach is a frozen teacher policy supplying an auxiliary
+    distillation loss.</p>
+    <p>Six controls make the two routes comparable: a random-initialised frozen model in
+    identical machinery, clean-teacher retraining, a non-annealed constant-weight coach, a strict
+    body-model withdrawal with the imagined-transition buffer purged, an abrupt-cut coach matched
+    to that withdrawal, and the combined arm under the constant schedule.</p>
+  </div>
+
+  <div class="figrow" style="margin-top:2rem">
+    <figure class="fig">
+      <img src="../assets/motor-prior/fig12_crossover_clean.png" alt="The crossover on myoFinger, four panels">
+      <p class="cap"><b>The crossover on myoFinger</b>, across the four evaluation windows.</p>
+    </figure>
+    <figure class="fig">
+      <img src="../assets/motor-prior/fig10_withdrawal_clean.png" alt="The matched withdrawal experiment">
+      <p class="cap"><b>The matched withdrawal.</b> Each aid cut at a common training step.</p>
+    </figure>
+  </div>
+</section>
+
+<hr>
+<section id="checked">
+  <h2>What was run, and how it was checked</h2>
+  <div class="stats">
+    <div><span class="big">541</span>
+      <h3>training runs</h3>
+      <p>Across 25 matched conditions on two bodies. Seven of the ten condition types exist only
+      to remove a confound from the other three &mdash; a random-model twin, a constant-weight
+      coach, matched withdrawals, and teachers retrained without a body prior in the loop.</p></div>
+    <div><span class="big">0</span>
+      <h3>rewards seen by the body model</h3>
+      <p>The babble data is task-agnostic and reward-free &mdash; uniform random muscle
+      activation, recorded before any task exists. 200,000 transitions on myoFinger, 300,000 on
+      myoHand.</p></div>
+    <div><span class="big">330</span>
+      <h3>numbers recomputed</h3>
+      <p>Rebuilt from the raw per-seed files, bypassing the statistics tables entirely. All
+      matched. Four archived results were re-derived end to end; two returned bit-identical,
+      including one arm whose launcher was never archived.</p></div>
+    <div><span class="big">16</span>
+      <h3>citation errors found and fixed</h3>
+      <p>All 29 references resolved; the 27 whose full text we could obtain were read against
+      what we claimed they said. One was credited with a mechanism its own abstract disowns; one
+      was cited for a claim its text defines in the opposite direction.</p></div>
+  </div>
+  <p class="note" style="margin-top:1.4rem;margin-left:0"><b>Five claims were withdrawn</b>
+  in the course of this, in every case after the control that tested them was run. Multiplicity
+  is reported over six family definitions, including the strictest one &mdash; the only one the
+  headline result fails. The paper also keeps a body that disagrees with it (myoHand), a
+  checkpoint with no archived build record, and a condition list with no launcher script.</p>
+</section>
+
+<footer>
+  <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua (Maurice) Wang
+  &middot; <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
+  <p style="margin-top:.6rem">Rollout videos are myoFinger, four training seeds, evaluated on
+  held-out targets under the same greedy action rule used throughout the study.</p>
+</footer>
+
+
+
+</div>
+</body>
+</html>

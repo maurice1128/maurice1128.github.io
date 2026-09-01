@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV &mdash; Mu-Hua (Maurice) Wang</title>
+<meta name="description" content="Curriculum vitae — Mu-Hua (Maurice) Wang. Physical assistive robotics for long-term care.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+
+<nav>
+  <ul>
+    <li class="back"><a href="index.html">&larr; Home</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<header>
+  <p class="note">Curriculum vitae</p>
+  <h1>Mu-Hua (Maurice) Wang</h1>
+  <p class="contactline" style="margin-top:1rem">
+    <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a> &middot;
+    +886 931 250 860 &middot; Taipei, Taiwan
+  </p>
+  <div class="links">
+    <a href="assets/cv/WangMuHua_CV_2page.pdf">[Download PDF, 2 pages]</a>
+    <a href="assets/cv/WangMuHua_CV_full.pdf">[Download PDF, full]</a>
+    <a href="index.html">[Project pages]</a>
+    <a href="mailto:mauricewang1128@gmail.com">[Email]</a>
+  </div>
+</header>
+
+<hr>
+<section>
+  <h2>Research interest</h2>
+  <div style="color:var(--ink-2)">
+    <p><b>Physical assistive robotics for long-term care.</b> I want to build robots that carry
+    out contact-rich care tasks on a bedridden human body &mdash; starting with diaper changing, a
+    task that demands three things at once: perceiving a body that will not cooperate, predicting
+    how that body moves when it is touched, and manipulating deformable material safely against
+    skin.</p>
+    <p>My work so far covers all three. I have built and clinically validated a markerless human
+    motion capture system, written learned dynamics models of musculoskeletal bodies, and measured
+    whether compositional motion priors survive transfer to a robot hand. I am looking for a lab
+    where these can be assembled into a machine that does the task.</p>
+  </div>
+</section>
+
+<hr>
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="cvrow">
+    <div class="when">Feb 2025 &ndash;<br>on leave since May 2025</div>
+    <div>
+      <h3>M.S., Biomedical Engineering</h3>
+      <p class="where">National Yang Ming Chiao Tung University, Taipei</p>
+      <p>On an approved leave of absence, enrollment retained. I took leave to move from measuring
+      human movement to building systems that act on it &mdash; taught full time through the
+      leave while producing three sole-author robot-learning manuscripts, and now research full
+      time.</p>
+    </div>
+  </div>
+
+  <div class="cvrow">
+    <div class="when">Sep 2020 &ndash; Jun 2024</div>
+    <div>
+      <h3>B.S., Biomedical Engineering</h3>
+      <p class="where">National Yang Ming Chiao Tung University, Taipei</p>
+      <ul>
+        <li>GPA <b>3.72 / 4.30</b>; final two years <b>4.07 / 4.30</b></li>
+        <li><b>IELTS 8.0 overall</b> &mdash; Reading 9.0, Listening 8.5, Speaking 7.5, Writing 7.0</li>
+        <li>Coursework: Deep Learning for Biomedical Data Analysis; Neural Engineering; Brain and
+        Physiological Signal Analysis; Smart Medical Device Mechanical Design; Medical Device
+        Regulatory Affairs</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr>
+<section id="research">
+  <h2>Research experience</h2>
+
+  <div class="cvrow">
+    <div class="when">Oct 2025 &ndash; present</div>
+    <div>
+      <h3>Robot learning and embodied AI &mdash; independent research</h3>
+      <p class="where">Sole author on all three manuscripts</p>
+      <p>A self-directed programme on one question: how does an agent acquire a model of a body,
+      and what does that model actually buy? Design, implementation, experiments, statistics and
+      writing done independently. Every result carries adversarial controls and
+      multiple-comparison correction, and the negative findings are reported as findings.</p>
+      <ul>
+        <li><a href="projects/motor-prior.html"><b>Two Routes to a Motor Prior: Guidance versus a
+        Frozen Body Model.</b></a> A frozen babble-learned forward model against a distilled
+        teacher policy under one SAC backbone on MyoSuite bodies, with seven controls and a
+        matched withdrawal at a common training step. Guidance buys the early speed
+        (&minus;50.6&nbsp;mrad on myoElbow, &minus;11.7&nbsp;mm on myoFinger) but its lead
+        reverses inside the budget on one body. n&nbsp;=&nbsp;12 matched seeds, Holm&ndash;Bonferroni
+        across six explicitly stated family definitions, with the cells that fail some definitions
+        reported as failing.</li>
+
+        <li><a href="projects/hand-composition.html"><b>Which Hand-Motion Composition Axes Are
+        Worth Measuring.</b></a> Built the measurement that modular motion priors assume but
+        rarely test: a paired split holding out compositions, six axes over three hand datasets,
+        five gates, plus a raw-data interaction statistic computable before any model is trained.
+        <b>Compositional difficulty appears only where the two factors interact</b> &mdash; scoped
+        as one-sided evidence, since only one of the six axes could have falsified the direction,
+        and with sufficiency demonstrably false. Reported against my own result: the statistic
+        detects presence well and predicts magnitude badly, and on a Shadow Hand 16 of 17
+        comparisons fail to separate novel compositions from familiar ones. A side result of
+        independent value: inferring MANO&rarr;anatomical axis conventions <em>per joint</em>
+        instead of assuming them took OakInk2's PIP joints from 37.3&nbsp;% to 99.9&nbsp;% inside
+        anatomical range.</li>
+
+        <li><a href="projects/body-codes.html"><b>What Master-Then-Reorganise Does Not Buy: An
+        Invariance Argument for Body Codes.</b></a> With the core frozen and only a body code
+        &theta; adapted, &theta;&nbsp;&rarr;&nbsp;<em>M</em>&theta; with
+        <em>W</em><sub>&theta;</sub><em>M</em><sup>&minus;1</sup> preserves the function, so
+        adaptation under an equivariant rule cannot change held-out error. Built a re-encoding
+        that is the identity at every training code &mdash; preserving leave-one-body-out
+        decodability by construction, 0.000 across 20 seeds &mdash; yet still costing
+        +0.875&nbsp;mm: a counterexample to decodability as a proxy for representation quality.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cvrow">
+    <div class="when">Oct 2023 &ndash; Sep 2025<br><span style="color:var(--ink-3)">RA to Sep 2024,<br>team lead thereafter</span></div>
+    <div>
+      <h3>RGB multi-view 3D markerless motion capture &mdash; NYCU</h3>
+      <p class="where">Advisor: Prof. Hui-Ting Shih</p>
+      <p>Real-time whole-body pose sensing for clinical use &mdash; the perception layer a robot
+      working over a bed has to have. I wrote the pipeline, ran the validation experiments, and
+      collected the clinical data myself.</p>
+      <ul>
+        <li><b>Built the real-time pipeline end to end.</b> GPU acceleration and CPU parallelism
+        across capture, inference, triangulation and inverse kinematics; DLT triangulation with
+        occlusion handling; and <b>ROWV</b>, an outlier-rejection algorithm for small-sample
+        settings, faster and more accurate than KNN and RANSAC on this problem.</li>
+        <li><b>Ran the validation experiments myself.</b> VICON comparison over 21 participants,
+        plus a study over 104 walking trials from 11 participants on a nine-camera ring showing
+        that per-joint verdicts between triangulation variants depend on the joint-centre offset
+        they contain.</li>
+        <li><b>Asked how much sensing error the downstream decision can absorb</b> &mdash;
+        forward-dynamic simulation with a Geyer&ndash;Herr reflex controller over 66 design cells,
+        showing identification of a weak muscle group falls from 0.845 to 0.549 as joint-angle
+        error grows 0&deg;&nbsp;&rarr;&nbsp;12&deg;. (<a href="projects/capture-error.html">project
+        page</a>)</li>
+        <li><b>Ran the field data collection.</b> 200+ stroke and knee-pain patients in Vietnam;
+        40+ stroke patients with exoskeleton at Kaohsiung Chang Gung Memorial Hospital; 20+ elderly
+        participants at a Kaohsiung daycare centre; real-time feedback trials with lower-limb
+        amputees at NYCU Physical Therapy and Assistive Technology. Hospital wards, clinics and
+        daycare centres, not a laboratory.</li>
+        <li><b>Shipped the whole product</b>, not only the algorithm: clinician-facing PyQt6 GUI,
+        SQL and cloud pipeline with ICD-10 coding for longitudinal and cross-sectional search, and
+        an Unreal Engine rehabilitation game.</li>
+        <li><b>Led a 5-person R&amp;D team</b> in the second year and drove the system into
+        clinical deployment: 4 conference presentations and 6 media features (CNA, PTS News,
+        Yahoo! News Taiwan, iThome, OCAC, NYCU).</li>
+        <li><b>Ran the collaborations</b>, across institutions that do not normally open up to a
+        student: 2 signed MOUs (Taipei Veterans General Hospital; Taipei City Hospital), Kaohsiung
+        Chang Gung Memorial Hospital, the Institute for Information Industry, an international site
+        in Vietnam, a community daycare centre and a private clinic in Kaohsiung, a
+        sports-performance company, and NYCU Physical Therapy and Assistive Technology.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cvrow">
+    <div class="when">Jan 2023 &ndash; present</div>
+    <div>
+      <h3>Circular-geometry representation of behavioural trajectories</h3>
+      <p class="where">Taoyuan General Hospital &middot; Advisor: Dr. Tso-Jeng Wang</p>
+      <p>A methods problem disguised as a clinical one: the discriminating feature of a dose
+      trajectory is its <em>shape</em>, but shape is confounded with magnitude and lives on a space
+      that Euclidean clustering gets wrong.</p>
+      <ul>
+        <li><b>Built the representation.</b> Normalised each daily consumed-dose series to its own
+        value seven days earlier, took the extreme three-day moving-window slopes on each side of
+        the test, and mapped the (post, pre) slope pair to a polar angle
+        &theta;&nbsp;=&nbsp;atan2(post,&nbsp;pre). Shape becomes comparable independent of absolute
+        magnitude, and the feature space becomes a torus.</li>
+        <li><b>Clustered on the manifold, not in the plane.</b> Fitted a bivariate (product) von
+        Mises mixture by EM on the circle. For the stable-dose branch, reduced 114 variables by PCA
+        and cut a circular kernel-density estimate at its valleys. Nine patterns emerged, spanning
+        positive/negative occurrence ratios 1.64 to 0.50.</li>
+        <li><b>Attacked my own result.</b> Outcome-blind re-clustering, 500 bootstrap refits per
+        branch, within-patient conditional logistic regression, restriction to windows containing
+        no interpolated day, and reporting across K&nbsp;=&nbsp;4&ndash;8 because K was an
+        investigator choice and no criterion selected it.</li>
+        <li><b>Reported what did not survive.</b> Post-test escalation magnitude (OR
+        1.36&nbsp;&rarr;&nbsp;1.06 within patients) is not claimed; the stable-dose branch is
+        labelled exploratory; the association did not replicate across a temporal split; and the
+        trajectory adds essentially nothing predictive over attendance. Pre-test escalation did
+        survive, and strengthened (1.15&nbsp;&rarr;&nbsp;1.26 per SD,
+        p&nbsp;=&nbsp;3&nbsp;&times;&nbsp;10<sup>&minus;7</sup>).</li>
+        <li>Scale: 9,900 analysable urine tests from 552 patients over 2018&ndash;2022, from a
+        20,108-record extract; an earlier phase covered 1,000+ patients from the Taiwan National
+        Health Insurance Database.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cvrow">
+    <div class="when">Oct 2022 &ndash; Oct 2023</div>
+    <div>
+      <h3>EEG and EMG sleep&ndash;epilepsy semi-automated analysis &mdash; NYCU</h3>
+      <p class="where">Advisor: Prof. You-Yin Chen</p>
+      <ul>
+        <li>Built a signal pipeline processing 24-hour recordings in 3 minutes (detrending,
+        downsampling, filter design, time&ndash;frequency conversion, outlier detection) with
+        automatic WAKE / NREM / REM staging from band-specific energy features, plus a
+        manual-scoring GUI for cross-labeler consistency.</li>
+        <li>Designed a surgical modification that raised EMG signal-to-noise ratio at the source.
+        Collaboration with Hualien Tzu Chi Hospital and Taipei Medical University.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr>
+<section id="publications">
+  <h2>Publications and manuscripts</h2>
+  <h3 style="margin-bottom:.8rem">Peer-reviewed conference papers</h3>
+  <ol class="pubs">
+    <li><b>Wang, M.-H.</b>, Tsai, K.-T., Chen, B.-H., Huang, L.-W., Tsai, C.-H., Hsu, C.-S., &amp; Chen, Y.-Y.
+      <em>Markerless Gait Analysis for Lower Back Pain: A Cost-Effective Solution to Assess
+      Pelvis&ndash;Trunk Coordination.</em>
+      <span class="venue">SEMBA 2025 &middot; first author</span></li>
+    <li>Huang, L.-W., <b>Wang, M.-H.</b>, Chen, B.-H., Su, K.-H., Tsai, C.-H., Chen, Y.-Y., &amp; Shih, H.-T.
+      <em>A Real-Time Algorithm for Detecting Gait Events in Lower-Limb Prosthesis Users Using a
+      Markerless Motion Capture System.</em>
+      <span class="venue">ASB 2025</span></li>
+    <li>Huang, A.-Y., <b>Wang, M.-H.</b>, Huang, L.-W., Chen, B.-H., Wang, H.-H., Kuo, C.-H., Lu, S.-W., &amp; Lo, Y.-C.
+      <em>Spatiotemporal Cortical-Synergy Connectivity in the Gait Cycle.</em>
+      <span class="venue">SEMBA 2025</span></li>
+    <li>Chang, C.-W., <b>Wang, M.-H.</b>, Lin, Y.-C., Wang, C.-Y., Li, S.-J., Chen, T.-C., Liang, Y.-W.,
+      Chen, C.-T., Chen, Y.-Y., &amp; Lin, S.-H.
+      <em>Investigating the Effect of Central Thalamic Deep Brain Stimulation on Sleep in an
+      Alzheimer's Disease Model.</em>
+      <span class="venue">ISMRM 2024</span></li>
+    <li>Chen, B.-H., Tsai, C.-H., Huang, L.-W., <b>Wang, M.-H.</b>, Hsu, C.-S., &amp; Chen, Y.-Y.
+      <em>Robust Self-Occlusion Mitigation for Enhanced Accuracy in Multi-View 3D Markerless
+      Motion Capture Systems.</em>
+      <span class="venue">ICMST 2024</span></li>
+  </ol>
+
+  <h3 style="margin:2.2rem 0 .5rem">Manuscripts</h3>
+  <p class="note" style="margin-bottom:1rem">Full drafts available on request. None is posted to a
+  preprint server; nothing below is published.</p>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Manuscript</th><th>Role</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td><a href="projects/motor-prior.html">Two Routes to a Motor Prior: Guidance Versus a Frozen Body Model</a></td>
+            <td class="n">sole author</td><td><span class="tag hit">draft</span></td></tr>
+        <tr><td><a href="projects/hand-composition.html">Which Hand-Motion Composition Axes Are Worth Measuring</a></td>
+            <td class="n">sole author</td><td><span class="tag hit">under review</span></td></tr>
+        <tr><td><a href="projects/body-codes.html">What Master-Then-Reorganise Does Not Buy: An Invariance Argument for Body Codes and Its Two Boundaries</a></td>
+            <td class="n">sole author</td><td><span class="tag hit">draft</span></td></tr>
+        <tr><td><a href="projects/capture-error.html">How Much Joint-Angle Error Can the Identification of a Weak Muscle Group Tolerate? A Predictive-Simulation Study</a> &middot; with H.-T. Shih</td>
+            <td class="n">first author</td><td><span class="tag hit">under review</span></td></tr>
+        <tr><td>Per-Joint Position Verdicts Between Markerless Triangulation Variants Depend on the Joint-Centre Offset They Contain</td>
+            <td class="n">first author</td><td><span class="tag">in preparation</span></td></tr>
+        <tr><td><a href="projects/spasticity.html">Distinguishing Graded Plantarflexor Hyperreflexia from Graded Dorsiflexor Weakness in Simulated Post-Stroke Gait: A Search over 81 Sagittal Kinematic Variables</a></td>
+            <td class="n">first author</td><td><span class="tag">in preparation</span></td></tr>
+        <tr><td>Validation of the NTKCAP Markerless Motion Capture System in Gait Kinematics</td>
+            <td class="n">first author</td><td><span class="tag">in preparation</span></td></tr>
+        <tr><td>Consumed Methadone Dose Patterns Around Randomly Scheduled Urine Testing: Pre-Test Escalation and Higher-Risk Trajectories in Long-Retained Maintenance Patients &middot; with T.-J. Wang</td>
+            <td class="n">first author</td><td><span class="tag">in preparation</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr>
+<section id="teaching">
+  <h2>Teaching</h2>
+  <div class="cvrow">
+    <div class="when">Feb &ndash; Aug 2026</div>
+    <div>
+      <h3>Physical Science teacher, Grade 8</h3>
+      <p class="where">Tamkang High School, New Taipei</p>
+      <p>Taught the full Grade-8 physical science curriculum to two of the grade's eight classes.</p>
+      <ul>
+        <li><b>Class 8 finished 2nd of eight classes on the third term exam, up from 3rd</b>, with
+        its mean margin over the school average widening from +5.1 to +11.8 points across three
+        term exams.</li>
+        <li><b>The gain came from the bottom of the distribution, not the top.</b> By the third
+        exam, Class 8's bottom-quartile cutoff (78) had reached the school-wide median, and its
+        bottom-12&nbsp;% cutoff stood 28 points above the school's &mdash; up from a 14-point gap
+        on the first exam.</li>
+        <li>Class 8 held the second-narrowest score spread in the grade (SD 15.07 against a
+        school-wide 21.86): the class improved by pulling up students who were behind, not by
+        stretching students already ahead.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr>
+<section id="skills">
+  <h2>Technical skills</h2>
+  <div class="tw">
+    <table>
+      <tbody>
+        <tr><td style="width:14rem"><b>Languages</b></td>
+            <td>Python (advanced), MATLAB (advanced), C/C++ (intermediate)</td></tr>
+        <tr><td><b>ML / RL</b></td>
+            <td>PyTorch, TensorFlow; SAC and Dyna-style model-based RL; policy distillation; world
+            models; CNN/VGG; LSTM</td></tr>
+        <tr><td><b>Robotics &amp; simulation</b></td>
+            <td>MyoSuite; musculoskeletal forward dynamics; Geyer&ndash;Herr reflex control; Shadow
+            Hand; inverse kinematics; DLT triangulation; Unreal Engine</td></tr>
+        <tr><td><b>High-performance computing</b></td>
+            <td>CuPy, Numba, multiprocessing, GPU acceleration, CPU affinity and priority tuning</td></tr>
+        <tr><td><b>Statistics &amp; experiment design</b></td>
+            <td>Matched-seed paired-<em>t</em> designs; Holm&ndash;Bonferroni with stated family
+            definitions; FDR control; von Mises / directional statistics; bootstrap
+            reproducibility; cluster-robust and conditional logistic regression; adversarial and
+            negative controls; pre-registered checks</td></tr>
+        <tr><td><b>Systems</b></td>
+            <td>PyQt6, SQL, cloud data pipelines, ICD-10 clinical coding</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr>
+<section>
+  <h2>Honors and awards</h2>
+  <div class="cvrow">
+    <div class="when">Fall 2023</div>
+    <div>
+      <h3>2nd Place &mdash; Youth AI Startup Collaborative Hackathon</h3>
+      <p class="where">Ministry of Digital Affairs, Taipei &middot; prize US$1,000</p>
+      <p>Led a team building the business model and commercialization path for a markerless
+      visible-light motion capture system.</p>
+    </div>
+  </div>
+  <div class="cvrow">
+    <div class="when">Fall 2023</div>
+    <div>
+      <h3>1st Place &mdash; Competition for Innovative Proposals in Elderly Leisure, Health and
+      Technology Practices</h3>
+      <p class="where">National Chi Nan University, Nantou &middot; prize US$340</p>
+      <p>Proposed a fall-detection and emotional-gait-recognition model for elderly care.</p>
+    </div>
+  </div>
+</section>
+
+<hr>
+<section>
+  <h2>Leadership and activities</h2>
+  <div class="cvrow">
+    <div class="when">Fall 2024 &ndash; Fall 2025</div>
+    <div><h3>Leader, Rural Service Team</h3>
+      <p>Led two 3-day service camps in Tamsui and Fenglin combining educational workshops with
+      community service.</p></div>
+  </div>
+  <div class="cvrow">
+    <div class="when">Fall 2022</div>
+    <div><h3>Chief Organizer, Biomedical Engineering &amp; Nursing Student Camp</h3>
+      <p>50 students across two disciplines.</p></div>
+  </div>
+  <div class="cvrow">
+    <div class="when">Fall 2024</div>
+    <div><h3>Graduation Representative</h3></div>
+  </div>
+  <div class="cvrow">
+    <div class="when">Fall 2021</div>
+    <div><h3>Founder &amp; President, ToGather Music (YouTube)</h3>
+      <p>Built a team of 3 producers and 5 vocalists, designed and built a recording studio,
+      composed and published 13 original songs.</p></div>
+  </div>
+</section>
+
+<footer>
+  <p><a href="index.html">&larr; Back to the homepage</a> &middot; Mu-Hua (Maurice) Wang &middot;
+  <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
+</footer>
+
+
+
+</div>
+</body>
+</html>
