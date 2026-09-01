@@ -1,0 +1,57 @@
+==========================================================================
+CAPTURE ERROR 2 deg   (camera tier, 8 seeds, leave-one-body-out)
+==========================================================================
+
+CONFUSION: rows = imposed weakness, columns = what the system said (%)
+         imposed |      PF     DF     KE     KF     HF     n
+                 +------------------------------------------
+  plantarflexors |     90      1      6      3      .    120
+    dorsiflexors |      .     84      .      2     13    120
+  knee extensors |     22     10     60      8      .     80
+    knee flexors |      .     14      .     69     18     96
+     hip flexors |      .      .      .      .    100    112
+
+Most frequent misidentifications (share of all conditions):
+    knee extensors called plantarflexors     3.4 %
+      knee flexors called hip flexors        3.2 %
+      dorsiflexors called hip flexors        3.0 %
+      knee flexors called dorsiflexors       2.5 %
+
+ACCURACY BY IMPOSED SEVERITY (the clinically decisive breakdown)
+  force loss    top-1    top-3      n
+         20 %    0.610    0.970    200
+         40 %    0.948    1.000    192
+         60 %    0.963    1.000    136
+  baselines: majority-class top-1 0.227 / top-3 0.667
+
+==========================================================================
+CAPTURE ERROR 8 deg   (camera tier, 8 seeds, leave-one-body-out)
+==========================================================================
+
+CONFUSION: rows = imposed weakness, columns = what the system said (%)
+         imposed |      PF     DF     KE     KF     HF     n
+                 +------------------------------------------
+  plantarflexors |     90      .      9      1      .    120
+    dorsiflexors |     12     50      .     17     21    120
+  knee extensors |     39      5     38     19      .     80
+    knee flexors |      .     23      .     57     20     96
+     hip flexors |     21      8      .     14     57    112
+
+Most frequent misidentifications (share of all conditions):
+    knee extensors called plantarflexors     5.9 %
+      dorsiflexors called hip flexors        4.7 %
+       hip flexors called plantarflexors     4.4 %
+      knee flexors called dorsiflexors       4.2 %
+
+ACCURACY BY IMPOSED SEVERITY (the clinically decisive breakdown)
+  force loss    top-1    top-3      n
+         20 %    0.480    0.855    200
+         40 %    0.562    0.958    192
+         60 %    0.831    1.000    136
+  baselines: majority-class top-1 0.227 / top-3 0.667
+
+READING GUIDE
+  If accuracy at 20 % force loss is near baseline, the aggregate number is carried by the
+  severe cells and the method does not address the case where it would change management.
+  If the confusion matrix is concentrated in one or two off-diagonal cells, those specific
+  substitutions - not the aggregate - are what a clinician must be warned about.

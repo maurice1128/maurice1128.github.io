@@ -1,0 +1,14 @@
+=== THE PLANTARFLEXOR EXEMPLAR QUOTED IN SECTION 3.1 ===
+Terminal-stance peak plantarflexion, base body, 60 % plantarflexor force loss.
+Terminal stance is the last 40 % of each stance, averaged over strides, as defined in
+face_validity_phase.py. Negative is plantarflexion.
+
+  paretic (left)                   -1.1 deg
+  sound (right)                   -10.0 deg
+  same body, unimpaired left      -10.0 deg
+
+The sound side and the unimpaired left limb both round to -10.0 deg. That is a coincidence of
+rounding between two different measurements, not one measurement used twice.
+
+Whole-cycle minima for the same condition are in face_validity.txt and differ, because that
+is a different window. Quantities from the two windows must not be mixed in one sentence.

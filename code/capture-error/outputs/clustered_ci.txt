@@ -1,0 +1,18 @@
+=== MARGINAL VALUE OF THE FORCE PLATE: CONDITION-LEVEL vs BODY-LEVEL BOOTSTRAP ===
+The body is the unit that would be redrawn if the study were repeated, and it is also the
+cross-validation fold. Resampling conditions treats them as independent; resampling bodies
+does not. The second is the honest interval.
+
+ error     gain      per-condition 95% CI         per-BODY 95% CI  survives
+   0.0   +0.032   [-0.021, +0.087]        [-0.041, +0.082]        no
+   2.0   -0.002   [-0.081, +0.074]        [-0.071, +0.055]        no
+   5.0   +0.116   [+0.002, +0.231]        [+0.058, +0.179]       yes
+   8.0   +0.159   [+0.049, +0.273]        [+0.076, +0.234]       yes
+  12.0   +0.182   [+0.066, +0.295]        [+0.112, +0.252]       yes
+
+=== WHAT MAY BE CLAIMED AFTER THE CORRECTION ===
+  the force plate still adds information at: 5 deg, 8 deg, 12 deg
+
+  n = 5 bodies is a very small number of clusters; a body-level
+  bootstrap is itself unstable at this sample size, and the honest reading of both intervals
+  together is that the direction is consistent and the magnitude is not well determined.

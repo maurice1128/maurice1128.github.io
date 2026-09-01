@@ -1,0 +1,22 @@
+=== DOES EACH FACE-VALIDITY DIRECTION HOLD ACROSS ALL CONDITIONS? ===
+"vs non-paretic" is the contrast Table 1 prints. "vs own healthy" asks whether the weakness
+changed the paretic limb at all, against the same body's unimpaired solution.
+
+  PF  ankle excursion falls
+       vs non-paretic  6/15   vs own healthy  4/15   [20%:3/5  40%:0/5  60%:3/5]
+  PF  peak plantarflexion reduced
+       vs non-paretic 11/15   vs own healthy 12/15   [20%:3/5  40%:3/5  60%:5/5]
+  DF  peak dorsiflexion reduced
+       vs non-paretic 13/15   vs own healthy  5/15   [20%:4/5  40%:5/5  60%:4/5]
+  KE  knee flexes further under load
+       vs non-paretic  9/10   vs own healthy 10/10   [20%:5/5  40%:3/4  60%:1/1]
+  KF  knee hyperextends
+       vs non-paretic 12/12   vs own healthy  8/12   [20%:5/5  40%:5/5  60%:2/2]
+  KF  swing flexion little changed
+       vs non-paretic  7/12   vs own healthy  3/12   [20%:4/5  40%:2/5  60%:1/2]
+  HF  peak hip flexion reduced
+       vs non-paretic 14/14   vs own healthy 14/14   [20%:5/5  40%:5/5  60%:4/4]
+
+READING: a row that holds in a minority cannot be reported as "the simulated deviation",
+and a row that holds against the contralateral limb but not against the body's own healthy
+gait is a non-paretic-side effect, not the mechanism the cited literature describes.

@@ -1,0 +1,10 @@
+=== LEAVE-ONE-BODY-OUT TRAINING FOLD SIZES (S11) ===
+  accepted conditions: 66
+    base   14 conditions   -> training fold  52 conditions,  208 rows
+    s1     13 conditions   -> training fold  53 conditions,  212 rows
+    s2     11 conditions   -> training fold  55 conditions,  220 rows
+    s3     14 conditions   -> training fold  52 conditions,  208 rows
+    s4     14 conditions   -> training fold  52 conditions,  208 rows
+  training fold range: 52-55 conditions, 208-220 rows after 4 noise realisations
+  arithmetic floor (a body holds at most 5 groups x 3 severities = 15): 51
+  features: 33 (camera tier) or 51 (camera + force plate)

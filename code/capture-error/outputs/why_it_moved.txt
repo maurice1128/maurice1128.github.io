@@ -1,0 +1,45 @@
+=== WHY DID THE NUMBERS MOVE? ===
+conditions 71   capture error 2 deg   seeds 6
+sev   20  40  60
+subj            
+base   5   5   4
+s1     5   5   5
+s2     5   5   3
+s3     5   5   5
+s4     5   5   4
+
+--- P1: accuracy of each body when it is the held-out body ---
+  body    n   camera   +plate  plate value
+  base   14    0.810    0.857       +0.048
+    s1   15    0.711    0.733       +0.022
+    s2   13    0.705    0.705       +0.000
+    s3   15    0.889    0.911       +0.022
+    s4   14    0.857    0.964       +0.107
+
+  s2 camera accuracy 0.705 vs mean of the others 0.817
+  P1 SUPPORTED: s2 is the hardest body
+
+--- P2: mild-severity accuracy with and without s2 ---
+ severity  all bodies  without s2  difference
+      20%       0.647       0.658      +0.012
+      40%       0.840       0.850      +0.010
+      60%       0.921       0.954      +0.033
+
+  (these are the same folds; only which conditions are SCORED differs, so this isolates
+   "s2 conditions are harder" from "training on s2 changes the model")
+
+--- P2b: retrained with s2 removed from training as well ---
+  overall top-1 all bodies 0.796   |   s2 removed entirely 0.790   difference -0.006
+
+--- P3: marginal value of the force plate, by body ---
+    base  +0.048
+      s1  +0.022
+      s2  +0.000
+      s3  +0.022
+      s4  +0.107
+
+  s2 +0.000 vs mean of the others +0.050
+  P3 NOT SUPPORTED: kinetics are not worth more on s2 than elsewhere
+
+VERDICT: the explanation stands only if P1, P2 and P3 all hold. Any that fails must be
+withdrawn rather than repeated, and the movement attributed to something else.

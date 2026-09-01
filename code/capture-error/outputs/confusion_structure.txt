@@ -1,0 +1,51 @@
+=== DOES THE CONFUSION STRUCTURE PERSIST AS ACCURACY FALLS? ===
+A simulation fingerprint would be present or destroyed. A graded physical deviation
+produces confusions between groups whose deviations resemble each other, and that
+resemblance is a property of the mechanics, so it should survive added error.
+
+--- 2 deg, rows = imposed, columns = predicted ---
+              PF      DF      KE      KF      HF
+  PF        0.90    0.00    0.07    0.03    0.00
+  DF        0.00    0.83    0.00    0.03    0.13
+  KE        0.23    0.10    0.60    0.07    0.00
+  KF        0.00    0.14    0.00    0.71    0.15
+  HF        0.00    0.00    0.00    0.00    1.00
+
+--- 5 deg, rows = imposed, columns = predicted ---
+              PF      DF      KE      KF      HF
+  PF        0.77    0.03    0.12    0.04    0.03
+  DF        0.12    0.53    0.00    0.16    0.19
+  KE        0.25    0.00    0.63    0.12    0.00
+  KF        0.00    0.21    0.00    0.64    0.15
+  HF        0.07    0.14    0.00    0.07    0.71
+
+--- 8 deg, rows = imposed, columns = predicted ---
+              PF      DF      KE      KF      HF
+  PF        0.89    0.00    0.10    0.01    0.00
+  DF        0.12    0.50    0.00    0.17    0.21
+  KE        0.40    0.03    0.37    0.20    0.00
+  KF        0.00    0.22    0.00    0.57    0.21
+  HF        0.20    0.07    0.00    0.14    0.58
+
+--- 12 deg, rows = imposed, columns = predicted ---
+              PF      DF      KE      KF      HF
+  PF        0.93    0.00    0.07    0.00    0.00
+  DF        0.13    0.47    0.00    0.16    0.24
+  KE        0.45    0.02    0.22    0.20    0.12
+  KF        0.01    0.24    0.00    0.58    0.17
+  HF        0.21    0.19    0.00    0.17    0.43
+
+=== PERSISTENCE OF THE OFF-DIAGONAL PATTERN ===
+Spearman correlation between the off-diagonal cells of two error levels.
+The null is the same correlation after independently permuting one matrix.
+
+  comparison             rho        p   null rho (95th pct)
+  2 deg vs    5 deg   0.652   0.0019                 0.374
+  2 deg vs    8 deg   0.734   0.0002                 0.383
+  2 deg vs   12 deg   0.549   0.0122                 0.388
+
+READING: if the observed correlations sit well above the permutation null, the pattern
+of mistakes is a stable property of the mechanics rather than an artefact that appears
+and disappears with the noise level. That does not remove the circularity objection -
+only patient data can - but it does discriminate between the two explanations that
+objection conflates.

@@ -1,0 +1,24 @@
+=== S2 VALUES COMPUTED IN-SESSION, PERSISTED FOR AUDIT ===
+
+(a) Effect of removing body s2 on overall identification at 2 deg capture error,
+    camera tier, 8 classifier seeds, leave-one-body-out:
+      all five bodies : 0.824
+      without s2      : 0.789
+      difference      : -0.035   (above the 0.015 interpretability floor, and in the
+                                  OPPOSITE direction to the withdrawn explanation)
+
+(b) Spearman correlation of every asymmetry feature with analysed generation, n = 66:
+    (top six are printed by confound_test.py; all nine recomputed here)
+      A::ankle_angle_ROMd          rho vs analysed gen = -0.304  (p=0.013)
+      A::knee_angle_mind           rho vs analysed gen = +0.289  (p=0.019)
+      A::ankle_angle_mind          rho vs analysed gen = +0.231  (p=0.062)
+      A::knee_angle_ROMd           rho vs analysed gen = -0.191  (p=0.125)
+      A::hip_flexion_mind          rho vs analysed gen = +0.152  (p=0.223)
+      A::hip_flexion_ROMd          rho vs analysed gen = -0.130  (p=0.298)
+      A::hip_flexion_maxd          rho = -0.125  (p=0.316)
+      A::ankle_angle_maxd          rho = -0.081  (p=0.520)
+      A::knee_angle_maxd           rho = +0.066  (p=0.600)
+
+    Bonferroni alpha = 0.05/9 = 0.0056 -> no feature significant
+    Benjamini-Hochberg FDR at 0.05     -> no feature significant
+    uncorrected p < 0.05               -> 2 of 9

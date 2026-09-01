@@ -1,0 +1,38 @@
+=== SEVERITY INTERACTION UNDER BOTH RESAMPLING UNITS ===
+seeds 8, bootstrap draws 4000
+
+body                20 %        40 %        60 %   (mean 2->8 loss)
+  base           +0.000     -0.500     -0.375
+  s1             +0.275     -0.250     +0.000
+  s2             -0.400     -0.500     +0.188
+  s3             -0.175     -0.150     -0.281
+  s4             -0.350     -0.550     +0.000
+
+comparison        difference      95 % over conditions        95 % over bodies
+  40 % vs 20 %          -0.255   [-0.503, -0.010]  YES   [-0.450, -0.059] YES
+  40 % vs 60 %          -0.253   [-0.483, -0.020]  YES   [-0.517, -0.031] YES
+  60 % vs 20 %          -0.002   [-0.266, +0.246]  no    [-0.304, +0.342] no 
+
+--- the same two contrasts after equalising the mechanism mix ---
+Each stratum reweighted so every mechanism carries equal weight, then bootstrapped.
+comparison        reweighted      95 % over conditions        95 % over bodies
+  40 % vs 20 %          -0.260   [-0.519, -0.017]  YES   [-0.450, -0.073] YES
+  40 % vs 60 %          -0.193   [-0.456, -0.003]  YES   [-0.492, -0.015] YES
+
+--- the same two contrasts as a t interval on the five per-body losses ---
+At five clusters a percentile bootstrap is confined to the convex hull of the five body
+means, so when they agree in sign it cannot cross zero whatever the true uncertainty
+(cluster_degeneracy.py). The t interval can fail, so it is the one the paper reports.
+comparison                                   per-body losses     mean          t(4) 95 % CI
+  40 % vs 20 %     -0.500  -0.525  -0.100  +0.025  -0.200   -0.260   [-0.563, +0.043]  INCLUDES ZERO
+  40 % vs 60 %     -0.125  -0.250  -0.688  +0.131  -0.550   -0.296   [-0.704, +0.112]  INCLUDES ZERO
+
+READING: the claim is the conjunction "the moderate case loses more than the mild case AND
+more than the severe case". As an intersection-union test it needs both components to
+reject and needs no multiplicity widening. Under the strict unit that conjunction is
+  under the percentile bootstrap : supported
+  under the t interval           : NOT SUPPORTED
+
+The t interval is the one to report: it is the estimator used for Table 4, and it is the
+one that can fail at five clusters. The claim is rescoped to the observation - the moderate
+case shows the largest loss, in four bodies of five, without a separable difference.

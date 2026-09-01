@@ -1,0 +1,36 @@
+=== CAPTURE-QUALITY TOLERANCE ===
+noise model: STRUCTURED (offset 55% / drift 30% / white 15%)
+conditions 66 | the scale is the total per-joint error SD in degrees
+
+  error   camera t1     +- camera t3    +plate t1 +plate t3    plate value
+    0.0       0.837  0.017     0.989        0.871     1.000         +0.034
+    1.0       0.822  0.025     0.966        0.860     0.989         +0.038
+    2.0       0.811  0.013     0.958        0.860     0.992         +0.049
+    3.0       0.780  0.008     0.951        0.830     0.992         +0.049
+    4.5       0.746  0.007     0.939        0.799     0.992         +0.053
+    6.0       0.701  0.020     0.939        0.784     0.985         +0.083
+    8.0       0.678  0.013     0.909        0.746     0.977         +0.068
+   11.0       0.633  0.013     0.909        0.750     0.989         +0.117
+   15.0       0.602  0.017     0.894        0.727     0.985         +0.125
+   20.0       0.564  0.020     0.886        0.735     0.970         +0.170
+
+majority-class baseline: top-1 0.227  top-3 0.667   (the task is dead at this level)
+
+=== tolerance thresholds (camera tier) ===
+  first error level where top-1 falls more than 5 % relative: 3.0 deg
+  first error level where top-1 falls more than 10 % relative: 4.5 deg
+  first error level at or below the majority-class baseline: never in the swept range
+
+=== does the force plate rescue a degraded camera? ===
+  (if the plate's value grows with capture error, kinetics earn their keep exactly where
+   video is unreliable - that is a far more useful claim than a flat "+0.000")
+    0.0 deg : +0.034
+    1.0 deg : +0.038
+    2.0 deg : +0.049
+    3.0 deg : +0.049
+    4.5 deg : +0.053
+    6.0 deg : +0.083
+    8.0 deg : +0.068
+   11.0 deg : +0.117
+   15.0 deg : +0.125
+   20.0 deg : +0.170

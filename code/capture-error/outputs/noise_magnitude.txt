@@ -1,0 +1,62 @@
+=== HOW BIG IS THE PERTURBATION A NOMINAL CAPTURE ERROR ACTUALLY INDUCES? ===
+induced SD : spread produced by the error model alone, over independent realisations
+signal SD  : spread across the 66 conditions with no error added
+ratio      : induced / signal. Above 1 the error dominates that feature.
+
+  all eighteen S:: features are minima, maxima or ranges - none is a mean over the
+  waveform - so per-sample noise is not averaged away in the kinematic tier.
+
+--- nominal capture error 2 deg, 12 independent error realisations ---
+  feature                     induced SD  signal SD   ratio
+  S::ankle_angle_min_r             1.100      2.401    0.46
+  A::knee_angle_ROMd               2.069      4.620    0.45
+  S::knee_angle_max_r              0.884      1.999    0.44
+  A::hip_flexion_mind              1.691      3.943    0.43
+  S::knee_angle_ROM_r              1.462      3.460    0.42
+  G::vgrf_mean_l                   0.012      0.028    0.42
+  A::knee_angle_mind               1.627      4.148    0.39
+  G::vgrf_mean_r                   0.013      0.033    0.38
+  ...
+  G::load_rate_asym                0.204     20.879    0.01
+  G::fx_peak_asym                  0.000      0.056    0.01
+  C::step_time_cv_r                0.001      0.151    0.01
+  C::step_time_asym                0.002      0.304    0.01
+  median ratio 0.19   max 0.46   features with ratio > 1: 0 of 57
+
+--- nominal capture error 5 deg, 12 independent error realisations ---
+  feature                     induced SD  signal SD   ratio
+  G::vgrf_mean_l                   0.030      0.028    1.05
+  S::knee_angle_max_r              2.013      1.999    1.01
+  A::knee_angle_ROMd               4.599      4.620    1.00
+  S::ankle_angle_min_r             2.372      2.401    0.99
+  G::vgrf_mean_r                   0.031      0.033    0.96
+  S::knee_angle_ROM_r              3.310      3.460    0.96
+  A::hip_flexion_mind              3.656      3.943    0.93
+  A::knee_angle_mind               3.595      4.148    0.87
+  ...
+  G::load_rate_asym                0.510     20.879    0.02
+  G::fx_peak_asym                  0.001      0.056    0.02
+  C::step_time_cv_r                0.003      0.151    0.02
+  C::step_time_asym                0.006      0.304    0.02
+  median ratio 0.46   max 1.05   features with ratio > 1: 2 of 57
+
+--- nominal capture error 12 deg, 12 independent error realisations ---
+  feature                     induced SD  signal SD   ratio
+  G::vgrf_mean_l                   0.072      0.028    2.52
+  S::knee_angle_max_r              4.678      1.999    2.34
+  G::vgrf_mean_r                   0.075      0.033    2.30
+  A::knee_angle_ROMd              10.461      4.620    2.26
+  S::knee_angle_ROM_r              7.553      3.460    2.18
+  A::hip_flexion_mind              8.011      3.943    2.03
+  S::ankle_angle_min_r             4.637      2.401    1.93
+  A::knee_angle_mind               7.930      4.148    1.91
+  ...
+  G::load_rate_asym                1.223     20.879    0.06
+  G::fx_peak_asym                  0.003      0.056    0.05
+  C::step_time_cv_r                0.007      0.151    0.05
+  C::step_time_asym                0.013      0.304    0.04
+  median ratio 0.97   max 2.52   features with ratio > 1: 28 of 57
+
+READING: the ratio is what decides whether the degree axis is a strong or a weak
+perturbation. A nominal degree value that produces an induced SD far below the
+between-condition SD is not a severe test, whatever the nominal number says.

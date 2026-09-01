@@ -1,0 +1,23 @@
+=== THE FIVE NUMBERS BEHIND EACH BODY-LEVEL INTERVAL ===
+seeds 8
+
+--- marginal value of the force plate, per body ---
+  error        base       s1       s2       s3       s4      mean          t(4) 95 % CI  verdict
+     0      -0.107   +0.067   +0.034   +0.071   +0.098    +0.033   [-0.068, +0.134]  INCLUDES ZERO  (mixed)
+     2      -0.116   +0.087   -0.045   +0.045   +0.018    -0.002   [-0.101, +0.096]  INCLUDES ZERO  (mixed)
+     5      +0.054   +0.096   +0.239   +0.170   +0.045    +0.121   [+0.018, +0.223]  excludes zero  (all +)
+     8      +0.205   +0.096   +0.295   +0.027   +0.196    +0.164   [+0.035, +0.293]  excludes zero  (all +)
+    12      +0.170   +0.202   +0.307   +0.054   +0.205    +0.187   [+0.075, +0.300]  excludes zero  (all +)
+
+--- what the percentile bootstrap could and could not have returned ---
+Support of a pairs-cluster resample mean is [min body value, max body value], so:
+  error   min body   max body   could the percentile interval have crossed zero?
+     0     -0.107     +0.098   yes - the body values straddle zero
+     2     -0.116     +0.087   yes - the body values straddle zero
+     5     +0.045     +0.239   NO - guaranteed to exclude zero by sign agreement alone
+     8     +0.027     +0.295   NO - guaranteed to exclude zero by sign agreement alone
+    12     +0.054     +0.307   NO - guaranteed to exclude zero by sign agreement alone
+
+READING: at any level marked NO, the reported "excludes zero" carries no information beyond
+the five signs agreeing, and five agreeing signs is p = 0.0625 two-sided - not a 95 % result.
+The t interval on the same five numbers is the one that can fail, so it is the one to quote.

@@ -1,0 +1,33 @@
+=== ONE CAPTURE OR FOUR? ===
+seeds 8; the pooled column must reproduce the reported curve exactly.
+
+L1  camera (sagittal + timing)
+  error   pooled (reported)   one capture   difference
+     0               0.845         0.845       +0.000
+     2               0.824         0.767       -0.057
+     5               0.659         0.643       -0.016
+     8               0.600         0.553       -0.047
+    12               0.549         0.504       -0.045
+
+L2  camera + FORCE PLATE
+  error   pooled (reported)   one capture   difference
+     0               0.877         0.877       +0.000
+     2               0.822         0.822       +0.000
+     5               0.775         0.745       -0.029
+     8               0.759         0.724       -0.035
+    12               0.731         0.702       -0.029
+
+--- per-degree loss rate on each curve ---
+The rate claim ("steepest inside 2-5 deg") is the reason this matters most: at 0 deg the
+four replicates are identical, so the 0-2 deg segment alone compares one capture with four.
+      band      pooled   one capture
+   0-2         -0.0104       -0.0388
+   2-5         -0.0549       -0.0414
+   5-8         -0.0196       -0.0300
+   8-12        -0.0128       -0.0123
+
+steepest band: pooled 2-5 deg, one capture 2-5 deg
+
+READING: if the one-capture curve keeps every level at least twice the 0.227 baseline the
+tolerance claim survives and only the numbers change. If the steepest band moves, the rate
+claim was an artefact of unequal averaging and has to be withdrawn.

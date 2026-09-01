@@ -1,0 +1,38 @@
+=== FACE VALIDITY, MEASURED IN THE CORRECT GAIT PHASE ===
+Phases segmented per limb from vertical GRF. "early"/"late" are the first/last 40 % of
+stance. Compare with face_validity_all.txt, which used whole-cycle extrema.
+
+  HF  peak swing hip flexion reduced   [Carmo 2012]
+       vs non-paretic 14/14 (mean diff   -9.8 deg)   vs own healthy 14/14 (mean diff   -8.4 deg)
+       by severity: 20%:5/5  40%:5/5  60%:4/4
+  KE  greater peak swing knee flexion   [van der Krogt 2012 predicts loading response is spared]
+       vs non-paretic 10/10 (mean diff   -5.2 deg)   vs own healthy 10/10 (mean diff   -8.0 deg)
+       by severity: 20%:5/5  40%:4/4  60%:1/1
+  KE  reduced terminal-stance knee extension   [flexed-knee gait, Chen 2005]
+       vs non-paretic  9/10 (mean diff   -4.0 deg)   vs own healthy  9/10 (mean diff   -4.2 deg)
+       by severity: 20%:4/5  40%:4/4  60%:1/1
+  KE  knee yields further in loading response (NOT supported)   [naive expectation, reported as refuted]
+       vs non-paretic  4/10 (mean diff   +1.9 deg)   vs own healthy  4/10 (mean diff   +2.2 deg)
+       by severity: 20%:2/5  40%:2/4  60%:0/1
+  PF  peak plantarflexion at push-off reduced   [Kesar 2009]
+       vs non-paretic 15/15 (mean diff   +4.7 deg)   vs own healthy 13/15 (mean diff   +6.1 deg)
+       by severity: 20%:5/5  40%:5/5  60%:5/5
+  DF  peak swing dorsiflexion reduced (foot drop)   [Szopa 2017]
+       vs non-paretic 15/15 (mean diff  -12.5 deg)   vs own healthy 10/15 (mean diff   -9.5 deg)
+       by severity: 20%:5/5  40%:5/5  60%:5/5
+  KF  genu recurvatum in terminal stance   [contested: Okada 2024 vs Cooper 2012]
+       vs non-paretic 12/12 (mean diff   +4.7 deg)   vs own healthy  8/12 (mean diff   +1.8 deg)
+       by severity: 20%:5/5  40%:5/5  60%:2/2
+  KF  peak swing knee flexion little changed   [Kerrigan 1991; Manikowska 2022]
+       vs non-paretic 11/12 (mean diff   +1.5 deg)   vs own healthy  6/12 (mean diff   -4.4 deg)
+       by severity: 20%:5/5  40%:5/5  60%:1/2
+
+--- summary for Table 1 ---
+  HF  peak swing hip flexion reduced                 14/14  14/14   holds
+  KE  greater peak swing knee flexion                10/10  10/10   holds
+  KE  reduced terminal-stance knee extension          9/10   9/10   holds
+  KE  knee yields further in loading response (NOT supported)  4/10   4/10   does not generalise
+  PF  peak plantarflexion at push-off reduced        15/15  13/15   holds
+  DF  peak swing dorsiflexion reduced (foot drop)    15/15  10/15   partial
+  KF  genu recurvatum in terminal stance             12/12   8/12   partial
+  KF  peak swing knee flexion little changed         11/12   6/12   partial

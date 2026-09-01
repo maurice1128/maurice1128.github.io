@@ -1,0 +1,33 @@
+=== WHERE DOES THE CAMERA TIER END? ===
+The spatiotemporal features are computed from vertical GRF but argued to be camera-observable.
+Every defensible assignment is reported, because the paper compares exactly these two tiers.
+
+--- A  timing = camera, force-plate precision (original) ---
+  error  camera t1  camera t3  +plate t1  +plate t3  plate value
+    0.0      0.837      0.989      0.871      1.000       +0.034
+    2.0      0.837      0.989      0.818      0.992       -0.019
+    5.0      0.659      0.958      0.769      0.992       +0.110
+    8.0      0.591      0.924      0.754      0.985       +0.163
+   12.0      0.545      0.943      0.731      0.977       +0.186
+
+--- B  timing = camera, VIDEO precision (defensible) ---
+  error  camera t1  camera t3  +plate t1  +plate t3  plate value
+    0.0      0.837      0.989      0.871      1.000       +0.034
+    2.0      0.799      0.989      0.818      0.996       +0.019
+    5.0      0.689      0.962      0.792      0.989       +0.102
+    8.0      0.644      0.932      0.754      0.985       +0.110
+   12.0      0.542      0.932      0.754      0.981       +0.212
+
+--- C  timing = force-plate tier (conservative) ---
+  error  camera t1  camera t3  +plate t1  +plate t3  plate value
+    0.0      0.833      0.973      0.871      1.000       +0.038
+    2.0      0.883      0.977      0.818      0.992       -0.064
+    5.0      0.750      0.966      0.769      0.992       +0.019
+    8.0      0.644      0.936      0.754      0.985       +0.110
+   12.0      0.538      0.864      0.731      0.977       +0.193
+
+=== READING ===
+  If B and C give the same sign for the plate value at every error level, the conclusion is
+  robust to where the boundary is drawn and the paper can state it plainly.
+  If they disagree, the boundary is load-bearing and must be argued explicitly in Methods -
+  and the honest report is BOTH columns, not the one that suits the argument.

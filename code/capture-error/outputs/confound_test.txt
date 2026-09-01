@@ -1,0 +1,33 @@
+=== IS THE RESULT DRIVEN BY OPTIMISATION DEPTH RATHER THAN BIOMECHANICS? ===
+conditions with a recoverable analysed solution: 66
+  base  n= 14  median gen    293  range 17-1469
+  s1    n= 13  median gen     79  range 38-160
+  s2    n= 11  median gen     79  range 34-197
+  s3    n= 14  median gen     80  range 22-327
+  s4    n= 14  median gen    247  range 90-325
+
+=== TEST A: classifier given ONLY convergence metadata (gen, obj) ===
+  top-1 = 0.178 +- 0.013   (chance 0.200, majority class ~0.246)
+  at or near chance -> depth alone does not identify the group
+
+=== TEST C: correlation between analysed generation and the asymmetry features ===
+  A::ankle_angle_ROMd          rho vs analysed gen = -0.304  (p=0.013)
+  A::knee_angle_mind           rho vs analysed gen = +0.289  (p=0.019)
+  A::ankle_angle_mind          rho vs analysed gen = +0.231  (p=0.062)
+  A::knee_angle_ROMd           rho vs analysed gen = -0.191  (p=0.125)
+  A::hip_flexion_mind          rho vs analysed gen = +0.152  (p=0.223)
+  A::hip_flexion_ROMd          rho vs analysed gen = -0.130  (p=0.298)
+  largest |rho| among asymmetry features: 0.304
+  no asymmetry feature is strongly tied to depth
+
+=== TEST B: tolerance curve WITHOUT base (the four remaining bodies span gen 45-67) ===
+  error    all 5 bodies    without base   difference
+    0.0     0.837+-0.017     0.769+-0.014       -0.068
+    2.0     0.837+-0.017     0.769+-0.014       -0.068
+    5.0     0.659+-0.013     0.692+-0.027       +0.033
+    8.0     0.591+-0.037     0.625+-0.022       +0.034
+   12.0     0.545+-0.000     0.543+-0.016       -0.002
+
+READING: if the "without base" column shows the same downward shape, the tolerance result
+is not an artefact of base being optimised 4-6x deeper than every other body. If it goes
+flat, part of the curve was convergence depth and the claim must be withdrawn.

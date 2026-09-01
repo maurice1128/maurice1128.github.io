@@ -1,0 +1,28 @@
+=== IS THE SEVERITY x CAPTURE-QUALITY INTERACTION SUPPORTED? ===
+Paired over conditions: each condition supplies its own 2 deg -> 8 deg loss.
+
+severity     n  acc 2deg  acc 8deg  mean loss   mechanism mix
+      20 %  25     0.610     0.480     -0.130   DF:5 HF:5 KE:5 KF:5 PF:5
+      40 %  24     0.948     0.562     -0.385   DF:5 HF:5 KE:4 KF:5 PF:5
+      60 %  17     0.963     0.831     -0.132   DF:5 HF:4 KE:1 KF:2 PF:5
+
+--- paired bootstrap on the DIFFERENCE IN LOSS between strata ---
+comparison          difference               95 % CI  excludes zero
+  40 % vs 20 %            -0.255   [-0.503, -0.010]      YES
+  40 % vs 60 %            -0.253   [-0.484, -0.007]      YES
+  60 % vs 20 %            -0.002   [-0.259, +0.250]      no
+
+--- composition: does the mechanism mix explain the gaps? ---
+Each stratum reweighted so every mechanism carries the same weight in all three.
+severity     raw loss  reweighted    shift
+      20 %     -0.130      -0.130   +0.000
+      40 %     -0.385      -0.390   -0.005
+      60 %     -0.132      -0.198   -0.065
+
+  40 % vs 20 %: raw gap -0.255, gap after reweighting -0.260
+  40 % vs 60 %: raw gap -0.253, gap after reweighting -0.193
+
+READING: if the paired intervals exclude zero the interaction is supported and the
+manuscript should quote them instead of the non-overlap argument. If they do not, the
+claim has to be rescoped to what the data show: that the moderate case has the largest
+point loss, without a demonstrated difference from the other two.

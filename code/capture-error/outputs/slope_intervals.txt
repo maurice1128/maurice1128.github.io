@@ -1,0 +1,27 @@
+=== IS THE 2-5 DEG BAND SEPARABLY THE STEEPEST? ===
+seeds 8, bootstrap draws 4000
+
+  error   accuracy   (must reproduce the reported curve)
+     0      0.845
+     2      0.824
+     5      0.659
+     8      0.600
+    12      0.549
+
+      band   loss per degree
+   0-2               -0.0104
+   2-5               -0.0549
+   5-8               -0.0196
+   8-12              -0.0128
+
+--- contrasts against the 2-5 deg band (negative = 2-5 deg is steeper) ---
+contrast                observed      95 % over conditions        95 % over bodies
+  2-5 vs 0-2           -0.0445   [-0.0868, -0.0013]  YES   [-0.0918, +0.0208] no 
+  2-5 vs 5-8           -0.0354   [-0.0852, +0.0107]  no    [-0.0853, +0.0103] no 
+  2-5 vs 8-12          -0.0421   [-0.0797, -0.0054]  YES   [-0.0768, -0.0095] YES
+
+READING: the sentence "the steepest degradation falls inside the 2-5 deg band" is a
+statement about point estimates and is true as such. The sentence that follows it - that
+the convention therefore LOCATES CORRECTLY where accuracy is most sensitive - is a claim
+that the 2-5 deg rate differs from its neighbours, and it needs these intervals. Where
+they include zero, that step is not licensed and the observation must stand alone.
