@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joint-Centre Offset Dominates 3D Position Error &mdash; Mu-Hua Wang</title>
+<meta name="description" content="Markerless pipelines are tuned on 3D position error against a marker-based reference. At the hip and knee most of that error is a disagreement about where the joint centre is — and removing it reverses comparisons.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container">
+
+<nav>
+  <ul>
+    <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#problem">The problem</a></li>
+    <li><a href="#offset">The offset</a></li>
+    <li><a href="#reversal">The reversal</a></li>
+    <li><a href="#ceiling">The ceiling</a></li>
+    <li><a href="#limits">Limits</a></li>
+    <li><a href="../cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<header>
+  <p class="note">Manuscript &middot; under revision &middot; target: Journal of Biomechanics</p>
+  <h1>Joint-centre offset dominates 3D position error and can reverse comparisons between
+  markerless triangulation methods</h1>
+  <p class="kicker">The metric the field tunes markerless pipelines on is, at the hip and knee,
+  mostly measuring something the pipeline did not cause.</p>
+  <p class="note">Mu-Hua Wang &middot; National Yang Ming Chiao Tung University</p>
+  <div class="links">
+    <a href="mailto:mauricewang1128@gmail.com?subject=Joint-centre%20offset%20paper%20%E2%80%94%20draft%20request">[Request the draft]</a>
+    <a href="../index.html">[All projects]</a>
+  </div>
+  <p class="note">Still under revision, so the manuscript is not posted here. Not on any preprint
+  server.</p>
+</header>
+
+<hr>
+<section id="problem">
+  <h2>Abstract</h2>
+  <p class="desc">Markerless motion capture pipelines are commonly tuned and compared using
+  three-dimensional joint position error measured against a marker-based reference. However,
+  pose-estimation keypoints and marker-based joint centres are not the same anatomical construct,
+  and at the hip and knee the two have been reported to differ by several centimetres, so it is
+  unclear what such a comparison actually measures.</p>
+  <p class="desc">We held a single pipeline fixed and varied four triangulation decisions
+  (confidence weighting, rejection by reprojection error, rejection by object-space error, and
+  Gauss&ndash;Newton refinement) together with a population offset correction, one at a time,
+  across <b>104 overground walking trials from 11 participants</b> of the BioCV dataset, recorded
+  on a nine-camera ring against a synchronised 15-camera marker-based reference.</p>
+  <p class="desc">At the hip and knee the keypoint lay <b>27&ndash;37&nbsp;mm</b> from the reference
+  joint centre, which accounted for <b>74&ndash;81&nbsp;%</b> of squared position error within a
+  participant and for <b>47&ndash;70&nbsp;%</b> when pooled across participants, compared with
+  <b>2.5&nbsp;mm</b> for the largest triangulation effect measured. When each participant's own
+  offset was subtracted, per-joint verdicts changed. Both rejection criteria appeared to improve
+  hip position as measured, but worsened it by 1.7 and 2.0&nbsp;mm once the offset was removed,
+  leaving the estimate noisier about its own mean yet better centred on the reference. No
+  triangulation effect at the hip, knee or ankle exceeded 2.5&nbsp;mm and no single-step angle
+  effect exceeded 0.38&deg; on the four chains tested. All contrasts came from a single rig, task
+  and laboratory, and the family structure was exploratory.</p>
+</section>
+
+<hr>
+<section id="offset">
+  <h2>The offset dominates what the metric measures</h2>
+  <div class="stats">
+    <div><span class="big">27&ndash;37 mm</span>
+      <h3>keypoint to reference joint centre</h3>
+      <p>At the hip and knee. Reproduced by three detectors, in the same direction for every
+      participant.</p></div>
+    <div><span class="big">74&ndash;81 %</span>
+      <h3>of squared position error, within a participant</h3>
+      <p>44&nbsp;% at the ankle. Pooled across participants the between-participant scatter moves
+      into the random term and the share falls to 47&ndash;70&nbsp;%.</p></div>
+    <div><span class="big">2.5 mm</span>
+      <h3>largest triangulation effect measured</h3>
+      <p>An order of magnitude smaller than the offset it is being measured through.</p></div>
+  </div>
+
+  <figure>
+    <img src="../assets/joint-offset/fig4_offset_swings.png"
+         alt="Joint-centre offset magnitude against reference thigh-shank angle quintiles">
+    <figcaption><b>The offset is not fixed &mdash; it swings with posture.</b> A static correction
+    table subtracts a constant from this. Across quintiles of the reference thigh&ndash;shank
+    angle the offset moves +6.19&nbsp;mm at the hip (q&nbsp;=&nbsp;0.006), &minus;2.82&nbsp;mm at
+    the knee (q&nbsp;=&nbsp;0.029&dagger;) and &minus;4.27&nbsp;mm at the ankle
+    (q&nbsp;=&nbsp;0.013).</figcaption>
+  </figure>
+</section>
+
+<hr>
+<section id="reversal">
+  <h2>Removing the offset moves per-joint verdicts</h2>
+  <figure>
+    <img src="../assets/joint-offset/fig1_position_vs_angle.png"
+         alt="Triangulation interventions: position and angle effects, and the offset correction">
+    <figcaption><b>Position and angle move apart, and a pooled position summary hides it.</b>
+    (a) Triangulation interventions, position against angle. (b) The joint-centre offset
+    correction, which is not a triangulation effect and moves 9.848&nbsp;mm.</figcaption>
+  </figure>
+
+  <div class="box mark">
+    <h3>The reversal, stated as the paper states it</h3>
+    <p>Re-expressed against each participant's own mean error, discarding <b>worsened</b> hip error
+    by <b>1.726&nbsp;mm</b> (object-space criterion) and <b>1.983&nbsp;mm</b> (reprojection
+    criterion) &mdash; leaving the hip estimate <b>noisier about its own mean and better centred on
+    the reference at the same time</b>.</p>
+    <p>A difference of norms does not remove a term common to both arms, and the first-order
+    account of what it leaves behind fails at the hip and ankle. <b>The reversals are an empirical
+    result and were not anticipated.</b></p>
+  </div>
+
+  <figure>
+    <img src="../assets/joint-offset/fig2_opposite_signs.png"
+         alt="Per-joint effects of opposite sign cancelling in a three-joint mean">
+    <figcaption><b>A null in the three-joint mean can be two significant effects of opposite
+    sign.</b> Under the matched-<em>k</em> criterion the hip gains +0.53&nbsp;mm while the knee
+    loses &minus;0.66&nbsp;mm, and the mean reads +0.03&nbsp;mm. Confidence weighting, by contrast,
+    moves every joint the same way.</figcaption>
+  </figure>
+</section>
+
+<hr>
+<section id="ceiling">
+  <h2>What a triangulation decision can actually buy on this rig</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Quantity</th><th>Value</th><th>Scope</th></tr></thead>
+      <tbody>
+        <tr><td>Largest per-joint triangulation effect, hip / knee / ankle</td>
+            <td class="n">&le; 2.5 mm</td>
+            <td><span class="tag">point estimate</span><span class="sub">widest 95&nbsp;% limit
+            +3.417&nbsp;mm</span></td></tr>
+        <tr><td>Largest single-step angle effect, four chains</td>
+            <td class="n">&le; 0.38&deg;</td>
+            <td><span class="tag">point estimate</span><span class="sub">widest 95&nbsp;% limit
+            &minus;0.583&deg;</span></td></tr>
+        <tr><td>The offset correction &mdash; <b>not</b> a triangulation effect</td>
+            <td class="n">9.848 mm</td>
+            <td><span class="tag hit">much larger</span></td></tr>
+        <tr><td>The rejection claim's narrower bound</td>
+            <td class="n">&plusmn;0.35 mm</td>
+            <td><span class="tag">90 %</span><span class="sub">broken on a five-camera subset of
+            the same ring</span></td></tr>
+        <tr class="off"><td>Shank&ndash;foot angle at the toe, both rejection contrasts</td>
+            <td class="n">&minus;0.522&deg; / &minus;0.643&deg;</td>
+            <td><span class="tag">no verdict</span><span class="sub">the pre-declared veto returns
+            none, because the heel reverses sign</span></td></tr>
+        <tr><td>Cost of discarding, thigh&ndash;shank angle, threshold swept 2.5&ndash;4.0</td>
+            <td class="n">0.053&ndash;0.286&deg;</td>
+            <td><span class="tag">direction only</span><span class="sub">the direction is
+            established, the size is not</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <figure>
+    <img src="../assets/joint-offset/fig3_discarding_cost.png"
+         alt="Angle cost per discarded camera, and the effect of distortion correction">
+    <figcaption><b>(a)</b> Discarding costs 0.24&ndash;0.38&deg; per camera on the
+    thigh&ndash;shank angle, for both criteria. <b>(b)</b> The object-space criterion's advantage
+    appears only at high camera-distance asymmetry, and only before distortion correction
+    (+4.62&deg;* uncorrected against +0.68&deg; n.s. corrected) &mdash; consistent with
+    object-space error being a depth-scaled reprojection error.</figcaption>
+  </figure>
+</section>
+
+<hr>
+<section id="limits">
+  <h2>What this does not establish</h2>
+  <div class="figrow">
+    <div class="box mark">
+      <ul>
+        <li><b>The hip offset cannot be apportioned between the two systems.</b> The reference hip
+        centre is itself a regression from external landmarks whose published accuracy,
+        26&ndash;33&nbsp;mm at 95&nbsp;% certainty, is the same size as the offset reported. No
+        absolute accuracy claim follows. The hip is both the joint where putting the target back is
+        least well defined <em>and</em> the joint carrying the largest reversal, <b>which we cannot
+        explain</b>.</li>
+        <li><b>The family structure was exploratory.</b> Families were not pre-specified but grew
+        as claims required contrasts. Boundaries chosen after seeing results are a degree of
+        freedom no correction removes.</li>
+        <li><b>Most results sit at the sign-flip floor</b> (p&nbsp;=&nbsp;0.000977), where the test
+        certifies that all eleven participants agreed in direction &mdash; not a magnitude.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <ul>
+        <li><b>One rig, one task, one laboratory</b>, every headline contrast from a single
+        detector, and no transverse-plane kinematics.</li>
+        <li><b>Two participants shape what is reported.</b> One spans 53.7&deg; of heading where
+        the other ten span 1.0&ndash;14.1&deg;, and carries the largest thigh&ndash;shank error.
+        Another sets the worst case in twelve of the fourteen headline contrasts &mdash; though no
+        contrast depends on it.</li>
+        <li><b>Unfiltered against a 12&nbsp;Hz-filtered reference.</b> On the one filtered subset a
+        post-hoc test could not distinguish the angle cost from zero, which is the weaker reading
+        taken.</li>
+        <li><b>Scoped to direct triangulation.</b> A pipeline that solves inverse kinematics has no
+        small defining point set, so model-fitting systems are outside this.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 style="margin-top:26px">What the paper recommends instead</h2>
+  <div class="box">
+    <ul>
+      <li>Read per-joint position verdicts <b>against the offsets they contain</b>.</li>
+      <li>Measure position <b>on the joints the reported angle actually uses</b>.</li>
+      <li>Test any claimed dissociation <b>as an interaction</b>, not as a pair of separate
+      verdicts &mdash; two separate significance verdicts do not establish one.</li>
+    </ul>
+  </div>
+  <p class="note" style="margin-top:10px">The authors offer these as hypotheses for confirmatory
+  work, not as established results.</p>
+</section>
+
+<hr>
+<section>
+  <h2>Data</h2>
+  <p class="desc">The BioCV dataset (University of Bath Research Data Archive,
+  <a href="https://doi.org/10.15125/BATH-01258">doi:10.15125/BATH-01258</a>; Evans et al., 2024),
+  available on request under a data use agreement. Eleven participants (six male, five female,
+  aged 26.2&nbsp;&plusmn;&nbsp;5.1 years), 104 walking trials, 6,240 frames. Keypoints detected
+  with RTMPose; RTMO and HALPE-26 run on the same frames to test whether the offset was specific
+  to one model. Analysis code will be released at acceptance.</p>
+  <p class="note">Collection of the BioCV dataset was supported by CAMERA (EP/M023281/1) and
+  CAMERA&nbsp;2.0 (EP/T022523/1).</p>
+</section>
+
+<footer>
+  <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang &middot;
+  <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
+</footer>
+
+</div>
+</body>
+</html>

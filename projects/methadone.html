@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methadone Dose Patterns Around Urine Testing &mdash; Mu-Hua Wang</title>
+<meta name="description" content="The discriminating feature of a dose trajectory is its shape, but shape is confounded with magnitude and lives on a torus. A polar-angle representation and a von Mises mixture over 9,900 urine tests from 552 patients.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container">
+
+<nav>
+  <ul>
+    <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#method">The representation</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#survived">What survived</a></li>
+    <li><a href="#notclaimed">What is not claimed</a></li>
+    <li><a href="../cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<header>
+  <p class="note">Manuscript &middot; under revision &middot; observational study, STROBE</p>
+  <h1>Consumed methadone dose patterns around randomly scheduled urine testing</h1>
+  <p class="kicker">A methods problem disguised as a clinical one: the discriminating feature of a
+  dose trajectory is its <em>shape</em>, but shape is confounded with magnitude and lives on a
+  space Euclidean clustering gets wrong.</p>
+  <p class="note">Mu-Hua Wang &middot; Tso-Jeng Wang &middot; Taoyuan General Hospital</p>
+  <div class="links">
+    <a href="mailto:mauricewang1128@gmail.com?subject=Methadone%20dose%20trajectory%20paper%20%E2%80%94%20draft%20request">[Request the draft]</a>
+    <a href="../index.html">[All projects]</a>
+  </div>
+  <p class="note">Still under revision, so the manuscript is not posted here. Not on any preprint
+  server.</p>
+</header>
+
+<hr>
+<section>
+  <h2>The setting, and why it is unusual</h2>
+  <div class="stats">
+    <div><span class="big">552</span>
+      <h3>patients</h3>
+      <p>Contributing <b>9,900</b> analysable morphine urine tests, 2018&ndash;2022, of which
+      3,401 were positive.</p></div>
+    <div><span class="big">On site</span>
+      <h3>observed consumption</h3>
+      <p>Methadone was dispensed and consumed under staff observation and take-home dosing was not
+      permitted, so the exposure is <b>observed consumption</b>, not an inference from
+      dispensing.</p></div>
+    <div><span class="big">Random</span>
+      <h3>test scheduling</h3>
+      <p>Collection occasions were randomly scheduled, not clinician-triggered &mdash; which closes
+      the reverse-causation pathway that would otherwise be the most serious threat to any
+      antecedent claim.</p></div>
+  </div>
+  <p class="desc">Those two design features are what license a behavioural reading at all. They are
+  unusual in this literature.</p>
+</section>
+
+<hr>
+<section id="method">
+  <h2>The representation</h2>
+  <figure>
+    <img src="../assets/methadone/fig1_polar_method.png"
+         alt="Moving-window slopes mapped to a polar angle, and the resulting circular densities">
+    <figcaption><b>A.</b> Each test's daily consumed-dose series is expressed as a ratio to its own
+    value seven days earlier; the extreme three-day moving-window slopes on each side of the test
+    are taken, and the (post, pre) slope pair is mapped to a polar angle. <b>Shape becomes
+    comparable independent of absolute magnitude, and the feature space becomes a torus.</b>
+    <b>B.</b> The dose-change branch, clustered with a mixture of von Mises distributions.
+    <b>C.</b> The stable-dose branch, cut at the valleys of a circular kernel density.</figcaption>
+  </figure>
+  <div class="box">
+    <p><b>Why not Euclidean clustering:</b> it does not respect wrap-around at 0&deg;/360&deg;. The
+    mixture is fitted by EM on the circle instead. For the stable-dose branch, 114 variables were
+    reduced by PCA and a circular kernel-density estimate was cut at its valleys.</p>
+    <p><b>Why this matters later:</b> interpolation of a non-attended day inserts a straight
+    segment, which inflates the <em>length</em> of the slope vector. The polar-angle features
+    retain only its <em>direction</em>. That is why cluster membership survives the imputation
+    check and a magnitude scalar does not.</p>
+  </div>
+</section>
+
+<hr>
+<section id="results">
+  <h2>Nine patterns, ordered by risk</h2>
+  <figure>
+    <img src="../assets/methadone/fig2_cluster_odds.png"
+         alt="Odds ratio for morphine-positive urine by cluster, with 95% confidence intervals">
+    <figcaption><b>Cluster associations, 9-cluster von Mises / KDE solution.</b> Odds ratio for a
+    morphine-positive urine result with 95&nbsp;% patient-clustered confidence intervals. Six
+    clusters of dose change and three of stable dosing, the latter exploratory, spanning
+    positive/negative occurrence ratios from <b>1.64 to 0.50</b>.</figcaption>
+  </figure>
+  <figure>
+    <img src="../assets/methadone/fig3_cluster_panels.png"
+         alt="Mean dose trajectory for each of the nine clusters">
+    <figcaption><b>The nine patterns as trajectories</b>, higher-risk in red and lower-risk in
+    blue. Higher-risk clusters reflect the patient drinking more methadone on site around the test;
+    lower-risk clusters show tapering or stability.</figcaption>
+  </figure>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Association</th><th>Estimate</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Pre-test escalation, within patients, imputation-free &plusmn;7-day windows
+            <span class="sub">strengthens from 1.15 on the full sample. Over &plusmn;28 days,
+            1.37 [1.20&ndash;1.56].</span></td>
+            <td class="n">OR 1.26 per SD<br>[1.15&ndash;1.38]<br>p = 3&times;10<sup>&minus;7</sup></td>
+            <td><span class="tag hit">claimed</span></td></tr>
+        <tr><td>Attendance in the preceding week
+            <span class="sub">The strongest single correlate, and protective.</span></td>
+            <td class="n">OR 0.84 per 0.1<br>p = 7&times;10<sup>&minus;22</sup></td>
+            <td><span class="tag hit">claimed</span></td></tr>
+        <tr><td>Cluster membership, not reducible to any single slope
+            <span class="sub">Against the pre-test slope &chi;&sup2; = 328 on 8 df; against the
+            post-test slope 261; against both together 254.</span></td>
+            <td class="n">&chi;&sup2; = 261, 8 df<br>p &lt; 10<sup>&minus;50</sup></td>
+            <td><span class="tag hit">claimed</span></td></tr>
+        <tr class="off"><td><b>Post-test escalation magnitude</b>
+            <span class="sub">Falls from 1.36 to 1.06 on imputation-free windows, and rises to 1.44
+            [1.30&ndash;1.60] on the complement &mdash; so it appears to be largely generated by
+            the imputed days.</span></td>
+            <td class="n">OR 1.06 per SD<br>[0.97&ndash;1.15]<br>p = 0.23</td>
+            <td><span class="tag">withdrawn</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <figure>
+    <img src="../assets/methadone/fig5_attendance.png"
+         alt="Pre-test attendance rate by urine result">
+    <figcaption><b>Attendance is the dominant signal.</b> Each 0.1 increase in the proportion of
+    attended days in the week before the test &mdash; about one extra attended day per ten &mdash;
+    carried an odds ratio of 0.84.</figcaption>
+  </figure>
+</section>
+
+<hr>
+<section id="survived">
+  <h2>What the finding survived</h2>
+  <p class="desc">The result was attacked from five directions before it was claimed.</p>
+  <div class="figrow">
+    <div class="box">
+      <ul>
+        <li><b>Outcome-blind re-clustering.</b> Re-clustering the pooled sample without reference
+        to the urine result gave ten clusters, agreeing at an adjusted Rand index of 0.60; 6 of the
+        9 primary clusters are reproduced by a distinct blind cluster of the same direction and
+        near-identical P/N.</li>
+        <li><b>Adjustment for attendance.</b> All nine clusters remain significant, though two
+        attenuate materially (1.62&nbsp;&rarr;&nbsp;1.29 and 1.67&nbsp;&rarr;&nbsp;1.37).</li>
+        <li><b>Within patients.</b> Refitting with patient fixed effects on the 451 patients
+        contributing both outcomes: 8 of 9 clusters significant in the same direction. So these are
+        peri-test phenomena, not between-patient case-mix.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <ul>
+        <li><b>Imputation-free windows.</b> 5,644 tests (57&nbsp;%) over &plusmn;7 days contained
+        no interpolated day. 7 of 8 cluster contrasts survive. An earlier version of this subset
+        was defined wrongly &mdash; 15&nbsp;% of it in fact contained interpolated values &mdash;
+        and every figure was recomputed on the corrected subsets.</li>
+        <li><b>Confounding by prescribing.</b> A pre-test rise could be the clinic prescribing more.
+        The two series are only weakly related (r&nbsp;=&nbsp;0.14) and adjusting for the prescribed
+        slope leaves the consumed-dose association essentially unchanged
+        (1.259&nbsp;&rarr;&nbsp;1.236).</li>
+      </ul>
+    </div>
+  </div>
+
+  <figure>
+    <img src="../assets/methadone/fig6_robustness.png"
+         alt="Odds ratios across pooled, within-patient and confirmed-true-negative analyses">
+    <figcaption><b>Direction of the two headline associations across sensitivity analyses.</b>
+    Consumed-dose escalation (higher-risk, left) and attendance (protective, right), per standard
+    deviation with 95&nbsp;% intervals, across the pooled, within-patient and confirmed-true-negative
+    analyses.</figcaption>
+  </figure>
+</section>
+
+<hr>
+<section id="notclaimed">
+  <h2>What is not claimed</h2>
+  <p class="desc">Three boundaries define what the study supports, and one of them is a
+  qualification on the primary claim rather than a limitation.</p>
+
+  <div class="box mark">
+    <h3>It did not replicate out of time</h3>
+    <p>Splitting at the median date of April 2020, the <b>attendance</b> association replicated in
+    the held-out later period (OR 0.86&nbsp;&rarr;&nbsp;0.78 per 0.1, both
+    p&nbsp;&lt;&nbsp;10<sup>&minus;7</sup>). The <b>dose-change</b> association did not: earlier
+    OR 1.18 (p&nbsp;=&nbsp;0.01), later 1.15 with an interval crossing unity
+    (p&nbsp;=&nbsp;0.17).</p>
+    <p><b>The paper treats this as a qualification of the primary claim and not merely a
+    limitation.</b> The split coincides with the onset of the pandemic, which is one candidate
+    explanation but does not excuse it.</p>
+  </div>
+
+  <div class="figrow" style="margin-top:16px">
+    <div class="box">
+      <h3>It is associational, not predictive</h3>
+      <p>Under patient-grouped cross-validation, a baseline of pre-test attendance plus prior
+      urine-test history reached an AUC of about <b>0.83</b>, and adding the full pre-test
+      dose-trajectory features changed this by about <b>0.00</b>.</p>
+      <p>The signal carries <b>no incremental predictive value</b> over routinely available
+      history. An exhaustive search over richer feature sets, personalised baselines, stratification
+      and change-point formulations did not raise the ceiling &mdash; so this negative result was
+      not tuned in the paper's favour.</p>
+    </div>
+    <div class="box">
+      <h3>Three further limits</h3>
+      <p><b>The stable-dose branch is exploratory</b> and nothing in it is claimed: an alternative
+      circular partition of the same tests yields no higher-risk stable-dose cluster at all.</p>
+      <p><b>The number of clusters was chosen, not selected by a criterion.</b> Cluster boundaries
+      move under resampling, so the labels are a descriptive device. There is no registered
+      protocol and no pre-registered analysis plan.</p>
+      <p><b>Long-retained patients only.</b> The programme restricted the cohort to patients
+      retained at least two years, excluding 5,214 of 15,592 dosing-linked records. The excluded
+      occasions had a higher positive rate and much lower attendance, so this does not extend to
+      early treatment &mdash; the phase where such a marker would probably be most useful.</p>
+    </div>
+  </div>
+
+  <div class="box" style="margin-top:16px">
+    <p><b>Also stated plainly in the paper:</b> urine testing follows routine clinical procedures
+    and under-detects use; the peri-test window contains both a patient behaviour and a clinical
+    response and cannot separate them; and age and sex were absent from the data extract, so
+    residual confounding by demographic case-mix cannot be assessed.</p>
+  </div>
+
+  <figure style="margin-top:18px">
+    <img src="../assets/methadone/fig7_true_negatives.png"
+         alt="Cluster occurrence ratios against all negatives versus confirmed true negatives">
+    <figcaption><b>Cluster occurrence ratios against all negatives compared with confirmed true
+    negatives</b> from supervised collection. Direction is preserved for every cluster. The pattern
+    is mixed rather than uniformly strengthened.</figcaption>
+  </figure>
+</section>
+
+<hr>
+<section>
+  <h2>What a clinician could take from it</h2>
+  <p class="desc">The effect sizes translate into modest to moderate shifts in absolute risk.
+  Taking the analysis-sample positive rate of roughly one third as an illustrative baseline, the
+  strongest higher-risk pattern (OR 1.75) corresponds to a rise from roughly 34&nbsp;% to
+  47&nbsp;%, and the protective tapering pattern (about 0.5) to a fall from roughly 34&nbsp;% to
+  20&nbsp;%.</p>
+  <div class="box">
+    <p><b>A practical hierarchy:</b> declining attendance is the clearest and most actionable
+    warning sign; a rising consumed dose relative to the patient's own baseline is a useful
+    corroborating signal but not a standalone alarm; stable or tapering dosing with good attendance
+    characterises the settled, lower-risk patient.</p>
+    <p><b>These are population-level associations, not thresholds for flagging an individual.</b>
+    No single marker, nor their combination, predicts an individual's next result with useful
+    accuracy.</p>
+  </div>
+</section>
+
+<footer>
+  <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang &middot;
+  <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
+  <p style="margin-top:6px">Retrospective analysis of routinely collected records from a single
+  methadone maintenance programme, reported following the STROBE statement.</p>
+</footer>
+
+</div>
+</body>
+</html>
