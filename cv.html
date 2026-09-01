@@ -39,6 +39,37 @@
 </header>
 
 <hr>
+<section id="highlights">
+  <h2>Highlights</h2>
+  <dl class="facts">
+    <dt>Publications</dt>
+    <dd><b>5 peer-reviewed conference papers</b> (1 first-author) &middot;
+        <b>7 manuscripts</b>, 3 of them sole-author &middot;
+        all twelve available as PDFs from this site</dd>
+
+    <dt>Systems</dt>
+    <dd>Built and clinically deployed an RGB markerless motion capture system:
+        <b>2 signed hospital MOUs</b>, <b>260+ patients across four sites</b>,
+        led a <b>5-person team</b>, <b>6 media features</b></dd>
+
+    <dt>Independent</dt>
+    <dd><b>Three sole-author robot-learning manuscripts</b> since Oct 2025 &mdash; design,
+        implementation, experiments, statistics and writing done alone</dd>
+
+    <dt>Education</dt>
+    <dd>B.S. Biomedical Engineering, NYCU &middot; GPA <b>3.72 / 4.30</b>,
+        final two years <b>4.07 / 4.30</b> &middot; <b>IELTS 8.0</b></dd>
+
+    <dt>Status</dt>
+    <dd>M.S. place at NYCU held on an approved leave of absence since May 2025.
+        <b>I took the leave deliberately</b>, to move from measuring human movement to building
+        systems that act on it &mdash; taught full time through it while producing the three
+        manuscripts above, and now research full time. I am applying to start again with that
+        work as the foundation.</dd>
+  </dl>
+</section>
+
+<hr>
 <section>
   <h2>Research interest</h2>
   <div style="color:var(--ink-2)">
@@ -63,10 +94,8 @@
     <div>
       <h3>M.S., Biomedical Engineering</h3>
       <p class="where">National Yang Ming Chiao Tung University, Taipei</p>
-      <p>On an approved leave of absence, enrollment retained. I took leave to move from measuring
-      human movement to building systems that act on it &mdash; taught full time through the
-      leave while producing three sole-author robot-learning manuscripts, and now research full
-      time.</p>
+      <p>On an approved leave of absence, enrollment retained. See <a href="#highlights">Status</a>
+      above for why.</p>
     </div>
   </div>
 
@@ -101,35 +130,24 @@
       multiple-comparison correction, and the negative findings are reported as findings.</p>
       <ul>
         <li><a href="projects/motor-prior.html"><b>Two Routes to a Motor Prior: Guidance versus a
-        Frozen Body Model.</b></a> A frozen babble-learned forward model against a distilled
-        teacher policy under one SAC backbone on MyoSuite bodies, with seven controls and a
-        matched withdrawal at a common training step. Guidance buys the early speed
-        (&minus;50.6&nbsp;mrad on myoElbow, &minus;11.7&nbsp;mm on myoFinger) but its lead
-        reverses inside the budget on one body. n&nbsp;=&nbsp;12 matched seeds, Holm&ndash;Bonferroni
-        across six explicitly stated family definitions, with the cells that fail some definitions
-        reported as failing.</li>
+        Frozen Body Model.</b></a> A frozen babble-learned forward model against a distilled teacher
+        policy under one SAC backbone on MyoSuite bodies, with seven controls and a matched
+        withdrawal. Guidance buys the early speed; on myoFinger that lead reverses inside the
+        budget. n&nbsp;=&nbsp;12 matched seeds, Holm&ndash;Bonferroni over six stated family
+        definitions.</li>
 
         <li><a href="projects/hand-composition.html"><b>Which Hand-Motion Composition Axes Are
-        Worth Measuring.</b></a> Built the measurement that modular motion priors assume but
-        rarely test: a paired split holding out compositions, six axes over three hand datasets,
-        five gates, plus a raw-data interaction statistic computable before any model is trained.
-        <b>Compositional difficulty appears only where the two factors interact</b> &mdash; scoped
-        as one-sided evidence, since only one of the six axes could have falsified the direction,
-        and with sufficiency demonstrably false. Reported against my own result: the statistic
-        detects presence well and predicts magnitude badly, and on a Shadow Hand 16 of 17
-        comparisons fail to separate novel compositions from familiar ones. A side result of
-        independent value: inferring MANO&rarr;anatomical axis conventions <em>per joint</em>
-        instead of assuming them took OakInk2's PIP joints from 37.3&nbsp;% to 99.9&nbsp;% inside
-        anatomical range.</li>
+        Worth Measuring.</b></a> Built the measurement modular motion priors assume but rarely
+        test: a paired split over six axes of three hand datasets, behind five gates. Difficulty
+        appears only where the two factors interact &mdash; and the paper's own negative control
+        removed its strongest result.</li>
 
         <li><a href="projects/body-codes.html"><b>What Master-Then-Reorganise Does Not Buy: An
-        Invariance Argument for Body Codes.</b></a> With the core frozen and only a body code
-        &theta; adapted, &theta;&nbsp;&rarr;&nbsp;<em>M</em>&theta; with
-        <em>W</em><sub>&theta;</sub><em>M</em><sup>&minus;1</sup> preserves the function, so
-        adaptation under an equivariant rule cannot change held-out error. Built a re-encoding
-        that is the identity at every training code &mdash; preserving leave-one-body-out
-        decodability by construction, 0.000 across 20 seeds &mdash; yet still costing
-        +0.875&nbsp;mm: a counterexample to decodability as a proxy for representation quality.</li>
+        Invariance Argument for Body Codes.</b></a> An algebraic identity rules out a whole family
+        of &ldquo;reorganise the code&rdquo; proposals before any experiment runs; the two
+        conditions it needs are then measured. A re-encoding that preserves decodability by
+        construction still costs +0.875&nbsp;mm &mdash; a counterexample to decodability as a
+        proxy for representation quality.</li>
       </ul>
     </div>
   </div>
