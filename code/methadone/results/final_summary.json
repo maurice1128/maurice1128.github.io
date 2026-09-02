@@ -1,0 +1,27 @@
+{
+  "n_pos": 3401,
+  "n_neg": 6499,
+  "n_pat_pos": 472,
+  "n_pat_neg": 531,
+  "k_pca": 3,
+  "k_7d": 6,
+  "n_clusters": 9,
+  "n_sig": 9,
+  "n_high": 5,
+  "n_low": 4,
+  "pca_high_risk": true,
+  "pca_cuts_deg": [
+    156.0,
+    237.0,
+    338.0
+  ],
+  "ari_7d": 0.566,
+  "ari_pca": 0.719,
+  "esc_or_per_sd": 1.2756603241162496,
+  "esc_p": 2.7445104055426424e-05,
+  "auc": 0.6477221587796353,
+  "att_or": 0.168,
+  "att_p": 7.4e-22,
+  "att_mean_pos": 0.806,
+  "att_mean_neg": 0.913
+}

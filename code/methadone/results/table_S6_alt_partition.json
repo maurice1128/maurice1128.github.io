@@ -1,0 +1,54 @@
+{
+  "reported": [
+    {
+      "cluster": 1,
+      "pos": 908,
+      "neg": 2240,
+      "PN": 0.775,
+      "q": 0.0001,
+      "label": "lower-risk"
+    },
+    {
+      "cluster": 2,
+      "pos": 161,
+      "neg": 471,
+      "PN": 0.653,
+      "q": 0.0,
+      "label": "lower-risk"
+    },
+    {
+      "cluster": 3,
+      "pos": 267,
+      "neg": 381,
+      "PN": 1.339,
+      "q": 0.0003,
+      "label": "higher-risk"
+    }
+  ],
+  "alternative": [
+    {
+      "cluster": 1,
+      "pos": 295,
+      "neg": 766,
+      "PN": 0.736,
+      "q": 0.0003,
+      "label": "lower-risk"
+    },
+    {
+      "cluster": 2,
+      "pos": 597,
+      "neg": 1450,
+      "PN": 0.787,
+      "q": 0.0101,
+      "label": "lower-risk"
+    },
+    {
+      "cluster": 3,
+      "pos": 444,
+      "neg": 876,
+      "PN": 0.969,
+      "q": 0.6223,
+      "label": "ns"
+    }
+  ]
+}

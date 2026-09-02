@@ -1,0 +1,11 @@
+{
+  "ari_pca_kde_asused": 0.987965293933339,
+  "ari_7d_vm6_asused": 0.5663922626036442,
+  "n_boot": 20,
+  "kde_cuts_deg": [
+    156.0,
+    237.0,
+    338.5
+  ],
+  "table1_cells_mismatching": 0
+}

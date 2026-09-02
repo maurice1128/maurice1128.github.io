@@ -1,0 +1,15 @@
+# Never commit patient data from this project.
+*.mat
+*.parquet
+*.xlsx
+*.xls
+*.h5
+*.asv
+*.pkl
+*.sav
+*.dta
+*.db
+*.sqlite
+id_map.csv
+audit_sample.xlsx
+raw data/
