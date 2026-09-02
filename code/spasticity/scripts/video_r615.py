@@ -236,9 +236,10 @@ def draw(k):
     return []
 
 
-ani = animation.FuncAnimation(fig, draw, frames=NF * LOOPS, interval=33, blit=False)
-os.makedirs(OUT, exist_ok=True)
-p = os.path.join(OUT, "vid_gait.mp4")
-ani.save(p, writer=animation.FFMpegWriter(fps=30, bitrate=5200,
-         extra_args=["-pix_fmt", "yuv420p", "-movflags", "+faststart"]))
-print("-> %s  (%.1f MB)" % (p, os.path.getsize(p) / 1048576))
+if __name__ == "__main__":
+    ani = animation.FuncAnimation(fig, draw, frames=NF * LOOPS, interval=33, blit=False)
+    os.makedirs(OUT, exist_ok=True)
+    p = os.path.join(OUT, "vid_gait.mp4")
+    ani.save(p, writer=animation.FFMpegWriter(fps=30, bitrate=5200,
+             extra_args=["-pix_fmt", "yuv420p", "-movflags", "+faststart"]))
+    print("-> %s  (%.1f MB)" % (p, os.path.getsize(p) / 1048576))
