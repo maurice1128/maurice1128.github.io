@@ -1,0 +1,333 @@
+{
+ "question": "does simulated duration explain the shipped hip_flexion_LmR separation as well as lesion type does",
+ "status": "UNREGISTERED, POST-HOC; added after WEAK-PF cell 0 measured 16.21 s",
+ "inputs_read_only": [
+  "SPEED_LADDER_r217.json",
+  "LADDER36_r228.json"
+ ],
+ "nothing_resimulated": true,
+ "per_arm": {
+  "S": {
+   "source_arm_key_r217": "spastic KV 0.050",
+   "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106
+   ],
+   "dur_s": [
+    17.85,
+    14.96,
+    13.58,
+    16.94,
+    14.27,
+    14.82
+   ],
+   "cycles": [
+    12,
+    11,
+    9,
+    12,
+    10,
+    10
+   ],
+   "hip_flexion_LmR": [
+    -2.032596426116342,
+    -1.2098920576659609,
+    -2.772393801611315,
+    -1.683269788003031,
+    -2.346170497813503,
+    -2.5874430253430774
+   ],
+   "dur_min": 13.58,
+   "dur_max": 17.85,
+   "dur_constant": false,
+   "spearman_LmR_vs_dur": 0.7142857142857143,
+   "spearman_undefined_reason": null
+  },
+  "W800": {
+   "source_arm_key_r217": "weak x0.800",
+   "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106
+   ],
+   "dur_s": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "cycles": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+   ],
+   "hip_flexion_LmR": [
+    0.689314064165977,
+    0.4722318147468201,
+    0.06922285094839253,
+    0.26242421946650296,
+    0.16954776087578693,
+    0.021978661021215373
+   ],
+   "dur_min": 20.0,
+   "dur_max": 20.0,
+   "dur_constant": true,
+   "spearman_LmR_vs_dur": null,
+   "spearman_undefined_reason": "duration has no variance within this arm"
+  },
+  "W870": {
+   "source_arm_key_r217": "weak x0.870",
+   "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106
+   ],
+   "dur_s": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "cycles": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+   ],
+   "hip_flexion_LmR": [
+    0.4960324815565613,
+    -0.1971203998368125,
+    0.6268731236526435,
+    0.056310292105457904,
+    0.7553531796327704,
+    0.41877485246111945
+   ],
+   "dur_min": 20.0,
+   "dur_max": 20.0,
+   "dur_constant": true,
+   "spearman_LmR_vs_dur": null,
+   "spearman_undefined_reason": "duration has no variance within this arm"
+  },
+  "W892": {
+   "source_arm_key_r217": "weak x0.892",
+   "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106
+   ],
+   "dur_s": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "cycles": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+   ],
+   "hip_flexion_LmR": [
+    0.5818844775789671,
+    0.6923736587920004,
+    0.38415674247931975,
+    0.36151345041574245,
+    0.5069759754435523,
+    0.7927787828107213
+   ],
+   "dur_min": 20.0,
+   "dur_max": 20.0,
+   "dur_constant": true,
+   "spearman_LmR_vs_dur": null,
+   "spearman_undefined_reason": "duration has no variance within this arm"
+  },
+  "W900": {
+   "source_arm_key_r217": "weak x0.900",
+   "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106
+   ],
+   "dur_s": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "cycles": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+   ],
+   "hip_flexion_LmR": [
+    0.5595620418806604,
+    0.3043666399293983,
+    0.9725958572345732,
+    0.6628090365632389,
+    0.3335989466369682,
+    0.24088291622889813
+   ],
+   "dur_min": 20.0,
+   "dur_max": 20.0,
+   "dur_constant": true,
+   "spearman_LmR_vs_dur": null,
+   "spearman_undefined_reason": "duration has no variance within this arm"
+  },
+  "W915": {
+   "source_arm_key_r217": "weak x0.915",
+   "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106
+   ],
+   "dur_s": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "cycles": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+   ],
+   "hip_flexion_LmR": [
+    0.026126875457961773,
+    0.617648503151031,
+    0.20095921706418807,
+    0.5246574530012893,
+    0.18325482119464453,
+    1.1049376487539035
+   ],
+   "dur_min": 20.0,
+   "dur_max": 20.0,
+   "dur_constant": true,
+   "spearman_LmR_vs_dur": null,
+   "spearman_undefined_reason": "duration has no variance within this arm"
+  },
+  "W950": {
+   "source_arm_key_r217": "weak x0.950",
+   "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106
+   ],
+   "dur_s": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "cycles": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+   ],
+   "hip_flexion_LmR": [
+    0.814493883246179,
+    0.8972633663307761,
+    1.1824473792791892,
+    0.647579818368655,
+    0.10266257773153598,
+    0.7096196884254269
+   ],
+   "dur_min": 20.0,
+   "dur_max": 20.0,
+   "dur_constant": true,
+   "spearman_LmR_vs_dur": null,
+   "spearman_undefined_reason": "duration has no variance within this arm"
+  }
+ },
+ "duration_separation": {
+  "spastic_dur_range": [
+   13.58,
+   17.85
+  ],
+  "weakness_dur_range": [
+   20.0,
+   20.0
+  ],
+  "arms_overlap_in_duration": false,
+  "n_spastic": 6,
+  "n_weakness": 36,
+  "weakness_duration_is_constant": true,
+  "consequence": "spastic and fell-early are the SAME partition of this corpus"
+ },
+ "within_arm": {
+  "spastic": {
+   "n": 6,
+   "spearman_LmR_vs_dur": 0.7142857142857143,
+   "note": "duration varies within this arm, so the correlation is defined"
+  },
+  "weakness_pooled": {
+   "n": 36,
+   "spearman_LmR_vs_dur": null,
+   "note": "if duration is constant across all 36, the correlation is undefined, not null"
+  }
+ },
+ "gaps_recorded_not_filled": [
+  "SPEED_LADDER_r217.json contains no control arm, so control durations are absent here.",
+  "n = 6 within the spastic arm; a rho on six points is reported as a magnitude and a direction only, with no p-value and no inference attached."
+ ],
+ "CYCLE_COUNT_DISCREPANCY_D4": {
+  "finding": "per_arm.S.cycles here reads [12,11,9,12,10,10]; BANDFILL_ENDPOINT_r291.json reads [13,12,10,13,11,11] for the identical six cells (t_end matches exactly). Weakness: 14 here at 20.0 s, 15 in MATCHED20_ENDPOINT_r298.json. Constant offset of one.",
+  "provenance": "These values were copied from SPEED_LADDER_r217.json.",
+  "status": "NOT RECONCILED -- neither file records its cycle-counting convention. Disjointness holds on either set. See BANDFILL_ENDPOINT_r291.json -> CYCLE_COUNT_RECONCILIATION_D4_D5."
+ },
+ "RHO_SIGN_AND_CHANNEL_D26": {
+  "this_file": "rho(hip_flexion_LmR, t_end) within the spastic arm = +0.7143 at n=6, read in RESULTS_3d_r214.md sec0c as UNFAVOURABLE (earlier fall, more negative hip).",
+  "other_file": "KNEE_VS_DURATION_r284.json per_channel.knee_angle_LmR.rho_within_spastic = -0.7143, and rho_within_weakpf = -0.8000, read there as 'no strong within-arm duration association'.",
+  "resolution": "These are DIFFERENT CHANNELS, not a contradiction: +0.7143 is the HIP channel and -0.7143 is the KNEE channel. The equal magnitude is a coincidence of Spearman on n=6, where the statistic takes only a few discrete values.",
+  "what_is_still_unresolved": "The two files apply OPPOSITE READINGS to the same magnitude -- one calls |rho| = 0.7143 an unfavourable association, the other calls it not strong. No deposit states a threshold separating 'strong' from 'not strong', so the two readings cannot both be checked against a rule. That threshold is undefined and is recorded here as undefined."
+ }
+}

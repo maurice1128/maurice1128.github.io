@@ -1,0 +1,67 @@
+{
+ "round": 322,
+ "status": "RECORD ONLY. This record's own purpose is unchanged: the contradiction in BANDFILL_ENDPOINT_r291.json is documented here rather than repaired there. AS MEASURED 2026-08-18 11:0x, BANDFILL_ENDPOINT_r291.json has mtime 2026-08-18 09:32:46 and this file 2026-08-18 09:33:25. [r341: the original wording asserted that file 'AS MEASURED 2026-08-18 11:52, was NOT edited'. That was false and is refuted twice over -- see status_PREMISE_REFUTED_r341.] [r342: as-of instant placed inside the claiming clause. An undated 'not edited' assertion is falsified by any later write, including one of ours.]",
+ "location": "BANDFILL_ENDPOINT_r291.json -> .CYCLE_COUNT_RECONCILIATION_D4_D5 -- BOTH texts are in the SAME BLOCK of the SAME FILE.",
+ "TEXT_1_D4_status": "NOT RECONCILED. A constant offset of one is consistent with a differing cycle convention (counting completed cycles versus counting heel-strike intervals, or applying the drop-last rule versus not), but which file uses which convention is not recorded in either, and no deposit states the definition. This is recorded as an open discrepancy rather than resolved by assertion.",
+ "TEXT_2_CONVENTION_IDENTIFIED_r308": {
+  "convention_A_lower": "SPEED_LADDER_r217.json and CONFOUND_DURATION_r277.json",
+  "convention_B_higher_by_one": "PERCYCLE_r279.json, BANDFILL_ENDPOINT_r291.json and MATCHED20_ENDPOINT_r298.json",
+  "cross_check": "PERCYCLE_r279.json per_cell.S.101.n_cycles = 13, siding with convention B.",
+  "ADOPTED": "Convention B is adopted as the project's cycle count, because three deposits use it including the per-cycle source file, against two that use A.",
+  "no_conclusion_changes": "Disjointness of the cycle-count comparison holds under both."
+ },
+ "THE_CONTRADICTION": "D4_status says the discrepancy is NOT RECONCILED, that which file uses which convention IS NOT RECORDED in either, and that NO DEPOSIT STATES THE DEFINITION. CONVENTION_IDENTIFIED_r308 then assigns each file to a convention and declares one ADOPTED. These cannot both be live: the second does exactly what the first says cannot be done from the available record.",
+ "THE_ADOPTION_CLAIMS_BASIS_IS_A_VOTE_NOT_A_DEFINITION": "The stated ground is 'because three deposits use it including the per-cycle source file, against two that use A'. Counting how many files exhibit a behaviour does not define the behaviour. A majority can be wrong, and more to the point a majority cannot say WHAT IS BEING COUNTED.",
+ "AND_THE_CENSUS_IS_INCOMPLETE": {
+  "claim": "The 3-versus-2 tally omits files that also carry cycle counts, so even as a vote it is not a complete one.",
+  "checked_on_disk_r322": {
+   "GAIN_LADDER_r264.json": {
+    "has_n_cycles_total": true,
+    "has_n_cycles_in_window": true,
+    "has_n_cycles": false
+   },
+   "YAW_RECOVERED_r309.json": {
+    "has_n_cycles_total": true,
+    "has_n_cycles_in_window": true,
+    "has_n_cycles": false
+   }
+  },
+  "note": "GAIN_LADDER_r264.json and YAW_RECOVERED_r309.json both carry cycle-count fields and appear in neither column of the tally. Whether their counts follow A or B was NOT determined here -- doing so would require defining the conventions, which is precisely what no deposit does. What IS established is that the census omitted files that count cycles."
+ },
+ "WHAT_IS_NOT_ESTABLISHED": "NO DEPOSIT ANYWHERE DEFINES EITHER CONVENTION. A definition would have to state what is counted: completed gait cycles versus heel-strike intervals, and whether the last cycle inside the window is dropped. No file states this. Until one does, 'convention B' NAMES A BEHAVIOUR NOBODY HAS WRITTEN DOWN -- it is a label for an observed offset, not a rule anyone could apply to a new measurement.",
+ "WHICH_DOCUMENTS_SIDE_WITH_WHICH": {
+  "RESULTS_3d_r214.md": "sides with D4_status -- the passage beginning \"Cycle count separates the same way\" reports both conventions and states that disjointness holds under either. [r333: content anchor replaces a line number; the manuscript has been edited many times and any line number in a deposit is stale on arrival.]",
+  "TRAIL_r305_r308_convergence_round1.md": "sided with the adoption claim until r318, which withdrew 'Convention B adopted' and restored NOT RECONCILED as live.",
+  "consequence": "For a period the manuscript and the trail file disagreed with each other, each faithfully following a different half of one self-contradicting block.",
+  "RESULTS_3d_r214.md_LINE_CITATION_SUPERSEDED_r333": "sides with D4_status -- line 134 reports both conventions and states that disjointness holds under either."
+ },
+ "NOT_REPAIRED_AND_WHY": "No convention was chosen, nothing was recounted, and the block AS MEASURED 2026-08-18 11:52, was not edited. Choosing would be a fresh claim requiring its own verification -- round three's lesson -- and it would have to invent the definition whose absence is the actual defect. [r342: as-of instant placed inside the claiming clause. An undated 'not edited' assertion is falsified by any later write, including one of ours.]",
+ "nothing_scientific_waits_on_this": "Disjointness of the cycle-count comparison holds under BOTH counts, as both texts independently state.",
+ "written_at": "2026-08-18T06:12:52",
+ "LINE_CITATION_ANCHORED_r333": {
+  "anchor": "the passage beginning \"Cycle count separates the same way\" in RESULTS_3d_r214.md sec0c (content anchor, not a line number)",
+  "why": "A line number into RESULTS_3d_r214.md is stale on arrival -- that file has been edited more than a dozen times in the last day. Content anchors survive edits that line numbers cannot. Replaced r333; prior wording preserved above.",
+  "fields_changed": 0
+ },
+ "CENSUS_METHOD_CORRECTION_r333": {
+  "three_wrong_counts": "The coordinator counted 5 live citations by key path, the watchdog counted 3 by presence, and the r333 scan counted 1 by requiring the manuscript name in the same STRING as the line number. All three were wrong.",
+  "why_each_failed": {
+   "by_presence": "counted r324-preserved subordinate text as live",
+   "by_same_string": "missed this file, where the manuscript name is the KEY and the line number is the VALUE -- the pairing spans a key/value boundary a value-only filter cannot see",
+   "by_key_path_alone": "included enumeration artefacts created by the census itself"
+  },
+  "CORRECT_METHOD": "Classify by KEY PATH for live-vs-subordinate, and match the file reference across BOTH key and value. Neither alone is sufficient.",
+  "ENUMERATING_THE_DEFECT_CREATES_IT": "DEFECT_LIST_REVALIDATED_r332.json carries 3 line citations and LMRONLY_r223.json 3 more, all produced BY recording the defect. A census written as prose cannot avoid this: to say which line is wrong it must name the line.",
+  "IS_THERE_A_FORM_THAT_COULD": "YES for new records: a structured field holding {file, anchor_text} instead of a sentence quoting a line number is immune, because it names no line. It does NOT help where the record must quote a historical citation verbatim to show what was wrong -- those quotations are evidence and must stay. So the defect is avoidable going forward and irreducible in the audit trail.",
+  "recorded_at": "2026-08-18T09:33:25"
+ },
+ "status_ORIGINAL_REFUTED_r341": "RECORD ONLY. BANDFILL_ENDPOINT_r291.json was NOT edited. The contradiction IS the evidence and rewriting the block destroys it -- the same reasoning as PROVENANCE_STALENESS_r316.json and the r280 mtime loss.",
+ "status_PREMISE_REFUTED_r341": {
+  "original_claim": "BANDFILL_ENDPOINT_r291.json was NOT edited. The contradiction IS the evidence and rewriting the block destroys it.",
+  "refutation_1_it_WAS_edited": "BANDFILL_ENDPOINT_r291.json mtime 2026-08-18 09:32:46, written by our own r333 line-citation anchoring -- 39 seconds before this file's own last write at that time. The claim was false when made, not merely outdated.",
+  "refutation_2_the_premise_itself_is_WRONG": "The sentence predicts that rewriting the block would DESTROY the contradiction. The block was rewritten and BOTH D4_status and CONVENTION_IDENTIFIED_r308 survive it, verified above. So the contradiction was never destroyed by editing, and the stated reason for not editing did not hold. The decision to record rather than repair remains defensible on other grounds -- repairing it would require inventing the missing convention definition -- but NOT on this one.",
+  "why_this_class_is_perishable": "Any claim of the form 'file X was not edited' is FALSIFIED BY A SINGLE LATER WRITE, including one of our own. It is only safe when stated with the instant inside the clause, as the corrected status now does."
+ },
+ "status_UNDATED_ORIGINAL_r342": "RECORD ONLY. This record's own purpose is unchanged: the contradiction in BANDFILL_ENDPOINT_r291.json is documented here rather than repaired there. AS MEASURED 2026-08-18 11:0x, BANDFILL_ENDPOINT_r291.json has mtime 2026-08-18 09:32:46 and this file 2026-08-18 09:33:25. [r341: the original wording asserted that file 'was NOT edited'. That was false and is refuted twice over -- see status_PREMISE_REFUTED_r341.]",
+ "NOT_REPAIRED_AND_WHY_UNDATED_ORIGINAL_r342": "No convention was chosen, nothing was recounted, and the block was not edited. Choosing would be a fresh claim requiring its own verification -- round three's lesson -- and it would have to invent the definition whose absence is the actual defect."
+}

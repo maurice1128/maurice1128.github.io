@@ -1,0 +1,58 @@
+{
+ "a3_extra": [
+  {
+   "name": "ank_rom_r",
+   "raw_auc": 0.44,
+   "raw_p": 0.8412698412698413,
+   "r2": 0.7060437855458859,
+   "res_auc": 0.52,
+   "res_p": 1.0,
+   "candidate": false
+  },
+  {
+   "name": "ank_rom_LmR",
+   "raw_auc": 0.0,
+   "raw_p": 0.007936507936507936,
+   "r2": 0.9608388817121016,
+   "res_auc": 0.48,
+   "res_p": 1.0,
+   "candidate": false
+  },
+  {
+   "name": "cycle_time_r",
+   "raw_auc": 0.08,
+   "raw_p": 0.031746031746031744,
+   "r2": 0.9987358013505544,
+   "res_auc": 0.6,
+   "res_p": 0.6904761904761905,
+   "candidate": false
+  },
+  {
+   "name": "cycle_time_LmR",
+   "raw_auc": 0.8,
+   "raw_p": 0.15079365079365079,
+   "r2": 0.6824010272437591,
+   "res_auc": 0.4,
+   "res_p": 0.6904761904761905,
+   "candidate": false
+  },
+  {
+   "name": "ank_hs_r",
+   "raw_auc": 0.8,
+   "raw_p": 0.15079365079365079,
+   "r2": 0.44216191209956623,
+   "res_auc": 0.6,
+   "res_p": 0.6904761904761905,
+   "candidate": false
+  },
+  {
+   "name": "ank_hs_LmR",
+   "raw_auc": 0.28,
+   "raw_p": 0.30952380952380953,
+   "r2": 0.9262722860399113,
+   "res_auc": 0.4,
+   "res_p": 0.6904761904761905,
+   "candidate": false
+  }
+ ]
+}

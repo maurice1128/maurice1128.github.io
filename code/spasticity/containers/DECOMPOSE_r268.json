@@ -1,0 +1,1527 @@
+{
+ "round": 268,
+ "prereg": "PREREG_decompose_r268.md",
+ "common_interval": [
+  1.0,
+  13.58
+ ],
+ "common_interval_note": "upper bound is the minimum t_end over all 48 analysed cells, so every cell contributes the full interval",
+ "t_end_by_arm": {
+  "C": {
+   "per_seed": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "mean": 20.0,
+   "min": 20.0,
+   "max": 20.0
+  },
+  "S": {
+   "per_seed": [
+    17.85,
+    14.96,
+    13.58,
+    16.94,
+    14.27,
+    14.82
+   ],
+   "mean": 15.40333333333333,
+   "min": 13.58,
+   "max": 17.85
+  },
+  "W800": {
+   "per_seed": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "mean": 20.0,
+   "min": 20.0,
+   "max": 20.0
+  },
+  "W870": {
+   "per_seed": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "mean": 20.0,
+   "min": 20.0,
+   "max": 20.0
+  },
+  "W892": {
+   "per_seed": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "mean": 20.0,
+   "min": 20.0,
+   "max": 20.0
+  },
+  "W900": {
+   "per_seed": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "mean": 20.0,
+   "min": 20.0,
+   "max": 20.0
+  },
+  "W915": {
+   "per_seed": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "mean": 20.0,
+   "min": 20.0,
+   "max": 20.0
+  },
+  "W950": {
+   "per_seed": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "mean": 20.0,
+   "min": 20.0,
+   "max": 20.0
+  }
+ },
+ "components": {
+  "Effort": {
+   "C": {
+    "per_seed": [
+     471.798615567911,
+     472.25600555996823,
+     469.5828649722001,
+     471.81399205718833,
+     472.0684972200159,
+     471.7105996822875
+    ],
+    "mean": 471.53842917659523,
+    "min": 469.5828649722001,
+    "max": 472.25600555996823
+   },
+   "S": {
+    "per_seed": [
+     480.71717315329624,
+     475.2880119142177,
+     493.71442891183483,
+     480.7038157267673,
+     476.5129769658459,
+     479.9894622716442
+    ],
+    "mean": 481.154311490601,
+    "min": 475.2880119142177,
+    "max": 493.71442891183483
+   },
+   "W800": {
+    "per_seed": [
+     468.3672112787927,
+     470.567528991263,
+     469.16560206513105,
+     467.99065845909456,
+     468.3057077045274,
+     469.78158061953934
+    ],
+    "mean": 469.029714853058,
+    "min": 467.99065845909456,
+    "max": 470.567528991263
+   },
+   "W870": {
+    "per_seed": [
+     469.04718427323274,
+     470.902710087371,
+     470.5699563145353,
+     471.3338903891978,
+     469.24777521842736,
+     469.46614376489276
+    ],
+    "mean": 470.0946100079429,
+    "min": 469.04718427323274,
+    "max": 471.3338903891978
+   },
+   "W892": {
+    "per_seed": [
+     472.5193653693408,
+     471.35207783955514,
+     469.61585623510723,
+     469.2144583002383,
+     470.3144853057982,
+     469.7264217633042
+    ],
+    "mean": 470.45711080222395,
+    "min": 469.2144583002383,
+    "max": 472.5193653693408
+   },
+   "W900": {
+    "per_seed": [
+     470.43039634630657,
+     469.9551826846703,
+     468.9855242255759,
+     471.3581723590151,
+     470.54630659253377,
+     469.23236775218425
+    ],
+    "mean": 470.08465832671436,
+    "min": 468.9855242255759,
+    "max": 471.3581723590151
+   },
+   "W915": {
+    "per_seed": [
+     469.94884273232725,
+     470.11015488482917,
+     469.02389992057186,
+     471.8084177918983,
+     470.36268705321686,
+     469.2471953931692
+    ],
+    "mean": 470.0835329626687,
+    "min": 469.02389992057186,
+    "max": 471.8084177918983
+   },
+   "W950": {
+    "per_seed": [
+     469.21500476568707,
+     469.61732565528195,
+     467.9677442414614,
+     468.83728752978556,
+     470.8203550436855,
+     469.94607466243053
+    ],
+    "mean": 469.4006319830553,
+    "min": 467.9677442414614,
+    "max": 470.8203550436855
+   },
+   "_summary": {
+    "reflex_over_control": 1.0203925740067403,
+    "weakness_over_control": 0.9964370821477866,
+    "reflex_range": [
+     475.2880119142177,
+     493.71442891183483
+    ],
+    "weakness_range": [
+     467.9677442414614,
+     472.5193653693408
+    ],
+    "control_range": [
+     469.5828649722001,
+     472.25600555996823
+    ],
+    "reflex_overlaps_weakness": false,
+    "reflex_overlaps_control": false
+   }
+  },
+  "MuscleActivation": {
+   "C": {
+    "per_seed": [
+     0.36881642096902306,
+     0.37022687768069895,
+     0.3647644630659253,
+     0.36995803415409056,
+     0.3706158427323272,
+     0.36843366322478155
+    ],
+    "mean": 0.36880255030447445,
+    "min": 0.3647644630659253,
+    "max": 0.3706158427323272
+   },
+   "S": {
+    "per_seed": [
+     0.3761220031771247,
+     0.36656041540905476,
+     0.39515957029388404,
+     0.3780348721207308,
+     0.3669377021445592,
+     0.37607366322478153
+    ],
+    "mean": 0.37648137106168916,
+    "min": 0.36656041540905476,
+    "max": 0.39515957029388404
+   },
+   "W800": {
+    "per_seed": [
+     0.35719580142970614,
+     0.3556801985702939,
+     0.3568490206513106,
+     0.3571615448768864,
+     0.35803345115170765,
+     0.3642680651310564
+    ],
+    "mean": 0.3581980136351602,
+    "min": 0.3556801985702939,
+    "max": 0.3642680651310564
+   },
+   "W870": {
+    "per_seed": [
+     0.36039161477362985,
+     0.35918591024622715,
+     0.3620903129467832,
+     0.36737316203335985,
+     0.3589796870532168,
+     0.36046600555996827
+    ],
+    "mean": 0.3614144487688642,
+    "min": 0.3589796870532168,
+    "max": 0.36737316203335985
+   },
+   "W892": {
+    "per_seed": [
+     0.3661437768069897,
+     0.3650735345512311,
+     0.36170520651310567,
+     0.35750194201747415,
+     0.3642002907069103,
+     0.3610143836378078
+    ],
+    "mean": 0.36260652237225305,
+    "min": 0.35750194201747415,
+    "max": 0.3661437768069897
+   },
+   "W900": {
+    "per_seed": [
+     0.3640886298649722,
+     0.3607155146942017,
+     0.36159231453534546,
+     0.36593851469420174,
+     0.36007309134233517,
+     0.3623151080222399
+    ],
+    "mean": 0.36245386219221604,
+    "min": 0.36007309134233517,
+    "max": 0.36593851469420174
+   },
+   "W915": {
+    "per_seed": [
+     0.35995543288324067,
+     0.3632197529785544,
+     0.36047332565528195,
+     0.36643457664813345,
+     0.36201845353455125,
+     0.3619741556791104
+    ],
+    "mean": 0.36234594956314536,
+    "min": 0.35995543288324067,
+    "max": 0.36643457664813345
+   },
+   "W950": {
+    "per_seed": [
+     0.3643001779189833,
+     0.36165376727561555,
+     0.35769012231930103,
+     0.3594917815726767,
+     0.3644041580619539,
+     0.36307188482922953
+    ],
+    "mean": 0.36176864866295994,
+    "min": 0.35769012231930103,
+    "max": 0.3644041580619539
+   },
+   "_summary": {
+    "reflex_over_control": 1.0208209535180146,
+    "weakness_over_control": 0.9801032392554861,
+    "reflex_range": [
+     0.36656041540905476,
+     0.39515957029388404
+    ],
+    "weakness_range": [
+     0.3556801985702939,
+     0.36737316203335985
+    ],
+    "control_range": [
+     0.3647644630659253,
+     0.3706158427323272
+    ],
+    "reflex_overlaps_weakness": true,
+    "reflex_overlaps_control": true
+   }
+  },
+  "DofLimits": {
+   "C": {
+    "per_seed": [
+     0.8506125067739474,
+     0.8239917804322479,
+     0.8368367316399841,
+     0.8554115426080461,
+     0.8481780424730421,
+     0.8381947272393964
+    ],
+    "mean": 0.8422042218611107,
+    "min": 0.8239917804322479,
+    "max": 0.8554115426080461
+   },
+   "S": {
+    "per_seed": [
+     2.5098234544633837,
+     2.3443806991464093,
+     2.4395907814454407,
+     2.479607853144289,
+     2.4076393688294675,
+     2.1945295479642093
+    ],
+    "mean": 2.3959286174988663,
+    "min": 2.1945295479642093,
+    "max": 2.5098234544633837
+   },
+   "W800": {
+    "per_seed": [
+     1.1386006712049246,
+     1.1135152123176013,
+     1.0880842096295473,
+     1.068804452661795,
+     1.0177300539505163,
+     1.1263994455359811
+    ],
+    "mean": 1.092189007550061,
+    "min": 1.0177300539505163,
+    "max": 1.1386006712049246
+   },
+   "W870": {
+    "per_seed": [
+     1.0291515904737887,
+     0.9208756038244639,
+     1.0351074742328037,
+     1.0513600929098095,
+     0.8538777271115172,
+     0.9810085602735026
+    ],
+    "mean": 0.9785635081376475,
+    "min": 0.8538777271115172,
+    "max": 1.0513600929098095
+   },
+   "W892": {
+    "per_seed": [
+     0.9915997442580541,
+     1.016946742940953,
+     0.9726332480573504,
+     0.9750470145455281,
+     0.9433910663559968,
+     0.9812480300444797
+    ],
+    "mean": 0.9801443077003936,
+    "min": 0.9433910663559968,
+    "max": 1.016946742940953
+   },
+   "W900": {
+    "per_seed": [
+     0.9895644515466084,
+     0.8813918083031771,
+     0.9528387291398729,
+     0.9998057007822392,
+     0.8986365211720492,
+     0.8985445431128832
+    ],
+    "mean": 0.9367969590094716,
+    "min": 0.8813918083031771,
+    "max": 0.9998057007822392
+   },
+   "W915": {
+    "per_seed": [
+     0.8709450618677521,
+     0.9178918081535132,
+     0.8876822508621127,
+     0.9841428985097698,
+     0.8862366744003971,
+     0.9498072563519777
+    ],
+    "mean": 0.9161176583575871,
+    "min": 0.8709450618677521,
+    "max": 0.9841428985097698
+   },
+   "W950": {
+    "per_seed": [
+     0.9152048847807864,
+     0.8998902696095393,
+     0.9274692365936348,
+     0.8802773847074663,
+     0.9092243787922161,
+     0.913824893490834
+    ],
+    "mean": 0.9076485079957463,
+    "min": 0.8802773847074663,
+    "max": 0.9274692365936348
+   },
+   "_summary": {
+    "reflex_over_control": 2.8448309273543195,
+    "weakness_over_control": 1.1500496352117326,
+    "reflex_range": [
+     2.1945295479642093,
+     2.5098234544633837
+    ],
+    "weakness_range": [
+     0.8538777271115172,
+     1.1386006712049246
+    ],
+    "control_range": [
+     0.8239917804322479,
+     0.8554115426080461
+    ],
+    "reflex_overlaps_weakness": false,
+    "reflex_overlaps_control": false
+   }
+  },
+  "GRF": {
+   "C": {
+    "per_seed": [
+     0.005992313788721207,
+     0.005263660240667196,
+     0.006136896400317712,
+     0.005050020492454329,
+     0.005674416139793487,
+     0.0059359201906274825
+    ],
+    "mean": 0.005675537875430236,
+    "min": 0.005050020492454329,
+    "max": 0.006136896400317712
+   },
+   "S": {
+    "per_seed": [
+     0.004376226800635425,
+     0.005043396775218428,
+     0.004968115599682288,
+     0.004757849789515488,
+     0.0041253123629864975,
+     0.004354063281096108
+    ],
+    "mean": 0.00460416076818904,
+    "min": 0.0041253123629864975,
+    "max": 0.005043396775218428
+   },
+   "W800": {
+    "per_seed": [
+     0.010991495996822875,
+     0.012844164648133441,
+     0.012545947617156473,
+     0.013043286233518669,
+     0.012332226338363781,
+     0.010039201612390787
+    ],
+    "mean": 0.011966053741064337,
+    "min": 0.010039201612390787,
+    "max": 0.013043286233518669
+   },
+   "W870": {
+    "per_seed": [
+     0.0099027516624305,
+     0.011095743340349485,
+     0.009665053129467832,
+     0.0084540537172359,
+     0.010631741342335186,
+     0.010412397185861795
+    ],
+    "mean": 0.01002695672961345,
+    "min": 0.0084540537172359,
+    "max": 0.011095743340349485
+   },
+   "W892": {
+    "per_seed": [
+     0.008422512766878474,
+     0.00912568352025417,
+     0.009322404455917395,
+     0.010269036711675932,
+     0.008864278872120731,
+     0.009432609642573472
+    ],
+    "mean": 0.009239420994903361,
+    "min": 0.008422512766878474,
+    "max": 0.010269036711675932
+   },
+   "W900": {
+    "per_seed": [
+     0.008855312830023828,
+     0.010453007140587767,
+     0.008045860165210484,
+     0.008827842565528198,
+     0.010412132509928515,
+     0.009264639626687847
+    ],
+    "mean": 0.009309799139661106,
+    "min": 0.008045860165210484,
+    "max": 0.010453007140587767
+   },
+   "W915": {
+    "per_seed": [
+     0.010197767934868943,
+     0.008953026956314536,
+     0.009274998610007943,
+     0.008263780895154884,
+     0.009031501087370929,
+     0.00890023009880858
+    ],
+    "mean": 0.00910355093042097,
+    "min": 0.008263780895154884,
+    "max": 0.010197767934868943
+   },
+   "W950": {
+    "per_seed": [
+     0.007265137609213661,
+     0.008400747419698174,
+     0.008783509132644956,
+     0.008765070881652105,
+     0.007811345138999205,
+     0.008587583648133439
+    ],
+    "mean": 0.008268898971723589,
+    "min": 0.007265137609213661,
+    "max": 0.008783509132644956
+   },
+   "_summary": {
+    "reflex_over_control": 0.8112289741067088,
+    "weakness_over_control": 1.700710481206934,
+    "reflex_range": [
+     0.0041253123629864975,
+     0.005043396775218428
+    ],
+    "weakness_range": [
+     0.007265137609213661,
+     0.013043286233518669
+    ],
+    "control_range": [
+     0.005050020492454329,
+     0.006136896400317712
+    ],
+    "reflex_overlaps_weakness": false,
+    "reflex_overlaps_control": false
+   }
+  }
+ },
+ "per_cell": [
+  {
+   "arm": "C",
+   "seed": 101,
+   "dir": "R151C_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 471.798615567911,
+   "MuscleActivation": 0.36881642096902306,
+   "DofLimits": 0.8506125067739474,
+   "GRF": 0.005992313788721207
+  },
+  {
+   "arm": "C",
+   "seed": 102,
+   "dir": "R151C_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 472.25600555996823,
+   "MuscleActivation": 0.37022687768069895,
+   "DofLimits": 0.8239917804322479,
+   "GRF": 0.005263660240667196
+  },
+  {
+   "arm": "C",
+   "seed": 103,
+   "dir": "R151C_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 469.5828649722001,
+   "MuscleActivation": 0.3647644630659253,
+   "DofLimits": 0.8368367316399841,
+   "GRF": 0.006136896400317712
+  },
+  {
+   "arm": "C",
+   "seed": 104,
+   "dir": "R151C_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 471.81399205718833,
+   "MuscleActivation": 0.36995803415409056,
+   "DofLimits": 0.8554115426080461,
+   "GRF": 0.005050020492454329
+  },
+  {
+   "arm": "C",
+   "seed": 105,
+   "dir": "R151C_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 472.0684972200159,
+   "MuscleActivation": 0.3706158427323272,
+   "DofLimits": 0.8481780424730421,
+   "GRF": 0.005674416139793487
+  },
+  {
+   "arm": "C",
+   "seed": 106,
+   "dir": "R151C_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 471.7105996822875,
+   "MuscleActivation": 0.36843366322478155,
+   "DofLimits": 0.8381947272393964,
+   "GRF": 0.0059359201906274825
+  },
+  {
+   "arm": "S",
+   "seed": 101,
+   "dir": "R151S_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "t_end": 17.85,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 480.71717315329624,
+   "MuscleActivation": 0.3761220031771247,
+   "DofLimits": 2.5098234544633837,
+   "GRF": 0.004376226800635425
+  },
+  {
+   "arm": "S",
+   "seed": 102,
+   "dir": "R151S_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "t_end": 14.96,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 475.2880119142177,
+   "MuscleActivation": 0.36656041540905476,
+   "DofLimits": 2.3443806991464093,
+   "GRF": 0.005043396775218428
+  },
+  {
+   "arm": "S",
+   "seed": 103,
+   "dir": "R151S_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "t_end": 13.58,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 493.71442891183483,
+   "MuscleActivation": 0.39515957029388404,
+   "DofLimits": 2.4395907814454407,
+   "GRF": 0.004968115599682288
+  },
+  {
+   "arm": "S",
+   "seed": 104,
+   "dir": "R151S_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "t_end": 16.94,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 480.7038157267673,
+   "MuscleActivation": 0.3780348721207308,
+   "DofLimits": 2.479607853144289,
+   "GRF": 0.004757849789515488
+  },
+  {
+   "arm": "S",
+   "seed": 105,
+   "dir": "R151S_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "t_end": 14.27,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 476.5129769658459,
+   "MuscleActivation": 0.3669377021445592,
+   "DofLimits": 2.4076393688294675,
+   "GRF": 0.0041253123629864975
+  },
+  {
+   "arm": "S",
+   "seed": 106,
+   "dir": "R151S_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "t_end": 14.82,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 479.9894622716442,
+   "MuscleActivation": 0.37607366322478153,
+   "DofLimits": 2.1945295479642093,
+   "GRF": 0.004354063281096108
+  },
+  {
+   "arm": "W800",
+   "seed": 101,
+   "dir": "R151W_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 468.3672112787927,
+   "MuscleActivation": 0.35719580142970614,
+   "DofLimits": 1.1386006712049246,
+   "GRF": 0.010991495996822875
+  },
+  {
+   "arm": "W800",
+   "seed": 102,
+   "dir": "R151W_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 470.567528991263,
+   "MuscleActivation": 0.3556801985702939,
+   "DofLimits": 1.1135152123176013,
+   "GRF": 0.012844164648133441
+  },
+  {
+   "arm": "W800",
+   "seed": 103,
+   "dir": "R151W_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 469.16560206513105,
+   "MuscleActivation": 0.3568490206513106,
+   "DofLimits": 1.0880842096295473,
+   "GRF": 0.012545947617156473
+  },
+  {
+   "arm": "W800",
+   "seed": 104,
+   "dir": "R151W_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 467.99065845909456,
+   "MuscleActivation": 0.3571615448768864,
+   "DofLimits": 1.068804452661795,
+   "GRF": 0.013043286233518669
+  },
+  {
+   "arm": "W800",
+   "seed": 105,
+   "dir": "R151W_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 468.3057077045274,
+   "MuscleActivation": 0.35803345115170765,
+   "DofLimits": 1.0177300539505163,
+   "GRF": 0.012332226338363781
+  },
+  {
+   "arm": "W800",
+   "seed": 106,
+   "dir": "R151W_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 469.78158061953934,
+   "MuscleActivation": 0.3642680651310564,
+   "DofLimits": 1.1263994455359811,
+   "GRF": 0.010039201612390787
+  },
+  {
+   "arm": "W870",
+   "seed": 101,
+   "dir": "R174W870_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 469.04718427323274,
+   "MuscleActivation": 0.36039161477362985,
+   "DofLimits": 1.0291515904737887,
+   "GRF": 0.0099027516624305
+  },
+  {
+   "arm": "W870",
+   "seed": 102,
+   "dir": "R174W870_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 470.902710087371,
+   "MuscleActivation": 0.35918591024622715,
+   "DofLimits": 0.9208756038244639,
+   "GRF": 0.011095743340349485
+  },
+  {
+   "arm": "W870",
+   "seed": 103,
+   "dir": "R174W870_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 470.5699563145353,
+   "MuscleActivation": 0.3620903129467832,
+   "DofLimits": 1.0351074742328037,
+   "GRF": 0.009665053129467832
+  },
+  {
+   "arm": "W870",
+   "seed": 104,
+   "dir": "R174W870_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 471.3338903891978,
+   "MuscleActivation": 0.36737316203335985,
+   "DofLimits": 1.0513600929098095,
+   "GRF": 0.0084540537172359
+  },
+  {
+   "arm": "W870",
+   "seed": 105,
+   "dir": "R174W870_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 469.24777521842736,
+   "MuscleActivation": 0.3589796870532168,
+   "DofLimits": 0.8538777271115172,
+   "GRF": 0.010631741342335186
+  },
+  {
+   "arm": "W870",
+   "seed": 106,
+   "dir": "R174W870_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 469.46614376489276,
+   "MuscleActivation": 0.36046600555996827,
+   "DofLimits": 0.9810085602735026,
+   "GRF": 0.010412397185861795
+  },
+  {
+   "arm": "W892",
+   "seed": 101,
+   "dir": "R174W892_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 472.5193653693408,
+   "MuscleActivation": 0.3661437768069897,
+   "DofLimits": 0.9915997442580541,
+   "GRF": 0.008422512766878474
+  },
+  {
+   "arm": "W892",
+   "seed": 102,
+   "dir": "R174W892_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 471.35207783955514,
+   "MuscleActivation": 0.3650735345512311,
+   "DofLimits": 1.016946742940953,
+   "GRF": 0.00912568352025417
+  },
+  {
+   "arm": "W892",
+   "seed": 103,
+   "dir": "R174W892_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 469.61585623510723,
+   "MuscleActivation": 0.36170520651310567,
+   "DofLimits": 0.9726332480573504,
+   "GRF": 0.009322404455917395
+  },
+  {
+   "arm": "W892",
+   "seed": 104,
+   "dir": "R174W892_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 469.2144583002383,
+   "MuscleActivation": 0.35750194201747415,
+   "DofLimits": 0.9750470145455281,
+   "GRF": 0.010269036711675932
+  },
+  {
+   "arm": "W892",
+   "seed": 105,
+   "dir": "R174W892_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 470.3144853057982,
+   "MuscleActivation": 0.3642002907069103,
+   "DofLimits": 0.9433910663559968,
+   "GRF": 0.008864278872120731
+  },
+  {
+   "arm": "W892",
+   "seed": 106,
+   "dir": "R174W892_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 469.7264217633042,
+   "MuscleActivation": 0.3610143836378078,
+   "DofLimits": 0.9812480300444797,
+   "GRF": 0.009432609642573472
+  },
+  {
+   "arm": "W900",
+   "seed": 101,
+   "dir": "R169W090_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 470.43039634630657,
+   "MuscleActivation": 0.3640886298649722,
+   "DofLimits": 0.9895644515466084,
+   "GRF": 0.008855312830023828
+  },
+  {
+   "arm": "W900",
+   "seed": 102,
+   "dir": "R169W090_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 469.9551826846703,
+   "MuscleActivation": 0.3607155146942017,
+   "DofLimits": 0.8813918083031771,
+   "GRF": 0.010453007140587767
+  },
+  {
+   "arm": "W900",
+   "seed": 103,
+   "dir": "R169W090_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 468.9855242255759,
+   "MuscleActivation": 0.36159231453534546,
+   "DofLimits": 0.9528387291398729,
+   "GRF": 0.008045860165210484
+  },
+  {
+   "arm": "W900",
+   "seed": 104,
+   "dir": "R169W090_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 471.3581723590151,
+   "MuscleActivation": 0.36593851469420174,
+   "DofLimits": 0.9998057007822392,
+   "GRF": 0.008827842565528198
+  },
+  {
+   "arm": "W900",
+   "seed": 105,
+   "dir": "R169W090_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 470.54630659253377,
+   "MuscleActivation": 0.36007309134233517,
+   "DofLimits": 0.8986365211720492,
+   "GRF": 0.010412132509928515
+  },
+  {
+   "arm": "W900",
+   "seed": 106,
+   "dir": "R169W090_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 469.23236775218425,
+   "MuscleActivation": 0.3623151080222399,
+   "DofLimits": 0.8985445431128832,
+   "GRF": 0.009264639626687847
+  },
+  {
+   "arm": "W915",
+   "seed": 101,
+   "dir": "R174W915_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 469.94884273232725,
+   "MuscleActivation": 0.35995543288324067,
+   "DofLimits": 0.8709450618677521,
+   "GRF": 0.010197767934868943
+  },
+  {
+   "arm": "W915",
+   "seed": 102,
+   "dir": "R174W915_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 470.11015488482917,
+   "MuscleActivation": 0.3632197529785544,
+   "DofLimits": 0.9178918081535132,
+   "GRF": 0.008953026956314536
+  },
+  {
+   "arm": "W915",
+   "seed": 103,
+   "dir": "R174W915_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 469.02389992057186,
+   "MuscleActivation": 0.36047332565528195,
+   "DofLimits": 0.8876822508621127,
+   "GRF": 0.009274998610007943
+  },
+  {
+   "arm": "W915",
+   "seed": 104,
+   "dir": "R174W915_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 471.8084177918983,
+   "MuscleActivation": 0.36643457664813345,
+   "DofLimits": 0.9841428985097698,
+   "GRF": 0.008263780895154884
+  },
+  {
+   "arm": "W915",
+   "seed": 105,
+   "dir": "R174W915_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 470.36268705321686,
+   "MuscleActivation": 0.36201845353455125,
+   "DofLimits": 0.8862366744003971,
+   "GRF": 0.009031501087370929
+  },
+  {
+   "arm": "W915",
+   "seed": 106,
+   "dir": "R174W915_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 469.2471953931692,
+   "MuscleActivation": 0.3619741556791104,
+   "DofLimits": 0.9498072563519777,
+   "GRF": 0.00890023009880858
+  },
+  {
+   "arm": "W950",
+   "seed": 101,
+   "dir": "R169W095_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 469.21500476568707,
+   "MuscleActivation": 0.3643001779189833,
+   "DofLimits": 0.9152048847807864,
+   "GRF": 0.007265137609213661
+  },
+  {
+   "arm": "W950",
+   "seed": 102,
+   "dir": "R169W095_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 469.61732565528195,
+   "MuscleActivation": 0.36165376727561555,
+   "DofLimits": 0.8998902696095393,
+   "GRF": 0.008400747419698174
+  },
+  {
+   "arm": "W950",
+   "seed": 103,
+   "dir": "R169W095_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 467.9677442414614,
+   "MuscleActivation": 0.35769012231930103,
+   "DofLimits": 0.9274692365936348,
+   "GRF": 0.008783509132644956
+  },
+  {
+   "arm": "W950",
+   "seed": 104,
+   "dir": "R169W095_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 468.83728752978556,
+   "MuscleActivation": 0.3594917815726767,
+   "DofLimits": 0.8802773847074663,
+   "GRF": 0.008765070881652105
+  },
+  {
+   "arm": "W950",
+   "seed": 105,
+   "dir": "R169W095_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105 (1)",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 470.8203550436855,
+   "MuscleActivation": 0.3644041580619539,
+   "DofLimits": 0.9092243787922161,
+   "GRF": 0.007811345138999205
+  },
+  {
+   "arm": "W950",
+   "seed": 106,
+   "dir": "R169W095_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106 (1)",
+   "t_end": 20.0,
+   "_monotone": {
+    "Effort.effort": false,
+    "MuscleActivation.effort": false,
+    "ankle_angle_l.position_penalty": true,
+    "ankle_angle_r.position_penalty": true,
+    "knee_angle_l.limit_torque_penalty": false,
+    "knee_angle_r.limit_torque_penalty": false,
+    "GRF.load_penalty": false
+   },
+   "Effort": 469.94607466243053,
+   "MuscleActivation": 0.36307188482922953,
+   "DofLimits": 0.913824893490834,
+   "GRF": 0.008587583648133439
+  }
+ ]
+}

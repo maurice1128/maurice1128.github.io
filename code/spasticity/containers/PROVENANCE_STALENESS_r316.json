@@ -1,0 +1,148 @@
+{
+ "round": 316,
+ "status": "RECORD ONLY. No provenance file was regenerated, no manifest re-attested, and DEPOSIT_INVENTORY_r246.json was not touched -- it is the file BODY2_HASHES_r229.json attests, and rewriting it would destroy the remaining comparison.",
+ "why_this_file_exists_separately": "The evidence for both defects below is TIMESTAMPS AND COUNTS held in other files. Editing those files to explain the problem is what destroys the problem. This record therefore lives apart from every file it describes, and none of them was modified.",
+ "DEFECT_23_PROVENANCE_INVALIDATED_BY_OUR_OWN_REPAIR": {
+  "what_PROVENANCE_r224_is_for": "It establishes that a registration and its .sha256 sidecar existed BEFORE the last write to the corresponding deposit. Its evidence is modification times.",
+  "recorded_values": {
+   "LMRONLY_r223.json": "2026-08-16 17:43:01",
+   "CLASSIFIER_r222.json": "2026-08-16 17:35:58"
+  },
+  "cause": "The r308 repair rewrote both files to add PERMUTATION_NULL_WITHDRAWAL blocks, recording that their permutation nulls were withdrawn at r250. That write advanced both mtimes by about a day and a half.",
+  "consequence": "PROVENANCE_r224.json's attestation for these two deposits can no longer be checked against the filesystem. The ordering it certifies is not visible any more, and the recorded times are historical values not recoverable from disk.",
+  "SECOND_DISAGREEMENT_PREDATING_r308": "PROVENANCE.json and PROVENANCE_r224.json disagree with each other on CLASSIFIER_r222.json INDEPENDENTLY of the r308 writes: r224 records 17:35:58, PROVENANCE.json records 18:27:18. Verified by parsing -- 17:35:58 appears in PROVENANCE_r224.json and does NOT appear in PROVENANCE.json. This disagreement is older than tonight and is not caused by any repair.",
+  "CONJECTURE_NOT_ASSERTED": "PROVENANCE_r224.json's own mtime is 2026-08-16 18:27:18 -- the exact value PROVENANCE.json records for CLASSIFIER_r222.json. That coincidence is consistent with PROVENANCE.json having captured the wrong file's timestamp, but it is a CONJECTURE. No artefact confirms it and it is recorded as unresolved, not as the explanation.",
+  "four_other_groups": "The reader verified the other four provenance groups match disk exactly.",
+  "actual_values_now_ORIGINAL_STALE": {
+   "LMRONLY_r223.json": "2026-08-18 02:34:24",
+   "CLASSIFIER_r222.json": "2026-08-18 02:34:24"
+  },
+  "STALE_MEASUREMENT_CORRECTED_r336": {
+   "was": "both deposits asserted at 2026-08-18 02:34:24",
+   "is": {
+    "LMRONLY_r223.json": "2026-08-18 06:54:49",
+    "CLASSIFIER_r222.json": "2026-08-18 06:52:39"
+   },
+   "THEY_ARE_NOT_EQUAL": "The two mtimes differ by 2 minutes 10 seconds. The original sentence used their EQUALITY rhetorically -- \"both now read 02:34:24\" -- and that equality was an artefact of a single stale reading, not a fact about the files.",
+   "cause": "r324 and r325 rewrote LMRONLY_r223.json and CLASSIFIER_r222.json AFTER r316 measured them. 02:34:24 was true when recorded and went stale the moment those repairs ran.",
+   "MECHANISM_NEW_IN_KIND": "This file exists to record that other files timestamps moved. Its own record of them went stale BY THE SAME PROCESS IT DOCUMENTS. A deposit that measures MUTABLE STATE is itself PERISHABLE, and nothing in this corpus re-checks it. Every other defect class tonight was a wrong claim; this is a claim that was RIGHT WHEN WRITTEN and rotted.",
+   "not_caught_twice": "This file was edited again after the stale values were recorded -- its own mtime is now later than the recorded_at of the block containing them -- and neither edit re-verified the measurement it exists to hold.",
+   "corrected_at": "2026-08-18T10:53:04"
+  },
+  "deposit_mtimes_measured": {
+   "measured_at": "2026-08-18 11:12:40",
+   "measurement_is_governed_by_measured_at": true,
+   "values": {
+    "LMRONLY_r223.json": "2026-08-18 06:54:49",
+    "CLASSIFIER_r222.json": "2026-08-18 06:52:39"
+   },
+   "note": "These are the mtimes of the two deposits AS MEASURED AT measured_at above. They are NOT a claim about the present. Both files remain writable, so these values will diverge from disk the next time either is edited -- and that is expected, not a defect, because this block declares its instant.",
+   "they_are_not_equal": "The two differ by 2 minutes 10 seconds. An earlier version asserted both at 02:34:24, using their equality rhetorically; that equality was an artefact of a single stale reading."
+  },
+  "actual_values_now_KEY_RETIRED_r338": {
+   "old_key": "actual_values_now",
+   "old_values_at_retirement": {
+    "LMRONLY_r223.json": "2026-08-18 06:54:49",
+    "CLASSIFIER_r222.json": "2026-08-18 06:52:39"
+   },
+   "why_retired": "The key wording presented a mutable measurement as the CURRENT state, which made it perishable. It rotted once already: values true when written at r316 were invalidated by the r324/r325 repairs and stood false through two further edits of this file. Retained as the evidence for the rule below.",
+   "RULE": "A fact about MUTABLE STATE is PERISHABLE if presented as current and PERMANENT if governed by a declared instant. The fix is never a fresher measurement -- it is a key that says WHEN. Compare FROZEN_MANIFEST.json, whose summary.frozen_at states its instant INSIDE the file; that is why its 1,159 mtime facts are sound sixteen days on. A round number in a key is a NAME, not a source: the instant must be stated as data."
+  }
+ },
+ "DEFECT_24_FOUR_LIVE_COUNTS_OF_THE_SAME_QUANTITY": {
+  "quantity": "deposits cited in RESULTS_3d_r214.md",
+  "counts": {
+   "PROVENANCE_r224.json": 11,
+   "PROVENANCE.json": 12,
+   "DEPOSIT_INVENTORY_r246.json": 20,
+   "measured_in_current_manuscript": 40
+  },
+  "finding": "Four different live values for one quantity, none marked superseded. The manuscript already flags the eleven-item list as obsolete, but PROVENANCE_r224.json still asserts it, so the obsolete count remains live in its own file. [r334: the line-number citation is replaced by a content anchor -- the manuscript passage stating the deposit count and its extraction rule. RESULTS_3d_r214.md has been edited many times and any line number written into a deposit is stale on arrival.]",
+  "not_repaired": "Regenerating any of the three would overwrite an attested target. The correct live count is 40 and is measured in CONTAINER_AUDIT_r311.json, which also records that all 40 cited deposits are present on disk.",
+  "finding_LINE_CITATION_SUPERSEDED_r334": "Four different live values for one quantity, none marked superseded. The manuscript already flags the eleven-item list as obsolete at lines 89-91, but PROVENANCE_r224.json still asserts it, so the obsolete count remains live in its own file."
+ },
+ "PATTERN_TWO_INSTANCES_OF_A_REPAIR_BREAKING_ITS_OWN_RECORD": {
+  "instance_1": "r308 rewrote SEPARATION_r280.json to document a provenance break whose evidence was mtimes -- and the rewrite advanced that file's mtime, inverting the ordering the block cites as proof.",
+  "instance_2": "r308 rewrote LMRONLY_r223.json and CLASSIFIER_r222.json to record a withdrawal, invalidating PROVENANCE_r224.json's attestation over those same two files.",
+  "shape": "In both, the repair was correct in substance and destroyed the record that documented what it repaired. Neither was detectable by reading the edited file, because the edited file looks complete and internally consistent.",
+  "RULE": "Any deposit whose evidence is a TIMESTAMP, a SIZE, or an ORDERING must not be edited. The record of its breakage must live in a DIFFERENT file. Editing it to explain the break is what destroys the break."
+ },
+ "written_at": "2026-08-18T03:52:57",
+ "DEFECT_15_LIVE_OK_VERDICTS_r330": {
+  "question_put": "Are PROVENANCE.json and PROVENANCE_r224.json EVIDENCE files, which must not be edited, or VERDICT files whose evidence lives elsewhere and which may carry a contested-marker beside their OK?",
+  "premise_corrected_first": {
+   "asserted": "both files carry 'ordering_...' = 'OK' as a live verdict",
+   "measured_r330": {
+    "PROVENANCE.json": {
+     "ordering_verdict_fields": 0,
+     "literal_OK": 0
+    },
+    "PROVENANCE_r224.json": {
+     "ordering_verdict_fields": 7,
+     "literal_OK": 6
+    }
+   },
+   "consequence": "PROVENANCE.json carries NO such verdict. The defect concerns ONE file, not two. Nothing needs doing to PROVENANCE.json on this ground."
+  },
+  "RULING": "PROVENANCE_r224.json is an EVIDENCE file. AS MEASURED 2026-08-18 11:52, NOT EDITED. [r342: as-of instant placed inside the claiming clause. An undated 'not edited' assertion is falsified by any later write, including one of ours.]",
+  "the_general_form": "A file is an EVIDENCE file when some claim in the corpus depends on its metadata, not when its contents happen to be evidential. Contents can be read from a copy; metadata cannot. The test is 'does anything anywhere rely on this file's mtime, size or ordering', not 'is this file a verdict or a measurement'.",
+  "cost_of_this_ruling_stated_plainly": "A reader opening PROVENANCE_r224.json sees six literal 'OK' attestations with NOTHING in the file indicating they are superseded. That cost is real and is accepted, because the alternative destroys evidence permanently while the cost is only that a reader must find this record. The r308 rewrites already did the destructive version twice -- SEPARATION_r280.json and the two withdrawal deposits -- and both are unrecoverable.",
+  "NOT_RECOMPUTED": "No ordering was recomputed and nothing was re-attested, per instruction and because re-attesting would certify the present state rather than the one the verdict describes.",
+  "first_time_the_two_rules_conflicted": "Rule A: do not edit a file whose evidence is a timestamp. Rule B: a live field must not assert something contested without a marker. Here A wins, because A's harm is PERMANENT and B's harm is DISCOVERABILITY. Where they conflict again, the tie-break is which harm can still be undone.",
+  "recorded_at": "2026-08-18T08:33:15",
+  "why_not_the_verdict_reading_REFUTED_r335": "A verdict file may be marked contested because its own metadata proves nothing. That is not true here. PROVENANCE.json records CLASSIFIER_r222.json at 18:27:18, and PROVENANCE_r224.json's OWN MTIME IS 2026-08-16 18:27:18 -- the same value. Whether PROVENANCE.json captured the wrong file's timestamp is the conjecture this record filed UNRESOLVED at r316, and PROVENANCE_r224.json's mtime is the ONLY surviving means of testing it. Editing that file to add a pointer would advance its mtime and destroy the test. Its timestamp is therefore load-bearing evidence for an open question, which makes it an evidence file whatever its contents look like.",
+  "RULING_r330_REASONING_WAS_FALSE": {
+   "what_r330_claimed": "that PROVENANCE_r224.json's own mtime is the ONLY surviving means of testing the r316 conjecture, making it an evidence file",
+   "refutation_1_not_the_only_record": "PROVENANCE.json carries /deposits/PROVENANCE_r224.json/deposit_mtime = '2026-08-16 18:27:18'. The mtime is stored as DATA in another file, so editing PROVENANCE_r224.json would not have destroyed it.",
+   "refutation_2_the_coincidence_is_not_evidence": "18:27:18 is a BATCH-WRITE SECOND. Verified on disk: PERMREACH_r226.json at .334229 and PROVENANCE_r224.json at .346368, 12.1 ms apart. Multiple files legitimately share that second, so r224's mtime equalling a value recorded elsewhere needs no wrong-capture explanation. The r316 conjecture rested on treating a batch-write artefact as a meaningful coincidence.",
+   "ACTION_WAS_HARMLESS_REASONING_WAS_FALSE": "Not editing the file cost nothing. But the reasoning was wrong, and it is the FOUNDING PRECEDENT for the r330 test applied again at r334.",
+   "DOES_THE_RULING_STILL_STAND": "YES, on a different and weaker ground. PROVENANCE.json ASSERTS r224's deposit_mtime = 18:27:18. Editing r224 would advance its mtime and make that existing attestation FALSE, creating a new inconsistency. Preserving an already-recorded attestation is a real reason not to edit -- but it is ordinary care, not the irrecoverable-evidence argument r330 made.",
+   "consequence_for_the_r330_TEST": "The TEST itself survives -- 'does anything depend on this file's METADATA' is still the right question. What fails is r330's ANSWER for this file. Applying the corrected test: PROVENANCE.json depends on r224's mtime as a recorded value, which is a dependency, so the file still should not be edited -- reaching the same verdict by valid reasoning.",
+   "r334_unaffected": "The r334 ruling on this file does not inherit the error: it turned on there being NO recorded dependency on this file's metadata, which remains true.",
+   "corrected_at": "2026-08-18T10:37:18"
+  },
+  "what_the_OK_verdicts_now_rest_on_ORIGINAL_STALE": "Deposit mtimes that our own r308 writes invalidated. LMRONLY_r223.json and CLASSIFIER_r222.json were recorded at 2026-08-16 17:43:01 and 17:35:58 and now both read 2026-08-18 02:34:24. The orderings those verdicts certify can no longer be checked against the filesystem for those two deposits.",
+  "OK_verdicts_basis_measured": {
+   "measured_at": "2026-08-18 11:12:40",
+   "values": {
+    "LMRONLY_r223.json": "2026-08-18 06:54:49",
+    "CLASSIFIER_r222.json": "2026-08-18 06:52:39"
+   },
+   "text": "The OK verdicts in PROVENANCE_r224.json rest on deposit mtimes that our own r308 writes invalidated and later repairs moved again. As measured at measured_at above, LMRONLY_r223.json and CLASSIFIER_r222.json read the values shown -- DIFFERENT values, not a shared one -- against the 2026-08-16 17:43:01 and 17:35:58 those verdicts were built on. The orderings can no longer be checked against the filesystem for either deposit."
+  },
+  "what_the_OK_verdicts_now_rest_on_KEY_RETIRED_r338": "[AS MEASURED 2026-08-18 10:37, NOT A CLAIM ABOUT THE PRESENT -- superseded by OK_verdicts_basis_measured, which declares its instant] Deposit mtimes that our own r308 writes invalidated, and that later repairs moved again. LMRONLY_r223.json and CLASSIFIER_r222.json were recorded at 2026-08-16 17:43:01 and 17:35:58 and, AS MEASURED 2026-08-18 10:37, read 2026-08-18 06:54:49 and 06:52:39 respectively -- DIFFERENT values, not a shared one. The orderings those verdicts certify can no longer be checked against the filesystem for either deposit. [r336: an earlier version of this sentence asserted both at 02:34:24, which was stale.]",
+  "RULING_UNDATED_ORIGINAL_r342": "PROVENANCE_r224.json is an EVIDENCE file. NOT EDITED."
+ },
+ "EVIDENCE_FILE_RULING_r334": {
+  "test": "r330: a file is an EVIDENCE file when something in the corpus depends on its METADATA -- mtime, size or ordering -- not when its contents look evidential. Contents survive copying; metadata does not.",
+  "application": "second deliberate application; first was PROVENANCE_r224.json at r330",
+  "references_found": 5,
+  "metadata_dependent_references": 1,
+  "metadata_dependent_detail": [
+   [
+    "CYCLE_CONVENTION_CONTRADICTION_r322.json",
+    "The contradiction IS the evidence and rewriting the block destroys it -- the same reasoning as PROVENANCE_STAL"
+   ]
+  ],
+  "RULING": "RECORD FILE -- the automated result is OVERRULED",
+  "why_r330_does_not_carry_over": "PROVENANCE_r224.json was EVIDENCE for a fact specific to it: its own mtime 2026-08-16 18:27:18 equals the value PROVENANCE.json records for CLASSIFIER_r222.json, making that mtime the only surviving test of the unresolved r316 conjecture. No such dependency exists for this file. Being provenance-RELATED is not the test; being metadata-DEPENDED-ON is.",
+  "correction_to_r332": "DEFECT_LIST_REVALIDATED_r332.json classified this file as an EVIDENCE FILE. That classification was produced by a coarse scan that flagged any co-occurrence of the filename with date-like text -- and this file is ABOUT timestamps, so it matched its own subject matter. The r332 label is WRONG and is superseded here.",
+  "its_own_mtime_already_moved": "This file was edited at r330 to add DEFECT_15_LIVE_OK_VERDICTS_r330. If its metadata had been load-bearing, that edit would already have destroyed it -- and nothing in the corpus broke, which is corroborating evidence for the RECORD classification rather than proof.",
+  "ruled_at": "2026-08-18T09:52:51",
+  "AUTOMATED_RESULT": "EVIDENCE FILE",
+  "why_overruled": "The sole metadata-dependent match is CYCLE_CONVENTION_CONTRADICTION_r322.json saying \"the contradiction IS the evidence and rewriting the block destroys it -- the same reasoning as PROVENANCE_STALENESS_r316.json\". That cites this file as a METHODOLOGICAL PRECEDENT, not as a metadata source. Nothing anywhere reads this file mtime, size or ordering.",
+  "THE_TEST_IS_A_HEURISTIC_NOT_AN_ORACLE": "The r330 test scans for a filename co-occurring with metadata vocabulary. It therefore FALSE-POSITIVES on any file whose SUBJECT MATTER is metadata -- and this file is entirely about timestamps, so it matches its own topic and the topic of every file that cites its method. The r332 misclassification had the same cause. The test narrows what must be judged; it does not replace the judgement.",
+  "what_would_have_made_it_EVIDENCE": "A claim elsewhere of the form \"PROVENANCE_STALENESS_r316 was written at T, therefore X\". No such claim exists. Compare PROVENANCE_r224.json, where exactly such a dependency does exist and its mtime is the only test of an open conjecture.",
+  "citation_anchored": true
+ },
+ "ROUND4_DEFECT9_HEADLINE_FALSE_r335": {
+  "reader_claimed": "PREREG_2ndbody_r229.md was edited after its results 'and nothing records it'",
+  "the_mismatch_is_REAL": "disk 27,260 B / ce572133a1b39f84 against three r229 deposits claiming 25,839 B / d61d6f8237c603e4 -- verified on disk r335",
+  "the_headline_is_FALSE": "RESULTS_3d_r214.md records it in LIVE PROSE: both digests, both byte counts, the cause (edited after the result to restore four outcome rungs), and the verdict that the executed registration is UNRECOVERABLE. Verified: 3 occurrences of the digests and the UNRECOVERABLE verdict present.",
+  "MECHANISM": "The reader searched 274 JSON deposits, found nothing, and concluded 'nothing records it' -- while having read the manuscript. Its search SCOPE excluded the one file holding the answer. This is the same shape the reader was dispatched to catch, committed by the reader itself: absence within the scope searched reported as absence from the corpus.",
+  "do_not_act_on_it": "Defect 9 as stated is not actionable. The underlying mismatch is already contained."
+ },
+ "PERISHABILITY_RULE_r338": "A fact about MUTABLE STATE is PERISHABLE if presented as current and PERMANENT if governed by a declared instant. The fix is never a fresher measurement -- it is a key that says WHEN. Compare FROZEN_MANIFEST.json, whose summary.frozen_at states its instant INSIDE the file; that is why its 1,159 mtime facts are sound sixteen days on. A round number in a key is a NAME, not a source: the instant must be stated as data.",
+ "KEY_VS_WORDING_r339": "Retiring a KEY does not de-perish its TEXT. This block's key was retired at r338, but its value still read 'now read 2026-08-18 06:54:49', so the sentence still presented a mutable measurement as current. A reader quoting the sentence carries the perishability with it, whatever the key is called. THE INSTANT MUST BE INSIDE THE TEXT THAT STATES THE FACT, not only in the key above it -- which is exactly how FROZEN_MANIFEST.json does it, with summary.frozen_at stated as data alongside the values it governs.",
+ "WORDING_NOT_MARKER_r340": "r339 prefixed this field with an as-of marker and the fact stayed perishable, because the marker sat ~330 characters from the value while the sentence still said 'now read'. A reader quoting the sentence carries 'now' with them and leaves the marker behind. THE INSTANT MUST BE IN THE CLAUSE THAT STATES THE VALUE, not at the top of the field. Fixed r340 by rewriting the clause itself."
+}

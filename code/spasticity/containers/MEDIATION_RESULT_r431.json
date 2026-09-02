@@ -1,0 +1,853 @@
+{
+  "round": "MEDIATION_RESULT_r431",
+  "registration": "PREREG_mediation_r431.md",
+  "registration_sha256": "21cc6a4a90b67a0d2fda29759d7f2ed359ebb2bb56d8cc8636eb58a26e41a928",
+  "no_simulation_run": true,
+  "floors_used": {
+    "GASDRIVE": 0.00258,
+    "SOLDRIVE": 0.00689,
+    "KNEE_ic": 1.09745,
+    "KTQ": 0.06841
+  },
+  "grid": {
+    "W100_0125": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 1.0,
+      "KV": 0.0125,
+      "GASDRIVE": {
+        "mean": 0.03809949277777778,
+        "range": [
+          0.0350755,
+          0.040429862222222224
+        ]
+      },
+      "SOLDRIVE": {
+        "mean": 0.047431406666666655,
+        "range": [
+          0.045947209999999995,
+          0.04913679111111111
+        ]
+      },
+      "KTQ": {
+        "mean": 8.406001574074075,
+        "range": [
+          8.377153222222223,
+          8.437354222222222
+        ]
+      },
+      "KNEE_ic": {
+        "mean": -6.180704292713618,
+        "range": [
+          -6.598456988468223,
+          -5.591461891129586
+        ]
+      },
+      "t_end": {
+        "mean": 20.0,
+        "range": [
+          20.0,
+          20.0
+        ]
+      }
+    },
+    "W100_0250": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 1.0,
+      "KV": 0.025,
+      "GASDRIVE": {
+        "mean": 0.03923394936953808,
+        "range": [
+          0.034984059550561795,
+          0.042611722222222224
+        ]
+      },
+      "SOLDRIVE": {
+        "mean": 0.043075723776529344,
+        "range": [
+          0.040933055555555556,
+          0.046059039325842696
+        ]
+      },
+      "KTQ": {
+        "mean": 8.066586737203494,
+        "range": [
+          7.974517555555555,
+          8.17953808988764
+        ]
+      },
+      "KNEE_ic": {
+        "mean": -6.809074173113064,
+        "range": [
+          -7.06921057210361,
+          -6.596310688567662
+        ]
+      },
+      "t_end": {
+        "mean": 20.0,
+        "range": [
+          20.0,
+          20.0
+        ]
+      }
+    },
+    "W100_0500": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 1.0,
+      "KV": 0.05,
+      "GASDRIVE": {
+        "mean": 0.0623127898822721,
+        "range": [
+          0.05728377383177569,
+          0.06428007222222222
+        ]
+      },
+      "SOLDRIVE": {
+        "mean": 0.02946555954322184,
+        "range": [
+          0.028420451111111106,
+          0.03193030280373832
+        ]
+      },
+      "KTQ": {
+        "mean": 7.0150591866874565,
+        "range": [
+          6.882177142857141,
+          7.327883457943925
+        ]
+      },
+      "KNEE_ic": {
+        "mean": -10.450611718385725,
+        "range": [
+          -11.048161817013222,
+          -8.689621160402849
+        ]
+      },
+      "t_end": {
+        "mean": 16.161666666666665,
+        "range": [
+          14.1,
+          20.0
+        ]
+      }
+    },
+    "W100_1100": {
+      "n_gate_G": 2,
+      "uninformative": true,
+      "weak": 1.0,
+      "KV": 0.11,
+      "GASDRIVE": {
+        "mean": 0.05814772216981132,
+        "range": [
+          0.057739562264150945,
+          0.058555882075471695
+        ]
+      },
+      "SOLDRIVE": {
+        "mean": 0.04167317075471699,
+        "range": [
+          0.04155433396226416,
+          0.041792007547169815
+        ]
+      },
+      "KTQ": {
+        "mean": 5.625147683962265,
+        "range": [
+          5.5387769528301884,
+          5.71151841509434
+        ]
+      },
+      "KNEE_ic": {
+        "mean": -14.517375429906746,
+        "range": [
+          -15.11281226919987,
+          -13.921938590613623
+        ]
+      },
+      "t_end": {
+        "mean": 10.055,
+        "range": [
+          9.94,
+          10.17
+        ]
+      }
+    },
+    "W080_0125": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 0.8,
+      "KV": 0.0125,
+      "GASDRIVE": {
+        "mean": 0.0342294777516552,
+        "range": [
+          0.032740341666666666,
+          0.035813986516853934
+        ]
+      },
+      "SOLDRIVE": {
+        "mean": 0.0396355199311997,
+        "range": [
+          0.039044323595505616,
+          0.039977869444444446
+        ]
+      },
+      "KTQ": {
+        "mean": 8.263093306120789,
+        "range": [
+          8.207718148148148,
+          8.353278222222222
+        ]
+      },
+      "KNEE_ic": {
+        "mean": -5.662914025365864,
+        "range": [
+          -6.231359491381133,
+          -5.297921861696983
+        ]
+      },
+      "t_end": {
+        "mean": 20.0,
+        "range": [
+          20.0,
+          20.0
+        ]
+      }
+    },
+    "W080_0250": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 0.8,
+      "KV": 0.025,
+      "GASDRIVE": {
+        "mean": 0.03662099889513109,
+        "range": [
+          0.035579757777777776,
+          0.038371605555555556
+        ]
+      },
+      "SOLDRIVE": {
+        "mean": 0.03388619268206409,
+        "range": [
+          0.03320350666666666,
+          0.034319692222222226
+        ]
+      },
+      "KTQ": {
+        "mean": 7.959645345609654,
+        "range": [
+          7.910886629213484,
+          8.017681111111111
+        ]
+      },
+      "KNEE_ic": {
+        "mean": -6.507235231989855,
+        "range": [
+          -6.798253101208293,
+          -6.157036552112354
+        ]
+      },
+      "t_end": {
+        "mean": 20.0,
+        "range": [
+          20.0,
+          20.0
+        ]
+      }
+    },
+    "W080_0500": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 0.8,
+      "KV": 0.05,
+      "GASDRIVE": {
+        "mean": 0.0511556643980818,
+        "range": [
+          0.04763137582417582,
+          0.06357047142857145
+        ]
+      },
+      "SOLDRIVE": {
+        "mean": 0.02413865945280565,
+        "range": [
+          0.0199724,
+          0.0254222978021978
+        ]
+      },
+      "KTQ": {
+        "mean": 7.0748578187388285,
+        "range": [
+          6.942093736263737,
+          7.173416593406593
+        ]
+      },
+      "KNEE_ic": {
+        "mean": -9.187955022436514,
+        "range": [
+          -11.360309223800494,
+          -8.526677693045592
+        ]
+      },
+      "t_end": {
+        "mean": 14.858333333333334,
+        "range": [
+          13.76,
+          16.88
+        ]
+      }
+    },
+    "W080_1100": {
+      "n_gate_G": 5,
+      "uninformative": false,
+      "weak": 0.8,
+      "KV": 0.11,
+      "GASDRIVE": {
+        "mean": 0.05095410469990409,
+        "range": [
+          0.03940134705882353,
+          0.05859826074766355
+        ]
+      },
+      "SOLDRIVE": {
+        "mean": 0.033390576811041885,
+        "range": [
+          0.028812112264150938,
+          0.04126455588235293
+        ]
+      },
+      "KTQ": {
+        "mean": 5.740126860506573,
+        "range": [
+          5.3516199019607855,
+          5.970306635514019
+        ]
+      },
+      "KNEE_ic": {
+        "mean": -13.696326909484279,
+        "range": [
+          -14.712372066182937,
+          -12.604078366033216
+        ]
+      },
+      "t_end": {
+        "mean": 11.277999999999999,
+        "range": [
+          10.48,
+          12.11
+        ]
+      }
+    },
+    "W070_0125": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 0.7,
+      "KV": 0.0125,
+      "GASDRIVE": {
+        "mean": 0.03705508317364198,
+        "range": [
+          0.03459154953271028,
+          0.03956864444444445
+        ]
+      },
+      "SOLDRIVE": {
+        "mean": 0.03162042966204628,
+        "range": [
+          0.03120896516853932,
+          0.03202989626168225
+        ]
+      },
+      "KTQ": {
+        "mean": 8.054042310239147,
+        "range": [
+          7.956550666666668,
+          8.136999777777778
+        ]
+      },
+      "KNEE_ic": {
+        "mean": -5.660440375578353,
+        "range": [
+          -6.01669512385742,
+          -5.324369784506152
+        ]
+      },
+      "t_end": {
+        "mean": 20.0,
+        "range": [
+          20.0,
+          20.0
+        ]
+      }
+    },
+    "W070_0250": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 0.7,
+      "KV": 0.025,
+      "GASDRIVE": {
+        "mean": 0.03749708640937859,
+        "range": [
+          0.03463374382022472,
+          0.04008727555555555
+        ]
+      },
+      "SOLDRIVE": {
+        "mean": 0.027514860889503386,
+        "range": [
+          0.02677880888888889,
+          0.028844132584269665
+        ]
+      },
+      "KTQ": {
+        "mean": 7.7762966026193245,
+        "range": [
+          7.561552685185185,
+          7.9656794444444445
+        ]
+      },
+      "KNEE_ic": {
+        "mean": -6.351394213123018,
+        "range": [
+          -6.818741117032513,
+          -5.671161084376011
+        ]
+      },
+      "t_end": {
+        "mean": 19.003333333333334,
+        "range": [
+          16.86,
+          20.0
+        ]
+      }
+    },
+    "W070_0500": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 0.7,
+      "KV": 0.05,
+      "GASDRIVE": {
+        "mean": 0.046152405238389614,
+        "range": [
+          0.04149013148148148,
+          0.04765592075471698
+        ]
+      },
+      "SOLDRIVE": {
+        "mean": 0.02067243680265344,
+        "range": [
+          0.020051103296703298,
+          0.02209694259259259
+        ]
+      },
+      "KTQ": {
+        "mean": 6.93541721648934,
+        "range": [
+          6.6299970092592595,
+          7.040641098901099
+        ]
+      },
+      "KNEE_ic": {
+        "mean": -8.667106147223409,
+        "range": [
+          -9.49933084605968,
+          -7.847665410036055
+        ]
+      },
+      "t_end": {
+        "mean": 13.816666666666668,
+        "range": [
+          11.14,
+          15.89
+        ]
+      }
+    },
+    "W070_1100": {
+      "n_gate_G": 3,
+      "uninformative": true,
+      "weak": 0.7,
+      "KV": 0.11,
+      "GASDRIVE": {
+        "mean": 0.04719974780359542,
+        "range": [
+          0.04397231588785047,
+          0.048960055963302745
+        ]
+      },
+      "SOLDRIVE": {
+        "mean": 0.028322479290634205,
+        "range": [
+          0.027173900000000004,
+          0.029635814018691593
+        ]
+      },
+      "KTQ": {
+        "mean": 5.997998004515705,
+        "range": [
+          5.856643738317756,
+          6.177178165137614
+        ]
+      },
+      "KNEE_ic": {
+        "mean": -13.173830780610169,
+        "range": [
+          -14.5617701097328,
+          -11.984758735979725
+        ]
+      },
+      "t_end": {
+        "mean": 10.923333333333332,
+        "range": [
+          10.71,
+          11.05
+        ]
+      }
+    },
+    "W060_0125": {
+      "n_gate_G": 3,
+      "uninformative": true,
+      "weak": 0.6,
+      "KV": 0.0125,
+      "GASDRIVE": {
+        "mean": 0.042204451632888794,
+        "range": [
+          0.040785697752808985,
+          0.04299407303370787
+        ]
+      },
+      "SOLDRIVE": {
+        "mean": 0.02117903240575449,
+        "range": [
+          0.02078768598130841,
+          0.021460729213483146
+        ]
+      },
+      "KTQ": {
+        "mean": 7.819387762259791,
+        "range": [
+          7.789221573033707,
+          7.842664859813084
+        ]
+      },
+      "KNEE_ic": {
+        "mean": -6.094371712425055,
+        "range": [
+          -6.334298234769928,
+          -5.874594524185501
+        ]
+      },
+      "t_end": {
+        "mean": 19.32,
+        "range": [
+          18.48,
+          20.0
+        ]
+      }
+    },
+    "W060_0250": {
+      "n_gate_G": 3,
+      "uninformative": true,
+      "weak": 0.6,
+      "KV": 0.025,
+      "GASDRIVE": {
+        "mean": 0.04156721854107599,
+        "range": [
+          0.039453759550561796,
+          0.04268859887640449
+        ]
+      },
+      "SOLDRIVE": {
+        "mean": 0.019536743256676817,
+        "range": [
+          0.019193078651685395,
+          0.01998994831460674
+        ]
+      },
+      "KTQ": {
+        "mean": 7.514020046903987,
+        "range": [
+          7.481122584269662,
+          7.540474859813084
+        ]
+      },
+      "KNEE_ic": {
+        "mean": -6.406767591909483,
+        "range": [
+          -6.931926446643494,
+          -5.643866902903431
+        ]
+      },
+      "t_end": {
+        "mean": 18.796666666666667,
+        "range": [
+          16.6,
+          20.0
+        ]
+      }
+    },
+    "W060_0500": {
+      "n_gate_G": 3,
+      "uninformative": true,
+      "weak": 0.6,
+      "KV": 0.05,
+      "GASDRIVE": {
+        "mean": 0.042846672040746166,
+        "range": [
+          0.03855566404494382,
+          0.045840556521739136
+        ]
+      },
+      "SOLDRIVE": {
+        "mean": 0.016542852380176953,
+        "range": [
+          0.01571433260869565,
+          0.01788710786516854
+        ]
+      },
+      "KTQ": {
+        "mean": 6.865142501338906,
+        "range": [
+          6.644077752808988,
+          7.147048555555557
+        ]
+      },
+      "KNEE_ic": {
+        "mean": -8.030087532568439,
+        "range": [
+          -8.130947203104636,
+          -7.92091233456558
+        ]
+      },
+      "t_end": {
+        "mean": 14.506666666666666,
+        "range": [
+          12.76,
+          17.88
+        ]
+      }
+    },
+    "W060_1100": {
+      "n_gate_G": 1,
+      "uninformative": true,
+      "weak": 0.6,
+      "KV": 0.11,
+      "GASDRIVE": {
+        "mean": 0.04715627314814813,
+        "range": [
+          0.04715627314814813,
+          0.04715627314814813
+        ]
+      },
+      "SOLDRIVE": {
+        "mean": 0.020152373148148148,
+        "range": [
+          0.020152373148148148,
+          0.020152373148148148
+        ]
+      },
+      "KTQ": {
+        "mean": 5.9520133333333325,
+        "range": [
+          5.9520133333333325,
+          5.9520133333333325
+        ]
+      },
+      "KNEE_ic": {
+        "mean": -14.002400963643163,
+        "range": [
+          -14.002400963643163,
+          -14.002400963643163
+        ]
+      },
+      "t_end": {
+        "mean": 13.98,
+        "range": [
+          13.98,
+          13.98
+        ]
+      }
+    }
+  },
+  "duration_control": {
+    "within_dose_pooled_slope_deg_per_s": -0.08654440271330617,
+    "pearson_r": -0.14535943453731665,
+    "t_end_span_s": 10.06,
+    "KNEE_ic_span_deg": 9.814890407502887,
+    "fraction_attributable": 0.08870569666578358,
+    "threshold": 0.5,
+    "CONFOUNDED": false
+  },
+  "predictions": {
+    "P1_dose_raises_GASDRIVE_monotonically_in_every_row": {
+      "by_row": {
+        "W100": {
+          "rung_means": [
+            0.03809949277777778,
+            0.03923394936953808,
+            0.0623127898822721,
+            0.05814772216981132
+          ],
+          "monotone_increasing": false,
+          "total_rise": 0.02004822939203354,
+          "multiple_of_floor": 7.770631547299821,
+          "VERDICT": "FAILS"
+        },
+        "W080": {
+          "rung_means": [
+            0.0342294777516552,
+            0.03662099889513109,
+            0.0511556643980818,
+            0.05095410469990409
+          ],
+          "monotone_increasing": false,
+          "total_rise": 0.016724626948248895,
+          "multiple_of_floor": 6.482413545832905,
+          "VERDICT": "FAILS"
+        },
+        "W070": {
+          "rung_means": [
+            0.03705508317364198,
+            0.03749708640937859,
+            0.046152405238389614,
+            0.04719974780359542
+          ],
+          "monotone_increasing": true,
+          "total_rise": 0.010144664629953441,
+          "multiple_of_floor": 3.9320405542455203,
+          "VERDICT": "HOLDS"
+        },
+        "W060": {
+          "rung_means": [
+            0.042204451632888794,
+            0.04156721854107599,
+            0.042846672040746166,
+            0.04715627314814813
+          ],
+          "monotone_increasing": false,
+          "total_rise": 0.004951821515259337,
+          "multiple_of_floor": 1.9193106648292007,
+          "VERDICT": "FAILS"
+        }
+      },
+      "VERDICT": "FAILS"
+    },
+    "P2_within_dose_GASDRIVE_predicts_KNEE_ic": {
+      "within_dose_r": -0.670783212700681,
+      "n": 74,
+      "per_dose": {
+        "0125": {
+          "n": 21,
+          "r": -0.5924832302883979
+        },
+        "0250": {
+          "n": 21,
+          "r": 0.28396137840190394
+        },
+        "0500": {
+          "n": 21,
+          "r": -0.892757952278382
+        },
+        "1100": {
+          "n": 11,
+          "r": -0.31820943191280676
+        }
+      },
+      "threshold": -0.5,
+      "pooled_r_REPORTED_BUT_NOT_JUDGING": -0.738522202711777,
+      "VERDICT": "HOLDS"
+    },
+    "P3_SOLDRIVE_negative_control": {
+      "within_dose_r": -0.2923206178714637,
+      "n": 74,
+      "per_dose": {
+        "0125": {
+          "n": 21,
+          "r": -0.1543516303249782
+        },
+        "0250": {
+          "n": 21,
+          "r": -0.4818585718808687
+        },
+        "0500": {
+          "n": 21,
+          "r": -0.5696245490303786
+        },
+        "1100": {
+          "n": 11,
+          "r": -0.22696791186701426
+        }
+      },
+      "threshold_abs": 0.3,
+      "smaller_than_P2": true,
+      "VERDICT": "HOLDS"
+    },
+    "P4_KTQ_mediates": {
+      "within_dose_r_GASDRIVE_vs_KTQ": 0.06212529350390358,
+      "expected": "negative",
+      "within_dose_r_KTQ_vs_KNEE_ic": -0.05192821718349834,
+      "expected2": "positive",
+      "VERDICT": "FAILS"
+    },
+    "P5_weakness_does_not_drive_GASDRIVE": {
+      "by_dose": {
+        "0125": {
+          "spread": 0.007974973881233596,
+          "multiple_of_floor": 3.09107514776496
+        },
+        "0250": {
+          "spread": 0.004946219645944903,
+          "multiple_of_floor": 1.9171393976530635
+        },
+        "0500": {
+          "spread": 0.019466117841525937,
+          "multiple_of_floor": 7.545006915320132
+        },
+        "1100": {
+          "spread": 0.010991449021663185,
+          "multiple_of_floor": 4.260251558784181
+        }
+      },
+      "largest_multiple_of_floor": 7.545006915320132,
+      "VERDICT": "FAILS"
+    }
+  },
+  "n_cells_used": 74,
+  "VERDICT": "2 of 5 hold, but the two that hold are the association and its negative control, while BOTH TORQUE LINKS -- the mechanism itself -- are indistinguishable from zero (+0.0621 and -0.0519). Hypothesis 4 is dead. See READING_r431.",
+  "READING_r431": {
+    "power": "74 Gate-G cells across a 4x4 lesion grid, against n=10 at r408. This is the highest-powered mechanism test in the corpus.",
+    "the_chain_link_by_link": {
+      "link_1_dose_to_mediator": {
+        "result": "3 of 4 weakness rows are NON-MONOTONE in GASDRIVE across the spastic ladder (only x0.70 is monotone). The total rise clears the floor in every row (1.9x to 7.8x) but the ordering does not hold.",
+        "VERDICT": "FAILS"
+      },
+      "link_2_mediator_to_torque": {
+        "within_dose_r": 0.0621,
+        "expected": "negative",
+        "result": "ESSENTIALLY ZERO, and of the wrong sign.",
+        "VERDICT": "FAILS"
+      },
+      "link_3_torque_to_outcome": {
+        "within_dose_r": -0.0519,
+        "expected": "positive",
+        "result": "ESSENTIALLY ZERO, and of the wrong sign.",
+        "VERDICT": "FAILS"
+      },
+      "overall_association_mediator_to_outcome": {
+        "within_dose_r": -0.6708,
+        "per_dose": {
+          "0.0125": -0.5925,
+          "0.025": 0.284,
+          "0.050": -0.8928,
+          "0.110": -0.3182
+        },
+        "VERDICT": "HOLDS as registered, but the sign FLIPS at KV 0.025"
+      }
+    },
+    "WHY_HYPOTHESIS_4_IS_DEAD": "the hypothesis is a CHAIN: spastic gain raises gastrocnemius activation, which opposes knee extension THROUGH KNEE TORQUE, which leaves the knee flexed at contact. Links 2 and 3 are the torque links and both are indistinguishable from zero (+0.06 and -0.05). Whatever relates gastrocnemius activation to knee angle in this data, IT IS NOT KNEE EXTENSION TORQUE IN TERMINAL SWING. The mechanism as stated does not operate.",
+    "what_about_the_association_that_did_hold": "the within-dose GASDRIVE-KNEE_ic correlation of -0.67 is real and duration-clear (9%), but it sign-flips across doses (-0.59, +0.28, -0.89, -0.32), which is the exact failure mode that invalidated SLACK_RESULT_r418's P5. An association whose sign depends on dose is not a mechanism. It is reported and not interpreted.",
+    "the_negative_control_did_not_hold_cleanly": "SOLDRIVE passed at -0.2923 against a 0.3 bar, but per dose it is -0.15, -0.48, -0.57, -0.23. At KV 0.025 and 0.050 soleus tracks the knee about as well as gastrocnemius does. A negative control that behaves like the mediator at half the doses is not a negative control.",
+    "specificity_failed": "P5: dorsiflexor weakness alone moves GASDRIVE by 1.9x to 7.5x its noise floor at every spastic dose. Terminal-swing gastrocnemius activation is NOT a spasticity-specific quantity, so it cannot serve as the mediator that distinguishes the two lesions.",
+    "VERDICT": "MECHANISM HYPOTHESIS 4 IS DEAD. Reinstated at RESCORED_r429 on n=10 after a scoring error was found, and killed here on 74 cells with the dose controlled, the duration controlled and every number divided by its own noise floor. The chain's two middle links are empty.",
+    "scoreboard_after_this": "0 live. 1 half-live (hypothesis 7: soleus mechanically unloads gastrocnemius, confirmed at 8.7x and 6.6x, but its functional consequence refuted by SWINGMATCHED_r419). 6 dead.",
+    "what_this_does_not_touch": "the 6.3919 deg discriminator, its permutation floor, its batch null, its duration control, its stationarity (STATIONARITY_r434: knee drift 1x control) and its video robustness (94-97% classification). None of those depends on a mechanism."
+  }
+}

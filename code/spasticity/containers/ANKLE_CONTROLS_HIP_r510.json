@@ -1,0 +1,33 @@
+{
+ "id": "ANKLE_CONTROLS_HIP_r510",
+ "ankle_at_contact_rule2_duration": {
+  "within_dose_slope_deg_per_s": 0.10365032547965045,
+  "arm_end_time_gap_s": 7.0,
+  "propagated_deg": 0.7255522783575531,
+  "arm_difference_deg": 0.05591373406701572,
+  "ratio_to_the_difference": 12.976280165583976,
+  "VERDICT": "FAILS. The propagated duration effect exceeds the difference it would explain."
+ },
+ "ankle_at_contact_rule3_stationarity": {
+  "per_cycle_difference_deg": [
+   -0.2667689708825838,
+   0.0911237668558409,
+   0.13966819315796308,
+   -0.0078098672458954965,
+   0.15568130535909153
+  ],
+  "sign_constant": false,
+  "spread_deg": 0.4224502762416753,
+  "window_mean_deg": 0.05591373406701572,
+  "spread_over_window_mean": 7.5553937380634455,
+  "VERDICT": "FAILS. The sign is not constant across cycle indices."
+ },
+ "hip_seed_SD": {
+  "hyper_sd": 0.586625148837554,
+  "weak_sd": 0.3149066922608601,
+  "mean_of_arm_SDs": 0.45076592054920706,
+  "difference_deg": -2.5571548847430416,
+  "in_seed_SD": 5.672910857208191
+ },
+ "READING": "The ankle-at-contact null is not certified by this design: it fails the duration control and the stationarity rule. A control that fails is not evidence for a null."
+}

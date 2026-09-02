@@ -1,0 +1,43 @@
+{
+  "what": "fraction of the stance activation gap attributable to the added reflex term RV",
+  "status": "UNREGISTERED, POST-HOC, descriptive; changes no verdict",
+  "arms": {
+    "KV0.035": {
+      "n": 6,
+      "A_stance": 0.19037352614853853,
+      "A_swing": 0.04626509214512289,
+      "RV_stance": 0.006183692011710109,
+      "RV_swing": 0.024010449344423316,
+      "gap_vs_DFweak": 0.017915350407430475,
+      "RV_share_of_gap": 0.34516165584712166,
+      "reorganised_share": 0.6548383441528783
+    },
+    "KV0.0125": {
+      "n": 6,
+      "A_stance": 0.17417550206362561,
+      "A_swing": 0.04897148326512407,
+      "RV_stance": 0.002484835243300684,
+      "RV_swing": 0.010287515037941694,
+      "gap_vs_DFweak": 0.0017173263225175595,
+      "RV_share_of_gap": 1.4469208389340793,
+      "reorganised_share": -0.4469208389340793
+    },
+    "KV0.00625": {
+      "n": 6,
+      "A_stance": 0.17102057253992267,
+      "A_swing": 0.04864034569304727,
+      "RV_stance": 0.0012969454329949013,
+      "RV_swing": 0.005346372449354551,
+      "gap_vs_DFweak": -0.0014376032011853834,
+      "RV_share_of_gap": -0.9021581420558176,
+      "reorganised_share": 1.9021581420558176
+    },
+    "DFweak": {
+      "n": 36,
+      "A_stance": 0.17245817574110806,
+      "A_swing": 0.04428953710173858,
+      "RV_stance": null,
+      "RV_swing": null
+    }
+  }
+}

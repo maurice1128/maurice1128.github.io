@@ -1,0 +1,48 @@
+{
+  "round": "HEADLINE_DURATION_QUANT_r417",
+  "why": "the r416 correction retired FROZEN_MECHANISM_r410 because survival duration was sufficient to produce its whole effect. The same test is owed to the headline.",
+  "structural_fact": "ALL 36 Gate-G dorsiflexor-weakness cells end at exactly t_end = 20.00 s and never fall. ALL 17 Gate-G spastic cells fall, between 9.81 and 17.29 s. The two arms' t_end ranges are disjoint across the ENTIRE corpus, so the headline contrast cannot be duration-matched by any choice of cells. This is a property of the two lesions, not of the sampling.",
+  "per_rung_slopes": [
+    {
+      "rung": "KV0.070",
+      "n": 6,
+      "slope_deg_per_s": -0.10287846238387806,
+      "pearson_r": -0.35495938158842266,
+      "t_end_span_s": 5.209999999999999
+    },
+    {
+      "rung": "KV0.100",
+      "n": 4,
+      "slope_deg_per_s": 0.7268015766301218,
+      "pearson_r": 0.7793496467480886,
+      "t_end_span_s": 1.6199999999999992
+    },
+    {
+      "rung": "KV0.110",
+      "n": 4,
+      "slope_deg_per_s": 0.26244724141408515,
+      "pearson_r": 0.24945850818719423,
+      "t_end_span_s": 1.299999999999999
+    },
+    {
+      "rung": "KV0.120",
+      "n": 3,
+      "slope_deg_per_s": -1.3752584893231516,
+      "pearson_r": -0.768724257381276,
+      "t_end_span_s": 1.1900000000000013
+    }
+  ],
+  "within_rung_pooled_slope_deg_per_s": -0.0584550011289411,
+  "within_rung_pooled_r": -0.10437119047298725,
+  "naive_pooled_slope_deg_per_s": 0.3509591769692096,
+  "naive_pooled_r": 0.6061624486403554,
+  "naive_is_biased_because": "t_end falls and knee flexion rises with KV dose, so an uncontrolled pooled slope attributes the DOSE effect to duration. The within-rung slope is the estimate that isolates duration.",
+  "extrapolation": {
+    "delta_t_s": 9.365,
+    "deg_attributable_within_rung": 0.5474310855725334,
+    "deg_attributable_naive": 3.2867326923166478,
+    "headline_gap_deg": 6.391931677410274,
+    "fraction_within_rung": 0.0856440765015073
+  },
+  "VERDICT": "The headline is NOT retired, but it carries a confound that cannot be removed by matching. Isolating duration within rungs gives -0.0585 deg/s; propagated over the 9.37 s between the spastic arm and the weakness arm's fixed 20.00 s that is 0.5474 deg, or 9% of the 6.3919 deg. The remainder is not attributable to duration. But the propagation runs far outside the observed t_end range in both arms and rests on n=17, so it bounds nothing tightly. The defensible statement is: the spastic and weak arms separate on knee angle at heel strike AND differ in survival, and this design cannot decide how much of the separation is the lesion versus proximity to failure."
+}

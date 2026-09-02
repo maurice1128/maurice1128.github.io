@@ -1,0 +1,17 @@
+{
+ "cell": 2,
+ "prefix": "R289KV0125_s103",
+ "seed": 103,
+ "kv": 0.0125,
+ "wall_clock_s": 266.35287070274353,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R289KV0125_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103"
+ ],
+ "status": "OK",
+ "result_dir": "R289KV0125_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+ "resolved_par": "0081_37.332_1.007.par",
+ "t_end_s": 20.0,
+ "measured_under_guard": true,
+ "in_band": false
+}

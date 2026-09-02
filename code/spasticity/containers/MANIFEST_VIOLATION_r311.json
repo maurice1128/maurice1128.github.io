@@ -1,0 +1,11 @@
+{
+ "round": 311,
+ "id": "r311-MANIFEST-VIOLATION",
+ "finding": "BODY2_HASHES_r229.json attests DEPOSIT_INVENTORY_r246.json as unchanged. It HAS changed: 1339 -> 1387 B with a different sha256.",
+ "current_sha256": "674b0ccdfce5086c3fe942aaee61e06f93694c16e32c17dc0473ad2b5ad04b3e",
+ "current_bytes": 1387,
+ "why_it_matters": "A hash manifest that no longer matches its target is worse than no manifest: it asserts an integrity property that is false. The manuscript's growth is expected and uncontroversial; an INVENTORY changing after being attested is not, because the inventory is the thing that says what exists.",
+ "not_established": "Whether the inventory's change was a legitimate update or an accident is NOT recoverable -- no dated copy of the attested version exists in paper/.",
+ "action": "Recorded, not repaired. Re-attesting now would only certify the current state.",
+ "written_at": "2026-08-18T03:20:16"
+}

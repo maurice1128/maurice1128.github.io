@@ -1,0 +1,1439 @@
+{
+ "round": 266,
+ "prereg": "PREREG_fitness_r266.md",
+ "note": "terminal optimiser objective for all 72 cells; lower is better",
+ "analysed_cells": {
+  "C": {
+   "per_seed": [
+    {
+     "seed": 101,
+     "deposited_fitness": 0.988,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 0.997187,
+      "best_fitness_final": 0.987589,
+      "fitness_progress_final": 7.74087e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.009597999999999995,
+      "fraction_of_start_retained": 0.9903749246630772,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 102,
+     "deposited_fitness": 0.983,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 0.991468,
+      "best_fitness_final": 0.982891,
+      "fitness_progress_final": -1.84673e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.008577000000000057,
+      "fraction_of_start_retained": 0.9913491913001731,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 103,
+     "deposited_fitness": 0.991,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 0.993511,
+      "best_fitness_final": 0.991253,
+      "fitness_progress_final": -4.56436e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.0022579999999999822,
+      "fraction_of_start_retained": 0.9977272521391308,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 104,
+     "deposited_fitness": 0.987,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 0.986651,
+      "best_fitness_final": 0.986651,
+      "fitness_progress_final": -3.1199e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.0,
+      "fraction_of_start_retained": 1.0,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 105,
+     "deposited_fitness": 0.987,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 0.993667,
+      "best_fitness_final": 0.986646,
+      "fitness_progress_final": 6.62292e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.007020999999999944,
+      "fraction_of_start_retained": 0.9929342526218543,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 106,
+     "deposited_fitness": 0.989,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 0.995896,
+      "best_fitness_final": 0.988817,
+      "fitness_progress_final": -1.90822e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.0070790000000000575,
+      "fraction_of_start_retained": 0.9928918280623679,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    }
+   ],
+   "final_fitness": [
+    0.987589,
+    0.982891,
+    0.991253,
+    0.986651,
+    0.986646,
+    0.988817
+   ],
+   "mean": 0.9873078333333334,
+   "min": 0.982891,
+   "max": 0.991253,
+   "mean_descent_final_10": 0.0,
+   "mean_terminal_progress": 4.874300000000002e-06
+  },
+  "S": {
+   "per_seed": [
+    {
+     "seed": 101,
+     "deposited_fitness": 19.381,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 55.488,
+      "best_fitness_final": 19.3815,
+      "fitness_progress_final": 0.00662407,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 36.1065,
+      "fraction_of_start_retained": 0.34929173875432523,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 102,
+     "deposited_fitness": 35.095,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 78.6915,
+      "best_fitness_final": 35.095,
+      "fitness_progress_final": 0.00231747,
+      "descent_over_final_10_gens": 1.1544000000000025,
+      "total_descent": 43.596500000000006,
+      "fraction_of_start_retained": 0.4459820946353799,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": true
+    },
+    {
+     "seed": 103,
+     "deposited_fitness": 35.91,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 77.9228,
+      "best_fitness_final": 35.9099,
+      "fitness_progress_final": 0.00218024,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 42.012899999999995,
+      "fraction_of_start_retained": 0.4608394462211317,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 104,
+     "deposited_fitness": 22.802,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 79.5627,
+      "best_fitness_final": 22.8023,
+      "fitness_progress_final": 0.00648451,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 56.760400000000004,
+      "fraction_of_start_retained": 0.28659535184200635,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 105,
+     "deposited_fitness": 38.532,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 78.6831,
+      "best_fitness_final": 38.5324,
+      "fitness_progress_final": 0.00344948,
+      "descent_over_final_10_gens": 0.3586999999999989,
+      "total_descent": 40.15069999999999,
+      "fraction_of_start_retained": 0.4897163431537396,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 106,
+     "deposited_fitness": 33.591,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 78.3047,
+      "best_fitness_final": 33.591,
+      "fitness_progress_final": 0.00099286,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 44.713699999999996,
+      "fraction_of_start_retained": 0.42897808177542346,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": true
+    }
+   ],
+   "final_fitness": [
+    19.3815,
+    35.095,
+    35.9099,
+    22.8023,
+    38.5324,
+    33.591
+   ],
+   "mean": 30.885350000000003,
+   "min": 19.3815,
+   "max": 38.5324,
+   "mean_descent_final_10": 0.2521833333333336,
+   "mean_terminal_progress": 0.0036747716666666666
+  },
+  "W800": {
+   "per_seed": [
+    {
+     "seed": 101,
+     "deposited_fitness": 1.049,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 57.3988,
+      "best_fitness_final": 1.04864,
+      "fitness_progress_final": 5.80319e-05,
+      "descent_over_final_10_gens": 0.0028600000000000847,
+      "total_descent": 56.35016,
+      "fraction_of_start_retained": 0.018269371485118157,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 102,
+     "deposited_fitness": 1.051,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 42.4361,
+      "best_fitness_final": 1.05105,
+      "fitness_progress_final": 8.91627e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 41.38505000000001,
+      "fraction_of_start_retained": 0.02476782739224387,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 103,
+     "deposited_fitness": 1.052,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 57.8384,
+      "best_fitness_final": 1.0522,
+      "fitness_progress_final": -1.90768e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 56.7862,
+      "fraction_of_start_retained": 0.0181920661705718,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 104,
+     "deposited_fitness": 1.051,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 36.1772,
+      "best_fitness_final": 1.05089,
+      "fitness_progress_final": 0.000108103,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 35.12631,
+      "fraction_of_start_retained": 0.029048406178477055,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 105,
+     "deposited_fitness": 1.046,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 56.0154,
+      "best_fitness_final": 1.04572,
+      "fitness_progress_final": 4.65621e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 54.96968,
+      "fraction_of_start_retained": 0.018668437608229164,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 106,
+     "deposited_fitness": 1.044,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 53.5756,
+      "best_fitness_final": 1.04356,
+      "fitness_progress_final": 0.000250338,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 52.53204,
+      "fraction_of_start_retained": 0.01947826995871255,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    }
+   ],
+   "final_fitness": [
+    1.04864,
+    1.05105,
+    1.0522,
+    1.05089,
+    1.04572,
+    1.04356
+   ],
+   "mean": 1.0486766666666667,
+   "min": 1.04356,
+   "max": 1.0522,
+   "mean_descent_final_10": 0.0004766666666666808,
+   "mean_terminal_progress": 8.885348333333333e-05
+  },
+  "W870": {
+   "per_seed": [
+    {
+     "seed": 101,
+     "deposited_fitness": 1.026,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 30.1732,
+      "best_fitness_final": 1.02588,
+      "fitness_progress_final": 0.000107468,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 29.14732,
+      "fraction_of_start_retained": 0.033999708350456695,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 102,
+     "deposited_fitness": 1.033,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 40.405,
+      "best_fitness_final": 1.03275,
+      "fitness_progress_final": 0.000103186,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 39.37225,
+      "fraction_of_start_retained": 0.025559955451058037,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 103,
+     "deposited_fitness": 1.032,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 12.8364,
+      "best_fitness_final": 1.03231,
+      "fitness_progress_final": 3.24763e-05,
+      "descent_over_final_10_gens": 0.00046999999999997044,
+      "total_descent": 11.804089999999999,
+      "fraction_of_start_retained": 0.08042052288803715,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 104,
+     "deposited_fitness": 1.029,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.03282,
+      "best_fitness_final": 1.02941,
+      "fitness_progress_final": 9.95208e-05,
+      "descent_over_final_10_gens": 0.0005300000000001415,
+      "total_descent": 0.003410000000000135,
+      "fraction_of_start_retained": 0.9966983598303673,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 105,
+     "deposited_fitness": 1.021,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 7.88928,
+      "best_fitness_final": 1.02093,
+      "fitness_progress_final": 0.000107428,
+      "descent_over_final_10_gens": 0.007150000000000212,
+      "total_descent": 6.86835,
+      "fraction_of_start_retained": 0.12940724628863468,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 106,
+     "deposited_fitness": 1.031,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 26.6078,
+      "best_fitness_final": 1.03059,
+      "fitness_progress_final": -3.61081e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 25.57721,
+      "fraction_of_start_retained": 0.038732627274708914,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    }
+   ],
+   "final_fitness": [
+    1.02588,
+    1.03275,
+    1.03231,
+    1.02941,
+    1.02093,
+    1.03059
+   ],
+   "mean": 1.028645,
+   "min": 1.02093,
+   "max": 1.03275,
+   "mean_descent_final_10": 0.0013583333333333873,
+   "mean_terminal_progress": 6.899516666666667e-05
+  },
+  "W892": {
+   "per_seed": [
+    {
+     "seed": 101,
+     "deposited_fitness": 1.016,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.04498,
+      "best_fitness_final": 1.01621,
+      "fitness_progress_final": 7.43357e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.028769999999999962,
+      "fraction_of_start_retained": 0.9724683726004326,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 102,
+     "deposited_fitness": 1.024,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.03632,
+      "best_fitness_final": 1.02392,
+      "fitness_progress_final": 7.63269e-06,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.012399999999999967,
+      "fraction_of_start_retained": 0.9880345839123051,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 103,
+     "deposited_fitness": 1.022,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.03733,
+      "best_fitness_final": 1.0221,
+      "fitness_progress_final": -7.80788e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.015230000000000077,
+      "fraction_of_start_retained": 0.9853180762148978,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 104,
+     "deposited_fitness": 1.024,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.04266,
+      "best_fitness_final": 1.02387,
+      "fitness_progress_final": -1.2559e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.018789999999999862,
+      "fraction_of_start_retained": 0.981978785030595,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 105,
+     "deposited_fitness": 1.014,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 17.1887,
+      "best_fitness_final": 1.01415,
+      "fitness_progress_final": 0.00011061,
+      "descent_over_final_10_gens": 0.0053399999999999,
+      "total_descent": 16.17455,
+      "fraction_of_start_retained": 0.05900097156853049,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 106,
+     "deposited_fitness": 1.02,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.03461,
+      "best_fitness_final": 1.02033,
+      "fitness_progress_final": 0.000115505,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.01428000000000007,
+      "fraction_of_start_retained": 0.9861976976831849,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    }
+   ],
+   "final_fitness": [
+    1.01621,
+    1.02392,
+    1.0221,
+    1.02387,
+    1.01415,
+    1.02033
+   ],
+   "mean": 1.0200966666666667,
+   "min": 1.01415,
+   "max": 1.02392,
+   "mean_descent_final_10": 0.0008899999999999834,
+   "mean_terminal_progress": 3.6240931666666665e-05
+  },
+  "W900": {
+   "per_seed": [
+    {
+     "seed": 101,
+     "deposited_fitness": 1.02,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.02386,
+      "best_fitness_final": 1.02026,
+      "fitness_progress_final": -1.17746e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.0036000000000000476,
+      "fraction_of_start_retained": 0.9964838942824213,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 102,
+     "deposited_fitness": 1.017,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.04329,
+      "best_fitness_final": 1.01711,
+      "fitness_progress_final": 2.88404e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.026180000000000092,
+      "fraction_of_start_retained": 0.9749063060127097,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 103,
+     "deposited_fitness": 1.013,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.03709,
+      "best_fitness_final": 1.01331,
+      "fitness_progress_final": 0.000109582,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.023780000000000134,
+      "fraction_of_start_retained": 0.9770704567588154,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 104,
+     "deposited_fitness": 1.021,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 31.3982,
+      "best_fitness_final": 1.02064,
+      "fitness_progress_final": 4.37962e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 30.37756,
+      "fraction_of_start_retained": 0.032506322018459655,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 105,
+     "deposited_fitness": 1.024,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.04245,
+      "best_fitness_final": 1.0245,
+      "fitness_progress_final": -2.83772e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.017950000000000133,
+      "fraction_of_start_retained": 0.9827809487265575,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 106,
+     "deposited_fitness": 1.016,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.07426,
+      "best_fitness_final": 1.01588,
+      "fitness_progress_final": 0.000154446,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.0583800000000001,
+      "fraction_of_start_retained": 0.9456556140971458,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    }
+   ],
+   "final_fitness": [
+    1.02026,
+    1.01711,
+    1.01331,
+    1.02064,
+    1.0245,
+    1.01588
+   ],
+   "mean": 1.0186166666666667,
+   "min": 1.01331,
+   "max": 1.0245,
+   "mean_descent_final_10": 0.0,
+   "mean_terminal_progress": 4.94188e-05
+  },
+  "W915": {
+   "per_seed": [
+    {
+     "seed": 101,
+     "deposited_fitness": 1.016,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.04171,
+      "best_fitness_final": 1.01561,
+      "fitness_progress_final": 1.21744e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.026100000000000012,
+      "fraction_of_start_retained": 0.9749450422862409,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 102,
+     "deposited_fitness": 1.016,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.03761,
+      "best_fitness_final": 1.01647,
+      "fitness_progress_final": 3.89083e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.021139999999999937,
+      "fraction_of_start_retained": 0.9796262564932875,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 103,
+     "deposited_fitness": 1.014,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.02349,
+      "best_fitness_final": 1.01397,
+      "fitness_progress_final": 4.10997e-05,
+      "descent_over_final_10_gens": 0.00387000000000004,
+      "total_descent": 0.009519999999999973,
+      "fraction_of_start_retained": 0.9906984924132136,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 104,
+     "deposited_fitness": 1.019,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.03197,
+      "best_fitness_final": 1.01907,
+      "fitness_progress_final": -1.69165e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.012900000000000134,
+      "fraction_of_start_retained": 0.9874996366173434,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 105,
+     "deposited_fitness": 1.015,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.03648,
+      "best_fitness_final": 1.01542,
+      "fitness_progress_final": 1.11069e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.02106000000000008,
+      "fraction_of_start_retained": 0.979681228774313,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 106,
+     "deposited_fitness": 1.018,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 9.1549,
+      "best_fitness_final": 1.01813,
+      "fitness_progress_final": 6.27677e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 8.13677,
+      "fraction_of_start_retained": 0.11121148237555845,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    }
+   ],
+   "final_fitness": [
+    1.01561,
+    1.01647,
+    1.01397,
+    1.01907,
+    1.01542,
+    1.01813
+   ],
+   "mean": 1.0164449999999998,
+   "min": 1.01397,
+   "max": 1.01907,
+   "mean_descent_final_10": 0.0006450000000000067,
+   "mean_terminal_progress": 2.4856750000000002e-05
+  },
+  "W950": {
+   "per_seed": [
+    {
+     "seed": 101,
+     "deposited_fitness": 1.004,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.01485,
+      "best_fitness_final": 1.0042,
+      "fitness_progress_final": 3.25124e-05,
+      "descent_over_final_10_gens": 0.0017000000000000348,
+      "total_descent": 0.010650000000000048,
+      "fraction_of_start_retained": 0.9895058383012267,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 102,
+     "deposited_fitness": 1.012,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 14.3639,
+      "best_fitness_final": 1.01211,
+      "fitness_progress_final": 3.07947e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 13.35179,
+      "fraction_of_start_retained": 0.07046206113938416,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 103,
+     "deposited_fitness": 1.008,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.01793,
+      "best_fitness_final": 1.00831,
+      "fitness_progress_final": 2.67191e-05,
+      "descent_over_final_10_gens": 0.0015300000000000313,
+      "total_descent": 0.009619999999999962,
+      "fraction_of_start_retained": 0.9905494483903609,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 104,
+     "deposited_fitness": 1.007,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 1.01068,
+      "best_fitness_final": 1.00714,
+      "fitness_progress_final": 6.2116e-05,
+      "descent_over_final_10_gens": 0.0035400000000000986,
+      "total_descent": 0.0035400000000000986,
+      "fraction_of_start_retained": 0.9964974076859143,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 105,
+     "deposited_fitness": 1.008,
+     "history": {
+      "n_generations": 80,
+      "gen_first": 0,
+      "gen_last": 79,
+      "best_fitness_gen0": 1.03583,
+      "best_fitness_final": 1.00958,
+      "fitness_progress_final": 6.79622e-05,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.026250000000000107,
+      "fraction_of_start_retained": 0.9746580037264801,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    },
+    {
+     "seed": 106,
+     "deposited_fitness": 1.008,
+     "history": {
+      "n_generations": 70,
+      "gen_first": 0,
+      "gen_last": 69,
+      "best_fitness_gen0": 19.2687,
+      "best_fitness_final": 1.00895,
+      "fitness_progress_final": 6.34042e-05,
+      "descent_over_final_10_gens": 0.0009999999999998899,
+      "total_descent": 18.25975,
+      "fraction_of_start_retained": 0.05236212095263303,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     },
+     "agrees_with_deposit": false
+    }
+   ],
+   "final_fitness": [
+    1.0042,
+    1.01211,
+    1.00831,
+    1.00714,
+    1.00958,
+    1.00895
+   ],
+   "mean": 1.0083816666666665,
+   "min": 1.0042,
+   "max": 1.01211,
+   "mean_descent_final_10": 0.001295000000000009,
+   "mean_terminal_progress": 4.725143333333333e-05
+  }
+ },
+ "gate_failed_cells": {
+  "KV0.150_R169": {
+   "per_seed": [
+    {
+     "seed": 101,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 100.201,
+      "best_fitness_final": 99.8274,
+      "fitness_progress_final": 5.67432e-06,
+      "descent_over_final_10_gens": 0.00560000000000116,
+      "total_descent": 0.37359999999999616,
+      "fraction_of_start_retained": 0.9962714942964641,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 102,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.8829,
+      "best_fitness_final": 84.6169,
+      "fitness_progress_final": 0.00153606,
+      "descent_over_final_10_gens": 1.359099999999998,
+      "total_descent": 15.266000000000005,
+      "fraction_of_start_retained": 0.8471610255609318,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 103,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.8953,
+      "best_fitness_final": 99.8208,
+      "fitness_progress_final": 4.98828e-06,
+      "descent_over_final_10_gens": 0.015099999999989677,
+      "total_descent": 0.07450000000000045,
+      "fraction_of_start_retained": 0.9992542191674684,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 104,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.9,
+      "best_fitness_final": 81.2721,
+      "fitness_progress_final": 0.00240095,
+      "descent_over_final_10_gens": 3.504400000000004,
+      "total_descent": 18.62790000000001,
+      "fraction_of_start_retained": 0.8135345345345344,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 105,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.8878,
+      "best_fitness_final": 82.4536,
+      "fitness_progress_final": 0.00231121,
+      "descent_over_final_10_gens": 3.8093000000000075,
+      "total_descent": 17.434200000000004,
+      "fraction_of_start_retained": 0.8254621685531166,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 106,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.8956,
+      "best_fitness_final": 94.7951,
+      "fitness_progress_final": 0.000164748,
+      "descent_over_final_10_gens": 0.033999999999991815,
+      "total_descent": 5.100499999999997,
+      "fraction_of_start_retained": 0.9489416951297155,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    }
+   ],
+   "final_fitness": [
+    99.8274,
+    84.6169,
+    99.8208,
+    81.2721,
+    82.4536,
+    94.7951
+   ],
+   "gen0_fitness": [
+    100.201,
+    99.8829,
+    99.8953,
+    99.9,
+    99.8878,
+    99.8956
+   ],
+   "final_mean": 90.46431666666666,
+   "gen0_mean": 99.94376666666665,
+   "mean_total_descent": 9.479450000000002,
+   "never_left_starting_basin": false
+  },
+  "KV0.150_R172": {
+   "per_seed": [
+    {
+     "seed": 101,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 100.206,
+      "best_fitness_final": 95.3911,
+      "fitness_progress_final": 0.000745744,
+      "descent_over_final_10_gens": 0.03520000000000323,
+      "total_descent": 4.814900000000009,
+      "fraction_of_start_retained": 0.9519499830349479,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 102,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 100.169,
+      "best_fitness_final": 79.2446,
+      "fitness_progress_final": 0.00117955,
+      "descent_over_final_10_gens": 3.43419999999999,
+      "total_descent": 20.92439999999999,
+      "fraction_of_start_retained": 0.7911090257464886,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 103,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.0694,
+      "best_fitness_final": 99.0233,
+      "fitness_progress_final": 3.84516e-06,
+      "descent_over_final_10_gens": 0.0,
+      "total_descent": 0.04609999999999559,
+      "fraction_of_start_retained": 0.9995346696356292,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 104,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 100.127,
+      "best_fitness_final": 69.9282,
+      "fitness_progress_final": 0.00436164,
+      "descent_over_final_10_gens": 4.227099999999993,
+      "total_descent": 30.19879999999999,
+      "fraction_of_start_retained": 0.6983950383013573,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 105,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 100.325,
+      "best_fitness_final": 74.3576,
+      "fitness_progress_final": 0.00217841,
+      "descent_over_final_10_gens": 1.1058999999999912,
+      "total_descent": 25.967399999999998,
+      "fraction_of_start_retained": 0.7411672065786196,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 106,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.0888,
+      "best_fitness_final": 98.9939,
+      "fitness_progress_final": 8.7095e-06,
+      "descent_over_final_10_gens": 0.004199999999997317,
+      "total_descent": 0.09490000000000975,
+      "fraction_of_start_retained": 0.9990422731933376,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    }
+   ],
+   "final_fitness": [
+    95.3911,
+    79.2446,
+    99.0233,
+    69.9282,
+    74.3576,
+    98.9939
+   ],
+   "gen0_fitness": [
+    100.206,
+    100.169,
+    99.0694,
+    100.127,
+    100.325,
+    99.0888
+   ],
+   "final_mean": 86.15644999999999,
+   "gen0_mean": 99.83086666666667,
+   "mean_total_descent": 13.674416666666666,
+   "never_left_starting_basin": false
+  },
+  "KV0.400_R169": {
+   "per_seed": [
+    {
+     "seed": 101,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.8168,
+      "best_fitness_final": 99.6506,
+      "fitness_progress_final": 1.78593e-05,
+      "descent_over_final_10_gens": 0.020800000000008367,
+      "total_descent": 0.16620000000000346,
+      "fraction_of_start_retained": 0.998334949627718,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 102,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.8159,
+      "best_fitness_final": 99.5956,
+      "fitness_progress_final": 2.10765e-05,
+      "descent_over_final_10_gens": 0.02029999999999177,
+      "total_descent": 0.2202999999999946,
+      "fraction_of_start_retained": 0.9977929367966427,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 103,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.8171,
+      "best_fitness_final": 99.613,
+      "fitness_progress_final": 1.97117e-05,
+      "descent_over_final_10_gens": 0.030699999999995953,
+      "total_descent": 0.20409999999999684,
+      "fraction_of_start_retained": 0.9979552601708526,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 104,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.8161,
+      "best_fitness_final": 99.6831,
+      "fitness_progress_final": 1.48984e-05,
+      "descent_over_final_10_gens": 0.0024999999999977263,
+      "total_descent": 0.13300000000000978,
+      "fraction_of_start_retained": 0.998667549623758,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 105,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.8146,
+      "best_fitness_final": 99.676,
+      "fitness_progress_final": 1.38372e-05,
+      "descent_over_final_10_gens": 0.013599999999996726,
+      "total_descent": 0.13859999999999673,
+      "fraction_of_start_retained": 0.998611425583031,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 106,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.8177,
+      "best_fitness_final": 99.6807,
+      "fitness_progress_final": 1.3883e-05,
+      "descent_over_final_10_gens": 0.017200000000002547,
+      "total_descent": 0.13700000000000045,
+      "fraction_of_start_retained": 0.9986274979287241,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    }
+   ],
+   "final_fitness": [
+    99.6506,
+    99.5956,
+    99.613,
+    99.6831,
+    99.676,
+    99.6807
+   ],
+   "gen0_fitness": [
+    99.8168,
+    99.8159,
+    99.8171,
+    99.8161,
+    99.8146,
+    99.8177
+   ],
+   "final_mean": 99.64983333333332,
+   "gen0_mean": 99.81636666666667,
+   "mean_total_descent": 0.16653333333333364,
+   "never_left_starting_basin": true
+  },
+  "KV0.400_R172": {
+   "per_seed": [
+    {
+     "seed": 101,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.7791,
+      "best_fitness_final": 99.6549,
+      "fitness_progress_final": 1.33828e-05,
+      "descent_over_final_10_gens": 0.013400000000004297,
+      "total_descent": 0.12420000000000186,
+      "fraction_of_start_retained": 0.9987552503480187,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 102,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.7533,
+      "best_fitness_final": 99.6733,
+      "fitness_progress_final": 6.30212e-06,
+      "descent_over_final_10_gens": 0.0031000000000034333,
+      "total_descent": 0.0799999999999983,
+      "fraction_of_start_retained": 0.9991980215190877,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 103,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.8407,
+      "best_fitness_final": 99.7075,
+      "fitness_progress_final": 1.19832e-05,
+      "descent_over_final_10_gens": 0.015399999999999636,
+      "total_descent": 0.1332000000000022,
+      "fraction_of_start_retained": 0.9986658747384584,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 104,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.7662,
+      "best_fitness_final": 99.6738,
+      "fitness_progress_final": 9.61932e-06,
+      "descent_over_final_10_gens": 0.011600000000001387,
+      "total_descent": 0.09239999999999782,
+      "fraction_of_start_retained": 0.9990738346253542,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 105,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.7397,
+      "best_fitness_final": 99.5645,
+      "fitness_progress_final": 1.61254e-05,
+      "descent_over_final_10_gens": 0.03110000000000923,
+      "total_descent": 0.1752000000000038,
+      "fraction_of_start_retained": 0.9982434276421525,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    },
+    {
+     "seed": 106,
+     "history": {
+      "n_generations": 90,
+      "gen_first": 0,
+      "gen_last": 89,
+      "best_fitness_gen0": 99.8193,
+      "best_fitness_final": 99.6619,
+      "fitness_progress_final": 1.80404e-05,
+      "descent_over_final_10_gens": 0.017299999999991655,
+      "total_descent": 0.15739999999999554,
+      "fraction_of_start_retained": 0.9984231506331942,
+      "note": "best_fitness_final is the RUNNING MINIMUM over generations"
+     }
+    }
+   ],
+   "final_fitness": [
+    99.6549,
+    99.6733,
+    99.7075,
+    99.6738,
+    99.5645,
+    99.6619
+   ],
+   "gen0_fitness": [
+    99.7791,
+    99.7533,
+    99.8407,
+    99.7662,
+    99.7397,
+    99.8193
+   ],
+   "final_mean": 99.65598333333332,
+   "gen0_mean": 99.78305,
+   "mean_total_descent": 0.12706666666666658,
+   "never_left_starting_basin": true
+  }
+ },
+ "overlap": {
+  "reflex_range": [
+   19.3815,
+   38.5324
+  ],
+  "weakness_range": [
+   1.0042,
+   1.0522
+  ],
+  "control_range": [
+   0.982891,
+   0.991253
+  ],
+  "ranges_overlap": false,
+  "gap_between_ranges": 18.3293,
+  "reflex_over_control_mean": 31.282391324421447,
+  "weakness_over_control_mean": 1.0366340769210727,
+  "n_weakness_cells_above_reflex_min": 0,
+  "common_support": false,
+  "conditioning_possible": false,
+  "verdict": "NO COMMON SUPPORT -- conditioning on terminal objective would be extrapolation, not adjustment. The reflex and weakness arms cannot be compared after adjustment because no weakness cell lies anywhere near the reflex arm's objective range."
+ }
+}

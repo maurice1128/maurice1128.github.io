@@ -1,0 +1,860 @@
+{
+  "round": "MIXED_RESULT_r424",
+  "registration": "PREREG_mixed_r424.md",
+  "registration_sha256": "6b68fa0e3033f4d634aa3b9ec20d8684cfc2cfdfe5c566101ddd926389f35b61",
+  "no_simulation_run": true,
+  "floors": {
+    "KNEE_ic_mean_difference": 1.09745,
+    "ANKLE_st": 0.06902,
+    "knee_edge_gap_batch_null": 0.5697331886598267
+  },
+  "post_hoc_row": "W070 was added at r426 as an explicitly POST-HOC substitute after the registered x0.60 root was found to pass only 2-3/6. It does NOT satisfy any registered prediction and is reported separately.",
+  "grid": {
+    "W100_0125": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 1.0,
+      "KV": 0.0125,
+      "KNEE_ic": {
+        "mean": -6.180704292713618,
+        "range": [
+          -6.598456988468223,
+          -5.591461891129586
+        ],
+        "values": [
+          -6.598456988468223,
+          -6.285239296519647,
+          -6.277547911077811,
+          -6.213248295477049,
+          -6.118271373609392,
+          -5.591461891129586
+        ]
+      },
+      "ANKLE_st": {
+        "mean": 3.918197329065384
+      },
+      "t_end": {
+        "mean": 20.0,
+        "range": [
+          20.0,
+          20.0
+        ]
+      },
+      "swing_s_mean": 1.1843333333333332,
+      "knee_drift_per_cycle_mean": -0.03754601980788849
+    },
+    "W100_0250": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 1.0,
+      "KV": 0.025,
+      "KNEE_ic": {
+        "mean": -6.809074173113064,
+        "range": [
+          -7.06921057210361,
+          -6.596310688567662
+        ],
+        "values": [
+          -7.06921057210361,
+          -6.971938381308661,
+          -6.944798516468903,
+          -6.661578602842196,
+          -6.610608277387357,
+          -6.596310688567662
+        ]
+      },
+      "ANKLE_st": {
+        "mean": 3.4427060309740827
+      },
+      "t_end": {
+        "mean": 20.0,
+        "range": [
+          20.0,
+          20.0
+        ]
+      },
+      "swing_s_mean": 1.1766666666666665,
+      "knee_drift_per_cycle_mean": -0.26455333063320813
+    },
+    "W100_0500": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 1.0,
+      "KV": 0.05,
+      "KNEE_ic": {
+        "mean": -10.450611718385725,
+        "range": [
+          -11.048161817013222,
+          -8.689621160402849
+        ],
+        "values": [
+          -11.048161817013222,
+          -10.9683487961515,
+          -10.951263194700697,
+          -10.541002495075222,
+          -10.505272846970865,
+          -8.689621160402849
+        ]
+      },
+      "ANKLE_st": {
+        "mean": 3.048115713017605
+      },
+      "t_end": {
+        "mean": 16.161666666666665,
+        "range": [
+          14.1,
+          20.0
+        ]
+      },
+      "swing_s_mean": 1.1824444444444444,
+      "knee_drift_per_cycle_mean": -0.44726531524252083
+    },
+    "W100_1100": {
+      "n_gate_G": 2,
+      "uninformative": true,
+      "weak": 1.0,
+      "KV": 0.11,
+      "KNEE_ic": {
+        "mean": -14.517375429906746,
+        "range": [
+          -15.11281226919987,
+          -13.921938590613623
+        ],
+        "values": [
+          -15.11281226919987,
+          -13.921938590613623
+        ]
+      },
+      "ANKLE_st": {
+        "mean": 1.63214714948492
+      },
+      "t_end": {
+        "mean": 10.055,
+        "range": [
+          9.94,
+          10.17
+        ]
+      },
+      "swing_s_mean": 1.1425,
+      "knee_drift_per_cycle_mean": 0.32980105496638923
+    },
+    "W080_0125": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 0.8,
+      "KV": 0.0125,
+      "KNEE_ic": {
+        "mean": -5.662914025365864,
+        "range": [
+          -6.231359491381133,
+          -5.297921861696983
+        ],
+        "values": [
+          -6.231359491381133,
+          -5.740140428261469,
+          -5.596439748453683,
+          -5.5691459489529676,
+          -5.542476673448945,
+          -5.297921861696983
+        ]
+      },
+      "ANKLE_st": {
+        "mean": 4.022414330705261
+      },
+      "t_end": {
+        "mean": 20.0,
+        "range": [
+          20.0,
+          20.0
+        ]
+      },
+      "swing_s_mean": 1.1667222222222222,
+      "knee_drift_per_cycle_mean": -0.013940636113327928
+    },
+    "W080_0250": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 0.8,
+      "KV": 0.025,
+      "KNEE_ic": {
+        "mean": -6.507235231989855,
+        "range": [
+          -6.798253101208293,
+          -6.157036552112354
+        ],
+        "values": [
+          -6.798253101208293,
+          -6.638970834161924,
+          -6.603089925199652,
+          -6.442921865402011,
+          -6.4031391138548965,
+          -6.157036552112354
+        ]
+      },
+      "ANKLE_st": {
+        "mean": 3.474376444340731
+      },
+      "t_end": {
+        "mean": 20.0,
+        "range": [
+          20.0,
+          20.0
+        ]
+      },
+      "swing_s_mean": 1.1706666666666665,
+      "knee_drift_per_cycle_mean": -0.3375059458419672
+    },
+    "W080_0500": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 0.8,
+      "KV": 0.05,
+      "KNEE_ic": {
+        "mean": -9.187955022436514,
+        "range": [
+          -11.360309223800494,
+          -8.526677693045592
+        ],
+        "values": [
+          -11.360309223800494,
+          -9.000983615010792,
+          -8.985502295386356,
+          -8.710505472035367,
+          -8.54375183534049,
+          -8.526677693045592
+        ]
+      },
+      "ANKLE_st": {
+        "mean": 2.9017086021019693
+      },
+      "t_end": {
+        "mean": 14.858333333333334,
+        "range": [
+          13.76,
+          16.88
+        ]
+      },
+      "swing_s_mean": 1.187,
+      "knee_drift_per_cycle_mean": -0.24998721559352877
+    },
+    "W080_1100": {
+      "n_gate_G": 5,
+      "uninformative": false,
+      "weak": 0.8,
+      "KV": 0.11,
+      "KNEE_ic": {
+        "mean": -13.696326909484279,
+        "range": [
+          -14.712372066182937,
+          -12.604078366033216
+        ],
+        "values": [
+          -14.712372066182937,
+          -14.25355701313876,
+          -13.590272421605562,
+          -13.321354680460912,
+          -12.604078366033216
+        ]
+      },
+      "ANKLE_st": {
+        "mean": 1.8314924764259732
+      },
+      "t_end": {
+        "mean": 11.277999999999999,
+        "range": [
+          10.48,
+          12.11
+        ]
+      },
+      "swing_s_mean": 1.1366666666666667,
+      "knee_drift_per_cycle_mean": -0.43101552279629285
+    },
+    "W070_0125": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 0.7,
+      "KV": 0.0125,
+      "KNEE_ic": {
+        "mean": -5.660440375578353,
+        "range": [
+          -6.01669512385742,
+          -5.324369784506152
+        ],
+        "values": [
+          -6.01669512385742,
+          -5.975074323703526,
+          -5.7316646635980995,
+          -5.4778728172589695,
+          -5.436965540545945,
+          -5.324369784506152
+        ]
+      },
+      "ANKLE_st": {
+        "mean": 3.926787505416589
+      },
+      "t_end": {
+        "mean": 20.0,
+        "range": [
+          20.0,
+          20.0
+        ]
+      },
+      "swing_s_mean": 1.1654444444444445,
+      "knee_drift_per_cycle_mean": 0.10853673203315391
+    },
+    "W070_0250": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 0.7,
+      "KV": 0.025,
+      "KNEE_ic": {
+        "mean": -6.351394213123018,
+        "range": [
+          -6.818741117032513,
+          -5.671161084376011
+        ],
+        "values": [
+          -6.818741117032513,
+          -6.674687877194789,
+          -6.468684912660066,
+          -6.280330194130965,
+          -6.194760093343767,
+          -5.671161084376011
+        ]
+      },
+      "ANKLE_st": {
+        "mean": 3.481500406954446
+      },
+      "t_end": {
+        "mean": 19.003333333333334,
+        "range": [
+          16.86,
+          20.0
+        ]
+      },
+      "swing_s_mean": 1.167722222222222,
+      "knee_drift_per_cycle_mean": -0.09841786083187076
+    },
+    "W070_0500": {
+      "n_gate_G": 6,
+      "uninformative": false,
+      "weak": 0.7,
+      "KV": 0.05,
+      "KNEE_ic": {
+        "mean": -8.667106147223409,
+        "range": [
+          -9.49933084605968,
+          -7.847665410036055
+        ],
+        "values": [
+          -9.49933084605968,
+          -9.229538389347793,
+          -8.823836523912243,
+          -8.437319195316988,
+          -8.1649465186677,
+          -7.847665410036055
+        ]
+      },
+      "ANKLE_st": {
+        "mean": 2.8772664457222725
+      },
+      "t_end": {
+        "mean": 13.816666666666668,
+        "range": [
+          11.14,
+          15.89
+        ]
+      },
+      "swing_s_mean": 1.175388888888889,
+      "knee_drift_per_cycle_mean": -0.3647550273509576
+    },
+    "W070_1100": {
+      "n_gate_G": 3,
+      "uninformative": true,
+      "weak": 0.7,
+      "KV": 0.11,
+      "KNEE_ic": {
+        "mean": -13.173830780610169,
+        "range": [
+          -14.5617701097328,
+          -11.984758735979725
+        ],
+        "values": [
+          -14.5617701097328,
+          -12.974963496117986,
+          -11.984758735979725
+        ]
+      },
+      "ANKLE_st": {
+        "mean": 1.651587416905888
+      },
+      "t_end": {
+        "mean": 10.923333333333332,
+        "range": [
+          10.71,
+          11.05
+        ]
+      },
+      "swing_s_mean": 1.1644444444444446,
+      "knee_drift_per_cycle_mean": 0.45451977944001426
+    },
+    "W060_0125": {
+      "n_gate_G": 3,
+      "uninformative": true,
+      "weak": 0.6,
+      "KV": 0.0125,
+      "KNEE_ic": {
+        "mean": -6.094371712425055,
+        "range": [
+          -6.334298234769928,
+          -5.874594524185501
+        ],
+        "values": [
+          -6.334298234769928,
+          -6.074222378319734,
+          -5.874594524185501
+        ]
+      },
+      "ANKLE_st": {
+        "mean": 3.718209216445899
+      },
+      "t_end": {
+        "mean": 19.32,
+        "range": [
+          18.48,
+          20.0
+        ]
+      },
+      "swing_s_mean": 1.165888888888889,
+      "knee_drift_per_cycle_mean": 0.06919818647949423
+    },
+    "W060_0250": {
+      "n_gate_G": 3,
+      "uninformative": true,
+      "weak": 0.6,
+      "KV": 0.025,
+      "KNEE_ic": {
+        "mean": -6.406767591909483,
+        "range": [
+          -6.931926446643494,
+          -5.643866902903431
+        ],
+        "values": [
+          -6.931926446643494,
+          -6.644509426181521,
+          -5.643866902903431
+        ]
+      },
+      "ANKLE_st": {
+        "mean": 3.354710061266665
+      },
+      "t_end": {
+        "mean": 18.796666666666667,
+        "range": [
+          16.6,
+          20.0
+        ]
+      },
+      "swing_s_mean": 1.1713333333333333,
+      "knee_drift_per_cycle_mean": -0.13532272722515556
+    },
+    "W060_0500": {
+      "n_gate_G": 3,
+      "uninformative": true,
+      "weak": 0.6,
+      "KV": 0.05,
+      "KNEE_ic": {
+        "mean": -8.030087532568439,
+        "range": [
+          -8.130947203104636,
+          -7.92091233456558
+        ],
+        "values": [
+          -8.130947203104636,
+          -8.038403060035105,
+          -7.92091233456558
+        ]
+      },
+      "ANKLE_st": {
+        "mean": 2.7863139427618164
+      },
+      "t_end": {
+        "mean": 14.506666666666666,
+        "range": [
+          12.76,
+          17.88
+        ]
+      },
+      "swing_s_mean": 1.1773333333333333,
+      "knee_drift_per_cycle_mean": -0.5108988264808859
+    },
+    "W060_1100": {
+      "n_gate_G": 1,
+      "uninformative": true,
+      "weak": 0.6,
+      "KV": 0.11,
+      "KNEE_ic": {
+        "mean": -14.002400963643163,
+        "range": [
+          -14.002400963643163,
+          -14.002400963643163
+        ],
+        "values": [
+          -14.002400963643163
+        ]
+      },
+      "ANKLE_st": {
+        "mean": 2.1988475644330663
+      },
+      "t_end": {
+        "mean": 13.98,
+        "range": [
+          13.98,
+          13.98
+        ]
+      },
+      "swing_s_mean": 1.1733333333333331,
+      "knee_drift_per_cycle_mean": -0.3039328290273681
+    }
+  },
+  "duration_control": {
+    "within_dose_slope_deg_per_s": -0.08654440271330617,
+    "pearson_r": -0.14535943453731665,
+    "t_end_span_s": 10.06,
+    "KNEE_ic_span_deg": 9.814890407502887,
+    "fraction": 0.08870569666578358,
+    "CONFOUNDED": false
+  },
+  "predictions": {
+    "P1_spastic_axis_monotone_more_flexed": {
+      "by_row": {
+        "W100": {
+          "rung_means": [
+            -6.180704292713618,
+            -6.809074173113064,
+            -10.450611718385725
+          ],
+          "monotone_more_flexed": true,
+          "total_change_deg": -4.269907425672106,
+          "multiple_of_floor": 3.890753497354874,
+          "VERDICT": "HOLDS"
+        },
+        "W080": {
+          "rung_means": [
+            -5.662914025365864,
+            -6.507235231989855,
+            -9.187955022436514,
+            -13.696326909484279
+          ],
+          "monotone_more_flexed": true,
+          "total_change_deg": -8.033412884118416,
+          "multiple_of_floor": 7.320071879464591,
+          "VERDICT": "HOLDS"
+        },
+        "W070": {
+          "rung_means": [
+            -5.660440375578353,
+            -6.351394213123018,
+            -8.667106147223409
+          ],
+          "monotone_more_flexed": true,
+          "total_change_deg": -3.006665771645056,
+          "multiple_of_floor": 2.739683604396607,
+          "VERDICT": "HOLDS"
+        },
+        "W060": {
+          "n_judgeable_rungs": 0,
+          "VERDICT": "UNINFORMATIVE"
+        }
+      },
+      "VERDICT": "HOLDS"
+    },
+    "P2_weakness_axis_monotone_more_extended": {
+      "by_dose": {
+        "0125": {
+          "row_means_from_x100_down": [
+            -6.180704292713618,
+            -5.662914025365864,
+            -5.660440375578353
+          ],
+          "monotone_more_extended": true,
+          "total_change_deg": 0.5202639171352654,
+          "multiple_of_floor": 0.4740661689692154,
+          "VERDICT": "HOLDS"
+        },
+        "0250": {
+          "row_means_from_x100_down": [
+            -6.809074173113064,
+            -6.507235231989855,
+            -6.351394213123018
+          ],
+          "monotone_more_extended": true,
+          "total_change_deg": 0.4576799599900463,
+          "multiple_of_floor": 0.41703946420342275,
+          "VERDICT": "HOLDS"
+        },
+        "0500": {
+          "row_means_from_x100_down": [
+            -10.450611718385725,
+            -9.187955022436514,
+            -8.667106147223409
+          ],
+          "monotone_more_extended": true,
+          "total_change_deg": 1.7835055711623156,
+          "multiple_of_floor": 1.6251360619274824,
+          "VERDICT": "HOLDS"
+        },
+        "1100": {
+          "n_judgeable_rows": 1,
+          "VERDICT": "UNINFORMATIVE"
+        }
+      },
+      "VERDICT": "HOLDS"
+    },
+    "P3_mixed_is_rankable": {
+      "VERDICT": "UNINFORMATIVE",
+      "why": "the registered weakness-dominant cell is KV 0.0125 at x0.60, and the x0.60 root passes only 2-3/6 Gate G by either chaining route (RESCUE_RESULT_r426.json). It cannot be judged as written. Section 8 forbids substituting another cell."
+    },
+    "P3_SUBSTITUTE_x070_POST_HOC": {
+      "status": "POST-HOC. Does NOT satisfy registered P3, which names x0.60.",
+      "weakness_dominant_cell": "W070_0125",
+      "comparisons": [
+        {
+          "spastic_dominant": "W100_0500",
+          "edge_gap_deg": 2.6729260365454293,
+          "disjoint": true
+        },
+        {
+          "spastic_dominant": "W080_0500",
+          "edge_gap_deg": 2.509982569188172,
+          "disjoint": true
+        }
+      ],
+      "multiple_of_batch_null": [
+        4.691539987047105,
+        4.405540381265763
+      ],
+      "all_disjoint_and_above_null": true
+    },
+    "P4_cancellation_exists": {
+      "n_judgeable_cells": 10,
+      "n_pairs_overlapping": 15,
+      "overlapping_pairs": [
+        {
+          "a": "W100_0125",
+          "b": "W100_0250",
+          "a_mean": -6.180704292713618,
+          "b_mean": -6.809074173113064,
+          "mean_difference": 0.628369880399446
+        },
+        {
+          "a": "W100_0125",
+          "b": "W080_0125",
+          "a_mean": -6.180704292713618,
+          "b_mean": -5.662914025365864,
+          "mean_difference": 0.5177902673477544
+        },
+        {
+          "a": "W100_0125",
+          "b": "W080_0250",
+          "a_mean": -6.180704292713618,
+          "b_mean": -6.507235231989855,
+          "mean_difference": 0.3265309392762372
+        },
+        {
+          "a": "W100_0125",
+          "b": "W070_0125",
+          "a_mean": -6.180704292713618,
+          "b_mean": -5.660440375578353,
+          "mean_difference": 0.5202639171352654
+        },
+        {
+          "a": "W100_0125",
+          "b": "W070_0250",
+          "a_mean": -6.180704292713618,
+          "b_mean": -6.351394213123018,
+          "mean_difference": 0.17068992040939968
+        },
+        {
+          "a": "W100_0250",
+          "b": "W080_0250",
+          "a_mean": -6.809074173113064,
+          "b_mean": -6.507235231989855,
+          "mean_difference": 0.30183894112320875
+        },
+        {
+          "a": "W100_0250",
+          "b": "W070_0250",
+          "a_mean": -6.809074173113064,
+          "b_mean": -6.351394213123018,
+          "mean_difference": 0.4576799599900463
+        },
+        {
+          "a": "W100_0500",
+          "b": "W080_0500",
+          "a_mean": -10.450611718385725,
+          "b_mean": -9.187955022436514,
+          "mean_difference": 1.262656695949211
+        },
+        {
+          "a": "W100_0500",
+          "b": "W070_0500",
+          "a_mean": -10.450611718385725,
+          "b_mean": -8.667106147223409,
+          "mean_difference": 1.7835055711623156
+        },
+        {
+          "a": "W080_0125",
+          "b": "W080_0250",
+          "a_mean": -5.662914025365864,
+          "b_mean": -6.507235231989855,
+          "mean_difference": 0.8443212066239916
+        },
+        {
+          "a": "W080_0125",
+          "b": "W070_0125",
+          "a_mean": -5.662914025365864,
+          "b_mean": -5.660440375578353,
+          "mean_difference": 0.0024736497875110786
+        },
+        {
+          "a": "W080_0125",
+          "b": "W070_0250",
+          "a_mean": -5.662914025365864,
+          "b_mean": -6.351394213123018,
+          "mean_difference": 0.688480187757154
+        },
+        {
+          "a": "W080_0250",
+          "b": "W070_0250",
+          "a_mean": -6.507235231989855,
+          "b_mean": -6.351394213123018,
+          "mean_difference": 0.15584101886683754
+        },
+        {
+          "a": "W080_0500",
+          "b": "W070_0500",
+          "a_mean": -9.187955022436514,
+          "b_mean": -8.667106147223409,
+          "mean_difference": 0.5208488752131046
+        },
+        {
+          "a": "W070_0125",
+          "b": "W070_0250",
+          "a_mean": -5.660440375578353,
+          "b_mean": -6.351394213123018,
+          "mean_difference": 0.6909538375446651
+        }
+      ],
+      "VERDICT": "HOLDS",
+      "meaning": "P4 predicted overlap WOULD exist, i.e. a single knee reading cannot uniquely identify the lesion combination. HOLDS here means the predicted LIMIT is real."
+    }
+  },
+  "n_cells": 74,
+  "VERDICT": "SUPERSEDED BY REGISTRATION_DEVIATIONS_r438. As registered: P1 HOLDS on three rungs with a smaller effect than previously quoted, P2 UNINFORMATIVE, P3 UNINFORMATIVE, P4 HOLDS. The KV 0.110 column and the x0.70 row are POST-HOC.",
+  "READING_r424": {
+    "headline": "knee angle at heel strike is a SPASTICITY METER, not a mixture meter. It responds to the spastic axis at 2.7-7.3x its noise floor and to the weakness axis at 0.4-1.6x.",
+    "P1_spastic_axis": {
+      "VERDICT": "HOLDS",
+      "detail": "monotone, more flexed with rising gain, in all three judgeable weakness rows. Total change 3.007 to 8.033 deg = 2.7x to 7.3x the floor."
+    },
+    "P2_weakness_axis": {
+      "VERDICT": "HOLDS on monotonicity, WEAK in magnitude",
+      "detail": "monotone at all three judgeable doses, but the total change is 0.520, 0.458 and 1.784 deg = 0.5x, 0.4x and 1.6x the floor. AT THE TWO LOWER SPASTIC DOSES THE ENTIRE WEAKNESS AXIS IS BELOW ITS OWN NOISE FLOOR.",
+      "consequence": "the ordering is real but the resolution is not. Depth of dorsiflexor weakness is not readable from this endpoint unless spasticity is already substantial."
+    },
+    "P3_as_registered": {
+      "VERDICT": "UNINFORMATIVE",
+      "why": "the registered weakness-dominant cell is KV 0.0125 at x0.60 and that root passes only 2-3/6 by either chaining route. Section 8 forbids substituting another cell, so the registered prediction is not judged."
+    },
+    "P3_substitute_POST_HOC": {
+      "status": "POST-HOC, does not satisfy registered P3",
+      "result": "spasticity-dominant (KV 0.050, x1.00 or x0.80) versus weakness-dominant (KV 0.0125, x0.70) separates by 2.67 and 2.51 deg, 4.7x and 4.4x the batch null, disjoint.",
+      "the_honest_caveat": "the separation is achieved because SPASTICITY moves the readout, not because both lesions are measured. The same contrast with weakness held constant would look nearly identical."
+    },
+    "P4_cancellation": {
+      "VERDICT": "HOLDS -- the predicted LIMIT is real",
+      "detail": "15 of 45 judgeable cell pairs overlap. The starkest is W080_0125 (-5.663 deg) against W070_0125 (-5.661 deg): a mean difference of 0.002 deg between two different weakness depths.",
+      "clinical_meaning": "at low spastic gain a single knee reading cannot distinguish weakness depths at all. A patient with mild spasticity and severe weakness reads the same as one with mild spasticity and moderate weakness."
+    },
+    "duration_control": "within-dose slope -0.0865 deg/s, r -0.1454, 9% of the span. Clear.",
+    "stationarity": "per-cycle knee drift in the grid runs -0.51 to +0.45 deg/cycle, the same band as control (-0.30). The endpoint is stationary; see STATIONARITY_r434.",
+    "WHAT_THE_CLINICAL_SENTENCE_CAN_BE": "'knee angle at heel strike grades plantarflexor spasticity, and does so under phone-grade video noise. It does not grade dorsiflexor weakness: at low spastic gain the entire weakness axis lies below the measurement noise floor, and different weakness depths are indistinguishable.'",
+    "WHAT_IT_CANNOT_BE": "'the method tells you which lesion dominates.' It tells you how much spasticity there is. Weakness is inferred only as a residual, and the residual is below noise except when spasticity is already substantial.",
+    "why_this_is_still_useful": "the clinical decision that matters is whether to inject botulinum toxin, and that decision is about SPASTICITY. A non-invasive spasticity grader that works on sagittal phone video would reduce how many patients need a diagnostic nerve block, even though it cannot grade the weakness component."
+  },
+  "REGISTRATION_DEVIATIONS_r438": {
+    "found_by": "cold preregistration-compliance audit, 2026-08-26; every item independently re-verified against the registration text and the grid before being recorded here",
+    "D1_UNREGISTERED_DOSE_COLUMN": {
+      "what": "PREREG_mixed_r424.md section 3 fixes the ladder at 0.0125 / 0.025 / 0.050 and states 3 x 3 x 6 = 54 cells. The strings '0.110', '0.11' and '1100' appear NOWHERE in the registration. A fourth column at KV 0.110 was added after hashing.",
+      "the_defence_offered_at_the_time_and_why_it_fails": "the code comment argued only against section 8's clause about adding cells AFTER seeing a value, and noted no value had been read -- which is true. But the same sentence also forbids changing the grid, and adding a column changes the grid whether or not values were seen. That clause was violated.",
+      "consequence": {
+        "W080_registered_three_rungs_deg": -3.5250409970706498,
+        "W080_with_the_unregistered_column_deg": -8.033,
+        "which_number_travelled": "the post-hoc -8.033 propagated to READING_r424, to FLOOR_CORRECTION_r436 (15.7 SD) and to the advisor summary"
+      },
+      "STATUS": "the KV 0.110 column is POST-HOC and must be labelled wherever quoted"
+    },
+    "D2_POST_HOC_ROW_INSIDE_REGISTERED_PREDICTIONS": {
+      "what": "W070 (x0.70) was added at r426 as a substitute for the registered x0.60 root. This deposit labelled it post-hoc for P3 but scored it inside P1 and P2 unlabelled.",
+      "STATUS": "registered P2 is UNINFORMATIVE at every dose, because the registered x0.60 row has no judgeable cell. The earlier 'P2 HOLDS' used the post-hoc row and is withdrawn as a registered result."
+    },
+    "REGISTERED_ONLY_P1": {
+      "W100": {
+        "rung_means": [
+          -6.180704292713618,
+          -6.809074173113064,
+          -10.450611718385725
+        ],
+        "monotone_more_flexed": true,
+        "total_change_deg": -4.269907425672106,
+        "is_registered_row": true,
+        "VERDICT": "HOLDS"
+      },
+      "W080": {
+        "rung_means": [
+          -5.662914025365864,
+          -6.507235231989855,
+          -9.187955022436514
+        ],
+        "monotone_more_flexed": true,
+        "total_change_deg": -3.5250409970706498,
+        "is_registered_row": true,
+        "VERDICT": "HOLDS"
+      },
+      "W060": {
+        "n_judgeable_rungs": 0,
+        "VERDICT": "UNINFORMATIVE"
+      },
+      "W070": {
+        "rung_means": [
+          -5.660440375578353,
+          -6.351394213123018,
+          -8.667106147223409
+        ],
+        "monotone_more_flexed": true,
+        "total_change_deg": -3.006665771645056,
+        "is_registered_row": false,
+        "VERDICT": "HOLDS"
+      }
+    },
+    "REGISTERED_ONLY_P2": {
+      "0125": {
+        "n_judgeable_rows": 2,
+        "VERDICT": "UNINFORMATIVE",
+        "why": "registered rows are x1.00 / x0.80 / x0.60; the x0.60 row has no cell with >= 4 Gate-G seeds (RESCUE_RESULT_r426.json)"
+      },
+      "0250": {
+        "n_judgeable_rows": 2,
+        "VERDICT": "UNINFORMATIVE",
+        "why": "registered rows are x1.00 / x0.80 / x0.60; the x0.60 row has no cell with >= 4 Gate-G seeds (RESCUE_RESULT_r426.json)"
+      },
+      "0500": {
+        "n_judgeable_rows": 2,
+        "VERDICT": "UNINFORMATIVE",
+        "why": "registered rows are x1.00 / x0.80 / x0.60; the x0.60 row has no cell with >= 4 Gate-G seeds (RESCUE_RESULT_r426.json)"
+      }
+    },
+    "WHAT_IS_UNAFFECTED": "P4 (cancellation exists) holds on registered cells alone. The DIRECTION of both axes is unchanged. What changes is the MAGNITUDE quoted for the spastic axis and the STATUS of P2."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "round": "MECHANISM_SCOREBOARD_r430",
+  "no_simulation_run": true,
+  "why_this_exists": "three mechanism verdicts in this corpus were wrong for one reason: a difference was called an effect without being divided by the noise floor for its own endpoint. Only knee angle had a floor (KNEE_MDC_BATCHNULL_r399.json). NULL_FLOORS_r428.json now supplies one per endpoint, from six dorsiflexor-weakness families at x0.80-0.95, 15 pairs, largest difference between family means.",
+  "the_rule": "NO MECHANISM NUMBER IS REPORTED UNTIL IT HAS BEEN DIVIDED BY THE FLOOR FOR ITS OWN ENDPOINT. Disjointness of ranges is not a substitute.",
+  "hypotheses": {
+    "1_velocity_component_uncancellable": {
+      "status": "DEAD",
+      "killed_by": "BETA2CONTROL_r388.json -- the matched control sits BETWEEN the arms; PREREG_beta2control_r387 section 5 then forbids the claim",
+      "rescored_r430": "unchanged; the failure is structural, not a threshold question"
+    },
+    "2_gastrocnemius_carries_the_knee_because_it_spans_it": {
+      "status": "DEAD",
+      "killed_by": "SPANNING_RESULT_r421.json",
+      "evidence": "gastroc-only and soleus-only separate at knee 4.5x, ankle 8.9x and hip 3.9x their OWN floors. Neither muscle crosses the hip. A lesion's effect is not confined to the joints its muscle spans.",
+      "history": "retired at r407 on an invalid comparison (SOL n=3 uninformative vs GAS n=0), reinstated at HYP2_BOOKKEEPING_r417, then killed properly at r421. Two intermediate scorings of r421 were themselves wrong and are recorded in that deposit."
+    },
+    "3_shank_decelerated_before_contact": {
+      "status": "DEAD, and only now with a container",
+      "killed_by": "SHANKVEL_r430.json",
+      "evidence": "SHANKDECEL spastic minus weak = -6.2945 deg/s against a same-mechanism floor of 19.8137 -- 0.3x, below noise. Peak terminal-swing shank velocity 0.4x and shank velocity at heel strike 0.0x. Nothing separates.",
+      "note": "this hypothesis had been retired on a line of prose with no window, no seeds, no Gate-G accounting and no floor. It is the only one that was retired without a container. The verdict is unchanged but is now reproducible."
+    },
+    "4_terminal_swing_gastrocnemius_opposes_knee_extension": {
+      "status": "LIVE -- REINSTATED",
+      "reinstated_by": "RESCORED_r429 inside TERMINALSWING_RESULT_r408.json",
+      "evidence": {
+        "P1_knee_extension_torque_lower": "1.9664 vs floor 0.06841 = 28.7x",
+        "P2_gastrocnemius_activation_higher": "0.0046 vs floor 0.00258 = 1.8x, MARGINAL",
+        "P3_soleus_negative_control_overlaps": "0.0019 vs floor 0.00689 = 0.3x, i.e. the soleus difference is BELOW noise, which is what the negative control predicted"
+      },
+      "why_it_had_been_killed": "P3 was scored FAILED because the soleus ranges happened to be disjoint. No activation floor existed at the time. 0.0019 is not a separation.",
+      "weakest_link": "P2, the mediator itself, at 1.8x. The chain is strongest at the consequence and weakest at the cause.",
+      "in_tension_with": "SPANNING_RESULT_r421 -- if effects are not confined to spanned joints, a knee-spanning mediation is not the whole story. Both results are Gate-G, preregistered, and clear their own floors. Neither retires the other."
+    },
+    "5_compensation_is_ankle_targeted_and_leaks_via_the_biarticular_muscle": {
+      "status": "DEAD",
+      "killed_by": "COMPENSATION_r381.json (OVERLAP) and COMPENSATION_MAP_r384.json, which also found the r381 secondary statistic invalid as an effect size"
+    },
+    "6_the_lesion_response_is_one_dimensional": {
+      "status": "DEAD",
+      "killed_by": "ONEDIM_RESULT_r409.json -- all four predictions failed on untouched confirmatory material; PC1 explains 95% of knee variance in the exploratory pool and 0.17% in the confirmatory pool"
+    },
+    "7_soleus_spasticity_slackens_gastrocnemius": {
+      "status": "HALF LIVE",
+      "confirmed": {
+        "GASLEN_swing_shortens": "0.0884 vs floor 0.01017 = 8.7x, monotone over six rungs",
+        "GASDRIVE_swing_falls": "0.01711 vs floor 0.00258 = 6.6x, monotone"
+      },
+      "refuted": "the protective half. SWINGMATCHED_r419 shows a TIMING SHIFT, not a reduction: at 75% of swing the high-soleus knee is 24 deg MORE flexed, and KNEE_ic reverses at the top rung. At heel strike -- this corpus's endpoint -- more soleus spasticity leaves the knee MORE flexed.",
+      "relation_to_4": "soleus unloading gastrocnemius is mechanically the same lever hypothesis 4 relies on, run in reverse. The two are compatible and could be tested together."
+    }
+  },
+  "SCOREBOARD": "1 live (4, with a 1.8x mediator and contradicted by r421), 1 half-live (7), 5 dead (1,2,3,5,6). The r431 mediation test on the 96-cell mixed grid is the outstanding decider for hypothesis 4.",
+  "WHAT_THE_PAPER_CAN_SAY": "the discriminator does not depend on any of this. The mechanism section reports one surviving candidate with a marginal mediator, one confirmed mechanical fact whose functional consequence is refuted, five dead hypotheses, and the measured reason joint-level anatomical inference fails.",
+  "WHAT_IS_STILL_OWED": [
+    "hypothesis 4's P2 clears its floor by only 1.8x. A direct test of the mediator at higher power would settle whether the chain has a cause or only a consequence.",
+    "the tension between hypothesis 4 and r421 is unresolved and must be presented as such.",
+    "hypothesis 1's retirement rests on a structural rule rather than a floor comparison and was not rescored here."
+  ],
+  "UPDATE_r432_to_r434": {
+    "hypothesis_1_rescored": "HYP1_RESCORED_r432.json. Still DEAD as registered -- the r387 section 5 rule fires -- but the recorded cause of death was wrong. Control and dorsiflexor weakness are 0.6x the BETA_abs floor apart, i.e. the same point; the real weakness is that only the top rung clears the floor (2.4x) with no graded dose response below it.",
+    "all_seven_now_rescored": "one changed verdict (4, reinstated), one changed cause of death (1), one gained a container it never had (3, SHANKVEL_r430), four unaffected.",
+    "unbiased_screen": "SCREEN_ALL_r433.json summarised 3692 channel-by-window combinations. 711 clear 5x their own floor AND are dose-monotone. The ranking is headed by medio-lateral excursion, 24-74x, far above any sagittal channel.",
+    "and_why_that_screen_result_is_not_usable": "STATIONARITY_r434.json. The lateral excursion GROWS monotonically inside the measurement window (0.094 -> 0.377 m over six cycles) with a per-cycle drift 102x the control's. It is a fall in progress, not circumduction. Every sagittal channel used by this corpus is stationary by the same test: knee at heel strike 1x, knee torque 1x, gastrocnemius activation 3x, ankle angle 1x.",
+    "what_the_stationarity_test_adds": "Gate G requires 9.73 s and 5 cycles but not STEADINESS, and the r417 duration control cannot see a divergence that occurs identically within every cell. This is a fourth decision rule the corpus did not have: per-cycle drift against control.",
+    "net_effect_on_the_headline": "the 6.3919 deg knee separation passes a failure mode it had never been tested against. Nothing about it changes."
+  },
+  "FINAL_r431": {
+    "hypothesis_4": "DEAD. Killed on 74 Gate-G cells by MEDIATION_RESULT_r431. The torque links are empty (+0.0621 and -0.0519).",
+    "SCOREBOARD": "0 LIVE. 1 half-live (7). 6 dead (1,2,3,4,5,6).",
+    "the_honest_summary": "seven mechanism hypotheses were proposed, tested and retired. One was wrongly retired and reinstated, then properly retired at ten times the power. One survives only as a mechanical fact (soleus unloads gastrocnemius) whose functional consequence is refuted. An unbiased screen over 3692 channel-summaries put medio-lateral excursion at the top, and it turned out to be the model falling sideways.",
+    "what_replaces_a_mechanism_in_the_paper": "a measured account of why mechanism attribution fails in this system: effects appear at joints the lesioned muscle does not span (r421), the proposed mediator is not lesion-specific (r431 P5), and associations that survive pooling reverse sign within dose (r431 P2, r418 P5)."
+  },
+  "UNREGISTERED_OR_SUPERSEDED_LABEL_r438": "SUMMARY DOCUMENT, not a registered result. Every multiple it quotes rests on NULL_FLOORS_r428 floors, superseded by FLOOR_CORRECTION_r436."
+}

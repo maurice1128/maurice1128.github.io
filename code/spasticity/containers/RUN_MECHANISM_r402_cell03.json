@@ -1,0 +1,27 @@
+{
+ "cell": 3,
+ "arm": "BOTH",
+ "seed": 104,
+ "kv": 0.11,
+ "prefix": "R402BOTH_s104",
+ "spastic_targets": [
+  "soleus",
+  "gastroc"
+ ],
+ "deleted_reflex": null,
+ "wall_clock_s": 144.42650175094604,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R402BOTH_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104 (1)"
+ ],
+ "status": "OK",
+ "duplicate_result_dir": true,
+ "dir": "R402BOTH_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+ "sto": "0068_78.466_47.470.par.sto",
+ "t_end_s": 12.24,
+ "n_cycles_in_window": 6,
+ "gate_G": true,
+ "knee_at_heelstrike_deg": -13.893376644526354,
+ "n_stance_samples": 417,
+ "ank_stance_mean_deg": 1.7131147191845624
+}

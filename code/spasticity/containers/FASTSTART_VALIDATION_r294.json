@@ -1,0 +1,14 @@
+{
+ "vendor_diff": [
+  "-min_velocity = 1.0",
+  "+min_velocity = 1.5"
+ ],
+ "vendor_diff_is_one_token": true,
+ "corpus_diff": [
+  "-min_velocity = 1.0",
+  "+min_velocity = 1.5"
+ ],
+ "corpus_diff_is_one_token": true,
+ "same_change": true,
+ "PASSES": true
+}

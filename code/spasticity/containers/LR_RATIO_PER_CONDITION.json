@@ -1,0 +1,54 @@
+{
+ "CMW70": {
+  "ratio_mean": 1.7341604560738542,
+  "n": 4
+ },
+ "CMW80": {
+  "ratio_mean": 1.4778807751017147,
+  "n": 4
+ },
+ "DR2K000": {
+  "ratio_mean": 0.9901313141939263,
+  "n": 4
+ },
+ "DR2K050": {
+  "ratio_mean": 0.8474411218709256,
+  "n": 4
+ },
+ "DR2K075": {
+  "ratio_mean": 0.8345946185720869,
+  "n": 4
+ },
+ "DR2K100": {
+  "ratio_mean": 0.9038294515392797,
+  "n": 4
+ },
+ "DR2K150": {
+  "ratio_mean": 0.7739441108421561,
+  "n": 4
+ },
+ "DR2K200": {
+  "ratio_mean": 0.713851477326599,
+  "n": 4
+ },
+ "HEALTHY": {
+  "ratio_mean": 0.9901313141939263,
+  "n": 4
+ },
+ "PAR20": {
+  "ratio_mean": 1.0547105871164242,
+  "n": 4
+ },
+ "PAR40": {
+  "ratio_mean": 1.0674284438962078,
+  "n": 4
+ },
+ "PAR60": {
+  "ratio_mean": 1.522333805193079,
+  "n": 4
+ },
+ "_note": "Per-condition L/R ank_rom ratio. Created because these values were previously quoted in the manuscript from lr_asymmetry.py stdout that was never stored -- the class MANIFEST.txt legislates against. Round 55: the estimator is now stated, because the artifact and the prose had silently answered different questions.",
+ "_estimator": "MEAN OF PER-SEED RATIOS: for each run, ank_rom(left)/ank_rom(right); then the mean over the 4 seeds of a condition. This is the estimator scone/lr_asymmetry.py uses. It is NOT ratio-of-means, which differs at printed precision for 3 of 5 quoted values and is what earlier manuscript revisions reported.",
+ "_source": "scone/replay_crossed/*/ (48 run dirs, one .sto each); sto_utils.cycle_features(path, side=, settle=1.0)['ank_rom']",
+ "_produced_by": "watchdog, round 53; estimator named and artifact cited in RESULTS_discrimination.md at round 55"
+}

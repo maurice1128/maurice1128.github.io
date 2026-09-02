@@ -1,0 +1,30 @@
+{
+ "id": "PEAK_r522",
+ "why": "the contact instant needs an external event detector; the first flexion peak is a turning point of the curve itself and needs none",
+ "peak_timing_pct_of_cycle": {
+  "mean": 8.149762915916737,
+  "sd": 0.797165307668286
+ },
+ "scores": {
+  "contact_instant": {
+   "hyper_mean": -11.771846539823411,
+   "weak_mean": -6.491924781112322,
+   "arm_difference_deg": -5.2799217587110885,
+   "cell_gap_deg": 1.4918560478057357,
+   "cells_disjoint": true,
+   "mean_seed_SD_deg": 0.48361954859239925,
+   "gap_in_seed_SD": 3.0847720116936195,
+   "effect_in_seed_SD": 10.917511035438054
+  },
+  "first_flexion_peak": {
+   "hyper_mean": -26.081923846555142,
+   "weak_mean": -21.86631757881504,
+   "arm_difference_deg": -4.215606267740103,
+   "cell_gap_deg": 1.1147925228301396,
+   "cells_disjoint": true,
+   "mean_seed_SD_deg": 0.34173503430396973,
+   "gap_in_seed_SD": 3.2621546254416027,
+   "effect_in_seed_SD": 12.335891391195103
+  }
+ }
+}

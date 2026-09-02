@@ -1,0 +1,545 @@
+{
+ "arm": "CHAIN_r396",
+ "written_at": "2026-08-24T12:04:19",
+ "basis": "WARMSTART_PROBE_r392: arm A (corpus recipe, KV 0.070, seed 101) t_end 8.24 s FAIL; arm B (identical but warm-started from the same seed's optimised KV 0.050 solution) t_end 13.95 s PASS, terminal objective 64.24 -> 37.23; init-std ratios 0.90-0.92 so the search was not narrowed",
+ "protocol": "Ong et al. 2019: the solution of each severity seeds the next. Here the chain is rung-to-rung WITHIN a seed on each of the two lesion axes.",
+ "only_change_from_corpus_recipe": "the init file. 90 generations, as the corpus.",
+ "gate_G": {
+  "min_t_end_s": 9.73,
+  "min_cycles": 5,
+  "settle_s": 1.0,
+  "stance": "leg0_l.grf_norm_y > 0.05",
+  "cycles": "between left heel strikes, t[start] >= SETTLE, wholly inside [SETTLE, T1], drop the LAST kept cycle"
+ },
+ "axes": {
+  "spastic": {
+   "target": "soleus_l and gastroc_l MuscleReflex KV, ConditionalController SpasticL, legs = left",
+   "allow_neg_V": 0,
+   "delay_s": 0.02,
+   "rungs": [
+    0.1,
+    0.11,
+    0.12,
+    0.13,
+    0.14
+   ],
+   "root_cell": "R393SPg100",
+   "root_rung": 0.1
+  },
+  "weakness": {
+   "target": "tib_ant_l max_isometric_force, base 1759",
+   "rungs": [
+    0.8
+   ],
+   "root_cell": "R151W",
+   "root_rung": 0.8,
+   "asserted_unchanged": {
+    "soleus_l": 3549.0,
+    "gastroc_l": 2241.0
+   }
+  }
+ },
+ "seeds": [
+  101,
+  102,
+  105,
+  106
+ ],
+ "n_new_cells": 16,
+ "stage_dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\chain_r396",
+ "root_verification": {
+  "R151S_template": {
+   "kv_literal_count": 2,
+   "allow_neg_V_0_count": 3,
+   "delay_0.020_count": 2,
+   "min_velocity": "1.0",
+   "max_generations": "90",
+   "hfd_sha256": "512cc251213926bee5f201eae82eb1ec04530d08b207fae56fa886d9eb3cd9fd"
+  },
+  "R151W_template": {
+   "kv_literal_count": 0,
+   "min_velocity": "1.0",
+   "max_generations": "90",
+   "fmax": {
+    "tib_ant_l": 1407.2,
+    "soleus_l": 3549.0,
+    "gastroc_l": 2241.0
+   }
+  },
+  "base_hfd_sha256": "512cc251213926bee5f201eae82eb1ec04530d08b207fae56fa886d9eb3cd9fd",
+  "x080_reproduces_R151W_model": false,
+  "x080_reproduces_R151W_model_EOL_NORMALISED": true,
+  "x080_byte_exact_fails_because": "R151W's H1922v7b3.hfd is CRLF throughout EXCEPT line 388, the one line an old script rewrote, which is LF only: 470 CRLF against 471 in R151C, 14260 bytes against 14259. No recipe writing consistent line endings can reproduce it byte for byte. The lesion value itself, 1407.2 = 1759 x 0.80, is reproduced exactly. Checked EOL-normalised.",
+  "roots": {
+   "R393SPg100_s101": {
+    "status": "OK",
+    "resolved_par": "0062_76.357_55.842.par",
+    "resolved_par_sha256": "3defa4dd622bd951f31925cb8d9c7e727a95de3662efb1c083675aa65fb50d71",
+    "t_end_s": 10.74,
+    "n_cycles_in_window": 6,
+    "gate_G": true,
+    "ank_stance_mean_deg": 1.732364481415451,
+    "terminal_objective": 55.8418
+   },
+   "R393SPg100_s102": {
+    "status": "OK",
+    "resolved_par": "0056_70.988_51.509.par",
+    "resolved_par_sha256": "4daac03fd70e22d48befeb7da10a651a12d2eb30e4836580ef1de09e38a7272e",
+    "t_end_s": 11.76,
+    "n_cycles_in_window": 6,
+    "gate_G": true,
+    "ank_stance_mean_deg": 1.882613117941113,
+    "terminal_objective": 51.5087
+   },
+   "R393SPg100_s105": {
+    "status": "OK",
+    "resolved_par": "0056_69.540_54.416.par",
+    "resolved_par_sha256": "5baf891bbf80f8c122cb89d7caf11fff2e00bb3794b3cdb90d6282a26038a048",
+    "t_end_s": 10.16,
+    "n_cycles_in_window": 6,
+    "gate_G": true,
+    "ank_stance_mean_deg": 1.7852237859713265,
+    "terminal_objective": 54.4159
+   },
+   "R393SPg100_s106": {
+    "status": "OK",
+    "resolved_par": "0079_79.667_55.861.par",
+    "resolved_par_sha256": "7cfb825a033cc0d985089e6f738254f50bb544d781e5bababa8be2e87ed11378",
+    "t_end_s": 10.14,
+    "n_cycles_in_window": 6,
+    "gate_G": true,
+    "ank_stance_mean_deg": 1.8487105103335828,
+    "terminal_objective": 55.8607
+   },
+   "R151W_s101": {
+    "status": "OK",
+    "resolved_par": "0086_18.186_1.049.par",
+    "resolved_par_sha256": "ebee84dccfe8ab42a813a234ff6cfa5e53e5df485782ef08d4dfb426f77eadfe",
+    "t_end_s": 20.0,
+    "n_cycles_in_window": 5,
+    "gate_G": true,
+    "ank_stance_mean_deg": 4.498609673448277,
+    "terminal_objective": 1.04864
+   },
+   "R151W_s102": {
+    "status": "OK",
+    "resolved_par": "0060_19.759_1.051.par",
+    "resolved_par_sha256": "93f9aaa196e7c7c1d5f8e16c0fb8e41261c39a752c0de1ae7447854e828c3d3a",
+    "t_end_s": 20.0,
+    "n_cycles_in_window": 6,
+    "gate_G": true,
+    "ank_stance_mean_deg": 4.580838449832867,
+    "terminal_objective": 1.05105
+   },
+   "R151W_s105": {
+    "status": "OK",
+    "resolved_par": "0046_1.089_1.046.par",
+    "resolved_par_sha256": "d8101cf44cece908b47458b0241d9d67e58b5ffd206bf5cbf0ac3e0584c2f5c4",
+    "t_end_s": 20.0,
+    "n_cycles_in_window": 6,
+    "gate_G": true,
+    "ank_stance_mean_deg": 4.454077942429491,
+    "terminal_objective": 1.04572
+   },
+   "R151W_s106": {
+    "status": "OK",
+    "resolved_par": "0069_36.357_1.044.par",
+    "resolved_par_sha256": "85099449972c33f125c46086586d87cf7061ef3df6c3732b92b37954ab3a80db",
+    "t_end_s": 20.0,
+    "n_cycles_in_window": 5,
+    "gate_G": true,
+    "ank_stance_mean_deg": 4.408261744243689,
+    "terminal_objective": 1.04356
+   }
+  }
+ },
+ "resolver": "best_par_by_generation: highest generation among the run's own [0-9]*.par outputs, excluding the staged warm start by name. Selecting by the filename's objective field is unsafe across differing objectives.",
+ "parent_map": [
+  {
+   "prefix": "R396SPg110_s101",
+   "axis": "spastic",
+   "rung": "110",
+   "value": 0.11,
+   "seed": 101,
+   "parent_prefix": "R393SPg100_s101",
+   "parent_is_root": true,
+   "parent_result_dir": "R393SPg100_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "parent_gate_G": true,
+   "parent_t_end_s": 10.74,
+   "parent_n_cycles": 6,
+   "parent_par": "0062_76.357_55.842.par",
+   "parent_par_path": "C:\\Users\\maurice\\Documents\\SCONE\\results\\R393SPg100_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101\\0062_76.357_55.842.par",
+   "parent_par_sha256": "3defa4dd622bd951f31925cb8d9c7e727a95de3662efb1c083675aa65fb50d71",
+   "parent_par_generation": 62,
+   "parent_terminal_objective": 55.8418,
+   "staged_warm_as": "WARM_R393SPg100_s101_g0062.par",
+   "init_line_readback": "init { file = \"par/WARM_R393SPg100_s101_g0062.par\" }",
+   "fmax_readback": {
+    "tib_ant_l": 1759.0,
+    "soleus_l": 3549.0,
+    "gastroc_l": 2241.0
+   },
+   "config_sha256": "8cd60af261334e5b2e790c4e46547defec44f6e2b218cb76e41334a450ef845d",
+   "status": "PREPARED"
+  },
+  {
+   "prefix": "R396SPg110_s102",
+   "axis": "spastic",
+   "rung": "110",
+   "value": 0.11,
+   "seed": 102,
+   "parent_prefix": "R393SPg100_s102",
+   "parent_is_root": true,
+   "parent_result_dir": "R393SPg100_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "parent_gate_G": true,
+   "parent_t_end_s": 11.76,
+   "parent_n_cycles": 6,
+   "parent_par": "0056_70.988_51.509.par",
+   "parent_par_path": "C:\\Users\\maurice\\Documents\\SCONE\\results\\R393SPg100_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102\\0056_70.988_51.509.par",
+   "parent_par_sha256": "4daac03fd70e22d48befeb7da10a651a12d2eb30e4836580ef1de09e38a7272e",
+   "parent_par_generation": 56,
+   "parent_terminal_objective": 51.5087,
+   "staged_warm_as": "WARM_R393SPg100_s102_g0056.par",
+   "init_line_readback": "init { file = \"par/WARM_R393SPg100_s102_g0056.par\" }",
+   "fmax_readback": {
+    "tib_ant_l": 1759.0,
+    "soleus_l": 3549.0,
+    "gastroc_l": 2241.0
+   },
+   "config_sha256": "4a5b7605a04e4e7dac3a1976f705ad7291106e368bc49a1cf0dd2311622b35cd",
+   "status": "PREPARED"
+  },
+  {
+   "prefix": "R396SPg110_s105",
+   "axis": "spastic",
+   "rung": "110",
+   "value": 0.11,
+   "seed": 105,
+   "parent_prefix": "R393SPg100_s105",
+   "parent_is_root": true,
+   "parent_result_dir": "R393SPg100_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "parent_gate_G": true,
+   "parent_t_end_s": 10.16,
+   "parent_n_cycles": 6,
+   "parent_par": "0056_69.540_54.416.par",
+   "parent_par_path": "C:\\Users\\maurice\\Documents\\SCONE\\results\\R393SPg100_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105\\0056_69.540_54.416.par",
+   "parent_par_sha256": "5baf891bbf80f8c122cb89d7caf11fff2e00bb3794b3cdb90d6282a26038a048",
+   "parent_par_generation": 56,
+   "parent_terminal_objective": 54.4159,
+   "staged_warm_as": "WARM_R393SPg100_s105_g0056.par",
+   "init_line_readback": "init { file = \"par/WARM_R393SPg100_s105_g0056.par\" }",
+   "fmax_readback": {
+    "tib_ant_l": 1759.0,
+    "soleus_l": 3549.0,
+    "gastroc_l": 2241.0
+   },
+   "config_sha256": "86b1fa856966f6b109d935d6c5462eddb4f5957e4e9858cc8116a3119c0f5418",
+   "status": "PREPARED"
+  },
+  {
+   "prefix": "R396SPg110_s106",
+   "axis": "spastic",
+   "rung": "110",
+   "value": 0.11,
+   "seed": 106,
+   "parent_prefix": "R393SPg100_s106",
+   "parent_is_root": true,
+   "parent_result_dir": "R393SPg100_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "parent_gate_G": true,
+   "parent_t_end_s": 10.14,
+   "parent_n_cycles": 6,
+   "parent_par": "0079_79.667_55.861.par",
+   "parent_par_path": "C:\\Users\\maurice\\Documents\\SCONE\\results\\R393SPg100_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106\\0079_79.667_55.861.par",
+   "parent_par_sha256": "7cfb825a033cc0d985089e6f738254f50bb544d781e5bababa8be2e87ed11378",
+   "parent_par_generation": 79,
+   "parent_terminal_objective": 55.8607,
+   "staged_warm_as": "WARM_R393SPg100_s106_g0079.par",
+   "init_line_readback": "init { file = \"par/WARM_R393SPg100_s106_g0079.par\" }",
+   "fmax_readback": {
+    "tib_ant_l": 1759.0,
+    "soleus_l": 3549.0,
+    "gastroc_l": 2241.0
+   },
+   "config_sha256": "fc280536e48abc27b67252a6b3d4ce0daada74afaf28c3db4ccb861dfcc77769",
+   "status": "PREPARED"
+  },
+  {
+   "prefix": "R396SPg120_s101",
+   "axis": "spastic",
+   "rung": "120",
+   "value": 0.12,
+   "seed": 101,
+   "parent_prefix": "R396SPg110_s101",
+   "parent_is_root": false,
+   "status": "PARENT_NOT_RUN",
+   "parent_status": "NO_RESULT_DIR"
+  },
+  {
+   "prefix": "R396SPg120_s102",
+   "axis": "spastic",
+   "rung": "120",
+   "value": 0.12,
+   "seed": 102,
+   "parent_prefix": "R396SPg110_s102",
+   "parent_is_root": false,
+   "status": "PARENT_NOT_RUN",
+   "parent_status": "NO_RESULT_DIR"
+  },
+  {
+   "prefix": "R396SPg120_s105",
+   "axis": "spastic",
+   "rung": "120",
+   "value": 0.12,
+   "seed": 105,
+   "parent_prefix": "R396SPg110_s105",
+   "parent_is_root": false,
+   "status": "PARENT_NOT_RUN",
+   "parent_status": "NO_RESULT_DIR"
+  },
+  {
+   "prefix": "R396SPg120_s106",
+   "axis": "spastic",
+   "rung": "120",
+   "value": 0.12,
+   "seed": 106,
+   "parent_prefix": "R396SPg110_s106",
+   "parent_is_root": false,
+   "status": "PARENT_NOT_RUN",
+   "parent_status": "NO_RESULT_DIR"
+  },
+  {
+   "prefix": "R396SPg130_s101",
+   "axis": "spastic",
+   "rung": "130",
+   "value": 0.13,
+   "seed": 101,
+   "parent_prefix": "R396SPg120_s101",
+   "parent_is_root": false,
+   "status": "PARENT_NOT_RUN",
+   "parent_status": "NO_RESULT_DIR"
+  },
+  {
+   "prefix": "R396SPg130_s102",
+   "axis": "spastic",
+   "rung": "130",
+   "value": 0.13,
+   "seed": 102,
+   "parent_prefix": "R396SPg120_s102",
+   "parent_is_root": false,
+   "status": "PARENT_NOT_RUN",
+   "parent_status": "NO_RESULT_DIR"
+  },
+  {
+   "prefix": "R396SPg130_s105",
+   "axis": "spastic",
+   "rung": "130",
+   "value": 0.13,
+   "seed": 105,
+   "parent_prefix": "R396SPg120_s105",
+   "parent_is_root": false,
+   "status": "PARENT_NOT_RUN",
+   "parent_status": "NO_RESULT_DIR"
+  },
+  {
+   "prefix": "R396SPg130_s106",
+   "axis": "spastic",
+   "rung": "130",
+   "value": 0.13,
+   "seed": 106,
+   "parent_prefix": "R396SPg120_s106",
+   "parent_is_root": false,
+   "status": "PARENT_NOT_RUN",
+   "parent_status": "NO_RESULT_DIR"
+  },
+  {
+   "prefix": "R396SPg140_s101",
+   "axis": "spastic",
+   "rung": "140",
+   "value": 0.14,
+   "seed": 101,
+   "parent_prefix": "R396SPg130_s101",
+   "parent_is_root": false,
+   "status": "PARENT_NOT_RUN",
+   "parent_status": "NO_RESULT_DIR"
+  },
+  {
+   "prefix": "R396SPg140_s102",
+   "axis": "spastic",
+   "rung": "140",
+   "value": 0.14,
+   "seed": 102,
+   "parent_prefix": "R396SPg130_s102",
+   "parent_is_root": false,
+   "status": "PARENT_NOT_RUN",
+   "parent_status": "NO_RESULT_DIR"
+  },
+  {
+   "prefix": "R396SPg140_s105",
+   "axis": "spastic",
+   "rung": "140",
+   "value": 0.14,
+   "seed": 105,
+   "parent_prefix": "R396SPg130_s105",
+   "parent_is_root": false,
+   "status": "PARENT_NOT_RUN",
+   "parent_status": "NO_RESULT_DIR"
+  },
+  {
+   "prefix": "R396SPg140_s106",
+   "axis": "spastic",
+   "rung": "140",
+   "value": 0.14,
+   "seed": 106,
+   "parent_prefix": "R396SPg130_s106",
+   "parent_is_root": false,
+   "status": "PARENT_NOT_RUN",
+   "parent_status": "NO_RESULT_DIR"
+  }
+ ],
+ "cells": [
+  {
+   "cell": 0,
+   "prefix": "R396SPg110_s101",
+   "axis": "spastic",
+   "rung": "110",
+   "value": 0.11,
+   "seed": 101,
+   "parent_prefix": "R393SPg100_s101"
+  },
+  {
+   "cell": 1,
+   "prefix": "R396SPg110_s102",
+   "axis": "spastic",
+   "rung": "110",
+   "value": 0.11,
+   "seed": 102,
+   "parent_prefix": "R393SPg100_s102"
+  },
+  {
+   "cell": 2,
+   "prefix": "R396SPg110_s105",
+   "axis": "spastic",
+   "rung": "110",
+   "value": 0.11,
+   "seed": 105,
+   "parent_prefix": "R393SPg100_s105"
+  },
+  {
+   "cell": 3,
+   "prefix": "R396SPg110_s106",
+   "axis": "spastic",
+   "rung": "110",
+   "value": 0.11,
+   "seed": 106,
+   "parent_prefix": "R393SPg100_s106"
+  },
+  {
+   "cell": 4,
+   "prefix": "R396SPg120_s101",
+   "axis": "spastic",
+   "rung": "120",
+   "value": 0.12,
+   "seed": 101,
+   "parent_prefix": "R396SPg110_s101"
+  },
+  {
+   "cell": 5,
+   "prefix": "R396SPg120_s102",
+   "axis": "spastic",
+   "rung": "120",
+   "value": 0.12,
+   "seed": 102,
+   "parent_prefix": "R396SPg110_s102"
+  },
+  {
+   "cell": 6,
+   "prefix": "R396SPg120_s105",
+   "axis": "spastic",
+   "rung": "120",
+   "value": 0.12,
+   "seed": 105,
+   "parent_prefix": "R396SPg110_s105"
+  },
+  {
+   "cell": 7,
+   "prefix": "R396SPg120_s106",
+   "axis": "spastic",
+   "rung": "120",
+   "value": 0.12,
+   "seed": 106,
+   "parent_prefix": "R396SPg110_s106"
+  },
+  {
+   "cell": 8,
+   "prefix": "R396SPg130_s101",
+   "axis": "spastic",
+   "rung": "130",
+   "value": 0.13,
+   "seed": 101,
+   "parent_prefix": "R396SPg120_s101"
+  },
+  {
+   "cell": 9,
+   "prefix": "R396SPg130_s102",
+   "axis": "spastic",
+   "rung": "130",
+   "value": 0.13,
+   "seed": 102,
+   "parent_prefix": "R396SPg120_s102"
+  },
+  {
+   "cell": 10,
+   "prefix": "R396SPg130_s105",
+   "axis": "spastic",
+   "rung": "130",
+   "value": 0.13,
+   "seed": 105,
+   "parent_prefix": "R396SPg120_s105"
+  },
+  {
+   "cell": 11,
+   "prefix": "R396SPg130_s106",
+   "axis": "spastic",
+   "rung": "130",
+   "value": 0.13,
+   "seed": 106,
+   "parent_prefix": "R396SPg120_s106"
+  },
+  {
+   "cell": 12,
+   "prefix": "R396SPg140_s101",
+   "axis": "spastic",
+   "rung": "140",
+   "value": 0.14,
+   "seed": 101,
+   "parent_prefix": "R396SPg130_s101"
+  },
+  {
+   "cell": 13,
+   "prefix": "R396SPg140_s102",
+   "axis": "spastic",
+   "rung": "140",
+   "value": 0.14,
+   "seed": 102,
+   "parent_prefix": "R396SPg130_s102"
+  },
+  {
+   "cell": 14,
+   "prefix": "R396SPg140_s105",
+   "axis": "spastic",
+   "rung": "140",
+   "value": 0.14,
+   "seed": 105,
+   "parent_prefix": "R396SPg130_s105"
+  },
+  {
+   "cell": 15,
+   "prefix": "R396SPg140_s106",
+   "axis": "spastic",
+   "rung": "140",
+   "value": 0.14,
+   "seed": 106,
+   "parent_prefix": "R396SPg130_s106"
+  }
+ ]
+}

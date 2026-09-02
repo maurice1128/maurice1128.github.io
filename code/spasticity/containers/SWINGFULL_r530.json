@@ -1,0 +1,185 @@
+{
+ "id": "SWINGFULL_r530",
+ "why": "The endpoint had passed three of the checks the primary endpoint carries. Promoting it on three would repeat a mistake this project has made. This runs the rest under unchanged corpus conventions.",
+ "artefact_floor_deg": 0.03581801092876269,
+ "artefact_floor_knee_for_comparison_deg": 0.5860145801831838,
+ "sham_chains": {
+  "spastic KV0.100": {
+   "R151S": {
+    "n": 6,
+    "mean": 2.310134571936656,
+    "shift": 0.0
+   },
+   "R400SPgc1": {
+    "n": 6,
+    "mean": 2.3432520417910356,
+    "shift": 0.03311746985437969
+   },
+   "R400SPgc2": {
+    "n": 6,
+    "mean": 2.3419414963276397,
+    "shift": 0.03180692439098376
+   },
+   "R400SPgc3": {
+    "n": 6,
+    "mean": 2.3459525828654186,
+    "shift": 0.03581801092876269
+   }
+  },
+  "weak x0.80": {
+   "R151W": {
+    "n": 6,
+    "mean": 8.733766921897907,
+    "shift": 0.0
+   },
+   "R400WKc1": {
+    "n": 6,
+    "mean": 8.751540709322637,
+    "shift": 0.017773787424729903
+   },
+   "R400WKc2": {
+    "n": 6,
+    "mean": 8.73385827683524,
+    "shift": 9.135493733403166e-05
+   },
+   "R400WKc3": {
+    "n": 6,
+    "mean": 8.724636839432495,
+    "shift": -0.009130082465411249
+   }
+  }
+ },
+ "seed_SD_deg": 0.08189865684655136,
+ "cell_gap_deg": 6.265053993397188,
+ "arm_effect_deg": 8.731185018147332,
+ "means_deg": {
+  "control": 9.55516367333586,
+  "weakness": 9.125145691281547,
+  "hyperreflexia": 0.39396067313421496
+ },
+ "family_means_deg": {
+  "hyperreflexia": [
+   2.310134571936656,
+   1.2244620879172332,
+   -0.6445585164219709,
+   -1.0227806098058032,
+   -1.8257093240417663
+  ],
+  "weakness": [
+   8.733766921897907,
+   9.044658277874296,
+   9.145384258258296,
+   9.168002722150742,
+   9.263476589412708,
+   9.39558537809534
+  ]
+ },
+ "welch": {
+  "difference_deg": 9.116836049364677,
+  "se": 0.7681108075872567,
+  "df": 4.116706242502544,
+  "ci95": [
+   6.984560447502453,
+   11.249111651226901
+  ]
+ },
+ "permutation": {
+  "rank": 1,
+  "total": 462,
+  "p": 0.0021645021645021645
+ },
+ "lofo": {
+  "correct": 59,
+  "n": 59,
+  "accuracy": 1.0,
+  "baseline": 0.6101694915254238
+ },
+ "gate_sensitivity": {
+  "9.73": {
+   "gap_deg": 6.265053993397188,
+   "n_hyper": 23,
+   "n_weak": 36
+  },
+  "10.5": {
+   "gap_deg": 6.2748103187326745,
+   "n_hyper": 19,
+   "n_weak": 36
+  },
+  "11.5": {
+   "gap_deg": 6.294994803343998,
+   "n_hyper": 13,
+   "n_weak": 36
+  },
+  "12.5": {
+   "gap_deg": 6.301945599910072,
+   "n_hyper": 11,
+   "n_weak": 36
+  },
+  "13.0": {
+   "gap_deg": 6.301945599910072,
+   "n_hyper": 11,
+   "n_weak": 36
+  }
+ },
+ "gates": [
+  {
+   "gate": "1 seed floor / cell gap",
+   "pass": true,
+   "detail": "gap +6.265 deg = 76.5 seed SD (0.082) = 174.91 x artefact (0.036)"
+  },
+  {
+   "gate": "2 duration control",
+   "pass": true,
+   "detail": "within-dose slope -0.0410 deg/s over an arm gap of -7.28 s propagates +0.298 deg = 3.4% of the 8.731 deg effect (bar: 50%)"
+  },
+  {
+   "gate": "3 stationarity",
+   "pass": true,
+   "detail": "per-cycle +8.930 +8.656 +8.790 +8.777 +8.654 ; one sign True ; spread 0.276 = 0.03 x window mean"
+  },
+  {
+   "gate": "4 displacement (hyperreflexia)",
+   "pass": true,
+   "detail": "-9.161 deg = 255.77 x artefact"
+  },
+  {
+   "gate": "5 unlesioned side",
+   "pass": true,
+   "detail": "right ankle arm difference +0.047 deg = 0.5% of the lesioned side (knee carried 35.5%); displacement from control by gain 0.100:+0.00 0.140:-0.06 0.200:-0.10 0.220:-0.08 0.240:+0.01"
+  },
+  {
+   "gate": "6 exhaustive permutation",
+   "pass": true,
+   "detail": "observed split ranked 1 of 462, p = 0.0022"
+  },
+  {
+   "gate": "6 leave-one-family-out",
+   "pass": true,
+   "detail": "59 of 59 = 100.0% against a 61.0% majority baseline"
+  },
+  {
+   "gate": "7 gate sensitivity",
+   "pass": true,
+   "detail": "cell-level non-overlap holds at every gate tested to 13.0 s"
+  },
+  {
+   "gate": "8 speed control",
+   "pass": true,
+   "detail": "within-dose slope -0.563 deg/(m/s) over a speed gap of -0.0562 m/s propagates +0.032 deg = 0.4% of the effect"
+  },
+  {
+   "gate": "4 displacement (weakness)",
+   "pass": true,
+   "detail": "-0.430 deg = 12.01 x artefact"
+  },
+  {
+   "gate": "4 two-sided (sign reversal)",
+   "pass": false,
+   "detail": "weakness -0.430 and hyperreflexia -9.161 are on the SAME side of control"
+  }
+ ],
+ "n_pass": 10,
+ "n_gates": 11,
+ "CORRECTION_r534": "As first run, gate 4 tested only the MAGNITUDE of each arm's displacement from control and reported PASS for the weakness arm, with a hard-coded remark claiming that arm was not displaced. Both statements were wrong. The weakness arm IS displaced, by 0.430 deg, which is 12 times this endpoint's own artefact floor of 0.0358 deg -- a floor 16 times smaller than knee-at-contact's 0.586 deg, which is why an absolute displacement that looks negligible clears it. What the gate failed to test is the SIGN. Both arms sit on the same side of control, 21 times apart in size. The endpoint therefore grades the severity of the equinus and cannot say which lesion produced it. SWEEP_r532 scores the sign and is the convention.",
+ "two_sided": false
+}

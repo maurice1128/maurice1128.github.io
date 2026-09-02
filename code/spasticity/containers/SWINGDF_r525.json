@@ -1,0 +1,87 @@
+{
+ "id": "SWINGDF_r525",
+ "why": "Section 3.5 concludes that no readout serves one patient, but reached that on knee-at-contact alone. This scores the study's largest effect the same way, cell by cell and against the same patient cohort, so the two can be compared.",
+ "n_cells": {
+  "hyperreflexia": 23,
+  "weakness": 36,
+  "control": 6
+ },
+ "simulation": {
+  "hyper_mean_deg": 0.39396067313421496,
+  "weak_mean_deg": 9.125145691281547,
+  "control_mean_deg": 9.55516367333586,
+  "effect_deg": 8.731185018147332,
+  "cell_gap_deg": 6.265053993397188,
+  "cells_disjoint": true,
+  "mean_within_family_seed_SD_deg": 0.08189865684655134,
+  "gap_in_seed_SD": 76.49764031094732,
+  "by_hyper_dose": {
+   "0.1": 2.310134571936656,
+   "0.14": 1.2244620879172332,
+   "0.2": -0.6445585164219709,
+   "0.22": -1.0227806098058032,
+   "0.24": -1.8257093240417663
+  },
+  "by_weak_dose": {
+   "0.8": 8.733766921897907,
+   "0.87": 9.044658277874296,
+   "0.892": 9.145384258258296,
+   "0.9": 9.168002722150742,
+   "0.915": 9.263476589412708,
+   "0.95": 9.39558537809534
+  }
+ },
+ "against_patients": {
+  "knee at contact": {
+   "effect_deg": 5.2799,
+   "SEM_deg": 2.6191942281930904,
+   "SEM_source": "ref [13], redefined in section 3.5",
+   "within_subgroup_SD_deg": [
+    7.93,
+    9.16
+   ],
+   "pooled_cohort_SD_deg": 8.568166373267971,
+   "within_subgroup": {
+    "population_SD_deg": 8.545,
+    "total_SD_deg": 8.937404735436346,
+    "cohens_d": 0.5907643388986816,
+    "misclassification_rate": 0.38385097634222964
+   },
+   "pooled_cohort": {
+    "population_SD_deg": 8.568166373267971,
+    "total_SD_deg": 8.959556540644186,
+    "cohens_d": 0.5893037201169756,
+    "misclassification_rate": 0.3841299206629098
+   }
+  },
+  "peak swing dorsiflexion": {
+   "effect_deg": 8.731185018147332,
+   "SEM_deg": 1.7677669529663689,
+   "SEM_source": "ref [15] MDC 4.9 deg at ICC 0.941, inverted through that paper's own definition MDC = SEM x 1.96 x sqrt(2)",
+   "within_subgroup_SD_deg": [
+    4.2,
+    4.21
+   ],
+   "pooled_cohort_SD_deg": 5.545293049064225,
+   "within_subgroup": {
+    "population_SD_deg": 4.205,
+    "total_SD_deg": 4.5614718019516465,
+    "cohens_d": 1.914115749748065,
+    "misclassification_rate": 0.16926902208443123
+   },
+   "pooled_cohort": {
+    "population_SD_deg": 5.545293049064225,
+    "total_SD_deg": 5.82024698788634,
+    "cohens_d": 1.5001399487546694,
+    "misclassification_rate": 0.2266062810255035
+   }
+  }
+ },
+ "EXTERNAL_CORRESPONDENCE": "ref [5] splits its 34 patients by initial-contact type and reports peak swing ankle angle of 2.76 deg in the forefoot-contact group and 9.99 deg in the rearfoot group. Forefoot contact is the plantarflexor-dominant presentation. The simulation's two arms sit at 0.39 and 9.13 deg on a variable nothing in the objective function targets.",
+ "CAVEATS": [
+  "the effect is carried almost entirely by one lesion: weakness displaces this variable 0.43 deg from control, so a high reading means hyperreflexia is ABSENT rather than that weakness is present. In a patient already known to have spastic equinovarus that is the apportionment being asked for; as a screening variable across all stroke it is not",
+  "ref [5] splits its cohort by initial-contact type, which is close to the quantity being predicted, so the within-subgroup SD is conditioned on the outcome and understates what an unselected patient presents. The pooled cohort SD is the honest denominator and is the one quoted in the table",
+  "ref [15]'s MDC is from treadmill walking and its authors state it may not be used to interpret overground studies",
+  "this endpoint has not been through the stationarity rule or the batch null"
+ ]
+}

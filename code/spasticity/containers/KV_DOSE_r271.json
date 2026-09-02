@@ -1,0 +1,83 @@
+{
+ "round": 271,
+ "prereg": "PREREG_2x2_r270.md rev 2 sha256 cb9925ea",
+ "window": [
+  1.0,
+  13.58
+ ],
+ "read_only": true,
+ "self_test": {
+  "pf_N_per_unit_KV": 2720.9969481768408,
+  "dose_at_KV_0.050": 136.04984740884206,
+  "target_VERIFY_F5": 136.2663747371695,
+  "rel_error": 0.0015890004320221805,
+  "passed": true
+ },
+ "per_muscle": {
+  "soleus_l": {
+   "per_seed_N_per_unit_KV": [
+    1729.2777919683124,
+    1724.7381044122592,
+    1716.4883247989596,
+    1719.9283386374022,
+    1724.4786107539317,
+    1718.282905946074
+   ],
+   "mean": 1722.1990127528234,
+   "sd": 4.792837970347629,
+   "mean_rectified_V": 0.485263176318068,
+   "V_over_ce_vel_norm": 10.0
+  },
+  "gastroc_l": {
+   "per_seed_N_per_unit_KV": [
+    1000.968609341335,
+    994.7663934648704,
+    1000.8451323773909,
+    992.180306842194,
+    1004.5732863607543,
+    999.4538841575588
+   ],
+   "mean": 998.7979354240173,
+   "sd": 4.5328606071675335,
+   "mean_rectified_V": 0.44569296538331865,
+   "V_over_ce_vel_norm": 10.0
+  },
+  "tib_ant_l": {
+   "per_seed_N_per_unit_KV": [
+    544.5127743744081,
+    547.6486223040567,
+    540.3610491745101,
+    541.6954455403093,
+    542.948653561316,
+    539.2248156664681
+   ],
+   "mean": 542.7318934368446,
+   "sd": 3.04589776141489,
+   "mean_rectified_V": 0.3085457040573307,
+   "V_over_ce_vel_norm": 10.0
+  }
+ },
+ "tib_ant_l_N_per_unit_KV": 542.7318934368446,
+ "ratio_PF_over_DF_per_unit_KV": 5.013519531616528,
+ "SPASTIC_DF_dose_points": {
+  "f=0.10": {
+   "target_newtons": 12.92395,
+   "KV_required": 0.023812770460492395,
+   "PF_equivalent_newtons": 66.34508,
+   "PF_KV_required": 0.024382636681916686
+  },
+  "f=0.20": {
+   "target_newtons": 25.8479,
+   "KV_required": 0.04762554092098479,
+   "PF_equivalent_newtons": 132.69016,
+   "PF_KV_required": 0.04876527336383337
+  },
+  "f=0.40": {
+   "target_newtons": 51.6958,
+   "KV_required": 0.09525108184196958,
+   "PF_equivalent_newtons": 265.38032,
+   "PF_KV_required": 0.09753054672766674
+  }
+ },
+ "caveat": "nominal commanded dose computed on CONTROL kinematics. The achieved dose after re-optimisation will differ, in both arms, and is reported separately."
+}

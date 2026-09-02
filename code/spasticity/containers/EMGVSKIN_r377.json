@@ -1,0 +1,1070 @@
+{
+  "registration": "PREREG_emgvskin_r376.md",
+  "registration_sha256": "fe28136e2ffde1409ac8af004f6fb5e417ba8b2198062d7485bd6b6bf545c6c2",
+  "question": "does an activation endpoint separate from CONTROL at a smaller reflex gain than any of four kinematic endpoints",
+  "hypothesis": "KV_act < KV_kin",
+  "between_scenario": true,
+  "between_scenario_note": "the control arm is at min_velocity 0.80/1.05/1.30 while the ladder is at 1.0 (sec 3); every statement of this result carries that label",
+  "kinematic_multiplicity": 4,
+  "generous_to_kinematics": "KV_kin is the MINIMUM over four kinematic endpoints (sec 5)",
+  "cells": {
+    "R203V080C_s101": {
+      "tag": "R203V080C_s101",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17278512946175636,
+      "A_gastroc": 0.39332521444759205,
+      "knee_at_heelstrike_deg": -7.609131620767191,
+      "min_ankle_cycle_deg": -19.97428276651222,
+      "ankle_rom_cycle_deg": 30.892807152799143,
+      "mean_ankle_stance_deg": 4.553479733230506
+    },
+    "R203V080C_s102": {
+      "tag": "R203V080C_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17395912372881359,
+      "A_gastroc": 0.39403851581920907,
+      "knee_at_heelstrike_deg": -7.901821380831819,
+      "min_ankle_cycle_deg": -20.00972593571901,
+      "ankle_rom_cycle_deg": 31.01827345077689,
+      "mean_ankle_stance_deg": 4.513951513721978
+    },
+    "R203V080C_s103": {
+      "tag": "R203V080C_s103",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17303517443181818,
+      "A_gastroc": 0.39194758693181825,
+      "knee_at_heelstrike_deg": -8.094346659151679,
+      "min_ankle_cycle_deg": -20.005256864916994,
+      "ankle_rom_cycle_deg": 30.621591850896017,
+      "mean_ankle_stance_deg": 4.555639637504061
+    },
+    "R203V080C_s104": {
+      "tag": "R203V080C_s104",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17278068926553675,
+      "A_gastroc": 0.39377849322033903,
+      "knee_at_heelstrike_deg": -7.680487784572781,
+      "min_ankle_cycle_deg": -19.979336254265274,
+      "ankle_rom_cycle_deg": 30.741156683583917,
+      "mean_ankle_stance_deg": 4.5123693292106895
+    },
+    "R203V080C_s105": {
+      "tag": "R203V080C_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17386605482954545,
+      "A_gastroc": 0.3925618147727273,
+      "knee_at_heelstrike_deg": -7.604490662626629,
+      "min_ankle_cycle_deg": -19.98811396768668,
+      "ankle_rom_cycle_deg": 31.099140713981654,
+      "mean_ankle_stance_deg": 4.607529367351422
+    },
+    "R203V080C_s106": {
+      "tag": "R203V080C_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17441684871794869,
+      "A_gastroc": 0.3948301185185185,
+      "knee_at_heelstrike_deg": -8.488885396878764,
+      "min_ankle_cycle_deg": -19.94639118104525,
+      "ankle_rom_cycle_deg": 30.947799641975802,
+      "mean_ankle_stance_deg": 4.605901768630935
+    },
+    "R203V105C_s101": {
+      "tag": "R203V105C_s101",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17437288502824858,
+      "A_gastroc": 0.3937506725988701,
+      "knee_at_heelstrike_deg": -7.9090635673622725,
+      "min_ankle_cycle_deg": -19.993843545637986,
+      "ankle_rom_cycle_deg": 31.114541819514773,
+      "mean_ankle_stance_deg": 4.500932794021715
+    },
+    "R203V105C_s102": {
+      "tag": "R203V105C_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17395912372881359,
+      "A_gastroc": 0.39403851581920907,
+      "knee_at_heelstrike_deg": -7.901821380831819,
+      "min_ankle_cycle_deg": -20.00972593571901,
+      "ankle_rom_cycle_deg": 31.01827345077689,
+      "mean_ankle_stance_deg": 4.513951513721978
+    },
+    "R203V105C_s103": {
+      "tag": "R203V105C_s103",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17255424403409092,
+      "A_gastroc": 0.39673907897727273,
+      "knee_at_heelstrike_deg": -8.341004989955499,
+      "min_ankle_cycle_deg": -20.027246985094116,
+      "ankle_rom_cycle_deg": 30.75868919211492,
+      "mean_ankle_stance_deg": 4.480650699663124
+    },
+    "R203V105C_s104": {
+      "tag": "R203V105C_s104",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17278068926553675,
+      "A_gastroc": 0.39377849322033903,
+      "knee_at_heelstrike_deg": -7.680487784572781,
+      "min_ankle_cycle_deg": -19.979336254265274,
+      "ankle_rom_cycle_deg": 30.741156683583917,
+      "mean_ankle_stance_deg": 4.5123693292106895
+    },
+    "R203V105C_s105": {
+      "tag": "R203V105C_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17305130880681818,
+      "A_gastroc": 0.3931805656249999,
+      "knee_at_heelstrike_deg": -7.443613281078617,
+      "min_ankle_cycle_deg": -19.984401201174233,
+      "ankle_rom_cycle_deg": 30.876145540116738,
+      "mean_ankle_stance_deg": 4.552946283441892
+    },
+    "R203V105C_s106": {
+      "tag": "R203V105C_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17386940821529742,
+      "A_gastroc": 0.3918325954674221,
+      "knee_at_heelstrike_deg": -7.92393755172387,
+      "min_ankle_cycle_deg": -19.990944379194623,
+      "ankle_rom_cycle_deg": 30.898307547632395,
+      "mean_ankle_stance_deg": 4.518598336968515
+    },
+    "R203V130C_s101": {
+      "tag": "R203V130C_s101",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "A_soleus": 0.1652823117647059,
+      "A_gastroc": 0.3568826232843137,
+      "knee_at_heelstrike_deg": -5.792773286251845,
+      "min_ankle_cycle_deg": -19.747105000742845,
+      "ankle_rom_cycle_deg": 29.392247876085374,
+      "mean_ankle_stance_deg": 4.801339925551514
+    },
+    "R203V130C_s102": {
+      "tag": "R203V130C_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "A_soleus": 0.1686686092457421,
+      "A_gastroc": 0.358088801946472,
+      "knee_at_heelstrike_deg": -5.340303740788741,
+      "min_ankle_cycle_deg": -19.923461410084116,
+      "ankle_rom_cycle_deg": 29.63856243221211,
+      "mean_ankle_stance_deg": 4.692190414093498
+    },
+    "R203V130C_s103": {
+      "tag": "R203V130C_s103",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "A_soleus": 0.16417896472019464,
+      "A_gastroc": 0.3527085547445255,
+      "knee_at_heelstrike_deg": -4.433641001828848,
+      "min_ankle_cycle_deg": -19.814647175492187,
+      "ankle_rom_cycle_deg": 29.437817119391443,
+      "mean_ankle_stance_deg": 4.683845481345422
+    },
+    "R203V130C_s104": {
+      "tag": "R203V130C_s104",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "A_soleus": 0.1675904583941606,
+      "A_gastroc": 0.34546478588807783,
+      "knee_at_heelstrike_deg": -5.552444229224904,
+      "min_ankle_cycle_deg": -19.769631791388075,
+      "ankle_rom_cycle_deg": 29.5485221147073,
+      "mean_ankle_stance_deg": 4.773424410296609
+    },
+    "R203V130C_s105": {
+      "tag": "R203V130C_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "A_soleus": 0.17207916975609758,
+      "A_gastroc": 0.362898441707317,
+      "knee_at_heelstrike_deg": -4.504092847247793,
+      "min_ankle_cycle_deg": -20.019737418259265,
+      "ankle_rom_cycle_deg": 30.204329607014046,
+      "mean_ankle_stance_deg": 4.5975578466882
+    },
+    "R203V130C_s106": {
+      "tag": "R203V130C_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "A_soleus": 0.17087356682926833,
+      "A_gastroc": 0.371351036097561,
+      "knee_at_heelstrike_deg": -5.018570750088929,
+      "min_ankle_cycle_deg": -20.030260743096502,
+      "ankle_rom_cycle_deg": 30.516763492698882,
+      "mean_ankle_stance_deg": 4.601447720044954
+    },
+    "R289KV00625_s101": {
+      "tag": "R289KV00625_s101",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17066840336134453,
+      "A_gastroc": 0.39168555658263304,
+      "knee_at_heelstrike_deg": -6.53029792915946,
+      "min_ankle_cycle_deg": -19.978259093610426,
+      "ankle_rom_cycle_deg": 29.969737767375683,
+      "mean_ankle_stance_deg": 4.17224922791433
+    },
+    "R289KV00625_s102": {
+      "tag": "R289KV00625_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.1714504882352941,
+      "A_gastroc": 0.39421387815126047,
+      "knee_at_heelstrike_deg": -7.424306895213888,
+      "min_ankle_cycle_deg": -20.00066174340004,
+      "ankle_rom_cycle_deg": 30.14595666684611,
+      "mean_ankle_stance_deg": 4.253824127218004
+    },
+    "R289KV00625_s103": {
+      "tag": "R289KV00625_s103",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.1727016069832402,
+      "A_gastroc": 0.39924938324022347,
+      "knee_at_heelstrike_deg": -6.301473482686882,
+      "min_ankle_cycle_deg": -20.08254887148014,
+      "ankle_rom_cycle_deg": 30.28716784503406,
+      "mean_ankle_stance_deg": 4.082238151864204
+    },
+    "R289KV00625_s104": {
+      "tag": "R289KV00625_s104",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17132267458100556,
+      "A_gastroc": 0.3960952072625699,
+      "knee_at_heelstrike_deg": -6.874175738641078,
+      "min_ankle_cycle_deg": -20.005268324072894,
+      "ankle_rom_cycle_deg": 30.06553631072155,
+      "mean_ankle_stance_deg": 4.1172079574725515
+    },
+    "R289KV00625_s105": {
+      "tag": "R289KV00625_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.16822493117977527,
+      "A_gastroc": 0.39486136207865163,
+      "knee_at_heelstrike_deg": -7.091043701844865,
+      "min_ankle_cycle_deg": -19.950058110934087,
+      "ankle_rom_cycle_deg": 29.522876523797247,
+      "mean_ankle_stance_deg": 4.15183969739033
+    },
+    "R289KV00625_s106": {
+      "tag": "R289KV00625_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.1717553308988764,
+      "A_gastroc": 0.3927702803370787,
+      "knee_at_heelstrike_deg": -6.865799095676266,
+      "min_ankle_cycle_deg": -20.01969540135429,
+      "ankle_rom_cycle_deg": 30.07457758472871,
+      "mean_ankle_stance_deg": 4.192917947798994
+    },
+    "R289KV0125_s101": {
+      "tag": "R289KV0125_s101",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.1706469567039106,
+      "A_gastroc": 0.39309427737430164,
+      "knee_at_heelstrike_deg": -6.378247535403233,
+      "min_ankle_cycle_deg": -20.04742655863862,
+      "ankle_rom_cycle_deg": 29.459175076134603,
+      "mean_ankle_stance_deg": 3.8967650376617793
+    },
+    "R289KV0125_s102": {
+      "tag": "R289KV0125_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17611821039325842,
+      "A_gastroc": 0.3953101884831461,
+      "knee_at_heelstrike_deg": -6.5992144386733855,
+      "min_ankle_cycle_deg": -20.131078396727723,
+      "ankle_rom_cycle_deg": 30.356117586100094,
+      "mean_ankle_stance_deg": 3.9601221586391406
+    },
+    "R289KV0125_s103": {
+      "tag": "R289KV0125_s103",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17548052893258426,
+      "A_gastroc": 0.39591167331460675,
+      "knee_at_heelstrike_deg": -6.53462949009065,
+      "min_ankle_cycle_deg": -20.04852663760527,
+      "ankle_rom_cycle_deg": 30.124379076281485,
+      "mean_ankle_stance_deg": 4.024700480063695
+    },
+    "R289KV0125_s104": {
+      "tag": "R289KV0125_s104",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17482478291316525,
+      "A_gastroc": 0.3951608652661064,
+      "knee_at_heelstrike_deg": -6.285239296519647,
+      "min_ankle_cycle_deg": -20.109214327265526,
+      "ankle_rom_cycle_deg": 30.11970374067322,
+      "mean_ankle_stance_deg": 3.9490318430413147
+    },
+    "R289KV0125_s105": {
+      "tag": "R289KV0125_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17487222921348314,
+      "A_gastroc": 0.39436077247191004,
+      "knee_at_heelstrike_deg": -6.440895886638428,
+      "min_ankle_cycle_deg": -20.10026472650559,
+      "ankle_rom_cycle_deg": 30.08829419434415,
+      "mean_ankle_stance_deg": 4.025573372251757
+    },
+    "R289KV0125_s106": {
+      "tag": "R289KV0125_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.17311030422535212,
+      "A_gastroc": 0.39821674816901403,
+      "knee_at_heelstrike_deg": -5.7782232140304295,
+      "min_ankle_cycle_deg": -20.108503859599566,
+      "ankle_rom_cycle_deg": 29.75278156867144,
+      "mean_ankle_stance_deg": 3.860915186119112
+    },
+    "R291KV0035_s101": {
+      "tag": "R291KV0035_s101",
+      "t_end_s": 18.74,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.18792137198879552,
+      "A_gastroc": 0.3994588957983192,
+      "knee_at_heelstrike_deg": -8.158288749088278,
+      "min_ankle_cycle_deg": -20.18884400163281,
+      "ankle_rom_cycle_deg": 30.422420262152638,
+      "mean_ankle_stance_deg": 3.233378214101157
+    },
+    "R291KV0035_s102": {
+      "tag": "R291KV0035_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.1914835824858757,
+      "A_gastroc": 0.39456232966101695,
+      "knee_at_heelstrike_deg": -8.694164715718234,
+      "min_ankle_cycle_deg": -20.230177176973548,
+      "ankle_rom_cycle_deg": 30.686863202917316,
+      "mean_ankle_stance_deg": 3.3888775382132152
+    },
+    "R291KV0035_s103": {
+      "tag": "R291KV0035_s103",
+      "t_end_s": 17.77,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.19092670168067227,
+      "A_gastroc": 0.39092501148459385,
+      "knee_at_heelstrike_deg": -7.828436946431464,
+      "min_ankle_cycle_deg": -20.217308544894912,
+      "ankle_rom_cycle_deg": 30.55008671806369,
+      "mean_ankle_stance_deg": 3.205496383040035
+    },
+    "R291KV0035_s104": {
+      "tag": "R291KV0035_s104",
+      "t_end_s": 19.55,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.1913629075630252,
+      "A_gastroc": 0.39663872436974795,
+      "knee_at_heelstrike_deg": -8.12483947300854,
+      "min_ankle_cycle_deg": -20.254504964954805,
+      "ankle_rom_cycle_deg": 30.701336116822326,
+      "mean_ankle_stance_deg": 3.228310494445604
+    },
+    "R291KV0035_s105": {
+      "tag": "R291KV0035_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.19046743893557425,
+      "A_gastroc": 0.39421753221288514,
+      "knee_at_heelstrike_deg": -8.558671656325696,
+      "min_ankle_cycle_deg": -20.29154095683206,
+      "ankle_rom_cycle_deg": 30.722306372124116,
+      "mean_ankle_stance_deg": 3.199926804580168
+    },
+    "R291KV0035_s106": {
+      "tag": "R291KV0035_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A_soleus": 0.19007915423728816,
+      "A_gastroc": 0.3983090262711865,
+      "knee_at_heelstrike_deg": -8.55921023665312,
+      "min_ankle_cycle_deg": -20.256349889055127,
+      "ankle_rom_cycle_deg": 30.706721920096555,
+      "mean_ankle_stance_deg": 3.3039372688893818
+    },
+    "R291KV0070_s101": {
+      "tag": "R291KV0070_s101",
+      "t_end_s": 8.24,
+      "n_cycles_in_window": 5,
+      "gate_G": false,
+      "guard": "t_end 8.240 < 9.73"
+    },
+    "R291KV0070_s102": {
+      "tag": "R291KV0070_s102",
+      "t_end_s": 8.34,
+      "n_cycles_in_window": 4,
+      "gate_G": false,
+      "guard": "t_end 8.340 < 9.73"
+    },
+    "R291KV0070_s103": {
+      "tag": "R291KV0070_s103",
+      "t_end_s": 9.4,
+      "n_cycles_in_window": 5,
+      "gate_G": false,
+      "guard": "t_end 9.400 < 9.73"
+    },
+    "R291KV0070_s104": {
+      "tag": "R291KV0070_s104",
+      "t_end_s": 9.52,
+      "n_cycles_in_window": 6,
+      "gate_G": false,
+      "guard": "t_end 9.520 < 9.73"
+    },
+    "R291KV0070_s105": {
+      "tag": "R291KV0070_s105",
+      "t_end_s": 8.26,
+      "n_cycles_in_window": 4,
+      "gate_G": false,
+      "guard": "t_end 8.260 < 9.73"
+    },
+    "R291KV0070_s106": {
+      "tag": "R291KV0070_s106",
+      "t_end_s": 8.26,
+      "n_cycles_in_window": 4,
+      "gate_G": false,
+      "guard": "t_end 8.260 < 9.73"
+    }
+  },
+  "control": {
+    "n_cells": 18,
+    "n_gate_G": 18,
+    "seed_means": {
+      "A_soleus": {
+        "s101": 0.1708134420849036,
+        "s102": 0.1721956189011231,
+        "s103": 0.16992279439536792,
+        "s104": 0.17105061230841137,
+        "s105": 0.17299884446415373,
+        "s106": 0.17305327458750483
+      },
+      "A_gastroc": {
+        "s101": 0.38131950344359195,
+        "s102": 0.38205527786163,
+        "s103": 0.38046507355120546,
+        "s104": 0.3776739241095853,
+        "s105": 0.3828802740350148,
+        "s106": 0.38600458336116716
+      },
+      "knee_at_heelstrike_deg": {
+        "s101": -7.1036561581271025,
+        "s102": -7.047982167484126,
+        "s103": -6.95633088364534,
+        "s104": -6.971139932790155,
+        "s105": -6.51739893031768,
+        "s106": -7.143797899563855
+      },
+      "min_ankle_cycle_deg": {
+        "s101": -19.905077104297686,
+        "s102": -19.98097109384071,
+        "s103": -19.949050341834432,
+        "s104": -19.90943476663954,
+        "s105": -19.99741752904006,
+        "s106": -19.98919876777879
+      },
+      "ankle_rom_cycle_deg": {
+        "s101": 30.466532282799765,
+        "s102": 30.558369777921964,
+        "s103": 30.27269938746746,
+        "s104": 30.34361182729171,
+        "s105": 30.726538620370814,
+        "s106": 30.787623560769024
+      },
+      "mean_ankle_stance_deg": {
+        "s101": 4.618584150934578,
+        "s102": 4.573364480512485,
+        "s103": 4.573378606170869,
+        "s104": 4.599387689572662,
+        "s105": 4.586011165827171,
+        "s106": 4.575315941881468
+      }
+    }
+  },
+  "rungs": {
+    "0.00625": {
+      "family": "R289KV00625",
+      "n_gate_G": 6,
+      "endpoints": {
+        "A_soleus": {
+          "n": 6,
+          "range": [
+            0.16822493117977527,
+            0.1727016069832402
+          ],
+          "mean": 0.17102057253992267,
+          "control_range": [
+            0.16992279439536792,
+            0.17305327458750483
+          ],
+          "control_mean": 0.1716724311235774,
+          "gap_vs_control": -0.0027788125878722703,
+          "separated": false,
+          "seed_means": {
+            "s101": 0.17066840336134453,
+            "s102": 0.1714504882352941,
+            "s103": 0.1727016069832402,
+            "s104": 0.17132267458100556,
+            "s105": 0.16822493117977527,
+            "s106": 0.1717553308988764
+          }
+        },
+        "A_gastroc": {
+          "n": 6,
+          "range": [
+            0.39168555658263304,
+            0.39924938324022347
+          ],
+          "mean": 0.39481261127540285,
+          "control_range": [
+            0.3776739241095853,
+            0.38600458336116716
+          ],
+          "control_mean": 0.38173310606036576,
+          "gap_vs_control": 0.005680973221465879,
+          "separated": true,
+          "seed_means": {
+            "s101": 0.39168555658263304,
+            "s102": 0.39421387815126047,
+            "s103": 0.39924938324022347,
+            "s104": 0.3960952072625699,
+            "s105": 0.39486136207865163,
+            "s106": 0.3927702803370787
+          },
+          "direction": "LESION HIGH",
+          "permutation": {
+            "n_total": 924,
+            "n_at_least_as_extreme": 2,
+            "floor": "1/924",
+            "convention": "two-sided, gap-based (r371 convention; counts the complement)"
+          }
+        },
+        "knee_at_heelstrike_deg": {
+          "n": 6,
+          "range": [
+            -7.424306895213888,
+            -6.301473482686882
+          ],
+          "mean": -6.847849473870405,
+          "control_range": [
+            -7.143797899563855,
+            -6.51739893031768
+          ],
+          "control_mean": -6.956717661988044,
+          "gap_vs_control": -0.8423244168769726,
+          "separated": false,
+          "seed_means": {
+            "s101": -6.53029792915946,
+            "s102": -7.424306895213888,
+            "s103": -6.301473482686882,
+            "s104": -6.874175738641078,
+            "s105": -7.091043701844865,
+            "s106": -6.865799095676266
+          }
+        },
+        "min_ankle_cycle_deg": {
+          "n": 6,
+          "range": [
+            -20.08254887148014,
+            -19.950058110934087
+          ],
+          "mean": -20.00608192414198,
+          "control_range": [
+            -19.99741752904006,
+            -19.905077104297686
+          ],
+          "control_mean": -19.95519160057187,
+          "gap_vs_control": -0.047359418105973106,
+          "separated": false,
+          "seed_means": {
+            "s101": -19.978259093610426,
+            "s102": -20.00066174340004,
+            "s103": -20.08254887148014,
+            "s104": -20.005268324072894,
+            "s105": -19.950058110934087,
+            "s106": -20.01969540135429
+          }
+        },
+        "ankle_rom_cycle_deg": {
+          "n": 6,
+          "range": [
+            29.522876523797247,
+            30.28716784503406
+          ],
+          "mean": 30.01097544975056,
+          "control_range": [
+            30.27269938746746,
+            30.787623560769024
+          ],
+          "control_mean": 30.525895909436787,
+          "gap_vs_control": -0.014468457566600534,
+          "separated": false,
+          "seed_means": {
+            "s101": 29.969737767375683,
+            "s102": 30.14595666684611,
+            "s103": 30.28716784503406,
+            "s104": 30.06553631072155,
+            "s105": 29.522876523797247,
+            "s106": 30.07457758472871
+          }
+        },
+        "mean_ankle_stance_deg": {
+          "n": 6,
+          "range": [
+            4.082238151864204,
+            4.253824127218004
+          ],
+          "mean": 4.161712851609735,
+          "control_range": [
+            4.573364480512485,
+            4.618584150934578
+          ],
+          "control_mean": 4.587673672483205,
+          "gap_vs_control": 0.3195403532944807,
+          "separated": true,
+          "seed_means": {
+            "s101": 4.17224922791433,
+            "s102": 4.253824127218004,
+            "s103": 4.082238151864204,
+            "s104": 4.1172079574725515,
+            "s105": 4.15183969739033,
+            "s106": 4.192917947798994
+          },
+          "direction": "LESION LOW",
+          "permutation": {
+            "n_total": 924,
+            "n_at_least_as_extreme": 2,
+            "floor": "1/924",
+            "convention": "two-sided, gap-based (r371 convention; counts the complement)"
+          }
+        }
+      }
+    },
+    "0.0125": {
+      "family": "R289KV0125",
+      "n_gate_G": 6,
+      "endpoints": {
+        "A_soleus": {
+          "n": 6,
+          "range": [
+            0.1706469567039106,
+            0.17611821039325842
+          ],
+          "mean": 0.17417550206362564,
+          "control_range": [
+            0.16992279439536792,
+            0.17305327458750483
+          ],
+          "control_mean": 0.1716724311235774,
+          "gap_vs_control": -0.0024063178835942167,
+          "separated": false,
+          "seed_means": {
+            "s101": 0.1706469567039106,
+            "s102": 0.17611821039325842,
+            "s103": 0.17548052893258426,
+            "s104": 0.17482478291316525,
+            "s105": 0.17487222921348314,
+            "s106": 0.17311030422535212
+          }
+        },
+        "A_gastroc": {
+          "n": 6,
+          "range": [
+            0.39309427737430164,
+            0.39821674816901403
+          ],
+          "mean": 0.39534242084651416,
+          "control_range": [
+            0.3776739241095853,
+            0.38600458336116716
+          ],
+          "control_mean": 0.38173310606036576,
+          "gap_vs_control": 0.007089694013134473,
+          "separated": true,
+          "seed_means": {
+            "s101": 0.39309427737430164,
+            "s102": 0.3953101884831461,
+            "s103": 0.39591167331460675,
+            "s104": 0.3951608652661064,
+            "s105": 0.39436077247191004,
+            "s106": 0.39821674816901403
+          },
+          "direction": "LESION HIGH",
+          "permutation": {
+            "n_total": 924,
+            "n_at_least_as_extreme": 2,
+            "floor": "1/924",
+            "convention": "two-sided, gap-based (r371 convention; counts the complement)"
+          }
+        },
+        "knee_at_heelstrike_deg": {
+          "n": 6,
+          "range": [
+            -6.5992144386733855,
+            -5.7782232140304295
+          ],
+          "mean": -6.336074976892628,
+          "control_range": [
+            -7.143797899563855,
+            -6.51739893031768
+          ],
+          "control_mean": -6.956717661988044,
+          "gap_vs_control": -0.08181550835570572,
+          "separated": false,
+          "seed_means": {
+            "s101": -6.378247535403233,
+            "s102": -6.5992144386733855,
+            "s103": -6.53462949009065,
+            "s104": -6.285239296519647,
+            "s105": -6.440895886638428,
+            "s106": -5.7782232140304295
+          }
+        },
+        "min_ankle_cycle_deg": {
+          "n": 6,
+          "range": [
+            -20.131078396727723,
+            -20.04742655863862
+          ],
+          "mean": -20.090835751057046,
+          "control_range": [
+            -19.99741752904006,
+            -19.905077104297686
+          ],
+          "control_mean": -19.95519160057187,
+          "gap_vs_control": 0.05000902959855935,
+          "separated": true,
+          "seed_means": {
+            "s101": -20.04742655863862,
+            "s102": -20.131078396727723,
+            "s103": -20.04852663760527,
+            "s104": -20.109214327265526,
+            "s105": -20.10026472650559,
+            "s106": -20.108503859599566
+          },
+          "direction": "LESION LOW",
+          "permutation": {
+            "n_total": 924,
+            "n_at_least_as_extreme": 2,
+            "floor": "1/924",
+            "convention": "two-sided, gap-based (r371 convention; counts the complement)"
+          }
+        },
+        "ankle_rom_cycle_deg": {
+          "n": 6,
+          "range": [
+            29.459175076134603,
+            30.356117586100094
+          ],
+          "mean": 29.983408540367495,
+          "control_range": [
+            30.27269938746746,
+            30.787623560769024
+          ],
+          "control_mean": 30.525895909436787,
+          "gap_vs_control": -0.08341819863263567,
+          "separated": false,
+          "seed_means": {
+            "s101": 29.459175076134603,
+            "s102": 30.356117586100094,
+            "s103": 30.124379076281485,
+            "s104": 30.11970374067322,
+            "s105": 30.08829419434415,
+            "s106": 29.75278156867144
+          }
+        },
+        "mean_ankle_stance_deg": {
+          "n": 6,
+          "range": [
+            3.860915186119112,
+            4.025573372251757
+          ],
+          "mean": 3.9528513462961334,
+          "control_range": [
+            4.573364480512485,
+            4.618584150934578
+          ],
+          "control_mean": 4.587673672483205,
+          "gap_vs_control": 0.5477911082607276,
+          "separated": true,
+          "seed_means": {
+            "s101": 3.8967650376617793,
+            "s102": 3.9601221586391406,
+            "s103": 4.024700480063695,
+            "s104": 3.9490318430413147,
+            "s105": 4.025573372251757,
+            "s106": 3.860915186119112
+          },
+          "direction": "LESION LOW",
+          "permutation": {
+            "n_total": 924,
+            "n_at_least_as_extreme": 2,
+            "floor": "1/924",
+            "convention": "two-sided, gap-based (r371 convention; counts the complement)"
+          }
+        }
+      }
+    },
+    "0.035": {
+      "family": "R291KV0035",
+      "n_gate_G": 6,
+      "endpoints": {
+        "A_soleus": {
+          "n": 6,
+          "range": [
+            0.18792137198879552,
+            0.1914835824858757
+          ],
+          "mean": 0.19037352614853853,
+          "control_range": [
+            0.16992279439536792,
+            0.17305327458750483
+          ],
+          "control_mean": 0.1716724311235774,
+          "gap_vs_control": 0.014868097401290692,
+          "separated": true,
+          "seed_means": {
+            "s101": 0.18792137198879552,
+            "s102": 0.1914835824858757,
+            "s103": 0.19092670168067227,
+            "s104": 0.1913629075630252,
+            "s105": 0.19046743893557425,
+            "s106": 0.19007915423728816
+          },
+          "direction": "LESION HIGH",
+          "permutation": {
+            "n_total": 924,
+            "n_at_least_as_extreme": 2,
+            "floor": "1/924",
+            "convention": "two-sided, gap-based (r371 convention; counts the complement)"
+          }
+        },
+        "A_gastroc": {
+          "n": 6,
+          "range": [
+            0.39092501148459385,
+            0.3994588957983192
+          ],
+          "mean": 0.39568525329962495,
+          "control_range": [
+            0.3776739241095853,
+            0.38600458336116716
+          ],
+          "control_mean": 0.38173310606036576,
+          "gap_vs_control": 0.00492042812342669,
+          "separated": true,
+          "seed_means": {
+            "s101": 0.3994588957983192,
+            "s102": 0.39456232966101695,
+            "s103": 0.39092501148459385,
+            "s104": 0.39663872436974795,
+            "s105": 0.39421753221288514,
+            "s106": 0.3983090262711865
+          },
+          "direction": "LESION HIGH",
+          "permutation": {
+            "n_total": 924,
+            "n_at_least_as_extreme": 2,
+            "floor": "1/924",
+            "convention": "two-sided, gap-based (r371 convention; counts the complement)"
+          }
+        },
+        "knee_at_heelstrike_deg": {
+          "n": 6,
+          "range": [
+            -8.694164715718234,
+            -7.828436946431464
+          ],
+          "mean": -8.32060196287089,
+          "control_range": [
+            -7.143797899563855,
+            -6.51739893031768
+          ],
+          "control_mean": -6.956717661988044,
+          "gap_vs_control": 0.6846390468676091,
+          "separated": true,
+          "seed_means": {
+            "s101": -8.158288749088278,
+            "s102": -8.694164715718234,
+            "s103": -7.828436946431464,
+            "s104": -8.12483947300854,
+            "s105": -8.558671656325696,
+            "s106": -8.55921023665312
+          },
+          "direction": "LESION LOW",
+          "permutation": {
+            "n_total": 924,
+            "n_at_least_as_extreme": 2,
+            "floor": "1/924",
+            "convention": "two-sided, gap-based (r371 convention; counts the complement)"
+          }
+        },
+        "min_ankle_cycle_deg": {
+          "n": 6,
+          "range": [
+            -20.29154095683206,
+            -20.18884400163281
+          ],
+          "mean": -20.23978758905721,
+          "control_range": [
+            -19.99741752904006,
+            -19.905077104297686
+          ],
+          "control_mean": -19.95519160057187,
+          "gap_vs_control": 0.1914264725927488,
+          "separated": true,
+          "seed_means": {
+            "s101": -20.18884400163281,
+            "s102": -20.230177176973548,
+            "s103": -20.217308544894912,
+            "s104": -20.254504964954805,
+            "s105": -20.29154095683206,
+            "s106": -20.256349889055127
+          },
+          "direction": "LESION LOW",
+          "permutation": {
+            "n_total": 924,
+            "n_at_least_as_extreme": 2,
+            "floor": "1/924",
+            "convention": "two-sided, gap-based (r371 convention; counts the complement)"
+          }
+        },
+        "ankle_rom_cycle_deg": {
+          "n": 6,
+          "range": [
+            30.422420262152638,
+            30.722306372124116
+          ],
+          "mean": 30.631622432029435,
+          "control_range": [
+            30.27269938746746,
+            30.787623560769024
+          ],
+          "control_mean": 30.525895909436787,
+          "gap_vs_control": -0.365203298616386,
+          "separated": false,
+          "seed_means": {
+            "s101": 30.422420262152638,
+            "s102": 30.686863202917316,
+            "s103": 30.55008671806369,
+            "s104": 30.701336116822326,
+            "s105": 30.722306372124116,
+            "s106": 30.706721920096555
+          }
+        },
+        "mean_ankle_stance_deg": {
+          "n": 6,
+          "range": [
+            3.199926804580168,
+            3.3888775382132152
+          ],
+          "mean": 3.2599877838782603,
+          "control_range": [
+            4.573364480512485,
+            4.618584150934578
+          ],
+          "control_mean": 4.587673672483205,
+          "gap_vs_control": 1.1844869422992694,
+          "separated": true,
+          "seed_means": {
+            "s101": 3.233378214101157,
+            "s102": 3.3888775382132152,
+            "s103": 3.205496383040035,
+            "s104": 3.228310494445604,
+            "s105": 3.199926804580168,
+            "s106": 3.3039372688893818
+          },
+          "direction": "LESION LOW",
+          "permutation": {
+            "n_total": 924,
+            "n_at_least_as_extreme": 2,
+            "floor": "1/924",
+            "convention": "two-sided, gap-based (r371 convention; counts the complement)"
+          }
+        }
+      }
+    },
+    "0.07": {
+      "family": "R291KV0070",
+      "n_gate_G": 0,
+      "endpoints": {},
+      "VERDICT": "UNINFORMATIVE",
+      "why": "sec 7: fewer than 4 Gate-G seeds (0); reported, not dropped"
+    }
+  },
+  "PRIMARY": {
+    "KV_act_soleus": 0.035,
+    "KV_act_gastroc": 0.00625,
+    "KV_kin_min_over_four": 0.00625,
+    "KV_kin_per_endpoint": {
+      "knee_at_heelstrike_deg": 0.035,
+      "min_ankle_cycle_deg": 0.0125,
+      "ankle_rom_cycle_deg": null,
+      "mean_ankle_stance_deg": 0.00625
+    },
+    "measurable_rungs": [
+      0.00625,
+      0.0125,
+      0.035
+    ],
+    "sec8_channel_disagreement": true,
+    "sec8_note": "soleus and gastrocnemius disagree on KV_act (0.035 vs 0.00625); sec 8 forbids quoting a single KV_act, and the disagreement is the finding",
+    "VERDICT": "CHANNEL-DEPENDENT -- no single KV_act"
+  }
+}

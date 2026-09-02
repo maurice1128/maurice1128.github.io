@@ -1,0 +1,9 @@
+{
+ "arm": "r393",
+ "cells_run": 36,
+ "cells_registered": 36,
+ "complete": true,
+ "stop_reason": "REGISTERED STOP -- all cells reached",
+ "written_at": "2026-08-26T00:09:56",
+ "note": "A partially-run arm leaves valid deposits and a consistent results tree; only the absence of a live process reveals it. This file is the explicit signal. If it is missing, the launcher was interrupted."
+}

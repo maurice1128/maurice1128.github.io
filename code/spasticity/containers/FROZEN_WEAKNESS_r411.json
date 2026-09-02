@@ -1,0 +1,268 @@
+{
+ "round": "FROZEN_WEAKNESS_r411",
+ "written_by": "scone/deposit_r412.py during the r412 pre-writeup audit",
+ "why_this_deposit_exists_late": "the probe was run and its arm means were reported to the user during the session, but no deposit was ever written. This file is that missing container. It is POST-HOC and UNREGISTERED: there is no PREREG for r410 or r411 anywhere in paper/.",
+ "status": "UNREGISTERED, POST-HOC, EXPLORATORY. Changes no verdict and may not be cited as confirmatory evidence for any mechanism claim.",
+ "staged_under": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\frozenweak_r411",
+ "readout": {
+  "name": "corpus window with Gate G WAIVED",
+  "window": "SETTLE 1.00 s, T1 9.73 s, cycles between left heel strikes wholly inside the window, LAST kept cycle dropped when >= 2 remain; stance = leg0_l.grf_norm_y > 0.05 (sto_utils.grf_vertical), heel strikes by sto_utils.heel_strikes.",
+  "endpoint": "knee_angle_l at left heel strike, per-cycle mean, degrees",
+  "DEVIATION_FROM_CORPUS": "the corpus Gate G (t_end >= 9.73 s AND >= 5 admissible cycles) is NOT applied to the arm means below. It CANNOT be applied: every lesioned arm dies in 3-5 s with 1-2 cycles. The arm means are therefore sub-Gate-G quantities and are reported as such."
+ },
+ "GATE_G_WARNING": {
+  "HEADLINE": "EVERY LESIONED ARM IN THIS DEPOSIT FAILS GATE G. Not one lesioned cell reaches the corpus 9.73 s / 5-cycle bar except where noted below. The arm means rest on ONE TO THREE gait cycles per seed.",
+  "why_it_matters": "the corpus endpoint is a per-cycle mean over >= 5 steady cycles. A mean over 1-2 cycles taken from a model that is falling over is not the same quantity, and the corpus has never characterised its variance. NONE of the numbers in this deposit may be compared with a Gate-G corpus value.",
+  "the_comparator_is_not_like_for_like": "the NONE arm is a 20.0 s run that passes Gate G on all six seeds with 15 cycles. Every lesioned arm dies in 3-5 s. The 'delta_vs_NONE_deg' figures therefore compare a steady walk against a fall and cannot be read as a lesion effect size."
+ },
+ "arms": {
+  "R411GASwk_x050": {
+   "label": "gastrocnemius x0.50 (weakness, not spasticity), frozen controller",
+   "n_seeds_run": 6,
+   "n_seeds_with_a_value": 6,
+   "knee_hs_deg_mean": -5.480266348448128,
+   "knee_hs_deg_range": [
+    -7.048859111220564,
+    -4.811957394516463
+   ],
+   "knee_hs_deg_by_seed": {
+    "R411GASwk_x050_s103": -7.048859111220564,
+    "R411GASwk_x050_s106": -5.5824022824729775,
+    "R411GASwk_x050_s105": -5.234848948735596,
+    "R411GASwk_x050_s104": -5.121807240545261,
+    "R411GASwk_x050_s101": -5.081723113197908,
+    "R411GASwk_x050_s102": -4.811957394516463
+   },
+   "t_end_s_range": [
+    4.64,
+    5.03
+   ],
+   "t_end_s_by_seed": {
+    "R411GASwk_x050_s101": 4.64,
+    "R411GASwk_x050_s102": 4.68,
+    "R411GASwk_x050_s103": 4.68,
+    "R411GASwk_x050_s104": 4.67,
+    "R411GASwk_x050_s105": 4.7,
+    "R411GASwk_x050_s106": 5.03
+   },
+   "n_admissible_cycles_by_seed": {
+    "R411GASwk_x050_s101": 1,
+    "R411GASwk_x050_s102": 1,
+    "R411GASwk_x050_s103": 2,
+    "R411GASwk_x050_s104": 2,
+    "R411GASwk_x050_s105": 2,
+    "R411GASwk_x050_s106": 2
+   },
+   "GATE_G_pass_count": 0,
+   "GATE_G_ALL_FAIL": true,
+   "delta_vs_NONE_deg": 2.3697329096734254
+  },
+  "R411NONE": {
+   "label": "no lesion; frozen R151C controller replayed",
+   "n_seeds_run": 6,
+   "n_seeds_with_a_value": 6,
+   "knee_hs_deg_mean": -7.849999258121554,
+   "knee_hs_deg_range": [
+    -8.239580001061439,
+    -7.587588407670272
+   ],
+   "knee_hs_deg_by_seed": {
+    "R411NONE_s106": -8.239580001061439,
+    "R411NONE_s102": -7.901821380831819,
+    "R411NONE_s103": -7.855916002285937,
+    "R411NONE_s101": -7.8346019723070714,
+    "R411NONE_s104": -7.680487784572781,
+    "R411NONE_s105": -7.587588407670272
+   },
+   "t_end_s_range": [
+    20.0,
+    20.0
+   ],
+   "t_end_s_by_seed": {
+    "R411NONE_s101": 20.0,
+    "R411NONE_s102": 20.0,
+    "R411NONE_s103": 20.0,
+    "R411NONE_s104": 20.0,
+    "R411NONE_s105": 20.0,
+    "R411NONE_s106": 20.0
+   },
+   "n_admissible_cycles_by_seed": {
+    "R411NONE_s101": 5,
+    "R411NONE_s102": 5,
+    "R411NONE_s103": 5,
+    "R411NONE_s104": 5,
+    "R411NONE_s105": 5,
+    "R411NONE_s106": 5
+   },
+   "GATE_G_pass_count": 6,
+   "GATE_G_ALL_FAIL": false,
+   "delta_vs_NONE_deg": 0.0
+  },
+  "R411SOLwk_x050": {
+   "label": "soleus x0.50 (weakness, not spasticity), frozen controller",
+   "n_seeds_run": 6,
+   "n_seeds_with_a_value": 6,
+   "knee_hs_deg_mean": -13.325351061081946,
+   "knee_hs_deg_range": [
+    -18.888384505290528,
+    -11.649435186379412
+   ],
+   "knee_hs_deg_by_seed": {
+    "R411SOLwk_x050_s105": -18.888384505290528,
+    "R411SOLwk_x050_s106": -12.610629183490879,
+    "R411SOLwk_x050_s103": -12.535056050313125,
+    "R411SOLwk_x050_s101": -12.150715961339369,
+    "R411SOLwk_x050_s102": -12.117885479678371,
+    "R411SOLwk_x050_s104": -11.649435186379412
+   },
+   "t_end_s_range": [
+    3.07,
+    4.27
+   ],
+   "t_end_s_by_seed": {
+    "R411SOLwk_x050_s101": 4.27,
+    "R411SOLwk_x050_s102": 3.77,
+    "R411SOLwk_x050_s103": 3.43,
+    "R411SOLwk_x050_s104": 3.07,
+    "R411SOLwk_x050_s105": 4.01,
+    "R411SOLwk_x050_s106": 4.14
+   },
+   "n_admissible_cycles_by_seed": {
+    "R411SOLwk_x050_s101": 1,
+    "R411SOLwk_x050_s102": 1,
+    "R411SOLwk_x050_s103": 1,
+    "R411SOLwk_x050_s104": 1,
+    "R411SOLwk_x050_s105": 2,
+    "R411SOLwk_x050_s106": 1
+   },
+   "GATE_G_pass_count": 0,
+   "GATE_G_ALL_FAIL": true,
+   "delta_vs_NONE_deg": -5.475351802960392
+  },
+  "R411TA_x030": {
+   "label": "tibialis anterior x0.30, frozen controller",
+   "n_seeds_run": 6,
+   "n_seeds_with_a_value": 6,
+   "knee_hs_deg_mean": -8.176308271745143,
+   "knee_hs_deg_range": [
+    -9.311480903348086,
+    -6.947571632197336
+   ],
+   "knee_hs_deg_by_seed": {
+    "R411TA_x030_s105": -9.311480903348086,
+    "R411TA_x030_s104": -9.27045712521672,
+    "R411TA_x030_s102": -9.036346570126264,
+    "R411TA_x030_s103": -7.315238649332787,
+    "R411TA_x030_s101": -7.176754750249666,
+    "R411TA_x030_s106": -6.947571632197336
+   },
+   "t_end_s_range": [
+    3.34,
+    3.66
+   ],
+   "t_end_s_by_seed": {
+    "R411TA_x030_s101": 3.46,
+    "R411TA_x030_s102": 3.45,
+    "R411TA_x030_s103": 3.58,
+    "R411TA_x030_s104": 3.35,
+    "R411TA_x030_s105": 3.34,
+    "R411TA_x030_s106": 3.66
+   },
+   "n_admissible_cycles_by_seed": {
+    "R411TA_x030_s101": 1,
+    "R411TA_x030_s102": 1,
+    "R411TA_x030_s103": 1,
+    "R411TA_x030_s104": 1,
+    "R411TA_x030_s105": 1,
+    "R411TA_x030_s106": 1
+   },
+   "GATE_G_pass_count": 0,
+   "GATE_G_ALL_FAIL": true,
+   "delta_vs_NONE_deg": -0.32630901362358866
+  },
+  "R411TA_x050": {
+   "label": "tibialis anterior x0.50, frozen controller",
+   "n_seeds_run": 6,
+   "n_seeds_with_a_value": 6,
+   "knee_hs_deg_mean": -5.417903234701943,
+   "knee_hs_deg_range": [
+    -5.848065623341287,
+    -5.016617918937192
+   ],
+   "knee_hs_deg_by_seed": {
+    "R411TA_x050_s106": -5.848065623341287,
+    "R411TA_x050_s103": -5.779769054161692,
+    "R411TA_x050_s104": -5.342860087484683,
+    "R411TA_x050_s105": -5.304408889853454,
+    "R411TA_x050_s101": -5.215697834433349,
+    "R411TA_x050_s102": -5.016617918937192
+   },
+   "t_end_s_range": [
+    3.83,
+    4.25
+   ],
+   "t_end_s_by_seed": {
+    "R411TA_x050_s101": 4.07,
+    "R411TA_x050_s102": 3.83,
+    "R411TA_x050_s103": 4.07,
+    "R411TA_x050_s104": 4.05,
+    "R411TA_x050_s105": 4.25,
+    "R411TA_x050_s106": 4.11
+   },
+   "n_admissible_cycles_by_seed": {
+    "R411TA_x050_s101": 1,
+    "R411TA_x050_s102": 1,
+    "R411TA_x050_s103": 1,
+    "R411TA_x050_s104": 1,
+    "R411TA_x050_s105": 1,
+    "R411TA_x050_s106": 1
+   },
+   "GATE_G_pass_count": 0,
+   "GATE_G_ALL_FAIL": true,
+   "delta_vs_NONE_deg": 2.4320960234196107
+  },
+  "R411TA_x080": {
+   "label": "tibialis anterior max isometric force x0.80, frozen controller",
+   "n_seeds_run": 6,
+   "n_seeds_with_a_value": 6,
+   "knee_hs_deg_mean": -6.511353668536748,
+   "knee_hs_deg_range": [
+    -8.266761118862446,
+    -5.332879162693504
+   ],
+   "knee_hs_deg_by_seed": {
+    "R411TA_x080_s102": -8.266761118862446,
+    "R411TA_x080_s104": -6.973149614087566,
+    "R411TA_x080_s106": -6.5501299083082545,
+    "R411TA_x080_s105": -5.997260013474719,
+    "R411TA_x080_s103": -5.947942193794004,
+    "R411TA_x080_s101": -5.332879162693504
+   },
+   "t_end_s_range": [
+    4.9,
+    13.54
+   ],
+   "t_end_s_by_seed": {
+    "R411TA_x080_s101": 4.9,
+    "R411TA_x080_s102": 6.53,
+    "R411TA_x080_s103": 7.91,
+    "R411TA_x080_s104": 13.54,
+    "R411TA_x080_s105": 6.03,
+    "R411TA_x080_s106": 7.08
+   },
+   "n_admissible_cycles_by_seed": {
+    "R411TA_x080_s101": 2,
+    "R411TA_x080_s102": 3,
+    "R411TA_x080_s103": 4,
+    "R411TA_x080_s104": 5,
+    "R411TA_x080_s105": 3,
+    "R411TA_x080_s106": 3
+   },
+   "GATE_G_pass_count": 1,
+   "GATE_G_ALL_FAIL": false,
+   "delta_vs_NONE_deg": 1.3386455895848055
+  }
+ },
+ "question": "with the control controller FROZEN, does WEAKENING a muscle move knee-at-heel-strike, and in which direction?",
+ "THE_RESULT_THAT_MATTERS": "SOL x0.50 WEAKNESS moves the knee to -13.33 deg, i.e. MORE flexed than the frozen control by 5.48 deg and in the SAME DIRECTION as the spastic headline. A pure weakness lesion reproduces the sign of the spastic signature on this endpoint under a frozen controller. This is a direct threat to the discriminative reading of the knee endpoint and must appear in the paper's limitations, not be omitted. It is sub-Gate-G and cannot be quoted as a Gate-G result either."
+}

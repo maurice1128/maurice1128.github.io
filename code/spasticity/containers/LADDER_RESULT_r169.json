@@ -1,0 +1,690 @@
+{
+ "prereg_sha256": "e3ec76aa98759c821ef410889d3fc5d2840297bfc93482e00efc85e244e6d703",
+ "debris_excluded": [
+  {
+   "tag": "R169W095_s105",
+   "dir": "R169W095_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "history_lines": 81
+  },
+  {
+   "tag": "R169W095_s106",
+   "dir": "R169W095_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "history_lines": 71
+  }
+ ],
+ "gate": {
+  "C": {
+   "n_pass": 6,
+   "admitted": true,
+   "kind": "control",
+   "kv": 0.0,
+   "scale": 1.0
+  },
+  "S050": {
+   "n_pass": 6,
+   "admitted": true,
+   "kind": "spastic",
+   "kv": 0.05,
+   "scale": 1.0
+  },
+  "S150": {
+   "n_pass": 0,
+   "admitted": false,
+   "kind": "spastic",
+   "kv": 0.15,
+   "scale": 1.0
+  },
+  "S400": {
+   "n_pass": 0,
+   "admitted": false,
+   "kind": "spastic",
+   "kv": 0.4,
+   "scale": 1.0
+  },
+  "W080": {
+   "n_pass": 6,
+   "admitted": true,
+   "kind": "weak",
+   "kv": 0.0,
+   "scale": 0.8
+  },
+  "W090": {
+   "n_pass": 6,
+   "admitted": true,
+   "kind": "weak",
+   "kv": 0.0,
+   "scale": 0.9
+  },
+  "W095": {
+   "n_pass": 6,
+   "admitted": true,
+   "kind": "weak",
+   "kv": 0.0,
+   "scale": 0.95
+  }
+ },
+ "per_seed": {
+  "C_101": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "C_102": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "C_103": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "C_104": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "C_105": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "C_106": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "S050_101": {
+   "dur": 17.85,
+   "cycles": 12,
+   "pass": true
+  },
+  "S050_102": {
+   "dur": 14.96,
+   "cycles": 11,
+   "pass": true
+  },
+  "S050_103": {
+   "dur": 13.58,
+   "cycles": 9,
+   "pass": true
+  },
+  "S050_104": {
+   "dur": 16.94,
+   "cycles": 12,
+   "pass": true
+  },
+  "S050_105": {
+   "dur": 14.27,
+   "cycles": 10,
+   "pass": true
+  },
+  "S050_106": {
+   "dur": 14.82,
+   "cycles": 10,
+   "pass": true
+  },
+  "S150_101": {
+   "dur": 0.66,
+   "cycles": 0,
+   "pass": false
+  },
+  "S150_102": {
+   "dur": 5.25,
+   "cycles": 2,
+   "pass": false
+  },
+  "S150_103": {
+   "dur": 0.66,
+   "cycles": 0,
+   "pass": false
+  },
+  "S150_104": {
+   "dur": 6.01,
+   "cycles": 2,
+   "pass": false
+  },
+  "S150_105": {
+   "dur": 5.58,
+   "cycles": 2,
+   "pass": false
+  },
+  "S150_106": {
+   "dur": 1.7,
+   "cycles": 0,
+   "pass": false
+  },
+  "S400_101": {
+   "dur": 0.69,
+   "cycles": 0,
+   "pass": false
+  },
+  "S400_102": {
+   "dur": 0.69,
+   "cycles": 0,
+   "pass": false
+  },
+  "S400_103": {
+   "dur": 0.69,
+   "cycles": 0,
+   "pass": false
+  },
+  "S400_104": {
+   "dur": 0.69,
+   "cycles": 0,
+   "pass": false
+  },
+  "S400_105": {
+   "dur": 0.69,
+   "cycles": 0,
+   "pass": false
+  },
+  "S400_106": {
+   "dur": 0.69,
+   "cycles": 0,
+   "pass": false
+  },
+  "W080_101": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "W080_102": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "W080_103": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "W080_104": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "W080_105": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "W080_106": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "W090_101": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "W090_102": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "W090_103": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "W090_104": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "W090_105": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "W090_106": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "W095_101": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "W095_102": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "W095_103": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "W095_104": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "W095_105": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  },
+  "W095_106": {
+   "dur": 20.0,
+   "cycles": 14,
+   "pass": true
+  }
+ },
+ "admitted": [
+  "C",
+  "S050",
+  "W080",
+  "W090",
+  "W095"
+ ],
+ "spastic_rungs": [
+  "S050"
+ ],
+ "weak_rungs": [
+  "W080",
+  "W090",
+  "W095"
+ ],
+ "calibration": "PASSED -- reused cells reproduce r151 endpoints to 1e-9",
+ "answerable_4a": false,
+ "verdict_4a": "NOT ANSWERABLE",
+ "reason_4a": "a mechanism has fewer than 2 admitted rungs, so conservation ACROSS severity cannot be tested on it: a one-rung ladder is the r151 design again. The rungs that failed Gate G are named above and are NOT replaced and NOT re-titrated.",
+ "window": [
+  1.0,
+  13.58
+ ],
+ "per_cell": {
+  "C_101": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": -0.08587364109466833,
+   "hip_flexion_LmR": -0.09716090965874002,
+   "ank_hs_LmR": -3.122260229629622
+  },
+  "C_102": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 0.05811065282171057,
+   "hip_flexion_LmR": -0.3671131579334954,
+   "ank_hs_LmR": -2.968007322446934
+  },
+  "C_103": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": -0.14838333654343927,
+   "hip_flexion_LmR": -0.04146304577430726,
+   "ank_hs_LmR": -3.208690849363129
+  },
+  "C_104": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": -0.14377420939149488,
+   "hip_flexion_LmR": 0.18113105763402615,
+   "ank_hs_LmR": -2.9370893102441076
+  },
+  "C_105": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": -0.20529077799537632,
+   "hip_flexion_LmR": 0.29001213730204256,
+   "ank_hs_LmR": -2.831836199334848
+  },
+  "C_106": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": -0.5153118747429382,
+   "hip_flexion_LmR": 0.05234287768406176,
+   "ank_hs_LmR": -2.986275254138976
+  },
+  "S050_101": {
+   "n_cycles": 9,
+   "t_end": 17.85,
+   "ankle_angle_LmR": -0.17205922587778844,
+   "hip_flexion_LmR": -1.575016415430568,
+   "ank_hs_LmR": -3.765616381386115
+  },
+  "S050_102": {
+   "n_cycles": 9,
+   "t_end": 14.96,
+   "ankle_angle_LmR": -0.42575857136398554,
+   "hip_flexion_LmR": -1.5587698788397546,
+   "ank_hs_LmR": -3.7317448927071455
+  },
+  "S050_103": {
+   "n_cycles": 9,
+   "t_end": 13.58,
+   "ankle_angle_LmR": 0.30165591293865646,
+   "hip_flexion_LmR": -2.858403679337272,
+   "ank_hs_LmR": -2.440825990358088
+  },
+  "S050_104": {
+   "n_cycles": 9,
+   "t_end": 16.94,
+   "ankle_angle_LmR": -0.34173112760919366,
+   "hip_flexion_LmR": -1.349296508939915,
+   "ank_hs_LmR": -2.8946794198823644
+  },
+  "S050_105": {
+   "n_cycles": 9,
+   "t_end": 14.27,
+   "ankle_angle_LmR": -0.6501861397167339,
+   "hip_flexion_LmR": -1.6281487016323695,
+   "ank_hs_LmR": -3.812754855507126
+  },
+  "S050_106": {
+   "n_cycles": 9,
+   "t_end": 14.82,
+   "ankle_angle_LmR": 0.21648891979131335,
+   "hip_flexion_LmR": -3.2037126100671713,
+   "ank_hs_LmR": -2.7492492351389877
+  },
+  "W080_101": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 2.2962684203366948,
+   "hip_flexion_LmR": 0.683175776320823,
+   "ank_hs_LmR": -4.899781001973887
+  },
+  "W080_102": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 2.438139136608811,
+   "hip_flexion_LmR": 0.6253643347921312,
+   "ank_hs_LmR": -5.629938680875665
+  },
+  "W080_103": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 2.2394692042460598,
+   "hip_flexion_LmR": 0.22915765326143145,
+   "ank_hs_LmR": -5.651586299615253
+  },
+  "W080_104": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 2.4010751334615676,
+   "hip_flexion_LmR": 0.2552145005444473,
+   "ank_hs_LmR": -5.777139814501815
+  },
+  "W080_105": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 2.0492663148557924,
+   "hip_flexion_LmR": 0.4416231360913869,
+   "ank_hs_LmR": -5.7054793464450295
+  },
+  "W080_106": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 2.4226947409311705,
+   "hip_flexion_LmR": 0.26971033276124956,
+   "ank_hs_LmR": -5.080675237052591
+  },
+  "W090_101": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 1.3679558344680167,
+   "hip_flexion_LmR": 0.3973143999346007,
+   "ank_hs_LmR": -4.56359101286338
+  },
+  "W090_102": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 1.191039199727065,
+   "hip_flexion_LmR": 0.5970920507012778,
+   "ank_hs_LmR": -5.203269106617416
+  },
+  "W090_103": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 1.5418803562788383,
+   "hip_flexion_LmR": 0.4410056149121999,
+   "ank_hs_LmR": -4.42575773918762
+  },
+  "W090_104": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 1.0533192443707797,
+   "hip_flexion_LmR": 0.478967251938478,
+   "ank_hs_LmR": -4.428381249269547
+  },
+  "W090_105": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 1.2042617923991408,
+   "hip_flexion_LmR": 0.44025440358080203,
+   "ank_hs_LmR": -4.918776462741791
+  },
+  "W090_106": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 1.044272877405433,
+   "hip_flexion_LmR": 0.442826347461164,
+   "ank_hs_LmR": -4.682293862379495
+  },
+  "W095_101": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 0.6231234331933884,
+   "hip_flexion_LmR": 0.6272041659342591,
+   "ank_hs_LmR": -4.329518018339496
+  },
+  "W095_102": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 0.4631981801769278,
+   "hip_flexion_LmR": 0.5772995419783626,
+   "ank_hs_LmR": -3.8764198108511794
+  },
+  "W095_103": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 0.43814082593653936,
+   "hip_flexion_LmR": 0.6303618000052111,
+   "ank_hs_LmR": -3.5391970334839606
+  },
+  "W095_104": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 0.30863963184152965,
+   "hip_flexion_LmR": 0.3933546249504758,
+   "ank_hs_LmR": -3.7654028718468586
+  },
+  "W095_105": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 0.7678462060457143,
+   "hip_flexion_LmR": 0.08299611972356757,
+   "ank_hs_LmR": -4.088272865460118
+  },
+  "W095_106": {
+   "n_cycles": 9,
+   "t_end": 20.0,
+   "ankle_angle_LmR": 0.43477310734072105,
+   "hip_flexion_LmR": 0.7162354410998688,
+   "ank_hs_LmR": -4.268933461082362
+  }
+ },
+ "rung_summary": {
+  "C": {
+   "ankle_angle_LmR": {
+    "mean": -0.17342053115770106,
+    "min": -0.5153118747429382,
+    "max": 0.05811065282171057,
+    "n": 6
+   },
+   "hip_flexion_LmR": {
+    "mean": 0.002958159875597962,
+    "min": -0.3671131579334954,
+    "max": 0.29001213730204256,
+    "n": 6
+   },
+   "ank_hs_LmR": {
+    "mean": -3.0090265275262698,
+    "min": -3.208690849363129,
+    "max": -2.831836199334848,
+    "n": 6
+   }
+  },
+  "S050": {
+   "ankle_angle_LmR": {
+    "mean": -0.17859837197295528,
+    "min": -0.6501861397167339,
+    "max": 0.30165591293865646,
+    "n": 6
+   },
+   "hip_flexion_LmR": {
+    "mean": -2.028891299041175,
+    "min": -3.2037126100671713,
+    "max": -1.349296508939915,
+    "n": 6
+   },
+   "ank_hs_LmR": {
+    "mean": -3.2324784624966374,
+    "min": -3.812754855507126,
+    "max": -2.440825990358088,
+    "n": 6
+   }
+  },
+  "W080": {
+   "ankle_angle_LmR": {
+    "mean": 2.3078188250733493,
+    "min": 2.0492663148557924,
+    "max": 2.438139136608811,
+    "n": 6
+   },
+   "hip_flexion_LmR": {
+    "mean": 0.4173742889619116,
+    "min": 0.22915765326143145,
+    "max": 0.683175776320823,
+    "n": 6
+   },
+   "ank_hs_LmR": {
+    "mean": -5.45743339674404,
+    "min": -5.777139814501815,
+    "max": -4.899781001973887,
+    "n": 6
+   }
+  },
+  "W090": {
+   "ankle_angle_LmR": {
+    "mean": 1.2337882174415455,
+    "min": 1.044272877405433,
+    "max": 1.5418803562788383,
+    "n": 6
+   },
+   "hip_flexion_LmR": {
+    "mean": 0.46624334475475376,
+    "min": 0.3973143999346007,
+    "max": 0.5970920507012778,
+    "n": 6
+   },
+   "ank_hs_LmR": {
+    "mean": -4.703678238843208,
+    "min": -5.203269106617416,
+    "max": -4.42575773918762,
+    "n": 6
+   }
+  },
+  "W095": {
+   "ankle_angle_LmR": {
+    "mean": 0.5059535640891367,
+    "min": 0.30863963184152965,
+    "max": 0.7678462060457143,
+    "n": 6
+   },
+   "hip_flexion_LmR": {
+    "mean": 0.5045752822819575,
+    "min": 0.08299611972356757,
+    "max": 0.7162354410998688,
+    "n": 6
+   },
+   "ank_hs_LmR": {
+    "mean": -3.977957343510662,
+    "min": -4.329518018339496,
+    "max": -3.5391970334839606,
+    "n": 6
+   }
+  }
+ },
+ "overlap_mass": {
+  "k": 6,
+  "spastic_range": [
+   -3.812754855507126,
+   -2.440825990358088
+  ],
+  "weak_range": [
+   -5.777139814501815,
+   -3.5391970334839606
+  ],
+  "matched_region": [
+   -3.812754855507126,
+   -3.5391970334839606
+  ],
+  "n_spastic_inside": 3,
+  "n_weak_inside": 2,
+  "passed": false
+ },
+ "sign_conservation": {
+  "ankle_angle_LmR": {
+   "spastic": {
+    "S050": -0.17859837197295528
+   },
+   "weak": {
+    "W080": 2.3078188250733493,
+    "W090": 1.2337882174415455,
+    "W095": 0.5059535640891367
+   },
+   "conserved": true
+  },
+  "hip_flexion_LmR": {
+   "spastic": {
+    "S050": -2.028891299041175
+   },
+   "weak": {
+    "W080": 0.4173742889619116,
+    "W090": 0.46624334475475376,
+    "W095": 0.5045752822819575
+   },
+   "conserved": true
+  }
+ },
+ "double_dissociation": {
+  "ankle_angle_LmR": {
+   "band": [
+    -0.5153,
+    0.0581
+   ],
+   "outside_at_spastic_rungs": {
+    "S050": false
+   },
+   "outside_at_weak_rungs": {
+    "W080": true,
+    "W090": true,
+    "W095": true
+   }
+  },
+  "hip_flexion_LmR": {
+   "band": [
+    -0.3671,
+    0.29
+   ],
+   "outside_at_spastic_rungs": {
+    "S050": true
+   },
+   "outside_at_weak_rungs": {
+    "W080": true,
+    "W090": true,
+    "W095": true
+   }
+  }
+ },
+ "verdict_4b": "BROKEN",
+ "verdict_secondary": "NO CROSSING",
+ "secondary_note": "section 3 returned INSUFFICIENT MASS. No matched-equinus contrast is computed and no number from one is reported. At survivable magnitudes these two lesions do not produce a common equinus presentation in this model."
+}

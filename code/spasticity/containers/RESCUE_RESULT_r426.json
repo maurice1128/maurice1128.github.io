@@ -1,0 +1,32 @@
+{
+  "round": "RESCUE_RESULT_r426",
+  "no_new_hypothesis": true,
+  "purpose": "repair the x0.60 root named by PREREG_mixed_r424.md section 3, which a post-hash Gate-G audit found passes only 3/6 (DEFECT_r424_root_gate.md).",
+  "method": "insert an x0.70 intermediate and chain x0.80 -> x0.70 -> x0.60, because r393 built the original ladder by stepping x0.80 -> x0.60 in ONE jump and chaining works by small steps (CHAIN_RESULT_r393.json turned KV 0.070 from 0/6 into 6/6 that way).",
+  "results": {
+    "R426WK070": {
+      "gate_G": "6/6",
+      "t_end_s": "20.00 on every seed",
+      "scale": 0.7,
+      "note": "NEW and clean. A dorsiflexor-weakness level deeper than x0.80 that walks reliably did not previously exist in this corpus."
+    },
+    "R426WK060": {
+      "gate_G": "2/6",
+      "passing_seeds": [
+        "s101",
+        "s104"
+      ],
+      "failing_t_end_s": [
+        7.17,
+        7.54,
+        7.53,
+        7.68
+      ],
+      "scale": 0.6
+    }
+  },
+  "VERDICT_on_the_repair": "FAILED for x0.60. Two independent chaining routes -- r393's single x0.80->x0.60 jump giving 3/6, and r426's x0.80->x0.70->x0.60 giving 2/6 -- both fall short of the 4-cell bar. The x0.60 failure is therefore REPRODUCIBLE ACROSS ROUTES and is a property of the model, not of the optimisation basin.",
+  "why_that_is_worth_more_than_the_repair_would_have_been": "the same question was asked about the spastic axis at r393 and the answer was the opposite: chaining DID rescue KV 0.070 from 0/6 to 6/6, which is why 'the model is too fragile' was withdrawn then. Running the same test on the weakness axis and getting the opposite answer makes the weakness ceiling a measured fact rather than an assumption.",
+  "the_ceiling_stated": "x0.70 is the deepest dorsiflexor weakness this model walks with reliably. Together with FINE_GAP_r397.json's spastic ceiling (highest walking KV 0.120) this gives BOTH lesions a measured severity ceiling, and neither reaches the severity of a severely affected patient. This belongs in the paper's limitations, not in a footnote.",
+  "consequence_for_r424": "the x0.60 row of PREREG_mixed_r424.md is UNINFORMATIVE as registered and is reported as such. Registered prediction P3 names x0.60 explicitly and therefore cannot be judged on its own terms. An x0.70 row is being run as an EXPLICITLY POST-HOC substitute and must be labelled as such -- it does not satisfy P3 as written and may not be reported as if it did."
+}

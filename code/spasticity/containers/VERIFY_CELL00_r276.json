@@ -1,0 +1,25 @@
+{
+ "purpose": "independent measurement of cell 0 duration; the deposit records only objective",
+ "tag": "R276WPF005_s101",
+ "par": "0079_51.437_20.975.par",
+ "sto": "0079_51.437_20.975.par.sto",
+ "terminal_objective": 20.9748,
+ "t_end_s": 16.21,
+ "n_cycles_after_settle": 12,
+ "settle_s": 1.0,
+ "speed_mps": 1.0360220955096222,
+ "gateG": {
+  "MIN_DUR": 9.73,
+  "MIN_CYC": 5,
+  "dur_ok": true,
+  "cyc_ok": true,
+  "admitted": true
+ },
+ "objective_extrapolation": {
+  "formula": "t_end ~= 20 * (1 - (objective - 2.9)/100), FITNESS_r266",
+  "fitted_on": "spastic / control / dorsiflexor-weakness arms only",
+  "predicted_t_end_s": 16.38504,
+  "error_s": -0.1750399999999992,
+  "note": "recorded to judge whether the map transfers to a plantarflexor-weakness arm"
+ }
+}

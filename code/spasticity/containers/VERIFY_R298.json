@@ -1,0 +1,129 @@
+{
+ "what": "independent recomputation of r289/r292; MATCHED20_ENDPOINT_r298.json not read",
+ "self_check": "R151S hip reproduces LADDER36_r228.json to < 1e-9 deg",
+ "n": {
+  "r289_measured": 12,
+  "r289_completing": 12,
+  "dorsiflexor": 36,
+  "plantarflexor_completers": 7
+ },
+ "r289_t_end": [
+  20.0,
+  20.0,
+  20.0,
+  20.0,
+  20.0,
+  20.0,
+  20.0,
+  20.0,
+  20.0,
+  20.0,
+  20.0,
+  20.0
+ ],
+ "blocks": [
+  {
+   "name": "reading C -- CLINICAL PAIR (spastic vs dorsiflexor weak)",
+   "channel": "knee_angle_LmR",
+   "n_spastic": 12,
+   "n_weak": 36,
+   "spastic_range": [
+    -0.7476732533468251,
+    -0.2782317430622925
+   ],
+   "weak_range": [
+    -1.2186055998143033,
+    -0.0972343755804772
+   ],
+   "disjoint": false,
+   "gap_deg": null,
+   "RUNG": 4,
+   "VERDICT": "OVERLAP",
+   "gap_deg_SUPERSEDED_signed_difference": -0.6504388777663479,
+   "gap_deg_null_because": "The ranges OVERLAP. The previous value -0.6504388777663479 was a signed endpoint difference computed with the groups subtracted the other way round, and it is NOT the overlap width."
+  },
+  {
+   "name": "reading P -- ANATOMY-MATCHED (spastic vs plantarflexor weak)",
+   "channel": "knee_angle_LmR",
+   "n_spastic": 12,
+   "n_weak": 7,
+   "spastic_range": [
+    -0.7476732533468251,
+    -0.2782317430622925
+   ],
+   "weak_range": [
+    0.5835219909574505,
+    2.203603319510414
+   ],
+   "disjoint": true,
+   "gap_deg": 0.861753734019743,
+   "RUNG": 2,
+   "VERDICT": "DISJOINT-AS-PREDICTED",
+   "permutation": {
+    "assignments": 50388,
+    "count_ge": 1,
+    "floor": 1.9845995078193222e-05
+   }
+  },
+  {
+   "name": "SECONDARY hip, clinical pair -- the shipped headline",
+   "channel": "hip_flexion_LmR",
+   "n_spastic": 12,
+   "n_weak": 36,
+   "spastic_range": [
+    -0.01803671139072094,
+    0.7535197146883519
+   ],
+   "weak_range": [
+    -0.1971203998368125,
+    1.1824473792791892
+   ],
+   "disjoint": false,
+   "gap_deg": null,
+   "RUNG": 4,
+   "VERDICT": "OVERLAP",
+   "gap_deg_SUPERSEDED_signed_difference": -0.9506401145251644,
+   "gap_deg_null_because": "The ranges OVERLAP. The previous value -0.9506401145251644 was a signed endpoint difference computed with the groups subtracted the other way round, and it is NOT the overlap width."
+  },
+  {
+   "name": "SECONDARY hip, anatomy-matched",
+   "channel": "hip_flexion_LmR",
+   "n_spastic": 12,
+   "n_weak": 7,
+   "spastic_range": [
+    -0.01803671139072094,
+    0.7535197146883519
+   ],
+   "weak_range": [
+    -1.1842751146456578,
+    0.5158453621121879
+   ],
+   "disjoint": false,
+   "gap_deg": null,
+   "RUNG": 4,
+   "VERDICT": "OVERLAP",
+   "gap_deg_SUPERSEDED_signed_difference": -0.5338820735029088,
+   "gap_deg_null_because": "The ranges OVERLAP. The previous value -0.5338820735029088 was a signed endpoint difference computed with the groups subtracted the other way round, and it is NOT the overlap width."
+  }
+ ],
+ "GAP_DEG_DEFINITION_D21": {
+  "DEFINITION": "gap_deg is the SIGNED SEPARATION between two groups' nearest range endpoints. It is POSITIVE and meaningful ONLY when the ranges are disjoint, where it equals min(higher group) - max(lower group). When the ranges OVERLAP the quantity is undefined and gap_deg is null, matching MATCHED20_ENDPOINT_r298.json's convention. Overlap width, where reported, is a SEPARATE field named overlap_deg and is NOT the magnitude of any negative gap_deg.",
+  "applied_r317": "Every negative gap_deg in this file has been set to null with its former value preserved in gap_deg_SUPERSEDED_signed_difference. Positive, disjoint entries are unchanged.",
+  "entries_nulled": [
+   {
+    "path": "/blocks[0]",
+    "former_value": -0.6504388777663479
+   },
+   {
+    "path": "/blocks[2]",
+    "former_value": -0.9506401145251644
+   },
+   {
+    "path": "/blocks[3]",
+    "former_value": -0.5338820735029088
+   }
+  ],
+  "worked_counterexample": "Reading C knee formerly read gap_deg = -0.6504 while the TRUE overlap width is 0.4694 deg. The two differ, which is why the negative was never an overlap width and could not be reinterpreted as one.",
+  "why_not_recomputed_as_overlap": "Overlap widths are not deposited for every pair in this file, and computing them here would add numbers this verification file never measured. Null is the honest value."
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "round": 358,
+ "measured_at": "2026-08-18 14:03",
+ "script_audited": "scone/bandfill_endpoint_r291.py (14,126 B, mtime 2026-08-18 01:56)",
+ "why": "This script produced the only surviving separation in the corpus: duration-matched knee gap 2.0899552309869094 deg, n=11 weakness vs 6 spastic, exhaustive floor 1/12376. If it carried an inverted or silently-excluding membership test, the paper has nothing.",
+ "METHOD": "INSTRUMENTED AND COUNTED, not read. The two membership sites were re-executed with counters on every branch and the results reconciled against the deposited endpoint.",
+ "a_what_is_compared": {
+  "line_94_dirs_for": "tags is a list[str]; b = os.path.basename(dir).split('.')[0], i.e. the text before the FIRST period in the directory name -- e.g. 'R291KV0035_s101'. String against list-of-strings, same construction on both sides, so no type/case/whitespace mismatch is possible: b is derived by the identical expression that built every entry.",
+  "line_107_weakness_tags": "Same expression for the r287/r291 families, BUT the r276/r285 families are seeded by literal f-string construction '%s_s%d' rather than from disk. Those literals are compared against disk-derived strings. They matched: total tags 83 equals the deposit's n_weakness_total 83.",
+  "line_120": "b = [allv[i] for i in range(len(allv)) if i not in comb] -- an INTEGER INDEX complement inside the permutation, not a membership filter over cells. Checked, benign."
+ },
+ "b_what_happens_to_a_failing_cell": "Nothing is excluded from the ARM. 'if b not in tags' is a DEDUPLICATION guard: on failure the tag is simply not appended a second time. The cell remains present exactly once. It does not land in an excluded set and does not enter any denominator twice. Nothing is silently skipped.",
+ "c_COUNTS": {
+  "line_107_directories_examined": 55,
+  "line_107_tags_returned": 83,
+  "line_107_entries_not_appended": 2,
+  "entries_not_appended_detail": [
+   {
+    "tag": "R291BF005_s156",
+    "dir": "R291BF005_s156.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R156 (1)"
+   },
+   {
+    "tag": "R291BF005_s163",
+    "dir": "R291BF005_s163.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R163 (1)"
+   }
+  ],
+  "line_94_R291KV0035": {
+   "dirs": 6,
+   "tags": 6,
+   "not_appended": 0
+  },
+  "line_94_R291KV0070": {
+   "dirs": 6,
+   "tags": 6,
+   "not_appended": 0
+  },
+  "DROPPED_CELLS": 0,
+  "why_zero": "Both non-appended entries are the ' (1)' DUPLICATE DIRECTORIES of cells whose tag is ALREADY in the list. The cell is represented; only the second directory for that same cell is not added again. No cell is lost. Which of the two directories is then measured is decided downstream by rd()'s >=91-history-line guard, which selects the complete run.",
+  "neither_deduped_cell_is_in_band": "R291BF005_s156 and R291BF005_s163 belong to the f=0.05 family, whose cells all end at 20.00 s and none of which is in the band. In-band weakness cells are: R276WPF005_s101, R285BF008_s105, R287BF007_s109, R291BF007_s162, R291BF007_s165, R291BF008_s152, R291BF008_s155, R291BF008_s158, R291BF008_s160, R291BF008_s163, R291BF008_s166"
+ },
+ "RECONCILIATION_EXACT": {
+  "instrumented_total": 83,
+  "deposit_n_weakness_total": 83,
+  "instrumented_in_band": 11,
+  "deposit_n_weakness_in_band": 11,
+  "deposit_READING_A_n_spastic": 6,
+  "deposit_gap": 2.0899552309869094,
+  "deposit_floor": "1/12376",
+  "verdict": "n=11 and n=6 reproduced EXACTLY. No reconciliation was required."
+ },
+ "d_CONDITION_UNDER_WHICH_THIS_SCRIPT_STARTS_LYING": "The dropped set is EMPTY today. It becomes non-empty if two DISTINCT cells ever yield the same tag, because the second is then silently discarded as a duplicate. Since the tag is the text before the FIRST PERIOD of the directory name, that occurs if (1) a family prefix or seed token ever contains a period, truncating two different cells to one tag, or (2) a cell is re-run under a DIFFERENT lesion or objective into a directory sharing the same prefix_sSEED stem -- the tag cannot distinguish them, and the deduplication would keep only the first while the >=91 guard would then face two admissible directories and raise. Condition (2) is the live risk: it is exactly the R294FAST_s102 situation, where both twins cleared the generation guard. That arm is not touched by this script, which is why this script is safe TODAY and not safe BY CONSTRUCTION.",
+ "VERDICT": "NO INVERSION. NO SILENT EXCLUSION. The separation stands as deposited."
+}

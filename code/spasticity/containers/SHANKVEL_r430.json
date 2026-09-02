@@ -1,0 +1,227 @@
+{
+  "round": "SHANKVEL_r430",
+  "no_simulation_run": true,
+  "what": "mechanism hypothesis 3 measured with a definition, a window, seed accounting and a per-endpoint noise floor. The number it was retired on had none of these.",
+  "the_retired_prose": "shank angular velocity: control 66.0, weak 93.6, spastic 83.3-99.7 -- no ordering",
+  "definitions": {
+    "shank_angle": "atan2 of tibia_l -> calcn_l in the sagittal plane, deg",
+    "terminal_swing": "last 15% of each admissible cycle",
+    "SHANKDECEL": "|vel| at 85% of cycle minus |vel| at heel strike, deg/s; POSITIVE means the shank slowed before contact"
+  },
+  "noise_floors_same_mechanism": {
+    "SHANKVEL_tsw": 9.081621035091928,
+    "SHANKVEL_peak_tsw": 6.266492174174573,
+    "SHANKDECEL": 19.813663169586818,
+    "SHANKVEL_at_HS": 13.547170995412245
+  },
+  "arms": {
+    "SHANKVEL_tsw": {
+      "control": {
+        "n": 6,
+        "mean": 127.98576681790793,
+        "range": [
+          126.44522584034452,
+          129.00345128922993
+        ],
+        "family_means": {
+          "R151C": 127.98576681790793
+        }
+      },
+      "weak": {
+        "n": 36,
+        "mean": 136.39224940076656,
+        "range": [
+          129.73219972354315,
+          146.84358916745128
+        ],
+        "family_means": {
+          "R151W": 142.78220910940306,
+          "R169W090": 134.6766214237083,
+          "R169W095": 133.70058807431113,
+          "R174W870": 137.19020265484258,
+          "R174W892": 134.48345063020912,
+          "R174W915": 135.52042451212526
+        }
+      },
+      "spastic": {
+        "n": 20,
+        "mean": 147.12475468030615,
+        "range": [
+          127.06859997308086,
+          164.11211046674308
+        ],
+        "family_means": {
+          "R151S": 137.63467196716158,
+          "R393SPg070": 144.91568988030153,
+          "R393SPg100": 155.7304626215421,
+          "R396SPg110": 156.0677680087941
+        }
+      }
+    },
+    "SHANKVEL_peak_tsw": {
+      "control": {
+        "n": 6,
+        "mean": 260.02705321796185,
+        "range": [
+          258.840193377518,
+          261.24877898943157
+        ],
+        "family_means": {
+          "R151C": 260.02705321796185
+        }
+      },
+      "weak": {
+        "n": 36,
+        "mean": 265.99350100559514,
+        "range": [
+          260.3174429551826,
+          272.32188908880136
+        ],
+        "family_means": {
+          "R151W": 270.2254981851377,
+          "R169W090": 265.15401750672874,
+          "R169W095": 263.95900601096315,
+          "R174W870": 266.3257860373576,
+          "R174W892": 264.4953468361302,
+          "R174W915": 265.80135145725365
+        }
+      },
+      "spastic": {
+        "n": 20,
+        "mean": 263.6755358901785,
+        "range": [
+          244.33433037386158,
+          270.0545284471871
+        ],
+        "family_means": {
+          "R151S": 267.61277006914247,
+          "R393SPg070": 267.293141331831,
+          "R393SPg100": 260.63113452195853,
+          "R396SPg110": 255.38767782747348
+        }
+      }
+    },
+    "SHANKDECEL": {
+      "control": {
+        "n": 6,
+        "mean": 129.1946055336401,
+        "range": [
+          123.16969957468817,
+          133.48483622282333
+        ],
+        "family_means": {
+          "R151C": 129.1946055336401
+        }
+      },
+      "weak": {
+        "n": 36,
+        "mean": 148.72482732179228,
+        "range": [
+          132.62481377795464,
+          169.62762949748856
+        ],
+        "family_means": {
+          "R151W": 161.91711235922844,
+          "R169W090": 145.57677208374835,
+          "R169W095": 142.10344918964162,
+          "R174W870": 151.1359815153769,
+          "R174W892": 144.4009180425853,
+          "R174W915": 147.21473074017294
+        }
+      },
+      "spastic": {
+        "n": 20,
+        "mean": 142.430290186994,
+        "range": [
+          105.26947943713863,
+          166.26475509790964
+        ],
+        "family_means": {
+          "R151S": 138.8321748132529,
+          "R393SPg070": 142.3836486591387,
+          "R393SPg100": 153.33206566601035,
+          "R396SPg110": 136.99565006037224
+        }
+      }
+    },
+    "SHANKVEL_at_HS": {
+      "control": {
+        "n": 6,
+        "mean": 130.8324476843218,
+        "range": [
+          127.50459204640651,
+          135.67049380282984
+        ],
+        "family_means": {
+          "R151C": 130.8324476843218
+        }
+      },
+      "weak": {
+        "n": 36,
+        "mean": 117.26867368380292,
+        "range": [
+          101.30342892529445,
+          127.69262917722799
+        ],
+        "family_means": {
+          "R151W": 108.3083858259093,
+          "R169W090": 119.5772454229804,
+          "R169W095": 121.85555682132154,
+          "R174W870": 115.1898045219807,
+          "R174W892": 120.09442879354488,
+          "R174W915": 118.58662071708069
+        }
+      },
+      "spastic": {
+        "n": 20,
+        "mean": 117.14888177903588,
+        "range": [
+          89.36351207154406,
+          141.67937493086689
+        ],
+        "family_means": {
+          "R151S": 128.76772423121903,
+          "R393SPg070": 124.1510777500449,
+          "R393SPg100": 102.58477713397588,
+          "R396SPg110": 103.78142878930755
+        }
+      }
+    }
+  },
+  "tests": {
+    "SHANKVEL_tsw": {
+      "spastic_minus_weak": 10.732505279539595,
+      "multiple_of_floor_vs_weak": 1.181782992052691,
+      "real_vs_weak": true,
+      "spastic_minus_control": 19.138987862398224,
+      "multiple_of_floor_vs_control": 2.1074418089506297,
+      "real_vs_control": true
+    },
+    "SHANKVEL_peak_tsw": {
+      "spastic_minus_weak": -2.317965115416655,
+      "multiple_of_floor_vs_weak": 0.3698983499842923,
+      "real_vs_weak": false,
+      "spastic_minus_control": 3.6484826722166304,
+      "multiple_of_floor_vs_control": 0.5822208934135007,
+      "real_vs_control": false
+    },
+    "SHANKDECEL": {
+      "spastic_minus_weak": -6.294537134798276,
+      "multiple_of_floor_vs_weak": 0.3176866933147495,
+      "real_vs_weak": false,
+      "spastic_minus_control": 13.2356846533539,
+      "multiple_of_floor_vs_control": 0.6680079569370164,
+      "real_vs_control": false
+    },
+    "SHANKVEL_at_HS": {
+      "spastic_minus_weak": -0.11979190476704105,
+      "multiple_of_floor_vs_weak": 0.008842577155600134,
+      "real_vs_weak": false,
+      "spastic_minus_control": -13.683565905285931,
+      "multiple_of_floor_vs_control": 1.010068147063315,
+      "real_vs_control": true
+    }
+  },
+  "HYPOTHESIS_3_VERDICT": "NOT SUPPORTED: the spastic-minus-weak deceleration is -6.2945 deg/s, 0.3x the floor. Below the noise floor.",
+  "UNREGISTERED_OR_SUPERSEDED_LABEL_r438": "EXPLORATORY re-measurement of a hypothesis that had been retired without a container. No registration. Its noise floors use the family method FLOOR_CORRECTION_r436 later declared confounded."
+}

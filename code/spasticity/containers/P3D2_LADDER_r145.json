@@ -1,0 +1,100 @@
+{
+ "what": "P3D-2 KV ladder, PREREG_3d_injection_r145.md",
+ "thresholds": {
+  "min_duration_s": 9.73,
+  "min_cycles": 5,
+  "ratio_max": 0.33,
+  "settle": 1.0
+ },
+ "baseline_duration_s": 12.16,
+ "kv_0.050_prior": {
+  "duration_s": 3.87,
+  "note": "contaminated by fall, not re-run"
+ },
+ "rungs": [
+  {
+   "kv": "0.025",
+   "duration_s": 8.46,
+   "cycles": 6,
+   "clause1_duration": "FAIL",
+   "clause2_cycles": "PASS",
+   "survives": false,
+   "unilateral": null,
+   "detail": {},
+   "rc": 0
+  },
+  {
+   "kv": "0.0125",
+   "duration_s": 11.84,
+   "cycles": 8,
+   "clause1_duration": "PASS",
+   "clause2_cycles": "PASS",
+   "survives": true,
+   "unilateral": false,
+   "detail": {
+    "sol": {
+     "dL": 0.009571815944700551,
+     "dR": 0.015355242764976698,
+     "ratio": 1.6042141693581298,
+     "state": "FAIL"
+    },
+    "rom": {
+     "dL": 1.3766456943608318,
+     "dR": 5.219416330523753,
+     "ratio": 3.791401340158984,
+     "state": "FAIL"
+    }
+   },
+   "rc": 0
+  },
+  {
+   "kv": "0.00625",
+   "duration_s": 13.57,
+   "cycles": 8,
+   "clause1_duration": "PASS",
+   "clause2_cycles": "PASS",
+   "survives": true,
+   "unilateral": false,
+   "detail": {
+    "sol": {
+     "dL": 0.0032145358997312246,
+     "dR": 0.00767938818263153,
+     "ratio": 2.388957044553033,
+     "state": "FAIL"
+    },
+    "rom": {
+     "dL": 0.9584437996948338,
+     "dR": 4.801672802093872,
+     "ratio": 5.009863701578238,
+     "state": "FAIL"
+    }
+   },
+   "rc": 0
+  },
+  {
+   "kv": "0.003125",
+   "duration_s": 19.11,
+   "cycles": 8,
+   "clause1_duration": "PASS",
+   "clause2_cycles": "PASS",
+   "survives": true,
+   "unilateral": false,
+   "detail": {
+    "sol": {
+     "dL": 0.003108528558639273,
+     "dR": 0.0037430751119066213,
+     "ratio": 1.2041308423896593,
+     "state": "FAIL"
+    },
+    "rom": {
+     "dL": 3.4060622047142033,
+     "dR": 4.579021402906033,
+     "ratio": 1.344373980184032,
+     "state": "FAIL"
+    }
+   },
+   "rc": 0
+  }
+ ],
+ "landed_kv": null
+}

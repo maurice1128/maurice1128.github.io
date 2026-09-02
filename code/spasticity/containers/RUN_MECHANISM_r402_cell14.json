@@ -1,0 +1,23 @@
+{
+ "cell": 14,
+ "arm": "GAS",
+ "seed": 103,
+ "kv": 0.11,
+ "prefix": "R402GAS_s103",
+ "spastic_targets": [
+  "gastroc"
+ ],
+ "deleted_reflex": "soleus",
+ "wall_clock_s": 55.89196014404297,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R402GAS_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103 (1)"
+ ],
+ "status": "OK",
+ "duplicate_result_dir": true,
+ "dir": "R402GAS_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+ "sto": "0079_84.858_77.243.par.sto",
+ "t_end_s": 5.82,
+ "n_cycles_in_window": 2,
+ "gate_G": false
+}

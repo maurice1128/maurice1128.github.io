@@ -1,0 +1,52 @@
+{
+ "round": 246,
+ "note": "generated from the text of RESULTS_3d_r214.md by gen_inventory_r246.py; the previous list was hand-maintained and omitted seven cited deposits",
+ "n_cited": 20,
+ "cited_and_present": [
+  "ANKLE_LADDER_r235.json",
+  "BODY2_CHANNELS_r229.json",
+  "BODY2_CORPUS_r229.json",
+  "BODY2_DOSE_r229.json",
+  "CHANNELS_G2_r219.json",
+  "CLASSIFIER_r222.json",
+  "DOSE_r174.json",
+  "HEADLINE_FIGURES_r215.json",
+  "HIPGAP_r220.json",
+  "LADDER36_r228.json",
+  "LMRONLY_r223.json",
+  "MARGINS_r248.json",
+  "PERMNULL_r221.json",
+  "PERMREACH_r226.json",
+  "PRIMARYB_RESULT_r179.json",
+  "REPRODUCTION_r243.json",
+  "SPEEDGATE_r203.json",
+  "SPEED_LADDER_r217.json",
+  "VERIFY_F5_r231.json",
+  "WINDOW_G2_r218.json"
+ ],
+ "cited_but_ABSENT": [],
+ "cited_and_hashed": [
+  "ANKLE_LADDER_r235.json",
+  "BODY2_CHANNELS_r229.json",
+  "BODY2_CORPUS_r229.json",
+  "BODY2_DOSE_r229.json",
+  "LADDER36_r228.json",
+  "REPRODUCTION_r243.json"
+ ],
+ "cited_and_NOT_hashed": [
+  "CHANNELS_G2_r219.json",
+  "CLASSIFIER_r222.json",
+  "DOSE_r174.json",
+  "HEADLINE_FIGURES_r215.json",
+  "HIPGAP_r220.json",
+  "LMRONLY_r223.json",
+  "MARGINS_r248.json",
+  "PERMNULL_r221.json",
+  "PERMREACH_r226.json",
+  "PRIMARYB_RESULT_r179.json",
+  "SPEEDGATE_r203.json",
+  "SPEED_LADDER_r217.json",
+  "VERIFY_F5_r231.json",
+  "WINDOW_G2_r218.json"
+ ]
+}

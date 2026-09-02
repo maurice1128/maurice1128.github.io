@@ -1,0 +1,623 @@
+{
+ "recipes": {
+  "L": "sorted(glob)[-1] = highest generation (ladder36_r228.py:28)",
+  "F": "lowest field-3 .par = best fitness (PREREG rev3 section 8)"
+ },
+ "arms": {
+  "S": [
+   {
+    "seed": 101,
+    "deposited": -2.032596426116342,
+    "L_value": -2.032596426116342,
+    "F_value": -2.032596426116342,
+    "L_file": "0056_65.682_19.381.par.sto",
+    "F_file": "0056_65.682_19.381.par.sto",
+    "same_file": true,
+    "n_sto": 8,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 102,
+    "deposited": -1.2098920576659609,
+    "L_value": -1.2098920576659609,
+    "F_value": -1.2098920576659609,
+    "L_file": "0086_53.936_35.095.par.sto",
+    "F_file": "0086_53.936_35.095.par.sto",
+    "same_file": true,
+    "n_sto": 14,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 103,
+    "deposited": -2.772393801611315,
+    "L_value": -2.772393801611315,
+    "F_value": -2.772393801611315,
+    "L_file": "0059_67.037_35.910.par.sto",
+    "F_file": "0059_67.037_35.910.par.sto",
+    "same_file": true,
+    "n_sto": 11,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 104,
+    "deposited": -1.683269788003031,
+    "L_value": -1.683269788003031,
+    "F_value": -1.683269788003031,
+    "L_file": "0072_59.701_22.802.par.sto",
+    "F_file": "0072_59.701_22.802.par.sto",
+    "same_file": true,
+    "n_sto": 13,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 105,
+    "deposited": -2.346170497813503,
+    "L_value": -2.346170497813503,
+    "F_value": -2.346170497813503,
+    "L_file": "0085_59.194_38.532.par.sto",
+    "F_file": "0085_59.194_38.532.par.sto",
+    "same_file": true,
+    "n_sto": 13,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 106,
+    "deposited": -2.5874430253430774,
+    "L_value": -2.5874430253430774,
+    "F_value": -2.5874430253430774,
+    "L_file": "0037_62.529_33.591.par.sto",
+    "F_file": "0037_62.529_33.591.par.sto",
+    "same_file": true,
+    "n_sto": 9,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   }
+  ],
+  "W800": [
+   {
+    "seed": 101,
+    "deposited": 0.689314064165977,
+    "L_value": 0.689314064165977,
+    "F_value": 0.689314064165977,
+    "L_file": "0086_18.186_1.049.par.sto",
+    "F_file": "0086_18.186_1.049.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 102,
+    "deposited": 0.4722318147468201,
+    "L_value": 0.4722318147468201,
+    "F_value": null,
+    "L_file": "0060_19.759_1.051.par.sto",
+    "F_file": null,
+    "same_file": false,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": false
+   },
+   {
+    "seed": 103,
+    "deposited": 0.06922285094839253,
+    "L_value": 0.06922285094839253,
+    "F_value": 0.06922285094839253,
+    "L_file": "0018_55.873_1.052.par.sto",
+    "F_file": "0018_55.873_1.052.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 104,
+    "deposited": 0.26242421946650296,
+    "L_value": 0.26242421946650296,
+    "F_value": 0.26242421946650296,
+    "L_file": "0061_6.964_1.051.par.sto",
+    "F_file": "0061_6.964_1.051.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 105,
+    "deposited": 0.16954776087578693,
+    "L_value": 0.16954776087578693,
+    "F_value": 0.16954776087578693,
+    "L_file": "0046_1.089_1.046.par.sto",
+    "F_file": "0046_1.089_1.046.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 106,
+    "deposited": 0.021978661021215373,
+    "L_value": 0.021978661021215373,
+    "F_value": 0.021978661021215373,
+    "L_file": "0069_36.357_1.044.par.sto",
+    "F_file": "0069_36.357_1.044.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   }
+  ],
+  "W870": [
+   {
+    "seed": 101,
+    "deposited": 0.4960324815565613,
+    "L_value": 0.4960324815565613,
+    "F_value": 0.4960324815565613,
+    "L_file": "0055_1.134_1.026.par.sto",
+    "F_file": "0055_1.134_1.026.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 102,
+    "deposited": -0.1971203998368125,
+    "L_value": -0.1971203998368125,
+    "F_value": -0.1971203998368125,
+    "L_file": "0002_60.154_1.033.par.sto",
+    "F_file": "0002_60.154_1.033.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 103,
+    "deposited": 0.6268731236526435,
+    "L_value": 0.6268731236526435,
+    "F_value": 0.6268731236526435,
+    "L_file": "0082_13.850_1.032.par.sto",
+    "F_file": "0082_13.850_1.032.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 104,
+    "deposited": 0.056310292105457904,
+    "L_value": 0.056310292105457904,
+    "F_value": 0.056310292105457904,
+    "L_file": "0086_1.122_1.029.par.sto",
+    "F_file": "0086_1.122_1.029.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 105,
+    "deposited": 0.7553531796327704,
+    "L_value": 0.7553531796327704,
+    "F_value": 0.7553531796327704,
+    "L_file": "0082_23.773_1.021.par.sto",
+    "F_file": "0082_23.773_1.021.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 106,
+    "deposited": 0.41877485246111945,
+    "L_value": 0.41877485246111945,
+    "F_value": 0.41877485246111945,
+    "L_file": "0035_16.774_1.031.par.sto",
+    "F_file": "0035_16.774_1.031.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   }
+  ],
+  "W892": [
+   {
+    "seed": 101,
+    "deposited": 0.5818844775789671,
+    "L_value": 0.5818844775789671,
+    "F_value": 0.5818844775789671,
+    "L_file": "0047_1.041_1.016.par.sto",
+    "F_file": "0047_1.041_1.016.par.sto",
+    "same_file": true,
+    "n_sto": 4,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 102,
+    "deposited": 0.6923736587920004,
+    "L_value": 0.6923736587920004,
+    "F_value": 0.4315288929807366,
+    "L_file": "0050_13.629_1.024.par.sto",
+    "F_file": "0015_24.941_1.024.par.sto",
+    "same_file": false,
+    "n_sto": 3,
+    "L_matches_deposit": true,
+    "F_matches_deposit": false
+   },
+   {
+    "seed": 103,
+    "deposited": 0.38415674247931975,
+    "L_value": 0.38415674247931975,
+    "F_value": 0.38415674247931975,
+    "L_file": "0038_8.123_1.022.par.sto",
+    "F_file": "0038_8.123_1.022.par.sto",
+    "same_file": true,
+    "n_sto": 3,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 104,
+    "deposited": 0.36151345041574245,
+    "L_value": 0.36151345041574245,
+    "F_value": 0.36151345041574245,
+    "L_file": "0056_11.838_1.024.par.sto",
+    "F_file": "0056_11.838_1.024.par.sto",
+    "same_file": true,
+    "n_sto": 3,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 105,
+    "deposited": 0.5069759754435523,
+    "L_value": 0.5069759754435523,
+    "F_value": 0.5069759754435523,
+    "L_file": "0087_23.496_1.014.par.sto",
+    "F_file": "0087_23.496_1.014.par.sto",
+    "same_file": true,
+    "n_sto": 5,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 106,
+    "deposited": 0.7927787828107213,
+    "L_value": 0.7927787828107213,
+    "F_value": 0.7927787828107213,
+    "L_file": "0078_1.081_1.020.par.sto",
+    "F_file": "0078_1.081_1.020.par.sto",
+    "same_file": true,
+    "n_sto": 3,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   }
+  ],
+  "W900": [
+   {
+    "seed": 101,
+    "deposited": 0.5595620418806604,
+    "L_value": 0.5595620418806604,
+    "F_value": 0.5595620418806604,
+    "L_file": "0048_44.389_1.020.par.sto",
+    "F_file": "0048_44.389_1.020.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 102,
+    "deposited": 0.3043666399293983,
+    "L_value": 0.3043666399293983,
+    "F_value": 0.3043666399293983,
+    "L_file": "0050_31.388_1.017.par.sto",
+    "F_file": "0050_31.388_1.017.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 103,
+    "deposited": 0.9725958572345732,
+    "L_value": 0.9725958572345732,
+    "F_value": 0.9725958572345732,
+    "L_file": "0059_35.364_1.013.par.sto",
+    "F_file": "0059_35.364_1.013.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 104,
+    "deposited": 0.6628090365632389,
+    "L_value": 0.6628090365632389,
+    "F_value": 0.6628090365632389,
+    "L_file": "0021_1.062_1.021.par.sto",
+    "F_file": "0021_1.062_1.021.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 105,
+    "deposited": 0.3335989466369682,
+    "L_value": 0.3335989466369682,
+    "F_value": 0.3335989466369682,
+    "L_file": "0009_22.859_1.024.par.sto",
+    "F_file": "0009_22.859_1.024.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 106,
+    "deposited": 0.24088291622889813,
+    "L_value": 0.24088291622889813,
+    "F_value": null,
+    "L_file": "0068_35.019_1.016.par.sto",
+    "F_file": null,
+    "same_file": false,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": false
+   }
+  ],
+  "W915": [
+   {
+    "seed": 101,
+    "deposited": 0.026126875457961773,
+    "L_value": 0.026126875457961773,
+    "F_value": 0.026126875457961773,
+    "L_file": "0002_54.223_1.016.par.sto",
+    "F_file": "0002_54.223_1.016.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 102,
+    "deposited": 0.617648503151031,
+    "L_value": 0.617648503151031,
+    "F_value": 0.617648503151031,
+    "L_file": "0059_28.242_1.016.par.sto",
+    "F_file": "0059_28.242_1.016.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 103,
+    "deposited": 0.20095921706418807,
+    "L_value": 0.20095921706418807,
+    "F_value": 0.20095921706418807,
+    "L_file": "0081_37.861_1.014.par.sto",
+    "F_file": "0081_37.861_1.014.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 104,
+    "deposited": 0.5246574530012893,
+    "L_value": 0.5246574530012893,
+    "F_value": 0.5246574530012893,
+    "L_file": "0020_15.036_1.019.par.sto",
+    "F_file": "0020_15.036_1.019.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 105,
+    "deposited": 0.18325482119464453,
+    "L_value": 0.18325482119464453,
+    "F_value": 0.18325482119464453,
+    "L_file": "0036_1.039_1.015.par.sto",
+    "F_file": "0036_1.039_1.015.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 106,
+    "deposited": 1.1049376487539035,
+    "L_value": 1.1049376487539035,
+    "F_value": 1.1049376487539035,
+    "L_file": "0075_16.687_1.018.par.sto",
+    "F_file": "0075_16.687_1.018.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   }
+  ],
+  "W950": [
+   {
+    "seed": 101,
+    "deposited": 0.814493883246179,
+    "L_value": 0.814493883246179,
+    "F_value": 0.814493883246179,
+    "L_file": "0084_1.075_1.004.par.sto",
+    "F_file": "0084_1.075_1.004.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 102,
+    "deposited": 0.8972633663307761,
+    "L_value": 0.8972633663307761,
+    "F_value": 0.8972633663307761,
+    "L_file": "0023_19.921_1.012.par.sto",
+    "F_file": "0023_19.921_1.012.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 103,
+    "deposited": 1.1824473792791892,
+    "L_value": 1.1824473792791892,
+    "F_value": 1.1824473792791892,
+    "L_file": "0083_20.256_1.008.par.sto",
+    "F_file": "0083_20.256_1.008.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 104,
+    "deposited": 0.647579818368655,
+    "L_value": 0.647579818368655,
+    "F_value": 0.647579818368655,
+    "L_file": "0084_29.474_1.007.par.sto",
+    "F_file": "0084_29.474_1.007.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 105,
+    "deposited": 0.10266257773153598,
+    "L_value": 0.10266257773153598,
+    "F_value": 0.10266257773153598,
+    "L_file": "0082_1.081_1.008.par.sto",
+    "F_file": "0082_1.081_1.008.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 106,
+    "deposited": 0.7096196884254269,
+    "L_value": 0.7096196884254269,
+    "F_value": 0.7096196884254269,
+    "L_file": "0071_16.549_1.008.par.sto",
+    "F_file": "0071_16.549_1.008.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   }
+  ],
+  "C": [
+   {
+    "seed": 101,
+    "deposited": 0.00971736420541447,
+    "L_value": 0.00971736420541447,
+    "F_value": 0.00971736420541447,
+    "L_file": "0060_19.456_0.988.par.sto",
+    "F_file": "0060_19.456_0.988.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 102,
+    "deposited": -0.06909871009278135,
+    "L_value": -0.06909871009278135,
+    "F_value": -0.06909871009278135,
+    "L_file": "0003_26.221_0.983.par.sto",
+    "F_file": "0003_26.221_0.983.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 103,
+    "deposited": 0.35020326353986064,
+    "L_value": 0.35020326353986064,
+    "F_value": 0.35020326353986064,
+    "L_file": "0028_1.032_0.991.par.sto",
+    "F_file": "0028_1.032_0.991.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 104,
+    "deposited": 0.2254932698516896,
+    "L_value": 0.2254932698516896,
+    "F_value": 0.2254932698516896,
+    "L_file": "0000_1.033_0.987.par.sto",
+    "F_file": "0000_1.033_0.987.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 105,
+    "deposited": 0.2526285510290762,
+    "L_value": 0.2526285510290762,
+    "F_value": 0.2526285510290762,
+    "L_file": "0053_30.023_0.987.par.sto",
+    "F_file": "0053_30.023_0.987.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   },
+   {
+    "seed": 106,
+    "deposited": 0.16258250394633222,
+    "L_value": 0.16258250394633222,
+    "F_value": 0.16258250394633222,
+    "L_file": "0001_1.056_0.989.par.sto",
+    "F_file": "0001_1.056_0.989.par.sto",
+    "same_file": true,
+    "n_sto": 1,
+    "L_matches_deposit": true,
+    "F_matches_deposit": true
+   }
+  ]
+ },
+ "gap_analysis": {
+  "DEPOSIT": {
+   "spastic_mean": -2.105294266092205,
+   "spastic_max": -1.2098920576659609,
+   "weak_min_pooled": -0.1971203998368125,
+   "gap": 1.0127716578291484,
+   "disjoint": true
+  },
+  "RECIPE-L": {
+   "spastic_mean": -2.105294266092205,
+   "spastic_max": -1.2098920576659609,
+   "weak_min_pooled": -0.1971203998368125,
+   "gap": 1.0127716578291484,
+   "disjoint": true
+  },
+  "RECIPE-F": {
+   "spastic_mean": -2.105294266092205,
+   "spastic_max": -1.2098920576659609,
+   "weak_min_pooled": -0.1971203998368125,
+   "gap": 1.0127716578291484,
+   "disjoint": true
+  }
+ }
+}

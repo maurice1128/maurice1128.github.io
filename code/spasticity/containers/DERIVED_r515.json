@@ -1,0 +1,53 @@
+{
+ "id": "DERIVED_r515",
+ "why": "These recompute exactly from other deposits but were held in no container, so a reader auditing the archive by field name would score them missing.",
+ "nearest_family_mean_gap_deg": 2.9899630651563482,
+ "artefact_floor_deg": 0.5860145801831838,
+ "MARGINS_AGAINST_THE_ARTEFACT_FLOOR": {
+  "family_mean_gap": {
+   "gap_deg": 2.9899630651563482,
+   "multiple_of_artefact": 5.1021991026600535
+  },
+  "cell_level_gap": {
+   "gap_deg": 1.4918560478057357,
+   "multiple_of_artefact": 2.545766092269228,
+   "artefact_as_fraction_of_gap": 0.39280906562339624
+  },
+  "NOTE": "The title's claim is CELL-LEVEL non-overlap. Against that gap the artefact floor is 39% of the margin, i.e. 2.5x, not the 5.1x that the family-mean gap gives. Both must be reported wherever the 5.1x appears."
+ },
+ "majority_class_baseline": {
+  "n_weakness_cells": 36,
+  "n_total": 59,
+  "baseline": 0.6101694915254238
+ },
+ "dose_response": {
+  "knee_r": -0.9926452731275651,
+  "knee_total_rise_deg": 3.4372209228529638,
+  "ankle_r": -0.9812023742678306,
+  "note": "hyperreflexia family means against DELIVERED gain"
+ },
+ "registered_x080_span": {
+  "effect_deg": 3.5250409970706498,
+  "seed_SD_scale_deg": 0.5114,
+  "in_seed_SD": 6.892923341944955,
+  "note": "the x0.80 spastic-axis span over the THREE REGISTERED rungs. The 15.7 SD figure in FLOOR_CORRECTION_r436 runs to a fourth gain column added after hashing."
+ },
+ "survival_matched_multiples": {
+  "x1.00_deg": 0.628369880399446,
+  "x0.80_deg": 0.8443212066239916,
+  "scale_deg": 0.5114,
+  "in_seed_SD": [
+   1.2287248345706805,
+   1.6509996218693619
+  ],
+  "against_the_sham_floor": [
+   1.072276871000415,
+   1.4407853237372747
+  ],
+  "note": "MIXED_RESULT_r424 lists these under P4 overlapping_pairs. Against the 0.586 deg sham rather than the 0.511 deg seed scale they are 1.07x and 1.44x."
+ },
+ "between_patient_SDs_are_literature_values": {
+  "7.93_and_9.16_deg": "Mendes-Andrade [5], two 17-patient subgroups of one 34-patient cohort",
+  "4.72_deg": "computed by us on the Van Criekinge able-bodied set in PUBLICDATA_VALIDATION_r405; NOT a published figure, and that deposit notes it mixes between-subject and between-limb variance"
+ }
+}

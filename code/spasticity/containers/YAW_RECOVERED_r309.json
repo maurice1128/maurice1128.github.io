@@ -1,0 +1,1657 @@
+{
+ "round": 309,
+ "what": "Net pelvis yaw per gait cycle, recovered for the four arms whose registrations required it (PREREG_matched20_r289.md sec9, PREREG_bandfill_r291.md sec8) and whose per-cell deposits omitted it.",
+ "method_source": "gain_ladder_r264.py measure(), verbatim. GAIN_LADDER_r264.json is the existing deposit using this method. No method invented for this recovery.",
+ "method": "pelvis_rotation in degrees; gait cycles wholly inside [1.00, 9.73] s; drop the last; per-cycle net change v[end]-v[start]; mean, sd (ddof=1), total.",
+ "guard": "the >=91-line history guard (>=601 for r294's 600-generation arm)",
+ "arms": {
+  "r287": {
+   "n_cell_deposits": 5,
+   "n_measured": 3,
+   "n_with_usable_cycles": 3,
+   "yaw_mean_deg_per_cycle": -0.20146787626230642,
+   "yaw_sd_across_cells": 0.7896707862350916,
+   "errors": [],
+   "per_cell": {
+    "R287BF007_s107": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": -0.4863361258036282,
+     "yaw_per_cycle_sd": 0.9503549184270073,
+     "yaw_total": -2.9180167548217693,
+     "per_cycle_values": [
+      0.974314730619966,
+      -1.579186274939575,
+      -0.8348568032851222,
+      -0.9052160205271882,
+      0.3503636917224977,
+      -0.9234360784123474
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R287BF008_s107": {
+     "t_end_s": 7.17,
+     "n_cycles_total": 5,
+     "n_cycles_in_window": 4,
+     "yaw_per_cycle": 1.466370885078315,
+     "yaw_per_cycle_sd": 17.647591203704998,
+     "yaw_total": 5.86548354031326,
+     "per_cycle_values": [
+      7.578340868856859,
+      -2.1669263811847728,
+      21.21135594197918,
+      -20.757286889338005
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 7.17 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R287BF007_s108": {
+     "t_end_s": 9.93,
+     "n_cycles_total": 7,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": 0.6911112417833847,
+     "yaw_per_cycle_sd": 2.5797866410196213,
+     "yaw_total": 4.146667450700308,
+     "per_cycle_values": [
+      3.0872111917239025,
+      4.270197151330512,
+      -1.5672114570213411,
+      -2.2286912314998757,
+      -0.3328884789710074,
+      0.9180502751381177
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 9.93 s reaches the window end 9.73 s."
+    },
+    "R287BF008_s108": {
+     "t_end_s": 8.55,
+     "n_cycles_total": 6,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.5970563999940254,
+     "yaw_per_cycle_sd": 5.2109777044876004,
+     "yaw_total": 2.9852819999701268,
+     "per_cycle_values": [
+      1.6172306725362606,
+      8.971533584341067,
+      -1.0037361133999325,
+      -4.80151810348918,
+      -1.7982280400180883
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 8.55 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R287BF007_s109": {
+     "t_end_s": 16.17,
+     "n_cycles_total": 12,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": -0.8091787447666757,
+     "yaw_per_cycle_sd": 0.5346354769115024,
+     "yaw_total": -4.855072468600055,
+     "per_cycle_values": [
+      -0.2758218825759773,
+      -0.4673616734882131,
+      -1.7006533275073075,
+      -0.7805404043067199,
+      -1.156114239014979,
+      -0.47458094170685783
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 16.17 s reaches the window end 9.73 s."
+    }
+   },
+   "GUARDED_r312": {
+    "guard": "r281: a cell whose t_end is short of 9.73 s is NOT measured",
+    "n_before_guard": 5,
+    "n_after_guard": 3,
+    "n_excluded": 2,
+    "excluded_cells": [
+     [
+      "R287BF008_s107",
+      1.4664,
+      7.17
+     ],
+     [
+      "R287BF008_s108",
+      0.5971,
+      8.55
+     ]
+    ],
+    "yaw_mean_UNGUARDED": 0.2918047312570843,
+    "yaw_mean_GUARDED": -0.20146787626230642,
+    "yaw_sd_GUARDED": 0.7896707862350916,
+    "WHICH_IS_GUARD_CONSISTENT": "yaw_mean_GUARDED. The r281 guard is registered and is applied by BANDFILL_ENDPOINT_r291.json, where these same cells read measured: false. The unguarded mean is retained for comparison and is NOT the guard-consistent figure."
+   },
+   "UNGUARDED_SUPERSEDED": {
+    "n_measured": 5,
+    "n_with_usable_cycles": 5,
+    "yaw_mean_deg_per_cycle": 0.2918047312570843,
+    "yaw_sd_across_cells": 0.9286950156297705,
+    "why_superseded": "Computed with NO t_end guard, so cells that collapsed before the window ends were measured anyway. NOT guard-consistent and NOT the claim. Retained only for comparison."
+   },
+   "n_cells_excluded_by_r281_guard": 2,
+   "cells_excluded_by_r281_guard": [
+    "R287BF008_s107",
+    "R287BF008_s108"
+   ],
+   "live_fields_are_guard_consistent": "n_measured, n_with_usable_cycles, yaw_mean_deg_per_cycle and yaw_sd_across_cells carry the r281-guarded values. n_cell_deposits remains the count of deposits, which is NOT the count of admissible cells.",
+   "unmeasurable_note_REMOVED_AS_FALSE": "The removed note asserted that cells with fewer than 2 whole cycles carry null and that 'the omission is the r281 guard operating, not a measurement failure'. BOTH clauses were false. The guard was NOT operating -- that is defect r312-YAW-NO-GUARD -- and no cell carried null, since n_with_usable_cycles equalled n_measured in every arm, so the note described a mechanism that fired on zero cells."
+  },
+  "r289": {
+   "n_cell_deposits": 12,
+   "n_measured": 12,
+   "n_with_usable_cycles": 12,
+   "yaw_mean_deg_per_cycle": 0.3430126432109699,
+   "yaw_sd_across_cells": 0.16104197844972623,
+   "errors": [],
+   "per_cell": {
+    "R289KV0125_s101": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.48766729774764883,
+     "yaw_per_cycle_sd": 0.8275739723885951,
+     "yaw_total": 2.438336488738244,
+     "per_cycle_values": [
+      -0.13395753250158648,
+      0.6759756066953457,
+      1.856784326680458,
+      0.07121865393476234,
+      -0.03168456607073544
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R289KV0125_s102": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.18096299001411928,
+     "yaw_per_cycle_sd": 0.893570462739421,
+     "yaw_total": 0.9048149500705964,
+     "per_cycle_values": [
+      -0.004755549699586581,
+      1.0243339461348864,
+      1.2001173976810229,
+      -0.6150701930729383,
+      -0.6998106509727879
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R289KV0125_s103": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.6096270940191957,
+     "yaw_per_cycle_sd": 0.6990881325691892,
+     "yaw_total": 3.0481354700959784,
+     "per_cycle_values": [
+      0.9787265056424701,
+      0.961365884450009,
+      1.3522376922882557,
+      0.06846845651813283,
+      -0.3126630688028893
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R289KV0125_s104": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.3854287087845048,
+     "yaw_per_cycle_sd": 0.9344993216938191,
+     "yaw_total": 1.927143543922524,
+     "per_cycle_values": [
+      -0.17228840899583986,
+      0.7272553293595543,
+      1.8803901878398506,
+      -0.17555426842808508,
+      -0.33265929585295595
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R289KV0125_s105": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.3581902952039851,
+     "yaw_per_cycle_sd": 0.8479641395408558,
+     "yaw_total": 1.7909514760199254,
+     "per_cycle_values": [
+      -0.5591495122681724,
+      1.4530782642312818,
+      0.8825268918400067,
+      -0.3893821175709071,
+      0.4038779497877165
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R289KV0125_s106": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.53549781448517,
+     "yaw_per_cycle_sd": 0.7420532443515562,
+     "yaw_total": 2.6774890724258498,
+     "per_cycle_values": [
+      0.9179356835790919,
+      1.1920386927696782,
+      1.0898230221183383,
+      -0.4171705706347524,
+      -0.10513775540650627
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R289KV00625_s101": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.4479498633891801,
+     "yaw_per_cycle_sd": 0.2975064010724946,
+     "yaw_total": 2.2397493169459004,
+     "per_cycle_values": [
+      0.7430689645051647,
+      0.006760901982543643,
+      0.28985934855668205,
+      0.6229197148662315,
+      0.5771403870352785
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R289KV00625_s102": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.24158192473896065,
+     "yaw_per_cycle_sd": 1.0159922857322643,
+     "yaw_total": 1.2079096236948033,
+     "per_cycle_values": [
+      -0.8045473359227007,
+      0.14077573026364298,
+      1.8802183005013084,
+      0.32618487276797836,
+      -0.33472194391542587
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R289KV00625_s103": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.19913721127566894,
+     "yaw_per_cycle_sd": 0.4396076503145074,
+     "yaw_total": 0.9956860563783447,
+     "per_cycle_values": [
+      0.31965315390348614,
+      0.6462390971280545,
+      0.3628541716563518,
+      -0.530100552055039,
+      0.19704018574549131
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R289KV00625_s104": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.39264797700315307,
+     "yaw_per_cycle_sd": 0.27911575331015254,
+     "yaw_total": 1.9632398850157653,
+     "per_cycle_values": [
+      0.4560744049241343,
+      0.7103530744031943,
+      0.0035523383298112776,
+      0.5628164421570077,
+      0.23044362520161776
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R289KV00625_s105": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.14030590487163613,
+     "yaw_per_cycle_sd": 1.2240002362783917,
+     "yaw_total": 0.7015295243581807,
+     "per_cycle_values": [
+      -0.4700545751253262,
+      0.7762432208432397,
+      1.8835987514925794,
+      -0.19085224155807623,
+      -1.297405631294236
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R289KV00625_s106": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.1371546369984163,
+     "yaw_per_cycle_sd": 0.16081496117212435,
+     "yaw_total": 0.6857731849920814,
+     "per_cycle_values": [
+      0.0917305430004447,
+      0.4144776689976375,
+      0.05849899088285859,
+      0.11774282689938431,
+      0.0033231552117563012
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    }
+   },
+   "GUARDED_r312": {
+    "guard": "r281: a cell whose t_end is short of 9.73 s is NOT measured",
+    "n_before_guard": 12,
+    "n_after_guard": 12,
+    "n_excluded": 0,
+    "excluded_cells": [],
+    "yaw_mean_UNGUARDED": 0.3430126432109699,
+    "yaw_mean_GUARDED": 0.3430126432109699,
+    "yaw_sd_GUARDED": 0.16104197844972623,
+    "WHICH_IS_GUARD_CONSISTENT": "yaw_mean_GUARDED. The r281 guard is registered and is applied by BANDFILL_ENDPOINT_r291.json, where these same cells read measured: false. The unguarded mean is retained for comparison and is NOT the guard-consistent figure."
+   },
+   "UNGUARDED_SUPERSEDED": {
+    "n_measured": 12,
+    "n_with_usable_cycles": 12,
+    "yaw_mean_deg_per_cycle": 0.3430126432109699,
+    "yaw_sd_across_cells": 0.16104197844972623,
+    "why_superseded": "Computed with NO t_end guard, so cells that collapsed before the window ends were measured anyway. NOT guard-consistent and NOT the claim. Retained only for comparison."
+   },
+   "n_cells_excluded_by_r281_guard": 0,
+   "cells_excluded_by_r281_guard": [],
+   "live_fields_are_guard_consistent": "n_measured, n_with_usable_cycles, yaw_mean_deg_per_cycle and yaw_sd_across_cells carry the r281-guarded values. n_cell_deposits remains the count of deposits, which is NOT the count of admissible cells.",
+   "unmeasurable_note_REMOVED_AS_FALSE": "The removed note asserted that cells with fewer than 2 whole cycles carry null and that 'the omission is the r281 guard operating, not a measurement failure'. BOTH clauses were false. The guard was NOT operating -- that is defect r312-YAW-NO-GUARD -- and no cell carried null, since n_with_usable_cycles equalled n_measured in every arm, so the note described a mechanism that fired on zero cells."
+  },
+  "r291": {
+   "n_cell_deposits": 60,
+   "n_measured": 37,
+   "n_with_usable_cycles": 37,
+   "yaw_mean_deg_per_cycle": -0.015961045314199403,
+   "yaw_sd_across_cells": 0.6938037142702969,
+   "errors": [],
+   "per_cell": {
+    "R291KV0035_s101": {
+     "t_end_s": 18.74,
+     "n_cycles_total": 14,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 1.0201387491589378,
+     "yaw_per_cycle_sd": 0.6092323684511476,
+     "yaw_total": 5.100693745794689,
+     "per_cycle_values": [
+      0.11109651647586638,
+      1.5889265574567988,
+      0.884795804708725,
+      1.5768142296677334,
+      0.9390606374855652
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 18.74 s reaches the window end 9.73 s."
+    },
+    "R291KV0035_s102": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.7789762295260134,
+     "yaw_per_cycle_sd": 1.0198990944297421,
+     "yaw_total": 3.894881147630067,
+     "per_cycle_values": [
+      0.1795649729939992,
+      0.32532543607528286,
+      2.5724601790004185,
+      0.17965091666326938,
+      0.6378796428970972
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291KV0035_s103": {
+     "t_end_s": 17.77,
+     "n_cycles_total": 13,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 1.217771373264593,
+     "yaw_per_cycle_sd": 0.6089094042716359,
+     "yaw_total": 6.088856866322965,
+     "per_cycle_values": [
+      1.2528868106125701,
+      0.5934123884169935,
+      2.177646421531671,
+      0.8066443614528804,
+      1.25826688430885
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 17.77 s reaches the window end 9.73 s."
+    },
+    "R291KV0035_s104": {
+     "t_end_s": 19.55,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.8458793653478495,
+     "yaw_per_cycle_sd": 0.5458805585153902,
+     "yaw_total": 4.229396826739247,
+     "per_cycle_values": [
+      1.0564768784417256,
+      1.3210114924536258,
+      -0.09048149500705982,
+      1.0538412725841226,
+      0.888548678266833
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 19.55 s reaches the window end 9.73 s."
+    },
+    "R291KV0035_s105": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.9411198478012655,
+     "yaw_per_cycle_sd": 1.0902729642600448,
+     "yaw_total": 4.705599239006327,
+     "per_cycle_values": [
+      -0.2025405805787459,
+      2.158217422698785,
+      -0.08886575402479036,
+      0.9465663846017787,
+      1.8922217663093002
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291KV0035_s106": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.7812921249339324,
+     "yaw_per_cycle_sd": 1.800942808503548,
+     "yaw_total": 3.906460624669662,
+     "per_cycle_values": [
+      0.16764745085528077,
+      0.8055786599539356,
+      3.4501513070495227,
+      -1.5452098776883165,
+      1.0282930844992393
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291KV0070_s101": {
+     "t_end_s": 8.24,
+     "n_cycles_total": 6,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 1.5565143349862485,
+     "yaw_per_cycle_sd": 6.316193999680778,
+     "yaw_total": 7.782571674931242,
+     "per_cycle_values": [
+      5.20501790113211,
+      -7.882220494660394,
+      -1.751130909258336,
+      4.548253569307502,
+      7.66265160841036
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 8.24 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291KV0070_s102": {
+     "t_end_s": 8.34,
+     "n_cycles_total": 5,
+     "n_cycles_in_window": 4,
+     "yaw_per_cycle": 1.9184703952987312,
+     "yaw_per_cycle_sd": 8.589224862414266,
+     "yaw_total": 7.673881581194925,
+     "per_cycle_values": [
+      5.04209735208666,
+      -8.351272393644244,
+      -0.8553686923508064,
+      11.838425315103315
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 8.34 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291KV0070_s103": {
+     "t_end_s": 9.4,
+     "n_cycles_total": 6,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 2.5115948724236716,
+     "yaw_per_cycle_sd": 6.008372390744798,
+     "yaw_total": 12.557974362118358,
+     "per_cycle_values": [
+      2.9707403311297087,
+      -0.6586951995941996,
+      1.6598128958703842,
+      -3.677758791165241,
+      12.263875125877705
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 9.40 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291KV0070_s104": {
+     "t_end_s": 9.52,
+     "n_cycles_total": 7,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": 3.3740825653789774,
+     "yaw_per_cycle_sd": 7.2985803294765565,
+     "yaw_total": 20.244495392273866,
+     "per_cycle_values": [
+      2.4529354533581773,
+      -3.2798797094925436,
+      10.00549322143415,
+      1.8615742538477522,
+      13.874264682340106,
+      -4.669892509213778
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 9.52 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291KV0070_s105": {
+     "t_end_s": 8.26,
+     "n_cycles_total": 5,
+     "n_cycles_in_window": 4,
+     "yaw_per_cycle": 0.4126212857414139,
+     "yaw_per_cycle_sd": 4.235090276020943,
+     "yaw_total": 1.6504851429656555,
+     "per_cycle_values": [
+      3.298529485724053,
+      -4.925213961879972,
+      4.282544391815582,
+      -1.0053747726940072
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 8.26 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291KV0070_s106": {
+     "t_end_s": 8.26,
+     "n_cycles_total": 5,
+     "n_cycles_in_window": 4,
+     "yaw_per_cycle": 3.0225099327087537,
+     "yaw_per_cycle_sd": 6.3372479077261685,
+     "yaw_total": 12.090039730835015,
+     "per_cycle_values": [
+      5.700580557296661,
+      -4.83936769543552,
+      1.25178673164592,
+      9.977040137327954
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 8.26 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291BF005_s152": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": -0.45214391444953816,
+     "yaw_per_cycle_sd": 0.7142523801282189,
+     "yaw_total": -2.260719572247691,
+     "per_cycle_values": [
+      0.47160156117217866,
+      -1.3596288478454426,
+      -0.8505558468717052,
+      -0.5180111425777785,
+      -0.0041252961249433895
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF007_s152": {
+     "t_end_s": 7.11,
+     "n_cycles_total": 5,
+     "n_cycles_in_window": 4,
+     "yaw_per_cycle": -2.147975802110821,
+     "yaw_per_cycle_sd": 17.96153080282045,
+     "yaw_total": -8.591903208443284,
+     "per_cycle_values": [
+      6.64464884591167,
+      -0.6883514950701706,
+      13.169171360496211,
+      -27.717371919780994
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 7.11 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291BF008_s152": {
+     "t_end_s": 15.83,
+     "n_cycles_total": 12,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": -0.822356774054685,
+     "yaw_per_cycle_sd": 1.2724956418164337,
+     "yaw_total": -4.93414064432811,
+     "per_cycle_values": [
+      1.0598573294329956,
+      -1.2297966114687995,
+      -2.5647309783441035,
+      -0.4983013944252761,
+      -1.639576026546365,
+      -0.061592962976561694
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 15.83 s reaches the window end 9.73 s."
+    },
+    "R291BF005_s153": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.13708588206300085,
+     "yaw_per_cycle_sd": 1.4725320100667123,
+     "yaw_total": 0.6854294103150043,
+     "per_cycle_values": [
+      1.8742595394319483,
+      -0.4564181796012132,
+      -1.9551611801044224,
+      1.0992195299584857,
+      0.12352970063020585
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF007_s153": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": -0.22045124125453555,
+     "yaw_per_cycle_sd": 0.7460297147683596,
+     "yaw_total": -1.1022562062726777,
+     "per_cycle_values": [
+      0.3669221720017788,
+      -0.33959208517403816,
+      -1.4659125188422095,
+      0.08502693679741213,
+      0.25129928894437903
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF008_s153": {
+     "t_end_s": 6.75,
+     "n_cycles_total": 4,
+     "n_cycles_in_window": 3,
+     "yaw_per_cycle": 1.7393661758649823,
+     "yaw_per_cycle_sd": 5.012916244144255,
+     "yaw_total": 5.218098527594947,
+     "per_cycle_values": [
+      7.144554522163314,
+      0.8304507578405662,
+      -2.7569067524089332
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 6.75 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291BF005_s154": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": -0.1662608929910622,
+     "yaw_per_cycle_sd": 0.9211462905545071,
+     "yaw_total": -0.831304464955311,
+     "per_cycle_values": [
+      0.6575836614716462,
+      -1.499144070959801,
+      -0.4503448269728274,
+      -0.2910052641469445,
+      0.7516060356526157
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF007_s154": {
+     "t_end_s": 7.61,
+     "n_cycles_total": 5,
+     "n_cycles_in_window": 4,
+     "yaw_per_cycle": 0.46505551836281134,
+     "yaw_per_cycle_sd": 1.5729506352856972,
+     "yaw_total": 1.8602220734512454,
+     "per_cycle_values": [
+      -0.8092455898427744,
+      2.3282712962936127,
+      1.2083106941513932,
+      -0.8671143271509862
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 7.61 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291BF008_s154": {
+     "t_end_s": 8.75,
+     "n_cycles_total": 6,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": -0.43749911320599394,
+     "yaw_per_cycle_sd": 2.2892293283623797,
+     "yaw_total": -2.1874955660299698,
+     "per_cycle_values": [
+      0.03311696055856217,
+      -1.1587498448725775,
+      3.260359037412437,
+      -1.6112146156873894,
+      -2.711007103441002
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 8.75 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291BF005_s155": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.24766673652324975,
+     "yaw_per_cycle_sd": 0.5072692583553674,
+     "yaw_total": 1.2383336826162488,
+     "per_cycle_values": [
+      -0.29421382779967686,
+      0.12828525032979066,
+      -0.14868254783644907,
+      0.7262813011078322,
+      0.8266635068147519
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF007_s155": {
+     "t_end_s": 7.5,
+     "n_cycles_total": 5,
+     "n_cycles_in_window": 4,
+     "yaw_per_cycle": 1.2716225305133488,
+     "yaw_per_cycle_sd": 4.4151190437118775,
+     "yaw_total": 5.086490122053395,
+     "per_cycle_values": [
+      4.820523113553668,
+      2.6393931086276012,
+      -5.182179803418195,
+      2.8087537032903205
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 7.50 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291BF008_s155": {
+     "t_end_s": 16.75,
+     "n_cycles_total": 13,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": -0.6037160794327626,
+     "yaw_per_cycle_sd": 1.1283583887173108,
+     "yaw_total": -3.622296476596576,
+     "per_cycle_values": [
+      1.4954771410709622,
+      -1.4802364637204821,
+      -1.5083113956818934,
+      -0.30383951875787574,
+      -1.127065278801842,
+      -0.6983209607054448
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 16.75 s reaches the window end 9.73 s."
+    },
+    "R291BF005_s156": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": 0.13572415236990634,
+     "yaw_per_cycle_sd": 1.143089048044051,
+     "yaw_total": 0.8143449142194381,
+     "per_cycle_values": [
+      0.7906817572805362,
+      -1.385984906421461,
+      -0.36732324245837233,
+      -0.6572971825740801,
+      1.7499849936680736,
+      0.6842834947247418
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF007_s156": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": -0.6244896192248891,
+     "yaw_per_cycle_sd": 1.111925673196764,
+     "yaw_total": -3.1224480961244456,
+     "per_cycle_values": [
+      0.5083281558400667,
+      -1.4774862663038544,
+      -1.7746221788586976,
+      0.595876106936057,
+      -0.9745439137380174
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF008_s156": {
+     "t_end_s": 7.2,
+     "n_cycles_total": 4,
+     "n_cycles_in_window": 3,
+     "yaw_per_cycle": 0.29956143388756623,
+     "yaw_per_cycle_sd": 7.098673742321969,
+     "yaw_total": 0.8986843016626986,
+     "per_cycle_values": [
+      5.91355469932474,
+      2.6649412967124855,
+      -7.679811694374528
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 7.20 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291BF005_s157": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": -0.3894967091299339,
+     "yaw_per_cycle_sd": 0.800884225265176,
+     "yaw_total": -1.9474835456496695,
+     "per_cycle_values": [
+      0.3331176620890606,
+      -1.3804845115882056,
+      -1.130044659336523,
+      0.16002711218003718,
+      0.06990085100596133
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF007_s157": {
+     "t_end_s": 18.8,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": -0.3621952701919495,
+     "yaw_per_cycle_sd": 1.4757294821652622,
+     "yaw_total": -2.173171621151697,
+     "per_cycle_values": [
+      1.7725595307962276,
+      -2.0078732972564577,
+      -1.6873607066602734,
+      0.1940608052108086,
+      -1.093719135125225,
+      0.6491611818832226
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 18.80 s reaches the window end 9.73 s."
+    },
+    "R291BF008_s157": {
+     "t_end_s": 7.1,
+     "n_cycles_total": 5,
+     "n_cycles_in_window": 4,
+     "yaw_per_cycle": 0.7524797962901881,
+     "yaw_per_cycle_sd": 5.251810192291147,
+     "yaw_total": 3.0099191851607525,
+     "per_cycle_values": [
+      7.016040088715468,
+      -0.017475212751489444,
+      1.7359360685314655,
+      -5.724581759334692
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 7.10 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291BF005_s158": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.22885080253115325,
+     "yaw_per_cycle_sd": 1.1216882558512236,
+     "yaw_total": 1.1442540126557663,
+     "per_cycle_values": [
+      1.1569163799281572,
+      -1.6913714112261893,
+      0.3564370443508853,
+      0.4441568827854123,
+      0.8781151168175008
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF007_s158": {
+     "t_end_s": 18.63,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": 0.24096695003885346,
+     "yaw_per_cycle_sd": 1.8524690264009105,
+     "yaw_total": 1.4458017002331207,
+     "per_cycle_values": [
+      2.477584097704707,
+      -2.7742043482439325,
+      0.6188517145208028,
+      0.5550815119227401,
+      1.4715275052344943,
+      -0.9030387809056908
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 18.63 s reaches the window end 9.73 s."
+    },
+    "R291BF008_s158": {
+     "t_end_s": 17.56,
+     "n_cycles_total": 13,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": -0.8609607604312828,
+     "yaw_per_cycle_sd": 0.7837899256855342,
+     "yaw_total": -4.304803802156414,
+     "per_cycle_values": [
+      0.017188733853924276,
+      -0.8871105542010529,
+      -2.004435550485672,
+      -1.1247734476213154,
+      -0.3056729837022978
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 17.56 s reaches the window end 9.73 s."
+    },
+    "R291BF005_s159": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": -0.548228936692977,
+     "yaw_per_cycle_sd": 1.3284764487816345,
+     "yaw_total": -2.741144683464885,
+     "per_cycle_values": [
+      1.265549177884962,
+      -1.4121690776589393,
+      -1.6835218894328978,
+      0.47108589915656296,
+      -1.3820887934145727
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF007_s159": {
+     "t_end_s": 6.67,
+     "n_cycles_total": 4,
+     "n_cycles_in_window": 3,
+     "yaw_per_cycle": -2.557091541075693,
+     "yaw_per_cycle_sd": 6.271129145491435,
+     "yaw_total": -7.671274623227079,
+     "per_cycle_values": [
+      -1.155655872778869,
+      2.8947546683394574,
+      -9.410373418787668
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 6.67 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291BF008_s159": {
+     "t_end_s": 7.36,
+     "n_cycles_total": 4,
+     "n_cycles_in_window": 3,
+     "yaw_per_cycle": 9.473761649522308,
+     "yaw_per_cycle_sd": 11.066821960796373,
+     "yaw_total": 28.42128494856692,
+     "per_cycle_values": [
+      7.183114581775618,
+      -0.2684880227983033,
+      21.506658389589607
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 7.36 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291BF005_s160": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": 0.0569424555394186,
+     "yaw_per_cycle_sd": 1.2476443324547333,
+     "yaw_total": 0.34165473323651163,
+     "per_cycle_values": [
+      0.9939098872134391,
+      -0.754929190864372,
+      -1.9870176335136946,
+      0.9407394038252992,
+      -0.03850276383279194,
+      1.187455030408632
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF007_s160": {
+     "t_end_s": 19.61,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": -0.0035045918468836015,
+     "yaw_per_cycle_sd": 1.9719541516960122,
+     "yaw_total": -0.02102755108130161,
+     "per_cycle_values": [
+      0.18535184672482252,
+      -0.809302885622289,
+      -2.0377816941622875,
+      1.968912167187563,
+      -1.9552757716634481,
+      2.6270687864543376
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 19.61 s reaches the window end 9.73 s."
+    },
+    "R291BF008_s160": {
+     "t_end_s": 15.97,
+     "n_cycles_total": 12,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": -0.3861831032147605,
+     "yaw_per_cycle_sd": 1.4380845295111102,
+     "yaw_total": -2.317098619288563,
+     "per_cycle_values": [
+      0.4410056149121946,
+      -0.3617655518456022,
+      -1.7158367090782747,
+      -1.5527156248045326,
+      2.044599891924342,
+      -1.1723862403966905
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 15.97 s reaches the window end 9.73 s."
+    },
+    "R291BF005_s161": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.16061152913107257,
+     "yaw_per_cycle_sd": 0.8327200442590603,
+     "yaw_total": 0.8030576456553629,
+     "per_cycle_values": [
+      -0.09803307874688372,
+      0.009511099399171385,
+      -1.0262247068588177,
+      0.9794713507761426,
+      0.9383329810857504
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF007_s161": {
+     "t_end_s": 8.99,
+     "n_cycles_total": 6,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.7768161786383703,
+     "yaw_per_cycle_sd": 4.175780413265831,
+     "yaw_total": 3.884080893191851,
+     "per_cycle_values": [
+      1.5640028933686079,
+      6.7895957089238665,
+      -2.143137173530942,
+      1.74559040737942,
+      -4.071970942949102
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 8.99 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291BF008_s161": {
+     "t_end_s": 9.29,
+     "n_cycles_total": 7,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": 0.3656330169627351,
+     "yaw_per_cycle_sd": 3.3812083412006033,
+     "yaw_total": 2.1937981017764105,
+     "per_cycle_values": [
+      3.0291132712976356,
+      5.482323744397478,
+      -1.4914435181932406,
+      -0.26201359971332483,
+      -0.5464871449957798,
+      -4.017694651016358
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 9.29 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291BF005_s162": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": -0.5887943485882392,
+     "yaw_per_cycle_sd": 0.8930314563193209,
+     "yaw_total": -2.943971742941196,
+     "per_cycle_values": [
+      0.544768271610387,
+      -1.8253862395072886,
+      -0.0821048520422476,
+      -0.653343773787677,
+      -0.9279051492143697
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF007_s162": {
+     "t_end_s": 15.91,
+     "n_cycles_total": 12,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": -0.7872325513538488,
+     "yaw_per_cycle_sd": 0.9252784454651835,
+     "yaw_total": -3.936162756769244,
+     "per_cycle_values": [
+      0.5608110898740506,
+      -1.248589627149089,
+      -1.572883739193136,
+      -0.21640615922091122,
+      -1.4590943210801584
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 15.91 s reaches the window end 9.73 s."
+    },
+    "R291BF008_s162": {
+     "t_end_s": 7.58,
+     "n_cycles_total": 5,
+     "n_cycles_in_window": 4,
+     "yaw_per_cycle": 2.36245968792907,
+     "yaw_per_cycle_sd": 2.9202481760877337,
+     "yaw_total": 9.44983875171628,
+     "per_cycle_values": [
+      3.1196406029283086,
+      5.339726008345316,
+      -1.6463827651525174,
+      2.636854905595172
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 7.58 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291BF005_s163": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": -0.5247147487808078,
+     "yaw_per_cycle_sd": 0.7645241068345063,
+     "yaw_total": -2.623573743904039,
+     "per_cycle_values": [
+      0.07545854161873145,
+      -0.6838824242681518,
+      -1.6360809839960648,
+      0.30676160351304027,
+      -0.6858304807715943
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF007_s163": {
+     "t_end_s": 8.58,
+     "n_cycles_total": 6,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 7.697115019787479,
+     "yaw_per_cycle_sd": 10.010646427095933,
+     "yaw_total": 38.485575098937396,
+     "per_cycle_values": [
+      0.7242186530453587,
+      3.4784840700187427,
+      -1.2745446152685176,
+      22.811913542677136,
+      12.745503448464676
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 8.58 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291BF008_s163": {
+     "t_end_s": 14.72,
+     "n_cycles_total": 11,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": -0.4520637003582193,
+     "yaw_per_cycle_sd": 0.8949455743957601,
+     "yaw_total": -2.712382202149316,
+     "per_cycle_values": [
+      0.8280386055230657,
+      -1.494560408598753,
+      -1.3967565129699189,
+      -0.5955896280384927,
+      0.01993893127055202,
+      -0.07345318933576905
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 14.72 s reaches the window end 9.73 s."
+    },
+    "R291BF005_s164": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.36341567029557886,
+     "yaw_per_cycle_sd": 0.7655437231692027,
+     "yaw_total": 1.8170783514778943,
+     "per_cycle_values": [
+      0.22987066740648743,
+      -0.08920952870187016,
+      0.5317621296609172,
+      1.5738004716653453,
+      -0.42914538855298545
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF007_s164": {
+     "t_end_s": 9.76,
+     "n_cycles_total": 7,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": 2.3058285394583393,
+     "yaw_per_cycle_sd": 9.926284401472563,
+     "yaw_total": 13.834971236750036,
+     "per_cycle_values": [
+      6.7694963494706775,
+      0.16879336644554055,
+      18.021069642911243,
+      -4.922566896866467,
+      -10.53327902399686,
+      4.3314577987859
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 9.76 s reaches the window end 9.73 s."
+    },
+    "R291BF008_s164": {
+     "t_end_s": 7.13,
+     "n_cycles_total": 4,
+     "n_cycles_in_window": 3,
+     "yaw_per_cycle": 0.19259021353664027,
+     "yaw_per_cycle_sd": 7.0374542017892745,
+     "yaw_total": 0.5777706406099208,
+     "per_cycle_values": [
+      4.798693421559182,
+      3.687264160986463,
+      -7.908186941935724
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 7.13 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291BF005_s165": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.04418650516048892,
+     "yaw_per_cycle_sd": 1.293032592863524,
+     "yaw_total": 0.2209325258024446,
+     "per_cycle_values": [
+      1.0597427378739699,
+      -1.1527337880237045,
+      -0.1953786081396096,
+      -1.1732456770893886,
+      1.6825478611811775
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF007_s165": {
+     "t_end_s": 17.08,
+     "n_cycles_total": 13,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": -0.23674616094805606,
+     "yaw_per_cycle_sd": 1.3690420013104097,
+     "yaw_total": -1.1837308047402804,
+     "per_cycle_values": [
+      -1.1275236450379467,
+      0.266883740971938,
+      -1.9832361120658302,
+      1.579587345396165,
+      0.08055786599539339
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 17.08 s reaches the window end 9.73 s."
+    },
+    "R291BF008_s165": {
+     "t_end_s": 8.14,
+     "n_cycles_total": 6,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 3.1399840424022214,
+     "yaw_per_cycle_sd": 5.134729045806816,
+     "yaw_total": 15.699920212011106,
+     "per_cycle_values": [
+      0.36004667846020766,
+      9.990092115901035,
+      -1.2073366658996707,
+      -0.7134413169189497,
+      7.270559400468484
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 8.14 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291BF005_s166": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.09239517404279632,
+     "yaw_per_cycle_sd": 1.8320584357033707,
+     "yaw_total": 0.46197587021398157,
+     "per_cycle_values": [
+      0.14524480106566173,
+      -1.2965461946015377,
+      -2.081498373930769,
+      2.3987451050947044,
+      1.296030532585922
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF007_s166": {
+     "t_end_s": 7.13,
+     "n_cycles_total": 4,
+     "n_cycles_in_window": 3,
+     "yaw_per_cycle": 2.9600508485318837,
+     "yaw_per_cycle_sd": 5.193216343146345,
+     "yaw_total": 8.880152545595651,
+     "per_cycle_values": [
+      3.516356580276886,
+      7.85271889778911,
+      -2.4889229324703446
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 7.13 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    },
+    "R291BF008_s166": {
+     "t_end_s": 17.04,
+     "n_cycles_total": 13,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": -0.5322586930833637,
+     "yaw_per_cycle_sd": 1.2206175110768396,
+     "yaw_total": -3.1935521585001823,
+     "per_cycle_values": [
+      0.2464291476857685,
+      -1.1220232502046912,
+      -2.2283474568227977,
+      1.2740862490324112,
+      -1.0761866265942253,
+      -0.28751022159664785
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 17.04 s reaches the window end 9.73 s."
+    },
+    "R291BF005_s167": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 15,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": -0.7706626119186648,
+     "yaw_per_cycle_sd": 0.6554219622507769,
+     "yaw_total": -3.853313059593324,
+     "per_cycle_values": [
+      -0.18603939607897857,
+      -0.4875870836563294,
+      -1.8853749206574868,
+      -0.7551010782029106,
+      -0.5392105809976186
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R291BF007_s167": {
+     "t_end_s": 13.05,
+     "n_cycles_total": 10,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": -0.8569500558653675,
+     "yaw_per_cycle_sd": 0.4566462656870883,
+     "yaw_total": -4.284750279326838,
+     "per_cycle_values": [
+      -0.33850346536329035,
+      -1.4654541526061085,
+      -1.0934326562276624,
+      -0.9008042455046787,
+      -0.486555759625098
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 13.05 s reaches the window end 9.73 s."
+    },
+    "R291BF008_s167": {
+     "t_end_s": 7.03,
+     "n_cycles_total": 4,
+     "n_cycles_in_window": 3,
+     "yaw_per_cycle": 0.10139443114498488,
+     "yaw_per_cycle_sd": 6.744760583017893,
+     "yaw_total": 0.30418329343495465,
+     "per_cycle_values": [
+      5.464069309044609,
+      2.31117996526486,
+      -7.471065980874514
+     ],
+     "guard_admissible": false,
+     "guard_reason": "r281 guard: t_end_s 7.03 s is short of the registered window end 9.73 s, so this cell's window was truncated by its own collapse and it is NOT admissible. yaw_per_cycle below is retained and readable but must NOT be used."
+    }
+   },
+   "GUARDED_r312": {
+    "guard": "r281: a cell whose t_end is short of 9.73 s is NOT measured",
+    "n_before_guard": 60,
+    "n_after_guard": 37,
+    "n_excluded": 23,
+    "excluded_cells": [
+     [
+      "R291KV0070_s101",
+      1.5565,
+      8.24
+     ],
+     [
+      "R291KV0070_s102",
+      1.9185,
+      8.34
+     ],
+     [
+      "R291KV0070_s103",
+      2.5116,
+      9.4
+     ],
+     [
+      "R291KV0070_s104",
+      3.3741,
+      9.52
+     ],
+     [
+      "R291KV0070_s105",
+      0.4126,
+      8.26
+     ],
+     [
+      "R291KV0070_s106",
+      3.0225,
+      8.26
+     ],
+     [
+      "R291BF007_s152",
+      -2.148,
+      7.11
+     ],
+     [
+      "R291BF008_s153",
+      1.7394,
+      6.75
+     ],
+     [
+      "R291BF007_s154",
+      0.4651,
+      7.61
+     ],
+     [
+      "R291BF008_s154",
+      -0.4375,
+      8.75
+     ],
+     [
+      "R291BF007_s155",
+      1.2716,
+      7.5
+     ],
+     [
+      "R291BF008_s156",
+      0.2996,
+      7.2
+     ],
+     [
+      "R291BF008_s157",
+      0.7525,
+      7.1
+     ],
+     [
+      "R291BF007_s159",
+      -2.5571,
+      6.67
+     ],
+     [
+      "R291BF008_s159",
+      9.4738,
+      7.36
+     ],
+     [
+      "R291BF007_s161",
+      0.7768,
+      8.99
+     ],
+     [
+      "R291BF008_s161",
+      0.3656,
+      9.29
+     ],
+     [
+      "R291BF008_s162",
+      2.3625,
+      7.58
+     ],
+     [
+      "R291BF007_s163",
+      7.6971,
+      8.58
+     ],
+     [
+      "R291BF008_s164",
+      0.1926,
+      7.13
+     ],
+     [
+      "R291BF008_s165",
+      3.14,
+      8.14
+     ],
+     [
+      "R291BF007_s166",
+      2.9601,
+      7.13
+     ],
+     [
+      "R291BF008_s167",
+      0.1014,
+      7.03
+     ]
+    ],
+    "yaw_mean_UNGUARDED": 0.6443426466149081,
+    "yaw_mean_GUARDED": -0.015961045314199403,
+    "yaw_sd_GUARDED": 0.6938037142702969,
+    "WHICH_IS_GUARD_CONSISTENT": "yaw_mean_GUARDED. The r281 guard is registered and is applied by BANDFILL_ENDPOINT_r291.json, where these same cells read measured: false. The unguarded mean is retained for comparison and is NOT the guard-consistent figure."
+   },
+   "UNGUARDED_SUPERSEDED": {
+    "n_measured": 60,
+    "n_with_usable_cycles": 60,
+    "yaw_mean_deg_per_cycle": 0.6443426466149081,
+    "yaw_sd_across_cells": 1.9150294865082085,
+    "why_superseded": "Computed with NO t_end guard, so cells that collapsed before the window ends were measured anyway. NOT guard-consistent and NOT the claim. Retained only for comparison."
+   },
+   "n_cells_excluded_by_r281_guard": 23,
+   "cells_excluded_by_r281_guard": [
+    "R291KV0070_s101",
+    "R291KV0070_s102",
+    "R291KV0070_s103",
+    "R291KV0070_s104",
+    "R291KV0070_s105",
+    "R291KV0070_s106",
+    "R291BF007_s152",
+    "R291BF008_s153",
+    "R291BF007_s154",
+    "R291BF008_s154",
+    "R291BF007_s155",
+    "R291BF008_s156",
+    "R291BF008_s157",
+    "R291BF007_s159",
+    "R291BF008_s159",
+    "R291BF007_s161",
+    "R291BF008_s161",
+    "R291BF008_s162",
+    "R291BF007_s163",
+    "R291BF008_s164",
+    "R291BF008_s165",
+    "R291BF007_s166",
+    "R291BF008_s167"
+   ],
+   "live_fields_are_guard_consistent": "n_measured, n_with_usable_cycles, yaw_mean_deg_per_cycle and yaw_sd_across_cells carry the r281-guarded values. n_cell_deposits remains the count of deposits, which is NOT the count of admissible cells.",
+   "unmeasurable_note_REMOVED_AS_FALSE": "The removed note asserted that cells with fewer than 2 whole cycles carry null and that 'the omission is the r281 guard operating, not a measurement failure'. BOTH clauses were false. The guard was NOT operating -- that is defect r312-YAW-NO-GUARD -- and no cell carried null, since n_with_usable_cycles equalled n_measured in every arm, so the note described a mechanism that fired on zero cells."
+  },
+  "r294": {
+   "n_cell_deposits": 2,
+   "n_measured": 2,
+   "n_with_usable_cycles": 2,
+   "yaw_mean_deg_per_cycle": 0.2907140106010869,
+   "yaw_sd_across_cells": 0.15551388808060745,
+   "errors": [],
+   "per_cell": {
+    "R294FAST_s101": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 16,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": 0.40067893543157024,
+     "yaw_per_cycle_sd": 0.9256208942510141,
+     "yaw_total": 2.4040736125894213,
+     "per_cycle_values": [
+      1.8423457902431633,
+      -0.8843030610049123,
+      1.0017594090067306,
+      0.18008063500961669,
+      0.13722339193383348,
+      0.12696744740098964
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    },
+    "R294FAST_s102": {
+     "t_end_s": 20.0,
+     "n_cycles_total": 16,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": 0.18074908577060356,
+     "yaw_per_cycle_sd": 1.7605941894292296,
+     "yaw_total": 1.0844945146236213,
+     "per_cycle_values": [
+      1.0741239785317536,
+      -1.9420977423754398,
+      -0.0418832148240611,
+      1.9054284434870645,
+      -1.8440073678490414,
+      1.9329304176533455
+     ],
+     "guard_admissible": true,
+     "guard_reason": "r281 guard: t_end_s 20.00 s reaches the window end 9.73 s."
+    }
+   },
+   "RESOLVER_FIX_r309": "The first pass keyed on a prefix field that r294 deposits do not carry; they carry result_dir. Fixed by resolving the tag from result_dir.",
+   "DUPLICATE_TWIN_r294_s102": {
+    "finding": "R294FAST_s102 has TWO directories on disk: the bare tag at 551 history lines and \"... (1)\" at 601. The deposit result_dir points at the 601-line copy, which is the COMPLETE run, so both r294 cells are measured from complete runs and the >=601 guard passed legitimately.",
+    "the_551_twin": "The 551-line directory is the orphan left by the 22:17 interruption. NO deposit references it. It is the SO-26 pattern on disk: a killed cell leaving a short-history twin that sorts ahead of the complete copy.",
+    "why_tag_resolution_would_fail": "A tag-based resolver using assert len(g)==1 CANNOT resolve R294FAST_s102: two directories match the tag and both carry a history.txt. Resolution must go through the deposit result_dir, not the tag, for this arm.",
+    "CORRECTION": "An earlier note in this file claimed s102 was EXCLUDED by the guard. That was false -- written from a shell line count that split the directory name on the space in \"(1)\" and read the wrong file. Both cells are recovered."
+   },
+   "GUARDED_r312": {
+    "guard": "r281: a cell whose t_end is short of 9.73 s is NOT measured",
+    "n_before_guard": 2,
+    "n_after_guard": 2,
+    "n_excluded": 0,
+    "excluded_cells": [],
+    "yaw_mean_UNGUARDED": 0.2907140106010869,
+    "yaw_mean_GUARDED": 0.2907140106010869,
+    "yaw_sd_GUARDED": 0.15551388808060745,
+    "WHICH_IS_GUARD_CONSISTENT": "yaw_mean_GUARDED. The r281 guard is registered and is applied by BANDFILL_ENDPOINT_r291.json, where these same cells read measured: false. The unguarded mean is retained for comparison and is NOT the guard-consistent figure."
+   },
+   "UNGUARDED_SUPERSEDED": {
+    "n_measured": 2,
+    "n_with_usable_cycles": 2,
+    "yaw_mean_deg_per_cycle": 0.2907140106010869,
+    "yaw_sd_across_cells": 0.15551388808060745,
+    "why_superseded": "Computed with NO t_end guard, so cells that collapsed before the window ends were measured anyway. NOT guard-consistent and NOT the claim. Retained only for comparison."
+   },
+   "n_cells_excluded_by_r281_guard": 0,
+   "cells_excluded_by_r281_guard": [],
+   "live_fields_are_guard_consistent": "n_measured, n_with_usable_cycles, yaw_mean_deg_per_cycle and yaw_sd_across_cells carry the r281-guarded values. n_cell_deposits remains the count of deposits, which is NOT the count of admissible cells.",
+   "unmeasurable_note_REMOVED_AS_FALSE": "The removed note asserted that cells with fewer than 2 whole cycles carry null and that 'the omission is the r281 guard operating, not a measurement failure'. BOTH clauses were false. The guard was NOT operating -- that is defect r312-YAW-NO-GUARD -- and no cell carried null, since n_with_usable_cycles equalled n_measured in every arm, so the note described a mechanism that fired on zero cells."
+  }
+ },
+ "written_at": "2026-08-18T02:46:09",
+ "GUARD_DEFECT_r312": {
+  "id": "r312-YAW-NO-GUARD",
+  "finding": "YAW_RECOVERED_r309.json applied NO t_end guard. gain_ladder_r264.py measure() was copied verbatim for the yaw arithmetic, but the r281 admissibility guard that governs which CELLS may be measured was not carried across with it.",
+  "consequence": "Cells that collapsed before the window ends were measured anyway. On r291 the six KV 0.070 cells at 8.24-9.52 s carry the arm's largest yaw values and pull the mean upward.",
+  "same_cells_elsewhere": "Those six are measured: false in BANDFILL_ENDPOINT_r291.json under the same registered guard, so the corpus was internally inconsistent on the admissibility of identical cells.",
+  "not_a_wording_fix": "This changes a deposited number and is filed as a measurement defect, not as an annotation."
+ },
+ "LIVE_FIELD_POLICY_r313": "The live field carries the guard-consistent, registration-consistent value, ALWAYS. Everything else is explicitly subordinate. 'Deposit both' is not neutral: whichever value sits in the conventional field IS the claim, whatever a subordinate block says. This file previously carried the unguarded mean in the obvious field with the guarded one underneath, so a reader taking yaw_mean_deg_per_cycle for r291 got +0.6443 where the guard-consistent value is -0.0160 -- a sign flip. Inverted at r313.",
+ "PER_CELL_GUARD_MARKERS_r320": {
+  "why": "The r313 inversion made the AGGREGATE fields guard-consistent but did not reach per_cell. A per_cell block exists to be looked up cell by cell -- that is its only use -- and it was the one path through this file that still returned unguarded values with nothing to warn the reader.",
+  "what_was_added": "guard_admissible (true/false) and guard_reason on EVERY cell record. The true markers are added so that ABSENCE of the key never has to be interpreted.",
+  "no_value_deleted": "Every yaw_per_cycle, yaw_per_cycle_sd, yaw_total and per_cycle_values is retained unchanged. Inadmissible cells stay readable and stop being usable.",
+  "counts": {
+   "records_total": 79,
+   "guard_admissible_false": 25,
+   "guard_admissible_true": 54,
+   "records_with_t_end_below_threshold": 25
+  },
+  "consistency_with_GUARD_DEFECT_r312": "GUARD_DEFECT_r312 in this file states the inadmissible cells carry the arm's largest yaw values and pull the mean upward. Those are exactly the records now marked false."
+ }
+}

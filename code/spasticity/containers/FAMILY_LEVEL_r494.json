@@ -1,0 +1,148 @@
+{
+  "id": "FAMILY_LEVEL_r494",
+  "why": "The manuscript's strongest inferential statements had no container. A cold reader reproduced them from family means and they were correct, but nothing on disk computed them. This script does.",
+  "unit_of_analysis": "lesion family (cells within a family share an optimisation lineage)",
+  "families": {
+    "R151S": {
+      "n_cells": 6,
+      "mean_knee_ic_deg": -9.931759282778765
+    },
+    "R393SPg070": {
+      "n_cells": 6,
+      "mean_knee_ic_deg": -11.280657267741182
+    },
+    "R393SPg100": {
+      "n_cells": 4,
+      "mean_knee_ic_deg": -12.643271066544314
+    },
+    "R396SPg110": {
+      "n_cells": 4,
+      "mean_knee_ic_deg": -13.199486557436584
+    },
+    "R396SPg120": {
+      "n_cells": 3,
+      "mean_knee_ic_deg": -13.368980205631729
+    },
+    "R151W": {
+      "n_cells": 6,
+      "mean_knee_ic_deg": -5.844344835419707
+    },
+    "R174W870": {
+      "n_cells": 6,
+      "mean_knee_ic_deg": -6.324527203517698
+    },
+    "R174W892": {
+      "n_cells": 6,
+      "mean_knee_ic_deg": -6.512070422822962
+    },
+    "R169W090": {
+      "n_cells": 6,
+      "mean_knee_ic_deg": -6.639607772244177
+    },
+    "R174W915": {
+      "n_cells": 6,
+      "mean_knee_ic_deg": -6.689202235046975
+    },
+    "R169W095": {
+      "n_cells": 6,
+      "mean_knee_ic_deg": -6.941796217622417
+    }
+  },
+  "arm_means_deg": {
+    "hyperreflexia": -12.084830876026516,
+    "weakness": -6.491924781112323
+  },
+  "difference_deg": -5.592906094914192,
+  "welch": {
+    "se": 0.6693167566183144,
+    "df": 4.4481805471355695,
+    "t_crit_0.975": 2.6695244858907823,
+    "ci95_deg": [
+      -7.379663565523783,
+      -3.8061486243046008
+    ]
+  },
+  "permutation": {
+    "design": "exhaustive, C(11,5)",
+    "n_splits": 462,
+    "n_at_least_as_extreme": 1,
+    "p": 0.0021645021645021645,
+    "resolution_floor": 0.0021645021645021645,
+    "note": "p cannot go below the floor; this is the design's resolution, not strength"
+  },
+  "leave_one_family_out": {
+    "cells_correct": 58,
+    "cells_total": 59,
+    "accuracy": 0.9830508474576272,
+    "families_all_correct": 10,
+    "families_total": 11,
+    "per_family": {
+      "R151S": {
+        "n_cells": 6,
+        "correct": 5,
+        "threshold_deg": -9.557511777725388,
+        "all_correct": false
+      },
+      "R393SPg070": {
+        "n_cells": 6,
+        "correct": 6,
+        "threshold_deg": -9.388899529605085,
+        "all_correct": true
+      },
+      "R393SPg100": {
+        "n_cells": 4,
+        "correct": 4,
+        "threshold_deg": -9.218572804754695,
+        "all_correct": true
+      },
+      "R396SPg110": {
+        "n_cells": 4,
+        "correct": 4,
+        "threshold_deg": -9.149045868393161,
+        "all_correct": true
+      },
+      "R396SPg120": {
+        "n_cells": 3,
+        "correct": 3,
+        "threshold_deg": -9.127859162368768,
+        "all_correct": true
+      },
+      "R151W": {
+        "n_cells": 6,
+        "correct": 6,
+        "threshold_deg": -9.35313582313868,
+        "all_correct": true
+      },
+      "R174W870": {
+        "n_cells": 6,
+        "correct": 6,
+        "threshold_deg": -9.305117586328882,
+        "all_correct": true
+      },
+      "R174W892": {
+        "n_cells": 6,
+        "correct": 6,
+        "threshold_deg": -9.286363264398355,
+        "all_correct": true
+      },
+      "R169W090": {
+        "n_cells": 6,
+        "correct": 6,
+        "threshold_deg": -9.273609529456234,
+        "all_correct": true
+      },
+      "R174W915": {
+        "n_cells": 6,
+        "correct": 6,
+        "threshold_deg": -9.268650083175954,
+        "all_correct": true
+      },
+      "R169W095": {
+        "n_cells": 6,
+        "correct": 6,
+        "threshold_deg": -9.24339068491841,
+        "all_correct": true
+      }
+    }
+  }
+}

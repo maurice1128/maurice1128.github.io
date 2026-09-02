@@ -1,0 +1,74 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Analysis code and containers &mdash; hyperreflexia versus weakness</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head><body><div class="wrap">
+
+<header>
+  <h1>Analysis code and containers</h1>
+  <p class="lede">Supporting material for <i>Distinguishing graded plantarflexor hyperreflexia from
+  graded dorsiflexor weakness in simulated post-stroke gait: a search over 81 sagittal kinematic
+  variables</i>. Manuscript in preparation.</p>
+  <div class="links">
+    <a href="../../projects/spasticity.html">[Project page]</a>
+    <a href="../../assets/papers/hyperreflexia_vs_weakness.pdf">[Paper (PDF)]</a>
+    <a href="https://github.com/maurice1128/maurice1128.github.io/tree/main/code/spasticity">[Browse on GitHub]</a>
+  </div>
+</header>
+
+<hr>
+<section>
+<h2>What is here</h2>
+<table>
+<tr><th>Directory</th><th>Files</th><th>Contents</th></tr>
+<tr><td><a href="https://github.com/maurice1128/maurice1128.github.io/tree/main/code/spasticity/scripts">scripts/</a></td><td>396</td>
+<td>Python analysis scripts. Every statistic in the manuscript and supplement is produced by one of
+these. Files named <code>fix_rNNN.py</code> are the edits that repaired defects found in adversarial
+review, kept deliberately as part of the record.</td></tr>
+<tr><td><a href="https://github.com/maurice1128/maurice1128.github.io/tree/main/code/spasticity/containers">containers/</a></td><td>818</td>
+<td>JSON result containers. Each holds the numbers one script produced, the inputs it read, and a
+statement of why it was run.</td></tr>
+<tr><td><a href="https://github.com/maurice1128/maurice1128.github.io/tree/main/code/spasticity/preregistrations">preregistrations/</a></td><td>147</td>
+<td>Preregistrations, written before the analysis they govern was run.</td></tr>
+<tr><td><a href="https://github.com/maurice1128/maurice1128.github.io/tree/main/code/spasticity/hashes">hashes/</a></td><td>117</td>
+<td>SHA-256 sidecars over the preregistrations.</td></tr>
+<tr><td><a href="https://github.com/maurice1128/maurice1128.github.io/tree/main/code/spasticity/records">records/</a></td><td>3</td>
+<td>The defect register, the formally abandoned arms, and the first council audit.</td></tr>
+</table>
+
+<p>The containers are the reproducible layer. To check a number in the paper, find it in
+<code>containers/</code> rather than re-running anything.
+<a href="https://github.com/maurice1128/maurice1128.github.io/tree/main/code/spasticity/scripts/bindcheck_r572.py"><code>bindcheck_r572.py</code></a> is the script that binds
+three-or-more-decimal values in the text to a container holding that value whose path shares a term
+with the claim; the manuscript reports its outcome, including the 23 values it could not bind.</p>
+</section>
+
+<hr>
+<section>
+<h2>What is not here, and why</h2>
+
+<h3>The raw simulation output is not deposited here</h3>
+<p>It is roughly 1129 run directories of SCONE output, far past what belongs in a web repository, and
+it is not redistributed. The manuscript's availability statement commits it to an archival deposit;
+that deposit is not yet made, and this repository does not stand in for it. Sixteen of those run
+directories lack a replayed output and contribute to no analysis in the paper.</p>
+
+<h3>Nothing here can be re-simulated</h3>
+<p>The Hyfydy licence under which these simulations were run expired on 27&nbsp;August&nbsp;2026. The
+scripts that read simulation output will not reproduce that output. Analyses that consume the
+containers need no simulator licence and do run.</p>
+
+<h3>Paths are absolute and local</h3>
+<p>The scripts were written against one machine and read from hard-coded Windows paths. They are
+published as the record of what was actually run, not as a portable package, and are not expected to
+execute unchanged elsewhere.</p>
+</section>
+
+<footer>
+  <p><a href="../../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang</p>
+  <p style="margin-top:.6rem">Analysis code and containers are released CC0. The normative reference
+  dataset used elsewhere in this project (van Criekinge et al., <i>Sci Data</i> 2023) is CC0 and is
+  not redistributed here; it is available from doi:10.6084/m9.figshare.24192489.</p>
+</footer>
+
+</div></body></html>

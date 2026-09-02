@@ -1,0 +1,270 @@
+{
+ "probe": "WARMSTART_PROBE_r392",
+ "question": "Does warm-start chaining, or a bigger budget, or neither, let this model carry the KV 0.070 spastic lesion it currently cannot?",
+ "condition": {
+  "kv": 0.07,
+  "seed": 101,
+  "gate_t1_s": 9.73,
+  "max_duration_s": 20
+ },
+ "reference_failure": {
+  "cell": "R291KV0070_s101",
+  "t_end_s": 8.24,
+  "wall_clock_s": 72.04,
+  "source": "paper/RUN_BANDFILL_r291_cell06.json"
+ },
+ "chain_parent": {
+  "cell": "R151S_s101",
+  "kv": 0.05,
+  "seed": 101,
+  "par": "0056_65.682_19.381.par",
+  "t_end_s": 17.85,
+  "why": "the immediately milder rung of the same KV ladder, same seed, same min_velocity 1.0, same base model -- Ong et al.'s chaining is rung to rung, not arbitrary donor to recipient"
+ },
+ "init_syntax": "init { file = \"par/<name>.par\" }  (relative to the config dir; SCONE is invoked with cwd = that dir)",
+ "init_settings": {
+  "std_factor": "NOT SET in any arm (SCONE default)",
+  "std_offset": "NOT SET in any arm (SCONE default)",
+  "use_best_as_mean": "NOT SET in any arm (SCONE default)",
+  "why": "the corpus sets none of them; setting any of them in arm B alone would confound chaining with a change of search width, which is the whole point of the probe"
+ },
+ "init_std_audit": {
+  "n_params_base": 95,
+  "n_params_chain": 95,
+  "n_common": 95,
+  "std_ratio_chain_over_base": {
+   "min": 0.901497809147332,
+   "median": 0.906280356492625,
+   "max": 0.9191104422944161,
+   "geomean": 0.9072841632556986
+  },
+  "interpretation": "ratios near 1 mean arm B's search is not narrower than arm A's, so any difference in outcome is chaining, not search width"
+ },
+ "config_diffs": {
+  "A": [
+   "--- R151S_s101/config.scone",
+   "+++ R392A_s101/config.scone",
+   "@@ -3,3 +3,3 @@",
+   " \tmax_generations = 90",
+   "-\tsignature_prefix = R151S_s101",
+   "+\tsignature_prefix = R392A_s101",
+   " \tmin_improvement_for_file_output = 0.01",
+   "@@ -301,3 +301,3 @@",
+   " \t\t\t\t\t\t\t\tdelay = 0.020",
+   "-\t\t\t\t\t\t\t\tKV = 0.050",
+   "+\t\t\t\t\t\t\t\tKV = 0.07",
+   " \t\t\t\t\t\t\t\tallow_neg_V = 0",
+   "@@ -307,3 +307,3 @@",
+   " \t\t\t\t\t\t\t\tdelay = 0.020",
+   "-\t\t\t\t\t\t\t\tKV = 0.050",
+   "+\t\t\t\t\t\t\t\tKV = 0.07",
+   " \t\t\t\t\t\t\t\tallow_neg_V = 0"
+  ],
+  "B": [
+   "--- R151S_s101/config.scone",
+   "+++ R392B_s101/config.scone",
+   "@@ -3,3 +3,3 @@",
+   " \tmax_generations = 90",
+   "-\tsignature_prefix = R151S_s101",
+   "+\tsignature_prefix = R392B_s101",
+   " \tmin_improvement_for_file_output = 0.01",
+   "@@ -7,3 +7,3 @@",
+   " \tmin_progress_samples = 200",
+   "-\tinit { file = \"par/H1922v7b3-TSG3Dv8g-989_fixed2.par\" }",
+   "+\tinit { file = \"par/WARM_R151S_s101_g0056.par\" }",
+   " \tSimulationObjective {",
+   "@@ -301,3 +301,3 @@",
+   " \t\t\t\t\t\t\t\tdelay = 0.020",
+   "-\t\t\t\t\t\t\t\tKV = 0.050",
+   "+\t\t\t\t\t\t\t\tKV = 0.07",
+   " \t\t\t\t\t\t\t\tallow_neg_V = 0",
+   "@@ -307,3 +307,3 @@",
+   " \t\t\t\t\t\t\t\tdelay = 0.020",
+   "-\t\t\t\t\t\t\t\tKV = 0.050",
+   "+\t\t\t\t\t\t\t\tKV = 0.07",
+   " \t\t\t\t\t\t\t\tallow_neg_V = 0"
+  ],
+  "C": [
+   "--- R151S_s101/config.scone",
+   "+++ R392C_s101/config.scone",
+   "@@ -2,4 +2,4 @@",
+   " \trandom_seed = 101",
+   "-\tmax_generations = 90",
+   "-\tsignature_prefix = R151S_s101",
+   "+\tmax_generations = 400",
+   "+\tsignature_prefix = R392C_s101",
+   " \tmin_improvement_for_file_output = 0.01",
+   "@@ -301,3 +301,3 @@",
+   " \t\t\t\t\t\t\t\tdelay = 0.020",
+   "-\t\t\t\t\t\t\t\tKV = 0.050",
+   "+\t\t\t\t\t\t\t\tKV = 0.07",
+   " \t\t\t\t\t\t\t\tallow_neg_V = 0",
+   "@@ -307,3 +307,3 @@",
+   " \t\t\t\t\t\t\t\tdelay = 0.020",
+   "-\t\t\t\t\t\t\t\tKV = 0.050",
+   "+\t\t\t\t\t\t\t\tKV = 0.07",
+   " \t\t\t\t\t\t\t\tallow_neg_V = 0"
+  ],
+  "A_vs_B": [
+   "-\tsignature_prefix = R392A_s101",
+   "+\tsignature_prefix = R392B_s101",
+   "-\tinit { file = \"par/H1922v7b3-TSG3Dv8g-989_fixed2.par\" }",
+   "+\tinit { file = \"par/WARM_R151S_s101_g0056.par\" }"
+  ],
+  "A_vs_C": [
+   "-\tmax_generations = 90",
+   "-\tsignature_prefix = R392A_s101",
+   "+\tmax_generations = 400",
+   "+\tsignature_prefix = R392C_s101"
+  ]
+ },
+ "arms": [
+  {
+   "arm": "A",
+   "label": "BASELINE, corpus recipe, unlesioned base par, 90 generations",
+   "prefix": "R392A_s101",
+   "kv": 0.07,
+   "seed": 101,
+   "max_generations": 90,
+   "init_file": "par/H1922v7b3-TSG3Dv8g-989_fixed2.par",
+   "wall_clock_s": 122.55,
+   "returncode": 0,
+   "new_result_dirs": [
+    "R392A_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101"
+   ],
+   "stdout_tail": "20:15:45 SCONE version 2.4.4.3333\n20:15:45 Successfully initialized OpenSim-3.3-2021-01-28\n20:15:45 Successfully initialized OpenSim-4.4\n20:15:45 Successfully initialized Hyfydy-1.12.6.1412\n20:15:45 Successfully initialized Hyfydy-1.12.6.1412-DBL\n",
+   "stderr_tail": "",
+   "status": "OK",
+   "result_dir": "R392A_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "n_generations": 90,
+   "last_generation": 89,
+   "objective_gen0": 91.215,
+   "terminal_objective": 64.2415,
+   "descent_final_10_gens": 0.0,
+   "resolved_par_by_generation": "0069_87.849_64.241.par",
+   "resolved_par_by_objective": "0069_87.849_64.241.par",
+   "resolvers_agree": true,
+   "t_end_s": 8.24,
+   "passes_gate_9.73": false,
+   "init_line_readback": "init { file = \"par/H1922v7b3-TSG3Dv8g-989_fixed2.par\" }"
+  },
+  {
+   "arm": "B",
+   "label": "WARM-STARTED from the optimised KV 0.050 solution, 90 generations",
+   "prefix": "R392B_s101",
+   "kv": 0.07,
+   "seed": 101,
+   "max_generations": 90,
+   "init_file": "par/WARM_R151S_s101_g0056.par",
+   "wall_clock_s": 249.57,
+   "returncode": 0,
+   "new_result_dirs": [
+    "R392B_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101"
+   ],
+   "stdout_tail": "20:17:46 SCONE version 2.4.4.3333\n20:17:46 Successfully initialized OpenSim-3.3-2021-01-28\n20:17:46 Successfully initialized OpenSim-4.4\n20:17:46 Successfully initialized Hyfydy-1.12.6.1412\n20:17:46 Successfully initialized Hyfydy-1.12.6.1412-DBL\n",
+   "stderr_tail": "",
+   "status": "OK",
+   "result_dir": "R392B_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "n_generations": 90,
+   "last_generation": 89,
+   "objective_gen0": 74.4751,
+   "terminal_objective": 37.2283,
+   "descent_final_10_gens": 0.0,
+   "resolved_par_by_generation": "0054_63.778_37.228.par",
+   "resolved_par_by_objective": "0054_63.778_37.228.par",
+   "resolvers_agree": true,
+   "t_end_s": 13.95,
+   "passes_gate_9.73": true,
+   "init_line_readback": "init { file = \"par/WARM_R151S_s101_g0056.par\" }"
+  },
+  {
+   "arm": "C",
+   "label": "BIGGER BUDGET, no chaining, 400 generations",
+   "prefix": "R392C_s101",
+   "kv": 0.07,
+   "seed": 101,
+   "max_generations": 400,
+   "init_file": "par/H1922v7b3-TSG3Dv8g-989_fixed2.par",
+   "wall_clock_s": 492.27,
+   "returncode": 0,
+   "new_result_dirs": [
+    "R392C_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101"
+   ],
+   "stdout_tail": "20:22:04 SCONE version 2.4.4.3333\n20:22:04 Successfully initialized OpenSim-3.3-2021-01-28\n20:22:04 Successfully initialized OpenSim-4.4\n20:22:04 Successfully initialized Hyfydy-1.12.6.1412\n20:22:04 Successfully initialized Hyfydy-1.12.6.1412-DBL\n",
+   "stderr_tail": "",
+   "status": "OK",
+   "result_dir": "R392C_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "n_generations": 329,
+   "last_generation": 328,
+   "objective_gen0": 91.215,
+   "terminal_objective": 60.2583,
+   "descent_final_10_gens": 0.0,
+   "resolved_par_by_generation": "0268_85.660_60.258.par",
+   "resolved_par_by_objective": "0268_85.660_60.258.par",
+   "resolvers_agree": true,
+   "t_end_s": 9.23,
+   "passes_gate_9.73": false,
+   "init_line_readback": "init { file = \"par/H1922v7b3-TSG3Dv8g-989_fixed2.par\" }"
+  }
+ ],
+ "stop_reason": "all three arms run",
+ "verdict": {
+  "t_end_s": {
+   "A": 8.24,
+   "B": 13.95,
+   "C": 9.23
+  },
+  "passes_gate": {
+   "A": false,
+   "B": true,
+   "C": false
+  },
+  "statement": "WARM-START CHAINING IS THE FIX; COMPUTE IS NOT. Arm A reproduced the failure exactly (t_end 8.24 s, identical .par filenames to R291KV0070_s101). Arm B, which differs from A in exactly one config line -- the init file pointing at the optimised KV 0.050 solution instead of the unlesioned base -- reached t_end 13.95 s, clearing the 9.73 s gate and landing inside the 13.58-17.85 s analysis band, at a terminal objective of 37.23 against A's 64.24. Arm C, 3.7x the generations with no chaining, reached only t_end 9.23 s and objective 60.26, still below the gate, and stopped on its own convergence criterion. The corpus was asking a healthy controller to jump straight into a severe lesion; the controller cannot make that jump, but it can walk the lesion down a ladder. This is a PIPELINE defect in our launchers, not a limit of the model.",
+  "cost_of_the_fix": "Chaining costs nothing extra in generations: arm B ran the same 90 generations as arm A. It costs 2.0x the wall clock (249.6 s vs 122.5 s) only because a controller that walks longer simulates longer. Arm C's failed compute path cost 4.0x arm A for no benefit.",
+  "single_seed_caveat": "n = 1 seed, one condition. B clears the gate by 4.2 s, which is a large margin, but confirming the fix needs the remaining five seeds and at least one deeper rung."
+ },
+ "reference_failure_all_six_seeds": {
+  "R291KV0070_s101": 8.24,
+  "R291KV0070_s102": 8.34,
+  "R291KV0070_s103": 9.4,
+  "R291KV0070_s104": 9.52,
+  "R291KV0070_s105": 8.26,
+  "R291KV0070_s106": 8.26,
+  "note": "gate is 9.73 s; all six fall short"
+ },
+ "arm_A_reproduction_check": {
+  "par_filenames_identical_to_R291KV0070_s101": true,
+  "files": [
+   "0000_93.719_91.215.par",
+   "0001_93.783_84.607.par",
+   "0004_94.233_77.484.par",
+   "0007_94.043_64.745.par",
+   "0069_87.849_64.241.par"
+  ],
+  "terminal_objective_A": 64.2415,
+  "terminal_objective_R291": 64.241,
+  "t_end_A": 8.24,
+  "t_end_R291": 8.24,
+  "meaning": "arm A is a bit-for-bit reproduction of the corpus cell, not merely a similar run. The failure is fully reproducible, so every comparison below is against a solid baseline."
+ },
+ "arm_C_early_stop": {
+  "requested_generations": 400,
+  "generations_actually_run": 329,
+  "why": "SCONE stopped on the config's own convergence rule, min_progress = 1e-4 over min_progress_samples = 200, which is inherited unchanged from the corpus config. C was therefore not truncated by us: the optimiser declared itself converged after 3.7x arm A's budget and it was still 0.50 s short of the gate. Reading C as 'we did not give it enough compute' is not supported -- it gave up on its own.",
+  "objective_trace": {
+   "gen_69": 64.241,
+   "gen_160": 63.139,
+   "gen_268": 60.258
+  }
+ },
+ "files_written": {
+  "launcher": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\warmstart_probe_r392.py",
+  "staging": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\warmprobe_r392",
+  "deposit": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\paper\\WARMSTART_PROBE_r392.json",
+  "new_scone_result_dirs": [
+   "R392A_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "R392B_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "R392C_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101"
+  ]
+ }
+}

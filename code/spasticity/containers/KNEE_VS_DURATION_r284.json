@@ -1,0 +1,194 @@
+{
+ "question": "is the knee separation lesion type, or duration again",
+ "status": "UNREGISTERED, POST-HOC; reads MATCHED_FALLERS_r282.json only",
+ "n_fallers": {
+  "spastic": 6,
+  "weak_pf": 4
+ },
+ "t_end": {
+  "spastic": [
+   17.85,
+   14.96,
+   13.58,
+   16.94,
+   14.27,
+   14.82
+  ],
+  "weak_pf": [
+   16.21,
+   12.35,
+   10.79,
+   13.31
+  ]
+ },
+ "per_channel": {
+  "knee_angle_LmR": {
+   "rho_pooled_vs_tend": -0.7818181818181819,
+   "rho_within_spastic": -0.7142857142857143,
+   "rho_within_weakpf": -0.7999999999999998,
+   "max_abs_within_arm_rho": 0.7999999999999998,
+   "spastic_seeds": [
+    -0.9495390806288526,
+    -1.8889983057539084,
+    -0.2134542806604003,
+    -1.174013440534857,
+    -0.7150158049399593,
+    -0.3975754140412846
+   ],
+   "weakpf_seeds": [
+    2.734690886860527,
+    3.717530656514235,
+    4.74012185602227,
+    4.234821591143557
+   ]
+  },
+  "knee_angle_l": {
+   "rho_pooled_vs_tend": -0.7575757575757576,
+   "rho_within_spastic": -0.6,
+   "rho_within_weakpf": -0.7999999999999998,
+   "max_abs_within_arm_rho": 0.7999999999999998,
+   "spastic_seeds": [
+    61.474851546815906,
+    61.15465026328841,
+    61.54355567997377,
+    61.39780438421722,
+    61.49477290738075,
+    61.588578703515154
+   ],
+   "weakpf_seeds": [
+    63.663918927063854,
+    64.60234644618579,
+    64.69794827402201,
+    64.68121809739013
+   ]
+  },
+  "hip_flexion_l": {
+   "rho_pooled_vs_tend": 0.696969696969697,
+   "rho_within_spastic": 0.3142857142857143,
+   "rho_within_weakpf": 0.7999999999999998,
+   "max_abs_within_arm_rho": 0.7999999999999998,
+   "spastic_seeds": [
+    55.72545498537411,
+    56.09401199695132,
+    55.567624211408734,
+    56.15018477918595,
+    56.14725123527488,
+    55.56079455449078
+   ],
+   "weakpf_seeds": [
+    54.288427178843754,
+    52.85391465703403,
+    54.04280208193049,
+    54.19707478798809
+   ]
+  },
+  "knee_angle_r": {
+   "rho_pooled_vs_tend": 0.7818181818181819,
+   "rho_within_spastic": 0.7142857142857143,
+   "rho_within_weakpf": 0.7999999999999998,
+   "max_abs_within_arm_rho": 0.7999999999999998,
+   "spastic_seeds": [
+    62.42439062744476,
+    63.04364856904232,
+    61.75700996063417,
+    62.571817824752074,
+    62.20978871232071,
+    61.98615411755644
+   ],
+   "weakpf_seeds": [
+    60.92922804020333,
+    60.884815789671556,
+    59.95782641799974,
+    60.44639650624657
+   ]
+  },
+  "hip_adduction_LmR": {
+   "rho_pooled_vs_tend": -0.296969696969697,
+   "rho_within_spastic": 0.3142857142857143,
+   "rho_within_weakpf": 0.7999999999999998,
+   "max_abs_within_arm_rho": 0.7999999999999998,
+   "spastic_seeds": [
+    -1.9535788616602012,
+    -0.7397973754949678,
+    -2.0486770595944925,
+    -0.9773204672132216,
+    -1.590489586321917,
+    -1.9004494402473782
+   ],
+   "weakpf_seeds": [
+    1.6569870680247973,
+    -0.40173031298563444,
+    0.7861534808396868,
+    1.535143009227868
+   ]
+  },
+  "hip_adduction_l": {
+   "rho_pooled_vs_tend": -0.34545454545454546,
+   "rho_within_spastic": 0.14285714285714285,
+   "rho_within_weakpf": 0.7999999999999998,
+   "max_abs_within_arm_rho": 0.7999999999999998,
+   "spastic_seeds": [
+    10.207922075242845,
+    11.449086742324836,
+    9.992562709913638,
+    10.726716451126567,
+    11.048695813678284,
+    10.357925290797072
+   ],
+   "weakpf_seeds": [
+    13.328705728972437,
+    11.784377251358963,
+    12.682641383971898,
+    12.742291447065172
+   ]
+  }
+ },
+ "duration_overlap_band": {
+  "spastic_cells_in_band": [
+   "S_s102",
+   "S_s103",
+   "S_s105",
+   "S_s106"
+  ],
+  "weakpf_cells_in_band": [
+   "WPF_c00"
+  ],
+  "evaluable": false,
+  "why_not_fixable_by_more_cells": "the remaining f=0.20 cells fall below the 9.73 s window and are excluded by the measurement guard, so they cannot extend the band downward for the spastic arm",
+  "band_s_RENAMED_r308": "band_s_r284_narrow",
+  "band_s_r284_narrow": [
+   13.58,
+   16.21
+  ],
+  "RENAME_REASON_D27": "This file's band_s is [13.58, 16.21]. EVERY other file in this directory uses [13.58, 17.85] -- the observed t_end range of the six R151S cells -- under the same key name. Two different intervals sharing one key across deposits is a collision, so the narrower one is renamed band_s_r284_narrow here. The original key and value are retained so nothing breaks. This file sets evaluable = false, so the narrow band supports no live claim.",
+  "band_s_ORIGINAL_KEY_REMOVED": "The key 'band_s' held [13.58, 16.21] here while every other deposit uses [13.58, 17.85] under the same name. The r308 repair COPIED it to band_s_r284_narrow but left band_s live, so the collision persisted. The key is now REMOVED; the value survives as band_s_r284_narrow."
+ },
+ "limits": [
+  "n = 6 spastic vs 4 weak-PF; a within-arm rho on four points is not an estimate",
+  "the exhaustive familywise proportion 1/210 is the FLOOR of this design, not a small p-value in the usual sense -- no arrangement of ten cells can do better",
+  "16 channels tested, post-hoc, on a comparison chosen after seeing the hip result fail"
+ ],
+ "READING_VERDICTS_DELETED_D26": {
+  "what_was_removed": "The per-channel 'reading' string was attached to EVERY channel block including ones at |rho| = 0.80, so it was boilerplate rather than a judgment on each channel.",
+  "replaced_by": "This file's own limits array, which already states that a within-arm rho on four points is not an estimate. That is the correct characterisation and it needs no threshold.",
+  "why_not_a_threshold": "Inventing a cutoff separating 'strong' from 'not strong' would manufacture a rule after seeing the numbers. The reader's prescription was deletion, not calibration.",
+  "cross_reference": "CONFOUND_DURATION_r277.json reads rho = +0.7143 on the HIP channel as unfavourable; this file's -0.7143 is the KNEE channel. Different channels, equal magnitude by coincidence of Spearman at n=6.",
+  "removed_count": 6,
+  "removed_from_channels": [
+   "hip_adduction_LmR",
+   "hip_adduction_l",
+   "hip_flexion_l",
+   "knee_angle_LmR",
+   "knee_angle_l",
+   "knee_angle_r"
+  ],
+  "removed_text_NOT_reproduced_here": "The deleted string is deliberately NOT quoted in this file. Quoting it re-deposits the verdict under a different key and defeats the deletion.",
+  "FALSE_ZERO_r309": {
+   "what_happened": "The r308 fix popped the per_channel \"reading\" key and then wrote the six identical strings back into this same block as \"removed_values\", keyed by channel name. The verdict therefore had TWO homes and only one was cleared -- and the second home was created by the deletion itself.",
+   "why_the_check_passed": "Verification grepped the pattern '\"reading\":' , which matches a KEY named reading. The surviving copies were VALUES under channel-name keys, so the pattern was structurally incapable of matching the copy just written. It could only ever have found the home already cleared.",
+   "evidence": "The file grew 4656 -> 5941 B during a change reported as a pure deletion.",
+   "class": "Third instance tonight of a check whose scope silently excluded what it was meant to find: tasklist /FI mangled by MSYS, an enumeration limited to one directory, and now a grep pattern matching only one of two homes. All three returned a clean result that was false.",
+   "rule": "Verify a deletion by PARSING the file and asserting the value is absent, never by grepping for the key it used to live under."
+  }
+ }
+}

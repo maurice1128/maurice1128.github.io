@@ -1,0 +1,463 @@
+{
+  "round": "RECON_LOWDOSE_r420",
+  "status": "EXPLORATORY RECONNAISSANCE. Selects a dose for a later registered test. No number here may be quoted as a result.",
+  "why": "no round ever tested a single-muscle spastic reflex below KV 0.050. r407 and r410 both started at 0.050 and both found 0/6 survival for gastroc-only.",
+  "arms": {
+    "GAS": {
+      "0.005": {
+        "n_gate_G": 1,
+        "cells": {
+          "R420GAS0005_s101": {
+            "t_end": 7.8,
+            "n_cycles": 4,
+            "gate_G": false,
+            "knee_hs": -8.699934400715204
+          },
+          "R420GAS0005_s102": {
+            "t_end": 7.82,
+            "n_cycles": 4,
+            "gate_G": false,
+            "knee_hs": -8.439668322277026
+          },
+          "R420GAS0005_s103": {
+            "t_end": 7.34,
+            "n_cycles": 3,
+            "gate_G": false,
+            "knee_hs": -8.629794817294604
+          },
+          "R420GAS0005_s104": {
+            "t_end": 13.01,
+            "n_cycles": 5,
+            "gate_G": true,
+            "knee_hs": -8.755963943501046
+          },
+          "R420GAS0005_s105": {
+            "t_end": 9.2,
+            "n_cycles": 5,
+            "gate_G": false,
+            "knee_hs": -8.562877166541957
+          },
+          "R420GAS0005_s106": {
+            "t_end": 8.15,
+            "n_cycles": 4,
+            "gate_G": false,
+            "knee_hs": -9.658721975087122
+          }
+        },
+        "t_end_range": [
+          7.34,
+          13.01
+        ]
+      },
+      "0.010": {
+        "n_gate_G": 1,
+        "cells": {
+          "R420GAS0010_s101": {
+            "t_end": 6.13,
+            "n_cycles": 3,
+            "gate_G": false,
+            "knee_hs": -9.525690724354332
+          },
+          "R420GAS0010_s102": {
+            "t_end": 10.43,
+            "n_cycles": 6,
+            "gate_G": true,
+            "knee_hs": -9.746737841715802
+          },
+          "R420GAS0010_s103": {
+            "t_end": 5.49,
+            "n_cycles": 2,
+            "gate_G": false,
+            "knee_hs": -9.128764662480869
+          },
+          "R420GAS0010_s104": {
+            "t_end": 5.53,
+            "n_cycles": 2,
+            "gate_G": false,
+            "knee_hs": -8.533518809119455
+          },
+          "R420GAS0010_s105": {
+            "t_end": 6.66,
+            "n_cycles": 3,
+            "gate_G": false,
+            "knee_hs": -9.043661331310767
+          },
+          "R420GAS0010_s106": {
+            "t_end": 5.63,
+            "n_cycles": 2,
+            "gate_G": false,
+            "knee_hs": -8.481007227195715
+          }
+        },
+        "t_end_range": [
+          5.49,
+          10.43
+        ]
+      },
+      "0.020": {
+        "n_gate_G": 0,
+        "cells": {
+          "R420GAS0020_s101": {
+            "t_end": 6.07,
+            "n_cycles": 2,
+            "gate_G": false,
+            "knee_hs": -10.527898950300582
+          },
+          "R420GAS0020_s102": {
+            "t_end": 4.23,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -9.408539953843247
+          },
+          "R420GAS0020_s103": {
+            "t_end": 4.67,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -10.337476427088852
+          },
+          "R420GAS0020_s104": {
+            "t_end": 4.67,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -9.666256370093093
+          },
+          "R420GAS0020_s105": {
+            "t_end": 4.64,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -9.534132302535925
+          },
+          "R420GAS0020_s106": {
+            "t_end": 4.26,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -10.498133792843534
+          }
+        },
+        "t_end_range": [
+          4.23,
+          6.07
+        ]
+      },
+      "0.030": {
+        "n_gate_G": 0,
+        "cells": {
+          "R420GAS0030_s101": {
+            "t_end": 3.99,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -13.198426585515591
+          },
+          "R420GAS0030_s102": {
+            "t_end": 4.55,
+            "n_cycles": 2,
+            "gate_G": false,
+            "knee_hs": -11.662555919887907
+          },
+          "R420GAS0030_s103": {
+            "t_end": 3.96,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -13.723714292091529
+          },
+          "R420GAS0030_s104": {
+            "t_end": 4.38,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -12.9851716941679
+          },
+          "R420GAS0030_s105": {
+            "t_end": 4.05,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -12.718689023652555
+          },
+          "R420GAS0030_s106": {
+            "t_end": 3.83,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -12.649590313559775
+          }
+        },
+        "t_end_range": [
+          3.83,
+          4.55
+        ]
+      },
+      "0.040": {
+        "n_gate_G": 0,
+        "cells": {
+          "R420GAS0040_s101": {
+            "t_end": 3.66,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -15.538729995506952
+          },
+          "R420GAS0040_s102": {
+            "t_end": 3.67,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -15.33235059770083
+          },
+          "R420GAS0040_s103": {
+            "t_end": 3.47,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -16.445206523183426
+          },
+          "R420GAS0040_s104": {
+            "t_end": 3.59,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -15.314245131374697
+          },
+          "R420GAS0040_s105": {
+            "t_end": 3.52,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -15.268924169779845
+          },
+          "R420GAS0040_s106": {
+            "t_end": 3.49,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -16.252177042003854
+          }
+        },
+        "t_end_range": [
+          3.47,
+          3.67
+        ]
+      }
+    },
+    "SOL": {
+      "0.005": {
+        "n_gate_G": 5,
+        "cells": {
+          "R420SOL0005_s101": {
+            "t_end": 9.49,
+            "n_cycles": 6,
+            "gate_G": false,
+            "knee_hs": -5.463159261080011
+          },
+          "R420SOL0005_s102": {
+            "t_end": 12.43,
+            "n_cycles": 5,
+            "gate_G": true,
+            "knee_hs": -5.365785274783457
+          },
+          "R420SOL0005_s103": {
+            "t_end": 11.71,
+            "n_cycles": 5,
+            "gate_G": true,
+            "knee_hs": -5.788182366425393
+          },
+          "R420SOL0005_s104": {
+            "t_end": 9.95,
+            "n_cycles": 6,
+            "gate_G": true,
+            "knee_hs": -5.5293798131819125
+          },
+          "R420SOL0005_s105": {
+            "t_end": 13.41,
+            "n_cycles": 5,
+            "gate_G": true,
+            "knee_hs": -5.544777289982326
+          },
+          "R420SOL0005_s106": {
+            "t_end": 10.14,
+            "n_cycles": 6,
+            "gate_G": true,
+            "knee_hs": -6.111799051369663
+          }
+        },
+        "t_end_range": [
+          9.49,
+          13.41
+        ]
+      },
+      "0.010": {
+        "n_gate_G": 0,
+        "cells": {
+          "R420SOL0010_s101": {
+            "t_end": 7.37,
+            "n_cycles": 3,
+            "gate_G": false,
+            "knee_hs": -4.119811008983208
+          },
+          "R420SOL0010_s102": {
+            "t_end": 9.02,
+            "n_cycles": 5,
+            "gate_G": false,
+            "knee_hs": -4.10371624254612
+          },
+          "R420SOL0010_s103": {
+            "t_end": 9.49,
+            "n_cycles": 6,
+            "gate_G": false,
+            "knee_hs": -4.956888023724463
+          },
+          "R420SOL0010_s104": {
+            "t_end": 7.55,
+            "n_cycles": 3,
+            "gate_G": false,
+            "knee_hs": -4.456702553082864
+          },
+          "R420SOL0010_s105": {
+            "t_end": 9.1,
+            "n_cycles": 5,
+            "gate_G": false,
+            "knee_hs": -3.967136855174015
+          },
+          "R420SOL0010_s106": {
+            "t_end": 8.72,
+            "n_cycles": 5,
+            "gate_G": false,
+            "knee_hs": -4.379158827061722
+          }
+        },
+        "t_end_range": [
+          7.37,
+          9.49
+        ]
+      },
+      "0.020": {
+        "n_gate_G": 1,
+        "cells": {
+          "R420SOL0020_s101": {
+            "t_end": 8.19,
+            "n_cycles": 4,
+            "gate_G": false,
+            "knee_hs": -3.541499400721716
+          },
+          "R420SOL0020_s102": {
+            "t_end": 6.61,
+            "n_cycles": 3,
+            "gate_G": false,
+            "knee_hs": -3.655877532969195
+          },
+          "R420SOL0020_s103": {
+            "t_end": 14.24,
+            "n_cycles": 6,
+            "gate_G": true,
+            "knee_hs": -3.797082981579186
+          },
+          "R420SOL0020_s104": {
+            "t_end": 6.58,
+            "n_cycles": 3,
+            "gate_G": false,
+            "knee_hs": -3.619431687620923
+          },
+          "R420SOL0020_s105": {
+            "t_end": 7.18,
+            "n_cycles": 4,
+            "gate_G": false,
+            "knee_hs": -3.835356562293925
+          },
+          "R420SOL0020_s106": {
+            "t_end": 6.3,
+            "n_cycles": 3,
+            "gate_G": false,
+            "knee_hs": -4.540493810902112
+          }
+        },
+        "t_end_range": [
+          6.3,
+          14.24
+        ]
+      },
+      "0.030": {
+        "n_gate_G": 0,
+        "cells": {
+          "R420SOL0030_s101": {
+            "t_end": 6.14,
+            "n_cycles": 3,
+            "gate_G": false,
+            "knee_hs": -3.547481557567712
+          },
+          "R420SOL0030_s102": {
+            "t_end": 6.17,
+            "n_cycles": 3,
+            "gate_G": false,
+            "knee_hs": -5.481947502112008
+          },
+          "R420SOL0030_s103": {
+            "t_end": 6.1,
+            "n_cycles": 3,
+            "gate_G": false,
+            "knee_hs": -4.001447477805766
+          },
+          "R420SOL0030_s104": {
+            "t_end": 5.8,
+            "n_cycles": 2,
+            "gate_G": false,
+            "knee_hs": -4.070578655506933
+          },
+          "R420SOL0030_s105": {
+            "t_end": 6.5,
+            "n_cycles": 3,
+            "gate_G": false,
+            "knee_hs": -5.332006356985588
+          },
+          "R420SOL0030_s106": {
+            "t_end": 6.47,
+            "n_cycles": 3,
+            "gate_G": false,
+            "knee_hs": -6.6334016843932515
+          }
+        },
+        "t_end_range": [
+          5.8,
+          6.5
+        ]
+      },
+      "0.040": {
+        "n_gate_G": 0,
+        "cells": {
+          "R420SOL0040_s101": {
+            "t_end": 4.97,
+            "n_cycles": 2,
+            "gate_G": false,
+            "knee_hs": -3.5483419491900667
+          },
+          "R420SOL0040_s102": {
+            "t_end": 4.82,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -7.160826523545029
+          },
+          "R420SOL0040_s103": {
+            "t_end": 4.94,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -5.723155094424816
+          },
+          "R420SOL0040_s104": {
+            "t_end": 4.76,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -7.483287170644656
+          },
+          "R420SOL0040_s105": {
+            "t_end": 4.43,
+            "n_cycles": 1,
+            "gate_G": false,
+            "knee_hs": -7.3411936374522115
+          },
+          "R420SOL0040_s106": {
+            "t_end": 4.76,
+            "n_cycles": 2,
+            "gate_G": false,
+            "knee_hs": -7.519669990635463
+          }
+        },
+        "t_end_range": [
+          4.43,
+          4.97
+        ]
+      }
+    }
+  },
+  "highest_dose_where_BOTH_arms_reach_4_of_6": null,
+  "VERDICT": "NO dose in {0.005 .. 0.040} lets BOTH single-muscle arms reach 4/6 under a FROZEN controller. Frozen replay is the harshest case -- no adaptation at all -- so this does not rule out the re-optimised test, but it means the frozen route is closed."
+}

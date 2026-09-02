@@ -1,0 +1,986 @@
+{
+ "rev": 5,
+ "window": [
+  1.0,
+  8.0
+ ],
+ "channel_family": [
+  "hip_flexion_LmR",
+  "knee_angle_LmR",
+  "ankle_angle_LmR"
+ ],
+ "primary_channel": "hip_flexion_LmR",
+ "primary_plane": "SG0",
+ "alpha_total": 0.05,
+ "alpha_per_direction": 0.025,
+ "delta_3d_hl_deg": 2.5854118899593352,
+ "delta_3d_hl_range": [
+  2.4900000931251824,
+  2.7276486626005827
+ ],
+ "delta_3d_source": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\paper\\LADDER36_r228.json",
+ "delta_equiv_source": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\paper\\BODY2_DELTA_r229.json",
+ "adjudicating_statistic": "standardised mean difference (primary channel)",
+ "predicted_direction": "spastic_below_weak",
+ "prediction_source_3D": {
+  "spastic_mean_deg": -2.105,
+  "weak_means_deg": [
+   0.359,
+   0.443,
+   0.553
+  ],
+  "deposit": "LADDER36_r228.json"
+ },
+ "provenance": {
+  "script": "body2_channels_r229.py",
+  "script_sha256": "9acb67baf9d39accc342f3afcaa1efa4530e38eaedc093373c3e7ec68f2ba355",
+  "script_bytes": 37888,
+  "prereg": "PREREG_2ndbody_r229.md",
+  "prereg_sha256": "d61d6f8237c603e456a9d9e69752794a3ed8a26d838bce64b6c50088a5138570",
+  "prereg_bytes": 25839,
+  "scope": "baseline forward only (defect register #534, #539)",
+  "inputs": {
+   "BODY2_DOSE_r229.json": "826554b7a84d08261db13fb6eba8099738ce9ec413048aba7b9a38627c71d2ed",
+   "LADDER36_r228.json": "72f4b668af691564eee770067b76a45a0a221815e707a14d47e2c87556abe820",
+   "BODY2_DELTA_r229.json": "97aa84c59d4e5baff89c073cba860b18ad0142d6d632d2d9f445e0d5c60a2c9e",
+   "BODY2_REPLAY_LEDGER_r229.json": "8a0291eda3519be02d6826982676dae9777a51b7682b97dc85bab59c82c6cff1",
+   "BODY2_REACHABILITY_r229.json": "dffff76a8068703829011adbd658bd09c14db5c383c8ae373510ba19506c86bc",
+   "BODY2_CORPUS_r229.json": "739b8ac77f37faa5a00fd643d63d80d8703976d8e76527f7f6483c2728b58424"
+  },
+  "modules": {
+   "sto_utils.py": {
+    "sha256": "704d46a407e654b77e613bcab25dcc665ef49a7847a38c4b2f9bc553c38c0cba",
+    "bytes": 14550
+   },
+   "dose_r174.py": {
+    "sha256": "aa94bc8808206a4c8ca82452bbfb4c5cdc29d575bbca3adda27ddb3e0dd0d2ad",
+    "bytes": 5300
+   }
+  }
+ },
+ "note": "replicates the channel's behaviour, not the selection procedure",
+ "planes": {
+  "SG0": {
+   "excluded": [],
+   "gate_b": {
+    "DR2K050": {
+     "cells": 16,
+     "admitted": 16,
+     "excluded_gate_b": 0,
+     "quarantined_replay_missing": 0,
+     "quarantined_seeds": [],
+     "excluded_seeds": [],
+     "rate": 0.0,
+     "rate_denominator": 16
+    },
+    "DR2K075": {
+     "cells": 16,
+     "admitted": 16,
+     "excluded_gate_b": 0,
+     "quarantined_replay_missing": 0,
+     "quarantined_seeds": [],
+     "excluded_seeds": [],
+     "rate": 0.0,
+     "rate_denominator": 16
+    },
+    "DR2K200": {
+     "cells": 4,
+     "admitted": 4,
+     "excluded_gate_b": 0,
+     "quarantined_replay_missing": 0,
+     "quarantined_seeds": [],
+     "excluded_seeds": [],
+     "rate": 0.0,
+     "rate_denominator": 4
+    },
+    "PAR20": {
+     "cells": 16,
+     "admitted": 16,
+     "excluded_gate_b": 0,
+     "quarantined_replay_missing": 0,
+     "quarantined_seeds": [],
+     "excluded_seeds": [],
+     "rate": 0.0,
+     "rate_denominator": 16
+    },
+    "PAR40": {
+     "cells": 16,
+     "admitted": 16,
+     "excluded_gate_b": 0,
+     "quarantined_replay_missing": 0,
+     "quarantined_seeds": [],
+     "excluded_seeds": [],
+     "rate": 0.0,
+     "rate_denominator": 16
+    },
+    "CMW80": {
+     "cells": 4,
+     "admitted": 4,
+     "excluded_gate_b": 0,
+     "quarantined_replay_missing": 0,
+     "quarantined_seeds": [],
+     "excluded_seeds": [],
+     "rate": 0.0,
+     "rate_denominator": 4
+    }
+   },
+   "comparisons": [
+    {
+     "tag": "full",
+     "spastic": "DR2K075",
+     "weak": "CMW80",
+     "n_spastic": 16,
+     "n_weak": 4,
+     "spastic_seeds": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116
+     ],
+     "weak_seeds": [
+      101,
+      102,
+      103,
+      104
+     ],
+     "spastic_values": {
+      "hip_flexion_LmR": [
+       -1.8970858460288464,
+       -0.05992878355810229,
+       -0.7570082378615263,
+       -1.2054326913365885,
+       -1.117730396256937,
+       -1.8848702624234819,
+       -0.06388444007211501,
+       -0.09549643517619474,
+       -1.098458690328292,
+       -0.3415717768142038,
+       -1.2451936550327043,
+       -0.3119308989950914,
+       -0.8852628447903746,
+       -0.7020530829684718,
+       -2.207264535159549,
+       -0.8943267589240865
+      ],
+      "knee_angle_LmR": [
+       0.38024008568674045,
+       -2.0761357720769014,
+       -1.3583851489050085,
+       -1.7077097696687429,
+       0.8963434014893401,
+       -1.507584851987058,
+       -1.0092959927409375,
+       -2.2605485982531617,
+       -2.301028772718854,
+       -2.6185628908586627,
+       -1.4096702244168164,
+       -2.5125309391738186,
+       -1.6178946691731708,
+       -1.9742801754862869,
+       -1.4526671435605978,
+       -1.6290085392600666
+      ],
+      "ankle_angle_LmR": [
+       -6.462104708216781,
+       -5.002549728645212,
+       -5.050982588996067,
+       -7.105625516313183,
+       -5.835751462221121,
+       -6.95969724205615,
+       -5.896461831959002,
+       -6.13089465391663,
+       -7.340933245645204,
+       -5.228868320285828,
+       -7.4647740363805015,
+       -7.276992835249952,
+       -6.391657200970205,
+       -7.601286641209746,
+       -7.529445386886006,
+       -5.011405186098395
+      ]
+     },
+     "weak_values": {
+      "hip_flexion_LmR": [
+       -5.528121642396582,
+       -4.433609472964868,
+       -3.121970021846269,
+       -4.856900412443742
+      ],
+      "knee_angle_LmR": [
+       0.8537587675925816,
+       0.27965269920382857,
+       -0.20560728372007914,
+       0.5353681288919517
+      ],
+      "ankle_angle_LmR": [
+       -14.207024063603876,
+       -13.808240504063395,
+       -14.539137165268052,
+       -14.16020463692701
+      ]
+     },
+     "cycles_spastic": [
+      4,
+      4,
+      3,
+      4,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      3,
+      4
+     ],
+     "cycles_weak": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "disjoint_DESCRIPTIVE_ONLY": {
+      "hip_flexion_LmR": true,
+      "knee_angle_LmR": false,
+      "ankle_angle_LmR": true
+     },
+     "direction": {
+      "hip_flexion_LmR": "weak_below_spastic",
+      "knee_angle_LmR": "overlapping",
+      "ankle_angle_LmR": "weak_below_spastic"
+     },
+     "raw_gap_deg": {
+      "hip_flexion_LmR": -5.46819285883848,
+      "knee_angle_LmR": -1.1019506852094192,
+      "ankle_angle_LmR": -9.53658743662284
+     },
+     "smd": {
+      "hip_flexion_LmR": -4.822678212981173,
+      "knee_angle_LmR": 2.106249083495452,
+      "ankle_angle_LmR": -8.732955348964484
+     },
+     "hodges_lehmann_deg": {
+      "hip_flexion_LmR": -3.6473595505401266,
+      "knee_angle_LmR": 2.048947147706046,
+      "ankle_angle_LmR": -7.7215096420486615
+     },
+     "hl_ci95_primary": [
+      -4.531842216697064,
+      -2.419916938877797
+     ],
+     "hl_ci90_primary": [
+      -4.420027099103967,
+      -2.729837500067685
+     ],
+     "hl_ci90_ankle": [
+      -8.371272601382756,
+      -7.054579120613826
+     ],
+     "meets_n_floor": false,
+     "null_forward": {
+      "method": "exhaustive",
+      "n_assignments_total": 4845,
+      "n_evaluated": 4845,
+      "B": null,
+      "seed": 229229,
+      "resolution_floor": 0.0002063983488132095,
+      "observed_smd": {
+       "hip_flexion_LmR": -4.822678212981173,
+       "knee_angle_LmR": 2.106249083495452,
+       "ankle_angle_LmR": -8.732955348964484
+      },
+      "observed_familywise_smd": 2.106249083495452,
+      "per_channel_count": {
+       "hip_flexion_LmR": 4845,
+       "knee_angle_LmR": 12,
+       "ankle_angle_LmR": 4845
+      },
+      "per_channel_p": {
+       "hip_flexion_LmR": 1.0,
+       "knee_angle_LmR": 0.002476780185758514,
+       "ankle_angle_LmR": 1.0
+      },
+      "familywise_count": 12,
+      "familywise_p": 0.002476780185758514
+     },
+     "null_reverse": {
+      "method": "exhaustive",
+      "n_assignments_total": 4845,
+      "n_evaluated": 4845,
+      "B": null,
+      "seed": 229229,
+      "resolution_floor": 0.0002063983488132095,
+      "observed_smd": {
+       "hip_flexion_LmR": 4.822678212981173,
+       "knee_angle_LmR": -2.106249083495452,
+       "ankle_angle_LmR": 8.732955348964484
+      },
+      "observed_familywise_smd": 8.732955348964484,
+      "per_channel_count": {
+       "hip_flexion_LmR": 1,
+       "knee_angle_LmR": 4834,
+       "ankle_angle_LmR": 1
+      },
+      "per_channel_p": {
+       "hip_flexion_LmR": 0.0002063983488132095,
+       "knee_angle_LmR": 0.9977296181630547,
+       "ankle_angle_LmR": 0.0002063983488132095
+      },
+      "familywise_count": 1,
+      "familywise_p": 0.0002063983488132095
+     },
+     "is_primary": false,
+     "is_same_pair_as_primary": false,
+     "role": "secondary",
+     "partial_only": false,
+     "gate_b_rate": [
+      0.0,
+      0.0
+     ],
+     "arm_imbalanced": false,
+     "familywise_p_bonferroni": 0.007430340557275542
+    }
+   ],
+   "matched_pairs": [
+    [
+     "DR2K075",
+     "CMW80"
+    ]
+   ]
+  },
+  "SG2": {
+   "excluded": [],
+   "gate_b": {
+    "DR2K050": {
+     "cells": 16,
+     "admitted": 16,
+     "excluded_gate_b": 0,
+     "quarantined_replay_missing": 0,
+     "quarantined_seeds": [],
+     "excluded_seeds": [],
+     "rate": 0.0,
+     "rate_denominator": 16
+    },
+    "DR2K075": {
+     "cells": 16,
+     "admitted": 16,
+     "excluded_gate_b": 0,
+     "quarantined_replay_missing": 0,
+     "quarantined_seeds": [],
+     "excluded_seeds": [],
+     "rate": 0.0,
+     "rate_denominator": 16
+    },
+    "DR2K200": {
+     "cells": 4,
+     "admitted": 4,
+     "excluded_gate_b": 0,
+     "quarantined_replay_missing": 0,
+     "quarantined_seeds": [],
+     "excluded_seeds": [],
+     "rate": 0.0,
+     "rate_denominator": 4
+    },
+    "PAR20": {
+     "cells": 16,
+     "admitted": 16,
+     "excluded_gate_b": 0,
+     "quarantined_replay_missing": 0,
+     "quarantined_seeds": [],
+     "excluded_seeds": [],
+     "rate": 0.0,
+     "rate_denominator": 16
+    },
+    "PAR40": {
+     "cells": 16,
+     "admitted": 16,
+     "excluded_gate_b": 0,
+     "quarantined_replay_missing": 0,
+     "quarantined_seeds": [],
+     "excluded_seeds": [],
+     "rate": 0.0,
+     "rate_denominator": 16
+    },
+    "CMW80": {
+     "cells": 4,
+     "admitted": 4,
+     "excluded_gate_b": 0,
+     "quarantined_replay_missing": 0,
+     "quarantined_seeds": [],
+     "excluded_seeds": [],
+     "rate": 0.0,
+     "rate_denominator": 4
+    }
+   },
+   "comparisons": [
+    {
+     "tag": "full",
+     "spastic": "DR2K050",
+     "weak": "PAR40",
+     "n_spastic": 16,
+     "n_weak": 16,
+     "spastic_seeds": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116
+     ],
+     "weak_seeds": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116
+     ],
+     "spastic_values": {
+      "hip_flexion_LmR": [
+       -3.40744429593927,
+       0.2994385208782074,
+       1.218526902283977,
+       -0.07299667622492781,
+       -0.267302952739998,
+       0.485645387690024,
+       0.6732075305543346,
+       -1.6787922797682693,
+       -0.38999727210448387,
+       -0.2465589478017823,
+       0.6401894010455567,
+       0.8754673791954063,
+       0.7052794745835039,
+       -0.5051316887224286,
+       0.5070954780693989,
+       1.0441628180256095
+      ],
+      "knee_angle_LmR": [
+       0.3356150437783134,
+       -3.919202073923991,
+       -2.7979382789769836,
+       -1.817232165368336,
+       -1.1689096284592118,
+       -2.3919196112937295,
+       -3.5291973542572173,
+       1.412415020162627,
+       -1.5880004429749521,
+       -3.2817367004312774,
+       -4.062906144617078,
+       -1.963695907333618,
+       -3.841309551238963,
+       -3.21588938348979,
+       -3.26454908059068,
+       -3.9429820893752416
+      ],
+      "ankle_angle_LmR": [
+       -7.7183955014916705,
+       -5.36469500785435,
+       -4.876528935758837,
+       -4.9601127970272865,
+       -4.889688262759836,
+       -5.375457335060781,
+       -5.35936495269979,
+       -4.894346534581146,
+       -6.924226580032231,
+       -4.556599354646389,
+       -4.475509206995083,
+       -4.496498569653815,
+       -3.8662676817167774,
+       -5.559218749667745,
+       -5.04715934600501,
+       -4.580670305370719
+      ]
+     },
+     "weak_values": {
+      "hip_flexion_LmR": [
+       -0.025405263007187685,
+       -0.7363632206744086,
+       -0.026178037098971863,
+       -0.7264598261136351,
+       -1.0687804776982583,
+       -1.737342260094098,
+       0.07391746419913857,
+       -1.3097996544647075,
+       -1.6735508573666338,
+       -1.0119129826831867,
+       -0.6098221527258999,
+       -0.485580948331052,
+       0.39287875837189684,
+       -2.176084267954111,
+       0.377662863765667,
+       0.11874234258268913
+      ],
+      "knee_angle_LmR": [
+       -0.6236143952778387,
+       0.11463517455412522,
+       -1.434636934117423,
+       -0.1189901741421357,
+       -1.321528911068245,
+       -1.993266176244854,
+       -0.6998508869339511,
+       1.62151463068753,
+       0.06606670947043564,
+       -0.5093823633880988,
+       -0.04676199385549563,
+       -1.2021220501682004,
+       -1.695940024470212,
+       -1.686701034465845,
+       -0.9934503073228915,
+       -1.0386663489615602
+      ],
+      "ankle_angle_LmR": [
+       -3.593247438065473,
+       -3.8806140231885453,
+       -3.9997719713147397,
+       -4.63113861491245,
+       -4.100084184448454,
+       -3.652816566690851,
+       -3.776968489307951,
+       -4.879088241010444,
+       -3.086369556503344,
+       -4.051541257309716,
+       -3.501878831823458,
+       -3.70981471713376,
+       -3.678816698140596,
+       -3.3408530996566634,
+       -3.212730532045708,
+       -3.4933943718630354
+      ]
+     },
+     "cycles_spastic": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "cycles_weak": [
+      3,
+      3,
+      3,
+      3,
+      4,
+      3,
+      3,
+      3,
+      3,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "disjoint_DESCRIPTIVE_ONLY": {
+      "hip_flexion_LmR": false,
+      "knee_angle_LmR": false,
+      "ankle_angle_LmR": false
+     },
+     "direction": {
+      "hip_flexion_LmR": "overlapping",
+      "knee_angle_LmR": "overlapping",
+      "ankle_angle_LmR": "overlapping"
+     },
+     "raw_gap_deg": {
+      "hip_flexion_LmR": -3.394611170238088,
+      "knee_angle_LmR": -3.405681196407481,
+      "ankle_angle_LmR": -1.0128205592936665
+     },
+     "smd": {
+      "hip_flexion_LmR": -0.6605849770308841,
+      "knee_angle_LmR": 1.3260348474098744,
+      "ankle_angle_LmR": 1.8625390129191868
+     },
+     "hodges_lehmann_deg": {
+      "hip_flexion_LmR": -0.7610395357470607,
+      "knee_angle_LmR": 1.9463680413264113,
+      "ankle_angle_LmR": 1.272782003654693
+     },
+     "hl_ci95_primary": [
+      -1.3914002631733005,
+      -0.24731064267365982
+     ],
+     "hl_ci90_primary": [
+      -1.2835535852621498,
+      -0.33646255400915126
+     ],
+     "hl_ci90_ankle": [
+      0.9278537386798682,
+      1.5931076821496144
+     ],
+     "meets_n_floor": true,
+     "null_forward": {
+      "method": "monte_carlo",
+      "n_assignments_total": 601080390,
+      "n_evaluated": 100000,
+      "B": 100000,
+      "seed": 229229,
+      "resolution_floor": 9.99990000099999e-06,
+      "observed_smd": {
+       "hip_flexion_LmR": -0.6605849770308841,
+       "knee_angle_LmR": 1.3260348474098744,
+       "ankle_angle_LmR": 1.8625390129191868
+      },
+      "observed_familywise_smd": 1.8625390129191868,
+      "per_channel_count": {
+       "hip_flexion_LmR": 96521,
+       "knee_angle_LmR": 42,
+       "ankle_angle_LmR": 0
+      },
+      "per_channel_p": {
+       "hip_flexion_LmR": 0.965210347896521,
+       "knee_angle_LmR": 0.00042999570004299955,
+       "ankle_angle_LmR": 9.99990000099999e-06
+      },
+      "familywise_count": 1,
+      "familywise_p": 1.999980000199998e-05
+     },
+     "null_reverse": {
+      "method": "monte_carlo",
+      "n_assignments_total": 601080390,
+      "n_evaluated": 100000,
+      "B": 100000,
+      "seed": 229229,
+      "resolution_floor": 9.99990000099999e-06,
+      "observed_smd": {
+       "hip_flexion_LmR": 0.6605849770308841,
+       "knee_angle_LmR": -1.3260348474098744,
+       "ankle_angle_LmR": -1.8625390129191868
+      },
+      "observed_familywise_smd": 0.6605849770308841,
+      "per_channel_count": {
+       "hip_flexion_LmR": 3479,
+       "knee_angle_LmR": 99958,
+       "ankle_angle_LmR": 100000
+      },
+      "per_channel_p": {
+       "hip_flexion_LmR": 0.03479965200347997,
+       "knee_angle_LmR": 0.999580004199958,
+       "ankle_angle_LmR": 1.0
+      },
+      "familywise_count": 10338,
+      "familywise_p": 0.1033889661103389
+     },
+     "is_primary": false,
+     "is_same_pair_as_primary": false,
+     "role": "secondary",
+     "partial_only": false,
+     "gate_b_rate": [
+      0.0,
+      0.0
+     ],
+     "arm_imbalanced": false,
+     "familywise_p_bonferroni": 5.999940000599994e-05
+    },
+    {
+     "tag": "full",
+     "spastic": "DR2K075",
+     "weak": "CMW80",
+     "n_spastic": 16,
+     "n_weak": 4,
+     "spastic_seeds": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116
+     ],
+     "weak_seeds": [
+      101,
+      102,
+      103,
+      104
+     ],
+     "spastic_values": {
+      "hip_flexion_LmR": [
+       0.8896297464368298,
+       -1.0564127709084739,
+       0.5388422172355087,
+       0.42076088709582915,
+       0.21719503210992053,
+       -0.9448319027419098,
+       -2.02570391587044,
+       -1.323257790764547,
+       -1.3598657539277805,
+       -1.92106494752184,
+       -1.9805264192970522,
+       -0.15882192815850005,
+       0.0409353002256964,
+       -0.8314861044762607,
+       -2.488020760533765,
+       -1.6143658820082596
+      ],
+      "knee_angle_LmR": [
+       -3.9877147056495454,
+       -2.9889093551457324,
+       -3.196041355957246,
+       -3.551019543015382,
+       -4.35229446521591,
+       -3.8564327103423808,
+       -4.244520310762053,
+       -4.011052256284305,
+       -4.988916085266799,
+       -1.0168842721090945,
+       -3.1426080808939734,
+       -2.283057631526839,
+       -3.260061581414806,
+       -3.8864330759267944,
+       -2.0509161091168133,
+       -4.468573782301537
+      ],
+      "ankle_angle_LmR": [
+       -6.347259887116713,
+       -7.033107887989341,
+       -5.190571162910079,
+       -6.613456899476235,
+       -6.403989403102771,
+       -8.219945499963481,
+       -8.05923323696593,
+       -7.060876516026411,
+       -7.827806652454146,
+       -6.7858358168033766,
+       -7.133748841412459,
+       -7.4622351814460615,
+       -6.391444681799948,
+       -5.330602389872223,
+       -8.866281360130609,
+       -8.418692596780645
+      ]
+     },
+     "weak_values": {
+      "hip_flexion_LmR": [
+       -7.427188747026842,
+       -5.624685175518515,
+       -6.76146609730567,
+       -5.954807451985837
+      ],
+      "knee_angle_LmR": [
+       2.5198454416781635,
+       0.8763286219851149,
+       1.0803403835965257,
+       -0.7280581279200321
+      ],
+      "ankle_angle_LmR": [
+       -14.292801162416477,
+       -13.859021914870985,
+       -15.59737569691177,
+       -14.519924902121282
+      ]
+     },
+     "cycles_spastic": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "cycles_weak": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "disjoint_DESCRIPTIVE_ONLY": {
+      "hip_flexion_LmR": true,
+      "knee_angle_LmR": true,
+      "ankle_angle_LmR": true
+     },
+     "direction": {
+      "hip_flexion_LmR": "weak_below_spastic",
+      "knee_angle_LmR": "spastic_below_weak",
+      "ankle_angle_LmR": "weak_below_spastic"
+     },
+     "raw_gap_deg": {
+      "hip_flexion_LmR": -8.316818493463671,
+      "knee_angle_LmR": 0.2888261441890624,
+      "ankle_angle_LmR": -10.406804534001692
+     },
+     "smd": {
+      "hip_flexion_LmR": -5.505843328368824,
+      "knee_angle_LmR": 4.089131932377165,
+      "ankle_angle_LmR": -7.497014619796882
+     },
+     "hodges_lehmann_deg": {
+      "hip_flexion_LmR": -5.585872137624607,
+      "knee_angle_LmR": 4.499054857897737,
+      "ankle_angle_LmR": -7.463312809582954
+     },
+     "hl_ci95_primary": [
+      -6.4867100726327696,
+      -4.581607051334048
+     ],
+     "hl_ci90_primary": [
+      -6.370775976118368,
+      -4.679853272776605
+     ],
+     "hl_ci90_ankle": [
+      -8.172665015004569,
+      -6.798145398844573
+     ],
+     "meets_n_floor": false,
+     "null_forward": {
+      "method": "exhaustive",
+      "n_assignments_total": 4845,
+      "n_evaluated": 4845,
+      "B": null,
+      "seed": 229229,
+      "resolution_floor": 0.0002063983488132095,
+      "observed_smd": {
+       "hip_flexion_LmR": -5.505843328368824,
+       "knee_angle_LmR": 4.089131932377165,
+       "ankle_angle_LmR": -7.497014619796882
+      },
+      "observed_familywise_smd": 4.089131932377165,
+      "per_channel_count": {
+       "hip_flexion_LmR": 4845,
+       "knee_angle_LmR": 1,
+       "ankle_angle_LmR": 4845
+      },
+      "per_channel_p": {
+       "hip_flexion_LmR": 1.0,
+       "knee_angle_LmR": 0.0002063983488132095,
+       "ankle_angle_LmR": 1.0
+      },
+      "familywise_count": 1,
+      "familywise_p": 0.0002063983488132095
+     },
+     "null_reverse": {
+      "method": "exhaustive",
+      "n_assignments_total": 4845,
+      "n_evaluated": 4845,
+      "B": null,
+      "seed": 229229,
+      "resolution_floor": 0.0002063983488132095,
+      "observed_smd": {
+       "hip_flexion_LmR": 5.505843328368824,
+       "knee_angle_LmR": -4.089131932377165,
+       "ankle_angle_LmR": 7.497014619796882
+      },
+      "observed_familywise_smd": 7.497014619796882,
+      "per_channel_count": {
+       "hip_flexion_LmR": 1,
+       "knee_angle_LmR": 4845,
+       "ankle_angle_LmR": 1
+      },
+      "per_channel_p": {
+       "hip_flexion_LmR": 0.0002063983488132095,
+       "knee_angle_LmR": 1.0,
+       "ankle_angle_LmR": 0.0002063983488132095
+      },
+      "familywise_count": 1,
+      "familywise_p": 0.0002063983488132095
+     },
+     "is_primary": false,
+     "is_same_pair_as_primary": false,
+     "role": "secondary",
+     "partial_only": false,
+     "gate_b_rate": [
+      0.0,
+      0.0
+     ],
+     "arm_imbalanced": false,
+     "familywise_p_bonferroni": 0.0006191950464396285
+    }
+   ],
+   "matched_pairs": [
+    [
+     "DR2K050",
+     "PAR40"
+    ],
+    [
+     "DR2K075",
+     "CMW80"
+    ]
+   ]
+  }
+ },
+ "secondary_family_size_pairs": 3,
+ "secondary_family_size_note": "Bonferroni over PAIRS only; the 3-channel factor is already inside familywise_p",
+ "planes_agree_on_primary_channel": null,
+ "planes_agree_note": "same pair not available in both planes; E not evaluable",
+ "OUTCOME": "D1",
+ "OUTCOME_REASON": "no primary comparison object could be formed",
+ "delta_3d_sensitivity": {
+  "low": {
+   "delta_3d": 2.4900000931251824,
+   "outcome": "D1",
+   "reason": "no primary comparison object could be formed"
+  },
+  "high": {
+   "delta_3d": 2.7276486626005827,
+   "outcome": "D1",
+   "reason": "no primary comparison object could be formed"
+  },
+  "stable_across_range": true
+ }
+}

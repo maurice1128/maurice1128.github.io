@@ -1,0 +1,100 @@
+{
+ "id": "ENDPOINT_r523",
+ "why": "Whether the separation is a property of the knee in early stance or an artefact of reading it at one instant; whether averaging or a limb contrast improves it; and what any improvement in the readout can be worth for a single patient.",
+ "readouts": [
+  {
+   "name": "contact instant",
+   "arm_difference_deg": -5.2799217587110885,
+   "cell_gap_deg": 1.4918560478057357,
+   "cells_disjoint": true,
+   "mean_seed_SD_deg": 0.48361954859239925,
+   "gap_in_seed_SD": 3.0847720116936195
+  },
+  {
+   "name": "window 0-5%",
+   "arm_difference_deg": -6.049398185724984,
+   "cell_gap_deg": 1.626634819813674,
+   "cells_disjoint": true,
+   "mean_seed_SD_deg": 0.5372277355494123,
+   "gap_in_seed_SD": 3.0278310522261966
+  },
+  {
+   "name": "window 0-10%",
+   "arm_difference_deg": -5.405966752582065,
+   "cell_gap_deg": 1.5573661322416719,
+   "cells_disjoint": true,
+   "mean_seed_SD_deg": 0.38471661163397397,
+   "gap_in_seed_SD": 4.048086526930053
+  },
+  {
+   "name": "window 0-15%",
+   "arm_difference_deg": -4.42242023299449,
+   "cell_gap_deg": 1.135304561688713,
+   "cells_disjoint": true,
+   "mean_seed_SD_deg": 0.34142825709365154,
+   "gap_in_seed_SD": 3.325162865407787
+  },
+  {
+   "name": "window 0-20%",
+   "arm_difference_deg": -3.1434596314222,
+   "cell_gap_deg": 0.6178261408268568,
+   "cells_disjoint": true,
+   "mean_seed_SD_deg": 0.3287252235712437,
+   "gap_in_seed_SD": 1.8794607061631738
+  },
+  {
+   "name": "window 5-20%",
+   "arm_difference_deg": -2.155883077998446,
+   "cell_gap_deg": 0.2799220883922402,
+   "cells_disjoint": true,
+   "mean_seed_SD_deg": 0.3845813309236354,
+   "gap_in_seed_SD": 0.7278618744179839
+  },
+  {
+   "name": "first flexion peak",
+   "arm_difference_deg": -4.215606267740103,
+   "cell_gap_deg": 1.1147925228301396,
+   "cells_disjoint": true,
+   "mean_seed_SD_deg": 0.34173503430396973,
+   "gap_in_seed_SD": 3.2621546254416027
+  },
+  {
+   "name": "paretic minus non-paretic",
+   "arm_difference_deg": -3.651391219459036,
+   "cell_gap_deg": -1.2913697119084624,
+   "cells_disjoint": false,
+   "mean_seed_SD_deg": 0.9088962674850187,
+   "gap_in_seed_SD": -1.4208108869032714
+  }
+ ],
+ "single_limb_readouts_all_disjoint": true,
+ "n_single_limb_readouts": 7,
+ "best_single_limb": {
+  "name": "window 0-10%",
+  "gap_in_seed_SD": 4.048086526930053,
+  "over_contact_instant": 1.312280619632421
+ },
+ "peak_timing_pct_of_cycle": {
+  "mean": 8.149762915916737,
+  "sd": 0.797165307668286
+ },
+ "limb_contrast_by_rung": "non-monotone: the paretic-minus-non-paretic difference rises to KV 0.200 and falls back by KV 0.240, because the unlesioned knee follows the lesioned one (SIDE_CONTROL_r496: 35.5 per cent of the separation)",
+ "instrument_ceiling": {
+  "7.93": {
+   "between_patient_SD_deg": 7.93,
+   "instant_as_published": 0.37595882523548685,
+   "window_effect_same_error": 0.37309841669510935,
+   "window_effect_zero_measurement_error": 0.3666062183710078,
+   "total_available_from_the_instrument_pp": 0.935260686447903
+  },
+  "9.16": {
+   "between_patient_SD_deg": 9.16,
+   "instant_as_published": 0.3908516860861646,
+   "window_effect_same_error": 0.3883143970392481,
+   "window_effect_zero_measurement_error": 0.38396427488094714,
+   "total_available_from_the_instrument_pp": 0.6887411205217464
+  }
+ },
+ "SELECTION_CAVEAT": "six windows were scored and the best reported. The 0-10 per cent window's advantage over the contact instant is therefore an upper estimate. What is not selected is that every one of the seven single-limb readouts separates the cells completely; that statement uses the whole scan.",
+ "READING": "The separation is a property of the knee in early stance, not of the contact instant: all seven single-limb readouts leave the two arms' cells disjoint, over windows from 0-5 to 5-20 per cent of the cycle and at the first flexion peak. Averaging over 0-10 per cent gives the largest gap-to-noise ratio, 4.05 against 3.08, by lowering the noise rather than widening the gap. The one readout that fails is the limb contrast, which is the normalisation a clinician would reach for first: it doubles the seed-level noise and removes part of the signal, and the two arms' cells overlap. For a single patient none of this is decisive. Removing measurement error entirely, which no readout can do better than, moves the misclassification rate by about one percentage point, because the spread a stroke population presents is three times the measurement error and it is that spread, not the instrument, that sets the limit."
+}

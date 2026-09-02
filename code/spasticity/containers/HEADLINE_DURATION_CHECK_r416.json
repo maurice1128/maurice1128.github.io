@@ -1,0 +1,81 @@
+{
+  "round": "HEADLINE_DURATION_CHECK_r416",
+  "question": "does the r416 duration confound that retired FROZEN_MECHANISM_r410 also apply to the headline knee separation?",
+  "arms": {
+    "SPAS_KV0.110": [
+      {
+        "cell": "R396SPg110_s101",
+        "t_end": 9.81,
+        "knee": -13.632041044870597,
+        "ncyc": 6
+      },
+      {
+        "cell": "R396SPg110_s102",
+        "t_end": 10.81,
+        "knee": -12.665480343078071,
+        "ncyc": 6
+      },
+      {
+        "cell": "R396SPg110_s105",
+        "t_end": 10.81,
+        "knee": -12.705482346474788,
+        "ncyc": 6
+      },
+      {
+        "cell": "R396SPg110_s106",
+        "t_end": 11.11,
+        "knee": -13.794942495322877,
+        "ncyc": 6
+      }
+    ],
+    "WEAK_x0.80": [
+      {
+        "cell": "R151W_s101",
+        "t_end": 20.0,
+        "knee": -5.783595266317576,
+        "ncyc": 5
+      },
+      {
+        "cell": "R151W_s102",
+        "t_end": 20.0,
+        "knee": -6.108541786304344,
+        "ncyc": 6
+      },
+      {
+        "cell": "R151W_s103",
+        "t_end": 20.0,
+        "knee": -5.37492567048918,
+        "ncyc": 6
+      },
+      {
+        "cell": "R151W_s104",
+        "t_end": 20.0,
+        "knee": -5.666876314998091,
+        "ncyc": 6
+      },
+      {
+        "cell": "R151W_s105",
+        "t_end": 20.0,
+        "knee": -5.858581308741255,
+        "ncyc": 6
+      },
+      {
+        "cell": "R151W_s106",
+        "t_end": 20.0,
+        "knee": -6.273548665667797,
+        "ncyc": 5
+      }
+    ]
+  },
+  "edge_gap_deg": 6.391931677410274,
+  "disjoint": true,
+  "t_end_SPAS": [
+    9.81,
+    11.11
+  ],
+  "t_end_WEAK": [
+    20.0,
+    20.0
+  ],
+  "t_end_ranges_overlap": false
+}

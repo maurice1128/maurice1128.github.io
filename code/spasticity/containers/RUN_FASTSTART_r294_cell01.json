@@ -1,0 +1,44 @@
+{
+ "cell": 1,
+ "seed": 102,
+ "generations": 600,
+ "warm_start": "0003_26.221_0.983.par",
+ "min_velocity_read_back": "1.5",
+ "wall_clock_s": 2008.8635551929474,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R294FAST_s102.H1922v7b3.TSG3Dv8g.R3.S15WA3K0G13.D20.R102 (1)"
+ ],
+ "validation": {
+  "vendor_diff": [
+   "-min_velocity = 1.0",
+   "+min_velocity = 1.5"
+  ],
+  "vendor_diff_is_one_token": true,
+  "corpus_diff": [
+   "-min_velocity = 1.0",
+   "+min_velocity = 1.5"
+  ],
+  "corpus_diff_is_one_token": true,
+  "same_change": true,
+  "PASSES": true
+ },
+ "result_dir": "R294FAST_s102.H1922v7b3.TSG3Dv8g.R3.S15WA3K0G13.D20.R102 (1)",
+ "resolved_par_DEFECTIVE": "0003_26.221_0.983.par",
+ "achieved_speed_mps_DEFECTIVE": 1.0221666666666667,
+ "resolved_par": "0588_44.588_23.198.par",
+ "achieved_speed_mps": 1.1720882352941178,
+ "achieved_speed_mps_recomputed_here": 1.1720882352941178,
+ "achieved_speed_mps_reference_r302": 1.1726,
+ "CORRECTION_r302": {
+  "what": "the deposited resolved_par was the WARM START, not this run's result, and the deposited speed was therefore the warm start's speed",
+  "cause": "run_faststart_r294.py's best_par() selected the minimum objective encoded in the .par filename. The warm start was optimised under min_velocity = 1.0 and scores 0.988; every genuine result under min_velocity = 1.5 scores 21-23 because of the speed penalty. So 0.988 was the numeric minimum in the directory and the resolver returned the starting point.",
+  "why_unnoticed": "the warm start was copied into the results directory under a name beginning with a digit, so it matched the [0-9]*.par glob, and its .sto was the only one present when the deposit was written",
+  "fix": "select by HIGHEST GENERATION among the run's own outputs and exclude the staged warm start by name. Implemented as best_par_by_generation() in run_dfsevere_r293.py. Selecting by objective is unsafe for any arm whose warm start was optimised under a different objective.",
+  "scope": "r289 is NOT affected: its warm start is H1922v7b3-TSG3Dv8g-989_fixed2.par, which does not match the [0-9]*.par glob, so its resolved_par values are genuine run outputs. Verified.",
+  "wrong_values_retained_as": [
+   "resolved_par_DEFECTIVE",
+   "achieved_speed_mps_DEFECTIVE"
+  ]
+ }
+}

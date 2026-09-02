@@ -1,0 +1,73 @@
+{
+ "id": "FALLER_r544",
+ "why": "The within-dose duration regression excludes every weakness family by construction and carries no uncertainty. The archive contains a stronger control the manuscript does not use: plantarflexor-weakness lineages, which carry no stretch reflex and die inside the hyperreflexia arm's own end-time band.",
+ "band_s": [
+  9.81,
+  17.85
+ ],
+ "band_derivation": "min and max t_end of the admitted hyperreflexia arm, not a preset window",
+ "groups": {
+  "control R151C": {
+   "n": 6,
+   "t_end_min": 20.0,
+   "t_end_max": 20.0,
+   "peak_mean": 9.55516367333586,
+   "peak_min": 9.519327073109743,
+   "peak_max": 9.580828362839089,
+   "vs_control": 0.0,
+   "knee_ic_mean": -7.849999258121554
+  },
+  "non-reflex fallers, in band": {
+   "n": 17,
+   "t_end_min": 9.93,
+   "t_end_max": 17.56,
+   "peak_mean": 9.57206300733091,
+   "peak_min": 9.512084886579292,
+   "peak_max": 9.673103215744906,
+   "vs_control": 0.01689933399504895,
+   "knee_ic_mean": -7.4883307158947945
+  },
+  "hyperreflexia, in band": {
+   "n": 23,
+   "t_end_min": 9.81,
+   "t_end_max": 17.85,
+   "peak_mean": 0.39396067313421496,
+   "peak_min": -1.9735674492729987,
+   "peak_max": 2.4039578751148047,
+   "vs_control": -9.161203000201645,
+   "knee_ic_mean": -11.771846539823411
+  },
+  "hyperreflexia, all": {
+   "n": 23,
+   "t_end_min": 9.81,
+   "t_end_max": 17.85,
+   "peak_mean": 0.39396067313421496,
+   "peak_min": -1.9735674492729987,
+   "peak_max": 2.4039578751148047,
+   "vs_control": -9.161203000201645,
+   "knee_ic_mean": -11.771846539823411
+  },
+  "dorsiflexor weakness, all": {
+   "n": 36,
+   "t_end_min": 20.0,
+   "t_end_max": 20.0,
+   "peak_mean": 9.125145691281547,
+   "peak_min": 8.669011868511992,
+   "peak_max": 9.426966276534657,
+   "vs_control": -0.43001798205431285,
+   "knee_ic_mean": -6.491924781112322
+  }
+ },
+ "artefact_floor_deg": 0.03581801092876269,
+ "duration_slope_per_family": [
+  -0.006152897325337891,
+  -0.005210340744884839,
+  0.12805640715433592,
+  -0.4333123808055013,
+  0.11163569085056728
+ ],
+ "duration_slope_mean": -0.04099670417416416,
+ "duration_slope_SE": 0.10204948487737371,
+ "duration_slope_families_are_all_hyperreflexia": true,
+ "pooled_slope_ignoring_the_guard": 1.101064654097335
+}

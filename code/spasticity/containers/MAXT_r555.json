@@ -1,0 +1,23 @@
+{
+ "id": "MAXT_r555",
+ "why": "The reported permutation p and leave-one-family-out accuracy are computed for a readout selected as the maximum of an 81-candidate scan, and neither is conditioned on that scan. This runs the max-T permutation and the nested-selection LOFO, which are.",
+ "statistic": "family-level |mean(weakness) - mean(hyperreflexia)| divided by the mean within-family seed SD",
+ "n_candidates_usable": 81,
+ "n_arrangements": 462,
+ "observed_max_seed_SD": 111.31850509400113,
+ "winner": "ankle peak in swing",
+ "n_arrangements_ge_observed": 1,
+ "p_selection_valid": 0.0021645021645021645,
+ "p_naive_single_readout": 0.0021645021645021645,
+ "null_max_median": 25.56667665094402,
+ "null_max_p95": 67.36553182622637,
+ "null_max_largest": 111.31850509400113,
+ "nested_lofo": {
+  "correct": 59,
+  "n": 59,
+  "accuracy": 1.0,
+  "candidate_per_fold": {
+   "ankle peak in swing": 11
+  }
+ }
+}

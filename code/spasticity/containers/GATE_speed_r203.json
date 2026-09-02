@@ -1,0 +1,507 @@
+{
+ "window": [
+  1.0,
+  13.58
+ ],
+ "min_dur": 9.73,
+ "min_cyc": 4,
+ "cells": {
+  "R203V080C_s101": {
+   "tag": "R203V080C_s101",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V080C_s102": {
+   "tag": "R203V080C_s102",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V080C_s103": {
+   "tag": "R203V080C_s103",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V080C_s104": {
+   "tag": "R203V080C_s104",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V080C_s105": {
+   "tag": "R203V080C_s105",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V080C_s106": {
+   "tag": "R203V080C_s106",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V080S_s101": {
+   "tag": "R203V080S_s101",
+   "G1": true,
+   "dur": 17.02,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V080S_s102": {
+   "tag": "R203V080S_s102",
+   "G1": true,
+   "dur": 14.52,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V080S_s103": {
+   "tag": "R203V080S_s103",
+   "G1": true,
+   "dur": 17.13,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V080S_s104": {
+   "tag": "R203V080S_s104",
+   "G1": true,
+   "dur": 13.53,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V080S_s105": {
+   "tag": "R203V080S_s105",
+   "G1": true,
+   "dur": 15.04,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V080S_s106": {
+   "tag": "R203V080S_s106",
+   "G1": true,
+   "dur": 15.95,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V080W_s101": {
+   "tag": "R203V080W_s101",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V080W_s102": {
+   "tag": "R203V080W_s102",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V080W_s103": {
+   "tag": "R203V080W_s103",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V080W_s104": {
+   "tag": "R203V080W_s104",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V080W_s105": {
+   "tag": "R203V080W_s105",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V080W_s106": {
+   "tag": "R203V080W_s106",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105C_s101": {
+   "tag": "R203V105C_s101",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105C_s102": {
+   "tag": "R203V105C_s102",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105C_s103": {
+   "tag": "R203V105C_s103",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105C_s104": {
+   "tag": "R203V105C_s104",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105C_s105": {
+   "tag": "R203V105C_s105",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105C_s106": {
+   "tag": "R203V105C_s106",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105S_s101": {
+   "tag": "R203V105S_s101",
+   "G1": true,
+   "dur": 18.33,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105S_s102": {
+   "tag": "R203V105S_s102",
+   "G1": true,
+   "dur": 15.19,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105S_s103": {
+   "tag": "R203V105S_s103",
+   "G1": true,
+   "dur": 16.57,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105S_s104": {
+   "tag": "R203V105S_s104",
+   "G1": true,
+   "dur": 16.03,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105S_s105": {
+   "tag": "R203V105S_s105",
+   "G1": true,
+   "dur": 16.49,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105S_s106": {
+   "tag": "R203V105S_s106",
+   "G1": true,
+   "dur": 13.97,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105W_s101": {
+   "tag": "R203V105W_s101",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105W_s102": {
+   "tag": "R203V105W_s102",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105W_s103": {
+   "tag": "R203V105W_s103",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105W_s104": {
+   "tag": "R203V105W_s104",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105W_s105": {
+   "tag": "R203V105W_s105",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V105W_s106": {
+   "tag": "R203V105W_s106",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130C_s101": {
+   "tag": "R203V130C_s101",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130C_s102": {
+   "tag": "R203V130C_s102",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130C_s103": {
+   "tag": "R203V130C_s103",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130C_s104": {
+   "tag": "R203V130C_s104",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130C_s105": {
+   "tag": "R203V130C_s105",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130C_s106": {
+   "tag": "R203V130C_s106",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130S_s101": {
+   "tag": "R203V130S_s101",
+   "G1": true,
+   "dur": 15.2,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130S_s102": {
+   "tag": "R203V130S_s102",
+   "G1": true,
+   "dur": 15.71,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130S_s103": {
+   "tag": "R203V130S_s103",
+   "G1": true,
+   "dur": 17.51,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130S_s104": {
+   "tag": "R203V130S_s104",
+   "G1": true,
+   "dur": 17.26,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130S_s105": {
+   "tag": "R203V130S_s105",
+   "G1": true,
+   "dur": 19.97,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130S_s106": {
+   "tag": "R203V130S_s106",
+   "G1": true,
+   "dur": 17.52,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130W_s101": {
+   "tag": "R203V130W_s101",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130W_s102": {
+   "tag": "R203V130W_s102",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130W_s103": {
+   "tag": "R203V130W_s103",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130W_s104": {
+   "tag": "R203V130W_s104",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130W_s105": {
+   "tag": "R203V130W_s105",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  },
+  "R203V130W_s106": {
+   "tag": "R203V130W_s106",
+   "G1": true,
+   "dur": 20.0,
+   "G2": true,
+   "ncyc": 9,
+   "G3": true,
+   "pass": true
+  }
+ },
+ "admission": {
+  "V080_C": 6,
+  "V080_S": 6,
+  "V080_W": 6,
+  "V105_C": 6,
+  "V105_S": 6,
+  "V105_W": 6,
+  "V130_C": 6,
+  "V130_S": 6,
+  "V130_W": 6
+ }
+}

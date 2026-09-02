@@ -1,0 +1,51 @@
+{
+ "round": 310,
+ "what": "Deposit-to-results-tree consistency scan: every cell tag referenced by a RUN_*_cell*.json deposit, resolved against the SCONE results directory.",
+ "scope_checked": "All 133 distinct cell tags referenced by RUN_*_cell*.json deposits in paper/.",
+ "why_this_class": "The r280 provenance break was a citing file disagreeing with its source. This is the same class across the paper/-to-results boundary, which a reader confined to paper/ cannot check at all.",
+ "missing_result_dirs": 0,
+ "resolve_to_exactly_one_directory": 129,
+ "DUPLICATE_TWINS": {
+  "count": 4,
+  "cells": {
+   "R276WPF010_s106": {
+    "history_lines": {
+     "bare_tag": 21,
+     "paren_1": 91
+    },
+    "deposit_points_at": "(1)",
+    "guard_ge_91_resolves": true
+   },
+   "R291BF005_s156": {
+    "history_lines": {
+     "bare_tag": 31,
+     "paren_1": 91
+    },
+    "deposit_points_at": "(1)",
+    "guard_ge_91_resolves": true
+   },
+   "R291BF005_s163": {
+    "history_lines": {
+     "bare_tag": 61,
+     "paren_1": 91
+    },
+    "deposit_points_at": "(1)",
+    "guard_ge_91_resolves": true
+   },
+   "R294FAST_s102": {
+    "history_lines": {
+     "bare_tag": 551,
+     "paren_1": 601
+    },
+    "deposit_points_at": "(1)",
+    "guard_ge_91_resolves": false
+   }
+  },
+  "GOOD_NEWS": "In ALL FOUR the deposit result_dir points at the COMPLETE copy. No deposited result was computed from a truncated twin, and the >=91-line guard independently selects the same complete copy in three of the four.",
+  "THE_TRAP": "R294FAST_s102 is different in kind. BOTH its directories exceed 91 history lines (551 and 601), so the guard cannot discriminate and any tag-based resolver using 'assert len(g) == 1' RAISES on this cell. The 600-generation arm needs the >=601 guard, and even that leaves the bare 551 copy passing a >=91 test.",
+  "RULE": "For r294, and for any arm whose duplicate twins both clear the generation guard, cells MUST be resolved through the deposit result_dir field, never through the tag. Tag resolution is safe only where exactly one twin clears the guard, which is a property of the data and not of the resolver.",
+  "ORIGIN": "These twins are the SO-26 interruption pattern on disk: a killed cell leaves a short-history directory and the restart writes a ' (1)' copy alongside it. The bare tag sorts FIRST, so a resolver taking the first match gets the truncated run."
+ },
+ "what_a_reader_cannot_check": "Whether the bare-tag twins were killed runs or aborted starts is not recorded anywhere in paper/; it is inferred from their short histories and from no deposit referencing them.",
+ "written_at": "2026-08-18T02:52:04"
+}

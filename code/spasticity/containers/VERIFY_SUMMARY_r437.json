@@ -1,0 +1,178 @@
+{
+  "round": "VERIFY_SUMMARY_r437",
+  "no_simulation_run": true,
+  "what": "independent re-derivation of every number in SUMMARY_FOR_ADVISOR.md, from the .sto files, without importing any analysis script written this session",
+  "n_checks": 21,
+  "n_pass": 21,
+  "n_fail": 0,
+  "checks": [
+    {
+      "name": "headline edge gap (deg)",
+      "claimed": 6.3919,
+      "recomputed": 6.391931677410274,
+      "relative_error": 4.955867625343524e-06,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "headline n_spastic",
+      "claimed": 4,
+      "recomputed": 4,
+      "relative_error": 0.0,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "headline n_weak",
+      "claimed": 6,
+      "recomputed": 6,
+      "relative_error": 0.0,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "permutation: n_partitions",
+      "claimed": 210,
+      "recomputed": 210,
+      "relative_error": 0.0,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "permutation: n_at_least_as_extreme",
+      "claimed": 1,
+      "recomputed": 1,
+      "relative_error": 0.0,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "batch null: largest same-mechanism edge gap",
+      "claimed": 0.5697,
+      "recomputed": 0.5697331886598267,
+      "relative_error": 5.825638024699069e-05,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "batch null: headline / floor",
+      "claimed": 11.2,
+      "recomputed": 11.219166804106852,
+      "relative_error": 0.0017113217952546835,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "typical within-cell seed SD (deg)",
+      "claimed": 0.5114,
+      "recomputed": 0.5113963259008916,
+      "relative_error": 7.184394032845566e-06,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "headline / seed SD",
+      "claimed": 12.5,
+      "recomputed": 12.498978490215098,
+      "relative_error": 8.172078279216066e-05,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "spastic axis x1.00 (0.0125->0.050) deg",
+      "claimed": -4.27,
+      "recomputed": -4.269907425672106,
+      "relative_error": 2.168017046679731e-05,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "spastic axis x0.80 (0.0125->0.110) deg",
+      "claimed": -8.033,
+      "recomputed": -8.033412884118416,
+      "relative_error": 5.1398496006044646e-05,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "weakness axis KV0.0125 (x1.00->x0.70) deg",
+      "claimed": 0.52,
+      "recomputed": 0.5202639171352654,
+      "relative_error": 0.0005075329524334854,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "weakness axis KV0.025 deg",
+      "claimed": 0.458,
+      "recomputed": 0.4576799599900463,
+      "relative_error": 0.0006987773143094453,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "weakness axis KV0.050 deg",
+      "claimed": 1.784,
+      "recomputed": 1.7835055711623156,
+      "relative_error": 0.0002771462094643882,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "weakness at KV0.0125 in seed SDs",
+      "claimed": 1.0,
+      "recomputed": 1.0173399588249925,
+      "relative_error": 0.017339958824992507,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "spastic x0.80 in seed SDs",
+      "claimed": 15.7,
+      "recomputed": 15.708780992836637,
+      "relative_error": 0.0005592989067922026,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "W080_0125 vs W070_0125 mean difference (deg)",
+      "claimed": 0.002,
+      "recomputed": 0.0024736497875110786,
+      "relative_error": 0.23682489375553925,
+      "PASS": true,
+      "note": "claimed 0.002; tolerance is loose because the claim is 'essentially zero'"
+    },
+    {
+      "name": "all cited files exist",
+      "claimed": 0,
+      "recomputed": 0,
+      "relative_error": 0,
+      "PASS": true,
+      "note": "[]"
+    },
+    {
+      "name": "mediation within-dose r GAS->KTQ",
+      "claimed": 0.0621,
+      "recomputed": 0.06212529350390358,
+      "relative_error": 0.0004073028003796178,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "mediation within-dose r KTQ->KNEE",
+      "claimed": -0.0519,
+      "recomputed": -0.05192821718349834,
+      "relative_error": 0.0005436836897560418,
+      "PASS": true,
+      "note": ""
+    },
+    {
+      "name": "mediation n cells",
+      "claimed": 74,
+      "recomputed": 74,
+      "relative_error": 0.0,
+      "PASS": true,
+      "note": ""
+    }
+  ]
+}

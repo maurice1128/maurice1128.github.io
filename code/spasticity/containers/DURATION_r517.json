@@ -1,0 +1,63 @@
+{
+ "id": "DURATION_r517",
+ "why": "HEADLINE_DURATION_QUANT_r417 was computed on 17 hyperreflexia cells, a 6.392 deg headline and a 9.365 s gap. This recomputes the control on the 23-cell corpus the paper analyses.",
+ "n_cells": {
+  "hyperreflexia": 23,
+  "weakness": 36
+ },
+ "t_end_s": {
+  "hyperreflexia": [
+   9.81,
+   17.85,
+   12.72
+  ],
+  "weakness": [
+   20.0,
+   20.0,
+   20.0
+  ],
+  "arm_gap_s": 7.279999999999999,
+  "arms_overlap": false
+ },
+ "raw_pooled": {
+  "slope_deg_per_s": 0.6899296538220442,
+  "pearson_r": 0.9632134183493043,
+  "propagated_deg": 5.022687879824481,
+  "as_fraction_of_headline": 0.9512807403893421,
+  "note": "not the statistic rule 2 specifies: gain and end time are themselves related"
+ },
+ "within_dose_by_family": {
+  "R151S": {
+   "n": 6,
+   "slope": 0.21104426787600855,
+   "t_end_span_s": 4.270000000000001
+  },
+  "R393SPg070": {
+   "n": 6,
+   "slope": -0.10287846238387806,
+   "t_end_span_s": 5.209999999999999
+  },
+  "R393SPg100": {
+   "n": 4,
+   "slope": 0.7268015766301218,
+   "t_end_span_s": 1.6199999999999992
+  },
+  "R396SPg110": {
+   "n": 4,
+   "slope": 0.26244724141408515,
+   "t_end_span_s": 1.299999999999999
+  },
+  "R396SPg120": {
+   "n": 3,
+   "slope": -1.3752584893231516,
+   "t_end_span_s": 1.1900000000000013
+  }
+ },
+ "within_dose_mean": {
+  "n_families_usable": 5,
+  "mean_slope_deg_per_s": -0.05556877315736286,
+  "propagated_deg": -0.4045406685856016,
+  "as_fraction_of_headline": 0.07661868623681202
+ },
+ "headline_deg": 5.2799217587110885
+}

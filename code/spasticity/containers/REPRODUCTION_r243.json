@@ -1,0 +1,20 @@
+{
+ "round": 243,
+ "question": "does the AS-EXECUTED analysis reproduce the run deposit from the frozen corpus?",
+ "method": "body2_channels_r229_AS_EXECUTED.py, byte-exact to the script hash recorded in all three run deposits, re-run against the frozen corpus with PAPER redirected to a scratch directory. The real paper/ was not written. preconditions() ran for real.",
+ "as_executed_script_sha256": "9acb67baf9d39accc342f3afcaa1efa4530e38eaedc093373c3e7ec68f2ba355",
+ "as_executed_script_bytes": 37888,
+ "script_sha256_recorded_by_run": "9acb67baf9d39accc342f3afcaa1efa4530e38eaedc093373c3e7ec68f2ba355",
+ "script_hash_matches_run": true,
+ "run_deposit_preserved_sha256": "e3f738e4f422e33958e04125de5023dd86ee7a15d722641601a0fd6f3bf254bc",
+ "COMPUTED_CONTENT_IDENTICAL": true,
+ "outcome_run": "D1",
+ "outcome_reproduced": "D1",
+ "provenance_differs": {
+  "note": "the provenance block CANNOT match: it hashes the registration, and the registration was edited after the run. This is the breach, not a reproduction failure.",
+  "prereg_sha256_run": "d61d6f8237c603e456a9d9e69752794a3ed8a26d838bce64b6c50088a5138570",
+  "prereg_sha256_now": "ce572133a1b39f843f64cd48293ada2c80191deb948d198f06baf3ec2cf32514"
+ },
+ "what_this_establishes": "every reported VALUE in BODY2_CHANNELS_r229.json is re-derivable from the frozen corpus by the executed code. The chain-of-custody breach no longer touches the numbers; it touches only the claim that they were produced under a registration fixed in advance.",
+ "what_this_does_NOT_establish": "that the analysis was pre-registered. The registration on disk is void as a registration: 18 rungs against the executed 14, it quotes the result it registers, and it fails its own section 1 witness gate."
+}

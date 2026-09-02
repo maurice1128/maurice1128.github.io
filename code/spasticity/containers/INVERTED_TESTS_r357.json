@@ -1,0 +1,346 @@
+{
+ "round": 357,
+ "recorded_at": "2026-08-18 13:46",
+ "OBSERVATION": "A VERIFIER WRITTEN BEFORE A POLICY CHANGE BECOMES AN INVERTED TEST -- it fails exactly the items that COMPLY. r311 policy REQUIRES a live field to restate a wrong claim in order to repudiate it, so any check of the form '\"wrong string\" not in live_field' is STRUCTURALLY INCAPABLE of passing for a correctly repaired file. verify_r311.py reported FAIL on r302, r288 and r305 -- all three compliant -- for six rounds.",
+ "why_it_is_worse_than_a_stale_fact": "A stale fact misleads whoever reads it once. A stale CHECK misleads every time it runs, and it does so while LOOKING LIKE DILIGENCE: a red row reads as vigilance, not as a broken instrument.",
+ "corrected_form": "Not 'the wrong string is absent' but 'the wrong string appears only in a subordinate or repudiating role'. Implemented r355/r356 in verify_r311.py: exclude subordinate key paths, then require every occurrence in a live field to sit inside a negating clause.",
+ "ANTI_LAUNDERING_DEMONSTRATION": {
+  "requirement": "A test that cannot fail on known-bad input is not a test.",
+  "r302": "NEW test vs R294_GAIN_r302.json.bak_r308  -> FAIL (correct)",
+  "r288": "NEW test vs BISTABILITY_r288.json.bak_r308 -> FAIL (correct)",
+  "r305": "NEW test vs COVERAGE_RECONCILE_r305.json.bak_r311 -> FAIL (correct)",
+  "all_three_pass_on_current_files": true,
+  "two_errors_made_and_corrected_during_the_demonstration": [
+   "r356: the subordinate filter used a SUBSTRING test, so 'SUPERSEDED_BY_r306' -- a PREFIX meaning 'superseded BY r306', a pointer -- was read as a subordinate-content marker and the whole block was excluded. Changed to a SUFFIX test.",
+   "The first demonstration used COVERAGE_RECONCILE_r305.json.bak_r306 as known-bad input. That backup contains ZERO occurrences -- the defect did not exist yet -- so the test passed and looked toothless. The genuine known-bad input is .bak_r311. A demonstration is only as good as the badness of its input, which is the same class of error as a wrong resolver."
+  ]
+ },
+ "OTHER_SCRIPTS_THAT_MAY_CARRY_THE_INVERSION": {
+  "criterion": "written before 2026-08-18 02:00 AND containing an absence test ('not in')",
+  "count": 80,
+  "scripts": [
+   {
+    "script": "analyse_ladder_r169.py",
+    "mtime": "08-10 12:33"
+   },
+   {
+    "script": "analyse_matched_r174.py",
+    "mtime": "08-10 15:25"
+   },
+   {
+    "script": "analyse_reopt_r151.py",
+    "mtime": "08-10 00:29"
+   },
+   {
+    "script": "analyze_scone.py",
+    "mtime": "07-28 07:49"
+   },
+   {
+    "script": "ankle_ladder_r235.py",
+    "mtime": "08-17 02:07"
+   },
+   {
+    "script": "bandfill_endpoint_r286.py",
+    "mtime": "08-17 18:35"
+   },
+   {
+    "script": "bandfill_endpoint_r290.py",
+    "mtime": "08-17 19:04"
+   },
+   {
+    "script": "bandfill_endpoint_r291.py",
+    "mtime": "08-18 01:56"
+   },
+   {
+    "script": "bandfill_result_r286.py",
+    "mtime": "08-17 18:36"
+   },
+   {
+    "script": "body2_channels_r229.py",
+    "mtime": "08-17 04:24"
+   },
+   {
+    "script": "body2_channels_r229_AS_EXECUTED.py",
+    "mtime": "08-17 05:04"
+   },
+   {
+    "script": "body2_convention_r229.py",
+    "mtime": "08-16 21:43"
+   },
+   {
+    "script": "body2_dose_r229.py",
+    "mtime": "08-16 22:15"
+   },
+   {
+    "script": "body2_reachability_r229.py",
+    "mtime": "08-17 04:23"
+   },
+   {
+    "script": "body2_sd_r234.py",
+    "mtime": "08-17 01:30"
+   },
+   {
+    "script": "build_ladder_r169.py",
+    "mtime": "08-10 07:23"
+   },
+   {
+    "script": "build_reopt_r151.py",
+    "mtime": "08-10 00:16"
+   },
+   {
+    "script": "check_structure.py",
+    "mtime": "08-02 21:03"
+   },
+   {
+    "script": "coadaptation_check.py",
+    "mtime": "07-27 07:56"
+   },
+   {
+    "script": "cost_matched.py",
+    "mtime": "07-27 00:56"
+   },
+   {
+    "script": "cost_matched_ledger.py",
+    "mtime": "08-03 22:19"
+   },
+   {
+    "script": "council_bytecheck_r169.py",
+    "mtime": "08-10 07:26"
+   },
+   {
+    "script": "crossed_endpoint.py",
+    "mtime": "08-03 17:08"
+   },
+   {
+    "script": "delivered_gain.py",
+    "mtime": "07-28 04:51"
+   },
+   {
+    "script": "deposit_floor_r161.py",
+    "mtime": "08-10 04:06"
+   },
+   {
+    "script": "depth_step1_r212.py",
+    "mtime": "08-12 13:53"
+   },
+   {
+    "script": "dose_response_v2.py",
+    "mtime": "08-02 23:26"
+   },
+   {
+    "script": "equinus_ladder.py",
+    "mtime": "07-27 06:18"
+   },
+   {
+    "script": "footdrop_corr.py",
+    "mtime": "08-03 22:20"
+   },
+   {
+    "script": "freeze_corpus.py",
+    "mtime": "08-02 22:53"
+   },
+   {
+    "script": "gen_conditions.py",
+    "mtime": "08-03 22:28"
+   },
+   {
+    "script": "gen_inventory_r246.py",
+    "mtime": "08-17 05:46"
+   },
+   {
+    "script": "gen_slope.py",
+    "mtime": "08-03 21:04"
+   },
+   {
+    "script": "gen_slope_tier2_r87.py",
+    "mtime": "08-04 23:05"
+   },
+   {
+    "script": "gen_speed_r89.py",
+    "mtime": "08-04 23:25"
+   },
+   {
+    "script": "hipflex_test_r152.py",
+    "mtime": "08-10 01:16"
+   },
+   {
+    "script": "kv_ladder_r145.py",
+    "mtime": "08-09 23:19"
+   },
+   {
+    "script": "ladder36_r228.py",
+    "mtime": "08-16 18:40"
+   },
+   {
+    "script": "lr_asymmetry.py",
+    "mtime": "08-03 20:35"
+   },
+   {
+    "script": "lr_crossval.py",
+    "mtime": "08-03 20:42"
+   },
+   {
+    "script": "matched20_endpoint_r298.py",
+    "mtime": "08-17 20:27"
+   },
+   {
+    "script": "matched_class1.py",
+    "mtime": "07-27 05:11"
+   },
+   {
+    "script": "matched_fallers_r282.py",
+    "mtime": "08-17 17:22"
+   },
+   {
+    "script": "parcheck.py",
+    "mtime": "07-27 12:27"
+   },
+   {
+    "script": "permnull_r221.py",
+    "mtime": "08-16 16:55"
+   },
+   {
+    "script": "permreach_r226.py",
+    "mtime": "08-16 18:14"
+   },
+   {
+    "script": "probe_s2_slow_r140.py",
+    "mtime": "08-08 16:50"
+   },
+   {
+    "script": "quantifier_audit.py",
+    "mtime": "08-04 14:10"
+   },
+   {
+    "script": "reach_2x2_r273.py",
+    "mtime": "08-17 11:35"
+   },
+   {
+    "script": "rebuild_s21.py",
+    "mtime": "08-02 22:53"
+   },
+   {
+    "script": "replay_cache.py",
+    "mtime": "07-27 07:30"
+   },
+   {
+    "script": "residual_3d_r168.py",
+    "mtime": "08-10 06:33"
+   },
+   {
+    "script": "residual_cutoff_r153.py",
+    "mtime": "08-10 00:35"
+   },
+   {
+    "script": "residual_test.py",
+    "mtime": "08-03 17:33"
+   },
+   {
+    "script": "residual_test_filtered.py",
+    "mtime": "08-03 22:20"
+   },
+   {
+    "script": "resume_slope_r64.py",
+    "mtime": "08-04 02:26"
+   },
+   {
+    "script": "resume_slope_tier2_r110.py",
+    "mtime": "08-05 09:45"
+   },
+   {
+    "script": "rom_reanalysis.py",
+    "mtime": "08-03 18:45"
+   },
+   {
+    "script": "run_continuation_r172.py",
+    "mtime": "08-10 12:51"
+   },
+   {
+    "script": "run_ladder_r169.py",
+    "mtime": "08-10 07:23"
+   },
+   {
+    "script": "run_matched_r174.py",
+    "mtime": "08-10 13:50"
+   },
+   {
+    "script": "run_reopt_r151.py",
+    "mtime": "08-10 00:18"
+   },
+   {
+    "script": "run_speed_r203.py",
+    "mtime": "08-11 14:37"
+   },
+   {
+    "script": "screen_r153.py",
+    "mtime": "08-10 01:36"
+   },
+   {
+    "script": "shape_test_r139.py",
+    "mtime": "08-08 15:37"
+   },
+   {
+    "script": "slap_cutoff_sweep_r152.py",
+    "mtime": "08-10 00:20"
+   },
+   {
+    "script": "slap_disentangle_r297.py",
+    "mtime": "08-17 20:23"
+   },
+   {
+    "script": "slope_analysis.py",
+    "mtime": "08-03 21:02"
+   },
+   {
+    "script": "slope_analysis_r62.py",
+    "mtime": "08-03 23:05"
+   },
+   {
+    "script": "spastic_vs_weak.py",
+    "mtime": "08-02 23:33"
+   },
+   {
+    "script": "state_gating.py",
+    "mtime": "08-02 20:52"
+   },
+   {
+    "script": "subreg_gate_r236.py",
+    "mtime": "08-17 03:46"
+   },
+   {
+    "script": "test_alarm_path_r149.py",
+    "mtime": "08-09 23:57"
+   },
+   {
+    "script": "tonic_matched_control.py",
+    "mtime": "07-27 00:02"
+   },
+   {
+    "script": "verify_injection.py",
+    "mtime": "07-27 11:57"
+   },
+   {
+    "script": "verify_placement.py",
+    "mtime": "08-02 21:01"
+   },
+   {
+    "script": "verify_r290.py",
+    "mtime": "08-17 19:07"
+   },
+   {
+    "script": "verify_r298.py",
+    "mtime": "08-17 20:33"
+   },
+   {
+    "script": "video_degradation.py",
+    "mtime": "08-03 19:26"
+   },
+   {
+    "script": "waveform_classify.py",
+    "mtime": "07-27 04:57"
+   }
+  ],
+  "NOT_FIXED_IN_THIS_UNIT": true
+ },
+ "verify_r311_status": "9 of 9 pass after r355/r356"
+}

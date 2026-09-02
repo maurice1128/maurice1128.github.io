@@ -1,0 +1,1230 @@
+{
+  "registration": "PREREG_velocitydep_r368.md",
+  "registration_sha256": "8cf88c12a7f2b395f50a8e08d6e7749af6a41b0464a2715346f8b73a09b8f44d",
+  "design": "R203 3 speeds x {C control, S spastic KV=0.050 soleus/gastroc L, W dorsiflexor weakness tib_ant_l max_isometric_force 1759->1569.0 (x0.892)}, 6 seeds",
+  "endpoint": "SLOPE_v = OLS slope of stance-mean soleus_l.activation on min_velocity in {0.80, 1.05, 1.30}, within seed and condition",
+  "registered_prediction": "SPASTIC HIGH, DORSIFLEXOR-WEAK LOW; and W ~ C",
+  "inference_note": "section 8.3: no SE/CI/p from the three-point fit; inference is the seed-level permutation of section 5, floor 1/924",
+  "cells": {
+    "R203V080C_s101": {
+      "tag": "R203V080C_s101",
+      "dir": "R203V080C_s101.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R101",
+      "sto": "0002_14.566_0.986.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 353,
+      "A_soleus": 0.17278512946175636,
+      "secondary": {
+        "A_gastroc": 0.39332521444759205,
+        "A_tib_ant": 0.04991875184135978,
+        "ankle_torque_stance": 10.978709178470256,
+        "ankle_rom_deg": 30.892807152799143,
+        "peak_stance_dorsiflexion_deg": 11.478865650768965
+      }
+    },
+    "R203V105C_s101": {
+      "tag": "R203V105C_s101",
+      "dir": "R203V105C_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "sto": "0001_1.019_0.992.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 354,
+      "A_soleus": 0.17437288502824858,
+      "secondary": {
+        "A_gastroc": 0.3937506725988701,
+        "A_tib_ant": 0.04920347175141243,
+        "ankle_torque_stance": 10.99089129943503,
+        "ankle_rom_deg": 31.114541819514773,
+        "peak_stance_dorsiflexion_deg": 11.727013671840124
+      }
+    },
+    "R203V130C_s101": {
+      "tag": "R203V130C_s101",
+      "dir": "R203V130C_s101.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R101",
+      "sto": "0084_43.327_16.882.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "n_stance_samples": 408,
+      "A_soleus": 0.1652823117647059,
+      "secondary": {
+        "A_gastroc": 0.3568826232843137,
+        "A_tib_ant": 0.06050290171568627,
+        "ankle_torque_stance": 10.090276691176472,
+        "ankle_rom_deg": 29.392247876085374,
+        "peak_stance_dorsiflexion_deg": 9.552868022436702
+      }
+    },
+    "R203V080C_s102": {
+      "tag": "R203V080C_s102",
+      "dir": "R203V080C_s102.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R102",
+      "sto": "0003_26.007_0.983.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 354,
+      "A_soleus": 0.17395912372881359,
+      "secondary": {
+        "A_gastroc": 0.39403851581920907,
+        "A_tib_ant": 0.04921367514124294,
+        "ankle_torque_stance": 11.048153841807908,
+        "ankle_rom_deg": 31.01827345077689,
+        "peak_stance_dorsiflexion_deg": 11.583774223057418
+      }
+    },
+    "R203V105C_s102": {
+      "tag": "R203V105C_s102",
+      "dir": "R203V105C_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "sto": "0003_27.675_0.983.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 354,
+      "A_soleus": 0.17395912372881359,
+      "secondary": {
+        "A_gastroc": 0.39403851581920907,
+        "A_tib_ant": 0.04921367514124294,
+        "ankle_torque_stance": 11.048153841807908,
+        "ankle_rom_deg": 31.01827345077689,
+        "peak_stance_dorsiflexion_deg": 11.583774223057418
+      }
+    },
+    "R203V130C_s102": {
+      "tag": "R203V130C_s102",
+      "dir": "R203V130C_s102.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R102",
+      "sto": "0083_20.877_16.898.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "n_stance_samples": 411,
+      "A_soleus": 0.1686686092457421,
+      "secondary": {
+        "A_gastroc": 0.358088801946472,
+        "A_tib_ant": 0.05971298126520682,
+        "ankle_torque_stance": 10.119397274939171,
+        "ankle_rom_deg": 29.63856243221211,
+        "peak_stance_dorsiflexion_deg": 10.028480288174798
+      }
+    },
+    "R203V080C_s103": {
+      "tag": "R203V080C_s103",
+      "dir": "R203V080C_s103.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R103",
+      "sto": "0043_19.636_0.991.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 352,
+      "A_soleus": 0.17303517443181818,
+      "secondary": {
+        "A_gastroc": 0.39194758693181825,
+        "A_tib_ant": 0.05013883721590909,
+        "ankle_torque_stance": 10.875522840909092,
+        "ankle_rom_deg": 30.621591850896017,
+        "peak_stance_dorsiflexion_deg": 11.18247458334779
+      }
+    },
+    "R203V105C_s103": {
+      "tag": "R203V105C_s103",
+      "dir": "R203V105C_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "sto": "0056_40.624_0.991.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 352,
+      "A_soleus": 0.17255424403409092,
+      "secondary": {
+        "A_gastroc": 0.39673907897727273,
+        "A_tib_ant": 0.049020678409090905,
+        "ankle_torque_stance": 10.979390539772728,
+        "ankle_rom_deg": 30.75868919211492,
+        "peak_stance_dorsiflexion_deg": 11.427356744986705
+      }
+    },
+    "R203V130C_s103": {
+      "tag": "R203V130C_s103",
+      "dir": "R203V130C_s103.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R103",
+      "sto": "0084_41.318_16.287.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "n_stance_samples": 411,
+      "A_soleus": 0.16417896472019464,
+      "secondary": {
+        "A_gastroc": 0.3527085547445255,
+        "A_tib_ant": 0.06439028661800486,
+        "ankle_torque_stance": 9.943963600973234,
+        "ankle_rom_deg": 29.437817119391443,
+        "peak_stance_dorsiflexion_deg": 9.579052193674181
+      }
+    },
+    "R203V080C_s104": {
+      "tag": "R203V080C_s104",
+      "dir": "R203V080C_s104.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R104",
+      "sto": "0000_1.033_0.987.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 354,
+      "A_soleus": 0.17278068926553675,
+      "secondary": {
+        "A_gastroc": 0.39377849322033903,
+        "A_tib_ant": 0.04981148926553672,
+        "ankle_torque_stance": 10.969551751412428,
+        "ankle_rom_deg": 30.741156683583917,
+        "peak_stance_dorsiflexion_deg": 11.219774135810807
+      }
+    },
+    "R203V105C_s104": {
+      "tag": "R203V105C_s104",
+      "dir": "R203V105C_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "sto": "0000_1.033_0.987.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 354,
+      "A_soleus": 0.17278068926553675,
+      "secondary": {
+        "A_gastroc": 0.39377849322033903,
+        "A_tib_ant": 0.04981148926553672,
+        "ankle_torque_stance": 10.969551751412428,
+        "ankle_rom_deg": 30.741156683583917,
+        "peak_stance_dorsiflexion_deg": 11.219774135810807
+      }
+    },
+    "R203V130C_s104": {
+      "tag": "R203V130C_s104",
+      "dir": "R203V130C_s104.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R104",
+      "sto": "0088_23.640_15.591.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "n_stance_samples": 411,
+      "A_soleus": 0.1675904583941606,
+      "secondary": {
+        "A_gastroc": 0.34546478588807783,
+        "A_tib_ant": 0.06318241508515815,
+        "ankle_torque_stance": 10.071280437956204,
+        "ankle_rom_deg": 29.5485221147073,
+        "peak_stance_dorsiflexion_deg": 9.959782648538614
+      }
+    },
+    "R203V080C_s105": {
+      "tag": "R203V080C_s105",
+      "dir": "R203V080C_s105.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R105",
+      "sto": "0021_7.131_0.991.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 352,
+      "A_soleus": 0.17386605482954545,
+      "secondary": {
+        "A_gastroc": 0.3925618147727273,
+        "A_tib_ant": 0.05002113039772727,
+        "ankle_torque_stance": 11.002694545454546,
+        "ankle_rom_deg": 31.099140713981654,
+        "peak_stance_dorsiflexion_deg": 11.765516435672916
+      }
+    },
+    "R203V105C_s105": {
+      "tag": "R203V105C_s105",
+      "dir": "R203V105C_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "sto": "0045_34.357_0.988.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 352,
+      "A_soleus": 0.17305130880681818,
+      "secondary": {
+        "A_gastroc": 0.3931805656249999,
+        "A_tib_ant": 0.05057151505681818,
+        "ankle_torque_stance": 10.946129062499999,
+        "ankle_rom_deg": 30.876145540116738,
+        "peak_stance_dorsiflexion_deg": 11.481157481949488
+      }
+    },
+    "R203V130C_s105": {
+      "tag": "R203V130C_s105",
+      "dir": "R203V130C_s105.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R105",
+      "sto": "0088_20.218_16.143.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "n_stance_samples": 410,
+      "A_soleus": 0.17207916975609758,
+      "secondary": {
+        "A_gastroc": 0.362898441707317,
+        "A_tib_ant": 0.0595880143902439,
+        "ankle_torque_stance": 10.291646334146341,
+        "ankle_rom_deg": 30.204329607014046,
+        "peak_stance_dorsiflexion_deg": 11.014540653594945
+      }
+    },
+    "R203V080C_s106": {
+      "tag": "R203V080C_s106",
+      "dir": "R203V080C_s106.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R106",
+      "sto": "0001_12.239_0.990.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 351,
+      "A_soleus": 0.17441684871794869,
+      "secondary": {
+        "A_gastroc": 0.3948301185185185,
+        "A_tib_ant": 0.048759976068376065,
+        "ankle_torque_stance": 11.108668660968663,
+        "ankle_rom_deg": 30.947799641975802,
+        "peak_stance_dorsiflexion_deg": 11.611333493003212
+      }
+    },
+    "R203V105C_s106": {
+      "tag": "R203V105C_s106",
+      "dir": "R203V105C_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "sto": "0009_31.280_0.989.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 353,
+      "A_soleus": 0.17386940821529742,
+      "secondary": {
+        "A_gastroc": 0.3918325954674221,
+        "A_tib_ant": 0.04974172861189802,
+        "ankle_torque_stance": 10.979394305949008,
+        "ankle_rom_deg": 30.898307547632395,
+        "peak_stance_dorsiflexion_deg": 11.309040960292188
+      }
+    },
+    "R203V130C_s106": {
+      "tag": "R203V130C_s106",
+      "dir": "R203V130C_s106.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R106",
+      "sto": "0077_18.842_17.806.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "n_stance_samples": 410,
+      "A_soleus": 0.17087356682926833,
+      "secondary": {
+        "A_gastroc": 0.371351036097561,
+        "A_tib_ant": 0.05734094707317073,
+        "ankle_torque_stance": 10.455140780487804,
+        "ankle_rom_deg": 30.516763492698882,
+        "peak_stance_dorsiflexion_deg": 11.156003933212746
+      }
+    },
+    "R203V080S_s101": {
+      "tag": "R203V080S_s101",
+      "dir": "R203V080S_s101.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R101",
+      "sto": "0080_50.320_16.805.par.sto",
+      "t_end_s": 17.02,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 355,
+      "A_soleus": 0.20153311267605636,
+      "secondary": {
+        "A_gastroc": 0.3870222549295775,
+        "A_tib_ant": 0.041845730140845076,
+        "ankle_torque_stance": 11.686912512676056,
+        "ankle_rom_deg": 31.30934746985925,
+        "peak_stance_dorsiflexion_deg": 11.504706047329366
+      }
+    },
+    "R203V105S_s101": {
+      "tag": "R203V105S_s101",
+      "dir": "R203V105S_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "sto": "0055_55.866_19.808.par.sto",
+      "t_end_s": 18.33,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 353,
+      "A_soleus": 0.20213216940509918,
+      "secondary": {
+        "A_gastroc": 0.3907132490084986,
+        "A_tib_ant": 0.04149152606232295,
+        "ankle_torque_stance": 11.731034538243625,
+        "ankle_rom_deg": 31.470004835613928,
+        "peak_stance_dorsiflexion_deg": 11.414350603037235
+      }
+    },
+    "R203V130S_s101": {
+      "tag": "R203V130S_s101",
+      "dir": "R203V130S_s101.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R101",
+      "sto": "0076_71.027_47.472.par.sto",
+      "t_end_s": 15.2,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 349,
+      "A_soleus": 0.19933868395415474,
+      "secondary": {
+        "A_gastroc": 0.39561909627507164,
+        "A_tib_ant": 0.041640595415472784,
+        "ankle_torque_stance": 11.735033169054441,
+        "ankle_rom_deg": 30.89343740637379,
+        "peak_stance_dorsiflexion_deg": 11.930184505993514
+      }
+    },
+    "R203V080S_s102": {
+      "tag": "R203V080S_s102",
+      "dir": "R203V080S_s102.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R102",
+      "sto": "0070_58.765_30.516.par.sto",
+      "t_end_s": 14.52,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 358,
+      "A_soleus": 0.19958985893854753,
+      "secondary": {
+        "A_gastroc": 0.3922051642458101,
+        "A_tib_ant": 0.041455894134078214,
+        "ankle_torque_stance": 11.66447915083799,
+        "ankle_rom_deg": 30.690255113064495,
+        "peak_stance_dorsiflexion_deg": 11.122600493756618
+      }
+    },
+    "R203V105S_s102": {
+      "tag": "R203V105S_s102",
+      "dir": "R203V105S_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "sto": "0087_54.957_32.567.par.sto",
+      "t_end_s": 15.19,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 355,
+      "A_soleus": 0.20101490253521126,
+      "secondary": {
+        "A_gastroc": 0.3908989374647887,
+        "A_tib_ant": 0.04223349492957747,
+        "ankle_torque_stance": 11.611862374929576,
+        "ankle_rom_deg": 30.96039325431277,
+        "peak_stance_dorsiflexion_deg": 11.338490990961912
+      }
+    },
+    "R203V130S_s102": {
+      "tag": "R203V130S_s102",
+      "dir": "R203V130S_s102.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R102",
+      "sto": "0086_62.556_43.858.par.sto",
+      "t_end_s": 15.71,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 354,
+      "A_soleus": 0.1999035211864407,
+      "secondary": {
+        "A_gastroc": 0.3924457562146892,
+        "A_tib_ant": 0.04087627966101695,
+        "ankle_torque_stance": 11.497935649717514,
+        "ankle_rom_deg": 30.600736187153256,
+        "peak_stance_dorsiflexion_deg": 10.933696308701986
+      }
+    },
+    "R203V080S_s103": {
+      "tag": "R203V080S_s103",
+      "dir": "R203V080S_s103.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R103",
+      "sto": "0086_56.840_18.977.par.sto",
+      "t_end_s": 17.13,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 352,
+      "A_soleus": 0.19983810142045455,
+      "secondary": {
+        "A_gastroc": 0.3929457806818181,
+        "A_tib_ant": 0.041225868465909095,
+        "ankle_torque_stance": 11.524978278409092,
+        "ankle_rom_deg": 30.96756668590781,
+        "peak_stance_dorsiflexion_deg": 11.152508890662448
+      }
+    },
+    "R203V105S_s103": {
+      "tag": "R203V105S_s103",
+      "dir": "R203V105S_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "sto": "0078_62.722_25.238.par.sto",
+      "t_end_s": 16.57,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 353,
+      "A_soleus": 0.20181676515580738,
+      "secondary": {
+        "A_gastroc": 0.3884189736543909,
+        "A_tib_ant": 0.04170308923512748,
+        "ankle_torque_stance": 11.701116592067986,
+        "ankle_rom_deg": 30.79658462068487,
+        "peak_stance_dorsiflexion_deg": 11.356539161508534
+      }
+    },
+    "R203V130S_s103": {
+      "tag": "R203V130S_s103",
+      "dir": "R203V130S_s103.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R103",
+      "sto": "0088_71.351_34.783.par.sto",
+      "t_end_s": 17.51,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 354,
+      "A_soleus": 0.1993785997175141,
+      "secondary": {
+        "A_gastroc": 0.39343952090395484,
+        "A_tib_ant": 0.0414231768361582,
+        "ankle_torque_stance": 11.777378771186441,
+        "ankle_rom_deg": 31.36977159893375,
+        "peak_stance_dorsiflexion_deg": 11.40031313705653
+      }
+    },
+    "R203V080S_s104": {
+      "tag": "R203V080S_s104",
+      "dir": "R203V080S_s104.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R104",
+      "sto": "0052_60.708_35.801.par.sto",
+      "t_end_s": 13.53,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 354,
+      "A_soleus": 0.20260591073446327,
+      "secondary": {
+        "A_gastroc": 0.3931664584745763,
+        "A_tib_ant": 0.04079032231638419,
+        "ankle_torque_stance": 11.727100765536726,
+        "ankle_rom_deg": 31.51849998339381,
+        "peak_stance_dorsiflexion_deg": 11.825390525264087
+      }
+    },
+    "R203V105S_s104": {
+      "tag": "R203V105S_s104",
+      "dir": "R203V105S_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "sto": "0077_57.600_26.251.par.sto",
+      "t_end_s": 16.03,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 351,
+      "A_soleus": 0.20447679572649577,
+      "secondary": {
+        "A_gastroc": 0.390811701994302,
+        "A_tib_ant": 0.041208841595441595,
+        "ankle_torque_stance": 11.68488835156695,
+        "ankle_rom_deg": 31.683878521380365,
+        "peak_stance_dorsiflexion_deg": 11.782017620172685
+      }
+    },
+    "R203V130S_s104": {
+      "tag": "R203V130S_s104",
+      "dir": "R203V130S_s104.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R104",
+      "sto": "0089_60.934_39.859.par.sto",
+      "t_end_s": 17.26,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 358,
+      "A_soleus": 0.19846066759776534,
+      "secondary": {
+        "A_gastroc": 0.39123174301675984,
+        "A_tib_ant": 0.04186839804469274,
+        "ankle_torque_stance": 11.5577173575419,
+        "ankle_rom_deg": 30.44129349192425,
+        "peak_stance_dorsiflexion_deg": 10.7725805767112
+      }
+    },
+    "R203V080S_s105": {
+      "tag": "R203V080S_s105",
+      "dir": "R203V080S_s105.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R105",
+      "sto": "0075_67.097_28.372.par.sto",
+      "t_end_s": 15.04,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 353,
+      "A_soleus": 0.20133274475920682,
+      "secondary": {
+        "A_gastroc": 0.39272479915014163,
+        "A_tib_ant": 0.040704327195467425,
+        "ankle_torque_stance": 11.680031923512747,
+        "ankle_rom_deg": 31.298025823827466,
+        "peak_stance_dorsiflexion_deg": 11.320156341517727
+      }
+    },
+    "R203V105S_s105": {
+      "tag": "R203V105S_s105",
+      "dir": "R203V105S_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "sto": "0072_59.663_26.200.par.sto",
+      "t_end_s": 16.49,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 359,
+      "A_soleus": 0.1997202428969359,
+      "secondary": {
+        "A_gastroc": 0.39386583593314767,
+        "A_tib_ant": 0.04094950807799443,
+        "ankle_torque_stance": 11.719137852367687,
+        "ankle_rom_deg": 31.13228059285202,
+        "peak_stance_dorsiflexion_deg": 11.449243732760701
+      }
+    },
+    "R203V130S_s105": {
+      "tag": "R203V130S_s105",
+      "dir": "R203V130S_s105.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R105",
+      "sto": "0082_66.638_28.556.par.sto",
+      "t_end_s": 19.97,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 356,
+      "A_soleus": 0.19992429971910114,
+      "secondary": {
+        "A_gastroc": 0.3882571876404494,
+        "A_tib_ant": 0.04221722219101123,
+        "ankle_torque_stance": 11.649291351123596,
+        "ankle_rom_deg": 30.867700142216506,
+        "peak_stance_dorsiflexion_deg": 10.946014901297298
+      }
+    },
+    "R203V080S_s106": {
+      "tag": "R203V080S_s106",
+      "dir": "R203V080S_s106.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R106",
+      "sto": "0082_59.721_24.546.par.sto",
+      "t_end_s": 15.95,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 355,
+      "A_soleus": 0.2003923822535211,
+      "secondary": {
+        "A_gastroc": 0.3900303461971831,
+        "A_tib_ant": 0.041938874929577465,
+        "ankle_torque_stance": 11.665793788732394,
+        "ankle_rom_deg": 30.78730270440375,
+        "peak_stance_dorsiflexion_deg": 11.318895834368439
+      }
+    },
+    "R203V105S_s106": {
+      "tag": "R203V105S_s106",
+      "dir": "R203V105S_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "sto": "0021_65.687_36.416.par.sto",
+      "t_end_s": 13.97,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 358,
+      "A_soleus": 0.20004239497206702,
+      "secondary": {
+        "A_gastroc": 0.39516209022346366,
+        "A_tib_ant": 0.04083117709497207,
+        "ankle_torque_stance": 11.718030723463688,
+        "ankle_rom_deg": 31.208140204927343,
+        "peak_stance_dorsiflexion_deg": 11.605833098169954
+      }
+    },
+    "R203V130S_s106": {
+      "tag": "R203V130S_s106",
+      "dir": "R203V130S_s106.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R106",
+      "sto": "0088_66.899_39.093.par.sto",
+      "t_end_s": 17.52,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 355,
+      "A_soleus": 0.19916674507042256,
+      "secondary": {
+        "A_gastroc": 0.39320482309859156,
+        "A_tib_ant": 0.04151761830985916,
+        "ankle_torque_stance": 11.612695118309858,
+        "ankle_rom_deg": 31.09470602064734,
+        "peak_stance_dorsiflexion_deg": 11.461562325356013
+      }
+    },
+    "R203V080W_s101": {
+      "tag": "R203V080W_s101",
+      "dir": "R203V080W_s101.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R101",
+      "sto": "0067_34.950_1.019.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 351,
+      "A_soleus": 0.17562956695156695,
+      "secondary": {
+        "A_gastroc": 0.3814238943019943,
+        "A_tib_ant": 0.05414133504273504,
+        "ankle_torque_stance": 10.987275356125355,
+        "ankle_rom_deg": 31.439718286563316,
+        "peak_stance_dorsiflexion_deg": 11.298212057964216
+      }
+    },
+    "R203V105W_s101": {
+      "tag": "R203V105W_s101",
+      "dir": "R203V105W_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "sto": "0056_19.626_1.022.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 352,
+      "A_soleus": 0.17334500539772726,
+      "secondary": {
+        "A_gastroc": 0.3869330525568182,
+        "A_tib_ant": 0.05385280710227272,
+        "ankle_torque_stance": 10.822715681818181,
+        "ankle_rom_deg": 31.545772774442035,
+        "peak_stance_dorsiflexion_deg": 11.606635239083138
+      }
+    },
+    "R203V130W_s101": {
+      "tag": "R203V130W_s101",
+      "dir": "R203V130W_s101.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R101",
+      "sto": "0081_28.376_16.972.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "n_stance_samples": 411,
+      "A_soleus": 0.1725273805352798,
+      "secondary": {
+        "A_gastroc": 0.3631969474452555,
+        "A_tib_ant": 0.060660509245742095,
+        "ankle_torque_stance": 10.341589167883212,
+        "ankle_rom_deg": 30.775721317504843,
+        "peak_stance_dorsiflexion_deg": 11.334995948411615
+      }
+    },
+    "R203V080W_s102": {
+      "tag": "R203V080W_s102",
+      "dir": "R203V080W_s102.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R102",
+      "sto": "0079_42.079_1.019.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 353,
+      "A_soleus": 0.17550574249291784,
+      "secondary": {
+        "A_gastroc": 0.38603926317280457,
+        "A_tib_ant": 0.05361361671388102,
+        "ankle_torque_stance": 10.901865920679887,
+        "ankle_rom_deg": 31.666517900187905,
+        "peak_stance_dorsiflexion_deg": 11.327604792854427
+      }
+    },
+    "R203V105W_s102": {
+      "tag": "R203V105W_s102",
+      "dir": "R203V105W_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "sto": "0066_37.356_1.022.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 354,
+      "A_soleus": 0.17240161242937851,
+      "secondary": {
+        "A_gastroc": 0.3856929274011299,
+        "A_tib_ant": 0.05441287655367232,
+        "ankle_torque_stance": 10.882548305084745,
+        "ankle_rom_deg": 31.550895017130507,
+        "peak_stance_dorsiflexion_deg": 11.339522314993149
+      }
+    },
+    "R203V130W_s102": {
+      "tag": "R203V130W_s102",
+      "dir": "R203V130W_s102.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R102",
+      "sto": "0080_28.951_15.845.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "n_stance_samples": 409,
+      "A_soleus": 0.17219782958435206,
+      "secondary": {
+        "A_gastroc": 0.3444012349633252,
+        "A_tib_ant": 0.06461326136919315,
+        "ankle_torque_stance": 10.132848581907089,
+        "ankle_rom_deg": 30.139394390232553,
+        "peak_stance_dorsiflexion_deg": 10.405142742693801
+      }
+    },
+    "R203V080W_s103": {
+      "tag": "R203V080W_s103",
+      "dir": "R203V080W_s103.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R103",
+      "sto": "0082_1.054_1.021.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 355,
+      "A_soleus": 0.17494083295774648,
+      "secondary": {
+        "A_gastroc": 0.3901817861971831,
+        "A_tib_ant": 0.052694492394366195,
+        "ankle_torque_stance": 10.941836084507042,
+        "ankle_rom_deg": 32.02443317565022,
+        "peak_stance_dorsiflexion_deg": 11.979344284815738
+      }
+    },
+    "R203V105W_s103": {
+      "tag": "R203V105W_s103",
+      "dir": "R203V105W_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "sto": "0046_30.428_1.021.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 352,
+      "A_soleus": 0.17111000823863637,
+      "secondary": {
+        "A_gastroc": 0.38466256306818186,
+        "A_tib_ant": 0.054074865624999996,
+        "ankle_torque_stance": 10.789559403409092,
+        "ankle_rom_deg": 30.96609991395228,
+        "peak_stance_dorsiflexion_deg": 10.6188560002776
+      }
+    },
+    "R203V130W_s103": {
+      "tag": "R203V130W_s103",
+      "dir": "R203V130W_s103.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R103",
+      "sto": "0080_36.043_17.477.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "n_stance_samples": 414,
+      "A_soleus": 0.17287451135265702,
+      "secondary": {
+        "A_gastroc": 0.3646774871980677,
+        "A_tib_ant": 0.05978206425120773,
+        "ankle_torque_stance": 10.371898140096617,
+        "ankle_rom_deg": 30.828891800892986,
+        "peak_stance_dorsiflexion_deg": 10.97019372025182
+      }
+    },
+    "R203V080W_s104": {
+      "tag": "R203V080W_s104",
+      "dir": "R203V080W_s104.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R104",
+      "sto": "0088_1.123_1.021.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 351,
+      "A_soleus": 0.17369729914529916,
+      "secondary": {
+        "A_gastroc": 0.38552930854700856,
+        "A_tib_ant": 0.054297074358974365,
+        "ankle_torque_stance": 10.787001025641025,
+        "ankle_rom_deg": 31.507682540221737,
+        "peak_stance_dorsiflexion_deg": 11.287039380959165
+      }
+    },
+    "R203V105W_s104": {
+      "tag": "R203V105W_s104",
+      "dir": "R203V105W_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "sto": "0057_10.005_1.021.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 354,
+      "A_soleus": 0.17302322994350283,
+      "secondary": {
+        "A_gastroc": 0.37886594943502827,
+        "A_tib_ant": 0.05483253502824859,
+        "ankle_torque_stance": 10.63514661016949,
+        "ankle_rom_deg": 30.930725499680896,
+        "peak_stance_dorsiflexion_deg": 10.653462651103501
+      }
+    },
+    "R203V130W_s104": {
+      "tag": "R203V130W_s104",
+      "dir": "R203V130W_s104.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R104",
+      "sto": "0083_34.787_16.592.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "n_stance_samples": 413,
+      "A_soleus": 0.16883655036319611,
+      "secondary": {
+        "A_gastroc": 0.36050396392251816,
+        "A_tib_ant": 0.06297776513317191,
+        "ankle_torque_stance": 10.171211404358354,
+        "ankle_rom_deg": 30.150385630602475,
+        "peak_stance_dorsiflexion_deg": 10.258637434478851
+      }
+    },
+    "R203V080W_s105": {
+      "tag": "R203V080W_s105",
+      "dir": "R203V080W_s105.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R105",
+      "sto": "0026_10.243_1.024.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 353,
+      "A_soleus": 0.17107690679886686,
+      "secondary": {
+        "A_gastroc": 0.38276740708215296,
+        "A_tib_ant": 0.05502061331444759,
+        "ankle_torque_stance": 10.704939376770538,
+        "ankle_rom_deg": 31.065175775886296,
+        "peak_stance_dorsiflexion_deg": 10.850388245289965
+      }
+    },
+    "R203V105W_s105": {
+      "tag": "R203V105W_s105",
+      "dir": "R203V105W_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "sto": "0060_22.284_1.020.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 353,
+      "A_soleus": 0.17235286487252127,
+      "secondary": {
+        "A_gastroc": 0.38208014022662884,
+        "A_tib_ant": 0.054517030594900845,
+        "ankle_torque_stance": 10.802683682719547,
+        "ankle_rom_deg": 31.06943858188207,
+        "peak_stance_dorsiflexion_deg": 10.736598827176984
+      }
+    },
+    "R203V130W_s105": {
+      "tag": "R203V130W_s105",
+      "dir": "R203V130W_s105.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R105",
+      "sto": "0084_18.296_17.053.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "n_stance_samples": 415,
+      "A_soleus": 0.17407887228915664,
+      "secondary": {
+        "A_gastroc": 0.360438385060241,
+        "A_tib_ant": 0.06089746819277108,
+        "ankle_torque_stance": 10.352626722891566,
+        "ankle_rom_deg": 30.823735180736808,
+        "peak_stance_dorsiflexion_deg": 10.721988403401147
+      }
+    },
+    "R203V080W_s106": {
+      "tag": "R203V080W_s106",
+      "dir": "R203V080W_s106.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R106",
+      "sto": "0078_54.520_1.022.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 352,
+      "A_soleus": 0.1753319465909091,
+      "secondary": {
+        "A_gastroc": 0.3827002144886364,
+        "A_tib_ant": 0.05446732357954545,
+        "ankle_torque_stance": 10.81596534090909,
+        "ankle_rom_deg": 31.476605309413845,
+        "peak_stance_dorsiflexion_deg": 11.259480111013373
+      }
+    },
+    "R203V105W_s106": {
+      "tag": "R203V105W_s106",
+      "dir": "R203V105W_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "sto": "0084_36.948_1.021.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "n_stance_samples": 352,
+      "A_soleus": 0.17389236647727271,
+      "secondary": {
+        "A_gastroc": 0.37640392357954544,
+        "A_tib_ant": 0.055361125284090915,
+        "ankle_torque_stance": 10.703225568181818,
+        "ankle_rom_deg": 31.008326903453415,
+        "peak_stance_dorsiflexion_deg": 11.066450629833799
+      }
+    },
+    "R203V130W_s106": {
+      "tag": "R203V130W_s106",
+      "dir": "R203V130W_s106.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R106",
+      "sto": "0089_23.301_17.226.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "n_stance_samples": 415,
+      "A_soleus": 0.17472882530120482,
+      "secondary": {
+        "A_gastroc": 0.3630068773493976,
+        "A_tib_ant": 0.05969502096385542,
+        "ankle_torque_stance": 10.419393084337349,
+        "ankle_rom_deg": 30.817642729515242,
+        "peak_stance_dorsiflexion_deg": 10.856289710579812
+      }
+    }
+  },
+  "slopes": {
+    "C": {
+      "s101": {
+        "SLOPE_v": -0.015005635394100936,
+        "A_by_speed": {
+          "0.8": 0.17278512946175636,
+          "1.05": 0.17437288502824858,
+          "1.3": 0.1652823117647059
+        },
+        "SLOPE_A_gastroc": -0.07288518232655672,
+        "SLOPE_A_tib_ant": 0.02116829974865299,
+        "SLOPE_ankle_torque_stance": -1.7768649745875678,
+        "SLOPE_ankle_rom_deg": -3.0011185534275384,
+        "SLOPE_peak_stance_dorsiflexion_deg": -3.8519952566645266
+      },
+      "s102": {
+        "SLOPE_v": -0.010581028966142991,
+        "A_by_speed": {
+          "0.8": 0.17395912372881359,
+          "1.05": 0.17395912372881359,
+          "1.3": 0.1686686092457421
+        },
+        "SLOPE_A_gastroc": -0.07189942774547409,
+        "SLOPE_A_tib_ant": 0.02099861224792776,
+        "SLOPE_ankle_torque_stance": -1.8575131337374735,
+        "SLOPE_ankle_rom_deg": -2.7594220371295535,
+        "SLOPE_peak_stance_dorsiflexion_deg": -3.11058786976524
+      },
+      "s103": {
+        "SLOPE_v": -0.017712419423247083,
+        "A_by_speed": {
+          "0.8": 0.17303517443181818,
+          "1.05": 0.17255424403409092,
+          "1.3": 0.16417896472019464
+        },
+        "SLOPE_A_gastroc": -0.07847806437458549,
+        "SLOPE_A_tib_ant": 0.028502898804191545,
+        "SLOPE_ankle_torque_stance": -1.8631184798717157,
+        "SLOPE_ankle_rom_deg": -2.367549463009148,
+        "SLOPE_peak_stance_dorsiflexion_deg": -3.206844779347218
+      },
+      "s104": {
+        "SLOPE_v": -0.010380461742752312,
+        "A_by_speed": {
+          "0.8": 0.17278068926553675,
+          "1.05": 0.17278068926553675,
+          "1.3": 0.1675904583941606
+        },
+        "SLOPE_A_gastroc": -0.0966274146645224,
+        "SLOPE_A_tib_ant": 0.026741851639242864,
+        "SLOPE_ankle_torque_stance": -1.7965426269124478,
+        "SLOPE_ankle_rom_deg": -2.385269137753234,
+        "SLOPE_peak_stance_dorsiflexion_deg": -2.519982974544387
+      },
+      "s105": {
+        "SLOPE_v": -0.0035737701468957495,
+        "A_by_speed": {
+          "0.8": 0.17386605482954545,
+          "1.05": 0.17305130880681818,
+          "1.3": 0.17207916975609758
+        },
+        "SLOPE_A_gastroc": -0.05932674613082056,
+        "SLOPE_A_tib_ant": 0.01913376798503326,
+        "SLOPE_ankle_torque_stance": -1.4220964226164092,
+        "SLOPE_ankle_rom_deg": -1.7896222139352176,
+        "SLOPE_peak_stance_dorsiflexion_deg": -1.5019515641559416
+      },
+      "s106": {
+        "SLOPE_v": -0.0070865637773607215,
+        "A_by_speed": {
+          "0.8": 0.17441684871794869,
+          "1.05": 0.17386940821529742,
+          "1.3": 0.17087356682926833
+        },
+        "SLOPE_A_gastroc": -0.04695816484191506,
+        "SLOPE_A_tib_ant": 0.01716194200958933,
+        "SLOPE_ankle_torque_stance": -1.3070557609617168,
+        "SLOPE_ankle_rom_deg": -0.8620722985538407,
+        "SLOPE_peak_stance_dorsiflexion_deg": -0.9106591195809308
+      }
+    },
+    "S": {
+      "s101": {
+        "SLOPE_v": -0.00438885744380324,
+        "A_by_speed": {
+          "0.8": 0.20153311267605636,
+          "1.05": 0.20213216940509918,
+          "1.3": 0.19933868395415474
+        },
+        "SLOPE_A_gastroc": 0.01719368269098831,
+        "SLOPE_A_tib_ant": -0.0004102694507445853,
+        "SLOPE_ankle_torque_stance": 0.09624131275677072,
+        "SLOPE_ankle_rom_deg": -0.8318201269709249,
+        "SLOPE_peak_stance_dorsiflexion_deg": 0.8509569173282969
+      },
+      "s102": {
+        "SLOPE_v": 0.0006273244957863411,
+        "A_by_speed": {
+          "0.8": 0.19958985893854753,
+          "1.05": 0.20101490253521126,
+          "1.3": 0.1999035211864407
+        },
+        "SLOPE_A_gastroc": 0.00048118393775820056,
+        "SLOPE_A_tib_ant": -0.0011592289461225258,
+        "SLOPE_ankle_torque_stance": -0.33308700224095134,
+        "SLOPE_ankle_rom_deg": -0.17903785182247844,
+        "SLOPE_peak_stance_dorsiflexion_deg": -0.37780837010926405
+      },
+      "s103": {
+        "SLOPE_v": -0.0009190034058809138,
+        "A_by_speed": {
+          "0.8": 0.19983810142045455,
+          "1.05": 0.20181676515580738,
+          "1.3": 0.1993785997175141
+        },
+        "SLOPE_A_gastroc": 0.0009874804442734364,
+        "SLOPE_A_tib_ant": 0.00039461674049820483,
+        "SLOPE_ankle_torque_stance": 0.5048009855546987,
+        "SLOPE_ankle_rom_deg": 0.8044098260518808,
+        "SLOPE_peak_stance_dorsiflexion_deg": 0.49560849278816477
+      },
+      "s104": {
+        "SLOPE_v": -0.008290486273395847,
+        "A_by_speed": {
+          "0.8": 0.20260591073446327,
+          "1.05": 0.20447679572649577,
+          "1.3": 0.19846066759776534
+        },
+        "SLOPE_A_gastroc": -0.0038694309156329654,
+        "SLOPE_A_tib_ant": 0.0021561514566171003,
+        "SLOPE_ankle_torque_stance": -0.33876681598965064,
+        "SLOPE_ankle_rom_deg": -2.154412982939121,
+        "SLOPE_peak_stance_dorsiflexion_deg": -2.1056198971057754
+      },
+      "s105": {
+        "SLOPE_v": -0.002816890080211354,
+        "A_by_speed": {
+          "0.8": 0.20133274475920682,
+          "1.05": 0.1997202428969359,
+          "1.3": 0.19992429971910114
+        },
+        "SLOPE_A_gastroc": -0.00893522301938443,
+        "SLOPE_A_tib_ant": 0.0030257899910876157,
+        "SLOPE_ankle_torque_stance": -0.06148114477830191,
+        "SLOPE_ankle_rom_deg": -0.860651363221919,
+        "SLOPE_peak_stance_dorsiflexion_deg": -0.7482828804408577
+      },
+      "s106": {
+        "SLOPE_v": -0.002451274366197076,
+        "A_by_speed": {
+          "0.8": 0.2003923822535211,
+          "1.05": 0.20004239497206702,
+          "1.3": 0.19916674507042256
+        },
+        "SLOPE_A_gastroc": 0.00634895380281697,
+        "SLOPE_A_tib_ant": -0.0008425132394366125,
+        "SLOPE_ankle_torque_stance": -0.10619734084507115,
+        "SLOPE_ankle_rom_deg": 0.6148066324871806,
+        "SLOPE_peak_stance_dorsiflexion_deg": 0.28533298197514867
+      }
+    },
+    "W": {
+      "s101": {
+        "SLOPE_v": -0.006204372832574301,
+        "A_by_speed": {
+          "0.8": 0.17562956695156695,
+          "1.05": 0.17334500539772726,
+          "1.3": 0.1725273805352798
+        },
+        "SLOPE_A_gastroc": -0.036453893713477625,
+        "SLOPE_A_tib_ant": 0.013038348406014102,
+        "SLOPE_ankle_torque_stance": -1.2913723764842864,
+        "SLOPE_ankle_rom_deg": -1.327993938116947,
+        "SLOPE_peak_stance_dorsiflexion_deg": 0.07356778089479832
+      },
+      "s102": {
+        "SLOPE_v": -0.006615825817131549,
+        "A_by_speed": {
+          "0.8": 0.17550574249291784,
+          "1.05": 0.17240161242937851,
+          "1.3": 0.17219782958435206
+        },
+        "SLOPE_A_gastroc": -0.08327605641895874,
+        "SLOPE_A_tib_ant": 0.021999289310624268,
+        "SLOPE_ankle_torque_stance": -1.5380346775455962,
+        "SLOPE_ankle_rom_deg": -3.0542470199107044,
+        "SLOPE_peak_stance_dorsiflexion_deg": -1.8449241003212506
+      },
+      "s103": {
+        "SLOPE_v": -0.004132643210178921,
+        "A_by_speed": {
+          "0.8": 0.17494083295774648,
+          "1.05": 0.17111000823863637,
+          "1.3": 0.17287451135265702
+        },
+        "SLOPE_A_gastroc": -0.051008597998230765,
+        "SLOPE_A_tib_ant": 0.014175143713683072,
+        "SLOPE_ankle_torque_stance": -1.1398758888208498,
+        "SLOPE_ankle_rom_deg": -2.3910827495144744,
+        "SLOPE_peak_stance_dorsiflexion_deg": -2.0183011291278383
+      },
+      "s104": {
+        "SLOPE_v": -0.009721497564206094,
+        "A_by_speed": {
+          "0.8": 0.17369729914529916,
+          "1.05": 0.17302322994350283,
+          "1.3": 0.16883655036319611
+        },
+        "SLOPE_A_gastroc": -0.05005068924898082,
+        "SLOPE_A_tib_ant": 0.01736138154839509,
+        "SLOPE_ankle_torque_stance": -1.231579242565342,
+        "SLOPE_ankle_rom_deg": -2.714593819238523,
+        "SLOPE_peak_stance_dorsiflexion_deg": -2.0568038929606267
+      },
+      "s105": {
+        "SLOPE_v": 0.006003930980579553,
+        "A_by_speed": {
+          "0.8": 0.17107690679886686,
+          "1.05": 0.17235286487252127,
+          "1.3": 0.17407887228915664
+        },
+        "SLOPE_A_gastroc": -0.0446580440438239,
+        "SLOPE_A_tib_ant": 0.011753709756646982,
+        "SLOPE_ankle_torque_stance": -0.7046253077579436,
+        "SLOPE_ankle_rom_deg": -0.4828811902989756,
+        "SLOPE_peak_stance_dorsiflexion_deg": -0.2567996837776363
+      },
+      "s106": {
+        "SLOPE_v": -0.0012062425794085452,
+        "A_by_speed": {
+          "0.8": 0.1753319465909091,
+          "1.05": 0.17389236647727271,
+          "1.3": 0.17472882530120482
+        },
+        "SLOPE_A_gastroc": -0.03938667427847753,
+        "SLOPE_A_tib_ant": 0.010455394768619938,
+        "SLOPE_ankle_torque_stance": -0.7931445131434813,
+        "SLOPE_ankle_rom_deg": -1.3179251597972055,
+        "SLOPE_peak_stance_dorsiflexion_deg": -0.8063808008671209
+      }
+    }
+  },
+  "PRIMARY_S_vs_W": {
+    "n_S": 6,
+    "n_W": 6,
+    "n_C": 6,
+    "S_seeds": {
+      "s101": -0.00438885744380324,
+      "s102": 0.0006273244957863411,
+      "s103": -0.0009190034058809138,
+      "s104": -0.008290486273395847,
+      "s105": -0.002816890080211354,
+      "s106": -0.002451274366197076
+    },
+    "W_seeds": {
+      "s101": -0.006204372832574301,
+      "s102": -0.006615825817131549,
+      "s103": -0.004132643210178921,
+      "s104": -0.009721497564206094,
+      "s105": 0.006003930980579553,
+      "s106": -0.0012062425794085452
+    },
+    "C_seeds": {
+      "s101": -0.015005635394100936,
+      "s102": -0.010581028966142991,
+      "s103": -0.017712419423247083,
+      "s104": -0.010380461742752312,
+      "s105": -0.0035737701468957495,
+      "s106": -0.0070865637773607215
+    },
+    "S_range": [
+      -0.008290486273395847,
+      0.0006273244957863411
+    ],
+    "W_range": [
+      -0.009721497564206094,
+      0.006003930980579553
+    ],
+    "C_range": [
+      -0.017712419423247083,
+      -0.0035737701468957495
+    ],
+    "S_mean": -0.003039864512283682,
+    "W_mean": -0.003646108503819976,
+    "C_mean": -0.010723313241749965,
+    "gap": -0.010348822059992435,
+    "separated": false,
+    "VERDICT": "OVERLAP",
+    "W_vs_C_secondary_prediction": {
+      "W_mean": -0.003646108503819976,
+      "C_mean": -0.010723313241749965,
+      "W_range": [
+        -0.009721497564206094,
+        0.006003930980579553
+      ],
+      "C_range": [
+        -0.017712419423247083,
+        -0.0035737701468957495
+      ],
+      "note": "section 3 additionally predicted W ~ C; reported, not primary"
+    }
+  }
+}

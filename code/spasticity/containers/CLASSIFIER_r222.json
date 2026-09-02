@@ -1,0 +1,50 @@
+{
+ "prereg": "PREREG_classifier_r222.md sha256 c0a13d6758a9e2876230",
+ "design": "leave-one-SEED-out, 6 spastic vs 18 weak, 16 channels, window [1.00, 9.73]",
+ "confusion": {
+  "TP": 6,
+  "FN": 0,
+  "FP": 0,
+  "TN": 18
+ },
+ "accuracy": 1.0,
+ "majority_baseline": 0.75,
+ "channel_per_fold": [
+  "hip_flexion_r",
+  "hip_flexion_r",
+  "hip_flexion_r",
+  "hip_flexion_r",
+  "hip_flexion_r",
+  "hip_flexion_r"
+ ],
+ "hip_chosen_of_6": 0,
+ "permutation_null": {
+  "method": "exhaustive over C(24,6)",
+  "assignments_evaluated": 134596,
+  "count_ge_observed": 3,
+  "proportion": 2.2288923890754554e-05
+ },
+ "hip_chosen_of_6_correction": "MISLEADING KEY NAME, corrected r227 by annotation rather than by changing the value. hip_chosen_of_6 counts folds in which 'hip_flexion_LmR' was selected, and that is 0. But all six folds selected 'hip_flexion_r' (see channel_per_fold), which is ALSO a hip channel -- the right-limb hip flexion ROM, of which hip_flexion_LmR is a difference. Read as written the key says no hip channel was chosen; the truth is that a hip channel was chosen in 6 of 6 folds and it was not the asymmetry construction. The value is unchanged; the name is the defect.",
+ "PERMUTATION_NULL_STATUS": "WITHDRAWN AT r250",
+ "PERMUTATION_NULL_WITHDRAWAL": {
+  "status": "WITHDRAWN AT r250",
+  "round_recorded": 308,
+  "note": "The exhaustive permutation null deposited in this file is WITHDRAWN at r250 on this paper's own registered grounds. It is retained and readable, but it may not be cited as support for any claim. RESULTS_3d_r214.md sec1 states the withdrawal at the passage beginning \"THE PERMUTATION NULL FOR THIS RESULT IS WITHDRAWN AT r250. THE CLASSIFIER IS UNPRICED.\" and sec2 states it at the passage beginning \"Its exhaustive null of 3 in 134,596 is WITHDRAWN at r250 for the same two reasons as sec1's\". These are CONTENT ANCHORS, not line numbers, and they are how this passage should be located; sec0c cites the figure and, as of r308, names it as withdrawn at the point of use. Recorded here r308 because a reader holding only the deposits previously saw a live-looking null with no withdrawal marker anywhere in it.",
+  "values_retained": "No number is deleted. A withdrawn statistic stays readable and stops being usable.",
+  "note_ORIGINAL_WRONG_LINE_NUMBERS": "The exhaustive permutation null deposited in this file is WITHDRAWN at r250 on this paper's own registered grounds. It is retained and readable, but it may not be cited as support for any claim. RESULTS_3d_r214.md sec1 (lines 475-477) and sec2 (line 544) state the withdrawal and its two reasons; sec0c cites the figure and, as of r308, names it as withdrawn at the point of use. Recorded here r308 because a reader holding only the deposits previously saw a live-looking null with no withdrawal marker anywhere in it.",
+  "LINE_NUMBERS_WERE_WRONG_r324": {
+   "cited": "sec1 lines 475-477, sec2 line 544",
+   "what_those_lines_hold_now": {
+    "475": "| `DR2K200` | 0.200 | 1.0 | reflex |",
+    "477": "| `PAR40` | 0.000 | **0.6** | weakness \u00d70.600 |",
+    "544": ""
+   },
+   "where_the_text_actually_is_now": {
+    "sec1_anchor_line": 545,
+    "sec2_anchor_line": 614
+   },
+   "these_line_numbers_will_also_go_stale": "The two line numbers above are recorded as EVIDENCE of drift, not as a citation. Locate the passages by the quoted anchors in note.",
+   "why": "A deposit CANNOT pin a claim to line numbers in a file it does not control and cannot hash. RESULTS_3d_r214.md has been edited nine times in the last twenty-four hours -- five of them after these notes were written (r314, r315, r318, r319, r323) -- so any line number written into a deposit is stale on arrival. A quoted phrase survives edits that a line number cannot."
+  }
+ }
+}

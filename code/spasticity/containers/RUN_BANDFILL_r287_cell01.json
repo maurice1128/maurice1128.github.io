@@ -1,0 +1,18 @@
+{
+ "cell": 1,
+ "prefix": "R287BF008_s107",
+ "f": 0.08,
+ "scale": 0.92,
+ "seed": 107,
+ "wall_clock_s": 188.01593589782715,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R287BF008_s107.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R107"
+ ],
+ "status": "OK",
+ "result_dir": "R287BF008_s107.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R107",
+ "resolved_par": "0049_78.808_71.309.par",
+ "t_end_s": 7.17,
+ "measured_under_guard": false,
+ "in_band": false
+}

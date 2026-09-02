@@ -1,0 +1,117 @@
+{
+  "registration": "PREREG_terminalswing_r408.md",
+  "registration_sha256": "05fccee7e3d50f0c35831568e837a5414e3e8e6b2325ede7a9c77d7173f518ce",
+  "status": "EXECUTED. This deposit was created at r414 after the r412 audit found the outcome existed only as prose in PREREG_onedim_r409.md section 1.",
+  "confirmatory_arms": {
+    "SPAS_KV0.070": "R393SPg070 n=6",
+    "SPAS_KV0.100": "R393SPg100 n=4",
+    "WEAK_5_families": "R169W090/095, R174W870/892/915, n=28"
+  },
+  "terminal_swing": "last 15% of the gait cycle",
+  "arm_means": {
+    "SPAS_KV0.070": {
+      "KTQ": 6.647,
+      "GAS": 0.0534,
+      "SOL": 0.0335,
+      "KNEE_ic": -11.2807
+    },
+    "SPAS_KV0.100": {
+      "KTQ": 5.9485,
+      "GAS": 0.0561,
+      "SOL": 0.0394,
+      "KNEE_ic": -12.6433
+    },
+    "WEAK_5fam": {
+      "KTQ": 8.3182,
+      "GAS": 0.0437,
+      "SOL": 0.0459,
+      "KNEE_ic": -6.5927
+    }
+  },
+  "tests_at_KV0.100": {
+    "P1_KTQ_lower": {
+      "spas_range": [
+        5.8194,
+        6.2371
+      ],
+      "weak_range": [
+        8.2035,
+        8.3984
+      ],
+      "gap": 1.9664,
+      "disjoint": true,
+      "floor": "1/35960",
+      "VERDICT": "HOLDS"
+    },
+    "P2_GAS_higher": {
+      "spas_range": [
+        0.0529,
+        0.0578
+      ],
+      "weak_range": [
+        0.0402,
+        0.0484
+      ],
+      "gap": 0.0046,
+      "disjoint": true,
+      "floor": "1/35960",
+      "VERDICT": "HOLDS"
+    },
+    "P3_SOL_overlap": {
+      "spas_range": [
+        0.0379,
+        0.0414
+      ],
+      "weak_range": [
+        0.0433,
+        0.0489
+      ],
+      "gap": 0.0019,
+      "disjoint": true,
+      "direction": "SPAS LOWER",
+      "VERDICT": "FAILS AS REGISTERED"
+    }
+  },
+  "VERDICT": "P3 FAILS AS REGISTERED (the ranges are disjoint). RESCORED_r429 reaches the opposite conclusion on a post-hoc floor criterion; see CRITERION_CHANGE_DISCLOSURE_r438. Hypothesis 4 is DEAD on independent grounds (MEDIATION_RESULT_r431).",
+  "REGISTRATION_DESIGN_DEFECT": "P3's categories were OVERLAP versus SEPARATE. Soleus separated in the OPPOSITE direction to gastrocnemius (spastic LOWER), which is neither the predicted overlap nor the generic same-direction plantarflexor effect P3 was written to detect. The registration had no cell for that outcome. The same defect occurred at r387. P3 is recorded as failed as written; the differentiated-role reading requires a fresh registration and untouched material.",
+  "superseded_by": "FROZEN_MECHANISM_r410.json tests the same question with the optimiser frozen and finds SOL +0.11 deg against GAS -10.99 deg, edge gap 8.6827 disjoint. The two are not in conflict: r408 measures the re-optimised system, r410 the frozen one.",
+  "RESCORED_r429_AGAINST_PER_ENDPOINT_NOISE_FLOORS": {
+    "why": "r408 was scored on DISJOINTNESS of ranges. No noise floor existed for activation endpoints at the time -- KNEE_MDC_BATCHNULL_r399.json had built one only for knee angle. NULL_FLOORS_r428.json now supplies a floor for every endpoint, from six dorsiflexor-weakness families at x0.80-0.95 (same mechanism, similar severity, 15 pairs).",
+    "floors_used": {
+      "KTQ_tsw": 0.06841,
+      "GASDRIVE_swing": 0.00258,
+      "SOLDRIVE_swing": 0.00689
+    },
+    "rescored": {
+      "P1_KTQ_lower": {
+        "observed_gap": 1.9664,
+        "floor": 0.06841,
+        "multiple": 28.7,
+        "VERDICT": "HOLDS, strongly"
+      },
+      "P2_GAS_higher": {
+        "observed_gap": 0.0046,
+        "floor": 0.00258,
+        "multiple": 1.8,
+        "VERDICT": "HOLDS, but only 1.8x the floor -- report as marginal"
+      },
+      "P3_SOL_overlap": {
+        "observed_gap": 0.0019,
+        "floor": 0.00689,
+        "multiple": 0.3,
+        "VERDICT": "HOLDS. The soleus 'separation' is 0.3x its own noise floor, i.e. smaller than what two same-mechanism families produce. Under the registered reading it is an OVERLAP, which is exactly what P3 predicted."
+      }
+    },
+    "WHAT_THIS_OVERTURNS": "P3 was reported FAILED, and that failure is the sole reason mechanism hypothesis 4 was abandoned. It is cited as dead in PREREG_onedim_r409.md's provenance table. The failure rested on calling a 0.0019 activation difference a separation when the same-mechanism floor for that endpoint is 0.0069. MECHANISM HYPOTHESIS 4 IS REINSTATED AS LIVE.",
+    "hypothesis_4_restated": "in terminal swing the spastic reflex keeps gastrocnemius active; because gastrocnemius spans the knee that activity opposes knee extension; the knee therefore arrives at initial contact incompletely extended. Soleus, which does not span the knee, shows no corresponding terminal-swing difference -- and on the corrected scoring it does not.",
+    "what_still_stands_against_it": [
+      "P2, the mediator itself, clears its floor by only 1.8x. The chain's weakest link is the gastrocnemius activation difference, not the torque or the soleus control.",
+      "SPANNING_RESULT_r421 shows single-muscle lesions displacing joints their muscle does not cross (hip at 3.9x its floor, both muscles). A knee-spanning story does not explain that.",
+      "correlation along a chain is not mediation; r408 section 6.1 said so at registration and that limit is unchanged.",
+      "r407's direct single-muscle decomposition at matched dose is the experiment that would settle it. r421 finally ran it and found separation at every joint, which is evidence AGAINST a clean knee-spanning mediation even though it does not touch these terminal-swing numbers."
+    ],
+    "status": "LIVE BUT UNRESOLVED. Two Gate-G-quality results now point in opposite directions: r408 supports a gastrocnemius-mediated terminal-swing chain, r421 shows lesion effects are not confined to spanned joints. Neither is retired by the other and the paper must present both.",
+    "process_note": "found by rescoring every mechanism claim against a per-endpoint floor after the user asked whether the mechanism evidence was strong. Three scoring errors in this corpus share one cause: a number was called an effect without being divided by the noise floor for its own endpoint.",
+    "CRITERION_CHANGE_DISCLOSURE_r438": "PREREG_terminalswing_r408.md section 5 registered P3 as an OVERLAP OF RANGES. The ranges are disjoint, so P3 FAILS AS REGISTERED and that is the verdict of record. RESCORED_r429 replaced the registered criterion with a comparison against a noise floor that did not exist at registration time. That is a POST-HOC CRITERION CHANGE and it was the sole basis on which hypothesis 4 was revived. Disclosed, not defended. Hypothesis 4 was afterwards killed on independent grounds at MEDIATION_RESULT_r431 (both torque links indistinguishable from zero), so nothing downstream rests on the revival."
+  }
+}

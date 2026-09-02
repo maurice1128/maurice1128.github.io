@@ -1,0 +1,152 @@
+{
+  "round": "SUBPHASE_r441",
+  "no_simulation_run": true,
+  "status": "EXPLORATORY. No registration. The window set was chosen to match Cawood & Mashola 2023 Table 5 after reading it.",
+  "cawood_table5_plantarflexor_tone_vs_knee": {
+    "source": "Cawood C, Mashola K. S Afr J Physiother 2023;79(1):1926; PMID 38059056; read verbatim from the journal JATS XML galley",
+    "n": 12,
+    "modality": "2D video (Kinovea), Modified Tardieu plantarflexor tone",
+    "initial_contact": {
+      "rho": 0.542,
+      "p": 0.069
+    },
+    "loading_response": {
+      "rho": 0.321,
+      "p": 0.309
+    },
+    "midstance": {
+      "rho": 0.492,
+      "p": 0.104
+    },
+    "terminal_stance": {
+      "rho": 0.745,
+      "p": 0.005
+    },
+    "pre_swing": {
+      "rho": 0.672,
+      "p": 0.017
+    }
+  },
+  "n_cells": {
+    "spastic": 23,
+    "weakness": 36,
+    "control": 6
+  },
+  "windows": {
+    "initial_contact": {
+      "spastic": {
+        "n": 23,
+        "mean": -11.771846539823411
+      },
+      "weakness": {
+        "n": 36,
+        "mean": -6.491924781112322
+      },
+      "control": {
+        "n": 6,
+        "mean": -7.849999258121554
+      },
+      "dose_spearman_rho_KV_vs_knee": -0.9318181818181819,
+      "spastic_minus_weakness_deg": -5.2799217587110885,
+      "within_cell_seed_SD_deg": 0.4252536578528751,
+      "separation_in_seed_SDs": 12.4159349630751,
+      "displacement_from_control": {
+        "weakness": 1.3580744770092315,
+        "spastic": -3.921847281701857
+      }
+    },
+    "loading_response": {
+      "spastic": {
+        "n": 23,
+        "mean": -21.222828146001717
+      },
+      "weakness": {
+        "n": 36,
+        "mean": -16.12059911049471
+      },
+      "control": {
+        "n": 6,
+        "mean": -17.11165681147205
+      },
+      "dose_spearman_rho_KV_vs_knee": -0.9515810276679842,
+      "spastic_minus_weakness_deg": -5.102229035507008,
+      "within_cell_seed_SD_deg": 0.35370906972987415,
+      "separation_in_seed_SDs": 14.424931312628074,
+      "displacement_from_control": {
+        "weakness": 0.9910577009773398,
+        "spastic": -4.1111713345296685
+      }
+    },
+    "midstance": {
+      "spastic": {
+        "n": 23,
+        "mean": -9.317939303064541
+      },
+      "weakness": {
+        "n": 36,
+        "mean": -11.037150373703142
+      },
+      "control": {
+        "n": 6,
+        "mean": -11.399182753335156
+      },
+      "dose_spearman_rho_KV_vs_knee": 0.8231225296442688,
+      "spastic_minus_weakness_deg": 1.7192110706386003,
+      "within_cell_seed_SD_deg": 0.23953776988829745,
+      "separation_in_seed_SDs": 7.177202457217132,
+      "displacement_from_control": {
+        "weakness": 0.36203237963201396,
+        "spastic": 2.0812434502706143
+      }
+    },
+    "terminal_stance": {
+      "spastic": {
+        "n": 23,
+        "mean": -2.122201554500521
+      },
+      "weakness": {
+        "n": 36,
+        "mean": -2.8431367003945716
+      },
+      "control": {
+        "n": 6,
+        "mean": -2.905986905258109
+      },
+      "dose_spearman_rho_KV_vs_knee": 0.9407114624505929,
+      "spastic_minus_weakness_deg": 0.7209351458940505,
+      "within_cell_seed_SD_deg": 0.05143939270757576,
+      "separation_in_seed_SDs": 14.01523439424032,
+      "displacement_from_control": {
+        "weakness": 0.06285020486353732,
+        "spastic": 0.7837853507575878
+      }
+    },
+    "pre_swing": {
+      "spastic": {
+        "n": 23,
+        "mean": -9.804165856852041
+      },
+      "weakness": {
+        "n": 36,
+        "mean": -11.083422360495364
+      },
+      "control": {
+        "n": 6,
+        "mean": -11.954863698085092
+      },
+      "dose_spearman_rho_KV_vs_knee": 0.5612648221343874,
+      "spastic_minus_weakness_deg": 1.2792565036433228,
+      "within_cell_seed_SD_deg": 0.29068691303107264,
+      "separation_in_seed_SDs": 4.400805286705763,
+      "displacement_from_control": {
+        "weakness": 0.8714413375897276,
+        "spastic": 2.1506978412330504
+      }
+    }
+  },
+  "model_strongest_dose_window": "loading_response",
+  "model_strongest_separation_window": "loading_response",
+  "cawood_strongest_window": "terminal_stance",
+  "AGREEMENT": "model and patients DISAGREE: the model's strongest dose window is loading_response, Cawood's is terminal_stance",
+  "CORRECTED_BY_r450": "The cawood_table5_plantarflexor_tone_vs_knee block below is WRONG: those values match neither tone column of the published Table 5, and the column they were labelled as (plantarflexor tone) is in fact headed 'Gastrocnemius Muscle Tone' and is non-significant at every phase. See CAWOOD_CORRECTION_r450.json. The /AGREEMENT field is void: there is no significant gastrocnemius window for the model's dose profile to agree or disagree with. The model-side numbers in /windows are unaffected."
+}

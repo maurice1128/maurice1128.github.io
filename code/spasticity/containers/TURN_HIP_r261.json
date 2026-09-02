@@ -1,0 +1,498 @@
+{
+ "round": 261,
+ "prereg": "PREREG_turn_transfer_r261.md",
+ "prereg_sha256_prefix": "91c409795c9f4f202089462e",
+ "note": "computed from TURN_r260.json; no .sto reopened",
+ "windows": {
+  "9.73": {
+   "hip_flexion_LmR_dev80": {
+    "pearson_r_turn_vs_measure": -0.7879457095673376,
+    "r2": 0.6208584412255751,
+    "slope": -1.2498168455352079,
+    "by_arm": {
+     "C": {
+      "raw_mean": -1.1842378929335002e-15,
+      "residual_mean": 0.67049467065761,
+      "turn_mean": 0.1663582958162345
+     },
+     "S": {
+      "raw_mean": -2.2632144214736236,
+      "residual_mean": -0.09076189323405533,
+      "turn_mean": 1.3681006654662253
+     },
+     "W800": {
+      "raw_mean": -1.52947906677509,
+      "residual_mean": -0.5832534522392728,
+      "turn_mean": 0.3869753765214718
+     },
+     "W870": {
+      "raw_mean": -1.1308177703880855,
+      "residual_mean": -0.2551244630061818,
+      "turn_mean": 0.33054126187028904
+     },
+     "W892": {
+      "raw_mean": -1.007393112020323,
+      "residual_mean": -0.0075270121270261114,
+      "turn_mean": 0.42989405340529085
+     },
+     "W900": {
+      "raw_mean": -0.9316878165778183,
+      "residual_mean": 0.15250053910174707,
+      "turn_mean": 0.4973617436412623
+     },
+     "W915": {
+      "raw_mean": -0.9343826280742557,
+      "residual_mean": -0.017440016999816454,
+      "turn_mean": 0.36354554072914164
+     },
+     "W950": {
+      "raw_mean": -0.7778895195745802,
+      "residual_mean": 0.1311116278469994,
+      "turn_mean": 0.3571914387811406
+     }
+    },
+    "reflex_raw": -2.2632144214736236,
+    "reflex_residual": -0.09076189323405533,
+    "fraction_of_reflex_effect_removed": 0.9598969092928639,
+    "largest_nonreflex_residual": 0.67049467065761,
+    "reading_C_collinearity_flag": true,
+    "turn_range_overlap": {
+     "reflex_min_turn": 0.6763881363078396,
+     "nonreflex_max_turn": 0.8833385820497757
+    }
+   },
+   "ankle_angle_l_dev80": {
+    "pearson_r_turn_vs_measure": -0.8043813697027351,
+    "r2": 0.6470293879248482,
+    "slope": -4.399236301861179,
+    "by_arm": {
+     "C": {
+      "raw_mean": 0.0,
+      "residual_mean": 0.22904036174482212,
+      "turn_mean": 0.1663582958162345
+     },
+     "S": {
+      "raw_mean": -7.433122067342698,
+      "residual_mean": -1.9173330475489623,
+      "turn_mean": 1.3681006654662253
+     },
+     "W800": {
+      "raw_mean": -2.1526727827913463,
+      "residual_mean": -0.9530857507974068,
+      "turn_mean": 0.3869753765214718
+     },
+     "W870": {
+      "raw_mean": -1.1027317612426337,
+      "residual_mean": -0.15141173508557312,
+      "turn_mean": 0.33054126187028904
+     },
+     "W892": {
+      "raw_mean": -0.7856328531898408,
+      "residual_mean": 0.6027635801792456,
+      "turn_mean": 0.42989405340529085
+     },
+     "W900": {
+      "raw_mean": -0.748796250625289,
+      "residual_mean": 0.9364064948326084,
+      "turn_mean": 0.4973617436412623
+     },
+     "W915": {
+      "raw_mean": -0.6064754441741114,
+      "residual_mean": 0.4900382036555628,
+      "turn_mean": 0.36354554072914164
+     },
+     "W950": {
+      "raw_mean": -0.3049785588545948,
+      "residual_mean": 0.7635818930197068,
+      "turn_mean": 0.3571914387811406
+     }
+    },
+    "reflex_raw": -7.433122067342698,
+    "reflex_residual": -1.9173330475489623,
+    "fraction_of_reflex_effect_removed": 0.7420554875625232,
+    "largest_nonreflex_residual": 0.9530857507974068,
+    "reading_C_collinearity_flag": false,
+    "turn_range_overlap": {
+     "reflex_min_turn": 0.6763881363078396,
+     "nonreflex_max_turn": 0.8833385820497757
+    }
+   },
+   "peak_phase": {
+    "pearson_r_turn_vs_measure": 0.5649748328902449,
+    "r2": 0.3191965617993601,
+    "slope": 7.114292607033073,
+    "by_arm": {
+     "C": {
+      "raw_mean": 59.833333333333336,
+      "residual_mean": -9.777832070708655,
+      "turn_mean": 0.1663582958162345
+     },
+     "S": {
+      "raw_mean": 79.5,
+      "residual_mean": 1.3392877399986745,
+      "turn_mean": 1.3681006654662253
+     },
+     "W800": {
+      "raw_mean": 73.5,
+      "residual_mean": 2.319300129711524,
+      "turn_mean": 0.3869753765214718
+     },
+     "W870": {
+      "raw_mean": 73.5,
+      "residual_mean": 2.720788934358891,
+      "turn_mean": 0.33054126187028904
+     },
+     "W892": {
+      "raw_mean": 73.16666666666667,
+      "residual_mean": 1.680630770719991,
+      "turn_mean": 0.42989405340529085
+     },
+     "W900": {
+      "raw_mean": 72.83333333333333,
+      "residual_mean": 0.8673125475272911,
+      "turn_mean": 0.4973617436412623
+     },
+     "W915": {
+      "raw_mean": 72.0,
+      "residual_mean": 0.985986837272892,
+      "turn_mean": 0.36354554072914164
+     },
+     "W950": {
+      "raw_mean": 70.83333333333333,
+      "residual_mean": -0.13547488888077197,
+      "turn_mean": 0.3571914387811406
+     }
+    },
+    "reflex_raw": 79.5,
+    "reflex_residual": 1.3392877399986745,
+    "fraction_of_reflex_effect_removed": 0.98315361333335,
+    "largest_nonreflex_residual": 9.777832070708655,
+    "reading_C_collinearity_flag": true,
+    "turn_range_overlap": {
+     "reflex_min_turn": 0.6763881363078396,
+     "nonreflex_max_turn": 0.8833385820497757
+    }
+   },
+   "phase_disjointness": {
+    "W800": {
+     "reflex_range": [
+      79,
+      80
+     ],
+     "arm_range": [
+      73,
+      74
+     ],
+     "gap": 5,
+     "disjoint": true
+    },
+    "W870": {
+     "reflex_range": [
+      79,
+      80
+     ],
+     "arm_range": [
+      72,
+      75
+     ],
+     "gap": 4,
+     "disjoint": true
+    },
+    "W892": {
+     "reflex_range": [
+      79,
+      80
+     ],
+     "arm_range": [
+      72,
+      76
+     ],
+     "gap": 3,
+     "disjoint": true
+    },
+    "W900": {
+     "reflex_range": [
+      79,
+      80
+     ],
+     "arm_range": [
+      71,
+      74
+     ],
+     "gap": 5,
+     "disjoint": true
+    },
+    "W915": {
+     "reflex_range": [
+      79,
+      80
+     ],
+     "arm_range": [
+      71,
+      73
+     ],
+     "gap": 6,
+     "disjoint": true
+    },
+    "W950": {
+     "reflex_range": [
+      79,
+      80
+     ],
+     "arm_range": [
+      70,
+      73
+     ],
+     "gap": 6,
+     "disjoint": true
+    }
+   },
+   "phase_disjoint_vs_all_weakness": true
+  },
+  "13.58": {
+   "hip_flexion_LmR_dev80": {
+    "pearson_r_turn_vs_measure": -0.8718327347470747,
+    "r2": 0.760092317376563,
+    "slope": -1.531355860199067,
+    "by_arm": {
+     "C": {
+      "raw_mean": -2.3684757858670005e-15,
+      "residual_mean": 0.8202266020070582,
+      "turn_mean": 0.09269183885671985
+     },
+     "S": {
+      "raw_mean": -3.1004660397977766,
+      "residual_mean": -0.03687404423344883,
+      "turn_mean": 1.5576455128287794
+     },
+     "W800": {
+      "raw_mean": -1.5578062487109676,
+      "residual_mean": -0.4961689094028629,
+      "turn_mean": 0.25033693205515006
+     },
+     "W870": {
+      "raw_mean": -1.1646619204919635,
+      "residual_mean": -0.30001276615304456,
+      "turn_mean": 0.12170047981760261
+     },
+     "W892": {
+      "raw_mean": -1.0805956429310537,
+      "residual_mean": -0.06261231655272383,
+      "turn_mean": 0.2218301596814837
+     },
+     "W900": {
+      "raw_mean": -1.0287781887657796,
+      "residual_mean": 0.009978448935257345,
+      "turn_mean": 0.2353954659976829
+     },
+     "W915": {
+      "raw_mean": -1.045652220245567,
+      "residual_mean": -0.12258432243409317,
+      "turn_mean": 0.15984885864377604
+     },
+     "W950": {
+      "raw_mean": -0.7950998985007658,
+      "residual_mean": 0.18804730783385346,
+      "turn_mean": 0.19908161314888215
+     }
+    },
+    "reflex_raw": -3.1004660397977766,
+    "reflex_residual": -0.03687404423344883,
+    "fraction_of_reflex_effect_removed": 0.9881069349703783,
+    "largest_nonreflex_residual": 0.8202266020070582,
+    "reading_C_collinearity_flag": true,
+    "turn_range_overlap": {
+     "reflex_min_turn": 0.8694845262254897,
+     "nonreflex_max_turn": 0.520392100526432
+    }
+   },
+   "ankle_angle_l_dev80": {
+    "pearson_r_turn_vs_measure": -0.8949876987246403,
+    "r2": 0.8010029808684276,
+    "slope": -4.1308056629509595,
+    "by_arm": {
+     "C": {
+      "raw_mean": -1.1842378929335002e-15,
+      "residual_mean": 0.6113840457224157,
+      "turn_mean": 0.09269183885671985
+     },
+     "S": {
+      "raw_mean": -7.631330376098176,
+      "residual_mean": -0.9685073979711621,
+      "turn_mean": 1.5576455128287794
+     },
+     "W800": {
+      "raw_mean": -2.1949028492880545,
+      "residual_mean": -0.9323175598451307,
+      "turn_mean": 0.25033693205515006
+     },
+     "W870": {
+      "raw_mean": -1.110725371311073,
+      "residual_mean": -0.37951226723293047,
+      "turn_mean": 0.12170047981760261
+     },
+     "W892": {
+      "raw_mean": -0.8481965339953105,
+      "residual_mean": 0.29663281869401875,
+      "turn_mean": 0.2218301596814837
+     },
+     "W900": {
+      "raw_mean": -0.7880015880388666,
+      "residual_mean": 0.4128634088010828,
+      "turn_mean": 0.2353954659976829
+     },
+     "W915": {
+      "raw_mean": -0.6681386050909079,
+      "residual_mean": 0.22065803827479027,
+      "turn_mean": 0.15984885864377604
+     },
+     "W950": {
+      "raw_mean": -0.31206061429163895,
+      "residual_mean": 0.7387989135569163,
+      "turn_mean": 0.19908161314888215
+     }
+    },
+    "reflex_raw": -7.631330376098176,
+    "reflex_residual": -0.9685073979711621,
+    "fraction_of_reflex_effect_removed": 0.8730880003564528,
+    "largest_nonreflex_residual": 0.9323175598451307,
+    "reading_C_collinearity_flag": true,
+    "turn_range_overlap": {
+     "reflex_min_turn": 0.8694845262254897,
+     "nonreflex_max_turn": 0.520392100526432
+    }
+   },
+   "peak_phase": {
+    "pearson_r_turn_vs_measure": 0.36562151958338424,
+    "r2": 0.13367909558246302,
+    "slope": 4.5700231086234036,
+    "by_arm": {
+     "C": {
+      "raw_mean": 66.33333333333333,
+      "residual_mean": -5.093751558541638,
+      "turn_mean": 0.09269183885671985
+     },
+     "S": {
+      "raw_mean": 79.16666666666667,
+      "residual_mean": 1.0447096316766225,
+      "turn_mean": 1.5576455128287794
+     },
+     "W800": {
+      "raw_mean": 73.83333333333333,
+      "residual_mean": 1.6858067225804423,
+      "turn_mean": 0.25033693205515006
+     },
+     "W870": {
+      "raw_mean": 73.5,
+      "residual_mean": 1.940344948584034,
+      "turn_mean": 0.12170047981760261
+     },
+     "W892": {
+      "raw_mean": 73.0,
+      "residual_mean": 0.9827499977470305,
+      "turn_mean": 0.2218301596814837
+     },
+     "W900": {
+      "raw_mean": 72.5,
+      "residual_mean": 0.42075623440644705,
+      "turn_mean": 0.2353954659976829
+     },
+     "W915": {
+      "raw_mean": 71.66666666666667,
+      "residual_mean": -0.06732735754143467,
+      "turn_mean": 0.15984885864377604
+     },
+     "W950": {
+      "raw_mean": 71.0,
+      "residual_mean": -0.9132886189113828,
+      "turn_mean": 0.19908161314888215
+     }
+    },
+    "reflex_raw": 79.16666666666667,
+    "reflex_residual": 1.0447096316766225,
+    "fraction_of_reflex_effect_removed": 0.9868036678104005,
+    "largest_nonreflex_residual": 5.093751558541638,
+    "reading_C_collinearity_flag": true,
+    "turn_range_overlap": {
+     "reflex_min_turn": 0.8694845262254897,
+     "nonreflex_max_turn": 0.520392100526432
+    }
+   },
+   "phase_disjointness": {
+    "W800": {
+     "reflex_range": [
+      79,
+      80
+     ],
+     "arm_range": [
+      73,
+      74
+     ],
+     "gap": 5,
+     "disjoint": true
+    },
+    "W870": {
+     "reflex_range": [
+      79,
+      80
+     ],
+     "arm_range": [
+      73,
+      74
+     ],
+     "gap": 5,
+     "disjoint": true
+    },
+    "W892": {
+     "reflex_range": [
+      79,
+      80
+     ],
+     "arm_range": [
+      72,
+      74
+     ],
+     "gap": 5,
+     "disjoint": true
+    },
+    "W900": {
+     "reflex_range": [
+      79,
+      80
+     ],
+     "arm_range": [
+      72,
+      73
+     ],
+     "gap": 6,
+     "disjoint": true
+    },
+    "W915": {
+     "reflex_range": [
+      79,
+      80
+     ],
+     "arm_range": [
+      71,
+      73
+     ],
+     "gap": 6,
+     "disjoint": true
+    },
+    "W950": {
+     "reflex_range": [
+      79,
+      80
+     ],
+     "arm_range": [
+      70,
+      72
+     ],
+     "gap": 7,
+     "disjoint": true
+    }
+   },
+   "phase_disjoint_vs_all_weakness": true
+  }
+ }
+}

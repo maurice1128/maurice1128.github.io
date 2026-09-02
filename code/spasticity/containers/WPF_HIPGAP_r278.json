@@ -1,0 +1,110 @@
+{
+ "method": "verbatim from hipgap_r220.py: per-cycle mean ROM(l)-ROM(r) deg, window [1.00, 9.73], final cycle dropped",
+ "status": "UNREGISTERED, POST-HOC; added after WEAK-PF cell 0 measured 16.21 s",
+ "why": "CONFOUND_DURATION_r277.json: the shipped arms are disjoint in duration; WEAK-PF is the first weakness arm that falls",
+ "reference_ranges_from_LADDER36_r228": {
+  "spastic_n": 6,
+  "spastic_min": -2.772393801611315,
+  "spastic_max": -1.2098920576659609,
+  "weakness_n": 36,
+  "weakness_min": -0.1971203998368125,
+  "weakness_max": 1.1824473792791892,
+  "shipped_seed_gap_deg": 1.0127716578291484
+ },
+ "n_cells_available": 5,
+ "n_cells_measured": 4,
+ "cells": [
+  {
+   "sto": "0079_51.437_20.975.par.sto",
+   "t_end_s": 16.21,
+   "cycles_after_settle": 12,
+   "cycles_in_window": 5,
+   "gateG_admitted": true,
+   "hip_flexion_LmR": -2.114833058451488,
+   "cell": 0,
+   "prefix": "R276WPF005_s101",
+   "f": 0.05,
+   "seed": 101,
+   "terminal_objective": 20.9748,
+   "resolved_par": "0079_51.437_20.975.par",
+   "last_par_equals_resolved": true
+  },
+  {
+   "sto": "0088_23.779_1.057.par.sto",
+   "t_end_s": 20.0,
+   "cycles_after_settle": 15,
+   "cycles_in_window": 6,
+   "gateG_admitted": true,
+   "hip_flexion_LmR": -0.15361953417116325,
+   "cell": 1,
+   "prefix": "R276WPF005_s102",
+   "f": 0.05,
+   "seed": 102,
+   "terminal_objective": 1.05688,
+   "resolved_par": "0088_23.779_1.057.par",
+   "last_par_equals_resolved": true
+  },
+  {
+   "sto": "0059_51.578_1.038.par.sto",
+   "t_end_s": 20.0,
+   "cycles_after_settle": 15,
+   "cycles_in_window": 5,
+   "gateG_admitted": true,
+   "hip_flexion_LmR": -0.5897798359958486,
+   "cell": 2,
+   "prefix": "R276WPF005_s103",
+   "f": 0.05,
+   "seed": 103,
+   "terminal_objective": 1.03815,
+   "resolved_par": "0059_51.578_1.038.par",
+   "last_par_equals_resolved": true
+  },
+  {
+   "sto": "0001_83.061_67.587.par.sto",
+   "t_end_s": 7.46,
+   "cycles_after_settle": 5,
+   "cycles_in_window": 4,
+   "gateG_admitted": false,
+   "hip_flexion_LmR": null,
+   "not_measured_reason": "t_end 7.460 s is short of the registered window end 9.73 s",
+   "cell": 3,
+   "prefix": "R276WPF005_s104",
+   "f": 0.05,
+   "seed": 104,
+   "terminal_objective": 67.5872,
+   "resolved_par": "0001_83.061_67.587.par",
+   "last_par_equals_resolved": true
+  },
+  {
+   "sto": "0088_42.626_1.040.par.sto",
+   "t_end_s": 20.0,
+   "cycles_after_settle": 15,
+   "cycles_in_window": 5,
+   "gateG_admitted": true,
+   "hip_flexion_LmR": 0.5158453621121879,
+   "cell": 4,
+   "prefix": "R276WPF005_s105",
+   "f": 0.05,
+   "seed": 105,
+   "terminal_objective": 1.03963,
+   "resolved_par": "0088_42.626_1.040.par",
+   "last_par_equals_resolved": true
+  }
+ ],
+ "fallers_only": {
+  "n": 1,
+  "note": "cells with t_end < 20.0 s; these are the ones the confound test turns on",
+  "values": [
+   {
+    "cell": 0,
+    "f": 0.05,
+    "seed": 101,
+    "t_end_s": 16.21,
+    "hip_flexion_LmR": -2.114833058451488,
+    "in_spastic_range": true,
+    "in_weakness_range": false
+   }
+  ]
+ },
+ "incomplete": "This is a partial read of a run still in progress; it is not the registered analysis."
+}

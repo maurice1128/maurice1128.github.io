@@ -1,0 +1,446 @@
+{
+ "prereg_sha256": "35ac02b4706add2585c6455b79fd6384c957df3899ae51f2b117ec1f95b2c60b",
+ "criterion": "duration and GRF cycles from .sto; fitness is NOT it",
+ "rows": [
+  {
+   "rung": "C      control",
+   "prefix": "R151C",
+   "arm": "control",
+   "position": 1,
+   "depth": 90,
+   "provenance": "r169 from-healthy",
+   "durations": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "cycles": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+   ],
+   "fitness_best_par": [
+    19.456,
+    26.221,
+    1.032,
+    1.033,
+    30.023,
+    1.056
+   ],
+   "n_pass": 6,
+   "admitted": true,
+   "n_missing": 0
+  },
+  {
+   "rung": "S050   KV 0.050",
+   "prefix": "R151S",
+   "arm": "spastic",
+   "position": 1,
+   "depth": 90,
+   "provenance": "r169 from-healthy, ADMITTED",
+   "durations": [
+    17.85,
+    14.96,
+    13.58,
+    16.94,
+    14.27,
+    14.82
+   ],
+   "cycles": [
+    12,
+    11,
+    9,
+    12,
+    10,
+    10
+   ],
+   "fitness_best_par": [
+    65.682,
+    53.936,
+    67.037,
+    59.701,
+    59.194,
+    62.529
+   ],
+   "n_pass": 6,
+   "admitted": true,
+   "n_missing": 0
+  },
+  {
+   "rung": "S150   KV 0.150 r169",
+   "prefix": "R169S150",
+   "arm": "spastic",
+   "position": 1,
+   "depth": 90,
+   "provenance": "r169 from-healthy, DROPPED",
+   "durations": [
+    0.66,
+    5.25,
+    0.66,
+    6.01,
+    5.58,
+    1.7
+   ],
+   "cycles": [
+    0,
+    2,
+    0,
+    2,
+    2,
+    0
+   ],
+   "fitness_best_par": [
+    99.858,
+    89.666,
+    100.136,
+    87.04,
+    88.092,
+    96.41
+   ],
+   "n_pass": 0,
+   "admitted": false,
+   "n_missing": 0
+  },
+  {
+   "rung": "S400   KV 0.400 r169",
+   "prefix": "R169S400",
+   "arm": "spastic",
+   "position": 1,
+   "depth": 90,
+   "provenance": "r169 from-healthy, DROPPED",
+   "durations": [
+    0.69,
+    0.69,
+    0.69,
+    0.69,
+    0.69,
+    0.69
+   ],
+   "cycles": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "fitness_best_par": [
+    99.667,
+    99.631,
+    99.63,
+    99.706,
+    99.694,
+    99.696
+   ],
+   "n_pass": 0,
+   "admitted": false,
+   "n_missing": 0
+  },
+  {
+   "rung": "S150   KV 0.150 CONT",
+   "prefix": "R172S150",
+   "arm": "spastic",
+   "position": 2,
+   "depth": 180,
+   "provenance": "r172 continuation from S050",
+   "durations": [
+    1.54,
+    5.62,
+    0.85,
+    7.7,
+    6.94,
+    0.85
+   ],
+   "cycles": [
+    0,
+    2,
+    0,
+    4,
+    3,
+    0
+   ],
+   "fitness_best_par": [
+    97.389,
+    88.957,
+    100.369,
+    87.774,
+    89.211,
+    100.344
+   ],
+   "n_pass": 0,
+   "admitted": false,
+   "n_missing": 0
+  },
+  {
+   "rung": "S400   KV 0.400 CONT",
+   "prefix": "R172S400",
+   "arm": "spastic",
+   "position": 3,
+   "depth": 270,
+   "provenance": "r172 continuation from S150",
+   "durations": [
+    0.7,
+    0.7,
+    0.69,
+    0.7,
+    0.7,
+    0.69
+   ],
+   "cycles": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "fitness_best_par": [
+    99.67,
+    99.692,
+    99.727,
+    99.695,
+    99.594,
+    99.686
+   ],
+   "n_pass": 0,
+   "admitted": false,
+   "n_missing": 0
+  },
+  {
+   "rung": "W095   x0.95",
+   "prefix": "R169W095",
+   "arm": "weak",
+   "position": 1,
+   "depth": 90,
+   "provenance": "r169 from-healthy, ADMITTED",
+   "durations": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "cycles": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+   ],
+   "fitness_best_par": [
+    1.075,
+    19.921,
+    20.256,
+    29.474,
+    1.081,
+    16.549
+   ],
+   "n_pass": 6,
+   "admitted": true,
+   "n_missing": 0
+  },
+  {
+   "rung": "W090   x0.90 r169",
+   "prefix": "R169W090",
+   "arm": "weak",
+   "position": 1,
+   "depth": 90,
+   "provenance": "r169 from-healthy, ADMITTED",
+   "durations": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "cycles": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+   ],
+   "fitness_best_par": [
+    44.389,
+    31.388,
+    35.364,
+    1.062,
+    22.859,
+    35.019
+   ],
+   "n_pass": 6,
+   "admitted": true,
+   "n_missing": 0
+  },
+  {
+   "rung": "W080   x0.80 r169",
+   "prefix": "R151W",
+   "arm": "weak",
+   "position": 1,
+   "depth": 90,
+   "provenance": "r169 from-healthy, ADMITTED",
+   "durations": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "cycles": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+   ],
+   "fitness_best_par": [
+    18.186,
+    19.759,
+    55.873,
+    6.964,
+    1.089,
+    36.357
+   ],
+   "n_pass": 6,
+   "admitted": true,
+   "n_missing": 0
+  },
+  {
+   "rung": "W090   x0.90 CONT",
+   "prefix": "R172W090",
+   "arm": "weak",
+   "position": 2,
+   "depth": 180,
+   "provenance": "r172 continuation from W095",
+   "durations": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "cycles": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+   ],
+   "fitness_best_par": [
+    16.328,
+    31.078,
+    30.21,
+    37.8,
+    48.94,
+    15.831
+   ],
+   "n_pass": 6,
+   "admitted": true,
+   "n_missing": 0
+  },
+  {
+   "rung": "W080   x0.80 CONT",
+   "prefix": "R172W080",
+   "arm": "weak",
+   "position": 3,
+   "depth": 270,
+   "provenance": "r172 continuation from W090",
+   "durations": [
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0,
+    20.0
+   ],
+   "cycles": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+   ],
+   "fitness_best_par": [
+    20.57,
+    33.965,
+    54.486,
+    35.322,
+    42.361,
+    61.231
+   ],
+   "n_pass": 6,
+   "admitted": true,
+   "n_missing": 0
+  }
+ ],
+ "run_manifest": {
+  "chains": {
+   "spastic_s101": {
+    "reached": 3,
+    "status": "ok"
+   },
+   "spastic_s102": {
+    "reached": 3,
+    "status": "ok"
+   },
+   "spastic_s103": {
+    "reached": 3,
+    "status": "ok"
+   },
+   "spastic_s104": {
+    "reached": 3,
+    "status": "ok"
+   },
+   "spastic_s105": {
+    "reached": 3,
+    "status": "ok"
+   },
+   "spastic_s106": {
+    "reached": 3,
+    "status": "ok"
+   },
+   "weak_s101": {
+    "reached": 3,
+    "status": "ok"
+   },
+   "weak_s102": {
+    "reached": 3,
+    "status": "ok"
+   },
+   "weak_s103": {
+    "reached": 3,
+    "status": "ok"
+   },
+   "weak_s104": {
+    "reached": 3,
+    "status": "ok"
+   },
+   "weak_s105": {
+    "reached": 3,
+    "status": "ok"
+   },
+   "weak_s106": {
+    "reached": 3,
+    "status": "ok"
+   }
+  },
+  "n_cells": 24
+ },
+ "depth_check": "PASSED",
+ "lineage_check": "PASSED"
+}

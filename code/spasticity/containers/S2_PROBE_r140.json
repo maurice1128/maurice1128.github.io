@@ -1,0 +1,37 @@
+{
+ "tag": "SPD06_DR2K000_s101",
+ "result_dir": "C:\\Users\\maurice\\Documents\\SCONE\\results\\SPD06_DR2K000_s101.H0914M.GH2010.S06W.D10.I.R101",
+ "band": [
+  0.55,
+  0.75
+ ],
+ "fvn_ref_v10": 2.1121,
+ "clause1_cycles": {
+  "state": "PASS",
+  "n_cycles": 5
+ },
+ "clause2_velocity": {
+  "state": "FAIL",
+  "achieved_m_s": 1.0093433333333333
+ },
+ "clause3_fitness": {
+  "state": "PASS",
+  "slow": 0.616212,
+  "v10_ref": 0.603005,
+  "ratio": 1.0219019742788202,
+  "ref_dir": "C:\\Users\\maurice\\Documents\\SCONE\\results\\SG0_DR2K000_s101.H0914M.GH2010.S10W.D10.I.R101",
+  "generations": 90
+ },
+ "clause4_fvn_reported": {
+  "state": "UNEVALUABLE",
+  "peak": null,
+  "ratio_vs_v10": null
+ },
+ "verdict": "FAIL -> SLOW ARM NOT ATTAINABLE",
+ "clause_states": {
+  "1": "PASS",
+  "2": "FAIL",
+  "3": "PASS",
+  "4": "UNEVALUABLE"
+ }
+}

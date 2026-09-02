@@ -1,0 +1,32 @@
+{
+ "note": "EQUIV power at delta=0.65, n=16, HL 90% bootstrap, true zero effect",
+ "delta": 0.65,
+ "n_per_arm": 16,
+ "nsim": 600,
+ "b_bootstrap": 800,
+ "seed": 234234,
+ "caveat": "only the 2D CONTROL sigma is measured (BODY2_SD_r234.json). The lesion-arm sigmas transport a 3.0x inflation ratio from the 3D body and are ESTIMATES.",
+ "scenarios": [
+  {
+   "basis": "2D control, point",
+   "sigma": 0.1757,
+   "equiv_power_at_0.65": 1.0
+  },
+  {
+   "basis": "2D control, chi2 upper",
+   "sigma": 0.4309,
+   "equiv_power_at_0.65": 0.9783333333333334
+  },
+  {
+   "basis": "implied 2D spastic-vs-weak (3.0x transport)",
+   "sigma": 0.5276,
+   "equiv_power_at_0.65": 0.8916666666666667
+  },
+  {
+   "basis": "implied, on the chi2 upper",
+   "sigma": 1.2939,
+   "equiv_power_at_0.65": 0.011666666666666667
+  }
+ ],
+ "script_sha256": null
+}

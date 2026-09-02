@@ -1,0 +1,65 @@
+{
+ "min_dur": 9.73,
+ "min_cyc": 4,
+ "window": [
+  1.0,
+  13.58
+ ],
+ "cells": {
+  "s201": {
+   "lines": 91,
+   "t_end": 16.25,
+   "ncyc": 9,
+   "G1": true,
+   "G2": true,
+   "G3": true,
+   "pass": true
+  },
+  "s202": {
+   "lines": 91,
+   "t_end": 14.68,
+   "ncyc": 9,
+   "G1": true,
+   "G2": true,
+   "G3": true,
+   "pass": true
+  },
+  "s203": {
+   "lines": 91,
+   "t_end": 17.28,
+   "ncyc": 9,
+   "G1": true,
+   "G2": true,
+   "G3": true,
+   "pass": true
+  },
+  "s204": {
+   "lines": 91,
+   "t_end": 17.69,
+   "ncyc": 9,
+   "G1": true,
+   "G2": true,
+   "G3": true,
+   "pass": true
+  },
+  "s205": {
+   "lines": 91,
+   "t_end": 15.92,
+   "ncyc": 9,
+   "G1": true,
+   "G2": true,
+   "G3": true,
+   "pass": true
+  },
+  "s206": {
+   "lines": 91,
+   "t_end": 17.66,
+   "ncyc": 9,
+   "G1": true,
+   "G2": true,
+   "G3": true,
+   "pass": true
+  }
+ },
+ "n_pass": 6
+}

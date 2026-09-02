@@ -1,0 +1,311 @@
+{
+ "round": 273,
+ "prereg": "PREREG_2x2_r270.md rev 3 sha256 09180446",
+ "n_configurations": 190512,
+ "attainability": {
+  "source": "CHANNELS_G2_r219.json control band widths, n=6",
+  "band_width_range": [
+   0.004,
+   2.20691
+  ],
+  "HL95_halfwidth_range": [
+   0.0011693928446694325,
+   0.6451861907073543
+  ],
+  "n_seeds": 14,
+  "delta_definition": "2.534 * sigma (the n=6 control range), rev 5",
+  "rule": "sigma ~ width_6/2.534; halfwidth ~ 1.96*sigma*sqrt(2/14)",
+  "note": "the generator emits NO configuration outside this range"
+ },
+ "counts": {
+  "FAILURE-DOMINATED": 63504,
+  "UNDERPOWERED": 70560,
+  "TYPE-CONSISTENT": 9216,
+  "INTERACTION": 37760,
+  "INCONCLUSIVE": 5184,
+  "NEITHER": 1728,
+  "GROUP-ONLY": 2560
+ },
+ "declared": [
+  "FAILURE-DOMINATED",
+  "UNDERPOWERED",
+  "INTERACTION",
+  "GROUP-ONLY",
+  "TYPE-CONSISTENT",
+  "NEITHER",
+  "INCONCLUSIVE"
+ ],
+ "reachable": [
+  "FAILURE-DOMINATED",
+  "GROUP-ONLY",
+  "INCONCLUSIVE",
+  "INTERACTION",
+  "NEITHER",
+  "TYPE-CONSISTENT",
+  "UNDERPOWERED"
+ ],
+ "MISSING_no_witness": [],
+ "UNDECLARED_but_reachable": [],
+ "witnesses": {
+  "FAILURE-DOMINATED": {
+   "n_2cyc": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "n_usable": [
+    4,
+    4,
+    4,
+    4
+   ],
+   "floor": 0.0010822510822510823,
+   "delta": 0.004,
+   "t_pf": -0.012,
+   "t_df": -0.012,
+   "hl_pf": [
+    -0.013169392844669434,
+    -0.010830607155330567
+   ],
+   "hl_df": [
+    -0.013169392844669434,
+    -0.010830607155330567
+   ],
+   "group_separates": false,
+   "all_within_band": false,
+   "at_floor": false,
+   "hw": 0.0011693928446694325
+  },
+  "UNDERPOWERED": {
+   "n_2cyc": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "n_usable": [
+    4,
+    4,
+    4,
+    4
+   ],
+   "floor": 0.0010822510822510823,
+   "delta": 0.004,
+   "t_pf": -0.012,
+   "t_df": -0.012,
+   "hl_pf": [
+    -0.013169392844669434,
+    -0.010830607155330567
+   ],
+   "hl_df": [
+    -0.013169392844669434,
+    -0.010830607155330567
+   ],
+   "group_separates": false,
+   "all_within_band": false,
+   "at_floor": false,
+   "hw": 0.0011693928446694325
+  },
+  "TYPE-CONSISTENT": {
+   "n_2cyc": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "n_usable": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "floor": 0.0010822510822510823,
+   "delta": 0.004,
+   "t_pf": -0.012,
+   "t_df": -0.012,
+   "hl_pf": [
+    -0.013169392844669434,
+    -0.010830607155330567
+   ],
+   "hl_df": [
+    -0.013169392844669434,
+    -0.010830607155330567
+   ],
+   "group_separates": false,
+   "all_within_band": false,
+   "at_floor": false,
+   "hw": 0.0011693928446694325
+  },
+  "INTERACTION": {
+   "n_2cyc": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "n_usable": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "floor": 0.0010822510822510823,
+   "delta": 0.004,
+   "t_pf": -0.012,
+   "t_df": -0.002,
+   "hl_pf": [
+    -0.013169392844669434,
+    -0.010830607155330567
+   ],
+   "hl_df": [
+    -0.0031693928446694325,
+    -0.0008306071553305676
+   ],
+   "group_separates": false,
+   "all_within_band": false,
+   "at_floor": false,
+   "hw": 0.0011693928446694325
+  },
+  "INCONCLUSIVE": {
+   "n_2cyc": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "n_usable": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "floor": 0.0010822510822510823,
+   "delta": 0.004,
+   "t_pf": -0.012,
+   "t_df": -0.002,
+   "hl_pf": [
+    -0.33517779177601187,
+    0.31117779177601185
+   ],
+   "hl_df": [
+    -0.32517779177601186,
+    0.32117779177601186
+   ],
+   "group_separates": false,
+   "all_within_band": false,
+   "at_floor": false,
+   "hw": 0.32317779177601186
+  },
+  "NEITHER": {
+   "n_2cyc": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "n_usable": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "floor": 0.0010822510822510823,
+   "delta": 0.004,
+   "t_pf": -0.012,
+   "t_df": -0.002,
+   "hl_pf": [
+    -0.33517779177601187,
+    0.31117779177601185
+   ],
+   "hl_df": [
+    -0.32517779177601186,
+    0.32117779177601186
+   ],
+   "group_separates": false,
+   "all_within_band": true,
+   "at_floor": true,
+   "hw": 0.32317779177601186
+  },
+  "GROUP-ONLY": {
+   "n_2cyc": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "n_usable": [
+    5,
+    5,
+    5,
+    5
+   ],
+   "floor": 0.0010822510822510823,
+   "delta": 0.004,
+   "t_pf": -0.002,
+   "t_df": -0.002,
+   "hl_pf": [
+    -0.0031693928446694325,
+    -0.0008306071553305676
+   ],
+   "hl_df": [
+    -0.0031693928446694325,
+    -0.0008306071553305676
+   ],
+   "group_separates": true,
+   "all_within_band": false,
+   "at_floor": false,
+   "hw": 0.0011693928446694325
+  }
+ },
+ "prose_ladder": [
+  "FAILURE-DOMINATED",
+  "UNDERPOWERED",
+  "INTERACTION",
+  "GROUP-ONLY",
+  "TYPE-CONSISTENT",
+  "NEITHER",
+  "INCONCLUSIVE"
+ ],
+ "code_ladder": [
+  "FAILURE-DOMINATED",
+  "UNDERPOWERED",
+  "INTERACTION",
+  "GROUP-ONLY",
+  "TYPE-CONSISTENT",
+  "NEITHER",
+  "INCONCLUSIVE"
+ ],
+ "prose_matches_code_ladder": true,
+ "message_truth_violations": {},
+ "UNCOVERED_configurations": {
+  "count": 0,
+  "examples": []
+ },
+ "fixture": {
+  "tree": "C:\\Users\\maurice\\AppData\\Local\\Temp\\fixture_r273_dihxiol2",
+  "deposit": "FIXTURE_2x2_r273.json",
+  "results": {
+   "f=0.05": {
+    "t_pf": -0.14500000000000002,
+    "t_df": -0.14500000000000002,
+    "delta": 0.04,
+    "rung": "TYPE-CONSISTENT"
+   },
+   "f=0.10": {
+    "t_pf": -0.29000000000000004,
+    "t_df": -0.29000000000000004,
+    "delta": 0.04,
+    "rung": "TYPE-CONSISTENT"
+   },
+   "f=0.20": {
+    "t_pf": -0.5800000000000001,
+    "t_df": -0.5800000000000001,
+    "delta": 0.04,
+    "rung": "TYPE-CONSISTENT"
+   }
+  },
+  "ran_end_to_end": true
+ },
+ "GATE_PASSES": true
+}

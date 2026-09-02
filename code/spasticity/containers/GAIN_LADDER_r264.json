@@ -1,0 +1,1220 @@
+{
+ "round": 264,
+ "prereg": "PREREG_gain_ladder_r264.md",
+ "registration_is_not_blind": true,
+ "bound": "A gain ladder within ONE lesion type breaks the CARDINALITY confound on the reflex axis. It does not buy the 2x2: a plantarflexor-weakness arm and a dorsiflexor-reflex arm are runs that do not exist and cannot be substituted read-only. No statement about lesion TYPE is available from this corpus.",
+ "reproduction": {
+  "9.73": {
+   "recomputed": [
+    1.246169835394321,
+    2.1804287045848265,
+    0.6763881363078396,
+    1.3316306922285808,
+    1.8994226998785044,
+    0.8745639244032789
+   ],
+   "deposited_TURN_r260": [
+    1.246169835394321,
+    2.1804287045848265,
+    0.6763881363078396,
+    1.3316306922285808,
+    1.8994226998785044,
+    0.8745639244032789
+   ],
+   "identical": true
+  },
+  "13.58": {
+   "recomputed": [
+    1.5370802431951833,
+    1.4005036569500764,
+    0.8694845262254897,
+    1.1461855170451303,
+    2.607250812940534,
+    1.7853683206162634
+   ],
+   "deposited_TURN_r260": [
+    1.5370802431951833,
+    1.4005036569500764,
+    0.8694845262254897,
+    1.1461855170451303,
+    2.607250812940534,
+    1.7853683206162634
+   ],
+   "identical": true
+  }
+ },
+ "windows": {
+  "9.73": {
+   "per_cell": [
+    {
+     "t_end": 17.85,
+     "n_cycles_total": 13,
+     "n_cycles_in_window": 6,
+     "yaw_per_cycle": 1.246169835394321,
+     "yaw_per_cycle_sd": 1.3246159277503022,
+     "yaw_total": 7.4770190123659255,
+     "gain": 0.05,
+     "path": "R151",
+     "seed": 101,
+     "present": true,
+     "dir": "R151S_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101"
+    },
+    {
+     "t_end": 14.96,
+     "n_cycles_total": 12,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 2.1804287045848265,
+     "yaw_per_cycle_sd": 2.1006360871284873,
+     "yaw_total": 10.902143522924133,
+     "gain": 0.05,
+     "path": "R151",
+     "seed": 102,
+     "present": true,
+     "dir": "R151S_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102"
+    },
+    {
+     "t_end": 13.58,
+     "n_cycles_total": 10,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.6763881363078396,
+     "yaw_per_cycle_sd": 0.3801516002645619,
+     "yaw_total": 3.3819406815391977,
+     "gain": 0.05,
+     "path": "R151",
+     "seed": 103,
+     "present": true,
+     "dir": "R151S_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103"
+    },
+    {
+     "t_end": 16.94,
+     "n_cycles_total": 13,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 1.3316306922285808,
+     "yaw_per_cycle_sd": 0.9098194532318159,
+     "yaw_total": 6.658153461142904,
+     "gain": 0.05,
+     "path": "R151",
+     "seed": 104,
+     "present": true,
+     "dir": "R151S_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104"
+    },
+    {
+     "t_end": 14.27,
+     "n_cycles_total": 11,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 1.8994226998785044,
+     "yaw_per_cycle_sd": 1.6127555874167747,
+     "yaw_total": 9.497113499392523,
+     "gain": 0.05,
+     "path": "R151",
+     "seed": 105,
+     "present": true,
+     "dir": "R151S_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105"
+    },
+    {
+     "t_end": 14.82,
+     "n_cycles_total": 11,
+     "n_cycles_in_window": 5,
+     "yaw_per_cycle": 0.8745639244032789,
+     "yaw_per_cycle_sd": 0.9790865759713845,
+     "yaw_total": 4.372819622016395,
+     "gain": 0.05,
+     "path": "R151",
+     "seed": 106,
+     "present": true,
+     "dir": "R151S_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106"
+    },
+    {
+     "t_end": 0.66,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.15,
+     "path": "R169",
+     "seed": 101,
+     "present": true,
+     "dir": "R169S150_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101"
+    },
+    {
+     "t_end": 5.25,
+     "n_cycles_total": 3,
+     "n_cycles_in_window": 2,
+     "yaw_per_cycle": 8.32294937095754,
+     "yaw_per_cycle_sd": 7.36241113153408,
+     "yaw_total": 16.64589874191508,
+     "gain": 0.15,
+     "path": "R169",
+     "seed": 102,
+     "present": true,
+     "dir": "R169S150_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102"
+    },
+    {
+     "t_end": 0.66,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.15,
+     "path": "R169",
+     "seed": 103,
+     "present": true,
+     "dir": "R169S150_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103"
+    },
+    {
+     "t_end": 6.01,
+     "n_cycles_total": 3,
+     "n_cycles_in_window": 2,
+     "yaw_per_cycle": 7.236440050247341,
+     "yaw_per_cycle_sd": 9.531156321114528,
+     "yaw_total": 14.472880100494683,
+     "gain": 0.15,
+     "path": "R169",
+     "seed": 104,
+     "present": true,
+     "dir": "R169S150_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104"
+    },
+    {
+     "t_end": 5.58,
+     "n_cycles_total": 3,
+     "n_cycles_in_window": 2,
+     "yaw_per_cycle": 6.238255611403328,
+     "yaw_per_cycle_sd": 3.4557426368663693,
+     "yaw_total": 12.476511222806655,
+     "gain": 0.15,
+     "path": "R169",
+     "seed": 105,
+     "present": true,
+     "dir": "R169S150_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105"
+    },
+    {
+     "t_end": 1.7,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.15,
+     "path": "R169",
+     "seed": 106,
+     "present": true,
+     "dir": "R169S150_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106"
+    },
+    {
+     "t_end": 1.54,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.15,
+     "path": "R172",
+     "seed": 101,
+     "present": true,
+     "dir": "R172S150_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101"
+    },
+    {
+     "t_end": 5.62,
+     "n_cycles_total": 3,
+     "n_cycles_in_window": 2,
+     "yaw_per_cycle": 5.726486557524604,
+     "yaw_per_cycle_sd": 4.401009000724438,
+     "yaw_total": 11.452973115049208,
+     "gain": 0.15,
+     "path": "R172",
+     "seed": 102,
+     "present": true,
+     "dir": "R172S150_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102"
+    },
+    {
+     "t_end": 0.85,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.15,
+     "path": "R172",
+     "seed": 103,
+     "present": true,
+     "dir": "R172S150_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103"
+    },
+    {
+     "t_end": 7.7,
+     "n_cycles_total": 5,
+     "n_cycles_in_window": 4,
+     "yaw_per_cycle": 5.138722816770356,
+     "yaw_per_cycle_sd": 6.956567316695482,
+     "yaw_total": 20.554891267081423,
+     "gain": 0.15,
+     "path": "R172",
+     "seed": 104,
+     "present": true,
+     "dir": "R172S150_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104"
+    },
+    {
+     "t_end": 6.94,
+     "n_cycles_total": 4,
+     "n_cycles_in_window": 3,
+     "yaw_per_cycle": 2.9194984236799777,
+     "yaw_per_cycle_sd": 2.5862042518762722,
+     "yaw_total": 8.758495271039934,
+     "gain": 0.15,
+     "path": "R172",
+     "seed": 105,
+     "present": true,
+     "dir": "R172S150_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105"
+    },
+    {
+     "t_end": 0.85,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.15,
+     "path": "R172",
+     "seed": 106,
+     "present": true,
+     "dir": "R172S150_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106"
+    },
+    {
+     "t_end": 0.69,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R169",
+     "seed": 101,
+     "present": true,
+     "dir": "R169S400_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101"
+    },
+    {
+     "t_end": 0.69,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R169",
+     "seed": 102,
+     "present": true,
+     "dir": "R169S400_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102"
+    },
+    {
+     "t_end": 0.69,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R169",
+     "seed": 103,
+     "present": true,
+     "dir": "R169S400_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103"
+    },
+    {
+     "t_end": 0.69,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R169",
+     "seed": 104,
+     "present": true,
+     "dir": "R169S400_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104"
+    },
+    {
+     "t_end": 0.69,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R169",
+     "seed": 105,
+     "present": true,
+     "dir": "R169S400_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105"
+    },
+    {
+     "t_end": 0.69,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R169",
+     "seed": 106,
+     "present": true,
+     "dir": "R169S400_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106"
+    },
+    {
+     "t_end": 0.7,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R172",
+     "seed": 101,
+     "present": true,
+     "dir": "R172S400_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101"
+    },
+    {
+     "t_end": 0.7,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R172",
+     "seed": 102,
+     "present": true,
+     "dir": "R172S400_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102"
+    },
+    {
+     "t_end": 0.69,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R172",
+     "seed": 103,
+     "present": true,
+     "dir": "R172S400_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103"
+    },
+    {
+     "t_end": 0.7,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R172",
+     "seed": 104,
+     "present": true,
+     "dir": "R172S400_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104"
+    },
+    {
+     "t_end": 0.7,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R172",
+     "seed": 105,
+     "present": true,
+     "dir": "R172S400_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105"
+    },
+    {
+     "t_end": 0.69,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R172",
+     "seed": 106,
+     "present": true,
+     "dir": "R172S400_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106"
+    }
+   ],
+   "by_gain_and_path": {
+    "KV0.050_R151": {
+     "n_cells": 6,
+     "n_with_usable_cycles": 6,
+     "yaw_mean": 1.3681006654662253,
+     "yaw_sd_across_seeds": 0.5797278450159139,
+     "yaw_per_seed": [
+      1.246169835394321,
+      2.1804287045848265,
+      0.6763881363078396,
+      1.3316306922285808,
+      1.8994226998785044,
+      0.8745639244032789
+     ],
+     "within_cell_yaw_sd": [
+      1.3246159277503022,
+      2.1006360871284873,
+      0.3801516002645619,
+      0.9098194532318159,
+      1.6127555874167747,
+      0.9790865759713845
+     ],
+     "t_end_per_seed": [
+      17.85,
+      14.96,
+      13.58,
+      16.94,
+      14.27,
+      14.82
+     ],
+     "t_end_mean": 15.40333333333333,
+     "t_end_min": 13.58,
+     "t_end_max": 17.85,
+     "cycles_total_per_seed": [
+      13,
+      12,
+      10,
+      13,
+      11,
+      11
+     ],
+     "survivor_bias_note": "all cells usable"
+    },
+    "KV0.150_R169": {
+     "n_cells": 6,
+     "n_with_usable_cycles": 3,
+     "yaw_mean": 7.265881677536069,
+     "yaw_sd_across_seeds": 1.042658680894244,
+     "yaw_per_seed": [
+      8.32294937095754,
+      7.236440050247341,
+      6.238255611403328
+     ],
+     "within_cell_yaw_sd": [
+      null,
+      7.36241113153408,
+      null,
+      9.531156321114528,
+      3.4557426368663693,
+      null
+     ],
+     "t_end_per_seed": [
+      0.66,
+      5.25,
+      0.66,
+      6.01,
+      5.58,
+      1.7
+     ],
+     "t_end_mean": 3.31,
+     "t_end_min": 0.66,
+     "t_end_max": 6.01,
+     "cycles_total_per_seed": [
+      0,
+      3,
+      0,
+      3,
+      3,
+      0
+     ],
+     "survivor_bias_note": "yaw computed on 3 of 6 cells -- the least destabilised. LOWER BOUND; the bias runs toward the null."
+    },
+    "KV0.150_R172": {
+     "n_cells": 6,
+     "n_with_usable_cycles": 3,
+     "yaw_mean": 4.594902599324979,
+     "yaw_sd_across_seeds": 1.4804056597983157,
+     "yaw_per_seed": [
+      5.726486557524604,
+      5.138722816770356,
+      2.9194984236799777
+     ],
+     "within_cell_yaw_sd": [
+      null,
+      4.401009000724438,
+      null,
+      6.956567316695482,
+      2.5862042518762722,
+      null
+     ],
+     "t_end_per_seed": [
+      1.54,
+      5.62,
+      0.85,
+      7.7,
+      6.94,
+      0.85
+     ],
+     "t_end_mean": 3.9166666666666674,
+     "t_end_min": 0.85,
+     "t_end_max": 7.7,
+     "cycles_total_per_seed": [
+      0,
+      3,
+      0,
+      5,
+      4,
+      0
+     ],
+     "survivor_bias_note": "yaw computed on 3 of 6 cells -- the least destabilised. LOWER BOUND; the bias runs toward the null."
+    },
+    "KV0.400_R169": {
+     "n_cells": 6,
+     "n_with_usable_cycles": 0,
+     "yaw_mean": null,
+     "yaw_sd_across_seeds": null,
+     "yaw_per_seed": [],
+     "within_cell_yaw_sd": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "t_end_per_seed": [
+      0.69,
+      0.69,
+      0.69,
+      0.69,
+      0.69,
+      0.69
+     ],
+     "t_end_mean": 0.69,
+     "t_end_min": 0.69,
+     "t_end_max": 0.69,
+     "cycles_total_per_seed": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "survivor_bias_note": "yaw computed on 0 of 6 cells -- the least destabilised. LOWER BOUND; the bias runs toward the null."
+    },
+    "KV0.400_R172": {
+     "n_cells": 6,
+     "n_with_usable_cycles": 0,
+     "yaw_mean": null,
+     "yaw_sd_across_seeds": null,
+     "yaw_per_seed": [],
+     "within_cell_yaw_sd": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "t_end_per_seed": [
+      0.7,
+      0.7,
+      0.69,
+      0.7,
+      0.7,
+      0.69
+     ],
+     "t_end_mean": 0.6966666666666667,
+     "t_end_min": 0.69,
+     "t_end_max": 0.7,
+     "cycles_total_per_seed": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "survivor_bias_note": "yaw computed on 0 of 6 cells -- the least destabilised. LOWER BOUND; the bias runs toward the null."
+    }
+   }
+  },
+  "13.58": {
+   "per_cell": [
+    {
+     "t_end": 17.85,
+     "n_cycles_total": 13,
+     "n_cycles_in_window": 9,
+     "yaw_per_cycle": 1.5370802431951833,
+     "yaw_per_cycle_sd": 1.9399650043018277,
+     "yaw_total": 13.83372218875665,
+     "gain": 0.05,
+     "path": "R151",
+     "seed": 101,
+     "present": true,
+     "dir": "R151S_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101"
+    },
+    {
+     "t_end": 14.96,
+     "n_cycles_total": 12,
+     "n_cycles_in_window": 9,
+     "yaw_per_cycle": 1.4005036569500764,
+     "yaw_per_cycle_sd": 2.2992960325274243,
+     "yaw_total": 12.604532912550688,
+     "gain": 0.05,
+     "path": "R151",
+     "seed": 102,
+     "present": true,
+     "dir": "R151S_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102"
+    },
+    {
+     "t_end": 13.58,
+     "n_cycles_total": 10,
+     "n_cycles_in_window": 9,
+     "yaw_per_cycle": 0.8694845262254897,
+     "yaw_per_cycle_sd": 1.1470877446596555,
+     "yaw_total": 7.825360736029407,
+     "gain": 0.05,
+     "path": "R151",
+     "seed": 103,
+     "present": true,
+     "dir": "R151S_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103"
+    },
+    {
+     "t_end": 16.94,
+     "n_cycles_total": 13,
+     "n_cycles_in_window": 9,
+     "yaw_per_cycle": 1.1461855170451303,
+     "yaw_per_cycle_sd": 2.916302171606545,
+     "yaw_total": 10.315669653406173,
+     "gain": 0.05,
+     "path": "R151",
+     "seed": 104,
+     "present": true,
+     "dir": "R151S_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104"
+    },
+    {
+     "t_end": 14.27,
+     "n_cycles_total": 11,
+     "n_cycles_in_window": 9,
+     "yaw_per_cycle": 2.607250812940534,
+     "yaw_per_cycle_sd": 2.7030816265733812,
+     "yaw_total": 23.465257316464808,
+     "gain": 0.05,
+     "path": "R151",
+     "seed": 105,
+     "present": true,
+     "dir": "R151S_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105"
+    },
+    {
+     "t_end": 14.82,
+     "n_cycles_total": 11,
+     "n_cycles_in_window": 9,
+     "yaw_per_cycle": 1.7853683206162634,
+     "yaw_per_cycle_sd": 3.1217423621848637,
+     "yaw_total": 16.06831488554637,
+     "gain": 0.05,
+     "path": "R151",
+     "seed": 106,
+     "present": true,
+     "dir": "R151S_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106"
+    },
+    {
+     "t_end": 0.66,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.15,
+     "path": "R169",
+     "seed": 101,
+     "present": true,
+     "dir": "R169S150_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101"
+    },
+    {
+     "t_end": 5.25,
+     "n_cycles_total": 3,
+     "n_cycles_in_window": 2,
+     "yaw_per_cycle": 8.32294937095754,
+     "yaw_per_cycle_sd": 7.36241113153408,
+     "yaw_total": 16.64589874191508,
+     "gain": 0.15,
+     "path": "R169",
+     "seed": 102,
+     "present": true,
+     "dir": "R169S150_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102"
+    },
+    {
+     "t_end": 0.66,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.15,
+     "path": "R169",
+     "seed": 103,
+     "present": true,
+     "dir": "R169S150_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103"
+    },
+    {
+     "t_end": 6.01,
+     "n_cycles_total": 3,
+     "n_cycles_in_window": 2,
+     "yaw_per_cycle": 7.236440050247341,
+     "yaw_per_cycle_sd": 9.531156321114528,
+     "yaw_total": 14.472880100494683,
+     "gain": 0.15,
+     "path": "R169",
+     "seed": 104,
+     "present": true,
+     "dir": "R169S150_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104"
+    },
+    {
+     "t_end": 5.58,
+     "n_cycles_total": 3,
+     "n_cycles_in_window": 2,
+     "yaw_per_cycle": 6.238255611403328,
+     "yaw_per_cycle_sd": 3.4557426368663693,
+     "yaw_total": 12.476511222806655,
+     "gain": 0.15,
+     "path": "R169",
+     "seed": 105,
+     "present": true,
+     "dir": "R169S150_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105"
+    },
+    {
+     "t_end": 1.7,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.15,
+     "path": "R169",
+     "seed": 106,
+     "present": true,
+     "dir": "R169S150_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106"
+    },
+    {
+     "t_end": 1.54,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.15,
+     "path": "R172",
+     "seed": 101,
+     "present": true,
+     "dir": "R172S150_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101"
+    },
+    {
+     "t_end": 5.62,
+     "n_cycles_total": 3,
+     "n_cycles_in_window": 2,
+     "yaw_per_cycle": 5.726486557524604,
+     "yaw_per_cycle_sd": 4.401009000724438,
+     "yaw_total": 11.452973115049208,
+     "gain": 0.15,
+     "path": "R172",
+     "seed": 102,
+     "present": true,
+     "dir": "R172S150_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102"
+    },
+    {
+     "t_end": 0.85,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.15,
+     "path": "R172",
+     "seed": 103,
+     "present": true,
+     "dir": "R172S150_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103"
+    },
+    {
+     "t_end": 7.7,
+     "n_cycles_total": 5,
+     "n_cycles_in_window": 4,
+     "yaw_per_cycle": 5.138722816770356,
+     "yaw_per_cycle_sd": 6.956567316695482,
+     "yaw_total": 20.554891267081423,
+     "gain": 0.15,
+     "path": "R172",
+     "seed": 104,
+     "present": true,
+     "dir": "R172S150_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104"
+    },
+    {
+     "t_end": 6.94,
+     "n_cycles_total": 4,
+     "n_cycles_in_window": 3,
+     "yaw_per_cycle": 2.9194984236799777,
+     "yaw_per_cycle_sd": 2.5862042518762722,
+     "yaw_total": 8.758495271039934,
+     "gain": 0.15,
+     "path": "R172",
+     "seed": 105,
+     "present": true,
+     "dir": "R172S150_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105"
+    },
+    {
+     "t_end": 0.85,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.15,
+     "path": "R172",
+     "seed": 106,
+     "present": true,
+     "dir": "R172S150_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106"
+    },
+    {
+     "t_end": 0.69,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R169",
+     "seed": 101,
+     "present": true,
+     "dir": "R169S400_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101"
+    },
+    {
+     "t_end": 0.69,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R169",
+     "seed": 102,
+     "present": true,
+     "dir": "R169S400_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102"
+    },
+    {
+     "t_end": 0.69,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R169",
+     "seed": 103,
+     "present": true,
+     "dir": "R169S400_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103"
+    },
+    {
+     "t_end": 0.69,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R169",
+     "seed": 104,
+     "present": true,
+     "dir": "R169S400_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104"
+    },
+    {
+     "t_end": 0.69,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R169",
+     "seed": 105,
+     "present": true,
+     "dir": "R169S400_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105"
+    },
+    {
+     "t_end": 0.69,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R169",
+     "seed": 106,
+     "present": true,
+     "dir": "R169S400_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106"
+    },
+    {
+     "t_end": 0.7,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R172",
+     "seed": 101,
+     "present": true,
+     "dir": "R172S400_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101"
+    },
+    {
+     "t_end": 0.7,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R172",
+     "seed": 102,
+     "present": true,
+     "dir": "R172S400_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102"
+    },
+    {
+     "t_end": 0.69,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R172",
+     "seed": 103,
+     "present": true,
+     "dir": "R172S400_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103"
+    },
+    {
+     "t_end": 0.7,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R172",
+     "seed": 104,
+     "present": true,
+     "dir": "R172S400_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104"
+    },
+    {
+     "t_end": 0.7,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R172",
+     "seed": 105,
+     "present": true,
+     "dir": "R172S400_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105"
+    },
+    {
+     "t_end": 0.69,
+     "n_cycles_total": 0,
+     "n_cycles_in_window": 0,
+     "yaw_per_cycle": null,
+     "yaw_per_cycle_sd": null,
+     "yaw_total": null,
+     "gain": 0.4,
+     "path": "R172",
+     "seed": 106,
+     "present": true,
+     "dir": "R172S400_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106"
+    }
+   ],
+   "by_gain_and_path": {
+    "KV0.050_R151": {
+     "n_cells": 6,
+     "n_with_usable_cycles": 6,
+     "yaw_mean": 1.5576455128287794,
+     "yaw_sd_across_seeds": 0.603574407675889,
+     "yaw_per_seed": [
+      1.5370802431951833,
+      1.4005036569500764,
+      0.8694845262254897,
+      1.1461855170451303,
+      2.607250812940534,
+      1.7853683206162634
+     ],
+     "within_cell_yaw_sd": [
+      1.9399650043018277,
+      2.2992960325274243,
+      1.1470877446596555,
+      2.916302171606545,
+      2.7030816265733812,
+      3.1217423621848637
+     ],
+     "t_end_per_seed": [
+      17.85,
+      14.96,
+      13.58,
+      16.94,
+      14.27,
+      14.82
+     ],
+     "t_end_mean": 15.40333333333333,
+     "t_end_min": 13.58,
+     "t_end_max": 17.85,
+     "cycles_total_per_seed": [
+      13,
+      12,
+      10,
+      13,
+      11,
+      11
+     ],
+     "survivor_bias_note": "all cells usable"
+    },
+    "KV0.150_R169": {
+     "n_cells": 6,
+     "n_with_usable_cycles": 3,
+     "yaw_mean": 7.265881677536069,
+     "yaw_sd_across_seeds": 1.042658680894244,
+     "yaw_per_seed": [
+      8.32294937095754,
+      7.236440050247341,
+      6.238255611403328
+     ],
+     "within_cell_yaw_sd": [
+      null,
+      7.36241113153408,
+      null,
+      9.531156321114528,
+      3.4557426368663693,
+      null
+     ],
+     "t_end_per_seed": [
+      0.66,
+      5.25,
+      0.66,
+      6.01,
+      5.58,
+      1.7
+     ],
+     "t_end_mean": 3.31,
+     "t_end_min": 0.66,
+     "t_end_max": 6.01,
+     "cycles_total_per_seed": [
+      0,
+      3,
+      0,
+      3,
+      3,
+      0
+     ],
+     "survivor_bias_note": "yaw computed on 3 of 6 cells -- the least destabilised. LOWER BOUND; the bias runs toward the null."
+    },
+    "KV0.150_R172": {
+     "n_cells": 6,
+     "n_with_usable_cycles": 3,
+     "yaw_mean": 4.594902599324979,
+     "yaw_sd_across_seeds": 1.4804056597983157,
+     "yaw_per_seed": [
+      5.726486557524604,
+      5.138722816770356,
+      2.9194984236799777
+     ],
+     "within_cell_yaw_sd": [
+      null,
+      4.401009000724438,
+      null,
+      6.956567316695482,
+      2.5862042518762722,
+      null
+     ],
+     "t_end_per_seed": [
+      1.54,
+      5.62,
+      0.85,
+      7.7,
+      6.94,
+      0.85
+     ],
+     "t_end_mean": 3.9166666666666674,
+     "t_end_min": 0.85,
+     "t_end_max": 7.7,
+     "cycles_total_per_seed": [
+      0,
+      3,
+      0,
+      5,
+      4,
+      0
+     ],
+     "survivor_bias_note": "yaw computed on 3 of 6 cells -- the least destabilised. LOWER BOUND; the bias runs toward the null."
+    },
+    "KV0.400_R169": {
+     "n_cells": 6,
+     "n_with_usable_cycles": 0,
+     "yaw_mean": null,
+     "yaw_sd_across_seeds": null,
+     "yaw_per_seed": [],
+     "within_cell_yaw_sd": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "t_end_per_seed": [
+      0.69,
+      0.69,
+      0.69,
+      0.69,
+      0.69,
+      0.69
+     ],
+     "t_end_mean": 0.69,
+     "t_end_min": 0.69,
+     "t_end_max": 0.69,
+     "cycles_total_per_seed": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "survivor_bias_note": "yaw computed on 0 of 6 cells -- the least destabilised. LOWER BOUND; the bias runs toward the null."
+    },
+    "KV0.400_R172": {
+     "n_cells": 6,
+     "n_with_usable_cycles": 0,
+     "yaw_mean": null,
+     "yaw_sd_across_seeds": null,
+     "yaw_per_seed": [],
+     "within_cell_yaw_sd": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "t_end_per_seed": [
+      0.7,
+      0.7,
+      0.69,
+      0.7,
+      0.7,
+      0.69
+     ],
+     "t_end_mean": 0.6966666666666667,
+     "t_end_min": 0.69,
+     "t_end_max": 0.7,
+     "cycles_total_per_seed": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "survivor_bias_note": "yaw computed on 0 of 6 cells -- the least destabilised. LOWER BOUND; the bias runs toward the null."
+    }
+   }
+  }
+ }
+}

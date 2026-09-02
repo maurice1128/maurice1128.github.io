@@ -1,0 +1,56 @@
+{
+ "round": 307,
+ "what": "Hashes for the protected (do-not-edit) analysis scripts, deposited because two of them had no hash recorded anywhere in paper/.",
+ "DEFECT": {
+  "id": "r307-PROTECTED-SCRIPT-UNHASHED",
+  "finding": "gen_slope_r60.py and gen_slope_tier2_r87.py are on the do-not-edit list, but neither their full sha256 nor its 12-character prefix occurs in any file under paper/. The guard 'stop and ask if the file's sha256 is in the registration' therefore CANNOT FIRE for these two: there is nothing to match against.",
+  "found_how": "Searched every live script hash across the whole paper/ tree, excluding .bak_ files. Five of seven were found and matched; two returned zero files for both the full hash and the 12-character prefix."
+ },
+ "SELF_CORRECTION": {
+  "first_answer": "4 of 7 scripts appeared to have no recorded hash.",
+  "corrected_answer": "2 of 7. The other two WERE recorded and DO match.",
+  "mechanism": "The first pass used a regex requiring the hash to appear within 200 characters of the filename on the same line. Several registrations record the hash and the filename further apart or on separate lines, so the regex missed them. The robust check searched for each LIVE hash across the whole tree regardless of surrounding text.",
+  "why_recorded": "A narrower true finding replacing a wider false one is the direction an audit should move, and the mechanism is worth showing because the same proximity assumption would misfire again on any similarly formatted record."
+ },
+ "unhashed_until_now": {
+  "gen_slope_r60.py": {
+   "sha256": "d1a6e41fda247d20e1edea95b665e5a7bdd84a4541e169e8fa4c51900e94644d",
+   "path": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\gen_slope_r60.py"
+  },
+  "gen_slope_tier2_r87.py": {
+   "sha256": "4d97ca6fa94f6039285cd16c8854a220c739ccb1162548cd8bda557969c3773d",
+   "path": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\gen_slope_tier2_r87.py"
+  }
+ },
+ "already_recorded_and_verified_matching": {
+  "slope_analysis_r62.py": {
+   "sha256": "b91ac22c12cd0630c29546dbccfb3e021da5d50c0908528798f70ecf37ce3c9d",
+   "note": "live hash found in paper/ and matches"
+  },
+  "lr_crossval.py": {
+   "sha256": "bf83ee35e213ceb3206505dc0d11d031299c02cded64639bc3d9a0bef2c6eaaa",
+   "note": "live hash found in paper/ and matches"
+  },
+  "lr_asymmetry.py": {
+   "sha256": "79bbdd27da7e207d86033ac02f1bef31b647ccaa999e8fe58002dc7accea699b",
+   "note": "live hash found in paper/ and matches"
+  },
+  "video_degradation.py": {
+   "sha256": "6b8b68b9d44afb784f243e3be0bc2452f3013f378a619e802828cf0e0ba2a3f4",
+   "note": "live hash found in paper/ and matches"
+  },
+  "residual_test.py": {
+   "sha256": "d57a015ebca8b3848189728de631c3d42c8361396de5a9fca58158c7d1e6dc3b",
+   "note": "live hash found in paper/ and matches"
+  }
+ },
+ "LIMIT_OF_THIS_DEPOSIT": "These are hashes AS OF TONIGHT. They are NOT evidence that either file is AS MEASURED 2026-08-18 11:52, unmodified since its original use. No earlier hash exists for gen_slope_r60.py or gen_slope_tier2_r87.py anywhere in paper/, so the interval between their first use and now is unverifiable and cannot be recovered. What this deposit buys is that the guard can fire from now on; it buys nothing about the past. [r342: as-of instant placed inside the claiming clause. An undated 'not edited' assertion is falsified by any later write, including one of ours.]",
+ "written_at": "2026-08-18T02:15:17",
+ "LIMIT_OF_THIS_DEPOSIT_UNDATED_ORIGINAL_r342": "These are hashes AS OF TONIGHT. They are NOT evidence that either file is unmodified since its original use. No earlier hash exists for gen_slope_r60.py or gen_slope_tier2_r87.py anywhere in paper/, so the interval between their first use and now is unverifiable and cannot be recovered. What this deposit buys is that the guard can fire from now on; it buys nothing about the past.",
+ "REVERIFIED_r342": {
+  "measured_at": "2026-08-18 11:52",
+  "result": "all seven registered-script digests recomputed and MATCH; zero mismatches",
+  "why_two_instants": "The original deposit stated the hashes as of its own writing. This is a SECOND dated measurement of the same seven files. Two instants establish an INTERVAL over which nothing changed, where one instant establishes only a point at which nothing had. The first measurement is not replaced.",
+  "script_mtimes_context": "All seven scripts carry mtimes of 2026-08-03 to 08-04, two weeks before the original deposit was written."
+ }
+}

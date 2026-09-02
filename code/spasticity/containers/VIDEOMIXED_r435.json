@@ -1,0 +1,83 @@
+{
+  "round": "VIDEOMIXED_r435",
+  "no_simulation_run": true,
+  "task": "grade spasticity (KV>=0.050 vs KV<=0.025) across MIXED lesions of every weakness depth, under the PREREG_videoknee_r422 noise model",
+  "n_heavy": 28,
+  "n_light": 36,
+  "grid": {
+    "0": {
+      "accuracy": 0.840390625,
+      "disjoint_rate": 0.0,
+      "heavy_mean": -13.69240658183156,
+      "light_mean": -8.999647641894006
+    },
+    "1": {
+      "accuracy": 0.836171875,
+      "disjoint_rate": 0.0,
+      "heavy_mean": -13.724481580490876,
+      "light_mean": -9.03865150218776
+    },
+    "2": {
+      "accuracy": 0.82890625,
+      "disjoint_rate": 0.0,
+      "heavy_mean": -13.689127726089874,
+      "light_mean": -8.984199355921
+    },
+    "3": {
+      "accuracy": 0.814765625,
+      "disjoint_rate": 0.0,
+      "heavy_mean": -13.690188021445831,
+      "light_mean": -8.997278456989411
+    },
+    "4": {
+      "accuracy": 0.788125,
+      "disjoint_rate": 0.0,
+      "heavy_mean": -13.689998389257333,
+      "light_mean": -9.022823046290357
+    },
+    "5": {
+      "accuracy": 0.770234375,
+      "disjoint_rate": 0.0,
+      "heavy_mean": -13.660015303284126,
+      "light_mean": -8.958909652596315
+    },
+    "6": {
+      "accuracy": 0.74796875,
+      "disjoint_rate": 0.0,
+      "heavy_mean": -13.658890462292815,
+      "light_mean": -9.024449636890607
+    },
+    "8": {
+      "accuracy": 0.70609375,
+      "disjoint_rate": 0.0,
+      "heavy_mean": -13.660278669961253,
+      "light_mean": -9.069499041777174
+    },
+    "10": {
+      "accuracy": 0.685625,
+      "disjoint_rate": 0.0,
+      "heavy_mean": -13.772841165581442,
+      "light_mean": -9.019855525328266
+    }
+  },
+  "VERDICT": "spasticity grading across mixed lesions holds at 0.829 accuracy at sigma 2 deg and 0.770 at sigma 5 deg under 30 fps, 20 deg yaw and +/-1 frame event error",
+  "READING_r435": {
+    "the_number_that_matters": "accuracy at ZERO noise is 0.8404. That is the ceiling imposed by mixing weakness depths, before any camera is involved.",
+    "noise_costs_little": {
+      "sigma_0": 0.840390625,
+      "sigma_2": 0.82890625,
+      "sigma_5": 0.770234375,
+      "sigma_10": 0.685625,
+      "reading": "from a clean signal to sigma 2 deg -- the typical markerless error -- accuracy falls only 0.84 to 0.83. Even at an unreasonable sigma 10 it is 0.69. VIDEO NOISE IS NOT THE LIMITING FACTOR."
+    },
+    "the_mixture_costs_a_lot": {
+      "pure_lesion_accuracy_at_sigma_2": 0.97,
+      "mixed_lesion_accuracy_at_sigma_2": 0.82890625,
+      "cost": "about 14 percentage points, and it is present at zero noise. VIDEOKNEE_r422 measured 0.97 on pure spastic versus pure weak; the same task across mixed lesions of every weakness depth is 0.83."
+    },
+    "disjointness_is_zero_everywhere": "even with no noise at all the two groups overlap, because spanning four weakness depths widens each group. Disjointness was never the right statistic for a clinical claim -- see VIDEOKNEE_r422's own reading -- and here it is zero by construction.",
+    "WHAT_THIS_MEANS_FOR_THE_PAPER": "the limitation is biological, not technical. Buying a better camera or a better pose estimator does not recover the 14 points; they are lost to the fact that dorsiflexor weakness moves the same endpoint in the opposite direction. That is a statement about the endpoint, and it points at the fix: a second variable that responds to weakness but not to spasticity would restore the separation. This corpus has not found one, and SCREEN_ALL_r433 plus STATIONARITY_r434 are the record of looking.",
+    "the_defensible_clinical_sentence": "'across simulated lesions spanning four dorsiflexor weakness depths, knee angle at heel strike graded plantarflexor spastic gain at 83% accuracy under 30 fps sagittal video with 20 degrees of camera yaw, one frame of event error and 2 degrees of per-frame keypoint noise. Accuracy without any noise was 84%, so the residual error is attributable to the lesion mixture rather than to the measurement.'"
+  },
+  "UNREGISTERED_OR_SUPERSEDED_LABEL_r438": "EXPLORATORY. No registration exists. Its binary task (KV>=0.050 vs <=0.025) and its threshold were both chosen after the data were seen, and FLOOR_CORRECTION_r436 found the threshold was in-sample -- the LOO figures there supersede the numbers in this file. May not be quoted beside a registered result without this label."
+}

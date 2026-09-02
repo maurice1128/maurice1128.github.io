@@ -1,0 +1,79 @@
+{
+ "round": 305,
+ "what": "Reconciles the launcher's in-band weakness counter (6) against the corpus measured from .sto (8). The two count different sets; the union is 8.",
+ "band_s": [
+  13.58,
+  17.85
+ ],
+ "guard_t1_s": 9.73,
+ "TARGET_WEAK_IN_BAND": 8,
+ "TARGET_SPASTIC_CONDITIONS": 3,
+ "weakness_in_band_UNION_at_47of60": {
+  "R291BF008_s158": 17.56,
+  "R291BF008_s155": 16.75,
+  "R276WPF005_s101": 16.21,
+  "R287BF007_s109": 16.17,
+  "R291BF008_s160": 15.97,
+  "R291BF007_s162": 15.91,
+  "R291BF008_s152": 15.83,
+  "R285BF008_s105": 15.14
+ },
+ "n_weakness_in_band_UNION_at_47of60": 8,
+ "n_weakness_measured_total_at_47of60": 70,
+ "spastic_conditions_in_band_at_47of60": {
+  "0.035": [
+   [
+    "R291KV0035_s103",
+    17.77
+   ]
+  ],
+  "0.05": [
+   "R151S x6 (13.58-17.85, band-defining)"
+  ]
+ },
+ "n_spastic_conditions_in_band_at_47of60": 2,
+ "DEFECT": {
+  "id": "r305-COVERAGE-COUNTER-BLIND",
+  "finding": "run_bandfill_r291.py coverage() skips any cell deposit lacking a 't_end_s' key ('if te is None: continue'). The r276 and r285 launchers predate that field, so 30 weakness cell deposits are skipped unconditionally.",
+  "consequence": "The first clause of the stopping rule (w >= 8) is evaluated against an undercount and cannot reach its target from these deposits alone. It reports 6 where the corpus has 8.",
+  "not_a_result_defect": "No deposited RESULT is wrong. r290 measured every one of these cells from .sto by the registered path; the durations exist and are correct. Only the launcher's live counter is blind.",
+  "effect_on_this_arm": "None on the decision to run to cap. The rule is conjunctive and the second clause (3 spastic conditions) stands at 2, so the rule would not have fired even on a correct weakness count.",
+  "rule": "The registered coverage claim must be evaluated from .sto measurement over the whole corpus, as r290 does, NOT from the launcher's running counter. The counter is an operational convenience and is not the endpoint."
+ },
+ "GAP_1": "AS OF 2026-08-18T01:21:05, at 47 of 60 r291 cells (MID-RUN SNAPSHOT, NOT the arm's final value): CLOSED -- 8 of 8 weakness cells in band on the union count [r353: as-of instant placed inside the clause. Final arm value is 11, not 8.]",
+ "GAP_2": "AS OF 2026-08-18T01:21:05, at 47 of 60 r291 cells (MID-RUN SNAPSHOT, NOT the arm's final value): STILL OPEN -- 2 of 3 spastic conditions in band. PREREG_bandfill_r291 sec6 pre-registered that reading B is unavailable in exactly this case. [r353: as-of instant placed inside the clause. Final arm value is 11, not 8.]",
+ "r291_cells_deposited_at_write": 47,
+ "written_at": "2026-08-18T01:21:05",
+ "SUPERSEDED_BY_r306": {
+  "note": "This file is a SNAPSHOT taken at 47 of 60 r291 deposits, while the arm was still running. Its count of 8 in-band weakness cells was correct at that moment.",
+  "final": "The arm ran to 60 and the final 12 cells added three more in-band weakness cells: R291BF007_s165 (17.08), R291BF008_s163 (14.72), R291BF008_s166 (17.04). The final in-band weakness count is 11, deposited in BANDFILL_ENDPOINT_r291.json.",
+  "unchanged": "The DEFECT recorded here (r305-COVERAGE-COUNTER-BLIND) stands unaltered, as does the spastic side at 2 of 3 conditions.",
+  "authority": "BANDFILL_ENDPOINT_r291.json is the confirmatory count. This file is history.",
+  "D14_internal_inconsistency": "This file's own field r291_cells_deposited_at_write reads 47, but the SUPERSEDED_BY_r306 note written above described the snapshot as 'taken at 48 of 60'. The deposited field is correct and 47 is the right number -- The '48' was written from a directory listing taken minutes later and is an error in the note, not in the data.",
+  "note_ORIGINAL_WRONG": "This file is a SNAPSHOT taken at 48 of 60 r291 deposits, while the arm was still running. Its count of 8 in-band weakness cells was correct at that moment.",
+  "count_is_47": "47 is correct and is what this file's own r291_cells_deposited_at_write field records. The '48' was written from a directory listing taken minutes later. r311 policy: the live field carries the TRUE statement; the superseded wording is preserved below it and is not the claim.",
+  "D14_internal_inconsistency_ORIGINAL_WRONG": "This file's own field r291_cells_deposited_at_write reads 47, but the SUPERSEDED_BY_r306 note written above described the snapshot as 'taken at 48 of 60'. The deposited field is correct and 47 is the right number -- VERIFY_R291.json independently reports 47. The '48' was written from a directory listing taken minutes later and is an error in the note, not in the data.",
+  "count_is_47_ORIGINAL_WRONG": "47 is correct and is what this file's own r291_cells_deposited_at_write field records; VERIFY_R291.json agrees. The '48' was written from a directory listing taken minutes later. r311 policy: the live field carries the TRUE statement; the superseded wording is preserved below it and is not the claim.",
+  "note_48_WORDING_SUPERSEDED": "This file is a SNAPSHOT taken at 47 of 60 r291 deposits, while the arm was still running. Its count of 8 in-band weakness cells was correct at that moment.",
+  "r331_note": "The live note above previously read '48 of 60'. 47 is correct and is what this file's own r291_cells_deposited_at_write field records. D14_internal_inconsistency below is RETAINED deliberately: it is the account of how the discrepancy arose, and this file should read as a CORRECTED record, not as one that was always right."
+ },
+ "FALSE_CORROBORATION_r321": {
+  "struck": "'VERIFY_R291.json independently reports 47.'",
+  "why_false": "VERIFY_R291.json's 47 is n_weak_measured -- the count of WEAKNESS cells passing the r281 guard. Verified on disk: BANDFILL_ENDPOINT_r291.json holds 83 weakness records of which exactly 47 have measured: true. The r291 ARM is 60 cells. These are two different quantities that happen to equal 47.",
+  "what_47_actually_rests_on": "This file's own r291_cells_deposited_at_write field, and nothing else. No independent corroboration for the snapshot count exists in the corpus. The figure is correct; it is simply single-sourced, and it must be read that way.",
+  "PATTERN_THIRD_INSTANCE": "A number agreeing for an unrelated reason, read as independent confirmation. (1) The sidecar and BODY2_HASHES_r229.json carry the same manuscript digest, written in the same second from the same state -- one measurement recorded twice, not two agreeing. (2) A missing guard_admissible key read as admissible rather than as unknown. (3) This. In each case agreement was inferred from something that never independently confirmed anything. This one SURVIVED A REPAIR ROUND precisely because the agreement looked like evidence."
+ },
+ "SNAPSHOT_DECLARATION_r353": "THIS ENTIRE FILE IS A MID-RUN SNAPSHOT taken at 2026-08-18T01:21:05, when 47 of the r291 arm's 60 cells had been deposited. Every top-level count below is as-of that instant and is NOT a claim about the finished arm. The arm's FINAL value is 11 in-band weakness cells, deposited at BANDFILL_ENDPOINT_r291.json /n_weakness_in_band. Declaration added r353; no snapshot value was overwritten, because replacing them would destroy the record this file exists to hold and the replacement would itself go stale.",
+ "GAP_1_UNDATED_ORIGINAL_r353": "CLOSED -- 8 of 8 weakness cells in band on the union count",
+ "GAP_2_UNDATED_ORIGINAL_r353": "STILL OPEN -- 2 of 3 spastic conditions in band. PREREG_bandfill_r291 sec6 pre-registered that reading B is unavailable in exactly this case.",
+ "PERISHABLE_KEYS_CARRY_THE_POSITION_r354": "Every count in this file is a MID-RUN measurement at 47 of 60 r291 cells. A bare integer has no clause to put an as-of instant into, so the instant is carried by the KEY NAME: the suffix '_at_47of60' marks the position at which the value was measured. No bare conventional name survives for any perishable count, and the duplicate '_as_of_snapshot' spelling was DELETED rather than left beside it -- two spellings of one number force a reader to guess which is authoritative, and whichever sits in the conventional field is read as the claim.",
+ "NOT_PERISHABLE_left_unchanged_r354": {
+  "round": "a round number",
+  "guard_t1_s": "a gate constant from the registration",
+  "TARGET_WEAK_IN_BAND": "registration constant, 8, confirmed in PREREG_bandfill_r291.md",
+  "TARGET_SPASTIC_CONDITIONS": "registration constant, 3",
+  "r291_cells_deposited_at_write": "its whole subject IS the instant",
+  "written_at": "its whole subject IS the instant"
+ },
+ "n_weakness_measured_total_at_47of60_note": "70 at 47 of 60 cells. VERIFIED PERISHABLE: the finished arm reached 83 (BANDFILL_ENDPOINT_r291.json /n_weakness_total). The count grew as the arm completed, so this field was re-keyed rather than left bare."
+}

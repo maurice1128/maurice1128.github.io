@@ -1,0 +1,37 @@
+{
+ "prefix": "R424W1000125_s105",
+ "row": "W100",
+ "weak_scale": 1.0,
+ "col": "0125",
+ "KV": 0.0125,
+ "seed": 105,
+ "parent_prefix": "R151C_s105",
+ "parent_is_root": true,
+ "parent_gate_G": true,
+ "parent_t_end_s": 20.0,
+ "parent_n_cycles": 5,
+ "parent_result_dir": "R151C_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+ "parent_par": "0053_30.023_0.987.par",
+ "parent_par_sha256": "fbd42423eed2b948053c4cae6f2ba7a5571ae5ad8acd7e2a5bd338703229192b",
+ "parent_par_generation": 53,
+ "staged_warm_as": "WARM_R151C_s105_g0053.par",
+ "fmax_readback": {
+  "tib_ant_l": 1759.0,
+  "soleus_l": 3549.0,
+  "gastroc_l": 2241.0
+ },
+ "config_sha256": "41403842795e9588e79cb05aa39134d22e41096a87ef95396d3f6d5d75854003",
+ "init_line_readback": "init { file = \"par/WARM_R151C_s105_g0053.par\" }",
+ "status": "RUN_OK",
+ "seconds": 451.9,
+ "result_dir": "R424W1000125_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+ "gate_G": true,
+ "t_end_s": 20.0,
+ "n_cycles_in_window": 5,
+ "knee_hs_deg": null,
+ "scone_tail": [
+  "14:40:08 Successfully initialized OpenSim-4.4",
+  "14:40:08 Successfully initialized Hyfydy-1.12.6.1412",
+  "14:40:08 Successfully initialized Hyfydy-1.12.6.1412-DBL"
+ ]
+}

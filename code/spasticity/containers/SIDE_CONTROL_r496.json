@@ -1,0 +1,59 @@
+{
+  "id": "SIDE_CONTROL_r496",
+  "question": "Scored on the metric this manuscript uses to certify its own lesion families -- displacement from control divided by the 0.586 deg sham artefact -- when does the unlesioned-side negative control fail?",
+  "why": "KNEE_MDC_BATCHNULL_r399 scores the side control by cell-range DISJOINTNESS and concludes strict left-specificity holds at KV <= 0.100. Disjointness on the right knee is suppressed by its larger seed dispersion (0.875 vs 0.484 deg), so the two metrics can disagree.",
+  "endpoint": "knee_angle_r at RIGHT heel strike, right leg's own GRF, same Gate G and window",
+  "control_deg": {
+    "left": -7.85,
+    "right": -7.724
+  },
+  "displacement_from_control_deg": {
+    "KV0.050": {
+      "left": -2.082,
+      "right": -0.431,
+      "right_x_sham": 0.74
+    },
+    "KV0.070": {
+      "left": -3.431,
+      "right": -0.413,
+      "right_x_sham": 0.71
+    },
+    "KV0.100": {
+      "left": -4.793,
+      "right": -1.532,
+      "right_x_sham": 2.61
+    },
+    "KV0.110": {
+      "left": -5.349,
+      "right": -3.443,
+      "right_x_sham": 5.88
+    },
+    "KV0.120": {
+      "left": -5.519,
+      "right": -4.005,
+      "right_x_sham": 6.83
+    },
+    "weakness_x0.80": {
+      "left": 2.006,
+      "right": 0.103,
+      "right_x_sham": 0.18
+    },
+    "weakness_x0.95": {
+      "left": 0.908,
+      "right": 0.392,
+      "right_x_sham": 0.67
+    }
+  },
+  "arm_separation_deg": {
+    "left": -5.593,
+    "right": -1.985
+  },
+  "unlesioned_share_of_separation": 0.355,
+  "seed_SD_deg": {
+    "left": 0.484,
+    "right": 0.875
+  },
+  "FINDING": "On the certification metric the side control fails from KV 0.100 (2.61x sham), not KV 0.110. At KV 0.110 and 0.120 the UNLESIONED knee moves 3.44 and 4.01 deg, larger than the lesioned-side displacement of every weakness family (max 2.006 deg). The unlesioned side carries 35.5% of the arm separation, same sign, dose-monotone.",
+  "does_not_show": "that the left-knee result is a batch artefact. The right knee's own batch null is 0/15 and at KV 0.050-0.100 it separates 0/6 while the left separates 6/6. What it shows is that from KV 0.100 upward the endpoint reads a bilateral re-solution as well as a lesion-side effect.",
+  "raw": "control  left   -7.850   right   -7.724   (n=6/6)\n\nfamily         dose   nL   nR |    L-ctrl  x sham |    R-ctrl  x sham | R/L\nR151S         0.050    6    6 |    -2.082    3.55 |    -0.431    0.74 | 21%\nR393SPg070    0.070    6    6 |    -3.431    5.85 |    -0.413    0.71 | 12%\nR393SPg100    0.100    4    4 |    -4.793    8.18 |    -1.532    2.61 | 32%\nR396SPg110    0.110    4    4 |    -5.349    9.13 |    -3.443    5.88 | 64%\nR396SPg120    0.120    3    3 |    -5.519    9.42 |    -4.005    6.83 | 73%\nR151W         0.800    6    6 |    +2.006    3.42 |    +0.103    0.18 | 5%\nR174W870      0.870    6    6 |    +1.525    2.60 |    -0.154    0.26 | 10%\nR174W892      0.892    6    6 |    +1.338    2.28 |    -0.071    0.12 | 5%\nR169W090      0.900    6    6 |    +1.210    2.07 |    -0.082    0.14 | 7%\nR174W915      0.915    6    6 |    +1.161    1.98 |    -0.065    0.11 | 6%\nR169W095      0.950    6    6 |    +0.908    1.55 |    +0.392    0.67 | 43%\n\narm separation   left  -5.593 deg\narm separation   right -1.985 deg\nunlesioned side carries 35.5% of the separation\n\nseed SD  left  0.484 deg\nseed SD  right 0.875 deg\n"
+}

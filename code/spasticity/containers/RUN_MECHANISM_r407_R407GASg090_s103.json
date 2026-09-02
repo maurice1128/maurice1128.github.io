@@ -1,0 +1,11 @@
+{
+ "prefix": "R407GASg090_s103",
+ "arm": "GAS",
+ "kv": 0.09,
+ "seed": 103,
+ "rung_index": 2,
+ "status": "BROKEN_PARENT",
+ "gate_G": false,
+ "parent_prefix": "R407GASg070_s103",
+ "note": "parent failed Gate G; this seed's chain in this arm is BROKEN and no substitute parent is used"
+}

@@ -1,0 +1,114 @@
+{
+ "spastic": [
+  "SPAS005",
+  "SPAS005_s2",
+  "SPAS005_s3",
+  "SPAS005_s4",
+  "SPAS01",
+  "SPAS01_s2",
+  "SPAS01_s3",
+  "SPAS01_s4",
+  "DOSER1050_s1",
+  "DOSER2071_s1",
+  "DOSER3100_s1"
+ ],
+ "weak": [
+  "PAR20_s1",
+  "PAR20_s2",
+  "PAR20_s3",
+  "PAR20_s4",
+  "PAR40_s1",
+  "PAR40_s2",
+  "PAR40_s3",
+  "PAR40_s4",
+  "PAR60_s1",
+  "PAR60_s2",
+  "PAR60_s3",
+  "PAR60_s4",
+  "DPAR20_s1",
+  "DPAR20_s2",
+  "DPAR20_s3",
+  "DPAR40_s1",
+  "DPAR40_s2",
+  "DPAR40_s3",
+  "DPAR60_s1",
+  "DPAR60_s2",
+  "DPAR60_s3"
+ ],
+ "healthy": [
+  "HEALTHY_s1",
+  "HEALTHY_s2",
+  "HEALTHY_s3",
+  "HEALTHY_s4",
+  "DHEALTHY_s1",
+  "DHEALTHY_s2",
+  "DHEALTHY_s3"
+ ],
+ "features": {
+  "ank_mean": {
+   "auc": 0.42857142857142855,
+   "p_exact": null,
+   "n_overlap": 6
+  },
+  "ank_stance_mean": {
+   "auc": 0.4805194805194805,
+   "p_exact": null,
+   "n_overlap": 5
+  },
+  "ank_hs": {
+   "auc": 0.24675324675324675,
+   "p_exact": null,
+   "n_overlap": 5
+  },
+  "ank_min": {
+   "auc": 0.8268398268398268,
+   "p_exact": null,
+   "n_overlap": 4
+  },
+  "ank_max": {
+   "auc": 0.2857142857142857,
+   "p_exact": null,
+   "n_overlap": 3
+  },
+  "ank_rom": {
+   "auc": 0.012987012987012988,
+   "p_exact": null,
+   "n_overlap": 2
+  },
+  "ank_swing_min": {
+   "auc": 0.8268398268398268,
+   "p_exact": null,
+   "n_overlap": 4
+  },
+  "ank_vel_max": {
+   "auc": 0.008658008658008658,
+   "p_exact": null,
+   "n_overlap": 2
+  },
+  "knee_min": {
+   "auc": 0.3116883116883117,
+   "p_exact": null,
+   "n_overlap": 8
+  },
+  "knee_rom": {
+   "auc": 0.6060606060606061,
+   "p_exact": null,
+   "n_overlap": 10
+  },
+  "hip_rom": {
+   "auc": 0.4025974025974026,
+   "p_exact": null,
+   "n_overlap": 7
+  },
+  "cycle_time": {
+   "auc": 0.09740259740259741,
+   "p_exact": null,
+   "n_overlap": 5
+  },
+  "stance_frac": {
+   "auc": 0.6190476190476191,
+   "p_exact": null,
+   "n_overlap": 8
+  }
+ }
+}

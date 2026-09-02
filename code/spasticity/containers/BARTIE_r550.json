@@ -1,0 +1,72 @@
+{
+ "id": "BARTIE_r550",
+ "why": "The 25-and-3 count depended on two undisclosed analytic choices: a single permissive measurement-error bar taken from the smallest of the four published values, and a rank correlation that did not use mid-ranks on a heavily tied dose vector. This crosses the three defensible bars with the three rank conventions and reports the range.",
+ "grid": [
+  {
+   "bar": "permissive, 1.77 deg everywhere",
+   "rank": "as shipped",
+   "tone": 25,
+   "weak": 3,
+   "ratio": 8.333333333333334
+  },
+  {
+   "bar": "permissive, 1.77 deg everywhere",
+   "rank": "Spearman, cell level",
+   "tone": 28,
+   "weak": 4,
+   "ratio": 7.0
+  },
+  {
+   "bar": "permissive, 1.77 deg everywhere",
+   "rank": "family level",
+   "tone": 27,
+   "weak": 7,
+   "ratio": 3.857142857142857
+  },
+  {
+   "bar": "each variable's own published error",
+   "rank": "as shipped",
+   "tone": 24,
+   "weak": 3,
+   "ratio": 8.0
+  },
+  {
+   "bar": "each variable's own published error",
+   "rank": "Spearman, cell level",
+   "tone": 27,
+   "weak": 4,
+   "ratio": 6.75
+  },
+  {
+   "bar": "each variable's own published error",
+   "rank": "family level",
+   "tone": 26,
+   "weak": 7,
+   "ratio": 3.7142857142857144
+  },
+  {
+   "bar": "each joint's largest published error",
+   "rank": "as shipped",
+   "tone": 14,
+   "weak": 1,
+   "ratio": 14.0
+  },
+  {
+   "bar": "each joint's largest published error",
+   "rank": "Spearman, cell level",
+   "tone": 17,
+   "weak": 2,
+   "ratio": 8.5
+  },
+  {
+   "bar": "each joint's largest published error",
+   "rank": "family level",
+   "tone": 16,
+   "weak": 4,
+   "ratio": 4.0
+  }
+ ],
+ "ratio_min": 3.7142857142857144,
+ "ratio_max": 14.0,
+ "conclusion": "the count is a property of the bar and the rank convention; the direction and the order of magnitude are not. The ratio never falls below 3.9 and never inverts."
+}

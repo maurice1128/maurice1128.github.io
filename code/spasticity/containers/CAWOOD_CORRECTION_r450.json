@@ -1,0 +1,88 @@
+{
+  "round": "CAWOOD_CORRECTION_r450",
+  "date": "2026-08-28",
+  "no_simulation_run": true,
+  "what": "Cawood & Mashola 2023 Table 5 was mis-extracted in SUBPHASE_r441 and in every manuscript draft to r445. Corrected here from the publisher's own HTML galley.",
+  "source_read": "https://sajp.co.za/index.php/sajp/article/view/1926/3461 (AOSIS HTML galley, S Afr J Physiother 2023;79(1):1926, PMID 38059056). Corroborated within the same galley by the abstract and by the Results prose.",
+  "table5_tone_columns_are_headed_BY_MUSCLE_not_by_direction": [
+    "Dorsiflexion Muscle Strength",
+    "Plantarflexion Muscle Strength",
+    "Dorsiflexion ROM",
+    "Plantarflexion ROM",
+    "Tibialis Anterior Muscle Tone",
+    "Gastrocnemius Muscle Tone"
+  ],
+  "CORRECT_VALUES": {
+    "initial_contact": {
+      "TA_rho": 0.662,
+      "TA_p": 0.019,
+      "GAS_rho": 0.362,
+      "GAS_p": 0.22
+    },
+    "loading_response": {
+      "TA_rho": 0.489,
+      "TA_p": 0.1,
+      "GAS_rho": 0.278,
+      "GAS_p": 0.45
+    },
+    "midstance": {
+      "TA_rho": 0.44,
+      "TA_p": 0.15,
+      "GAS_rho": 0.35,
+      "GAS_p": 0.24
+    },
+    "terminal_stance": {
+      "TA_rho": 0.695,
+      "TA_p": 0.01,
+      "GAS_rho": 0.29,
+      "GAS_p": 0.48
+    },
+    "pre_swing": {
+      "TA_rho": 0.718,
+      "TA_p": 0.01,
+      "GAS_rho": 0.065,
+      "GAS_p": 0.85
+    }
+  },
+  "results_prose_verbatim": "Gastrocnemius muscle tone was not significantly related to the knee angles during any of the stages of the stance phase - initial contact (p = 0.22), loading response (p = 0.45), midstance (p = 0.24), terminal (p = 0.48) or pre-swing (p = 0.85). / we found significant relationships between tibialis anterior muscle tone and knee angles during all stages of the stance phase of gait, except the loading response and midstance",
+  "WHAT_WAS_WRONG": {
+    "recorded_in_r441": {
+      "initial_contact": [
+        0.542,
+        0.069
+      ],
+      "loading_response": [
+        0.321,
+        0.309
+      ],
+      "midstance": [
+        0.492,
+        0.104
+      ],
+      "terminal_stance": [
+        0.745,
+        0.005
+      ],
+      "pre_swing": [
+        0.672,
+        0.017
+      ]
+    },
+    "labelled_as": "graded PLANTARFLEXOR tone",
+    "diagnosis": "the recorded values match NEITHER tone column. The original JATS-XML extraction mis-mapped columns. This was our own extraction error, not a bad agent summary."
+  },
+  "THREE_CONSEQUENCES_ALL_AGAINST_THIS_PROJECT": [
+    "Cawood is NOT a null at initial contact. Tibialis anterior tone is significant there (p=0.019).",
+    "GASTROCNEMIUS tone -- the muscle class this project lesions -- is not significantly related to knee angle at ANY stance phase. That is the comparison relevant to the spastic arm, and in patients it is a null. The model's central dose prediction is unsupported by the one dataset that measured it.",
+    "The charge that Cawood's abstract and Table 5 contradict each other IS FALSE and is withdrawn. Abstract, Results prose and Table 5 all agree. The contradiction was manufactured by our mis-extraction."
+  ],
+  "SUPERSEDES": "SUBPHASE_r441.json /cawood_table5_plantarflexor_tone_vs_knee and its /AGREEMENT field. There is no 'Cawood strongest window' for plantarflexor tone to compare the model against: no gastrocnemius window is significant.",
+  "MODEL_SIDE_UNCHANGED": "The model's own sub-phase numbers in SUBPHASE_r441.json were computed from .sto files and are unaffected. Only the patient-side comparison changes.",
+  "caveats_on_the_null": [
+    "n=12 feasibility pilot",
+    "only 9 of 12 had any gastrocnemius tone",
+    "ordinal Modified Tardieu 0-5 grade",
+    "2D Kinovea video",
+    "authors present the study as underpowered"
+  ]
+}

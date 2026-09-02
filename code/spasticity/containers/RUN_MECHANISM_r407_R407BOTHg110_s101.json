@@ -1,0 +1,51 @@
+{
+ "rung_index": 3,
+ "wall_clock_s": 93.70816397666931,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R407BOTHg110_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101 (1)"
+ ],
+ "prefix": "R407BOTHg110_s101",
+ "arm": "BOTH",
+ "kv": 0.11,
+ "seed": 101,
+ "warm": "WARM_R407BOTHg090_s101_g0030.par",
+ "spastic_targets": [
+  "soleus",
+  "gastroc"
+ ],
+ "deleted_reflex": null,
+ "parent_prefix": "R407BOTHg090_s101",
+ "parent_role": "own_chain_rung_2",
+ "parent_result_dir": "R407BOTHg090_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+ "parent_par": "0030_67.264_42.523.par",
+ "parent_par_sha256": "aa153326c3c2d1ca3e1a949f349bbcd47c1a7da14cfe516f329759b8f180059a",
+ "parent_generation": 30,
+ "parent_gate_G": true,
+ "parent_t_end_s": 13.39,
+ "spasticL_readback_targets": [
+  "soleus",
+  "gastroc"
+ ],
+ "spasticL_block_sha256": "795e9304f8d854a4c1aef28072125c29745a388d712fa7d7f253940a1fb55d38",
+ "kv_literal_count_in_config": 2,
+ "fmax_readback": {
+  "tib_ant_l": 1759.0,
+  "soleus_l": 3549.0,
+  "gastroc_l": 2241.0
+ },
+ "config_sha256": "65cf94066e6047dec1764fcd4dcbd9d5b56482108a58c898610bdd3562762795",
+ "stage_dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg110_s101",
+ "status": "OK",
+ "sto": "0056_68.090_52.716.par.sto",
+ "t_end_s": 10.79,
+ "n_cycles_in_window": 6,
+ "gate_G": true,
+ "knee_at_heelstrike_deg": -14.946931438212912,
+ "n_stance_samples": 413,
+ "ank_stance_mean_deg": 1.7677958427375293,
+ "duplicate_result_dir": true,
+ "dir": "R407BOTHg110_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+ "result_dir_path": "C:\\Users\\maurice\\Documents\\SCONE\\results\\R407BOTHg110_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+ "measured_par": "0056_68.090_52.716.par"
+}

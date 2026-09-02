@@ -1,0 +1,227 @@
+{
+ "round": 235,
+ "channel": "ankle_angle_LmR",
+ "window": [
+  1.0,
+  9.73
+ ],
+ "family": [
+  "ankle_angle_LmR",
+  "knee_angle_LmR",
+  "hip_flexion_LmR",
+  "hip_adduction_LmR"
+ ],
+ "provenance": {
+  "script": "ankle_ladder_r235.py",
+  "script_sha256": "48d03ad1a27b042c6b413373e1c8903d0fef874ffbda243a172d87f0e1de17a5",
+  "prereg_sha256": "a180a08049563e86e95dfb8bcc05020b456df4d79d570db16c65bb2561b481cb",
+  "definition_source": "ladder36_r228.py",
+  "definition_source_sha256": "5cf4bf5b2582ba310fee73b7ef3f5441f042256c557728548d1ffea0c7993819"
+ },
+ "per_seed": {
+  "C": [
+   -0.09382756853062446,
+   -0.14479789398546217,
+   -0.3716891808572633,
+   -0.2580487317710194,
+   -0.4007381410703985,
+   -1.0269466336806836
+  ],
+  "S": [
+   0.07068389332597036,
+   -0.4374074399587755,
+   0.4922051234850855,
+   -0.36468763660076675,
+   0.036543248173444454,
+   0.2893322273851666
+  ],
+  "W800": [
+   2.000046693774973,
+   2.1507880699552615,
+   2.331565803615618,
+   2.205610581652685,
+   1.9960799159733504,
+   2.70212625761647
+  ],
+  "W870": [
+   1.5292931101395872,
+   2.0406464831379374,
+   1.0716946374804017,
+   1.877708745358639,
+   1.056408123506312,
+   1.1941242591439583
+  ],
+  "W892": [
+   0.9015490906383476,
+   1.1615573380687252,
+   1.4059811334715278,
+   1.3263629182601449,
+   1.2522336387261213,
+   0.9155750974631509
+  ],
+  "W900": [
+   0.910727874516347,
+   1.121450292409559,
+   1.01876479636622,
+   0.5659218734066123,
+   0.9094788265229603,
+   1.1665191525745477
+  ],
+  "W915": [
+   1.0852737372249983,
+   0.4897757824337319,
+   1.2841130104471965,
+   0.6731681134992087,
+   1.2535629008108309,
+   0.4338665607848675
+  ],
+  "W950": [
+   0.4360208820945566,
+   0.10372827923048433,
+   0.1688506622250543,
+   -0.06380458006576362,
+   0.5408377811357852,
+   0.21120370244112507
+  ]
+ },
+ "disjointness": {
+  "W800": {
+   "weak_min": 1.9960799159733504,
+   "spastic_max": 0.4922051234850855,
+   "seed_gap_deg": 1.503874792488265,
+   "disjoint": true,
+   "mean_gap_deg": 2.2165913177963725
+  },
+  "W870": {
+   "weak_min": 1.056408123506312,
+   "spastic_max": 0.4922051234850855,
+   "seed_gap_deg": 0.5642030000212266,
+   "disjoint": true,
+   "mean_gap_deg": 1.4472009904927852
+  },
+  "W892": {
+   "weak_min": 0.9015490906383476,
+   "spastic_max": 0.4922051234850855,
+   "seed_gap_deg": 0.40934396715326216,
+   "disjoint": true,
+   "mean_gap_deg": 1.1460983001363154
+  },
+  "W900": {
+   "weak_min": 0.5659218734066123,
+   "spastic_max": 0.4922051234850855,
+   "seed_gap_deg": 0.07371674992152677,
+   "disjoint": true,
+   "mean_gap_deg": 0.9343655666643537
+  },
+  "W915": {
+   "weak_min": 0.4338665607848675,
+   "spastic_max": 0.4922051234850855,
+   "seed_gap_deg": -0.05833856270021798,
+   "disjoint": false,
+   "mean_gap_deg": 0.8555151148984516
+  },
+  "W950": {
+   "weak_min": -0.06380458006576362,
+   "spastic_max": 0.4922051234850855,
+   "seed_gap_deg": -0.5560097035508491,
+   "disjoint": false,
+   "mean_gap_deg": 0.21836121854185286
+  }
+ },
+ "pooled_36": {
+  "n": 36,
+  "min": -0.06380458006576362,
+  "spastic_max": 0.4922051234850855,
+  "seed_gap_deg": -0.5560097035508491,
+  "disjoint": false,
+  "mean_gap_deg": 1.136355418088355
+ },
+ "permutation_null": {
+  "W800": {
+   "observed_gap_deg": 1.503874792488265,
+   "n_assignments": 924,
+   "target_count": 1,
+   "target_proportion": 0.0010822510822510823,
+   "familywise_count": 1,
+   "familywise_proportion": 0.0010822510822510823,
+   "channels_reaching_own_observed": {
+    "ankle_angle_LmR": 1,
+    "knee_angle_LmR": 266,
+    "hip_flexion_LmR": 1,
+    "hip_adduction_LmR": 924
+   }
+  },
+  "W870": {
+   "observed_gap_deg": 0.5642030000212266,
+   "n_assignments": 924,
+   "target_count": 1,
+   "target_proportion": 0.0010822510822510823,
+   "familywise_count": 1,
+   "familywise_proportion": 0.0010822510822510823,
+   "channels_reaching_own_observed": {
+    "ankle_angle_LmR": 1,
+    "knee_angle_LmR": 98,
+    "hip_flexion_LmR": 1,
+    "hip_adduction_LmR": 546
+   }
+  },
+  "W892": {
+   "observed_gap_deg": 0.40934396715326216,
+   "n_assignments": 924,
+   "target_count": 1,
+   "target_proportion": 0.0010822510822510823,
+   "familywise_count": 1,
+   "familywise_proportion": 0.0010822510822510823,
+   "channels_reaching_own_observed": {
+    "ankle_angle_LmR": 1,
+    "knee_angle_LmR": 336,
+    "hip_flexion_LmR": 1,
+    "hip_adduction_LmR": 11
+   }
+  },
+  "W900": {
+   "observed_gap_deg": 0.07371674992152677,
+   "n_assignments": 924,
+   "target_count": 1,
+   "target_proportion": 0.0010822510822510823,
+   "familywise_count": 2,
+   "familywise_proportion": 0.0021645021645021645,
+   "channels_reaching_own_observed": {
+    "ankle_angle_LmR": 1,
+    "knee_angle_LmR": 336,
+    "hip_flexion_LmR": 1,
+    "hip_adduction_LmR": 6
+   }
+  },
+  "W915": {
+   "observed_gap_deg": -0.05833856270021798,
+   "n_assignments": 924,
+   "target_count": 3,
+   "target_proportion": 0.003246753246753247,
+   "familywise_count": 5,
+   "familywise_proportion": 0.005411255411255411,
+   "channels_reaching_own_observed": {
+    "ankle_angle_LmR": 3,
+    "knee_angle_LmR": 266,
+    "hip_flexion_LmR": 1,
+    "hip_adduction_LmR": 23
+   }
+  },
+  "W950": {
+   "observed_gap_deg": -0.5560097035508491,
+   "n_assignments": 924,
+   "target_count": 155,
+   "target_proportion": 0.16774891774891776,
+   "familywise_count": 178,
+   "familywise_proportion": 0.19264069264069264,
+   "channels_reaching_own_observed": {
+    "ankle_angle_LmR": 155,
+    "knee_angle_LmR": 462,
+    "hip_flexion_LmR": 1,
+    "hip_adduction_LmR": 1
+   }
+  }
+ },
+ "READING": "NARROWING-JUSTIFIED-IN-SAMPLE",
+ "REASON": "disjoint at 4 of 6 severities and NOT disjoint pooled"
+}

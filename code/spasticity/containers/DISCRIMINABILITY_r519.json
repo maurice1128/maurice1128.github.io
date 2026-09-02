@@ -1,0 +1,65 @@
+{
+ "id": "DISCRIMINABILITY_r519",
+ "why": "A minimal detectable change asks whether one patient CHANGED between sessions. The question the readout raises is whether one patient can be ASSIGNED to a lesion class from one reading. That is a discriminability, and its statistic is Cohen's d against the total spread a patient presents, with the misclassification rate it implies at the best threshold.",
+ "single_measurement_SEM_deg": 2.6191942281930904,
+ "between_patient_SD_deg": {
+  "7.93": 7.93,
+  "9.16": 9.16
+ },
+ "by_effect_size": {
+  "pooled 5.280": {
+   "effect_deg": 5.2799,
+   "d_against_measurement_error_only": 2.0158489749125845,
+   "error_rate_measurement_only": 0.15674535745928486,
+   "against_between_patient_SD_7.93": {
+    "total_SD_deg": 8.351351890861741,
+    "cohens_d": 0.632220994756238,
+    "misclassification_rate": 0.3759593196118987
+   },
+   "against_between_patient_SD_9.16": {
+    "total_SD_deg": 9.527107557123516,
+    "cohens_d": 0.5541975849797313,
+    "misclassification_rate": 0.39085212449441786
+   }
+  },
+  "round-151 4.087": {
+   "effect_deg": 4.0874,
+   "d_against_measurement_error_only": 1.560556279485918,
+   "error_rate_measurement_only": 0.21761358854030705,
+   "against_between_patient_SD_7.93": {
+    "total_SD_deg": 8.351351890861741,
+    "cohens_d": 0.48942974184485455,
+    "misclassification_rate": 0.4033386063763956
+   },
+   "against_between_patient_SD_9.16": {
+    "total_SD_deg": 9.527107557123516,
+    "cohens_d": 0.4290284302441625,
+    "misclassification_rate": 0.4150730414499442
+   }
+  },
+  "dose-matched 3.420": {
+   "effect_deg": 3.4197,
+   "d_against_measurement_error_only": 1.305630549727943,
+   "error_rate_measurement_only": 0.25693768746892487,
+   "against_between_patient_SD_7.93": {
+    "total_SD_deg": 8.351351890861741,
+    "cohens_d": 0.4094786143237386,
+    "misclassification_rate": 0.418887904098338
+   },
+   "against_between_patient_SD_9.16": {
+    "total_SD_deg": 9.527107557123516,
+    "cohens_d": 0.358944199957421,
+    "misclassification_rate": 0.42878351131318726
+   }
+  }
+ },
+ "reliability_of_one_session": {
+  "7.93": 0.8909089717086296,
+  "9.16": 0.9182393260402166
+ },
+ "attenuation_of_a_correlation": {
+  "7.93": 0.056120255695340404,
+  "9.16": 0.04175194962879436
+ },
+ "READING": "Against measurement error alone the pooled effect is 2.0 SEM and would misclassify about one reading in six. Against the spread a stroke population actually presents it is 0.6 SD and misclassifies about two in five, close to chance. The binding constraint on a per-patient reading is therefore biological, not instrumental: a perfect instrument would not fix it. For a correlational design across patients the same spread is the denominator rather than the obstacle, and measurement error costs only the attenuation above."
+}

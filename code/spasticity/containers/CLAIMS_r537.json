@@ -1,0 +1,210 @@
+{
+ "id": "CLAIMS_r537",
+ "why": "A paper offering a gait readout to a clinic makes at most three claims and they are not equally supportable. They are separated here and each is measured on every candidate, clean and under the measurement error a gait laboratory brings.",
+ "claims": {
+  "1": "lesioned distinguished from unimpaired control (leave-one-out)",
+  "2": "hyperreflexia distinguished from weakness (leave-one-FAMILY-out)",
+  "3": "severity ordered within each arm separately (Spearman against delivered dose)"
+ },
+ "motion_capture_model": {
+  "from": "VIDEOKNEE_r422",
+  "fs_hz": 100,
+  "yaw_deg": 10,
+  "event_error_frames": 1,
+  "jitter_sigma_deg": [
+   0.0,
+   1.0,
+   2.0,
+   3.0
+  ],
+  "n_rep": 60,
+  "rng_seed": 20260830
+ },
+ "results": {
+  "knee at contact  [current]": {
+   "kind": "point",
+   "by_sigma": {
+    "0.0": {
+     "claim1_lesioned_vs_control_acc": 0.9166666666666667,
+     "claim1_detect_hyper": 0.9565217391304348,
+     "claim1_detect_weak": 1.0,
+     "claim2_arm_lofo_acc": 0.9830508474576272,
+     "claim3_tone_severity_rho": -0.9179841897233202,
+     "claim3_weakness_severity_rho": -0.7382239382239383
+    },
+    "1.0": {
+     "claim1_lesioned_vs_control_acc": 0.8104519774011298,
+     "claim1_detect_hyper": 0.9065217391304349,
+     "claim1_detect_weak": 0.75,
+     "claim2_arm_lofo_acc": 0.9680790960451977,
+     "claim3_tone_severity_rho": -0.880945322793149,
+     "claim3_weakness_severity_rho": -0.49981123981123987
+    },
+    "2.0": {
+     "claim1_lesioned_vs_control_acc": 0.7223634651600752,
+     "claim1_detect_hyper": 0.842753623188406,
+     "claim1_detect_weak": 0.6087962962962963,
+     "claim2_arm_lofo_acc": 0.9621468926553672,
+     "claim3_tone_severity_rho": -0.7826086956521741,
+     "claim3_weakness_severity_rho": -0.31544401544401546
+    },
+    "3.0": {
+     "claim1_lesioned_vs_control_acc": 0.649482109227872,
+     "claim1_detect_hyper": 0.7659420289855075,
+     "claim1_detect_weak": 0.5347222222222222,
+     "claim2_arm_lofo_acc": 0.9387005649717515,
+     "claim3_tone_severity_rho": -0.6721837944664034,
+     "claim3_weakness_severity_rho": -0.21763620763620764
+    }
+   }
+  },
+  "ankle at 45%": {
+   "kind": "point",
+   "by_sigma": {
+    "0.0": {
+     "claim1_lesioned_vs_control_acc": 0.9166666666666667,
+     "claim1_detect_hyper": 1.0,
+     "claim1_detect_weak": 1.0,
+     "claim2_arm_lofo_acc": 1.0,
+     "claim3_tone_severity_rho": -0.9031620553359685,
+     "claim3_weakness_severity_rho": -0.6213642213642214
+    },
+    "1.0": {
+     "claim1_lesioned_vs_control_acc": 0.7528013182674199,
+     "claim1_detect_hyper": 0.9869565217391305,
+     "claim1_detect_weak": 0.6324074074074074,
+     "claim2_arm_lofo_acc": 0.993502824858757,
+     "claim3_tone_severity_rho": -0.8361824769433465,
+     "claim3_weakness_severity_rho": -0.3251437151437152
+    },
+    "2.0": {
+     "claim1_lesioned_vs_control_acc": 0.685216572504708,
+     "claim1_detect_hyper": 0.8833333333333333,
+     "claim1_detect_weak": 0.5361111111111112,
+     "claim2_arm_lofo_acc": 0.9604519774011299,
+     "claim3_tone_severity_rho": -0.6694334650856392,
+     "claim3_weakness_severity_rho": -0.17990990990990996
+    },
+    "3.0": {
+     "claim1_lesioned_vs_control_acc": 0.6465630885122412,
+     "claim1_detect_hyper": 0.7927536231884057,
+     "claim1_detect_weak": 0.499537037037037,
+     "claim2_arm_lofo_acc": 0.911864406779661,
+     "claim3_tone_severity_rho": -0.5176383399209487,
+     "claim3_weakness_severity_rho": -0.11864006864006865
+    }
+   }
+  },
+  "ankle 40-50% window": {
+   "kind": "window",
+   "by_sigma": {
+    "0.0": {
+     "claim1_lesioned_vs_control_acc": 0.8248587570621468,
+     "claim1_detect_hyper": 1.0,
+     "claim1_detect_weak": 0.9722222222222222,
+     "claim2_arm_lofo_acc": 1.0,
+     "claim3_tone_severity_rho": -0.9110671936758895,
+     "claim3_weakness_severity_rho": -0.5495495495495496
+    },
+    "1.0": {
+     "claim1_lesioned_vs_control_acc": 0.7751412429378531,
+     "claim1_detect_hyper": 1.0,
+     "claim1_detect_weak": 0.8254629629629631,
+     "claim2_arm_lofo_acc": 0.9988700564971751,
+     "claim3_tone_severity_rho": -0.9143939393939393,
+     "claim3_weakness_severity_rho": -0.5074731874731875
+    },
+    "2.0": {
+     "claim1_lesioned_vs_control_acc": 0.7678436911487758,
+     "claim1_detect_hyper": 0.9942028985507246,
+     "claim1_detect_weak": 0.7236111111111111,
+     "claim2_arm_lofo_acc": 0.9968926553672316,
+     "claim3_tone_severity_rho": -0.8885046113306985,
+     "claim3_weakness_severity_rho": -0.4090733590733591
+    },
+    "3.0": {
+     "claim1_lesioned_vs_control_acc": 0.7595338983050847,
+     "claim1_detect_hyper": 0.9884057971014493,
+     "claim1_detect_weak": 0.6500000000000001,
+     "claim2_arm_lofo_acc": 0.9937853107344632,
+     "claim3_tone_severity_rho": -0.8491600790513832,
+     "claim3_weakness_severity_rho": -0.3296181896181896
+    }
+   }
+  },
+  "ankle at 85%": {
+   "kind": "point",
+   "by_sigma": {
+    "0.0": {
+     "claim1_lesioned_vs_control_acc": 1.0,
+     "claim1_detect_hyper": 1.0,
+     "claim1_detect_weak": 1.0,
+     "claim2_arm_lofo_acc": 1.0,
+     "claim3_tone_severity_rho": -0.9545454545454547,
+     "claim3_weakness_severity_rho": -0.5029601029601031
+    },
+    "1.0": {
+     "claim1_lesioned_vs_control_acc": 0.7157721280602637,
+     "claim1_detect_hyper": 1.0,
+     "claim1_detect_weak": 0.7157407407407408,
+     "claim2_arm_lofo_acc": 1.0,
+     "claim3_tone_severity_rho": -0.9219696969696971,
+     "claim3_weakness_severity_rho": -0.29743457743457735
+    },
+    "2.0": {
+     "claim1_lesioned_vs_control_acc": 0.7143832391713747,
+     "claim1_detect_hyper": 0.9956521739130435,
+     "claim1_detect_weak": 0.5972222222222222,
+     "claim2_arm_lofo_acc": 0.9937853107344632,
+     "claim3_tone_severity_rho": -0.8654973649538868,
+     "claim3_weakness_severity_rho": -0.18903045903045906
+    },
+    "3.0": {
+     "claim1_lesioned_vs_control_acc": 0.691313559322034,
+     "claim1_detect_hyper": 0.9630434782608696,
+     "claim1_detect_weak": 0.537037037037037,
+     "claim2_arm_lofo_acc": 0.9833333333333333,
+     "claim3_tone_severity_rho": -0.7916501976284586,
+     "claim3_weakness_severity_rho": -0.13840840840840843
+    }
+   }
+  },
+  "ankle peak in swing": {
+   "kind": "peak",
+   "by_sigma": {
+    "0.0": {
+     "claim1_lesioned_vs_control_acc": 1.0,
+     "claim1_detect_hyper": 1.0,
+     "claim1_detect_weak": 1.0,
+     "claim2_arm_lofo_acc": 1.0,
+     "claim3_tone_severity_rho": -0.9614624505928853,
+     "claim3_weakness_severity_rho": 0.9505791505791507
+    },
+    "1.0": {
+     "claim1_lesioned_vs_control_acc": 0.6949152542372882,
+     "claim1_detect_hyper": 1.0,
+     "claim1_detect_weak": 0.6138888888888889,
+     "claim2_arm_lofo_acc": 1.0,
+     "claim3_tone_severity_rho": -0.9563076416337287,
+     "claim3_weakness_severity_rho": 0.5288245388245387
+    },
+    "2.0": {
+     "claim1_lesioned_vs_control_acc": 0.6953389830508475,
+     "claim1_detect_hyper": 1.0,
+     "claim1_detect_weak": 0.5421296296296296,
+     "claim2_arm_lofo_acc": 1.0,
+     "claim3_tone_severity_rho": -0.9336462450592886,
+     "claim3_weakness_severity_rho": 0.32694122694122696
+    },
+    "3.0": {
+     "claim1_lesioned_vs_control_acc": 0.687382297551789,
+     "claim1_detect_hyper": 1.0,
+     "claim1_detect_weak": 0.5120370370370371,
+     "claim2_arm_lofo_acc": 0.9951977401129943,
+     "claim3_tone_severity_rho": -0.9023056653491437,
+     "claim3_weakness_severity_rho": 0.22678678678678685
+    }
+   }
+  }
+ }
+}

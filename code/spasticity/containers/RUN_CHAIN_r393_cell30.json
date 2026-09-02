@@ -1,0 +1,17 @@
+{
+ "prefix": "R393WK030_s101",
+ "axis": "weakness",
+ "rung": "030",
+ "value": 0.3,
+ "seed": 101,
+ "parent_prefix": "R393WK040_s101",
+ "parent_is_root": false,
+ "parent_result_dir": "R393WK040_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+ "parent_gate_G": false,
+ "parent_t_end_s": 5.81,
+ "parent_n_cycles": 2,
+ "status": "BROKEN_PARENT_FAILED_GATE",
+ "broken_reason": "parent R393WK040_s101 failed Gate G (t_end 5.810 < 9.73); no other parent is substituted, this seed's remaining chain on this axis is BROKEN",
+ "cell": 30,
+ "ran": false
+}

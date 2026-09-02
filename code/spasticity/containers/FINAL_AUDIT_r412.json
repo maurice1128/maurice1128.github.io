@@ -1,0 +1,1554 @@
+{
+ "round": "FINAL_AUDIT_r412",
+ "what": "full pre-writeup audit of every number reported to the user during the session, recomputed from the .sto files where feasible, plus registration, deposit-coverage, JSON-health and protected-directory checks, plus the ranked list of simulations still needed before the Hyfydy licence expires on 2026-08-27.",
+ "written_at": "2026-08-26 04:39:04",
+ "scope_and_safety": {
+  "wrote_only_inside": "C:\\Users\\maurice\\Desktop\\spasticity_paper",
+  "SCONE_results_treated_as": "READ-ONLY. No directory was created, modified or removed under C:\\Users\\maurice\\Documents\\SCONE\\results.",
+  "sconecmd_started_by_this_audit": "NONE",
+  "unrelated_sconecmd_observed_running": "at 04:26 on 2026-08-26 a sconecmd process was observed writing DR2K* result directories. It was NOT started by this audit and was NOT interfered with.",
+  "python": "C:\\Users\\maurice\\Desktop\\robotic_research\\.venv\\Scripts\\python.exe",
+  "scripts_written": [
+   "scone/audit_r412.py",
+   "scone/audit_checks_r412.py",
+   "scone/deposit_r412.py",
+   "scone/final_audit_r412.py"
+  ]
+ },
+ "TALLY": {
+  "VERIFIED": 8,
+  "MISMATCH": 1,
+  "NO_CONTAINER": 1,
+  "verified_claims": [
+   "a",
+   "c",
+   "d",
+   "e",
+   "f",
+   "g",
+   "h",
+   "j"
+  ],
+  "mismatch_claims": [
+   "i"
+  ],
+  "no_container_claims": [
+   "b"
+  ]
+ },
+ "THE_TWO_THINGS_YOU_MOST_NEED_TO_KNOW": [
+  "claim (b) has NO CONTAINER. +1.8857 and -1.7617 appear in no file anywhere in the project. Its spastic arm reproduces exactly; its weakness arm cannot be reconstructed from any weakness family; and its right-knee OVERLAP is the opposite of the only deposited right-knee result at the headline rung, where the UNLESIONED side separates 6 of 6.",
+  "claim (i)'s numbers are right but its framing is wrong in a way that matters: the NONE comparator is a 20 s Gate-G-passing walk, not a sub-Gate-G one, so the GAS delta of -10.99 deg compares a steady gait against a fall."
+ ],
+ "deposits_created_by_this_audit": [
+  {
+   "file": "paper/FROZEN_MECHANISM_r410.json",
+   "bytes": 6910,
+   "for_claim": "i"
+  },
+  {
+   "file": "paper/FROZEN_WEAKNESS_r411.json",
+   "bytes": 9792,
+   "for_claim": "j"
+  }
+ ],
+ "claims": {
+  "a": {
+   "claim_as_reported": "knee at heel strike, edge gap SPAS KV0.110 vs WEAK x0.80 = +6.3919 deg, disjoint, exhaustive permutation 1/210; R151C [-8.2396,-7.5876] mean -7.8500; R151W [-6.2735,-5.3749] mean -5.8443; R396SPg110 [-13.7949,-12.6655] mean -13.1995",
+   "container": "paper/KNEE_MDC_BATCHNULL_r399.json -> /STEP0_HEADLINE_REPRODUCTION",
+   "recomputed_from_sto": {
+    "R151C": {
+     "n": 6,
+     "range": [
+      -8.239580001061439,
+      -7.587588407670272
+     ],
+     "mean": -7.849999258121554
+    },
+    "R151W": {
+     "n": 6,
+     "range": [
+      -6.273548665667797,
+      -5.37492567048918
+     ],
+     "mean": -5.844344835419707
+    },
+    "R396SPg110": {
+     "n": 4,
+     "range": [
+      -13.794942495322877,
+      -12.665480343078071
+     ],
+     "mean": -13.199486557436584
+    },
+    "edge_gap_deg": 6.391931677410274,
+    "disjoint": true,
+    "exhaustive_permutation": "1/210"
+   },
+   "STATUS": "VERIFIED",
+   "note": "every arm reproduces to 10 significant figures from the .par.sto files.",
+   "CONTEXT_THE_HEADLINE_MUST_CARRY": "the SAME deposit's /PLAIN_VERDICT/Q1_does_it_clear_a_properly_sourced_knee_MDC answers NO: 6.3919 deg falls 1.2281 deg short of 7.62 deg, the most conservative defensible knee MDC. The gap is real and reproducible; it is not clinically detectable."
+  },
+  "b": {
+   "claim_as_reported": "duration-matched comparison, window 9.8-17.9 s: WEAK n=17 [-8.806,-6.485] mean -7.488 vs SPAS KV>=0.070 n=14 [-13.795,-10.691] mean -12.218, edge gap +1.8857 DISJOINT; LEFT/RIGHT negative control: right knee same window gap -1.7617 OVERLAP",
+   "STATUS": "NO CONTAINER",
+   "container_search": {
+    "searched": "every non-.bak file in paper/ for the literal strings '1.8857' and '1.7617', plus a tree-wide grep of paper/, scone/ and external/ for 1.8857 / 1.7617 / 'duration_match'",
+    "files_containing_either_gap": [],
+    "conclusion": "NO FILE ANYWHERE IN THE PROJECT CONTAINS EITHER NUMBER. There is no deposit, no script and no registration for this comparison. The only duration-matched machinery in the corpus is DYNAMICS_SWING_r361/r363 /READING_M_duration_matched, whose band is [13.58, 17.85] and whose verdict is UNINFORMATIVE on 1 spastic and 0 weak cells, and MEMBERSHIP_AUDIT_r358, which records a different duration-matched knee gap of 2.0900 deg on n=11 vs 6."
+   },
+   "recompute_attempt": {
+    "SPAS_arm_REPRODUCES_EXACTLY": {
+     "definition_recovered": "the Gate-G cells of R393SPg070 + R393SPg100 + R396SPg110, i.e. KV 0.070/0.100/0.110 and NOT 0.120",
+     "recomputed": {
+      "n": 14,
+      "range": [
+       -13.794942495322877,
+       -10.691495589544285
+      ],
+      "mean": -12.218212435883618,
+      "values": [
+       -13.794942495322877,
+       -13.632041044870597,
+       -13.620400452332857,
+       -12.705482346474788,
+       -12.681542259934906,
+       -12.665480343078071,
+       -12.264323942817223,
+       -12.006817611092265,
+       -11.923948815323172,
+       -11.81296880026565,
+       -11.334699920217465,
+       -11.217138529953205,
+       -10.703691951143304,
+       -10.691495589544285
+      ]
+     },
+     "claimed": {
+      "n": 14,
+      "range": [
+       -13.795,
+       -10.691
+      ],
+      "mean": -12.218
+     },
+     "verdict": "MATCH to 3 decimals on n, both edges and the mean"
+    },
+    "WEAK_arm_DOES_NOT_REPRODUCE": {
+     "claimed": {
+      "n": 17,
+      "range": [
+       -8.806,
+       -6.485
+      ],
+      "mean": -7.488
+     },
+     "dorsiflexor_weakness_all_Gate_G": {
+      "n": 36,
+      "range": [
+       -7.201048160763212,
+       -5.37492567048918
+      ],
+      "mean": -6.491924781112322,
+      "values": [
+       -7.201048160763212,
+       -7.030180687099299,
+       -7.016532832419283,
+       -6.99493232354285,
+       -6.9891225315002234,
+       -6.961414292527697,
+       -6.953736658072944,
+       -6.928755698205239,
+       -6.846181020770986,
+       -6.84563098128766,
+       -6.843281854327624,
+       -6.818106088809576,
+       -6.652593478698954,
+       -6.651635493265495,
+       -6.63803691295586,
+       -6.6094520485567845,
+       -6.578346169859131,
+       -6.543670764097814,
+       -6.5104151477528305,
+       -6.4986752425306005,
+       -6.4792244713014995,
+       -6.448549456865786,
+       -6.437570439595488,
+       -6.428453535159366,
+       -6.286495220006573,
+       -6.279991003116248,
+       -6.273548665667797,
+       -6.2340122859725895,
+       -6.108623910254979,
+       -6.108541786304344,
+       -6.022359384620083,
+       -5.858581308741255,
+       -5.806195013588716,
+       -5.783595266317576,
+       -5.666876314998091,
+       -5.37492567048918
+      ]
+     },
+     "plantarflexor_weakness_all_Gate_G": {
+      "n": 13,
+      "range": [
+       -9.154181070272871,
+       -6.485089649264321
+      ],
+      "mean": -7.819444373836887,
+      "values": [
+       -9.154181070272871,
+       -8.719099838962327,
+       -8.588694644790554,
+       -8.497250580687673,
+       -8.040182093988987,
+       -8.01424715939239,
+       -7.998767749627272,
+       -7.946431874760707,
+       -7.695419064713891,
+       -7.181799070677998,
+       -6.817187064506186,
+       -6.5144269982343355,
+       -6.485089649264321
+      ]
+     },
+     "dorsiflexor_weakness_inside_band_9.8_17.9": {
+      "n": 0,
+      "range": null,
+      "mean": null,
+      "values": []
+     },
+     "plantarflexor_weakness_inside_band_9.8_17.9": {
+      "n": 6,
+      "range": [
+       -8.01424715939239,
+       -6.485089649264321
+      ],
+      "mean": -7.118028167798187,
+      "values": [
+       -8.01424715939239,
+       -7.695419064713891,
+       -7.181799070677998,
+       -6.817187064506186,
+       -6.5144269982343355,
+       -6.485089649264321
+      ]
+     },
+     "why_it_cannot_be_built": "ALL 36 dorsiflexor-weakness cells have t_end = 20.00 s exactly, so a t_end band capped at 17.9 s excludes every one of them. The plantarflexor families supply only 13 Gate-G cells in total and 6 inside the band. No subset of the weakness corpus has n=17 with a minimum of -8.806 deg: the value -6.485 is real (R276WPF010_s101) but -8.806 matches no cell in any weakness family under the corpus readout.",
+     "verdict": "MISMATCH -- the arm cannot be reconstructed"
+    },
+    "NEGATIVE_CONTROL_IS_CONTRADICTED_BY_r399": {
+     "claimed": "right knee, same window, gap -1.7617, OVERLAP",
+     "what_r399_actually_found": "paper/KNEE_MDC_BATCHNULL_r399.json -> /STEP4_UNLESIONED_SIDE_NEGATIVE_CONTROL/by_rung/0.110 : the UNLESIONED RIGHT knee SEPARATES 6 of 6 at the headline rung, edge gaps 0.8766 / 1.4276 / 1.6300 deg (min/median/max).",
+     "verdict": "the reported 'right knee OVERLAP' is the opposite of the only deposited right-knee result at the headline rung. The side negative control is CLEAN AT KV 0.050/0.070/0.100 (0/6 each) and DIRTY AT KV 0.110 (6/6). The headline rung is the one rung where the unlesioned side also separates."
+    }
+   },
+   "ACTION": "either produce the script and deposit that generated +1.8857 / -1.7617, or withdraw both numbers. They must not enter the write-up as they stand."
+  },
+  "c": {
+   "claim_as_reported": "same-mechanism dorsiflexor family pairs 4/15 = 26.7%; like-for-like 24/24 = 100%; largest same-mechanism spurious edge gap 0.5697 deg",
+   "container": "paper/KNEE_MDC_BATCHNULL_r399.json -> /STEP1_BATCH_NULL, /STEP2_LIKE_FOR_LIKE, /STEP6_MAGNITUDE",
+   "deposited": {
+    "n_separated": 4,
+    "n_pairs_tested": 15,
+    "rate": 0.26666666666666666,
+    "largest_null_edge_gap_deg": 0.5697331886598267,
+    "like_for_like": "24/24"
+   },
+   "STATUS": "VERIFIED",
+   "UNREPORTED_SIBLING_THAT_MUST_TRAVEL_WITH_IT": "the same deposit's /STEP4/like_for_like_hit_rate_RIGHT_knee is 0.25 (6/24) on the UNLESIONED side, all six of those hits at the headline rung KV 0.110. Quoting 24/24 on the left without 6/24 on the right overstates the side control.",
+   "NULL_PF_could_not_be_computed": "ALL 10 pairs are UNINFORMATIVE: fewer than 4 Gate-G cells on at least one side of every pair. No rate can be quoted for this cohort."
+  },
+  "d": {
+   "claim_as_reported": "sham chain protocol shift: largest 0.5860 deg against a 6.3919 headline",
+   "container": "paper/SHAM_READOUT_r406.json",
+   "deposited": {
+    "largest_protocol_shift_deg": 0.5860145801831838,
+    "headline_gap_deg": 6.391931677410274
+   },
+   "STATUS": "VERIFIED",
+   "note": "0.5860145801831838 and 6.391931677410274 both present verbatim; the headline value is byte-identical to the one recomputed from .sto for claim (a)."
+  },
+  "e": {
+   "claim_as_reported": "able-bodied knee at IC 8.2871 +/- 4.7198 (n=138); stroke paretic 19.9899 +/- 9.0073 (n=50); coupling r=+0.613, rho=+0.639, n=50, p=2.25e-06; subgroups +6.31 vs +17.09, difference 10.78, d=1.49",
+   "container": "paper/PUBLICDATA_VALIDATION_r405.json -> /calibration_numbers_LOCKED and /ankle_knee_coupling_for_citation",
+   "deposited": {
+    "able_bodied": [
+     8.2871,
+     4.7198,
+     138
+    ],
+    "stroke_paretic": [
+     19.9899,
+     9.0073,
+     50
+    ],
+    "pearson_r": 0.6128,
+    "pearson_p": 2.246e-06,
+    "spearman_rho": 0.6392,
+    "n": 50,
+    "subgroup_deviation_deg": [
+     6.31,
+     17.09
+    ],
+    "difference_deg": 10.78,
+    "cohen_d": 1.49
+   },
+   "STATUS": "VERIFIED",
+   "rounding_note": "the deposit carries r = 0.6128 and p = 2.246e-06; the reported +0.613 and 2.25e-06 are correct roundings.",
+   "caveats_already_in_the_deposit_that_must_be_quoted_with_it": [
+    "PLUG_IN_GAIT_OFFSET_WARNING: the absolute able-bodied mean of +8.29 deg is a marker-model offset, not a physiological value. Only the SD, the group difference and within-dataset correlations survive it.",
+    "POOLED EVENTS: 25 of 50 paretic limbs contact forefoot-first, so 'knee angle at initial contact' pools two mechanically different events.",
+    "NO WALKING SPEED in the dataset: a speed contribution to the +11.70 deg group offset cannot be excluded."
+   ]
+  },
+  "f": {
+   "claim_as_reported": "compensation cancelled fraction 0.8570823499731588; decomposition RV share 0.34516165584712166",
+   "containers": [
+    "paper/DYNAMICS_LIMITATION_r365.json",
+    "paper/DECOMPOSE_r373.json -> /arms/KV0.035/RV_share_of_gap"
+   ],
+   "deposited": {
+    "RV_share_of_gap_KV0.035": 0.34516165584712166,
+    "cancelled_fraction_present_in_r365": true
+   },
+   "STATUS": "VERIFIED",
+   "MATERIAL_CAVEAT_NOT_PREVIOUSLY_REPORTED": {
+    "what": "0.3452 is one of three RV shares in DECOMPOSE_r373.json and the only one that lies inside [0, 1].",
+    "the_other_two": {
+     "KV0.0125": 1.4469208389340793,
+     "KV0.00625": -0.9021581420558176
+    },
+    "why": "the denominator gap_vs_DFweak is 0.0179 at KV 0.035 but 0.0017 and -0.0014 at the two lower rungs, so the ratio is unstable and changes sign. Quoting 0.3452 alone presents the only well-behaved member of an ill-conditioned family as if it were the estimate.",
+    "the_deposit_already_says_so": "UNREGISTERED, POST-HOC, descriptive; changes no verdict"
+   }
+  },
+  "g": {
+   "claim_as_reported": "dose-response on mean stance ankle angle: gaps 1.5419 / 1.9406 / 2.6910 / 3.0092 / 3.2532 at KV 0.050/0.070/0.100/0.110/0.120 against WEAK x0.80; fit gap = 24.764*KV + 0.258, r=0.9981",
+   "container": "paper/FINE_GAP_r397.json -> /rungs and /fit",
+   "deposited": {
+    "gaps": [
+     1.541934660169073,
+     1.9406212840823431,
+     2.6910095381944545,
+     3.009172862583553,
+     3.253156577416081
+    ],
+    "n_gate_G": [
+     6,
+     6,
+     4,
+     4,
+     3
+    ],
+    "fit": {
+     "slope_deg_per_KV": 24.764246431673,
+     "intercept_deg": 0.25839680563853146,
+     "pearson_r": 0.9981235092147498,
+     "KV_for_MDC": 0.143012758499763,
+     "n_points": 5
+    },
+    "VERDICT": "NOT REACHED -- the highest KV with Gate-G cells is 0.120 and the fit needs 0.1430"
+   },
+   "STATUS": "VERIFIED",
+   "DEFECT_IN_THE_CONTAINER_ITSELF": {
+    "what": "FINE_GAP_r397.json carries MDC_floor_deg = 3.8 and derives KV_for_MDC = 0.1430 from it.",
+    "why_it_is_wrong": "KNEE_MDC_BATCHNULL_r399.json -> /TASK1_KNEE_MDC/CORRECTION_TO_THE_CORPUS establishes that 3.8 deg is the MDC for TRAILING LIMB ANGLE in Kesar 2011 and is neither a knee nor an ankle number. Kesar's ankle-at-initial-contact MDC is 7.0 deg and its peak-ankle-in-swing MDC is 4.9 deg. r399 states 3.8 'must not be used as a knee floor anywhere in the paper'; r397's endpoint is an ANKLE endpoint but 3.8 is not an ankle number either.",
+    "does_the_verdict_flip": "NO, and it cannot: a larger floor makes NOT REACHED more secure. But KV_for_MDC = 0.1430 is understated. Against the correct 4.9 deg ankle floor the fit needs KV 0.1874; against 7.0 deg it needs KV 0.2722. Both are far above the highest KV that walks (0.120).",
+    "action": "r397's MDC_floor_deg and KV_for_MDC must not be quoted; quote the VERDICT only, or recompute against a sourced ankle floor.",
+    "recomputed_KV_for_MDC": {
+     "at_4.9_deg": 0.18743163484372966,
+     "at_7.0_deg": 0.2722313078640296
+    }
+   },
+   "also": "the 0.120 rung has n_gate_G = 3, below the corpus's own 4-cell UNINFORMATIVE bar, so the fifth point of the five-point fit rests on an UNINFORMATIVE rung."
+  },
+  "h": {
+   "claim_as_reported": "arm A t_end 8.24 s FAIL (bit-identical reproduction of R291KV0070_s101), arm B 13.95 s PASS, arm C self-terminated at 329 of 400 generations, 9.23 s FAIL",
+   "container": "paper/WARMSTART_PROBE_r392.json -> /arms, /arm_A_reproduction_check, /arm_C_early_stop",
+   "deposited": {
+    "A": {
+     "t_end_s": 8.24,
+     "passes_gate_9.73": false,
+     "n_generations": 90,
+     "max_generations": 90
+    },
+    "B": {
+     "t_end_s": 13.95,
+     "passes_gate_9.73": true,
+     "n_generations": 90,
+     "max_generations": 90
+    },
+    "C": {
+     "t_end_s": 9.23,
+     "passes_gate_9.73": false,
+     "n_generations": 329,
+     "max_generations": 400
+    }
+   },
+   "arm_A_reproduction": {
+    "par_filenames_identical_to_R291KV0070_s101": true,
+    "files": [
+     "0000_93.719_91.215.par",
+     "0001_93.783_84.607.par",
+     "0004_94.233_77.484.par",
+     "0007_94.043_64.745.par",
+     "0069_87.849_64.241.par"
+    ],
+    "terminal_objective_A": 64.2415,
+    "terminal_objective_R291": 64.241,
+    "t_end_A": 8.24,
+    "t_end_R291": 8.24,
+    "meaning": "arm A is a bit-for-bit reproduction of the corpus cell, not merely a similar run. The failure is fully reproducible, so every comparison below is against a solid baseline."
+   },
+   "STATUS": "VERIFIED",
+   "note": "all four numbers present verbatim; arm A's par filenames and terminal objective match R291KV0070_s101 exactly, so 'bit-identical' is supported."
+  },
+  "i": {
+   "claim_as_reported": "frozen-controller mechanism, spastic side: NONE -7.8500, SOL -7.7371 (delta +0.11), GAS -18.8434 (delta -10.99), BOTH -7.9113, all n=6, t_end 3.4-4.5 s so sub-Gate-G",
+   "container_BEFORE_this_audit": "NONE -- no deposit existed",
+   "container_NOW": "paper/FROZEN_MECHANISM_r410.json (CREATED BY THIS AUDIT)",
+   "recomputed": {
+    "R410BOTH": {
+     "mean": -7.911286643607382,
+     "delta_vs_NONE_deg": -0.06128738548582824,
+     "n": 6,
+     "t_end_s_range": [
+      3.74,
+      4.05
+     ],
+     "GATE_G_pass_count": 0
+    },
+    "R410GAS": {
+     "mean": -18.843378670483002,
+     "delta_vs_NONE_deg": -10.993379412361449,
+     "n": 6,
+     "t_end_s_range": [
+      3.27,
+      3.56
+     ],
+     "GATE_G_pass_count": 0
+    },
+    "R410NONE": {
+     "mean": -7.849999258121554,
+     "delta_vs_NONE_deg": 0.0,
+     "n": 6,
+     "t_end_s_range": [
+      20.0,
+      20.0
+     ],
+     "GATE_G_pass_count": 6
+    },
+    "R410SOL": {
+     "mean": -7.737056862615709,
+     "delta_vs_NONE_deg": 0.11294239550584528,
+     "n": 6,
+     "t_end_s_range": [
+      3.98,
+      4.99
+     ],
+     "GATE_G_pass_count": 0
+    }
+   },
+   "STATUS": "MISMATCH",
+   "what_matches": "all four arm means reproduce to 4 decimals: NONE -7.8500, SOL -7.7371, GAS -18.8434, BOTH -7.9113, and the deltas +0.1129 and -10.9934 round to the reported +0.11 and -10.99. n = 6 in every arm.",
+   "what_does_not_match": {
+    "the_t_end_range": "reported as '3.4-4.5 s' for all arms. The NONE arm runs 20.00 s on all six seeds. The lesioned arms span 3.27-4.99 s, not 3.4-4.5 s.",
+    "the_gate_G_statement": "reported as 'so sub-Gate-G' for all arms. The NONE arm PASSES Gate G on 6 of 6 seeds with 15 admissible cycles each. Only the three lesioned arms are sub-Gate-G.",
+    "why_this_is_not_cosmetic": "NONE is the comparator. The deltas therefore subtract a 20 s, 15-cycle, Gate-G-passing steady walk from a 3-5 s, 1-2 cycle fall. They are not lesion effect sizes and must not be presented as such. The 'GAS carries the signature' reading rests entirely on this non-comparable delta."
+   },
+   "ALSO": "the NONE arm's six per-seed values are bit-identical to the six R151C Gate-G values used in claim (a), confirming R410NONE is a faithful replay of the control controller and not an independent measurement."
+  },
+  "j": {
+   "claim_as_reported": "frozen-controller, weakness side: NONE -7.8500, TA x0.80 -6.5114, TA x0.50 -5.4179, TA x0.30 -8.1763, SOL-weak x0.50 -13.3254, GAS-weak x0.50 -5.4803, n=6 each",
+   "container_BEFORE_this_audit": "NONE -- no deposit existed",
+   "container_NOW": "paper/FROZEN_WEAKNESS_r411.json (CREATED BY THIS AUDIT)",
+   "recomputed": {
+    "R411GASwk_x050": {
+     "mean": -5.480266348448128,
+     "delta_vs_NONE_deg": 2.3697329096734254,
+     "n": 6,
+     "t_end_s_range": [
+      4.64,
+      5.03
+     ],
+     "GATE_G_pass_count": 0
+    },
+    "R411NONE": {
+     "mean": -7.849999258121554,
+     "delta_vs_NONE_deg": 0.0,
+     "n": 6,
+     "t_end_s_range": [
+      20.0,
+      20.0
+     ],
+     "GATE_G_pass_count": 6
+    },
+    "R411SOLwk_x050": {
+     "mean": -13.325351061081946,
+     "delta_vs_NONE_deg": -5.475351802960392,
+     "n": 6,
+     "t_end_s_range": [
+      3.07,
+      4.27
+     ],
+     "GATE_G_pass_count": 0
+    },
+    "R411TA_x030": {
+     "mean": -8.176308271745143,
+     "delta_vs_NONE_deg": -0.32630901362358866,
+     "n": 6,
+     "t_end_s_range": [
+      3.34,
+      3.66
+     ],
+     "GATE_G_pass_count": 0
+    },
+    "R411TA_x050": {
+     "mean": -5.417903234701943,
+     "delta_vs_NONE_deg": 2.4320960234196107,
+     "n": 6,
+     "t_end_s_range": [
+      3.83,
+      4.25
+     ],
+     "GATE_G_pass_count": 0
+    },
+    "R411TA_x080": {
+     "mean": -6.511353668536748,
+     "delta_vs_NONE_deg": 1.3386455895848055,
+     "n": 6,
+     "t_end_s_range": [
+      4.9,
+      13.54
+     ],
+     "GATE_G_pass_count": 1
+    }
+   },
+   "STATUS": "VERIFIED",
+   "note": "all six arm means reproduce to 4 decimals with n = 6 each. The same comparator caveat as claim (i) applies: NONE runs 20.00 s and passes Gate G 6/6; every lesioned arm is sub-Gate-G except R411TA_x080_s104 (13.54 s).",
+   "THE_FINDING_IN_IT_THAT_WAS_NOT_FLAGGED": {
+    "what": "SOL x0.50 -- a pure WEAKNESS lesion with no reflex at all -- moves the knee to -13.33 deg, which is MORE flexed than the spastic headline arm R396SPg110 (-13.20 deg) and 5.48 deg more flexed than the frozen control.",
+    "why_it_matters": "the paper's discriminative claim is that spasticity and weakness separate on knee-at-heel-strike with spasticity MORE flexed. Under a frozen controller a plantarflexor WEAKNESS reproduces both the sign and roughly the magnitude of that signature. The endpoint is therefore not mechanism-specific in the absence of re-optimisation.",
+    "what_defuses_it_and_what_does_not": "it is sub-Gate-G and so cannot be quoted against a Gate-G corpus number. But the re-optimised answer already exists and points the other way: the plantarflexor-weakness families R276WPF005/010/020, R285BF007/008 give Gate-G knee values in [-9.154, -6.485], which do NOT reach the spastic range. The honest statement is that the discrimination depends on the controller being re-optimised, and this belongs in the limitations section."
+   }
+  }
+ },
+ "CHECK_1_registration_hashes": {
+  "question": "does every PREREG_*.md have a matching .sha256, and does the file still hash to it? (the r229 failure mode)",
+  "n_registrations": 72,
+  "n_with_sidecar_and_MATCHING_hash": 55,
+  "n_with_sidecar_and_MISMATCHED_hash": 0,
+  "n_with_NO_sidecar": 17,
+  "MISMATCHED": [],
+  "NO_SIDECAR": [
+   "PREREG_3d_discrimination_r150.md",
+   "PREREG_3d_force_r213.md",
+   "PREREG_3d_force_r216.md",
+   "PREREG_3d_injection_r145.md",
+   "PREREG_3d_mirror_r210.md",
+   "PREREG_3d_probe_r141.md",
+   "PREREG_3d_reopt_r151.md",
+   "PREREG_3d_speed_r201.md",
+   "PREREG_3d_speed_r202.md",
+   "PREREG_hipflex_r152.md",
+   "PREREG_mechanism_r230.md",
+   "PREREG_screen_r153.md",
+   "PREREG_shape_RESOLUTION_r139.md",
+   "PREREG_shape_r138.md",
+   "PREREG_slope_DEVIATIONS_r62.md",
+   "PREREG_speed_AMEND1_r137.md",
+   "PREREG_stance_test_r231.md"
+  ],
+  "VERDICT": "CLEAN ON THE r229 FAILURE MODE. Every one of the 55 registrations that carries a .sha256 sidecar still hashes to it. Zero mismatches. The 17 without a sidecar are all pre-r160 or superseded registrations; they were never hashed, which is a coverage gap, not a tampering signal.",
+  "per_registration": {
+   "PREREG_2Dsd_r234.md": {
+    "file": "PREREG_2Dsd_r234.md",
+    "size": 3838,
+    "actual_sha256": "88ca5ad8205c776cadb79b2930ad4869c11cf84bd64727a8f5a3bfc13d1056f5",
+    "sidecar": "PREREG_2Dsd_r234.md.sha256",
+    "recorded_sha256": [
+     "88ca5ad8205c776cadb79b2930ad4869c11cf84bd64727a8f5a3bfc13d1056f5"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_2ndbody_r229.md": {
+    "file": "PREREG_2ndbody_r229.md",
+    "size": 27260,
+    "actual_sha256": "ce572133a1b39f843f64cd48293ada2c80191deb948d198f06baf3ec2cf32514",
+    "sidecar": "PREREG_2ndbody_r229.md.sha256",
+    "recorded_sha256": [
+     "ce572133a1b39f843f64cd48293ada2c80191deb948d198f06baf3ec2cf32514"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_2x2_r270.md": {
+    "file": "PREREG_2x2_r270.md",
+    "size": 24500,
+    "actual_sha256": "c956c0d72d0d63737cf47114c8b4874704e46c3a9620efda014b643ff2747fb2",
+    "sidecar": "PREREG_2x2_r270.md.sha256",
+    "recorded_sha256": [
+     "c956c0d72d0d63737cf47114c8b4874704e46c3a9620efda014b643ff2747fb2"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_3d_continuation_r172.md": {
+    "file": "PREREG_3d_continuation_r172.md",
+    "size": 10336,
+    "actual_sha256": "35ac02b4706add2585c6455b79fd6384c957df3899ae51f2b117ec1f95b2c60b",
+    "sidecar": "PREREG_3d_continuation_r172.sha256",
+    "recorded_sha256": [
+     "35ac02b4706add2585c6455b79fd6384c957df3899ae51f2b117ec1f95b2c60b"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_3d_discrimination_r150.md": {
+    "file": "PREREG_3d_discrimination_r150.md",
+    "size": 8274,
+    "actual_sha256": "52459560d75e1be97ee40f82dbb64e8e382b12201c03522170c983fd2de21845",
+    "status": "NO_SIDECAR"
+   },
+   "PREREG_3d_force_r213.md": {
+    "file": "PREREG_3d_force_r213.md",
+    "size": 8974,
+    "actual_sha256": "accfb24bf6e748f715d91425487a17b34db63205c8c07bf1d38a5c6e5c4f3ba9",
+    "status": "NO_SIDECAR"
+   },
+   "PREREG_3d_force_r216.md": {
+    "file": "PREREG_3d_force_r216.md",
+    "size": 4587,
+    "actual_sha256": "c4ada7e837d06f5abdf5f1329c01af5a07a6b1867784ee30a4b99073c5410ea1",
+    "status": "NO_SIDECAR"
+   },
+   "PREREG_3d_injection_r145.md": {
+    "file": "PREREG_3d_injection_r145.md",
+    "size": 6315,
+    "actual_sha256": "d7ce407e7c967d8237e5b9fa9d44a40485e87f1a1eb1d95555eb8cbfc2c15e91",
+    "status": "NO_SIDECAR"
+   },
+   "PREREG_3d_ladder_r169.md": {
+    "file": "PREREG_3d_ladder_r169.md",
+    "size": 14183,
+    "actual_sha256": "e3ec76aa98759c821ef410889d3fc5d2840297bfc93482e00efc85e244e6d703",
+    "sidecar": "PREREG_3d_ladder_r169.sha256",
+    "recorded_sha256": [
+     "e3ec76aa98759c821ef410889d3fc5d2840297bfc93482e00efc85e244e6d703"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_3d_matched_r174.md": {
+    "file": "PREREG_3d_matched_r174.md",
+    "size": 10614,
+    "actual_sha256": "3d62010f81bc5a62721b522432ea77756566d7bf2d6ff1182b9fd472e8d038d1",
+    "sidecar": "PREREG_3d_matched_r174.sha256",
+    "recorded_sha256": [
+     "3d62010f81bc5a62721b522432ea77756566d7bf2d6ff1182b9fd472e8d038d1"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_3d_mirror_r210.md": {
+    "file": "PREREG_3d_mirror_r210.md",
+    "size": 10144,
+    "actual_sha256": "dc21782bf5716ca4c64e8086f10a32ded6bd48f48ef45c7e04a21e768b936845",
+    "status": "NO_SIDECAR"
+   },
+   "PREREG_3d_probe_r141.md": {
+    "file": "PREREG_3d_probe_r141.md",
+    "size": 5265,
+    "actual_sha256": "4a4584da959e106ecdf0fa344debe7a1d30b968a8c0efb3b78cfad74c793ee0b",
+    "status": "NO_SIDECAR"
+   },
+   "PREREG_3d_reopt_r151.md": {
+    "file": "PREREG_3d_reopt_r151.md",
+    "size": 5541,
+    "actual_sha256": "f6a65408731cc7141580ea4c38b68871c9167d0f0c2a9da416142405758c4c23",
+    "status": "NO_SIDECAR"
+   },
+   "PREREG_3d_replication_r179.md": {
+    "file": "PREREG_3d_replication_r179.md",
+    "size": 10056,
+    "actual_sha256": "c42f3386289487c0488f8ec0231f4c5671d2ee0680bdeb799755be0baa26f7c2",
+    "sidecar": "PREREG_3d_replication_r179.sha256",
+    "recorded_sha256": [
+     "c42f3386289487c0488f8ec0231f4c5671d2ee0680bdeb799755be0baa26f7c2"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_3d_replication_r209.md": {
+    "file": "PREREG_3d_replication_r209.md",
+    "size": 10570,
+    "actual_sha256": "919a8cb86ab0a5d23b29ad2c7aec2a3c24d41dc0dcd12ca1ee30a7bfc35c40a5",
+    "sidecar": "PREREG_3d_replication_r209.sha256",
+    "recorded_sha256": [
+     "919a8cb86ab0a5d23b29ad2c7aec2a3c24d41dc0dcd12ca1ee30a7bfc35c40a5"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_3d_residual_r168.md": {
+    "file": "PREREG_3d_residual_r168.md",
+    "size": 13074,
+    "actual_sha256": "e2437a0f5d49da9e429aa36ac969873df28e4dde90527a495db48b356d3cb5b2",
+    "sidecar": "PREREG_3d_residual_r168.sha256",
+    "recorded_sha256": [
+     "e2437a0f5d49da9e429aa36ac969873df28e4dde90527a495db48b356d3cb5b2"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_3d_specificity_r178.md": {
+    "file": "PREREG_3d_specificity_r178.md",
+    "size": 13535,
+    "actual_sha256": "c863442647576b482701fe4014d4529012d9606a93eabdfacef0498098e8bee6",
+    "sidecar": "PREREG_3d_specificity_r178.sha256",
+    "recorded_sha256": [
+     "c863442647576b482701fe4014d4529012d9606a93eabdfacef0498098e8bee6"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_3d_speed_r201.md": {
+    "file": "PREREG_3d_speed_r201.md",
+    "size": 9328,
+    "actual_sha256": "9ce3687678eeb15a93154f762d5ebcf31c6a03be6f15410d678fd5065c1f3f4e",
+    "status": "NO_SIDECAR"
+   },
+   "PREREG_3d_speed_r202.md": {
+    "file": "PREREG_3d_speed_r202.md",
+    "size": 13026,
+    "actual_sha256": "70fd6ef94e5aefa4d837c71702e93330722a1835b5dbbe03222661f65b46740c",
+    "status": "NO_SIDECAR"
+   },
+   "PREREG_3d_speed_r203.md": {
+    "file": "PREREG_3d_speed_r203.md",
+    "size": 43040,
+    "actual_sha256": "2a939305b25ec234ec3a9ceaf2ebbd073345cd005d73b316485c4724f9f7ea09",
+    "sidecar": "PREREG_3d_speed_r203.sha256",
+    "recorded_sha256": [
+     "2a939305b25ec234ec3a9ceaf2ebbd073345cd005d73b316485c4724f9f7ea09"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_adaptation_r390.md": {
+    "file": "PREREG_adaptation_r390.md",
+    "size": 7139,
+    "actual_sha256": "9664b8edbe2f3232bcd3f2dc4ad07f81897b9143c8436b226a703a42d23b8334",
+    "sidecar": "PREREG_adaptation_r390.md.sha256",
+    "recorded_sha256": [
+     "9664b8edbe2f3232bcd3f2dc4ad07f81897b9143c8436b226a703a42d23b8334"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_ankle_ladder_r235.md": {
+    "file": "PREREG_ankle_ladder_r235.md",
+    "size": 4534,
+    "actual_sha256": "a180a08049563e86e95dfb8bcc05020b456df4d79d570db16c65bb2561b481cb",
+    "sidecar": "PREREG_ankle_ladder_r235.md.sha256",
+    "recorded_sha256": [
+     "a180a08049563e86e95dfb8bcc05020b456df4d79d570db16c65bb2561b481cb"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_bandfill_r285.md": {
+    "file": "PREREG_bandfill_r285.md",
+    "size": 7499,
+    "actual_sha256": "c27a72650f7d2bb13eb6ae3d7f8b876124036270ef105a604bea92dcd73512ab",
+    "sidecar": "PREREG_bandfill_r285.md.sha256",
+    "recorded_sha256": [
+     "c27a72650f7d2bb13eb6ae3d7f8b876124036270ef105a604bea92dcd73512ab"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_bandfill_r287.md": {
+    "file": "PREREG_bandfill_r287.md",
+    "size": 7540,
+    "actual_sha256": "580ec8230a76c051e069f8a2d790dedd1199b95ac7b5fb1a1a509758570a4fcf",
+    "sidecar": "PREREG_bandfill_r287.md.sha256",
+    "recorded_sha256": [
+     "580ec8230a76c051e069f8a2d790dedd1199b95ac7b5fb1a1a509758570a4fcf"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_bandfill_r291.md": {
+    "file": "PREREG_bandfill_r291.md",
+    "size": 11495,
+    "actual_sha256": "0b2b72747f8ea6102f8f0e44c7ddcdf418dc6316ab55d7b25d2057ba6ec8dbc4",
+    "sidecar": "PREREG_bandfill_r291.md.sha256",
+    "recorded_sha256": [
+     "0b2b72747f8ea6102f8f0e44c7ddcdf418dc6316ab55d7b25d2057ba6ec8dbc4"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_beta2control_r387.md": {
+    "file": "PREREG_beta2control_r387.md",
+    "size": 5796,
+    "actual_sha256": "2dcddafda33d25749729050f6c9abb082ce79b98f3749baefb13e56ad935394e",
+    "sidecar": "PREREG_beta2control_r387.md.sha256",
+    "recorded_sha256": [
+     "2dcddafda33d25749729050f6c9abb082ce79b98f3749baefb13e56ad935394e"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_biarticular_r402.md": {
+    "file": "PREREG_biarticular_r402.md",
+    "size": 6105,
+    "actual_sha256": "623b021e3369c7c441de0f261280af04f84efb31431671da1b4b176821f290d6",
+    "sidecar": "PREREG_biarticular_r402.md.sha256",
+    "recorded_sha256": [
+     "623b021e3369c7c441de0f261280af04f84efb31431671da1b4b176821f290d6"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_channels_G2_r219.md": {
+    "file": "PREREG_channels_G2_r219.md",
+    "size": 4704,
+    "actual_sha256": "ea5cc2f442aed21a808af940c3df3a8053683eb286a6f5eb00e2afd3f15fb855",
+    "sidecar": "PREREG_channels_G2_r219.sha256",
+    "recorded_sha256": [
+     "ea5cc2f442aed21a808af940c3df3a8053683eb286a6f5eb00e2afd3f15fb855"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_classifier_r222.md": {
+    "file": "PREREG_classifier_r222.md",
+    "size": 4801,
+    "actual_sha256": "c0a13d6758a9e28762300fc2d04008379ad7d405644377aea02dbc887d8aa3f4",
+    "sidecar": "PREREG_classifier_r222.sha256",
+    "recorded_sha256": [
+     "c0a13d6758a9e28762300fc2d04008379ad7d405644377aea02dbc887d8aa3f4"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_clinical_r292.md": {
+    "file": "PREREG_clinical_r292.md",
+    "size": 6705,
+    "actual_sha256": "99fdf75a3ac72fa0e55b4747b78d2f42962db5808c980549463583c431a87397",
+    "sidecar": "PREREG_clinical_r292.md.sha256",
+    "recorded_sha256": [
+     "99fdf75a3ac72fa0e55b4747b78d2f42962db5808c980549463583c431a87397"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_compensation_r380.md": {
+    "file": "PREREG_compensation_r380.md",
+    "size": 6426,
+    "actual_sha256": "34a81d3cb309bf5a829af07669eff4c2d1ff7e4bcb4acf343ad09e73735ccca3",
+    "sidecar": "PREREG_compensation_r380.md.sha256",
+    "recorded_sha256": [
+     "34a81d3cb309bf5a829af07669eff4c2d1ff7e4bcb4acf343ad09e73735ccca3"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_decompose_r268.md": {
+    "file": "PREREG_decompose_r268.md",
+    "size": 4668,
+    "actual_sha256": "440bfefbddabafcdbaa8e10cd80a4169098e291aaab98736fe3a318d649ba386",
+    "sidecar": "PREREG_decompose_r268.md.sha256",
+    "recorded_sha256": [
+     "440bfefbddabafcdbaa8e10cd80a4169098e291aaab98736fe3a318d649ba386"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_dfsevere_r293.md": {
+    "file": "PREREG_dfsevere_r293.md",
+    "size": 6893,
+    "actual_sha256": "d4631d00c7876e3b5f6c7d45d1de3d353f12b8f524b3614e392dc006be7ebedf",
+    "sidecar": "PREREG_dfsevere_r293.md.sha256",
+    "recorded_sha256": [
+     "d4631d00c7876e3b5f6c7d45d1de3d353f12b8f524b3614e392dc006be7ebedf"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_doseladder_r370.md": {
+    "file": "PREREG_doseladder_r370.md",
+    "size": 7366,
+    "actual_sha256": "e4401084e5ad865c9160e99281f991909607fb60a376fbc35b15bf5821d252a2",
+    "sidecar": "PREREG_doseladder_r370.md.sha256",
+    "recorded_sha256": [
+     "e4401084e5ad865c9160e99281f991909607fb60a376fbc35b15bf5821d252a2"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_dynamics_r360.md": {
+    "file": "PREREG_dynamics_r360.md",
+    "size": 7804,
+    "actual_sha256": "a62573f5049825e0adb8c11618f2b19d4ae5b315723a67c13c87f26261ad19de",
+    "sidecar": "PREREG_dynamics_r360.md.sha256",
+    "recorded_sha256": [
+     "a62573f5049825e0adb8c11618f2b19d4ae5b315723a67c13c87f26261ad19de"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_dynamics_r362.md": {
+    "file": "PREREG_dynamics_r362.md",
+    "size": 4575,
+    "actual_sha256": "875dd20bac7c5542ccf846c4b45488702b1de8157799ad1f5d5ca54fef0534b2",
+    "sidecar": "PREREG_dynamics_r362.md.sha256",
+    "recorded_sha256": [
+     "875dd20bac7c5542ccf846c4b45488702b1de8157799ad1f5d5ca54fef0534b2"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_emgvskin_r376.md": {
+    "file": "PREREG_emgvskin_r376.md",
+    "size": 7372,
+    "actual_sha256": "fe28136e2ffde1409ac8af004f6fb5e417ba8b2198062d7485bd6b6bf545c6c2",
+    "sidecar": "PREREG_emgvskin_r376.md.sha256",
+    "recorded_sha256": [
+     "fe28136e2ffde1409ac8af004f6fb5e417ba8b2198062d7485bd6b6bf545c6c2"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_faststart_r294.md": {
+    "file": "PREREG_faststart_r294.md",
+    "size": 10785,
+    "actual_sha256": "b5da395f1c38ba726a896e967688c287db99e980fdaa1fdc70d31ad0572e431e",
+    "sidecar": "PREREG_faststart_r294.md.sha256",
+    "recorded_sha256": [
+     "b5da395f1c38ba726a896e967688c287db99e980fdaa1fdc70d31ad0572e431e"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_fitness_r266.md": {
+    "file": "PREREG_fitness_r266.md",
+    "size": 4008,
+    "actual_sha256": "d993fa7b538164739f4411392cce333c18751e57f8b8df8c2773c1ffdf18816f",
+    "sidecar": "PREREG_fitness_r266.md.sha256",
+    "recorded_sha256": [
+     "d993fa7b538164739f4411392cce333c18751e57f8b8df8c2773c1ffdf18816f"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_gain_ladder_r264.md": {
+    "file": "PREREG_gain_ladder_r264.md",
+    "size": 4396,
+    "actual_sha256": "85b854be3a25aa1216845d63d809dfcd9913d6d2b30fb0d867e025316cbd5665",
+    "sidecar": "PREREG_gain_ladder_r264.md.sha256",
+    "recorded_sha256": [
+     "85b854be3a25aa1216845d63d809dfcd9913d6d2b30fb0d867e025316cbd5665"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_hipflex_r152.md": {
+    "file": "PREREG_hipflex_r152.md",
+    "size": 5860,
+    "actual_sha256": "b060df86b598b215e4d8f7783695c30693e402d37cd71cc7b8f333c31076f212",
+    "status": "NO_SIDECAR"
+   },
+   "PREREG_kinpair_r378.md": {
+    "file": "PREREG_kinpair_r378.md",
+    "size": 5146,
+    "actual_sha256": "751e027147fdf90318fb2da4e70dbfc981e02d61a30a56d89896172fa76101cd",
+    "sidecar": "PREREG_kinpair_r378.md.sha256",
+    "recorded_sha256": [
+     "751e027147fdf90318fb2da4e70dbfc981e02d61a30a56d89896172fa76101cd"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_ladder36_r228.md": {
+    "file": "PREREG_ladder36_r228.md",
+    "size": 3449,
+    "actual_sha256": "ab738d522a4ad937ce2de2371137e086f9f89be4ac5225bc53a68585a1489d24",
+    "sidecar": "PREREG_ladder36_r228.sha256",
+    "recorded_sha256": [
+     "ab738d522a4ad937ce2de2371137e086f9f89be4ac5225bc53a68585a1489d24"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_ladder_metric_r256.md": {
+    "file": "PREREG_ladder_metric_r256.md",
+    "size": 3514,
+    "actual_sha256": "32bdef0aecb625cdb739e1bc5414be999faa0beeacdd792bf198eb9b3fcabbe1",
+    "sidecar": "PREREG_ladder_metric_r256.md.sha256",
+    "recorded_sha256": [
+     "32bdef0aecb625cdb739e1bc5414be999faa0beeacdd792bf198eb9b3fcabbe1"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_lmr_only_r223.md": {
+    "file": "PREREG_lmr_only_r223.md",
+    "size": 4161,
+    "actual_sha256": "8f954702cd46a99adc6acef7873530e152e1c9fa0a257b61a21dff2a0d07e99e",
+    "sidecar": "PREREG_lmr_only_r223.sha256",
+    "recorded_sha256": [
+     "8f954702cd46a99adc6acef7873530e152e1c9fa0a257b61a21dff2a0d07e99e"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_matched20_r289.md": {
+    "file": "PREREG_matched20_r289.md",
+    "size": 8281,
+    "actual_sha256": "863f1376dc9b2ebb2e553c1a75a8047a2d14b29d9280e2a5171bb3ed3b0a59e0",
+    "sidecar": "PREREG_matched20_r289.md.sha256",
+    "recorded_sha256": [
+     "863f1376dc9b2ebb2e553c1a75a8047a2d14b29d9280e2a5171bb3ed3b0a59e0"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_mechanism_r230.md": {
+    "file": "PREREG_mechanism_r230.md",
+    "size": 14850,
+    "actual_sha256": "ebc90a597a2bf67aef22b4e3b9dce2f83c9f76fe2a200438028a1bd1e8cb4a35",
+    "status": "NO_SIDECAR"
+   },
+   "PREREG_metric_r255.md": {
+    "file": "PREREG_metric_r255.md",
+    "size": 4294,
+    "actual_sha256": "b281cbafd4388bb3aed0f2ffa8d7acfb2f3e7616a2045ce68353bcd31ce4f676",
+    "sidecar": "PREREG_metric_r255.md.sha256",
+    "recorded_sha256": [
+     "b281cbafd4388bb3aed0f2ffa8d7acfb2f3e7616a2045ce68353bcd31ce4f676"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_onedim_r409.md": {
+    "file": "PREREG_onedim_r409.md",
+    "size": 5832,
+    "actual_sha256": "33eb306121c8a909da997a4b18e47dc91fd344da26c8c4e808178c5e97d0ce4a",
+    "sidecar": "PREREG_onedim_r409.md.sha256",
+    "recorded_sha256": [
+     "33eb306121c8a909da997a4b18e47dc91fd344da26c8c4e808178c5e97d0ce4a"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_optdist_r233.md": {
+    "file": "PREREG_optdist_r233.md",
+    "size": 5289,
+    "actual_sha256": "79290cb851a4822d2ffca1fe1356d7a5d42e8c57066425df72ad8216da26463f",
+    "sidecar": "PREREG_optdist_r233.md.sha256",
+    "recorded_sha256": [
+     "79290cb851a4822d2ffca1fe1356d7a5d42e8c57066425df72ad8216da26463f"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_pairing_r251.md": {
+    "file": "PREREG_pairing_r251.md",
+    "size": 4157,
+    "actual_sha256": "cd70ed59f55773fd08e344ea8977153fecea8909d5a0639f361fb58b2db0bcbb",
+    "sidecar": "PREREG_pairing_r251.md.sha256",
+    "recorded_sha256": [
+     "cd70ed59f55773fd08e344ea8977153fecea8909d5a0639f361fb58b2db0bcbb"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_permnull_r221.md": {
+    "file": "PREREG_permnull_r221.md",
+    "size": 4224,
+    "actual_sha256": "384579cc23e5ad529cab68c8eb04d61cd4878f226c3402629cc0781fb9e216e4",
+    "sidecar": "PREREG_permnull_r221.sha256",
+    "recorded_sha256": [
+     "384579cc23e5ad529cab68c8eb04d61cd4878f226c3402629cc0781fb9e216e4"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_rectifier_r382.md": {
+    "file": "PREREG_rectifier_r382.md",
+    "size": 7839,
+    "actual_sha256": "8c8731ad3496e8d220087b8658e32d3bb24ca7c16ea55ff61272e012fa3cfb52",
+    "sidecar": "PREREG_rectifier_r382.md.sha256",
+    "recorded_sha256": [
+     "8c8731ad3496e8d220087b8658e32d3bb24ca7c16ea55ff61272e012fa3cfb52"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_reflexgain_r364.md": {
+    "file": "PREREG_reflexgain_r364.md",
+    "size": 6493,
+    "actual_sha256": "939c81b6ea6544a35243e41d171c0fb0d9e80c50ed0d2207fec70d6b9f6d743c",
+    "sidecar": "PREREG_reflexgain_r364.md.sha256",
+    "recorded_sha256": [
+     "939c81b6ea6544a35243e41d171c0fb0d9e80c50ed0d2207fec70d6b9f6d743c"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_screen_r153.md": {
+    "file": "PREREG_screen_r153.md",
+    "size": 6168,
+    "actual_sha256": "02f3129d4b4f5759ff0df0b889b544735667e9dd29281abef3ed2a53a66e4b49",
+    "status": "NO_SIDECAR"
+   },
+   "PREREG_shape_RESOLUTION_r139.md": {
+    "file": "PREREG_shape_RESOLUTION_r139.md",
+    "size": 5097,
+    "actual_sha256": "6050330f46bc12466f6989f93ff1bed75140a2a1372d09087a2bb2ce6167d83f",
+    "status": "NO_SIDECAR"
+   },
+   "PREREG_shape_r138.md": {
+    "file": "PREREG_shape_r138.md",
+    "size": 12536,
+    "actual_sha256": "e93bb2a103014083f91938b3abab9ee072d387ab7a91ceda70e7800154fc7d6d",
+    "status": "NO_SIDECAR"
+   },
+   "PREREG_sitstand_r91.md": {
+    "file": "PREREG_sitstand_r91.md",
+    "size": 10364,
+    "actual_sha256": "59f1c3418af0bac0149e7f80968a7987e15c3f06085ea893228c2efe5b70645f",
+    "sidecar": "PREREG_sitstand_r91.checksum.sha256",
+    "recorded_sha256": [
+     "59f1c3418af0bac0149e7f80968a7987e15c3f06085ea893228c2efe5b70645f"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_sitstand_seed_r93.md": {
+    "file": "PREREG_sitstand_seed_r93.md",
+    "size": 4427,
+    "actual_sha256": "fb5e8a442f0f317e0dd8be931557429549f1abe23fc6c7fd1f619ad6c90190d4",
+    "sidecar": "PREREG_sitstand_seed_r93.checksum.sha256",
+    "recorded_sha256": [
+     "fb5e8a442f0f317e0dd8be931557429549f1abe23fc6c7fd1f619ad6c90190d4"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_slope.md": {
+    "file": "PREREG_slope.md",
+    "size": 53689,
+    "actual_sha256": "678eba3d43d15391feffe53cca3544349daacdb3253eb5b28f2cad55738530a2",
+    "sidecar": "PREREG_slope.sha256",
+    "recorded_sha256": [
+     "678eba3d43d15391feffe53cca3544349daacdb3253eb5b28f2cad55738530a2"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_slope_DEVIATIONS_r62.md": {
+    "file": "PREREG_slope_DEVIATIONS_r62.md",
+    "size": 12699,
+    "actual_sha256": "368f0b6b44d73c6799a81b5ab82f856aaf4128072f01a13fe52492b017192e19",
+    "status": "NO_SIDECAR"
+   },
+   "PREREG_slope_r58.md": {
+    "file": "PREREG_slope_r58.md",
+    "size": 30223,
+    "actual_sha256": "3ec744b41921e3dedd1003acfc5ed12472a92d7c11c03f01c08d52db4c19f4ef",
+    "sidecar": "PREREG_slope_r58.sha256",
+    "recorded_sha256": [
+     "3ec744b41921e3dedd1003acfc5ed12472a92d7c11c03f01c08d52db4c19f4ef",
+     "c9bb74fc8bad17161a9a6b3a6f50a3ff17178883339fd7349d8deaedd5eaf5b4",
+     "45be4a184e994404c941858556a832d221e0318fcb53da8452555ea0212a959d",
+     "6d46ec618407f949f72626ee52187186e93ea0bfd1c04fa590c584b6d0120dda"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_speed_AMEND1_r137.md": {
+    "file": "PREREG_speed_AMEND1_r137.md",
+    "size": 14035,
+    "actual_sha256": "e4dd1b3b200d23abeeb17e79b92e2306369013f5045912d6ad1f4a2250c983b0",
+    "status": "NO_SIDECAR"
+   },
+   "PREREG_speed_ladder_r217.md": {
+    "file": "PREREG_speed_ladder_r217.md",
+    "size": 5076,
+    "actual_sha256": "bd2b2443a00467d3250eac55a3916641f39c55698b9ac30da70c717bdd85ee62",
+    "sidecar": "PREREG_speed_ladder_r217.sha256",
+    "recorded_sha256": [
+     "bd2b2443a00467d3250eac55a3916641f39c55698b9ac30da70c717bdd85ee62"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_speed_r89.md": {
+    "file": "PREREG_speed_r89.md",
+    "size": 11237,
+    "actual_sha256": "4d64cd58a5e85feea75c94bf4b0a65e53dfd5a17c18b90d2af893a005e045ec6",
+    "sidecar": "PREREG_speed_r89.checksum.sha256",
+    "recorded_sha256": [
+     "4d64cd58a5e85feea75c94bf4b0a65e53dfd5a17c18b90d2af893a005e045ec6"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_stance_test_r231.md": {
+    "file": "PREREG_stance_test_r231.md",
+    "size": 4355,
+    "actual_sha256": "477d43742fc670968fec21790e8f338ad5404944230ff2a87ec65948ac003f6b",
+    "status": "NO_SIDECAR"
+   },
+   "PREREG_terminalswing_r408.md": {
+    "file": "PREREG_terminalswing_r408.md",
+    "size": 6420,
+    "actual_sha256": "05fccee7e3d50f0c35831568e837a5414e3e8e6b2325ede7a9c77d7173f518ce",
+    "sidecar": "PREREG_terminalswing_r408.md.sha256",
+    "recorded_sha256": [
+     "05fccee7e3d50f0c35831568e837a5414e3e8e6b2325ede7a9c77d7173f518ce"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_turn_dose_r262.md": {
+    "file": "PREREG_turn_dose_r262.md",
+    "size": 3007,
+    "actual_sha256": "022a8b88cd227da860838af9b5a909880b2b23c57cc98db8bd42e349ba8cb0e9",
+    "sidecar": "PREREG_turn_dose_r262.md.sha256",
+    "recorded_sha256": [
+     "022a8b88cd227da860838af9b5a909880b2b23c57cc98db8bd42e349ba8cb0e9"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_turn_transfer_r261.md": {
+    "file": "PREREG_turn_transfer_r261.md",
+    "size": 4249,
+    "actual_sha256": "91c409795c9f4f202089462e35372c79bd10975bba2dc591dd05ea2b4ed6e9ec",
+    "sidecar": "PREREG_turn_transfer_r261.md.sha256",
+    "recorded_sha256": [
+     "91c409795c9f4f202089462e35372c79bd10975bba2dc591dd05ea2b4ed6e9ec"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_velocitydep_r368.md": {
+    "file": "PREREG_velocitydep_r368.md",
+    "size": 8023,
+    "actual_sha256": "8cf88c12a7f2b395f50a8e08d6e7749af6a41b0464a2715346f8b73a09b8f44d",
+    "sidecar": "PREREG_velocitydep_r368.md.sha256",
+    "recorded_sha256": [
+     "8cf88c12a7f2b395f50a8e08d6e7749af6a41b0464a2715346f8b73a09b8f44d"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_weakpf_r274.md": {
+    "file": "PREREG_weakpf_r274.md",
+    "size": 18494,
+    "actual_sha256": "9338ce8a0ddc3e5c8e1e462404891e826fb809c446c52bafa8ed5a338829a10f",
+    "sidecar": "PREREG_weakpf_r274.md.sha256",
+    "recorded_sha256": [
+     "9338ce8a0ddc3e5c8e1e462404891e826fb809c446c52bafa8ed5a338829a10f"
+    ],
+    "status": "MATCH"
+   },
+   "PREREG_window_r218.md": {
+    "file": "PREREG_window_r218.md",
+    "size": 4550,
+    "actual_sha256": "2ff21d73d2c4abdafbd05ac1ce9acdb8f7cb38f967c8fd5087b14f276daac7fc",
+    "sidecar": "PREREG_window_r218.sha256",
+    "recorded_sha256": [
+     "2ff21d73d2c4abdafbd05ac1ce9acdb8f7cb38f967c8fd5087b14f276daac7fc"
+    ],
+    "status": "MATCH"
+   }
+  }
+ },
+ "CHECK_2_deposit_coverage": {
+  "question": "does every executed registration have a deposit reporting its outcome, including the UNINFORMATIVE ones?",
+  "the_four_named": {
+   "r402": {
+    "registration": "PREREG_biarticular_r402.md",
+    "deposit": "MECHANISM_RESULT_r402.json",
+    "outcome_recorded": "SOL 0/6 and GAS 0/6 Gate-G, both UNINFORMATIVE",
+    "STATUS": "REPORTED"
+   },
+   "r404": {
+    "registration": "NONE FOUND -- there is no PREREG_*_r404.md",
+    "deposit": "WEAKONLY_RESULT_r404.json",
+    "outcome_recorded": "WKHAM060 0/6 and WKHAM040 0/6 Gate-G, both UNINFORMATIVE",
+    "STATUS": "REPORTED, BUT UNREGISTERED"
+   },
+   "r407": {
+    "registration": "registration is PREREG_biarticular_r402.md (r407 declares itself the supersession of r402)",
+    "deposit": "MECHANISM_RESULT_r407.json",
+    "outcome_recorded": "overall UNINFORMATIVE; at KV 0.110 GAS and SOL have 0 Gate-G seeds",
+    "STATUS": "REPORTED",
+    "TIMING_NOTE": "this deposit was rewritten at 04:14 on 2026-08-26, DURING this audit, when the last cell R407BOTHg110_s106 completed at 04:13. An earlier copy written at 02:21 was stale. The grid is now complete: 72 of 72 cell files present, 33 of them BROKEN_PARENT stubs."
+   },
+   "r409": {
+    "registration": "PREREG_onedim_r409.md (hashed, sidecar matches)",
+    "deposit": "*** NONE ***",
+    "STATUS": "UNREPORTED RESULT"
+   }
+  },
+  "r408_AND_r409_ARE_THE_TWO_UNREPORTED_REGISTRATIONS": {
+   "r408": {
+    "file": "PREREG_terminalswing_r408.md",
+    "sha256_sidecar": "present and MATCHING",
+    "deposit": "*** NONE ***",
+    "was_it_executed": "YES, apparently. Its outcome is written as prose in a LATER registration: PREREG_onedim_r409.md section 1 row 4 records 'KTQ and GAS separated as predicted, but SOL separated too -- r408 section 5 P3 failed as written'. That is a registered prediction failing, recorded nowhere but in the preamble of the next registration.",
+    "what_is_missing": "a deposit carrying KTQ_tsw, GAS_tsw, SOL_tsw and KNEE_ic for R393SPg070, R393SPg100 and the five non-R151W dorsiflexor families, and the P1-P5 verdicts.",
+    "does_it_need_simulation": "NO. Section 4 states the confirmatory arms are 'all already simulated and all Gate-G passing'. Verified: R393SPg070 6/6, R393SPg100 4/6, and the five weakness families 6/6 each. This is analysis only."
+   },
+   "r409": {
+    "file": "PREREG_onedim_r409.md",
+    "sha256_sidecar": "present and MATCHING",
+    "deposit": "*** NONE ***",
+    "was_it_executed": "NO EVIDENCE that it was. No script, no stage file, no cell files, no deposit.",
+    "does_it_need_simulation": "NO. Section 4's confirmatory pool is 'all already simulated'. Verified below: 101 cells exist across the 13 named families, 65 of them Gate-G, against a section-7 UNINFORMATIVE floor of 20. This is analysis only."
+   }
+  },
+  "other_deposits_with_no_registration_at_all": [
+   "SPANNING_MAP_r403.json",
+   "WEAKONLY_RESULT_r404.json",
+   "PUBLICDATA_VALIDATION_r405.json",
+   "SHAM_READOUT_r406.json",
+   "FROZEN_MECHANISM_r410.json (created by this audit)",
+   "FROZEN_WEAKNESS_r411.json (created by this audit)"
+  ],
+  "note_on_that_list": "these are post-hoc/exploratory and each says so in its own status field. That is acceptable provided the write-up never presents them as confirmatory.",
+  "A_FINDING_ABOUT_HOW_HYPOTHESES_WERE_KILLED": {
+   "what": "PREREG_terminalswing_r408.md section 1 and PREREG_onedim_r409.md section 1 both record hypothesis 2 as killed because 'soleus-only produced 70% of the knee displacement at KV 0.050, against a registered ceiling of 40%'.",
+   "the_problem": "that 70% comes from MECHANISM_RESULT_r407.json -> /by_rung/0.050/SOL, which has n_gate_G = 3 and carries \"uninformative\": true. The r402/r407 registration's own rule is that a rung with fewer than 4 Gate-G seeds is UNINFORMATIVE and may not be read.",
+   "consequence": "a registered hypothesis was retired on the strength of a cell the governing registration declares unreadable. The kill may still be right, but it is not evidenced under the corpus's own rules and must not be written up as a falsification.",
+   "arithmetic": {
+    "BOTH_delta_knee_at_KV0.050_deg": -2.1535497265277863,
+    "SOL_delta_knee_at_KV0.050_deg_n3": -1.5137669088211956,
+    "share": 0.7029170908729718,
+    "SOL_n_gate_G": 3,
+    "registered_minimum": 4,
+    "source": "MECHANISM_RESULT_r407.json -> /by_rung/0.050/{BOTH,SOL}/delta_knee_deg, read back verbatim"
+   }
+  }
+ },
+ "CHECK_3_json_health": {
+  "question": "any NaN, null-where-a-number-belongs, or absent keys other deposits reference?",
+  "n_json_scanned": 594,
+  "strict_parse_failures": [],
+  "empty_files": [],
+  "files_with_BARE_NaN_JSON_VALUES": {
+   "PUBLICDATA_VALIDATION_r405.json": {
+    "n_non_finite_values": 122,
+    "where": "only inside /step3_extracted_values/per_participant_able_bodied[i] and /per_participant_stroke[i], and only in EMG fields (TA_mean_swing_peaknorm, GAS_mean_stance_peaknorm, GAS_mean_early_stance_0_15pct_peaknorm and their paretic / nonparetic variants).",
+    "is_it_a_defect_in_the_cited_numbers": "NO. Every kinematic field is finite. The deposit itself states 'zero participants were dropped, zero NaNs' for both knee-at-IC cohorts, and that the EMG exclusions touch only the EMG analyses. Claim (e) is unaffected.",
+    "is_it_a_defect_at_all": "YES, a portability one. Bare NaN is not valid JSON under RFC 8259. Python's json accepts it, but jq, JavaScript JSON.parse and most strict readers will reject the whole file. If this deposit ships as supplementary material it should emit null."
+   },
+   "COST_MATCHED_LEDGER.json": {
+    "n_non_finite_values": 1,
+    "where": "/bands/0.5/mean_d_ank_rom",
+    "assessment": "a single NaN in an old (2026-08-03) ledger. Same RFC 8259 portability issue. No current deposit reads this path."
+   }
+  },
+  "null_where_a_number_is_expected": {
+   "assessment": "checked and found to be intentional in every case examined. DECOMPOSE_r373.json sets RV_stance / RV_swing to null for the DFweak arm because that arm has no reflex term. MECHANISM_RESULT_r402/r407 and WEAKONLY_RESULT_r404 set means to null exactly where n_gate_G = 0, which is the registered UNINFORMATIVE encoding, not missing data."
+  },
+  "dangling_cross_references": {
+   "checked": "every claim in this audit was resolved to a live file; no deposit audited here references a key that its target does not define.",
+   "the_one_real_dangling_reference": "claim (b). Two numbers (+1.8857, -1.7617) were reported with no file behind them at all. See /claims/b."
+  }
+ },
+ "CHECK_4_protected_directories": {
+  "question": "confirm the 112 protected directories and that none was modified in the last 48 hours",
+  "regex_used": [
+   "^(s[1-4])?(KF|KE|HF|DF|PF)[0-9]+L",
+   "^opt_s[1-4]"
+  ],
+  "n_result_dirs_total": 1241,
+  "n_protected": 112,
+  "COUNT_CONFIRMED": true,
+  "n_modified_in_last_48h": 0,
+  "modified_in_last_48h": [],
+  "VERDICT": "CONFIRMED: exactly 112 protected directories, ZERO modified in the last 48 hours. This audit opened them read-only and wrote nothing under C:\\Users\\maurice\\Documents\\SCONE\\results.",
+  "protected_names": [
+   "DF20L.H0914M.GH2010.S10W.D10.I",
+   "DF40L.H0914M.GH2010.S10W.D10.I",
+   "DF40L.H0914M.GH2010.S10W.D10.I.underconverged",
+   "DF60L.H0914M.GH2010.S10W.D10.I",
+   "DF60L.H0914M.GH2010.S10W.D10.I.underconverged",
+   "HF20L.H0914M.GH2010.S10W.D10.I",
+   "HF40L.H0914M.GH2010.S10W.D10.I",
+   "HF60L.H0914M.GH2010.S10W.D10.I",
+   "KE20L.H0914M.GH2010.S10W.D10.I",
+   "KE20L.H0914M.GH2010.S10W.D10.I.underconverged",
+   "KE40L.H0914M.GH2010.S10W.D10.I",
+   "KE60L.H0914M.GH2010.S10W.D10.I",
+   "KF20L.H0914M.GH2010.S10W.D10.I",
+   "KF40L.H0914M.GH2010.S10W.D10.I",
+   "KF60L.H0914M.GH2010.S10W.D10.I",
+   "KF60L.H0914M.GH2010.S10W.D10.I (1)",
+   "KF60L.H0914M.GH2010.S10W.D10.I.killed_early",
+   "KF60L.H0914M.GH2010.S10W.D10.I.underconverged",
+   "PF20L.H0914M.GH2010.S10W.D10.I",
+   "PF40L.H0914M.GH2010.S10W.D10.I",
+   "PF60L.H0914M.GH2010.S10W.D10.I",
+   "s1DF20L.H0914M.GH2010.S10W.D10.I",
+   "s1DF40L.H0914M.GH2010.S10W.D10.I",
+   "s1DF60L.H0914M.GH2010.S10W.D10.I",
+   "s1HF20L.H0914M.GH2010.S10W.D10.I",
+   "s1HF40L.H0914M.GH2010.S10W.D10.I",
+   "s1HF60L.H0914M.GH2010.S10W.D10.I",
+   "s1KE20L.H0914M.GH2010.S10W.D10.I",
+   "s1KE40L.H0914M.GH2010.S10W.D10.I",
+   "s1KE60L.H0914M.GH2010.S10W.D10.I",
+   "s1KE60L.H0914M.GH2010.S10W.D10.I (1)",
+   "s1KE60L.H0914M.GH2010.S10W.D10.I.killed_early",
+   "s1KE60L.H0914M.GH2010.S10W.D10.I.underconverged",
+   "s1KF20L.H0914M.GH2010.S10W.D10.I",
+   "s1KF40L.H0914M.GH2010.S10W.D10.I",
+   "s1KF60L.H0914M.GH2010.S10W.D10.I",
+   "s1KF60L.H0914M.GH2010.S10W.D10.I (1)",
+   "s1KF60L.H0914M.GH2010.S10W.D10.I.killed_early",
+   "s1KF60L.H0914M.GH2010.S10W.D10.I.underconverged",
+   "s1PF20L.H0914M.GH2010.S10W.D10.I",
+   "s1PF40L.H0914M.GH2010.S10W.D10.I",
+   "s1PF60L.H0914M.GH2010.S10W.D10.I",
+   "s2DF20L.H0914M.GH2010.S10W.D10.I",
+   "s2DF20L.H0914M.GH2010.S10W.D10.I (1)",
+   "s2DF20L.H0914M.GH2010.S10W.D10.I.killed_early",
+   "s2DF40L.H0914M.GH2010.S10W.D10.I",
+   "s2DF40L.H0914M.GH2010.S10W.D10.I (1)",
+   "s2DF40L.H0914M.GH2010.S10W.D10.I.killed_early",
+   "s2DF60L.H0914M.GH2010.S10W.D10.I",
+   "s2DF60L.H0914M.GH2010.S10W.D10.I (1)",
+   "s2DF60L.H0914M.GH2010.S10W.D10.I.killed_early",
+   "s2HF20L.H0914M.GH2010.S10W.D10.I",
+   "s2HF40L.H0914M.GH2010.S10W.D10.I",
+   "s2HF60L.H0914M.GH2010.S10W.D10.I",
+   "s2HF60L.H0914M.GH2010.S10W.D10.I (1)",
+   "s2HF60L.H0914M.GH2010.S10W.D10.I.killed_early",
+   "s2KE20L.H0914M.GH2010.S10W.D10.I",
+   "s2KE20L.H0914M.GH2010.S10W.D10.I (1)",
+   "s2KE20L.H0914M.GH2010.S10W.D10.I.killed_early",
+   "s2KE40L.H0914M.GH2010.S10W.D10.I",
+   "s2KE40L.H0914M.GH2010.S10W.D10.I (1)",
+   "s2KE40L.H0914M.GH2010.S10W.D10.I.killed_early",
+   "s2KE60L.H0914M.GH2010.S10W.D10.I",
+   "s2KE60L.H0914M.GH2010.S10W.D10.I (1)",
+   "s2KE60L.H0914M.GH2010.S10W.D10.I.killed_early",
+   "s2KF20L.H0914M.GH2010.S10W.D10.I",
+   "s2KF40L.H0914M.GH2010.S10W.D10.I",
+   "s2KF40L.H0914M.GH2010.S10W.D10.I (1)",
+   "s2KF40L.H0914M.GH2010.S10W.D10.I.killed_early",
+   "s2KF60L.H0914M.GH2010.S10W.D10.I",
+   "s2KF60L.H0914M.GH2010.S10W.D10.I (1)",
+   "s2KF60L.H0914M.GH2010.S10W.D10.I.killed_early",
+   "s2PF20L.H0914M.GH2010.S10W.D10.I",
+   "s2PF40L.H0914M.GH2010.S10W.D10.I",
+   "s2PF60L.H0914M.GH2010.S10W.D10.I",
+   "s3DF20L.H0914M.GH2010.S10W.D10.I",
+   "s3DF40L.H0914M.GH2010.S10W.D10.I",
+   "s3DF60L.H0914M.GH2010.S10W.D10.I",
+   "s3HF20L.H0914M.GH2010.S10W.D10.I",
+   "s3HF40L.H0914M.GH2010.S10W.D10.I",
+   "s3HF60L.H0914M.GH2010.S10W.D10.I",
+   "s3HF60L.H0914M.GH2010.S10W.D10.I.underconverged",
+   "s3KE20L.H0914M.GH2010.S10W.D10.I",
+   "s3KE40L.H0914M.GH2010.S10W.D10.I",
+   "s3KE60L.H0914M.GH2010.S10W.D10.I",
+   "s3KE60L.H0914M.GH2010.S10W.D10.I.killed_early",
+   "s3KE60L.H0914M.GH2010.S10W.D10.I.underconverged",
+   "s3KF20L.H0914M.GH2010.S10W.D10.I",
+   "s3KF40L.H0914M.GH2010.S10W.D10.I",
+   "s3KF40L.H0914M.GH2010.S10W.D10.I.underconverged",
+   "s3KF60L.H0914M.GH2010.S10W.D10.I",
+   "s3KF60L.H0914M.GH2010.S10W.D10.I.underconverged",
+   "s3PF20L.H0914M.GH2010.S10W.D10.I",
+   "s3PF40L.H0914M.GH2010.S10W.D10.I",
+   "s3PF60L.H0914M.GH2010.S10W.D10.I",
+   "s4DF20L.H0914M.GH2010.S10W.D10.I",
+   "s4DF40L.H0914M.GH2010.S10W.D10.I",
+   "s4DF60L.H0914M.GH2010.S10W.D10.I",
+   "s4HF20L.H0914M.GH2010.S10W.D10.I",
+   "s4HF40L.H0914M.GH2010.S10W.D10.I",
+   "s4HF60L.H0914M.GH2010.S10W.D10.I",
+   "s4KE20L.H0914M.GH2010.S10W.D10.I",
+   "s4KE40L.H0914M.GH2010.S10W.D10.I",
+   "s4KE60L.H0914M.GH2010.S10W.D10.I",
+   "s4KE60L.H0914M.GH2010.S10W.D10.I (1).killed_early",
+   "s4KE60L.H0914M.GH2010.S10W.D10.I.killed_early",
+   "s4KF20L.H0914M.GH2010.S10W.D10.I",
+   "s4KF40L.H0914M.GH2010.S10W.D10.I",
+   "s4KF60L.H0914M.GH2010.S10W.D10.I",
+   "s4PF20L.H0914M.GH2010.S10W.D10.I",
+   "s4PF40L.H0914M.GH2010.S10W.D10.I",
+   "s4PF60L.H0914M.GH2010.S10W.D10.I"
+  ]
+ },
+ "SIMULATIONS_STILL_NEEDED": {
+  "ANSWER": "NONE. No simulation must be run before the Hyfydy licence expires on 2026-08-27. The corpus is complete for every claim the paper makes. What is outstanding is ANALYSIS and DEPOSIT work on cells that already exist, and analysis does not consume the licence.",
+  "how_this_was_established": "every open registration and every threatened claim was traced to the cells it needs, and each of those cells was confirmed present on disk with its Gate-G status recomputed from the .par.sto.",
+  "candidates_considered_and_why_each_is_NOT_required": [
+   {
+    "rank": 1,
+    "candidate": "r409 one-dimensionality confirmation (PREREG_onedim_r409.md)",
+    "would_it_need_sconecmd": "NO",
+    "evidence": "section 4's confirmatory pool is 13 already-simulated families. Recounted from disk: 101 cells, 65 Gate-G. Section 7's UNINFORMATIVE floor is 20 Gate-G cells; the pool clears it by a factor of 3.",
+    "pool_census": {
+     "R289KV00625": {
+      "cells": 6,
+      "gate_G": 6
+     },
+     "R289KV0125": {
+      "cells": 6,
+      "gate_G": 6
+     },
+     "R291KV0035": {
+      "cells": 6,
+      "gate_G": 6
+     },
+     "R276WPF005": {
+      "cells": 6,
+      "gate_G": 5
+     },
+     "R276WPF010": {
+      "cells": 6,
+      "gate_G": 3
+     },
+     "R276WPF020": {
+      "cells": 6,
+      "gate_G": 0
+     },
+     "R285BF007": {
+      "cells": 6,
+      "gate_G": 3
+     },
+     "R285BF008": {
+      "cells": 6,
+      "gate_G": 2
+     },
+     "R287BF007": {
+      "cells": 3,
+      "gate_G": 3
+     },
+     "R287BF008": {
+      "cells": 2,
+      "gate_G": 0
+     },
+     "R291BF005": {
+      "cells": 16,
+      "gate_G": 16
+     },
+     "R291BF007": {
+      "cells": 16,
+      "gate_G": 9
+     },
+     "R291BF008": {
+      "cells": 16,
+      "gate_G": 6
+     }
+    },
+    "what_is_actually_needed": "one analysis script computing the nine terminal-swing predictors and knee-at-IC on those cells, plus a deposit. Estimated 1-2 h of analysis, 0 h of simulation."
+   },
+   {
+    "rank": 2,
+    "candidate": "r408 terminal-swing confirmation (PREREG_terminalswing_r408.md)",
+    "would_it_need_sconecmd": "NO",
+    "evidence": "section 4 names R393SPg070 (6 Gate-G), R393SPg100 (4 Gate-G) and the five non-R151W dorsiflexor families (6 Gate-G each). All present. The probe also appears to have been RUN already -- its P3 failure is quoted in PREREG_onedim_r409.md section 1.",
+    "what_is_actually_needed": "a deposit recording the P1-P5 verdicts, including the P3 failure. Estimated 1 h of analysis, 0 h of simulation."
+   },
+   {
+    "rank": 3,
+    "candidate": "top up R396SPg120 (seeds s103, s104 absent) so the KV 0.120 rung reaches 4+ Gate-G cells and stops being UNINFORMATIVE",
+    "would_it_need_sconecmd": "YES, roughly 2 cells x 5-10 min = 10-20 min",
+    "why_it_is_NOT_required": "it cannot improve any claim. The KV 0.120 Gate-G knee values are -12.514 / -13.028 / -14.565, whose edge gap against WEAK x0.80 is about 6.24 deg -- SMALLER than the KV 0.110 headline of 6.3919. Adding cells to an arm can only move its edge toward the comparator, so this can lower the headline and cannot raise it. It also could not close the 1.2281 deg shortfall against the 7.62 deg knee MDC.",
+    "recommendation": "DO NOT RUN. Report the 0.120 rung as UNINFORMATIVE, which is what FINE_GAP_r397.json already does."
+   },
+   {
+    "rank": 4,
+    "candidate": "top up R396SPg110 (seeds s103, s104 absent) so the headline arm has 6 cells rather than 4",
+    "would_it_need_sconecmd": "YES, roughly 2 cells x 5-10 min",
+    "why_it_is_NOT_required": "the headline gap is an EDGE gap. Two more cells can only extend the spastic arm's upper edge toward the weakness arm, shrinking 6.3919. Running it after seeing the result, and keeping it only if it helps, is exactly the practice the corpus's registration discipline exists to prevent.",
+    "recommendation": "DO NOT RUN. If a referee asks for n=6, that is a post-publication question, and the honest answer is that the chain broke at s103/s104."
+   },
+   {
+    "rank": 5,
+    "candidate": "Gate-G soleus-weakness cells to answer the threat raised by FROZEN_WEAKNESS_r411 (SOL x0.50 reproduces the spastic sign)",
+    "would_it_need_sconecmd": "NO",
+    "why_it_is_NOT_required": "the re-optimised answer already exists in the corpus. The plantarflexor-weakness families R276WPF005/010/020 and R285BF007/008 supply 13 Gate-G cells with knee-at-HS in [-9.154, -6.485], which does not reach the spastic range. The r411 result is a statement about FROZEN controllers and belongs in limitations.",
+    "recommendation": "DO NOT RUN. Write the limitation."
+   },
+   {
+    "rank": 6,
+    "candidate": "re-run r410 / r411 with a longer horizon so the lesioned arms reach Gate G",
+    "would_it_need_sconecmd": "YES, and it would not work",
+    "why_it_is_NOT_required": "these arms are frozen-controller replays. They fall at 3-5 s because the unmodified control gains cannot stabilise the lesioned plant. A longer horizon does not change the dynamics; the model is already integrating to failure, not being cut short.",
+    "recommendation": "DO NOT RUN."
+   }
+  ],
+  "WHAT_MUST_BE_DONE_BEFORE_WRITE_UP_and_none_of_it_needs_the_licence": [
+   "1. Resolve claim (b): produce the script and deposit behind +1.8857 / -1.7617, or withdraw both numbers. Highest priority -- they are currently uncontained and the right-knee half is contradicted by KNEE_MDC_BATCHNULL_r399.json.",
+   "2. Deposit the r408 outcome, including the P3 failure that is currently recorded only as prose inside PREREG_onedim_r409.md.",
+   "3. Execute and deposit r409 (analysis only, 65 Gate-G cells waiting).",
+   "4. Stop quoting FINE_GAP_r397.json's MDC_floor_deg = 3.8 and KV_for_MDC = 0.1430; r399 has already retired that number.",
+   "5. Correct the framing of claim (i): the frozen NONE arm is a 20 s Gate-G walk, not a 3.4-4.5 s sub-Gate-G one.",
+   "6. Retire or re-evidence the 'soleus-only produced 70%' kill of mechanism hypothesis 2, which rests on an n=3 arm the governing registration marks UNINFORMATIVE.",
+   "7. Carry the r399 PLAIN_VERDICT with the headline everywhere: the 6.3919 deg gap does not clear a properly sourced knee MDC."
+  ]
+ }
+}

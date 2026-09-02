@@ -1,0 +1,75 @@
+{
+  "round": "STATIONARITY_r434",
+  "no_simulation_run": true,
+  "why": "SCREEN_ALL_r433 ranked medio-lateral excursion far above every sagittal channel (femur_l.pos_z range 64.6x its floor, control 1.7 cm vs spastic 16.8 cm). Before reporting that as circumduction, the per-cycle series was inspected. It grows monotonically inside the measurement window -- 0.094 to 0.377 m over six cycles in R396SPg110_s101 -- so it is the model losing lateral balance, not a steady gait feature.",
+  "THE_GAP_THIS_EXPOSES": "Gate G requires t_end >= 9.73 s and >= 5 cycles. It does NOT require the gait to be STATIONARY inside the window. The r417 duration control compares cells by t_end and cannot see a divergence that happens identically WITHIN every cell. This corpus had no test for within-window drift until now.",
+  "per_cycle_drift_by_channel": {
+    "knee_angle_l": {
+      "label": "膝@著地",
+      "per_cycle_drift": {
+        "CONTROL": -0.3031128172877173,
+        "WEAK": 0.05627865665005494,
+        "SPAS050": -0.3926669391778008,
+        "SPAS110": 0.2957689989578901
+      },
+      "spastic_over_control": 0.9757719967253765
+    },
+    "femur_l.pos.z": {
+      "label": "股骨側向擺幅",
+      "per_cycle_drift": {
+        "CONTROL": 0.0005068666666666659,
+        "WEAK": 0.0019163965238095228,
+        "SPAS050": 0.030339861428571414,
+        "SPAS110": 0.051470242857142835
+      },
+      "spastic_over_control": 101.54592172262839
+    },
+    "knee_l.torque": {
+      "label": "膝伸展力矩(終末擺盪)",
+      "per_cycle_drift": {
+        "CONTROL": -0.07794535526315864,
+        "WEAK": -0.022155662698413223,
+        "SPAS050": -0.07700523282470967,
+        "SPAS110": -0.07776881731289001
+      },
+      "spastic_over_control": 0.9977351062206002
+    },
+    "gastroc_l.activation": {
+      "label": "腓腸肌活化(終末擺盪)",
+      "per_cycle_drift": {
+        "CONTROL": 0.0018004731189083772,
+        "WEAK": 0.0011594007804232797,
+        "SPAS050": 0.00012021839660425091,
+        "SPAS110": -0.004772381961152881
+      },
+      "spastic_over_control": 2.6506266108801255
+    },
+    "soleus_l.activation": {
+      "label": "比目魚肌活化(終末擺盪)",
+      "per_cycle_drift": {
+        "CONTROL": -0.0012326985136452287,
+        "WEAK": -0.00043858808201058323,
+        "SPAS050": -0.00011623708703949628,
+        "SPAS110": 0.0033100842393975123
+      },
+      "spastic_over_control": 2.6852342261768607
+    },
+    "ankle_angle_l": {
+      "label": "踝角(站立期)",
+      "per_cycle_drift": {
+        "CONTROL": -0.07050987713289636,
+        "WEAK": -0.029746666751861606,
+        "SPAS050": -0.02046976936504586,
+        "SPAS110": -0.07406562053695875
+      },
+      "spastic_over_control": 1.0504290114895614
+    }
+  },
+  "READING": {
+    "knee_at_heel_strike": "STATIONARY. Spastic drift +0.296 deg/cycle against control -0.303 -- the same magnitude, opposite sign. The raw series oscillates about -13.5 deg rather than trending. First-half minus second-half is +1.67 deg in the spastic arm and -1.15 deg in control. THE 6.3919 DEG HEADLINE IS NOT A MEAN OVER A DIVERGENCE.",
+    "lateral_excursion": "DIVERGENT. Spastic drift +0.051 m/cycle against control +0.0005 -- a hundredfold difference, monotone in every spastic cell, 6/6 in every rung. The 16.8 cm arm mean is an average over a fall in progress and IS NOT A GAIT MEASURE. It must not be reported as circumduction or as compensation."
+  },
+  "consequence_for_the_screen": "the 711 channels that SCREEN_ALL_r433 found above 5x their floor and dose-monotone have NOT been checked for stationarity. The top of that ranking is dominated by z-axis range channels, which are all facets of the same divergence. No hit from that screen may be pursued until it passes this check.",
+  "NEW_STANDING_RULE": "any endpoint reported as a mean over the window must also report its per-cycle drift against the control arm's drift on the same channel. A drift ratio above roughly 10x means the quantity is not stationary and the mean is not a gait measure.",
+  "UNREGISTERED_OR_SUPERSEDED_LABEL_r438": "EXPLORATORY. No registration. A diagnostic that invalidated an exploratory screen result; it does not test a registered hypothesis."
+}

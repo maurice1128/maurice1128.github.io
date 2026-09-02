@@ -1,0 +1,23 @@
+{
+ "cell": 10,
+ "arm": "SOL",
+ "seed": 105,
+ "kv": 0.11,
+ "prefix": "R402SOL_s105",
+ "spastic_targets": [
+  "soleus"
+ ],
+ "deleted_reflex": "gastroc",
+ "wall_clock_s": 42.3992223739624,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R402SOL_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105 (1)"
+ ],
+ "status": "OK",
+ "duplicate_result_dir": true,
+ "dir": "R402SOL_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+ "sto": "0089_96.453_96.236.par.sto",
+ "t_end_s": 2.05,
+ "n_cycles_in_window": 0,
+ "gate_G": false
+}

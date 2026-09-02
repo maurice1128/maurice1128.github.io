@@ -1,0 +1,929 @@
+{
+ "round": 298,
+ "prereg_r289": "863f1376dc9b2ebb2e553c1a75a8047a2d14b29d9280e2a5171bb3ed3b0a59e0",
+ "prereg_r292": "99fdf75a3ac72fa0e55b4747b78d2f42962db5808c980549463583c431a87397",
+ "status": "computed only after the r289 arm stopped; its launcher read t_end only",
+ "n_completing_spastic": 12,
+ "n_completing_DF": 36,
+ "n_completing_PF": 7,
+ "r289_REGISTERED_POOLED": {
+  "n_spastic": 12,
+  "n_weakness": 43,
+  "spastic_range": [
+   -0.7476732533468251,
+   -0.2782317430622925
+  ],
+  "weakness_range": [
+   -1.2186055998143033,
+   2.203603319510414
+  ],
+  "disjoint": false,
+  "RUNG": "4 OVERLAP",
+  "gap": null
+ },
+ "r292_READING_C_clinical_pair": {
+  "n_spastic": 12,
+  "n_weakness": 36,
+  "spastic_range": [
+   -0.7476732533468251,
+   -0.2782317430622925
+  ],
+  "weakness_range": [
+   -1.2186055998143033,
+   -0.0972343755804772
+  ],
+  "disjoint": false,
+  "RUNG": "4 OVERLAP",
+  "gap": null
+ },
+ "r292_READING_P_anatomy_matched": {
+  "n_spastic": 12,
+  "n_weakness": 7,
+  "spastic_range": [
+   -0.7476732533468251,
+   -0.2782317430622925
+  ],
+  "weakness_range": [
+   0.5835219909574505,
+   2.203603319510414
+  ],
+  "disjoint": true,
+  "gap": 0.861753734019743,
+  "RUNG": "2 DISJOINT-AS-PREDICTED",
+  "permutation": {
+   "assignments": 50388,
+   "count_ge_observed": 1,
+   "floor": 1.9845995078193222e-05,
+   "note": "reported as a floor, never as a p-value"
+  }
+ },
+ "hip_secondary": {
+  "note": "deposited, NOT the endpoint, not promoted",
+  "spastic_range": [
+   -0.01803671139072094,
+   0.7535197146883519
+  ],
+  "DF_range": [
+   -0.1971203998368125,
+   1.1824473792791892
+  ],
+  "PF_range": [
+   -1.1842751146456578,
+   0.5158453621121879
+  ],
+  "reading_C_hip": {
+   "n_spastic": 12,
+   "n_weakness": 36,
+   "spastic_range": [
+    -0.01803671139072094,
+    0.7535197146883519
+   ],
+   "weakness_range": [
+    -0.1971203998368125,
+    1.1824473792791892
+   ],
+   "disjoint": false,
+   "RUNG": "4 OVERLAP",
+   "gap": null
+  },
+  "completer_band_r279": [
+   -0.8443,
+   1.1824
+  ],
+  "faller_band_r279": [
+   -4.4908,
+   -1.2099
+  ],
+  "reading_P_hip": {
+   "n_spastic": 12,
+   "n_weak": 7,
+   "spastic_range": [
+    -0.01803671139072094,
+    0.7535197146883519
+   ],
+   "weak_range": [
+    -1.1842751146456578,
+    0.5158453621121879
+   ],
+   "disjoint": false,
+   "RUNG": 4,
+   "VERDICT": "OVERLAP",
+   "source_r308": "Copied from VERIFY_R298.json, where it was already computed. PREREG_clinical_r292.md sec4 requires hip as secondary for BOTH readings; this file carried reading_C_hip only."
+  }
+ },
+ "cells": {
+  "spastic": [
+   {
+    "tag": "R289KV0125_s101",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.7476732533468251,
+    "hip_flexion_LmR": 0.5963917689516691
+   },
+   {
+    "tag": "R289KV0125_s102",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.5229488928562205,
+    "hip_flexion_LmR": 0.3057990344172197
+   },
+   {
+    "tag": "R289KV0125_s103",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.2782317430622925,
+    "hip_flexion_LmR": -0.01803671139072094
+   },
+   {
+    "tag": "R289KV0125_s104",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.4097438916942693,
+    "hip_flexion_LmR": 0.180561919557519
+   },
+   {
+    "tag": "R289KV0125_s105",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.39937220968680265,
+    "hip_flexion_LmR": 0.09299105014972042
+   },
+   {
+    "tag": "R289KV0125_s106",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.5691797114297259,
+    "hip_flexion_LmR": 0.39098639939727775
+   },
+   {
+    "tag": "R289KV00625_s101",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.7151601903043456,
+    "hip_flexion_LmR": 0.702331665271366
+   },
+   {
+    "tag": "R289KV00625_s102",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.7252075781997647,
+    "hip_flexion_LmR": 0.7535197146883519
+   },
+   {
+    "tag": "R289KV00625_s103",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.4331068187485201,
+    "hip_flexion_LmR": 0.3575600416293483
+   },
+   {
+    "tag": "R289KV00625_s104",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.6262783934612912,
+    "hip_flexion_LmR": 0.5381448794986667
+   },
+   {
+    "tag": "R289KV00625_s105",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.46903241841882704,
+    "hip_flexion_LmR": 0.4759904178828833
+   },
+   {
+    "tag": "R289KV00625_s106",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.36474607829587313,
+    "hip_flexion_LmR": 0.31809470870072687
+   }
+  ],
+  "DF": [
+   {
+    "tag": "R151W_s101",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.9665717789765722,
+    "hip_flexion_LmR": 0.689314064165977
+   },
+   {
+    "tag": "R151W_s102",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.9090214152165217,
+    "hip_flexion_LmR": 0.4722318147468201
+   },
+   {
+    "tag": "R151W_s103",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.44700639288653576,
+    "hip_flexion_LmR": 0.06922285094839253
+   },
+   {
+    "tag": "R151W_s104",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.5212101569339325,
+    "hip_flexion_LmR": 0.26242421946650296
+   },
+   {
+    "tag": "R151W_s105",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.5604052447691572,
+    "hip_flexion_LmR": 0.16954776087578693
+   },
+   {
+    "tag": "R151W_s106",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.5334810030463188,
+    "hip_flexion_LmR": 0.021978661021215373
+   },
+   {
+    "tag": "R174W870_s101",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.7378527567382989,
+    "hip_flexion_LmR": 0.4960324815565613
+   },
+   {
+    "tag": "R174W870_s102",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.0972343755804772,
+    "hip_flexion_LmR": -0.1971203998368125
+   },
+   {
+    "tag": "R174W870_s103",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.912985328229162,
+    "hip_flexion_LmR": 0.6268731236526435
+   },
+   {
+    "tag": "R174W870_s104",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.3671651061069028,
+    "hip_flexion_LmR": 0.056310292105457904
+   },
+   {
+    "tag": "R174W870_s105",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.9187034470245763,
+    "hip_flexion_LmR": 0.7553531796327704
+   },
+   {
+    "tag": "R174W870_s106",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.7425647616454611,
+    "hip_flexion_LmR": 0.41877485246111945
+   },
+   {
+    "tag": "R174W892_s101",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.8007360206694898,
+    "hip_flexion_LmR": 0.5818844775789671
+   },
+   {
+    "tag": "R174W892_s102",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -1.0017296152013841,
+    "hip_flexion_LmR": 0.6923736587920004
+   },
+   {
+    "tag": "R174W892_s103",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.5657614452239841,
+    "hip_flexion_LmR": 0.38415674247931975
+   },
+   {
+    "tag": "R174W892_s104",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.6139437580477107,
+    "hip_flexion_LmR": 0.36151345041574245
+   },
+   {
+    "tag": "R174W892_s105",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.768381093978455,
+    "hip_flexion_LmR": 0.5069759754435523
+   },
+   {
+    "tag": "R174W892_s106",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.9454674515507122,
+    "hip_flexion_LmR": 0.7927787828107213
+   },
+   {
+    "tag": "R169W090_s101",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.7577699156126201,
+    "hip_flexion_LmR": 0.5595620418806604
+   },
+   {
+    "tag": "R169W090_s102",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.4829312286130971,
+    "hip_flexion_LmR": 0.3043666399293983
+   },
+   {
+    "tag": "R169W090_s103",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -1.1240263106564612,
+    "hip_flexion_LmR": 0.9725958572345732
+   },
+   {
+    "tag": "R169W090_s104",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.8408694223872288,
+    "hip_flexion_LmR": 0.6628090365632389
+   },
+   {
+    "tag": "R169W090_s105",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.6181229122053864,
+    "hip_flexion_LmR": 0.3335989466369682
+   },
+   {
+    "tag": "R169W090_s106",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.5375237932487451,
+    "hip_flexion_LmR": 0.24088291622889813
+   },
+   {
+    "tag": "R174W915_s101",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.22316018570991503,
+    "hip_flexion_LmR": 0.026126875457961773
+   },
+   {
+    "tag": "R174W915_s102",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.7863341535310724,
+    "hip_flexion_LmR": 0.617648503151031
+   },
+   {
+    "tag": "R174W915_s103",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.34199163242005426,
+    "hip_flexion_LmR": 0.20095921706418807
+   },
+   {
+    "tag": "R174W915_s104",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.810922064351324,
+    "hip_flexion_LmR": 0.5246574530012893
+   },
+   {
+    "tag": "R174W915_s105",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.32699388917470174,
+    "hip_flexion_LmR": 0.18325482119464453
+   },
+   {
+    "tag": "R174W915_s106",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -1.142025206832706,
+    "hip_flexion_LmR": 1.1049376487539035
+   },
+   {
+    "tag": "R169W095_s101",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.8117574368166274,
+    "hip_flexion_LmR": 0.814493883246179
+   },
+   {
+    "tag": "R169W095_s102",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.9268096539100839,
+    "hip_flexion_LmR": 0.8972633663307761
+   },
+   {
+    "tag": "R169W095_s103",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -1.2186055998143033,
+    "hip_flexion_LmR": 1.1824473792791892
+   },
+   {
+    "tag": "R169W095_s104",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.8537002392513813,
+    "hip_flexion_LmR": 0.647579818368655
+   },
+   {
+    "tag": "R169W095_s105",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.30315655306608136,
+    "hip_flexion_LmR": 0.10266257773153598
+   },
+   {
+    "tag": "R169W095_s106",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": -0.7728696453455086,
+    "hip_flexion_LmR": 0.7096196884254269
+   }
+  ],
+  "PF": [
+   {
+    "tag": "R276WPF005_s101",
+    "t_end_s": 16.21,
+    "n_cycles": 12,
+    "completes": false,
+    "measured": true,
+    "knee_angle_LmR": 2.734690886860527,
+    "hip_flexion_LmR": -2.114833058451488
+   },
+   {
+    "tag": "R276WPF005_s102",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": 1.0989340059905857,
+    "hip_flexion_LmR": -0.15361953417116325
+   },
+   {
+    "tag": "R276WPF005_s103",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": 1.4863579448036646,
+    "hip_flexion_LmR": -0.5897798359958486
+   },
+   {
+    "tag": "R276WPF005_s104",
+    "t_end_s": 7.46,
+    "n_cycles": 5,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF005_s105",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": 0.5835219909574505,
+    "hip_flexion_LmR": 0.5158453621121879
+   },
+   {
+    "tag": "R276WPF005_s106",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": 1.6896135767107268,
+    "hip_flexion_LmR": -0.8442533111252715
+   },
+   {
+    "tag": "R276WPF010_s101",
+    "t_end_s": 12.35,
+    "n_cycles": 9,
+    "completes": false,
+    "measured": true,
+    "knee_angle_LmR": 3.717530656514235,
+    "hip_flexion_LmR": -4.49075725456612
+   },
+   {
+    "tag": "R276WPF010_s102",
+    "t_end_s": 10.79,
+    "n_cycles": 8,
+    "completes": false,
+    "measured": true,
+    "knee_angle_LmR": 4.74012185602227,
+    "hip_flexion_LmR": -3.696733243480658
+   },
+   {
+    "tag": "R276WPF010_s103",
+    "t_end_s": 8.48,
+    "n_cycles": 6,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF010_s104",
+    "t_end_s": 13.31,
+    "n_cycles": 10,
+    "completes": false,
+    "measured": true,
+    "knee_angle_LmR": 4.234821591143557,
+    "hip_flexion_LmR": -3.239262731395719
+   },
+   {
+    "tag": "R276WPF010_s105",
+    "t_end_s": 7.53,
+    "n_cycles": 5,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF010_s106",
+    "t_end_s": 8.48,
+    "n_cycles": 6,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF020_s101",
+    "t_end_s": 7.59,
+    "n_cycles": 6,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF020_s102",
+    "t_end_s": 6.84,
+    "n_cycles": 4,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF020_s103",
+    "t_end_s": 6.4,
+    "n_cycles": 4,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF020_s104",
+    "t_end_s": 6.05,
+    "n_cycles": 4,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF020_s105",
+    "t_end_s": 6.54,
+    "n_cycles": 5,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF020_s106",
+    "t_end_s": 6.53,
+    "n_cycles": 4,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R285BF007_s101",
+    "t_end_s": 19.74,
+    "n_cycles": 15,
+    "completes": false,
+    "measured": true,
+    "knee_angle_LmR": 1.922424281549958,
+    "hip_flexion_LmR": -0.6528281117720667
+   },
+   {
+    "tag": "R285BF007_s102",
+    "t_end_s": 7.93,
+    "n_cycles": 5,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R285BF007_s103",
+    "t_end_s": 7.16,
+    "n_cycles": 4,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R285BF007_s104",
+    "t_end_s": 7.36,
+    "n_cycles": 5,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R285BF007_s105",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": 2.1198559884554555,
+    "hip_flexion_LmR": -1.0898612193046802
+   },
+   {
+    "tag": "R285BF007_s106",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": 1.1534156077999143,
+    "hip_flexion_LmR": 0.24921754228873283
+   },
+   {
+    "tag": "R285BF008_s101",
+    "t_end_s": 11.63,
+    "n_cycles": 8,
+    "completes": false,
+    "measured": true,
+    "knee_angle_LmR": 3.7471485638179587,
+    "hip_flexion_LmR": -3.1093617400836564
+   },
+   {
+    "tag": "R285BF008_s102",
+    "t_end_s": 6.89,
+    "n_cycles": 4,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R285BF008_s103",
+    "t_end_s": 7.57,
+    "n_cycles": 5,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R285BF008_s104",
+    "t_end_s": 7.07,
+    "n_cycles": 5,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R285BF008_s105",
+    "t_end_s": 15.14,
+    "n_cycles": 11,
+    "completes": false,
+    "measured": true,
+    "knee_angle_LmR": 2.2638164091303707,
+    "hip_flexion_LmR": -0.8792323845179979
+   },
+   {
+    "tag": "R285BF008_s106",
+    "t_end_s": 7.8,
+    "n_cycles": 5,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R287BF007_s107",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "completes": true,
+    "measured": true,
+    "knee_angle_LmR": 2.203603319510414,
+    "hip_flexion_LmR": -1.1842751146456578
+   },
+   {
+    "tag": "R287BF007_s108",
+    "t_end_s": 9.93,
+    "n_cycles": 7,
+    "completes": false,
+    "measured": true,
+    "knee_angle_LmR": 3.4638755561022236,
+    "hip_flexion_LmR": -2.843513142861589
+   },
+   {
+    "tag": "R287BF007_s109",
+    "t_end_s": 16.17,
+    "n_cycles": 12,
+    "completes": false,
+    "measured": true,
+    "knee_angle_LmR": 2.690958355259731,
+    "hip_flexion_LmR": -1.6087126999819787
+   },
+   {
+    "tag": "R287BF008_s107",
+    "t_end_s": 7.17,
+    "n_cycles": 5,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R287BF008_s108",
+    "t_end_s": 8.55,
+    "n_cycles": 6,
+    "completes": false,
+    "measured": false,
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   }
+  ]
+ },
+ "window_s": [
+  1.0,
+  9.73
+ ],
+ "window_note": "hipgap_r220.py's convention: cycles wholly inside [1.00, 9.73] s, drop the last, per-cycle mean ROM(l) - ROM(r) in degrees. Deposited as a field r308; previously stated only in prose.",
+ "REGISTRATION_SHORTFALL_r308": {
+  "D18_ladder_not_reported_per_KV": {
+   "registration": "PREREG_matched20_r289.md sec8 requires the ladder evaluated PER KV, and sec3 requires UNINFORMATIVE if fewer than three cells complete at a GIVEN KV.",
+   "what_this_file_reports": "A pooled result only, n_spastic = 12.",
+   "status": "SATISFIED as of r308. PER_KV_LADDER_r308 in THIS FILE deposits the ladder for KV 0.0125 and KV 0.00625 separately (both rung 4 OVERLAP against pooled weakness) and evaluates sec3's fewer-than-three test, which had never been evaluated. r311 policy: the live field carries the TRUE statement; the superseded wording is preserved below it and is not the claim.",
+   "status_ORIGINAL_WRONG": "NOT SATISFIED. No rung is deposited for KV 0.0125 or KV 0.00625 separately, so the per-KV UNINFORMATIVE test registered in sec3 was never evaluated. Pooling across the two KVs is not what sec8 registers."
+  },
+  "D19_hip_secondary_missing_for_one_reading": {
+   "registration": "PREREG_clinical_r292.md sec4 registers hip as secondary for BOTH readings.",
+   "what_this_file_reports": "hip_secondary contains reading_C_hip only.",
+   "status": "SATISFIED as of r308. hip_secondary in THIS FILE now carries reading_P_hip (rung 4 OVERLAP) alongside reading_C_hip, so both readings the registration requires are present here. r311 policy: the live field carries the TRUE statement; the superseded wording is preserved below it and is not the claim.",
+   "status_ORIGINAL_WRONG": "PARTIALLY SATISFIED HERE. The anatomy-matched hip secondary IS deposited, but in VERIFY_R298.json (RUNG 4 OVERLAP), not in this file. A reader holding only this deposit sees one of the two readings the registration requires."
+  }
+ },
+ "PER_KV_LADDER_r308": {
+  "why": "PREREG_matched20_r289.md sec8 requires the ladder PER KV; only a pooled rung existed.",
+  "source": "Computed by the round-308 blind audit; deposited verbatim, not re-derived.",
+  "registered_pooled_weakness_range": [
+   -1.2186055998143033,
+   2.203603319510414
+  ],
+  "KV_0.0125": {
+   "n_cells": 6,
+   "all_completing": true,
+   "knee_range": [
+    -0.7476732533468251,
+    -0.2782317430622925
+   ],
+   "vs_pooled_weakness": {
+    "RUNG": "4 OVERLAP"
+   },
+   "vs_reading_P_7_PF_completers": {
+    "disjoint": true,
+    "gap_deg": 0.861753734019743
+   }
+  },
+  "KV_0.00625": {
+   "n_cells": 6,
+   "all_completing": true,
+   "knee_range": [
+    -0.7252075781997647,
+    -0.36474607829587313
+   ],
+   "vs_pooled_weakness": {
+    "RUNG": "4 OVERLAP"
+   },
+   "vs_reading_P_7_PF_completers": {
+    "disjoint": true,
+    "gap_deg": 0.9482680692533236
+   }
+  },
+  "reading_P_PF_completer_min": 0.5835219909574505,
+  "sec3_uninformative_test": "Both KVs have six completing cells, so neither triggers sec3's fewer-than-three UNINFORMATIVE branch. That test is now actually evaluated; previously it never was.",
+  "no_conclusion_changes": "Both per-KV rungs against pooled weakness are 4 OVERLAP, as the pooled result was."
+ }
+}

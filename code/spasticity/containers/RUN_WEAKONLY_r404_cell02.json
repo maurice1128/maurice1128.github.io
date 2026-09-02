@@ -1,0 +1,60 @@
+{
+ "cell": 2,
+ "arm": "WKHAM060",
+ "rung": "060",
+ "rung_index": 1,
+ "scale": 0.6,
+ "seed": 103,
+ "lesion_muscle": "hamstrings_l",
+ "fmax_target": 1556.3999999999999,
+ "prefix": "R404WKHAM060_s103",
+ "parent_prefix": "R151C_s103",
+ "parent_is_root": true,
+ "wall_clock_s": 56.13921308517456,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R404WKHAM060_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103 (1)"
+ ],
+ "prepare": {
+  "arm": "WKHAM060",
+  "rung": "060",
+  "scale": 0.6,
+  "seed": 103,
+  "prefix": "R404WKHAM060_s103",
+  "parent_prefix": "R151C_s103",
+  "parent_is_root": true,
+  "lesion_muscle": "hamstrings_l",
+  "fmax_target": 1556.3999999999999,
+  "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\weakonly_r404\\R404WKHAM060_s103",
+  "parent": {
+   "prefix": "R151C_s103",
+   "result_dir": "R151C_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "par": "0028_1.032_0.991.par",
+   "par_sha256": "a80cdb7a2027f4082eef521934596263b1ec487b643cd352ff9b6e08bc9f0441",
+   "generation": 28,
+   "status": "OK",
+   "sto": "0028_1.032_0.991.par.sto",
+   "t_end_s": 20.0,
+   "n_cycles_in_window": 5,
+   "gate_G": true
+  },
+  "staged_warm_as": "WARM_R151C_s103_g0028.par",
+  "init_line_readback": "init { file = \"par/WARM_R151C_s103_g0028.par\" }",
+  "fmax_readback": {
+   "hamstrings_l": 1556.4,
+   "hamstrings_r": 2594.0,
+   "tib_ant_l": 1759.0,
+   "soleus_l": 3549.0,
+   "gastroc_l": 2241.0
+  },
+  "config_sha256": "dcdbbc34875e6a6cf11bdfb3e29d2d003b64c7de9faf08fbb966968ea24a784b",
+  "status": "PREPARED"
+ },
+ "status": "OK",
+ "duplicate_result_dir": true,
+ "dir": "R404WKHAM060_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+ "sto": "0077_85.284_65.492.par.sto",
+ "t_end_s": 7.96,
+ "n_cycles_in_window": 4,
+ "gate_G": false
+}

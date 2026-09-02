@@ -1,0 +1,68 @@
+{
+ "prereg_sha256": "52459560d75e1be97ee40f82dbb64e8e382b12201c03522170c983fd2de21845",
+ "window": [
+  1.0,
+  11.84
+ ],
+ "survival": {
+  "A0_baseline": {
+   "state": "PASS",
+   "duration_s": 12.16,
+   "cycles": 9
+  },
+  "A1_spastic_kv0.0125": {
+   "state": "PASS",
+   "duration_s": 11.84,
+   "cycles": 9
+  },
+  "A2_weak_par20": {
+   "state": "FAIL",
+   "duration_s": 6.93,
+   "cycles": 5
+  },
+  "A3_weak_par40": {
+   "state": "FAIL",
+   "duration_s": 4.6,
+   "cycles": 3
+  }
+ },
+ "endpoints": {
+  "A0_baseline": {
+   "ankle_angle_l": 30.962819321319586,
+   "ankle_angle_r": 31.36780226114077,
+   "hip_adduction_l": 12.853692613385821,
+   "hip_adduction_r": 11.876507364212248,
+   "hip_rotation_l": 14.20823425081941,
+   "hip_rotation_r": 14.140455144379937,
+   "knee_angle_l": 62.06111369478672,
+   "knee_angle_r": 62.25537176118128,
+   "hip_flexion_l": 55.8520568311344,
+   "hip_flexion_r": 55.36499359460504,
+   "pelvis_list": 11.058838476269916,
+   "pelvis_rotation": 27.29759193564499
+  },
+  "A1_spastic_kv0.0125": {
+   "ankle_angle_l": 29.819490226247385,
+   "ankle_angle_r": 29.983331600320728,
+   "hip_adduction_l": 12.255165348880581,
+   "hip_adduction_r": 13.590982889271524,
+   "hip_rotation_l": 14.526455337639524,
+   "hip_rotation_r": 14.53655011732971,
+   "knee_angle_l": 62.131264191689134,
+   "knee_angle_r": 62.15011122910438,
+   "hip_flexion_l": 55.50802841560377,
+   "hip_flexion_r": 53.83197380326369,
+   "pelvis_list": 12.15098934405876,
+   "pelvis_rotation": 24.89175852411338
+  }
+ },
+ "prediction_P_laterality": {
+  "A1_spastic_kv0.0125": {
+   "dL": -1.1433290950722004,
+   "dR": -1.3844706608200426,
+   "ratio": 1.2109117722860139,
+   "state": "BILATERAL"
+  }
+ },
+ "separation": {}
+}

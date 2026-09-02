@@ -1,0 +1,33 @@
+{
+ "cell": 49,
+ "prefix": "R390ADAPTWg040_s102",
+ "lesion": "DFWEAK",
+ "gtag": "040",
+ "max_generations": 40,
+ "hfd_scale": 0.8,
+ "seed": 102,
+ "wall_clock_s": 63.947749614715576,
+ "returncode": 0,
+ "new_result_dir_appeared": true,
+ "new_result_dirs": [
+  "R390ADAPTWg040_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102"
+ ],
+ "stdout_tail": "19:10:40 SCONE version 2.4.4.3333\n19:10:40 Successfully initialized OpenSim-3.3-2021-01-28\n19:10:40 Successfully initialized OpenSim-4.4\n19:10:40 Successfully initialized Hyfydy-1.12.6.1412\n19:10:40 Successfully initialized Hyfydy-1.12.6.1412-DBL\n",
+ "stderr_tail": "",
+ "status": "OK",
+ "result_dir": "R390ADAPTWg040_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+ "terminal_objective": 1.05123,
+ "objective_gen0": 42.4361,
+ "descent_final_10_gens": 0.008629999999999916,
+ "terminal_fitness_progress": 0.00104609,
+ "n_generations": 40,
+ "last_generation": 39,
+ "resolved_par": "0038_47.286_1.051.par",
+ "tie_break": "unique minimum",
+ "tied_files": [],
+ "par_by_generation": "0038_47.286_1.051.par",
+ "t_end_s": 20.0,
+ "replay_sto": "0038_47.286_1.051.par.sto",
+ "replay_wall_s": 4.171113967895508,
+ "total_wall_clock_s": 68.12748217582703
+}

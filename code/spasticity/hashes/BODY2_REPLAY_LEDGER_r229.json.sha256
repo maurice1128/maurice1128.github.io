@@ -1,0 +1,4 @@
+8a0291eda3519be02d6826982676dae9777a51b7682b97dc85bab59c82c6cff1  BODY2_REPLAY_LEDGER_r229.json
+# bytes  : 9749
+# written: 2026-08-17T05:47:49
+# scope  : baseline forward only: attests this file is unchanged since the timestamp below; attests nothing about its state before it (defect register #534, #539)

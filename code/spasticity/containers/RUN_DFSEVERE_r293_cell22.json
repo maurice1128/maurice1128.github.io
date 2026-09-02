@@ -1,0 +1,16 @@
+{
+ "cell": 22,
+ "prefix": "R293DFs000_s105",
+ "f": 0.0,
+ "scale": 0.0,
+ "seed": 105,
+ "wall_clock_s": 0.9287533760070801,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R293DFs000_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105"
+ ],
+ "stdout_tail": "23:07:12 SCONE version 2.4.4.3333\n23:07:12 Successfully initialized OpenSim-3.3-2021-01-28\n23:07:12 Successfully initialized OpenSim-4.4\n23:07:12 Successfully initialized Hyfydy-1.12.6.1412\n23:07:12 Successfully initialized Hyfydy-1.12.6.1412-DBL\n",
+ "stderr_tail": "",
+ "status": "OK",
+ "result_dir": "R293DFs000_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105"
+}

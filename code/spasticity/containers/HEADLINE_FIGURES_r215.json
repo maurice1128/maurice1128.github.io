@@ -1,0 +1,282 @@
+{
+ "label": "r215 -- containers for five prose-derived headline figures. Nothing new measured.",
+ "method": "dose_r174.py formula incl. excitation clamp; cycles_in() imported from analyse_ladder_r169.py, definitions-only exec",
+ "figures": {
+  "fig1_avoidance_vs_specified": {
+   "quantity": "achieved delivered dose MINUS the dose the lesion SPECIFIES, as a percentage of specified. NOT the same quantity as fig2.",
+   "operationalisation": "specified = KV*max(0,ce_vel_norm) evaluated on the CONTROL arm's kinematics (what the lesion would deliver to an unadapted gait); achieved = the same formula on the SPASTIC arm's own kinematics",
+   "cells": "R151C_s101..106 (specified), R151S_s101..106 (achieved) -- r151/r174 corpus",
+   "inputs": {
+    "specified_N": 13.626637473716952,
+    "specified_reproduced_from_cells_N": 13.626637473716952,
+    "achieved_N": 10.858508705651134,
+    "achieved_per_seed_N": {
+     "s101": 10.974042232638991,
+     "s102": 10.837028735224331,
+     "s103": 10.833901500807363,
+     "s104": 10.86291450404394,
+     "s105": 10.807878916229223,
+     "s106": 10.835286344962956
+    },
+    "specified_per_seed_N": {
+     "s101": 13.672994655060645,
+     "s102": 13.62249293622891,
+     "s103": 13.60653726311488,
+     "s104": 13.58188688513188,
+     "s105": 13.669118814084577,
+     "s106": 13.606794288680812
+    }
+   },
+   "arithmetic": "100 * (achieved - specified) / specified",
+   "result_pct": -20.314100036821134
+  },
+  "fig2_avoidance_vs_control_arm": {
+   "quantity": "spastic arm delivered dose MINUS the CONTROL arm's delivered dose, as a percentage of control. NOT the same quantity as fig1.",
+   "cells": "R203V* speed-study cells -- DISJOINT from fig1's r151/r174 cells",
+   "per_level": {
+    "cmd_0.80": {
+     "control_N": 13.632802871948869,
+     "spastic_N": 10.844582323790732,
+     "n_control": 6,
+     "n_spastic": 6,
+     "pct": -20.452291244489682
+    },
+    "cmd_1.05": {
+     "control_N": 13.640481558807606,
+     "spastic_N": 10.845071034363052,
+     "n_control": 6,
+     "n_spastic": 6,
+     "pct": -20.493488535524378
+    },
+    "cmd_1.30": {
+     "control_N": 14.676243907770314,
+     "spastic_N": 10.821489782194027,
+     "n_control": 6,
+     "n_spastic": 6,
+     "pct": -26.265263440704974
+    }
+   },
+   "arithmetic": "100 * (spastic_mean - control_mean) / control_mean, per commanded level",
+   "result_pct": -20.472889890007032,
+   "levels_used": [
+    "cmd_0.80",
+    "cmd_1.05"
+   ],
+   "excluded": "cmd_1.30 gives -26.27 % -- the CONTROL arm speeds up there, so the denominator moves and the level is not comparable"
+  },
+  "fig1_and_fig2_are_different_quantities": {
+   "statement": "fig1 is achieved-versus-SPECIFIED on the r151/r174 cells; fig2 is spastic-versus-CONTROL-ARM on the disjoint r203 cells. Two operationalisations, two cell sets, no shared data.",
+   "fig1_pct": -20.314100036821134,
+   "fig2_pct": -20.472889890007032,
+   "separation_points": 0.15878985318589756,
+   "why_it_matters": "RETRACTED r216. The former text read 'agreement from disjoint cells under different operationalisations is stronger than one measure repeated'. That is WITHDRAWN. The underlying quantities agree to 0.05-0.10 % (references) and 0.12-0.13 % (achieved), so the two operationalisations produce the same four numbers: this is the SAME CONTRAST REPLICATED ON A SECOND CORPUS, not triangulation from two directions. Replication guards against a corpus-specific artefact; it does not guard against a shared error in the dose computation, which both use.",
+   "retraction_note": "The header of RESULTS_3d_r214.md gives the deposit precedence over the prose. The retraction is therefore made HERE, not only in the prose."
+  },
+  "fig3_dose_line": {
+   "quantity": "delivered dose per unit gait speed at fixed KV = 0.050",
+   "inputs": {
+    "dose_N_at_baseline": 13.626637473716952,
+    "baseline_speed_mps": 1.0215011092796122,
+    "source": "SPEED_DOSE_r200.json"
+   },
+   "arithmetic": "slope = dose_N / speed_mps (a line through the origin: the velocity term scales with fibre velocity, which time-scaling makes proportional to speed)",
+   "result_N_per_mps": 13.339816618825596,
+   "confirmation": {
+    "note": "NOT summarised as a tolerance. The four per-arm errors and the span are deposited; the summary was the thing that lost information.",
+    "per_arm_level": {
+     "control_cmd_0.80": {
+      "achieved_speed_mps": 1.023187226111582,
+      "predicted_N": 13.649129963053344,
+      "observed_N": 13.632802871948869,
+      "pct_error": -0.1196200135002824
+     },
+     "weak_cmd_0.80": {
+      "achieved_speed_mps": 1.0306476075271043,
+      "predicted_N": 13.748650083042905,
+      "observed_N": 13.901092721874056,
+      "pct_error": 1.108782592548251
+     },
+     "control_cmd_1.05": {
+      "achieved_speed_mps": 1.0236971540432627,
+      "predicted_N": 13.655932308150781,
+      "observed_N": 13.640481558807606,
+      "pct_error": -0.11314313072534363
+     },
+     "weak_cmd_1.05": {
+      "achieved_speed_mps": 1.0325933360549873,
+      "predicted_N": 13.774605744794883,
+      "observed_N": 13.926236964862156,
+      "pct_error": 1.1008026137123452
+     },
+     "control_cmd_1.30": {
+      "achieved_speed_mps": 1.0984521286105076,
+      "predicted_N": 14.6531499602228,
+      "observed_N": 14.676243907770314,
+      "pct_error": 0.1576039801012345
+     },
+     "weak_cmd_1.30": {
+      "achieved_speed_mps": 1.0968283698281172,
+      "predicted_N": 14.631489315832503,
+      "observed_N": 14.73608147954347,
+      "pct_error": 0.7148429080133987
+     }
+    },
+    "span_confirmed": "a 0.50 m/s commanded change produced +0.075 m/s in control -- 15 % of intent. The line is confirmed over 15 % of the intended span and no further."
+   }
+  },
+  "fig4_speed_ceiling": {
+   "quantity": "highest gait speed reached from the registered warm start, at triple budget",
+   "cells": [
+    "R208D270_s101",
+    "R208D270_s102"
+   ],
+   "per_cell": {
+    "R208D270_s101": {
+     "gen_first": 0,
+     "speed_first": 1.0918050930460332,
+     "gen_last": 269,
+     "speed_last": 1.1289255952380954,
+     "gain_mps": 0.0371205021920622,
+     "n_points": 14
+    },
+    "R208D270_s102": {
+     "gen_first": 0,
+     "speed_first": 1.094312745098039,
+     "gen_last": 266,
+     "speed_last": 1.124818991097923,
+     "gain_mps": 0.03050624599988394,
+     "n_points": 16
+    }
+   },
+   "arithmetic": "mean of the final speed over the depth-probe cells",
+   "result_mps": 1.126872293168009,
+   "why_a_ceiling_not_a_shortfall": "270 further generations bought +0.037, +0.031 m/s -- monotone and still creeping, i.e. asymptotic rather than unconverged",
+   "precision_warning": "result_mps is the mean of TWO cells (n=2) whose values differ by ~0.004 m/s and which why_a_ceiling_not_a_shortfall records as still gaining at generation ~270. Quoting it to five significant figures overstates it; 1.13 m/s is what n=2 supports."
+  },
+  "fig5_provocation_over_usable_span": {
+   "quantity": "extra delivered dose obtainable by walking at the ceiling instead of baseline",
+   "parents": [
+    "fig3_dose_line",
+    "fig4_speed_ceiling"
+   ],
+   "inputs": {
+    "slope_N_per_mps": 13.339816618825596,
+    "baseline_speed_mps": 1.0215011092796122,
+    "ceiling_mps": 1.126872293168009,
+    "usable_span_mps": 0.10537118388839684,
+    "usable_span_pct": 10.315327407006654
+   },
+   "arithmetic": "provocation_N = slope * (ceiling - baseline)",
+   "result_N": 1.405632269979764,
+   "as_pct_of_baseline_dose": 10.315327407006656,
+   "comparison": "the controller removes 20.5 % of its own dose (fig2); speed can add 10.3 %",
+   "derived_channel_warning": {
+    "claim": "as_pct_of_baseline_dose is ALGEBRAICALLY IDENTICAL to inputs.usable_span_pct and carries no information beyond fig4 and the baseline.",
+    "why": "fig3 is declared a line through the origin, so delivered dose is proportional to speed. A percentage of baseline dose is therefore identically a percentage of baseline speed: slope*(ceiling-baseline) / (slope*baseline) = (ceiling-baseline)/baseline. The slope cancels.",
+    "never_quote_as": "These two must NEVER be quoted as agreeing measurements. They are one measurement written twice.",
+    "tail_difference": "10.315327407006656 vs 10.315327407006654 differ in the SEVENTEENTH significant digit. It is floating-point operation ordering, NOT a discrepancy, and must not be reported as one.",
+    "class": "This is the parallelism error one level up -- a derived channel sitting beside its parent where a reader takes the agreement as corroboration. MATCHED_RESULT_r174.md section 0 records the same class for gait channels; it recurred inside the deposit built to prevent it. Found by the coordinator recomputing the deposit rather than by the seat that wrote it."
+   },
+   "extrapolation_warning": {
+    "claim": "result_N = 1.4056 applies the fig3 slope out to a ceiling of 1.126872 m/s.",
+    "but": "fig3.confirmation.span_confirmed records that the line is confirmed over 15 % of the intended span and no further: a 0.50 m/s commanded change produced +0.075 m/s in control.",
+    "therefore": "1.4056 N is an EXTRAPOLATION past the last validated speed, not an interpolation within a confirmed range. It must not be quoted without that qualification."
+   }
+  }
+ },
+ "prose_vs_regenerated": {
+  "what_this_block_is": "A record of a SUPERSEDED DRAFT's numbers checked against the regenerated values. The 'quoted' fields are the OLD draft's figures. They are NOT what the shipping prose says.",
+  "ok_false_is_not_a_live_error": "ok:false marks a draft value that WAS WRONG AND WAS CORRECTED BEFORE SHIPPING. RESULTS_3d_r214.md carries the 'regenerated' values, not the 'quoted' ones: it says 1.4056 N and 10.32 %, not 1.47 and 11.0. A referee should read ok:false as 'caught and fixed', not as an outstanding discrepancy.",
+  "shipping_prose_carries": "the regenerated column, in every row",
+  "draft_checked": {
+   "fig1_pct": {
+    "quoted": -20.3,
+    "regenerated": -20.314100036821134,
+    "ok": true
+   },
+   "fig2_pct": {
+    "quoted": -20.5,
+    "regenerated": -20.472889890007032,
+    "ok": true
+   },
+   "fig3_N_per_mps": {
+    "quoted": 13.34,
+    "regenerated": 13.339816618825596,
+    "ok": true
+   },
+   "fig4_ceiling_mps": {
+    "quoted": 1.13,
+    "regenerated": 1.126872293168009,
+    "ok": true
+   },
+   "fig5_provocation_N": {
+    "quoted": 1.47,
+    "regenerated": 1.405632269979764,
+    "ok": false,
+    "⛔ DISCREPANCY": "the quoted 1.47 N is 13.340 * (1.13 - 1.02) -- BOTH ENDPOINTS ROUNDED BEFORE SUBTRACTING. The exact endpoints give 13.3398 * (1.126872 - 1.021501) = 1.4056 N. Rounding a difference of two near-equal rounded numbers inflated it by 4.6 %, in the direction that made the speed axis look more viable than it is."
+   },
+   "usable_span_pct": {
+    "quoted": 11.0,
+    "regenerated": 10.315327407006654,
+    "ok": false,
+    "note": "same cause: 1.13/1.02 rounded before the ratio"
+   }
+  }
+ },
+ "retracted_claims": {
+  "r217_severity_independence": {
+   "claim_that_would_have_shipped": "The spastic-weak speed gap is three to four times larger than the entire weakness severity range can produce -- gap 0.0445-0.0578 m/s against a ladder span of 0.0133 m/s.",
+   "refuted_by": "PREREG_window_r218.md, recomputing on the G2 window [1.00, 9.73]",
+   "on_the_uncircular_window": "gap 0.0068 m/s against a ladder span 0.0078 m/s -- THE SAME ORDER, not three to four times.",
+   "why_the_first_was_wrong": "The 13.58 s window's upper bound is the shortest admitted spastic cell's termination time, so the spastic arm was measured partly on its approach to failure. The G2 bound of 9.73 s is a fixed fraction of a benchmark measured before any of these cells existed.",
+   "what_is_supported_now": "REINSTATED, with its metric named: on a MEAN-TO-MEAN basis the spastic-weak gap is 3.4-4.4x the entire weakness severity span, on BOTH windows. On an EXTREME-VALUE basis the margin is 1.36x (13.58) and 0.88x (G2) -- the same order as the span. BOTH are true and they answer different questions: mean-gap asks whether the arms' centres are far apart relative to severity; margin asks whether the distributions overlap. The disjointness claim (6 cells vs 36, no overlap, both windows) is the extreme-value statement and stands separately.",
+   "STATUS": "RETRACTION REVERSED r220 -- the claim is REINSTATED, and the stated cause was false.",
+   "why_the_retraction_was_wrong": "The retraction compared a MEAN-TO-MEAN gap (0.0445-0.0578, the 13.58 window) against an EXTREME-VALUE MARGIN (0.0068, the G2 window) and attributed the difference to the window. Computed like-for-like the r217 claim SURVIVES: mean-gap is 3.36-4.36x on the data-chosen window and 3.49-4.49x on the uncircular one. The window did not refute it; switching metric did.",
+   "history_kept_visible": "r217 claimed 3-4x. r218 retracted it citing the window. r220 found the retraction's cause false, reinstated the claim, and named the metric. All three states are recorded here deliberately."
+  }
+ },
+ "correlation_spastic_speed_vs_duration": {
+  "registered_in": "PREREG_window_r218.md section 5",
+  "n_pairs": 6,
+  "window": "[1.00, 13.58] -- the ORIGINAL deposited values",
+  "pearson_r": 0.3724161802074156,
+  "spearman_rho": 0.08571428571428573,
+  "note": "Descriptive only. Six pairs; no p-value is quoted and none may be.",
+  "coefficients_are_uninformative": "A Pearson of +0.372 on SIX pairs has a confidence interval spanning roughly -0.6 to +0.9. It cannot distinguish no relationship from a substantial one. The coefficients are retained so a reader sees them and sees why they carry no weight; they must NOT be quoted as evidence that speed is independent of duration. An earlier version read them as reassurance, which is a null claimed from an underpowered estimate -- the same shape this project rejected when six Gate-G failures were read as 'no data'.",
+  "what_the_six_pairs_DO_support": "WITHDRAWN r225. This field previously asserted a falsification: that the SHORTEST cell (13.58 s) was the FASTEST and the second-shortest the SLOWEST, contradicting a monotone termination artefact. THAT ORDERING HOLDS ONLY ON THE DATA-CHOSEN WINDOW. On the uncircular G2 window (WINDOW_G2_r218.json -> arms.'spastic KV 0.050'.per_seed) the shortest cell, seed 103 at 13.58 s, is 1.0201 m/s while the LONGEST, seed 101 at 17.85 s, is the FASTEST at 1.0242 m/s -- which is the termination-artefact ordering the argument claimed to refute. The falsification is withdrawn; no mechanism is ruled out.",
+  "withdrawal_note": "Withdrawn in the DEPOSIT and not only in the prose. RESULTS_3d_r214.md's header gives the deposit precedence, so a withdrawal made only in prose leaves the refuted claim standing as the authority. This file already carried that lesson at figures.fig1_and_fig2_are_different_quantities.retraction_note and it was not applied here.",
+  "consequence_for_the_13_58_window": "With the falsification withdrawn, the termination-artefact reading is LIVE again for every speed number measured on [1.00, 13.58]. PREREG_window_r218.md section 4 registered that this must be stated wherever a speed number appears, independently of how the window test came out."
+ },
+ "metric_by_window_2x2": {
+  "what": "Gap-to-ladder-span ratio under BOTH metrics and BOTH windows. Paths: SPEED_LADDER_r217.json and WINDOW_G2_r218.json -> arms.*.mean_speed_mps / max_speed_mps / min_speed_mps.",
+  "mean_to_mean_gap": {
+   "w13_58": {
+    "nearest_x": 3.3572,
+    "farthest_x": 4.3572,
+    "gap_near": 0.044555,
+    "gap_far": 0.057827,
+    "span": 0.013272
+   },
+   "w9_73": {
+    "nearest_x": 3.4873,
+    "farthest_x": 4.4873,
+    "gap_near": 0.027201,
+    "gap_far": 0.035001,
+    "span": 0.0078
+   }
+  },
+  "max_vs_min_margin": {
+   "w13_58": {
+    "x_span": 1.3587,
+    "margin": 0.018033,
+    "span": 0.013272
+   },
+   "w9_73": {
+    "x_span": 0.8825,
+    "margin": 0.006883,
+    "span": 0.0078
+   }
+  },
+  "conclusion": "THE RATIO TRACKS THE METRIC, NOT THE WINDOW. Mean-gap gives 3.4-4.4x on BOTH windows; extreme-margin gives 1.36x and 0.88x on both. Switching window changes the ratio by ~4 %; switching metric changes it by ~4x."
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "WEAKNOISE_r546",
+ "why": "CLAIMS_r537 tested four readouts under the noise model and none was among the three that GRADEALL_r543 found to grade weakness, so the manuscript's 'grading weakness survives nowhere' rested on readouts that do not grade it. This tests the three that do.",
+ "noise_model": {
+  "fs_hz": 100,
+  "yaw_deg": 10,
+  "event_error_frames": 1,
+  "sigmas": [
+   0.0,
+   1.0,
+   2.0,
+   3.0
+  ],
+  "n_rep": 200,
+  "rng_seed": 20260831
+ },
+ "usable_span_bar_deg": 1.7677669529663689,
+ "results": {
+  "ankle at 75%": {
+   "0.0": {
+    "rho": 0.942857142857143,
+    "span": 2.658328899381472,
+    "frac_span_above_bar": 1.0
+   },
+   "1.0": {
+    "rho": 0.8648571428571431,
+    "span": 2.5365785912377046,
+    "frac_span_above_bar": 0.98
+   },
+   "2.0": {
+    "rho": 0.7831428571428571,
+    "span": 2.6124344368575088,
+    "frac_span_above_bar": 0.965
+   },
+   "3.0": {
+    "rho": 0.7071428571428572,
+    "span": 2.775333679019176,
+    "frac_span_above_bar": 0.94
+   }
+  },
+  "ankle at 80%": {
+   "0.0": {
+    "rho": 0.942857142857143,
+    "span": 2.1379903122308432,
+    "frac_span_above_bar": 1.0
+   },
+   "1.0": {
+    "rho": 0.9011428571428572,
+    "span": 2.129672292249501,
+    "frac_span_above_bar": 0.875
+   },
+   "2.0": {
+    "rho": 0.7977142857142858,
+    "span": 2.241182015753342,
+    "frac_span_above_bar": 0.83
+   },
+   "3.0": {
+    "rho": 0.6925714285714286,
+    "span": 2.439720869958371,
+    "frac_span_above_bar": 0.85
+   }
+  },
+  "ankle at 90%": {
+   "0.0": {
+    "rho": -0.942857142857143,
+    "span": 2.3217675737865204,
+    "frac_span_above_bar": 1.0
+   },
+   "1.0": {
+    "rho": -0.8511428571428573,
+    "span": 2.270175174674005,
+    "frac_span_above_bar": 0.965
+   },
+   "2.0": {
+    "rho": -0.7585714285714286,
+    "span": 2.3777756168879396,
+    "frac_span_above_bar": 0.905
+   },
+   "3.0": {
+    "rho": -0.6817142857142858,
+    "span": 2.567185674936984,
+    "frac_span_above_bar": 0.885
+   }
+  },
+  "ankle peak in swing": {
+   "0.0": {
+    "rho": 1.0,
+    "span": 0.6517639467498064,
+    "frac_span_above_bar": 0.0
+   },
+   "1.0": {
+    "rho": 0.8002857142857144,
+    "span": 0.6396755432693249,
+    "frac_span_above_bar": 0.0
+   },
+   "2.0": {
+    "rho": 0.5665714285714286,
+    "span": 0.7567497011689541,
+    "frac_span_above_bar": 0.0
+   },
+   "3.0": {
+    "rho": 0.4077142857142858,
+    "span": 0.9364171536752103,
+    "frac_span_above_bar": 0.015
+   }
+  }
+ },
+ "still_usable_at_3deg": []
+}

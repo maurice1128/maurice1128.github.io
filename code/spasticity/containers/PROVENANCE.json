@@ -1,0 +1,189 @@
+{
+ "generated_by": "scone/gen_provenance.py -- COUNTED at run time, not hand-maintained",
+ "generated_at": "2026-08-16 18:51:39",
+ "source_of_deposit_list": "every `*.json` cited in RESULTS_3d_r214.md, extracted by regex at run time. If the section stops citing a file it leaves this list.",
+ "what_this_establishes": "For each deposit: its last-write time, whether a registration and sidecar exist, and whether they predate that last write.",
+ "what_this_does_NOT_establish": [
+  "that a deposit is the output of the script named beside it -- deposits are edited after creation",
+  "when any script was EXECUTED -- no execution time is recorded anywhere",
+  "that a registration was not altered before its sidecar was written"
+ ],
+ "deposits": {
+  "CHANNELS_G2_r219.json": {
+   "deposit_mtime": "2026-08-16 16:44:49",
+   "prereg_field": "PREREG_channels_G2_r219.md sha256 ea5cc2f442aed21a808a (prefix)",
+   "registration_matched": "PREREG_channels_G2_r219.md",
+   "registration_mtime": "2026-08-12 18:19:09",
+   "sidecar_present": true,
+   "sidecar_mtime": "2026-08-12 18:19:14",
+   "registration_predates_deposit_last_write": true,
+   "round_markers_found_inside": [
+    "r219",
+    "r220"
+   ]
+  },
+  "CLASSIFIER_r222.json": {
+   "deposit_mtime": "2026-08-16 18:27:18",
+   "prereg_field": "PREREG_classifier_r222.md sha256 c0a13d6758a9e2876230",
+   "registration_matched": "PREREG_classifier_r222.md",
+   "registration_mtime": "2026-08-16 17:00:19",
+   "sidecar_present": true,
+   "sidecar_mtime": "2026-08-16 17:00:35",
+   "registration_predates_deposit_last_write": true,
+   "round_markers_found_inside": [
+    "r222",
+    "r227"
+   ]
+  },
+  "HEADLINE_FIGURES_r215.json": {
+   "deposit_mtime": "2026-08-16 18:03:50",
+   "prereg_field": null,
+   "registration_matched": null,
+   "registration_mtime": null,
+   "sidecar_present": false,
+   "sidecar_mtime": null,
+   "registration_predates_deposit_last_write": null,
+   "round_markers_found_inside": [
+    "r200",
+    "r203",
+    "r214",
+    "r215",
+    "r216",
+    "r217",
+    "r218",
+    "r220",
+    "r225"
+   ]
+  },
+  "HIPGAP_r220.json": {
+   "deposit_mtime": "2026-08-16 16:49:05",
+   "prereg_field": null,
+   "registration_matched": null,
+   "registration_mtime": null,
+   "sidecar_present": false,
+   "sidecar_mtime": null,
+   "registration_predates_deposit_last_write": null,
+   "round_markers_found_inside": []
+  },
+  "LMRONLY_r223.json": {
+   "deposit_mtime": "2026-08-16 17:43:01",
+   "prereg_field": "PREREG_lmr_only_r223.md sha256 8f954702cd46a99adc6a",
+   "registration_matched": "PREREG_lmr_only_r223.md",
+   "registration_mtime": "2026-08-16 17:37:48",
+   "sidecar_present": true,
+   "sidecar_mtime": "2026-08-16 17:37:56",
+   "registration_predates_deposit_last_write": true,
+   "round_markers_found_inside": [
+    "r222",
+    "r223"
+   ]
+  },
+  "PERMNULL_r221.json": {
+   "deposit_mtime": "2026-08-16 16:56:26",
+   "prereg_field": "PREREG_permnull_r221.md sha256 384579cc23e5ad529cab",
+   "registration_matched": "PREREG_permnull_r221.md",
+   "registration_mtime": "2026-08-16 16:53:43",
+   "sidecar_present": true,
+   "sidecar_mtime": "2026-08-16 16:53:51",
+   "registration_predates_deposit_last_write": true,
+   "round_markers_found_inside": [
+    "r221"
+   ]
+  },
+  "PERMREACH_r226.json": {
+   "deposit_mtime": "2026-08-16 18:27:18",
+   "prereg_field": null,
+   "registration_matched": null,
+   "registration_mtime": null,
+   "sidecar_present": false,
+   "sidecar_mtime": null,
+   "registration_predates_deposit_last_write": null,
+   "round_markers_found_inside": [
+    "r219"
+   ]
+  },
+  "PRIMARYB_RESULT_r179.json": {
+   "deposit_mtime": "2026-08-16 18:03:50",
+   "prereg_field": "PREREG_3d_specificity_r178.md / PREREG_3d_replication_r179.md -- see prereg_correction",
+   "registration_matched": null,
+   "registration_mtime": null,
+   "sidecar_present": false,
+   "sidecar_mtime": null,
+   "registration_predates_deposit_last_write": null,
+   "round_markers_found_inside": [
+    "r214",
+    "r218",
+    "r219",
+    "r220",
+    "r225"
+   ]
+  },
+  "PROVENANCE_r224.json": {
+   "deposit_mtime": "2026-08-16 18:27:18",
+   "prereg_field": null,
+   "registration_matched": null,
+   "registration_mtime": null,
+   "sidecar_present": false,
+   "sidecar_mtime": null,
+   "registration_predates_deposit_last_write": null,
+   "round_markers_found_inside": [
+    "r203",
+    "r214",
+    "r215",
+    "r217",
+    "r218",
+    "r219",
+    "r220",
+    "r221",
+    "r222",
+    "r223",
+    "r224",
+    "r226"
+   ]
+  },
+  "SPEEDGATE_r203.json": {
+   "deposit_mtime": "2026-08-11 15:51:58",
+   "prereg_field": null,
+   "registration_matched": null,
+   "registration_mtime": null,
+   "sidecar_present": false,
+   "sidecar_mtime": null,
+   "registration_predates_deposit_last_write": null,
+   "round_markers_found_inside": []
+  },
+  "SPEED_LADDER_r217.json": {
+   "deposit_mtime": "2026-08-12 18:13:08",
+   "prereg_field": "PREREG_speed_ladder_r217.md",
+   "registration_matched": null,
+   "registration_mtime": null,
+   "sidecar_present": false,
+   "sidecar_mtime": null,
+   "registration_predates_deposit_last_write": null,
+   "round_markers_found_inside": [
+    "r203",
+    "r217"
+   ]
+  },
+  "WINDOW_G2_r218.json": {
+   "deposit_mtime": "2026-08-16 16:44:49",
+   "prereg_field": "PREREG_window_r218.md",
+   "registration_matched": null,
+   "registration_mtime": null,
+   "sidecar_present": false,
+   "sidecar_mtime": null,
+   "registration_predates_deposit_last_write": null,
+   "round_markers_found_inside": [
+    "r203",
+    "r217",
+    "r218",
+    "r220"
+   ]
+  }
+ },
+ "counts": {
+  "deposits_cited": 12,
+  "with_a_matched_registration": 4,
+  "with_NO_matched_registration": 8,
+  "carrying_round_markers_ie_edited_after_creation": 10
+ }
+}

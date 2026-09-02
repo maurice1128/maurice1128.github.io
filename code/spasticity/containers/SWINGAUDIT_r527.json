@@ -1,0 +1,139 @@
+{
+ "id": "SWINGAUDIT_r527",
+ "why": "Two threats stand in front of r525/r526 and both favour the result if left unchecked: a survival bias in which cells reach the gate, and a weakness range too mild to be the clinical lesion. Rule 3 has also never been applied to this endpoint.",
+ "survival": {
+  "per_cell_admitted_of_existing": {
+   "x0.60_KV0.025": [
+    3,
+    3
+   ],
+   "x0.60_KV0.050": [
+    3,
+    3
+   ],
+   "x0.60_KV0.100": [
+    3,
+    3
+   ],
+   "x0.60_KV0.220": [
+    1,
+    3
+   ],
+   "x0.70_KV0.025": [
+    6,
+    6
+   ],
+   "x0.70_KV0.050": [
+    6,
+    6
+   ],
+   "x0.70_KV0.100": [
+    6,
+    6
+   ],
+   "x0.70_KV0.220": [
+    3,
+    6
+   ],
+   "x0.80_KV0.025": [
+    6,
+    6
+   ],
+   "x0.80_KV0.050": [
+    6,
+    6
+   ],
+   "x0.80_KV0.100": [
+    6,
+    6
+   ],
+   "x0.80_KV0.220": [
+    5,
+    6
+   ],
+   "x1.00_KV0.025": [
+    6,
+    6
+   ],
+   "x1.00_KV0.050": [
+    6,
+    6
+   ],
+   "x1.00_KV0.100": [
+    6,
+    6
+   ],
+   "x1.00_KV0.220": [
+    2,
+    6
+   ]
+  },
+  "by_weakness": {
+   "0.6": [
+    10,
+    12
+   ],
+   "0.7": [
+    21,
+    24
+   ],
+   "0.8": [
+    23,
+    24
+   ],
+   "1.0": [
+    20,
+    24
+   ]
+  },
+  "by_gain": {
+   "0.025": [
+    21,
+    21
+   ],
+   "0.05": [
+    21,
+    21
+   ],
+   "0.1": [
+    21,
+    21
+   ],
+   "0.22": [
+    11,
+    21
+   ]
+  }
+ },
+ "weakness_range": {
+  "any_survivor": [
+   0.6,
+   0.7,
+   0.8,
+   1.0
+  ],
+  "complete_survival": [],
+  "deepest_surviving_scaling": 0.6,
+  "deepest_surviving_as_percent_force_lost": 40
+ },
+ "stationarity_rule3": {
+  "per_cycle_difference_deg": [
+   4.822095872469912,
+   4.8903160063512665,
+   4.911568106583929,
+   4.879063472500901,
+   4.863247598386289
+  ],
+  "keeps_one_sign": true,
+  "spread_deg": 0.08947223411401684,
+  "window_mean_deg": 4.8732582112584595,
+  "spread_over_mean": 0.018359838579312983
+ },
+ "per_cycle_pooled_deg": [
+  4.499485585219725,
+  4.448641217567742,
+  4.442689695897549,
+  4.456527757080202,
+  4.46042887185379
+ ]
+}

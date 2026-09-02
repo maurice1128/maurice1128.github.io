@@ -1,0 +1,383 @@
+{
+ "prereg": "PREREG_window_r218.md",
+ "sha256_prefix": "2ff21d73d2c4abda",
+ "method": "pelvis_tx displacement / elapsed over GRF-delimited window [1.00, 9.73] -- the Gate G G2 bound, which PREDATES these cells. Formula identical to speed_gate_r203.py; only the window differs from SPEED_LADDER_r217.json's [1.00, 13.58].",
+ "arms": {
+  "spastic KV 0.050": {
+   "prefix": "R151S",
+   "tib_ant_scale": null,
+   "n_run": 6,
+   "n_gateG_admitted": 6,
+   "per_seed": [
+    {
+     "seed": 101,
+     "speed_mps": 1.0241664295874824,
+     "dur_s": 17.85,
+     "cycles": 12,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 102,
+     "speed_mps": 0.9891902356902358,
+     "dur_s": 14.96,
+     "cycles": 11,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 103,
+     "speed_mps": 1.0201375838926174,
+     "dur_s": 13.58,
+     "cycles": 9,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 104,
+     "speed_mps": 1.0161163575042158,
+     "dur_s": 16.94,
+     "cycles": 12,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 105,
+     "speed_mps": 0.9908409475465312,
+     "dur_s": 14.27,
+     "cycles": 10,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 106,
+     "speed_mps": 1.0137604690117252,
+     "dur_s": 14.82,
+     "cycles": 10,
+     "gateG_admitted": true
+    }
+   ],
+   "mean_speed_mps": 1.0090353372054681,
+   "min_speed_mps": 0.9891902356902358,
+   "max_speed_mps": 1.0241664295874824
+  },
+  "weak x0.800": {
+   "prefix": "R151W",
+   "tib_ant_scale": 0.8,
+   "n_run": 6,
+   "n_gateG_admitted": 6,
+   "per_seed": [
+    {
+     "seed": 101,
+     "speed_mps": 1.0436780238500851,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 102,
+     "speed_mps": 1.0523657142857143,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 103,
+     "speed_mps": 1.0484663805436338,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 104,
+     "speed_mps": 1.0451542857142857,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 105,
+     "speed_mps": 1.041188302425107,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 106,
+     "speed_mps": 1.0333627118644069,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    }
+   ],
+   "mean_speed_mps": 1.0440359031138722,
+   "min_speed_mps": 1.0333627118644069,
+   "max_speed_mps": 1.0523657142857143
+  },
+  "weak x0.870": {
+   "prefix": "R174W870",
+   "tib_ant_scale": 0.87,
+   "n_run": 6,
+   "n_gateG_admitted": 6,
+   "per_seed": [
+    {
+     "seed": 101,
+     "speed_mps": 1.0415409556313993,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 102,
+     "speed_mps": 1.0453599320882851,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 103,
+     "speed_mps": 1.0469948892674616,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 104,
+     "speed_mps": 1.0367135593220338,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 105,
+     "speed_mps": 1.041952218430034,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 106,
+     "speed_mps": 1.0404590443686006,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    }
+   ],
+   "mean_speed_mps": 1.0421700998513026,
+   "min_speed_mps": 1.0367135593220338,
+   "max_speed_mps": 1.0469948892674616
+  },
+  "weak x0.892": {
+   "prefix": "R174W892",
+   "tib_ant_scale": 0.892,
+   "n_run": 6,
+   "n_gateG_admitted": 6,
+   "per_seed": [
+    {
+     "seed": 101,
+     "speed_mps": 1.0419123102866779,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 102,
+     "speed_mps": 1.0437800338409475,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 103,
+     "speed_mps": 1.038406462585034,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 104,
+     "speed_mps": 1.0396309523809524,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 105,
+     "speed_mps": 1.0375784148397975,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 106,
+     "speed_mps": 1.0419112627986347,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    }
+   ],
+   "mean_speed_mps": 1.040536572788674,
+   "min_speed_mps": 1.0375784148397975,
+   "max_speed_mps": 1.0437800338409475
+  },
+  "weak x0.900": {
+   "prefix": "R169W090",
+   "tib_ant_scale": 0.9,
+   "n_run": 6,
+   "n_gateG_admitted": 6,
+   "per_seed": [
+    {
+     "seed": 101,
+     "speed_mps": 1.040409168081494,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 102,
+     "speed_mps": 1.0456996587030718,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 103,
+     "speed_mps": 1.033,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 104,
+     "speed_mps": 1.0446078098471987,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 105,
+     "speed_mps": 1.0473639455782313,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 106,
+     "speed_mps": 1.0345634517766495,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    }
+   ],
+   "mean_speed_mps": 1.0409406723311074,
+   "min_speed_mps": 1.033,
+   "max_speed_mps": 1.0473639455782313
+  },
+  "weak x0.915": {
+   "prefix": "R174W915",
+   "tib_ant_scale": 0.915,
+   "n_run": 6,
+   "n_gateG_admitted": 6,
+   "per_seed": [
+    {
+     "seed": 101,
+     "speed_mps": 1.0426337308347529,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 102,
+     "speed_mps": 1.0395341296928327,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 103,
+     "speed_mps": 1.0363067796610168,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 104,
+     "speed_mps": 1.0421201353637901,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 105,
+     "speed_mps": 1.0361169491525422,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 106,
+     "speed_mps": 1.0393764906303236,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    }
+   ],
+   "mean_speed_mps": 1.0393480358892095,
+   "min_speed_mps": 1.0361169491525422,
+   "max_speed_mps": 1.0426337308347529
+  },
+  "weak x0.950": {
+   "prefix": "R169W095",
+   "tib_ant_scale": 0.95,
+   "n_run": 6,
+   "n_gateG_admitted": 6,
+   "per_seed": [
+    {
+     "seed": 101,
+     "speed_mps": 1.0310493197278912,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 102,
+     "speed_mps": 1.0372050847457626,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 103,
+     "speed_mps": 1.0370337268128162,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 104,
+     "speed_mps": 1.039981418918919,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 105,
+     "speed_mps": 1.0354010152284265,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 106,
+     "speed_mps": 1.036746192893401,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    }
+   ],
+   "mean_speed_mps": 1.0362361263878694,
+   "min_speed_mps": 1.0310493197278912,
+   "max_speed_mps": 1.039981418918919
+  }
+ },
+ "window": [
+  1.0,
+  9.73
+ ],
+ "self_description_correction": "SELF-DESCRIPTION DEFECT, corrected r220: this deposit's own descriptive string was WRONG because the script that wrote it was produced by editing the CONSTANTS of an earlier script without patching its self-description. The NUMBERS were always correct; the artifact described itself falsely, which is worse, because a referee checking provenance is misled by the file itself. Here the method string read '[1.00, 13.58]', byte-identical to SPEED_LADDER_r217.json's, which made the paper's central methods contrast unverifiable from the deposits alone."
+}

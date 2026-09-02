@@ -1,0 +1,212 @@
+{
+ "rng_seed": 20260862,
+ "n_per_cell": 6,
+ "sigma": 2.9686,
+ "checks": [
+  {
+   "kind": "plant_noiseless",
+   "planted": 0.445,
+   "recovered": 0.44500000005161017,
+   "error": 5.1610160589632414e-11,
+   "pass": true
+  },
+  {
+   "kind": "plant_noiseless",
+   "planted": 0.7,
+   "recovered": 0.6999999998365456,
+   "error": -1.6345436115727807e-10,
+   "pass": true
+  },
+  {
+   "kind": "plant_noiseless",
+   "planted": 0.854,
+   "recovered": 0.8539999998472395,
+   "error": -1.5276047093948364e-10,
+   "pass": true
+  },
+  {
+   "kind": "plant_noiseless",
+   "planted": -0.7,
+   "recovered": -0.7000000000026552,
+   "error": -2.6552093856935244e-12,
+   "pass": true
+  },
+  {
+   "kind": "plant_noiseless",
+   "planted": 0.0,
+   "recovered": 3.070127485571561e-11,
+   "error": 3.070127485571561e-11,
+   "pass": true
+  },
+  {
+   "kind": "plant_noiseless",
+   "planted": -0.2224,
+   "recovered": -0.2223999999540841,
+   "error": 4.591588220748122e-11,
+   "pass": true
+  },
+  {
+   "kind": "plant_positive",
+   "planted": 0.445,
+   "recovered": 0.5170423677197011,
+   "se": 0.4031474467292028,
+   "ci95": [
+    -0.2878674800112977,
+    1.3219522154507
+   ],
+   "inside": true,
+   "pass": true
+  },
+  {
+   "kind": "plant_positive",
+   "planted": 0.7,
+   "recovered": 0.6619201575623852,
+   "se": 0.39131942204128434,
+   "ci95": [
+    -0.11937427693022606,
+    1.4432145920549964
+   ],
+   "inside": true,
+   "pass": true
+  },
+  {
+   "kind": "plant_positive",
+   "planted": 0.854,
+   "recovered": 0.6487121768515447,
+   "se": 0.2925432661028109,
+   "ci95": [
+    0.06463070074657451,
+    1.2327936529565149
+   ],
+   "inside": true,
+   "pass": true
+  },
+  {
+   "kind": "plant_negative",
+   "planted": -0.445,
+   "recovered": 0.3098625165329362,
+   "se": 0.33863379638052105,
+   "ci95": [
+    -0.3662416723751542,
+    0.9859667054410266
+   ],
+   "inside": false,
+   "pass": true
+  },
+  {
+   "kind": "plant_negative",
+   "planted": -0.7,
+   "recovered": -0.8931542435506854,
+   "se": 0.3726996415274457,
+   "ci95": [
+    -1.6372730867806649,
+    -0.14903540032070584
+   ],
+   "inside": true,
+   "pass": true
+  },
+  {
+   "kind": "plant_negative",
+   "planted": -0.854,
+   "recovered": -0.41412901588423817,
+   "se": 0.38596757078254884,
+   "ci95": [
+    -1.1847381345781332,
+    0.35648010280965675
+   ],
+   "inside": true,
+   "pass": true
+  },
+  {
+   "kind": "plant_mean_recovery",
+   "planted": 0.445,
+   "trials": 400,
+   "mean_recovered": 0.45483307495721204,
+   "se_of_mean": 0.01761780588175072,
+   "bias": 0.009833074957212029,
+   "pass": true
+  },
+  {
+   "kind": "plant_mean_recovery",
+   "planted": 0.7,
+   "trials": 400,
+   "mean_recovered": 0.7064888779408929,
+   "se_of_mean": 0.016642809489566014,
+   "bias": 0.006488877940892923,
+   "pass": true
+  },
+  {
+   "kind": "plant_mean_recovery",
+   "planted": -0.7,
+   "trials": 400,
+   "mean_recovered": -0.7226864341265399,
+   "se_of_mean": 0.01699520420180215,
+   "bias": -0.022686434126539923,
+   "pass": true
+  },
+  {
+   "kind": "arm_slopes",
+   "planted_spastic": 0.1,
+   "recovered_spastic": -0.11175893636457812,
+   "planted_weak": 0.7999999999999999,
+   "recovered_weak": 1.093762072820897,
+   "planted_beta_int": 0.7,
+   "recovered_beta_int": 1.2055210091854751,
+   "pass": true
+  },
+  {
+   "kind": "null_type_I",
+   "planted": 0.0,
+   "trials": 2000,
+   "mean_recovered": 0.013633846462338162,
+   "sd_recovered": 0.34426990247971784,
+   "mean_se": 0.33953383935959286,
+   "registered_se": 0.3405,
+   "rejections": 113,
+   "rate": 0.0565,
+   "alpha": 0.05,
+   "pass": true
+  },
+  {
+   "kind": "power",
+   "planted": 0.445,
+   "trials": 400,
+   "excluded_zero": 110,
+   "rate": 0.275
+  },
+  {
+   "kind": "power",
+   "planted": 0.854,
+   "trials": 400,
+   "excluded_zero": 275,
+   "rate": 0.6875
+  },
+  {
+   "kind": "two_tier_rule",
+   "probes": [
+    -5.0,
+    -0.2224,
+    -0.222399999,
+    0.0,
+    0.445,
+    0.854,
+    5.0,
+    1000000.0
+   ],
+   "pass": true
+  },
+  {
+   "kind": "content_resolution",
+   "pass": true
+  },
+  {
+   "kind": "falsifiers",
+   "pass": true
+  },
+  {
+   "kind": "attrition_and_completeness",
+   "pass": true
+  }
+ ],
+ "pass": true
+}

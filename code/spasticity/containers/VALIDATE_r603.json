@@ -1,0 +1,39 @@
+{
+ "id": "VALIDATE_r603",
+ "why": "The manuscript reported no validation of the unlesioned model against human kinematics, and its only check, four ankle landmarks, failed three and passed the fourth against an acceptance window spanning the whole of swing. This is the comparison ref [10] performs for its own model.",
+ "reference": "van Criekinge et al., A full-body motion capture gait dataset of 138 able-bodied adults across the life span and 50 stroke survivors, Sci Data 2023 [25]. Post-processed excel file, CC0, doi:10.6084/m9.figshare.24192489",
+ "n_reference_subjects": 138,
+ "method": "unlesioned condition R151C, six seeds, each seed's kept cycles averaged then averaged across seeds, interpolated to 101 points; compared against the between-subject mean and SD of the reference at the same points",
+ "joints": {
+  "ankle": {
+   "sign": 1,
+   "rmse_deg": 5.441519666894081,
+   "rmse_in_sd": 1.2486521566744897,
+   "max_abs_z": 2.596542515147314,
+   "pct_within_1sd": 57.42574257425742,
+   "xcorr": 0.7210217081090089,
+   "sign_assumed_a_priori": 1,
+   "sign_agrees_with_assumption": true
+  },
+  "knee": {
+   "sign": -1,
+   "rmse_deg": 4.248895267375495,
+   "rmse_in_sd": 0.7153105570151606,
+   "max_abs_z": 1.4075448790741758,
+   "pct_within_1sd": 81.1881188118812,
+   "xcorr": 0.990941007164381,
+   "sign_assumed_a_priori": -1,
+   "sign_agrees_with_assumption": true
+  },
+  "hip": {
+   "sign": 1,
+   "rmse_deg": 7.8028575244332,
+   "rmse_in_sd": 0.9749066039327944,
+   "max_abs_z": 1.9809857718011048,
+   "pct_within_1sd": 72.27722772277228,
+   "xcorr": 0.9555354276395094,
+   "sign_assumed_a_priori": 1,
+   "sign_agrees_with_assumption": true
+  }
+ }
+}

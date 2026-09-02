@@ -1,0 +1,552 @@
+{
+ "definition": "r228: peak-to-peak excursion difference, [1.00,9.73], last dropped",
+ "tolerance": 0.0005,
+ "deposited": {
+  "101": -2.032596426116342,
+  "102": -1.2098920576659609,
+  "103": -2.772393801611315,
+  "104": -1.683269788003031,
+  "105": -2.346170497813503,
+  "106": -2.5874430253430774
+ },
+ "cells": {
+  "101": {
+   "n_dirs": 1,
+   "deposited": -2.032596426116342,
+   "stos": [
+    {
+     "sto": "0000_86.260_55.488.par.sto",
+     "value": -1.8989081837784738,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514004.8705378
+    },
+    {
+     "sto": "0002_79.904_51.956.par.sto",
+     "value": -2.7236694707133893,
+     "n_cycles": 6,
+     "matches_deposit": false,
+     "mtime": 1786514254.1387577
+    },
+    {
+     "sto": "0007_71.875_49.051.par.sto",
+     "value": -2.3326830713161115,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514254.8199866
+    },
+    {
+     "sto": "0010_74.111_39.446.par.sto",
+     "value": -1.8716124744184413,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514005.890617
+    },
+    {
+     "sto": "0019_61.928_32.367.par.sto",
+     "value": -3.245366641773181,
+     "n_cycles": 6,
+     "matches_deposit": false,
+     "mtime": 1786514255.685438
+    },
+    {
+     "sto": "0040_60.385_23.511.par.sto",
+     "value": -2.600632513786991,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514256.6556249
+    },
+    {
+     "sto": "0046_58.692_22.921.par.sto",
+     "value": -2.4535962646818916,
+     "n_cycles": 6,
+     "matches_deposit": false,
+     "mtime": 1786514257.7922535
+    },
+    {
+     "sto": "0056_65.682_19.381.par.sto",
+     "value": -2.032596426116342,
+     "n_cycles": 6,
+     "matches_deposit": true,
+     "mtime": 1786294484.7494586
+    }
+   ],
+   "match": "0056_65.682_19.381.par.sto",
+   "dir": "R151S_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "n_sto": 8,
+   "r228_would_pick": "0056_65.682_19.381.par.sto"
+  },
+  "102": {
+   "n_dirs": 1,
+   "deposited": -1.2098920576659609,
+   "stos": [
+    {
+     "sto": "0000_86.518_78.692.par.sto",
+     "value": -1.3992202314889823,
+     "n_cycles": 2,
+     "matches_deposit": false,
+     "mtime": 1786514006.4629653
+    },
+    {
+     "sto": "0001_86.366_77.356.par.sto",
+     "value": -3.2409930639370117,
+     "n_cycles": 2,
+     "matches_deposit": false,
+     "mtime": 1786514258.4080005
+    },
+    {
+     "sto": "0002_81.721_76.671.par.sto",
+     "value": -3.2752559400858416,
+     "n_cycles": 2,
+     "matches_deposit": false,
+     "mtime": 1786514259.034914
+    },
+    {
+     "sto": "0003_81.613_73.426.par.sto",
+     "value": -4.654059775474984,
+     "n_cycles": 3,
+     "matches_deposit": false,
+     "mtime": 1786514259.683914
+    },
+    {
+     "sto": "0004_81.264_72.670.par.sto",
+     "value": -9.403765305550493,
+     "n_cycles": 3,
+     "matches_deposit": false,
+     "mtime": 1786514260.131574
+    },
+    {
+     "sto": "0005_78.433_65.299.par.sto",
+     "value": -2.7583190933739345,
+     "n_cycles": 4,
+     "matches_deposit": false,
+     "mtime": 1786514260.824438
+    },
+    {
+     "sto": "0006_80.327_61.705.par.sto",
+     "value": -6.016343327771224,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514261.3826754
+    },
+    {
+     "sto": "0007_73.355_54.155.par.sto",
+     "value": -2.0235035859076334,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514262.4705
+    },
+    {
+     "sto": "0010_69.688_53.470.par.sto",
+     "value": -4.4517579273108865,
+     "n_cycles": 6,
+     "matches_deposit": false,
+     "mtime": 1786514007.219594
+    },
+    {
+     "sto": "0011_69.421_48.387.par.sto",
+     "value": -2.4624465527573562,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514263.2545838
+    },
+    {
+     "sto": "0015_65.981_44.107.par.sto",
+     "value": -2.5071143424657407,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514264.222661
+    },
+    {
+     "sto": "0022_69.477_38.112.par.sto",
+     "value": -2.123885791614555,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514265.2893388
+    },
+    {
+     "sto": "0068_63.737_36.249.par.sto",
+     "value": -1.437310465709288,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514268.4159193
+    },
+    {
+     "sto": "0086_53.936_35.095.par.sto",
+     "value": -1.2098920576659609,
+     "n_cycles": 5,
+     "matches_deposit": true,
+     "mtime": 1786294485.4913402
+    }
+   ],
+   "match": "0086_53.936_35.095.par.sto",
+   "dir": "R151S_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "n_sto": 14,
+   "r228_would_pick": "0086_53.936_35.095.par.sto"
+  },
+  "103": {
+   "n_dirs": 1,
+   "deposited": -2.772393801611315,
+   "stos": [
+    {
+     "sto": "0000_85.810_77.923.par.sto",
+     "value": -1.6810008751343162,
+     "n_cycles": 2,
+     "matches_deposit": false,
+     "mtime": 1786514007.6950848
+    },
+    {
+     "sto": "0001_84.984_76.935.par.sto",
+     "value": -3.9661284494545725,
+     "n_cycles": 2,
+     "matches_deposit": false,
+     "mtime": 1786514269.2400808
+    },
+    {
+     "sto": "0002_79.744_63.763.par.sto",
+     "value": -5.054954525009407,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514269.919848
+    },
+    {
+     "sto": "0003_77.344_62.941.par.sto",
+     "value": -4.990943680137377,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514270.494763
+    },
+    {
+     "sto": "0005_77.132_61.771.par.sto",
+     "value": -4.38905151635246,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514271.1604116
+    },
+    {
+     "sto": "0006_76.884_61.541.par.sto",
+     "value": -2.8780099767767595,
+     "n_cycles": 4,
+     "matches_deposit": false,
+     "mtime": 1786514271.9382708
+    },
+    {
+     "sto": "0007_76.163_58.366.par.sto",
+     "value": -2.636499671762195,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514272.63613
+    },
+    {
+     "sto": "0008_75.949_46.952.par.sto",
+     "value": -1.790252467509866,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514008.8271208
+    },
+    {
+     "sto": "0030_71.000_45.193.par.sto",
+     "value": -1.7859667432022874,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514273.5664394
+    },
+    {
+     "sto": "0038_65.096_39.330.par.sto",
+     "value": -2.851473436495283,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514275.1338787
+    },
+    {
+     "sto": "0059_67.037_35.910.par.sto",
+     "value": -2.772393801611315,
+     "n_cycles": 5,
+     "matches_deposit": true,
+     "mtime": 1786294486.1824696
+    }
+   ],
+   "match": "0059_67.037_35.910.par.sto",
+   "dir": "R151S_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "n_sto": 11,
+   "r228_would_pick": "0059_67.037_35.910.par.sto"
+  },
+  "104": {
+   "n_dirs": 1,
+   "deposited": -1.683269788003031,
+   "stos": [
+    {
+     "sto": "0000_86.547_79.563.par.sto",
+     "value": -3.096579051674297,
+     "n_cycles": 2,
+     "matches_deposit": false,
+     "mtime": 1786514009.4253478
+    },
+    {
+     "sto": "0001_86.364_74.336.par.sto",
+     "value": -7.867455372279871,
+     "n_cycles": 3,
+     "matches_deposit": false,
+     "mtime": 1786514275.8230028
+    },
+    {
+     "sto": "0002_82.134_72.579.par.sto",
+     "value": -8.524141399872477,
+     "n_cycles": 3,
+     "matches_deposit": false,
+     "mtime": 1786514276.5110185
+    },
+    {
+     "sto": "0003_78.508_72.329.par.sto",
+     "value": -3.807972999405308,
+     "n_cycles": 3,
+     "matches_deposit": false,
+     "mtime": 1786514277.1031973
+    },
+    {
+     "sto": "0005_78.830_56.193.par.sto",
+     "value": -4.000859241136105,
+     "n_cycles": 6,
+     "matches_deposit": false,
+     "mtime": 1786514278.461934
+    },
+    {
+     "sto": "0009_73.241_52.715.par.sto",
+     "value": -2.6394217565173577,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514279.8029735
+    },
+    {
+     "sto": "0010_65.902_52.689.par.sto",
+     "value": -2.6761941878088464,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514010.336154
+    },
+    {
+     "sto": "0014_69.601_49.376.par.sto",
+     "value": -1.7476014892403313,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514280.7067552
+    },
+    {
+     "sto": "0019_64.996_46.459.par.sto",
+     "value": -2.0594967945977487,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514281.590498
+    },
+    {
+     "sto": "0020_59.497_38.418.par.sto",
+     "value": -2.902352088702891,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514282.803371
+    },
+    {
+     "sto": "0058_53.692_34.385.par.sto",
+     "value": -1.9762689452770417,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514283.7564008
+    },
+    {
+     "sto": "0062_61.084_27.907.par.sto",
+     "value": -1.76297967646164,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514285.0361626
+    },
+    {
+     "sto": "0072_59.701_22.802.par.sto",
+     "value": -1.683269788003031,
+     "n_cycles": 5,
+     "matches_deposit": true,
+     "mtime": 1786294487.0206952
+    }
+   ],
+   "match": "0072_59.701_22.802.par.sto",
+   "dir": "R151S_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "n_sto": 13,
+   "r228_would_pick": "0072_59.701_22.802.par.sto"
+  },
+  "105": {
+   "n_dirs": 1,
+   "deposited": -2.346170497813503,
+   "stos": [
+    {
+     "sto": "0000_82.900_78.683.par.sto",
+     "value": -1.7586653042643121,
+     "n_cycles": 2,
+     "matches_deposit": false,
+     "mtime": 1786514011.6607869
+    },
+    {
+     "sto": "0001_82.265_70.131.par.sto",
+     "value": -5.452481237638089,
+     "n_cycles": 4,
+     "matches_deposit": false,
+     "mtime": 1786514285.6373029
+    },
+    {
+     "sto": "0002_77.069_68.330.par.sto",
+     "value": -5.79145739318237,
+     "n_cycles": 4,
+     "matches_deposit": false,
+     "mtime": 1786514286.2810352
+    },
+    {
+     "sto": "0004_79.410_58.058.par.sto",
+     "value": -2.2423849228035024,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514287.3088045
+    },
+    {
+     "sto": "0005_75.831_53.023.par.sto",
+     "value": -4.103504630133784,
+     "n_cycles": 6,
+     "matches_deposit": false,
+     "mtime": 1786514013.7591927
+    },
+    {
+     "sto": "0016_67.459_51.618.par.sto",
+     "value": -2.0308718231530207,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514288.321198
+    },
+    {
+     "sto": "0019_72.063_48.857.par.sto",
+     "value": -2.1699515983430686,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514289.080186
+    },
+    {
+     "sto": "0034_65.968_48.531.par.sto",
+     "value": -2.0958032202158705,
+     "n_cycles": 6,
+     "matches_deposit": false,
+     "mtime": 1786514289.8831508
+    },
+    {
+     "sto": "0037_66.857_42.403.par.sto",
+     "value": -2.5210028394197153,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514290.7333167
+    },
+    {
+     "sto": "0047_66.588_40.219.par.sto",
+     "value": -2.038068173059841,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514291.8273683
+    },
+    {
+     "sto": "0066_61.509_39.973.par.sto",
+     "value": -2.0013530375478794,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514293.5143673
+    },
+    {
+     "sto": "0074_63.647_38.891.par.sto",
+     "value": -2.1400661197490436,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514294.3517168
+    },
+    {
+     "sto": "0085_59.194_38.532.par.sto",
+     "value": -2.346170497813503,
+     "n_cycles": 5,
+     "matches_deposit": true,
+     "mtime": 1786294487.7284317
+    }
+   ],
+   "match": "0085_59.194_38.532.par.sto",
+   "dir": "R151S_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "n_sto": 13,
+   "r228_would_pick": "0085_59.194_38.532.par.sto"
+  },
+  "106": {
+   "n_dirs": 1,
+   "deposited": -2.5874430253430774,
+   "stos": [
+    {
+     "sto": "0000_85.794_78.305.par.sto",
+     "value": -3.838330213250657,
+     "n_cycles": 2,
+     "matches_deposit": false,
+     "mtime": 1786514014.1754427
+    },
+    {
+     "sto": "0001_84.648_63.267.par.sto",
+     "value": -2.5629204317114826,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514294.9781933
+    },
+    {
+     "sto": "0004_80.102_55.483.par.sto",
+     "value": -3.183706833720521,
+     "n_cycles": 6,
+     "matches_deposit": false,
+     "mtime": 1786514295.8294642
+    },
+    {
+     "sto": "0006_73.643_55.195.par.sto",
+     "value": -2.3732389339147915,
+     "n_cycles": 6,
+     "matches_deposit": false,
+     "mtime": 1786514296.5040534
+    },
+    {
+     "sto": "0007_66.484_53.122.par.sto",
+     "value": -2.074554125453794,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514297.245335
+    },
+    {
+     "sto": "0010_67.942_45.075.par.sto",
+     "value": -1.9639618118376347,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514015.0132265
+    },
+    {
+     "sto": "0028_66.474_41.039.par.sto",
+     "value": -2.102216527802689,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514298.2051306
+    },
+    {
+     "sto": "0033_59.243_39.052.par.sto",
+     "value": -2.3615601441907046,
+     "n_cycles": 5,
+     "matches_deposit": false,
+     "mtime": 1786514299.0005393
+    },
+    {
+     "sto": "0037_62.529_33.591.par.sto",
+     "value": -2.5874430253430774,
+     "n_cycles": 5,
+     "matches_deposit": true,
+     "mtime": 1786294488.4728
+    }
+   ],
+   "match": "0037_62.529_33.591.par.sto",
+   "dir": "R151S_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "n_sto": 9,
+   "r228_would_pick": "0037_62.529_33.591.par.sto"
+  }
+ },
+ "unmatched_seeds": [],
+ "n_unmatched": 0
+}

@@ -1,0 +1,46 @@
+{
+ "rung_index": 1,
+ "wall_clock_s": 105.3831615447998,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R407SOLg070_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104"
+ ],
+ "prefix": "R407SOLg070_s104",
+ "arm": "SOL",
+ "kv": 0.07,
+ "seed": 104,
+ "warm": "WARM_R407SOLg050_s104_g0088.par",
+ "spastic_targets": [
+  "soleus"
+ ],
+ "deleted_reflex": "gastroc",
+ "parent_prefix": "R407SOLg050_s104",
+ "parent_role": "own_chain_rung_0",
+ "parent_result_dir": "R407SOLg050_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+ "parent_par": "0088_77.549_51.534.par",
+ "parent_par_sha256": "6fb381d1c0b8b2f046dbdf3131857b81b78b7c0b66b48c569bdab684ad027c8d",
+ "parent_generation": 88,
+ "parent_gate_G": true,
+ "parent_t_end_s": 10.88,
+ "spasticL_readback_targets": [
+  "soleus"
+ ],
+ "spasticL_block_sha256": "d97b0e67d0c032357924c903b92e353509b4e212a8de09270e0897af57830698",
+ "kv_literal_count_in_config": 1,
+ "fmax_readback": {
+  "tib_ant_l": 1759.0,
+  "soleus_l": 3549.0,
+  "gastroc_l": 2241.0
+ },
+ "config_sha256": "eb56617b04a23e21038c82aecc2f24093a2df136c34b7432d9c465883d421d9a",
+ "stage_dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407SOLg070_s104",
+ "status": "OK",
+ "sto": "0076_72.365_57.014.par.sto",
+ "t_end_s": 9.48,
+ "n_cycles_in_window": 6,
+ "gate_G": false,
+ "duplicate_result_dir": false,
+ "dir": "R407SOLg070_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+ "result_dir_path": "C:\\Users\\maurice\\Documents\\SCONE\\results\\R407SOLg070_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+ "measured_par": "0076_72.365_57.014.par"
+}

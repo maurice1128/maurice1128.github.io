@@ -1,0 +1,26 @@
+{
+ "round": 273,
+ "synthetic": true,
+ "tree": "C:\\Users\\maurice\\AppData\\Local\\Temp\\fixture_r273_dihxiol2",
+ "note": "end-to-end run on a synthetic corpus; proves the pipeline executes and writes, before any real cell is touched",
+ "results": {
+  "f=0.05": {
+   "t_pf": -0.14500000000000002,
+   "t_df": -0.14500000000000002,
+   "delta": 0.04,
+   "rung": "TYPE-CONSISTENT"
+  },
+  "f=0.10": {
+   "t_pf": -0.29000000000000004,
+   "t_df": -0.29000000000000004,
+   "delta": 0.04,
+   "rung": "TYPE-CONSISTENT"
+  },
+  "f=0.20": {
+   "t_pf": -0.5800000000000001,
+   "t_df": -0.5800000000000001,
+   "delta": 0.04,
+   "rung": "TYPE-CONSISTENT"
+  }
+ }
+}

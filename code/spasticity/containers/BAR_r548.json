@@ -1,0 +1,186 @@
+{
+ "id": "BAR_r548",
+ "why": "The manuscript justified a single 1.77 deg bar across all 81 candidates by claiming that published between-session errors exist for only two of the 81 variables. Kesar Table 2 publishes five, four of which are members of the 81, and 1.77 is the smallest of them. This recomputes the counts under each variable's own error and as a function of the bar.",
+ "kesar_between_session_SEM_deg": {
+  "ankle peak in swing": 1.767766952966369,
+  "ankle at 0% of cycle": 2.525381361380527,
+  "ankle at 100% of cycle": 2.525381361380527,
+  "knee peak in swing": 2.056381965695572,
+  "hip at toe-off": 4.148840807982294
+ },
+ "rho_bar": 0.8,
+ "scenarios": {
+  "A": {
+   "scenario": "A  single permissive bar, as published (1.77 deg everywhere)",
+   "n_weakness": 3,
+   "n_tone": 25,
+   "weakness": [
+    "ankle at 75% of cycle",
+    "ankle at 80% of cycle",
+    "ankle at 90% of cycle"
+   ],
+   "tone": [
+    "knee at 0% of cycle",
+    "knee at 5% of cycle",
+    "knee at 20% of cycle",
+    "knee at 100% of cycle",
+    "knee peak in swing",
+    "ankle at 0% of cycle",
+    "ankle at 5% of cycle",
+    "ankle at 15% of cycle",
+    "ankle at 20% of cycle",
+    "ankle at 25% of cycle",
+    "ankle at 30% of cycle",
+    "ankle at 35% of cycle",
+    "ankle at 40% of cycle",
+    "ankle at 45% of cycle",
+    "ankle at 75% of cycle",
+    "ankle at 80% of cycle",
+    "ankle at 85% of cycle",
+    "ankle at 90% of cycle",
+    "ankle at 95% of cycle",
+    "ankle at 100% of cycle",
+    "ankle peak in swing",
+    "hip at 10% of cycle",
+    "hip at 15% of cycle",
+    "hip at 20% of cycle",
+    "hip at 80% of cycle"
+   ],
+   "ratio": 8.333333333333334
+  },
+  "B": {
+   "scenario": "B  each variable's own published error where one exists, 1.77 elsewhere",
+   "n_weakness": 3,
+   "n_tone": 24,
+   "weakness": [
+    "ankle at 75% of cycle",
+    "ankle at 80% of cycle",
+    "ankle at 90% of cycle"
+   ],
+   "tone": [
+    "knee at 0% of cycle",
+    "knee at 5% of cycle",
+    "knee at 20% of cycle",
+    "knee at 100% of cycle",
+    "knee peak in swing",
+    "ankle at 0% of cycle",
+    "ankle at 5% of cycle",
+    "ankle at 15% of cycle",
+    "ankle at 20% of cycle",
+    "ankle at 25% of cycle",
+    "ankle at 30% of cycle",
+    "ankle at 35% of cycle",
+    "ankle at 40% of cycle",
+    "ankle at 45% of cycle",
+    "ankle at 75% of cycle",
+    "ankle at 80% of cycle",
+    "ankle at 85% of cycle",
+    "ankle at 90% of cycle",
+    "ankle at 95% of cycle",
+    "ankle peak in swing",
+    "hip at 10% of cycle",
+    "hip at 15% of cycle",
+    "hip at 20% of cycle",
+    "hip at 80% of cycle"
+   ],
+   "ratio": 8.0
+  },
+  "C": {
+   "scenario": "C  each joint's largest published error (conservative)",
+   "n_weakness": 1,
+   "n_tone": 14,
+   "weakness": [
+    "ankle at 75% of cycle"
+   ],
+   "tone": [
+    "knee at 0% of cycle",
+    "knee at 5% of cycle",
+    "knee at 20% of cycle",
+    "knee at 100% of cycle",
+    "knee peak in swing",
+    "ankle at 0% of cycle",
+    "ankle at 20% of cycle",
+    "ankle at 25% of cycle",
+    "ankle at 75% of cycle",
+    "ankle at 80% of cycle",
+    "ankle at 85% of cycle",
+    "ankle at 90% of cycle",
+    "ankle at 95% of cycle",
+    "ankle peak in swing"
+   ],
+   "ratio": 14.0
+  }
+ },
+ "count_vs_bar": [
+  {
+   "bar": 0.3,
+   "tone": 31,
+   "weak": 7
+  },
+  {
+   "bar": 0.5,
+   "tone": 29,
+   "weak": 7
+  },
+  {
+   "bar": 0.75,
+   "tone": 26,
+   "weak": 5
+  },
+  {
+   "bar": 1.0,
+   "tone": 26,
+   "weak": 4
+  },
+  {
+   "bar": 1.25,
+   "tone": 26,
+   "weak": 4
+  },
+  {
+   "bar": 1.5,
+   "tone": 25,
+   "weak": 3
+  },
+  {
+   "bar": 1.77,
+   "tone": 25,
+   "weak": 3
+  },
+  {
+   "bar": 2.06,
+   "tone": 24,
+   "weak": 3
+  },
+  {
+   "bar": 2.5,
+   "tone": 18,
+   "weak": 1
+  },
+  {
+   "bar": 2.53,
+   "tone": 18,
+   "weak": 1
+  },
+  {
+   "bar": 3.0,
+   "tone": 14,
+   "weak": 0
+  },
+  {
+   "bar": 4.0,
+   "tone": 7,
+   "weak": 0
+  },
+  {
+   "bar": 4.15,
+   "tone": 4,
+   "weak": 0
+  },
+  {
+   "bar": 5.0,
+   "tone": 2,
+   "weak": 0
+  }
+ ]
+}

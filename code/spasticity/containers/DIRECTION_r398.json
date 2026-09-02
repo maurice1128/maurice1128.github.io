@@ -1,0 +1,111 @@
+{
+  "status": "EXPLORATORY -- no endpoint nominated in advance; nothing confirmatory",
+  "control": "R151C, matched unlesioned, min_velocity 1.0",
+  "arms_n": {
+    "CONTROL_R151C": 6,
+    "WEAK_x080": 6,
+    "WEAK_x060": 3,
+    "SPAS_KV050": 6,
+    "SPAS_KV100": 4,
+    "SPAS_KV120": 3
+  },
+  "endpoints": {
+    "ank_at_heelstrike": {
+      "control_mean": -0.6558163158567852,
+      "d_weak": -1.3557806532088201,
+      "d_spastic": -2.3765629421970513,
+      "opposite_direction": false,
+      "arm_separation": 1.0207822889882312
+    },
+    "ank_max_cycle": {
+      "control_mean": 10.684858828417353,
+      "d_weak": -0.8730940966728369,
+      "d_spastic": -0.840915513658743,
+      "opposite_direction": false,
+      "arm_separation": 0.03217858301409393
+    },
+    "ank_min_cycle": {
+      "control_mean": -19.987710987370765,
+      "d_weak": -3.804066700482064,
+      "d_spastic": -0.079505533511675,
+      "opposite_direction": false,
+      "arm_separation": 3.724561166970389
+    },
+    "ank_rom_cycle": {
+      "control_mean": 30.67256981578812,
+      "d_weak": 2.930972603809227,
+      "d_spastic": -0.7614099801470715,
+      "opposite_direction": true,
+      "arm_separation": 3.6923825839562987
+    },
+    "ank_stance_mean": {
+      "control_mean": 4.484938121587132,
+      "d_weak": -0.3994928921270837,
+      "d_spastic": -3.2348571868933904,
+      "opposite_direction": false,
+      "arm_separation": 2.8353642947663067
+    },
+    "ank_swing_mean": {
+      "control_mean": -1.790060997698684,
+      "d_weak": -1.7367265822506845,
+      "d_spastic": -5.145628138352248,
+      "opposite_direction": false,
+      "arm_separation": 3.4089015561015636
+    },
+    "cycle_time_s": {
+      "control_mean": 1.1896666666666667,
+      "d_weak": -0.021333333333333426,
+      "d_spastic": -0.03911111111111132,
+      "opposite_direction": false,
+      "arm_separation": 0.017777777777777892
+    },
+    "hip_max_swing": {
+      "control_mean": 43.9635138063428,
+      "d_weak": 0.0044677975624622945,
+      "d_spastic": -1.3068632546325318,
+      "opposite_direction": true,
+      "arm_separation": 1.3113310521949941
+    },
+    "hip_rom_cycle": {
+      "control_mean": 55.35296748332228,
+      "d_weak": 0.5405583050557254,
+      "d_spastic": -0.5769640433583163,
+      "opposite_direction": true,
+      "arm_separation": 1.1175223484140417
+    },
+    "knee_at_heelstrike": {
+      "control_mean": -7.849999258121554,
+      "d_weak": 1.9254186863112697,
+      "d_spastic": -5.518980947510175,
+      "opposite_direction": true,
+      "arm_separation": 7.444399633821445
+    },
+    "knee_min_cycle": {
+      "control_mean": -64.55020824175857,
+      "d_weak": 0.565477512805515,
+      "d_spastic": 2.0063581421982306,
+      "opposite_direction": false,
+      "arm_separation": 1.4408806293927157
+    },
+    "knee_rom_cycle": {
+      "control_mean": 62.150116112887495,
+      "d_weak": -0.21125304047347981,
+      "d_spastic": -0.9524936966543791,
+      "opposite_direction": false,
+      "arm_separation": 0.7412406561808993
+    },
+    "stance_frac": {
+      "control_mean": 0.5945731014992198,
+      "d_weak": 0.008354411917142923,
+      "d_spastic": 0.017049087118980566,
+      "opposite_direction": false,
+      "arm_separation": 0.008694675201837643
+    }
+  },
+  "opposite_direction_endpoints": [
+    "ank_rom_cycle",
+    "hip_max_swing",
+    "hip_rom_cycle",
+    "knee_at_heelstrike"
+  ]
+}

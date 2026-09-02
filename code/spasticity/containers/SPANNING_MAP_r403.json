@@ -1,0 +1,295 @@
+{
+  "derived_from": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\reopt_r151\\R151C_s101\\H1922v7b3.hfd",
+  "touches_no_outcome_data": true,
+  "body_parent": {
+    "femur_r": "pelvis",
+    "tibia_r": "femur_r",
+    "calcn_r": "tibia_r",
+    "femur_l": "pelvis",
+    "tibia_l": "femur_l",
+    "calcn_l": "tibia_l",
+    "ground": "pelvis",
+    "torso": "pelvis"
+  },
+  "parent_joint": {
+    "ground": "hip_r",
+    "pelvis": "hip_r",
+    "femur_r": "hip_r",
+    "tibia_r": "knee_r",
+    "calcn_r": "ankle_r",
+    "femur_l": "hip_l",
+    "tibia_l": "knee_l",
+    "calcn_l": "ankle_l",
+    "torso": "lumbar_joint"
+  },
+  "muscle_spans": {
+    "add_mag_l": {
+      "path_bodies": [
+        "pelvis",
+        "femur_l"
+      ],
+      "spans": [
+        "hip_l"
+      ]
+    },
+    "add_mag_r": {
+      "path_bodies": [
+        "pelvis",
+        "femur_r"
+      ],
+      "spans": [
+        "hip_r"
+      ]
+    },
+    "bifemsh_l": {
+      "path_bodies": [
+        "femur_l",
+        "tibia_l",
+        "tibia_l"
+      ],
+      "spans": [
+        "knee_l"
+      ]
+    },
+    "bifemsh_r": {
+      "path_bodies": [
+        "femur_r",
+        "tibia_r",
+        "tibia_r"
+      ],
+      "spans": [
+        "knee_r"
+      ]
+    },
+    "femur_r": {
+      "path_bodies": [
+        "pelvis",
+        "femur_r"
+      ],
+      "spans": [
+        "hip_r"
+      ]
+    },
+    "gastroc_l": {
+      "path_bodies": [
+        "femur_l",
+        "calcn_l"
+      ],
+      "spans": [
+        "ankle_l",
+        "knee_l"
+      ]
+    },
+    "gastroc_r": {
+      "path_bodies": [
+        "femur_r",
+        "calcn_r"
+      ],
+      "spans": [
+        "ankle_r",
+        "knee_r"
+      ]
+    },
+    "glut_max_l": {
+      "path_bodies": [
+        "pelvis",
+        "pelvis",
+        "femur_l",
+        "femur_l"
+      ],
+      "spans": [
+        "hip_l"
+      ]
+    },
+    "glut_max_r": {
+      "path_bodies": [
+        "pelvis",
+        "pelvis",
+        "femur_r",
+        "femur_r"
+      ],
+      "spans": [
+        "hip_r"
+      ]
+    },
+    "glut_med_l": {
+      "path_bodies": [
+        "pelvis",
+        "femur_l"
+      ],
+      "spans": [
+        "hip_l"
+      ]
+    },
+    "hamstrings_l": {
+      "path_bodies": [
+        "pelvis",
+        "tibia_l",
+        "tibia_l"
+      ],
+      "spans": [
+        "hip_l",
+        "knee_l"
+      ]
+    },
+    "hamstrings_r": {
+      "path_bodies": [
+        "pelvis",
+        "tibia_r",
+        "tibia_r"
+      ],
+      "spans": [
+        "hip_r",
+        "knee_r"
+      ]
+    },
+    "iliopsoas_l": {
+      "path_bodies": [
+        "pelvis",
+        "pelvis",
+        "femur_l",
+        "femur_l"
+      ],
+      "spans": [
+        "hip_l"
+      ]
+    },
+    "iliopsoas_r": {
+      "path_bodies": [
+        "pelvis",
+        "pelvis",
+        "femur_r",
+        "femur_r"
+      ],
+      "spans": [
+        "hip_r"
+      ]
+    },
+    "rect_fem_l": {
+      "path_bodies": [
+        "pelvis",
+        "femur_l",
+        "tibia_l"
+      ],
+      "spans": [
+        "hip_l",
+        "knee_l"
+      ]
+    },
+    "rect_fem_r": {
+      "path_bodies": [
+        "pelvis",
+        "femur_r",
+        "tibia_r"
+      ],
+      "spans": [
+        "hip_r",
+        "knee_r"
+      ]
+    },
+    "soleus_l": {
+      "path_bodies": [
+        "tibia_l",
+        "calcn_l"
+      ],
+      "spans": [
+        "ankle_l"
+      ]
+    },
+    "soleus_r": {
+      "path_bodies": [
+        "tibia_r",
+        "calcn_r"
+      ],
+      "spans": [
+        "ankle_r"
+      ]
+    },
+    "tib_ant_l": {
+      "path_bodies": [
+        "tibia_l",
+        "tibia_l",
+        "calcn_l"
+      ],
+      "spans": [
+        "ankle_l"
+      ]
+    },
+    "tib_ant_r": {
+      "path_bodies": [
+        "tibia_r",
+        "tibia_r",
+        "calcn_r"
+      ],
+      "spans": [
+        "ankle_r"
+      ]
+    },
+    "vasti_l": {
+      "path_bodies": [
+        "femur_l",
+        "femur_l",
+        "tibia_l"
+      ],
+      "spans": [
+        "knee_l"
+      ]
+    },
+    "vasti_r": {
+      "path_bodies": [
+        "femur_r",
+        "femur_r",
+        "tibia_r"
+      ],
+      "spans": [
+        "knee_r"
+      ]
+    }
+  },
+  "joint_classes": {
+    "ankle_l": {
+      "class": "BOTH",
+      "spastic_muscles": [
+        "soleus_l",
+        "gastroc_l"
+      ],
+      "weak_muscles": [
+        "tib_ant_l"
+      ]
+    },
+    "ankle_r": {
+      "class": "NEITHER",
+      "spastic_muscles": [],
+      "weak_muscles": []
+    },
+    "hip_l": {
+      "class": "NEITHER",
+      "spastic_muscles": [],
+      "weak_muscles": []
+    },
+    "hip_r": {
+      "class": "NEITHER",
+      "spastic_muscles": [],
+      "weak_muscles": []
+    },
+    "knee_l": {
+      "class": "SPASTIC_ONLY",
+      "spastic_muscles": [
+        "gastroc_l"
+      ],
+      "weak_muscles": []
+    },
+    "knee_r": {
+      "class": "NEITHER",
+      "spastic_muscles": [],
+      "weak_muscles": []
+    }
+  },
+  "lesioned_spastic": [
+    "soleus_l",
+    "gastroc_l"
+  ],
+  "lesioned_weak": [
+    "tib_ant_l"
+  ]
+}

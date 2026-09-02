@@ -1,0 +1,18 @@
+{
+ "cell": 4,
+ "prefix": "R291KV0035_s105",
+ "kind": "spastic",
+ "seed": 105,
+ "kv": 0.035,
+ "f": null,
+ "scale": null,
+ "wall_clock_s": 235.78635621070862,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R291KV0035_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105"
+ ],
+ "result_dir": "R291KV0035_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+ "resolved_par": "0085_38.538_1.125.par",
+ "t_end_s": 20.0,
+ "in_band": false
+}

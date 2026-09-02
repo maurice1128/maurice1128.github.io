@@ -1,0 +1,45 @@
+{
+ "id": "HAMCTRL_r600",
+ "why": "The duration control of section 3.3 uses plantarflexor-weakness lineages, a manipulation of the same muscle group whose overactivity is claimed to drive the effect. This is a falling control whose lesion is independent of the plantarflexors: hamstring force scaled to 0.60 on the same model and controller.",
+ "lesion": "hamstrings max isometric force scaled to 0.60; the hamstrings cross hip and knee, not the ankle",
+ "not_duration_matched": "these runs end between 6.46 and 9.03 s and so fail criterion G, which requires 9.73 s. They fall earlier than every hyperreflexia run, which makes the comparison asymmetric in the direction that favours the objection rather than the answer.",
+ "measurement": "peak swing dorsiflexion over the cycles completed before each run ended, corpus conventions otherwise",
+ "artefact_floor_deg": 0.03581801092876269,
+ "groups": {
+  "control, unlesioned": {
+   "n_runs": 6,
+   "t_end_min": 20.0,
+   "t_end_max": 20.0,
+   "mean_cycles": 5.0,
+   "peak_mean": 9.55516367333586,
+   "peak_min": 9.519327073109743,
+   "peak_max": 9.580828362839089,
+   "vs_control_deg": 0.0,
+   "knee_ic_mean": -7.849999258121554
+  },
+  "hyperreflexia, all admitted": {
+   "n_runs": 26,
+   "t_end_min": 7.89,
+   "t_end_max": 17.85,
+   "mean_cycles": 5.576923076923077,
+   "peak_mean": 0.2697172817109187,
+   "peak_min": -1.9735674492729987,
+   "peak_max": 2.4039578751148047,
+   "vs_control_deg": -9.28544639162494,
+   "knee_ic_mean": -12.122517769995879
+  },
+  "hamstring weakness x0.60": {
+   "n_runs": 5,
+   "t_end_min": 6.46,
+   "t_end_max": 9.03,
+   "mean_cycles": 4.0,
+   "peak_mean": 9.46962470325553,
+   "peak_min": 9.42932399786162,
+   "peak_max": 9.512589089439007,
+   "vs_control_deg": -0.0855389700803304,
+   "knee_ic_mean": -9.397592831223548
+  }
+ },
+ "disjoint_from_hyperreflexia": true,
+ "gap_deg": 7.0253661227468145
+}

@@ -1,0 +1,93 @@
+{
+ "round": 234,
+ "scope": "CONTROL CELLS ONLY (SG0_DR2K000); no lesion arm touched",
+ "window": [
+  1.0,
+  8.0
+ ],
+ "statistic": "cycle-averaged hip_flexion_LmR, degrees",
+ "provenance": {
+  "script": "body2_sd_r234.py",
+  "script_sha256": "37d58bbd223bd42a598aa4cf75bf98b5e98c9434e26977b2c1138607a59d5b9b",
+  "prereg_sha256": "88ca5ad8205c776cadb79b2930ad4869c11cf84bd64727a8f5a3bfc13d1056f5"
+ },
+ "per_cell": [
+  {
+   "value": 0.25519354444282427,
+   "n_cycles": 3,
+   "t_end": 10.0,
+   "seed": 101,
+   "field3": 0.603
+  },
+  {
+   "value": -0.08170509953625421,
+   "n_cycles": 3,
+   "t_end": 10.0,
+   "seed": 102,
+   "field3": 0.628
+  },
+  {
+   "value": 0.07122070363546597,
+   "n_cycles": 3,
+   "t_end": 10.0,
+   "seed": 103,
+   "field3": 0.605
+  },
+  {
+   "value": 0.05626749815921571,
+   "n_cycles": 3,
+   "t_end": 10.0,
+   "seed": 104,
+   "field3": 0.588
+  },
+  {
+   "value": -0.049019908306209184,
+   "n_cycles": 3,
+   "t_end": 10.0,
+   "seed": 105,
+   "field3": 0.626
+  },
+  {
+   "value": -0.26820358848656534,
+   "n_cycles": 3,
+   "t_end": 10.0,
+   "seed": 106,
+   "field3": 0.61
+  }
+ ],
+ "excluded": [],
+ "n_cells": 6,
+ "n_admitted": 6,
+ "n_excluded": 0,
+ "conservation_ok": true,
+ "sigma_2D": 0.17568722851821253,
+ "sigma_2D_ci95": [
+  0.10966538245616979,
+  0.4308959644704135
+ ],
+ "ratio_to_3D_pooled": 0.4821274108622737,
+ "ratio_to_3D_central": 0.3715103161730018,
+ "values": [
+  0.25519354444282427,
+  -0.08170509953625421,
+  0.07122070363546597,
+  0.05626749815921571,
+  -0.049019908306209184,
+  -0.26820358848656534
+ ],
+ "recalibrated": {
+  "point": {
+   "sigma": 0.17568722851821253,
+   "power_at_0.65": 1.0,
+   "power_at_cap": 1.0
+  },
+  "ci_upper": {
+   "sigma": 0.4308959644704135,
+   "power_at_0.65": 0.975,
+   "power_at_cap": 0.975
+  }
+ },
+ "delta_cap": 0.64635,
+ "OUTCOME": "POWER ADEQUATE",
+ "reason": "EQUIV power at delta=0.65 is 0.975 using the CI upper bound"
+}

@@ -1,0 +1,88 @@
+{
+ "round": 332,
+ "what": "Re-establishes the remaining-defect list against CURRENT disk. Round three's list was produced before r308 and the corpus has been repaired across ~23 rounds since; it describes a state that no longer exists.",
+ "its_status": "The round-three list now has the same standing as DEPOSIT_INVENTORY_r246.json: produced by a real measurement, describing a superseded state. A defect list is itself a deposit and goes stale like any other.",
+ "no_fixes_applied": true,
+ "items": {
+  "#20": {
+   "as_stated": "SEPARATION_r280.json's SOURCE_SUPERSEDED asserts mtimes the file no longer has.",
+   "STATUS": "ADDRESSED at r311 (final write). The block now carries MTIME_EVIDENCE_DESTROYED_BY_THE_REPAIR, which states the cited mtimes are historical, unrecoverable from the filesystem, and that the block is the only surviving evidence.",
+   "underlying_condition_permanent": "The mtime inversion itself is NOT repairable -- consumer 2026-08-18 03:20:44 vs source 2026-08-17 17:55:43.",
+   "file_class": "EVIDENCE FILE -- SEALED at r311, no further writes permitted."
+  },
+  "#21": {
+   "as_stated": "VERIFY_R298.json computes gap_deg by two different formulas, undefined.",
+   "STATUS": "FIXED at r317.",
+   "evidence": "Numeric gap_deg values remaining: ['0.861753734019743']. The three negatives were nulled with their former values in gap_deg_SUPERSEDED_signed_difference, and GAP_DEG_DEFINITION_D21 defines the quantity once.",
+   "file_class": null
+  },
+  "#22": {
+   "as_stated": "BODY2_HASHES_r229.json falsely attests two files; only one was recorded.",
+   "STATUS": "RECORDED at r319 (manuscript entry) and r311 (inventory entry). Both violations now have a container.",
+   "deliberately_not_repaired": "Re-attesting would certify the present state and destroy the evidence of divergence. Recorded by decision.",
+   "file_class": "BODY2_HASHES_r229.json is an EVIDENCE FILE -- its digests are the evidence. Do not edit."
+  },
+  "#23": {
+   "as_stated": "PROVENANCE_r224.json / PROVENANCE.json carry stale mtimes and OK verdicts.",
+   "STATUS": "RECORDED at r316 and RULED ON at r330. Neither file edited.",
+   "correction_to_the_original_statement": "PROVENANCE.json carries ZERO ordering verdict fields and zero literal OK. The defect concerns ONE file, PROVENANCE_r224.json (7 fields, 6 OK).",
+   "file_class": "PROVENANCE_r224.json is an EVIDENCE FILE: its own mtime 2026-08-16 18:27:18 is the only test of the unresolved r316 conjecture. NEVER EDIT.",
+   "residual_cost_accepted": "A reader of PROVENANCE_r224.json sees six OK attestations with no in-file marker. Accepted at r330: permanent harm beats discoverability harm."
+  },
+  "line_citations": {
+   "as_stated": "Three deposits cite RESULTS_3d_r214.md by line number, which drifts.",
+   "STATUS": "STILL PRESENT -- none fixed.",
+   "detail": {
+    "BANDFILL_ENDPOINT_r291.json": {
+     "citation": "line 134",
+     "still_present": true,
+     "file_class": "RECORD FILE -- safe to edit",
+     "metadata_dependencies": 0
+    },
+    "CYCLE_CONVENTION_CONTRADICTION_r322.json": {
+     "citation": "line 134",
+     "still_present": true,
+     "file_class": "RECORD FILE -- safe to edit",
+     "metadata_dependencies": 0
+    },
+    "PROVENANCE_STALENESS_r316.json": {
+     "citation": "lines 89-91",
+     "still_present": true,
+     "file_class": "EVIDENCE FILE",
+     "metadata_dependencies": 1
+    }
+   },
+   "note": "Two of the three were written this session while the rule against them was already visible. The manuscript has been edited repeatedly since, so all three are stale."
+  }
+ },
+ "SUMMARY": {
+  "still_present": [
+   "the three manuscript line citations"
+  ],
+  "addressed_or_recorded": [
+   "#20 (r311)",
+   "#21 (r317)",
+   "#22 (r311+r319)",
+   "#23 (r316+r330)"
+  ]
+ },
+ "written_at": "2026-08-18T09:13:02",
+ "ROUND4_DEFECT16_HALF_FALSE_r350": {
+  "measured_at": "2026-08-18 13:37",
+  "as_written": "the 1.662 headline is 'absent from both cited deposits and sits uncited in METRIC_r255.json'",
+  "what_is_TRUE": "The manuscript did lack a container citation for its designated headline number. That part stands and is now fixed.",
+  "what_is_FALSE_1": "It sits in TWO deposits, not one: METRIC_r255.json (two paths) and METRIC_LADDER_r256.json (one path). Three storage sites, all holding 1.6617781411076797 and agreeing to the last digit.",
+  "what_is_FALSE_2": "The things the manuscript cited are NOT deposits. PREREG_channels_G2_r219.md and PREREG_window_r218.md are REGISTRATIONS. Saying the value is 'absent from both cited deposits' miscategorises them: a registration states what WILL be measured and cannot carry a measured value. The citation pointed at the wrong KIND of file, which is a different defect from pointing at the wrong file.",
+  "measured_instead": {
+   "value": "1.6617781411076797",
+   "containers": [
+    "METRIC_r255.json /windows/13.58/tables/excursion/hip_flexion_LmR/arms/S/margin",
+    "METRIC_r255.json /windows/13.58/reflex_arm_on_key_channels/hip_flexion_LmR/excursion/S_margin",
+    "METRIC_LADDER_r256.json /windows/13.58/excursion/hip_flexion_LmR/ladder/margins/S"
+   ],
+   "two_independent_deposits_agree_to_the_last_digit": true
+  },
+  "TWO_RESOLVERS_WERE_REQUIRED": "A string grep for '1.662' finds the value NOWHERE -- it serialises as 1.6617781411076797. A naive numeric scan at three decimals returns FOUR files, adding PHASE_r258.json (lumbar_bending, pelvis_rotation, knee_angle_l) and VIDEO_DEGRADATION_POSTHOC.json (margin_gap_sd), all coincidental near-1.662 values on unrelated quantities and all distinguishable at full precision. Neither resolver alone answers the question -- the r349 taxonomy in live form.",
+  "registrations_retained": "The registration citations were KEPT in the manuscript. They are correct as statements of what was pre-specified; they are simply not the source of the value."
+ }
+}

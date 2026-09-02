@@ -1,0 +1,18 @@
+{
+ "cell": 37,
+ "prefix": "R291BF007_s160",
+ "kind": "weak",
+ "seed": 160,
+ "kv": null,
+ "f": 0.07,
+ "scale": 0.9299999999999999,
+ "wall_clock_s": 174.8966462612152,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R291BF007_s160.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R160"
+ ],
+ "result_dir": "R291BF007_s160.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R160",
+ "resolved_par": "0089_37.776_1.125.par",
+ "t_end_s": 19.61,
+ "in_band": false
+}

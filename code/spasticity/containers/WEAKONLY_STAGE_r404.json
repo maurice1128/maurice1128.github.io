@@ -1,0 +1,671 @@
+{
+  "arm": "WEAKONLY_r404",
+  "registration": "NONE YET -- this manifest is the design of record, written before any cell of the R404 series has been run.",
+  "generations": 90,
+  "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106
+  ],
+  "design": {
+    "question": "The cross-joint rule says a lesion shows itself at the joints its muscles span and not at the others. r402 tests the SPASTIC half. This tests the WEAKNESS half, which the current lesion pair cannot test because it creates no WEAK_ONLY joint.",
+    "lesion": "max_isometric_force on hamstrings_l (base 2594 N) scaled to x0.60 and x0.40, left side only.",
+    "no_ankle_lesion": "tib_ant_l 1759, soleus_l 3549, gastroc_l 2241 and hamstrings_r 2594 are asserted unchanged in every cell; the controller template is the unlesioned R151C config and carries no SpasticL block.",
+    "arms": [
+      {
+        "arm": "WKHAM060",
+        "scale": 0.6,
+        "fmax": 1556.3999999999999,
+        "n_seeds": 6
+      },
+      {
+        "arm": "WKHAM040",
+        "scale": 0.4,
+        "fmax": 1037.6000000000001,
+        "n_seeds": 6
+      }
+    ],
+    "n_cells": 12,
+    "comparator": "the EXISTING R396SPg110 cells, not re-run and not modified",
+    "chaining": "x0.60 from that seed's unlesioned control R151C_s{seed}; x0.40 from that seed's OWN x0.60 result R404WKHAM060_s{seed}. Never across seeds. A cell whose parent failed Gate G is BROKEN and no substitute parent is used.",
+    "gate_G": "t_end >= 9.73 s and >= 5 admissible cycles. SETTLE 1.00, T1 9.73, cycles wholly inside the window, drop the last kept cycle, stance = leg0_l.grf_norm_y > 0.05.",
+    "endpoints": {
+      "primary_registered_at": "hip_l",
+      "hip_flexion_l_at_heelstrike_deg": "per-cycle mean of hip_flexion_l at left heel strike, degrees -- the WEAK_ONLY joint, where the rule predicts an effect",
+      "hip_flexion_l_swing_peak_deg": "mean over cycles of the per-cycle maximum of hip_flexion_l during swing (grf <= threshold), degrees",
+      "knee_at_heelstrike_deg": "corpus endpoint, knee_l is BOTH under this pair",
+      "ank_stance_mean_deg": "corpus endpoint; ankle_l is SPASTIC_ONLY under this pair, so the rule predicts LITTLE weakness effect here -- this is the specificity control"
+    },
+    "prediction_shape": "If the cross-joint rule holds, the hamstrings weakness displaces hip_l (WEAK_ONLY) and knee_l (BOTH) and leaves ankle_l (SPASTIC_ONLY, spanned by neither hamstrings head) essentially where the control is. The quantitative thresholds are NOT set here -- they belong in the registration that will be written from this manifest."
+  },
+  "spanning_analysis": {
+    "source": "SPANNING_MAP_r403.json",
+    "source_sha256": "5a17673758510ac04ebf61eb12796218031470aea4ca31d8784a14e37971b203",
+    "derived_from_model": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\reopt_r151\\R151C_s101\\H1922v7b3.hfd",
+    "spastic_muscles": [
+      "soleus_l",
+      "gastroc_l"
+    ],
+    "spastic_joints_spanned": [
+      "ankle_l",
+      "knee_l"
+    ],
+    "left_muscles_spanning_hip_or_knee_excluding_spastic_pair": {
+      "add_mag_l": [
+        "hip_l"
+      ],
+      "bifemsh_l": [
+        "knee_l"
+      ],
+      "glut_max_l": [
+        "hip_l"
+      ],
+      "glut_med_l": [
+        "hip_l"
+      ],
+      "hamstrings_l": [
+        "hip_l",
+        "knee_l"
+      ],
+      "iliopsoas_l": [
+        "hip_l"
+      ],
+      "rect_fem_l": [
+        "hip_l",
+        "knee_l"
+      ],
+      "vasti_l": [
+        "knee_l"
+      ]
+    },
+    "chosen_weak_muscle": "hamstrings_l",
+    "chosen_weak_muscle_spans": [
+      "hip_l",
+      "knee_l"
+    ],
+    "joint_classes_under_old_pair": {
+      "ankle_l": "BOTH",
+      "ankle_r": "NEITHER",
+      "hip_l": "NEITHER",
+      "hip_r": "NEITHER",
+      "knee_l": "SPASTIC_ONLY",
+      "knee_r": "NEITHER"
+    },
+    "joint_classes_under_new_pair": {
+      "ankle_l": {
+        "class": "SPASTIC_ONLY",
+        "spastic_muscles": [
+          "soleus_l",
+          "gastroc_l"
+        ],
+        "weak_muscles": []
+      },
+      "ankle_r": {
+        "class": "NEITHER",
+        "spastic_muscles": [],
+        "weak_muscles": []
+      },
+      "hip_l": {
+        "class": "WEAK_ONLY",
+        "spastic_muscles": [],
+        "weak_muscles": [
+          "hamstrings_l"
+        ]
+      },
+      "hip_r": {
+        "class": "NEITHER",
+        "spastic_muscles": [],
+        "weak_muscles": []
+      },
+      "knee_l": {
+        "class": "BOTH",
+        "spastic_muscles": [
+          "gastroc_l"
+        ],
+        "weak_muscles": [
+          "hamstrings_l"
+        ]
+      },
+      "knee_r": {
+        "class": "NEITHER",
+        "spastic_muscles": [],
+        "weak_muscles": []
+      }
+    },
+    "weak_only_joints_created": [
+      "hip_l"
+    ],
+    "why": "Under the old pair (weak = tib_ant_l, ankle only) no joint is WEAK_ONLY, so the cross-joint rule has nothing to predict on for the weakness half. Moving the weakness to hamstrings_l, which spans hip_l, knee_l, makes hip_l WEAK_ONLY and knee_l BOTH."
+  },
+  "template_config": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\reopt_r151\\R151C_s101\\config.scone",
+  "template_config_sha256": "3d565bcea6480e76b46c291ec775b66b469bf2a6717980a41d878d08ac8e161a",
+  "template_model_sha256": "512cc251213926bee5f201eae82eb1ec04530d08b207fae56fa886d9eb3cd9fd",
+  "staging_started_sconecmd": false,
+  "comparator_cells": [
+    {
+      "prefix": "R396SPg110_s101",
+      "result_dir": "R396SPg110_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "par": "0077_72.589_57.210.par",
+      "par_sha256": "1710bc5ab89fc0b48feab63a1a13b55c89e05fb1c5de1575b1ce3f33cb8b466f",
+      "status": "OK",
+      "sto": "0077_72.589_57.210.par.sto",
+      "t_end_s": 9.81,
+      "n_cycles_in_window": 6,
+      "gate_G": true
+    },
+    {
+      "prefix": "R396SPg110_s102",
+      "result_dir": "R396SPg110_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "par": "0087_71.092_57.292.par",
+      "par_sha256": "c9f114e8a466a0e7c98b89d76d0adc60a0a66b2abe390811dc18971ba6a51aea",
+      "status": "OK",
+      "sto": "0087_71.092_57.292.par.sto",
+      "t_end_s": 10.81,
+      "n_cycles_in_window": 6,
+      "gate_G": true
+    },
+    {
+      "prefix": "R396SPg110_s103",
+      "status": "NO_RESULT_DIR"
+    },
+    {
+      "prefix": "R396SPg110_s104",
+      "status": "NO_RESULT_DIR"
+    },
+    {
+      "prefix": "R396SPg110_s105",
+      "result_dir": "R396SPg110_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "par": "0020_79.617_52.926.par",
+      "par_sha256": "3da95bfe6bddf8d8a67ea0ea240ccdac2fff55ecbc52d5c6c20bd9666d0701c8",
+      "status": "OK",
+      "sto": "0020_79.617_52.926.par.sto",
+      "t_end_s": 10.81,
+      "n_cycles_in_window": 6,
+      "gate_G": true
+    },
+    {
+      "prefix": "R396SPg110_s106",
+      "result_dir": "R396SPg110_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "par": "0075_69.581_54.214.par",
+      "par_sha256": "c282656d21bb3ed19b10ba418a8e6ebdd2e690ae5ee979f2b6e8057c80963d1a",
+      "status": "OK",
+      "sto": "0075_69.581_54.214.par.sto",
+      "t_end_s": 11.11,
+      "n_cycles_in_window": 6,
+      "gate_G": true
+    }
+  ],
+  "cells": [
+    {
+      "arm": "WKHAM060",
+      "rung": "060",
+      "scale": 0.6,
+      "seed": 101,
+      "prefix": "R404WKHAM060_s101",
+      "parent_prefix": "R151C_s101",
+      "parent_is_root": true,
+      "lesion_muscle": "hamstrings_l",
+      "fmax_target": 1556.3999999999999,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\weakonly_r404\\R404WKHAM060_s101",
+      "parent": {
+        "prefix": "R151C_s101",
+        "result_dir": "R151C_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+        "par": "0060_19.456_0.988.par",
+        "par_sha256": "89e844f78537084989532e08d942ff24defc59ac91e9f1e84c6b2a1d6090bd64",
+        "generation": 60,
+        "status": "OK",
+        "sto": "0060_19.456_0.988.par.sto",
+        "t_end_s": 20.0,
+        "n_cycles_in_window": 5,
+        "gate_G": true
+      },
+      "staged_warm_as": "WARM_R151C_s101_g0060.par",
+      "init_line_readback": "init { file = \"par/WARM_R151C_s101_g0060.par\" }",
+      "fmax_readback": {
+        "hamstrings_l": 1556.4,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "9cd4043e465b0b1ef17a338e7f7c7f72ccfdf3859d7f0f502b38caf996e42c71",
+      "status": "PREPARED",
+      "fmax_after_make_dirs": {
+        "hamstrings_l": 1556.4,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      }
+    },
+    {
+      "arm": "WKHAM060",
+      "rung": "060",
+      "scale": 0.6,
+      "seed": 102,
+      "prefix": "R404WKHAM060_s102",
+      "parent_prefix": "R151C_s102",
+      "parent_is_root": true,
+      "lesion_muscle": "hamstrings_l",
+      "fmax_target": 1556.3999999999999,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\weakonly_r404\\R404WKHAM060_s102",
+      "parent": {
+        "prefix": "R151C_s102",
+        "result_dir": "R151C_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+        "par": "0003_26.221_0.983.par",
+        "par_sha256": "06471a9f70822a3c9511639db0c732fcc88a312480542acc825bb7e94a7f22b2",
+        "generation": 3,
+        "status": "OK",
+        "sto": "0003_26.221_0.983.par.sto",
+        "t_end_s": 20.0,
+        "n_cycles_in_window": 5,
+        "gate_G": true
+      },
+      "staged_warm_as": "WARM_R151C_s102_g0003.par",
+      "init_line_readback": "init { file = \"par/WARM_R151C_s102_g0003.par\" }",
+      "fmax_readback": {
+        "hamstrings_l": 1556.4,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "548eb93465283572ee93aea7314c688f71cef1535e76ba30c14c91ff24d33429",
+      "status": "PREPARED",
+      "fmax_after_make_dirs": {
+        "hamstrings_l": 1556.4,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      }
+    },
+    {
+      "arm": "WKHAM060",
+      "rung": "060",
+      "scale": 0.6,
+      "seed": 103,
+      "prefix": "R404WKHAM060_s103",
+      "parent_prefix": "R151C_s103",
+      "parent_is_root": true,
+      "lesion_muscle": "hamstrings_l",
+      "fmax_target": 1556.3999999999999,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\weakonly_r404\\R404WKHAM060_s103",
+      "parent": {
+        "prefix": "R151C_s103",
+        "result_dir": "R151C_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+        "par": "0028_1.032_0.991.par",
+        "par_sha256": "a80cdb7a2027f4082eef521934596263b1ec487b643cd352ff9b6e08bc9f0441",
+        "generation": 28,
+        "status": "OK",
+        "sto": "0028_1.032_0.991.par.sto",
+        "t_end_s": 20.0,
+        "n_cycles_in_window": 5,
+        "gate_G": true
+      },
+      "staged_warm_as": "WARM_R151C_s103_g0028.par",
+      "init_line_readback": "init { file = \"par/WARM_R151C_s103_g0028.par\" }",
+      "fmax_readback": {
+        "hamstrings_l": 1556.4,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "dcdbbc34875e6a6cf11bdfb3e29d2d003b64c7de9faf08fbb966968ea24a784b",
+      "status": "PREPARED",
+      "fmax_after_make_dirs": {
+        "hamstrings_l": 1556.4,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      }
+    },
+    {
+      "arm": "WKHAM060",
+      "rung": "060",
+      "scale": 0.6,
+      "seed": 104,
+      "prefix": "R404WKHAM060_s104",
+      "parent_prefix": "R151C_s104",
+      "parent_is_root": true,
+      "lesion_muscle": "hamstrings_l",
+      "fmax_target": 1556.3999999999999,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\weakonly_r404\\R404WKHAM060_s104",
+      "parent": {
+        "prefix": "R151C_s104",
+        "result_dir": "R151C_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+        "par": "0000_1.033_0.987.par",
+        "par_sha256": "bd1f5588c9e27ce558e71bd53003118afa873dcb1268609b232f7f9b34a7f24e",
+        "generation": 0,
+        "status": "OK",
+        "sto": "0000_1.033_0.987.par.sto",
+        "t_end_s": 20.0,
+        "n_cycles_in_window": 5,
+        "gate_G": true
+      },
+      "staged_warm_as": "WARM_R151C_s104_g0000.par",
+      "init_line_readback": "init { file = \"par/WARM_R151C_s104_g0000.par\" }",
+      "fmax_readback": {
+        "hamstrings_l": 1556.4,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "657a530227ad939188964a27d95e7a66d2903645723ef0b788d0f870a75fb128",
+      "status": "PREPARED",
+      "fmax_after_make_dirs": {
+        "hamstrings_l": 1556.4,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      }
+    },
+    {
+      "arm": "WKHAM060",
+      "rung": "060",
+      "scale": 0.6,
+      "seed": 105,
+      "prefix": "R404WKHAM060_s105",
+      "parent_prefix": "R151C_s105",
+      "parent_is_root": true,
+      "lesion_muscle": "hamstrings_l",
+      "fmax_target": 1556.3999999999999,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\weakonly_r404\\R404WKHAM060_s105",
+      "parent": {
+        "prefix": "R151C_s105",
+        "result_dir": "R151C_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+        "par": "0053_30.023_0.987.par",
+        "par_sha256": "fbd42423eed2b948053c4cae6f2ba7a5571ae5ad8acd7e2a5bd338703229192b",
+        "generation": 53,
+        "status": "OK",
+        "sto": "0053_30.023_0.987.par.sto",
+        "t_end_s": 20.0,
+        "n_cycles_in_window": 5,
+        "gate_G": true
+      },
+      "staged_warm_as": "WARM_R151C_s105_g0053.par",
+      "init_line_readback": "init { file = \"par/WARM_R151C_s105_g0053.par\" }",
+      "fmax_readback": {
+        "hamstrings_l": 1556.4,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "86eb7b6c18f36cb87ac66cecbf9bc6167cbd52279a6ebd93f02f0139bec4c9b2",
+      "status": "PREPARED",
+      "fmax_after_make_dirs": {
+        "hamstrings_l": 1556.4,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      }
+    },
+    {
+      "arm": "WKHAM060",
+      "rung": "060",
+      "scale": 0.6,
+      "seed": 106,
+      "prefix": "R404WKHAM060_s106",
+      "parent_prefix": "R151C_s106",
+      "parent_is_root": true,
+      "lesion_muscle": "hamstrings_l",
+      "fmax_target": 1556.3999999999999,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\weakonly_r404\\R404WKHAM060_s106",
+      "parent": {
+        "prefix": "R151C_s106",
+        "result_dir": "R151C_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+        "par": "0001_1.056_0.989.par",
+        "par_sha256": "96765a53a5a8a4855f474304df6d6be143cd4da0565ab2097ed67a2a4d236b5c",
+        "generation": 1,
+        "status": "OK",
+        "sto": "0001_1.056_0.989.par.sto",
+        "t_end_s": 20.0,
+        "n_cycles_in_window": 5,
+        "gate_G": true
+      },
+      "staged_warm_as": "WARM_R151C_s106_g0001.par",
+      "init_line_readback": "init { file = \"par/WARM_R151C_s106_g0001.par\" }",
+      "fmax_readback": {
+        "hamstrings_l": 1556.4,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "292cc4d93adbe6bca3d3054925f83537e71bb3dd676be38cbc8f5c77efb5919a",
+      "status": "PREPARED",
+      "fmax_after_make_dirs": {
+        "hamstrings_l": 1556.4,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      }
+    },
+    {
+      "arm": "WKHAM040",
+      "rung": "040",
+      "scale": 0.4,
+      "seed": 101,
+      "prefix": "R404WKHAM040_s101",
+      "parent_prefix": "R404WKHAM060_s101",
+      "parent_is_root": false,
+      "lesion_muscle": "hamstrings_l",
+      "fmax_target": 1037.6000000000001,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\weakonly_r404\\R404WKHAM040_s101",
+      "parent": {
+        "prefix": "R404WKHAM060_s101",
+        "result_dir": "R404WKHAM060_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+        "par": "0086_89.039_88.548.par",
+        "par_sha256": "02a010d33fc4d64ec006b6dd6bc5bfcca588462597d3628cb02e66d5a9d23bb8",
+        "generation": 86,
+        "status": "OK",
+        "sto": "0086_89.039_88.548.par.sto",
+        "t_end_s": 3.88,
+        "n_cycles_in_window": 1,
+        "gate_G": false
+      },
+      "status": "BROKEN_PARENT_FAILED_GATE",
+      "broken_reason": "parent R404WKHAM060_s101 failed Gate G (t_end 3.88 s, 1 cycles); no other parent is substituted, this seed's chain is BROKEN",
+      "fmax_after_make_dirs": {
+        "hamstrings_l": 1037.6,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      }
+    },
+    {
+      "arm": "WKHAM040",
+      "rung": "040",
+      "scale": 0.4,
+      "seed": 102,
+      "prefix": "R404WKHAM040_s102",
+      "parent_prefix": "R404WKHAM060_s102",
+      "parent_is_root": false,
+      "lesion_muscle": "hamstrings_l",
+      "fmax_target": 1037.6000000000001,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\weakonly_r404\\R404WKHAM040_s102",
+      "parent": {
+        "prefix": "R404WKHAM060_s102",
+        "result_dir": "R404WKHAM060_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+        "par": "0084_77.010_64.028.par",
+        "par_sha256": "a6574fb56a9b4a3ee9d88afcc99aea03eddfe216af8d4ef453393651b996d70b",
+        "generation": 84,
+        "status": "OK",
+        "sto": "0084_77.010_64.028.par.sto",
+        "t_end_s": 8.15,
+        "n_cycles_in_window": 4,
+        "gate_G": false
+      },
+      "status": "BROKEN_PARENT_FAILED_GATE",
+      "broken_reason": "parent R404WKHAM060_s102 failed Gate G (t_end 8.15 s, 4 cycles); no other parent is substituted, this seed's chain is BROKEN",
+      "fmax_after_make_dirs": {
+        "hamstrings_l": 1037.6,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      }
+    },
+    {
+      "arm": "WKHAM040",
+      "rung": "040",
+      "scale": 0.4,
+      "seed": 103,
+      "prefix": "R404WKHAM040_s103",
+      "parent_prefix": "R404WKHAM060_s103",
+      "parent_is_root": false,
+      "lesion_muscle": "hamstrings_l",
+      "fmax_target": 1037.6000000000001,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\weakonly_r404\\R404WKHAM040_s103",
+      "parent": {
+        "prefix": "R404WKHAM060_s103",
+        "result_dir": "R404WKHAM060_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+        "par": "0077_85.284_65.492.par",
+        "par_sha256": "a7ef33e420d412fd978cc4db5ce4be2123c0da643fd23b02c7b7e67e4e0f3ad0",
+        "generation": 77,
+        "status": "OK",
+        "sto": "0077_85.284_65.492.par.sto",
+        "t_end_s": 7.96,
+        "n_cycles_in_window": 4,
+        "gate_G": false
+      },
+      "status": "BROKEN_PARENT_FAILED_GATE",
+      "broken_reason": "parent R404WKHAM060_s103 failed Gate G (t_end 7.96 s, 4 cycles); no other parent is substituted, this seed's chain is BROKEN",
+      "fmax_after_make_dirs": {
+        "hamstrings_l": 1037.6,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      }
+    },
+    {
+      "arm": "WKHAM040",
+      "rung": "040",
+      "scale": 0.4,
+      "seed": 104,
+      "prefix": "R404WKHAM040_s104",
+      "parent_prefix": "R404WKHAM060_s104",
+      "parent_is_root": false,
+      "lesion_muscle": "hamstrings_l",
+      "fmax_target": 1037.6000000000001,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\weakonly_r404\\R404WKHAM040_s104",
+      "parent": {
+        "prefix": "R404WKHAM060_s104",
+        "result_dir": "R404WKHAM060_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+        "par": "0080_78.535_64.335.par",
+        "par_sha256": "8c5218a88db155b50dce79d558e369c92439dedf5d2c3acbb79ea0c3eae661d0",
+        "generation": 80,
+        "status": "OK",
+        "sto": "0080_78.535_64.335.par.sto",
+        "t_end_s": 8.11,
+        "n_cycles_in_window": 4,
+        "gate_G": false
+      },
+      "status": "BROKEN_PARENT_FAILED_GATE",
+      "broken_reason": "parent R404WKHAM060_s104 failed Gate G (t_end 8.11 s, 4 cycles); no other parent is substituted, this seed's chain is BROKEN",
+      "fmax_after_make_dirs": {
+        "hamstrings_l": 1037.6,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      }
+    },
+    {
+      "arm": "WKHAM040",
+      "rung": "040",
+      "scale": 0.4,
+      "seed": 105,
+      "prefix": "R404WKHAM040_s105",
+      "parent_prefix": "R404WKHAM060_s105",
+      "parent_is_root": false,
+      "lesion_muscle": "hamstrings_l",
+      "fmax_target": 1037.6000000000001,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\weakonly_r404\\R404WKHAM040_s105",
+      "parent": {
+        "prefix": "R404WKHAM060_s105",
+        "result_dir": "R404WKHAM060_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+        "par": "0087_81.180_73.248.par",
+        "par_sha256": "6e5f05533429985f9f00d62bdeefba57e66006001db98d56aef632f54f0c2e24",
+        "generation": 87,
+        "status": "OK",
+        "sto": "0087_81.180_73.248.par.sto",
+        "t_end_s": 6.46,
+        "n_cycles_in_window": 3,
+        "gate_G": false
+      },
+      "status": "BROKEN_PARENT_FAILED_GATE",
+      "broken_reason": "parent R404WKHAM060_s105 failed Gate G (t_end 6.46 s, 3 cycles); no other parent is substituted, this seed's chain is BROKEN",
+      "fmax_after_make_dirs": {
+        "hamstrings_l": 1037.6,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      }
+    },
+    {
+      "arm": "WKHAM040",
+      "rung": "040",
+      "scale": 0.4,
+      "seed": 106,
+      "prefix": "R404WKHAM040_s106",
+      "parent_prefix": "R404WKHAM060_s106",
+      "parent_is_root": false,
+      "lesion_muscle": "hamstrings_l",
+      "fmax_target": 1037.6000000000001,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\weakonly_r404\\R404WKHAM040_s106",
+      "parent": {
+        "prefix": "R404WKHAM060_s106",
+        "result_dir": "R404WKHAM060_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+        "par": "0074_82.503_59.693.par",
+        "par_sha256": "166b2b017cbf36032d3491ed9bd92956078ca12ac2fbfac3aa16a230d8ada062",
+        "generation": 74,
+        "status": "OK",
+        "sto": "0074_82.503_59.693.par.sto",
+        "t_end_s": 9.03,
+        "n_cycles_in_window": 5,
+        "gate_G": false
+      },
+      "status": "BROKEN_PARENT_FAILED_GATE",
+      "broken_reason": "parent R404WKHAM060_s106 failed Gate G (t_end 9.03 s, 5 cycles); no other parent is substituted, this seed's chain is BROKEN",
+      "fmax_after_make_dirs": {
+        "hamstrings_l": 1037.6,
+        "hamstrings_r": 2594.0,
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      }
+    }
+  ],
+  "staged_summary": {
+    "BROKEN_PARENT_FAILED_GATE": [
+      "R404WKHAM040_s101",
+      "R404WKHAM040_s102",
+      "R404WKHAM040_s103",
+      "R404WKHAM040_s104",
+      "R404WKHAM040_s105",
+      "R404WKHAM040_s106"
+    ],
+    "PREPARED": [
+      "R404WKHAM060_s101",
+      "R404WKHAM060_s102",
+      "R404WKHAM060_s103",
+      "R404WKHAM060_s104",
+      "R404WKHAM060_s105",
+      "R404WKHAM060_s106"
+    ]
+  }
+}

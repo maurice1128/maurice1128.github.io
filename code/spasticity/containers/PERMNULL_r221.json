@@ -1,0 +1,38 @@
+{
+ "prereg": "PREREG_permnull_r221.md sha256 384579cc23e5ad529cab",
+ "design": "per severity, 6 v 6, EXHAUSTIVE over all C(12,6)=924 label assignments",
+ "window": [
+  1.0,
+  9.73
+ ],
+ "n_channels": 16,
+ "severities": {
+  "W870": {
+   "observed_gap_deg": 1.0127716578291484,
+   "n_assignments": 924,
+   "familywise_count": 2,
+   "familywise_proportion": 0.0021645021645021645,
+   "hip_only_count": 2,
+   "hip_only_proportion": 0.0021645021645021645,
+   "selection_cost": 0.0
+  },
+  "W892": {
+   "observed_gap_deg": 1.5714055080817033,
+   "n_assignments": 924,
+   "familywise_count": 2,
+   "familywise_proportion": 0.0021645021645021645,
+   "hip_only_count": 2,
+   "hip_only_proportion": 0.0021645021645021645,
+   "selection_cost": 0.0
+  },
+  "W915": {
+   "observed_gap_deg": 1.2360189331239226,
+   "n_assignments": 924,
+   "familywise_count": 2,
+   "familywise_proportion": 0.0021645021645021645,
+   "hip_only_count": 2,
+   "hip_only_proportion": 0.0021645021645021645,
+   "selection_cost": 0.0
+  }
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "cell": 19,
+ "prefix": "R291BF007_s154",
+ "kind": "weak",
+ "seed": 154,
+ "kv": null,
+ "f": 0.07,
+ "scale": 0.9299999999999999,
+ "wall_clock_s": 84.83709454536438,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R291BF007_s154.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R154"
+ ],
+ "result_dir": "R291BF007_s154.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R154",
+ "resolved_par": "0013_82.212_68.322.par",
+ "t_end_s": 7.61,
+ "in_band": false
+}

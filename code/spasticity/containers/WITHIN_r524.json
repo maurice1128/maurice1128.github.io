@@ -1,0 +1,30 @@
+{
+ "id": "WITHIN_r524",
+ "why": "Section 3.5's verdict is about a cross-sectional reading. The design a clinician would actually run is longitudinal -- the same limb before and after a block -- which cancels the between-patient spread and leaves only measurement error. This asks whether that design works, and at what cost.",
+ "knee_at_contact_by_delivered_gain_deg": {
+  "0.1": -9.931759282778765,
+  "0.14": -11.280657267741182,
+  "0.2": -12.643271066544312,
+  "0.22": -13.199486557436583,
+  "0.24": -13.368980205631729
+ },
+ "single_measurement_SEM_deg": 2.6191942281930904,
+ "designs": {
+  "full ladder": {
+   "expected_change_deg": 3.4372209228529638,
+   "one_session_noise_band_deg": 7.2600359999999995,
+   "detectable_with_one_session": false,
+   "sessions_per_timepoint_needed": 5,
+   "noise_band_at_that_n_deg": 3.2467868030191327
+  },
+  "half ladder": {
+   "expected_change_deg": 0.7257091390874173,
+   "one_session_noise_band_deg": 7.2600359999999995,
+   "detectable_with_one_session": false,
+   "sessions_per_timepoint_needed": null,
+   "noise_band_at_that_n_deg": null
+  }
+ },
+ "STATISTIC_NOTE": "A change threshold is used here and is the right statistic for this question: it asks whether one patient changed, which is what it was built for. Section 3.5 rejects it for the assignment question, which it was not built for.",
+ "READING": "Relaxing the reflex gain across the full ladder recovers 3.44 degrees of knee extension at contact. A single session either side of a block carries a 95 per cent noise band of 7.26 degrees, so one session either side cannot see it. It takes 5 sessions at each timepoint for the expected change to clear the band. That is the answer to whether this readout could serve a clinician on one patient in the design where the population spread does not apply: not in one visit, and not in a number of visits a clinic would run."
+}

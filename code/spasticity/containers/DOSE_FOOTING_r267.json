@@ -1,0 +1,16 @@
+{
+ "round": 267,
+ "reflex_dose_corrected_V_N": 136.2663747371695,
+ "tib_ant_achieved_mean_N": 125.85307120231857,
+ "tib_ant_max_isometric_force_N": 1759.0,
+ "note": "the reflex dose is a commanded excitation increment scaled by Fmax; the weakness dose as used in the manuscript is scaled by ACHIEVED force. Putting both on the Fmax footing inverts the ratio at the severe end.",
+ "achieved_footing_ratio_range": [
+  5.413708757178869,
+  21.65483502871545
+ ],
+ "fmax_footing_ratio_range": [
+  0.3873404625843364,
+  1.5493618503373439
+ ],
+ "direction_established": false
+}

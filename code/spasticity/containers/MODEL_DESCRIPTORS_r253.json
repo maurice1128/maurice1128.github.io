@@ -1,0 +1,504 @@
+{
+ "round": 253,
+ "note": "model descriptors extracted from the model files on disk so that the Methods section can cite a path instead of a memory",
+ "sources": {
+  "3D": {
+   "dir": "R151C_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "model_file": "H1922v7b3.hfd",
+   "warm_start_par": "H1922v7b3-TSG3Dv8g-989_fixed2.par"
+  }
+ },
+ "bodies": {
+  "3D": {
+   "model": "H1922v7b3.hfd (Hyfydy)",
+   "n_dof": 19,
+   "dof_names": [
+    "pelvis_tilt",
+    "pelvis_list",
+    "pelvis_rotation",
+    "pelvis_tx",
+    "pelvis_ty",
+    "pelvis_tz",
+    "hip_flexion_r",
+    "hip_adduction_r",
+    "hip_rotation_r",
+    "knee_angle_r",
+    "ankle_angle_r",
+    "hip_flexion_l",
+    "hip_adduction_l",
+    "hip_rotation_l",
+    "knee_angle_l",
+    "ankle_angle_l",
+    "lumbar_extension",
+    "lumbar_bending",
+    "lumbar_rotation"
+   ],
+   "n_muscles": 22,
+   "muscles": [
+    {
+     "name": "glut_med_r",
+     "side": "right"
+    },
+    {
+     "name": "add_mag_r",
+     "side": "right"
+    },
+    {
+     "name": "hamstrings_r",
+     "side": "right"
+    },
+    {
+     "name": "bifemsh_r",
+     "side": "right"
+    },
+    {
+     "name": "glut_max_r",
+     "side": "right"
+    },
+    {
+     "name": "iliopsoas_r",
+     "side": "right"
+    },
+    {
+     "name": "rect_fem_r",
+     "side": "right"
+    },
+    {
+     "name": "vasti_r",
+     "side": "right"
+    },
+    {
+     "name": "gastroc_r",
+     "side": "right"
+    },
+    {
+     "name": "soleus_r",
+     "side": "right"
+    },
+    {
+     "name": "tib_ant_r",
+     "side": "right"
+    },
+    {
+     "name": "glut_med_l",
+     "side": "left"
+    },
+    {
+     "name": "add_mag_l",
+     "side": "left"
+    },
+    {
+     "name": "hamstrings_l",
+     "side": "left"
+    },
+    {
+     "name": "bifemsh_l",
+     "side": "left"
+    },
+    {
+     "name": "glut_max_l",
+     "side": "left"
+    },
+    {
+     "name": "iliopsoas_l",
+     "side": "left"
+    },
+    {
+     "name": "rect_fem_l",
+     "side": "left"
+    },
+    {
+     "name": "vasti_l",
+     "side": "left"
+    },
+    {
+     "name": "gastroc_l",
+     "side": "left"
+    },
+    {
+     "name": "soleus_l",
+     "side": "left"
+    },
+    {
+     "name": "tib_ant_l",
+     "side": "left"
+    }
+   ],
+   "muscles_by_side": {
+    "left": 11,
+    "right": 11,
+    "axial/unsided": 0
+   },
+   "n_joints": 7,
+   "joint_names": [
+    "hip_r",
+    "knee_r",
+    "ankle_r",
+    "hip_l",
+    "knee_l",
+    "ankle_l",
+    "lumbar_joint"
+   ],
+   "n_bodies_excluding_ground": 8,
+   "segment_masses_kg": {
+    "pelvis": 11.777,
+    "femur_r": 9.3014,
+    "tibia_r": 3.7075,
+    "calcn_r": 1.25,
+    "femur_l": 9.3014,
+    "tibia_l": 3.7075,
+    "calcn_l": 1.25,
+    "torso": 34.2366
+   },
+   "total_mass_kg": 74.5314,
+   "warm_start_n_params": 95,
+   "name_encodes": "H19_22 = 19 dof, 22 muscles"
+  },
+  "2D": {
+   "model": "H0914M (OpenSim)",
+   "planes": {
+    "SG0": {
+     "present_on_disk": true,
+     "n_cell_dirs": 78,
+     "model_file": "H0914_SGM_BASE_D0.osim",
+     "gravity_vector": [
+      0.0,
+      -9.80665,
+      0.0
+     ],
+     "slope_deg": 0.0,
+     "gravity_magnitude": 9.80665,
+     "n_dof": 9,
+     "dof_names": [
+      "pelvis_tilt",
+      "pelvis_tx",
+      "pelvis_ty",
+      "hip_flexion_r",
+      "knee_angle_r",
+      "ankle_angle_r",
+      "hip_flexion_l",
+      "knee_angle_l",
+      "ankle_angle_l"
+     ],
+     "n_muscles": 14,
+     "muscles": [
+      {
+       "name": "hamstrings_r",
+       "side": "right"
+      },
+      {
+       "name": "glut_max_r",
+       "side": "right"
+      },
+      {
+       "name": "iliopsoas_r",
+       "side": "right"
+      },
+      {
+       "name": "vasti_r",
+       "side": "right"
+      },
+      {
+       "name": "gastroc_r",
+       "side": "right"
+      },
+      {
+       "name": "soleus_r",
+       "side": "right"
+      },
+      {
+       "name": "tib_ant_r",
+       "side": "right"
+      },
+      {
+       "name": "hamstrings_l",
+       "side": "left"
+      },
+      {
+       "name": "glut_max_l",
+       "side": "left"
+      },
+      {
+       "name": "iliopsoas_l",
+       "side": "left"
+      },
+      {
+       "name": "vasti_l",
+       "side": "left"
+      },
+      {
+       "name": "gastroc_l",
+       "side": "left"
+      },
+      {
+       "name": "soleus_l",
+       "side": "left"
+      },
+      {
+       "name": "tib_ant_l",
+       "side": "left"
+      }
+     ],
+     "muscles_by_side": {
+      "left": 7,
+      "right": 7,
+      "axial/unsided": 0
+     },
+     "n_bodies_excluding_ground": 8,
+     "segment_masses_kg": {
+      "pelvis": 11.777,
+      "femur_r": 9.3014,
+      "tibia_r": 3.7075,
+      "calcn_r": 1.25,
+      "femur_l": 9.3014,
+      "tibia_l": 3.7075,
+      "calcn_l": 1.25,
+      "torso": 34.2366
+     },
+     "total_mass_kg": 74.5314
+    },
+    "SG2": {
+     "present_on_disk": true,
+     "n_cell_dirs": 78,
+     "model_file": "H0914_SGM_BASE_D2.osim",
+     "gravity_vector": [
+      0.342247,
+      -9.800676,
+      0.0
+     ],
+     "slope_deg": 1.999999,
+     "gravity_magnitude": 9.80665,
+     "n_dof": 9,
+     "dof_names": [
+      "pelvis_tilt",
+      "pelvis_tx",
+      "pelvis_ty",
+      "hip_flexion_r",
+      "knee_angle_r",
+      "ankle_angle_r",
+      "hip_flexion_l",
+      "knee_angle_l",
+      "ankle_angle_l"
+     ],
+     "n_muscles": 14,
+     "muscles": [
+      {
+       "name": "hamstrings_r",
+       "side": "right"
+      },
+      {
+       "name": "glut_max_r",
+       "side": "right"
+      },
+      {
+       "name": "iliopsoas_r",
+       "side": "right"
+      },
+      {
+       "name": "vasti_r",
+       "side": "right"
+      },
+      {
+       "name": "gastroc_r",
+       "side": "right"
+      },
+      {
+       "name": "soleus_r",
+       "side": "right"
+      },
+      {
+       "name": "tib_ant_r",
+       "side": "right"
+      },
+      {
+       "name": "hamstrings_l",
+       "side": "left"
+      },
+      {
+       "name": "glut_max_l",
+       "side": "left"
+      },
+      {
+       "name": "iliopsoas_l",
+       "side": "left"
+      },
+      {
+       "name": "vasti_l",
+       "side": "left"
+      },
+      {
+       "name": "gastroc_l",
+       "side": "left"
+      },
+      {
+       "name": "soleus_l",
+       "side": "left"
+      },
+      {
+       "name": "tib_ant_l",
+       "side": "left"
+      }
+     ],
+     "muscles_by_side": {
+      "left": 7,
+      "right": 7,
+      "axial/unsided": 0
+     },
+     "n_bodies_excluding_ground": 8,
+     "segment_masses_kg": {
+      "pelvis": 11.777,
+      "femur_r": 9.3014,
+      "tibia_r": 3.7075,
+      "calcn_r": 1.25,
+      "femur_l": 9.3014,
+      "tibia_l": 3.7075,
+      "calcn_l": 1.25,
+      "torso": 34.2366
+     },
+     "total_mass_kg": 74.5314
+    },
+    "SG5": {
+     "present_on_disk": true,
+     "n_cell_dirs": 78,
+     "model_file": "H0914_SGM_BASE_D5.osim",
+     "gravity_vector": [
+      0.854706,
+      -9.769333,
+      0.0
+     ],
+     "slope_deg": 5.000001,
+     "gravity_magnitude": 9.80665,
+     "n_dof": 9,
+     "dof_names": [
+      "pelvis_tilt",
+      "pelvis_tx",
+      "pelvis_ty",
+      "hip_flexion_r",
+      "knee_angle_r",
+      "ankle_angle_r",
+      "hip_flexion_l",
+      "knee_angle_l",
+      "ankle_angle_l"
+     ],
+     "n_muscles": 14,
+     "muscles": [
+      {
+       "name": "hamstrings_r",
+       "side": "right"
+      },
+      {
+       "name": "glut_max_r",
+       "side": "right"
+      },
+      {
+       "name": "iliopsoas_r",
+       "side": "right"
+      },
+      {
+       "name": "vasti_r",
+       "side": "right"
+      },
+      {
+       "name": "gastroc_r",
+       "side": "right"
+      },
+      {
+       "name": "soleus_r",
+       "side": "right"
+      },
+      {
+       "name": "tib_ant_r",
+       "side": "right"
+      },
+      {
+       "name": "hamstrings_l",
+       "side": "left"
+      },
+      {
+       "name": "glut_max_l",
+       "side": "left"
+      },
+      {
+       "name": "iliopsoas_l",
+       "side": "left"
+      },
+      {
+       "name": "vasti_l",
+       "side": "left"
+      },
+      {
+       "name": "gastroc_l",
+       "side": "left"
+      },
+      {
+       "name": "soleus_l",
+       "side": "left"
+      },
+      {
+       "name": "tib_ant_l",
+       "side": "left"
+      }
+     ],
+     "muscles_by_side": {
+      "left": 7,
+      "right": 7,
+      "axial/unsided": 0
+     },
+     "n_bodies_excluding_ground": 8,
+     "segment_masses_kg": {
+      "pelvis": 11.777,
+      "femur_r": 9.3014,
+      "tibia_r": 3.7075,
+      "calcn_r": 1.25,
+      "femur_l": 9.3014,
+      "tibia_l": 3.7075,
+      "calcn_l": 1.25,
+      "torso": 34.2366
+     },
+     "total_mass_kg": 74.5314
+    }
+   },
+   "name_encodes": "H09_14 = 9 dof, 14 muscles"
+  }
+ },
+ "channels_16": {
+  "source_script": "channels_g2_r219.py",
+  "construction": "CH = [p+s for p in PAIR for s in (\"_l\",\"_r\")] + UNP + [\"cycle_time\"] + [p+\"_LmR\" for p in PAIR]",
+  "PAIR": [
+   "ankle_angle",
+   "knee_angle",
+   "hip_flexion",
+   "hip_adduction"
+  ],
+  "UNP": [
+   "pelvis_list",
+   "pelvis_rotation",
+   "lumbar_bending"
+  ],
+  "n": 16,
+  "channels": [
+   "ankle_angle_l",
+   "ankle_angle_r",
+   "knee_angle_l",
+   "knee_angle_r",
+   "hip_flexion_l",
+   "hip_flexion_r",
+   "hip_adduction_l",
+   "hip_adduction_r",
+   "pelvis_list",
+   "pelvis_rotation",
+   "lumbar_bending",
+   "cycle_time",
+   "ankle_angle_LmR",
+   "knee_angle_LmR",
+   "hip_flexion_LmR",
+   "hip_adduction_LmR"
+  ],
+  "breakdown": {
+   "bilateral_pairs_x2": 8,
+   "unpaired_axial": 3,
+   "temporal": 1,
+   "LmR_constructions": 4
+  }
+ }
+}

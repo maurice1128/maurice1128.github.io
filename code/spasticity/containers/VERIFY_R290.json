@@ -1,0 +1,122 @@
+{
+ "what": "independent recomputation of the r290 endpoint; BANDFILL_ENDPOINT_r290.json not read",
+ "registration": "PREREG_bandfill_r285.md section 3 and 5, carried unchanged by r287",
+ "cells_claimed_in_band": [
+  "R276WPF005_s101",
+  "R285BF008_s105",
+  "R287BF007_s109"
+ ],
+ "n_in_band_verified": 3,
+ "spastic": [
+  {
+   "tag": "R151S_s101",
+   "dir": "R151S_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "t_end_s": 17.85,
+   "n_cycles": 6,
+   "knee_angle_LmR": -0.9495390806288526,
+   "hip_flexion_LmR": -2.032596426116342
+  },
+  {
+   "tag": "R151S_s102",
+   "dir": "R151S_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "t_end_s": 14.96,
+   "n_cycles": 5,
+   "knee_angle_LmR": -1.8889983057539084,
+   "hip_flexion_LmR": -1.2098920576659609
+  },
+  {
+   "tag": "R151S_s103",
+   "dir": "R151S_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "t_end_s": 13.58,
+   "n_cycles": 5,
+   "knee_angle_LmR": -0.2134542806604003,
+   "hip_flexion_LmR": -2.772393801611315
+  },
+  {
+   "tag": "R151S_s104",
+   "dir": "R151S_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "t_end_s": 16.94,
+   "n_cycles": 5,
+   "knee_angle_LmR": -1.174013440534857,
+   "hip_flexion_LmR": -1.683269788003031
+  },
+  {
+   "tag": "R151S_s105",
+   "dir": "R151S_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "t_end_s": 14.27,
+   "n_cycles": 5,
+   "knee_angle_LmR": -0.7150158049399593,
+   "hip_flexion_LmR": -2.346170497813503
+  },
+  {
+   "tag": "R151S_s106",
+   "dir": "R151S_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "t_end_s": 14.82,
+   "n_cycles": 5,
+   "knee_angle_LmR": -0.3975754140412846,
+   "hip_flexion_LmR": -2.5874430253430774
+  }
+ ],
+ "weak_in_band": [
+  {
+   "tag": "R276WPF005_s101",
+   "dir": "R276WPF005_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "t_end_s": 16.21,
+   "n_cycles": 5,
+   "knee_angle_LmR": 2.734690886860527,
+   "hip_flexion_LmR": -2.114833058451488,
+   "in_band": true
+  },
+  {
+   "tag": "R285BF008_s105",
+   "dir": "R285BF008_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "t_end_s": 15.14,
+   "n_cycles": 6,
+   "knee_angle_LmR": 2.2638164091303707,
+   "hip_flexion_LmR": -0.8792323845179979,
+   "in_band": true
+  },
+  {
+   "tag": "R287BF007_s109",
+   "dir": "R287BF007_s109.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R109",
+   "t_end_s": 16.17,
+   "n_cycles": 6,
+   "knee_angle_LmR": 2.690958355259731,
+   "hip_flexion_LmR": -1.6087126999819787,
+   "in_band": true
+  }
+ ],
+ "ENDPOINT_knee_angle_LmR": {
+  "rung": 2,
+  "verdict": "DISJOINT-AS-PREDICTED",
+  "spastic_range": [
+   -1.8889983057539084,
+   -0.2134542806604003
+  ],
+  "weak_range": [
+   2.2638164091303707,
+   2.734690886860527
+  ],
+  "disjoint": true,
+  "seed_gap_deg": 2.477270689790771,
+  "permutation": {
+   "assignments": 84,
+   "count_ge_observed": 1,
+   "floor": 0.011904761904761904
+  }
+ },
+ "SECONDARY_hip_flexion_LmR": {
+  "rung": 4,
+  "verdict": "OVERLAP",
+  "spastic_range": [
+   -2.772393801611315,
+   -1.2098920576659609
+  ],
+  "weak_range": [
+   -2.114833058451488,
+   -0.8792323845179979
+  ],
+  "disjoint": false,
+  "seed_gap_deg": -0.9049410007855272
+ }
+}

@@ -1,0 +1,901 @@
+{
+  "round": "SLACK_RESULT_r418",
+  "registration": "PREREG_slack_r418.md",
+  "registration_sha256": "a908b4b716cf2ac22b0ff2cfe4c2fe584788484404778e8583724272fc3bdd33",
+  "units_note": "PREREG_slack_r418.md section 3 calls GASLEN\n\"muscle-tendon length ... metres\". The available column `gastroc_l.L` is SCONE's NORMALISED MTU\nlength and is dimensionless. The quantity is the one the registration intended; only its unit label\nwas wrong. Every registered prediction is directional or a disjointness test, so none depends on the\nunit.",
+  "gastroc_KV_fixed_at": 0.05,
+  "cells": {
+    "R418sk0000_s101": {
+      "t_end": 3.28,
+      "toe_off_s": 1.06,
+      "heel_strike_s": 1.57,
+      "n_swing_samples": 51,
+      "GASLEN": 0.7897373921568629,
+      "GASSTRETCH": 0.43229799999999996,
+      "GASDRIVE": 0.06622683333333332,
+      "KNEE_sw": -65.99900842111953,
+      "KNEE_ic": -19.98488248572214
+    },
+    "R418sk0000_s102": {
+      "t_end": 3.52,
+      "toe_off_s": 1.06,
+      "heel_strike_s": 1.56,
+      "n_swing_samples": 50,
+      "GASLEN": 0.7861499200000001,
+      "GASSTRETCH": 0.43408899999999995,
+      "GASDRIVE": 0.06657478,
+      "KNEE_sw": -65.78472220574061,
+      "KNEE_ic": -17.862474925219033
+    },
+    "R418sk0000_s103": {
+      "t_end": 3.33,
+      "toe_off_s": 1.06,
+      "heel_strike_s": 1.57,
+      "n_swing_samples": 51,
+      "GASLEN": 0.7904378823529411,
+      "GASSTRETCH": 0.43121199999999993,
+      "GASDRIVE": 0.06505695294117647,
+      "KNEE_sw": -65.8311317871462,
+      "KNEE_ic": -20.4445665247556
+    },
+    "R418sk0000_s104": {
+      "t_end": 3.56,
+      "toe_off_s": 1.06,
+      "heel_strike_s": 1.56,
+      "n_swing_samples": 50,
+      "GASLEN": 0.7856217199999999,
+      "GASSTRETCH": 0.43284599999999995,
+      "GASDRIVE": 0.066947672,
+      "KNEE_sw": -65.68731938056837,
+      "KNEE_ic": -18.022731220517123
+    },
+    "R418sk0000_s105": {
+      "t_end": 3.5,
+      "toe_off_s": 1.06,
+      "heel_strike_s": 1.56,
+      "n_swing_samples": 50,
+      "GASLEN": 0.78660746,
+      "GASSTRETCH": 0.43438599999999994,
+      "GASDRIVE": 0.066518944,
+      "KNEE_sw": -65.68502754938784,
+      "KNEE_ic": -18.06003077298014
+    },
+    "R418sk0000_s106": {
+      "t_end": 3.27,
+      "toe_off_s": 1.06,
+      "heel_strike_s": 1.56,
+      "n_swing_samples": 50,
+      "GASLEN": 0.7864907400000001,
+      "GASSTRETCH": 0.432376,
+      "GASDRIVE": 0.065465788,
+      "KNEE_sw": -65.74404220228631,
+      "KNEE_ic": -18.68558609370397
+    },
+    "R418sk00125_s101": {
+      "t_end": 5.79,
+      "toe_off_s": 1.08,
+      "heel_strike_s": 1.56,
+      "n_swing_samples": 48,
+      "GASLEN": 0.7895746041666666,
+      "GASSTRETCH": 0.447098,
+      "GASDRIVE": 0.05981753541666667,
+      "KNEE_sw": -64.67146520980141,
+      "KNEE_ic": -12.332114399277787
+    },
+    "R418sk00125_s102": {
+      "t_end": 5.01,
+      "toe_off_s": 1.08,
+      "heel_strike_s": 1.55,
+      "n_swing_samples": 47,
+      "GASLEN": 0.7863935957446809,
+      "GASSTRETCH": 0.447939,
+      "GASDRIVE": 0.05900367872340426,
+      "KNEE_sw": -64.76371141481746,
+      "KNEE_ic": -10.84717968163723
+    },
+    "R418sk00125_s103": {
+      "t_end": 5.53,
+      "toe_off_s": 1.07,
+      "heel_strike_s": 1.56,
+      "n_swing_samples": 49,
+      "GASLEN": 0.7896394489795918,
+      "GASSTRETCH": 0.447326,
+      "GASDRIVE": 0.06417713265306123,
+      "KNEE_sw": -64.83705001259422,
+      "KNEE_ic": -13.099648661635038
+    },
+    "R418sk00125_s104": {
+      "t_end": 4.87,
+      "toe_off_s": 1.08,
+      "heel_strike_s": 1.55,
+      "n_swing_samples": 47,
+      "GASLEN": 0.7856911489361702,
+      "GASSTRETCH": 0.447005,
+      "GASDRIVE": 0.059365904255319145,
+      "KNEE_sw": -64.71443704443622,
+      "KNEE_ic": -11.055564431726312
+    },
+    "R418sk00125_s105": {
+      "t_end": 4.98,
+      "toe_off_s": 1.08,
+      "heel_strike_s": 1.55,
+      "n_swing_samples": 47,
+      "GASLEN": 0.7867805531914894,
+      "GASSTRETCH": 0.44878799999999996,
+      "GASDRIVE": 0.05879355319148936,
+      "KNEE_sw": -64.6674545052355,
+      "KNEE_ic": -10.871988754166397
+    },
+    "R418sk00125_s106": {
+      "t_end": 5.99,
+      "toe_off_s": 1.08,
+      "heel_strike_s": 1.55,
+      "n_swing_samples": 47,
+      "GASLEN": 0.7867197659574467,
+      "GASSTRETCH": 0.44694900000000004,
+      "GASDRIVE": 0.05785338085106383,
+      "KNEE_sw": -64.71271817105084,
+      "KNEE_ic": -11.738415531963227
+    },
+    "R418sk0025_s101": {
+      "t_end": 8.8,
+      "toe_off_s": 1.08,
+      "heel_strike_s": 1.55,
+      "n_swing_samples": 47,
+      "GASLEN": 0.7858001063829786,
+      "GASSTRETCH": 0.45501199999999997,
+      "GASDRIVE": 0.05805007234042554,
+      "KNEE_sw": -64.37982969207982,
+      "KNEE_ic": -9.650614622286021
+    },
+    "R418sk0025_s102": {
+      "t_end": 5.27,
+      "toe_off_s": 1.08,
+      "heel_strike_s": 1.55,
+      "n_swing_samples": 47,
+      "GASLEN": 0.7869141276595742,
+      "GASSTRETCH": 0.45572599999999996,
+      "GASDRIVE": 0.05705757446808512,
+      "KNEE_sw": -64.61302351469807,
+      "KNEE_ic": -9.556993318561645
+    },
+    "R418sk0025_s103": {
+      "t_end": 7.35,
+      "toe_off_s": 1.08,
+      "heel_strike_s": 1.55,
+      "n_swing_samples": 47,
+      "GASLEN": 0.7880628510638299,
+      "GASSTRETCH": 0.454974,
+      "GASDRIVE": 0.05609880425531914,
+      "KNEE_sw": -64.51733956291122,
+      "KNEE_ic": -10.385776769218381
+    },
+    "R418sk0025_s104": {
+      "t_end": 6.1,
+      "toe_off_s": 1.08,
+      "heel_strike_s": 1.55,
+      "n_swing_samples": 47,
+      "GASLEN": 0.7852230425531915,
+      "GASSTRETCH": 0.45420399999999994,
+      "GASDRIVE": 0.05838237021276595,
+      "KNEE_sw": -64.44170913395395,
+      "KNEE_ic": -9.645114227452764
+    },
+    "R418sk0025_s105": {
+      "t_end": 5.55,
+      "toe_off_s": 1.08,
+      "heel_strike_s": 1.55,
+      "n_swing_samples": 47,
+      "GASLEN": 0.7861692127659574,
+      "GASSTRETCH": 0.455527,
+      "GASDRIVE": 0.05775709787234043,
+      "KNEE_sw": -64.41707194876332,
+      "KNEE_ic": -9.551091853271798
+    },
+    "R418sk0025_s106": {
+      "t_end": 8.38,
+      "toe_off_s": 1.08,
+      "heel_strike_s": 1.54,
+      "n_swing_samples": 46,
+      "GASLEN": 0.7833635652173914,
+      "GASSTRETCH": 0.45442899999999997,
+      "GASDRIVE": 0.05527346304347825,
+      "KNEE_sw": -64.53109054999436,
+      "KNEE_ic": -9.43311984325436
+    },
+    "R418sk0050_s101": {
+      "t_end": 3.93,
+      "toe_off_s": 1.08,
+      "heel_strike_s": 1.53,
+      "n_swing_samples": 45,
+      "GASLEN": 0.7650767999999999,
+      "GASSTRETCH": 0.45626200000000006,
+      "GASDRIVE": 0.05663094666666666,
+      "KNEE_sw": -63.962716417224584,
+      "KNEE_ic": -7.726163980000612
+    },
+    "R418sk0050_s102": {
+      "t_end": 3.74,
+      "toe_off_s": 1.08,
+      "heel_strike_s": 1.53,
+      "n_swing_samples": 45,
+      "GASLEN": 0.7653178444444444,
+      "GASSTRETCH": 0.456124,
+      "GASDRIVE": 0.05627741333333335,
+      "KNEE_sw": -64.03662797279647,
+      "KNEE_ic": -7.6170728158077035
+    },
+    "R418sk0050_s103": {
+      "t_end": 4.05,
+      "toe_off_s": 1.08,
+      "heel_strike_s": 1.53,
+      "n_swing_samples": 45,
+      "GASLEN": 0.7666868444444445,
+      "GASSTRETCH": 0.455932,
+      "GASDRIVE": 0.05528355333333333,
+      "KNEE_sw": -63.97360261533206,
+      "KNEE_ic": -8.127921985946346
+    },
+    "R418sk0050_s104": {
+      "t_end": 3.84,
+      "toe_off_s": 1.08,
+      "heel_strike_s": 1.53,
+      "n_swing_samples": 45,
+      "GASLEN": 0.7645869555555556,
+      "GASSTRETCH": 0.45457400000000003,
+      "GASDRIVE": 0.056861753333333334,
+      "KNEE_sw": -63.97875923548825,
+      "KNEE_ic": -7.875591372970731
+    },
+    "R418sk0050_s105": {
+      "t_end": 3.9,
+      "toe_off_s": 1.08,
+      "heel_strike_s": 1.53,
+      "n_swing_samples": 45,
+      "GASLEN": 0.7653379333333333,
+      "GASSTRETCH": 0.45616200000000007,
+      "GASDRIVE": 0.0563722,
+      "KNEE_sw": -63.97933219328337,
+      "KNEE_ic": -7.733440543998774
+    },
+    "R418sk0050_s106": {
+      "t_end": 3.93,
+      "toe_off_s": 1.08,
+      "heel_strike_s": 1.53,
+      "n_swing_samples": 45,
+      "GASLEN": 0.7658077777777779,
+      "GASSTRETCH": 0.455163,
+      "GASDRIVE": 0.05538232,
+      "KNEE_sw": -63.98964543359573,
+      "KNEE_ic": -8.38752916292012
+    },
+    "R418sk0075_s101": {
+      "t_end": 3.67,
+      "toe_off_s": 1.09,
+      "heel_strike_s": 1.51,
+      "n_swing_samples": 42,
+      "GASLEN": 0.7375759999999999,
+      "GASSTRETCH": 0.457893,
+      "GASDRIVE": 0.05105807142857143,
+      "KNEE_sw": -63.23448705961331,
+      "KNEE_ic": -6.55022540127411
+    },
+    "R418sk0075_s102": {
+      "t_end": 3.73,
+      "toe_off_s": 1.09,
+      "heel_strike_s": 1.5,
+      "n_swing_samples": 41,
+      "GASLEN": 0.7299315609756096,
+      "GASSTRETCH": 0.45249700000000004,
+      "GASDRIVE": 0.051713356097560975,
+      "KNEE_sw": -63.32845213801477,
+      "KNEE_ic": -7.629505999962042
+    },
+    "R418sk0075_s103": {
+      "t_end": 5.0,
+      "toe_off_s": 1.09,
+      "heel_strike_s": 1.51,
+      "n_swing_samples": 42,
+      "GASLEN": 0.7375689523809524,
+      "GASSTRETCH": 0.4558,
+      "GASDRIVE": 0.05104941428571428,
+      "KNEE_sw": -63.25912424480393,
+      "KNEE_ic": -7.281147660522501
+    },
+    "R418sk0075_s104": {
+      "t_end": 3.66,
+      "toe_off_s": 1.09,
+      "heel_strike_s": 1.51,
+      "n_swing_samples": 42,
+      "GASLEN": 0.7371009523809524,
+      "GASSTRETCH": 0.4551799999999999,
+      "GASDRIVE": 0.051400504761904754,
+      "KNEE_sw": -63.27803185204324,
+      "KNEE_ic": -7.092931024822026
+    },
+    "R418sk0075_s105": {
+      "t_end": 3.73,
+      "toe_off_s": 1.09,
+      "heel_strike_s": 1.5,
+      "n_swing_samples": 41,
+      "GASLEN": 0.7315887804878048,
+      "GASSTRETCH": 0.45362899999999995,
+      "GASDRIVE": 0.05031834390243902,
+      "KNEE_sw": -63.25855128700881,
+      "KNEE_ic": -7.422897419037867
+    },
+    "R418sk0075_s106": {
+      "t_end": 6.18,
+      "toe_off_s": 1.09,
+      "heel_strike_s": 1.5,
+      "n_swing_samples": 41,
+      "GASLEN": 0.7307042682926829,
+      "GASSTRETCH": 0.452202,
+      "GASDRIVE": 0.050707751219512195,
+      "KNEE_sw": -63.26714565393576,
+      "KNEE_ic": -8.057791951822333
+    },
+    "R418sk0100_s101": {
+      "t_end": 4.51,
+      "toe_off_s": 1.1,
+      "heel_strike_s": 1.48,
+      "n_swing_samples": 38,
+      "GASLEN": 0.6997685526315789,
+      "GASSTRETCH": 0.42080300000000004,
+      "GASDRIVE": 0.04900657368421052,
+      "KNEE_sw": -62.43291910422529,
+      "KNEE_ic": -11.713319980536498
+    },
+    "R418sk0100_s102": {
+      "t_end": 4.1,
+      "toe_off_s": 1.1,
+      "heel_strike_s": 1.48,
+      "n_swing_samples": 38,
+      "GASLEN": 0.6986421842105265,
+      "GASSTRETCH": 0.41781100000000004,
+      "GASDRIVE": 0.050625160526315785,
+      "KNEE_sw": -62.473599107679576,
+      "KNEE_ic": -12.701328402460089
+    },
+    "R418sk0100_s103": {
+      "t_end": 3.63,
+      "toe_off_s": 1.1,
+      "heel_strike_s": 1.48,
+      "n_swing_samples": 38,
+      "GASLEN": 0.6992370789473685,
+      "GASSTRETCH": 0.41858300000000004,
+      "GASDRIVE": 0.05036423947368421,
+      "KNEE_sw": -62.428335441864235,
+      "KNEE_ic": -12.681675950087103
+    },
+    "R418sk0100_s104": {
+      "t_end": 4.18,
+      "toe_off_s": 1.11,
+      "heel_strike_s": 1.48,
+      "n_swing_samples": 37,
+      "GASLEN": 0.6989181621621622,
+      "GASSTRETCH": 0.416648,
+      "GASDRIVE": 0.044005145945945956,
+      "KNEE_sw": -62.43750276658633,
+      "KNEE_ic": -12.93572543644811
+    },
+    "R418sk0100_s105": {
+      "t_end": 4.23,
+      "toe_off_s": 1.1,
+      "heel_strike_s": 1.48,
+      "n_swing_samples": 38,
+      "GASLEN": 0.699208947368421,
+      "GASSTRETCH": 0.41658399999999995,
+      "GASDRIVE": 0.050104776315789475,
+      "KNEE_sw": -62.41000079242004,
+      "KNEE_ic": -12.94987749398784
+    },
+    "R418sk0100_s106": {
+      "t_end": 3.67,
+      "toe_off_s": 1.1,
+      "heel_strike_s": 1.48,
+      "n_swing_samples": 38,
+      "GASLEN": 0.6989008684210526,
+      "GASSTRETCH": 0.416558,
+      "GASDRIVE": 0.049988007894736834,
+      "KNEE_sw": -62.463858825162355,
+      "KNEE_ic": -13.116092550355292
+    }
+  },
+  "rungs": {
+    "0.000": {
+      "n_with_sto": 6,
+      "uninformative": false,
+      "GASLEN": {
+        "n": 6,
+        "mean": 0.7875075190849673,
+        "range": [
+          0.7856217199999999,
+          0.7904378823529411
+        ]
+      },
+      "GASSTRETCH": {
+        "n": 6,
+        "mean": 0.43286783333333334,
+        "range": [
+          0.43121199999999993,
+          0.43438599999999994
+        ]
+      },
+      "GASDRIVE": {
+        "n": 6,
+        "mean": 0.06613182837908498,
+        "range": [
+          0.06505695294117647,
+          0.066947672
+        ]
+      },
+      "KNEE_sw": {
+        "n": 6,
+        "mean": -65.78854192437481,
+        "range": [
+          -65.99900842111953,
+          -65.68502754938784
+        ]
+      },
+      "KNEE_ic": {
+        "n": 6,
+        "mean": -18.843378670483002,
+        "range": [
+          -20.4445665247556,
+          -17.862474925219033
+        ]
+      },
+      "t_end": {
+        "n": 6,
+        "mean": 3.4099999999999997,
+        "range": [
+          3.27,
+          3.56
+        ]
+      }
+    },
+    "0.0125": {
+      "n_with_sto": 6,
+      "uninformative": false,
+      "GASLEN": {
+        "n": 6,
+        "mean": 0.7874665194960077,
+        "range": [
+          0.7856911489361702,
+          0.7896394489795918
+        ]
+      },
+      "GASSTRETCH": {
+        "n": 6,
+        "mean": 0.4475175,
+        "range": [
+          0.44694900000000004,
+          0.44878799999999996
+        ]
+      },
+      "GASDRIVE": {
+        "n": 6,
+        "mean": 0.059835197515167415,
+        "range": [
+          0.05785338085106383,
+          0.06417713265306123
+        ]
+      },
+      "KNEE_sw": {
+        "n": 6,
+        "mean": -64.72780605965595,
+        "range": [
+          -64.83705001259422,
+          -64.6674545052355
+        ]
+      },
+      "KNEE_ic": {
+        "n": 6,
+        "mean": -11.657485243400998,
+        "range": [
+          -13.099648661635038,
+          -10.84717968163723
+        ]
+      },
+      "t_end": {
+        "n": 6,
+        "mean": 5.361666666666667,
+        "range": [
+          4.87,
+          5.99
+        ]
+      }
+    },
+    "0.025": {
+      "n_with_sto": 6,
+      "uninformative": false,
+      "GASLEN": {
+        "n": 6,
+        "mean": 0.7859221509404871,
+        "range": [
+          0.7833635652173914,
+          0.7880628510638299
+        ]
+      },
+      "GASSTRETCH": {
+        "n": 6,
+        "mean": 0.4549786666666666,
+        "range": [
+          0.45420399999999994,
+          0.45572599999999996
+        ]
+      },
+      "GASDRIVE": {
+        "n": 6,
+        "mean": 0.0571032303654024,
+        "range": [
+          0.05527346304347825,
+          0.05838237021276595
+        ]
+      },
+      "KNEE_sw": {
+        "n": 6,
+        "mean": -64.4833440670668,
+        "range": [
+          -64.61302351469807,
+          -64.37982969207982
+        ]
+      },
+      "KNEE_ic": {
+        "n": 6,
+        "mean": -9.703785105674163,
+        "range": [
+          -10.385776769218381,
+          -9.43311984325436
+        ]
+      },
+      "t_end": {
+        "n": 6,
+        "mean": 6.908333333333334,
+        "range": [
+          5.27,
+          8.8
+        ]
+      }
+    },
+    "0.050": {
+      "n_with_sto": 6,
+      "uninformative": false,
+      "GASLEN": {
+        "n": 6,
+        "mean": 0.7654690259259259,
+        "range": [
+          0.7645869555555556,
+          0.7666868444444445
+        ]
+      },
+      "GASSTRETCH": {
+        "n": 6,
+        "mean": 0.45570283333333333,
+        "range": [
+          0.45457400000000003,
+          0.45626200000000006
+        ]
+      },
+      "GASDRIVE": {
+        "n": 6,
+        "mean": 0.05613469777777777,
+        "range": [
+          0.05528355333333333,
+          0.056861753333333334
+        ]
+      },
+      "KNEE_sw": {
+        "n": 6,
+        "mean": -63.986780644620076,
+        "range": [
+          -64.03662797279647,
+          -63.962716417224584
+        ]
+      },
+      "KNEE_ic": {
+        "n": 6,
+        "mean": -7.91128664360738,
+        "range": [
+          -8.38752916292012,
+          -7.6170728158077035
+        ]
+      },
+      "t_end": {
+        "n": 6,
+        "mean": 3.898333333333333,
+        "range": [
+          3.74,
+          4.05
+        ]
+      }
+    },
+    "0.075": {
+      "n_with_sto": 6,
+      "uninformative": false,
+      "GASLEN": {
+        "n": 6,
+        "mean": 0.7340784190863338,
+        "range": [
+          0.7299315609756096,
+          0.7375759999999999
+        ]
+      },
+      "GASSTRETCH": {
+        "n": 6,
+        "mean": 0.4545335,
+        "range": [
+          0.452202,
+          0.457893
+        ]
+      },
+      "GASDRIVE": {
+        "n": 6,
+        "mean": 0.05104124028261711,
+        "range": [
+          0.05031834390243902,
+          0.051713356097560975
+        ]
+      },
+      "KNEE_sw": {
+        "n": 6,
+        "mean": -63.27096537256997,
+        "range": [
+          -63.32845213801477,
+          -63.23448705961331
+        ]
+      },
+      "KNEE_ic": {
+        "n": 6,
+        "mean": -7.339083242906813,
+        "range": [
+          -8.057791951822333,
+          -6.55022540127411
+        ]
+      },
+      "t_end": {
+        "n": 6,
+        "mean": 4.328333333333334,
+        "range": [
+          3.66,
+          6.18
+        ]
+      }
+    },
+    "0.100": {
+      "n_with_sto": 6,
+      "uninformative": false,
+      "GASLEN": {
+        "n": 6,
+        "mean": 0.6991126322901849,
+        "range": [
+          0.6986421842105265,
+          0.6997685526315789
+        ]
+      },
+      "GASSTRETCH": {
+        "n": 6,
+        "mean": 0.4178311666666666,
+        "range": [
+          0.416558,
+          0.42080300000000004
+        ]
+      },
+      "GASDRIVE": {
+        "n": 6,
+        "mean": 0.049015650640113796,
+        "range": [
+          0.044005145945945956,
+          0.050625160526315785
+        ]
+      },
+      "KNEE_sw": {
+        "n": 6,
+        "mean": -62.44103600632297,
+        "range": [
+          -62.473599107679576,
+          -62.41000079242004
+        ]
+      },
+      "KNEE_ic": {
+        "n": 6,
+        "mean": -12.68300330231249,
+        "range": [
+          -13.116092550355292,
+          -11.713319980536498
+        ]
+      },
+      "t_end": {
+        "n": 6,
+        "mean": 4.053333333333334,
+        "range": [
+          3.63,
+          4.51
+        ]
+      }
+    }
+  },
+  "duration_control": {
+    "per_rung": {
+      "0.000": {
+        "slope_deg_per_s": 0.5777770663047687,
+        "pearson_r": 0.643227724036659,
+        "n": 6
+      },
+      "0.0125": {
+        "slope_deg_per_s": -0.001572064751549895,
+        "pearson_r": -0.011623080922242542,
+        "n": 6
+      },
+      "0.025": {
+        "slope_deg_per_s": 0.01792113188726844,
+        "pearson_r": 0.3103197411630983,
+        "n": 6
+      },
+      "0.050": {
+        "slope_deg_per_s": 0.18897430051934933,
+        "pearson_r": 0.753329628650885,
+        "n": 6
+      },
+      "0.075": {
+        "slope_deg_per_s": 0.004145906024727451,
+        "pearson_r": 0.13728140779411938,
+        "n": 6
+      },
+      "0.100": {
+        "slope_deg_per_s": 0.019669676418073913,
+        "pearson_r": 0.28491237550078696,
+        "n": 6
+      }
+    },
+    "rung_centred_pooled_slope_deg_per_s": 0.015799221086970947,
+    "pearson_r": 0.18279143177135412,
+    "between_rung_t_end_span_s": 0.643333333333334,
+    "KNEE_sw_effect_deg": 3.3475059180518443,
+    "deg_attributable_to_duration": 0.01016416556595132,
+    "fraction_of_effect": 0.0030363398347228563,
+    "threshold": 0.5,
+    "CONFOUNDED": false
+  },
+  "predictions": {
+    "P1_GASLEN_monotone_decreasing": {
+      "rung_means": [
+        0.7875075190849673,
+        0.7874665194960077,
+        0.7859221509404871,
+        0.7654690259259259,
+        0.7340784190863338,
+        0.6991126322901849
+      ],
+      "monotone_decreasing": true,
+      "VERDICT": "HOLDS"
+    },
+    "P2_GASSTRETCH": {
+      "rung_0.000": {
+        "n": 6,
+        "mean": 0.43286783333333334,
+        "range": [
+          0.43121199999999993,
+          0.43438599999999994
+        ]
+      },
+      "rung_0.100": {
+        "n": 6,
+        "mean": 0.4178311666666666,
+        "range": [
+          0.416558,
+          0.42080300000000004
+        ]
+      },
+      "direction_as_predicted": true,
+      "disjoint": true,
+      "VERDICT": "HOLDS"
+    },
+    "P3_GASDRIVE": {
+      "rung_0.000": {
+        "n": 6,
+        "mean": 0.06613182837908498,
+        "range": [
+          0.06505695294117647,
+          0.066947672
+        ]
+      },
+      "rung_0.100": {
+        "n": 6,
+        "mean": 0.049015650640113796,
+        "range": [
+          0.044005145945945956,
+          0.050625160526315785
+        ]
+      },
+      "direction_as_predicted": true,
+      "disjoint": true,
+      "VERDICT": "HOLDS"
+    },
+    "P4_KNEE_sw_less_flexed": {
+      "rung_0.000": {
+        "n": 6,
+        "mean": -65.78854192437481,
+        "range": [
+          -65.99900842111953,
+          -65.68502754938784
+        ]
+      },
+      "rung_0.100": {
+        "n": 6,
+        "mean": -62.44103600632297,
+        "range": [
+          -62.473599107679576,
+          -62.41000079242004
+        ]
+      },
+      "direction_as_predicted": true,
+      "disjoint": true,
+      "VERDICT": "HOLDS"
+    },
+    "P5_spearman_GASLEN_vs_KNEE_sw": {
+      "rho": -0.9014157014157014,
+      "n": 36,
+      "threshold": -0.5,
+      "VERDICT": "HOLDS"
+    }
+  },
+  "VERDICT": "5 of 5 predictions hold: P1_GASLEN_monotone_decreasing, P2_GASSTRETCH, P3_GASDRIVE, P4_KNEE_sw_less_flexed, P5_spearman_GASLEN_vs_KNEE_sw",
+  "ADVERSARIAL_AUDIT_r419": {
+    "why": "5 of 5 predictions held on the first attempt, which has not happened before in this corpus. Four checks were run against the result before it was reported.",
+    "check_1_GASSTRETCH_is_not_monotone": {
+      "rung_means": [
+        0.43286783333333334,
+        0.4475175,
+        0.4549786666666666,
+        0.45570283333333333,
+        0.4545335,
+        0.4178311666666666
+      ],
+      "finding": "stretch RISES from 0.4329 to 0.4557 through the middle of the ladder and only falls to 0.4178 at the top. P2 passed because it was registered as an endpoint comparison (0.000 vs 0.100) and the endpoints happen to be ordered.",
+      "consequence": "P2 stands AS REGISTERED but the 'less stretch' link of the mechanism is NOT supported as a dose response and must not be described as one."
+    },
+    "check_2_P5_is_between_rung_only": {
+      "pooled_rho_across_36_cells": -0.9014,
+      "within_rung_r_by_rung": {
+        "0.000": -0.7747,
+        "0.0125": -0.2874,
+        "0.025": -0.1526,
+        "0.050": 0.0551,
+        "0.075": 0.5857,
+        "0.100": 0.6387
+      },
+      "rung_centred_pooled_r": -0.2003,
+      "finding": "the sign FLIPS with dose, from -0.77 at the bottom rung to +0.64 at the top, and the rung-centred pooled r is -0.20, well above the registered -0.5 bar. The -0.90 comes entirely from both variables tracking the dose.",
+      "consequence": "P5 stands AS REGISTERED and is worthless as evidence of a chain. This is exactly the trap PREREG_onedim_r409 section 6.1 names: collinearity is not proof of a single cause. P5 should have been registered as a within-rung statistic."
+    },
+    "check_3_swing_duration_confound_TESTED_AND_REFUTED": {
+      "the_worry": "swing duration shrinks monotonically 0.50 -> 0.37 s across the ladder, and KNEE_sw is a MINIMUM over that window. A shorter window has less time to flex, so the effect could be an artefact. PREREG section 6 controlled t_end, NOT swing duration -- the wrong quantity. That is a registration design defect.",
+      "the_test": "SWINGMATCHED_r419.json part A: recompute the minimum over a FIXED 0.37 s window after toe-off, the shortest swing on the ladder, identical for every cell.",
+      "result": "the fixed-window minima are IDENTICAL to KNEE_sw to four decimals (-65.7885 at rung 0.000). The minimum occurs inside the common window in every cell; nothing was truncated.",
+      "consequence": "P4 is NOT an artefact of the shrinking window. The defect in section 6 was real and the confound it failed to control turned out not to bite."
+    },
+    "check_4_the_effect_is_a_TIME_SHIFT_not_a_reduction": {
+      "knee_angle_deg_at_percent_of_swing": {
+        "25pct": {
+          "0.000": -65.6927,
+          "0.100": -55.9627
+        },
+        "50pct": {
+          "0.000": -48.2319,
+          "0.100": -61.4456
+        },
+        "75pct": {
+          "0.000": -17.4623,
+          "0.100": -41.7649
+        }
+      },
+      "finding": "soleus spasticity does not reduce knee flexion. It DELAYS and PROLONGS it. At 25% of swing the high-soleus knee is 10 deg LESS flexed; at 50% it is 13 deg MORE flexed; at 75% it is 24 deg MORE flexed.",
+      "the_decisive_consequence": "KNEE_ic, the knee at the heel strike ending swing, is NOT monotone and REVERSES at the top rung: -18.84, -11.66, -9.70, -7.91, -7.34, -12.68. Knee angle at heel strike is THIS CORPUS'S OWN ENDPOINT. At the instant that matters, the highest soleus dose makes the knee MORE flexed, not less.",
+      "status": "NOT PREDICTED by section 5 in either direction. Recorded as a REGISTRATION DESIGN DEFECT of the same family as r387 section 5 and r408 section 5: the categories did not include a timing shift."
+    }
+  },
+  "VERDICT_REVISED_r419": "P1 and P3 HOLD CLEANLY and are the durable result: raising soleus spastic gain monotonically SHORTENS gastrocnemius (normalised MTU length 0.7875 -> 0.6991) and monotonically LOWERS its activation (0.0661 -> 0.0490), with the gastrocnemius gain FIXED at KV 0.050 throughout and the controller frozen. Soleus spasticity does mechanically unload gastrocnemius. P2 stands as registered but the ladder is non-monotone, so the 'less stretch' link is not a dose response. P5 stands as registered and is uninformative, being purely between-rung. P4 stands as registered and survives the swing-window test, BUT the protective reading it was written to support FAILS: the change is a timing shift, and at heel strike -- this corpus's own endpoint -- the highest soleus dose leaves the knee MORE flexed, not less. The mechanism's FIRST HALF is confirmed (soleus slackens gastrocnemius). Its SECOND HALF, that this protects the knee at contact, is REFUTED.",
+  "what_this_does_not_do": "nothing here bears on the 6.3919 deg headline separation. These are first-swing quantities from frozen cells that all fail corpus Gate G, and PREREG_slack_r418.md section 7.2 forbids pooling them with any Gate-G result."
+}

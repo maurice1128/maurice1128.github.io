@@ -1,0 +1,94 @@
+{
+ "what": "Filesystem modification times establishing that each registration and its .sha256 sidecar existed BEFORE the script that consumed it and before the deposit it produced. RESULTS_3d_r214.md's header asserts that ordering; this file makes the assertion checkable without filesystem access to the project.",
+ "caveat": "mtimes are filesystem metadata and can be altered: they are evidence, not proof. AND THEY RECORD LAST WRITE, NOT PRODUCTION. CHANNELS_G2_r219.json and WINDOW_G2_r218.json carry deposit_mtime identical to the second (2026-08-16 16:44:49), four days after their scripts, because both were EDITED after creation -- each carries a self_description_correction field reading 'corrected r220'. An mtime therefore cannot establish that a deposit is the output of the script named beside it.",
+ "not_covered": "FIVE of the ELEVEN deposits cited by RESULTS_3d_r214.md have no prereg field and no registration: SPEEDGATE_r203.json, HEADLINE_FIGURES_r215.json, HIPGAP_r220.json, PRIMARYB_RESULT_r179.json and PERMREACH_r226.json. Section 9 rests on the first two; section 3 rests ENTIRELY on HIPGAP_r220; section 6's second table row rests on PRIMARYB_RESULT_r179; HEADLINE_FIGURES_r215 is also the sole cited container for section 7's first table row and all of section 8b; and PERMREACH_r226 is the sole container for section 4's r226 correction. Three earlier versions of this field understated the scope -- the first named two deposits, the second four, and none named PERMREACH_r226, which did not exist when the first two were written.",
+ "groups": {
+  "r223 LmR-only classifier": {
+   "registration": "PREREG_lmr_only_r223.md",
+   "registration_mtime": "2026-08-16 17:37:48",
+   "sidecar": "PREREG_lmr_only_r223.sha256",
+   "sidecar_mtime": "2026-08-16 17:37:56",
+   "script": "lmr_only_r223.py",
+   "script_mtime": "2026-08-16 17:38:21",
+   "deposit": "LMRONLY_r223.json",
+   "deposit_mtime": "2026-08-16 17:43:01",
+   "ordering_registration_then_sidecar_then_script_then_deposit": "OK"
+  },
+  "r222 full-channel classifier": {
+   "registration": "PREREG_classifier_r222.md",
+   "registration_mtime": "2026-08-16 17:00:19",
+   "sidecar": "PREREG_classifier_r222.sha256",
+   "sidecar_mtime": "2026-08-16 17:00:35",
+   "script": "classifier_r222.py",
+   "script_mtime": "2026-08-16 17:01:06",
+   "deposit": "CLASSIFIER_r222.json",
+   "deposit_mtime": "2026-08-16 17:35:58",
+   "ordering_registration_then_sidecar_then_script_then_deposit": "OK"
+  },
+  "r221 permutation null": {
+   "registration": "PREREG_permnull_r221.md",
+   "registration_mtime": "2026-08-16 16:53:43",
+   "sidecar": "PREREG_permnull_r221.sha256",
+   "sidecar_mtime": "2026-08-16 16:53:51",
+   "script": "permnull_r221.py",
+   "script_mtime": "2026-08-16 16:55:45",
+   "deposit": "PERMNULL_r221.json",
+   "deposit_mtime": "2026-08-16 16:56:26",
+   "ordering_registration_then_sidecar_then_script_then_deposit": "OK"
+  },
+  "r219 channel set on G2": {
+   "registration": "PREREG_channels_G2_r219.md",
+   "registration_mtime": "2026-08-12 18:19:09",
+   "sidecar": "PREREG_channels_G2_r219.sha256",
+   "sidecar_mtime": "2026-08-12 18:19:14",
+   "script": "channels_g2_r219.py",
+   "script_mtime": "2026-08-12 18:19:29",
+   "deposit": "CHANNELS_G2_r219.json",
+   "deposit_mtime": "2026-08-16 16:44:49",
+   "ordering_registration_then_sidecar_then_script_then_deposit": "OK"
+  },
+  "r218 window test": {
+   "registration": "PREREG_window_r218.md",
+   "registration_mtime": "2026-08-12 18:16:12",
+   "sidecar": "PREREG_window_r218.sha256",
+   "sidecar_mtime": "2026-08-12 18:16:19",
+   "script": "window_g2_r218.py",
+   "script_mtime": "2026-08-12 18:16:27",
+   "deposit": "WINDOW_G2_r218.json",
+   "deposit_mtime": "2026-08-16 16:44:49",
+   "ordering_registration_then_sidecar_then_script_then_deposit": "OK"
+  },
+  "r217 speed ladder": {
+   "registration": "PREREG_speed_ladder_r217.md",
+   "registration_mtime": "2026-08-12 18:11:04",
+   "sidecar": "PREREG_speed_ladder_r217.sha256",
+   "sidecar_mtime": "2026-08-12 18:11:10",
+   "script": "speed_ladder_r217.py",
+   "script_mtime": "2026-08-12 18:12:04",
+   "deposit": "SPEED_LADDER_r217.json",
+   "deposit_mtime": "2026-08-12 18:13:08",
+   "ordering_registration_then_sidecar_then_script_then_deposit": "OK"
+  },
+  "r226 per-channel reach counts": {
+   "registration": null,
+   "registration_mtime": null,
+   "sidecar": null,
+   "sidecar_mtime": null,
+   "script": "permreach_r226.py",
+   "script_mtime": "2026-08-16 18:14:17",
+   "deposit": "PERMREACH_r226.json",
+   "deposit_mtime": "2026-08-16 18:27:18",
+   "ordering_registration_then_sidecar_then_script_then_deposit": "NO REGISTRATION",
+   "note": "PERMREACH_r226.json has NO pre-registration. It was produced to measure a claim a cold read found unsupported, mid-round, and no registration was written before it ran. It is the container behind the most consequential correction in RESULTS_3d_r214.md section 4 and it is the least-covered file in the set. Recorded rather than smoothed."
+  }
+ },
+ "all_six_in_order": true,
+ "what_this_file_establishes": "That a registration and its .sha256 sidecar existed on disk before the LAST WRITE to the corresponding deposit. That is all.",
+ "what_this_file_does_NOT_establish": [
+  "that a deposit is the output of the script named beside it -- deposits were edited after creation",
+  "when any script was EXECUTED -- no execution time is recorded anywhere",
+  "that a registration was not altered before its sidecar was written",
+  "anything about the four deposits with no provenance group (see not_covered)"
+ ],
+ "inventory_is_hand_maintained": "The counts in this field and in RESULTS_3d_r214.md's header are MAINTAINED BY HAND. They froze at r224 while section 4 moved to r226, which is how PERMREACH_r226.json came to be absent from an inventory claiming completeness. A hand-maintained inventory that claims completeness is a promise that will break again, and this note exists so a reader treats the counts as a claim rather than as a generated fact."
+}

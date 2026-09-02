@@ -1,0 +1,24 @@
+{
+ "cell": 8,
+ "prefix": "R293DFs030_s103",
+ "f": 0.3,
+ "scale": 0.3,
+ "seed": 103,
+ "wall_clock_s": 59.92573690414429,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R293DFs030_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103"
+ ],
+ "stdout_tail": "23:01:45 SCONE version 2.4.4.3333\n23:01:45 Successfully initialized OpenSim-3.3-2021-01-28\n23:01:45 Successfully initialized OpenSim-4.4\n23:01:45 Successfully initialized Hyfydy-1.12.6.1412\n23:01:45 Successfully initialized Hyfydy-1.12.6.1412-DBL\n",
+ "stderr_tail": "",
+ "status": "OK",
+ "result_dir": "R293DFs030_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+ "terminal_objective": 84.9778,
+ "objective_gen0": 87.6952,
+ "descent_final_10_gens": 0.0,
+ "terminal_fitness_progress": 0.000232707,
+ "n_generations": 90,
+ "resolved_par": "0072_88.624_84.978.par",
+ "tie_break": "unique minimum",
+ "tied_files": []
+}

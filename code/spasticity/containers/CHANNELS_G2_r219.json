@@ -1,0 +1,558 @@
+{
+ "prereg": "PREREG_channels_G2_r219.md sha256 ea5cc2f442aed21a808a (prefix)",
+ "label": "BOOKKEEPING",
+ "channels": {
+  "ankle_angle_l": {
+   "control_seeds": [
+    30.79118735825474,
+    31.01827345077689,
+    30.450036827877945,
+    30.741156683583917,
+    30.76021325984997,
+    30.274551314385274
+   ],
+   "control_mean": 30.67256981578812,
+   "band": [
+    30.274551314385274,
+    31.01827345077689
+   ],
+   "S_mean": 30.723378758130664,
+   "S_displaced": false,
+   "W870": {
+    "mean": 31.49163208252081,
+    "displaced": true,
+    "opposed": false
+   },
+   "W892": {
+    "mean": 31.455274090701124,
+    "displaced": true,
+    "opposed": false
+   },
+   "W915": {
+    "mean": 31.06978426641847,
+    "displaced": true,
+    "opposed": false
+   }
+  },
+  "ankle_angle_r": {
+   "control_seeds": [
+    30.885014926785363,
+    31.16307134476235,
+    30.821726008735208,
+    30.999205415354936,
+    31.160951400920368,
+    31.301497948065958
+   ],
+   "control_mean": 31.055244507437365,
+   "band": [
+    30.821726008735208,
+    31.301497948065958
+   ],
+   "S_mean": 30.708933855495644,
+   "S_displaced": true,
+   "W870": {
+    "mean": 30.029986189393,
+    "displaced": true,
+    "opposed": false
+   },
+   "W892": {
+    "mean": 30.294730887929788,
+    "displaced": true,
+    "opposed": false
+   },
+   "W915": {
+    "mean": 30.199824248884994,
+    "displaced": true,
+    "opposed": false
+   }
+  },
+  "knee_angle_l": {
+   "control_seeds": [
+    62.17891430857229,
+    62.248112713321426,
+    62.08228383050789,
+    62.10419144476251,
+    62.15289858692658,
+    62.13429579323427
+   ],
+   "control_mean": 62.150116112887495,
+   "band": [
+    62.08228383050789,
+    62.248112713321426
+   ],
+   "S_mean": 61.44236891419854,
+   "S_displaced": true,
+   "W870": {
+    "mean": 61.83020512797621,
+    "displaced": true,
+    "opposed": false
+   },
+   "W892": {
+    "mean": 61.7071970099255,
+    "displaced": true,
+    "opposed": false
+   },
+   "W915": {
+    "mean": 61.94868095888149,
+    "displaced": true,
+    "opposed": false
+   }
+  },
+  "knee_angle_r": {
+   "control_seeds": [
+    62.18047160785947,
+    62.24324486389399,
+    62.40153018437684,
+    62.37389642991768,
+    62.4573580460188,
+    62.330547589053666
+   ],
+   "control_mean": 62.3311747868534,
+   "band": [
+    62.18047160785947,
+    62.4573580460188
+   ],
+   "S_mean": 62.33213496862508,
+   "S_displaced": false,
+   "W870": {
+    "mean": 62.45962275719702,
+    "displaced": true,
+    "opposed": false
+   },
+   "W892": {
+    "mean": 62.48986690737079,
+    "displaced": true,
+    "opposed": false
+   },
+   "W915": {
+    "mean": 62.55391881421812,
+    "displaced": true,
+    "opposed": false
+   }
+  },
+  "hip_flexion_l": {
+   "control_seeds": [
+    55.2530130861024,
+    55.25199322122707,
+    55.733484033943206,
+    55.34844493645939,
+    55.3406183329779,
+    55.190251289223774
+   ],
+   "control_mean": 55.35296748332229,
+   "band": [
+    55.190251289223774,
+    55.733484033943206
+   ],
+   "S_mean": 55.87422029378096,
+   "S_displaced": true,
+   "W870": {
+    "mean": 56.034216211592145,
+    "displaced": true,
+    "opposed": false
+   },
+   "W892": {
+    "mean": 56.0555837176319,
+    "displaced": true,
+    "opposed": false
+   },
+   "W915": {
+    "mean": 55.88120592254316,
+    "displaced": true,
+    "opposed": false
+   }
+  },
+  "hip_flexion_r": {
+   "control_seeds": [
+    55.243295721896985,
+    55.32109193131985,
+    55.383280770403346,
+    55.1229516666077,
+    55.08798978194882,
+    55.02766878527744
+   ],
+   "control_mean": 55.197713109575695,
+   "band": [
+    55.02766878527744,
+    55.383280770403346
+   ],
+   "S_mean": 57.97951455987317,
+   "S_displaced": true,
+   "W870": {
+    "mean": 55.67484562333019,
+    "displaced": true,
+    "opposed": false
+   },
+   "W892": {
+    "mean": 55.50230320304519,
+    "displaced": true,
+    "opposed": false
+   },
+   "W915": {
+    "mean": 55.438275169439315,
+    "displaced": true,
+    "opposed": false
+   }
+  },
+  "hip_adduction_l": {
+   "control_seeds": [
+    12.372400207769024,
+    12.037411265521069,
+    13.116197974589596,
+    12.455989020500661,
+    12.288175411884794,
+    13.474058246103587
+   ],
+   "control_mean": 12.624038687728122,
+   "band": [
+    12.037411265521069,
+    13.474058246103587
+   ],
+   "S_mean": 10.63048484718054,
+   "S_displaced": true,
+   "W870": {
+    "mean": 12.030787682423423,
+    "displaced": true,
+    "opposed": false
+   },
+   "W892": {
+    "mean": 12.229919546093006,
+    "displaced": false,
+    "opposed": false
+   },
+   "W915": {
+    "mean": 12.292969349756655,
+    "displaced": false,
+    "opposed": false
+   }
+  },
+  "hip_adduction_r": {
+   "control_seeds": [
+    12.055642782562131,
+    11.977167045194241,
+    12.08222917017179,
+    12.066205832473162,
+    11.721395247701071,
+    11.719597306139951
+   ],
+   "control_mean": 11.93703956404039,
+   "band": [
+    11.719597306139951,
+    12.08222917017179
+   ],
+   "S_mean": 12.165536978935904,
+   "S_displaced": true,
+   "W870": {
+    "mean": 13.33263545550331,
+    "displaced": true,
+    "opposed": false
+   },
+   "W892": {
+    "mean": 12.945875956746647,
+    "displaced": true,
+    "opposed": false
+   },
+   "W915": {
+    "mean": 12.858762689631229,
+    "displaced": true,
+    "opposed": false
+   }
+  },
+  "pelvis_list": {
+   "control_seeds": [
+    11.057522801470068,
+    10.863451683018948,
+    11.615434724900757,
+    11.05235930582035,
+    10.823626532594995,
+    11.191607530602175
+   ],
+   "control_mean": 11.100667096401216,
+   "band": [
+    10.823626532594995,
+    11.615434724900757
+   ],
+   "S_mean": 11.669461875685585,
+   "S_displaced": true,
+   "W870": {
+    "mean": 11.580750915758445,
+    "displaced": false,
+    "opposed": false
+   },
+   "W892": {
+    "mean": 11.459020493590883,
+    "displaced": false,
+    "opposed": false
+   },
+   "W915": {
+    "mean": 11.532118449093673,
+    "displaced": false,
+    "opposed": false
+   }
+  },
+  "pelvis_rotation": {
+   "control_seeds": [
+    26.887156074636437,
+    28.084305550938677,
+    25.877398174809677,
+    27.916738314174715,
+    27.37800901772501,
+    27.52792915439894
+   ],
+   "control_mean": 27.278589381113914,
+   "band": [
+    25.877398174809677,
+    28.084305550938677
+   ],
+   "S_mean": 26.57321031248519,
+   "S_displaced": false,
+   "W870": {
+    "mean": 25.154073335924718,
+    "displaced": true,
+    "opposed": false
+   },
+   "W892": {
+    "mean": 25.702613579686385,
+    "displaced": true,
+    "opposed": false
+   },
+   "W915": {
+    "mean": 25.30460653743944,
+    "displaced": true,
+    "opposed": false
+   }
+  },
+  "lumbar_bending": {
+   "control_seeds": [
+    8.683042458999157,
+    8.566724005178466,
+    9.074271792501566,
+    8.719183490800418,
+    8.540939758481988,
+    8.683079128298044
+   ],
+   "control_mean": 8.711206772376606,
+   "band": [
+    8.540939758481988,
+    9.074271792501566
+   ],
+   "S_mean": 8.724926819738808,
+   "S_displaced": false,
+   "W870": {
+    "mean": 8.990939473876216,
+    "displaced": false,
+    "opposed": false
+   },
+   "W892": {
+    "mean": 8.909994670383178,
+    "displaced": false,
+    "opposed": false
+   },
+   "W915": {
+    "mean": 8.973541228455204,
+    "displaced": false,
+    "opposed": false
+   }
+  },
+  "cycle_time": {
+   "control_seeds": [
+    1.1880000000000002,
+    1.192,
+    1.19,
+    1.19,
+    1.19,
+    1.1880000000000002
+   ],
+   "control_mean": 1.1896666666666667,
+   "band": [
+    1.1880000000000002,
+    1.192
+   ],
+   "S_mean": 1.1875555555555555,
+   "S_displaced": true,
+   "W870": {
+    "mean": 1.1766666666666665,
+    "displaced": true,
+    "opposed": false
+   },
+   "W892": {
+    "mean": 1.1816666666666666,
+    "displaced": true,
+    "opposed": false
+   },
+   "W915": {
+    "mean": 1.179,
+    "displaced": true,
+    "opposed": false
+   }
+  },
+  "ankle_angle_LmR": {
+   "control_seeds": [
+    -0.09382756853062446,
+    -0.14479789398546217,
+    -0.3716891808572633,
+    -0.2580487317710194,
+    -0.4007381410703985,
+    -1.0269466336806836
+   ],
+   "control_mean": -0.3826746916492419,
+   "band": [
+    -1.0269466336806836,
+    -0.09382756853062446
+   ],
+   "S_mean": 0.014444902635020776,
+   "S_displaced": true,
+   "W870": {
+    "mean": 1.461645893127806,
+    "displaced": true,
+    "opposed": false
+   },
+   "W892": {
+    "mean": 1.1605432027713363,
+    "displaced": true,
+    "opposed": false
+   },
+   "W915": {
+    "mean": 0.8699600175334723,
+    "displaced": true,
+    "opposed": false
+   }
+  },
+  "knee_angle_LmR": {
+   "control_seeds": [
+    -0.0015572992871781821,
+    0.004867849427434123,
+    -0.31924635386894806,
+    -0.2697049851551654,
+    -0.3044594590922145,
+    -0.19625179581939278
+   ],
+   "control_mean": -0.1810586739659108,
+   "band": [
+    -0.31924635386894806,
+    0.004867849427434123
+   ],
+   "S_mean": -0.8897660544265437,
+   "S_displaced": true,
+   "W870": {
+    "mean": -0.629417629220813,
+    "displaced": true,
+    "opposed": false
+   },
+   "W892": {
+    "mean": -0.7826698974452894,
+    "displaced": true,
+    "opposed": false
+   },
+   "W915": {
+    "mean": -0.6052378553366289,
+    "displaced": true,
+    "opposed": false
+   }
+  },
+  "hip_flexion_LmR": {
+   "control_seeds": [
+    0.00971736420541447,
+    -0.06909871009278135,
+    0.35020326353986064,
+    0.2254932698516896,
+    0.2526285510290762,
+    0.16258250394633222
+   ],
+   "control_mean": 0.15525437374659865,
+   "band": [
+    -0.06909871009278135,
+    0.35020326353986064
+   ],
+   "S_mean": -2.105294266092205,
+   "S_displaced": true,
+   "W870": {
+    "mean": 0.35937058826195667,
+    "displaced": true,
+    "opposed": true
+   },
+   "W892": {
+    "mean": 0.5532805145867172,
+    "displaced": true,
+    "opposed": true
+   },
+   "W915": {
+    "mean": 0.4429307531038364,
+    "displaced": true,
+    "opposed": true
+   }
+  },
+  "hip_adduction_LmR": {
+   "control_seeds": [
+    0.31675742520689276,
+    0.06024422032682786,
+    1.0339688044178068,
+    0.3897831880274989,
+    0.5667801641837222,
+    1.7544609399636357
+   ],
+   "control_mean": 0.6869991236877308,
+   "band": [
+    0.06024422032682786,
+    1.7544609399636357
+   ],
+   "S_mean": -1.5350521317553631,
+   "S_displaced": true,
+   "W870": {
+    "mean": -1.3018477730798852,
+    "displaced": true,
+    "opposed": false
+   },
+   "W892": {
+    "mean": -0.7159564106536424,
+    "displaced": true,
+    "opposed": false
+   },
+   "W915": {
+    "mean": -0.5657933398745761,
+    "displaced": true,
+    "opposed": false
+   }
+  }
+ },
+ "primary_A_displaced_count": 12,
+ "primary_B": {
+  "W870": {
+   "opposed": [
+    "hip_flexion_LmR"
+   ],
+   "both_displaced": 11,
+   "parallel": 10
+  },
+  "W892": {
+   "opposed": [
+    "hip_flexion_LmR"
+   ],
+   "both_displaced": 10,
+   "parallel": 9
+  },
+  "W915": {
+   "opposed": [
+    "hip_flexion_LmR"
+   ],
+   "both_displaced": 10,
+   "parallel": 9
+  }
+ },
+ "window": [
+  1.0,
+  9.73
+ ],
+ "self_description_correction": "SELF-DESCRIPTION DEFECT, corrected r220: this deposit's own descriptive string was WRONG because the script that wrote it was produced by editing the CONSTANTS of an earlier script without patching its self-description. The NUMBERS were always correct; the artifact described itself falsely, which is worse, because a referee checking provenance is misled by the file itself. Here the prereg field read 'c42f3386289487c0', which is PREREG_3d_replication_r179.md's hash, inherited from the script this one was edited from -- so two different deposits carried the same hash and neither pointed at its own registration.",
+ "opposition_margins": {
+  "what": "How far each arm's mean clears the control band edge on hip_flexion_LmR, window [1.00, 9.73].",
+  "spastic_clears_lower_edge_by": 2.0361955559994236,
+  "weak_clears_upper_edge_by": {
+   "W870": 0.009167324722096026,
+   "W892": 0.2030772510468566,
+   "W915": 0.09272748956397575
+  },
+  "fragility": "W870 clears the upper edge by 0.009167 deg. The band edge is a MAX OVER SIX CONTROL SEEDS: one additional control seed above 0.350203 would erase opposition at that rung. W892 (0.203) and W915 (0.093) are comfortable; W870 is not.",
+  "channel_data_coverage": "Channel data exists for THREE of the six weakness severities on the speed ladder -- x0.870, x0.892, x0.915. x0.800, x0.900 and x0.950 have speed data only."
+ }
+}

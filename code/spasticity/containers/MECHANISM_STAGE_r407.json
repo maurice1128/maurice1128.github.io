@@ -1,0 +1,1520 @@
+{
+  "arm": "MECHANISM_r407",
+  "supersedes": "MECHANISM_RESULT_r402.json",
+  "why_superseded": "r402 warm-started all three arms from R396SPg110, the BOTH-muscle solution at KV 0.110. Deleting one reflex from a controller optimised around both is a destabilising perturbation, not an independent lesion: SOL collapsed 0/6 at t_end 2.03-2.05 s and GAS 0/6 at 3.67-6.88 s, making the decomposition UNINFORMATIVE. Here each arm has its OWN chain from the unlesioned control.",
+  "prereg": "PREREG_biarticular_r402.md",
+  "prereg_sha256": "623b021e3369c7c441de0f261280af04f84efb31431671da1b4b176821f290d6",
+  "rungs": [
+    0.05,
+    0.07,
+    0.09,
+    0.11
+  ],
+  "target_kv": 0.11,
+  "generations": 90,
+  "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106
+  ],
+  "arms": [
+    "BOTH",
+    "SOL",
+    "GAS"
+  ],
+  "design": "3 arms x 4 rungs x 6 seeds = 72 cells. For each arm and seed the chain is KV 0.050 -> 0.070 -> 0.090 -> 0.110, each rung warm-started from THAT ARM's own previous rung for THAT SEED; the KV 0.050 rung is warm-started from R151C_s{seed}, the matched unlesioned control. All three arms therefore travel the same distance by the same protocol.",
+  "broken_policy": "If a parent fails Gate G the rest of that seed's chain in that arm is BROKEN_PARENT and skipped. No substitute parent is used.",
+  "endpoint": "knee_angle_l at left heel strike, per-cycle mean over admissible cycles, degrees. SETTLE 1.00, T1 9.73, cycles wholly inside the window, drop the last kept cycle, require >= 5, stance = leg0_l.grf_norm_y > 0.05.",
+  "template_config": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\reopt_r151\\R151S_s101\\config.scone",
+  "template_config_sha256": "135ea8f59c9cadf27f1dc88a1ba7cb0485dbb73191924762f98c254565af755d",
+  "spasticL_block": {
+    "how": "located by brace matching on 'name = SpasticL', extracted as a byte range of the template config decoded UTF-8 with \\n newlines; KV substituted inside that range only; SOL and GAS produced by DELETING exactly one MuscleReflex sub-block, never by retyping the block.",
+    "byte_range_in_template": [
+      6894,
+      7184
+    ],
+    "template_block_verbatim": "ReflexController {\n\t\t\t\t\t\t\tname = SpasticL\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = soleus\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.050\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = gastroc\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.050\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}",
+    "template_block_sha256": "bfad21c713b4181979cd0b9a3b2c6f64fec027a700f22ac4dc5f888878c38418",
+    "r402_kv110_variant_sha256_reproduced": {
+      "BOTH": "795e9304f8d854a4c1aef28072125c29745a388d712fa7d7f253940a1fb55d38",
+      "SOL": "c831e635b8f7aa3a48ebdc1b203c520c89fe422e6e91fac042c33355141c5a56",
+      "GAS": "4c95017d09995ff72db51f942e5dabfce40528e9ce53a20e6cbc3516e364a19c"
+    },
+    "variants_by_rung": {
+      "0.050": {
+        "BOTH": {
+          "deleted_reflex": null,
+          "surviving_targets": [
+            "soleus",
+            "gastroc"
+          ],
+          "verbatim": "ReflexController {\n\t\t\t\t\t\t\tname = SpasticL\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = soleus\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.050\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = gastroc\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.050\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}",
+          "sha256": "bfad21c713b4181979cd0b9a3b2c6f64fec027a700f22ac4dc5f888878c38418",
+          "n_chars": 290
+        },
+        "SOL": {
+          "deleted_reflex": "gastroc",
+          "surviving_targets": [
+            "soleus"
+          ],
+          "verbatim": "ReflexController {\n\t\t\t\t\t\t\tname = SpasticL\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = soleus\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.050\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}",
+          "sha256": "2874a56c11b28ea2b120ca8c2176660eba734e74a7aaae8f8e9c8b10918200de",
+          "n_chars": 169
+        },
+        "GAS": {
+          "deleted_reflex": "soleus",
+          "surviving_targets": [
+            "gastroc"
+          ],
+          "verbatim": "ReflexController {\n\t\t\t\t\t\t\tname = SpasticL\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = gastroc\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.050\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}",
+          "sha256": "61ab2adc1bac262df8b620f0691fd1edd2f2eec2ba94d160ef6e7d5f5b0442e6",
+          "n_chars": 170
+        }
+      },
+      "0.070": {
+        "BOTH": {
+          "deleted_reflex": null,
+          "surviving_targets": [
+            "soleus",
+            "gastroc"
+          ],
+          "verbatim": "ReflexController {\n\t\t\t\t\t\t\tname = SpasticL\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = soleus\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.070\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = gastroc\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.070\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}",
+          "sha256": "c2916b7b033c7636ecc3076cfd2962cc13e829196399201103ab1a8b14f16779",
+          "n_chars": 290
+        },
+        "SOL": {
+          "deleted_reflex": "gastroc",
+          "surviving_targets": [
+            "soleus"
+          ],
+          "verbatim": "ReflexController {\n\t\t\t\t\t\t\tname = SpasticL\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = soleus\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.070\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}",
+          "sha256": "d97b0e67d0c032357924c903b92e353509b4e212a8de09270e0897af57830698",
+          "n_chars": 169
+        },
+        "GAS": {
+          "deleted_reflex": "soleus",
+          "surviving_targets": [
+            "gastroc"
+          ],
+          "verbatim": "ReflexController {\n\t\t\t\t\t\t\tname = SpasticL\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = gastroc\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.070\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}",
+          "sha256": "3b5b1394bbfd60ab6d232dd71367ac7d6c0eb1c3491f9decb10d462fceef3b75",
+          "n_chars": 170
+        }
+      },
+      "0.090": {
+        "BOTH": {
+          "deleted_reflex": null,
+          "surviving_targets": [
+            "soleus",
+            "gastroc"
+          ],
+          "verbatim": "ReflexController {\n\t\t\t\t\t\t\tname = SpasticL\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = soleus\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.090\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = gastroc\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.090\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}",
+          "sha256": "f2dc44b639cc1a478ab24ff884698ed5e45ada17c2159a014ad7fe9c04137914",
+          "n_chars": 290
+        },
+        "SOL": {
+          "deleted_reflex": "gastroc",
+          "surviving_targets": [
+            "soleus"
+          ],
+          "verbatim": "ReflexController {\n\t\t\t\t\t\t\tname = SpasticL\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = soleus\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.090\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}",
+          "sha256": "4aa3fe7738f4eaea2a53d3792a46e2e4de1286d385f48265b0bdb6516b429f40",
+          "n_chars": 169
+        },
+        "GAS": {
+          "deleted_reflex": "soleus",
+          "surviving_targets": [
+            "gastroc"
+          ],
+          "verbatim": "ReflexController {\n\t\t\t\t\t\t\tname = SpasticL\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = gastroc\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.090\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}",
+          "sha256": "9cfa024d392106a0f1a9375eca7ef066c82cd8e1360641303b773e82b02be359",
+          "n_chars": 170
+        }
+      },
+      "0.110": {
+        "BOTH": {
+          "deleted_reflex": null,
+          "surviving_targets": [
+            "soleus",
+            "gastroc"
+          ],
+          "verbatim": "ReflexController {\n\t\t\t\t\t\t\tname = SpasticL\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = soleus\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.110\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = gastroc\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.110\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}",
+          "sha256": "795e9304f8d854a4c1aef28072125c29745a388d712fa7d7f253940a1fb55d38",
+          "n_chars": 290
+        },
+        "SOL": {
+          "deleted_reflex": "gastroc",
+          "surviving_targets": [
+            "soleus"
+          ],
+          "verbatim": "ReflexController {\n\t\t\t\t\t\t\tname = SpasticL\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = soleus\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.110\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}",
+          "sha256": "c831e635b8f7aa3a48ebdc1b203c520c89fe422e6e91fac042c33355141c5a56",
+          "n_chars": 169
+        },
+        "GAS": {
+          "deleted_reflex": "soleus",
+          "surviving_targets": [
+            "gastroc"
+          ],
+          "verbatim": "ReflexController {\n\t\t\t\t\t\t\tname = SpasticL\n\t\t\t\t\t\t\tMuscleReflex {\n\t\t\t\t\t\t\t\ttarget = gastroc\n\t\t\t\t\t\t\t\tdelay = 0.020\n\t\t\t\t\t\t\t\tKV = 0.110\n\t\t\t\t\t\t\t\tallow_neg_V = 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}",
+          "sha256": "4c95017d09995ff72db51f942e5dabfce40528e9ce53a20e6cbc3516e364a19c",
+          "n_chars": 170
+        }
+      }
+    }
+  },
+  "root_parents": {
+    "101": {
+      "prefix": "R151C_s101",
+      "role": "root_control",
+      "result_dir": "R151C_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "duplicate_result_dir": false,
+      "par": "0060_19.456_0.988.par",
+      "par_sha256": "89e844f78537084989532e08d942ff24defc59ac91e9f1e84c6b2a1d6090bd64",
+      "generation": 60,
+      "gate_G": true,
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "knee_at_heelstrike_deg": -7.8346019723070714,
+      "ank_stance_mean_deg": 4.438821266367993,
+      "gate_sto": "0060_19.456_0.988.par.sto"
+    },
+    "102": {
+      "prefix": "R151C_s102",
+      "role": "root_control",
+      "result_dir": "R151C_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "duplicate_result_dir": false,
+      "par": "0003_26.221_0.983.par",
+      "par_sha256": "06471a9f70822a3c9511639db0c732fcc88a312480542acc825bb7e94a7f22b2",
+      "generation": 3,
+      "gate_G": true,
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "knee_at_heelstrike_deg": -7.901821380831819,
+      "ank_stance_mean_deg": 4.513951513721978,
+      "gate_sto": "0003_26.221_0.983.par.sto"
+    },
+    "103": {
+      "prefix": "R151C_s103",
+      "role": "root_control",
+      "result_dir": "R151C_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "duplicate_result_dir": false,
+      "par": "0028_1.032_0.991.par",
+      "par_sha256": "a80cdb7a2027f4082eef521934596263b1ec487b643cd352ff9b6e08bc9f0441",
+      "generation": 28,
+      "gate_G": true,
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "knee_at_heelstrike_deg": -7.855916002285937,
+      "ank_stance_mean_deg": 4.442206681431494,
+      "gate_sto": "0028_1.032_0.991.par.sto"
+    },
+    "104": {
+      "prefix": "R151C_s104",
+      "role": "root_control",
+      "result_dir": "R151C_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "duplicate_result_dir": false,
+      "par": "0000_1.033_0.987.par",
+      "par_sha256": "bd1f5588c9e27ce558e71bd53003118afa873dcb1268609b232f7f9b34a7f24e",
+      "generation": 0,
+      "gate_G": true,
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "knee_at_heelstrike_deg": -7.680487784572781,
+      "ank_stance_mean_deg": 4.5123693292106895,
+      "gate_sto": "0000_1.033_0.987.par.sto"
+    },
+    "105": {
+      "prefix": "R151C_s105",
+      "role": "root_control",
+      "result_dir": "R151C_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "duplicate_result_dir": false,
+      "par": "0053_30.023_0.987.par",
+      "par_sha256": "fbd42423eed2b948053c4cae6f2ba7a5571ae5ad8acd7e2a5bd338703229192b",
+      "generation": 53,
+      "gate_G": true,
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "knee_at_heelstrike_deg": -7.587588407670272,
+      "ank_stance_mean_deg": 4.500608396625777,
+      "gate_sto": "0053_30.023_0.987.par.sto"
+    },
+    "106": {
+      "prefix": "R151C_s106",
+      "role": "root_control",
+      "result_dir": "R151C_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "duplicate_result_dir": false,
+      "par": "0001_1.056_0.989.par",
+      "par_sha256": "96765a53a5a8a4855f474304df6d6be143cd4da0565ab2097ed67a2a4d236b5c",
+      "generation": 1,
+      "gate_G": true,
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "knee_at_heelstrike_deg": -8.239580001061439,
+      "ank_stance_mean_deg": 4.501671542164866,
+      "gate_sto": "0001_1.056_0.989.par.sto"
+    }
+  },
+  "staged_cells": [
+    {
+      "prefix": "R407BOTHg050_s101",
+      "arm": "BOTH",
+      "kv": 0.05,
+      "seed": 101,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg050_s101",
+      "warm": "WARM_R151C_s101_g0060.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R151C_s101",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "parent_par": "0060_19.456_0.988.par",
+      "parent_par_sha256": "89e844f78537084989532e08d942ff24defc59ac91e9f1e84c6b2a1d6090bd64",
+      "parent_generation": 60,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "bfad21c713b4181979cd0b9a3b2c6f64fec027a700f22ac4dc5f888878c38418",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "0ade93540a4e1bf852e44d8a94c8fd1dc567736492d584fba76cd63d38f22bc2"
+    },
+    {
+      "prefix": "R407BOTHg050_s102",
+      "arm": "BOTH",
+      "kv": 0.05,
+      "seed": 102,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg050_s102",
+      "warm": "WARM_R151C_s102_g0003.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R151C_s102",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "parent_par": "0003_26.221_0.983.par",
+      "parent_par_sha256": "06471a9f70822a3c9511639db0c732fcc88a312480542acc825bb7e94a7f22b2",
+      "parent_generation": 3,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "bfad21c713b4181979cd0b9a3b2c6f64fec027a700f22ac4dc5f888878c38418",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "2e17d134378cec4c1019ed38620e0a5464cfb8ef7e11607a37b310db730f98c4"
+    },
+    {
+      "prefix": "R407BOTHg050_s103",
+      "arm": "BOTH",
+      "kv": 0.05,
+      "seed": 103,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg050_s103",
+      "warm": "WARM_R151C_s103_g0028.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R151C_s103",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "parent_par": "0028_1.032_0.991.par",
+      "parent_par_sha256": "a80cdb7a2027f4082eef521934596263b1ec487b643cd352ff9b6e08bc9f0441",
+      "parent_generation": 28,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "bfad21c713b4181979cd0b9a3b2c6f64fec027a700f22ac4dc5f888878c38418",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "dcd819c371adb4d5c3f020d6a753c8b5915b68c91a2ef648b3cdddd63db7b367"
+    },
+    {
+      "prefix": "R407BOTHg050_s104",
+      "arm": "BOTH",
+      "kv": 0.05,
+      "seed": 104,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg050_s104",
+      "warm": "WARM_R151C_s104_g0000.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R151C_s104",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "parent_par": "0000_1.033_0.987.par",
+      "parent_par_sha256": "bd1f5588c9e27ce558e71bd53003118afa873dcb1268609b232f7f9b34a7f24e",
+      "parent_generation": 0,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "bfad21c713b4181979cd0b9a3b2c6f64fec027a700f22ac4dc5f888878c38418",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "7354e0d63205b3560a9545c165bdbfd1eacbaa032617cd71c0e60de087701039"
+    },
+    {
+      "prefix": "R407BOTHg050_s105",
+      "arm": "BOTH",
+      "kv": 0.05,
+      "seed": 105,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg050_s105",
+      "warm": "WARM_R151C_s105_g0053.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R151C_s105",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "parent_par": "0053_30.023_0.987.par",
+      "parent_par_sha256": "fbd42423eed2b948053c4cae6f2ba7a5571ae5ad8acd7e2a5bd338703229192b",
+      "parent_generation": 53,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "bfad21c713b4181979cd0b9a3b2c6f64fec027a700f22ac4dc5f888878c38418",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "970288826629b9ca8c3452f745dc441af0a0a367c999e048cdf5e95437e8fa6c"
+    },
+    {
+      "prefix": "R407BOTHg050_s106",
+      "arm": "BOTH",
+      "kv": 0.05,
+      "seed": 106,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg050_s106",
+      "warm": "WARM_R151C_s106_g0001.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R151C_s106",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "parent_par": "0001_1.056_0.989.par",
+      "parent_par_sha256": "96765a53a5a8a4855f474304df6d6be143cd4da0565ab2097ed67a2a4d236b5c",
+      "parent_generation": 1,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "bfad21c713b4181979cd0b9a3b2c6f64fec027a700f22ac4dc5f888878c38418",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "cc63e2160086c076e15b2b2d186eef16dab755b5cffbebf2b245eeb8360a541b"
+    },
+    {
+      "prefix": "R407SOLg050_s101",
+      "arm": "SOL",
+      "kv": 0.05,
+      "seed": 101,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407SOLg050_s101",
+      "warm": "WARM_R151C_s101_g0060.par",
+      "spastic_targets": [
+        "soleus"
+      ],
+      "deleted_reflex": "gastroc",
+      "parent_prefix": "R151C_s101",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "parent_par": "0060_19.456_0.988.par",
+      "parent_par_sha256": "89e844f78537084989532e08d942ff24defc59ac91e9f1e84c6b2a1d6090bd64",
+      "parent_generation": 60,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "soleus"
+      ],
+      "spasticL_block_sha256": "2874a56c11b28ea2b120ca8c2176660eba734e74a7aaae8f8e9c8b10918200de",
+      "kv_literal_count_in_config": 1,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "902cf47ae5fca6fcf325f8dc6ca6ead3df45b71ccdfb34f549c97481d8aa2b6d"
+    },
+    {
+      "prefix": "R407SOLg050_s102",
+      "arm": "SOL",
+      "kv": 0.05,
+      "seed": 102,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407SOLg050_s102",
+      "warm": "WARM_R151C_s102_g0003.par",
+      "spastic_targets": [
+        "soleus"
+      ],
+      "deleted_reflex": "gastroc",
+      "parent_prefix": "R151C_s102",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "parent_par": "0003_26.221_0.983.par",
+      "parent_par_sha256": "06471a9f70822a3c9511639db0c732fcc88a312480542acc825bb7e94a7f22b2",
+      "parent_generation": 3,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "soleus"
+      ],
+      "spasticL_block_sha256": "2874a56c11b28ea2b120ca8c2176660eba734e74a7aaae8f8e9c8b10918200de",
+      "kv_literal_count_in_config": 1,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "358bd03b1bc0a51983f51dfd4c029d050b73b074a4662b8e6e948c319db4e33f"
+    },
+    {
+      "prefix": "R407SOLg050_s103",
+      "arm": "SOL",
+      "kv": 0.05,
+      "seed": 103,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407SOLg050_s103",
+      "warm": "WARM_R151C_s103_g0028.par",
+      "spastic_targets": [
+        "soleus"
+      ],
+      "deleted_reflex": "gastroc",
+      "parent_prefix": "R151C_s103",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "parent_par": "0028_1.032_0.991.par",
+      "parent_par_sha256": "a80cdb7a2027f4082eef521934596263b1ec487b643cd352ff9b6e08bc9f0441",
+      "parent_generation": 28,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "soleus"
+      ],
+      "spasticL_block_sha256": "2874a56c11b28ea2b120ca8c2176660eba734e74a7aaae8f8e9c8b10918200de",
+      "kv_literal_count_in_config": 1,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "78c0d87244c4ba2aad6bec7806eae54b2b1358a7e88e7cb2420c2b089feab485"
+    },
+    {
+      "prefix": "R407SOLg050_s104",
+      "arm": "SOL",
+      "kv": 0.05,
+      "seed": 104,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407SOLg050_s104",
+      "warm": "WARM_R151C_s104_g0000.par",
+      "spastic_targets": [
+        "soleus"
+      ],
+      "deleted_reflex": "gastroc",
+      "parent_prefix": "R151C_s104",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "parent_par": "0000_1.033_0.987.par",
+      "parent_par_sha256": "bd1f5588c9e27ce558e71bd53003118afa873dcb1268609b232f7f9b34a7f24e",
+      "parent_generation": 0,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "soleus"
+      ],
+      "spasticL_block_sha256": "2874a56c11b28ea2b120ca8c2176660eba734e74a7aaae8f8e9c8b10918200de",
+      "kv_literal_count_in_config": 1,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "a4edafa6f2d901cc60b615dd7516107228618cf94c79e4fa62d59822d9da15fe"
+    },
+    {
+      "prefix": "R407SOLg050_s105",
+      "arm": "SOL",
+      "kv": 0.05,
+      "seed": 105,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407SOLg050_s105",
+      "warm": "WARM_R151C_s105_g0053.par",
+      "spastic_targets": [
+        "soleus"
+      ],
+      "deleted_reflex": "gastroc",
+      "parent_prefix": "R151C_s105",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "parent_par": "0053_30.023_0.987.par",
+      "parent_par_sha256": "fbd42423eed2b948053c4cae6f2ba7a5571ae5ad8acd7e2a5bd338703229192b",
+      "parent_generation": 53,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "soleus"
+      ],
+      "spasticL_block_sha256": "2874a56c11b28ea2b120ca8c2176660eba734e74a7aaae8f8e9c8b10918200de",
+      "kv_literal_count_in_config": 1,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "e3e57d7a753f8316bc7642ba18ecdc62d2ea7b633803fb438f5e23f8e3721120"
+    },
+    {
+      "prefix": "R407SOLg050_s106",
+      "arm": "SOL",
+      "kv": 0.05,
+      "seed": 106,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407SOLg050_s106",
+      "warm": "WARM_R151C_s106_g0001.par",
+      "spastic_targets": [
+        "soleus"
+      ],
+      "deleted_reflex": "gastroc",
+      "parent_prefix": "R151C_s106",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "parent_par": "0001_1.056_0.989.par",
+      "parent_par_sha256": "96765a53a5a8a4855f474304df6d6be143cd4da0565ab2097ed67a2a4d236b5c",
+      "parent_generation": 1,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "soleus"
+      ],
+      "spasticL_block_sha256": "2874a56c11b28ea2b120ca8c2176660eba734e74a7aaae8f8e9c8b10918200de",
+      "kv_literal_count_in_config": 1,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "622752298ea0bc241dc7c4bccc3877e75f20b7ad2137690c88a45910d3f4b510"
+    },
+    {
+      "prefix": "R407GASg050_s101",
+      "arm": "GAS",
+      "kv": 0.05,
+      "seed": 101,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407GASg050_s101",
+      "warm": "WARM_R151C_s101_g0060.par",
+      "spastic_targets": [
+        "gastroc"
+      ],
+      "deleted_reflex": "soleus",
+      "parent_prefix": "R151C_s101",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "parent_par": "0060_19.456_0.988.par",
+      "parent_par_sha256": "89e844f78537084989532e08d942ff24defc59ac91e9f1e84c6b2a1d6090bd64",
+      "parent_generation": 60,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "61ab2adc1bac262df8b620f0691fd1edd2f2eec2ba94d160ef6e7d5f5b0442e6",
+      "kv_literal_count_in_config": 1,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "2155186ccb15394521d5e8787ee3f8fc29fa9215b23ed08c42553502dc8c0b65"
+    },
+    {
+      "prefix": "R407GASg050_s102",
+      "arm": "GAS",
+      "kv": 0.05,
+      "seed": 102,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407GASg050_s102",
+      "warm": "WARM_R151C_s102_g0003.par",
+      "spastic_targets": [
+        "gastroc"
+      ],
+      "deleted_reflex": "soleus",
+      "parent_prefix": "R151C_s102",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "parent_par": "0003_26.221_0.983.par",
+      "parent_par_sha256": "06471a9f70822a3c9511639db0c732fcc88a312480542acc825bb7e94a7f22b2",
+      "parent_generation": 3,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "61ab2adc1bac262df8b620f0691fd1edd2f2eec2ba94d160ef6e7d5f5b0442e6",
+      "kv_literal_count_in_config": 1,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "51ab42082df4bcd2323c828a20ce241251d459b53c0f78921ff97ae37b83df5c"
+    },
+    {
+      "prefix": "R407GASg050_s103",
+      "arm": "GAS",
+      "kv": 0.05,
+      "seed": 103,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407GASg050_s103",
+      "warm": "WARM_R151C_s103_g0028.par",
+      "spastic_targets": [
+        "gastroc"
+      ],
+      "deleted_reflex": "soleus",
+      "parent_prefix": "R151C_s103",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "parent_par": "0028_1.032_0.991.par",
+      "parent_par_sha256": "a80cdb7a2027f4082eef521934596263b1ec487b643cd352ff9b6e08bc9f0441",
+      "parent_generation": 28,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "61ab2adc1bac262df8b620f0691fd1edd2f2eec2ba94d160ef6e7d5f5b0442e6",
+      "kv_literal_count_in_config": 1,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "50eac22d3375c593a61587d994d47e697e170352a519aa52636e9318ff9aac9e"
+    },
+    {
+      "prefix": "R407GASg050_s104",
+      "arm": "GAS",
+      "kv": 0.05,
+      "seed": 104,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407GASg050_s104",
+      "warm": "WARM_R151C_s104_g0000.par",
+      "spastic_targets": [
+        "gastroc"
+      ],
+      "deleted_reflex": "soleus",
+      "parent_prefix": "R151C_s104",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "parent_par": "0000_1.033_0.987.par",
+      "parent_par_sha256": "bd1f5588c9e27ce558e71bd53003118afa873dcb1268609b232f7f9b34a7f24e",
+      "parent_generation": 0,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "61ab2adc1bac262df8b620f0691fd1edd2f2eec2ba94d160ef6e7d5f5b0442e6",
+      "kv_literal_count_in_config": 1,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "e77abea1855b461be0ceaed48d991ad0124e9df24465cfc0fa717ba37e5fd3d8"
+    },
+    {
+      "prefix": "R407GASg050_s105",
+      "arm": "GAS",
+      "kv": 0.05,
+      "seed": 105,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407GASg050_s105",
+      "warm": "WARM_R151C_s105_g0053.par",
+      "spastic_targets": [
+        "gastroc"
+      ],
+      "deleted_reflex": "soleus",
+      "parent_prefix": "R151C_s105",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "parent_par": "0053_30.023_0.987.par",
+      "parent_par_sha256": "fbd42423eed2b948053c4cae6f2ba7a5571ae5ad8acd7e2a5bd338703229192b",
+      "parent_generation": 53,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "61ab2adc1bac262df8b620f0691fd1edd2f2eec2ba94d160ef6e7d5f5b0442e6",
+      "kv_literal_count_in_config": 1,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "b02e623d0fc3b40d60aa600d2dd4b20830bcce0fa923bead9d205164b5b68ed0"
+    },
+    {
+      "prefix": "R407GASg050_s106",
+      "arm": "GAS",
+      "kv": 0.05,
+      "seed": 106,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407GASg050_s106",
+      "warm": "WARM_R151C_s106_g0001.par",
+      "spastic_targets": [
+        "gastroc"
+      ],
+      "deleted_reflex": "soleus",
+      "parent_prefix": "R151C_s106",
+      "parent_role": "root_control",
+      "parent_result_dir": "R151C_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "parent_par": "0001_1.056_0.989.par",
+      "parent_par_sha256": "96765a53a5a8a4855f474304df6d6be143cd4da0565ab2097ed67a2a4d236b5c",
+      "parent_generation": 1,
+      "parent_gate_G": true,
+      "parent_t_end_s": 20.0,
+      "spasticL_readback_targets": [
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "61ab2adc1bac262df8b620f0691fd1edd2f2eec2ba94d160ef6e7d5f5b0442e6",
+      "kv_literal_count_in_config": 1,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "c5b5eed93ac7f3eff8778840bea775d4f17a8debf191fa023a4b6e5db56d7888"
+    },
+    {
+      "prefix": "R407BOTHg070_s101",
+      "arm": "BOTH",
+      "kv": 0.07,
+      "seed": 101,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg070_s101",
+      "warm": "WARM_R407BOTHg050_s101_g0053.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg050_s101",
+      "parent_role": "own_chain_rung_0",
+      "parent_result_dir": "R407BOTHg050_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "parent_par": "0053_52.036_23.961.par",
+      "parent_par_sha256": "dfa827aa1468e6f23ae9b1e38f60faadfce1880c9922ff5879e93f547eb6e38e",
+      "parent_generation": 53,
+      "parent_gate_G": true,
+      "parent_t_end_s": 16.45,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "c2916b7b033c7636ecc3076cfd2962cc13e829196399201103ab1a8b14f16779",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "e1e84029c4038da8b9cb3a08eb2835a9a2147653b3c870c9b7b933b310497886"
+    },
+    {
+      "prefix": "R407BOTHg070_s102",
+      "arm": "BOTH",
+      "kv": 0.07,
+      "seed": 102,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg070_s102",
+      "warm": "WARM_R407BOTHg050_s102_g0076.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg050_s102",
+      "parent_role": "own_chain_rung_0",
+      "parent_result_dir": "R407BOTHg050_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "parent_par": "0076_44.500_10.589.par",
+      "parent_par_sha256": "3c1137790fb4a6d8db25fe8714d8675c05c8bade878f3e0ff551f79784d6825b",
+      "parent_generation": 76,
+      "parent_gate_G": true,
+      "parent_t_end_s": 18.76,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "c2916b7b033c7636ecc3076cfd2962cc13e829196399201103ab1a8b14f16779",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "15c33dd9e90bb63b3e24bef9c667d909afad605b488c9181cf577b01ca3f1006"
+    },
+    {
+      "prefix": "R407BOTHg070_s103",
+      "arm": "BOTH",
+      "kv": 0.07,
+      "seed": 103,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg070_s103",
+      "warm": "WARM_R407BOTHg050_s103_g0058.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg050_s103",
+      "parent_role": "own_chain_rung_0",
+      "parent_result_dir": "R407BOTHg050_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "parent_par": "0058_62.231_43.816.par",
+      "parent_par_sha256": "2248d3b6d045ffadb29a90b40eba61139f221c47bbb9581fe6c91c0595627628",
+      "parent_generation": 58,
+      "parent_gate_G": true,
+      "parent_t_end_s": 12.28,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "c2916b7b033c7636ecc3076cfd2962cc13e829196399201103ab1a8b14f16779",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "5e081ccef4b6ae8bd0a4c3be0ff1707260052c59ff2f2b84f6755ff1e239f253"
+    },
+    {
+      "prefix": "R407BOTHg070_s104",
+      "arm": "BOTH",
+      "kv": 0.07,
+      "seed": 104,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg070_s104",
+      "warm": "WARM_R407BOTHg050_s104_g0072.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg050_s104",
+      "parent_role": "own_chain_rung_0",
+      "parent_result_dir": "R407BOTHg050_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "parent_par": "0072_59.701_22.802.par",
+      "parent_par_sha256": "fc06d2bf04edd9d626a21c827e68def50712803b7dd71c12768c956704cf5831",
+      "parent_generation": 72,
+      "parent_gate_G": true,
+      "parent_t_end_s": 16.94,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "c2916b7b033c7636ecc3076cfd2962cc13e829196399201103ab1a8b14f16779",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "fee9ed6d8b50724db0662a7b7a9262c45a528865e4f2a60db5e202ad8657a8ae"
+    },
+    {
+      "prefix": "R407BOTHg070_s105",
+      "arm": "BOTH",
+      "kv": 0.07,
+      "seed": 105,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg070_s105",
+      "warm": "WARM_R407BOTHg050_s105_g0034.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg050_s105",
+      "parent_role": "own_chain_rung_0",
+      "parent_result_dir": "R407BOTHg050_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "parent_par": "0034_64.911_29.434.par",
+      "parent_par_sha256": "863ea1d35537f8335a02a1cf22b7712f0fdd9cbacef9d53acb849465a5ca00e0",
+      "parent_generation": 34,
+      "parent_gate_G": true,
+      "parent_t_end_s": 15.33,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "c2916b7b033c7636ecc3076cfd2962cc13e829196399201103ab1a8b14f16779",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "6a5b1fb86383c9de51537edf140ed89cee1a11cc6aebb8815563cd160be09901"
+    },
+    {
+      "prefix": "R407BOTHg070_s106",
+      "arm": "BOTH",
+      "kv": 0.07,
+      "seed": 106,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg070_s106",
+      "warm": "WARM_R407BOTHg050_s106_g0072.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg050_s106",
+      "parent_role": "own_chain_rung_0",
+      "parent_result_dir": "R407BOTHg050_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "parent_par": "0072_51.307_22.100.par",
+      "parent_par_sha256": "ae679966d370b5cfa67d4aa3329b73b7e153f6ce2909e13f67f4342a21b13e99",
+      "parent_generation": 72,
+      "parent_gate_G": true,
+      "parent_t_end_s": 16.49,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "c2916b7b033c7636ecc3076cfd2962cc13e829196399201103ab1a8b14f16779",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "4dda7dfce3747d77c9fface72de449c20a4a90303009ff42283e2059e58fee77"
+    },
+    {
+      "prefix": "R407SOLg070_s104",
+      "arm": "SOL",
+      "kv": 0.07,
+      "seed": 104,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407SOLg070_s104",
+      "warm": "WARM_R407SOLg050_s104_g0088.par",
+      "spastic_targets": [
+        "soleus"
+      ],
+      "deleted_reflex": "gastroc",
+      "parent_prefix": "R407SOLg050_s104",
+      "parent_role": "own_chain_rung_0",
+      "parent_result_dir": "R407SOLg050_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "parent_par": "0088_77.549_51.534.par",
+      "parent_par_sha256": "6fb381d1c0b8b2f046dbdf3131857b81b78b7c0b66b48c569bdab684ad027c8d",
+      "parent_generation": 88,
+      "parent_gate_G": true,
+      "parent_t_end_s": 10.88,
+      "spasticL_readback_targets": [
+        "soleus"
+      ],
+      "spasticL_block_sha256": "d97b0e67d0c032357924c903b92e353509b4e212a8de09270e0897af57830698",
+      "kv_literal_count_in_config": 1,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "eb56617b04a23e21038c82aecc2f24093a2df136c34b7432d9c465883d421d9a"
+    },
+    {
+      "prefix": "R407SOLg070_s105",
+      "arm": "SOL",
+      "kv": 0.07,
+      "seed": 105,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407SOLg070_s105",
+      "warm": "WARM_R407SOLg050_s105_g0060.par",
+      "spastic_targets": [
+        "soleus"
+      ],
+      "deleted_reflex": "gastroc",
+      "parent_prefix": "R407SOLg050_s105",
+      "parent_role": "own_chain_rung_0",
+      "parent_result_dir": "R407SOLg050_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "parent_par": "0060_72.675_45.396.par",
+      "parent_par_sha256": "0016f3d610f5b8c3c91f4830127b1bd528667f678196778c6593c30a7710a6b7",
+      "parent_generation": 60,
+      "parent_gate_G": true,
+      "parent_t_end_s": 11.74,
+      "spasticL_readback_targets": [
+        "soleus"
+      ],
+      "spasticL_block_sha256": "d97b0e67d0c032357924c903b92e353509b4e212a8de09270e0897af57830698",
+      "kv_literal_count_in_config": 1,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "3923e6352690f12cbeda7b7294d3ccc56c6b3b1ccbc382f122e9d45bba0caae6"
+    },
+    {
+      "prefix": "R407SOLg070_s106",
+      "arm": "SOL",
+      "kv": 0.07,
+      "seed": 106,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407SOLg070_s106",
+      "warm": "WARM_R407SOLg050_s106_g0078.par",
+      "spastic_targets": [
+        "soleus"
+      ],
+      "deleted_reflex": "gastroc",
+      "parent_prefix": "R407SOLg050_s106",
+      "parent_role": "own_chain_rung_0",
+      "parent_result_dir": "R407SOLg050_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "parent_par": "0078_74.344_49.218.par",
+      "parent_par_sha256": "569dc5064a246e7c233a3167651c0e1b8a9b3898e5b3af807af6c98ce5cbcdf8",
+      "parent_generation": 78,
+      "parent_gate_G": true,
+      "parent_t_end_s": 10.99,
+      "spasticL_readback_targets": [
+        "soleus"
+      ],
+      "spasticL_block_sha256": "d97b0e67d0c032357924c903b92e353509b4e212a8de09270e0897af57830698",
+      "kv_literal_count_in_config": 1,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "b6aa66708491faf845bfb73aa151e7ab8f0d00fb5bf42d3ad420b56657465126"
+    },
+    {
+      "prefix": "R407BOTHg090_s101",
+      "arm": "BOTH",
+      "kv": 0.09,
+      "seed": 101,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg090_s101",
+      "warm": "WARM_R407BOTHg070_s101_g0065.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg070_s101",
+      "parent_role": "own_chain_rung_1",
+      "parent_result_dir": "R407BOTHg070_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "parent_par": "0065_67.869_35.821.par",
+      "parent_par_sha256": "a2445edd8f6bc40d73a34ad9b0d7eb4f898b190ce2249ea61386970f0aa8e930",
+      "parent_generation": 65,
+      "parent_gate_G": true,
+      "parent_t_end_s": 14.29,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "f2dc44b639cc1a478ab24ff884698ed5e45ada17c2159a014ad7fe9c04137914",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "f45f2e575f2d63a369de92a7ebe496488035e9b7cf58a78f01f6a16ed98cdc82"
+    },
+    {
+      "prefix": "R407BOTHg090_s102",
+      "arm": "BOTH",
+      "kv": 0.09,
+      "seed": 102,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg090_s102",
+      "warm": "WARM_R407BOTHg070_s102_g0016.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg070_s102",
+      "parent_role": "own_chain_rung_1",
+      "parent_result_dir": "R407BOTHg070_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "parent_par": "0016_67.076_30.589.par",
+      "parent_par_sha256": "438f5063ca96aedf5422c0078a670eaada6cc8b712e682d908c8e5b1e72cd1b8",
+      "parent_generation": 16,
+      "parent_gate_G": true,
+      "parent_t_end_s": 15.46,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "f2dc44b639cc1a478ab24ff884698ed5e45ada17c2159a014ad7fe9c04137914",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "34acb56df36802f8af3efb86792ae56438dd33c66363b011f3dd70d4c6932cb4"
+    },
+    {
+      "prefix": "R407BOTHg090_s103",
+      "arm": "BOTH",
+      "kv": 0.09,
+      "seed": 103,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg090_s103",
+      "warm": "WARM_R407BOTHg070_s103_g0077.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg070_s103",
+      "parent_role": "own_chain_rung_1",
+      "parent_result_dir": "R407BOTHg070_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "parent_par": "0077_66.846_41.938.par",
+      "parent_par_sha256": "67738e4a77335d4dbb1af6746690d17793dc1dda3e4edbec7c4c54893010643e",
+      "parent_generation": 77,
+      "parent_gate_G": true,
+      "parent_t_end_s": 13.42,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "f2dc44b639cc1a478ab24ff884698ed5e45ada17c2159a014ad7fe9c04137914",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "c4c912d67a27e400cfb8b0461d24ad98a7c03ac0860ee47629654fee39d9e84d"
+    },
+    {
+      "prefix": "R407BOTHg090_s104",
+      "arm": "BOTH",
+      "kv": 0.09,
+      "seed": 104,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg090_s104",
+      "warm": "WARM_R407BOTHg070_s104_g0014.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg070_s104",
+      "parent_role": "own_chain_rung_1",
+      "parent_result_dir": "R407BOTHg070_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "parent_par": "0014_70.952_20.923.par",
+      "parent_par_sha256": "15fbcce26e1500708293b1a24a29324bd7ac9e0224b71ad81c976897a673cd95",
+      "parent_generation": 14,
+      "parent_gate_G": true,
+      "parent_t_end_s": 17.29,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "f2dc44b639cc1a478ab24ff884698ed5e45ada17c2159a014ad7fe9c04137914",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "f70d13a1306316286896e2e071b6c2a4040388d1e528e62a46acaf6575ee0e3b"
+    },
+    {
+      "prefix": "R407BOTHg090_s105",
+      "arm": "BOTH",
+      "kv": 0.09,
+      "seed": 105,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg090_s105",
+      "warm": "WARM_R407BOTHg070_s105_g0084.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg070_s105",
+      "parent_role": "own_chain_rung_1",
+      "parent_result_dir": "R407BOTHg070_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "parent_par": "0084_67.346_38.538.par",
+      "parent_par_sha256": "725ad62cbddb082e0e0e3b9aadc46c3d273e154635ae145c96ba7a2ceed22ac3",
+      "parent_generation": 84,
+      "parent_gate_G": true,
+      "parent_t_end_s": 14.2,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "f2dc44b639cc1a478ab24ff884698ed5e45ada17c2159a014ad7fe9c04137914",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "921cdf28ba64f69479dcaf7e27cea99de94ebaa4d1b4442b717196ddc8e132f0"
+    },
+    {
+      "prefix": "R407BOTHg090_s106",
+      "arm": "BOTH",
+      "kv": 0.09,
+      "seed": 106,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg090_s106",
+      "warm": "WARM_R407BOTHg070_s106_g0064.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg070_s106",
+      "parent_role": "own_chain_rung_1",
+      "parent_result_dir": "R407BOTHg070_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "parent_par": "0064_61.441_28.900.par",
+      "parent_par_sha256": "eb2c3b7c52178a3cc19b8044200efbd0b376753f79390b75be4fa91a4dea88d8",
+      "parent_generation": 64,
+      "parent_gate_G": true,
+      "parent_t_end_s": 16.87,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "f2dc44b639cc1a478ab24ff884698ed5e45ada17c2159a014ad7fe9c04137914",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "c66380de4da690aa3bdcc83b0dc2614e9eb26e73dd430ab9187d47d4a4eaaaa3"
+    },
+    {
+      "prefix": "R407BOTHg110_s101",
+      "arm": "BOTH",
+      "kv": 0.11,
+      "seed": 101,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg110_s101",
+      "warm": "WARM_R407BOTHg090_s101_g0030.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg090_s101",
+      "parent_role": "own_chain_rung_2",
+      "parent_result_dir": "R407BOTHg090_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "parent_par": "0030_67.264_42.523.par",
+      "parent_par_sha256": "aa153326c3c2d1ca3e1a949f349bbcd47c1a7da14cfe516f329759b8f180059a",
+      "parent_generation": 30,
+      "parent_gate_G": true,
+      "parent_t_end_s": 13.39,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "795e9304f8d854a4c1aef28072125c29745a388d712fa7d7f253940a1fb55d38",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "65cf94066e6047dec1764fcd4dcbd9d5b56482108a58c898610bdd3562762795"
+    },
+    {
+      "prefix": "R407BOTHg110_s102",
+      "arm": "BOTH",
+      "kv": 0.11,
+      "seed": 102,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg110_s102",
+      "warm": "WARM_R407BOTHg090_s102_g0067.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg090_s102",
+      "parent_role": "own_chain_rung_2",
+      "parent_result_dir": "R407BOTHg090_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "parent_par": "0067_70.961_41.098.par",
+      "parent_par_sha256": "8cdb80efc779a2540749a53e56a737a09d2a2fff9d9d7dd3724f718d37c26080",
+      "parent_generation": 67,
+      "parent_gate_G": true,
+      "parent_t_end_s": 13.26,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "795e9304f8d854a4c1aef28072125c29745a388d712fa7d7f253940a1fb55d38",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "153b76a9d2f0a2d8877d01e43a246798ec2e694c8decc52df1b639d0afccd61e"
+    },
+    {
+      "prefix": "R407BOTHg110_s103",
+      "arm": "BOTH",
+      "kv": 0.11,
+      "seed": 103,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg110_s103",
+      "warm": "WARM_R407BOTHg090_s103_g0080.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg090_s103",
+      "parent_role": "own_chain_rung_2",
+      "parent_result_dir": "R407BOTHg090_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "parent_par": "0080_65.273_48.913.par",
+      "parent_par_sha256": "d29af1503dc42ed79df0cdebd856991c9b93e91e17eb5dafc3418765354034ec",
+      "parent_generation": 80,
+      "parent_gate_G": true,
+      "parent_t_end_s": 12.01,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "795e9304f8d854a4c1aef28072125c29745a388d712fa7d7f253940a1fb55d38",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "e2a14fec731ba0a2553700fc4e74d0b5963c472ae50b54c4eeff1098c24a2bef"
+    },
+    {
+      "prefix": "R407BOTHg110_s104",
+      "arm": "BOTH",
+      "kv": 0.11,
+      "seed": 104,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg110_s104",
+      "warm": "WARM_R407BOTHg090_s104_g0031.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg090_s104",
+      "parent_role": "own_chain_rung_2",
+      "parent_result_dir": "R407BOTHg090_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "parent_par": "0031_70.481_46.743.par",
+      "parent_par_sha256": "ada0fbe373ef3ef1991ba5a4555992f798cf86581c350e7a4e2bb810ea116499",
+      "parent_generation": 31,
+      "parent_gate_G": true,
+      "parent_t_end_s": 12.86,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "795e9304f8d854a4c1aef28072125c29745a388d712fa7d7f253940a1fb55d38",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "c0bceba9414480cacb489da462b0d579dcaae2cff3a25a5171d9564f8d86c928"
+    },
+    {
+      "prefix": "R407BOTHg110_s105",
+      "arm": "BOTH",
+      "kv": 0.11,
+      "seed": 105,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg110_s105",
+      "warm": "WARM_R407BOTHg090_s105_g0084.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg090_s105",
+      "parent_role": "own_chain_rung_2",
+      "parent_result_dir": "R407BOTHg090_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "parent_par": "0084_67.622_47.815.par",
+      "parent_par_sha256": "cfec55921349bced49cb926e1d5ed6573d45bf191b11b9e909786d1e5156b596",
+      "parent_generation": 84,
+      "parent_gate_G": true,
+      "parent_t_end_s": 12.5,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "795e9304f8d854a4c1aef28072125c29745a388d712fa7d7f253940a1fb55d38",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "cef8aea758ab1617d70aa6bb410aecc99e8741b46dae7474d268e398ee2df905"
+    },
+    {
+      "prefix": "R407BOTHg110_s106",
+      "arm": "BOTH",
+      "kv": 0.11,
+      "seed": 106,
+      "dir": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\mechanism_r407\\R407BOTHg110_s106",
+      "warm": "WARM_R407BOTHg090_s106_g0083.par",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "parent_prefix": "R407BOTHg090_s106",
+      "parent_role": "own_chain_rung_2",
+      "parent_result_dir": "R407BOTHg090_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "parent_par": "0083_70.530_36.241.par",
+      "parent_par_sha256": "56833dd75a938b832e1babd1af8fb6128ce48a409e51ca65bec6b5608236475c",
+      "parent_generation": 83,
+      "parent_gate_G": true,
+      "parent_t_end_s": 14.41,
+      "spasticL_readback_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "spasticL_block_sha256": "795e9304f8d854a4c1aef28072125c29745a388d712fa7d7f253940a1fb55d38",
+      "kv_literal_count_in_config": 2,
+      "fmax_readback": {
+        "tib_ant_l": 1759.0,
+        "soleus_l": 3549.0,
+        "gastroc_l": 2241.0
+      },
+      "config_sha256": "b5ad4f5e47e4f2bf9c7843166c3c5a40559a3b8a36dab290a4cf4c692f1f3502"
+    }
+  ]
+}

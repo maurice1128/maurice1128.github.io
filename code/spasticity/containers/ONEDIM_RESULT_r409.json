@@ -1,0 +1,40 @@
+{
+  "registration": "PREREG_onedim_r409.md",
+  "registration_sha256": "33eb306121c8a909da997a4b18e47dc91fd344da26c8c4e808178c5e97d0ce4a",
+  "status": "EXECUTED. Deposit created at r414 after the r412 audit found it missing.",
+  "exploratory_pool": {
+    "n": 63,
+    "R2": 0.9761,
+    "max_unique_dR2": 0.0035,
+    "PC1_variance": 0.7983,
+    "PC1_predicts_Y_R2": 0.9502
+  },
+  "confirmatory_pool": {
+    "n": 64,
+    "R2": 0.7259,
+    "max_unique_dR2": 0.0759,
+    "PC1_variance": 0.6146,
+    "PC1_predicts_Y_R2": 0.0017
+  },
+  "loading_correlation_between_pools": 0.5728,
+  "predictions": {
+    "P1_max_unique_dR2_below_0.05": {
+      "value": 0.0759,
+      "VERDICT": "FAILS"
+    },
+    "P2_PC1_variance_at_least_0.80": {
+      "value": 0.6146,
+      "VERDICT": "FAILS"
+    },
+    "P3_loading_corr_at_least_0.8": {
+      "value": 0.5728,
+      "VERDICT": "FAILS"
+    },
+    "P4_PC1_predicts_Y_R2_at_least_0.7": {
+      "value": 0.0017,
+      "VERDICT": "FAILS"
+    }
+  },
+  "VERDICT": "ALL FOUR PREDICTIONS FAIL. One-dimensionality does NOT replicate on untouched material: the first component explains 95% of the knee variance in the exploratory pool and 0.17% in the confirmatory pool, and the two pools' axes correlate only 0.57. The apparent single axis was a property of the exploratory pool.",
+  "why_this_matters": "This is the clearest case in the corpus of a result that looked decisive on the data it was found in and vanished on independent data. It is the reason every mechanism hypothesis in this project was re-tested on untouched cells."
+}

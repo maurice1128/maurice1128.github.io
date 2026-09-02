@@ -1,0 +1,490 @@
+{
+  "arm": "MECHANISM_r402",
+  "prereg_sha256": "623b021e3369c7c441de0f261280af04f84efb31431671da1b4b176821f290d6",
+  "kv": 0.11,
+  "n_cells": 18,
+  "by_arm": {
+    "BOTH": {
+      "n_run": 6,
+      "n_gate_G": 6,
+      "uninformative": false,
+      "knee_at_heelstrike_deg": [
+        -13.899068025291319,
+        -13.893376644526354,
+        -13.555465235551365,
+        -13.161318018984284,
+        -12.10880409862555,
+        -11.96990957978925
+      ],
+      "ank_stance_mean_deg": [
+        1.461415638168144,
+        1.5035605052960743,
+        1.5108328877181343,
+        1.5652469830207878,
+        1.7131147191845624,
+        1.8097409090046974
+      ],
+      "knee_mean": -13.09799026712802,
+      "ank_mean": 1.5939852737320666
+    },
+    "SOL": {
+      "n_run": 6,
+      "n_gate_G": 0,
+      "uninformative": true,
+      "knee_at_heelstrike_deg": [],
+      "ank_stance_mean_deg": [],
+      "knee_mean": null,
+      "ank_mean": null
+    },
+    "GAS": {
+      "n_run": 6,
+      "n_gate_G": 0,
+      "uninformative": true,
+      "knee_at_heelstrike_deg": [],
+      "ank_stance_mean_deg": [],
+      "knee_mean": null,
+      "ank_mean": null
+    }
+  },
+  "note": "P1/P2/P3 are evaluated against the R151C control mean in the analysis script, not here; a rung with fewer than 4 Gate-G seeds is UNINFORMATIVE, and fewer than 4 in BOTH makes the whole registration UNINFORMATIVE.",
+  "cells": [
+    {
+      "cell": 0,
+      "arm": "BOTH",
+      "seed": 101,
+      "kv": 0.11,
+      "prefix": "R402BOTH_s101",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "wall_clock_s": 120.71000289916992,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402BOTH_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402BOTH_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "sto": "0046_73.811_58.626.par.sto",
+      "t_end_s": 9.93,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_at_heelstrike_deg": -13.555465235551365,
+      "n_stance_samples": 428,
+      "ank_stance_mean_deg": 1.461415638168144
+    },
+    {
+      "cell": 1,
+      "arm": "BOTH",
+      "seed": 102,
+      "kv": 0.11,
+      "prefix": "R402BOTH_s102",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "wall_clock_s": 189.47408938407898,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402BOTH_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402BOTH_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "sto": "0055_65.442_54.025.par.sto",
+      "t_end_s": 11.53,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_at_heelstrike_deg": -11.96990957978925,
+      "n_stance_samples": 437,
+      "ank_stance_mean_deg": 1.5035605052960743
+    },
+    {
+      "cell": 2,
+      "arm": "BOTH",
+      "seed": 103,
+      "kv": 0.11,
+      "prefix": "R402BOTH_s103",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "wall_clock_s": 156.13598537445068,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402BOTH_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402BOTH_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "sto": "0084_74.521_53.062.par.sto",
+      "t_end_s": 10.37,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_at_heelstrike_deg": -12.10880409862555,
+      "n_stance_samples": 419,
+      "ank_stance_mean_deg": 1.5652469830207878
+    },
+    {
+      "cell": 3,
+      "arm": "BOTH",
+      "seed": 104,
+      "kv": 0.11,
+      "prefix": "R402BOTH_s104",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "wall_clock_s": 144.42650175094604,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402BOTH_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402BOTH_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "sto": "0068_78.466_47.470.par.sto",
+      "t_end_s": 12.24,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_at_heelstrike_deg": -13.893376644526354,
+      "n_stance_samples": 417,
+      "ank_stance_mean_deg": 1.7131147191845624
+    },
+    {
+      "cell": 4,
+      "arm": "BOTH",
+      "seed": 105,
+      "kv": 0.11,
+      "prefix": "R402BOTH_s105",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "wall_clock_s": 159.89859127998352,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402BOTH_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402BOTH_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "sto": "0033_75.084_48.862.par.sto",
+      "t_end_s": 11.64,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_at_heelstrike_deg": -13.161318018984284,
+      "n_stance_samples": 420,
+      "ank_stance_mean_deg": 1.5108328877181343
+    },
+    {
+      "cell": 5,
+      "arm": "BOTH",
+      "seed": 106,
+      "kv": 0.11,
+      "prefix": "R402BOTH_s106",
+      "spastic_targets": [
+        "soleus",
+        "gastroc"
+      ],
+      "deleted_reflex": null,
+      "wall_clock_s": 185.93903732299805,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402BOTH_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402BOTH_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "sto": "0054_66.920_51.498.par.sto",
+      "t_end_s": 10.8,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_at_heelstrike_deg": -13.899068025291319,
+      "n_stance_samples": 419,
+      "ank_stance_mean_deg": 1.8097409090046974
+    },
+    {
+      "cell": 6,
+      "arm": "SOL",
+      "seed": 101,
+      "kv": 0.11,
+      "prefix": "R402SOL_s101",
+      "spastic_targets": [
+        "soleus"
+      ],
+      "deleted_reflex": "gastroc",
+      "wall_clock_s": 41.294392585754395,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402SOL_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402SOL_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "sto": "0087_96.439_96.266.par.sto",
+      "t_end_s": 2.04,
+      "n_cycles_in_window": 0,
+      "gate_G": false
+    },
+    {
+      "cell": 7,
+      "arm": "SOL",
+      "seed": 102,
+      "kv": 0.11,
+      "prefix": "R402SOL_s102",
+      "spastic_targets": [
+        "soleus"
+      ],
+      "deleted_reflex": "gastroc",
+      "wall_clock_s": 40.348257541656494,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402SOL_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402SOL_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "sto": "0067_96.941_96.564.par.sto",
+      "t_end_s": 2.03,
+      "n_cycles_in_window": 0,
+      "gate_G": false
+    },
+    {
+      "cell": 8,
+      "arm": "SOL",
+      "seed": 103,
+      "kv": 0.11,
+      "prefix": "R402SOL_s103",
+      "spastic_targets": [
+        "soleus"
+      ],
+      "deleted_reflex": "gastroc",
+      "wall_clock_s": 39.09276986122131,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402SOL_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402SOL_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "sto": "0089_96.574_96.441.par.sto",
+      "t_end_s": 2.03,
+      "n_cycles_in_window": 0,
+      "gate_G": false
+    },
+    {
+      "cell": 9,
+      "arm": "SOL",
+      "seed": 104,
+      "kv": 0.11,
+      "prefix": "R402SOL_s104",
+      "spastic_targets": [
+        "soleus"
+      ],
+      "deleted_reflex": "gastroc",
+      "wall_clock_s": 47.01664972305298,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402SOL_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402SOL_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "sto": "0054_96.462_96.287.par.sto",
+      "t_end_s": 2.04,
+      "n_cycles_in_window": 0,
+      "gate_G": false
+    },
+    {
+      "cell": 10,
+      "arm": "SOL",
+      "seed": 105,
+      "kv": 0.11,
+      "prefix": "R402SOL_s105",
+      "spastic_targets": [
+        "soleus"
+      ],
+      "deleted_reflex": "gastroc",
+      "wall_clock_s": 42.3992223739624,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402SOL_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402SOL_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "sto": "0089_96.453_96.236.par.sto",
+      "t_end_s": 2.05,
+      "n_cycles_in_window": 0,
+      "gate_G": false
+    },
+    {
+      "cell": 11,
+      "arm": "SOL",
+      "seed": 106,
+      "kv": 0.11,
+      "prefix": "R402SOL_s106",
+      "spastic_targets": [
+        "soleus"
+      ],
+      "deleted_reflex": "gastroc",
+      "wall_clock_s": 42.43784809112549,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402SOL_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402SOL_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "sto": "0074_96.569_96.335.par.sto",
+      "t_end_s": 2.05,
+      "n_cycles_in_window": 0,
+      "gate_G": false
+    },
+    {
+      "cell": 12,
+      "arm": "GAS",
+      "seed": 101,
+      "kv": 0.11,
+      "prefix": "R402GAS_s101",
+      "spastic_targets": [
+        "gastroc"
+      ],
+      "deleted_reflex": "soleus",
+      "wall_clock_s": 91.90475463867188,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402GAS_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402GAS_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "sto": "0086_83.823_77.129.par.sto",
+      "t_end_s": 5.72,
+      "n_cycles_in_window": 2,
+      "gate_G": false
+    },
+    {
+      "cell": 13,
+      "arm": "GAS",
+      "seed": 102,
+      "kv": 0.11,
+      "prefix": "R402GAS_s102",
+      "spastic_targets": [
+        "gastroc"
+      ],
+      "deleted_reflex": "soleus",
+      "wall_clock_s": 49.82163095474243,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402GAS_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402GAS_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "sto": "0076_88.717_88.228.par.sto",
+      "t_end_s": 3.67,
+      "n_cycles_in_window": 1,
+      "gate_G": false
+    },
+    {
+      "cell": 14,
+      "arm": "GAS",
+      "seed": 103,
+      "kv": 0.11,
+      "prefix": "R402GAS_s103",
+      "spastic_targets": [
+        "gastroc"
+      ],
+      "deleted_reflex": "soleus",
+      "wall_clock_s": 55.89196014404297,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402GAS_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402GAS_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "sto": "0079_84.858_77.243.par.sto",
+      "t_end_s": 5.82,
+      "n_cycles_in_window": 2,
+      "gate_G": false
+    },
+    {
+      "cell": 15,
+      "arm": "GAS",
+      "seed": 104,
+      "kv": 0.11,
+      "prefix": "R402GAS_s104",
+      "spastic_targets": [
+        "gastroc"
+      ],
+      "deleted_reflex": "soleus",
+      "wall_clock_s": 63.38615274429321,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402GAS_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402GAS_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "sto": "0054_89.027_87.329.par.sto",
+      "t_end_s": 3.88,
+      "n_cycles_in_window": 1,
+      "gate_G": false
+    },
+    {
+      "cell": 16,
+      "arm": "GAS",
+      "seed": 105,
+      "kv": 0.11,
+      "prefix": "R402GAS_s105",
+      "spastic_targets": [
+        "gastroc"
+      ],
+      "deleted_reflex": "soleus",
+      "wall_clock_s": 78.4002788066864,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402GAS_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402GAS_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "sto": "0065_82.165_73.704.par.sto",
+      "t_end_s": 6.88,
+      "n_cycles_in_window": 4,
+      "gate_G": false
+    },
+    {
+      "cell": 17,
+      "arm": "GAS",
+      "seed": 106,
+      "kv": 0.11,
+      "prefix": "R402GAS_s106",
+      "spastic_targets": [
+        "gastroc"
+      ],
+      "deleted_reflex": "soleus",
+      "wall_clock_s": 67.34707736968994,
+      "returncode": 0,
+      "new_result_dirs": [
+        "R402GAS_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106 (1)"
+      ],
+      "status": "OK",
+      "duplicate_result_dir": true,
+      "dir": "R402GAS_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "sto": "0082_84.541_80.700.par.sto",
+      "t_end_s": 5.0,
+      "n_cycles_in_window": 2,
+      "gate_G": false
+    }
+  ]
+}

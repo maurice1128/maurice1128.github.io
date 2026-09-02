@@ -1,0 +1,22 @@
+{
+ "id": "WELCH_CORRECTION_r573",
+ "why": "swingfull_r530.py selects the Welch critical value from a two-value lookup, tcrit = 2.776 if df < 5 else 2.571, which is t(0.975, df=4) applied at df 4.117. SWINGFULL_r530.json therefore deposits an interval half a per cent too wide. The deposit is left as written rather than regenerated, because rewriting it would remove the evidence that it was ever wrong; this file supersedes its ci95 field and the manuscript quotes the corrected interval.",
+ "supersedes": {
+  "container": "SWINGFULL_r530.json",
+  "field": "welch/ci95",
+  "value": [
+   6.984560447502453,
+   11.249111651226901
+  ]
+ },
+ "difference_deg": 9.116836049364677,
+ "se": 0.7681108075872567,
+ "df": 4.116706242502544,
+ "t_crit_used_by_the_script": 2.776,
+ "t_crit_correct": 2.7456769993637096,
+ "ci95_corrected": [
+  7.007851872009662,
+  11.22582022671969
+ ],
+ "direction": "the deposited interval is wider than the correct one, so the error was conservative"
+}

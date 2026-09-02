@@ -1,0 +1,17 @@
+{
+ "prefix": "R396SPg130_s101",
+ "axis": "spastic",
+ "rung": "130",
+ "value": 0.13,
+ "seed": 101,
+ "parent_prefix": "R396SPg120_s101",
+ "parent_is_root": false,
+ "parent_result_dir": "R396SPg120_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+ "parent_gate_G": false,
+ "parent_t_end_s": 8.74,
+ "parent_n_cycles": 5,
+ "status": "BROKEN_PARENT_FAILED_GATE",
+ "broken_reason": "parent R396SPg120_s101 failed Gate G (t_end 8.740 < 9.73); no other parent is substituted, this seed's remaining chain on this axis is BROKEN",
+ "cell": 8,
+ "ran": false
+}

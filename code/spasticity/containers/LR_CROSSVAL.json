@@ -1,0 +1,53 @@
+{
+ "ALL_l": {
+  "loso": 0.95,
+  "n": 40,
+  "lcpo_mean": 0.95,
+  "lcpo_min": 0.75
+ },
+ "ALL_r": {
+  "loso": 0.6,
+  "n": 40,
+  "lcpo_mean": 0.47,
+  "lcpo_min": 0.0
+ },
+ "ALL_ratio": {
+  "loso": 0.95,
+  "n": 40,
+  "lcpo_mean": 0.95,
+  "lcpo_min": 0.75
+ },
+ "ALL_l_over_const": {
+  "loso": 0.95,
+  "n": 40,
+  "lcpo_mean": 0.95,
+  "lcpo_min": 0.75
+ },
+ "MILD_l": {
+  "loso": 0.875,
+  "n": 16,
+  "lcpo_mean": 0.875,
+  "lcpo_min": 0.75
+ },
+ "MILD_r": {
+  "loso": 0.4375,
+  "n": 16,
+  "lcpo_mean": 0.4375,
+  "lcpo_min": 0.25
+ },
+ "MILD_ratio": {
+  "loso": 0.9375,
+  "n": 16,
+  "lcpo_mean": 0.9375,
+  "lcpo_min": 0.875
+ },
+ "MILD_l_over_const": {
+  "loso": 0.875,
+  "n": 16,
+  "lcpo_mean": 0.875,
+  "lcpo_min": 0.75
+ },
+ "holdout_l": 0.5625,
+ "holdout_ratio": 0.5,
+ "holdout_l_over_const": 0.5625
+}

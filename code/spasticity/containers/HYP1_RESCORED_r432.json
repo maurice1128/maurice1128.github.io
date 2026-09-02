@@ -1,0 +1,45 @@
+{
+  "round": "HYP1_RESCORED_r432",
+  "no_simulation_run": true,
+  "why": "MECHANISM_SCOREBOARD_r430 listed hypothesis 1 as the one retirement never checked against a noise floor. BETA_abs is a regression coefficient and is not in NULL_FLOORS_r428.json, so a floor was built for it here by the identical method: the largest difference between two same-mechanism family means over the six dorsiflexor-weakness families.",
+  "BETA_abs_noise_floor": 0.00289,
+  "arm_means": {
+    "control_R151C": -0.024332,
+    "dorsiflexor_weakness_6_families": -0.025972,
+    "R289KV00625": -0.023178,
+    "R289KV0125": -0.022174,
+    "R291KV0035": -0.018927
+  },
+  "rescored": {
+    "control_vs_weakness": {
+      "difference": 0.00164,
+      "multiple_of_floor": 0.6,
+      "reading": "INDISTINGUISHABLE. Dorsiflexor weakness does not change the soleus |v| coefficient, which is what the hypothesis expects -- weakness is not a velocity-dependent lesion."
+    },
+    "spastic_vs_weakness": {
+      "KV0.00625": "1.0x",
+      "KV0.0125": "1.3x",
+      "KV0.035": "2.4x"
+    },
+    "spastic_vs_control": {
+      "KV0.00625": "0.4x",
+      "KV0.0125": "0.7x",
+      "KV0.035": "1.9x"
+    }
+  },
+  "the_registered_rule_still_fires": {
+    "rule": "PREREG_beta2control_r387.md section 5: the matched control must lie OUTSIDE both arms, otherwise the claim is forbidden.",
+    "does_it_fire": true,
+    "why": "control -0.024332 lies between weakness -0.025972 and the spastic arms.",
+    "VERDICT": "THE CLAIM REMAINS FORBIDDEN. The registration is not amended."
+  },
+  "but_the_rule_fires_for_a_reason_that_does_not_apply_here": "the rule exists to catch a separation produced by two arms moving in OPPOSITE directions from a shared baseline, where neither is identified. That is not the configuration. Control and weakness are 0.6x the floor apart -- the same point within noise -- and only the spastic arm moves, reaching 2.4x the floor from weakness and 1.9x from control at KV 0.035. The ordering is {control, weakness} together and spastic apart, which is what the hypothesis predicted.",
+  "why_it_is_still_not_revived": [
+    "the registered rule is a rule. It was written before the data and it fires. Rescuing a claim by arguing the rule's rationale does not apply is exactly the move this corpus forbids.",
+    "only the TOP rung clears the floor convincingly (2.4x). The two lower rungs are 1.0x and 1.3x -- at or barely above noise. There is no dose response above the floor.",
+    "BETA_abs is negative in every arm including control, so the quantity is not the clean 'uncancellable positive |v| term' the derivation described. That was not addressed at r388 and is not addressed here."
+  ],
+  "STATUS": "DEAD AS REGISTERED, but for a different reason than the corpus recorded. It was listed as killed by 'the control sits between the arms'. The floor analysis shows control and weakness are the same point, and the real weakness of the hypothesis is that only the highest rung separates and there is no graded dose response. That is the honest cause of death.",
+  "process_note": "seventh and last hypothesis to be rescored against a per-endpoint floor. Of the seven, one changed verdict (hypothesis 4, reinstated), one changed its cause of death (hypothesis 1, here), one gained a container it never had (hypothesis 3, SHANKVEL_r430), and four were unaffected.",
+  "UNREGISTERED_OR_SUPERSEDED_LABEL_r438": "EXPLORATORY rescoring. No registration. Its BETA_abs floor was built by the same family method FLOOR_CORRECTION_r436 declared circular one round later."
+}

@@ -1,0 +1,76 @@
+{
+ "id": "AUDIT_r554",
+ "why": "Two code-review findings bearing on published claims: the faller control selected its run directory among gate survivors, which is selection on the variable under test; and the mixed-grid confusability claim was computed on the 96 different-gain pairs only.",
+ "faller_selection_order": {
+  "as shipped (gate, then pick)": {
+   "n_admitted": 47,
+   "n_in_band": 17,
+   "peak_mean": 9.57206300733091,
+   "vs_control": 0.01689933399504895,
+   "in_artefact_floors": 0.4718110681427704,
+   "peak_min": 9.512084886579292,
+   "peak_max": 9.673103215744906
+  },
+  "corrected (pick, then gate)": {
+   "n_admitted": 47,
+   "n_in_band": 17,
+   "peak_mean": 9.57206300733091,
+   "vs_control": 0.01689933399504895,
+   "in_artefact_floors": 0.4718110681427704,
+   "peak_min": 9.512084886579292,
+   "peak_max": 9.673103215744906
+  }
+ },
+ "band_s": [
+  9.81,
+  17.85
+ ],
+ "control_deg": 9.55516367333586,
+ "artefact_floor_deg": 0.03581801092876269,
+ "grid_pairs": {
+  "n_total": 120,
+  "n_different_gain": 96,
+  "n_same_gain": 24,
+  "floor_deg": 0.0891,
+  "closest_different_gain": {
+   "a": "x0.60_KV0.025",
+   "b": "x0.70_KV0.050",
+   "d": 0.8328484270582459,
+   "same_gain": false
+  },
+  "closest_overall": {
+   "a": "x0.70_KV0.050",
+   "b": "x0.80_KV0.050",
+   "d": 0.04391934767301464,
+   "same_gain": true
+  },
+  "n_below_floor": 4,
+  "below_floor_all_same_gain": true,
+  "below_floor": [
+   {
+    "a": "x0.70_KV0.050",
+    "b": "x0.80_KV0.050",
+    "d": 0.04391934767301464,
+    "same_gain": true
+   },
+   {
+    "a": "x0.60_KV0.050",
+    "b": "x1.00_KV0.050",
+    "d": 0.06589110136970344,
+    "same_gain": true
+   },
+   {
+    "a": "x0.60_KV0.050",
+    "b": "x0.80_KV0.050",
+    "d": 0.08137757761429487,
+    "same_gain": true
+   },
+   {
+    "a": "x0.80_KV0.220",
+    "b": "x1.00_KV0.220",
+    "d": 0.08905114406870196,
+    "same_gain": true
+   }
+  ]
+ }
+}

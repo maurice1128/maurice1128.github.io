@@ -1,0 +1,1337 @@
+{
+ "round": 306,
+ "prereg": "PREREG_bandfill_r291.md rev2",
+ "prereg_sha256": "0b2b7274",
+ "status": "CONFIRMATORY. The r291 arm stopped on its registered 60-cell cap (section 4's second clause, the only one that could fire). Endpoint computed only after. [r311: sec4 is THE STOPPING RULE; sec5 is Pooling. r311 policy: the live field carries the TRUE statement; the superseded wording is preserved below it and is not the claim.]",
+ "arm_stop": {
+  "cells_run": 60,
+  "cells_registered": 60,
+  "stop_reason": "REGISTERED STOP -- 60-cell cap (PREREG_bandfill_r291.md sec4)",
+  "terminal_record_absent_because": "the running process loaded run_bandfill_r291.py before the r305 terminal-record patch; its absence is explained, not unknown",
+  "CORRECTION_r308_section_number": "This deposit originally cited 'section 5's second clause' for the stopping rule. That is wrong: sec4 is THE STOPPING RULE and sec5 is 'Pooling, and what would have voided it'. The rule cited is sec4. The stop itself is unaffected."
+ },
+ "COVERAGE_METHOD": "Measured from .sto over the corpus per SO-27. No launcher counter was consulted. run_bandfill_r291.py's coverage() skips deposits lacking a t_end_s key and is blind to 30 r276/r285 cells. AS OF THIS FILE (arm complete, 60 of 60 cells) the corpus count is 11 in-band weakness cells and the launcher counter read 7. The figures '6' and '8' that appear in COVERAGE_RECONCILE_r305.json are a SNAPSHOT taken mid-run at 47 of 60 cells and are correct only for that moment; they are not this arm's final counts.",
+ "endpoint": "knee_angle_LmR",
+ "band_s": [
+  13.58,
+  17.85
+ ],
+ "guard_t1_s": 9.73,
+ "predicted": "weakness POSITIVE, spastic NEGATIVE, ranges disjoint",
+ "n_weakness_total": 83,
+ "n_weakness_in_band": 11,
+ "weakness_in_band": [
+  {
+   "tag": "R276WPF005_s101",
+   "t_end_s": 16.21,
+   "knee_angle_LmR": 2.734690886860527,
+   "hip_flexion_LmR": -2.114833058451488
+  },
+  {
+   "tag": "R285BF008_s105",
+   "t_end_s": 15.14,
+   "knee_angle_LmR": 2.2638164091303707,
+   "hip_flexion_LmR": -0.8792323845179979
+  },
+  {
+   "tag": "R287BF007_s109",
+   "t_end_s": 16.17,
+   "knee_angle_LmR": 2.690958355259731,
+   "hip_flexion_LmR": -1.6087126999819787
+  },
+  {
+   "tag": "R291BF007_s162",
+   "t_end_s": 15.91,
+   "knee_angle_LmR": 2.728257716736813,
+   "hip_flexion_LmR": -1.9678693840004158
+  },
+  {
+   "tag": "R291BF007_s165",
+   "t_end_s": 17.08,
+   "knee_angle_LmR": 1.876500950326509,
+   "hip_flexion_LmR": -0.7608191969983196
+  },
+  {
+   "tag": "R291BF008_s152",
+   "t_end_s": 15.83,
+   "knee_angle_LmR": 3.298164702594484,
+   "hip_flexion_LmR": -2.1606429440315083
+  },
+  {
+   "tag": "R291BF008_s155",
+   "t_end_s": 16.75,
+   "knee_angle_LmR": 3.027128927467153,
+   "hip_flexion_LmR": -1.877315314339313
+  },
+  {
+   "tag": "R291BF008_s158",
+   "t_end_s": 17.56,
+   "knee_angle_LmR": 2.683099475155771,
+   "hip_flexion_LmR": -1.774782607041331
+  },
+  {
+   "tag": "R291BF008_s160",
+   "t_end_s": 15.97,
+   "knee_angle_LmR": 2.7614092457490003,
+   "hip_flexion_LmR": -1.8151302949744519
+  },
+  {
+   "tag": "R291BF008_s163",
+   "t_end_s": 14.72,
+   "knee_angle_LmR": 2.989582048222587,
+   "hip_flexion_LmR": -1.6854890445295112
+  },
+  {
+   "tag": "R291BF008_s166",
+   "t_end_s": 17.04,
+   "knee_angle_LmR": 1.9472113906969781,
+   "hip_flexion_LmR": -0.5857252046656498
+  }
+ ],
+ "spastic_conditions": {
+  "KV 0.050": {
+   "n_cells_total": 6,
+   "n_in_band": 6,
+   "in_band_tags": [
+    "R151S_s101",
+    "R151S_s102",
+    "R151S_s103",
+    "R151S_s104",
+    "R151S_s105",
+    "R151S_s106"
+   ],
+   "t_end_range": [
+    13.58,
+    17.85
+   ]
+  },
+  "KV 0.035": {
+   "n_cells_total": 6,
+   "n_in_band": 1,
+   "in_band_tags": [
+    "R291KV0035_s103"
+   ],
+   "t_end_range": [
+    17.77,
+    20.0
+   ]
+  },
+  "KV 0.070": {
+   "n_cells_total": 6,
+   "n_in_band": 0,
+   "in_band_tags": [],
+   "t_end_range": [
+    8.24,
+    9.52
+   ]
+  }
+ },
+ "n_spastic_conditions_in_band": 2,
+ "GAP_1": "CLOSED -- 11 in-band weakness cells",
+ "GAP_2": "STILL OPEN -- 2 of 3 spastic conditions in band as counted, but ONE of 3 on a non-circular count, because the band is defined by KV 0.050's own range (see SPASTIC_CONDITION_COUNT_IS_CIRCULAR). A larger weakness n does not close it and may not be presented as though it does.",
+ "READING_A": {
+  "reading": "A -- original group",
+  "spastic_group": "the six R151S KV 0.050 cells, exactly as PREREG_bandfill_r285 sec3 names them",
+  "n_spastic": 6,
+  "n_weakness_in_band": 11,
+  "spastic_values": [
+   -0.9495390806288526,
+   -1.8889983057539084,
+   -0.2134542806604003,
+   -1.174013440534857,
+   -0.7150158049399593,
+   -0.3975754140412846
+  ],
+  "weakness_values": [
+   2.734690886860527,
+   2.2638164091303707,
+   2.690958355259731,
+   2.728257716736813,
+   1.876500950326509,
+   3.298164702594484,
+   3.027128927467153,
+   2.683099475155771,
+   2.7614092457490003,
+   2.989582048222587,
+   1.9472113906969781
+  ],
+  "closes": "GAP 1 only -- its spastic side stays one condition",
+  "RUNG": "2 DISJOINT-AS-PREDICTED",
+  "endpoint_evaluated": true,
+  "disjoint": true,
+  "gap": 2.0899552309869094,
+  "ranges": {
+   "spastic": [
+    -1.8889983057539084,
+    -0.2134542806604003
+   ],
+   "weakness": [
+    1.876500950326509,
+    3.298164702594484
+   ]
+  },
+  "permutation": {
+   "method": "exhaustive over C(17,6)",
+   "assignments": 12376,
+   "count_ge_observed": 1,
+   "floor": 8.080155138978668e-05,
+   "floor_str": "1/12376",
+   "note": "reported as a floor, never as a p-value"
+  }
+ },
+ "READING_B": {
+  "reading": "B -- widened group",
+  "spastic_group": "all in-band spastic cells across KV 0.050, 0.035 and 0.070",
+  "n_spastic_conditions_in_band": 2,
+  "closes": "GAP 2 -- the only reading that can",
+  "AVAILABLE": false,
+  "RUNG": "1 UNINFORMATIVE",
+  "why": "Fewer than three spastic conditions landed in band (2 of 3). PREREG_bandfill_r291 sec6 pre-registered exactly this branch: reading B is not available, the arm reports reading A at whatever in-band n it reached, and GAP 2 is reported STILL OPEN in the same sentence as the result.",
+  "empty_conditions": [
+   "KV 0.070"
+  ],
+  "RUNG_r308_CORRECTED": "1 UNINFORMATIVE",
+  "RUNG_original_label": "NOT AVAILABLE",
+  "CORRECTION_r308_rung": "This deposit originally labelled reading B 'NOT AVAILABLE', which is not a rung on the registered ladder. PREREG_bandfill_r291.md sec7 rung 1 UNINFORMATIVE is defined as 'fewer than 3 in-band weakness cells (reading A), OR fewer than 3 spastic conditions in band (reading B)' -- which is exactly this case. The registered ladder already had a rung for it and an unregistered label was used instead. Reading B is rung 1 UNINFORMATIVE. The substance is unchanged; the label now matches the registration."
+ },
+ "AGREEMENT": "Not evaluable: reading B is unavailable.",
+ "hip_secondary": {
+  "note": "deposited, NOT the endpoint, not promoted",
+  "spastic_KV0050": [
+   -2.032596426116342,
+   -1.2098920576659609,
+   -2.772393801611315,
+   -1.683269788003031,
+   -2.346170497813503,
+   -2.5874430253430774
+  ],
+  "weakness_in_band": [
+   -2.114833058451488,
+   -0.8792323845179979,
+   -1.6087126999819787,
+   -1.9678693840004158,
+   -0.7608191969983196,
+   -2.1606429440315083,
+   -1.877315314339313,
+   -1.774782607041331,
+   -1.8151302949744519,
+   -1.6854890445295112,
+   -0.5857252046656498
+  ]
+ },
+ "all_cells": {
+  "spastic_KV0050": [
+   {
+    "tag": "R151S_s101",
+    "dir": "R151S_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+    "t_end_s": 17.85,
+    "n_cycles": 13,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": -0.9495390806288526,
+    "hip_flexion_LmR": -2.032596426116342,
+    "n_cycles_whole_trial": 13
+   },
+   {
+    "tag": "R151S_s102",
+    "dir": "R151S_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+    "t_end_s": 14.96,
+    "n_cycles": 12,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": -1.8889983057539084,
+    "hip_flexion_LmR": -1.2098920576659609,
+    "n_cycles_whole_trial": 12
+   },
+   {
+    "tag": "R151S_s103",
+    "dir": "R151S_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+    "t_end_s": 13.58,
+    "n_cycles": 10,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": -0.2134542806604003,
+    "hip_flexion_LmR": -2.772393801611315,
+    "n_cycles_whole_trial": 10
+   },
+   {
+    "tag": "R151S_s104",
+    "dir": "R151S_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+    "t_end_s": 16.94,
+    "n_cycles": 13,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": -1.174013440534857,
+    "hip_flexion_LmR": -1.683269788003031,
+    "n_cycles_whole_trial": 13
+   },
+   {
+    "tag": "R151S_s105",
+    "dir": "R151S_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+    "t_end_s": 14.27,
+    "n_cycles": 11,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": -0.7150158049399593,
+    "hip_flexion_LmR": -2.346170497813503,
+    "n_cycles_whole_trial": 11
+   },
+   {
+    "tag": "R151S_s106",
+    "dir": "R151S_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+    "t_end_s": 14.82,
+    "n_cycles": 11,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": -0.3975754140412846,
+    "hip_flexion_LmR": -2.5874430253430774,
+    "n_cycles_whole_trial": 11
+   }
+  ],
+  "spastic_KV0035": [
+   {
+    "tag": "R291KV0035_s101",
+    "dir": "R291KV0035_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+    "t_end_s": 18.74,
+    "n_cycles": 14,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": -0.19274414819759755,
+    "hip_flexion_LmR": -1.8482014189093974
+   },
+   {
+    "tag": "R291KV0035_s102",
+    "dir": "R291KV0035_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 0.05106314461766459,
+    "hip_flexion_LmR": -2.220761495615264
+   },
+   {
+    "tag": "R291KV0035_s103",
+    "dir": "R291KV0035_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+    "t_end_s": 17.77,
+    "n_cycles": 13,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": -0.2715281368592741,
+    "hip_flexion_LmR": -2.0086181423901337
+   },
+   {
+    "tag": "R291KV0035_s104",
+    "dir": "R291KV0035_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+    "t_end_s": 19.55,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": -0.26605638991576086,
+    "hip_flexion_LmR": -2.002533330605843
+   },
+   {
+    "tag": "R291KV0035_s105",
+    "dir": "R291KV0035_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": -0.28026688915061015,
+    "hip_flexion_LmR": -1.7841447374137829
+   },
+   {
+    "tag": "R291KV0035_s106",
+    "dir": "R291KV0035_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 0.10206440979342091,
+    "hip_flexion_LmR": -2.065558688070233
+   }
+  ],
+  "spastic_KV0070": [
+   {
+    "tag": "R291KV0070_s101",
+    "dir": "R291KV0070_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+    "t_end_s": 8.24,
+    "n_cycles": 6,
+    "n_cycles_in_window": 5,
+    "measured": false,
+    "guard": "t_end 8.240 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291KV0070_s102",
+    "dir": "R291KV0070_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+    "t_end_s": 8.34,
+    "n_cycles": 5,
+    "n_cycles_in_window": 4,
+    "measured": false,
+    "guard": "t_end 8.340 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291KV0070_s103",
+    "dir": "R291KV0070_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+    "t_end_s": 9.4,
+    "n_cycles": 6,
+    "n_cycles_in_window": 5,
+    "measured": false,
+    "guard": "t_end 9.400 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291KV0070_s104",
+    "dir": "R291KV0070_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+    "t_end_s": 9.52,
+    "n_cycles": 7,
+    "n_cycles_in_window": 6,
+    "measured": false,
+    "guard": "t_end 9.520 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291KV0070_s105",
+    "dir": "R291KV0070_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+    "t_end_s": 8.26,
+    "n_cycles": 5,
+    "n_cycles_in_window": 4,
+    "measured": false,
+    "guard": "t_end 8.260 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291KV0070_s106",
+    "dir": "R291KV0070_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+    "t_end_s": 8.26,
+    "n_cycles": 5,
+    "n_cycles_in_window": 4,
+    "measured": false,
+    "guard": "t_end 8.260 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   }
+  ],
+  "weakness": [
+   {
+    "tag": "R276WPF005_s101",
+    "dir": "R276WPF005_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+    "t_end_s": 16.21,
+    "n_cycles": 12,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 2.734690886860527,
+    "hip_flexion_LmR": -2.114833058451488
+   },
+   {
+    "tag": "R276WPF005_s102",
+    "dir": "R276WPF005_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 1.0989340059905857,
+    "hip_flexion_LmR": -0.15361953417116325
+   },
+   {
+    "tag": "R276WPF005_s103",
+    "dir": "R276WPF005_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 1.4863579448036646,
+    "hip_flexion_LmR": -0.5897798359958486
+   },
+   {
+    "tag": "R276WPF005_s104",
+    "dir": "R276WPF005_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+    "t_end_s": 7.46,
+    "n_cycles": 5,
+    "n_cycles_in_window": 4,
+    "measured": false,
+    "guard": "t_end 7.460 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF005_s105",
+    "dir": "R276WPF005_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 0.5835219909574505,
+    "hip_flexion_LmR": 0.5158453621121879
+   },
+   {
+    "tag": "R276WPF005_s106",
+    "dir": "R276WPF005_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 1.6896135767107268,
+    "hip_flexion_LmR": -0.8442533111252715
+   },
+   {
+    "tag": "R276WPF010_s101",
+    "dir": "R276WPF010_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+    "t_end_s": 12.35,
+    "n_cycles": 9,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 3.717530656514235,
+    "hip_flexion_LmR": -4.49075725456612
+   },
+   {
+    "tag": "R276WPF010_s102",
+    "dir": "R276WPF010_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+    "t_end_s": 10.79,
+    "n_cycles": 8,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 4.74012185602227,
+    "hip_flexion_LmR": -3.696733243480658
+   },
+   {
+    "tag": "R276WPF010_s103",
+    "dir": "R276WPF010_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+    "t_end_s": 8.48,
+    "n_cycles": 6,
+    "n_cycles_in_window": 5,
+    "measured": false,
+    "guard": "t_end 8.480 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF010_s104",
+    "dir": "R276WPF010_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+    "t_end_s": 13.31,
+    "n_cycles": 10,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 4.234821591143557,
+    "hip_flexion_LmR": -3.239262731395719
+   },
+   {
+    "tag": "R276WPF010_s105",
+    "dir": "R276WPF010_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+    "t_end_s": 7.53,
+    "n_cycles": 5,
+    "n_cycles_in_window": 4,
+    "measured": false,
+    "guard": "t_end 7.530 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF010_s106",
+    "dir": "R276WPF010_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106 (1)",
+    "t_end_s": 8.48,
+    "n_cycles": 6,
+    "n_cycles_in_window": 5,
+    "measured": false,
+    "guard": "t_end 8.480 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF020_s101",
+    "dir": "R276WPF020_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+    "t_end_s": 7.59,
+    "n_cycles": 6,
+    "n_cycles_in_window": 5,
+    "measured": false,
+    "guard": "t_end 7.590 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF020_s102",
+    "dir": "R276WPF020_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+    "t_end_s": 6.84,
+    "n_cycles": 4,
+    "n_cycles_in_window": 3,
+    "measured": false,
+    "guard": "t_end 6.840 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF020_s103",
+    "dir": "R276WPF020_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+    "t_end_s": 6.4,
+    "n_cycles": 4,
+    "n_cycles_in_window": 3,
+    "measured": false,
+    "guard": "t_end 6.400 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF020_s104",
+    "dir": "R276WPF020_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+    "t_end_s": 6.05,
+    "n_cycles": 4,
+    "n_cycles_in_window": 3,
+    "measured": false,
+    "guard": "t_end 6.050 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF020_s105",
+    "dir": "R276WPF020_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+    "t_end_s": 6.54,
+    "n_cycles": 5,
+    "n_cycles_in_window": 4,
+    "measured": false,
+    "guard": "t_end 6.540 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R276WPF020_s106",
+    "dir": "R276WPF020_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+    "t_end_s": 6.53,
+    "n_cycles": 4,
+    "n_cycles_in_window": 3,
+    "measured": false,
+    "guard": "t_end 6.530 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R285BF007_s101",
+    "dir": "R285BF007_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+    "t_end_s": 19.74,
+    "n_cycles": 15,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 1.922424281549958,
+    "hip_flexion_LmR": -0.6528281117720667
+   },
+   {
+    "tag": "R285BF007_s102",
+    "dir": "R285BF007_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+    "t_end_s": 7.93,
+    "n_cycles": 5,
+    "n_cycles_in_window": 4,
+    "measured": false,
+    "guard": "t_end 7.930 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R285BF007_s103",
+    "dir": "R285BF007_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+    "t_end_s": 7.16,
+    "n_cycles": 4,
+    "n_cycles_in_window": 3,
+    "measured": false,
+    "guard": "t_end 7.160 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R285BF007_s104",
+    "dir": "R285BF007_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+    "t_end_s": 7.36,
+    "n_cycles": 5,
+    "n_cycles_in_window": 4,
+    "measured": false,
+    "guard": "t_end 7.360 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R285BF007_s105",
+    "dir": "R285BF007_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 2.1198559884554555,
+    "hip_flexion_LmR": -1.0898612193046802
+   },
+   {
+    "tag": "R285BF007_s106",
+    "dir": "R285BF007_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 1.1534156077999143,
+    "hip_flexion_LmR": 0.24921754228873283
+   },
+   {
+    "tag": "R285BF008_s101",
+    "dir": "R285BF008_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+    "t_end_s": 11.63,
+    "n_cycles": 8,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 3.7471485638179587,
+    "hip_flexion_LmR": -3.1093617400836564
+   },
+   {
+    "tag": "R285BF008_s102",
+    "dir": "R285BF008_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+    "t_end_s": 6.89,
+    "n_cycles": 4,
+    "n_cycles_in_window": 3,
+    "measured": false,
+    "guard": "t_end 6.890 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R285BF008_s103",
+    "dir": "R285BF008_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+    "t_end_s": 7.57,
+    "n_cycles": 5,
+    "n_cycles_in_window": 4,
+    "measured": false,
+    "guard": "t_end 7.570 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R285BF008_s104",
+    "dir": "R285BF008_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+    "t_end_s": 7.07,
+    "n_cycles": 5,
+    "n_cycles_in_window": 4,
+    "measured": false,
+    "guard": "t_end 7.070 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R285BF008_s105",
+    "dir": "R285BF008_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+    "t_end_s": 15.14,
+    "n_cycles": 11,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 2.2638164091303707,
+    "hip_flexion_LmR": -0.8792323845179979
+   },
+   {
+    "tag": "R285BF008_s106",
+    "dir": "R285BF008_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+    "t_end_s": 7.8,
+    "n_cycles": 5,
+    "n_cycles_in_window": 4,
+    "measured": false,
+    "guard": "t_end 7.800 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R287BF007_s107",
+    "dir": "R287BF007_s107.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R107",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 2.203603319510414,
+    "hip_flexion_LmR": -1.1842751146456578
+   },
+   {
+    "tag": "R287BF007_s108",
+    "dir": "R287BF007_s108.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R108",
+    "t_end_s": 9.93,
+    "n_cycles": 7,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 3.4638755561022236,
+    "hip_flexion_LmR": -2.843513142861589
+   },
+   {
+    "tag": "R287BF007_s109",
+    "dir": "R287BF007_s109.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R109",
+    "t_end_s": 16.17,
+    "n_cycles": 12,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 2.690958355259731,
+    "hip_flexion_LmR": -1.6087126999819787
+   },
+   {
+    "tag": "R287BF008_s107",
+    "dir": "R287BF008_s107.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R107",
+    "t_end_s": 7.17,
+    "n_cycles": 5,
+    "n_cycles_in_window": 4,
+    "measured": false,
+    "guard": "t_end 7.170 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R287BF008_s108",
+    "dir": "R287BF008_s108.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R108",
+    "t_end_s": 8.55,
+    "n_cycles": 6,
+    "n_cycles_in_window": 5,
+    "measured": false,
+    "guard": "t_end 8.550 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291BF005_s152",
+    "dir": "R291BF005_s152.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R152",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 2.198268318494023,
+    "hip_flexion_LmR": -1.5367759389439968
+   },
+   {
+    "tag": "R291BF005_s153",
+    "dir": "R291BF005_s153.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R153",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 1.4136026180623489,
+    "hip_flexion_LmR": -0.6865982442170662
+   },
+   {
+    "tag": "R291BF005_s154",
+    "dir": "R291BF005_s154.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R154",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 1.1068444522960803,
+    "hip_flexion_LmR": -0.12119203282606605
+   },
+   {
+    "tag": "R291BF005_s155",
+    "dir": "R291BF005_s155.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R155",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 0.6810199271236641,
+    "hip_flexion_LmR": 0.38268997052377784
+   },
+   {
+    "tag": "R291BF005_s156",
+    "dir": "R291BF005_s156.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R156 (1)",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 1.160690261938747,
+    "hip_flexion_LmR": -0.25439326103808213
+   },
+   {
+    "tag": "R291BF005_s157",
+    "dir": "R291BF005_s157.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R157",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 2.2110578823969362,
+    "hip_flexion_LmR": -1.526817932464624
+   },
+   {
+    "tag": "R291BF005_s158",
+    "dir": "R291BF005_s158.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R158",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 1.149206659836878,
+    "hip_flexion_LmR": -0.5153869958760708
+   },
+   {
+    "tag": "R291BF005_s159",
+    "dir": "R291BF005_s159.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R159",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 1.8675616628068639,
+    "hip_flexion_LmR": -1.0271299801751255
+   },
+   {
+    "tag": "R291BF005_s160",
+    "dir": "R291BF005_s160.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R160",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 1.049238511629909,
+    "hip_flexion_LmR": 0.023949635836466143
+   },
+   {
+    "tag": "R291BF005_s161",
+    "dir": "R291BF005_s161.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R161",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 0.6508479696320819,
+    "hip_flexion_LmR": 0.18576437633731757
+   },
+   {
+    "tag": "R291BF005_s162",
+    "dir": "R291BF005_s162.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R162",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 1.6578316078148205,
+    "hip_flexion_LmR": -0.849398472125543
+   },
+   {
+    "tag": "R291BF005_s163",
+    "dir": "R291BF005_s163.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R163 (1)",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 1.5827386132693846,
+    "hip_flexion_LmR": -0.5996920058516224
+   },
+   {
+    "tag": "R291BF005_s164",
+    "dir": "R291BF005_s164.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R164",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 0.5417396167053283,
+    "hip_flexion_LmR": 0.6504560665002259
+   },
+   {
+    "tag": "R291BF005_s165",
+    "dir": "R291BF005_s165.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R165",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 1.5899292335982693,
+    "hip_flexion_LmR": -0.740502113582977
+   },
+   {
+    "tag": "R291BF005_s166",
+    "dir": "R291BF005_s166.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R166",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 1.5124848202616192,
+    "hip_flexion_LmR": -0.9777180999230382
+   },
+   {
+    "tag": "R291BF005_s167",
+    "dir": "R291BF005_s167.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R167",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 2.1942255282915752,
+    "hip_flexion_LmR": -1.2569433518021
+   },
+   {
+    "tag": "R291BF007_s152",
+    "dir": "R291BF007_s152.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R152",
+    "t_end_s": 7.11,
+    "n_cycles": 5,
+    "n_cycles_in_window": 4,
+    "measured": false,
+    "guard": "t_end 7.110 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291BF007_s153",
+    "dir": "R291BF007_s153.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R153",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 1.1600401458272103,
+    "hip_flexion_LmR": 0.1477428970524315
+   },
+   {
+    "tag": "R291BF007_s154",
+    "dir": "R291BF007_s154.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R154",
+    "t_end_s": 7.61,
+    "n_cycles": 5,
+    "n_cycles_in_window": 4,
+    "measured": false,
+    "guard": "t_end 7.610 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291BF007_s155",
+    "dir": "R291BF007_s155.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R155",
+    "t_end_s": 7.5,
+    "n_cycles": 5,
+    "n_cycles_in_window": 4,
+    "measured": false,
+    "guard": "t_end 7.500 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291BF007_s156",
+    "dir": "R291BF007_s156.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R156",
+    "t_end_s": 20.0,
+    "n_cycles": 15,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 2.265308964186694,
+    "hip_flexion_LmR": -1.2343229780503293
+   },
+   {
+    "tag": "R291BF007_s157",
+    "dir": "R291BF007_s157.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R157",
+    "t_end_s": 18.8,
+    "n_cycles": 15,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 2.253486935013811,
+    "hip_flexion_LmR": -1.2114810606177855
+   },
+   {
+    "tag": "R291BF007_s158",
+    "dir": "R291BF007_s158.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R158",
+    "t_end_s": 18.63,
+    "n_cycles": 15,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 1.2513885259782995,
+    "hip_flexion_LmR": -0.33313676068223685
+   },
+   {
+    "tag": "R291BF007_s159",
+    "dir": "R291BF007_s159.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R159",
+    "t_end_s": 6.67,
+    "n_cycles": 4,
+    "n_cycles_in_window": 3,
+    "measured": false,
+    "guard": "t_end 6.670 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291BF007_s160",
+    "dir": "R291BF007_s160.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R160",
+    "t_end_s": 19.61,
+    "n_cycles": 15,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 1.9245117577835629,
+    "hip_flexion_LmR": -0.9235029234884493
+   },
+   {
+    "tag": "R291BF007_s161",
+    "dir": "R291BF007_s161.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R161",
+    "t_end_s": 8.99,
+    "n_cycles": 6,
+    "n_cycles_in_window": 5,
+    "measured": false,
+    "guard": "t_end 8.990 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291BF007_s162",
+    "dir": "R291BF007_s162.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R162",
+    "t_end_s": 15.91,
+    "n_cycles": 12,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 2.728257716736813,
+    "hip_flexion_LmR": -1.9678693840004158
+   },
+   {
+    "tag": "R291BF007_s163",
+    "dir": "R291BF007_s163.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R163",
+    "t_end_s": 8.58,
+    "n_cycles": 6,
+    "n_cycles_in_window": 5,
+    "measured": false,
+    "guard": "t_end 8.580 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291BF007_s164",
+    "dir": "R291BF007_s164.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R164",
+    "t_end_s": 9.76,
+    "n_cycles": 7,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 4.043882641972466,
+    "hip_flexion_LmR": -7.373200014817876
+   },
+   {
+    "tag": "R291BF007_s165",
+    "dir": "R291BF007_s165.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R165",
+    "t_end_s": 17.08,
+    "n_cycles": 13,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 1.876500950326509,
+    "hip_flexion_LmR": -0.7608191969983196
+   },
+   {
+    "tag": "R291BF007_s166",
+    "dir": "R291BF007_s166.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R166",
+    "t_end_s": 7.13,
+    "n_cycles": 4,
+    "n_cycles_in_window": 3,
+    "measured": false,
+    "guard": "t_end 7.130 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291BF007_s167",
+    "dir": "R291BF007_s167.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R167",
+    "t_end_s": 13.05,
+    "n_cycles": 10,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 3.690064778689063,
+    "hip_flexion_LmR": -2.9970620122380183
+   },
+   {
+    "tag": "R291BF008_s152",
+    "dir": "R291BF008_s152.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R152",
+    "t_end_s": 15.83,
+    "n_cycles": 12,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 3.298164702594484,
+    "hip_flexion_LmR": -2.1606429440315083
+   },
+   {
+    "tag": "R291BF008_s153",
+    "dir": "R291BF008_s153.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R153",
+    "t_end_s": 6.75,
+    "n_cycles": 4,
+    "n_cycles_in_window": 3,
+    "measured": false,
+    "guard": "t_end 6.750 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291BF008_s154",
+    "dir": "R291BF008_s154.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R154",
+    "t_end_s": 8.75,
+    "n_cycles": 6,
+    "n_cycles_in_window": 5,
+    "measured": false,
+    "guard": "t_end 8.750 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291BF008_s155",
+    "dir": "R291BF008_s155.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R155",
+    "t_end_s": 16.75,
+    "n_cycles": 13,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 3.027128927467153,
+    "hip_flexion_LmR": -1.877315314339313
+   },
+   {
+    "tag": "R291BF008_s156",
+    "dir": "R291BF008_s156.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R156",
+    "t_end_s": 7.2,
+    "n_cycles": 4,
+    "n_cycles_in_window": 3,
+    "measured": false,
+    "guard": "t_end 7.200 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291BF008_s157",
+    "dir": "R291BF008_s157.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R157",
+    "t_end_s": 7.1,
+    "n_cycles": 5,
+    "n_cycles_in_window": 4,
+    "measured": false,
+    "guard": "t_end 7.100 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291BF008_s158",
+    "dir": "R291BF008_s158.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R158",
+    "t_end_s": 17.56,
+    "n_cycles": 13,
+    "n_cycles_in_window": 5,
+    "measured": true,
+    "knee_angle_LmR": 2.683099475155771,
+    "hip_flexion_LmR": -1.774782607041331
+   },
+   {
+    "tag": "R291BF008_s159",
+    "dir": "R291BF008_s159.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R159",
+    "t_end_s": 7.36,
+    "n_cycles": 4,
+    "n_cycles_in_window": 3,
+    "measured": false,
+    "guard": "t_end 7.360 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291BF008_s160",
+    "dir": "R291BF008_s160.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R160",
+    "t_end_s": 15.97,
+    "n_cycles": 12,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 2.7614092457490003,
+    "hip_flexion_LmR": -1.8151302949744519
+   },
+   {
+    "tag": "R291BF008_s161",
+    "dir": "R291BF008_s161.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R161",
+    "t_end_s": 9.29,
+    "n_cycles": 7,
+    "n_cycles_in_window": 6,
+    "measured": false,
+    "guard": "t_end 9.290 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291BF008_s162",
+    "dir": "R291BF008_s162.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R162",
+    "t_end_s": 7.58,
+    "n_cycles": 5,
+    "n_cycles_in_window": 4,
+    "measured": false,
+    "guard": "t_end 7.580 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291BF008_s163",
+    "dir": "R291BF008_s163.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R163",
+    "t_end_s": 14.72,
+    "n_cycles": 11,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 2.989582048222587,
+    "hip_flexion_LmR": -1.6854890445295112
+   },
+   {
+    "tag": "R291BF008_s164",
+    "dir": "R291BF008_s164.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R164",
+    "t_end_s": 7.13,
+    "n_cycles": 4,
+    "n_cycles_in_window": 3,
+    "measured": false,
+    "guard": "t_end 7.130 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291BF008_s165",
+    "dir": "R291BF008_s165.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R165",
+    "t_end_s": 8.14,
+    "n_cycles": 6,
+    "n_cycles_in_window": 5,
+    "measured": false,
+    "guard": "t_end 8.140 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   },
+   {
+    "tag": "R291BF008_s166",
+    "dir": "R291BF008_s166.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R166",
+    "t_end_s": 17.04,
+    "n_cycles": 13,
+    "n_cycles_in_window": 6,
+    "measured": true,
+    "knee_angle_LmR": 1.9472113906969781,
+    "hip_flexion_LmR": -0.5857252046656498
+   },
+   {
+    "tag": "R291BF008_s167",
+    "dir": "R291BF008_s167.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R167",
+    "t_end_s": 7.03,
+    "n_cycles": 4,
+    "n_cycles_in_window": 3,
+    "measured": false,
+    "guard": "t_end 7.030 < 9.73",
+    "knee_angle_LmR": null,
+    "hip_flexion_LmR": null
+   }
+  ]
+ },
+ "window_s": [
+  1.0,
+  9.73
+ ],
+ "window_note": "hipgap_r220.py's convention: cycles wholly inside [1.00, 9.73] s, drop the last, per-cycle mean ROM(l) - ROM(r) in degrees. Deposited as a field r308; previously stated only in prose.",
+ "SPASTIC_CONDITION_COUNT_IS_CIRCULAR": {
+  "finding": "The band [13.58, 17.85] s IS the observed t_end range of the six R151S KV 0.050 cells. Counting KV 0.050 as an in-band spastic condition is therefore true BY CONSTRUCTION -- those six cells define the interval they are then found inside, and 6 of 6 could not have come out any other way.",
+  "counts": {
+   "as_deposited_including_band_definer": 2,
+   "NON_CIRCULAR": 1,
+   "non_circular_condition": "KV 0.035 (one cell, R291KV0035_s103, t_end 17.77 s)",
+   "band_defining_condition": "KV 0.050 (six R151S cells, 13.58-17.85 s)",
+   "empty_condition": "KV 0.070 (six cells, 8.24-9.52 s, none in band)"
+  },
+  "consequence": "On a non-circular count the in-band spastic conditions number ONE, not two. GAP 2 is therefore FURTHER from closure than the deposited count of 2 of 3 implies: the registered target of three conditions is met by one independent condition plus the group that defined the band.",
+  "why_recorded_anyway": "This weakens the arm and is deposited for that reason. COVERAGE_RECONCILE_r305.json already flags KV 0.050 as band-defining; this file did not, and a reader comparing the two would have found the stronger-looking count here.",
+  "unchanged": "Reading A is unaffected -- its spastic group is the six R151S cells by registration, and the circularity concerns the COUNT OF CONDITIONS used to decide whether reading B is available, not the endpoint comparison itself."
+ },
+ "CORRECTION_r308_coverage_sentence": "The original sentence here read 'it reports 6 where the corpus has 8', with no time qualification. Both figures were mid-run values that the finished arm superseded. Time-qualified rather than deleted, so the earlier reconciliation remains traceable.",
+ "CYCLE_COUNT_RECONCILIATION_D4_D5": {
+  "D5_two_quantities_one_key": "'n_cycles' names DIFFERENT quantities in different files. In this file n_cycles is the count of gait cycles over the WHOLE trial and n_cycles_in_window is the count inside the measured window [1.00, 9.73] s. VERIFY_R290.json's n_cycles is the WINDOW count. For R151S_s101 this file reads n_cycles 13 / n_cycles_in_window 6 and VERIFY_R290.json reads n_cycles 6; the two agree, on the window count, for all 9 shared cells.",
+  "RENAMED_IN_THIS_FILE": "n_cycles is hereby renamed n_cycles_whole_trial for clarity. The original key is retained alongside it so nothing that reads this file breaks and no deposited number is removed.",
+  "D4_off_by_one_against_r277": "CONFOUND_DURATION_r277.json per_arm.S.cycles reads [12,11,9,12,10,10] for the same six R151S cells this file reports as [13,12,10,13,11,11] -- an offset of exactly one on every cell, with t_end matching exactly (17.85/14.96/13.58/16.94/14.27/14.82). The same offset appears on the weakness side: r277 reads 14 cycles at 20.0 s where MATCHED20_ENDPOINT_r298 reads 15.",
+  "D4_status": "NOT RECONCILED. A constant offset of one is consistent with a differing cycle convention (counting completed cycles versus counting heel-strike intervals, or applying the drop-last rule versus not), but which file uses which convention is not recorded in either, and no deposit states the definition. This is recorded as an open discrepancy rather than resolved by assertion.",
+  "what_it_does_and_does_not_affect": "Disjointness of the cycle-count comparison holds on EITHER set, so no conclusion flips. But RESULTS_3d_r214.md sec0c the anchored passage relies on this quantity ('Cycle count separates the same way'), and a reader checking that sentence against the two deposits finds two different numbers for the same cells with nothing explaining it. [r333: A line number into RESULTS_3d_r214.md is stale on arrival -- that file has been edited more than a dozen times in the last day. Content anchors survive edits that line numbers cannot. Replaced r333; prior wording preserved above.]",
+  "CONVENTION_IDENTIFIED_r308": {
+   "convention_A_lower": "SPEED_LADDER_r217.json and CONFOUND_DURATION_r277.json",
+   "convention_B_higher_by_one": "PERCYCLE_r279.json, BANDFILL_ENDPOINT_r291.json and MATCHED20_ENDPOINT_r298.json",
+   "cross_check": "PERCYCLE_r279.json per_cell.S.101.n_cycles = 13, siding with convention B.",
+   "ADOPTED": "Convention B is adopted as the project's cycle count, because three deposits use it including the per-cycle source file, against two that use A.",
+   "no_conclusion_changes": "Disjointness of the cycle-count comparison holds under both."
+  },
+  "what_it_does_and_does_not_affect_LINE_CITATION_SUPERSEDED_r333": "Disjointness of the cycle-count comparison holds on EITHER set, so no conclusion flips. But RESULTS_3d_r214.md sec0c line 134 relies on this quantity ('Cycle count separates the same way'), and a reader checking that sentence against the two deposits finds two different numbers for the same cells with nothing explaining it."
+ },
+ "GAP_1_STATED_BASIS_NOT_MET_D29": {
+  "registration_says": "PREREG_bandfill_r291.md sec7: 'With 8 weakness and 12+ spastic in band the floor falls well below 1/84, which is what closes GAP 1.'",
+  "what_happened": "Reading A's spastic side is SIX, not 12+. The weakness side reached 11, exceeding the 8 named. The floor did fall as predicted -- 1/12376 against the 1/84 benchmark -- so the substance of GAP 1's closure holds.",
+  "why_this_is_recorded": "The stated BASIS was not met even though the stated OUTCOME was. A reader comparing sec7 to this deposit would find the spastic count short by half with no acknowledgement. GAP 1 is reported closed on the floor actually achieved, not on the composition sec7 anticipated."
+ },
+ "status_ORIGINAL_WRONG": "CONFIRMATORY. The r291 arm stopped on its registered 60-cell cap (section 5's second clause, the only one that could fire). Endpoint computed only after.",
+ "COVERAGE_METHOD_ORIGINAL_WRONG": "Measured from .sto over the corpus per SO-27. No launcher counter was consulted. run_bandfill_r291.py's coverage() skips deposits lacking a t_end_s key and is blind to 30 r276/r285 cells. AS OF THIS FILE (arm complete, 60 of 60 cells) the corpus count is 11 in-band weakness cells and the launcher counter read 7. The figures '6' and '8' that appear in COVERAGE_RECONCILE_r305.json are a SNAPSHOT taken mid-run at 48 of 60 cells and are correct only for that moment; they are not this arm's final counts.",
+ "CORRECTION_r321_snapshot_count": "This field previously said the mid-run snapshot was taken at 48 of 60 cells. The correct value is 47, which is what COVERAGE_RECONCILE_r305.json's own r291_cells_deposited_at_write field records. The r311 repair fixed 48->47 in that file and left 48 live here, so one quantity had two live values across two deposits for a further round.",
+ "LINE_CITATION_ANCHORED_r333": {
+  "anchor": "the passage beginning \"Cycle count separates the same way\" in RESULTS_3d_r214.md sec0c (content anchor, not a line number)",
+  "why": "A line number into RESULTS_3d_r214.md is stale on arrival -- that file has been edited more than a dozen times in the last day. Content anchors survive edits that line numbers cannot. Replaced r333; prior wording preserved above.",
+  "fields_changed": 1
+ }
+}

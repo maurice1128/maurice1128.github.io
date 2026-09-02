@@ -1,0 +1,3613 @@
+{
+  "round": "SCREEN_ALL_r433",
+  "no_simulation_run": true,
+  "status": "EXPLORATORY SCREEN. Selects nothing, proves nothing, and may not be cited as evidence. Any hit requires confirmation on material this screen did not read; the r424 mixed-lesion grid is reserved for that.",
+  "n_channels_summarised": 3692,
+  "floor_method": "largest difference between two same-mechanism family MEANS over the six dorsiflexor-weakness families; where that is exactly zero the largest within-family SD is used instead and flagged",
+  "n_above_floor": 2401,
+  "n_above_5x": 928,
+  "n_above_5x_and_dose_monotone": 711,
+  "top_200": [
+    {
+      "key": "leg0_l.state|tsw",
+      "weak_mean": 4.0,
+      "spastic_mean": 3.992466055369424,
+      "diff": -0.007533944630575995,
+      "floor": 1e-12,
+      "floor_kind": "within_family_SD",
+      "multiple_of_floor": 7533944630.575995,
+      "spastic_dose_monotone": false,
+      "control_mean": 4.0,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        4.0,
+        4.0,
+        3.99063216363957,
+        3.9716981132075473
+      ]
+    },
+    {
+      "key": "vasti_r.excitation|tsw",
+      "weak_mean": 0.01,
+      "spastic_mean": 0.012343859810439077,
+      "diff": 0.002343859810439077,
+      "floor": 1e-12,
+      "floor_kind": "within_family_SD",
+      "multiple_of_floor": 2343859810.4390774,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.009999999999999997,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.009999999999999997,
+        0.009999999999999997,
+        0.021719299052195377,
+        0.009999999999999998
+      ]
+    },
+    {
+      "key": "rect_fem_l.mtu_force_norm|ic",
+      "weak_mean": 0.0,
+      "spastic_mean": 0.00040321383333333336,
+      "diff": 0.00040321383333333336,
+      "floor": 1e-12,
+      "floor_kind": "within_family_SD",
+      "multiple_of_floor": 403213833.3333334,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.0,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.0,
+        0.0,
+        0.0007685666666666667,
+        0.0012475025
+      ]
+    },
+    {
+      "key": "soleus_l.excitation|ic",
+      "weak_mean": 0.010000000000000002,
+      "spastic_mean": 0.010326794166666669,
+      "diff": 0.0003267941666666666,
+      "floor": 1e-12,
+      "floor_kind": "within_family_SD",
+      "multiple_of_floor": 326794166.6666666,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.01,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.01,
+        0.01,
+        0.01,
+        0.011633970833333333
+      ]
+    },
+    {
+      "key": "rect_fem_l.mtu_force_norm|tsw",
+      "weak_mean": 0.0,
+      "spastic_mean": 8.506448113207546e-05,
+      "diff": 8.506448113207546e-05,
+      "floor": 1e-12,
+      "floor_kind": "within_family_SD",
+      "multiple_of_floor": 85064481.13207546,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.0,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0004253224056603773
+      ]
+    },
+    {
+      "key": "vasti_l.F|tsw",
+      "weak_mean": 0.0,
+      "spastic_mean": 5.2104886792452826e-05,
+      "diff": 5.2104886792452826e-05,
+      "floor": 1e-12,
+      "floor_kind": "within_family_SD",
+      "multiple_of_floor": 52104886.79245283,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.0,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0002605244339622641
+      ]
+    },
+    {
+      "key": "vasti_l.mtu_force_norm|tsw",
+      "weak_mean": 0.0,
+      "spastic_mean": 5.2104886792452826e-05,
+      "diff": 5.2104886792452826e-05,
+      "floor": 1e-12,
+      "floor_kind": "within_family_SD",
+      "multiple_of_floor": 52104886.79245283,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.0,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0002605244339622641
+      ]
+    },
+    {
+      "key": "rect_fem_l.activation|ic",
+      "weak_mean": 0.010000100000000001,
+      "spastic_mean": 0.010000103333333335,
+      "diff": 3.3333333333135373e-09,
+      "floor": 1e-12,
+      "floor_kind": "within_family_SD",
+      "multiple_of_floor": 3333.3333333135374,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.0100001,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.0100001,
+        0.0100001,
+        0.010000108333333334,
+        0.010000108333333332
+      ]
+    },
+    {
+      "key": "glut_max_l.activation|ic",
+      "weak_mean": 0.010000000000000002,
+      "spastic_mean": 0.010000000833333337,
+      "diff": 8.333333346294269e-10,
+      "floor": 1e-12,
+      "floor_kind": "within_family_SD",
+      "multiple_of_floor": 833.333334629427,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.01,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.01,
+        0.010000002777777779,
+        0.01,
+        0.01
+      ]
+    },
+    {
+      "key": "femur_r.com_pos_z|range",
+      "weak_mean": 0.022931318916666665,
+      "spastic_mean": 0.16187719183333332,
+      "diff": 0.13894587291666666,
+      "floor": 0.0018791519999999985,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 73.94073120038547,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.018802663,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.10158447444444445,
+        0.16926320222222221,
+        0.19818321375000003,
+        0.2049312304166667
+      ]
+    },
+    {
+      "key": "femur_r.pos.z|range",
+      "weak_mean": 0.022931318916666665,
+      "spastic_mean": 0.16187719183333332,
+      "diff": 0.13894587291666666,
+      "floor": 0.0018791519999999985,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 73.94073120038547,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.018802663,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.10158447444444445,
+        0.16926320222222221,
+        0.19818321375000003,
+        0.2049312304166667
+      ]
+    },
+    {
+      "key": "femur_r.pos_z|range",
+      "weak_mean": 0.022931318916666665,
+      "spastic_mean": 0.16187719183333332,
+      "diff": 0.13894587291666666,
+      "floor": 0.0018791519999999985,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 73.94073120038547,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.018802663,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.10158447444444445,
+        0.16926320222222221,
+        0.19818321375000003,
+        0.2049312304166667
+      ]
+    },
+    {
+      "key": "femur_l.com_pos_z|range",
+      "weak_mean": 0.023081048171111108,
+      "spastic_mean": 0.16762845649999997,
+      "diff": 0.14454740832888885,
+      "floor": 0.002236854333333333,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 64.6208410511408,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.017449556666666668,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.10796045444444442,
+        0.17534092833333334,
+        0.2034365416666667,
+        0.20975366666666662
+      ]
+    },
+    {
+      "key": "femur_l.pos.z|range",
+      "weak_mean": 0.023081048171111108,
+      "spastic_mean": 0.16762845649999997,
+      "diff": 0.14454740832888885,
+      "floor": 0.002236854333333333,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 64.6208410511408,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.017449556666666668,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.10796045444444442,
+        0.17534092833333334,
+        0.2034365416666667,
+        0.20975366666666662
+      ]
+    },
+    {
+      "key": "femur_l.pos_z|range",
+      "weak_mean": 0.023081048171111108,
+      "spastic_mean": 0.16762845649999997,
+      "diff": 0.14454740832888885,
+      "floor": 0.002236854333333333,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 64.6208410511408,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.017449556666666668,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.10796045444444442,
+        0.17534092833333334,
+        0.2034365416666667,
+        0.20975366666666662
+      ]
+    },
+    {
+      "key": "knee_r.disp_z|range",
+      "weak_mean": 0.00026510471694444446,
+      "spastic_mean": 0.000451553005,
+      "diff": 0.00018644828805555557,
+      "floor": 4.340110000000078e-06,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 42.95934620448611,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.00026177084,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.0003784680344444445,
+        0.00044518091,
+        0.000491446125,
+        0.0005308454833333334
+      ]
+    },
+    {
+      "key": "soleus_l.fiber_length|stance",
+      "weak_mean": 0.04591867122523782,
+      "spastic_mean": 0.043771437513409235,
+      "diff": -0.0021472337118285875,
+      "floor": 5.222817637444421e-05,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 41.11255381452015,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.04586167020251002,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.04440685448161429,
+        0.04401395439054112,
+        0.04327268326058585,
+        0.04295329099822721
+      ]
+    },
+    {
+      "key": "soleus_l.L|stance",
+      "weak_mean": 0.9183734065030973,
+      "spastic_mean": 0.8754287432162124,
+      "diff": -0.04294466328688484,
+      "floor": 0.0010446060763479315,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 41.1108687372608,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.9172334370961784,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.8881370610884937,
+        0.8802790954613083,
+        0.8654536412745152,
+        0.8590658399818438
+      ]
+    },
+    {
+      "key": "soleus_l.fiber_length_norm|stance",
+      "weak_mean": 0.9183734065030973,
+      "spastic_mean": 0.8754287432162124,
+      "diff": -0.04294466328688484,
+      "floor": 0.0010446060763479315,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 41.1108687372608,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.9172334370961784,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.8881370610884937,
+        0.8802790954613083,
+        0.8654536412745152,
+        0.8590658399818438
+      ]
+    },
+    {
+      "key": "hip_l.pos_z|range",
+      "weak_mean": 0.019237702407407405,
+      "spastic_mean": 0.1636665866666667,
+      "diff": 0.1444288842592593,
+      "floor": 0.0035226133333333305,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 41.00049326804515,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.01432012,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.10328056111111111,
+        0.1717800055555556,
+        0.199678375,
+        0.20606370833333335
+      ]
+    },
+    {
+      "key": "knee_r.force_z|range",
+      "weak_mean": 266.7243961111111,
+      "spastic_mean": 453.6747515,
+      "diff": 186.9503553888889,
+      "floor": 4.68108333333322,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 39.937412362998614,
+      "spastic_dose_monotone": true,
+      "control_mean": 262.48624,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        379.05474499999997,
+        447.2990988888889,
+        495.0388916666667,
+        533.8041
+      ]
+    },
+    {
+      "key": "tib_ant_l-soleus_l.RL|stance",
+      "weak_mean": 0.023865407394541363,
+      "spastic_mean": 0.036784951433551136,
+      "diff": 0.012919544039009773,
+      "floor": 0.00035407538784266307,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 36.48811660625985,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.024237417417638088,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.032724725128658795,
+        0.03515361752921459,
+        0.039947703082696386,
+        0.042159540098249196
+      ]
+    },
+    {
+      "key": "knee_l.pos_z|range",
+      "weak_mean": 0.04776113670437036,
+      "spastic_mean": 0.18066442516666667,
+      "diff": 0.13290328846229632,
+      "floor": 0.003644082,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 36.470992821318596,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.04268407,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.12719959333333333,
+        0.18317888777777777,
+        0.21490240416666664,
+        0.222852
+      ]
+    },
+    {
+      "key": "hip_r.pos_z|range",
+      "weak_mean": 0.018304279093518516,
+      "spastic_mean": 0.16362888412499998,
+      "diff": 0.14532460503148148,
+      "floor": 0.004525186800000001,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 32.114609065747615,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.014559716666666667,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.10291497444444446,
+        0.1717184238888889,
+        0.19991578979166666,
+        0.20627853333333337
+      ]
+    },
+    {
+      "key": "tibia_r.com_pos_z|range",
+      "weak_mean": 0.03303192428148148,
+      "spastic_mean": 0.15899423312,
+      "diff": 0.1259623088385185,
+      "floor": 0.00393474837777778,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 32.01279897589233,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.0331573164,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.10045259895555554,
+        0.16518854033333333,
+        0.19439857333333335,
+        0.20211088333333332
+      ]
+    },
+    {
+      "key": "tibia_r.pos.z|range",
+      "weak_mean": 0.03303192428148148,
+      "spastic_mean": 0.15899423312,
+      "diff": 0.1259623088385185,
+      "floor": 0.00393474837777778,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 32.01279897589233,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.0331573164,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.10045259895555554,
+        0.16518854033333333,
+        0.19439857333333335,
+        0.20211088333333332
+      ]
+    },
+    {
+      "key": "tibia_r.pos_z|range",
+      "weak_mean": 0.03303192428148148,
+      "spastic_mean": 0.15899423312,
+      "diff": 0.1259623088385185,
+      "floor": 0.00393474837777778,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 32.01279897589233,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.0331573164,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.10045259895555554,
+        0.16518854033333333,
+        0.19439857333333335,
+        0.20211088333333332
+      ]
+    },
+    {
+      "key": "ankle_l.rot_z|stance",
+      "weak_mean": 0.07880965967257396,
+      "spastic_mean": 0.04036322814942853,
+      "diff": -0.038446431523145426,
+      "floor": 0.0012037598205979771,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 31.938623357645266,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.07818626482321554,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.051586403406753516,
+        0.04462419656916117,
+        0.03152510186149623,
+        0.025975138921774395
+      ]
+    },
+    {
+      "key": "ankle_angle_l|stance",
+      "weak_mean": 0.07890087952358646,
+      "spastic_mean": 0.04046431113044598,
+      "diff": -0.038436568393140476,
+      "floor": 0.0012046629611110193,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 31.906491387177496,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.07827693696990524,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.05168448491506423,
+        0.04472609064411732,
+        0.03162934494156909,
+        0.02607634737188854
+      ]
+    },
+    {
+      "key": "leg0_l.grf_z|stance",
+      "weak_mean": 13.469549782209048,
+      "spastic_mean": 5.115283240048987,
+      "diff": -8.354266542160062,
+      "floor": 0.271382876590863,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 30.784059212236,
+      "spastic_dose_monotone": true,
+      "control_mean": 12.513595087425648,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        6.534627983815342,
+        4.712227214823828,
+        4.5918291913619935,
+        4.114304210924184
+      ]
+    },
+    {
+      "key": "leg0_l.grf_norm_z|stance",
+      "weak_mean": 0.018422338156675516,
+      "spastic_mean": 0.00699618545422104,
+      "diff": -0.011426152702454475,
+      "floor": 0.0003711714911592279,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 30.784025644773457,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.017114876325547156,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.00893742766791356,
+        0.006444923994053986,
+        0.006280256977952587,
+        0.005627142800201307
+      ]
+    },
+    {
+      "key": "knee_l.pos_y|stance",
+      "weak_mean": 0.47204391744089313,
+      "spastic_mean": 0.4764459834187866,
+      "diff": 0.0044020659778934434,
+      "floor": 0.00014399624771033182,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 30.570699222307532,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.4721724067512693,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.47529898097603235,
+        0.47593410209212844,
+        0.4774550238444963,
+        0.4779252686471956
+      ]
+    },
+    {
+      "key": "lumbar_extension_u|range",
+      "weak_mean": 0.5541146138888888,
+      "spastic_mean": 1.1116930133333334,
+      "diff": 0.5575783994444445,
+      "floor": 0.01849404999999993,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 30.14906953557748,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.5448976666666666,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.9288132555555557,
+        1.0818763166666667,
+        1.24056075,
+        1.3018699583333333
+      ]
+    },
+    {
+      "key": "lumbar_joint.rot_vel_z|range",
+      "weak_mean": 0.5541146138888888,
+      "spastic_mean": 1.1116930133333334,
+      "diff": 0.5575783994444445,
+      "floor": 0.01849404999999993,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 30.14906953557748,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.5448976666666666,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.9288132555555557,
+        1.0818763166666667,
+        1.24056075,
+        1.3018699583333333
+      ]
+    },
+    {
+      "key": "tib_ant_l.fiber_length|stance",
+      "weak_mean": 0.0754911369986751,
+      "spastic_mean": 0.07734534268032407,
+      "diff": 0.001854205681648971,
+      "floor": 6.407989732344632e-05,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 28.93584039764889,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.07555803258827792,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.0768277654536605,
+        0.07715768830943558,
+        0.07774734016506121,
+        0.07800119259191494
+      ]
+    },
+    {
+      "key": "tib_ant_l.L|stance",
+      "weak_mean": 0.7703177426196989,
+      "spastic_mean": 0.789238206034602,
+      "diff": 0.018920463414903166,
+      "floor": 0.0006538807598180929,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 28.93564786975345,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.7710003740808079,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.783956809897285,
+        0.7873233586555722,
+        0.7933402095285408,
+        0.795930567815184
+      ]
+    },
+    {
+      "key": "tib_ant_l.fiber_length_norm|stance",
+      "weak_mean": 0.7703177426196989,
+      "spastic_mean": 0.789238206034602,
+      "diff": 0.018920463414903166,
+      "floor": 0.0006538807598180929,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 28.93564786975345,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.7710003740808079,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.783956809897285,
+        0.7873233586555722,
+        0.7933402095285408,
+        0.795930567815184
+      ]
+    },
+    {
+      "key": "soleus_l.RL|stance",
+      "weak_mean": 0.03161764537027257,
+      "spastic_mean": 0.013685034649242925,
+      "diff": -0.017932610721029644,
+      "floor": 0.0006238616369851555,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 28.744531892824728,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.031085669669345038,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.01936430158688075,
+        0.01609169417999126,
+        0.009206015274870315,
+        0.006035164321036306
+      ]
+    },
+    {
+      "key": "lumbar_bending-torso.BOX|stance",
+      "weak_mean": 4.823565671196543,
+      "spastic_mean": 2.8672633133450125,
+      "diff": -1.9563023578515306,
+      "floor": 0.06945426536065646,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 28.16677057475164,
+      "spastic_dose_monotone": true,
+      "control_mean": 4.75578747167859,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        3.275940469024068,
+        2.8508058094292466,
+        2.613456289633515,
+        2.5327408594115757
+      ]
+    },
+    {
+      "key": "knee_l.torque|tsw",
+      "weak_mean": 8.32185933010242,
+      "spastic_mean": 6.422920554912944,
+      "diff": -1.8989387751894764,
+      "floor": 0.06841339197530694,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 27.756828310382236,
+      "spastic_dose_monotone": true,
+      "control_mean": 8.166144585266585,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        7.016271031722713,
+        6.646952338253905,
+        5.948500192145294,
+        5.671267527454495
+      ]
+    },
+    {
+      "key": "lumbar_joint.disp_z|stance",
+      "weak_mean": -1.4995837090243232e-05,
+      "spastic_mean": -1.0097813048086917e-05,
+      "diff": 4.898024042156315e-06,
+      "floor": 1.791155710594731e-07,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 27.345607158464112,
+      "spastic_dose_monotone": true,
+      "control_mean": -1.4743340596320915e-05,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -1.126753578045539e-05,
+        -1.0052022367365709e-05,
+        -9.446799395614608e-06,
+        -9.062928623088318e-06
+      ]
+    },
+    {
+      "key": "ankle_l.pos_z|range",
+      "weak_mean": 0.05021228680555555,
+      "spastic_mean": 0.19710583933333334,
+      "diff": 0.1468935525277778,
+      "floor": 0.005413453166666658,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 27.13490779458017,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.04695276043333333,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.14615822444444443,
+        0.20069869277777777,
+        0.228592125,
+        0.23665169583333337
+      ]
+    },
+    {
+      "key": "vasti_r-bifemsh_r.RV|ic",
+      "weak_mean": -7.49652962962963e-06,
+      "spastic_mean": -0.0008463066130833334,
+      "diff": -0.0008388100834537037,
+      "floor": 3.093941111111111e-05,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 27.11137844354336,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.0,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        -0.0005601317222222222,
+        -0.0009236080436111112,
+        -0.0011840959583333333,
+        -0.0008218274583333333
+      ]
+    },
+    {
+      "key": "calcn_l.ori_x|stance",
+      "weak_mean": -0.044357875982651646,
+      "spastic_mean": -0.07441787346835087,
+      "diff": -0.030059997485699222,
+      "floor": 0.0011562025168786252,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 25.998903346838876,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.045714802721825785,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.06737889460977284,
+        -0.07410055887681297,
+        -0.07781000241811832,
+        -0.08206018469375735
+      ]
+    },
+    {
+      "key": "tibia_l.com_pos_y|stance",
+      "weak_mean": 0.292377808250532,
+      "spastic_mean": 0.2967018079387414,
+      "diff": 0.004323999688209401,
+      "floor": 0.00016801834120577785,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 25.735283762346217,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.2926200621626909,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.2956222217360965,
+        0.2962718170236836,
+        0.29750462556492735,
+        0.29816335598910954
+      ]
+    },
+    {
+      "key": "tibia_l.pos.y|stance",
+      "weak_mean": 0.292377808250532,
+      "spastic_mean": 0.2967018079387414,
+      "diff": 0.004323999688209401,
+      "floor": 0.00016801834120577785,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 25.735283762346217,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.2926200621626909,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.2956222217360965,
+        0.2962718170236836,
+        0.29750462556492735,
+        0.29816335598910954
+      ]
+    },
+    {
+      "key": "tibia_l.pos_y|stance",
+      "weak_mean": 0.292377808250532,
+      "spastic_mean": 0.2967018079387414,
+      "diff": 0.004323999688209401,
+      "floor": 0.00016801834120577785,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 25.735283762346217,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.2926200621626909,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.2956222217360965,
+        0.2962718170236836,
+        0.29750462556492735,
+        0.29816335598910954
+      ]
+    },
+    {
+      "key": "calcn_l.ori.x|stance",
+      "weak_mean": -0.022020556910253983,
+      "spastic_mean": -0.036871260003707336,
+      "diff": -0.014850703093453353,
+      "floor": 0.0005782339838427165,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 25.682861105397848,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.02268224212597966,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.03342224784645404,
+        -0.036718190044554434,
+        -0.03852894020643391,
+        -0.040616702975590065
+      ]
+    },
+    {
+      "key": "Effort.vasti_r.effort|tsw",
+      "weak_mean": 1.186966759600268,
+      "spastic_mean": 1.5219080105445852,
+      "diff": 0.33494125094431726,
+      "floor": 0.013128700617283995,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 25.512140211603697,
+      "spastic_dose_monotone": false,
+      "control_mean": 1.196657933048433,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        1.1757556349695875,
+        1.1825955254347484,
+        2.8595449168451594,
+        1.2124683952712632
+      ]
+    },
+    {
+      "key": "gastroc_l.activation|ic",
+      "weak_mean": 0.07280052037037038,
+      "spastic_mean": 0.092572205,
+      "diff": 0.019771684629629624,
+      "floor": 0.0007788800000000096,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 25.38476354461455,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.07849344333333332,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.09816434055555555,
+        0.09297039555555554,
+        0.08911126666666666,
+        0.08704765416666665
+      ]
+    },
+    {
+      "key": "pelvis.com_pos_z|range",
+      "weak_mean": 0.019583191382592593,
+      "spastic_mean": 0.162544145,
+      "diff": 0.1429609536174074,
+      "floor": 0.005769023806666666,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 24.78078760087663,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.01733214996666667,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.10147649444444445,
+        0.1710791222222222,
+        0.19838394166666667,
+        0.20550335833333333
+      ]
+    },
+    {
+      "key": "pelvis.pos.z|range",
+      "weak_mean": 0.019583191382592593,
+      "spastic_mean": 0.162544145,
+      "diff": 0.1429609536174074,
+      "floor": 0.005769023806666666,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 24.78078760087663,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.01733214996666667,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.10147649444444445,
+        0.1710791222222222,
+        0.19838394166666667,
+        0.20550335833333333
+      ]
+    },
+    {
+      "key": "pelvis.pos_z|range",
+      "weak_mean": 0.019583191382592593,
+      "spastic_mean": 0.162544145,
+      "diff": 0.1429609536174074,
+      "floor": 0.005769023806666666,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 24.78078760087663,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.01733214996666667,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.10147649444444445,
+        0.1710791222222222,
+        0.19838394166666667,
+        0.20550335833333333
+      ]
+    },
+    {
+      "key": "pelvis_tz|range",
+      "weak_mean": 0.019583191382592593,
+      "spastic_mean": 0.162544145,
+      "diff": 0.1429609536174074,
+      "floor": 0.005769023806666666,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 24.78078760087663,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.01733214996666667,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.10147649444444445,
+        0.1710791222222222,
+        0.19838394166666667,
+        0.20550335833333333
+      ]
+    },
+    {
+      "key": "lumbar_joint.force_z|stance",
+      "weak_mean": 14.583394012313201,
+      "spastic_mean": 9.817814737108867,
+      "diff": -4.765579275204335,
+      "floor": 0.19549918201444605,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 24.376466571876453,
+      "spastic_dose_monotone": true,
+      "control_mean": 14.42856898088634,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        10.978196568711033,
+        9.766269789845905,
+        9.158884110519525,
+        8.8134900371894
+      ]
+    },
+    {
+      "key": "calcn_l.com_pos_z|range",
+      "weak_mean": 0.05028819473148148,
+      "spastic_mean": 0.19374688866666667,
+      "diff": 0.14345869393518518,
+      "floor": 0.0060474937222222205,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 23.72200791346496,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.04487463833333333,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.14218595444444446,
+        0.19689165500000003,
+        0.22595072083333334,
+        0.23416730833333335
+      ]
+    },
+    {
+      "key": "calcn_l.pos.z|range",
+      "weak_mean": 0.05028819473148148,
+      "spastic_mean": 0.19374688866666667,
+      "diff": 0.14345869393518518,
+      "floor": 0.0060474937222222205,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 23.72200791346496,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.04487463833333333,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.14218595444444446,
+        0.19689165500000003,
+        0.22595072083333334,
+        0.23416730833333335
+      ]
+    },
+    {
+      "key": "calcn_l.pos_z|range",
+      "weak_mean": 0.05028819473148148,
+      "spastic_mean": 0.19374688866666667,
+      "diff": 0.14345869393518518,
+      "floor": 0.0060474937222222205,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 23.72200791346496,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.04487463833333333,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.14218595444444446,
+        0.19689165500000003,
+        0.22595072083333334,
+        0.23416730833333335
+      ]
+    },
+    {
+      "key": "iliopsoas_l.RL|range",
+      "weak_mean": 0.5181494996296294,
+      "spastic_mean": 0.5380277733333332,
+      "diff": 0.019878273703703764,
+      "floor": 0.0008530733333333984,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 23.30195180996817,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.51779047,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.5328130861111112,
+        0.5458615277777777,
+        0.5364636541666666,
+        0.5356632916666667
+      ]
+    },
+    {
+      "key": "torso.ori.x|stance",
+      "weak_mean": -0.01066905439713509,
+      "spastic_mean": -0.006560256645961651,
+      "diff": 0.0041087977511734385,
+      "floor": 0.0001766368930382449,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 23.261265981868316,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.010520292673654818,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.007422715405433321,
+        -0.006524849677109139,
+        -0.006032639463449118,
+        -0.005847296142545448
+      ]
+    },
+    {
+      "key": "torso.ori_x|stance",
+      "weak_mean": -0.02135180773475765,
+      "spastic_mean": -0.013129312123681205,
+      "diff": 0.008222495611076446,
+      "floor": 0.00035366687281545087,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 23.24926715815727,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.021054444369938096,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.014855071649668162,
+        -0.013058623921582926,
+        -0.012073526769317968,
+        -0.011702490492211438
+      ]
+    },
+    {
+      "key": "ankle_l.force_x|range",
+      "weak_mean": 1171.1037240740743,
+      "spastic_mean": 978.5119699999999,
+      "diff": -192.5917540740744,
+      "floor": 8.311166666666622,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 23.17264973718998,
+      "spastic_dose_monotone": false,
+      "control_mean": 1165.1564666666666,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        1018.4186,
+        980.405411111111,
+        945.9620833333335,
+        948.36175
+      ]
+    },
+    {
+      "key": "soleus_l.RL|range",
+      "weak_mean": 0.1837047614814815,
+      "spastic_mean": 0.155594191,
+      "diff": -0.028110570481481495,
+      "floor": 0.0012210655555555672,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 23.02134422970566,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.18195820000000004,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.16252745444444444,
+        0.15834509333333335,
+        0.1504442875,
+        0.14621784583333333
+      ]
+    },
+    {
+      "key": "torso.BOX|stance",
+      "weak_mean": -0.020842019989302622,
+      "spastic_mean": -0.012293324462851803,
+      "diff": 0.008548695526450819,
+      "floor": 0.0003769524105272787,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 22.678447697132263,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.020586674604974754,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.014107418737723887,
+        -0.012223486604817271,
+        -0.011151567486442245,
+        -0.010818696814005027
+      ]
+    },
+    {
+      "key": "soleus_l.activation|stance",
+      "weak_mean": 0.17245817574110806,
+      "spastic_mean": 0.2140944323757513,
+      "diff": 0.04163625663464324,
+      "floor": 0.001869318568349182,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 22.273494384326757,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.17261294802748675,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.19888333658860421,
+        0.20865187197800125,
+        0.22580078779633111,
+        0.23336856123251715
+      ]
+    },
+    {
+      "key": "tibia_l.com_pos_z|range",
+      "weak_mean": 0.033942939444444445,
+      "spastic_mean": 0.17900965216666667,
+      "diff": 0.1450667127222222,
+      "floor": 0.006629881333333327,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 21.880740458032687,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.02652439,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.12251402388888888,
+        0.18388298611111112,
+        0.2142018,
+        0.22125094583333335
+      ]
+    },
+    {
+      "key": "tibia_l.pos.z|range",
+      "weak_mean": 0.033942939444444445,
+      "spastic_mean": 0.17900965216666667,
+      "diff": 0.1450667127222222,
+      "floor": 0.006629881333333327,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 21.880740458032687,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.02652439,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.12251402388888888,
+        0.18388298611111112,
+        0.2142018,
+        0.22125094583333335
+      ]
+    },
+    {
+      "key": "tibia_l.pos_z|range",
+      "weak_mean": 0.033942939444444445,
+      "spastic_mean": 0.17900965216666667,
+      "diff": 0.1450667127222222,
+      "floor": 0.006629881333333327,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 21.880740458032687,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.02652439,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.12251402388888888,
+        0.18388298611111112,
+        0.2142018,
+        0.22125094583333335
+      ]
+    },
+    {
+      "key": "femur_l.com_pos_y|stance",
+      "weak_mean": 0.6891730721904213,
+      "spastic_mean": 0.6930383822624117,
+      "diff": 0.0038653100719903133,
+      "floor": 0.00017879244042151576,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 21.61897931969368,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.6893242239750969,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.6919088163430742,
+        0.6923298737456637,
+        0.6941686886251787,
+        0.6946651875537728
+      ]
+    },
+    {
+      "key": "femur_l.pos.y|stance",
+      "weak_mean": 0.6891730721904213,
+      "spastic_mean": 0.6930383822624117,
+      "diff": 0.0038653100719903133,
+      "floor": 0.00017879244042151576,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 21.61897931969368,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.6893242239750969,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.6919088163430742,
+        0.6923298737456637,
+        0.6941686886251787,
+        0.6946651875537728
+      ]
+    },
+    {
+      "key": "femur_l.pos_y|stance",
+      "weak_mean": 0.6891730721904213,
+      "spastic_mean": 0.6930383822624117,
+      "diff": 0.0038653100719903133,
+      "floor": 0.00017879244042151576,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 21.61897931969368,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.6893242239750969,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.6919088163430742,
+        0.6923298737456637,
+        0.6941686886251787,
+        0.6946651875537728
+      ]
+    },
+    {
+      "key": "calcn_r.ori.w|tsw",
+      "weak_mean": 0.9925185634126323,
+      "spastic_mean": 0.9816426269033827,
+      "diff": -0.010875936509249673,
+      "floor": 0.0005046660493829291,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 21.550759205117956,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.9928024057183557,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.9861463786333303,
+        0.9829705746370353,
+        0.9784018830606871,
+        0.976135821550677
+      ]
+    },
+    {
+      "key": "tib_ant_l.activation|tsw",
+      "weak_mean": 0.12950411681012158,
+      "spastic_mean": 0.17212590514967302,
+      "diff": 0.042621788339551436,
+      "floor": 0.0020109161728395497,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 21.195208887979945,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.13069698902319904,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.15198928888763616,
+        0.16589454581578342,
+        0.18851631725469514,
+        0.19528745643854045
+      ]
+    },
+    {
+      "key": "ankle_l.force_z|stance",
+      "weak_mean": 10.078394735219348,
+      "spastic_mean": 84.2439922741165,
+      "diff": 74.16559753889715,
+      "floor": 3.6212731719084363,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 20.480531022687625,
+      "spastic_dose_monotone": true,
+      "control_mean": 8.479650443897514,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        64.02406368204502,
+        82.36795568921372,
+        96.1111855481649,
+        105.52074676552945
+      ]
+    },
+    {
+      "key": "ankle_l.disp_z|stance",
+      "weak_mean": -1.0109344436573572e-05,
+      "spastic_mean": -8.419023187294251e-05,
+      "diff": -7.408088743636893e-05,
+      "floor": 3.6506250846527204e-06,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 20.292658303315243,
+      "spastic_dose_monotone": true,
+      "control_mean": -8.519627802986796e-06,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        -6.400605718684067e-05,
+        -8.231566990646618e-05,
+        -9.603348475894224e-05,
+        -0.00010543508396580994
+      ]
+    },
+    {
+      "key": "calcn_r.ang_vel.x|tsw",
+      "weak_mean": 0.02457007693782494,
+      "spastic_mean": -0.20884612944836203,
+      "diff": -0.233416206386187,
+      "floor": 0.011513867311111113,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 20.27261562767322,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.022153086067708588,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.12582307713908425,
+        -0.20098406151087225,
+        -0.26581222480587496,
+        -0.2882077144610004
+      ]
+    },
+    {
+      "key": "calcn_r.ang_vel_x|tsw",
+      "weak_mean": 0.02457007693782494,
+      "spastic_mean": -0.20884612944836203,
+      "diff": -0.233416206386187,
+      "floor": 0.011513867311111113,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 20.27261562767322,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.022153086067708588,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.12582307713908425,
+        -0.20098406151087225,
+        -0.26581222480587496,
+        -0.2882077144610004
+      ]
+    },
+    {
+      "key": "lumbar_joint.motor_torque|tsw",
+      "weak_mean": 49783.675788770975,
+      "spastic_mean": 94189.55085665303,
+      "diff": 44405.87506788206,
+      "floor": 2242.1269444444406,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 19.805245718986285,
+      "spastic_dose_monotone": true,
+      "control_mean": 46414.08824989825,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        80859.09264665039,
+        94309.2113337845,
+        102969.54998159799,
+        105225.74833101484
+      ]
+    },
+    {
+      "key": "ankle_l.disp_x|range",
+      "weak_mean": 0.0011690821166666669,
+      "spastic_mean": 0.0009767986883333333,
+      "diff": -0.00019228342833333355,
+      "floor": 9.773300000000132e-06,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 19.67436058785988,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.0011638403666666666,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.0010165838722222223,
+        0.0009791460055555555,
+        0.0009448381666666666,
+        0.0009455604583333333
+      ]
+    },
+    {
+      "key": "com_z|range",
+      "weak_mean": 0.028170470962962966,
+      "spastic_mean": 0.1624347691666667,
+      "diff": 0.13426429820370372,
+      "floor": 0.006830190700000006,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 19.65747430795799,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.025848844783333335,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.10156691444444445,
+        0.17096197444444447,
+        0.19808707916666665,
+        0.20529343333333333
+      ]
+    },
+    {
+      "key": "lumbar_bending.input|tsw",
+      "weak_mean": -4.106602366203138,
+      "spastic_mean": -4.953040056178147,
+      "diff": -0.8464376899750095,
+      "floor": 0.043271211836106716,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 19.56121989790723,
+      "spastic_dose_monotone": false,
+      "control_mean": -4.107823107694343,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -4.706510161776237,
+        -5.213053536503513,
+        -4.983585900426772,
+        -4.902268833044338
+      ]
+    },
+    {
+      "key": "gastroc_l.RL|tsw",
+      "weak_mean": 0.11459496498855598,
+      "spastic_mean": 0.06320091450931274,
+      "diff": -0.05139405047924324,
+      "floor": 0.0026689801851851602,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 19.256062957873844,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.11345403678673177,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.09040529933031242,
+        0.07005453019632074,
+        0.04133638972325056,
+        0.033978438533363374
+      ]
+    },
+    {
+      "key": "soleus_l.RF|stance",
+      "weak_mean": 0.16393076771293885,
+      "spastic_mean": 0.2068515160338038,
+      "diff": 0.042920748320864954,
+      "floor": 0.002239018164395923,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 19.169450700925772,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.16454690262907976,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.19161014932768913,
+        0.20125469240142105,
+        0.2186319700924281,
+        0.22632834748292552
+      ]
+    },
+    {
+      "key": "hip_l.disp_z|range",
+      "weak_mean": 0.00047867819379629624,
+      "spastic_mean": 0.00039996241016666665,
+      "diff": -7.871578362962959e-05,
+      "floor": 4.132693333333353e-06,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 19.04709042762167,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.00047325300666666665,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.0004085666022222223,
+        0.0004016059205555556,
+        0.00039153622083333334,
+        0.00039301704583333334
+      ]
+    },
+    {
+      "key": "tibia_r.ori.w|stance",
+      "weak_mean": 0.9658789545340175,
+      "spastic_mean": 0.9609922401070513,
+      "diff": -0.004886714426966199,
+      "floor": 0.0002605613290761477,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 18.754565170098903,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.9657275256972165,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.9632753459098887,
+        0.9614475199234759,
+        0.9595398056864761,
+        0.958337096098734
+      ]
+    },
+    {
+      "key": "tib_ant_l-soleus_l.RF|stance",
+      "weak_mean": -0.13119583386757805,
+      "spastic_mean": -0.1658321108213686,
+      "diff": -0.03463627695379054,
+      "floor": 0.001876470915299605,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 18.458200802041404,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.13159674633754817,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.15351201786638294,
+        -0.16138632149973978,
+        -0.17534543192204852,
+        -0.18146761313561033
+      ]
+    },
+    {
+      "key": "femur_r.ori.w|ic",
+      "weak_mean": 0.9875070722222223,
+      "spastic_mean": 0.9834892749999998,
+      "diff": -0.004017797222222508,
+      "floor": 0.000220800000000132,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 18.19654539048961,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.9873195666666668,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.9857960111111111,
+        0.9841935166666667,
+        0.9821264583333333,
+        0.980335625
+      ]
+    },
+    {
+      "key": "step_velocity|tsw",
+      "weak_mean": 1.0391126243237623,
+      "spastic_mean": 0.9709359889534751,
+      "diff": -0.06817663537028718,
+      "floor": 0.003801944444444594,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 17.93204408073531,
+      "spastic_dose_monotone": true,
+      "control_mean": 1.0345002307692308,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.9960315173662248,
+        0.9838314827754528,
+        0.9464883272128115,
+        0.9383971173420489
+      ]
+    },
+    {
+      "key": "femur_r.ori.w|tsw",
+      "weak_mean": 0.9922935852123502,
+      "spastic_mean": 0.9831517955299118,
+      "diff": -0.009141789682438395,
+      "floor": 0.0005127570987656371,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 17.82869453089089,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.992619322161172,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.9872513078786663,
+        0.9840744591452739,
+        0.9804929780211247,
+        0.9782773490925241
+      ]
+    },
+    {
+      "key": "lumbar_joint.pos_z|range",
+      "weak_mean": 0.037674353758333334,
+      "spastic_mean": 0.1623030975,
+      "diff": 0.12462874374166666,
+      "floor": 0.006993665766666657,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 17.820231606673936,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.036213332566666666,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.10218338055555555,
+        0.17050335000000003,
+        0.19738872083333336,
+        0.20509667083333336
+      ]
+    },
+    {
+      "key": "hip_l.torque_z|tsw",
+      "weak_mean": -0.022624325808364775,
+      "spastic_mean": 0.014358655785819702,
+      "diff": 0.03698298159418448,
+      "floor": 0.00208944130802469,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 17.69993799402164,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.02125272566969882,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.0011639079917282673,
+        0.009891406672167823,
+        0.02575688248912219,
+        0.02945342444413218
+      ]
+    },
+    {
+      "key": "tibia_r.ori.w|tsw",
+      "weak_mean": 0.987891998830166,
+      "spastic_mean": 0.9782167486735609,
+      "diff": -0.009675250156605086,
+      "floor": 0.0005517493827160713,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 17.535588547425604,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.9881728517908018,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.9824293998823155,
+        0.9794196111425872,
+        0.9749725232512427,
+        0.9733377035792076
+      ]
+    },
+    {
+      "key": "soleus_l.excitation|stance",
+      "weak_mean": 0.1797216388951623,
+      "spastic_mean": 0.21737206022857486,
+      "diff": 0.037650421333412565,
+      "floor": 0.002154925142152986,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 17.471800108933728,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.1800951197488386,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.20388121665477543,
+        0.21262912571006395,
+        0.22760004610794238,
+        0.2344947414876728
+      ]
+    },
+    {
+      "key": "femur_l.ori_x|stance",
+      "weak_mean": -0.015817483460816743,
+      "spastic_mean": -0.03544931531812735,
+      "diff": -0.01963183185731061,
+      "floor": 0.001124331667037579,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 17.460890262956944,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.017443430208679337,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.030937910600350355,
+        -0.03637651945160706,
+        -0.0374189779856945,
+        -0.03885595352700613
+      ]
+    },
+    {
+      "key": "torso.BOZ|range",
+      "weak_mean": 0.0654576325925926,
+      "spastic_mean": 0.08995814883333333,
+      "diff": 0.024500516240740733,
+      "floor": 0.0014042066666666575,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 17.4479418324517,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.06475207666666666,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.08257628611111112,
+        0.0882686488888889,
+        0.09646512500000001,
+        0.09705821666666667
+      ]
+    },
+    {
+      "key": "hip_l.force_z|range",
+      "weak_mean": 479.67480842592585,
+      "spastic_mean": 402.1788693333334,
+      "diff": -77.49593909259244,
+      "floor": 4.450246666666601,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 17.41385251137995,
+      "spastic_dose_monotone": false,
+      "control_mean": 473.7018233333334,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        410.3569872222222,
+        404.0316883333333,
+        394.31584583333336,
+        394.9954875
+      ]
+    },
+    {
+      "key": "femur_l.ori.x|stance",
+      "weak_mean": -0.007875204217333951,
+      "spastic_mean": -0.0176562665986019,
+      "diff": -0.00978106238126795,
+      "floor": 0.0005618390371159273,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 17.40901171886668,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.008682123820792125,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.015415296575817083,
+        -0.01812176155779995,
+        -0.018631767792615554,
+        -0.019343977999968398
+      ]
+    },
+    {
+      "key": "femur_r.com_lin_vel_x|stance",
+      "weak_mean": 1.2738179369835523,
+      "spastic_mean": 1.205227122065796,
+      "diff": -0.06859081491775632,
+      "floor": 0.003969250198769814,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 17.28054707637594,
+      "spastic_dose_monotone": true,
+      "control_mean": 1.269678139585142,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        1.2366584572679187,
+        1.221939909859497,
+        1.1725549647756193,
+        1.165683094862237
+      ]
+    },
+    {
+      "key": "femur_r.lin_vel.x|stance",
+      "weak_mean": 1.2738179369835523,
+      "spastic_mean": 1.205227122065796,
+      "diff": -0.06859081491775632,
+      "floor": 0.003969250198769814,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 17.28054707637594,
+      "spastic_dose_monotone": true,
+      "control_mean": 1.269678139585142,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        1.2366584572679187,
+        1.221939909859497,
+        1.1725549647756193,
+        1.165683094862237
+      ]
+    },
+    {
+      "key": "femur_r.lin_vel_x|stance",
+      "weak_mean": 1.2738179369835523,
+      "spastic_mean": 1.205227122065796,
+      "diff": -0.06859081491775632,
+      "floor": 0.003969250198769814,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 17.28054707637594,
+      "spastic_dose_monotone": true,
+      "control_mean": 1.269678139585142,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        1.2366584572679187,
+        1.221939909859497,
+        1.1725549647756193,
+        1.165683094862237
+      ]
+    },
+    {
+      "key": "calcn_l.ori.z|range",
+      "weak_mean": 0.7053610064814815,
+      "spastic_mean": 0.6655353949999999,
+      "diff": -0.03982561148148156,
+      "floor": 0.002312900000000062,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 17.21890764039971,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.7111021000000001,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.6951527833333334,
+        0.6765959611111111,
+        0.6377204583333334,
+        0.6323333999999999
+      ]
+    },
+    {
+      "key": "tibia_l.ori_x|stance",
+      "weak_mean": -0.047019177053365814,
+      "spastic_mean": -0.08361235602736433,
+      "diff": -0.03659317897399852,
+      "floor": 0.002126498068086735,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 17.20818820537295,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.04738564425436075,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.07538317837602533,
+        -0.0833680022346967,
+        -0.08778723104244066,
+        -0.09214777817829796
+      ]
+    },
+    {
+      "key": "soleus_l.F|stance",
+      "weak_mean": 0.11670270191212145,
+      "spastic_mean": 0.14670886686617401,
+      "diff": 0.03000616495405256,
+      "floor": 0.001745346089261926,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 17.192100259462926,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.11715841982855363,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.1361721743942432,
+        0.14287955515530096,
+        0.1548443468896924,
+        0.1601223931168614
+      ]
+    },
+    {
+      "key": "soleus_l.mtu_force_norm|stance",
+      "weak_mean": 0.11670270191212145,
+      "spastic_mean": 0.14670886686617401,
+      "diff": 0.03000616495405256,
+      "floor": 0.001745346089261926,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 17.192100259462926,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.11715841982855363,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.1361721743942432,
+        0.14287955515530096,
+        0.1548443468896924,
+        0.1601223931168614
+      ]
+    },
+    {
+      "key": "hip_r.disp_vel_x|ic",
+      "weak_mean": 0.0019951,
+      "spastic_mean": 0.0016379524916666666,
+      "diff": -0.0003571475083333335,
+      "floor": 2.1052666666666452e-05,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 16.964478371702892,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.001990580666666667,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.0017655141666666667,
+        0.0016971578888888888,
+        0.0015262365833333333,
+        0.0014695177916666667
+      ]
+    },
+    {
+      "key": "tibia_l.ori.x|stance",
+      "weak_mean": -0.023368678944849765,
+      "spastic_mean": -0.04155360334828653,
+      "diff": -0.018184924403436768,
+      "floor": 0.0010739162333812183,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 16.933280118302758,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.02353804591826497,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.03748512363963457,
+        -0.04143381852992482,
+        -0.043618143150360444,
+        -0.045771460336733155
+      ]
+    },
+    {
+      "key": "torso.ori.z|range",
+      "weak_mean": 0.03225968314814815,
+      "spastic_mean": 0.04455817516666667,
+      "diff": 0.012298492018518521,
+      "floor": 0.0007270822222222167,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 16.91485727835573,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.03188770999999999,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.040851547777777775,
+        0.043719129999999995,
+        0.047809175,
+        0.04812568416666666
+      ]
+    },
+    {
+      "key": "torso.ori_z|range",
+      "weak_mean": 0.06461734268518517,
+      "spastic_mean": 0.08924213083333335,
+      "diff": 0.024624788148148183,
+      "floor": 0.0014570727777777764,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 16.90017720714277,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.06386946666666667,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.08181996333333331,
+        0.08756146444444446,
+        0.09575429166666667,
+        0.09638422083333334
+      ]
+    },
+    {
+      "key": "knee_l.disp_z|stance",
+      "weak_mean": -2.360292230622369e-05,
+      "spastic_mean": -6.775853699608068e-05,
+      "diff": -4.4155614689857e-05,
+      "floor": 2.6218269382227596e-06,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 16.841544362111282,
+      "spastic_dose_monotone": false,
+      "control_mean": -2.674118318569335e-05,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -6.0515264564773246e-05,
+        -6.977231493295962e-05,
+        -6.963650360113801e-05,
+        -7.37248121326662e-05
+      ]
+    },
+    {
+      "key": "Effort.vasti_l.effort|range",
+      "weak_mean": 162.98463539814819,
+      "spastic_mean": 227.71436068333327,
+      "diff": 64.72972528518508,
+      "floor": 3.8455296111110897,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 16.832460501190294,
+      "spastic_dose_monotone": true,
+      "control_mean": 169.258105,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        209.59978194444443,
+        229.05583033333332,
+        238.06667166666668,
+        242.5217133333333
+      ]
+    },
+    {
+      "key": "soleus_l.fiber_length|range",
+      "weak_mean": 0.020685032685185185,
+      "spastic_mean": 0.017423040333333334,
+      "diff": -0.0032619923518518515,
+      "floor": 0.00019383611111111268,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 16.828610175644616,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.020535750000000002,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.018248497222222226,
+        0.017753073333333334,
+        0.016798537500000002,
+        0.016314308333333333
+      ]
+    },
+    {
+      "key": "soleus_l.L|range",
+      "weak_mean": 0.41370049722222224,
+      "spastic_mean": 0.3484610933333333,
+      "diff": -0.06523940388888894,
+      "floor": 0.003877516666666636,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 16.82504796168238,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.41071513333333337,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.36497047222222223,
+        0.35506181111111107,
+        0.33597099999999996,
+        0.32628604166666664
+      ]
+    },
+    {
+      "key": "soleus_l.fiber_length_norm|range",
+      "weak_mean": 0.41370049722222224,
+      "spastic_mean": 0.3484610933333333,
+      "diff": -0.06523940388888894,
+      "floor": 0.003877516666666636,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 16.82504796168238,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.41071513333333337,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.36497047222222223,
+        0.35506181111111107,
+        0.33597099999999996,
+        0.32628604166666664
+      ]
+    },
+    {
+      "key": "knee_l.force_z|stance",
+      "weak_mean": 23.785806074041243,
+      "spastic_mean": 67.95957747252676,
+      "diff": 44.17377139848551,
+      "floor": 2.6782262139875996,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 16.493667027743474,
+      "spastic_dose_monotone": false,
+      "control_mean": 26.93030330036702,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        60.73166998199025,
+        69.95736951141696,
+        69.857675405069,
+        73.90665271745398
+      ]
+    },
+    {
+      "key": "tibia_l.com_lin_vel_z|stance",
+      "weak_mean": 0.0017238206853616678,
+      "spastic_mean": -0.06425838899268807,
+      "diff": -0.06598220967804974,
+      "floor": 0.004010482773063911,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 16.452435632242086,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.002167708954563912,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        -0.03997441705803866,
+        -0.06644766277346588,
+        -0.07944957635957134,
+        -0.08220924885661217
+      ]
+    },
+    {
+      "key": "tibia_l.lin_vel.z|stance",
+      "weak_mean": 0.0017238206853616678,
+      "spastic_mean": -0.06425838899268807,
+      "diff": -0.06598220967804974,
+      "floor": 0.004010482773063911,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 16.452435632242086,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.002167708954563912,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        -0.03997441705803866,
+        -0.06644766277346588,
+        -0.07944957635957134,
+        -0.08220924885661217
+      ]
+    },
+    {
+      "key": "tibia_l.lin_vel_z|stance",
+      "weak_mean": 0.0017238206853616678,
+      "spastic_mean": -0.06425838899268807,
+      "diff": -0.06598220967804974,
+      "floor": 0.004010482773063911,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 16.452435632242086,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.002167708954563912,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        -0.03997441705803866,
+        -0.06644766277346588,
+        -0.07944957635957134,
+        -0.08220924885661217
+      ]
+    },
+    {
+      "key": "pelvis.ori.w|range",
+      "weak_mean": 0.006389669444444446,
+      "spastic_mean": 0.02243578833333334,
+      "diff": 0.01604611888888889,
+      "floor": 0.0009815500000000055,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 16.34773459211329,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.005832966666666666,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.017212900000000014,
+        0.02047036666666665,
+        0.026473000000000014,
+        0.029181041666666678
+      ]
+    },
+    {
+      "key": "leg0_l.cop_z|range",
+      "weak_mean": 0.0839536524925926,
+      "spastic_mean": 0.5168306384999999,
+      "diff": 0.4328769860074073,
+      "floor": 0.026533127266666665,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 16.314585976121514,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.07467647186666666,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.31155861777777777,
+        0.5176685633333333,
+        0.658120375,
+        0.6821920458333333
+      ]
+    },
+    {
+      "key": "lumbar_joint.motor_torque_x|range",
+      "weak_mean": 76135.77694444446,
+      "spastic_mean": 70088.26286500001,
+      "diff": -6047.514079444445,
+      "floor": 373.95000000001164,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 16.171985772012988,
+      "spastic_dose_monotone": false,
+      "control_mean": 75411.10666666666,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        70292.22096666666,
+        70537.6245,
+        69116.30029166666,
+        70080.24583333335
+      ]
+    },
+    {
+      "key": "calcn_l.ori_z|range",
+      "weak_mean": 1.4850764333333335,
+      "spastic_mean": 1.401762051666667,
+      "diff": -0.0833143816666666,
+      "floor": 0.005239966666666929,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 15.899792301476937,
+      "spastic_dose_monotone": true,
+      "control_mean": 1.4968381,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        1.462867972222222,
+        1.4243299222222223,
+        1.3434892083333332,
+        1.3345242083333333
+      ]
+    },
+    {
+      "key": "add_mag_r.mtu_force_norm|stance",
+      "weak_mean": 0.029567616308939886,
+      "spastic_mean": 0.03345894050272681,
+      "diff": 0.0038913241937869256,
+      "floor": 0.000244793189551961,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 15.896374408573706,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.029979042701665713,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.03221312802560404,
+        0.033735252778010615,
+        0.03447711466761459,
+        0.03389501664059745
+      ]
+    },
+    {
+      "key": "knee_l.torque_z|tsw",
+      "weak_mean": -1.1274063231148563,
+      "spastic_mean": 0.045849965482207634,
+      "diff": 1.1732562885970639,
+      "floor": 0.07515850111111111,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 15.610426914482662,
+      "spastic_dose_monotone": true,
+      "control_mean": -1.1682011508343508,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        -0.2834734376489455,
+        0.00949615461351607,
+        0.2634130466108129,
+        0.37680270535336946
+      ]
+    },
+    {
+      "key": "lumbar_joint.motor_torque_z|range",
+      "weak_mean": 22781.86194444444,
+      "spastic_mean": 37622.673833333334,
+      "diff": 14840.811888888893,
+      "floor": 954.6499999999978,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 15.545814580096295,
+      "spastic_dose_monotone": false,
+      "control_mean": 22476.819999999996,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        33361.402777777774,
+        37611.89888888889,
+        40937.629166666666,
+        40715.787500000006
+      ]
+    },
+    {
+      "key": "tibia_l.ang_vel.x|stance",
+      "weak_mean": 0.0066385212229388086,
+      "spastic_mean": -0.19748184667625734,
+      "diff": -0.20412036789919616,
+      "floor": 0.013130805781867233,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 15.545151705851348,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.013329151521050178,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        -0.12398811750935791,
+        -0.20425870941370552,
+        -0.2457645199142772,
+        -0.24927447308241432
+      ]
+    },
+    {
+      "key": "tibia_l.ang_vel_x|stance",
+      "weak_mean": 0.0066385212229388086,
+      "spastic_mean": -0.19748184667625734,
+      "diff": -0.20412036789919616,
+      "floor": 0.013130805781867233,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 15.545151705851348,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.013329151521050178,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        -0.12398811750935791,
+        -0.20425870941370552,
+        -0.2457645199142772,
+        -0.24927447308241432
+      ]
+    },
+    {
+      "key": "femur_l.com_lin_vel_x|stance",
+      "weak_mean": 0.9011729290991587,
+      "spastic_mean": 0.8397584065431424,
+      "diff": -0.061414522556016315,
+      "floor": 0.004013551950701966,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 15.30178836859829,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.8953782650980923,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.8637838329608485,
+        0.8518427020025277,
+        0.815243938807813,
+        0.810108291462835
+      ]
+    },
+    {
+      "key": "femur_l.lin_vel.x|stance",
+      "weak_mean": 0.9011729290991587,
+      "spastic_mean": 0.8397584065431424,
+      "diff": -0.061414522556016315,
+      "floor": 0.004013551950701966,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 15.30178836859829,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.8953782650980923,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.8637838329608485,
+        0.8518427020025277,
+        0.815243938807813,
+        0.810108291462835
+      ]
+    },
+    {
+      "key": "femur_l.lin_vel_x|stance",
+      "weak_mean": 0.9011729290991587,
+      "spastic_mean": 0.8397584065431424,
+      "diff": -0.061414522556016315,
+      "floor": 0.004013551950701966,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 15.30178836859829,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.8953782650980923,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.8637838329608485,
+        0.8518427020025277,
+        0.815243938807813,
+        0.810108291462835
+      ]
+    },
+    {
+      "key": "torso.com_lin_vel_x|tsw",
+      "weak_mean": 1.025623499962431,
+      "spastic_mean": 0.9395858165276832,
+      "diff": -0.08603768343474771,
+      "floor": 0.0056268182098768715,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 15.290645658984321,
+      "spastic_dose_monotone": true,
+      "control_mean": 1.0226633386039887,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.9667075200387006,
+        0.9489380444902729,
+        0.9136423309401283,
+        0.9108184049048277
+      ]
+    },
+    {
+      "key": "torso.lin_vel.x|tsw",
+      "weak_mean": 1.025623499962431,
+      "spastic_mean": 0.9395858165276832,
+      "diff": -0.08603768343474771,
+      "floor": 0.0056268182098768715,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 15.290645658984321,
+      "spastic_dose_monotone": true,
+      "control_mean": 1.0226633386039887,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.9667075200387006,
+        0.9489380444902729,
+        0.9136423309401283,
+        0.9108184049048277
+      ]
+    },
+    {
+      "key": "torso.lin_vel_x|tsw",
+      "weak_mean": 1.025623499962431,
+      "spastic_mean": 0.9395858165276832,
+      "diff": -0.08603768343474771,
+      "floor": 0.0056268182098768715,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 15.290645658984321,
+      "spastic_dose_monotone": true,
+      "control_mean": 1.0226633386039887,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.9667075200387006,
+        0.9489380444902729,
+        0.9136423309401283,
+        0.9108184049048277
+      ]
+    },
+    {
+      "key": "calcn_l.ori_x|range",
+      "weak_mean": 0.13788987592592591,
+      "spastic_mean": 0.23220994457499994,
+      "diff": 0.09432006864907402,
+      "floor": 0.006169400000000047,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 15.288369800802883,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.14159079666666666,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.2019984866111111,
+        0.23329840566666668,
+        0.2510813745416667,
+        0.25702300991666666
+      ]
+    },
+    {
+      "key": "tib_ant_l-gastroc_l.RL|tsw",
+      "weak_mean": 0.0014235680895840045,
+      "spastic_mean": 0.004800282608665658,
+      "diff": 0.003376714519081654,
+      "floor": 0.00022198220211311717,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 15.211645289296461,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.001516584800976801,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.002992464401257273,
+        0.004301596773394248,
+        0.006239531063262065,
+        0.006820790218088945
+      ]
+    },
+    {
+      "key": "torso.ori.w|range",
+      "weak_mean": 0.0019495111111111105,
+      "spastic_mean": 0.00248460666666667,
+      "diff": 0.0005350955555555596,
+      "floor": 3.54999999999917e-05,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 15.073114241005204,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.0019226999999999918,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.002328855555555559,
+        0.002466444444444446,
+        0.002618666666666672,
+        0.0026114166666666716
+      ]
+    },
+    {
+      "key": "torso.ang_vel.z|range",
+      "weak_mean": 0.7528163074074076,
+      "spastic_mean": 0.9632204783333334,
+      "diff": 0.21040417092592578,
+      "floor": 0.014071577777777677,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.952422126977355,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.7330126666666666,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.8725341166666668,
+        0.9435460611111112,
+        1.0330390416666666,
+        1.058943083333333
+      ]
+    },
+    {
+      "key": "torso.ang_vel_z|range",
+      "weak_mean": 0.7528163074074076,
+      "spastic_mean": 0.9632204783333334,
+      "diff": 0.21040417092592578,
+      "floor": 0.014071577777777677,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.952422126977355,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.7330126666666666,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.8725341166666668,
+        0.9435460611111112,
+        1.0330390416666666,
+        1.058943083333333
+      ]
+    },
+    {
+      "key": "tib_ant_l-soleus_l.RL|range",
+      "weak_mean": 0.13063481148148146,
+      "spastic_mean": 0.10979455369999998,
+      "diff": -0.020840257781481478,
+      "floor": 0.0013945088888888957,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.944514120728476,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.12997691000000003,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.11515528395555556,
+        0.1119378042111111,
+        0.10556045791666667,
+        0.10277267833333334
+      ]
+    },
+    {
+      "key": "gastroc_l.activation|range",
+      "weak_mean": 0.7033774489814815,
+      "spastic_mean": 0.6322021798333334,
+      "diff": -0.07117526914814809,
+      "floor": 0.004840569999999933,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.703902463583644,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.7032870533333334,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.6602205177777778,
+        0.6378487372222222,
+        0.6139806833333332,
+        0.5999263333333333
+      ]
+    },
+    {
+      "key": "gastroc_l.excitation|range",
+      "weak_mean": 0.7057341814814814,
+      "spastic_mean": 0.6342712066666667,
+      "diff": -0.07146297481481467,
+      "floor": 0.004867066666666808,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.68296608802275,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.7056695,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.6623546944444444,
+        0.6399125777777779,
+        0.6159939166666667,
+        0.6019612083333333
+      ]
+    },
+    {
+      "key": "glut_max_l.L|ic",
+      "weak_mean": 0.741198035185185,
+      "spastic_mean": 0.7528840499999999,
+      "diff": 0.011686014814814905,
+      "floor": 0.0008023666666666651,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.564432073634158,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.7418793333333333,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.7504185555555556,
+        0.7539679444444444,
+        0.7535858333333333,
+        0.7542546666666666
+      ]
+    },
+    {
+      "key": "glut_max_l.fiber_length_norm|ic",
+      "weak_mean": 0.741198035185185,
+      "spastic_mean": 0.7528840499999999,
+      "diff": 0.011686014814814905,
+      "floor": 0.0008023666666666651,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.564432073634158,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.7418793333333333,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.7504185555555556,
+        0.7539679444444444,
+        0.7535858333333333,
+        0.7542546666666666
+      ]
+    },
+    {
+      "key": "glut_max_l.fiber_length|ic",
+      "weak_mean": 0.10895611574074074,
+      "spastic_mean": 0.11067396,
+      "diff": 0.001717844259259263,
+      "floor": 0.0001179666666666912,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.5621157891402,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.10905623333333332,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.11031151111111111,
+        0.11083330000000001,
+        0.11077708333333335,
+        0.1108755
+      ]
+    },
+    {
+      "key": "torso.BAVZ|range",
+      "weak_mean": 0.762613611111111,
+      "spastic_mean": 0.9615667133333334,
+      "diff": 0.1989531022222224,
+      "floor": 0.013686166666666555,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.536802529723982,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.7434812000000001,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.8721922222222224,
+        0.9413907111111111,
+        1.0301587083333335,
+        1.0573004583333334
+      ]
+    },
+    {
+      "key": "tib_ant_l.RL|stance",
+      "weak_mean": 0.12683274249181598,
+      "spastic_mean": 0.13892689960347404,
+      "diff": 0.012094157111658066,
+      "floor": 0.0008369616039723415,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.45007399892353,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.12750864874784582,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.13554379404771322,
+        0.13747704698047544,
+        0.14153952462764588,
+        0.1435637118474413
+      ]
+    },
+    {
+      "key": "torso.com_lin_vel_x|ic",
+      "weak_mean": 1.1321490092592592,
+      "spastic_mean": 1.0513865633333332,
+      "diff": -0.08076244592592596,
+      "floor": 0.005596277777777825,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.431457681858527,
+      "spastic_dose_monotone": true,
+      "control_mean": 1.1339196666666667,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        1.0780568555555554,
+        1.0632615777777776,
+        1.023783875,
+        1.0211712916666666
+      ]
+    },
+    {
+      "key": "torso.lin_vel.x|ic",
+      "weak_mean": 1.1321490092592592,
+      "spastic_mean": 1.0513865633333332,
+      "diff": -0.08076244592592596,
+      "floor": 0.005596277777777825,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.431457681858527,
+      "spastic_dose_monotone": true,
+      "control_mean": 1.1339196666666667,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        1.0780568555555554,
+        1.0632615777777776,
+        1.023783875,
+        1.0211712916666666
+      ]
+    },
+    {
+      "key": "torso.lin_vel_x|ic",
+      "weak_mean": 1.1321490092592592,
+      "spastic_mean": 1.0513865633333332,
+      "diff": -0.08076244592592596,
+      "floor": 0.005596277777777825,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.431457681858527,
+      "spastic_dose_monotone": true,
+      "control_mean": 1.1339196666666667,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        1.0780568555555554,
+        1.0632615777777776,
+        1.023783875,
+        1.0211712916666666
+      ]
+    },
+    {
+      "key": "ankle_l.force_z|range",
+      "weak_mean": 129.56268111111115,
+      "spastic_mean": 236.96277034666667,
+      "diff": 107.40008923555553,
+      "floor": 7.442676666666657,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.430304317338654,
+      "spastic_dose_monotone": true,
+      "control_mean": 133.94356333333334,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        197.7655747388889,
+        235.59079266666666,
+        261.61280020833334,
+        273.1665004166667
+      ]
+    },
+    {
+      "key": "calcn_l.ori.x|range",
+      "weak_mean": 0.06634401972222224,
+      "spastic_mean": 0.10987407565583333,
+      "diff": 0.04353005593361109,
+      "floor": 0.003021518333333348,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.40668271093646,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.06773996733333333,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.09564054761111111,
+        0.11042434608333335,
+        0.11891429729166667,
+        0.12135874044583334
+      ]
+    },
+    {
+      "key": "lumbar_extension-torso.BAVZ|range",
+      "weak_mean": 24.60492392592593,
+      "spastic_mean": 30.99194316666666,
+      "diff": 6.387019240740727,
+      "floor": 0.4434198888888865,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.403998108305887,
+      "spastic_dose_monotone": true,
+      "control_mean": 24.054010333333334,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        28.100572222222223,
+        30.360232777777778,
+        33.160583333333335,
+        34.107925
+      ]
+    },
+    {
+      "key": "tibia_l.ori.x|range",
+      "weak_mean": 0.06000241129629629,
+      "spastic_mean": 0.09156539006333334,
+      "diff": 0.031562978767037043,
+      "floor": 0.0022020466666666585,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.333474056122256,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.060789166666666665,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.07999374727777779,
+        0.09333010632222222,
+        0.099210877375,
+        0.09863029254166666
+      ]
+    },
+    {
+      "key": "pelvis.com_lin_vel_x|range",
+      "weak_mean": 0.45126723518518524,
+      "spastic_mean": 0.55330358,
+      "diff": 0.10203634481481477,
+      "floor": 0.007167577777777712,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.235819683905945,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.4433460333333333,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.51994145,
+        0.5485613166666666,
+        0.5716291250000001,
+        0.5921346249999999
+      ]
+    },
+    {
+      "key": "pelvis.lin_vel.x|range",
+      "weak_mean": 0.45126723518518524,
+      "spastic_mean": 0.55330358,
+      "diff": 0.10203634481481477,
+      "floor": 0.007167577777777712,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.235819683905945,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.4433460333333333,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.51994145,
+        0.5485613166666666,
+        0.5716291250000001,
+        0.5921346249999999
+      ]
+    },
+    {
+      "key": "pelvis.lin_vel_x|range",
+      "weak_mean": 0.45126723518518524,
+      "spastic_mean": 0.55330358,
+      "diff": 0.10203634481481477,
+      "floor": 0.007167577777777712,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.235819683905945,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.4433460333333333,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.51994145,
+        0.5485613166666666,
+        0.5716291250000001,
+        0.5921346249999999
+      ]
+    },
+    {
+      "key": "tibia_l.ori_x|range",
+      "weak_mean": 0.12123565157407407,
+      "spastic_mean": 0.18772841919166666,
+      "diff": 0.0664927676175926,
+      "floor": 0.004689333333333337,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.17957796792562,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.12324513333333333,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.16355198611111113,
+        0.1913312042777778,
+        0.2034915015,
+        0.202825808875
+      ]
+    },
+    {
+      "key": "ankle_l.disp_z|range",
+      "weak_mean": 0.0001291837825925926,
+      "spastic_mean": 0.00023596509305166667,
+      "diff": 0.00010678131045907408,
+      "floor": 7.557023333333335e-06,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.130075526969929,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.0001336085866666667,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.00019687429792222225,
+        0.0002348986685,
+        0.000260451040125,
+        0.00027171497550000005
+      ]
+    },
+    {
+      "key": "lumbar_joint.motor_torque_z|tsw",
+      "weak_mean": 46579.17623711102,
+      "spastic_mean": 84386.92410278809,
+      "diff": 37807.74786567707,
+      "floor": 2698.558641975309,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 14.010348812728525,
+      "spastic_dose_monotone": true,
+      "control_mean": 43286.68581400082,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        73094.38484591745,
+        83240.66113560811,
+        93346.392565224,
+        94085.65897642815
+      ]
+    },
+    {
+      "key": "hip_l.pos_y|stance",
+      "weak_mean": 0.8537320195478478,
+      "spastic_mean": 0.8572035717291046,
+      "diff": 0.0034715521812567207,
+      "floor": 0.00024910201414118927,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 13.936267007817404,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.853929102631677,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.8561033567425804,
+        0.856346529317017,
+        0.8584122523268777,
+        0.8589307772292496
+      ]
+    },
+    {
+      "key": "femur_r.ori.w|stance",
+      "weak_mean": 0.9769612097910366,
+      "spastic_mean": 0.9707721903399952,
+      "diff": -0.006189019451041444,
+      "floor": 0.0004451407779653138,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 13.903510434004103,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.9772454665959259,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.9736217400847841,
+        0.9717234788551982,
+        0.9687033535198262,
+        0.9671397697701762
+      ]
+    },
+    {
+      "key": "step_length|ic",
+      "weak_mean": 0.6151968212962963,
+      "spastic_mean": 0.5877374766666666,
+      "diff": -0.027459344629629623,
+      "floor": 0.002000299999999844,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 13.727613172839957,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.6127996333333333,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.6042352722222222,
+        0.596156011111111,
+        0.575114875,
+        0.5629855833333334
+      ]
+    },
+    {
+      "key": "lumbar_joint.motor_torque_z|stance",
+      "weak_mean": 36007.10403241495,
+      "spastic_mean": 60861.28620858198,
+      "diff": 24854.18217616703,
+      "floor": 1837.9274354039226,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 13.522939860084742,
+      "spastic_dose_monotone": true,
+      "control_mean": 34253.94186101007,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        52138.241934899124,
+        59089.107869341795,
+        68121.04855153618,
+        69344.35778501234
+      ]
+    },
+    {
+      "key": "calcn_l.ang_vel.x|stance",
+      "weak_mean": -0.042341666443894484,
+      "spastic_mean": -0.27531914544948155,
+      "diff": -0.23297747900558707,
+      "floor": 0.01735022738567204,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 13.427920788979504,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.027451966144770055,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        -0.19296292867323658,
+        -0.27886184546571946,
+        -0.33214198854735666,
+        -0.33671657749161726
+      ]
+    },
+    {
+      "key": "calcn_l.ang_vel_x|stance",
+      "weak_mean": -0.042341666443894484,
+      "spastic_mean": -0.27531914544948155,
+      "diff": -0.23297747900558707,
+      "floor": 0.01735022738567204,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 13.427920788979504,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.027451966144770055,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        -0.19296292867323658,
+        -0.27886184546571946,
+        -0.33214198854735666,
+        -0.33671657749161726
+      ]
+    },
+    {
+      "key": "lumbar_extension-torso.BOZ|range",
+      "weak_mean": 10.782536370370371,
+      "spastic_mean": 14.875795116666666,
+      "diff": 4.093258746296295,
+      "floor": 0.3057202222222237,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 13.38890413117966,
+      "spastic_dose_monotone": true,
+      "control_mean": 10.656711666666666,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        13.640857833333333,
+        14.603235055555553,
+        15.966084166666665,
+        16.04675208333333
+      ]
+    },
+    {
+      "key": "knee_l.rot_x|tsw",
+      "weak_mean": 0.015560685953328015,
+      "spastic_mean": 0.0121901086456402,
+      "diff": -0.003370577307687816,
+      "floor": 0.00025186276234567817,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 13.382594855613252,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.015705078173585674,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.013745530125743406,
+        0.012619727796440723,
+        0.01102619609726534,
+        0.01037646024765947
+      ]
+    },
+    {
+      "key": "soleus_l.input|stance",
+      "weak_mean": 0.17283806667669593,
+      "spastic_mean": 0.21429884984259656,
+      "diff": 0.04146078316590063,
+      "floor": 0.003114530512228514,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 13.312049120441765,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.17458397051512173,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.20049025890265296,
+        0.2094806085671244,
+        0.2247012735087842,
+        0.23183667449953277
+      ]
+    },
+    {
+      "key": "torso.com_pos_z|range",
+      "weak_mean": 0.05738383515481482,
+      "spastic_mean": 0.16217785843333332,
+      "diff": 0.1047940232785185,
+      "floor": 0.007896574966666667,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 13.270819782105427,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.054463175,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.10281208033333333,
+        0.17000251444444447,
+        0.19684044583333332,
+        0.20482695416666669
+      ]
+    },
+    {
+      "key": "torso.pos.z|range",
+      "weak_mean": 0.05738383515481482,
+      "spastic_mean": 0.16217785843333332,
+      "diff": 0.1047940232785185,
+      "floor": 0.007896574966666667,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 13.270819782105427,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.054463175,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.10281208033333333,
+        0.17000251444444447,
+        0.19684044583333332,
+        0.20482695416666669
+      ]
+    },
+    {
+      "key": "torso.pos_z|range",
+      "weak_mean": 0.05738383515481482,
+      "spastic_mean": 0.16217785843333332,
+      "diff": 0.1047940232785185,
+      "floor": 0.007896574966666667,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 13.270819782105427,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.054463175,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.10281208033333333,
+        0.17000251444444447,
+        0.19684044583333332,
+        0.20482695416666669
+      ]
+    },
+    {
+      "key": "calcn_r.ori.w|stance",
+      "weak_mean": 0.954584201877104,
+      "spastic_mean": 0.9493783476066102,
+      "diff": -0.005205854270493804,
+      "floor": 0.0003939774802352858,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 13.213583343354639,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.9543247887373046,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.9516871861535701,
+        0.9498003272641534,
+        0.9479694891329371,
+        0.9466909787735289
+      ]
+    },
+    {
+      "key": "knee_l.disp_x|stance",
+      "weak_mean": 0.0001029467945126365,
+      "spastic_mean": 8.183439816116211e-05,
+      "diff": -2.1112396351474384e-05,
+      "floor": 1.601996766129976e-06,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 13.17880085518316,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.0001011046905082353,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        9.087632386505352e-05,
+        7.862224014081098e-05,
+        7.758304845717461e-05,
+        7.734109633983928e-05
+      ]
+    },
+    {
+      "key": "leg0_l.grm_x|tsw",
+      "weak_mean": 0.027702224761301845,
+      "spastic_mean": 0.4775637201449271,
+      "diff": 0.44986149538362524,
+      "floor": 0.0341541292488556,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 13.171511184074433,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.029396281507936505,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.2325134069036514,
+        0.40836814979167,
+        0.6944440734903881,
+        0.7320521921912655
+      ]
+    },
+    {
+      "key": "add_mag_r.input|tsw",
+      "weak_mean": -0.07413375189570849,
+      "spastic_mean": -0.10038954268462194,
+      "diff": -0.02625579078891345,
+      "floor": 0.0020283313576009293,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.94452737740459,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.07745225113510378,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.09153469212458241,
+        -0.09711522139888523,
+        -0.10699323270531627,
+        -0.11197961043259198
+      ]
+    },
+    {
+      "key": "knee_r.disp_vel_z|tsw",
+      "weak_mean": 0.00034568139256193416,
+      "spastic_mean": -2.2469808359549557e-05,
+      "diff": -0.0003681512009214837,
+      "floor": 2.8444019190629636e-05,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.943009159646623,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.00035075092024827026,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.00010275008697181438,
+        -6.377522672329309e-05,
+        -4.039162615720453e-05,
+        -0.0001304197060133252
+      ]
+    },
+    {
+      "key": "tibia_l.ori.w|ic",
+      "weak_mean": 0.9872811407407407,
+      "spastic_mean": 0.994129515,
+      "diff": 0.006848374259259327,
+      "floor": 0.0005303111111112369,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.913880391660937,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.9872780333333333,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.9928922277777779,
+        0.9938313500000001,
+        0.9951912916666665,
+        0.9953709166666667
+      ]
+    },
+    {
+      "key": "soleus_l.tendon_length_norm|stance",
+      "weak_mean": 0.010156673990140959,
+      "spastic_mean": 0.0125152153811325,
+      "diff": 0.0023585413909915417,
+      "floor": 0.00018393925615570184,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.822392784904336,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.01023421265182948,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.011752553420075676,
+        0.012250228418987529,
+        0.013100162225560718,
+        0.013471741921506967
+      ]
+    },
+    {
+      "key": "knee_r.pos_z|range",
+      "weak_mean": 0.04242694344907408,
+      "spastic_mean": 0.16771879655,
+      "diff": 0.12529185310092592,
+      "floor": 0.009830053305555558,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.74579589818866,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.047191921,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.11224620194444442,
+        0.17177878433333335,
+        0.20261064166666667,
+        0.20994586166666665
+      ]
+    },
+    {
+      "key": "pelvis.com_lin_vel_z|tsw",
+      "weak_mean": -0.007725045448121724,
+      "spastic_mean": -0.1742058789059937,
+      "diff": -0.16648083345787199,
+      "floor": 0.013105911592602998,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.702728252175461,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.01101592122763085,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.11283107049746166,
+        -0.18139762525634526,
+        -0.21068542819554945,
+        -0.21900092270370858
+      ]
+    },
+    {
+      "key": "pelvis.lin_vel.z|tsw",
+      "weak_mean": -0.007725045448121724,
+      "spastic_mean": -0.1742058789059937,
+      "diff": -0.16648083345787199,
+      "floor": 0.013105911592602998,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.702728252175461,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.01101592122763085,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.11283107049746166,
+        -0.18139762525634526,
+        -0.21068542819554945,
+        -0.21900092270370858
+      ]
+    },
+    {
+      "key": "pelvis.lin_vel_z|tsw",
+      "weak_mean": -0.007725045448121724,
+      "spastic_mean": -0.1742058789059937,
+      "diff": -0.16648083345787199,
+      "floor": 0.013105911592602998,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.702728252175461,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.01101592122763085,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.11283107049746166,
+        -0.18139762525634526,
+        -0.21068542819554945,
+        -0.21900092270370858
+      ]
+    },
+    {
+      "key": "tibia_r.com_lin_vel_x|stance",
+      "weak_mean": 1.574623758691124,
+      "spastic_mean": 1.4846505967953265,
+      "diff": -0.08997316189579752,
+      "floor": 0.007083602752894436,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.701610329437731,
+      "spastic_dose_monotone": true,
+      "control_mean": 1.5716248678337745,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        1.5258208023560804,
+        1.5053119556509718,
+        1.442323818472056,
+        1.4342300284939982
+      ]
+    },
+    {
+      "key": "tibia_r.lin_vel.x|stance",
+      "weak_mean": 1.574623758691124,
+      "spastic_mean": 1.4846505967953265,
+      "diff": -0.08997316189579752,
+      "floor": 0.007083602752894436,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.701610329437731,
+      "spastic_dose_monotone": true,
+      "control_mean": 1.5716248678337745,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        1.5258208023560804,
+        1.5053119556509718,
+        1.442323818472056,
+        1.4342300284939982
+      ]
+    },
+    {
+      "key": "tibia_r.lin_vel_x|stance",
+      "weak_mean": 1.574623758691124,
+      "spastic_mean": 1.4846505967953265,
+      "diff": -0.08997316189579752,
+      "floor": 0.007083602752894436,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.701610329437731,
+      "spastic_dose_monotone": true,
+      "control_mean": 1.5716248678337745,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        1.5258208023560804,
+        1.5053119556509718,
+        1.442323818472056,
+        1.4342300284939982
+      ]
+    },
+    {
+      "key": "tib_ant_l-gastroc_l.RF|tsw",
+      "weak_mean": -0.04407171549111064,
+      "spastic_mean": -0.06338887805006323,
+      "diff": -0.019317162558952584,
+      "floor": 0.0015268376234567962,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.65174650020614,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.04691558131664631,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.06177398303004982,
+        -0.06184900085016961,
+        -0.06457393122372151,
+        -0.06693598320626547
+      ]
+    },
+    {
+      "key": "knee_l.force_x|stance",
+      "weak_mean": -103.37170552778863,
+      "spastic_mean": -82.28611150384629,
+      "diff": 21.08559402394235,
+      "floor": 1.6678825568385918,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.642133546806374,
+      "spastic_dose_monotone": true,
+      "control_mean": -101.5416883909423,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -91.282817491,
+        -79.13691822969595,
+        -78.04035759026459,
+        -77.76059634792298
+      ]
+    },
+    {
+      "key": "femur_r.com_lin_vel_z|stance",
+      "weak_mean": -0.012769738494821364,
+      "spastic_mean": -0.18422766143658056,
+      "diff": -0.1714579229417592,
+      "floor": 0.01357507627153186,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.630346932291033,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.013591806051621592,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.12007681515185908,
+        -0.19066830550054814,
+        -0.22394543971272293,
+        -0.23107518649156908
+      ]
+    },
+    {
+      "key": "femur_r.lin_vel.z|stance",
+      "weak_mean": -0.012769738494821364,
+      "spastic_mean": -0.18422766143658056,
+      "diff": -0.1714579229417592,
+      "floor": 0.01357507627153186,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.630346932291033,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.013591806051621592,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.12007681515185908,
+        -0.19066830550054814,
+        -0.22394543971272293,
+        -0.23107518649156908
+      ]
+    },
+    {
+      "key": "femur_r.lin_vel_z|stance",
+      "weak_mean": -0.012769738494821364,
+      "spastic_mean": -0.18422766143658056,
+      "diff": -0.1714579229417592,
+      "floor": 0.01357507627153186,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.630346932291033,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.013591806051621592,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.12007681515185908,
+        -0.19066830550054814,
+        -0.22394543971272293,
+        -0.23107518649156908
+      ]
+    },
+    {
+      "key": "pelvis.com_lin_vel_z|range",
+      "weak_mean": 0.101895321,
+      "spastic_mean": 0.152671378745,
+      "diff": 0.050776057745000006,
+      "floor": 0.0040344296666666585,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.585684208234664,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.09855598333333333,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.12375210190000001,
+        0.14616381733333333,
+        0.17479341583333335,
+        0.18368959904166665
+      ]
+    },
+    {
+      "key": "pelvis.lin_vel.z|range",
+      "weak_mean": 0.101895321,
+      "spastic_mean": 0.152671378745,
+      "diff": 0.050776057745000006,
+      "floor": 0.0040344296666666585,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.585684208234664,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.09855598333333333,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.12375210190000001,
+        0.14616381733333333,
+        0.17479341583333335,
+        0.18368959904166665
+      ]
+    },
+    {
+      "key": "pelvis.lin_vel_z|range",
+      "weak_mean": 0.101895321,
+      "spastic_mean": 0.152671378745,
+      "diff": 0.050776057745000006,
+      "floor": 0.0040344296666666585,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.585684208234664,
+      "spastic_dose_monotone": true,
+      "control_mean": 0.09855598333333333,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.12375210190000001,
+        0.14616381733333333,
+        0.17479341583333335,
+        0.18368959904166665
+      ]
+    },
+    {
+      "key": "tibia_r.com_lin_vel_z|ic",
+      "weak_mean": -0.03330473453703704,
+      "spastic_mean": -0.09649635849999998,
+      "diff": -0.06319162396296293,
+      "floor": 0.0050485300000000025,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.51683637870091,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.03403391,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.06997991166666667,
+        -0.09392621944444444,
+        -0.11133495416666665,
+        -0.12528764166666667
+      ]
+    },
+    {
+      "key": "tibia_r.lin_vel.z|ic",
+      "weak_mean": -0.03330473453703704,
+      "spastic_mean": -0.09649635849999998,
+      "diff": -0.06319162396296293,
+      "floor": 0.0050485300000000025,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.51683637870091,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.03403391,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.06997991166666667,
+        -0.09392621944444444,
+        -0.11133495416666665,
+        -0.12528764166666667
+      ]
+    },
+    {
+      "key": "tibia_r.lin_vel_z|ic",
+      "weak_mean": -0.03330473453703704,
+      "spastic_mean": -0.09649635849999998,
+      "diff": -0.06319162396296293,
+      "floor": 0.0050485300000000025,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.51683637870091,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.03403391,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        -0.06997991166666667,
+        -0.09392621944444444,
+        -0.11133495416666665,
+        -0.12528764166666667
+      ]
+    },
+    {
+      "key": "ankle_l.rot_vel_y|tsw",
+      "weak_mean": -0.0034315405709290005,
+      "spastic_mean": 0.00501805494353872,
+      "diff": 0.008449595514467721,
+      "floor": 0.0006775324583826467,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.47113021660681,
+      "spastic_dose_monotone": true,
+      "control_mean": -0.004537447197299756,
+      "control_between_arms": false,
+      "spastic_rung_means": [
+        0.0005818373962157763,
+        0.006361285406732554,
+        0.007185520108743523,
+        0.007490070404527584
+      ]
+    },
+    {
+      "key": "femur_r.ang_vel.z|range",
+      "weak_mean": 6.1073264444444435,
+      "spastic_mean": 6.427325883333333,
+      "diff": 0.3199994388888898,
+      "floor": 0.025671666666664983,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.465082343267317,
+      "spastic_dose_monotone": false,
+      "control_mean": 6.133152666666668,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        6.277825500000001,
+        6.504514944444444,
+        6.46953875,
+        6.49358
+      ]
+    },
+    {
+      "key": "femur_r.ang_vel_z|range",
+      "weak_mean": 6.1073264444444435,
+      "spastic_mean": 6.427325883333333,
+      "diff": 0.3199994388888898,
+      "floor": 0.025671666666664983,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.465082343267317,
+      "spastic_dose_monotone": false,
+      "control_mean": 6.133152666666668,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        6.277825500000001,
+        6.504514944444444,
+        6.46953875,
+        6.49358
+      ]
+    },
+    {
+      "key": "gastroc_l.RF|tsw",
+      "weak_mean": 0.050036649561659034,
+      "spastic_mean": 0.07163017057137805,
+      "diff": 0.021593521009719015,
+      "floor": 0.0017331114814814752,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.459395278635354,
+      "spastic_dose_monotone": false,
+      "control_mean": 0.053368281416361414,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        0.06996780856199651,
+        0.06987014994861795,
+        0.07284941329830345,
+        0.07554450179266509
+      ]
+    },
+    {
+      "key": "ang_mom_x|range",
+      "weak_mean": 7.5854796944444445,
+      "spastic_mean": 6.7439156833333325,
+      "diff": -0.841564011111112,
+      "floor": 0.06778249999999986,
+      "floor_kind": "same_mechanism_mean_difference",
+      "multiple_of_floor": 12.415653171705289,
+      "spastic_dose_monotone": false,
+      "control_mean": 7.519057666666666,
+      "control_between_arms": true,
+      "spastic_rung_means": [
+        7.0271575,
+        6.764491444444445,
+        6.5033525,
+        6.5287525
+      ]
+    }
+  ],
+  "UNREGISTERED_OR_SUPERSEDED_LABEL_r438": "EXPLORATORY (already stated in `status`; restated at top level)."
+}

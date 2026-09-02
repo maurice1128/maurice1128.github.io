@@ -1,0 +1,43 @@
+{
+ "round": 308,
+ "id": "r308-D25-REGISTERED-FIELDS-ABSENT",
+ "severity": "REGISTRATION SHORTFALL -- the objective/gen-0/descent fields remain undeposited for these four arms and are recoverable from history.txt; net pelvis yaw has now been recovered and deposited, so that part of the shortfall is CLOSED.",
+ "registrations": {
+  "PREREG_matched20_r289.md sec9": "per-cell dependent variables required",
+  "PREREG_bandfill_r291.md sec8": "same requirement"
+ },
+ "required_per_cell": [
+  "terminal objective",
+  "gen-0 value",
+  "final-ten-generation descent",
+  "fitness_progress",
+  "full history.txt",
+  "net pelvis yaw per cycle",
+  "the >=91-line history guard"
+ ],
+ "arms_missing_them": {
+  "r289": 12,
+  "r291": 60,
+  "r287": 5,
+  "r294": 2
+ },
+ "arms_that_DO_carry_the_objective_fields": [
+  "r285",
+  "r293",
+  "r276"
+ ],
+ "why_that_matters": "Because r285, r293 and r276 deposits DO carry terminal_objective, objective_gen0, descent_final_10_gens and terminal_fitness_progress, this is ARM-SPECIFIC and not a capability gap. The later launchers dropped fields the earlier ones wrote.",
+ "recoverable": "Terminal objective, gen-0 value, the final-ten-generation descent and fitness_progress are all recoverable for the affected arms, because each cell's history.txt survives in its result directory and the >=91-line guard can be re-applied from it.",
+ "STATEMENT_REQUIRED": "These registrations are NOT satisfied. The arms ran and their endpoints are valid, but the per-cell dependent variables the registrations require were not deposited, and one registered variable was never measured at all. Nothing here should be read as the registrations having been met.",
+ "written_at": "2026-08-18T02:39:12",
+ "NET_PELVIS_YAW_original_claim_WRONG": "Absent from EVERY arm in the directory, including the arms that carry the objective fields. No deposit in paper/ contains it under any name. It was registered and never measured.",
+ "NOT_RECOVERABLE_original_claim_WRONG": "Net pelvis yaw per cycle cannot be recovered from history.txt -- it is a kinematic quantity requiring the .sto trajectory. It IS recomputable from the surviving .par.sto files, but it has never been computed for any arm, so no deposit can be corrected; a new measurement would be required.",
+ "CORRECTION_r309": {
+  "what_was_wrong": "The r308 entry stated \"Net pelvis yaw appears in NO deposit for ANY arm -- registered and never measured\" and that it was NOT RECOVERABLE. BOTH ARE FALSE.",
+  "how_it_was_found": "A full-corpus read of 703 files in paper/ (excluding .bak_) shows yaw in GAIN_LADDER_r264.json, TURN_DOSE_r262.json, VIDEO_DEGRADATION.json, VIDEO_DEGRADATION_A5.json, VIDEO_DEGRADATION_POSTHOC.json and eight registrations. GAIN_LADDER_r264.json alone carries 228 yaw matches including per-cell yaw_per_cycle, yaw_per_cycle_sd and yaw_total.",
+  "why_the_original_check_failed": "The r308 claim rested on searching the four ARMS' own cell deposits and generalising from their silence to the whole corpus. Absence in the files checked was reported as absence everywhere. This is the same error class as the three false zeroes tonight: a check whose scope silently excluded what it was meant to find.",
+  "CORRECTED_FINDING": "Net pelvis yaw is ABSENT FROM THE PER-CELL DEPOSITS OF r287, r289, r291 and r294. It is NOT absent from the corpus, and it was NOT never measured. A method exists and has been used: gain_ladder_r264.py measure() -- pelvis_rotation in degrees, cycles wholly inside [1.00, 9.73] s, drop the last, per-cycle net change, mean/sd/total.",
+  "CONSEQUENCE_IS_THE_OPPOSITE": "Because the method exists and the .par.sto files survive, the requirement is RECOVERABLE BY RE-MEASUREMENT, not lost. \"Registered and never measured, unrecoverable\" and \"registered, not deposited for these four arms, recoverable\" carry different obligations: the first is documented, the second is SATISFIED.",
+  "ACTION_TAKEN": "Recovered and deposited at YAW_RECOVERED_r309.json (round 309)."
+ }
+}

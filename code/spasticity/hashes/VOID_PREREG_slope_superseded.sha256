@@ -1,0 +1,26 @@
+﻿PREREG_slope.md
+sha256   c9bb74fc8bad17161a9a6b3a6f50a3ff17178883339fd7349d8deaedd5eaf5b4
+bytes    11477
+written  2026-08-03 20:57:28
+scope    downhill provocation of the spasticity/weakness discrimination
+status   REGISTERED. No slope cell has been generated or launched at the time of this hash.
+
+Verify with:
+  (Get-FileHash 'PREREG_slope.md' -Algorithm SHA256).Hash
+Any later edit changes this hash and is therefore detectable. A deviation recorded in section 4
+of the document itself is a declared amendment; a silent change is not.
+
+=====================================================================
+VOID — 2026-08-03. This sidecar certifies a document that NO LONGER EXISTS.
+
+It hashed an 11,477 B draft written at 20:57:28 and superseded within the hour for cause. The
+causes are recorded in the SUPERSESSION NOTICE at the head of the replacement PREREG_slope.md and
+are not repeated here, except the one that mattered: that draft's -5 deg arm would have run
+UPHILL, because it never checked the gravity sign in H0914M_DN5.osim, which carries the uphill
+value while bearing the downhill name.
+
+Retained rather than deleted, because a hash sidecar with no document is exactly the artifact this
+project catalogues: a receipt for a thing nobody kept. Renaming it VOID_ is the disposition; the
+hash below is left intact so anyone holding a copy of the superseded draft can confirm which
+document this refers to.
+=====================================================================

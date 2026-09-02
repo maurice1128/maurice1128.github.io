@@ -1,0 +1,305 @@
+{
+ "round": 347,
+ "measured_at": "2026-08-18 12:34",
+ "SCOPE_STATED": "ALL 97 .sha256 sidecars in paper/ recomputed at measured_at above. Full population, not a sample.",
+ "counts": {
+  "verify": 84,
+  "false": 8,
+  "unresolvable": 3,
+  "false_by_design": 2
+ },
+ "false_sidecars": [
+  {
+   "target": "BISTABILITY_r288.json",
+   "attested": "828a44c2e8cfb88017787def30b23b0ca789a2a4a372591e22c0bb81a2b06046",
+   "live": "f0f33769675001dbd0d801704b716c21f7fbaeaef44bd5b5b9d7b3d827796441",
+   "target_mtime": "2026-08-18 03:20:16",
+   "broken_today": true
+  },
+  {
+   "target": "DEPOSIT_INVENTORY_r246.json",
+   "attested": "d2c7568d69bee44c71731faca62c1e9874557d441febe2c2d67e313b9263981d",
+   "live": "674b0ccdfce5086c3fe942aaee61e06f93694c16e32c17dc0473ad2b5ad04b3e",
+   "target_mtime": "2026-08-17 06:13:24",
+   "broken_today": false
+  },
+  {
+   "target": "DFSEVERE_RESULT_r303.json",
+   "attested": "771f64eb9f04f071bbb770be37211769a242181260df83a5aa435c826fc66926",
+   "live": "0917acf116e31a1cf0a7df488fef88a4bdee19aa330e0bd2f3fd500f87936292",
+   "target_mtime": "2026-08-18 04:03:08",
+   "broken_today": true
+  },
+  {
+   "target": "FIXTURE_2x2_r273.json",
+   "attested": "601b100bee8d11614c988ec3ec3701880e58e52e295c4a29fce721ce281f8a1f",
+   "live": "0cb1be0acd2c564ba14bf7dd83013b39a5d99ebbe805c37b91c2a7a490cf89bd",
+   "target_mtime": "2026-08-17 11:37:06",
+   "broken_today": false
+  },
+  {
+   "target": "MATCHED20_ENDPOINT_r298.json",
+   "attested": "5df9bc07ecc7066128468210fbb5d16bf835fe49a3ed755659c242702fb6bdd1",
+   "live": "04efff3e84e9b14a82030e4f815b4a2b14045b22c55c1ea6a3982e4b5ee6b944",
+   "target_mtime": "2026-08-18 03:20:16",
+   "broken_today": true
+  },
+  {
+   "target": "RESULTS_3d_r214.md",
+   "attested": "9505a3c70223a5df9f7609343bd629a77d1aebfb1d06725f3f7e9fe4ebaf3fa3",
+   "live": "b6cddb003e09dab61cb421de1159cf64874cd5fb6b528376ae144f6798706aa5",
+   "target_mtime": "2026-08-18 08:12:32",
+   "broken_today": true
+  },
+  {
+   "target": "STANDING_OBSERVATIONS.md",
+   "attested": "1bb1275c593473e30662037f6d1c65097098f0b77426eae9490e31275616895d",
+   "live": "2eb2dded11cfa604d76fbaf55038409f23b2e4d8320a56555571058f7ac7e7ab",
+   "target_mtime": "2026-08-18 01:21:43",
+   "broken_today": true
+  },
+  {
+   "target": "CORPUS_MANIFEST.json",
+   "attested": "ff4bbff8ad48eae59acf298eff32a27d6643687d481066f08da246476aa271d9",
+   "live": "463b81a62c9ea921345aad97f806d62771acc765fbeab6a3831bf935cca1fcb0",
+   "target_mtime": "2026-08-02 22:01:32",
+   "broken_today": false
+  }
+ ],
+ "unresolvable": [
+  {
+   "sidecar": "PREREG_slope.sha256",
+   "why": "unparsable target token 'The'"
+  },
+  {
+   "sidecar": "PREREG_slope_r58.sha256",
+   "why": "unparsable target token 'bytes'"
+  },
+  {
+   "sidecar": "VOID_PREREG_slope_superseded.sha256",
+   "why": "unparsable target token 'bytes'"
+  }
+ ],
+ "attribution": {
+  "scope": "the 8 UNINTENDED false sidecars only; the 2 by-design excluded",
+  "broken_by_edits_today": [
+   "BISTABILITY_r288.json",
+   "DFSEVERE_RESULT_r303.json",
+   "MATCHED20_ENDPOINT_r298.json",
+   "RESULTS_3d_r214.md",
+   "STANDING_OBSERVATIONS.md"
+  ],
+  "predating_today": [
+   "DEPOSIT_INVENTORY_r246.json",
+   "FIXTURE_2x2_r273.json",
+   "CORPUS_MANIFEST.json"
+  ],
+  "counts": {
+   "today": 5,
+   "predating": 3
+  }
+ },
+ "RESOLVER_TOOK_THREE_PASSES": {
+  "r344": "derived target by stripping '.sha256' -> reported 7 false, 31 unresolvable. WRONG.",
+  "r345": "read the filename from the digest line -> 8 false, 25 unresolvable. STILL WRONG.",
+  "r347": "also stripped sha256sum's binary-mode '*' prefix -> 10 false, 3 unresolvable.",
+  "lesson": "Each pass returned a plausible number and each was wrong. The count moved 7 -> 8 -> 10 purely from resolver detail, with no change on disk. A census is only as good as its resolver, and a plausible count is not evidence the resolver is right."
+ },
+ "NOT_RE_ATTESTED": "No sidecar rewritten. Re-hashing certifies the present state and destroys the evidence that a repair broke an attestation.",
+ "verify_list": [
+  "ANKLE_LADDER_r235.json",
+  "BANDFILL_ENDPOINT_r290.json",
+  "BANDFILL_RESULT_r286.json",
+  "BISTABILITY_r288.md",
+  "BODY2_CHANNELS_r229.json",
+  "BODY2_CORPUS_r229.json",
+  "BODY2_DELTA_r229.json",
+  "BODY2_DOSE_r229.json",
+  "BODY2_POWERTABLE_r238.json",
+  "BODY2_REACHABILITY_r229.json",
+  "BODY2_REPLAY_LEDGER_r229.json",
+  "BODY2_SD_r234.json",
+  "CORPUS_MANIFEST.json",
+  "CORPUS_MANIFEST.json",
+  "COST_MATCHED_LEDGER.json",
+  "COST_r270.json",
+  "DECOMPOSE_r268.json",
+  "DOSE_FOOTING_r267.json",
+  "ERRATA_delta_cap_r236.md",
+  "ERRATA_transfer_framing_r240.md",
+  "FITNESS_r266.json",
+  "FOOTING_r272.json",
+  "FREEZE_CRITERION_r98.md",
+  "FROZEN_MANIFEST.json",
+  "FROZEN_MANIFEST.json",
+  "GAIN_LADDER_r264.json",
+  "KV_DOSE_r271.json",
+  "LADDER36_r228.json",
+  "MARGINS_r248.json",
+  "METRIC_LADDER_r256.json",
+  "METRIC_r255.json",
+  "MODEL_DESCRIPTORS_r253.json",
+  "PAIRING_r251.json",
+  "PHASE_r258.json",
+  "PREREG_2Dsd_r234.md",
+  "PREREG_2ndbody_r229.md",
+  "PREREG_2x2_r270.md",
+  "PREREG_3d_continuation_r172.md",
+  "PREREG_3d_ladder_r169.md",
+  "PREREG_3d_matched_r174.md",
+  "PREREG_3d_replication_r179.md",
+  "PREREG_3d_replication_r209.md",
+  "PREREG_3d_residual_r168.md",
+  "PREREG_3d_specificity_r178.md",
+  "PREREG_3d_speed_r203.md",
+  "PREREG_ankle_ladder_r235.md",
+  "PREREG_bandfill_r285.md",
+  "PREREG_bandfill_r287.md",
+  "PREREG_bandfill_r291.md",
+  "PREREG_channels_G2_r219.md",
+  "PREREG_classifier_r222.md",
+  "PREREG_clinical_r292.md",
+  "PREREG_decompose_r268.md",
+  "PREREG_dfsevere_r293.md",
+  "PREREG_faststart_r294.md",
+  "PREREG_fitness_r266.md",
+  "PREREG_gain_ladder_r264.md",
+  "PREREG_ladder36_r228.md",
+  "PREREG_ladder_metric_r256.md",
+  "PREREG_lmr_only_r223.md",
+  "PREREG_matched20_r289.md",
+  "PREREG_metric_r255.md",
+  "PREREG_optdist_r233.md",
+  "PREREG_pairing_r251.md",
+  "PREREG_permnull_r221.md",
+  "PREREG_sitstand_r91.md",
+  "PREREG_sitstand_seed_r93.md",
+  "PREREG_slope.md",
+  "PREREG_speed_ladder_r217.md",
+  "PREREG_speed_r89.md",
+  "PREREG_turn_dose_r262.md",
+  "PREREG_turn_transfer_r261.md",
+  "PREREG_weakpf_r274.md",
+  "PREREG_window_r218.md",
+  "REACH_2x2_r273.json",
+  "REPRODUCTION_r243.json",
+  "RUN_FASTSTART_r294_cell00.json",
+  "RUN_FASTSTART_r294_cell01.json",
+  "SESSION_MEASURE_r275.json",
+  "SLAP_DISENTANGLE_r297.json",
+  "SUBREG_GATE_r236.json",
+  "TURN_DOSE_r262.json",
+  "TURN_HIP_r261.json",
+  "TURN_r260.json"
+ ],
+ "false_sidecars_ORIGINAL_UNSPLIT_r347": [
+  {
+   "target": "BISTABILITY_r288.json",
+   "attested": "828a44c2e8cfb88017787def30b23b0ca789a2a4a372591e22c0bb81a2b06046",
+   "live": "f0f33769675001dbd0d801704b716c21f7fbaeaef44bd5b5b9d7b3d827796441",
+   "target_mtime": "2026-08-18 03:20:16",
+   "broken_today": true
+  },
+  {
+   "target": "DEPOSIT_INVENTORY_r246.json",
+   "attested": "d2c7568d69bee44c71731faca62c1e9874557d441febe2c2d67e313b9263981d",
+   "live": "674b0ccdfce5086c3fe942aaee61e06f93694c16e32c17dc0473ad2b5ad04b3e",
+   "target_mtime": "2026-08-17 06:13:24",
+   "broken_today": false
+  },
+  {
+   "target": "DFSEVERE_RESULT_r303.json",
+   "attested": "771f64eb9f04f071bbb770be37211769a242181260df83a5aa435c826fc66926",
+   "live": "0917acf116e31a1cf0a7df488fef88a4bdee19aa330e0bd2f3fd500f87936292",
+   "target_mtime": "2026-08-18 04:03:08",
+   "broken_today": true
+  },
+  {
+   "target": "FIXTURE_2x2_r273.json",
+   "attested": "601b100bee8d11614c988ec3ec3701880e58e52e295c4a29fce721ce281f8a1f",
+   "live": "0cb1be0acd2c564ba14bf7dd83013b39a5d99ebbe805c37b91c2a7a490cf89bd",
+   "target_mtime": "2026-08-17 11:37:06",
+   "broken_today": false
+  },
+  {
+   "target": "MATCHED20_ENDPOINT_r298.json",
+   "attested": "5df9bc07ecc7066128468210fbb5d16bf835fe49a3ed755659c242702fb6bdd1",
+   "live": "04efff3e84e9b14a82030e4f815b4a2b14045b22c55c1ea6a3982e4b5ee6b944",
+   "target_mtime": "2026-08-18 03:20:16",
+   "broken_today": true
+  },
+  {
+   "target": "PREREG_3d_replication_r179.md",
+   "attested": "b3379afc344a44a79fc1c9468168171d06f5d0f8c49ae99b88accccfb626a371",
+   "live": "c42f3386289487c0488f8ec0231f4c5671d2ee0680bdeb799755be0baa26f7c2",
+   "target_mtime": "2026-08-11 09:29:36",
+   "broken_today": false
+  },
+  {
+   "target": "PREREG_3d_specificity_r178.md",
+   "attested": "eb73059217330e1c3eba4a506e714218719a6dd23a0405abad08b51103e4fbf5",
+   "live": "c863442647576b482701fe4014d4529012d9606a93eabdfacef0498098e8bee6",
+   "target_mtime": "2026-08-11 09:22:50",
+   "broken_today": false
+  },
+  {
+   "target": "RESULTS_3d_r214.md",
+   "attested": "9505a3c70223a5df9f7609343bd629a77d1aebfb1d06725f3f7e9fe4ebaf3fa3",
+   "live": "b6cddb003e09dab61cb421de1159cf64874cd5fb6b528376ae144f6798706aa5",
+   "target_mtime": "2026-08-18 08:12:32",
+   "broken_today": true
+  },
+  {
+   "target": "STANDING_OBSERVATIONS.md",
+   "attested": "1bb1275c593473e30662037f6d1c65097098f0b77426eae9490e31275616895d",
+   "live": "2eb2dded11cfa604d76fbaf55038409f23b2e4d8320a56555571058f7ac7e7ab",
+   "target_mtime": "2026-08-18 01:21:43",
+   "broken_today": true
+  },
+  {
+   "target": "CORPUS_MANIFEST.json",
+   "attested": "ff4bbff8ad48eae59acf298eff32a27d6643687d481066f08da246476aa271d9",
+   "live": "463b81a62c9ea921345aad97f806d62771acc765fbeab6a3831bf935cca1fcb0",
+   "target_mtime": "2026-08-02 22:01:32",
+   "broken_today": false
+  }
+ ],
+ "FALSE_BY_DESIGN_r348": {
+  "measured_at": "2026-08-18 12:52",
+  "entries": [
+   {
+    "target": "PREREG_3d_replication_r179.md",
+    "attested": "b3379afc344a44a79fc1c9468168171d06f5d0f8c49ae99b88accccfb626a371",
+    "live": "c42f3386289487c0488f8ec0231f4c5671d2ee0680bdeb799755be0baa26f7c2",
+    "target_mtime": "2026-08-11 09:29:36",
+    "broken_today": false
+   },
+   {
+    "target": "PREREG_3d_specificity_r178.md",
+    "attested": "eb73059217330e1c3eba4a506e714218719a6dd23a0405abad08b51103e4fbf5",
+    "live": "c863442647576b482701fe4014d4529012d9606a93eabdfacef0498098e8bee6",
+    "target_mtime": "2026-08-11 09:22:50",
+    "broken_today": false
+   }
+  ],
+  "why_a_mismatch_is_EXPECTED": "AS MEASURED 2026-08-18 12:52, these two are .PREREAD. sidecars and their mismatch is the cold-read workflow WORKING, not an attestation breaking. The project's practice is to hash the DRAFT bytes before a cold read so that subsequent patching is auditable. Verified on disk: PREREG_3d_replication_r179.PREREAD.sha256 written 2026-08-11 09:26:20 against a target of 09:29:36 (+3.3 min), and PREREG_3d_specificity_r178.PREREAD.sha256 written 09:17:20 against 09:22:50 (+5.5 min). A .PREREAD. digest that MATCHED the final file would mean the cold read changed nothing -- the mismatch is the mechanism reporting that it did.",
+  "THE_DECLARATION_LIVES_ONLY_IN_THE_FILENAME": "Both sidecars were read in full at r348 and each contains EXACTLY ONE LINE -- a digest and a target name. Neither states that it is a pre-read snapshot or that divergence from the final file is expected. The only thing distinguishing an intentional draft snapshot from a broken attestation is the string '.PREREAD.' in the filename.",
+  "WE_ARE_ON_THE_WRONG_SIDE_OF_OUR_OWN_RULE": "A name is not a source. That rule has been confirmed five times in this corpus -- a scenario file named Grf15 carrying a 1.3 threshold, three stale headers, and FROZEN_MANIFEST nearly accepted on its name before summary.frozen_at was checked. These two sidecars are the same shape and we produced them.",
+  "REMEDY_PROPOSED_NOT_APPLIED": "One line inside each file stating what it is and that divergence from the final is expected. Not applied in this unit.",
+  "SELF_DESCRIBING_AS_OF_r349": "AS MEASURED 2026-08-18 13:12, both .PREREAD.sha256 files are SELF-DESCRIBING: each now carries a five-line '#' preamble stating that the digest is of the PRE-COLD-READ DRAFT, that the target named on the digest line is the FINAL file, and that a mismatch is EXPECTED and is the mechanism reporting that the cold read changed something. Before r349 the entire distinction between an intentional draft snapshot and a broken attestation lived in EIGHT CHARACTERS OF A FILENAME -- '.PREREAD.' -- and each file was 96 bytes holding one digest line and nothing else.",
+  "MACHINE_VERIFIABILITY_TESTED_NOT_ASSUMED_r349": "Comment tolerance was tested empirically before writing: a scratch file with a leading '#' line verified 'OK' under sha256sum -c, exit 0. After the edit both sidecars still PARSE -- sha256sum reports '1 computed checksum did NOT match', which is the by-design draft-vs-final divergence, NOT a parse failure. The distinguishing check was run: 'no properly formatted checksum lines found' appears 0 times. Digests verified byte-identical to the pre-edit backups: b3379afc344a and eb7305921733.",
+  "digests_untouched": true
+ },
+ "CORRECTION_r348": "r347 reported 10 false without separating intent. Two are false BY DESIGN. The count of UNINTENDED false sidecars is 8. This is the fourth successive correction to this census (7 -> 8 -> 10 -> 8), and the first caused by classification rather than by the resolver.",
+ "FAILURE_MODE_TAXONOMY_r349": {
+  "1_wrong_scope": "a finding that examined a subset and implied the corpus (r319: 1 of 97).",
+  "2_wrong_resolver": "7 -> 8 -> 10 across r344/r345/r347 with nothing changing on disk.",
+  "3_unexamined_taxonomy": "10 -> 8 at r348, with the resolver finally correct; two entries were false BY DESIGN and the category had never been questioned.",
+  "what_unites_them": "All three return an answer that looks complete and internally consistent. None is detectable by re-reading the output; each requires re-deriving the method.",
+  "4_wrong_unit": "RIGHT SCOPE, RIGHT RESOLVER, RIGHT COUNT, WRONG UNIT -- the operation targeted the LINE when the object was the SENTENCE. RESULTS_3d_r214.md is hard-wrapped: line 798 ends '...and 2.0362 deg on' and the sentence completes on line 799. r350 appended a 554-character container block to the end of line 798, landing it mid-clause between 'on' and 'the uncircular one', and leaving '**' unbalanced so emphasis scrambled downstream. Repaired at r351: 130,174 B -> 129,610 B, line 798 md5 e0e5e99889ed1276fb00e29c872412f1 byte-identical to the pre-r350 original, '**' parity even at 1492 file-wide and 6 in the paragraph.",
+  "4_why_it_evaded_verification": "Every check run after the edit was TRUE. The citation was present at both lines, the byte count rose as expected, the grep counts matched. Nothing in a count or a digest reveals that text landed mid-clause -- the file is well-formed JSON-adjacent prose either way.",
+  "4_is_the_ONLY_ONE_CAUGHT_BY_READING": "Modes 1-3 -- wrong scope, wrong resolver, unexamined taxonomy -- are invisible in the output and require RE-DERIVING THE METHOD to detect. Mode 4 is the opposite: it is invisible to every method check and obvious on READING THE RENDERED SENTENCE. The four modes therefore need two different defences, and neither substitutes for the other.",
+  "4_rule": "Before any markdown insertion in this corpus, locate the SENTENCE END -- '.**', a period followed by a blank line, or the closing emphasis marker -- never the line end. Appending to `sed -n 'Np'` output is appending mid-clause whenever the file is hard-wrapped.",
+  "recorded_at": "2026-08-18 13:39"
+ }
+}

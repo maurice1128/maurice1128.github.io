@@ -1,0 +1,19 @@
+﻿PREREG_slope_r58.md
+sha256   3ec744b41921e3dedd1003acfc5ed12472a92d7c11c03f01c08d52db4c19f4ef
+bytes    30223
+written  2026-08-03 (before any cell of this study was launched)
+scope    downhill provocation of the spastic/weak margin -- COMPETING, UNMERGED registration
+status   REGISTERED BUT NOT LAUNCHED. Zero sconecmd processes were started by this study.
+conflict paper/PREREG_slope.md (sha256 c9bb74fc8bad17161a9a6b3a6f50a3ff17178883339fd7349d8deaedd5eaf5b4,
+         11477 bytes, written 2026-08-03 20:57:28 by a concurrent session) registers a DIFFERENT
+         design for the same question. It was NOT read into, edited, or overwritten by this one.
+         See section 12 of PREREG_slope_r58.md. A human decision is required before either launches.
+
+Companion hashed artifacts:
+  scone/slope_analysis.py  28933 bytes  45be4a184e994404c941858556a832d221e0318fcb53da8452555ea0212a959d
+  scone/gen_slope.py       20820 bytes  6d46ec618407f949f72626ee52187186e93ea0bfd1c04fa590c584b6d0120dda
+
+Verify with:
+  (Get-FileHash 'PREREG_slope_r58.md' -Algorithm SHA256).Hash
+Any later edit changes this hash and is therefore detectable. A deviation recorded in section 14
+of the document itself is a declared amendment; a silent change is not.

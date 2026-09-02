@@ -1,0 +1,60 @@
+{
+ "id": "WINDOW_r520",
+ "why": "the contact instant inherits the event detector's error; a window mean averages it away. This scores early-stance windows the way the instant is scored.",
+ "windows": {
+  "instant": {
+   "hyper_mean": -11.771846539823411,
+   "weak_mean": -6.491924781112322,
+   "arm_difference_deg": -5.2799217587110885,
+   "cell_gap_deg": 1.4918560478057357,
+   "cells_disjoint": true,
+   "mean_within_cell_seed_SD_deg": 0.48361954859239925,
+   "gap_in_seed_SD": 3.0847720116936195
+  },
+  "0-5%": {
+   "hyper_mean": -16.16519064490533,
+   "weak_mean": -10.115792459180346,
+   "arm_difference_deg": -6.049398185724984,
+   "cell_gap_deg": 1.626634819813674,
+   "cells_disjoint": true,
+   "mean_within_cell_seed_SD_deg": 0.5372277355494123,
+   "gap_in_seed_SD": 3.0278310522261966
+  },
+  "0-10%": {
+   "hyper_mean": -20.707100976658374,
+   "weak_mean": -15.301134224076309,
+   "arm_difference_deg": -5.405966752582065,
+   "cell_gap_deg": 1.5573661322416719,
+   "cells_disjoint": true,
+   "mean_within_cell_seed_SD_deg": 0.38471661163397397,
+   "gap_in_seed_SD": 4.048086526930053
+  },
+  "0-15%": {
+   "hyper_mean": -21.2730928918354,
+   "weak_mean": -16.85067265884091,
+   "arm_difference_deg": -4.42242023299449,
+   "cell_gap_deg": 1.135304561688713,
+   "cells_disjoint": true,
+   "mean_within_cell_seed_SD_deg": 0.34142825709365154,
+   "gap_in_seed_SD": 3.325162865407787
+  },
+  "0-20%": {
+   "hyper_mean": -19.529099982640286,
+   "weak_mean": -16.385640351218086,
+   "arm_difference_deg": -3.1434596314222,
+   "cell_gap_deg": 0.6178261408268568,
+   "cells_disjoint": true,
+   "mean_within_cell_seed_SD_deg": 0.3287252235712437,
+   "gap_in_seed_SD": 1.8794607061631738
+  },
+  "5-20%": {
+   "hyper_mean": -20.669222307694618,
+   "weak_mean": -18.51333922969617,
+   "arm_difference_deg": -2.155883077998446,
+   "cell_gap_deg": 0.2799220883922402,
+   "cells_disjoint": true,
+   "mean_within_cell_seed_SD_deg": 0.3845813309236354,
+   "gap_in_seed_SD": 0.7278618744179839
+  }
+ }
+}

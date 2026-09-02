@@ -1,0 +1,21 @@
+{
+ "cell": 22,
+ "parent_prefix": "R396SPg120_s106",
+ "parent_seed": 106,
+ "restart_seed": 207,
+ "kv": 0.13,
+ "prefix": "R401SPg130p106r207",
+ "wall_clock_s": 101.69023656845093,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R401SPg130p106r207.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R207 (2)"
+ ],
+ "status": "OK",
+ "duplicate_result_dir": true,
+ "dir": "R401SPg130p106r207.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R207",
+ "t_end_s": 11.5,
+ "n_cycles_in_window": 5,
+ "gate_G": true,
+ "knee_at_heelstrike_deg": -15.932764530374323,
+ "ank_stance_mean_deg": 1.1023522993875454
+}

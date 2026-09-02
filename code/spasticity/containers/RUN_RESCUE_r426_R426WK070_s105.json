@@ -1,0 +1,24 @@
+{
+ "prefix": "R426WK070_s105",
+ "tag": "070",
+ "scale": 0.7,
+ "seed": 105,
+ "parent_prefix": "R151W_s105",
+ "parent_gate_G": true,
+ "parent_t_end_s": 20.0,
+ "parent_par": "0046_1.089_1.046.par",
+ "staged_warm_as": "WARM_R151W_s105_g0046.par",
+ "parent_par_generation": 46,
+ "fmax_readback": {
+  "tib_ant_l": 1231.3,
+  "soleus_l": 3549.0,
+  "gastroc_l": 2241.0
+ },
+ "status": "RUN_OK",
+ "seconds": 239.2,
+ "result_dir": "R426WK070_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+ "gate_G": true,
+ "t_end_s": 20.0,
+ "n_cycles_in_window": 6,
+ "knee_hs_deg": null
+}

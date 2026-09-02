@@ -1,0 +1,85 @@
+{
+ "id": "GATE_SENSITIVITY_r518",
+ "why": "the gate is 9.73 s and the earliest admitted hyperreflexia cell ends at 9.81 s; a stricter gate drops the shortest-surviving cells, which are the deepest gains, so this probes whether the result depends on cells closest to failure",
+ "families_kept_if": ">= 3 cells survive the gate",
+ "rows": [
+  {
+   "gate": 9.73,
+   "n_hy": 23,
+   "n_wk": 36,
+   "fam_hy": 5,
+   "fam_wk": 6,
+   "arm_difference_deg": -5.592906094914192,
+   "cell_gap_deg": 1.4918560478057357,
+   "cells_disjoint": true,
+   "perm_p": 0.0021645021645021645,
+   "perm_splits": 462,
+   "lofo_accuracy": 0.9830508474576272
+  },
+  {
+   "gate": 10.0,
+   "n_hy": 22,
+   "n_wk": 36,
+   "fam_hy": 5,
+   "fam_wk": 6,
+   "arm_difference_deg": -5.564069129085259,
+   "cell_gap_deg": 1.4918560478057357,
+   "cells_disjoint": true,
+   "perm_p": 0.0021645021645021645,
+   "perm_splits": 462,
+   "lofo_accuracy": 0.9827586206896551
+  },
+  {
+   "gate": 10.5,
+   "n_hy": 15,
+   "n_wk": 36,
+   "fam_hy": 3,
+   "fam_wk": 6,
+   "arm_difference_deg": -4.93064797849163,
+   "cell_gap_deg": 1.4918560478057357,
+   "cells_disjoint": true,
+   "perm_p": 0.011904761904761904,
+   "perm_splits": 84,
+   "lofo_accuracy": 0.9803921568627451
+  },
+  {
+   "gate": 11.0,
+   "n_hy": 12,
+   "n_wk": 36,
+   "fam_hy": 2,
+   "fam_wk": 6,
+   "arm_difference_deg": -4.11428349414765,
+   "cell_gap_deg": 1.4918560478057357,
+   "cells_disjoint": true,
+   "perm_p": 0.03571428571428571,
+   "perm_splits": 28,
+   "lofo_accuracy": 0.9791666666666666
+  },
+  {
+   "gate": 12.0,
+   "n_hy": 12,
+   "n_wk": 36,
+   "fam_hy": 2,
+   "fam_wk": 6,
+   "arm_difference_deg": -4.11428349414765,
+   "cell_gap_deg": 1.4918560478057357,
+   "cells_disjoint": true,
+   "perm_p": 0.03571428571428571,
+   "perm_splits": 28,
+   "lofo_accuracy": 0.9791666666666666
+  },
+  {
+   "gate": 13.0,
+   "n_hy": 11,
+   "n_wk": 36,
+   "fam_hy": 2,
+   "fam_wk": 6,
+   "arm_difference_deg": -4.10887922890002,
+   "cell_gap_deg": 1.4918560478057357,
+   "cells_disjoint": true,
+   "perm_p": 0.03571428571428571,
+   "perm_splits": 28,
+   "lofo_accuracy": 0.9787234042553191
+  }
+ ]
+}

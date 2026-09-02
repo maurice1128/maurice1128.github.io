@@ -1,0 +1,53 @@
+{
+ "what": "registered failure criterion of r294 evaluated as a SPEED gain",
+ "success_threshold_mps": 1.3,
+ "failure_gain_threshold_mps_per_100gen": 0.02,
+ "cells": [
+  {
+   "cell": 0,
+   "seed": 101,
+   "par_prev": "0476_32.661_21.652.par",
+   "gen_prev": 476,
+   "speed_prev_mps": 1.1821976166832175,
+   "par_last": "0598_22.771_21.333.par",
+   "gen_last": 598,
+   "speed_last_mps": 1.1987615230460924,
+   "generations_spanned": 122,
+   "speed_gain_mps": 0.01656390636287486,
+   "gain_per_100_gen": 0.01357697242858595
+  },
+  {
+   "cell": 1,
+   "seed": 102,
+   "par_prev": "0474_41.459_23.803.par",
+   "gen_prev": 474,
+   "speed_prev_mps": 1.1621907114624506,
+   "par_last": "0588_44.588_23.198.par",
+   "gen_last": 588,
+   "speed_last_mps": 1.172604766633565,
+   "generations_spanned": 114,
+   "speed_gain_mps": 0.010414055171114489,
+   "gain_per_100_gen": 0.00913513611501271
+  }
+ ],
+ "max_achieved_speed_mps": 1.1987615230460924,
+ "max_gain_per_100_gen": 0.01357697242858595,
+ "RUNG": "FAILURE",
+ "VERDICT": "The per-generation gain over the measured span is BELOW THE REGISTERED 0.02 THRESHOLD (raw gains 0.01656390636287486 and 0.010414055171114489 over spans of 122 and 114 generations). This is NOT a claim that the optimisation reached an asymptote: the rate EQUALS the 270-generation reference rate, which is inconsistent with an asymptote. r311 policy: the live field carries the TRUE statement; the superseded wording is preserved below it and is not the claim.",
+ "context": "SPEED_CLOSURE_r208.md measured a ceiling of ~1.13 m/s at 270 generations from this warm start; 600 generations reach 1.1988 m/s, so that figure was a budget bound rather than a ceiling",
+ "CORRECTIONS_r308": {
+  "D7_provenance_and_span": {
+   "prereg": "PREREG_faststart_r294.md rev2",
+   "prereg_sha256": "b5da395f",
+   "span_correction": "The generation span is 122 and 114, NOT 100 as stated. The raw gains are 0.01656390636287486 and 0.010414055171114489.",
+   "verdict_unaffected": "Both raw gains are below the registered 0.02 threshold, so the verdict does not change on the corrected span."
+  },
+  "D9_asymptote_claim_withdrawn": {
+   "was": "'at its asymptote'",
+   "replaced_with": "'below the registered 0.02 threshold'",
+   "why": "'At its asymptote' asserts the optimisation had converged, which these data do not show. What they show is a gain under the registered threshold. The rate also EQUALS the 270-generation reference rate, which is inconsistent with having reached an asymptote.",
+   "this_is_the_weaker_claim": "Deposited deliberately in its weaker form. The stronger wording was not supported."
+  }
+ },
+ "VERDICT_ORIGINAL_WRONG": "<= 1.30 m/s and the final-100-generation speed gain is below 0.02 m/s: the model is at its asymptote and the axis is closed for this MODEL, not merely for the tool"
+}

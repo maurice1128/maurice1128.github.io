@@ -1,0 +1,75 @@
+{
+ "window": [
+  1.0,
+  13.58
+ ],
+ "kv": 0.05,
+ "fmax": {
+  "soleus_l": 3549.0,
+  "gastroc_l": 2241.0,
+  "tib_ant_l": 1759.0
+ },
+ "tib_ant_mean_force_N": 125.85307120231857,
+ "spastic_dose_as_registered_N": 13.626637473716952,
+ "spastic_dose_corrected_V_N": 136.2663747371695,
+ "ratio_corrected_over_registered": 10.0,
+ "s_star_as_registered": 0.8917258248564226,
+ "s_star_corrected": -0.08274175143577334,
+ "s_star_corrected_is_negative": true,
+ "per_seed": [
+  {
+   "seed": 101,
+   "n_cycles": 9,
+   "tib_ant_mean_force_N": 126.04602508353874,
+   "as_registered_ce_vel": 13.672994655060645,
+   "as_registered_ce_vel_clipped_samples": 0,
+   "corrected_V": 136.72994655060646,
+   "corrected_V_clipped_samples": 0
+  },
+  {
+   "seed": 102,
+   "n_cycles": 9,
+   "tib_ant_mean_force_N": 125.64496975379888,
+   "as_registered_ce_vel": 13.62249293622891,
+   "as_registered_ce_vel_clipped_samples": 0,
+   "corrected_V": 136.22492936228912,
+   "corrected_V_clipped_samples": 0
+  },
+  {
+   "seed": 103,
+   "n_cycles": 9,
+   "tib_ant_mean_force_N": 125.71775536051305,
+   "as_registered_ce_vel": 13.60653726311488,
+   "as_registered_ce_vel_clipped_samples": 0,
+   "corrected_V": 136.0653726311488,
+   "corrected_V_clipped_samples": 0
+  },
+  {
+   "seed": 104,
+   "n_cycles": 9,
+   "tib_ant_mean_force_N": 125.43422621784185,
+   "as_registered_ce_vel": 13.58188688513188,
+   "as_registered_ce_vel_clipped_samples": 0,
+   "corrected_V": 135.81886885131883,
+   "corrected_V_clipped_samples": 0
+  },
+  {
+   "seed": 105,
+   "n_cycles": 9,
+   "tib_ant_mean_force_N": 126.74979390376514,
+   "as_registered_ce_vel": 13.669118814084577,
+   "as_registered_ce_vel_clipped_samples": 0,
+   "corrected_V": 136.69118814084575,
+   "corrected_V_clipped_samples": 0
+  },
+  {
+   "seed": 106,
+   "n_cycles": 9,
+   "tib_ant_mean_force_N": 125.52565689445379,
+   "as_registered_ce_vel": 13.606794288680812,
+   "as_registered_ce_vel_clipped_samples": 0,
+   "corrected_V": 136.06794288680814,
+   "corrected_V_clipped_samples": 0
+  }
+ ]
+}

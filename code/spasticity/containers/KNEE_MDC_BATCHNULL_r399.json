@@ -1,0 +1,5655 @@
+{
+  "round": "r399",
+  "what": "the batch null and the unlesioned-side negative control applied to knee_angle_l at left heel strike, endpoint #1 of the four pre-registered at paper/PREREG_kinpair_r378.md sec 3",
+  "endpoint": {
+    "key": "knee_hs_L_deg",
+    "definition": "knee_angle_l sampled at each left heel strike (the opening index of each admissible cycle), averaged over the admissible cycles of the cell, in degrees",
+    "prereg": "paper/PREREG_kinpair_r378.md sec 3 item 1 -- pre-registered 2026-08-18, NOT a post hoc endpoint",
+    "previously_measured_only_at": "KV <= 0.035 (gap 1.21 deg); the KV 0.070-0.120 cells exist only because of warm-start chaining"
+  },
+  "negative_control_endpoint": {
+    "key": "knee_hs_R_deg",
+    "definition": "knee_angle_r sampled at each RIGHT heel strike, the right leg's own GRF defining the events and the admissible-cycle window, its own Gate G, averaged over cycles, in degrees",
+    "why": "both lesions are LEFT-ONLY. A similar separation rate on the right knee would make the left-knee result a batch artefact."
+  },
+  "conventions": {
+    "source_gating": "scone/fine_gap_r397.py verbatim",
+    "SETTLE": 1.0,
+    "T1": 9.73,
+    "cycles": "between heel strikes with t[start] >= SETTLE, wholly inside the window, drop the LAST kept cycle, require >= 5",
+    "stance": "leg0_l.grf_norm_y > 0.05",
+    "run_dir_selection": "scone/batchnull_r389.py rd(): the one dir per tag with history.txt >= 91 lines. r397's len(glob)==1 rule is also evaluated per cell and recorded as r397_rule_same_dir; it differs only where a duplicated '(1)' copy of a seed directory exists (R169W095 s105/s106, R276WPF010 s106), which that rule would silently drop.",
+    "sto": "sorted(glob('*.par.sto'))[-1]",
+    "disjointness": "arms separate iff max(min(B)-max(A), min(A)-max(B)) > 0, both arms needing >= 4 Gate-G values (batchnull_r389 verbatim)",
+    "batch_null_reference": "paper/HARMONIC_r383.json / paper/BATCHNULL_r389.json -- same-mechanism dorsiflexor-weakness family pairs separated 96 of 450 times (21.3%) against a quoted 2/924 = 0.22% exhaustive-permutation floor"
+  },
+  "cells": {
+    "R151C_s101": {
+      "tag": "R151C_s101",
+      "run_dir": "R151C_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "r397_rule_same_dir": true,
+      "sto": "0060_19.456_0.988.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -7.8346019723070714,
+      "knee_hs_L_percycle_deg": [
+        -7.02050915951749,
+        -7.179447651886781,
+        -8.111764576123656,
+        -7.9888651290680945,
+        -8.872423344939337
+      ],
+      "mean_ankle_stance_deg": 4.438821266367993,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.631889504389787,
+      "knee_hs_R_percycle_deg": [
+        -5.774211363548923,
+        -7.209814415028714,
+        -9.13919249435225,
+        -8.05550012064181,
+        -7.980729128377237
+      ]
+    },
+    "R151C_s102": {
+      "tag": "R151C_s102",
+      "run_dir": "R151C_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "r397_rule_same_dir": true,
+      "sto": "0003_26.221_0.983.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -7.901821380831819,
+      "knee_hs_L_percycle_deg": [
+        -6.693522145836329,
+        -6.786341308647522,
+        -8.70592180967432,
+        -8.734168628974269,
+        -8.589153011026657
+      ],
+      "mean_ankle_stance_deg": 4.513951513721978,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.9776695337512376,
+      "knee_hs_R_percycle_deg": [
+        -6.848793708316783,
+        -7.109890575557899,
+        -8.558728952105211,
+        -8.212318669169115,
+        -9.158615763607182
+      ]
+    },
+    "R151C_s103": {
+      "tag": "R151C_s103",
+      "run_dir": "R151C_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "r397_rule_same_dir": true,
+      "sto": "0028_1.032_0.991.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -7.855916002285937,
+      "knee_hs_L_percycle_deg": [
+        -7.474692803717693,
+        -7.7923406053382225,
+        -8.779546886348632,
+        -7.632428084717209,
+        -7.600571631307935
+      ],
+      "mean_ankle_stance_deg": 4.442206681431494,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.402878273675997,
+      "knee_hs_R_percycle_deg": [
+        -5.90650731844463,
+        -6.165426946064249,
+        -8.80332463484656,
+        -8.882278219015587,
+        -7.256854250008955
+      ]
+    },
+    "R151C_s104": {
+      "tag": "R151C_s104",
+      "run_dir": "R151C_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "r397_rule_same_dir": true,
+      "sto": "0000_1.033_0.987.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -7.680487784572781,
+      "knee_hs_L_percycle_deg": [
+        -6.951238562086173,
+        -6.774538378067827,
+        -7.7551556444342316,
+        -8.40981722115071,
+        -8.51168911712497
+      ],
+      "mean_ankle_stance_deg": 4.5123693292106895,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.956458636175495,
+      "knee_hs_R_percycle_deg": [
+        -6.4302480389737156,
+        -7.705251020478336,
+        -8.553744219287573,
+        -8.350057723118566,
+        -8.742992179019284
+      ]
+    },
+    "R151C_s105": {
+      "tag": "R151C_s105",
+      "run_dir": "R151C_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "r397_rule_same_dir": true,
+      "sto": "0053_30.023_0.987.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -7.587588407670272,
+      "knee_hs_L_percycle_deg": [
+        -6.9006463887761225,
+        -6.270335518352703,
+        -7.562469937931736,
+        -8.413083080582956,
+        -8.791407112707837
+      ],
+      "mean_ankle_stance_deg": 4.500608396625777,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.744406956197577,
+      "knee_hs_R_percycle_deg": [
+        -6.193731061143712,
+        -7.643256987045182,
+        -8.163903735480561,
+        -8.532716668206271,
+        -8.18842632911216
+      ]
+    },
+    "R151C_s106": {
+      "tag": "R151C_s106",
+      "run_dir": "R151C_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "r397_rule_same_dir": true,
+      "sto": "0001_1.056_0.989.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -8.239580001061439,
+      "knee_hs_L_percycle_deg": [
+        -7.61329129435984,
+        -8.47656680428345,
+        -10.589807040064466,
+        -8.171180299478722,
+        -6.34705456712072
+      ],
+      "mean_ankle_stance_deg": 4.501671542164866,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.628612185801638,
+      "knee_hs_R_percycle_deg": [
+        -6.5242131173751705,
+        -5.282728166885703,
+        -7.30343571875309,
+        -11.084842575057499,
+        -7.947841350936728
+      ]
+    },
+    "R151W_s101": {
+      "tag": "R151W_s101",
+      "run_dir": "R151W_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "r397_rule_same_dir": true,
+      "sto": "0086_18.186_1.049.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -5.783595266317576,
+      "knee_hs_L_percycle_deg": [
+        -4.377305881552269,
+        -6.597093348915811,
+        -6.626027717569918,
+        -5.092477531012514,
+        -6.225071852537368
+      ],
+      "mean_ankle_stance_deg": 4.498609673448278,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.368128383401311,
+      "knee_hs_R_percycle_deg": [
+        -6.102344292820346,
+        -4.426471389952445,
+        -8.715547500632518,
+        -9.427103786405487,
+        -8.169174947195765
+      ]
+    },
+    "R151W_s102": {
+      "tag": "R151W_s102",
+      "run_dir": "R151W_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "r397_rule_same_dir": true,
+      "sto": "0060_19.759_1.051.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.108541786304344,
+      "knee_hs_L_percycle_deg": [
+        -6.598181968726561,
+        -6.682120285713227,
+        -7.388634542889044,
+        -5.075426307029421,
+        -4.8456243945583495,
+        -6.061263218909466
+      ],
+      "mean_ankle_stance_deg": 4.580838449832868,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.176053449908426,
+      "knee_hs_R_percycle_deg": [
+        -4.733765844214958,
+        -6.021270764809334,
+        -9.382126599487718,
+        -7.955404393832454,
+        -7.787699647197662
+      ]
+    },
+    "R151W_s103": {
+      "tag": "R151W_s103",
+      "run_dir": "R151W_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "r397_rule_same_dir": true,
+      "sto": "0018_55.873_1.052.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -5.37492567048918,
+      "knee_hs_L_percycle_deg": [
+        -4.807316436375903,
+        -6.108589532787272,
+        -6.360232596408729,
+        -5.0673762500078325,
+        -5.321534598349913,
+        -4.584504609005428
+      ],
+      "mean_ankle_stance_deg": 4.564946575701268,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.408928707992578,
+      "knee_hs_R_percycle_deg": [
+        -6.15093111384744,
+        -5.790712548048691,
+        -8.363293048186089,
+        -8.121619450199907,
+        -8.618087379680764
+      ]
+    },
+    "R151W_s104": {
+      "tag": "R151W_s104",
+      "run_dir": "R151W_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "r397_rule_same_dir": true,
+      "sto": "0061_6.964_1.051.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -5.666876314998091,
+      "knee_hs_L_percycle_deg": [
+        -5.070831185512471,
+        -6.365045441887828,
+        -6.104979898677947,
+        -4.497386376255786,
+        -6.102401588599859,
+        -5.860613399054651
+      ],
+      "mean_ankle_stance_deg": 4.512690687003339,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.434413870719996,
+      "knee_hs_R_percycle_deg": [
+        -6.124976125728013,
+        -6.321959015693991,
+        -9.25315379980377,
+        -8.591903208443286,
+        -6.8800772039309255
+      ]
+    },
+    "R151W_s105": {
+      "tag": "R151W_s105",
+      "run_dir": "R151W_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "r397_rule_same_dir": true,
+      "sto": "0046_1.089_1.046.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -5.858581308741255,
+      "knee_hs_L_percycle_deg": [
+        -5.887943485882391,
+        -6.362581723368765,
+        -6.215503457358683,
+        -4.851949848616593,
+        -6.552230753557068,
+        -5.281278583664022
+      ],
+      "mean_ankle_stance_deg": 4.454077942429491,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.468184003165007,
+      "knee_hs_R_percycle_deg": [
+        -5.953088787188766,
+        -5.756105897222789,
+        -9.356171611368291,
+        -9.032278569780837,
+        -7.243275150264354
+      ]
+    },
+    "R151W_s106": {
+      "tag": "R151W_s106",
+      "run_dir": "R151W_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "r397_rule_same_dir": true,
+      "sto": "0069_36.357_1.044.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.273548665667797,
+      "knee_hs_L_percycle_deg": [
+        -6.009353242670613,
+        -6.780726322255241,
+        -5.662169466711091,
+        -7.584929883500864,
+        -5.330564413201176
+      ],
+      "mean_ankle_stance_deg": 4.408261744243689,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -8.869936708108469,
+      "knee_hs_R_percycle_deg": [
+        -6.150587339170361,
+        -9.197806076794132,
+        -10.671281638532069,
+        -8.47880133968446,
+        -9.851207146361322
+      ]
+    },
+    "R169W090_s101": {
+      "tag": "R169W090_s101",
+      "run_dir": "R169W090_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "r397_rule_same_dir": true,
+      "sto": "0048_44.389_1.020.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.651635493265495,
+      "knee_hs_L_percycle_deg": [
+        -6.780554434916701,
+        -7.6931043152215635,
+        -7.03649468200164,
+        -5.652154164452204,
+        -6.095869869735368
+      ],
+      "mean_ankle_stance_deg": 4.515817522018265,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.639640477442316,
+      "knee_hs_R_percycle_deg": [
+        -5.440388963371852,
+        -5.002992982568982,
+        -9.076682798903475,
+        -9.961730705042058,
+        -8.716406937325212
+      ]
+    },
+    "R169W090_s102": {
+      "tag": "R169W090_s102",
+      "run_dir": "R169W090_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "r397_rule_same_dir": true,
+      "sto": "0050_31.388_1.017.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.4986752425306005,
+      "knee_hs_L_percycle_deg": [
+        -6.621214872090819,
+        -6.724232683655342,
+        -7.161456777119673,
+        -5.6958536554868315,
+        -6.290618224300334
+      ],
+      "mean_ankle_stance_deg": 4.599248220656784,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.739352322528933,
+      "knee_hs_R_percycle_deg": [
+        -5.437993999788206,
+        -6.3744992455074865,
+        -8.809627170592998,
+        -9.563639628985163,
+        -8.511001567770814
+      ]
+    },
+    "R169W090_s103": {
+      "tag": "R169W090_s103",
+      "run_dir": "R169W090_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "r397_rule_same_dir": true,
+      "sto": "0059_35.364_1.013.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.9891225315002234,
+      "knee_hs_L_percycle_deg": [
+        -6.2792163641772305,
+        -6.950837491629582,
+        -7.090925672539068,
+        -7.3398758345234105,
+        -7.284757294631826
+      ],
+      "mean_ankle_stance_deg": 4.545144453486081,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.8398731840222755,
+      "knee_hs_R_percycle_deg": [
+        -5.848065623341287,
+        -7.489532410611582,
+        -9.629014113409589,
+        -7.953169858431443,
+        -8.279583914317474
+      ]
+    },
+    "R169W090_s104": {
+      "tag": "R169W090_s104",
+      "run_dir": "R169W090_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "r397_rule_same_dir": true,
+      "sto": "0021_1.062_1.021.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.6094520485567845,
+      "knee_hs_L_percycle_deg": [
+        -6.422742291857502,
+        -6.409621558349007,
+        -8.29253276048743,
+        -6.708705527407296,
+        -5.213658104682683
+      ],
+      "mean_ankle_stance_deg": 4.48760012154184,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.623201172384422,
+      "knee_hs_R_percycle_deg": [
+        -5.524447601495495,
+        -6.426810292202932,
+        -6.440618575065583,
+        -10.165188018093012,
+        -9.55894137506509
+      ]
+    },
+    "R169W090_s105": {
+      "tag": "R169W090_s105",
+      "run_dir": "R169W090_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "r397_rule_same_dir": true,
+      "sto": "0009_22.859_1.024.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.578346169859131,
+      "knee_hs_L_percycle_deg": [
+        -6.2891285340329945,
+        -6.574060445551552,
+        -7.760598743487975,
+        -6.225014556757855,
+        -6.042928569465279
+      ],
+      "mean_ankle_stance_deg": 4.592989814125105,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.802170269271485,
+      "knee_hs_R_percycle_deg": [
+        -5.603114706766957,
+        -5.865426244533751,
+        -8.09325803934093,
+        -9.698513893958959,
+        -9.750538461756836
+      ]
+    },
+    "R169W090_s106": {
+      "tag": "R169W090_s106",
+      "run_dir": "R169W090_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "r397_rule_same_dir": true,
+      "sto": "0068_35.019_1.016.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.5104151477528305,
+      "knee_hs_L_percycle_deg": [
+        -6.481642353196951,
+        -6.432138799697648,
+        -6.71380485178396,
+        -7.204829682211076,
+        -5.719660051874517
+      ],
+      "mean_ankle_stance_deg": 4.473379359099627,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -8.188036717811471,
+      "knee_hs_R_percycle_deg": [
+        -5.729921725985311,
+        -6.694152399410973,
+        -8.889841261911313,
+        -9.773972435577686,
+        -9.852295766172071
+      ]
+    },
+    "R169W095_s101": {
+      "tag": "R169W095_s101",
+      "run_dir": "R169W095_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "r397_rule_same_dir": true,
+      "sto": "0084_1.075_1.004.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.84563098128766,
+      "knee_hs_L_percycle_deg": [
+        -6.2021535407321355,
+        -6.451046406936965,
+        -7.75309299637176,
+        -6.4249195314789995,
+        -7.396942430918441
+      ],
+      "mean_ankle_stance_deg": 4.435283643152546,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.378141393829019,
+      "knee_hs_R_percycle_deg": [
+        -5.662788261129832,
+        -7.371560400594145,
+        -8.175076412485613,
+        -8.644500734036296,
+        -7.0367811608992055
+      ]
+    },
+    "R169W095_s102": {
+      "tag": "R169W095_s102",
+      "run_dir": "R169W095_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "r397_rule_same_dir": true,
+      "sto": "0023_19.921_1.012.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.953736658072944,
+      "knee_hs_L_percycle_deg": [
+        -6.1756255948175784,
+        -8.083116686367115,
+        -7.068694910087992,
+        -6.082405361549793,
+        -7.358840737542241
+      ],
+      "mean_ankle_stance_deg": 4.467012776355486,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.0274075713708655,
+      "knee_hs_R_percycle_deg": [
+        -5.9143568402379225,
+        -6.366134061698577,
+        -8.106321477069914,
+        -7.528035174444374,
+        -7.22219030340354
+      ]
+    },
+    "R169W095_s103": {
+      "tag": "R169W095_s103",
+      "run_dir": "R169W095_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "r397_rule_same_dir": true,
+      "sto": "0083_20.256_1.008.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.843281854327624,
+      "knee_hs_L_percycle_deg": [
+        -5.808818014374825,
+        -6.7821587167430675,
+        -9.891944445595124,
+        -6.914511967418288,
+        -4.818976127506815
+      ],
+      "mean_ankle_stance_deg": 4.4489710305848265,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.097073509680823,
+      "knee_hs_R_percycle_deg": [
+        -4.716113014546979,
+        -5.317724429012294,
+        -7.2283209518114395,
+        -9.58031270082347,
+        -8.64289645220993
+      ]
+    },
+    "R169W095_s104": {
+      "tag": "R169W095_s104",
+      "run_dir": "R169W095_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "r397_rule_same_dir": true,
+      "sto": "0084_29.474_1.007.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.961414292527697,
+      "knee_hs_L_percycle_deg": [
+        -6.072607783253056,
+        -6.934107124011763,
+        -7.500418608719067,
+        -6.706241808888233,
+        -7.593696137766365
+      ],
+      "mean_ankle_stance_deg": 4.51730150332115,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.187301757342435,
+      "knee_hs_R_percycle_deg": [
+        -5.089377829340855,
+        -6.068138712451036,
+        -8.759550659298565,
+        -8.041863725117697,
+        -7.9775778605040175
+      ]
+    },
+    "R169W095_s105": {
+      "tag": "R169W095_s105",
+      "run_dir": "R169W095_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105 (1)",
+      "r397_rule_same_dir": false,
+      "sto": "0082_1.081_1.008.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -7.030180687099299,
+      "knee_hs_L_percycle_deg": [
+        -7.4805942690075415,
+        -7.206835034494034,
+        -6.763480292621803,
+        -7.115047195714076,
+        -6.5849466436590385
+      ],
+      "mean_ankle_stance_deg": 4.551966679919248,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -8.116543044135048,
+      "knee_hs_R_percycle_deg": [
+        -5.517468975550801,
+        -6.731222768755938,
+        -10.259783350069112,
+        -9.0816102359416,
+        -8.992629890357785
+      ]
+    },
+    "R169W095_s106": {
+      "tag": "R169W095_s106",
+      "run_dir": "R169W095_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106 (1)",
+      "r397_rule_same_dir": false,
+      "sto": "0071_16.549_1.008.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -7.016532832419283,
+      "knee_hs_L_percycle_deg": [
+        -7.280116336491266,
+        -6.320755804324215,
+        -8.06799060057566,
+        -8.290699295543012,
+        -5.123102125162256
+      ],
+      "mean_ankle_stance_deg": 4.49973755841867,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.180900672855232,
+      "knee_hs_R_percycle_deg": [
+        -5.423721621111497,
+        -6.9255700528643125,
+        -6.341439580728438,
+        -7.82167604444892,
+        -9.392096065122994
+      ]
+    },
+    "R174W870_s101": {
+      "tag": "R174W870_s101",
+      "run_dir": "R174W870_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "r397_rule_same_dir": true,
+      "sto": "0055_1.134_1.026.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.022359384620083,
+      "knee_hs_L_percycle_deg": [
+        -4.685431124617723,
+        -6.702001921204266,
+        -5.534990024925902,
+        -5.912580671073017,
+        -7.2767931812795075
+      ],
+      "mean_ankle_stance_deg": 4.426066738428477,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.407828629025927,
+      "knee_hs_R_percycle_deg": [
+        -6.08309291090395,
+        -6.171271115574584,
+        -10.056784403254262,
+        -6.885176528307589,
+        -7.8428181870892475
+      ]
+    },
+    "R174W870_s102": {
+      "tag": "R174W870_s102",
+      "run_dir": "R174W870_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "r397_rule_same_dir": true,
+      "sto": "0002_60.154_1.033.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -5.806195013588716,
+      "knee_hs_L_percycle_deg": [
+        -5.334999106535488,
+        -5.240890788685251,
+        -6.7871434495607055,
+        -5.843883031436832,
+        -5.824058691725305
+      ],
+      "mean_ankle_stance_deg": 4.589433563405078,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -8.412853897464903,
+      "knee_hs_R_percycle_deg": [
+        -6.5198586381321775,
+        -7.418027277779255,
+        -9.795229169777041,
+        -10.011062371202822,
+        -8.320092030433225
+      ]
+    },
+    "R174W870_s103": {
+      "tag": "R174W870_s103",
+      "run_dir": "R174W870_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "r397_rule_same_dir": true,
+      "sto": "0082_13.850_1.032.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.818106088809576,
+      "knee_hs_L_percycle_deg": [
+        -6.329407467030691,
+        -6.242604361068371,
+        -8.737377192627001,
+        -6.798488013904296,
+        -5.982653409417517
+      ],
+      "mean_ankle_stance_deg": 4.559900511476383,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.752411176595554,
+      "knee_hs_R_percycle_deg": [
+        -5.640683549393684,
+        -6.169036580173573,
+        -8.790261197117577,
+        -7.9610193802247355,
+        -10.201055176068204
+      ]
+    },
+    "R174W870_s104": {
+      "tag": "R174W870_s104",
+      "run_dir": "R174W870_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "r397_rule_same_dir": true,
+      "sto": "0086_1.122_1.029.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.63803691295586,
+      "knee_hs_L_percycle_deg": [
+        -7.104791251181235,
+        -5.7689401518337196,
+        -6.235213205511184,
+        -6.655821522916721,
+        -7.425418433336443
+      ],
+      "mean_ankle_stance_deg": 4.478693882298043,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -8.641246333759954,
+      "knee_hs_R_percycle_deg": [
+        -7.167243650850494,
+        -9.01245423006931,
+        -9.74761637700167,
+        -8.693259442401928,
+        -8.58565796847636
+      ]
+    },
+    "R174W870_s105": {
+      "tag": "R174W870_s105",
+      "run_dir": "R174W870_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "r397_rule_same_dir": true,
+      "sto": "0082_23.773_1.021.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.2340122859725895,
+      "knee_hs_L_percycle_deg": [
+        -5.383064535969013,
+        -6.099651391183231,
+        -7.186666920105428,
+        -6.712888119311751,
+        -5.787790463293524
+      ],
+      "mean_ankle_stance_deg": 4.521907781770937,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.695659706987847,
+      "knee_hs_R_percycle_deg": [
+        -6.580019206620913,
+        -6.041438879197939,
+        -7.093905053073749,
+        -9.447558379691658,
+        -9.315377016354978
+      ]
+    },
+    "R174W870_s106": {
+      "tag": "R174W870_s106",
+      "run_dir": "R174W870_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "r397_rule_same_dir": true,
+      "sto": "0035_16.774_1.031.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.428453535159366,
+      "knee_hs_L_percycle_deg": [
+        -6.053700176013739,
+        -7.165696664803641,
+        -7.529295681593661,
+        -5.251811364260444,
+        -6.1417637891253465
+      ],
+      "mean_ankle_stance_deg": 4.523771631332708,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.354858680866082,
+      "knee_hs_R_percycle_deg": [
+        -5.554281513887957,
+        -5.336586199628001,
+        -8.428438349492463,
+        -7.820300945740606,
+        -9.634686395581385
+      ]
+    },
+    "R174W892_s101": {
+      "tag": "R174W892_s101",
+      "run_dir": "R174W892_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "r397_rule_same_dir": true,
+      "sto": "0047_1.041_1.016.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -7.201048160763212,
+      "knee_hs_L_percycle_deg": [
+        -5.894074134290292,
+        -6.9242522499355115,
+        -9.473742550929135,
+        -7.296846704109086,
+        -6.416325164552037
+      ],
+      "mean_ankle_stance_deg": 4.595648130963802,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -8.179213167766456,
+      "knee_hs_R_percycle_deg": [
+        -6.260652531614992,
+        -6.561455374058674,
+        -8.576433347974753,
+        -8.504183370008757,
+        -10.993341215175105
+      ]
+    },
+    "R174W892_s102": {
+      "tag": "R174W892_s102",
+      "run_dir": "R174W892_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "r397_rule_same_dir": true,
+      "sto": "0050_13.629_1.024.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.279991003116248,
+      "knee_hs_L_percycle_deg": [
+        -6.43534736335038,
+        -6.101885926584241,
+        -7.221044387813278,
+        -6.27789856124843,
+        -5.363778776584909
+      ],
+      "mean_ankle_stance_deg": 4.592375079527642,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.917520424418404,
+      "knee_hs_R_percycle_deg": [
+        -6.127783618924155,
+        -6.162332973970543,
+        -8.216272077955518,
+        -9.942135548448585,
+        -9.139077902793222
+      ]
+    },
+    "R174W892_s103": {
+      "tag": "R174W892_s103",
+      "run_dir": "R174W892_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "r397_rule_same_dir": true,
+      "sto": "0038_8.123_1.022.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.108623910254979,
+      "knee_hs_L_percycle_deg": [
+        -6.373353329917225,
+        -6.283914618097303,
+        -6.237963402927812,
+        -5.73456268412587,
+        -5.913325516206687
+      ],
+      "mean_ankle_stance_deg": 4.50489276176418,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.7140516522115465,
+      "knee_hs_R_percycle_deg": [
+        -5.784238124963713,
+        -6.22753557105643,
+        -9.20038438687222,
+        -9.6128567035869,
+        -7.745243474578468
+      ]
+    },
+    "R174W892_s104": {
+      "tag": "R174W892_s104",
+      "run_dir": "R174W892_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "r397_rule_same_dir": true,
+      "sto": "0056_11.838_1.024.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.286495220006573,
+      "knee_hs_L_percycle_deg": [
+        -6.30075957727415,
+        -7.139627085125188,
+        -6.653415100177172,
+        -5.034018647175316,
+        -6.304655690281039
+      ],
+      "mean_ankle_stance_deg": 4.561454806690486,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.736425654111406,
+      "knee_hs_R_percycle_deg": [
+        -5.231591683670278,
+        -6.522150469312701,
+        -9.986768960689275,
+        -8.930062899129497,
+        -8.011554257755275
+      ]
+    },
+    "R174W892_s105": {
+      "tag": "R174W892_s105",
+      "run_dir": "R174W892_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "r397_rule_same_dir": true,
+      "sto": "0087_23.496_1.014.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.652593478698954,
+      "knee_hs_L_percycle_deg": [
+        -6.813785987034289,
+        -7.214226190051221,
+        -7.317874255190388,
+        -5.166492218987513,
+        -6.750588742231359
+      ],
+      "mean_ankle_stance_deg": 4.620029302843623,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -8.353896540345943,
+      "knee_hs_R_percycle_deg": [
+        -6.061664289366058,
+        -7.43149178596483,
+        -10.186731231189933,
+        -9.394216008964978,
+        -8.695379386243912
+      ]
+    },
+    "R174W892_s106": {
+      "tag": "R174W892_s106",
+      "run_dir": "R174W892_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "r397_rule_same_dir": true,
+      "sto": "0078_1.081_1.020.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.543670764097814,
+      "knee_hs_L_percycle_deg": [
+        -6.496539255870352,
+        -6.625282872436248,
+        -7.138309282196388,
+        -6.206909090431721,
+        -6.2513133195543595
+      ],
+      "mean_ankle_stance_deg": 4.4600057304065635,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -6.868450744352131,
+      "knee_hs_R_percycle_deg": [
+        -5.017127851374859,
+        -6.111454321762926,
+        -7.701985161046091,
+        -7.430689645051647,
+        -8.08099674252513
+      ]
+    },
+    "R174W915_s101": {
+      "tag": "R174W915_s101",
+      "run_dir": "R174W915_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "r397_rule_same_dir": true,
+      "sto": "0002_54.223_1.016.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.448549456865786,
+      "knee_hs_L_percycle_deg": [
+        -6.461416943028833,
+        -7.397687276052111,
+        -6.3655038081239335,
+        -5.178799352426923,
+        -6.839339904697124
+      ],
+      "mean_ankle_stance_deg": 4.577676453057332,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.875995881174094,
+      "knee_hs_R_percycle_deg": [
+        -5.563265492115608,
+        -5.914815206474028,
+        -10.33873693423814,
+        -9.243184334168493,
+        -8.319977438874197
+      ]
+    },
+    "R174W915_s102": {
+      "tag": "R174W915_s102",
+      "run_dir": "R174W915_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "r397_rule_same_dir": true,
+      "sto": "0059_28.242_1.016.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.99493232354285,
+      "knee_hs_L_percycle_deg": [
+        -6.620412731177636,
+        -7.209241457233583,
+        -6.9507801958500695,
+        -6.436435983161129,
+        -7.757791250291833
+      ],
+      "mean_ankle_stance_deg": 4.584265962480202,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.38891643812425,
+      "knee_hs_R_percycle_deg": [
+        -5.675238634018025,
+        -6.206278836857077,
+        -8.827618045360108,
+        -7.34875668034794,
+        -8.886689994038093
+      ]
+    },
+    "R174W915_s103": {
+      "tag": "R174W915_s103",
+      "run_dir": "R174W915_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "r397_rule_same_dir": true,
+      "sto": "0081_37.861_1.014.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.4792244713014995,
+      "knee_hs_L_percycle_deg": [
+        -6.403949276177211,
+        -6.0365114421598145,
+        -6.794878379794972,
+        -6.185193989996264,
+        -6.975589268379233
+      ],
+      "mean_ankle_stance_deg": 4.463608290379688,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.989972083528288,
+      "knee_hs_R_percycle_deg": [
+        -5.4835269557672515,
+        -7.3760867671756785,
+        -9.28529673211061,
+        -9.26896743494938,
+        -8.535982527638518
+      ]
+    },
+    "R174W915_s104": {
+      "tag": "R174W915_s104",
+      "run_dir": "R174W915_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "r397_rule_same_dir": true,
+      "sto": "0020_15.036_1.019.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.846181020770986,
+      "knee_hs_L_percycle_deg": [
+        -6.268387461849258,
+        -6.800951732423359,
+        -8.312242508639931,
+        -6.9723807047265005,
+        -5.87694269621588
+      ],
+      "mean_ankle_stance_deg": 4.498020295953336,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -8.283881097780954,
+      "knee_hs_R_percycle_deg": [
+        -6.394552768337066,
+        -6.6303249010334,
+        -8.541196443574208,
+        -9.477123001920408,
+        -10.376208374039695
+      ]
+    },
+    "R174W915_s105": {
+      "tag": "R174W915_s105",
+      "run_dir": "R174W915_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "r397_rule_same_dir": true,
+      "sto": "0036_1.039_1.015.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.437570439595488,
+      "knee_hs_L_percycle_deg": [
+        -5.89292821870003,
+        -6.609984899306255,
+        -7.062564261680093,
+        -6.498601903932823,
+        -6.123772914358239
+      ],
+      "mean_ankle_stance_deg": 4.540586966806125,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -8.253170559961942,
+      "knee_hs_R_percycle_deg": [
+        -6.002191270231478,
+        -7.825457565896784,
+        -9.921967434059978,
+        -9.268337181374735,
+        -8.24789934824674
+      ]
+    },
+    "R174W915_s106": {
+      "tag": "R174W915_s106",
+      "run_dir": "R174W915_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "r397_rule_same_dir": true,
+      "sto": "0075_16.687_1.018.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.928755698205239,
+      "knee_hs_L_percycle_deg": [
+        -6.147493367076655,
+        -6.6685984817481385,
+        -7.244822136311208,
+        -7.232102473259303,
+        -7.350762032630896
+      ],
+      "mean_ankle_stance_deg": 4.492530631657376,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -6.9387354770808285,
+      "knee_hs_R_percycle_deg": [
+        -5.584556603782669,
+        -5.811453620232427,
+        -7.471426944285447,
+        -7.666461777747981,
+        -8.15977843935562
+      ]
+    },
+    "R276WPF005_s101": {
+      "tag": "R276WPF005_s101",
+      "run_dir": "R276WPF005_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "r397_rule_same_dir": true,
+      "sto": "0079_51.437_20.975.par.sto",
+      "t_end_s": 16.21,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -7.695419064713891,
+      "knee_hs_L_percycle_deg": [
+        -7.0062425104187325,
+        -6.389969105976019,
+        -7.935866533018493,
+        -8.691941639473129,
+        -8.453075534683087
+      ],
+      "mean_ankle_stance_deg": 4.754291921664036,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -5.6623539591211225,
+      "knee_hs_R_percycle_deg": [
+        -5.538324639293563,
+        -5.725590165054122,
+        -6.065216627695868,
+        -5.09246034227866,
+        -5.890178021283402
+      ]
+    },
+    "R276WPF005_s102": {
+      "tag": "R276WPF005_s102",
+      "run_dir": "R276WPF005_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "r397_rule_same_dir": true,
+      "sto": "0088_23.779_1.057.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -7.998767749627272,
+      "knee_hs_L_percycle_deg": [
+        -6.793847055763736,
+        -6.154426156397737,
+        -7.070585670811924,
+        -9.698456598179446,
+        -8.535581457181925,
+        -9.739709559428864
+      ],
+      "mean_ankle_stance_deg": 4.7320056521507485,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -6.401585252314502,
+      "knee_hs_R_percycle_deg": [
+        -5.87230173807532,
+        -5.542318155125626,
+        -7.236972614517915,
+        -6.979886451842715,
+        -6.376447302010932
+      ]
+    },
+    "R276WPF005_s103": {
+      "tag": "R276WPF005_s103",
+      "run_dir": "R276WPF005_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "r397_rule_same_dir": true,
+      "sto": "0059_51.578_1.038.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -8.719099838962327,
+      "knee_hs_L_percycle_deg": [
+        -7.084966911469708,
+        -6.07025865629302,
+        -9.32586214400587,
+        -11.108964098232505,
+        -10.005447384810541
+      ],
+      "mean_ankle_stance_deg": 4.745019550991878,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -6.28328436452266,
+      "knee_hs_R_percycle_deg": [
+        -5.990101860754217,
+        -6.556585232800062,
+        -6.849996919686557,
+        -5.390329640811272,
+        -6.6294081685611905
+      ]
+    },
+    "R276WPF005_s104": {
+      "tag": "R276WPF005_s104",
+      "run_dir": "R276WPF005_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "r397_rule_same_dir": true,
+      "sto": "0001_83.061_67.587.par.sto",
+      "t_end_s": 7.46,
+      "n_cycles_in_window": 4,
+      "gate_G": false,
+      "guard": "t_end 7.460 < 9.73",
+      "n_cycles_right": 3,
+      "gate_G_right": false
+    },
+    "R276WPF005_s105": {
+      "tag": "R276WPF005_s105",
+      "run_dir": "R276WPF005_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "r397_rule_same_dir": true,
+      "sto": "0088_42.626_1.040.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -9.154181070272871,
+      "knee_hs_L_percycle_deg": [
+        -7.948872674967963,
+        -7.020795638415056,
+        -10.092938040127017,
+        -10.892156868555002,
+        -9.816142129299315
+      ],
+      "mean_ankle_stance_deg": 4.8291191784443495,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -6.152664884135506,
+      "knee_hs_R_percycle_deg": [
+        -4.613587946686269,
+        -6.293253830157936,
+        -6.14629015570688,
+        -6.519686750793638,
+        -7.190505737332805
+      ]
+    },
+    "R276WPF005_s106": {
+      "tag": "R276WPF005_s106",
+      "run_dir": "R276WPF005_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "r397_rule_same_dir": true,
+      "sto": "0055_55.672_1.036.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -7.946431874760707,
+      "knee_hs_L_percycle_deg": [
+        -6.704408343943816,
+        -6.085384742084473,
+        -8.32375896032206,
+        -10.266888026728735,
+        -8.351719300724445
+      ],
+      "mean_ankle_stance_deg": 4.789927692504994,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -6.681203553241017,
+      "knee_hs_R_percycle_deg": [
+        -5.983111775653621,
+        -6.921330165180345,
+        -6.842032806334238,
+        -6.0435015272604105,
+        -7.616041491776467
+      ]
+    },
+    "R276WPF010_s101": {
+      "tag": "R276WPF010_s101",
+      "run_dir": "R276WPF010_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "r397_rule_same_dir": true,
+      "sto": "0089_72.368_42.234.par.sto",
+      "t_end_s": 12.35,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.485089649264321,
+      "knee_hs_L_percycle_deg": [
+        -5.373375819653351,
+        -4.1338217369334735,
+        -6.920413432708135,
+        -4.23331012847999,
+        -13.309809580889024,
+        -4.939807196921954
+      ],
+      "mean_ankle_stance_deg": 5.202604416131465,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -8.77017329682029,
+      "knee_hs_R_percycle_deg": [
+        -7.456472745832534,
+        -6.9527855481330265,
+        -12.95915941026896,
+        -6.702689470558423,
+        -9.77975930930851
+      ]
+    },
+    "R276WPF010_s102": {
+      "tag": "R276WPF010_s102",
+      "run_dir": "R276WPF010_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "r397_rule_same_dir": true,
+      "sto": "0079_67.108_50.776.par.sto",
+      "t_end_s": 10.79,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.5144269982343355,
+      "knee_hs_L_percycle_deg": [
+        -7.098144940757717,
+        -5.27259827306779,
+        -7.135788267897812,
+        -7.386457303267547,
+        -6.239338501636126,
+        -5.954234702779028
+      ],
+      "mean_ankle_stance_deg": 4.8110668810911825,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -6.218402623802046,
+      "knee_hs_R_percycle_deg": [
+        -5.60312616592286,
+        -6.209716583627863,
+        -6.10371939152866,
+        -5.756392376120355,
+        -7.41905860181049
+      ]
+    },
+    "R276WPF010_s103": {
+      "tag": "R276WPF010_s103",
+      "run_dir": "R276WPF010_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "r397_rule_same_dir": true,
+      "sto": "0012_80.136_63.314.par.sto",
+      "t_end_s": 8.48,
+      "n_cycles_in_window": 5,
+      "gate_G": false,
+      "guard": "t_end 8.480 < 9.73",
+      "n_cycles_right": 4,
+      "gate_G_right": false
+    },
+    "R276WPF010_s104": {
+      "tag": "R276WPF010_s104",
+      "run_dir": "R276WPF010_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "r397_rule_same_dir": true,
+      "sto": "0081_64.306_36.641.par.sto",
+      "t_end_s": 13.31,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -7.181799070677998,
+      "knee_hs_L_percycle_deg": [
+        -7.323833016259748,
+        -5.513985392156406,
+        -7.790106069937212,
+        -7.524540131894075,
+        -7.756530743142545
+      ],
+      "mean_ankle_stance_deg": 4.870399903822989,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -5.936167051667374,
+      "knee_hs_R_percycle_deg": [
+        -5.8771718793339325,
+        -6.249136079932863,
+        -5.83660646743867,
+        -6.046194428897525,
+        -5.671726402733873
+      ]
+    },
+    "R276WPF010_s105": {
+      "tag": "R276WPF010_s105",
+      "run_dir": "R276WPF010_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "r397_rule_same_dir": true,
+      "sto": "0052_80.850_67.123.par.sto",
+      "t_end_s": 7.53,
+      "n_cycles_in_window": 4,
+      "gate_G": false,
+      "guard": "t_end 7.530 < 9.73",
+      "n_cycles_right": 3,
+      "gate_G_right": false
+    },
+    "R276WPF010_s106": {
+      "tag": "R276WPF010_s106",
+      "run_dir": "R276WPF010_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106 (1)",
+      "r397_rule_same_dir": false,
+      "sto": "0061_79.757_62.646.par.sto",
+      "t_end_s": 8.48,
+      "n_cycles_in_window": 5,
+      "gate_G": false,
+      "guard": "t_end 8.480 < 9.73",
+      "n_cycles_right": 4,
+      "gate_G_right": false
+    },
+    "R276WPF020_s101": {
+      "tag": "R276WPF020_s101",
+      "run_dir": "R276WPF020_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "r397_rule_same_dir": true,
+      "sto": "0082_82.512_72.444.par.sto",
+      "t_end_s": 7.59,
+      "n_cycles_in_window": 5,
+      "gate_G": false,
+      "guard": "t_end 7.590 < 9.73",
+      "n_cycles_right": 3,
+      "gate_G_right": false
+    },
+    "R276WPF020_s102": {
+      "tag": "R276WPF020_s102",
+      "run_dir": "R276WPF020_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "r397_rule_same_dir": true,
+      "sto": "0073_82.509_71.493.par.sto",
+      "t_end_s": 6.84,
+      "n_cycles_in_window": 3,
+      "gate_G": false,
+      "guard": "t_end 6.840 < 9.73",
+      "n_cycles_right": 3,
+      "gate_G_right": false
+    },
+    "R276WPF020_s103": {
+      "tag": "R276WPF020_s103",
+      "run_dir": "R276WPF020_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "r397_rule_same_dir": true,
+      "sto": "0040_85.089_73.732.par.sto",
+      "t_end_s": 6.4,
+      "n_cycles_in_window": 3,
+      "gate_G": false,
+      "guard": "t_end 6.400 < 9.73",
+      "n_cycles_right": 3,
+      "gate_G_right": false
+    },
+    "R276WPF020_s104": {
+      "tag": "R276WPF020_s104",
+      "run_dir": "R276WPF020_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "r397_rule_same_dir": true,
+      "sto": "0042_88.718_75.725.par.sto",
+      "t_end_s": 6.05,
+      "n_cycles_in_window": 3,
+      "gate_G": false,
+      "guard": "t_end 6.050 < 9.73",
+      "n_cycles_right": 3,
+      "gate_G_right": false
+    },
+    "R276WPF020_s105": {
+      "tag": "R276WPF020_s105",
+      "run_dir": "R276WPF020_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "r397_rule_same_dir": true,
+      "sto": "0063_86.276_73.144.par.sto",
+      "t_end_s": 6.54,
+      "n_cycles_in_window": 4,
+      "gate_G": false,
+      "guard": "t_end 6.540 < 9.73",
+      "n_cycles_right": 3,
+      "gate_G_right": false
+    },
+    "R276WPF020_s106": {
+      "tag": "R276WPF020_s106",
+      "run_dir": "R276WPF020_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "r397_rule_same_dir": true,
+      "sto": "0081_83.275_73.942.par.sto",
+      "t_end_s": 6.53,
+      "n_cycles_in_window": 3,
+      "gate_G": false,
+      "guard": "t_end 6.530 < 9.73",
+      "n_cycles_right": 3,
+      "gate_G_right": false
+    },
+    "R285BF007_s101": {
+      "tag": "R285BF007_s101",
+      "run_dir": "R285BF007_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "r397_rule_same_dir": true,
+      "sto": "0082_33.926_1.115.par.sto",
+      "t_end_s": 19.74,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -8.040182093988987,
+      "knee_hs_L_percycle_deg": [
+        -6.98315231127496,
+        -5.384708924841039,
+        -7.783345167954668,
+        -10.291066845683256,
+        -8.529508104553539,
+        -9.269311209626458
+      ],
+      "mean_ankle_stance_deg": 4.787810669737744,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -5.622298479663527,
+      "knee_hs_R_percycle_deg": [
+        -5.659906283420324,
+        -6.071862938119386,
+        -5.842450636949005,
+        -5.14816902869923,
+        -5.389103511129692
+      ]
+    },
+    "R285BF007_s102": {
+      "tag": "R285BF007_s102",
+      "run_dir": "R285BF007_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "r397_rule_same_dir": true,
+      "sto": "0006_82.425_64.773.par.sto",
+      "t_end_s": 7.93,
+      "n_cycles_in_window": 4,
+      "gate_G": false,
+      "guard": "t_end 7.930 < 9.73",
+      "n_cycles_right": 4,
+      "gate_G_right": false
+    },
+    "R285BF007_s103": {
+      "tag": "R285BF007_s103",
+      "run_dir": "R285BF007_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "r397_rule_same_dir": true,
+      "sto": "0052_79.125_68.930.par.sto",
+      "t_end_s": 7.16,
+      "n_cycles_in_window": 3,
+      "gate_G": false,
+      "guard": "t_end 7.160 < 9.73",
+      "n_cycles_right": 3,
+      "gate_G_right": false
+    },
+    "R285BF007_s104": {
+      "tag": "R285BF007_s104",
+      "run_dir": "R285BF007_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "r397_rule_same_dir": true,
+      "sto": "0074_80.381_68.558.par.sto",
+      "t_end_s": 7.36,
+      "n_cycles_in_window": 4,
+      "gate_G": false,
+      "guard": "t_end 7.360 < 9.73",
+      "n_cycles_right": 3,
+      "gate_G_right": false
+    },
+    "R285BF007_s105": {
+      "tag": "R285BF007_s105",
+      "run_dir": "R285BF007_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "r397_rule_same_dir": true,
+      "sto": "0089_46.316_1.088.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -8.497250580687673,
+      "knee_hs_L_percycle_deg": [
+        -6.736379388912114,
+        -5.771633053470835,
+        -10.564654192858223,
+        -10.494123088277618,
+        -8.086840912035465,
+        -9.329872848571787
+      ],
+      "mean_ankle_stance_deg": 4.712421898504219,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.008901034588139,
+      "knee_hs_R_percycle_deg": [
+        -6.6888811876957694,
+        -6.242833544186424,
+        -7.001830735396225,
+        -6.826505650086194,
+        -8.284454055576086
+      ]
+    },
+    "R285BF007_s106": {
+      "tag": "R285BF007_s106",
+      "run_dir": "R285BF007_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "r397_rule_same_dir": true,
+      "sto": "0070_42.475_1.068.par.sto",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -8.588694644790554,
+      "knee_hs_L_percycle_deg": [
+        -7.424960067100339,
+        -7.279887153373214,
+        -9.057316825428053,
+        -10.671740004768175,
+        -9.077083869360068,
+        -8.021179948713474
+      ],
+      "mean_ankle_stance_deg": 4.888207599909078,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -4.999006342230461,
+      "knee_hs_R_percycle_deg": [
+        -4.418535924489883,
+        -5.156992578744244,
+        -5.56156380746407,
+        -4.829111750902679,
+        -5.02882764955143
+      ]
+    },
+    "R285BF008_s101": {
+      "tag": "R285BF008_s101",
+      "run_dir": "R285BF008_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "r397_rule_same_dir": true,
+      "sto": "0078_69.208_46.854.par.sto",
+      "t_end_s": 11.63,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -6.817187064506186,
+      "knee_hs_L_percycle_deg": [
+        -6.225014556757855,
+        -5.363675644181786,
+        -5.846002975278815,
+        -8.534263654253126,
+        -8.116978492059346
+      ],
+      "mean_ankle_stance_deg": 4.833063798540651,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.065933253515462,
+      "knee_hs_R_percycle_deg": [
+        -6.8083428879805465,
+        -6.821463621489042,
+        -9.081667531721115,
+        -5.898600500871825,
+        -6.719591725514781
+      ]
+    },
+    "R285BF008_s102": {
+      "tag": "R285BF008_s102",
+      "run_dir": "R285BF008_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "r397_rule_same_dir": true,
+      "sto": "0067_79.762_70.338.par.sto",
+      "t_end_s": 6.89,
+      "n_cycles_in_window": 3,
+      "gate_G": false,
+      "guard": "t_end 6.890 < 9.73",
+      "n_cycles_right": 3,
+      "gate_G_right": false
+    },
+    "R285BF008_s103": {
+      "tag": "R285BF008_s103",
+      "run_dir": "R285BF008_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "r397_rule_same_dir": true,
+      "sto": "0050_78.892_68.218.par.sto",
+      "t_end_s": 7.57,
+      "n_cycles_in_window": 4,
+      "gate_G": false,
+      "guard": "t_end 7.570 < 9.73",
+      "n_cycles_right": 3,
+      "gate_G_right": false
+    },
+    "R285BF008_s104": {
+      "tag": "R285BF008_s104",
+      "run_dir": "R285BF008_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "r397_rule_same_dir": true,
+      "sto": "0047_78.960_69.854.par.sto",
+      "t_end_s": 7.07,
+      "n_cycles_in_window": 4,
+      "gate_G": false,
+      "guard": "t_end 7.070 < 9.73",
+      "n_cycles_right": 3,
+      "gate_G_right": false
+    },
+    "R285BF008_s105": {
+      "tag": "R285BF008_s105",
+      "run_dir": "R285BF008_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "r397_rule_same_dir": true,
+      "sto": "0089_53.034_28.191.par.sto",
+      "t_end_s": 15.14,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -8.01424715939239,
+      "knee_hs_L_percycle_deg": [
+        -6.665046143418327,
+        -5.831621734621032,
+        -7.660789495576185,
+        -10.458370521861456,
+        -7.828494242210978,
+        -9.641160818666362
+      ],
+      "mean_ankle_stance_deg": 4.926746421082574,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -6.082287332243996,
+      "knee_hs_R_percycle_deg": [
+        -6.835902157926339,
+        -5.475350848030735,
+        -7.118828717161939,
+        -4.836096106425324,
+        -6.145258831675645
+      ]
+    },
+    "R285BF008_s106": {
+      "tag": "R285BF008_s106",
+      "run_dir": "R285BF008_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "r397_rule_same_dir": true,
+      "sto": "0045_78.946_66.703.par.sto",
+      "t_end_s": 7.8,
+      "n_cycles_in_window": 4,
+      "gate_G": false,
+      "guard": "t_end 7.800 < 9.73",
+      "n_cycles_right": 4,
+      "gate_G_right": false
+    },
+    "R151S_s101": {
+      "tag": "R151S_s101",
+      "run_dir": "R151S_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "r397_rule_same_dir": true,
+      "sto": "0056_65.682_19.381.par.sto",
+      "t_end_s": 17.85,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -9.603059125290164,
+      "knee_hs_L_percycle_deg": [
+        -8.653266988301796,
+        -8.745513193317858,
+        -9.563754220544189,
+        -12.893498446946968,
+        -7.893410360399299,
+        -9.868911542230865
+      ],
+      "mean_ankle_stance_deg": 2.887835543045907,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.157976631472048,
+      "knee_hs_R_percycle_deg": [
+        -4.510913909798825,
+        -9.502046666008598,
+        -8.431876096263247,
+        -6.200893033582847,
+        -7.144153451706721
+      ]
+    },
+    "R151S_s102": {
+      "tag": "R151S_s102",
+      "run_dir": "R151S_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "r397_rule_same_dir": true,
+      "sto": "0086_53.936_35.095.par.sto",
+      "t_end_s": 14.96,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -8.692904208568947,
+      "knee_hs_L_percycle_deg": [
+        -7.432007447980447,
+        -8.124426943396047,
+        -11.031958570566923,
+        -7.410578826442555,
+        -9.465549254458764
+      ],
+      "mean_ankle_stance_deg": 2.894419060526819,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.677107333581512,
+      "knee_hs_R_percycle_deg": [
+        -6.478032719087627,
+        -5.857003764945327,
+        -8.211803007153499,
+        -10.11717415486105,
+        -7.721523021860052
+      ]
+    },
+    "R151S_s103": {
+      "tag": "R151S_s103",
+      "run_dir": "R151S_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "r397_rule_same_dir": true,
+      "sto": "0059_67.037_35.910.par.sto",
+      "t_end_s": 13.58,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -11.092187893991076,
+      "knee_hs_L_percycle_deg": [
+        -8.940605322559904,
+        -11.877988050857097,
+        -12.641969974884537,
+        -12.021857753214446,
+        -9.978518368439392
+      ],
+      "mean_ankle_stance_deg": 3.1263698737450953,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -8.763113310868688,
+      "knee_hs_R_percycle_deg": [
+        -4.517365414571998,
+        -10.186444752292367,
+        -10.471892325826543,
+        -8.72099059968626,
+        -9.918873461966273
+      ]
+    },
+    "R151S_s104": {
+      "tag": "R151S_s104",
+      "run_dir": "R151S_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "r397_rule_same_dir": true,
+      "sto": "0072_59.701_22.802.par.sto",
+      "t_end_s": 16.94,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -9.82040493529509,
+      "knee_hs_L_percycle_deg": [
+        -8.035675780930283,
+        -8.767228293753316,
+        -10.77091899910532,
+        -9.715759923592396,
+        -11.81244167909413
+      ],
+      "mean_ankle_stance_deg": 2.9606639647302355,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.912096805929695,
+      "knee_hs_R_percycle_deg": [
+        -5.037370450276831,
+        -8.736460460154793,
+        -9.457699732665473,
+        -7.578512756195399,
+        -8.750440630355985
+      ]
+    },
+    "R151S_s105": {
+      "tag": "R151S_s105",
+      "run_dir": "R151S_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "r397_rule_same_dir": true,
+      "sto": "0085_59.194_38.532.par.sto",
+      "t_end_s": 14.27,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -9.93773523258198,
+      "knee_hs_L_percycle_deg": [
+        -8.202807569769943,
+        -9.535564697023752,
+        -11.045136599854931,
+        -11.673442117995393,
+        -9.231725178265876
+      ],
+      "mean_ankle_stance_deg": 2.8283749243386853,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -8.366169296317645,
+      "knee_hs_R_percycle_deg": [
+        -6.039548118474008,
+        -9.655083693088041,
+        -9.654396143733885,
+        -7.532160470569315,
+        -8.949658055722972
+      ]
+    },
+    "R151S_s106": {
+      "tag": "R151S_s106",
+      "run_dir": "R151S_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "r397_rule_same_dir": true,
+      "sto": "0037_62.529_33.591.par.sto",
+      "t_end_s": 14.82,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -10.444264300945335,
+      "knee_hs_L_percycle_deg": [
+        -8.8639435695714,
+        -9.709113613168878,
+        -13.057421672133895,
+        -10.412992264487094,
+        -10.177850385365405
+      ],
+      "mean_ankle_stance_deg": 3.070153745257757,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -9.053333622836304,
+      "knee_hs_R_percycle_deg": [
+        -5.280401958237472,
+        -10.976095185541666,
+        -9.074219080384411,
+        -9.918300504171143,
+        -10.017651385846825
+      ]
+    },
+    "R393SPg070_s101": {
+      "tag": "R393SPg070_s101",
+      "run_dir": "R393SPg070_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "r397_rule_same_dir": true,
+      "sto": "0054_63.778_37.228.par.sto",
+      "t_end_s": 13.95,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -10.703691951143304,
+      "knee_hs_L_percycle_deg": [
+        -10.839444751402965,
+        -10.211196529042018,
+        -10.463813620915198,
+        -10.761579787044687,
+        -12.050677530309526,
+        -9.895439488145422
+      ],
+      "mean_ankle_stance_deg": 2.44366497066405,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.008448397929986,
+      "knee_hs_R_percycle_deg": [
+        -4.1948818491605655,
+        -9.576015517359988,
+        -6.692891892261685,
+        -6.81418705749088,
+        -7.764265673376811
+      ]
+    },
+    "R393SPg070_s102": {
+      "tag": "R393SPg070_s102",
+      "run_dir": "R393SPg070_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "r397_rule_same_dir": true,
+      "sto": "0067_63.028_42.302.par.sto",
+      "t_end_s": 13.05,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -10.691495589544285,
+      "knee_hs_L_percycle_deg": [
+        -10.128461423425128,
+        -11.73417564427926,
+        -10.884994896115867,
+        -8.946163013172674,
+        -11.763682970728498
+      ],
+      "mean_ankle_stance_deg": 2.5133079972380368,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -8.035197934129144,
+      "knee_hs_R_percycle_deg": [
+        -2.875176700479838,
+        -8.773702716838296,
+        -9.512703680998033,
+        -9.937265407189972,
+        -9.077141165139581
+      ]
+    },
+    "R393SPg070_s103": {
+      "tag": "R393SPg070_s103",
+      "run_dir": "R393SPg070_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "r397_rule_same_dir": true,
+      "sto": "0089_68.734_46.049.par.sto",
+      "t_end_s": 12.08,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -11.334699920217465,
+      "knee_hs_L_percycle_deg": [
+        -12.186296640416991,
+        -10.832110891625291,
+        -11.538109486785492,
+        -8.44774702718837,
+        -11.923595491349511,
+        -13.08033998393913
+      ],
+      "mean_ankle_stance_deg": 2.5448887132387017,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.623535779736779,
+      "knee_hs_R_percycle_deg": [
+        -5.968845126554864,
+        -11.133200212966539,
+        -7.338500735815097,
+        -6.623048337035238,
+        -7.054084486312156
+      ]
+    },
+    "R393SPg070_s104": {
+      "tag": "R393SPg070_s104",
+      "run_dir": "R393SPg070_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "r397_rule_same_dir": true,
+      "sto": "0014_70.952_20.923.par.sto",
+      "t_end_s": 17.29,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -11.81296880026565,
+      "knee_hs_L_percycle_deg": [
+        -9.815855650401751,
+        -11.997908117377978,
+        -11.82286951096551,
+        -10.558065178214218,
+        -14.870145544368794
+      ],
+      "mean_ankle_stance_deg": 2.679889061690993,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -8.119198130557683,
+      "knee_hs_R_percycle_deg": [
+        -4.333606390517641,
+        -11.42093961768124,
+        -8.99480712997928,
+        -9.306324283191909,
+        -6.540313231418347
+      ]
+    },
+    "R393SPg070_s105": {
+      "tag": "R393SPg070_s105",
+      "run_dir": "R393SPg070_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "r397_rule_same_dir": true,
+      "sto": "0026_63.733_44.049.par.sto",
+      "t_end_s": 13.09,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -11.923948815323172,
+      "knee_hs_L_percycle_deg": [
+        -11.04158426152512,
+        -14.042966375538425,
+        -10.53354258458262,
+        -11.71148651559208,
+        -11.376993754794704,
+        -12.837119399906094
+      ],
+      "mean_ankle_stance_deg": 2.647429205111808,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -8.750394793732374,
+      "knee_hs_R_percycle_deg": [
+        -5.797645337369774,
+        -11.884920840178179,
+        -7.42163691188858,
+        -9.551492923728388,
+        -9.09627795549695
+      ]
+    },
+    "R393SPg070_s106": {
+      "tag": "R393SPg070_s106",
+      "run_dir": "R393SPg070_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "r397_rule_same_dir": true,
+      "sto": "0049_67.711_39.713.par.sto",
+      "t_end_s": 13.3,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "knee_hs_L_deg": -11.217138529953205,
+      "knee_hs_L_percycle_deg": [
+        -11.752624885282472,
+        -9.825710524478001,
+        -11.260683322383146,
+        -12.670274089963998,
+        -10.576399827658406
+      ],
+      "mean_ankle_stance_deg": 2.5465174202212886,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -9.28538840535783,
+      "knee_hs_R_percycle_deg": [
+        -5.969761859027074,
+        -13.811090355848982,
+        -6.4256070808331565,
+        -10.749032011331321,
+        -9.471450719748614
+      ]
+    },
+    "R393SPg100_s101": {
+      "tag": "R393SPg100_s101",
+      "run_dir": "R393SPg100_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "r397_rule_same_dir": true,
+      "sto": "0062_76.357_55.842.par.sto",
+      "t_end_s": 10.74,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -12.264323942817223,
+      "knee_hs_L_percycle_deg": [
+        -12.251785716400445,
+        -13.40623837780954,
+        -14.915523801743154,
+        -10.93822267528352,
+        -10.846377540724049,
+        -11.227795544942637
+      ],
+      "mean_ankle_stance_deg": 1.732364481415451,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -7.2666243263315256,
+      "knee_hs_R_percycle_deg": [
+        -5.217537028955718,
+        -10.50695734288855,
+        -3.529844006774268,
+        -8.272708420775903,
+        -8.806074832263187
+      ]
+    },
+    "R393SPg100_s102": {
+      "tag": "R393SPg100_s102",
+      "run_dir": "R393SPg100_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "r397_rule_same_dir": true,
+      "sto": "0056_70.988_51.509.par.sto",
+      "t_end_s": 11.76,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -12.006817611092265,
+      "knee_hs_L_percycle_deg": [
+        -12.037270317903465,
+        -14.956375692535984,
+        -11.462307170489686,
+        -9.90861751743343,
+        -13.096955759997924,
+        -10.579379208193085
+      ],
+      "mean_ankle_stance_deg": 1.8826131179411132,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -10.032205659758741,
+      "knee_hs_R_percycle_deg": [
+        -4.29524113655568,
+        -9.44406333714136,
+        -10.64991031277369,
+        -10.549413515507744,
+        -15.222399996815225
+      ]
+    },
+    "R393SPg100_s103": {
+      "tag": "R393SPg100_s103",
+      "run_dir": "R393SPg100_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "r397_rule_same_dir": true,
+      "sto": "0088_74.916_66.034.par.sto",
+      "t_end_s": 7.89,
+      "n_cycles_in_window": 5,
+      "gate_G": false,
+      "guard": "t_end 7.890 < 9.73",
+      "n_cycles_right": 4,
+      "gate_G_right": false
+    },
+    "R393SPg100_s104": {
+      "tag": "R393SPg100_s104",
+      "run_dir": "R393SPg100_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "r397_rule_same_dir": true,
+      "sto": "0088_75.162_65.009.par.sto",
+      "t_end_s": 8.4,
+      "n_cycles_in_window": 5,
+      "gate_G": false,
+      "guard": "t_end 8.400 < 9.73",
+      "n_cycles_right": 4,
+      "gate_G_right": false
+    },
+    "R393SPg100_s105": {
+      "tag": "R393SPg100_s105",
+      "run_dir": "R393SPg100_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "r397_rule_same_dir": true,
+      "sto": "0056_69.540_54.416.par.sto",
+      "t_end_s": 10.16,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -12.681542259934906,
+      "knee_hs_L_percycle_deg": [
+        -13.336051047906015,
+        -13.499974273092944,
+        -13.143995594978163,
+        -11.606577943303625,
+        -12.724533193162888,
+        -11.778121507165794
+      ],
+      "mean_ankle_stance_deg": 1.7852237859713265,
+      "n_cycles_right": 6,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -10.006029891902257,
+      "knee_hs_R_percycle_deg": [
+        -7.729028768976265,
+        -16.680348402305118,
+        -7.28074659006591,
+        -6.800837140864332,
+        -14.339815809195706,
+        -7.2054026400062074
+      ]
+    },
+    "R393SPg100_s106": {
+      "tag": "R393SPg100_s106",
+      "run_dir": "R393SPg100_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "r397_rule_same_dir": true,
+      "sto": "0079_79.667_55.861.par.sto",
+      "t_end_s": 10.14,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -13.620400452332857,
+      "knee_hs_L_percycle_deg": [
+        -12.409635588958988,
+        -16.05920485660379,
+        -17.38050282795498,
+        -11.098593562140637,
+        -11.71950792472391,
+        -13.054957953614833
+      ],
+      "mean_ankle_stance_deg": 1.8487105103335824,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -9.717892472505872,
+      "knee_hs_R_percycle_deg": [
+        -6.1274971400265885,
+        -12.329478793420185,
+        -5.014532352562917,
+        -10.653233467985448,
+        -14.464720608534224
+      ]
+    },
+    "R396SPg110_s101": {
+      "tag": "R396SPg110_s101",
+      "run_dir": "R396SPg110_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "r397_rule_same_dir": true,
+      "sto": "0077_72.589_57.210.par.sto",
+      "t_end_s": 9.81,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -13.632041044870597,
+      "knee_hs_L_percycle_deg": [
+        -13.199228726428775,
+        -16.187604698492606,
+        -12.458623480442672,
+        -13.714203192692358,
+        -12.681675950087103,
+        -13.550910221080073
+      ],
+      "mean_ankle_stance_deg": 1.4394348699120196,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -11.498700303720804,
+      "knee_hs_R_percycle_deg": [
+        -5.699377345926886,
+        -14.476408947554894,
+        -6.966937605672758,
+        -7.666003411511875,
+        -22.684774207937604
+      ]
+    },
+    "R396SPg110_s102": {
+      "tag": "R396SPg110_s102",
+      "run_dir": "R396SPg110_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "r397_rule_same_dir": true,
+      "sto": "0087_71.092_57.292.par.sto",
+      "t_end_s": 10.81,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -12.665480343078071,
+      "knee_hs_L_percycle_deg": [
+        -12.221705432156076,
+        -15.081165900315478,
+        -12.376575924179939,
+        -11.022963133183369,
+        -10.40955451771631,
+        -14.880917150917252
+      ],
+      "mean_ankle_stance_deg": 1.5325261900925893,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -10.544214496474726,
+      "knee_hs_R_percycle_deg": [
+        -4.314962343864083,
+        -10.703138091941343,
+        -8.616597689413425,
+        -12.988322962041119,
+        -16.09805139511366
+      ]
+    },
+    "R396SPg110_s105": {
+      "tag": "R396SPg110_s105",
+      "run_dir": "R396SPg110_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "r397_rule_same_dir": true,
+      "sto": "0020_79.617_52.926.par.sto",
+      "t_end_s": 10.81,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -12.705482346474788,
+      "knee_hs_L_percycle_deg": [
+        -13.63427558027161,
+        -13.989566709032232,
+        -13.13293750953214,
+        -12.608566535428409,
+        -10.628882761692388,
+        -12.23866498289195
+      ],
+      "mean_ankle_stance_deg": 1.3778440407364836,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -12.877753566736772,
+      "knee_hs_R_percycle_deg": [
+        -8.914077376645347,
+        -19.4556413703598,
+        -8.229220924125475,
+        -8.408098347765318,
+        -19.38172981478792
+      ]
+    },
+    "R396SPg110_s106": {
+      "tag": "R396SPg110_s106",
+      "run_dir": "R396SPg110_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "r397_rule_same_dir": true,
+      "sto": "0075_69.581_54.214.par.sto",
+      "t_end_s": 11.11,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -13.794942495322877,
+      "knee_hs_L_percycle_deg": [
+        -11.993610933914496,
+        -16.32889609077187,
+        -17.834056218580542,
+        -11.829974187625133,
+        -11.601879689383553,
+        -13.181237851661667
+      ],
+      "mean_ankle_stance_deg": 1.6264534973639853,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -9.746493379723214,
+      "knee_hs_R_percycle_deg": [
+        -6.494362016248855,
+        -11.710111416883766,
+        -5.901121515170401,
+        -11.489293482640347,
+        -13.137578467672698
+      ]
+    },
+    "R396SPg120_s101": {
+      "tag": "R396SPg120_s101",
+      "run_dir": "R396SPg120_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "r397_rule_same_dir": true,
+      "sto": "0013_72.930_61.981.par.sto",
+      "t_end_s": 8.74,
+      "n_cycles_in_window": 5,
+      "gate_G": false,
+      "guard": "t_end 8.740 < 9.73",
+      "n_cycles_right": 5,
+      "gate_G_right": false
+    },
+    "R396SPg120_s102": {
+      "tag": "R396SPg120_s102",
+      "run_dir": "R396SPg120_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "r397_rule_same_dir": true,
+      "sto": "0075_87.676_55.347.par.sto",
+      "t_end_s": 10.63,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -12.514085795011335,
+      "knee_hs_L_percycle_deg": [
+        -13.851082809949112,
+        -8.641922423958206,
+        -10.848554780345546,
+        -13.977649186893512,
+        -16.491329625691456,
+        -11.273975943230182
+      ],
+      "mean_ankle_stance_deg": 1.1393209591483002,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -9.084520861540863,
+      "knee_hs_R_percycle_deg": [
+        -7.389207500684175,
+        -9.430999899412376,
+        -6.684813187350341,
+        -8.694691836889755,
+        -13.222891883367677
+      ]
+    },
+    "R396SPg120_s105": {
+      "tag": "R396SPg120_s105",
+      "run_dir": "R396SPg120_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "r397_rule_same_dir": true,
+      "sto": "0065_80.514_57.071.par.sto",
+      "t_end_s": 10.11,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -13.027694711863193,
+      "knee_hs_L_percycle_deg": [
+        -13.586662787496238,
+        -15.150722976644358,
+        -11.41039719425083,
+        -14.412409561838778,
+        -10.642347269877963,
+        -12.96362848107098
+      ],
+      "mean_ankle_stance_deg": 1.0985992170504462,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -14.329044202647244,
+      "knee_hs_R_percycle_deg": [
+        -9.189383597205708,
+        -22.491572839419494,
+        -10.382740092904188,
+        -10.717519332599126,
+        -18.864005151107712
+      ]
+    },
+    "R396SPg120_s106": {
+      "tag": "R396SPg120_s106",
+      "run_dir": "R396SPg120_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "r397_rule_same_dir": true,
+      "sto": "0089_70.905_50.792.par.sto",
+      "t_end_s": 11.3,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "knee_hs_L_deg": -14.565160110020656,
+      "knee_hs_L_percycle_deg": [
+        -12.561469404668655,
+        -16.838713936879277,
+        -14.500014808714282,
+        -13.389450714412208,
+        -10.684746146717645,
+        -19.416565648731876
+      ],
+      "mean_ankle_stance_deg": 1.5123226278824793,
+      "n_cycles_right": 5,
+      "gate_G_right": true,
+      "knee_hs_R_deg": -11.771280391091931,
+      "knee_hs_R_percycle_deg": [
+        -6.700684118275465,
+        -12.411411758123894,
+        -10.615246366168275,
+        -15.919288563032843,
+        -13.209771149859183
+      ]
+    }
+  },
+  "GATE_LEDGER": {
+    "R151C": {
+      "n_cells": 6,
+      "n_gate_G_left": 6,
+      "n_gate_G_right": 6,
+      "guards": {},
+      "r397_rule_disagrees": []
+    },
+    "R151W": {
+      "n_cells": 6,
+      "n_gate_G_left": 6,
+      "n_gate_G_right": 6,
+      "guards": {},
+      "r397_rule_disagrees": []
+    },
+    "R169W090": {
+      "n_cells": 6,
+      "n_gate_G_left": 6,
+      "n_gate_G_right": 6,
+      "guards": {},
+      "r397_rule_disagrees": []
+    },
+    "R169W095": {
+      "n_cells": 6,
+      "n_gate_G_left": 6,
+      "n_gate_G_right": 6,
+      "guards": {},
+      "r397_rule_disagrees": [
+        "R169W095_s105",
+        "R169W095_s106"
+      ]
+    },
+    "R174W870": {
+      "n_cells": 6,
+      "n_gate_G_left": 6,
+      "n_gate_G_right": 6,
+      "guards": {},
+      "r397_rule_disagrees": []
+    },
+    "R174W892": {
+      "n_cells": 6,
+      "n_gate_G_left": 6,
+      "n_gate_G_right": 6,
+      "guards": {},
+      "r397_rule_disagrees": []
+    },
+    "R174W915": {
+      "n_cells": 6,
+      "n_gate_G_left": 6,
+      "n_gate_G_right": 6,
+      "guards": {},
+      "r397_rule_disagrees": []
+    },
+    "R276WPF005": {
+      "n_cells": 6,
+      "n_gate_G_left": 5,
+      "n_gate_G_right": 5,
+      "guards": {
+        "R276WPF005_s104": "t_end 7.460 < 9.73"
+      },
+      "r397_rule_disagrees": []
+    },
+    "R276WPF010": {
+      "n_cells": 6,
+      "n_gate_G_left": 3,
+      "n_gate_G_right": 3,
+      "guards": {
+        "R276WPF010_s103": "t_end 8.480 < 9.73",
+        "R276WPF010_s105": "t_end 7.530 < 9.73",
+        "R276WPF010_s106": "t_end 8.480 < 9.73"
+      },
+      "r397_rule_disagrees": [
+        "R276WPF010_s106"
+      ]
+    },
+    "R276WPF020": {
+      "n_cells": 6,
+      "n_gate_G_left": 0,
+      "n_gate_G_right": 0,
+      "guards": {
+        "R276WPF020_s101": "t_end 7.590 < 9.73",
+        "R276WPF020_s102": "t_end 6.840 < 9.73",
+        "R276WPF020_s103": "t_end 6.400 < 9.73",
+        "R276WPF020_s104": "t_end 6.050 < 9.73",
+        "R276WPF020_s105": "t_end 6.540 < 9.73",
+        "R276WPF020_s106": "t_end 6.530 < 9.73"
+      },
+      "r397_rule_disagrees": []
+    },
+    "R285BF007": {
+      "n_cells": 6,
+      "n_gate_G_left": 3,
+      "n_gate_G_right": 3,
+      "guards": {
+        "R285BF007_s102": "t_end 7.930 < 9.73",
+        "R285BF007_s103": "t_end 7.160 < 9.73",
+        "R285BF007_s104": "t_end 7.360 < 9.73"
+      },
+      "r397_rule_disagrees": []
+    },
+    "R285BF008": {
+      "n_cells": 6,
+      "n_gate_G_left": 2,
+      "n_gate_G_right": 2,
+      "guards": {
+        "R285BF008_s102": "t_end 6.890 < 9.73",
+        "R285BF008_s103": "t_end 7.570 < 9.73",
+        "R285BF008_s104": "t_end 7.070 < 9.73",
+        "R285BF008_s106": "t_end 7.800 < 9.73"
+      },
+      "r397_rule_disagrees": []
+    },
+    "R151S": {
+      "n_cells": 6,
+      "n_gate_G_left": 6,
+      "n_gate_G_right": 6,
+      "guards": {},
+      "r397_rule_disagrees": []
+    },
+    "R393SPg070": {
+      "n_cells": 6,
+      "n_gate_G_left": 6,
+      "n_gate_G_right": 6,
+      "guards": {},
+      "r397_rule_disagrees": []
+    },
+    "R393SPg100": {
+      "n_cells": 6,
+      "n_gate_G_left": 4,
+      "n_gate_G_right": 4,
+      "guards": {
+        "R393SPg100_s103": "t_end 7.890 < 9.73",
+        "R393SPg100_s104": "t_end 8.400 < 9.73"
+      },
+      "r397_rule_disagrees": []
+    },
+    "R396SPg110": {
+      "n_cells": 4,
+      "n_gate_G_left": 4,
+      "n_gate_G_right": 4,
+      "guards": {},
+      "r397_rule_disagrees": []
+    },
+    "R396SPg120": {
+      "n_cells": 4,
+      "n_gate_G_left": 3,
+      "n_gate_G_right": 3,
+      "guards": {
+        "R396SPg120_s101": "t_end 8.740 < 9.73"
+      },
+      "r397_rule_disagrees": []
+    }
+  },
+  "STEP0_HEADLINE_REPRODUCTION": {
+    "CONTROL_R151C": {
+      "family": "R151C",
+      "n": 6,
+      "values": [
+        -8.239580001061439,
+        -7.901821380831819,
+        -7.855916002285937,
+        -7.8346019723070714,
+        -7.680487784572781,
+        -7.587588407670272
+      ],
+      "range": [
+        -8.239580001061439,
+        -7.587588407670272
+      ],
+      "mean": -7.849999258121554
+    },
+    "WEAK_x080_R151W": {
+      "family": "R151W",
+      "n": 6,
+      "values": [
+        -6.273548665667797,
+        -6.108541786304344,
+        -5.858581308741255,
+        -5.783595266317576,
+        -5.666876314998091,
+        -5.37492567048918
+      ],
+      "range": [
+        -6.273548665667797,
+        -5.37492567048918
+      ],
+      "mean": -5.844344835419707
+    },
+    "SPAS_KV0110_R396SPg110": {
+      "family": "R396SPg110",
+      "n": 4,
+      "values": [
+        -13.794942495322877,
+        -13.632041044870597,
+        -12.705482346474788,
+        -12.665480343078071
+      ],
+      "range": [
+        -13.794942495322877,
+        -12.665480343078071
+      ],
+      "mean": -13.199486557436584
+    },
+    "edge_gap_SPAS_KV0110_vs_WEAK_x080": 6.391931677410274,
+    "separated": true,
+    "permutation_floor": {
+      "n_total": 210,
+      "n_at_least_as_extreme": 1,
+      "floor": "1/210",
+      "p": 0.004761904761904762
+    },
+    "brief_quoted_edge_gap_deg": 6.3919
+  },
+  "STEP1_BATCH_NULL": {
+    "what": "every pair of distinct same-mechanism families, 6 seeds vs 6 seeds, on THIS endpoint. This is the endpoint's batch false-positive rate.",
+    "quoted_permutation_floor": 0.0021645021645021645,
+    "by_endpoint": {
+      "knee_hs_L_deg": {
+        "NULL_DF": {
+          "label": "NULL-DF: dorsiflexor-weakness family vs family, C(6,2)=15",
+          "endpoint": "knee_hs_L_deg",
+          "families": [
+            "R151W",
+            "R169W090",
+            "R169W095",
+            "R174W870",
+            "R174W892",
+            "R174W915"
+          ],
+          "n_family_pairs_possible": 15,
+          "n_pairs_tested": 15,
+          "n_separated": 4,
+          "BATCH_FALSE_POSITIVE_RATE": 0.26666666666666666,
+          "excess_over_permutation_floor_2_over_924": 123.2,
+          "largest_null_edge_gap_deg": 0.5697331886598267,
+          "all_edge_gaps_deg_sorted": [
+            0.5697331886598267,
+            0.22512657686280324,
+            0.1640217739276908,
+            0.02517576551804801,
+            -0.14584067717259952,
+            -0.15165046921522585,
+            -0.1649247554128186,
+            -0.31943084627897544,
+            -0.3577663064355878,
+            -0.3805356492140879,
+            -0.4673536520790815,
+            -0.4962570810122493,
+            -0.7023729182326113,
+            -0.7094821785545973,
+            -0.7634777211677237
+          ],
+          "MAGNITUDE_GATED_RATE": {
+            "0.0000": {
+              "n_separated_by_at_least_this": 4,
+              "rate": 0.26666666666666666
+            },
+            "1.2100": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "3.8000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "4.2900": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "5.7000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "6.3400": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "6.3919": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "7.2500": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "7.6200": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "9.0000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "9.2000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "11.5000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            }
+          },
+          "uninformative_note": null,
+          "pairs": [
+            {
+              "pair": [
+                "R151W",
+                "R169W090"
+              ],
+              "separated": true,
+              "edge_gap": 0.22512657686280324,
+              "a_range": [
+                -6.273548665667797,
+                -5.37492567048918
+              ],
+              "b_range": [
+                -6.9891225315002234,
+                -6.4986752425306005
+              ],
+              "a_mean": -5.844344835419707,
+              "b_mean": -6.639607772244177,
+              "direction": "R151W HIGH"
+            },
+            {
+              "pair": [
+                "R151W",
+                "R169W095"
+              ],
+              "separated": true,
+              "edge_gap": 0.5697331886598267,
+              "a_range": [
+                -6.273548665667797,
+                -5.37492567048918
+              ],
+              "b_range": [
+                -7.030180687099299,
+                -6.843281854327624
+              ],
+              "a_mean": -5.844344835419707,
+              "b_mean": -6.941796217622418,
+              "direction": "R151W HIGH"
+            },
+            {
+              "pair": [
+                "R151W",
+                "R174W870"
+              ],
+              "separated": false,
+              "edge_gap": -0.4673536520790815,
+              "a_range": [
+                -6.273548665667797,
+                -5.37492567048918
+              ],
+              "b_range": [
+                -6.818106088809576,
+                -5.806195013588716
+              ],
+              "a_mean": -5.844344835419707,
+              "b_mean": -6.324527203517698,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R151W",
+                "R174W892"
+              ],
+              "separated": false,
+              "edge_gap": -0.1649247554128186,
+              "a_range": [
+                -6.273548665667797,
+                -5.37492567048918
+              ],
+              "b_range": [
+                -7.201048160763212,
+                -6.108623910254979
+              ],
+              "a_mean": -5.844344835419707,
+              "b_mean": -6.512070422822963,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R151W",
+                "R174W915"
+              ],
+              "separated": true,
+              "edge_gap": 0.1640217739276908,
+              "a_range": [
+                -6.273548665667797,
+                -5.37492567048918
+              ],
+              "b_range": [
+                -6.99493232354285,
+                -6.437570439595488
+              ],
+              "a_mean": -5.844344835419707,
+              "b_mean": -6.689202235046975,
+              "direction": "R151W HIGH"
+            },
+            {
+              "pair": [
+                "R169W090",
+                "R169W095"
+              ],
+              "separated": false,
+              "edge_gap": -0.14584067717259952,
+              "a_range": [
+                -6.9891225315002234,
+                -6.4986752425306005
+              ],
+              "b_range": [
+                -7.030180687099299,
+                -6.843281854327624
+              ],
+              "a_mean": -6.639607772244177,
+              "b_mean": -6.941796217622418,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R169W090",
+                "R174W870"
+              ],
+              "separated": false,
+              "edge_gap": -0.31943084627897544,
+              "a_range": [
+                -6.9891225315002234,
+                -6.4986752425306005
+              ],
+              "b_range": [
+                -6.818106088809576,
+                -5.806195013588716
+              ],
+              "a_mean": -6.639607772244177,
+              "b_mean": -6.324527203517698,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R169W090",
+                "R174W892"
+              ],
+              "separated": false,
+              "edge_gap": -0.7023729182326113,
+              "a_range": [
+                -6.9891225315002234,
+                -6.4986752425306005
+              ],
+              "b_range": [
+                -7.201048160763212,
+                -6.108623910254979
+              ],
+              "a_mean": -6.639607772244177,
+              "b_mean": -6.512070422822963,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R169W090",
+                "R174W915"
+              ],
+              "separated": false,
+              "edge_gap": -0.4962570810122493,
+              "a_range": [
+                -6.9891225315002234,
+                -6.4986752425306005
+              ],
+              "b_range": [
+                -6.99493232354285,
+                -6.437570439595488
+              ],
+              "a_mean": -6.639607772244177,
+              "b_mean": -6.689202235046975,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R169W095",
+                "R174W870"
+              ],
+              "separated": true,
+              "edge_gap": 0.02517576551804801,
+              "a_range": [
+                -7.030180687099299,
+                -6.843281854327624
+              ],
+              "b_range": [
+                -6.818106088809576,
+                -5.806195013588716
+              ],
+              "a_mean": -6.941796217622418,
+              "b_mean": -6.324527203517698,
+              "direction": "R174W870 HIGH"
+            },
+            {
+              "pair": [
+                "R169W095",
+                "R174W892"
+              ],
+              "separated": false,
+              "edge_gap": -0.3577663064355878,
+              "a_range": [
+                -7.030180687099299,
+                -6.843281854327624
+              ],
+              "b_range": [
+                -7.201048160763212,
+                -6.108623910254979
+              ],
+              "a_mean": -6.941796217622418,
+              "b_mean": -6.512070422822963,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R169W095",
+                "R174W915"
+              ],
+              "separated": false,
+              "edge_gap": -0.15165046921522585,
+              "a_range": [
+                -7.030180687099299,
+                -6.843281854327624
+              ],
+              "b_range": [
+                -6.99493232354285,
+                -6.437570439595488
+              ],
+              "a_mean": -6.941796217622418,
+              "b_mean": -6.689202235046975,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R174W870",
+                "R174W892"
+              ],
+              "separated": false,
+              "edge_gap": -0.7094821785545973,
+              "a_range": [
+                -6.818106088809576,
+                -5.806195013588716
+              ],
+              "b_range": [
+                -7.201048160763212,
+                -6.108623910254979
+              ],
+              "a_mean": -6.324527203517698,
+              "b_mean": -6.512070422822963,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R174W870",
+                "R174W915"
+              ],
+              "separated": false,
+              "edge_gap": -0.3805356492140879,
+              "a_range": [
+                -6.818106088809576,
+                -5.806195013588716
+              ],
+              "b_range": [
+                -6.99493232354285,
+                -6.437570439595488
+              ],
+              "a_mean": -6.324527203517698,
+              "b_mean": -6.689202235046975,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R174W892",
+                "R174W915"
+              ],
+              "separated": false,
+              "edge_gap": -0.7634777211677237,
+              "a_range": [
+                -7.201048160763212,
+                -6.108623910254979
+              ],
+              "b_range": [
+                -6.99493232354285,
+                -6.437570439595488
+              ],
+              "a_mean": -6.512070422822963,
+              "b_mean": -6.689202235046975,
+              "direction": null
+            }
+          ]
+        },
+        "NULL_PF": {
+          "label": "NULL-PF: plantarflexor/other-weakness family vs family, C(5,2)=10",
+          "endpoint": "knee_hs_L_deg",
+          "families": [
+            "R276WPF005",
+            "R276WPF010",
+            "R276WPF020",
+            "R285BF007",
+            "R285BF008"
+          ],
+          "n_family_pairs_possible": 10,
+          "n_pairs_tested": 0,
+          "n_separated": 0,
+          "BATCH_FALSE_POSITIVE_RATE": null,
+          "excess_over_permutation_floor_2_over_924": null,
+          "largest_null_edge_gap_deg": null,
+          "all_edge_gaps_deg_sorted": [],
+          "MAGNITUDE_GATED_RATE": {
+            "0.0000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "1.2100": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "3.8000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "4.2900": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "5.7000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "6.3400": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "6.3919": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "7.2500": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "7.6200": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "9.0000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "9.2000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "11.5000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            }
+          },
+          "uninformative_note": "ALL 10 pairs are UNINFORMATIVE: fewer than 4 Gate-G cells on at least one side of every pair. No rate can be quoted for this cohort.",
+          "pairs": [
+            {
+              "pair": [
+                "R276WPF005",
+                "R276WPF010"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 5,
+              "n_b": 3
+            },
+            {
+              "pair": [
+                "R276WPF005",
+                "R276WPF020"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 5,
+              "n_b": 0
+            },
+            {
+              "pair": [
+                "R276WPF005",
+                "R285BF007"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 5,
+              "n_b": 3
+            },
+            {
+              "pair": [
+                "R276WPF005",
+                "R285BF008"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 5,
+              "n_b": 2
+            },
+            {
+              "pair": [
+                "R276WPF010",
+                "R276WPF020"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 3,
+              "n_b": 0
+            },
+            {
+              "pair": [
+                "R276WPF010",
+                "R285BF007"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 3,
+              "n_b": 3
+            },
+            {
+              "pair": [
+                "R276WPF010",
+                "R285BF008"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 3,
+              "n_b": 2
+            },
+            {
+              "pair": [
+                "R276WPF020",
+                "R285BF007"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 0,
+              "n_b": 3
+            },
+            {
+              "pair": [
+                "R276WPF020",
+                "R285BF008"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 0,
+              "n_b": 2
+            },
+            {
+              "pair": [
+                "R285BF007",
+                "R285BF008"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 3,
+              "n_b": 2
+            }
+          ]
+        }
+      },
+      "knee_hs_R_deg": {
+        "NULL_DF": {
+          "label": "NULL-DF: dorsiflexor-weakness family vs family, C(6,2)=15",
+          "endpoint": "knee_hs_R_deg",
+          "families": [
+            "R151W",
+            "R169W090",
+            "R169W095",
+            "R174W870",
+            "R174W892",
+            "R174W915"
+          ],
+          "n_family_pairs_possible": 15,
+          "n_pairs_tested": 15,
+          "n_separated": 0,
+          "BATCH_FALSE_POSITIVE_RATE": 0.0,
+          "excess_over_permutation_floor_2_over_924": 0.0,
+          "largest_null_edge_gap_deg": -0.4933418717506255,
+          "all_edge_gaps_deg_sorted": [
+            -0.4933418717506255,
+            -0.6606799253965319,
+            -0.7306953679615207,
+            -0.7616843632689658,
+            -0.8331780369453892,
+            -0.9290224169148722,
+            -0.940489594226622,
+            -0.999037859479861,
+            -1.0119832679030454,
+            -1.1078276478725284,
+            -1.1778075670542192,
+            -1.1778430904375172,
+            -1.2480922997829165,
+            -1.4151610632651144,
+            -1.465192883851528
+          ],
+          "MAGNITUDE_GATED_RATE": {
+            "0.0000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "1.2100": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "3.8000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "4.2900": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "5.7000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "6.3400": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "6.3919": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "7.2500": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "7.6200": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "9.0000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "9.2000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            },
+            "11.5000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": 0.0
+            }
+          },
+          "uninformative_note": null,
+          "pairs": [
+            {
+              "pair": [
+                "R151W",
+                "R169W090"
+              ],
+              "separated": false,
+              "edge_gap": -1.0119832679030454,
+              "a_range": [
+                -8.869936708108469,
+                -7.176053449908426
+              ],
+              "b_range": [
+                -8.188036717811471,
+                -7.623201172384422
+              ],
+              "a_mean": -7.62094085388263,
+              "b_mean": -7.80537902391015,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R151W",
+                "R169W095"
+              ],
+              "separated": false,
+              "edge_gap": -0.940489594226622,
+              "a_range": [
+                -8.869936708108469,
+                -7.176053449908426
+              ],
+              "b_range": [
+                -8.116543044135048,
+                -7.0274075713708655
+              ],
+              "a_mean": -7.62094085388263,
+              "b_mean": -7.33122799153557,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R151W",
+                "R174W870"
+              ],
+              "separated": false,
+              "edge_gap": -1.465192883851528,
+              "a_range": [
+                -8.869936708108469,
+                -7.176053449908426
+              ],
+              "b_range": [
+                -8.641246333759954,
+                -7.354858680866082
+              ],
+              "a_mean": -7.62094085388263,
+              "b_mean": -7.877476404116712,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R151W",
+                "R174W892"
+              ],
+              "separated": false,
+              "edge_gap": -1.1778430904375172,
+              "a_range": [
+                -8.869936708108469,
+                -7.176053449908426
+              ],
+              "b_range": [
+                -8.353896540345943,
+                -6.868450744352131
+              ],
+              "a_mean": -7.62094085388263,
+              "b_mean": -7.794926363867648,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R151W",
+                "R174W915"
+              ],
+              "separated": false,
+              "edge_gap": -1.1078276478725284,
+              "a_range": [
+                -8.869936708108469,
+                -7.176053449908426
+              ],
+              "b_range": [
+                -8.283881097780954,
+                -6.9387354770808285
+              ],
+              "a_mean": -7.62094085388263,
+              "b_mean": -7.788445256275058,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R169W090",
+                "R169W095"
+              ],
+              "separated": false,
+              "edge_gap": -0.4933418717506255,
+              "a_range": [
+                -8.188036717811471,
+                -7.623201172384422
+              ],
+              "b_range": [
+                -8.116543044135048,
+                -7.0274075713708655
+              ],
+              "a_mean": -7.80537902391015,
+              "b_mean": -7.33122799153557,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R169W090",
+                "R174W870"
+              ],
+              "separated": false,
+              "edge_gap": -0.8331780369453892,
+              "a_range": [
+                -8.188036717811471,
+                -7.623201172384422
+              ],
+              "b_range": [
+                -8.641246333759954,
+                -7.354858680866082
+              ],
+              "a_mean": -7.80537902391015,
+              "b_mean": -7.877476404116712,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R169W090",
+                "R174W892"
+              ],
+              "separated": false,
+              "edge_gap": -0.7306953679615207,
+              "a_range": [
+                -8.188036717811471,
+                -7.623201172384422
+              ],
+              "b_range": [
+                -8.353896540345943,
+                -6.868450744352131
+              ],
+              "a_mean": -7.80537902391015,
+              "b_mean": -7.794926363867648,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R169W090",
+                "R174W915"
+              ],
+              "separated": false,
+              "edge_gap": -0.6606799253965319,
+              "a_range": [
+                -8.188036717811471,
+                -7.623201172384422
+              ],
+              "b_range": [
+                -8.283881097780954,
+                -6.9387354770808285
+              ],
+              "a_mean": -7.80537902391015,
+              "b_mean": -7.788445256275058,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R169W095",
+                "R174W870"
+              ],
+              "separated": false,
+              "edge_gap": -0.7616843632689658,
+              "a_range": [
+                -8.116543044135048,
+                -7.0274075713708655
+              ],
+              "b_range": [
+                -8.641246333759954,
+                -7.354858680866082
+              ],
+              "a_mean": -7.33122799153557,
+              "b_mean": -7.877476404116712,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R169W095",
+                "R174W892"
+              ],
+              "separated": false,
+              "edge_gap": -1.2480922997829165,
+              "a_range": [
+                -8.116543044135048,
+                -7.0274075713708655
+              ],
+              "b_range": [
+                -8.353896540345943,
+                -6.868450744352131
+              ],
+              "a_mean": -7.33122799153557,
+              "b_mean": -7.794926363867648,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R169W095",
+                "R174W915"
+              ],
+              "separated": false,
+              "edge_gap": -1.1778075670542192,
+              "a_range": [
+                -8.116543044135048,
+                -7.0274075713708655
+              ],
+              "b_range": [
+                -8.283881097780954,
+                -6.9387354770808285
+              ],
+              "a_mean": -7.33122799153557,
+              "b_mean": -7.788445256275058,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R174W870",
+                "R174W892"
+              ],
+              "separated": false,
+              "edge_gap": -0.999037859479861,
+              "a_range": [
+                -8.641246333759954,
+                -7.354858680866082
+              ],
+              "b_range": [
+                -8.353896540345943,
+                -6.868450744352131
+              ],
+              "a_mean": -7.877476404116712,
+              "b_mean": -7.794926363867648,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R174W870",
+                "R174W915"
+              ],
+              "separated": false,
+              "edge_gap": -0.9290224169148722,
+              "a_range": [
+                -8.641246333759954,
+                -7.354858680866082
+              ],
+              "b_range": [
+                -8.283881097780954,
+                -6.9387354770808285
+              ],
+              "a_mean": -7.877476404116712,
+              "b_mean": -7.788445256275058,
+              "direction": null
+            },
+            {
+              "pair": [
+                "R174W892",
+                "R174W915"
+              ],
+              "separated": false,
+              "edge_gap": -1.4151610632651144,
+              "a_range": [
+                -8.353896540345943,
+                -6.868450744352131
+              ],
+              "b_range": [
+                -8.283881097780954,
+                -6.9387354770808285
+              ],
+              "a_mean": -7.794926363867648,
+              "b_mean": -7.788445256275058,
+              "direction": null
+            }
+          ]
+        },
+        "NULL_PF": {
+          "label": "NULL-PF: plantarflexor/other-weakness family vs family, C(5,2)=10",
+          "endpoint": "knee_hs_R_deg",
+          "families": [
+            "R276WPF005",
+            "R276WPF010",
+            "R276WPF020",
+            "R285BF007",
+            "R285BF008"
+          ],
+          "n_family_pairs_possible": 10,
+          "n_pairs_tested": 0,
+          "n_separated": 0,
+          "BATCH_FALSE_POSITIVE_RATE": null,
+          "excess_over_permutation_floor_2_over_924": null,
+          "largest_null_edge_gap_deg": null,
+          "all_edge_gaps_deg_sorted": [],
+          "MAGNITUDE_GATED_RATE": {
+            "0.0000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "1.2100": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "3.8000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "4.2900": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "5.7000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "6.3400": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "6.3919": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "7.2500": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "7.6200": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "9.0000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "9.2000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            },
+            "11.5000": {
+              "n_separated_by_at_least_this": 0,
+              "rate": null
+            }
+          },
+          "uninformative_note": "ALL 10 pairs are UNINFORMATIVE: fewer than 4 Gate-G cells on at least one side of every pair. No rate can be quoted for this cohort.",
+          "pairs": [
+            {
+              "pair": [
+                "R276WPF005",
+                "R276WPF010"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 5,
+              "n_b": 3
+            },
+            {
+              "pair": [
+                "R276WPF005",
+                "R276WPF020"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 5,
+              "n_b": 0
+            },
+            {
+              "pair": [
+                "R276WPF005",
+                "R285BF007"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 5,
+              "n_b": 3
+            },
+            {
+              "pair": [
+                "R276WPF005",
+                "R285BF008"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 5,
+              "n_b": 2
+            },
+            {
+              "pair": [
+                "R276WPF010",
+                "R276WPF020"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 3,
+              "n_b": 0
+            },
+            {
+              "pair": [
+                "R276WPF010",
+                "R285BF007"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 3,
+              "n_b": 3
+            },
+            {
+              "pair": [
+                "R276WPF010",
+                "R285BF008"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 3,
+              "n_b": 2
+            },
+            {
+              "pair": [
+                "R276WPF020",
+                "R285BF007"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 0,
+              "n_b": 3
+            },
+            {
+              "pair": [
+                "R276WPF020",
+                "R285BF008"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 0,
+              "n_b": 2
+            },
+            {
+              "pair": [
+                "R285BF007",
+                "R285BF008"
+              ],
+              "verdict": "UNINFORMATIVE",
+              "n_a": 3,
+              "n_b": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  "STEP2_LIKE_FOR_LIKE": {
+    "what": "each spastic family with Gate-G cells, 6 seeds (4 for the R396 rungs), against EACH of the six dorsiflexor-weakness families separately. Same geometry as the batch null, so it is the only hit rate comparable with it.",
+    "by_endpoint": {
+      "knee_hs_L_deg": {
+        "0.050": {
+          "family": "R151S",
+          "n_gate_G": 6,
+          "n_tested": 6,
+          "n_separated": 6,
+          "hit_rate": 1.0,
+          "batch_null_rate_NULL_DF": 0.26666666666666666,
+          "p_binomial_vs_batch_null": 0.00035959396433470504,
+          "edge_gaps_when_separated_deg": {
+            "min": 1.4918560478057357,
+            "median": 1.7008767810474108,
+            "max": 2.41935554290115
+          },
+          "n_separated_by_at_least": {
+            "0.0000": 6,
+            "1.2100": 6,
+            "3.8000": 0,
+            "4.2900": 0,
+            "5.7000": 0,
+            "6.3400": 0,
+            "6.3919": 0,
+            "7.2500": 0,
+            "7.6200": 0,
+            "9.0000": 0,
+            "9.2000": 0,
+            "11.5000": 0
+          },
+          "UNINFORMATIVE": false,
+          "uninformative_why": null,
+          "comparisons": [
+            {
+              "vs": "R151W",
+              "separated": true,
+              "edge_gap": 2.41935554290115,
+              "mean_diff": -4.087414447359058,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -11.092187893991076,
+                -8.692904208568947
+              ],
+              "weak_range": [
+                -6.273548665667797,
+                -5.37492567048918
+              ]
+            },
+            {
+              "vs": "R169W090",
+              "separated": true,
+              "edge_gap": 1.703781677068724,
+              "mean_diff": -3.2921515105345884,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -11.092187893991076,
+                -8.692904208568947
+              ],
+              "weak_range": [
+                -6.9891225315002234,
+                -6.4986752425306005
+              ]
+            },
+            {
+              "vs": "R169W095",
+              "separated": true,
+              "edge_gap": 1.6627235214696485,
+              "mean_diff": -2.9899630651563474,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -11.092187893991076,
+                -8.692904208568947
+              ],
+              "weak_range": [
+                -7.030180687099299,
+                -6.843281854327624
+              ]
+            },
+            {
+              "vs": "R174W870",
+              "separated": true,
+              "edge_gap": 1.8747981197593715,
+              "mean_diff": -3.6072320792610677,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -11.092187893991076,
+                -8.692904208568947
+              ],
+              "weak_range": [
+                -6.818106088809576,
+                -5.806195013588716
+              ]
+            },
+            {
+              "vs": "R174W892",
+              "separated": true,
+              "edge_gap": 1.4918560478057357,
+              "mean_diff": -3.4196888599558024,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -11.092187893991076,
+                -8.692904208568947
+              ],
+              "weak_range": [
+                -7.201048160763212,
+                -6.108623910254979
+              ]
+            },
+            {
+              "vs": "R174W915",
+              "separated": true,
+              "edge_gap": 1.6979718850260976,
+              "mean_diff": -3.2425570477317907,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -11.092187893991076,
+                -8.692904208568947
+              ],
+              "weak_range": [
+                -6.99493232354285,
+                -6.437570439595488
+              ]
+            }
+          ]
+        },
+        "0.070": {
+          "family": "R393SPg070",
+          "n_gate_G": 6,
+          "n_tested": 6,
+          "n_separated": 6,
+          "hit_rate": 1.0,
+          "batch_null_rate_NULL_DF": 0.26666666666666666,
+          "p_binomial_vs_batch_null": 0.00035959396433470504,
+          "edge_gaps_when_separated_deg": {
+            "min": 3.4904474287810734,
+            "median": 3.6994681620227485,
+            "max": 4.417946923876488
+          },
+          "n_separated_by_at_least": {
+            "0.0000": 6,
+            "1.2100": 6,
+            "3.8000": 2,
+            "4.2900": 1,
+            "5.7000": 0,
+            "6.3400": 0,
+            "6.3919": 0,
+            "7.2500": 0,
+            "7.6200": 0,
+            "9.0000": 0,
+            "9.2000": 0,
+            "11.5000": 0
+          },
+          "UNINFORMATIVE": false,
+          "uninformative_why": null,
+          "comparisons": [
+            {
+              "vs": "R151W",
+              "separated": true,
+              "edge_gap": 4.417946923876488,
+              "mean_diff": -5.436312432321475,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -11.923948815323172,
+                -10.691495589544285
+              ],
+              "weak_range": [
+                -6.273548665667797,
+                -5.37492567048918
+              ]
+            },
+            {
+              "vs": "R169W090",
+              "separated": true,
+              "edge_gap": 3.7023730580440617,
+              "mean_diff": -4.641049495497005,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -11.923948815323172,
+                -10.691495589544285
+              ],
+              "weak_range": [
+                -6.9891225315002234,
+                -6.4986752425306005
+              ]
+            },
+            {
+              "vs": "R169W095",
+              "separated": true,
+              "edge_gap": 3.6613149024449863,
+              "mean_diff": -4.338861050118764,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -11.923948815323172,
+                -10.691495589544285
+              ],
+              "weak_range": [
+                -7.030180687099299,
+                -6.843281854327624
+              ]
+            },
+            {
+              "vs": "R174W870",
+              "separated": true,
+              "edge_gap": 3.8733895007347092,
+              "mean_diff": -4.956130064223484,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -11.923948815323172,
+                -10.691495589544285
+              ],
+              "weak_range": [
+                -6.818106088809576,
+                -5.806195013588716
+              ]
+            },
+            {
+              "vs": "R174W892",
+              "separated": true,
+              "edge_gap": 3.4904474287810734,
+              "mean_diff": -4.768586844918219,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -11.923948815323172,
+                -10.691495589544285
+              ],
+              "weak_range": [
+                -7.201048160763212,
+                -6.108623910254979
+              ]
+            },
+            {
+              "vs": "R174W915",
+              "separated": true,
+              "edge_gap": 3.6965632660014354,
+              "mean_diff": -4.591455032694207,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -11.923948815323172,
+                -10.691495589544285
+              ],
+              "weak_range": [
+                -6.99493232354285,
+                -6.437570439595488
+              ]
+            }
+          ]
+        },
+        "0.100": {
+          "family": "R393SPg100",
+          "n_gate_G": 4,
+          "n_tested": 6,
+          "n_separated": 6,
+          "hit_rate": 1.0,
+          "batch_null_rate_NULL_DF": 0.26666666666666666,
+          "p_binomial_vs_batch_null": 0.00035959396433470504,
+          "edge_gaps_when_separated_deg": {
+            "min": 4.805769450329053,
+            "median": 5.014790183570728,
+            "max": 5.733268945424467
+          },
+          "n_separated_by_at_least": {
+            "0.0000": 6,
+            "1.2100": 6,
+            "3.8000": 6,
+            "4.2900": 6,
+            "5.7000": 1,
+            "6.3400": 0,
+            "6.3919": 0,
+            "7.2500": 0,
+            "7.6200": 0,
+            "9.0000": 0,
+            "9.2000": 0,
+            "11.5000": 0
+          },
+          "UNINFORMATIVE": false,
+          "uninformative_why": null,
+          "comparisons": [
+            {
+              "vs": "R151W",
+              "separated": true,
+              "edge_gap": 5.733268945424467,
+              "mean_diff": -6.798926231124606,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -13.620400452332857,
+                -12.006817611092265
+              ],
+              "weak_range": [
+                -6.273548665667797,
+                -5.37492567048918
+              ]
+            },
+            {
+              "vs": "R169W090",
+              "separated": true,
+              "edge_gap": 5.017695079592041,
+              "mean_diff": -6.003663294300137,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -13.620400452332857,
+                -12.006817611092265
+              ],
+              "weak_range": [
+                -6.9891225315002234,
+                -6.4986752425306005
+              ]
+            },
+            {
+              "vs": "R169W095",
+              "separated": true,
+              "edge_gap": 4.976636923992966,
+              "mean_diff": -5.701474848921896,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -13.620400452332857,
+                -12.006817611092265
+              ],
+              "weak_range": [
+                -7.030180687099299,
+                -6.843281854327624
+              ]
+            },
+            {
+              "vs": "R174W870",
+              "separated": true,
+              "edge_gap": 5.188711522282689,
+              "mean_diff": -6.318743863026616,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -13.620400452332857,
+                -12.006817611092265
+              ],
+              "weak_range": [
+                -6.818106088809576,
+                -5.806195013588716
+              ]
+            },
+            {
+              "vs": "R174W892",
+              "separated": true,
+              "edge_gap": 4.805769450329053,
+              "mean_diff": -6.131200643721351,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -13.620400452332857,
+                -12.006817611092265
+              ],
+              "weak_range": [
+                -7.201048160763212,
+                -6.108623910254979
+              ]
+            },
+            {
+              "vs": "R174W915",
+              "separated": true,
+              "edge_gap": 5.011885287549415,
+              "mean_diff": -5.954068831497339,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -13.620400452332857,
+                -12.006817611092265
+              ],
+              "weak_range": [
+                -6.99493232354285,
+                -6.437570439595488
+              ]
+            }
+          ]
+        },
+        "0.110": {
+          "family": "R396SPg110",
+          "n_gate_G": 4,
+          "n_tested": 6,
+          "n_separated": 6,
+          "hit_rate": 1.0,
+          "batch_null_rate_NULL_DF": 0.26666666666666666,
+          "p_binomial_vs_batch_null": 0.00035959396433470504,
+          "edge_gaps_when_separated_deg": {
+            "min": 5.46443218231486,
+            "median": 5.673452915556535,
+            "max": 6.391931677410274
+          },
+          "n_separated_by_at_least": {
+            "0.0000": 6,
+            "1.2100": 6,
+            "3.8000": 6,
+            "4.2900": 6,
+            "5.7000": 2,
+            "6.3400": 1,
+            "6.3919": 1,
+            "7.2500": 0,
+            "7.6200": 0,
+            "9.0000": 0,
+            "9.2000": 0,
+            "11.5000": 0
+          },
+          "UNINFORMATIVE": false,
+          "uninformative_why": null,
+          "comparisons": [
+            {
+              "vs": "R151W",
+              "separated": true,
+              "edge_gap": 6.391931677410274,
+              "mean_diff": -7.355141722016877,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -13.794942495322877,
+                -12.665480343078071
+              ],
+              "weak_range": [
+                -6.273548665667797,
+                -5.37492567048918
+              ]
+            },
+            {
+              "vs": "R169W090",
+              "separated": true,
+              "edge_gap": 5.676357811577848,
+              "mean_diff": -6.559878785192407,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -13.794942495322877,
+                -12.665480343078071
+              ],
+              "weak_range": [
+                -6.9891225315002234,
+                -6.4986752425306005
+              ]
+            },
+            {
+              "vs": "R169W095",
+              "separated": true,
+              "edge_gap": 5.6352996559787725,
+              "mean_diff": -6.257690339814166,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -13.794942495322877,
+                -12.665480343078071
+              ],
+              "weak_range": [
+                -7.030180687099299,
+                -6.843281854327624
+              ]
+            },
+            {
+              "vs": "R174W870",
+              "separated": true,
+              "edge_gap": 5.847374254268495,
+              "mean_diff": -6.874959353918887,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -13.794942495322877,
+                -12.665480343078071
+              ],
+              "weak_range": [
+                -6.818106088809576,
+                -5.806195013588716
+              ]
+            },
+            {
+              "vs": "R174W892",
+              "separated": true,
+              "edge_gap": 5.46443218231486,
+              "mean_diff": -6.687416134613621,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -13.794942495322877,
+                -12.665480343078071
+              ],
+              "weak_range": [
+                -7.201048160763212,
+                -6.108623910254979
+              ]
+            },
+            {
+              "vs": "R174W915",
+              "separated": true,
+              "edge_gap": 5.670548019535222,
+              "mean_diff": -6.51028432238961,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -13.794942495322877,
+                -12.665480343078071
+              ],
+              "weak_range": [
+                -6.99493232354285,
+                -6.437570439595488
+              ]
+            }
+          ]
+        },
+        "0.120": {
+          "family": "R396SPg120",
+          "n_gate_G": 3,
+          "n_tested": 0,
+          "n_separated": 0,
+          "hit_rate": null,
+          "batch_null_rate_NULL_DF": 0.26666666666666666,
+          "p_binomial_vs_batch_null": null,
+          "edge_gaps_when_separated_deg": null,
+          "n_separated_by_at_least": null,
+          "UNINFORMATIVE": true,
+          "uninformative_why": "only 3 Gate-G cells, need 4",
+          "comparisons": [
+            {
+              "vs": "R151W",
+              "verdict": "UNINFORMATIVE",
+              "n_spastic": 3,
+              "n_weak": 6
+            },
+            {
+              "vs": "R169W090",
+              "verdict": "UNINFORMATIVE",
+              "n_spastic": 3,
+              "n_weak": 6
+            },
+            {
+              "vs": "R169W095",
+              "verdict": "UNINFORMATIVE",
+              "n_spastic": 3,
+              "n_weak": 6
+            },
+            {
+              "vs": "R174W870",
+              "verdict": "UNINFORMATIVE",
+              "n_spastic": 3,
+              "n_weak": 6
+            },
+            {
+              "vs": "R174W892",
+              "verdict": "UNINFORMATIVE",
+              "n_spastic": 3,
+              "n_weak": 6
+            },
+            {
+              "vs": "R174W915",
+              "verdict": "UNINFORMATIVE",
+              "n_spastic": 3,
+              "n_weak": 6
+            }
+          ]
+        },
+        "_POOLED_ALL_SPASTIC_FAMILIES": {
+          "n_tested": 24,
+          "n_separated": 24,
+          "hit_rate": 1.0,
+          "batch_null_rate_NULL_DF": 0.26666666666666666,
+          "p_binomial_vs_batch_null": 1.672051210262611e-14,
+          "edge_gaps_when_separated_deg": {
+            "min": 1.4918560478057357,
+            "median": 4.61185818710277,
+            "max": 6.391931677410274
+          },
+          "n_separated_by_at_least": {
+            "0.0000": 24,
+            "1.2100": 24,
+            "3.8000": 14,
+            "4.2900": 13,
+            "5.7000": 3,
+            "6.3400": 1,
+            "6.3919": 1,
+            "7.2500": 0,
+            "7.6200": 0,
+            "9.0000": 0,
+            "9.2000": 0,
+            "11.5000": 0
+          }
+        }
+      },
+      "knee_hs_R_deg": {
+        "0.050": {
+          "family": "R151S",
+          "n_gate_G": 6,
+          "n_tested": 6,
+          "n_separated": 0,
+          "hit_rate": 0.0,
+          "batch_null_rate_NULL_DF": 0.0,
+          "p_binomial_vs_batch_null": 1.0,
+          "edge_gaps_when_separated_deg": null,
+          "n_separated_by_at_least": null,
+          "UNINFORMATIVE": false,
+          "uninformative_why": null,
+          "comparisons": [
+            {
+              "vs": "R151W",
+              "separated": false,
+              "edge_gap": -1.7119600766364211,
+              "mean_diff": -0.5340253129516848,
+              "direction": null,
+              "spastic_range": [
+                -9.053333622836304,
+                -7.157976631472048
+              ],
+              "weak_range": [
+                -8.869936708108469,
+                -7.176053449908426
+              ]
+            },
+            {
+              "vs": "R169W090",
+              "separated": false,
+              "edge_gap": -1.0300600863394234,
+              "mean_diff": -0.3495871429241655,
+              "direction": null,
+              "spastic_range": [
+                -9.053333622836304,
+                -7.157976631472048
+              ],
+              "weak_range": [
+                -8.188036717811471,
+                -7.623201172384422
+              ]
+            },
+            {
+              "vs": "R169W095",
+              "separated": false,
+              "edge_gap": -0.958566412663,
+              "mean_diff": -0.8237381752987449,
+              "direction": null,
+              "spastic_range": [
+                -9.053333622836304,
+                -7.157976631472048
+              ],
+              "weak_range": [
+                -8.116543044135048,
+                -7.0274075713708655
+              ]
+            },
+            {
+              "vs": "R174W870",
+              "separated": false,
+              "edge_gap": -1.483269702287906,
+              "mean_diff": -0.27748976271760295,
+              "direction": null,
+              "spastic_range": [
+                -9.053333622836304,
+                -7.157976631472048
+              ],
+              "weak_range": [
+                -8.641246333759954,
+                -7.354858680866082
+              ]
+            },
+            {
+              "vs": "R174W892",
+              "separated": false,
+              "edge_gap": -1.1959199088738952,
+              "mean_diff": -0.36003980296666693,
+              "direction": null,
+              "spastic_range": [
+                -9.053333622836304,
+                -7.157976631472048
+              ],
+              "weak_range": [
+                -8.353896540345943,
+                -6.868450744352131
+              ]
+            },
+            {
+              "vs": "R174W915",
+              "separated": false,
+              "edge_gap": -1.1259044663089064,
+              "mean_diff": -0.36652091055925684,
+              "direction": null,
+              "spastic_range": [
+                -9.053333622836304,
+                -7.157976631472048
+              ],
+              "weak_range": [
+                -8.283881097780954,
+                -6.9387354770808285
+              ]
+            }
+          ]
+        },
+        "0.070": {
+          "family": "R393SPg070",
+          "n_gate_G": 6,
+          "n_tested": 6,
+          "n_separated": 0,
+          "hit_rate": 0.0,
+          "batch_null_rate_NULL_DF": 0.0,
+          "p_binomial_vs_batch_null": 1.0,
+          "edge_gaps_when_separated_deg": null,
+          "n_separated_by_at_least": null,
+          "UNINFORMATIVE": false,
+          "uninformative_why": null,
+          "comparisons": [
+            {
+              "vs": "R151W",
+              "separated": false,
+              "edge_gap": -1.8614883101784825,
+              "mean_diff": -0.5160863863580021,
+              "direction": null,
+              "spastic_range": [
+                -9.28538840535783,
+                -7.008448397929986
+              ],
+              "weak_range": [
+                -8.869936708108469,
+                -7.176053449908426
+              ]
+            },
+            {
+              "vs": "R169W090",
+              "separated": false,
+              "edge_gap": -1.1795883198814847,
+              "mean_diff": -0.3316482163304828,
+              "direction": null,
+              "spastic_range": [
+                -9.28538840535783,
+                -7.008448397929986
+              ],
+              "weak_range": [
+                -8.188036717811471,
+                -7.623201172384422
+              ]
+            },
+            {
+              "vs": "R169W095",
+              "separated": false,
+              "edge_gap": -1.1080946462050614,
+              "mean_diff": -0.8057992487050623,
+              "direction": null,
+              "spastic_range": [
+                -9.28538840535783,
+                -7.008448397929986
+              ],
+              "weak_range": [
+                -8.116543044135048,
+                -7.0274075713708655
+              ]
+            },
+            {
+              "vs": "R174W870",
+              "separated": false,
+              "edge_gap": -1.6327979358299674,
+              "mean_diff": -0.25955083612392027,
+              "direction": null,
+              "spastic_range": [
+                -9.28538840535783,
+                -7.008448397929986
+              ],
+              "weak_range": [
+                -8.641246333759954,
+                -7.354858680866082
+              ]
+            },
+            {
+              "vs": "R174W892",
+              "separated": false,
+              "edge_gap": -1.3454481424159566,
+              "mean_diff": -0.34210087637298425,
+              "direction": null,
+              "spastic_range": [
+                -9.28538840535783,
+                -7.008448397929986
+              ],
+              "weak_range": [
+                -8.353896540345943,
+                -6.868450744352131
+              ]
+            },
+            {
+              "vs": "R174W915",
+              "separated": false,
+              "edge_gap": -1.2754326998509677,
+              "mean_diff": -0.34858198396557416,
+              "direction": null,
+              "spastic_range": [
+                -9.28538840535783,
+                -7.008448397929986
+              ],
+              "weak_range": [
+                -8.283881097780954,
+                -6.9387354770808285
+              ]
+            }
+          ]
+        },
+        "0.100": {
+          "family": "R393SPg100",
+          "n_gate_G": 4,
+          "n_tested": 6,
+          "n_separated": 0,
+          "hit_rate": 0.0,
+          "batch_null_rate_NULL_DF": 0.0,
+          "p_binomial_vs_batch_null": 1.0,
+          "edge_gaps_when_separated_deg": null,
+          "n_separated_by_at_least": null,
+          "UNINFORMATIVE": false,
+          "uninformative_why": null,
+          "comparisons": [
+            {
+              "vs": "R151W",
+              "separated": false,
+              "edge_gap": -1.6033123817769432,
+              "mean_diff": -1.634747233741968,
+              "direction": null,
+              "spastic_range": [
+                -10.032205659758741,
+                -7.2666243263315256
+              ],
+              "weak_range": [
+                -8.869936708108469,
+                -7.176053449908426
+              ]
+            },
+            {
+              "vs": "R169W090",
+              "separated": false,
+              "edge_gap": -0.9214123914799455,
+              "mean_diff": -1.4503090637144487,
+              "direction": null,
+              "spastic_range": [
+                -10.032205659758741,
+                -7.2666243263315256
+              ],
+              "weak_range": [
+                -8.188036717811471,
+                -7.623201172384422
+              ]
+            },
+            {
+              "vs": "R169W095",
+              "separated": false,
+              "edge_gap": -0.8499187178035221,
+              "mean_diff": -1.9244600960890281,
+              "direction": null,
+              "spastic_range": [
+                -10.032205659758741,
+                -7.2666243263315256
+              ],
+              "weak_range": [
+                -8.116543044135048,
+                -7.0274075713708655
+              ]
+            },
+            {
+              "vs": "R174W870",
+              "separated": false,
+              "edge_gap": -1.374622007428428,
+              "mean_diff": -1.3782116835078861,
+              "direction": null,
+              "spastic_range": [
+                -10.032205659758741,
+                -7.2666243263315256
+              ],
+              "weak_range": [
+                -8.641246333759954,
+                -7.354858680866082
+              ]
+            },
+            {
+              "vs": "R174W892",
+              "separated": false,
+              "edge_gap": -1.0872722140144173,
+              "mean_diff": -1.4607617237569501,
+              "direction": null,
+              "spastic_range": [
+                -10.032205659758741,
+                -7.2666243263315256
+              ],
+              "weak_range": [
+                -8.353896540345943,
+                -6.868450744352131
+              ]
+            },
+            {
+              "vs": "R174W915",
+              "separated": false,
+              "edge_gap": -1.0172567714494285,
+              "mean_diff": -1.46724283134954,
+              "direction": null,
+              "spastic_range": [
+                -10.032205659758741,
+                -7.2666243263315256
+              ],
+              "weak_range": [
+                -8.283881097780954,
+                -6.9387354770808285
+              ]
+            }
+          ]
+        },
+        "0.110": {
+          "family": "R396SPg110",
+          "n_gate_G": 4,
+          "n_tested": 6,
+          "n_separated": 6,
+          "hit_rate": 1.0,
+          "batch_null_rate_NULL_DF": 0.0,
+          "p_binomial_vs_batch_null": 0.0,
+          "edge_gaps_when_separated_deg": {
+            "min": 0.876556671614745,
+            "median": 1.4276045606597654,
+            "max": 1.6299503355881662
+          },
+          "n_separated_by_at_least": {
+            "0.0000": 6,
+            "1.2100": 4,
+            "3.8000": 0,
+            "4.2900": 0,
+            "5.7000": 0,
+            "6.3400": 0,
+            "6.3919": 0,
+            "7.2500": 0,
+            "7.6200": 0,
+            "9.0000": 0,
+            "9.2000": 0,
+            "11.5000": 0
+          },
+          "UNINFORMATIVE": false,
+          "uninformative_why": null,
+          "comparisons": [
+            {
+              "vs": "R151W",
+              "separated": true,
+              "edge_gap": 0.876556671614745,
+              "mean_diff": -3.5458495827812486,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -12.877753566736772,
+                -9.746493379723214
+              ],
+              "weak_range": [
+                -8.869936708108469,
+                -7.176053449908426
+              ]
+            },
+            {
+              "vs": "R169W090",
+              "separated": true,
+              "edge_gap": 1.5584566619117428,
+              "mean_diff": -3.3614114127537293,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -12.877753566736772,
+                -9.746493379723214
+              ],
+              "weak_range": [
+                -8.188036717811471,
+                -7.623201172384422
+              ]
+            },
+            {
+              "vs": "R169W095",
+              "separated": true,
+              "edge_gap": 1.6299503355881662,
+              "mean_diff": -3.835562445128309,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -12.877753566736772,
+                -9.746493379723214
+              ],
+              "weak_range": [
+                -8.116543044135048,
+                -7.0274075713708655
+              ]
+            },
+            {
+              "vs": "R174W870",
+              "separated": true,
+              "edge_gap": 1.1052470459632602,
+              "mean_diff": -3.289314032547167,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -12.877753566736772,
+                -9.746493379723214
+              ],
+              "weak_range": [
+                -8.641246333759954,
+                -7.354858680866082
+              ]
+            },
+            {
+              "vs": "R174W892",
+              "separated": true,
+              "edge_gap": 1.392596839377271,
+              "mean_diff": -3.371864072796231,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -12.877753566736772,
+                -9.746493379723214
+              ],
+              "weak_range": [
+                -8.353896540345943,
+                -6.868450744352131
+              ]
+            },
+            {
+              "vs": "R174W915",
+              "separated": true,
+              "edge_gap": 1.4626122819422598,
+              "mean_diff": -3.3783451803888207,
+              "direction": "SPASTIC LOW",
+              "spastic_range": [
+                -12.877753566736772,
+                -9.746493379723214
+              ],
+              "weak_range": [
+                -8.283881097780954,
+                -6.9387354770808285
+              ]
+            }
+          ]
+        },
+        "0.120": {
+          "family": "R396SPg120",
+          "n_gate_G": 3,
+          "n_tested": 0,
+          "n_separated": 0,
+          "hit_rate": null,
+          "batch_null_rate_NULL_DF": 0.0,
+          "p_binomial_vs_batch_null": null,
+          "edge_gaps_when_separated_deg": null,
+          "n_separated_by_at_least": null,
+          "UNINFORMATIVE": true,
+          "uninformative_why": "only 3 Gate-G cells, need 4",
+          "comparisons": [
+            {
+              "vs": "R151W",
+              "verdict": "UNINFORMATIVE",
+              "n_spastic": 3,
+              "n_weak": 6
+            },
+            {
+              "vs": "R169W090",
+              "verdict": "UNINFORMATIVE",
+              "n_spastic": 3,
+              "n_weak": 6
+            },
+            {
+              "vs": "R169W095",
+              "verdict": "UNINFORMATIVE",
+              "n_spastic": 3,
+              "n_weak": 6
+            },
+            {
+              "vs": "R174W870",
+              "verdict": "UNINFORMATIVE",
+              "n_spastic": 3,
+              "n_weak": 6
+            },
+            {
+              "vs": "R174W892",
+              "verdict": "UNINFORMATIVE",
+              "n_spastic": 3,
+              "n_weak": 6
+            },
+            {
+              "vs": "R174W915",
+              "verdict": "UNINFORMATIVE",
+              "n_spastic": 3,
+              "n_weak": 6
+            }
+          ]
+        },
+        "_POOLED_ALL_SPASTIC_FAMILIES": {
+          "n_tested": 24,
+          "n_separated": 6,
+          "hit_rate": 0.25,
+          "batch_null_rate_NULL_DF": 0.0,
+          "p_binomial_vs_batch_null": 0.0,
+          "edge_gaps_when_separated_deg": {
+            "min": 0.876556671614745,
+            "median": 1.4276045606597654,
+            "max": 1.6299503355881662
+          },
+          "n_separated_by_at_least": {
+            "0.0000": 6,
+            "1.2100": 4,
+            "3.8000": 0,
+            "4.2900": 0,
+            "5.7000": 0,
+            "6.3400": 0,
+            "6.3919": 0,
+            "7.2500": 0,
+            "7.6200": 0,
+            "9.0000": 0,
+            "9.2000": 0,
+            "11.5000": 0
+          }
+        }
+      }
+    }
+  },
+  "STEP3_PUBLISHED_GEOMETRY": {
+    "what": "the corpus geometry, reproduced for continuity: spastic family's seeds vs six DFweak SEED MEANS each pooled over six families. Pooling shrinks the weak arm, so this geometry is NOT comparable with the batch null.",
+    "pooled_DFweak_seed_means": [
+      -6.6168961072170545,
+      -6.501409301635998,
+      -6.492136457186636,
+      -6.465214061661119,
+      -6.440345337859284,
+      -6.435547421113847
+    ],
+    "by_rung": {
+      "0.050": {
+        "n_a": 6,
+        "n_b": 6,
+        "a_range": [
+          -11.092187893991076,
+          -8.692904208568947
+        ],
+        "b_range": [
+          -6.6168961072170545,
+          -6.435547421113847
+        ],
+        "a_mean": -9.931759282778765,
+        "b_mean": -6.491924781112323,
+        "separated": true,
+        "edge_gap": 2.076008101351893,
+        "mean_diff": -3.439834501666442,
+        "direction": "A LOW",
+        "VERDICT": "SEPARATED",
+        "permutation_floor": {
+          "n_total": 924,
+          "n_at_least_as_extreme": 2,
+          "floor": "2/924",
+          "p": 0.0021645021645021645
+        },
+        "note_A_is": "R151S",
+        "note_B_is": "6 DFweak seed means, each pooled over the six families"
+      },
+      "0.070": {
+        "n_a": 6,
+        "n_b": 6,
+        "a_range": [
+          -11.923948815323172,
+          -10.691495589544285
+        ],
+        "b_range": [
+          -6.6168961072170545,
+          -6.435547421113847
+        ],
+        "a_mean": -11.280657267741182,
+        "b_mean": -6.491924781112323,
+        "separated": true,
+        "edge_gap": 4.074599482327231,
+        "mean_diff": -4.7887324866288585,
+        "direction": "A LOW",
+        "VERDICT": "SEPARATED",
+        "permutation_floor": {
+          "n_total": 924,
+          "n_at_least_as_extreme": 2,
+          "floor": "2/924",
+          "p": 0.0021645021645021645
+        },
+        "note_A_is": "R393SPg070",
+        "note_B_is": "6 DFweak seed means, each pooled over the six families"
+      },
+      "0.100": {
+        "n_a": 4,
+        "n_b": 6,
+        "a_range": [
+          -13.620400452332857,
+          -12.006817611092265
+        ],
+        "b_range": [
+          -6.6168961072170545,
+          -6.435547421113847
+        ],
+        "a_mean": -12.643271066544314,
+        "b_mean": -6.491924781112323,
+        "separated": true,
+        "edge_gap": 5.38992150387521,
+        "mean_diff": -6.15134628543199,
+        "direction": "A LOW",
+        "VERDICT": "SEPARATED",
+        "permutation_floor": {
+          "n_total": 210,
+          "n_at_least_as_extreme": 1,
+          "floor": "1/210",
+          "p": 0.004761904761904762
+        },
+        "note_A_is": "R393SPg100",
+        "note_B_is": "6 DFweak seed means, each pooled over the six families"
+      },
+      "0.110": {
+        "n_a": 4,
+        "n_b": 6,
+        "a_range": [
+          -13.794942495322877,
+          -12.665480343078071
+        ],
+        "b_range": [
+          -6.6168961072170545,
+          -6.435547421113847
+        ],
+        "a_mean": -13.199486557436584,
+        "b_mean": -6.491924781112323,
+        "separated": true,
+        "edge_gap": 6.048584235861017,
+        "mean_diff": -6.707561776324261,
+        "direction": "A LOW",
+        "VERDICT": "SEPARATED",
+        "permutation_floor": {
+          "n_total": 210,
+          "n_at_least_as_extreme": 1,
+          "floor": "1/210",
+          "p": 0.004761904761904762
+        },
+        "note_A_is": "R396SPg110",
+        "note_B_is": "6 DFweak seed means, each pooled over the six families"
+      },
+      "0.120": {
+        "n_a": 3,
+        "n_b": 6,
+        "a_range": [
+          -14.565160110020656,
+          -12.514085795011335
+        ],
+        "b_range": [
+          -6.6168961072170545,
+          -6.435547421113847
+        ],
+        "a_mean": -13.368980205631727,
+        "b_mean": -6.491924781112323,
+        "separated": null,
+        "VERDICT": "UNINFORMATIVE (<4 Gate-G values on one side)",
+        "note_A_is": "R396SPg120",
+        "note_B_is": "6 DFweak seed means, each pooled over the six families"
+      }
+    }
+  },
+  "STEP4_UNLESIONED_SIDE_NEGATIVE_CONTROL": {
+    "what": "knee_angle_r at RIGHT heel strike, right leg's own GRF. Both lesions are left-only.",
+    "NULL_DF_rate_LEFT_knee": 0.26666666666666666,
+    "NULL_DF_rate_RIGHT_knee": 0.0,
+    "NULL_PF_rate_LEFT_knee": null,
+    "NULL_PF_rate_RIGHT_knee": null,
+    "like_for_like_hit_rate_LEFT_knee": 1.0,
+    "like_for_like_hit_rate_RIGHT_knee": 0.25,
+    "n_tested_LEFT": 24,
+    "n_separated_LEFT": 24,
+    "n_tested_RIGHT": 24,
+    "n_separated_RIGHT": 6,
+    "by_rung": {
+      "0.050": {
+        "family": "R151S",
+        "LEFT_n_separated": 6,
+        "LEFT_n_tested": 6,
+        "LEFT_edge_gaps": {
+          "min": 1.4918560478057357,
+          "median": 1.7008767810474108,
+          "max": 2.41935554290115
+        },
+        "RIGHT_n_separated": 0,
+        "RIGHT_n_tested": 6,
+        "RIGHT_edge_gaps": null
+      },
+      "0.070": {
+        "family": "R393SPg070",
+        "LEFT_n_separated": 6,
+        "LEFT_n_tested": 6,
+        "LEFT_edge_gaps": {
+          "min": 3.4904474287810734,
+          "median": 3.6994681620227485,
+          "max": 4.417946923876488
+        },
+        "RIGHT_n_separated": 0,
+        "RIGHT_n_tested": 6,
+        "RIGHT_edge_gaps": null
+      },
+      "0.100": {
+        "family": "R393SPg100",
+        "LEFT_n_separated": 6,
+        "LEFT_n_tested": 6,
+        "LEFT_edge_gaps": {
+          "min": 4.805769450329053,
+          "median": 5.014790183570728,
+          "max": 5.733268945424467
+        },
+        "RIGHT_n_separated": 0,
+        "RIGHT_n_tested": 6,
+        "RIGHT_edge_gaps": null
+      },
+      "0.110": {
+        "family": "R396SPg110",
+        "LEFT_n_separated": 6,
+        "LEFT_n_tested": 6,
+        "LEFT_edge_gaps": {
+          "min": 5.46443218231486,
+          "median": 5.673452915556535,
+          "max": 6.391931677410274
+        },
+        "RIGHT_n_separated": 6,
+        "RIGHT_n_tested": 6,
+        "RIGHT_edge_gaps": {
+          "min": 0.876556671614745,
+          "median": 1.4276045606597654,
+          "max": 1.6299503355881662
+        }
+      },
+      "0.120": {
+        "family": "R396SPg120",
+        "LEFT_n_separated": 0,
+        "LEFT_n_tested": 0,
+        "LEFT_edge_gaps": null,
+        "RIGHT_n_separated": 0,
+        "RIGHT_n_tested": 0,
+        "RIGHT_edge_gaps": null
+      }
+    }
+  },
+  "STEP5_VS_CONTROL_R151C": {
+    "R151C_values": [
+      -8.239580001061439,
+      -7.901821380831819,
+      -7.855916002285937,
+      -7.8346019723070714,
+      -7.680487784572781,
+      -7.587588407670272
+    ],
+    "vs_spastic": {
+      "0.050": {
+        "n_a": 6,
+        "n_b": 6,
+        "a_range": [
+          -8.239580001061439,
+          -7.587588407670272
+        ],
+        "b_range": [
+          -11.092187893991076,
+          -8.692904208568947
+        ],
+        "a_mean": -7.849999258121554,
+        "b_mean": -9.931759282778765,
+        "separated": true,
+        "edge_gap": 0.45332420750750835,
+        "mean_diff": 2.0817600246572114,
+        "direction": "A HIGH",
+        "VERDICT": "SEPARATED",
+        "permutation_floor": {
+          "n_total": 924,
+          "n_at_least_as_extreme": 2,
+          "floor": "2/924",
+          "p": 0.0021645021645021645
+        },
+        "note_A_is": "R151C",
+        "note_B_is": "R151S"
+      },
+      "0.070": {
+        "n_a": 6,
+        "n_b": 6,
+        "a_range": [
+          -8.239580001061439,
+          -7.587588407670272
+        ],
+        "b_range": [
+          -11.923948815323172,
+          -10.691495589544285
+        ],
+        "a_mean": -7.849999258121554,
+        "b_mean": -11.280657267741182,
+        "separated": true,
+        "edge_gap": 2.451915588482846,
+        "mean_diff": 3.430658009619628,
+        "direction": "A HIGH",
+        "VERDICT": "SEPARATED",
+        "permutation_floor": {
+          "n_total": 924,
+          "n_at_least_as_extreme": 2,
+          "floor": "2/924",
+          "p": 0.0021645021645021645
+        },
+        "note_A_is": "R151C",
+        "note_B_is": "R393SPg070"
+      },
+      "0.100": {
+        "n_a": 6,
+        "n_b": 4,
+        "a_range": [
+          -8.239580001061439,
+          -7.587588407670272
+        ],
+        "b_range": [
+          -13.620400452332857,
+          -12.006817611092265
+        ],
+        "a_mean": -7.849999258121554,
+        "b_mean": -12.643271066544314,
+        "separated": true,
+        "edge_gap": 3.7672376100308256,
+        "mean_diff": 4.79327180842276,
+        "direction": "A HIGH",
+        "VERDICT": "SEPARATED",
+        "permutation_floor": {
+          "n_total": 210,
+          "n_at_least_as_extreme": 1,
+          "floor": "1/210",
+          "p": 0.004761904761904762
+        },
+        "note_A_is": "R151C",
+        "note_B_is": "R393SPg100"
+      },
+      "0.110": {
+        "n_a": 6,
+        "n_b": 4,
+        "a_range": [
+          -8.239580001061439,
+          -7.587588407670272
+        ],
+        "b_range": [
+          -13.794942495322877,
+          -12.665480343078071
+        ],
+        "a_mean": -7.849999258121554,
+        "b_mean": -13.199486557436584,
+        "separated": true,
+        "edge_gap": 4.425900342016632,
+        "mean_diff": 5.34948729931503,
+        "direction": "A HIGH",
+        "VERDICT": "SEPARATED",
+        "permutation_floor": {
+          "n_total": 210,
+          "n_at_least_as_extreme": 1,
+          "floor": "1/210",
+          "p": 0.004761904761904762
+        },
+        "note_A_is": "R151C",
+        "note_B_is": "R396SPg110"
+      },
+      "0.120": {
+        "n_a": 6,
+        "n_b": 3,
+        "a_range": [
+          -8.239580001061439,
+          -7.587588407670272
+        ],
+        "b_range": [
+          -14.565160110020656,
+          -12.514085795011335
+        ],
+        "a_mean": -7.849999258121554,
+        "b_mean": -13.368980205631727,
+        "separated": null,
+        "VERDICT": "UNINFORMATIVE (<4 Gate-G values on one side)",
+        "note_A_is": "R151C",
+        "note_B_is": "R396SPg120"
+      }
+    },
+    "vs_R151W_same_batch": {
+      "n_a": 6,
+      "n_b": 6,
+      "a_range": [
+        -8.239580001061439,
+        -7.587588407670272
+      ],
+      "b_range": [
+        -6.273548665667797,
+        -5.37492567048918
+      ],
+      "a_mean": -7.849999258121554,
+      "b_mean": -5.844344835419707,
+      "separated": true,
+      "edge_gap": 1.3140397420024748,
+      "mean_diff": -2.0056544227018467,
+      "direction": "A LOW",
+      "VERDICT": "SEPARATED",
+      "permutation_floor": {
+        "n_total": 924,
+        "n_at_least_as_extreme": 2,
+        "floor": "2/924",
+        "p": 0.0021645021645021645
+      },
+      "note_A_is": "R151C",
+      "note_B_is": "R151W"
+    },
+    "why": "the two lesions displace the control in OPPOSITE directions on this endpoint, which is the mechanistic reason it opens with severity where mean stance ankle angle does not."
+  },
+  "STEP6_MAGNITUDE": {
+    "what": "the batch null does separate on this endpoint, but at what SIZE? A separation whose edge gap is 0.02 deg and one whose edge gap is 6.39 deg are not the same claim. This is the null re-asked with a magnitude floor.",
+    "largest_edge_gap_between_two_same_mechanism_DFweak_families_deg": 0.5697331886598267,
+    "all_null_edge_gaps_when_separated_deg": [
+      0.5697331886598267,
+      0.22512657686280324,
+      0.1640217739276908,
+      0.02517576551804801,
+      -0.14584067717259952,
+      -0.15165046921522585,
+      -0.1649247554128186,
+      -0.31943084627897544,
+      -0.3577663064355878,
+      -0.3805356492140879,
+      -0.4673536520790815,
+      -0.4962570810122493,
+      -0.7023729182326113,
+      -0.7094821785545973,
+      -0.7634777211677237
+    ],
+    "NULL_DF_rate_by_magnitude_floor": {
+      "0.0000": {
+        "n_separated_by_at_least_this": 4,
+        "rate": 0.26666666666666666
+      },
+      "1.2100": {
+        "n_separated_by_at_least_this": 0,
+        "rate": 0.0
+      },
+      "3.8000": {
+        "n_separated_by_at_least_this": 0,
+        "rate": 0.0
+      },
+      "4.2900": {
+        "n_separated_by_at_least_this": 0,
+        "rate": 0.0
+      },
+      "5.7000": {
+        "n_separated_by_at_least_this": 0,
+        "rate": 0.0
+      },
+      "6.3400": {
+        "n_separated_by_at_least_this": 0,
+        "rate": 0.0
+      },
+      "6.3919": {
+        "n_separated_by_at_least_this": 0,
+        "rate": 0.0
+      },
+      "7.2500": {
+        "n_separated_by_at_least_this": 0,
+        "rate": 0.0
+      },
+      "7.6200": {
+        "n_separated_by_at_least_this": 0,
+        "rate": 0.0
+      },
+      "9.0000": {
+        "n_separated_by_at_least_this": 0,
+        "rate": 0.0
+      },
+      "9.2000": {
+        "n_separated_by_at_least_this": 0,
+        "rate": 0.0
+      },
+      "11.5000": {
+        "n_separated_by_at_least_this": 0,
+        "rate": 0.0
+      }
+    },
+    "observed_headline_edge_gap_deg": 6.391931677410274,
+    "like_for_like_edge_gaps_LEFT": {
+      "min": 1.4918560478057357,
+      "median": 4.61185818710277,
+      "max": 6.391931677410274
+    },
+    "like_for_like_n_separated_by_at_least_LEFT": {
+      "0.0000": 24,
+      "1.2100": 24,
+      "3.8000": 14,
+      "4.2900": 13,
+      "5.7000": 3,
+      "6.3400": 1,
+      "6.3919": 1,
+      "7.2500": 0,
+      "7.6200": 0,
+      "9.0000": 0,
+      "9.2000": 0,
+      "11.5000": 0
+    },
+    "like_for_like_edge_gaps_RIGHT": {
+      "min": 0.876556671614745,
+      "median": 1.4276045606597654,
+      "max": 1.6299503355881662
+    },
+    "like_for_like_n_separated_by_at_least_RIGHT": {
+      "0.0000": 6,
+      "1.2100": 4,
+      "3.8000": 0,
+      "4.2900": 0,
+      "5.7000": 0,
+      "6.3400": 0,
+      "6.3919": 0,
+      "7.2500": 0,
+      "7.6200": 0,
+      "9.0000": 0,
+      "9.2000": 0,
+      "11.5000": 0
+    }
+  },
+  "TASK1_KNEE_MDC": {
+    "question": "minimal detectable change for KNEE sagittal joint angle in instrumented 3D gait analysis, ideally at a discrete event (initial contact) and ideally in a neurological population",
+    "CORRECTION_TO_THE_CORPUS": {
+      "what_was_quoted": "3.8-11.5 deg, described in the corpus as the clinical MDC band for kinematic endpoints; 3.8 is hard-coded as MDC in scone/fine_gap_r397.py",
+      "what_those_numbers_actually_are": "Kesar et al. 2011 Table 2: 3.8 deg is the MDC for TRAILING LIMB ANGLE and 11.5 deg is the MDC for HIP ANGLE AT TOE-OFF. Neither is a knee variable. Neither is an ankle variable either -- the 'post-stroke ankle figure' framing is also wrong; Kesar's ankle-at-initial-contact MDC is 7.0 deg and its peak-ankle-in-swing MDC is 4.9 deg.",
+      "the_only_knee_row_in_kesar": {
+        "variable": "peak knee flexion during swing",
+        "MDC_between_session_deg": 5.7,
+        "MDC_within_session_deg": 1.9,
+        "ICC_between_session": 0.982,
+        "back_calculated_SEM_deg": 2.06
+      },
+      "action_required": "3.8 must not be used as a knee floor anywhere in the paper."
+    },
+    "primary_sources": {
+      "Molina_Rueda_2021": {
+        "citation": "Molina-Rueda F, Fernandez-Gonzalez P, Cuesta-Gomez A, Koutsou A, Carratala-Tejada M, Miangolarra-Page JC. Test-Retest Reliability of a Conventional Gait Model for Registering Joint Angles during Initial Contact and Toe-Off in Healthy Subjects. Int J Environ Res Public Health 2021;18(3):1343. doi:10.3390/ijerph18031343. PMID 33540795. PMCID PMC7908319.",
+        "why_it_is_the_right_paper": "THE ONLY paper found that reports a test-retest MDC for KNEE ANGLE AT INITIAL CONTACT as a discrete event value -- exactly this deposit's endpoint.",
+        "population": "n=50 HEALTHY young adults (24M/26F), age 21.62 +/- 2.62 y, gait speed 1.22-1.23 m/s. NOT a neurological population.",
+        "protocol": "overground, 11 m walkway, comfortable self-selected speed; Vicon 8 cameras @100 Hz, 3 AMTI plates; PLUG-IN GAIT conventional gait model, Nexus 1.8.5, YXZ Cardan; foot events by 20 N vertical force threshold; 5 gait cycles per session.",
+        "design": "BETWEEN-DAY, 2 sessions, 1 WEEK apart. ASSESSOR DESIGN NOT STATED -- the paper never says whether the same person applied the markers at both sessions. This is a reporting gap and it matters, because inter-tester marker replacement is the dominant error source.",
+        "statistic_as_published": "MDC95 = 1.96 * sqrt(2) * SEM, with SEM = SD_diff * sqrt(1-ICC); ICC(3,1) two-way mixed, absolute agreement",
+        "single_measurement_or_change_score": "CHANGE SCORE (the sqrt(2) is present)",
+        "knee_at_IC_as_published": {
+          "ICC": 0.825,
+          "ICC95CI": [
+            0.693,
+            0.901
+          ],
+          "mean_deg": 1.49,
+          "bias_deg": 0.47,
+          "SD_of_differences_deg": 3.7,
+          "LoA_95_deg": [
+            -6.78,
+            7.74
+          ],
+          "SEM_deg_printed": 1.55,
+          "MDC_deg_printed": 4.29
+        },
+        "SKEPTICAL_FLAG_factor_of_sqrt2": "The published 4.29 deg UNDERSTATES the MDC by sqrt(2). Their formula substitutes SD_diff into a place that requires the BETWEEN-SUBJECT SD; by construction SD_diff = sqrt(2)*SEM. Their own Bland-Altman limits of agreement contradict their own table: the assumption-free change-score MDC95 is 1.96 * SD_diff = 1.96 * 3.70 = 7.25 deg, which is exactly their printed LoA half-width (0.47 +/- 7.26). 4.29 = 7.25 / sqrt(2). Citing 4.29 as a clearance bar would not survive a referee who opens Table 1.",
+        "corrected_knee_at_IC_MDC95_deg": 7.25,
+        "authors_own_interpretive_rule": "'Disagreements in joint angles during IC and TO of less than 9 deg after an intervention could be due to system or observer error'; the Bland-Altman divergence at IC was 'between +/-5 and +/-9 deg'.",
+        "other_flag": "their TOE-OFF rows are arithmetically self-inconsistent with their own stated formula (knee at TO: SD_diff 4.75 and ICC 0.814 give SEM 2.05, they print 0.96). The IC rows -- this deposit's rows -- do check out against the stated formula."
+      },
+      "Geiger_2019": {
+        "citation": "Geiger M, Supiot A, Pradon D, Do M-C, Zory R, Roche N. Minimal detectable change of kinematic and spatiotemporal parameters in patients with chronic stroke across three sessions of gait analysis. Hum Mov Sci 2019;64:101-107. doi:10.1016/j.humov.2019.01.011. PMID 30710860.",
+        "why_it_matters": "the best NEUROLOGICAL between-session overground knee data found -- right population, right plane, wrong event (no IC value).",
+        "population": "n=26 chronic stroke (19M), age 58.2 +/- 13.1 y, 9.7 +/- 7.1 y post-stroke, gait speed 0.77 m/s, paretic limb",
+        "protocol": "overground 10 m corridor, spontaneous speed, 7 Motion Analysis cameras @100 Hz, 30 markers, HELEN HAYES conventional model, 5-18 cycles",
+        "design": "BETWEEN-DAY, three visits at 7-DAY intervals (V1,V2,V3). SAME OPERATOR placed all markers at every visit and ran the whole analysis.",
+        "statistic": "MDC = SEM * 2.056 * sqrt(2), SEM = sqrt(MS_E) from repeated-measures ANOVA; 2.056 is t(95%, n=26). Slightly MORE conservative than the 1.96 version. ICC(3,k).",
+        "single_measurement_or_change_score": "CHANGE SCORE",
+        "knee_MDC_deg_by_visit_pairing": {
+          "knee_max_angle_swing": [
+            7.61,
+            7.1,
+            6.54
+          ],
+          "knee_max_angle_stance": [
+            7.19,
+            7.01,
+            4.93
+          ],
+          "knee_min_angle_swing": [
+            7.62,
+            6.53,
+            5.9
+          ],
+          "knee_min_angle_stance": [
+            6.34,
+            6.18,
+            5.47
+          ],
+          "knee_RoM_swing": [
+            8.16,
+            6.43,
+            8.49
+          ],
+          "knee_RoM_stance": [
+            7.12,
+            5.25,
+            6.52
+          ]
+        },
+        "knee_SEM_deg_range": [
+          1.69,
+          2.61
+        ],
+        "closest_analogue_to_this_deposit": "knee minimum angle in STANCE, worst pairing MDC 6.34 deg -- the nearest neurological published value to a knee angle around heel strike, but it is a minimum over stance, not the value AT the initial-contact event.",
+        "largest_discrete_knee_MDC_deg": 7.62
+      },
+      "Kesar_2011": {
+        "citation": "Kesar TM, Binder-Macleod SA, Hicks GE, Reisman DS. Minimal detectable change for gait variables collected during treadmill walking in individuals post-stroke. Gait Posture 2011;33(2):314-317. doi:10.1016/j.gaitpost.2010.11.024. PMID 21183350. PMCID PMC3042506.",
+        "population": "n=19 chronic post-stroke hemiparesis (12M), age 61.9 +/- 8.0 y, 72.6 +/- 63.4 months post-stroke, Fugl-Meyer LE 19.1 +/- 4.0, gait speed 0.6 +/- 0.3 m/s",
+        "protocol": "split-belt TREADMILL (AMTI), handrail held, harness without body-weight support, self-selected speed; Vicon 5.2, 8 cameras @100 Hz, custom marker set (NOT Plug-in-Gait), Visual3D, first 9 usable strides",
+        "design": "BETWEEN-DAY, 2 sessions, 20.7 +/- 26.8 DAYS apart (range 1-99). SAME ASSESSOR, markers re-applied and cameras recalibrated between sessions.",
+        "statistic": "MDC = SEM * 1.96 * sqrt(2), SEM = SD * sqrt(1-ICC) with SD the average of the two sessions' SDs; ICC(3,1) two-way mixed absolute agreement",
+        "single_measurement_or_change_score": "CHANGE SCORE",
+        "table2_between_session_MDC_deg": {
+          "peak_knee_flexion_swing": 5.7,
+          "peak_ankle_angle_swing": 4.9,
+          "ankle_angle_at_initial_contact": 7.0,
+          "trailing_limb_angle": 3.8,
+          "hip_angle_at_toe_off": 11.5
+        },
+        "authors_own_caveat": "'these MDCs may not be used to interpret studies that measure overground gait'",
+        "why_not_used_here": "treadmill, and the only knee row is peak flexion in SWING, a different variable from a heel-strike event value"
+      }
+    },
+    "supporting_sources": {
+      "Wilken_2012": "Wilken JM, Rodriguez KM, Brawner M, Darter BJ. Reliability and Minimal Detectible Change values for gait kinematics and kinetics in healthy adults. Gait Posture 2012;35(2):301-307. PMID 22041096. n=29 healthy, 2 sessions 5.6 +/- 2.2 d apart, TWO RATERS per session (the only inter-tester between-session design found). Conclusion verbatim: 'changes in gait kinematics of greater than approximately 5 deg can be identified when comparing between sessions'. Per-variable knee values PAYWALLED AND UNVERIFIED; Molina-Rueda cite Wilken as '4-7 deg for knee parameters' -- SECOND-HAND, flagged as unverified. Change score.",
+      "Horsak_2017": "Horsak B et al. Gait Posture 2017;54:112-118. PMID 28288331. n=11 obese adolescents, within-assessor between-session. Sagittal-plane MDC 7.5 +/- 2.2 deg on average. Change score. Plane average, not knee at IC; small n.",
+      "Ewen_FreeBody_2017": "Front Bioeng Biotechnol 2017;5:74, PMC5727024. n=9 healthy older adults, consecutive days, same researcher. PEAK KNEE FLEXION: ICC 0.86, SEM 3.3 deg, MDC 9.2 deg (= SEM*1.96*sqrt(2)). Change score. n=9 -- treat as an upper bound, not a benchmark.",
+      "Meldrum_2014": "Meldrum D et al. Gait Posture 2014;39(1):265-271. PMID 24139682. n=30 healthy, same investigator, two separate days within two weeks. 'SEM low (<=5 deg) for the majority of parameters'. DID NOT ANALYSE JOINT ANGLE AT DISCRETE GAIT EVENTS. Per-variable knee numbers unverified.",
+      "McGinley_2009": "McGinley JL, Baker R, Wolfe R, Morris ME. The reliability of three-dimensional kinematic gait measurements: a systematic review. Gait Posture 2009;29(3):360-369. PMID 19013070. Sagittal hip and knee are the most reliable; most error estimates <5 deg. The widely quoted tiering (<2 deg acceptable, 2-5 deg reasonable but interpret with caution, >5 deg raises concern) was verified only SECOND-HAND via Molina-Rueda's citation; the primary tables could not be opened. These are ERROR MAGNITUDES (SD/SE), NOT change-score MDCs.",
+      "Schwartz_2004": "Schwartz MH, Trost JP, Wervey RA. Gait Posture 2004;20(2):196-203. PMID 15336291. 2 subjects, 4 therapists, 3 sessions, 5 trials; within- and BETWEEN-OBSERVER error at each point of the cycle. PAYWALLED -- NO NUMBERS OBTAINED. Design reported only.",
+      "Guzik_2020": "Guzik A et al. J Clin Med 2020;9(10):3305. PMCID PMC7602397. n=50 chronic stroke, overground, Davis protocol, 4-week follow-up. THIS IS AN MCID PAPER, NOT AN MDC PAPER -- it reports no MDC and no ICC. Anchor-based MCID for knee sagittal ROM 8.48 deg affected / 6.81 deg unaffected. Included only to close the loop on a paper often mis-cited for MDC.",
+      "negative_MS": "PMID 31561120 (MS test-retest) covers ANKLE kinematics only (MDC95 1.9-4.2 / 2.2-7.7 deg). No knee. NOT substituted.",
+      "negative_CP": "bioRxiv 2025.05.01.651648, n=19 CP + 19 non-impaired, 10 d apart, CGM 2.3, MDC = 1.96*sqrt(2)*SEM -- reports continuous relative phase coordination, not knee angle at IC. Instructive magnitude though: between-assessor MDC 15.1 deg in CP vs 9.3 deg in controls. Measurement error in NEUROLOGICAL gait is materially LARGER than in healthy gait, so a healthy-cohort figure is a LOWER bound, not a conservative one."
+    },
+    "THE_GAP_STATED_PLAINLY": "THE LITERATURE DOES NOT CONTAIN A MINIMAL DETECTABLE CHANGE VALUE FOR KNEE SAGITTAL ANGLE AT INITIAL CONTACT IN ANY NEUROLOGICAL POPULATION. What exists is (a) knee at IC in HEALTHY young adults only (Molina-Rueda 2021), and (b) knee PEAK/ROM values in stroke (Kesar 2011 treadmill, Geiger 2019 overground) -- right population, wrong event. Ankle-at-IC figures exist in stroke (7.0 deg) and MS, and are NOT substituted here. Any knee-at-heel-strike MDC applied to a neurological cohort is an EXTRAPOLATION and the paper must say so rather than borrow a number.",
+    "range_of_between_session_change_score_knee_sagittal_MDC95_deg": [
+      4.29,
+      9.2
+    ],
+    "candidate_thresholds_deg": {
+      "4.29": "Molina-Rueda knee at IC AS PUBLISHED -- right variable, but arithmetically understated by sqrt(2); DO NOT USE",
+      "5.70": "Kesar peak knee flexion in SWING, stroke, treadmill -- wrong variable, wrong modality, and the authors forbid overground transfer",
+      "6.34": "Geiger knee MINIMUM ANGLE IN STANCE, worst visit pairing, chronic stroke, overground -- closest NEUROLOGICAL analogue to a knee angle near heel strike",
+      "7.25": "Molina-Rueda knee at IC CORRECTED (1.96 * SD_diff = their own LoA half-width) -- right variable, right event, healthy population (which biases it DOWNWARD)",
+      "7.62": "Geiger largest discrete knee MDC (knee minimum angle in swing, V1v2) -- right population, right plane, between-day, conventional gait model",
+      "9.00": "Molina-Rueda's OWN stated interpretive rule for any joint angle at IC/TO",
+      "9.20": "FreeBody peak knee flexion, healthy older adults, consecutive days (n=9)"
+    },
+    "MOST_CONSERVATIVE_DEFENSIBLE": {
+      "value_deg": 7.62,
+      "band_deg": [
+        7.25,
+        7.62
+      ],
+      "why": "the two independently defensible candidates converge. 7.25 deg is the corrected knee-at-INITIAL-CONTACT MDC95 (right variable, right event, right model class, between-day; healthy population, which understates neurological error). 7.62 deg is the largest discrete knee-angle MDC95 in a chronic-stroke overground between-day cohort (right population, wrong event). Taking the larger of the two as the bar is the conservative reading. 5.7 deg is explicitly rejected: it is a treadmill peak-swing number whose own authors forbid overground transfer.",
+      "statistic_type": "CHANGE-SCORE MDC95 in both cases (both carry the sqrt(2))"
+    },
+    "OBSERVED_GAP_DEG": 6.3919,
+    "DOES_THE_OBSERVED_GAP_CLEAR_IT": {
+      "answer": "NO",
+      "detail": {
+        "vs_7.62_most_conservative": "FAILS by 1.23 deg",
+        "vs_7.25_corrected_knee_at_IC": "FAILS by 0.86 deg",
+        "vs_9.00_authors_own_rule": "FAILS by 2.61 deg",
+        "vs_9.20_FreeBody": "FAILS by 2.81 deg",
+        "vs_6.34_closest_neurological_analogue": "clears by 0.05 deg -- a numerical tie, not a clearance",
+        "vs_5.70_Kesar_knee_swing": "clears, but this threshold is not applicable",
+        "vs_4.29_as_published": "clears, but this threshold is arithmetically wrong",
+        "vs_3.80_the_number_the_corpus_was_using": "clears, but 3.8 is the TRAILING LIMB ANGLE MDC and is not a knee number"
+      },
+      "plain_statement": "+6.3919 deg clears only the thresholds one would select if shopping for a favourable bar, and fails every threshold one would select when being conservative. It sits inside the between-session measurement-noise band of marker-based knee kinematics."
+    },
+    "BETWEEN_SESSION_VARIABILITY_OF_KNEE_ANGLE_AT_IC": {
+      "why_reported_separately": "a discriminator must beat the ordinary session-to-session wobble of the measurement, not only the MDC",
+      "only_direct_source": "Molina-Rueda 2021, knee angle at IC, n=50 healthy, 1 week between-day, Plug-in-Gait, overground self-selected speed",
+      "SD_of_between_session_differences_deg": 3.7,
+      "systematic_between_session_bias_deg": 0.47,
+      "LoA95_deg": [
+        -6.78,
+        7.74
+      ],
+      "implied_per_measurement_SEM_deg": 2.62,
+      "note_on_SEM": "2.62 = 3.70/sqrt(2) is the correct classical per-measurement SEM. The paper prints 1.55, which is the sqrt(2) misapplication described above.",
+      "mean_knee_angle_at_IC_deg": 1.49,
+      "implied_between_subject_SD_deg": 6.25,
+      "nearest_neurological_proxies_SEM_deg": {
+        "Geiger_knee_min_angle_stance": [
+          1.87,
+          2.17
+        ],
+        "Geiger_knee_max_angle_stance": [
+          1.69,
+          2.46
+        ],
+        "Geiger_knee_max_angle_swing": [
+          2.24,
+          2.61
+        ],
+        "Geiger_all_kinematic_params_mean": [
+          2.01,
+          2.47
+        ],
+        "Kesar_peak_knee_flexion_swing_back_calculated": 2.06
+      },
+      "summary": "the CHANGE SCORE for a knee sagittal angle across two sessions has an SD of roughly 3.0-3.7 deg in both healthy and chronic-stroke cohorts, BEFORE any inter-tester marker-replacement penalty. +6.3919 deg is therefore about 1.7-2.1 change-score SDs -- which is precisely why it lands just UNDER, not above, the 95% MDC.",
+      "no_neurological_figure_exists": true
+    }
+  },
+  "VERDICT_BATCH_NULL": {
+    "verdict": "SURVIVES THE BATCH NULL",
+    "why": "like-for-like hit rate 100.0% vs batch null 26.7%, binomial P(X>=24 | n=24, p=0.2667) = 1.672e-14",
+    "left_knee_like_for_like": {
+      "n_tested": 24,
+      "n_separated": 24,
+      "hit_rate": 1.0,
+      "batch_null_rate_NULL_DF": 0.26666666666666666,
+      "p_binomial_vs_batch_null": 1.672051210262611e-14,
+      "edge_gaps_when_separated_deg": {
+        "min": 1.4918560478057357,
+        "median": 4.61185818710277,
+        "max": 6.391931677410274
+      },
+      "n_separated_by_at_least": {
+        "0.0000": 24,
+        "1.2100": 24,
+        "3.8000": 14,
+        "4.2900": 13,
+        "5.7000": 3,
+        "6.3400": 1,
+        "6.3919": 1,
+        "7.2500": 0,
+        "7.6200": 0,
+        "9.0000": 0,
+        "9.2000": 0,
+        "11.5000": 0
+      }
+    },
+    "right_knee_like_for_like": {
+      "n_tested": 24,
+      "n_separated": 6,
+      "hit_rate": 0.25,
+      "batch_null_rate_NULL_DF": 0.0,
+      "p_binomial_vs_batch_null": 0.0,
+      "edge_gaps_when_separated_deg": {
+        "min": 0.876556671614745,
+        "median": 1.4276045606597654,
+        "max": 1.6299503355881662
+      },
+      "n_separated_by_at_least": {
+        "0.0000": 6,
+        "1.2100": 4,
+        "3.8000": 0,
+        "4.2900": 0,
+        "5.7000": 0,
+        "6.3400": 0,
+        "6.3919": 0,
+        "7.2500": 0,
+        "7.6200": 0,
+        "9.0000": 0,
+        "9.2000": 0,
+        "11.5000": 0
+      }
+    },
+    "side_control_verdict": "right knee separates less often than the left"
+  },
+  "PLAIN_VERDICT": {
+    "Q1_does_it_clear_a_properly_sourced_knee_MDC": {
+      "ANSWER": "NO",
+      "observed_edge_gap_deg": 6.391931677410274,
+      "most_conservative_defensible_knee_MDC_deg": 7.62,
+      "shortfall_deg": 1.228068322589726,
+      "and": "the 3.8-11.5 deg band the corpus was quoting is not a knee band at all -- 3.8 is the TRAILING LIMB ANGLE MDC and 11.5 the HIP-AT-TOE-OFF MDC from Kesar 2011. The MDC = 3.8 constant hard-coded in scone/fine_gap_r397.py is not a defensible floor for a knee endpoint.",
+      "and_also": "no MDC for knee angle at initial contact exists for ANY neurological population. Every candidate threshold is an extrapolation."
+    },
+    "Q2_does_the_separation_survive_the_batch_null": {
+      "ANSWER": "SURVIVES THE BATCH NULL",
+      "left_knee_like_for_like": "24/24",
+      "batch_null_NULL_DF_left_knee": "4/15 = 26.7%",
+      "binomial_p": 1.672051210262611e-14,
+      "NULL_PF_could_not_be_computed": "ALL 10 pairs are UNINFORMATIVE: fewer than 4 Gate-G cells on at least one side of every pair. No rate can be quoted for this cohort.",
+      "the_magnitude_point_in_favour": "the four spurious same-mechanism separations have edge gaps of 0.5697, 0.2251, 0.1640, 0.0252, -0.1458, -0.1517, -0.1649, -0.3194, -0.3578, -0.3805, -0.4674, -0.4963, -0.7024, -0.7095, -0.7635 deg -- the largest is 0.5697 deg. NO pair of same-mechanism weakness families separates by even 1.21 deg, let alone 6.39. The batch null produces DISJOINTNESS at 26.7%, but it does not produce MAGNITUDE.",
+      "the_qualification_against": "the batch false-positive rate for plain disjointness on this endpoint is 26.7%%, HIGHER than the 21.3%% that HARMONIC_r383 measured, and 123x the 2/924 = 0.22%% exhaustive-permutation floor the corpus quotes. The permutation floor materially overstates the evidence for any single disjointness claim on this endpoint."
+    },
+    "Q3_the_unlesioned_side_negative_control": {
+      "ANSWER": "PARTIAL FAILURE AT THE HEADLINE RUNG",
+      "right_knee_batch_null_NULL_DF": "0/15 = 0.0%",
+      "right_knee_like_for_like_pooled": "6/24",
+      "left_knee_like_for_like_pooled": "24/24",
+      "not_a_batch_artefact_because": "the RIGHT knee's own batch null is 0/15 = 0.0%. The right knee is not intrinsically batchy on this endpoint, so a right-knee separation is a real displacement, not optimisation noise.",
+      "BUT": "the right knee's separations are NOT spread across the ladder -- ALL 6 of them come from the single rung R396SPg110 (KV 0.110), where the RIGHT, UNLESIONED knee separates from all six dorsiflexor-weakness families 6/6, exactly as the left does. That is the rung that produces the headline +6.39 deg. At KV 0.050, 0.070 and 0.100 the right knee separates 0/6 while the left separates 6/6, so the endpoint IS strictly left-specific at the lower rungs; at KV 0.110 that strict specificity is gone.",
+      "the_mitigating_magnitude_asymmetry": "at KV 0.110 the RIGHT-knee edge gaps are 0.8766-1.6300 deg (median 1.4276) against LEFT-knee edge gaps of 5.4644-6.3919 deg (median 5.6735). The unlesioned side moves in the same direction but roughly FOUR TIMES LESS. So the displacement is bilateral but strongly lateralised, which is what a genuine left lesion with contralateral compensation would look like; it is NOT what a pipeline or batch artefact would look like, because a batch artefact has no reason to prefer the lesioned side by 4x.",
+      "interpretation": "at KV 0.110 the gait is displaced BILATERALLY, so a bare 'the left knee separates' statement at that rung is not by itself evidence of a lesion-SIDE signature. It is not a batch artefact either -- the right knee's own batch null is 0/15 and the left-right magnitude ratio is about 4:1. The honest reading is: strict left-only specificity holds at KV <= 0.100 and fails at KV 0.110, the rung that produces the largest gap.",
+      "right_knee_edge_gaps_at_KV0110_deg": {
+        "min": 0.876556671614745,
+        "median": 1.4276045606597654,
+        "max": 1.6299503355881662
+      },
+      "left_knee_edge_gaps_at_KV0110_deg": {
+        "min": 5.46443218231486,
+        "median": 5.673452915556535,
+        "max": 6.391931677410274
+      }
+    },
+    "Q5_the_two_answers_do_not_agree": {
+      "summary": "the separation is REAL and survives the batch null; the MAGNITUDE does not reach a defensible knee MDC. Those are different questions and they get different answers.",
+      "how_far_the_ladder_gets": "across all 24 like-for-like left-knee comparisons the edge gaps run 1.4919 to 6.3919 deg (median 4.6119). 14 of 24 reach 3.8 deg, 3 reach 5.70 deg, 1 reaches 6.3919 deg, and ZERO reach the 7.25-7.62 deg conservative band. The single largest gap in the entire chained ladder still falls short of the MDC.",
+      "what_this_licenses": "a claim that the endpoint DISCRIMINATES the two lesions in simulation, with a dose-monotone gap. NOT a claim that the difference would be detectable in an instrumented clinical gait lab."
+    },
+    "Q4_declared_limitations": [
+      "NULL-PF could not be computed at all on this endpoint: every one of the 10 plantarflexor-weakness family pairs is UNINFORMATIVE because at most one of those five families reaches 4 Gate-G cells (R276WPF005 has 5; R276WPF010 3, R276WPF020 0, R285BF007 3, R285BF008 2). Only NULL-DF is available, so the batch null rests on a single cohort of 15 pairs.",
+      "R396SPg120 (KV 0.120) has only 3 Gate-G cells and is UNINFORMATIVE; it contributes 0/0 and is reported, not dropped.",
+      "R396SPg110 has 4 Gate-G cells, not 6, so its permutation floor is 1/210 rather than 1/924, and its like-for-like tests are 4-vs-6.",
+      "The batch null is a rate over 15 pairs; 4/15 has a wide interval. The binomial test against it inherits that uncertainty.",
+      "Everything here is a simulation. The MDC figures are marker-based motion-capture measurement error in humans; the simulated endpoint has no marker error at all. Comparing them is the correct clinical test of whether a measurable difference is being claimed, but the comparison is a transfer, not a like-for-like."
+    ]
+  }
+}

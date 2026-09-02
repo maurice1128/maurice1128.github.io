@@ -1,0 +1,2785 @@
+{
+ "record_id": "PUBLICDATA_VALIDATION_r405",
+ "date_utc": "2026-08-26",
+ "purpose": "Test simulation-derived prediction P against real stroke survivors using a public full-body gait dataset. P was fixed before any patient data was inspected.",
+ "prediction_P_as_given": {
+  "statement": "Across stroke survivors, the deviation of paretic knee angle at initial contact from the able-bodied norm should be POSITIVELY associated with stance-phase plantarflexor EMG amplitude (gastrocnemius and/or soleus) in the direction 'more plantarflexor activity -> more knee flexion at initial contact', and NEGATIVELY associated with tibialis anterior activity in swing.",
+  "simulation_basis": {
+   "spastic_lesion": "soleus AND gastrocnemius; gastrocnemius biarticular -> extra PF drive flexes knee at IC",
+   "weakness_lesion": "tibialis anterior only (monoarticular) -> foot drop, forefoot-first contact, LESS knee flexion",
+   "measured_sim_values_deg_flexion_NEGATIVE_convention": {
+    "weak_x0.80_knee_at_IC_mean": -5.84,
+    "control": -7.85,
+    "spastic_KV_0.110": -13.2,
+    "edge_gap": 6.39,
+    "disjoint": true
+   }
+  },
+  "sign_convention_note": "The simulation reports knee flexion as NEGATIVE. The dataset uses Vicon Plug-in-Gait, where knee FLEXION IS POSITIVE. All dataset-side numbers below are flexion-positive; predicted signs were flipped accordingly: P => corr(knee-flexion deviation, GAS) > 0 and corr(knee-flexion deviation, TA) < 0."
+ },
+ "dataset_provenance": {
+  "title": "A full-body motion capture gait dataset of 138 able-bodied adults across the life span and 50 stroke survivors",
+  "authors": "van Criekinge, Sloot et al.",
+  "journal": "Scientific Data 10, 852 (2023)",
+  "article_doi": "10.1038/s41597-023-02767-y",
+  "pubmed": "38040770",
+  "pmc": "PMC10692332",
+  "repository": "Figshare (Springer Nature collection)",
+  "collection_doi": "10.6084/m9.figshare.c.6503791.v1",
+  "collection_url": "https://springernature.figshare.com/collections/A_full-body_motion_capture_gait_dataset_of_138_able-bodied_adults_across_the_life_span_and_50_stroke_survivors/6503791",
+  "licence_on_figshare_items": "CC0 (all 13 items report CC0)",
+  "licence_stated_in_article_and_file_ReadMe": "CC BY 4.0 (attribution requested)",
+  "licence_note": "Figshare metadata says CC0; the article and the in-file ReadMe disclaimer describe CC BY 4.0 terms. Either way reuse is permitted; cite the source.",
+  "n_items_in_collection": 13,
+  "total_collection_size_bytes": 10001593000,
+  "items": [
+   {
+    "id": 24192507,
+    "title": "Post-processed MAT-files ... 50 adults with stroke",
+    "doi": "10.6084/m9.figshare.24192507.v1",
+    "file": "MAT_normalizedData_PostStrokeAdults_v27-02-23.mat",
+    "bytes": 2906058754,
+    "downloaded": false,
+    "reason_not_downloaded": "2.9 GB; MATLAB v7.3 = HDF5, needs h5py (not installed)"
+   },
+   {
+    "id": 24192510,
+    "title": "Post-processed MAT-files ... 138 able-bodied adults",
+    "doi": "10.6084/m9.figshare.24192510.v1",
+    "file": "MAT_normalizedData_AbleBodiedAdults_v06-03-23.mat",
+    "bytes": 6244593847,
+    "downloaded": false,
+    "reason_not_downloaded": "6.2 GB; MATLAB v7.3 = HDF5, needs h5py (not installed)"
+   },
+   {
+    "id": 24192495,
+    "title": "Post-processed excel-files ... 50 adults with stroke",
+    "doi": "10.6084/m9.figshare.24192495.v1",
+    "file": "MAT_normalizedData_PostStrokeAdults_v27-02-23.xlsx",
+    "bytes": 14788261,
+    "downloaded": true
+   },
+   {
+    "id": 24192489,
+    "title": "Post-processed excel-files ... 138 able-bodied adults",
+    "doi": "10.6084/m9.figshare.24192489.v1",
+    "file": "MAT_normalizedData_AbleBodiedAdults_v06-03-23.xlsx",
+    "bytes": 37690639,
+    "downloaded": true
+   },
+   {
+    "id": 24192504,
+    "title": "A description of the MAT-files and the checked variables",
+    "doi": "10.6084/m9.figshare.24192504.v1",
+    "file": "MATdatafiles_description_v1.3_LST.xlsx",
+    "bytes": 18742,
+    "downloaded": true
+   },
+   {
+    "id": 24192501,
+    "title": "A description of good kinematic and kinetic data",
+    "doi": "10.6084/m9.figshare.24192501.v1",
+    "file": "NrStrides.xlsx",
+    "bytes": 13939,
+    "downloaded": true
+   },
+   {
+    "id": 24192513,
+    "title": "A description of the figures of selected gait variables",
+    "doi": "10.6084/m9.figshare.24192513.v1",
+    "file": "README.txt",
+    "bytes": 626,
+    "downloaded": true
+   },
+   {
+    "id": 24192516,
+    "title": "Example code for time-normalized plots (txt)",
+    "doi": "10.6084/m9.figshare.24192516.v1",
+    "file": "ExampleCode_LoadStruct_PlotTimeNormVar_v1.txt",
+    "bytes": 8762,
+    "downloaded": true
+   },
+   {
+    "id": 24192486,
+    "title": "Example code for time-normalized plots (MAT-file .m)",
+    "doi": "10.6084/m9.figshare.24192486.v1",
+    "bytes": 8769,
+    "downloaded": false
+   },
+   {
+    "id": 24192480,
+    "title": "c3d files, 138 able-bodied",
+    "doi": "10.6084/m9.figshare.24192480.v1",
+    "file": "138_HealthyPiG.zip",
+    "bytes": 463159769,
+    "downloaded": false
+   },
+   {
+    "id": 24192483,
+    "title": "c3d files, 50 stroke",
+    "doi": "10.6084/m9.figshare.24192483.v1",
+    "file": "50_StrokePiG.zip",
+    "bytes": 316448944,
+    "downloaded": false
+   },
+   {
+    "id": 24192492,
+    "title": "PNG figures able-bodied",
+    "doi": "10.6084/m9.figshare.24192492.v1",
+    "bytes": 8299733,
+    "downloaded": false
+   },
+   {
+    "id": 24192498,
+    "title": "PNG figures stroke",
+    "doi": "10.6084/m9.figshare.24192498.v1",
+    "bytes": 10451501,
+    "downloaded": false
+   }
+  ],
+  "downloaded_total_bytes": 52520969,
+  "download_location": "C:\\\\Users\\\\maurice\\\\Desktop\\\\spasticity_paper\\\\external\\\\"
+ },
+ "step1_what_the_dataset_actually_contains": {
+  "(a) sagittal knee angle over gait cycle, paretic side": {
+   "present": true,
+   "detail": "Stroke xlsx has one sheet per subject (Sub01..Sub50), 1001 points per stride, columns Pside_KneeAngles and Nside_KneeAngles. Sides are already labelled paretic / non-paretic by the data authors, so paretic-side identification requires no inference on our part. Strides are IC-to-IC of the ipsilateral leg, so index 0 == initial contact. Curves are already averaged over strides."
+  },
+  "(b) surface EMG for gastrocnemius and/or soleus, and tibialis anterior": {
+   "present": "PARTIAL",
+   "gastrocnemius": true,
+   "tibialis_anterior": true,
+   "soleus": false,
+   "detail": "The 14 EMG channels are 7 muscles x 2 sides: gastrocnemius (GAS), rectus femoris (RF), vastus lateralis (VL), biceps femoris (BF), semitendinosus (ST), tibialis anterior (TA), erector spinae (ERS). THERE IS NO SOLEUS CHANNEL. Only GAS can represent the plantarflexor group, and GAS is exactly the biarticular muscle the prediction is about, so this is not fatal - but the soleus arm of the lesion cannot be observed at all.",
+   "missing_data": "7 of 50 stroke participants have no usable GAS or TA EMG -> n=43 for all EMG tests."
+  },
+  "(c) able-bodied cohort usable as a norm": {
+   "present": true,
+   "detail": "138 able-bodied adults, ages 21-86, same lab / same PiG model / same protocol, barefoot at preferred speed. Able-bodied xlsx has 20 columns with no side prefix; the ReadMe says values are 'averaged over the strides for the left and right side', so one curve per participant. Used directly as the norm."
+  },
+  "(d) clinical scores": {
+   "present": "YES but NOT in the files we could read",
+   "scores_that_exist": [
+    "FAC (Functional Ambulation Categories)",
+    "POMA (Tinetti Performance Oriented Mobility Assessment)",
+    "TIS (Trunk Impairment Scale)",
+    "TPS (time post stroke, days)",
+    "LesionLeft (lesion side)",
+    "Age, Weight, Height, LegLength, Male"
+   ],
+   "scores_that_DO_NOT_exist_anywhere_in_dataset": [
+    "MAS / Modified Ashworth (spasticity)",
+    "Fugl-Meyer",
+    "MRC strength grades",
+    "Berg Balance"
+   ],
+   "critical_gap": "There is NO direct spasticity measure and NO direct strength measure in this dataset. The impairment split that prediction P is about (spastic vs weak) therefore has to be inferred from EMG alone; it cannot be validated against any clinical gold standard.",
+   "access_problem": "Subject characteristics live only in Data.Sub(#).sub_char inside the MAT-files. Those are MATLAB v7.3 = HDF5 (verified by byte-range probe of the file header: 'MATLAB 7.3 MAT-file ... HDF5 schema 1.00'). Reading them needs h5py, which is NOT installed in the specified venv, and scipy.io.loadmat does not support v7.3. Per instruction, nothing was pip-installed. The Excel exports contain NO subject characteristics at all."
+  },
+  "(e) walking speed": {
+   "present": "NOT DIRECTLY",
+   "detail": "Walking speed is not a stored field. It is not in sub_char and not in the Excel exports. It would have to be derived from centre-of-mass displacement plus the ICstart/ICstop event frames, both of which are MAT-only (HDF5). Walking speed is therefore MISSING from this analysis - a serious limitation, since gait speed is the dominant confounder for essentially every stroke gait variable."
+  },
+  "other_contents": {
+   "able_bodied_xlsx_columns": [
+    "AnkleAngles",
+    "KneeAngles",
+    "HipAngles",
+    "PelvisAngles",
+    "AnkleMoment",
+    "KneeMoment",
+    "HipMoment",
+    "AnklePower",
+    "KneePower",
+    "HipPower",
+    "GASnorm",
+    "RFnorm",
+    "VLnorm",
+    "BFnorm",
+    "STnorm",
+    "TAnorm",
+    "ERSnorm",
+    "GRF_ap",
+    "GRF_ml",
+    "GRF_vert"
+   ],
+   "stroke_xlsx_columns": [
+    "Pside_/Nside_ x {AnkleAngles, KneeAngles, HipAngles, PelvisAngles, GASnorm, RFnorm, VLnorm, BFnorm, STnorm, TAnorm, ERSnorm}"
+   ],
+   "note_stroke_has_no_kinetics": "The stroke Excel deliberately omits moments, powers and GRF: 'not much good GRF data could be captured'. So no kinetic cross-check is possible on the paretic side."
+  }
+ },
+ "step3_methods": {
+  "knee_at_IC": "Pside_KneeAngles at index 0 of the 1001-point IC-to-IC stride (flexion positive, deg).",
+  "able_norm": "mean and SD of KneeAngles[0] over all 138 able-bodied participants.",
+  "stance_swing_split": {
+   "primary": "fixed windows: stance 0-60%, swing 60-100% of the stride.",
+   "why_fixed": "Gait events (TOnorm) are MAT-only. We tried to recover toe-off from the ankle angle minimum (the authors' own definition). Validated against the able-bodied vertical GRF: mean agreement is good (ankle-min 63.5% vs GRF 62.5%, bias +1.0%) BUT the between-subject correlation is only r=0.158, i.e. the heuristic is essentially a constant and carries no individual information. In the stroke cohort it hit the search-window boundary in 11/50 participants. Fixed windows are therefore primary; ankle-derived toe-off is reported as sensitivity only.",
+   "toe_off_validation": {
+    "able_GRF_mean_pct": 62.5,
+    "able_ankle_min_mean_pct": 63.5,
+    "bias_pct": 0.98,
+    "between_subject_r": 0.158,
+    "n_valid_GRF": 94,
+    "stroke_boundary_failures": 11
+   },
+   "toe_off_independent_measure": "GAS mean over 0-15% of stride ('early stance') is unaffected by the toe-off definition and is the cleanest available index of premature/spastic plantarflexor activity."
+  },
+  "emg_measures": "mean of the peak-normalised EMG curve over the window. See the normalisation caveat - these are SHAPE (mean/peak) measures, not amplitudes.",
+  "statistics": "Pearson r and Spearman rho with analytic two-sided t-based p-values (pure-python incomplete-beta implementation, scipy unavailable) plus a 20000-iteration permutation p-value on Spearman as a cross-check. Fisher-z 95% CI on Pearson r."
+ },
+ "step3_extracted_values": {
+  "able_bodied_norm": {
+   "n": 138,
+   "knee_flexion_at_IC_mean_deg": 8.287118219982315,
+   "knee_flexion_at_IC_sd_deg": 4.719830384734741,
+   "min_deg": -4.426988905456762,
+   "max_deg": 17.49873692918399
+  },
+  "stroke_group": {
+   "n": 50,
+   "n_with_EMG": 43,
+   "paretic_knee_flexion_at_IC_mean_deg": 19.989884908257714,
+   "paretic_knee_flexion_at_IC_sd_deg": 9.007349811657475,
+   "mean_deviation_from_able_norm_deg": 11.702766688275394,
+   "mean_deviation_in_able_SD": 2.4794888236080332,
+   "n_above_able_mean": 46,
+   "n_below_able_mean": 4,
+   "paretic_ankle_at_IC_mean_deg": 1.0689989986234096,
+   "n_plantarflexed_at_IC": 25
+  },
+  "per_participant_stroke": [
+   {
+    "sub": "Sub01",
+    "paretic_knee_flexion_at_IC_deg": 31.161029482512262,
+    "deviation_from_able_norm_deg": 22.873911262529948,
+    "deviation_in_able_SD": 4.8463417957794865,
+    "nonparetic_knee_flexion_at_IC_deg": 13.312437678888077,
+    "paretic_ankle_angle_at_IC_deg": 12.269903718095737,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.2821906812913286,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.3518930979273165,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.24068538407534829,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.17304600881730536,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.3863262738843684,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub02",
+    "paretic_knee_flexion_at_IC_deg": 16.61610598127013,
+    "deviation_from_able_norm_deg": 8.328987761287816,
+    "deviation_in_able_SD": 1.7646794656490423,
+    "nonparetic_knee_flexion_at_IC_deg": 14.847290465945646,
+    "paretic_ankle_angle_at_IC_deg": -1.7703726607517618,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.28274965187425605,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.17756100076900516,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.3119550533980513,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.292505612444316,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.1511702500132979,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub03",
+    "paretic_knee_flexion_at_IC_deg": 39.97019056081405,
+    "deviation_from_able_norm_deg": 31.68307234083174,
+    "deviation_in_able_SD": 6.712756552291308,
+    "nonparetic_knee_flexion_at_IC_deg": 20.944279061124053,
+    "paretic_ankle_angle_at_IC_deg": 9.015740404061411,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.16355015357380065,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.12585553927198626,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.17742355658663944,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.4017165563720456,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.3163251306406509,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub04",
+    "paretic_knee_flexion_at_IC_deg": 25.271928965131718,
+    "deviation_from_able_norm_deg": 16.984810745149403,
+    "deviation_in_able_SD": 3.598606170273207,
+    "nonparetic_knee_flexion_at_IC_deg": 19.75087446853578,
+    "paretic_ankle_angle_at_IC_deg": 3.85992949390045,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.4033019520261071,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.2786987042038776,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.36720977235674324,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.30125034967724096,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.3090245736621335,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub05",
+    "paretic_knee_flexion_at_IC_deg": 30.846940609882996,
+    "deviation_from_able_norm_deg": 22.55982238990068,
+    "deviation_in_able_SD": 4.779795151721022,
+    "nonparetic_knee_flexion_at_IC_deg": 3.578158508702835,
+    "paretic_ankle_angle_at_IC_deg": 3.0267791320568054,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.17507005662869923,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.14957776749236854,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.10303514377367885,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.34182337476474567,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.11834705159278355,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub06",
+    "paretic_knee_flexion_at_IC_deg": 14.09295072451349,
+    "deviation_from_able_norm_deg": 5.805832504531175,
+    "deviation_in_able_SD": 1.230093463381411,
+    "nonparetic_knee_flexion_at_IC_deg": 15.957474112857513,
+    "paretic_ankle_angle_at_IC_deg": -3.229230308407933,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.32386526388904224,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.2116393884088479,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.32807411906726985,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.26391641242630004,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.28592589681063046,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub07",
+    "paretic_knee_flexion_at_IC_deg": 15.98963390056008,
+    "deviation_from_able_norm_deg": 7.702515680577765,
+    "deviation_in_able_SD": 1.631947560126285,
+    "nonparetic_knee_flexion_at_IC_deg": 12.210514044555474,
+    "paretic_ankle_angle_at_IC_deg": 2.022715921705808,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.3061439535455961,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.23803839281393466,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.1321776605966831,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.24960633962302387,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.10109218876003347,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub08",
+    "paretic_knee_flexion_at_IC_deg": 14.671719353386464,
+    "deviation_from_able_norm_deg": 6.38460113340415,
+    "deviation_in_able_SD": 1.3527183421789364,
+    "nonparetic_knee_flexion_at_IC_deg": 17.875613093364958,
+    "paretic_ankle_angle_at_IC_deg": -4.459308532092202,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": NaN,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": NaN,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": NaN,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": NaN,
+    "emg_available": false,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub09",
+    "paretic_knee_flexion_at_IC_deg": 14.804080246886329,
+    "deviation_from_able_norm_deg": 6.5169620269040145,
+    "deviation_in_able_SD": 1.3807619121190675,
+    "nonparetic_knee_flexion_at_IC_deg": 17.24704693611863,
+    "paretic_ankle_angle_at_IC_deg": -0.6673385878343137,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.2544864287218137,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.10444637357209663,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.34264741835835105,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.3276363926152388,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.2998159768966409,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub10",
+    "paretic_knee_flexion_at_IC_deg": 28.55057236335375,
+    "deviation_from_able_norm_deg": 20.263454143371437,
+    "deviation_in_able_SD": 4.293258971531932,
+    "nonparetic_knee_flexion_at_IC_deg": 18.584729308912333,
+    "paretic_ankle_angle_at_IC_deg": 11.221782351979716,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.19560537021758256,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.1934681422444015,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.379377445231916,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.24504574129173964,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.21904534030397543,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub11",
+    "paretic_knee_flexion_at_IC_deg": 6.557849885457526,
+    "deviation_from_able_norm_deg": -1.7292683345247886,
+    "deviation_in_able_SD": -0.36638357601106364,
+    "nonparetic_knee_flexion_at_IC_deg": 6.012115495323544,
+    "paretic_ankle_angle_at_IC_deg": -7.799671676354663,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.1399633923364405,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.09020724922613929,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.14931915765441325,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.28882441297483297,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.16370455448481314,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub12",
+    "paretic_knee_flexion_at_IC_deg": 7.4710391751164735,
+    "deviation_from_able_norm_deg": -0.816079044865841,
+    "deviation_in_able_SD": -0.1729043161180686,
+    "nonparetic_knee_flexion_at_IC_deg": 9.379276644112139,
+    "paretic_ankle_angle_at_IC_deg": 0.19099207213308386,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.06648534565062102,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.05702311601927062,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.4688232567225172,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.4117190148247456,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.4551045061447158,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub13",
+    "paretic_knee_flexion_at_IC_deg": 21.782003313280686,
+    "deviation_from_able_norm_deg": 13.494885093298372,
+    "deviation_in_able_SD": 2.859188571043702,
+    "nonparetic_knee_flexion_at_IC_deg": 26.764149998376837,
+    "paretic_ankle_angle_at_IC_deg": 0.22604165025995657,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.2653854026897626,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.10332755460240371,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.21617976698956143,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.14512684881520949,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.3217552616248212,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub14",
+    "paretic_knee_flexion_at_IC_deg": 14.336206388696423,
+    "deviation_from_able_norm_deg": 6.049088168714109,
+    "deviation_in_able_SD": 1.2816325324483189,
+    "nonparetic_knee_flexion_at_IC_deg": 21.1780023354067,
+    "paretic_ankle_angle_at_IC_deg": -0.3419065352107286,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.015993860819606256,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.013362839529571709,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.30801526112421584,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.21555713704062696,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.32788999390972967,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub15",
+    "paretic_knee_flexion_at_IC_deg": 0.9705494016145684,
+    "deviation_from_able_norm_deg": -7.316568818367746,
+    "deviation_in_able_SD": -1.5501762186267514,
+    "nonparetic_knee_flexion_at_IC_deg": 15.51830788086923,
+    "paretic_ankle_angle_at_IC_deg": -5.867111493290266,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.2392220561569998,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.19123767064560332,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.27828301032961295,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.4058179792087828,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.4074750986842223,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub16",
+    "paretic_knee_flexion_at_IC_deg": 19.622287228847927,
+    "deviation_from_able_norm_deg": 11.335169008865613,
+    "deviation_in_able_SD": 2.4016051605427893,
+    "nonparetic_knee_flexion_at_IC_deg": 17.864641819457223,
+    "paretic_ankle_angle_at_IC_deg": -6.630060358989968,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.31079389981627714,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.1937250876858828,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.19507594704923084,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.3117780883718366,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.2701692819130367,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub17",
+    "paretic_knee_flexion_at_IC_deg": 19.353202043202057,
+    "deviation_from_able_norm_deg": 11.066083823219742,
+    "deviation_in_able_SD": 2.344593538575151,
+    "nonparetic_knee_flexion_at_IC_deg": 14.160661750187687,
+    "paretic_ankle_angle_at_IC_deg": -1.472793479923328,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.25004558345653444,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.5635624208403263,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.4201193244308533,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.26137591544995054,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.4901791176635194,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub18",
+    "paretic_knee_flexion_at_IC_deg": 26.73027250348585,
+    "deviation_from_able_norm_deg": 18.443154283503535,
+    "deviation_in_able_SD": 3.9075883623178247,
+    "nonparetic_knee_flexion_at_IC_deg": 11.346117248836123,
+    "paretic_ankle_angle_at_IC_deg": 3.2544292368239005,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.26401436241264786,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.3813383287587338,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.1874587251007412,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.2567896869036948,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.14169729034363882,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub19",
+    "paretic_knee_flexion_at_IC_deg": 23.278316481998367,
+    "deviation_from_able_norm_deg": 14.991198262016052,
+    "deviation_in_able_SD": 3.1762154653908334,
+    "nonparetic_knee_flexion_at_IC_deg": 39.10314959727328,
+    "paretic_ankle_angle_at_IC_deg": 1.7005160271192967,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.24234996421075886,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.3599172122583785,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.31990335493631905,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.21869035953994248,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.21752284991988735,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub20",
+    "paretic_knee_flexion_at_IC_deg": 32.75493237653448,
+    "deviation_from_able_norm_deg": 24.467814156552162,
+    "deviation_in_able_SD": 5.184045222406287,
+    "nonparetic_knee_flexion_at_IC_deg": 31.21375035779849,
+    "paretic_ankle_angle_at_IC_deg": 11.000901013229871,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.14076093312182414,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.0645585220391162,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.21104913645569934,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.2884159536541878,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.31861105094952286,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub21",
+    "paretic_knee_flexion_at_IC_deg": 28.924488517038,
+    "deviation_from_able_norm_deg": 20.637370297055686,
+    "deviation_in_able_SD": 4.372481342508143,
+    "nonparetic_knee_flexion_at_IC_deg": 29.359924234623477,
+    "paretic_ankle_angle_at_IC_deg": 2.2504160817904997,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.20494310114654005,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.14025473477998404,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.23556092589198135,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.3313198218286328,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.19675775255285824,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub22",
+    "paretic_knee_flexion_at_IC_deg": 8.849696088400194,
+    "deviation_from_able_norm_deg": 0.562577868417879,
+    "deviation_in_able_SD": 0.11919450966657914,
+    "nonparetic_knee_flexion_at_IC_deg": 27.698041180301292,
+    "paretic_ankle_angle_at_IC_deg": 5.613086044117924,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.2552428959570442,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.24512209905776117,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.2553201441183825,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.1914716766207051,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.19479101544126842,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub23",
+    "paretic_knee_flexion_at_IC_deg": 3.8280232858029986,
+    "deviation_from_able_norm_deg": -4.459094934179316,
+    "deviation_in_able_SD": -0.944757453276559,
+    "nonparetic_knee_flexion_at_IC_deg": -2.359001011024711,
+    "paretic_ankle_angle_at_IC_deg": -8.538680095870475,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.18776565986594543,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.17503662661750502,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.3449053453232639,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.22036571029072272,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.2976051998695312,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub24",
+    "paretic_knee_flexion_at_IC_deg": 36.019224471347435,
+    "deviation_from_able_norm_deg": 27.73210625136512,
+    "deviation_in_able_SD": 5.8756573840150175,
+    "nonparetic_knee_flexion_at_IC_deg": 20.615150992528246,
+    "paretic_ankle_angle_at_IC_deg": 13.255747327757943,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.12535660702261217,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.10070328730302323,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.18959723807982937,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.46896397818180524,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.3634646185308426,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub25",
+    "paretic_knee_flexion_at_IC_deg": 29.044901340416498,
+    "deviation_from_able_norm_deg": 20.757783120434183,
+    "deviation_in_able_SD": 4.397993450690663,
+    "nonparetic_knee_flexion_at_IC_deg": 15.353074582022101,
+    "paretic_ankle_angle_at_IC_deg": 3.960642019688655,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.23551538457289675,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.12188681849403854,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.16400720979878972,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.33330740147814003,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.19529672741604384,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub26",
+    "paretic_knee_flexion_at_IC_deg": 35.66856969338607,
+    "deviation_from_able_norm_deg": 27.381451473403754,
+    "deviation_in_able_SD": 5.80136344771267,
+    "nonparetic_knee_flexion_at_IC_deg": 31.63356312775973,
+    "paretic_ankle_angle_at_IC_deg": 3.2573515314180277,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.18209624603776403,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.19034962794508012,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.2272146777222187,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.3019002213924829,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.4074132927978057,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub27",
+    "paretic_knee_flexion_at_IC_deg": 8.405568869443481,
+    "deviation_from_able_norm_deg": 0.11845064946116679,
+    "deviation_in_able_SD": 0.025096378430095604,
+    "nonparetic_knee_flexion_at_IC_deg": 11.457489418767627,
+    "paretic_ankle_angle_at_IC_deg": -0.6444933078755573,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.24238157336274715,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.1978919423726363,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.3945843870689538,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.3797889997180359,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.40816027737331356,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub28",
+    "paretic_knee_flexion_at_IC_deg": 25.843162018358388,
+    "deviation_from_able_norm_deg": 17.556043798376074,
+    "deviation_in_able_SD": 3.7196344714329688,
+    "nonparetic_knee_flexion_at_IC_deg": 20.37258581223357,
+    "paretic_ankle_angle_at_IC_deg": 5.655127267506168,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.16941583776140784,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.2059379571362336,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.15878505682165098,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.3150595342147312,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.2217656334401949,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub29",
+    "paretic_knee_flexion_at_IC_deg": 24.05985426826666,
+    "deviation_from_able_norm_deg": 15.772736048284344,
+    "deviation_in_able_SD": 3.3418014552594535,
+    "nonparetic_knee_flexion_at_IC_deg": 11.643152173373053,
+    "paretic_ankle_angle_at_IC_deg": 3.363238300182516,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.3559529475376882,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.3155748266252866,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.33062487653914535,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.38371607309442485,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.312925868936878,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub30",
+    "paretic_knee_flexion_at_IC_deg": 16.11658513102715,
+    "deviation_from_able_norm_deg": 7.829466911044836,
+    "deviation_in_able_SD": 1.6588449738294695,
+    "nonparetic_knee_flexion_at_IC_deg": 0.45735653624943573,
+    "paretic_ankle_angle_at_IC_deg": -2.2166889525267255,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.22976980955094442,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.20002194975962678,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.1885124485752658,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.2646062988265596,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.25830823654118,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub31",
+    "paretic_knee_flexion_at_IC_deg": 23.987389870910267,
+    "deviation_from_able_norm_deg": 15.700271650927952,
+    "deviation_in_able_SD": 3.326448276977717,
+    "nonparetic_knee_flexion_at_IC_deg": 21.233759432748393,
+    "paretic_ankle_angle_at_IC_deg": 0.6595341906005704,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.19615959591326018,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.20613661800877486,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.1531539117093107,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.2044754494535044,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.3044984150657348,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub32",
+    "paretic_knee_flexion_at_IC_deg": 15.236094860020467,
+    "deviation_from_able_norm_deg": 6.948976640038152,
+    "deviation_in_able_SD": 1.4722937210864817,
+    "nonparetic_knee_flexion_at_IC_deg": 13.860803836722733,
+    "paretic_ankle_angle_at_IC_deg": -1.6379474401309362,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.08783324432765481,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.11047568243710562,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.2507229223456197,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.21792136179560107,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.15335078665495439,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub33",
+    "paretic_knee_flexion_at_IC_deg": 11.300740189880786,
+    "deviation_from_able_norm_deg": 3.0136219698984714,
+    "deviation_in_able_SD": 0.638502175765759,
+    "nonparetic_knee_flexion_at_IC_deg": 14.324871719099537,
+    "paretic_ankle_angle_at_IC_deg": -2.4804906462237253,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.2765606501630807,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.305218331333034,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.1587960351563619,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.3438551130068595,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.2908583312961594,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub34",
+    "paretic_knee_flexion_at_IC_deg": 25.836447636483502,
+    "deviation_from_able_norm_deg": 17.549329416501187,
+    "deviation_in_able_SD": 3.7182118817787724,
+    "nonparetic_knee_flexion_at_IC_deg": 4.033003753258003,
+    "paretic_ankle_angle_at_IC_deg": 6.258325812583796,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.18027511813815664,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.13751871681458933,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.16892291682587898,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.17560559105675516,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.15736627151832075,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub35",
+    "paretic_knee_flexion_at_IC_deg": 15.58563197159359,
+    "deviation_from_able_norm_deg": 7.298513751611276,
+    "deviation_in_able_SD": 1.5463508551529146,
+    "nonparetic_knee_flexion_at_IC_deg": 22.55754060791207,
+    "paretic_ankle_angle_at_IC_deg": 5.371625764733084,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.3858622585236599,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.22477822612022938,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.14478552593288171,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.34337724175508283,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.40672679251504473,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub36",
+    "paretic_knee_flexion_at_IC_deg": 36.894257513115576,
+    "deviation_from_able_norm_deg": 28.60713929313326,
+    "deviation_in_able_SD": 6.0610524025729395,
+    "nonparetic_knee_flexion_at_IC_deg": 7.71562564081237,
+    "paretic_ankle_angle_at_IC_deg": 15.122124294178093,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.2652019892335227,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.4291436357725481,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.23090087698598835,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.4386930233171041,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.5378153508489458,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub37",
+    "paretic_knee_flexion_at_IC_deg": 12.259414473856205,
+    "deviation_from_able_norm_deg": 3.972296253873891,
+    "deviation_in_able_SD": 0.8416184333067167,
+    "nonparetic_knee_flexion_at_IC_deg": 15.155160450048774,
+    "paretic_ankle_angle_at_IC_deg": -1.4987928387013902,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": NaN,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": NaN,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.27649023575655884,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.16530560441277062,
+    "emg_available": false,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub38",
+    "paretic_knee_flexion_at_IC_deg": 14.057436065273388,
+    "deviation_from_able_norm_deg": 5.770317845291073,
+    "deviation_in_able_SD": 1.2225689007710752,
+    "nonparetic_knee_flexion_at_IC_deg": 21.60381381642469,
+    "paretic_ankle_angle_at_IC_deg": -1.328181303373778,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.32660572577995384,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.12947594179485586,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.25785372021522956,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.37915885066395705,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.23777735904766958,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub39",
+    "paretic_knee_flexion_at_IC_deg": 23.683814990923477,
+    "deviation_from_able_norm_deg": 15.396696770941162,
+    "deviation_in_able_SD": 3.262129253783867,
+    "nonparetic_knee_flexion_at_IC_deg": 19.781523123611837,
+    "paretic_ankle_angle_at_IC_deg": -0.4432837533395912,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.244008484387589,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.13737652218316962,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.22548328390637248,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.20533940499082853,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.2944172104473107,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub40",
+    "paretic_knee_flexion_at_IC_deg": 9.352056694899819,
+    "deviation_from_able_norm_deg": 1.0649384749175042,
+    "deviation_in_able_SD": 0.22563066638195617,
+    "nonparetic_knee_flexion_at_IC_deg": 9.921356375254879,
+    "paretic_ankle_angle_at_IC_deg": -2.665679251643225,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.14242059564850718,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.09024323944201455,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.17636993343774504,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.27517336415739674,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.22439174020730246,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub41",
+    "paretic_knee_flexion_at_IC_deg": 25.105613073217018,
+    "deviation_from_able_norm_deg": 16.818494853234704,
+    "deviation_in_able_SD": 3.563368486213074,
+    "nonparetic_knee_flexion_at_IC_deg": 25.880559889836366,
+    "paretic_ankle_angle_at_IC_deg": -18.26612528059407,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.26610105955542773,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.30295683733479867,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.2439623819091378,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.3111337138937153,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.20446377411716557,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub42",
+    "paretic_knee_flexion_at_IC_deg": 14.95366326001891,
+    "deviation_from_able_norm_deg": 6.6665450400365955,
+    "deviation_in_able_SD": 1.4124543673429617,
+    "nonparetic_knee_flexion_at_IC_deg": 15.0248343274023,
+    "paretic_ankle_angle_at_IC_deg": -2.6205332729787605,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.3033517329287247,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.27345919714340183,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.2738931352697468,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.3286373248854877,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.25049231443147635,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub43",
+    "paretic_knee_flexion_at_IC_deg": 30.0773968377614,
+    "deviation_from_able_norm_deg": 21.790278617779084,
+    "deviation_in_able_SD": 4.616750357863489,
+    "nonparetic_knee_flexion_at_IC_deg": 19.151951851840625,
+    "paretic_ankle_angle_at_IC_deg": 8.658063829608675,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": NaN,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": NaN,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": NaN,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": NaN,
+    "emg_available": false,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub44",
+    "paretic_knee_flexion_at_IC_deg": 15.679592492570022,
+    "deviation_from_able_norm_deg": 7.392474272587707,
+    "deviation_in_able_SD": 1.5662584605788057,
+    "nonparetic_knee_flexion_at_IC_deg": 16.394398526832347,
+    "paretic_ankle_angle_at_IC_deg": 3.216000678916745,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.28323999954572465,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.11302448289291943,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.14685048896565384,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.28294827979416687,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.27321504055241513,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub45",
+    "paretic_knee_flexion_at_IC_deg": 14.204747807056904,
+    "deviation_from_able_norm_deg": 5.91762958707459,
+    "deviation_in_able_SD": 1.2537801371451542,
+    "nonparetic_knee_flexion_at_IC_deg": 12.777223346925489,
+    "paretic_ankle_angle_at_IC_deg": 9.058716447273753,
+    "contact_type": "dorsiflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": NaN,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": NaN,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": NaN,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": NaN,
+    "emg_available": false,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub46",
+    "paretic_knee_flexion_at_IC_deg": 17.95392190374418,
+    "deviation_from_able_norm_deg": 9.666803683761866,
+    "deviation_in_able_SD": 2.048125228191892,
+    "nonparetic_knee_flexion_at_IC_deg": 32.611107166596796,
+    "paretic_ankle_angle_at_IC_deg": -1.3831763062280897,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": NaN,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": NaN,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": NaN,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": NaN,
+    "emg_available": false,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub47",
+    "paretic_knee_flexion_at_IC_deg": 18.761634311086578,
+    "deviation_from_able_norm_deg": 10.474516091104263,
+    "deviation_in_able_SD": 2.2192568879131325,
+    "nonparetic_knee_flexion_at_IC_deg": 21.488545867295105,
+    "paretic_ankle_angle_at_IC_deg": -0.33827004518014303,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": NaN,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": NaN,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": NaN,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": NaN,
+    "emg_available": false,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub48",
+    "paretic_knee_flexion_at_IC_deg": 17.142408040909665,
+    "deviation_from_able_norm_deg": 8.85528982092735,
+    "deviation_in_able_SD": 1.8761881464147203,
+    "nonparetic_knee_flexion_at_IC_deg": 11.320080278018331,
+    "paretic_ankle_angle_at_IC_deg": -7.81407447658274,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": NaN,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": NaN,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": NaN,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": NaN,
+    "emg_available": false,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub49",
+    "paretic_knee_flexion_at_IC_deg": 19.975677311234517,
+    "deviation_from_able_norm_deg": 11.688559091252202,
+    "deviation_in_able_SD": 2.476478631320373,
+    "nonparetic_knee_flexion_at_IC_deg": 23.158509639133133,
+    "paretic_ankle_angle_at_IC_deg": -0.8541538219488732,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.3537307327909075,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.22402991404264963,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.29868542697739875,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.16740788985394942,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.24729294195193904,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   },
+   {
+    "sub": "Sub50",
+    "paretic_knee_flexion_at_IC_deg": 15.854421438296761,
+    "deviation_from_able_norm_deg": 7.567303218314446,
+    "deviation_in_able_SD": 1.603299822550665,
+    "nonparetic_knee_flexion_at_IC_deg": 19.29421187938666,
+    "paretic_ankle_angle_at_IC_deg": -5.071416254498763,
+    "contact_type": "plantarflexed_at_IC",
+    "paretic_GAS_mean_stance_0_60pct_peaknorm": 0.3140466923115445,
+    "paretic_GAS_mean_early_stance_0_15pct_peaknorm": 0.15449912011424558,
+    "paretic_TA_mean_swing_60_100pct_peaknorm": 0.5098704116248467,
+    "nonparetic_GAS_mean_stance_0_60pct_peaknorm": 0.3378957838900312,
+    "nonparetic_TA_mean_swing_60_100pct_peaknorm": 0.21677670712468067,
+    "emg_available": true,
+    "walking_speed": null,
+    "clinical_scores": null
+   }
+  ],
+  "per_participant_able_bodied": [
+   {
+    "sub": "Sub01",
+    "knee_flexion_at_IC_deg": 11.570826821132876,
+    "ankle_angle_at_IC_deg": -2.482850375842289,
+    "GAS_mean_stance_peaknorm": 0.34127526548053894,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.21534643450479748,
+    "TA_mean_swing_peaknorm": 0.3245841004424246
+   },
+   {
+    "sub": "Sub02",
+    "knee_flexion_at_IC_deg": 11.909775663701348,
+    "ankle_angle_at_IC_deg": -3.064146098107426,
+    "GAS_mean_stance_peaknorm": 0.3103011810240616,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.31154860195729944,
+    "TA_mean_swing_peaknorm": 0.28654618635290796
+   },
+   {
+    "sub": "Sub03",
+    "knee_flexion_at_IC_deg": 11.04277612016201,
+    "ankle_angle_at_IC_deg": -3.450803568217458,
+    "GAS_mean_stance_peaknorm": 0.2644989105159758,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.16190045799815503,
+    "TA_mean_swing_peaknorm": 0.32171372548539756
+   },
+   {
+    "sub": "Sub04",
+    "knee_flexion_at_IC_deg": 11.845104195681044,
+    "ankle_angle_at_IC_deg": -3.726042909034002,
+    "GAS_mean_stance_peaknorm": 0.2585725123762378,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.20254176554266484,
+    "TA_mean_swing_peaknorm": 0.3386127506745563
+   },
+   {
+    "sub": "Sub05",
+    "knee_flexion_at_IC_deg": 10.666110759098057,
+    "ankle_angle_at_IC_deg": -1.3635797287437053,
+    "GAS_mean_stance_peaknorm": 0.23610969571693516,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.23766271183891277,
+    "TA_mean_swing_peaknorm": 0.3247356128201438
+   },
+   {
+    "sub": "Sub06",
+    "knee_flexion_at_IC_deg": 11.350774658237125,
+    "ankle_angle_at_IC_deg": -4.0208028016176955,
+    "GAS_mean_stance_peaknorm": 0.22739023356606253,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.0929441434396909,
+    "TA_mean_swing_peaknorm": 0.3196046196571828
+   },
+   {
+    "sub": "Sub07",
+    "knee_flexion_at_IC_deg": 7.109500150914161,
+    "ankle_angle_at_IC_deg": -2.608048057549948,
+    "GAS_mean_stance_peaknorm": 0.22927327538883163,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.10137946267075981,
+    "TA_mean_swing_peaknorm": 0.38927942945329486
+   },
+   {
+    "sub": "Sub08",
+    "knee_flexion_at_IC_deg": 15.84765703108441,
+    "ankle_angle_at_IC_deg": 0.7997343862269185,
+    "GAS_mean_stance_peaknorm": 0.29134293563835645,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.2675516597598054,
+    "TA_mean_swing_peaknorm": 0.29275424859369575
+   },
+   {
+    "sub": "Sub09",
+    "knee_flexion_at_IC_deg": 12.29036055423526,
+    "ankle_angle_at_IC_deg": 2.4865982250264693,
+    "GAS_mean_stance_peaknorm": 0.2489855197026098,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.13995906779526632,
+    "TA_mean_swing_peaknorm": 0.2776346239185906
+   },
+   {
+    "sub": "Sub10",
+    "knee_flexion_at_IC_deg": 14.49081490471774,
+    "ankle_angle_at_IC_deg": -5.773071505777169,
+    "GAS_mean_stance_peaknorm": 0.24206381235207433,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.15180314421859534,
+    "TA_mean_swing_peaknorm": 0.2229638731192533
+   },
+   {
+    "sub": "Sub11",
+    "knee_flexion_at_IC_deg": 11.80231192201253,
+    "ankle_angle_at_IC_deg": -4.208197136701213,
+    "GAS_mean_stance_peaknorm": 0.1713586284776281,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.13731169564531268,
+    "TA_mean_swing_peaknorm": 0.3878457618917507
+   },
+   {
+    "sub": "Sub12",
+    "knee_flexion_at_IC_deg": 6.165066346446427,
+    "ankle_angle_at_IC_deg": -11.387317663151205,
+    "GAS_mean_stance_peaknorm": 0.3438364586278989,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.2590839539248565,
+    "TA_mean_swing_peaknorm": 0.37592016041195936
+   },
+   {
+    "sub": "Sub13",
+    "knee_flexion_at_IC_deg": 17.49873692918399,
+    "ankle_angle_at_IC_deg": -7.332157815984357,
+    "GAS_mean_stance_peaknorm": 0.29640271992139566,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.21156118291818082,
+    "TA_mean_swing_peaknorm": 0.25686758558455236
+   },
+   {
+    "sub": "Sub14",
+    "knee_flexion_at_IC_deg": 6.423314245395133,
+    "ankle_angle_at_IC_deg": -6.080012980471103,
+    "GAS_mean_stance_peaknorm": 0.28693396075926925,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.12999111048850404,
+    "TA_mean_swing_peaknorm": 0.281247609937191
+   },
+   {
+    "sub": "Sub15",
+    "knee_flexion_at_IC_deg": 5.5234860352482595,
+    "ankle_angle_at_IC_deg": -9.043785993677636,
+    "GAS_mean_stance_peaknorm": 0.21489987927285645,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.129514718128739,
+    "TA_mean_swing_peaknorm": 0.10474906982778519
+   },
+   {
+    "sub": "Sub16",
+    "knee_flexion_at_IC_deg": 5.742677384297965,
+    "ankle_angle_at_IC_deg": -8.64218218730748,
+    "GAS_mean_stance_peaknorm": 0.29859203754696084,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.17575907490595255,
+    "TA_mean_swing_peaknorm": 0.35445874033949776
+   },
+   {
+    "sub": "Sub17",
+    "knee_flexion_at_IC_deg": 4.389585552448609,
+    "ankle_angle_at_IC_deg": -8.50582314001494,
+    "GAS_mean_stance_peaknorm": 0.32466049970913485,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.3420484267084646,
+    "TA_mean_swing_peaknorm": 0.3666657231546014
+   },
+   {
+    "sub": "Sub18",
+    "knee_flexion_at_IC_deg": 12.909942088580339,
+    "ankle_angle_at_IC_deg": -1.536680127515883,
+    "GAS_mean_stance_peaknorm": 0.21909506279662463,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.07698141762202451,
+    "TA_mean_swing_peaknorm": 0.24768881349202426
+   },
+   {
+    "sub": "Sub19",
+    "knee_flexion_at_IC_deg": 4.701664719604997,
+    "ankle_angle_at_IC_deg": -7.053087312193272,
+    "GAS_mean_stance_peaknorm": 0.18764609238899985,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.044189639051676236,
+    "TA_mean_swing_peaknorm": 0.34677362731770633
+   },
+   {
+    "sub": "Sub20",
+    "knee_flexion_at_IC_deg": 1.4603404718409938,
+    "ankle_angle_at_IC_deg": -11.471099236351474,
+    "GAS_mean_stance_peaknorm": 0.28162192592286467,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.24845120417049182,
+    "TA_mean_swing_peaknorm": 0.2919374574818921
+   },
+   {
+    "sub": "Sub21",
+    "knee_flexion_at_IC_deg": 10.00881944284256,
+    "ankle_angle_at_IC_deg": -5.828383592571942,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub22",
+    "knee_flexion_at_IC_deg": 14.772918580568481,
+    "ankle_angle_at_IC_deg": 0.29573292462344763,
+    "GAS_mean_stance_peaknorm": 0.3581559482709752,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.33456083515719603,
+    "TA_mean_swing_peaknorm": 0.31836736074658745
+   },
+   {
+    "sub": "Sub23",
+    "knee_flexion_at_IC_deg": 4.501404644594835,
+    "ankle_angle_at_IC_deg": -5.271167987941535,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub24",
+    "knee_flexion_at_IC_deg": 15.154085052956873,
+    "ankle_angle_at_IC_deg": 1.545705595399108,
+    "GAS_mean_stance_peaknorm": 0.14691702283678562,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.07679901399997541,
+    "TA_mean_swing_peaknorm": 0.2809900918524532
+   },
+   {
+    "sub": "Sub25",
+    "knee_flexion_at_IC_deg": 4.080658321261591,
+    "ankle_angle_at_IC_deg": -2.6185578842801296,
+    "GAS_mean_stance_peaknorm": 0.19412192699059239,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.12725291151031154,
+    "TA_mean_swing_peaknorm": 0.3740235939537842
+   },
+   {
+    "sub": "Sub26",
+    "knee_flexion_at_IC_deg": 9.571084345127245,
+    "ankle_angle_at_IC_deg": 0.27051973611382546,
+    "GAS_mean_stance_peaknorm": 0.1829408487106143,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.04479281550285129,
+    "TA_mean_swing_peaknorm": 0.34077218528981545
+   },
+   {
+    "sub": "Sub27",
+    "knee_flexion_at_IC_deg": 12.211470973010865,
+    "ankle_angle_at_IC_deg": -5.2938423058362885,
+    "GAS_mean_stance_peaknorm": 0.2446037166383963,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.14897352469934788,
+    "TA_mean_swing_peaknorm": 0.37850475468672584
+   },
+   {
+    "sub": "Sub28",
+    "knee_flexion_at_IC_deg": 6.23024166427427,
+    "ankle_angle_at_IC_deg": -2.762947539922759,
+    "GAS_mean_stance_peaknorm": 0.2029089345111731,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.07755772631047586,
+    "TA_mean_swing_peaknorm": 0.4027237426770913
+   },
+   {
+    "sub": "Sub29",
+    "knee_flexion_at_IC_deg": 13.141257051371761,
+    "ankle_angle_at_IC_deg": -0.9350000978408275,
+    "GAS_mean_stance_peaknorm": 0.39260169939035267,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.3603789279865712,
+    "TA_mean_swing_peaknorm": 0.4249976916320117
+   },
+   {
+    "sub": "Sub30",
+    "knee_flexion_at_IC_deg": 7.969313798570828,
+    "ankle_angle_at_IC_deg": -10.105877160369939,
+    "GAS_mean_stance_peaknorm": 0.22349849542189565,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.13320380003216328,
+    "TA_mean_swing_peaknorm": 0.38166285647265685
+   },
+   {
+    "sub": "Sub31",
+    "knee_flexion_at_IC_deg": 9.654410192091518,
+    "ankle_angle_at_IC_deg": -3.7945479201435077,
+    "GAS_mean_stance_peaknorm": 0.2555215037773537,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.136069885267024,
+    "TA_mean_swing_peaknorm": 0.3682467247055428
+   },
+   {
+    "sub": "Sub32",
+    "knee_flexion_at_IC_deg": 3.6825547889970034,
+    "ankle_angle_at_IC_deg": -4.53347519265958,
+    "GAS_mean_stance_peaknorm": 0.28513528164876706,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.22568603591282047,
+    "TA_mean_swing_peaknorm": 0.3540016001936604
+   },
+   {
+    "sub": "Sub33",
+    "knee_flexion_at_IC_deg": 11.82330791062521,
+    "ankle_angle_at_IC_deg": -0.40686562555729927,
+    "GAS_mean_stance_peaknorm": 0.2668202937914574,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.15476020535522655,
+    "TA_mean_swing_peaknorm": 0.2928411439866618
+   },
+   {
+    "sub": "Sub34",
+    "knee_flexion_at_IC_deg": 8.3705462855022,
+    "ankle_angle_at_IC_deg": 0.3933826836178382,
+    "GAS_mean_stance_peaknorm": 0.1624979180743661,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.060320895464215415,
+    "TA_mean_swing_peaknorm": 0.3852454957597089
+   },
+   {
+    "sub": "Sub35",
+    "knee_flexion_at_IC_deg": 4.646588756828884,
+    "ankle_angle_at_IC_deg": -2.254954713279842,
+    "GAS_mean_stance_peaknorm": 0.2593190848525401,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.08917723097635209,
+    "TA_mean_swing_peaknorm": 0.39031552021576044
+   },
+   {
+    "sub": "Sub36",
+    "knee_flexion_at_IC_deg": 7.451739475728979,
+    "ankle_angle_at_IC_deg": -7.851912071621092,
+    "GAS_mean_stance_peaknorm": 0.29195387526657185,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.16383282059302298,
+    "TA_mean_swing_peaknorm": 0.35704408823543277
+   },
+   {
+    "sub": "Sub37",
+    "knee_flexion_at_IC_deg": 3.906774394189336,
+    "ankle_angle_at_IC_deg": -6.899250499613479,
+    "GAS_mean_stance_peaknorm": 0.22030034521983366,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.12137052981173208,
+    "TA_mean_swing_peaknorm": 0.3023056692472255
+   },
+   {
+    "sub": "Sub38",
+    "knee_flexion_at_IC_deg": 9.02437522539057,
+    "ankle_angle_at_IC_deg": 1.155662944071727,
+    "GAS_mean_stance_peaknorm": 0.26229442924101093,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.1526591327111412,
+    "TA_mean_swing_peaknorm": 0.3495188423058157
+   },
+   {
+    "sub": "Sub39",
+    "knee_flexion_at_IC_deg": -2.420286396344212,
+    "ankle_angle_at_IC_deg": -9.794597447081035,
+    "GAS_mean_stance_peaknorm": 0.24673114775620877,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.16042170777939757,
+    "TA_mean_swing_peaknorm": 0.24124688070559638
+   },
+   {
+    "sub": "Sub40",
+    "knee_flexion_at_IC_deg": 13.313613277984182,
+    "ankle_angle_at_IC_deg": -0.9861629124864449,
+    "GAS_mean_stance_peaknorm": 0.2653138388148988,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.12645610193493917,
+    "TA_mean_swing_peaknorm": 0.30902641402133557
+   },
+   {
+    "sub": "Sub41",
+    "knee_flexion_at_IC_deg": 3.0611035254858665,
+    "ankle_angle_at_IC_deg": -2.225703409103066,
+    "GAS_mean_stance_peaknorm": 0.15178714610383748,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.04785881284377813,
+    "TA_mean_swing_peaknorm": 0.2912048072627427
+   },
+   {
+    "sub": "Sub42",
+    "knee_flexion_at_IC_deg": 6.50610276626608,
+    "ankle_angle_at_IC_deg": -3.0984746749328096,
+    "GAS_mean_stance_peaknorm": 0.19550696592082234,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.11813752809565879,
+    "TA_mean_swing_peaknorm": 0.34246625943003395
+   },
+   {
+    "sub": "Sub43",
+    "knee_flexion_at_IC_deg": 10.208193705715225,
+    "ankle_angle_at_IC_deg": -1.669184693154369,
+    "GAS_mean_stance_peaknorm": 0.3159731047341484,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.20624821535815105,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub44",
+    "knee_flexion_at_IC_deg": 2.6655844063187453,
+    "ankle_angle_at_IC_deg": -5.797763908062381,
+    "GAS_mean_stance_peaknorm": 0.2527665149543594,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.2963141406184087,
+    "TA_mean_swing_peaknorm": 0.38765743210689463
+   },
+   {
+    "sub": "Sub45",
+    "knee_flexion_at_IC_deg": 6.646532724660585,
+    "ankle_angle_at_IC_deg": -5.544592292822667,
+    "GAS_mean_stance_peaknorm": 0.21093996888068775,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.07012289160270527,
+    "TA_mean_swing_peaknorm": 0.23126411360786958
+   },
+   {
+    "sub": "Sub46",
+    "knee_flexion_at_IC_deg": -2.409266799542071,
+    "ankle_angle_at_IC_deg": -10.402629134269771,
+    "GAS_mean_stance_peaknorm": 0.2673328269233533,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.08365086431841719,
+    "TA_mean_swing_peaknorm": 0.494054167694916
+   },
+   {
+    "sub": "Sub47",
+    "knee_flexion_at_IC_deg": 7.279828044976132,
+    "ankle_angle_at_IC_deg": -0.984713319282487,
+    "GAS_mean_stance_peaknorm": 0.2509327381349175,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.14862921542281593,
+    "TA_mean_swing_peaknorm": 0.3686054529374426
+   },
+   {
+    "sub": "Sub48",
+    "knee_flexion_at_IC_deg": 1.4334534211203565,
+    "ankle_angle_at_IC_deg": -2.7447009197642203,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub49",
+    "knee_flexion_at_IC_deg": 3.364153139958553,
+    "ankle_angle_at_IC_deg": -8.660686375520738,
+    "GAS_mean_stance_peaknorm": 0.22280188101697823,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.1278501844470036,
+    "TA_mean_swing_peaknorm": 0.4209546613289752
+   },
+   {
+    "sub": "Sub50",
+    "knee_flexion_at_IC_deg": 9.931907453672695,
+    "ankle_angle_at_IC_deg": -3.381732755424976,
+    "GAS_mean_stance_peaknorm": 0.1704555734656116,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.1197868632811273,
+    "TA_mean_swing_peaknorm": 0.45378642204413655
+   },
+   {
+    "sub": "Sub51",
+    "knee_flexion_at_IC_deg": 1.3656618254878188,
+    "ankle_angle_at_IC_deg": -7.435688674137216,
+    "GAS_mean_stance_peaknorm": 0.25484684552749653,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.06748792627454141,
+    "TA_mean_swing_peaknorm": 0.3816791102828654
+   },
+   {
+    "sub": "Sub52",
+    "knee_flexion_at_IC_deg": 5.395052700607855,
+    "ankle_angle_at_IC_deg": -7.271294877820594,
+    "GAS_mean_stance_peaknorm": 0.3075652905298675,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.22371223945784124,
+    "TA_mean_swing_peaknorm": 0.3948364155093262
+   },
+   {
+    "sub": "Sub53",
+    "knee_flexion_at_IC_deg": 11.864248072779848,
+    "ankle_angle_at_IC_deg": -7.2488718498300635,
+    "GAS_mean_stance_peaknorm": 0.2902921629229456,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.3166004471750884,
+    "TA_mean_swing_peaknorm": 0.4355110932856146
+   },
+   {
+    "sub": "Sub54",
+    "knee_flexion_at_IC_deg": 10.233850988474524,
+    "ankle_angle_at_IC_deg": 1.3912913610058129,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub55",
+    "knee_flexion_at_IC_deg": -2.3290062869445025,
+    "ankle_angle_at_IC_deg": -3.25895946499694,
+    "GAS_mean_stance_peaknorm": 0.19376284142599495,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.0693841580436708,
+    "TA_mean_swing_peaknorm": 0.32192834776232526
+   },
+   {
+    "sub": "Sub56",
+    "knee_flexion_at_IC_deg": 4.999584611355292,
+    "ankle_angle_at_IC_deg": -1.3873117100241055,
+    "GAS_mean_stance_peaknorm": 0.1859887326368406,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.08968676328432511,
+    "TA_mean_swing_peaknorm": 0.3066027679503139
+   },
+   {
+    "sub": "Sub57",
+    "knee_flexion_at_IC_deg": 5.332560323950208,
+    "ankle_angle_at_IC_deg": -7.1272179807912375,
+    "GAS_mean_stance_peaknorm": 0.21464860018169055,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.08370687401756578,
+    "TA_mean_swing_peaknorm": 0.4234966479725728
+   },
+   {
+    "sub": "Sub58",
+    "knee_flexion_at_IC_deg": 11.681596599448989,
+    "ankle_angle_at_IC_deg": -0.5102233877105367,
+    "GAS_mean_stance_peaknorm": 0.26167299076256667,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.2014877991984206,
+    "TA_mean_swing_peaknorm": 0.3735478926345511
+   },
+   {
+    "sub": "Sub59",
+    "knee_flexion_at_IC_deg": 6.136214197545443,
+    "ankle_angle_at_IC_deg": -3.309037371561192,
+    "GAS_mean_stance_peaknorm": 0.16052152692029237,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.05202324912157239,
+    "TA_mean_swing_peaknorm": 0.42829483538165536
+   },
+   {
+    "sub": "Sub60",
+    "knee_flexion_at_IC_deg": 15.048618812296219,
+    "ankle_angle_at_IC_deg": -0.04449397011226649,
+    "GAS_mean_stance_peaknorm": 0.26725789366192826,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.1847287451162811,
+    "TA_mean_swing_peaknorm": 0.3552364285603155
+   },
+   {
+    "sub": "Sub61",
+    "knee_flexion_at_IC_deg": 3.220942455111794,
+    "ankle_angle_at_IC_deg": -2.0927105344460384,
+    "GAS_mean_stance_peaknorm": 0.19137723067220977,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.06998761684858405,
+    "TA_mean_swing_peaknorm": 0.31719918927885454
+   },
+   {
+    "sub": "Sub62",
+    "knee_flexion_at_IC_deg": 4.009530494881603,
+    "ankle_angle_at_IC_deg": -4.269298128335444,
+    "GAS_mean_stance_peaknorm": 0.18472507685272077,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.03411363929306438,
+    "TA_mean_swing_peaknorm": 0.2035307315094407
+   },
+   {
+    "sub": "Sub63",
+    "knee_flexion_at_IC_deg": 3.2625270077062,
+    "ankle_angle_at_IC_deg": -1.642397322786285,
+    "GAS_mean_stance_peaknorm": 0.21611146116465396,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.0989361084482153,
+    "TA_mean_swing_peaknorm": 0.31999046646541424
+   },
+   {
+    "sub": "Sub64",
+    "knee_flexion_at_IC_deg": 9.265858490935836,
+    "ankle_angle_at_IC_deg": -3.1136926091521753,
+    "GAS_mean_stance_peaknorm": 0.2583571316482289,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.3366530482963544,
+    "TA_mean_swing_peaknorm": 0.2950322771274498
+   },
+   {
+    "sub": "Sub65",
+    "knee_flexion_at_IC_deg": 2.776618652264468,
+    "ankle_angle_at_IC_deg": -2.607927046166618,
+    "GAS_mean_stance_peaknorm": 0.21354115014210612,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.10397511050154402,
+    "TA_mean_swing_peaknorm": 0.45509502396038465
+   },
+   {
+    "sub": "Sub66",
+    "knee_flexion_at_IC_deg": 5.519483627799347,
+    "ankle_angle_at_IC_deg": -5.808513662871699,
+    "GAS_mean_stance_peaknorm": 0.1811958566349846,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.03930145198542785,
+    "TA_mean_swing_peaknorm": 0.3123624772682346
+   },
+   {
+    "sub": "Sub67",
+    "knee_flexion_at_IC_deg": -4.426988905456762,
+    "ankle_angle_at_IC_deg": -5.323628768628205,
+    "GAS_mean_stance_peaknorm": 0.1577537596011547,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.0725459727418678,
+    "TA_mean_swing_peaknorm": 0.40182633057310974
+   },
+   {
+    "sub": "Sub68",
+    "knee_flexion_at_IC_deg": 12.620082906225043,
+    "ankle_angle_at_IC_deg": -3.8657899916598266,
+    "GAS_mean_stance_peaknorm": 0.2154475904906719,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.08422366526454508,
+    "TA_mean_swing_peaknorm": 0.3623246057962514
+   },
+   {
+    "sub": "Sub69",
+    "knee_flexion_at_IC_deg": 10.44437909499843,
+    "ankle_angle_at_IC_deg": -6.383679851594007,
+    "GAS_mean_stance_peaknorm": 0.24364499690523436,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.14339636621160498,
+    "TA_mean_swing_peaknorm": 0.2850566907322762
+   },
+   {
+    "sub": "Sub70",
+    "knee_flexion_at_IC_deg": 13.017420895364575,
+    "ankle_angle_at_IC_deg": -1.166788631821444,
+    "GAS_mean_stance_peaknorm": 0.29119602530293975,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.2912120474857024,
+    "TA_mean_swing_peaknorm": 0.2747443475253272
+   },
+   {
+    "sub": "Sub71",
+    "knee_flexion_at_IC_deg": 9.013055196067638,
+    "ankle_angle_at_IC_deg": -3.313475948628588,
+    "GAS_mean_stance_peaknorm": 0.23037138878511118,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.10296648697960747,
+    "TA_mean_swing_peaknorm": 0.282847213404456
+   },
+   {
+    "sub": "Sub72",
+    "knee_flexion_at_IC_deg": 9.76079822488959,
+    "ankle_angle_at_IC_deg": -1.184399086957127,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub73",
+    "knee_flexion_at_IC_deg": 8.87587370021975,
+    "ankle_angle_at_IC_deg": -8.236899765783939,
+    "GAS_mean_stance_peaknorm": 0.16140396035622187,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.057737830922879686,
+    "TA_mean_swing_peaknorm": 0.38475492793576815
+   },
+   {
+    "sub": "Sub74",
+    "knee_flexion_at_IC_deg": 3.2100739118223314,
+    "ankle_angle_at_IC_deg": -4.855999354434704,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub75",
+    "knee_flexion_at_IC_deg": 2.825735358038816,
+    "ankle_angle_at_IC_deg": -5.675170353520002,
+    "GAS_mean_stance_peaknorm": 0.21157831778072134,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.13046705542492254,
+    "TA_mean_swing_peaknorm": 0.29483877932307445
+   },
+   {
+    "sub": "Sub76",
+    "knee_flexion_at_IC_deg": 11.37837506385133,
+    "ankle_angle_at_IC_deg": -3.703432685570652,
+    "GAS_mean_stance_peaknorm": 0.23095667578338835,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.1437894566161025,
+    "TA_mean_swing_peaknorm": 0.3683486693759096
+   },
+   {
+    "sub": "Sub77",
+    "knee_flexion_at_IC_deg": 7.207698352218121,
+    "ankle_angle_at_IC_deg": -3.044981664157835,
+    "GAS_mean_stance_peaknorm": 0.24889575270576342,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.08640911801160052,
+    "TA_mean_swing_peaknorm": 0.4024121541262296
+   },
+   {
+    "sub": "Sub78",
+    "knee_flexion_at_IC_deg": 1.2626043300404215,
+    "ankle_angle_at_IC_deg": -8.50180993766733,
+    "GAS_mean_stance_peaknorm": 0.16189474046669608,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.08644200926495754,
+    "TA_mean_swing_peaknorm": 0.3079759662391466
+   },
+   {
+    "sub": "Sub79",
+    "knee_flexion_at_IC_deg": 9.302689000886076,
+    "ankle_angle_at_IC_deg": -4.928794214203943,
+    "GAS_mean_stance_peaknorm": 0.2123055347624938,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.07729673382881584,
+    "TA_mean_swing_peaknorm": 0.29944020047959324
+   },
+   {
+    "sub": "Sub80",
+    "knee_flexion_at_IC_deg": 15.018546771189257,
+    "ankle_angle_at_IC_deg": 4.573832493564925,
+    "GAS_mean_stance_peaknorm": 0.23098335663159963,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.19092262353143757,
+    "TA_mean_swing_peaknorm": 0.393147129150723
+   },
+   {
+    "sub": "Sub81",
+    "knee_flexion_at_IC_deg": 7.676312389574146,
+    "ankle_angle_at_IC_deg": -6.99050674287779,
+    "GAS_mean_stance_peaknorm": 0.3135533418798561,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.1740387447902752,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub82",
+    "knee_flexion_at_IC_deg": 5.459044109476353,
+    "ankle_angle_at_IC_deg": -0.7751923774829491,
+    "GAS_mean_stance_peaknorm": 0.23050375718974894,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.14719989950149898,
+    "TA_mean_swing_peaknorm": 0.35421437251801774
+   },
+   {
+    "sub": "Sub83",
+    "knee_flexion_at_IC_deg": 8.339651371618995,
+    "ankle_angle_at_IC_deg": -6.307798540180529,
+    "GAS_mean_stance_peaknorm": 0.1790119699266339,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.07925420969307918,
+    "TA_mean_swing_peaknorm": 0.3222656214778571
+   },
+   {
+    "sub": "Sub84",
+    "knee_flexion_at_IC_deg": 9.662255762606586,
+    "ankle_angle_at_IC_deg": -2.0784489634900747,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub85",
+    "knee_flexion_at_IC_deg": 9.524084212455882,
+    "ankle_angle_at_IC_deg": -4.7608462171652635,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub86",
+    "knee_flexion_at_IC_deg": 7.124229616596146,
+    "ankle_angle_at_IC_deg": 4.451967374489947,
+    "GAS_mean_stance_peaknorm": 0.27088295318506755,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.32406202493535385,
+    "TA_mean_swing_peaknorm": 0.46137061770347243
+   },
+   {
+    "sub": "Sub87",
+    "knee_flexion_at_IC_deg": -1.062228843907086,
+    "ankle_angle_at_IC_deg": -6.20052193399729,
+    "GAS_mean_stance_peaknorm": 0.19678819520892918,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.06629174358545685,
+    "TA_mean_swing_peaknorm": 0.2827127987350189
+   },
+   {
+    "sub": "Sub88",
+    "knee_flexion_at_IC_deg": 13.153818582319518,
+    "ankle_angle_at_IC_deg": -13.827126871465444,
+    "GAS_mean_stance_peaknorm": 0.1809709361596311,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.08121222692899835,
+    "TA_mean_swing_peaknorm": 0.4488230740762292
+   },
+   {
+    "sub": "Sub89",
+    "knee_flexion_at_IC_deg": 11.022962098972503,
+    "ankle_angle_at_IC_deg": -8.781296526363594,
+    "GAS_mean_stance_peaknorm": 0.20551315502651504,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.08457843631673924,
+    "TA_mean_swing_peaknorm": 0.5241449569576613
+   },
+   {
+    "sub": "Sub90",
+    "knee_flexion_at_IC_deg": -0.07950638427177097,
+    "ankle_angle_at_IC_deg": -9.340738483874619,
+    "GAS_mean_stance_peaknorm": 0.1988973861202151,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.11407583455408059,
+    "TA_mean_swing_peaknorm": 0.3633792587547568
+   },
+   {
+    "sub": "Sub91",
+    "knee_flexion_at_IC_deg": 14.420557914449736,
+    "ankle_angle_at_IC_deg": -3.9441023506502595,
+    "GAS_mean_stance_peaknorm": 0.30279021717761034,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.18751411476168225,
+    "TA_mean_swing_peaknorm": 0.35172128656249363
+   },
+   {
+    "sub": "Sub92",
+    "knee_flexion_at_IC_deg": 2.7483486395186,
+    "ankle_angle_at_IC_deg": -2.148363515079005,
+    "GAS_mean_stance_peaknorm": 0.22952004741914622,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.0859334084760296,
+    "TA_mean_swing_peaknorm": 0.38872405550397854
+   },
+   {
+    "sub": "Sub93",
+    "knee_flexion_at_IC_deg": 12.16330502439172,
+    "ankle_angle_at_IC_deg": -1.8113985554151055,
+    "GAS_mean_stance_peaknorm": 0.2148090962866418,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.07475640791212834,
+    "TA_mean_swing_peaknorm": 0.32157458519445503
+   },
+   {
+    "sub": "Sub94",
+    "knee_flexion_at_IC_deg": 7.732528739605165,
+    "ankle_angle_at_IC_deg": -1.636970946719027,
+    "GAS_mean_stance_peaknorm": 0.24975928590979532,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.14356820501590337,
+    "TA_mean_swing_peaknorm": 0.3080183026815251
+   },
+   {
+    "sub": "Sub95",
+    "knee_flexion_at_IC_deg": 3.079142727938241,
+    "ankle_angle_at_IC_deg": -4.953445673318148,
+    "GAS_mean_stance_peaknorm": 0.16436031895182213,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.05134850320544634,
+    "TA_mean_swing_peaknorm": 0.45897567694352925
+   },
+   {
+    "sub": "Sub96",
+    "knee_flexion_at_IC_deg": -1.5194013176598085,
+    "ankle_angle_at_IC_deg": -6.725276455530555,
+    "GAS_mean_stance_peaknorm": 0.1608095453760907,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.05730185065628994,
+    "TA_mean_swing_peaknorm": 0.2773554484889734
+   },
+   {
+    "sub": "Sub97",
+    "knee_flexion_at_IC_deg": 6.239105203389663,
+    "ankle_angle_at_IC_deg": -7.149656153140194,
+    "GAS_mean_stance_peaknorm": 0.18370820826148984,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.16200569755971186,
+    "TA_mean_swing_peaknorm": 0.34053072894479464
+   },
+   {
+    "sub": "Sub98",
+    "knee_flexion_at_IC_deg": 0.23166404399404858,
+    "ankle_angle_at_IC_deg": -5.296295825870273,
+    "GAS_mean_stance_peaknorm": 0.1746857665848637,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.05285037304391127,
+    "TA_mean_swing_peaknorm": 0.3974195668691649
+   },
+   {
+    "sub": "Sub99",
+    "knee_flexion_at_IC_deg": 4.5893830771995825,
+    "ankle_angle_at_IC_deg": 0.8814544963174874,
+    "GAS_mean_stance_peaknorm": 0.22297241036796253,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.18098997085845858,
+    "TA_mean_swing_peaknorm": 0.3061550545561821
+   },
+   {
+    "sub": "Sub100",
+    "knee_flexion_at_IC_deg": 7.815074207417482,
+    "ankle_angle_at_IC_deg": -1.2443168028127634,
+    "GAS_mean_stance_peaknorm": 0.28827939780683093,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.30123524935039053,
+    "TA_mean_swing_peaknorm": 0.3284544307690049
+   },
+   {
+    "sub": "Sub101",
+    "knee_flexion_at_IC_deg": 10.9164323640146,
+    "ankle_angle_at_IC_deg": 0.7105532996434851,
+    "GAS_mean_stance_peaknorm": 0.21881967599494204,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.0968071410059005,
+    "TA_mean_swing_peaknorm": 0.5118670515162762
+   },
+   {
+    "sub": "Sub102",
+    "knee_flexion_at_IC_deg": 5.883075160941813,
+    "ankle_angle_at_IC_deg": -8.100138534141273,
+    "GAS_mean_stance_peaknorm": 0.2756576890484519,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.10782632238415206,
+    "TA_mean_swing_peaknorm": 0.3397714946249689
+   },
+   {
+    "sub": "Sub103",
+    "knee_flexion_at_IC_deg": 8.219244427602787,
+    "ankle_angle_at_IC_deg": -6.030853628615584,
+    "GAS_mean_stance_peaknorm": 0.1440435877152582,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.060309010205689746,
+    "TA_mean_swing_peaknorm": 0.43877016086317394
+   },
+   {
+    "sub": "Sub104",
+    "knee_flexion_at_IC_deg": 9.741277928161637,
+    "ankle_angle_at_IC_deg": -6.052344303068891,
+    "GAS_mean_stance_peaknorm": 0.1875205900323133,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.0729619261189315,
+    "TA_mean_swing_peaknorm": 0.3771230571204144
+   },
+   {
+    "sub": "Sub105",
+    "knee_flexion_at_IC_deg": 6.797378915771232,
+    "ankle_angle_at_IC_deg": -6.248305020451956,
+    "GAS_mean_stance_peaknorm": 0.13668151977080623,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.06530589202314264,
+    "TA_mean_swing_peaknorm": 0.2510435707768331
+   },
+   {
+    "sub": "Sub106",
+    "knee_flexion_at_IC_deg": 4.071300905984049,
+    "ankle_angle_at_IC_deg": -4.360446178897315,
+    "GAS_mean_stance_peaknorm": 0.21491202936414797,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.11929919293119672,
+    "TA_mean_swing_peaknorm": 0.23181217623086442
+   },
+   {
+    "sub": "Sub107",
+    "knee_flexion_at_IC_deg": 14.563602733433143,
+    "ankle_angle_at_IC_deg": -4.469114915917765,
+    "GAS_mean_stance_peaknorm": 0.26670238800717355,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.2016394752170821,
+    "TA_mean_swing_peaknorm": 0.37676103024981783
+   },
+   {
+    "sub": "Sub108",
+    "knee_flexion_at_IC_deg": 7.976326721168665,
+    "ankle_angle_at_IC_deg": -3.92189524259141,
+    "GAS_mean_stance_peaknorm": 0.18162223786205045,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.03286604199319035,
+    "TA_mean_swing_peaknorm": 0.4077555368680801
+   },
+   {
+    "sub": "Sub109",
+    "knee_flexion_at_IC_deg": 5.50939227733426,
+    "ankle_angle_at_IC_deg": 1.2738651987315437,
+    "GAS_mean_stance_peaknorm": 0.2354158315405029,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.10637260766566024,
+    "TA_mean_swing_peaknorm": 0.31959321262309276
+   },
+   {
+    "sub": "Sub110",
+    "knee_flexion_at_IC_deg": 10.99452623789147,
+    "ankle_angle_at_IC_deg": -5.114671440862706,
+    "GAS_mean_stance_peaknorm": 0.1892618834840975,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.11801609889518713,
+    "TA_mean_swing_peaknorm": 0.3043942520000572
+   },
+   {
+    "sub": "Sub111",
+    "knee_flexion_at_IC_deg": 8.983729140095981,
+    "ankle_angle_at_IC_deg": -8.407277625003632,
+    "GAS_mean_stance_peaknorm": 0.171195757050409,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.07764213167463638,
+    "TA_mean_swing_peaknorm": 0.4668343632343608
+   },
+   {
+    "sub": "Sub112",
+    "knee_flexion_at_IC_deg": 6.442550609621984,
+    "ankle_angle_at_IC_deg": -1.8515832309302258,
+    "GAS_mean_stance_peaknorm": 0.2780242235438708,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.1218425717196397,
+    "TA_mean_swing_peaknorm": 0.3292611331010352
+   },
+   {
+    "sub": "Sub113",
+    "knee_flexion_at_IC_deg": 5.26883480992884,
+    "ankle_angle_at_IC_deg": -10.565864613420857,
+    "GAS_mean_stance_peaknorm": 0.22276654771254,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.16613872764973384,
+    "TA_mean_swing_peaknorm": 0.5516295201927064
+   },
+   {
+    "sub": "Sub114",
+    "knee_flexion_at_IC_deg": 9.520389789782593,
+    "ankle_angle_at_IC_deg": -6.93776287202527,
+    "GAS_mean_stance_peaknorm": 0.18576757209120592,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.0806819153842581,
+    "TA_mean_swing_peaknorm": 0.3565217276214254
+   },
+   {
+    "sub": "Sub115",
+    "knee_flexion_at_IC_deg": 3.5707869654624242,
+    "ankle_angle_at_IC_deg": -3.7558492325826123,
+    "GAS_mean_stance_peaknorm": 0.19276900678325334,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.10184407701801312,
+    "TA_mean_swing_peaknorm": 0.2318226328719573
+   },
+   {
+    "sub": "Sub116",
+    "knee_flexion_at_IC_deg": 5.4450267123712734,
+    "ankle_angle_at_IC_deg": -3.824991888517326,
+    "GAS_mean_stance_peaknorm": 0.20540811640358494,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.09238627104628375,
+    "TA_mean_swing_peaknorm": 0.19396671437686477
+   },
+   {
+    "sub": "Sub117",
+    "knee_flexion_at_IC_deg": 10.007513023217609,
+    "ankle_angle_at_IC_deg": -2.3493521405541644,
+    "GAS_mean_stance_peaknorm": 0.23740756893833637,
+    "GAS_mean_early_stance_0_15pct_peaknorm": 0.15395404978523194,
+    "TA_mean_swing_peaknorm": 0.3884273759401393
+   },
+   {
+    "sub": "Sub118",
+    "knee_flexion_at_IC_deg": 10.068401219771031,
+    "ankle_angle_at_IC_deg": 2.8849794376567015,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub119",
+    "knee_flexion_at_IC_deg": 15.853290773188744,
+    "ankle_angle_at_IC_deg": -0.7947378870260001,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub120",
+    "knee_flexion_at_IC_deg": 17.351472189186907,
+    "ankle_angle_at_IC_deg": -1.2158735501831082,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub121",
+    "knee_flexion_at_IC_deg": 14.296512435347514,
+    "ankle_angle_at_IC_deg": 2.684491424814383,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub122",
+    "knee_flexion_at_IC_deg": 15.136423602009629,
+    "ankle_angle_at_IC_deg": 5.897688744482045,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub123",
+    "knee_flexion_at_IC_deg": 15.701304103229294,
+    "ankle_angle_at_IC_deg": 1.5356620481920633,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub124",
+    "knee_flexion_at_IC_deg": 8.769231410907311,
+    "ankle_angle_at_IC_deg": 2.699908265024142,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub125",
+    "knee_flexion_at_IC_deg": 8.12822570473655,
+    "ankle_angle_at_IC_deg": 4.042091308686907,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub126",
+    "knee_flexion_at_IC_deg": 17.378725908980307,
+    "ankle_angle_at_IC_deg": 6.605069712377076,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub127",
+    "knee_flexion_at_IC_deg": 8.094173020977236,
+    "ankle_angle_at_IC_deg": 2.160826700558636,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub128",
+    "knee_flexion_at_IC_deg": 14.16985664617554,
+    "ankle_angle_at_IC_deg": 0.18484029632914967,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub129",
+    "knee_flexion_at_IC_deg": 8.208962041920456,
+    "ankle_angle_at_IC_deg": -0.6413035676431775,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub130",
+    "knee_flexion_at_IC_deg": 14.10800406551852,
+    "ankle_angle_at_IC_deg": 11.092758739358931,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub131",
+    "knee_flexion_at_IC_deg": 17.20987892346171,
+    "ankle_angle_at_IC_deg": 9.363413369302252,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub132",
+    "knee_flexion_at_IC_deg": 13.258433054907535,
+    "ankle_angle_at_IC_deg": 0.5454565741824348,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub133",
+    "knee_flexion_at_IC_deg": 10.681336123649887,
+    "ankle_angle_at_IC_deg": 2.300585767418747,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub134",
+    "knee_flexion_at_IC_deg": 15.09845697253156,
+    "ankle_angle_at_IC_deg": -0.09085192697858246,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub135",
+    "knee_flexion_at_IC_deg": 10.920486458211391,
+    "ankle_angle_at_IC_deg": 3.7575784350366885,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub136",
+    "knee_flexion_at_IC_deg": 3.9926897930517806,
+    "ankle_angle_at_IC_deg": -6.8752370251230035,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub137",
+    "knee_flexion_at_IC_deg": 11.81658744781542,
+    "ankle_angle_at_IC_deg": -2.4109740933987514,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   },
+   {
+    "sub": "Sub138",
+    "knee_flexion_at_IC_deg": 13.33115936122706,
+    "ankle_angle_at_IC_deg": 4.332028206394215,
+    "GAS_mean_stance_peaknorm": NaN,
+    "GAS_mean_early_stance_0_15pct_peaknorm": NaN,
+    "TA_mean_swing_peaknorm": NaN
+   }
+  ]
+ },
+ "step4_prediction_P_test": {
+  "n": 43,
+  "note": "7/50 stroke participants lack GAS/TA EMG entirely.",
+  "primary_results": {
+   "gas_stance_mean_fixed60": {
+    "label": "GAS mean over stance (fixed 0-60%)",
+    "predicted_sign": "+",
+    "n": 43,
+    "pearson_r": -0.03963540786075736,
+    "pearson_p": 0.800772742421881,
+    "pearson_ci95": [
+     -0.33598473384501754,
+     0.2638546805000947
+    ],
+    "spearman_rho": -0.09181516158260344,
+    "spearman_p": 0.5581644791760347,
+    "permutation_p_spearman": 0.5619719014049298,
+    "sign_matches_prediction": false,
+    "significant_p05": false,
+    "mean": 0.2357166570814652,
+    "sd": 0.0834911802959198
+   },
+   "gas_early_0_15": {
+    "label": "GAS mean over early stance 0-15% (toe-off independent)",
+    "predicted_sign": "+",
+    "n": 43,
+    "pearson_r": 0.1617958660790591,
+    "pearson_p": 0.2999446579780136,
+    "pearson_ci95": [
+     -0.14563010455538647,
+     0.44072764505534234
+    ],
+    "spearman_rho": 0.14889761401389306,
+    "spearman_p": 0.3406194598898111,
+    "permutation_p_spearman": 0.3384330783460827,
+    "sign_matches_prediction": true,
+    "significant_p05": false,
+    "mean": 0.19954778474034354,
+    "sd": 0.10837603556388714
+   },
+   "gas_stance_mean_ankleTO": {
+    "label": "GAS mean over stance (ankle-derived TO)",
+    "predicted_sign": "+",
+    "n": 43,
+    "pearson_r": 0.046731175532839286,
+    "pearson_p": 0.7660316765468597,
+    "pearson_ci95": [
+     -0.25722823521740334,
+     0.3422761443706123
+    ],
+    "spearman_rho": -0.018272425249169433,
+    "spearman_p": 0.9074154513290342,
+    "permutation_p_spearman": 0.9061546922653867,
+    "sign_matches_prediction": false,
+    "significant_p05": false,
+    "mean": 0.22806513694988909,
+    "sd": 0.07167209011275699
+   },
+   "ta_swing_mean_fixed60": {
+    "label": "TA mean over swing (fixed 60-100%)",
+    "predicted_sign": "-",
+    "n": 43,
+    "pearson_r": -0.2865197810207047,
+    "pearson_p": 0.06249911914323266,
+    "pearson_ci95": [
+     -0.5403670292018181,
+     0.01513140829203675
+    ],
+    "spearman_rho": -0.2680459075807913,
+    "spearman_p": 0.08223541923664107,
+    "permutation_p_spearman": 0.08164591770411479,
+    "sign_matches_prediction": true,
+    "significant_p05": false,
+    "mean": 0.2527017622195233,
+    "sd": 0.0949147217523998
+   },
+   "ta_swing_mean_ankleTO": {
+    "label": "TA mean over swing (ankle-derived TO)",
+    "predicted_sign": "-",
+    "n": 43,
+    "pearson_r": -0.16730135329251716,
+    "pearson_p": 0.28357584191271645,
+    "pearson_ci95": [
+     -0.44527581893753765,
+     0.14008688653481707
+    ],
+    "spearman_rho": -0.11099365750528542,
+    "spearman_p": 0.4785845489979387,
+    "permutation_p_spearman": 0.47887605619719015,
+    "sign_matches_prediction": true,
+    "significant_p05": false,
+    "mean": 0.2744567957419638,
+    "sd": 0.09617801540627802
+   }
+  },
+  "composite_plantarflexor_dominance_index": {
+   "pearson_r": 0.19807393065190648,
+   "pearson_p": 0.20293179201559164,
+   "spearman_rho": 0.17592872244035035,
+   "spearman_p": 0.25911882749352166,
+   "n": 43,
+   "predicted_sign": "+",
+   "sign_matches": true
+  },
+  "partial_correlations_controlling_ankle_angle_at_IC": {
+   "gas_early_0_15": {
+    "partial_r_controlling_ankle_at_IC": 0.16052913657212098,
+    "p": 0.3098405068777561,
+    "n": 43
+   },
+   "gas_stance_mean_fixed60": {
+    "partial_r_controlling_ankle_at_IC": 0.025459215667376828,
+    "p": 0.8728487065263457,
+    "n": 43
+   },
+   "ta_swing_mean_fixed60": {
+    "partial_r_controlling_ankle_at_IC": -0.21937814319504192,
+    "p": 0.16274510444121326,
+    "n": 43
+   }
+  },
+  "secondary_relationships": {
+   "paretic ankle angle at IC  vs  knee dev": {
+    "pearson_r": 0.6127658666797691,
+    "pearson_p": 2.245937177210523e-06,
+    "spearman_rho": 0.6391836734693876,
+    "spearman_p": 5.855452760900468e-07,
+    "n": 50
+   },
+   "GAS stance(fix60) vs TA swing(fix60)": {
+    "pearson_r": 0.09070743770771478,
+    "pearson_p": 0.5629429252464029,
+    "spearman_rho": 0.1659619450317125,
+    "spearman_p": 0.2875034389737371,
+    "n": 43
+   },
+   "knee dev vs Nside(non-paretic) knee IC dev": {
+    "pearson_r": 0.2954216948878978,
+    "pearson_p": 0.03726487469825831,
+    "spearman_rho": 0.265594237695078,
+    "spearman_p": 0.06229793232025235,
+    "n": 50
+   },
+   "knee dev vs P-N GAS stance difference": {
+    "pearson_r": -0.09656562627733162,
+    "pearson_p": 0.5378904088527015,
+    "spearman_rho": -0.0360918151615826,
+    "spearman_p": 0.8182699828789395,
+    "n": 43
+   },
+   "knee dev vs P-N TA swing difference": {
+    "pearson_r": -0.29077004986008936,
+    "pearson_p": 0.058541649290249013,
+    "spearman_rho": -0.2709151313802477,
+    "spearman_p": 0.07888585466267614,
+    "n": 43
+   },
+   "paretic ankle IC vs GAS stance(fix60)": {
+    "pearson_r": -0.09380718144513348,
+    "pearson_p": 0.5496195032450667,
+    "spearman_rho": -0.13847780126849893,
+    "spearman_p": 0.37584434879802,
+    "n": 43
+   },
+   "paretic ankle IC vs TA swing(fix60)": {
+    "pearson_r": -0.1892096855582191,
+    "pearson_p": 0.2242961953124638,
+    "spearman_rho": -0.24252491694352157,
+    "spearman_p": 0.11712030327148226,
+    "n": 43
+   }
+  },
+  "scatter_description_tertiles": {
+   "gas_stance_mean_fixed60": [
+    {
+     "tertile": 1,
+     "n": 15,
+     "mean_knee_dev_deg": 14.130128439421997
+    },
+    {
+     "tertile": 2,
+     "n": 14,
+     "mean_knee_dev_deg": 11.994549602449776
+    },
+    {
+     "tertile": 3,
+     "n": 14,
+     "mean_knee_dev_deg": 9.871521300015559
+    }
+   ],
+   "gas_early_0_15": [
+    {
+     "tertile": 1,
+     "n": 15,
+     "mean_knee_dev_deg": 12.151939813265725
+    },
+    {
+     "tertile": 2,
+     "n": 14,
+     "mean_knee_dev_deg": 10.950568575285256
+    },
+    {
+     "tertile": 3,
+     "n": 14,
+     "mean_knee_dev_deg": 13.034990140918941
+    }
+   ],
+   "ta_swing_mean_fixed60": [
+    {
+     "tertile": 1,
+     "n": 15,
+     "mean_knee_dev_deg": 13.636923065196886
+    },
+    {
+     "tertile": 2,
+     "n": 14,
+     "mean_knee_dev_deg": 13.83177005603076
+    },
+    {
+     "tertile": 3,
+     "n": 14,
+     "mean_knee_dev_deg": 8.562735175961482
+    }
+   ]
+  },
+  "subgroup_by_contact_type": {
+   "plantarflexed_n": 25,
+   "plantarflexed_knee_dev_mean": 6.313362786158097,
+   "dorsiflexed_n": 25,
+   "dorsiflexed_knee_dev_mean": 17.092170590392694
+  },
+  "measurement_validity_positive_controls": {
+   "stroke_paretic_vs_able__GAS stance mean": {
+    "stroke_mean": 0.2357166570814652,
+    "able_mean": 0.23178974994469861,
+    "n_stroke": 43,
+    "n_able": 109,
+    "t": 0.2878204933703793,
+    "p": 0.7745677271091794,
+    "cohen_d": 0.06338492012697655
+   },
+   "stroke_paretic_vs_able__TA swing mean": {
+    "stroke_mean": 0.2527017622195233,
+    "able_mean": 0.34625857251979114,
+    "n_stroke": 43,
+    "n_able": 107,
+    "t": -5.819064213145261,
+    "p": 2.1900254216279086e-07,
+    "cohen_d": -1.1777332861077356
+   },
+   "stroke_paretic_vs_able__GAS early stance 0-15%": {
+    "stroke_mean": 0.19954778474034354,
+    "able_mean": 0.13884135401369616,
+    "n_stroke": 43,
+    "n_able": 109,
+    "t": 3.341123800191041,
+    "p": 0.0014359945645609246,
+    "cohen_d": 0.6891074351970822
+   },
+   "paretic_vs_nonparetic__GAS stance mean": {
+    "mean_diff": -0.05737088461566148,
+    "sd": 0.11384799216972287,
+    "n": 43,
+    "t": -3.304459233599669,
+    "p": 0.0019525411933432324
+   },
+   "paretic_vs_nonparetic__TA swing mean": {
+    "mean_diff": -0.02537064119632461,
+    "sd": 0.11372242541660336,
+    "n": 43,
+    "t": -1.46291656511516,
+    "p": 0.15093395383322628
+   },
+   "paretic_vs_nonparetic__GAS early stance": {
+    "mean_diff": -0.05523675514684601,
+    "sd": 0.12510599731376887,
+    "n": 43,
+    "t": -2.8952379097296936,
+    "p": 0.005988436902994392
+   },
+   "composite_PDI_vs_knee_dev": {
+    "pearson_r": 0.19807393065190648,
+    "pearson_p": 0.20293179201559164,
+    "spearman_rho": 0.17592872244035035,
+    "spearman_p": 0.25911882749352166,
+    "n": 43,
+    "predicted_sign": "+",
+    "sign_matches": true
+   }
+  },
+  "sign_summary": {
+   "GAS_stance_mean_fixed60": "OPPOSITE to prediction (r=-0.040), but this measure FAILS its positive control",
+   "GAS_early_stance_0_15pct": "MATCHES prediction (r=+0.162), not significant (p=0.30); measure PASSES positive control",
+   "TA_swing_mean_fixed60": "MATCHES prediction (r=-0.287), borderline (p=0.063); measure PASSES positive control",
+   "composite_PDI": "MATCHES prediction (r=+0.198), not significant (p=0.20)",
+   "count": "every measure that passes its positive control has the predicted sign (3/3), none reaches p<0.05"
+  }
+ },
+ "step5_critical_caveats": {
+  "1_EMG_normalisation_THE_DECISIVE_ONE": {
+   "what_the_dataset_did": "Each muscle channel is normalised to the maximum value found over that subject's own available walking strides ('GASnorm: normalized to the maximum value across all strides of this subject for this muscle'). There is NO MVC normalisation anywhere in this dataset, and the raw 'as measured' channels are MAT-only.",
+   "what_this_licenses": "NOTHING about between-subject EMG amplitude. Every subject's GAS peak is 1.0 by construction, whether that subject's plantarflexors are hyperactive or barely firing. What survives normalisation is the SHAPE of the activation profile: the mean/peak ratio, i.e. how much of the cycle the muscle is 'on' relative to its own maximum, and the timing of activity.",
+   "consequence_for_P": "Prediction P as literally written is about EMG AMPLITUDE. That form of P IS NOT TESTABLE WITH THIS DATASET. What was actually tested is a shape/timing surrogate. This must not be papered over: a null result on the surrogate is weaker evidence against P than a null on true amplitude would be.",
+   "empirical_check_on_normalisation_scope": "Left and right channels are normalised SEPARATELY (per channel, not per subject-muscle-pair). Evidence: in the stride-averaged curves the paretic and non-paretic GAS maxima are near-identical on average (0.526 vs 0.566) with no systematic paretic deficit, which cannot be true of absolute amplitudes in hemiparesis. This also kills the paretic:non-paretic amplitude ratio, which would otherwise have been the one legitimate cross-subject-comparable amplitude measure. Recovering it would require the raw 'as measured' channels in the MAT/C3D files.",
+   "mitigation_applied": "Positive controls were run: do these shape measures detect ANY known paretic abnormality? TA swing mean does (paretic 0.253 vs able 0.346, Cohen d=-1.18, p=2.2e-07) and GAS early-stance does (0.200 vs 0.139, d=+0.69, p=0.0014). GAS stance mean does NOT (d=+0.06, p=0.77). So the surrogate is informative for two of the three measures and inert for the third; nulls on the inert measure carry no evidential weight."
+  },
+  "2_paretic_side_identification": {
+   "status": "NOT A PROBLEM",
+   "detail": "The data authors label the sides Pside / Nside themselves in the stroke export, and provide LesionLeft in sub_char. No inference by us. Note the stride is segmented on the ipsilateral leg's own initial contacts, so Pside_KneeAngles[0] is unambiguously the paretic knee at paretic initial contact."
+  },
+  "3_is_knee_at_IC_well_defined_for_forefoot_first_contact": {
+   "status": "DEFINED BUT NOT EQUIVALENT IN MEANING",
+   "detail": "25 of 50 paretic limbs are PLANTARFLEXED at initial contact (ankle angle < 0), i.e. roughly half the cohort is forefoot- or flatfoot-first. The event itself is still valid - the authors detected IC from force plates (10 N threshold) and heel/ankle marker trajectories with visual confirmation, not from an assumed heel strike - so the 0% timepoint is real foot-floor contact. But 'knee angle at heel strike' and 'knee angle at forefoot strike' are not the same biomechanical quantity, and the two subgroups differ enormously: plantarflexed-at-IC limbs sit at +6.31 deg from the norm, dorsiflexed-at-IC limbs at +17.09 deg. Any pooled correlation is averaging across two different contact mechanics.",
+   "extra_finding": "Ankle angle at IC and knee deviation are strongly positively correlated (r=+0.613, rho=+0.639, p<1e-5, n=50). Partial correlations controlling for ankle-at-IC are reported so the EMG effects can be judged independently of contact type."
+  },
+  "4_both_impairments_coexist": {
+   "detail": "Prediction P treats spastic and weak as separable poles, and the simulation made them disjoint by construction (edge gap 6.39 deg, no overlap). Real stroke survivors have both in varying proportion, which shrinks any true correlation toward zero. Empirically the two EMG measures here are essentially uncorrelated with each other (GAS stance vs TA swing r=+0.091, p=0.56), so they are not simply two readings of one severity axis - but neither do they define clean opposing groups. The composite plantarflexor-dominance index was added for this reason and behaves the same way (r=+0.198, p=0.20).",
+   "attenuation_note": "With n=43, the study has roughly 80% power only for |r| >= 0.41. The observed effects (|r| 0.16-0.29) are in exactly the range this sample cannot resolve. Non-significance here is genuinely inconclusive rather than a clean refutation."
+  },
+  "5_missing_speed_and_severity_control": {
+   "detail": "Walking speed is not recoverable from the Excel exports and no spasticity or strength score exists in the dataset at all. Stroke survivors walk far slower than able-bodied controls, and speed independently affects knee flexion at IC and EMG profile shape. The +11.7 deg group offset is therefore partly a speed effect of unknown size and should NOT be read as impairment-specific."
+  },
+  "6_norm_cohort_side_pooling": {
+   "detail": "The able-bodied Excel gives one curve per participant, described as averaged over left and right strides. This is appropriate for a population norm but means the norm SD (4.72 deg) mixes between-subject and between-limb variance slightly differently from the single-limb paretic values."
+  }
+ },
+ "verdict": {
+  "LIVE_STATEMENT": "THIS DATASET CANNOT TEST THE SPASTIC-VS-WEAK DISCRIMINATION. It is used in this paper for CALIBRATION ONLY: it supplies the able-bodied dispersion of knee flexion at initial contact (SD 4.72 deg, n=138) against which the simulation's effect sizes are scaled, and the stroke paretic distribution (19.99 +/- 9.01 deg, n=50) that establishes the clinical range. It does not confirm and does not refute prediction P.",
+  "why_the_discrimination_cannot_be_tested_here": [
+   "NO SPASTICITY SCORE. No Modified Ashworth, no Tardieu, nothing. Patients cannot be assigned to a spastic-dominant pole independently of the EMG being tested.",
+   "NO STRENGTH SCORE. No MRC, no dynamometry, no Fugl-Meyer. The weak-dominant pole is equally unassignable.",
+   "NO SOLEUS CHANNEL. The 14 EMG channels are 7 muscles x 2 sides (GAS, RF, VL, BF, ST, TA, ERS). The monoarticular half of the modelled spastic lesion is simply unobservable.",
+   "NO MVC NORMALISATION. EMG is normalised to each subject's own peak over their own walking strides, so every subject's gastrocnemius peak is 1.0 by construction. Between-subject amplitude comparison - which is what prediction P is literally about - is impossible from the released processed data.",
+   "NO WALKING SPEED. Not stored; the dominant confounder for every stroke gait variable is uncontrolled.",
+   "UNDERPOWERED EVEN FOR THE SURROGATE. With n=43 usable EMG participants the study resolves only |r| >= 0.41 at 80% power, while the observed effects lie at |r| = 0.16-0.29."
+  ],
+  "per_component_answer_on_the_ORIGINAL_prediction_P": {
+   "amplitude_form_of_P (more plantarflexor AMPLITUDE -> more knee flexion at IC)": {
+    "answer": "UNTESTABLE WITH THIS DATA",
+    "reason": "Peak-of-walking normalisation destroys between-subject amplitude information, and there is no soleus channel. This is a property of the released data, not a sample-size problem: no n would fix it."
+   },
+   "within_group_gradient, shape/timing surrogate": {
+    "answer": "UNDERPOWERED",
+    "reason": "All three measures that pass a positive control carry the PREDICTED sign - TA swing r=-0.287 (p=0.063), GAS early stance r=+0.162 (p=0.30), composite index r=+0.198 (p=0.20) - but none reaches p<0.05 and the sample cannot resolve effects of this size. Consistent with P, not evidence for P, and NOT evidence against it.",
+    "explicitly_not": "This is NOT a refutation."
+   },
+   "bidirectionality (patients should fall on BOTH sides of the able-bodied norm)": {
+    "answer": "UNTESTABLE WITH THIS DATA (previously and wrongly called REFUTED)",
+    "reason": "46/50 paretic limbs sit above the able-bodied mean. That was originally read as a refutation. It is not, for three reasons. (1) NO SPEED CONTROL: stroke survivors walk slower and knee-at-IC is speed-dependent, so an unknown share of the +11.70 deg offset is a speed effect. (2) MIXED LESIONS: the model contrasts PURE single lesions; if most ambulatory survivors carry some spasticity, a uniform shift toward the spastic pole is what the model predicts, and the absence of a pure weakness pole is a fact about this cohort's composition, not about the mechanism. (3) WRONG TEST: a group-mean offset does not test a within-patient mechanism; the gradient does, and the gradient is underpowered rather than negative.",
+    "correction_note": "This is the specific over-claim that the superseded verdict made."
+   },
+   "the models weakness-limb causal chain (dorsiflexor failure -> plantarflexed contact -> less knee flexion)": {
+    "answer": "CONSISTENT, hypothesis-generating, NOT a validation",
+    "reason": "Visible at r=+0.613 (p=2.2e-06, n=50) with a 10.78 deg subgroup separation (Cohen d=1.49), and it needs no EMG amplitude so the normalisation problem does not apply. But with no severity measure the two subgroups cannot be shown to be distinct phenotypes rather than milder vs more severe, and no speed control is available. It also runs against the spastic limb of the model."
+   }
+  },
+  "what_this_dataset_IS_good_for": [
+   "Able-bodied dispersion of knee flexion at initial contact: SD 4.72 deg, n=138, single lab, single model, barefoot preferred speed. This is the scale factor for expressing simulation effects in clinically meaningful units.",
+   "The clinical range of paretic knee flexion at initial contact: 0.97 to 39.97 deg, mean 19.99, SD 9.01, n=50 - i.e. what magnitudes a model must reproduce to be plausible.",
+   "A demonstration that contact posture and knee angle at contact are strongly coupled in real hemiparetic gait, which is a testable target for the model."
+  ],
+  "what_would_be_needed_for_an_actual_validation": [
+   "MVC-normalised EMG (or raw channels plus a documented gain/electrode protocol).",
+   "A soleus channel.",
+   "A clinical spasticity measure (Modified Ashworth or Tardieu at ankle plantarflexors) AND a dorsiflexor strength measure, so poles are assigned independently of the EMG under test.",
+   "Walking speed per participant.",
+   "Participant-specific toe-off in the accessible export.",
+   "n of roughly 123 to resolve r=0.25 at 80% power.",
+   "NOTE: speed, events, clinical scores (FAC/POMA/TIS/TPS) and raw EMG DO exist inside this dataset's v7.3 MAT and C3D layers. Recovering them would fix speed, events and severity-adjacent scores. It would still NOT supply a soleus channel, MVC normalisation, or any spasticity/strength measure - so it could sharpen a correlation but could never turn this dataset into a validation."
+  ]
+ },
+ "reproduction": {
+  "python": "C:\\\\Users\\\\maurice\\\\Desktop\\\\robotic_research\\\\.venv\\\\Scripts\\\\python.exe",
+  "packages_used": "numpy + stdlib only",
+  "packages_missing_and_NOT_installed": [
+   "scipy",
+   "openpyxl",
+   "h5py",
+   "xlrd",
+   "ezc3d",
+   "statsmodels"
+  ],
+  "workaround": "xlsx parsed with a stdlib zipfile+ElementTree reader (external/xlsx_lite.py); p-values from a pure-python incomplete beta.",
+  "scripts": [
+   "external/xlsx_lite.py",
+   "external/extract_r405.py",
+   "external/analyse_r405.py",
+   "external/deposit_r405.py"
+  ],
+  "intermediates": [
+   "external/_extracted_raw.json",
+   "external/_analysis_out.json"
+  ]
+ },
+ "revision": "r405 rev2 (2026-08-26) - live verdict corrected; scope narrowed to calibration",
+ "sign_convention_verification": {
+  "question": "Is Plug-in-Gait knee flexion POSITIVE or NEGATIVE in this dataset?",
+  "why_it_matters": "Our simulation's knee_angle_l is flexion-NEGATIVE. A single sign slip would flip every direction claim, including the ankle-knee coupling.",
+  "evidence_1_dataset_documentation": {
+   "verdict": "INSUFFICIENT ON ITS OWN",
+   "detail": "MATdatafiles_description_v1.3_LST.xlsx says only: 'HipAngles / KneeAngles / AnkleAngles | Joint angles in degrees, dimensions: x (sagittal), y, z'. It names the sagittal axis but NEVER states the sign. The documentation alone cannot settle this, so the physiological check below is the decisive evidence, not a confirmation of it."
+  },
+  "evidence_2_physiological_sanity_check": {
+   "verdict": "DECISIVE",
+   "able_bodied_knee_swing_peak_ensemble_deg": 57.25,
+   "able_bodied_knee_swing_peak_pct_of_stride": 71.7,
+   "able_bodied_knee_swing_peak_per_subject_mean_deg": 57.7,
+   "able_bodied_knee_swing_peak_per_subject_sd_deg": 5.36,
+   "able_bodied_knee_swing_peak_range_deg": [
+    45.06,
+    68.76
+   ],
+   "n_subjects_with_swing_peak_above_plus40deg": "138/138",
+   "n_subjects_with_swing_peak_below_minus40deg": "0/138",
+   "other_landmarks_all_textbook": {
+    "loading_response_flexion_wave_deg": 17.07,
+    "at_pct": 39.0,
+    "most_extended_point_deg": 2.34,
+    "value_at_initial_contact_deg": 8.29
+   },
+   "interpretation": "Peak swing knee flexion in healthy gait is ~60 deg at ~73% of stride. The dataset gives +57.25 deg at 71.7%, in all 138 of 138 participants individually. The knee is near its most extended position (+2.34 deg) in terminal stance. Flexion is therefore unambiguously POSITIVE."
+  },
+  "ankle_convention_also_checked": {
+   "midstance_peak_deg": 11.3,
+   "at_pct": 63.7,
+   "push_off_extreme_deg": -13.92,
+   "value_at_initial_contact_deg": -3.19,
+   "conclusion": "DORSIFLEXION IS POSITIVE. Midstance dorsiflexion is positive and the push-off extreme is negative at 63.7% of stride, which also independently corroborates toe-off at ~62-64%."
+  },
+  "CONCLUSION": "KNEE FLEXION POSITIVE, ANKLE DORSIFLEXION POSITIVE.",
+  "does_this_match_what_was_assumed_in_the_original_analysis": true,
+  "consequence": "The sign is exactly what the original analysis assumed. NOTHING FLIPS. The predicted-sign mapping used throughout (simulation flexion-negative -> dataset flexion-positive, hence P => corr(knee deviation, GAS) > 0 and corr(knee deviation, TA) < 0) was correct, and the ankle-knee coupling keeps its reported direction: more dorsiflexed at contact goes with MORE knee flexion at contact."
+ },
+ "calibration_numbers_LOCKED": {
+  "purpose": "The two numbers this dataset legitimately contributes to the paper. Citable as-is.",
+  "able_bodied_knee_flexion_at_initial_contact": {
+   "mean_deg": 8.2871,
+   "sd_deg": 4.7198,
+   "n": 138,
+   "range_deg": [
+    -4.43,
+    17.5
+   ],
+   "exclusion_rule": "NONE APPLIED. All 138 able-bodied participant sheets contained a finite knee value at index 0; zero participants were dropped, zero NaNs. n=138 is the full published cohort.",
+   "provenance": "MAT_normalizedData_AbleBodiedAdults_v06-03-23.xlsx, one sheet per participant, column 'KneeAngles', index 0 of the 1001-point stride. Strides are segmented initial-contact to initial-contact of the same limb, so index 0 IS initial contact. Curves are already averaged over that participant's strides and over left and right sides by the data authors."
+  },
+  "stroke_paretic_knee_flexion_at_initial_contact": {
+   "mean_deg": 19.9899,
+   "sd_deg": 9.0073,
+   "n": 50,
+   "range_deg": [
+    0.97,
+    39.97
+   ],
+   "exclusion_rule": "NONE APPLIED. All 50 stroke participant sheets contained a finite paretic knee value at index 0; zero dropped, zero NaNs. (The 7/50 EMG exclusions reported elsewhere affect ONLY the EMG analyses, never these kinematics.)",
+   "provenance": "MAT_normalizedData_PostStrokeAdults_v27-02-23.xlsx, column 'Pside_KneeAngles', index 0. Paretic/non-paretic labelling is the data authors', not ours.",
+   "non_paretic_for_reference": {
+    "mean_deg": 17.2074,
+    "sd_deg": 8.2508,
+    "n": 50
+   }
+  },
+  "group_offset": {
+   "paretic_minus_able_deg": 11.7,
+   "in_able_bodied_SD": 2.48,
+   "n_paretic_above_able_mean": "46/50"
+  },
+  "PLUG_IN_GAIT_OFFSET_WARNING": {
+   "statement": "Plug-in-Gait has a KNOWN SYSTEMATIC OFFSET on sagittal knee angle, arising from thigh-marker placement and knee flexion/extension axis misalignment (the well-documented 'knee varus/valgus crosstalk' problem). The offset is a property of the marker model and the operator, not of the participant.",
+   "evidence_visible_in_this_dataset": "The able-bodied mean of +8.29 deg flexion at initial contact is several degrees more flexed than the ~0-5 deg usually quoted for healthy gait. That gap is the model offset, not a property of this cohort.",
+   "HOW_WE_USE_THESE_NUMBERS": "WE USE THE SD, NOT THE ABSOLUTE VALUE. The offset is common to every participant measured in this lab with this model, so it cancels in (i) the able-bodied SD of 4.72 deg, (ii) the paretic-minus-able difference, and (iii) any within-dataset correlation. It does NOT cancel if the absolute +8.29 deg or +19.99 deg is compared against our simulation's absolute knee angle, or against any other lab's numbers. THE ABSOLUTE VALUES MUST NOT BE PROPAGATED INTO THE MODEL COMPARISON; only the SD (4.72 deg) and the effect sizes expressed in units of that SD are safe to carry across.",
+   "worked_consequence": "Our simulation's spastic-vs-weak edge gap of 6.39 deg corresponds to 6.39 / 4.72 = 1.35 able-bodied SD. That ratio is offset-free and is the form in which the simulation result should be stated."
+  }
+ },
+ "ankle_knee_coupling_for_citation": {
+  "statement": "Across 50 stroke survivors, the paretic ankle angle at initial contact is strongly positively associated with paretic knee flexion at initial contact: limbs that contact the ground in a more dorsiflexed position are markedly MORE knee-flexed at contact, and limbs that contact plantarflexed sit close to the able-bodied norm.",
+  "pearson_r": 0.6128,
+  "pearson_p": 2.246e-06,
+  "pearson_95CI": [
+   0.403,
+   0.761
+  ],
+  "spearman_rho": 0.6392,
+  "spearman_p": 5.855e-07,
+  "n": 50,
+  "note_on_equivalence": "r is identical whether computed against raw paretic knee-at-IC or against its deviation from the able-bodied mean, since the latter is the former minus a constant. No able-bodied information enters this correlation.",
+  "subgroups_split_at_zero_ankle_angle": {
+   "plantarflexed_at_IC": {
+    "n": 25,
+    "knee_at_IC_mean_deg": 14.6,
+    "knee_at_IC_sd_deg": 5.64,
+    "deviation_from_able_mean_deg": 6.31,
+    "mean_ankle_at_IC_deg": -3.6
+   },
+   "dorsiflexed_at_IC": {
+    "n": 25,
+    "knee_at_IC_mean_deg": 25.38,
+    "knee_at_IC_sd_deg": 8.57,
+    "deviation_from_able_mean_deg": 17.09,
+    "mean_ankle_at_IC_deg": 5.74
+   },
+   "difference_deg": 10.78,
+   "welch_t": 5.26,
+   "df": 41.5,
+   "p": 4.755e-06,
+   "cohen_d": 1.49
+  },
+  "CAVEATS_THAT_MUST_TRAVEL_WITH_THIS_NUMBER": [
+   "POOLED EVENTS. 25 of 50 paretic limbs contact the ground plantarflexed, i.e. forefoot- or flatfoot-first. 'Knee angle at initial contact' therefore pools two mechanically different events. The event timing itself is sound - the authors detected initial contact from force plates (10 N threshold) plus heel/ankle marker trajectories with visual confirmation, not by assuming a heel strike - but knee angle at heel strike and knee angle at forefoot strike are not the same quantity, and this correlation is partly a comparison between those two regimes rather than a within-regime gradient.",
+   "NO WALKING SPEED. Walking speed is not stored in this dataset and was not recovered. Stroke survivors walk substantially slower than able-bodied controls, and knee flexion at initial contact depends on speed. A speed contribution to the +11.70 deg group offset CANNOT BE EXCLUDED, and the offset must not be read as impairment-specific. The within-stroke coupling of r=+0.61 is less exposed to this than the group offset is, but is not immune: if severity drives both contact posture and speed, part of this correlation is a severity gradient.",
+   "NO SEVERITY MEASURE. The dataset contains no spasticity score and no strength score, so the two contact-posture subgroups cannot be shown to be distinct phenotypes rather than simply milder and more severe. The subgroup contrast is descriptive only.",
+   "The able-bodied ankle angle at initial contact is itself -3.19 +/- 4.21 deg, i.e. slightly plantarflexed. Splitting the stroke cohort at zero is therefore a convention, not a norm-referenced boundary; a split at the able-bodied mean would move a few limbs."
+  ],
+  "relation_to_the_model": "This is the one place where the model's mechanism is visible in real patients WITHOUT depending on EMG amplitude, so it sidesteps the normalisation problem entirely. It supports the weakness limb of the model (dorsiflexor failure -> plantarflexed contact -> LESS knee flexion) while running AGAINST the spastic limb (plantarflexor overactivity should give equinus AND more knee flexion; here plantarflexed contact goes with less knee flexion). It is a hypothesis-generating observation, not a test."
+ },
+ "verdict_ORIGINAL_r405_SUPERSEDED": {
+  "status": "SUPERSEDED on 2026-08-26. Retained verbatim for provenance. Read the live 'verdict' key instead. Superseded because it over-claimed refutation: it treated a group-mean offset as a test of a within-patient mechanism, and treated '46/50 above the able-bodied mean' as refuting bidirectionality when (a) no walking-speed control was available and (b) the model tests pure single lesions while real stroke is mixed, so a cohort carrying some spasticity in most members shifting toward the spastic pole is not evidence against the mechanism.",
+  "original_content": {
+   "headline": "NOT SUPPORTED as stated; the strong bidirectional form is REFUTED; the literal amplitude form is UNTESTABLE with this dataset.",
+   "breakdown": {
+    "amplitude_form_of_P": {
+     "status": "UNTESTABLE",
+     "why": "Dataset has only per-subject peak-of-walking normalised EMG and no soleus channel. No between-subject amplitude comparison is possible from the released processed data."
+    },
+    "bidirectionality_claim": {
+     "status": "REFUTED",
+     "why": "P requires patients to fall on BOTH sides of the able-bodied norm according to which impairment dominates. They do not. 46 of 50 paretic limbs sit above the able-bodied mean, group mean deviation +11.70 deg = +2.48 able-bodied SD. The 'less flexed than normal' pole that the weakness lesion produces in simulation (weak x0.80 at -5.84 vs control -7.85, i.e. 2.0 deg toward extension) is essentially absent as a real phenotype: only 4/50 participants are below the norm mean, and none approaches the simulation's weak-arm position. Real dorsiflexor-weak stroke limbs are still MORE knee-flexed than able-bodied, not less."
+    },
+    "within_group_gradient_shape_surrogate": {
+     "status": "DIRECTIONALLY CONSISTENT BUT NOT CONFIRMED",
+     "why": "Both arms point the predicted way once inert measures are excluded: TA swing r=-0.287 (p=0.063), rho=-0.268 (p=0.082); GAS early stance r=+0.162 (p=0.30); composite index r=+0.198 (p=0.20). 3/3 validity-passing measures have the predicted sign, but none is significant at p<0.05 and the sample cannot resolve effects this small. This is a weak, non-decisive hint in P's favour, not evidence for it."
+    },
+    "unexpected_partial_support_for_the_weakness_mechanism": {
+     "status": "SUPPORTED, via kinematics rather than EMG",
+     "why": "The specific causal chain P asserts for the weakness lesion - dorsiflexor failure -> plantarflexed/forefoot-first contact -> LESS knee flexion - is clearly visible: ankle angle at IC correlates with knee deviation at r=+0.613 (p<1e-5, n=50), and plantarflexed-at-IC limbs sit at +6.31 deg vs +17.09 deg for dorsiflexed-at-IC limbs, a 10.8 deg separation. This is the model's mechanism appearing in real patients. IMPORTANT COUNTERWEIGHT: it also runs against the spastic arm. Spastic plantarflexor overactivity should produce equinus (plantarflexed at IC) AND more knee flexion; in these data plantarflexed contact goes with LESS knee flexion. So the ankle-knee coupling supports the weakness limb of the model while contradicting the plantarflexor limb."
+    }
+   },
+   "what_would_be_needed_to_test_P_properly": [
+    "EMG normalised to maximum voluntary contraction, or at minimum the raw un-normalised channels plus a documented electrode/gain protocol, so that between-subject amplitude means something.",
+    "A soleus channel. This dataset has none, so the monoarticular half of the spastic lesion is unobservable.",
+    "A clinical spasticity measure (Modified Ashworth or Tardieu at ankle plantarflexors) AND a dorsiflexor strength measure (MRC or dynamometry), so patients can be assigned to the spastic-dominant vs weak-dominant poles independently of the EMG being tested.",
+    "Walking speed per participant, to control the dominant confounder.",
+    "Gait event timings (toe-off) in the accessible export, so stance/swing EMG windows are participant-specific.",
+    "Ideally a larger n: to resolve r=0.25 at 80% power needs about n=123."
+   ],
+   "practical_next_step": "Most of these are recoverable from THIS dataset's unreleased-in-Excel layers: raw EMG, events, speed and the FAC/POMA/TIS/TPS scores are all inside the v7.3 MAT files (2.9 GB stroke / 6.2 GB able-bodied) and the C3D archives (316 MB / 463 MB). Reading them requires h5py (MAT) or a C3D reader such as ezc3d - neither installed here, and nothing was installed per instruction. That would fix speed, events and clinical scores, and would recover raw EMG. It would still NOT fix the two fundamental gaps: there is no soleus channel and no MVC normalisation and no spasticity/strength score anywhere in the dataset."
+  }
+ },
+ "scope_and_tooling_note": {
+  "scope_change": "The coordinator narrowed scope mid-task: a planned speed-adjustment and stratification pass using the MAT layer was CANCELLED before any MAT file was opened. No stratification beyond the already-reported contact-posture split was run. No speed was recovered; the analysis remains speed-uncontrolled.",
+  "packages_installed_during_this_task": [
+   "h5py 3.16.0 (installed, then NOT USED - no MAT file was ever opened or parsed)"
+  ],
+  "packages_still_absent_and_not_installed": [
+   "scipy",
+   "openpyxl",
+   "xlrd",
+   "ezc3d",
+   "statsmodels"
+  ],
+  "large_files_downloaded_then_left_unused": [
+   {
+    "file": "external/MAT_stroke.mat",
+    "bytes": 2906058754,
+    "status": "download completed, file never opened"
+   },
+   {
+    "file": "external/MAT_able.mat",
+    "approx_bytes": 3700000000,
+    "status": "download deliberately aborted mid-transfer on scope change; PARTIAL/TRUNCATED file, not valid HDF5, never opened"
+   }
+  ],
+  "disk_note": "These two files occupy roughly 6.6 GB in external/ and are not used by any analysis. They were left in place rather than deleted; delete at will, both are re-downloadable from the Figshare DOIs recorded above.",
+  "all_reported_analyses_derive_from": "the two stride-normalised Excel exports only (52.5 MB total)."
+ }
+}

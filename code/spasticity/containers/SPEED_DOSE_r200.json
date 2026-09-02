@@ -1,0 +1,42 @@
+{
+ "containers": {
+  "control_cells": [
+   "C:\\Users\\maurice\\Documents\\SCONE\\results\\R151C_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "C:\\Users\\maurice\\Documents\\SCONE\\results\\R151C_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "C:\\Users\\maurice\\Documents\\SCONE\\results\\R151C_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "C:\\Users\\maurice\\Documents\\SCONE\\results\\R151C_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "C:\\Users\\maurice\\Documents\\SCONE\\results\\R151C_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "C:\\Users\\maurice\\Documents\\SCONE\\results\\R151C_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106"
+  ],
+  "sto": [
+   "0060_19.456_0.988.par.sto",
+   "0003_26.221_0.983.par.sto",
+   "0028_1.032_0.991.par.sto",
+   "0000_1.033_0.987.par.sto",
+   "0053_30.023_0.987.par.sto",
+   "0001_1.056_0.989.par.sto"
+  ]
+ },
+ "window": [
+  1.0,
+  13.58
+ ],
+ "speed_mps": {
+  "per_seed": [
+   1.025173831775701,
+   1.0230633737185464,
+   1.0157871148459385,
+   1.0194906890130355,
+   1.0244692164179106,
+   1.021022429906542
+  ],
+  "mean": 1.0215011092796122
+ },
+ "dose_N": {
+  "KV0.050_k1": 13.626637473716952,
+  "KV0.150_k1": 40.87991242115084,
+  "ceiling_k_inf": 2084.2500578370873
+ },
+ "k_that_reaches_KV0.150": 3.0,
+ "assumption": "fibre velocity scales linearly with gait speed (time-scaling); optimistic bound"
+}

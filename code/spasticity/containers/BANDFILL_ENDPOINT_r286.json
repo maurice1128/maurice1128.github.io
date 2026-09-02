@@ -1,0 +1,228 @@
+{
+ "registration": "PREREG_bandfill_r285.md",
+ "sha256": "c27a72650f7d2bb13eb6ae3d7f8b876124036270ef105a604bea92dcd73512ab",
+ "endpoint": "knee_angle_LmR",
+ "endpoint_is_confirmatory": true,
+ "self_check": "spastic hip_flexion_LmR reproduces LADDER36_r228.json to < 1e-9 deg",
+ "window": [
+  1.0,
+  9.73
+ ],
+ "band_s": [
+  13.58,
+  17.85
+ ],
+ "min_in_band_required": 3,
+ "spastic_cells": [
+  {
+   "id": "S_s101",
+   "t_end_s": 17.85,
+   "n_cycles_in_window": 6,
+   "ankle_angle_LmR": 0.07068389332597036,
+   "knee_angle_LmR": -0.9495390806288526,
+   "hip_flexion_LmR": -2.032596426116342,
+   "hip_adduction_LmR": -1.9535788616602012
+  },
+  {
+   "id": "S_s102",
+   "t_end_s": 14.96,
+   "n_cycles_in_window": 5,
+   "ankle_angle_LmR": -0.4374074399587755,
+   "knee_angle_LmR": -1.8889983057539084,
+   "hip_flexion_LmR": -1.2098920576659609,
+   "hip_adduction_LmR": -0.7397973754949678
+  },
+  {
+   "id": "S_s103",
+   "t_end_s": 13.58,
+   "n_cycles_in_window": 5,
+   "ankle_angle_LmR": 0.4922051234850855,
+   "knee_angle_LmR": -0.2134542806604003,
+   "hip_flexion_LmR": -2.772393801611315,
+   "hip_adduction_LmR": -2.0486770595944925
+  },
+  {
+   "id": "S_s104",
+   "t_end_s": 16.94,
+   "n_cycles_in_window": 5,
+   "ankle_angle_LmR": -0.36468763660076675,
+   "knee_angle_LmR": -1.174013440534857,
+   "hip_flexion_LmR": -1.683269788003031,
+   "hip_adduction_LmR": -0.9773204672132216
+  },
+  {
+   "id": "S_s105",
+   "t_end_s": 14.27,
+   "n_cycles_in_window": 5,
+   "ankle_angle_LmR": 0.036543248173444454,
+   "knee_angle_LmR": -0.7150158049399593,
+   "hip_flexion_LmR": -2.346170497813503,
+   "hip_adduction_LmR": -1.590489586321917
+  },
+  {
+   "id": "S_s106",
+   "t_end_s": 14.82,
+   "n_cycles_in_window": 5,
+   "ankle_angle_LmR": 0.2893322273851666,
+   "knee_angle_LmR": -0.3975754140412846,
+   "hip_flexion_LmR": -2.5874430253430774,
+   "hip_adduction_LmR": -1.9004494402473782
+  }
+ ],
+ "weak_cells_measured": [
+  {
+   "id": "BF_c00",
+   "f": 0.07,
+   "seed": 101,
+   "t_end_s": 19.74,
+   "n_cycles_in_window": 6,
+   "result_dir": "R285BF007_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "terminal_objective": 1.11513,
+   "ankle_angle_LmR": -0.8249159855396009,
+   "knee_angle_LmR": 1.922424281549958,
+   "hip_flexion_LmR": -0.6528281117720667,
+   "hip_adduction_LmR": 2.152870771540554,
+   "in_band": false
+  },
+  {
+   "id": "BF_c04",
+   "f": 0.07,
+   "seed": 105,
+   "t_end_s": 20.0,
+   "n_cycles_in_window": 6,
+   "result_dir": "R285BF007_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "terminal_objective": 1.08758,
+   "ankle_angle_LmR": -0.4822203789752706,
+   "knee_angle_LmR": 2.1198559884554555,
+   "hip_flexion_LmR": -1.0898612193046802,
+   "hip_adduction_LmR": 2.1356562545858484,
+   "in_band": false
+  },
+  {
+   "id": "BF_c05",
+   "f": 0.07,
+   "seed": 106,
+   "t_end_s": 20.0,
+   "n_cycles_in_window": 6,
+   "result_dir": "R285BF007_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "terminal_objective": 1.06843,
+   "ankle_angle_LmR": -0.9395934882350367,
+   "knee_angle_LmR": 1.1534156077999143,
+   "hip_flexion_LmR": 0.24921754228873283,
+   "hip_adduction_LmR": 3.1426553626290517,
+   "in_band": false
+  },
+  {
+   "id": "BF_c06",
+   "f": 0.08,
+   "seed": 101,
+   "t_end_s": 11.63,
+   "n_cycles_in_window": 5,
+   "result_dir": "R285BF008_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "terminal_objective": 46.8544,
+   "ankle_angle_LmR": -0.571456645707574,
+   "knee_angle_LmR": 3.7471485638179587,
+   "hip_flexion_LmR": -3.1093617400836564,
+   "hip_adduction_LmR": 0.30498314251695824,
+   "in_band": false
+  },
+  {
+   "id": "BF_c10",
+   "f": 0.08,
+   "seed": 105,
+   "t_end_s": 15.14,
+   "n_cycles_in_window": 6,
+   "result_dir": "R285BF008_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "terminal_objective": 28.1911,
+   "ankle_angle_LmR": -0.957842194009956,
+   "knee_angle_LmR": 2.2638164091303707,
+   "hip_flexion_LmR": -0.8792323845179979,
+   "hip_adduction_LmR": 2.487323425292269,
+   "in_band": true
+  }
+ ],
+ "weak_cells_excluded": [
+  {
+   "id": "BF_c01",
+   "f": 0.07,
+   "seed": 102,
+   "t_end_s": 7.93,
+   "n_cycles_in_window": 4,
+   "result_dir": "R285BF007_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "terminal_objective": 64.7726,
+   "reason": "t_end 7.930 s short of the 9.73 s window (r281 guard)"
+  },
+  {
+   "id": "BF_c02",
+   "f": 0.07,
+   "seed": 103,
+   "t_end_s": 7.16,
+   "n_cycles_in_window": 3,
+   "result_dir": "R285BF007_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "terminal_objective": 68.9296,
+   "reason": "t_end 7.160 s short of the 9.73 s window (r281 guard)"
+  },
+  {
+   "id": "BF_c03",
+   "f": 0.07,
+   "seed": 104,
+   "t_end_s": 7.36,
+   "n_cycles_in_window": 4,
+   "result_dir": "R285BF007_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "terminal_objective": 68.5577,
+   "reason": "t_end 7.360 s short of the 9.73 s window (r281 guard)"
+  },
+  {
+   "id": "BF_c07",
+   "f": 0.08,
+   "seed": 102,
+   "t_end_s": 6.89,
+   "n_cycles_in_window": 3,
+   "result_dir": "R285BF008_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "terminal_objective": 70.3379,
+   "reason": "t_end 6.890 s short of the 9.73 s window (r281 guard)"
+  },
+  {
+   "id": "BF_c08",
+   "f": 0.08,
+   "seed": 103,
+   "t_end_s": 7.57,
+   "n_cycles_in_window": 4,
+   "result_dir": "R285BF008_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "terminal_objective": 68.2184,
+   "reason": "t_end 7.570 s short of the 9.73 s window (r281 guard)"
+  },
+  {
+   "id": "BF_c09",
+   "f": 0.08,
+   "seed": 104,
+   "t_end_s": 7.07,
+   "n_cycles_in_window": 4,
+   "result_dir": "R285BF008_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "terminal_objective": 69.854,
+   "reason": "t_end 7.070 s short of the 9.73 s window (r281 guard)"
+  },
+  {
+   "id": "BF_c11",
+   "f": 0.08,
+   "seed": 106,
+   "t_end_s": 7.8,
+   "n_cycles_in_window": 4,
+   "result_dir": "R285BF008_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "terminal_objective": 66.7028,
+   "reason": "t_end 7.800 s short of the 9.73 s window (r281 guard)"
+  }
+ ],
+ "n_weak_measured": 5,
+ "n_weak_in_band": 1,
+ "n_weak_excluded": 7,
+ "RUNG": 1,
+ "VERDICT": "UNINFORMATIVE -- insufficient band coverage",
+ "detail": {
+  "n_in_band": 1,
+  "required": 3,
+  "endpoint_evaluated": false,
+  "section_4": "no substitute endpoint, no widened band, no pooling with out-of-band cells is permitted to rescue it"
+ },
+ "hip_flexion_LmR_note": "deposited but NOT the endpoint, per section 3; the post-hoc finding about the shipped discriminator stays post-hoc"
+}

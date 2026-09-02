@@ -1,0 +1,53 @@
+{
+ "round": 270,
+ "what": "reconciliation of the registered 204.0 s/cell against the ~1947 s mtime span, and the cost of a 2x2 in each body",
+ "method": "per-cell optimisation wall-clock = mtime(history.txt) - mtime(config.scone). The three model/init files in each cell directory carry their SOURCE mtime (2026-08-08) because they are copied inputs, which is what made naive directory mtime spans read as 32 hours.",
+ "reconciliation": {
+  "registered_204_s_per_cell": "MEASURES optimisation wall-clock, control arm. Reproduced exactly: R151C mean 204.0 s (min 185.2, max 214.2, n=6).",
+  "the_~1947_s_span": "MEASURES optimisation launch spread (429.7 s for R151C) PLUS the later .par.sto replay pass (mean 1743.2 s). Sum ~2173 s.",
+  "why_they_differ": "they measure different things; the replay is a separate step run in later sessions",
+  "replay_spans_are_not_compute": "R151S replay span is 221287 s = 61.5 h, which is calendar idle between sessions, not CPU. A replay is ONE forward simulation, i.e. about one objective evaluation: optimisation_time/(90 generations x ~17 population) is sub-second. Replay compute is negligible; its mtime span is unusable as a cost figure.",
+  "which_predicts_a_new_run": "the optimisation wall-clock. Neither figure is CPU time; nothing on disk records CPU seconds, and cells within an arm were launched within ~430 s of each other so runs overlapped."
+ },
+ "measured_3D_s_per_cell": {
+  "R151C": 204.0,
+  "R151S": 100.0,
+  "R151W": 139.8,
+  "R174W870": 170.6,
+  "R174W892": 451.0,
+  "R174W915": 215.9,
+  "R169W090": 187.0,
+  "R169W095": 200.7,
+  "R169S150": 47.4,
+  "R172S150": 24.7,
+  "R169S400": 5.3,
+  "R172S400": 7.6,
+  "overall_mean": 147.6,
+  "n_cells": 74
+ },
+ "measured_2D_s_per_cell": {
+  "SG0_DR2K000": 2533.1,
+  "SG0_DR2K050": 2647.8,
+  "SG0_PAR20": 1612.7,
+  "SG0_PAR40": 1504.8,
+  "SG0_CMW80": 1015.7,
+  "SG2_DR2K050": 1135.5,
+  "SG2_PAR40": 1154.6,
+  "overall_mean": 1646.1,
+  "n_cells": 90
+ },
+ "THE_INVERSION": {
+  "claim_tested": "2D first, 0.54x the cost",
+  "measured": "2D is 1646.1 s/cell against 3D 147.6 s/cell = 11.2x MORE expensive per cell",
+  "like_for_like": "both 90 generations, 91 history lines; 2D simulates 10 s per trial against 3D 20 s",
+  "per_generation_per_simulated_second": "2D is ~22x slower",
+  "cause": "2D runs ModelOpenSim4; 3D runs ModelHyfydy. The engine dominates, not the model size.",
+  "consequence": "3D is the CHEAP body in this corpus. A 2D-first plan costs about 8x more than the same design in 3D."
+ },
+ "cost_of_the_2x2": {
+  "design": "2 missing arms (plantarflexor weakness, dorsiflexor reflex) x 3 dose points x 6 seeds = 36 cells",
+  "3D_sequential_hours": 2.04,
+  "2D_sequential_hours": 16.461,
+  "note": "wall-clock at observed concurrency; destabilising arms cost less because trials terminate early"
+ }
+}

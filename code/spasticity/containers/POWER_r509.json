@@ -1,0 +1,35 @@
+{
+ "id": "POWER_r509",
+ "convention": "Spearman rank correlation. Fisher z transform, two-sided alpha 0.05, power 0.80, with the Bonett-Wright variance inflation (1 + rho^2/2). The SAME convention is applied to the back-calculated required n for observed coefficients and to the design targets; no figure in the manuscript mixes conventions.",
+ "formula": "n = (z_{alpha/2} + z_beta)^2 / atanh(rho)^2 * (1 + rho^2/2) + 3",
+ "detectable_at_n12": 0.7893,
+ "required_n_for_observed_coefficients": {
+  "initial contact": {
+   "rho": 0.362,
+   "n": 62
+  },
+  "loading response": {
+   "rho": 0.278,
+   "n": 104
+  },
+  "midstance": {
+   "rho": 0.35,
+   "n": 66
+  },
+  "terminal stance": {
+   "rho": 0.29,
+   "n": 95
+  },
+  "pre-swing": {
+   "rho": 0.065,
+   "n": 1860
+  }
+ },
+ "design_targets": {
+  "0.4": 51,
+  "0.35": 66,
+  "0.3": 89
+ },
+ "what_this_licenses": "that a 12-participant rank correlation could only have detected rho >= 0.79, so a null at that n does not distinguish 'no relationship' from 'a relationship of the size observed'.",
+ "what_this_does_NOT_license": "a sample size for the two-predictor regression section 4.3 proposes. These are bivariate figures and are a LOWER BOUND for that design. The predictor is also a five-level ordinal grade with heavy ties, which this continuous-data formula does not model; the manuscript says the study must be sized by simulation instead."
+}

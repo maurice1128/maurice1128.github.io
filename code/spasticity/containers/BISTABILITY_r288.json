@@ -1,0 +1,437 @@
+{
+ "round": 288,
+ "status": "POST-HOC, not registered",
+ "reads": "t_end only; no channel column is opened, so this cannot touch the r287 endpoint",
+ "claim": "Within-arm duration distributions are bimodal on several arms, with gaps wider than 1 s separating clusters. NO CRITERION for 'branch rather than gradient' is registered or deposited, is_split holds for only 2 of 5 arms, and the arm MEANS are monotone in severity apart from one inversion (17.278 / 13.698 / 9.350 / 10.157 / 6.658 s). The earlier claim that the lesion 'does not produce graded deterioration' is NOT SUPPORTED by these arm means and is withdrawn. r311 policy: the live field carries the TRUE statement; the superseded wording is preserved below it and is not the claim.",
+ "arms": [
+  {
+   "prefix": "R276WPF005",
+   "f": 0.05,
+   "cells": [
+    {
+     "seed": 101,
+     "t_end_s": 16.21
+    },
+    {
+     "seed": 102,
+     "t_end_s": 20.0
+    },
+    {
+     "seed": 103,
+     "t_end_s": 20.0
+    },
+    {
+     "seed": 104,
+     "t_end_s": 7.46
+    },
+    {
+     "seed": 105,
+     "t_end_s": 20.0
+    },
+    {
+     "seed": 106,
+     "t_end_s": 20.0
+    }
+   ],
+   "durations": [
+    16.21,
+    20.0,
+    20.0,
+    7.46,
+    20.0,
+    20.0
+   ],
+   "n": 6,
+   "n_short": 1,
+   "n_full": 4,
+   "n_in_band": 1,
+   "range": [
+    7.46,
+    20.0
+   ],
+   "is_split": true
+  },
+  {
+   "prefix": "R285BF007",
+   "f": 0.07,
+   "cells": [
+    {
+     "seed": 101,
+     "t_end_s": 19.74
+    },
+    {
+     "seed": 102,
+     "t_end_s": 7.93
+    },
+    {
+     "seed": 103,
+     "t_end_s": 7.16
+    },
+    {
+     "seed": 104,
+     "t_end_s": 7.36
+    },
+    {
+     "seed": 105,
+     "t_end_s": 20.0
+    },
+    {
+     "seed": 106,
+     "t_end_s": 20.0
+    }
+   ],
+   "durations": [
+    19.74,
+    7.93,
+    7.16,
+    7.36,
+    20.0,
+    20.0
+   ],
+   "n": 6,
+   "n_short": 3,
+   "n_full": 3,
+   "n_in_band": 0,
+   "range": [
+    7.16,
+    20.0
+   ],
+   "is_split": true
+  },
+  {
+   "prefix": "R285BF008",
+   "f": 0.08,
+   "cells": [
+    {
+     "seed": 101,
+     "t_end_s": 11.63
+    },
+    {
+     "seed": 102,
+     "t_end_s": 6.89
+    },
+    {
+     "seed": 103,
+     "t_end_s": 7.57
+    },
+    {
+     "seed": 104,
+     "t_end_s": 7.07
+    },
+    {
+     "seed": 105,
+     "t_end_s": 15.14
+    },
+    {
+     "seed": 106,
+     "t_end_s": 7.8
+    }
+   ],
+   "durations": [
+    11.63,
+    6.89,
+    7.57,
+    7.07,
+    15.14,
+    7.8
+   ],
+   "n": 6,
+   "n_short": 4,
+   "n_full": 0,
+   "n_in_band": 1,
+   "range": [
+    6.89,
+    15.14
+   ],
+   "is_split": false
+  },
+  {
+   "prefix": "R276WPF010",
+   "f": 0.1,
+   "cells": [
+    {
+     "seed": 101,
+     "t_end_s": 12.35
+    },
+    {
+     "seed": 102,
+     "t_end_s": 10.79
+    },
+    {
+     "seed": 103,
+     "t_end_s": 8.48
+    },
+    {
+     "seed": 104,
+     "t_end_s": 13.31
+    },
+    {
+     "seed": 105,
+     "t_end_s": 7.53
+    },
+    {
+     "seed": 106,
+     "t_end_s": 8.48
+    }
+   ],
+   "durations": [
+    12.35,
+    10.79,
+    8.48,
+    13.31,
+    7.53,
+    8.48
+   ],
+   "n": 6,
+   "n_short": 3,
+   "n_full": 0,
+   "n_in_band": 0,
+   "range": [
+    7.53,
+    13.31
+   ],
+   "is_split": false
+  },
+  {
+   "prefix": "R276WPF020",
+   "f": 0.2,
+   "cells": [
+    {
+     "seed": 101,
+     "t_end_s": 7.59
+    },
+    {
+     "seed": 102,
+     "t_end_s": 6.84
+    },
+    {
+     "seed": 103,
+     "t_end_s": 6.4
+    },
+    {
+     "seed": 104,
+     "t_end_s": 6.05
+    },
+    {
+     "seed": 105,
+     "t_end_s": 6.54
+    },
+    {
+     "seed": 106,
+     "t_end_s": 6.53
+    }
+   ],
+   "durations": [
+    7.59,
+    6.84,
+    6.4,
+    6.05,
+    6.54,
+    6.53
+   ],
+   "n": 6,
+   "n_short": 6,
+   "n_full": 0,
+   "n_in_band": 0,
+   "range": [
+    6.05,
+    7.59
+   ],
+   "is_split": false
+  }
+ ],
+ "n_cells": 30,
+ "all_durations_sorted": [
+  6.05,
+  6.4,
+  6.53,
+  6.54,
+  6.84,
+  6.89,
+  7.07,
+  7.16,
+  7.36,
+  7.46,
+  7.53,
+  7.57,
+  7.59,
+  7.8,
+  7.93,
+  8.48,
+  8.48,
+  10.79,
+  11.63,
+  12.35,
+  13.31,
+  15.14,
+  16.21,
+  19.74,
+  20.0,
+  20.0,
+  20.0,
+  20.0,
+  20.0,
+  20.0
+ ],
+ "histogram_1s_bins": [
+  {
+   "bin_s": [
+    6,
+    7
+   ],
+   "n": 6
+  },
+  {
+   "bin_s": [
+    7,
+    8
+   ],
+   "n": 9
+  },
+  {
+   "bin_s": [
+    8,
+    9
+   ],
+   "n": 2
+  },
+  {
+   "bin_s": [
+    9,
+    10
+   ],
+   "n": 0
+  },
+  {
+   "bin_s": [
+    10,
+    11
+   ],
+   "n": 1
+  },
+  {
+   "bin_s": [
+    11,
+    12
+   ],
+   "n": 1
+  },
+  {
+   "bin_s": [
+    12,
+    13
+   ],
+   "n": 1
+  },
+  {
+   "bin_s": [
+    13,
+    14
+   ],
+   "n": 1
+  },
+  {
+   "bin_s": [
+    14,
+    15
+   ],
+   "n": 0
+  },
+  {
+   "bin_s": [
+    15,
+    16
+   ],
+   "n": 1
+  },
+  {
+   "bin_s": [
+    16,
+    17
+   ],
+   "n": 1
+  },
+  {
+   "bin_s": [
+    17,
+    18
+   ],
+   "n": 0
+  },
+  {
+   "bin_s": [
+    18,
+    19
+   ],
+   "n": 0
+  },
+  {
+   "bin_s": [
+    19,
+    20
+   ],
+   "n": 1
+  },
+  {
+   "bin_s": [
+    20,
+    21
+   ],
+   "n": 6
+  }
+ ],
+ "gaps_wider_than_1s": [
+  {
+   "from": 8.48,
+   "to": 10.79,
+   "width_s": 2.3099999999999987
+  },
+  {
+   "from": 13.31,
+   "to": 15.14,
+   "width_s": 1.83
+  },
+  {
+   "from": 15.14,
+   "to": 16.21,
+   "width_s": 1.0700000000000003
+  },
+  {
+   "from": 16.21,
+   "to": 19.74,
+   "width_s": 3.5299999999999976
+  }
+ ],
+ "band": [
+  13.58,
+  17.85
+ ],
+ "guard_s": 9.73,
+ "CORRECTIONS_r308": {
+  "D22_n_full_miscount": {
+   "finding": "Arm R285BF007 has durations [19.74, 7.93, 7.16, 7.36, 20.0, 20.0] and this file records n_full = 3, but only TWO cells reach 20.0 s. R285BF007_s101 at 19.74 s does not complete under PREREG_matched20_r289.md sec3.",
+   "consequence": "Across the 30 cells this file counts 7 full where r298's completion rule gives 6. The counts are not interchangeable and this file's is the looser.",
+   "status": "Recorded, not silently recounted; the original n_full values are left in place.",
+   "IMPLIED_THRESHOLD_RECOVERED": "The threshold this file actually used is recoverable from its own data: it lies between 16.21 and 19.74 s, consistent with t_end >= 19. Under that threshold per-arm n_full is 4/3/0/0/0 = 7. Under PREREG_matched20_r289.md sec3 (completion at 20.0 s) the count is 6.",
+   "BOTH_COUNTS_DEPOSITED": {
+    "this_files_threshold_t_end_ge_19": 7,
+    "r289_completion_rule": 6
+   },
+   "n_short_IS_WELL_DEFINED": "n_short is correct and principled throughout this file: it is count(t_end < 9.73), the registered guard, giving 1/3/4/3/6 across the five arms. Only n_full used an undeclared threshold. This file should not be read as wholly unprincipled."
+  },
+  "D23_headline_has_no_criterion": {
+   "headline": "'does not produce graded deterioration; it produces a branch'",
+   "problem": "No criterion is registered or deposited for what counts as a branch rather than a gradient, and this file's own is_split flag is true for only 2 of 5 arms.",
+   "arm_means_from_this_files_own_durations": {
+    "f=0.05": 17.278,
+    "f=0.07": 13.698,
+    "f=0.08": 9.35,
+    "f=0.10": 10.157,
+    "f=0.20": 6.658
+   },
+   "what_those_means_show": "The arm means are MONOTONE IN SEVERITY apart from a single inversion between f=0.08 (9.350 s) and f=0.10 (10.157 s). A monotone dose-response is what 'graded deterioration' would look like, so the headline is not supported by the arm means and rests on the within-arm spread instead.",
+   "STATEMENT_REQUIRED_BY_THE_AUDIT": "This weakens a claim that has been repeated repeatedly in discussion. The bimodality within arms is real and visible in the durations; the leap from that to 'not graded' is not supported by these five arm means and is not backed by any registered criterion."
+  }
+ },
+ "claim_ORIGINAL_WRONG": "in this model plantarflexor weakness does not produce graded gait deterioration; it produces a branch. The seed picks which."
+}

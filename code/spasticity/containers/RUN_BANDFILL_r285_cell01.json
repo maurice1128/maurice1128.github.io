@@ -1,0 +1,24 @@
+{
+ "cell": 1,
+ "prefix": "R285BF007_s102",
+ "f": 0.07,
+ "scale": 0.9299999999999999,
+ "seed": 102,
+ "wall_clock_s": 233.7409245967865,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R285BF007_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102"
+ ],
+ "stdout_tail": "17:46:09 SCONE version 2.4.4.3333\n17:46:09 Successfully initialized OpenSim-3.3-2021-01-28\n17:46:09 Successfully initialized OpenSim-4.4\n17:46:10 Successfully initialized Hyfydy-1.12.6.1412\n17:46:10 Successfully initialized Hyfydy-1.12.6.1412-DBL\n",
+ "stderr_tail": "",
+ "status": "OK",
+ "result_dir": "R285BF007_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+ "terminal_objective": 64.7726,
+ "objective_gen0": 82.3426,
+ "descent_final_10_gens": 0.0,
+ "terminal_fitness_progress": 0.000271803,
+ "n_generations": 90,
+ "resolved_par": "0006_82.425_64.773.par",
+ "tie_break": "unique minimum",
+ "tied_files": []
+}

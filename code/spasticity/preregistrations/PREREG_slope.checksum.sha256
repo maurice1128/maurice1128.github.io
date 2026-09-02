@@ -1,0 +1,12 @@
+# MACHINE-CHECKABLE COMPANION. Verify from THIS directory:  sha256sum -c PREREG_slope.checksum.sha256
+#
+# The registration of record is the prose deposit PREREG_slope.sha256, which is NOT in
+# sha256sum format, is not edited by this file, and is not superseded by it. That deposit
+# states WHAT was verified and WHEN, and that text is itself the evidence; this file exists
+# only so that a standard checker can confirm the bytes have not moved since.
+# Where the two disagree about a digest, they must be reconciled by hand, not by regenerating
+# this file -- a companion regenerated from the live bytes would agree with anything.
+#
+# The documentation rule for registered instruments does not apply here: a checksum sidecar
+# is corpus-specific facts by construction. Do not strip the digest for being one.
+678eba3d43d15391feffe53cca3544349daacdb3253eb5b28f2cad55738530a2 *PREREG_slope.md

@@ -1,0 +1,517 @@
+{
+ "round": 290,
+ "prereg_r285": "c27a72650f7d2bb13eb6ae3d7f8b876124036270ef105a604bea92dcd73512ab",
+ "prereg_r287": "580ec8230a76c051e069f8a2d790dedd1199b95ac7b5fb1a1a509758570a4fcf",
+ "status": "CONFIRMATORY. Endpoint computed only after the r287 arm stopped on its registered coverage rule, which read t_end only.",
+ "endpoint": "knee_angle_LmR",
+ "band_s": [
+  13.58,
+  17.85
+ ],
+ "predicted": "weakness POSITIVE, spastic NEGATIVE, ranges disjoint",
+ "spastic_cells": [
+  {
+   "tag": "R151S_s101",
+   "dir": "R151S_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "t_end_s": 17.85,
+   "n_cycles": 13,
+   "n_cycles_in_window": 6,
+   "measured": true,
+   "knee_angle_LmR": -0.9495390806288526,
+   "hip_flexion_LmR": -2.032596426116342
+  },
+  {
+   "tag": "R151S_s102",
+   "dir": "R151S_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "t_end_s": 14.96,
+   "n_cycles": 12,
+   "n_cycles_in_window": 5,
+   "measured": true,
+   "knee_angle_LmR": -1.8889983057539084,
+   "hip_flexion_LmR": -1.2098920576659609
+  },
+  {
+   "tag": "R151S_s103",
+   "dir": "R151S_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "t_end_s": 13.58,
+   "n_cycles": 10,
+   "n_cycles_in_window": 5,
+   "measured": true,
+   "knee_angle_LmR": -0.2134542806604003,
+   "hip_flexion_LmR": -2.772393801611315
+  },
+  {
+   "tag": "R151S_s104",
+   "dir": "R151S_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "t_end_s": 16.94,
+   "n_cycles": 13,
+   "n_cycles_in_window": 5,
+   "measured": true,
+   "knee_angle_LmR": -1.174013440534857,
+   "hip_flexion_LmR": -1.683269788003031
+  },
+  {
+   "tag": "R151S_s105",
+   "dir": "R151S_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "t_end_s": 14.27,
+   "n_cycles": 11,
+   "n_cycles_in_window": 5,
+   "measured": true,
+   "knee_angle_LmR": -0.7150158049399593,
+   "hip_flexion_LmR": -2.346170497813503
+  },
+  {
+   "tag": "R151S_s106",
+   "dir": "R151S_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "t_end_s": 14.82,
+   "n_cycles": 11,
+   "n_cycles_in_window": 5,
+   "measured": true,
+   "knee_angle_LmR": -0.3975754140412846,
+   "hip_flexion_LmR": -2.5874430253430774
+  }
+ ],
+ "weakness_cells": [
+  {
+   "tag": "R276WPF005_s101",
+   "dir": "R276WPF005_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "t_end_s": 16.21,
+   "n_cycles": 12,
+   "n_cycles_in_window": 5,
+   "measured": true,
+   "knee_angle_LmR": 2.734690886860527,
+   "hip_flexion_LmR": -2.114833058451488
+  },
+  {
+   "tag": "R276WPF005_s102",
+   "dir": "R276WPF005_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "t_end_s": 20.0,
+   "n_cycles": 15,
+   "n_cycles_in_window": 6,
+   "measured": true,
+   "knee_angle_LmR": 1.0989340059905857,
+   "hip_flexion_LmR": -0.15361953417116325
+  },
+  {
+   "tag": "R276WPF005_s103",
+   "dir": "R276WPF005_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "t_end_s": 20.0,
+   "n_cycles": 15,
+   "n_cycles_in_window": 5,
+   "measured": true,
+   "knee_angle_LmR": 1.4863579448036646,
+   "hip_flexion_LmR": -0.5897798359958486
+  },
+  {
+   "tag": "R276WPF005_s104",
+   "dir": "R276WPF005_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "t_end_s": 7.46,
+   "n_cycles": 5,
+   "n_cycles_in_window": 4,
+   "measured": false,
+   "guard": "t_end 7.460 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R276WPF005_s105",
+   "dir": "R276WPF005_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "t_end_s": 20.0,
+   "n_cycles": 15,
+   "n_cycles_in_window": 5,
+   "measured": true,
+   "knee_angle_LmR": 0.5835219909574505,
+   "hip_flexion_LmR": 0.5158453621121879
+  },
+  {
+   "tag": "R276WPF005_s106",
+   "dir": "R276WPF005_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "t_end_s": 20.0,
+   "n_cycles": 15,
+   "n_cycles_in_window": 5,
+   "measured": true,
+   "knee_angle_LmR": 1.6896135767107268,
+   "hip_flexion_LmR": -0.8442533111252715
+  },
+  {
+   "tag": "R276WPF010_s101",
+   "dir": "R276WPF010_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "t_end_s": 12.35,
+   "n_cycles": 9,
+   "n_cycles_in_window": 6,
+   "measured": true,
+   "knee_angle_LmR": 3.717530656514235,
+   "hip_flexion_LmR": -4.49075725456612
+  },
+  {
+   "tag": "R276WPF010_s102",
+   "dir": "R276WPF010_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "t_end_s": 10.79,
+   "n_cycles": 8,
+   "n_cycles_in_window": 6,
+   "measured": true,
+   "knee_angle_LmR": 4.74012185602227,
+   "hip_flexion_LmR": -3.696733243480658
+  },
+  {
+   "tag": "R276WPF010_s103",
+   "dir": "R276WPF010_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "t_end_s": 8.48,
+   "n_cycles": 6,
+   "n_cycles_in_window": 5,
+   "measured": false,
+   "guard": "t_end 8.480 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R276WPF010_s104",
+   "dir": "R276WPF010_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "t_end_s": 13.31,
+   "n_cycles": 10,
+   "n_cycles_in_window": 5,
+   "measured": true,
+   "knee_angle_LmR": 4.234821591143557,
+   "hip_flexion_LmR": -3.239262731395719
+  },
+  {
+   "tag": "R276WPF010_s105",
+   "dir": "R276WPF010_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "t_end_s": 7.53,
+   "n_cycles": 5,
+   "n_cycles_in_window": 4,
+   "measured": false,
+   "guard": "t_end 7.530 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R276WPF010_s106",
+   "dir": "R276WPF010_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106 (1)",
+   "t_end_s": 8.48,
+   "n_cycles": 6,
+   "n_cycles_in_window": 5,
+   "measured": false,
+   "guard": "t_end 8.480 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R276WPF020_s101",
+   "dir": "R276WPF020_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "t_end_s": 7.59,
+   "n_cycles": 6,
+   "n_cycles_in_window": 5,
+   "measured": false,
+   "guard": "t_end 7.590 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R276WPF020_s102",
+   "dir": "R276WPF020_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "t_end_s": 6.84,
+   "n_cycles": 4,
+   "n_cycles_in_window": 3,
+   "measured": false,
+   "guard": "t_end 6.840 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R276WPF020_s103",
+   "dir": "R276WPF020_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "t_end_s": 6.4,
+   "n_cycles": 4,
+   "n_cycles_in_window": 3,
+   "measured": false,
+   "guard": "t_end 6.400 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R276WPF020_s104",
+   "dir": "R276WPF020_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "t_end_s": 6.05,
+   "n_cycles": 4,
+   "n_cycles_in_window": 3,
+   "measured": false,
+   "guard": "t_end 6.050 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R276WPF020_s105",
+   "dir": "R276WPF020_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "t_end_s": 6.54,
+   "n_cycles": 5,
+   "n_cycles_in_window": 4,
+   "measured": false,
+   "guard": "t_end 6.540 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R276WPF020_s106",
+   "dir": "R276WPF020_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "t_end_s": 6.53,
+   "n_cycles": 4,
+   "n_cycles_in_window": 3,
+   "measured": false,
+   "guard": "t_end 6.530 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R285BF007_s101",
+   "dir": "R285BF007_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "t_end_s": 19.74,
+   "n_cycles": 15,
+   "n_cycles_in_window": 6,
+   "measured": true,
+   "knee_angle_LmR": 1.922424281549958,
+   "hip_flexion_LmR": -0.6528281117720667
+  },
+  {
+   "tag": "R285BF007_s102",
+   "dir": "R285BF007_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "t_end_s": 7.93,
+   "n_cycles": 5,
+   "n_cycles_in_window": 4,
+   "measured": false,
+   "guard": "t_end 7.930 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R285BF007_s103",
+   "dir": "R285BF007_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "t_end_s": 7.16,
+   "n_cycles": 4,
+   "n_cycles_in_window": 3,
+   "measured": false,
+   "guard": "t_end 7.160 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R285BF007_s104",
+   "dir": "R285BF007_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "t_end_s": 7.36,
+   "n_cycles": 5,
+   "n_cycles_in_window": 4,
+   "measured": false,
+   "guard": "t_end 7.360 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R285BF007_s105",
+   "dir": "R285BF007_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "t_end_s": 20.0,
+   "n_cycles": 15,
+   "n_cycles_in_window": 6,
+   "measured": true,
+   "knee_angle_LmR": 2.1198559884554555,
+   "hip_flexion_LmR": -1.0898612193046802
+  },
+  {
+   "tag": "R285BF007_s106",
+   "dir": "R285BF007_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "t_end_s": 20.0,
+   "n_cycles": 15,
+   "n_cycles_in_window": 6,
+   "measured": true,
+   "knee_angle_LmR": 1.1534156077999143,
+   "hip_flexion_LmR": 0.24921754228873283
+  },
+  {
+   "tag": "R285BF008_s101",
+   "dir": "R285BF008_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "t_end_s": 11.63,
+   "n_cycles": 8,
+   "n_cycles_in_window": 5,
+   "measured": true,
+   "knee_angle_LmR": 3.7471485638179587,
+   "hip_flexion_LmR": -3.1093617400836564
+  },
+  {
+   "tag": "R285BF008_s102",
+   "dir": "R285BF008_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+   "t_end_s": 6.89,
+   "n_cycles": 4,
+   "n_cycles_in_window": 3,
+   "measured": false,
+   "guard": "t_end 6.890 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R285BF008_s103",
+   "dir": "R285BF008_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+   "t_end_s": 7.57,
+   "n_cycles": 5,
+   "n_cycles_in_window": 4,
+   "measured": false,
+   "guard": "t_end 7.570 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R285BF008_s104",
+   "dir": "R285BF008_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+   "t_end_s": 7.07,
+   "n_cycles": 5,
+   "n_cycles_in_window": 4,
+   "measured": false,
+   "guard": "t_end 7.070 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R285BF008_s105",
+   "dir": "R285BF008_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+   "t_end_s": 15.14,
+   "n_cycles": 11,
+   "n_cycles_in_window": 6,
+   "measured": true,
+   "knee_angle_LmR": 2.2638164091303707,
+   "hip_flexion_LmR": -0.8792323845179979
+  },
+  {
+   "tag": "R285BF008_s106",
+   "dir": "R285BF008_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+   "t_end_s": 7.8,
+   "n_cycles": 5,
+   "n_cycles_in_window": 4,
+   "measured": false,
+   "guard": "t_end 7.800 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R287BF007_s107",
+   "dir": "R287BF007_s107.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R107",
+   "t_end_s": 20.0,
+   "n_cycles": 15,
+   "n_cycles_in_window": 6,
+   "measured": true,
+   "knee_angle_LmR": 2.203603319510414,
+   "hip_flexion_LmR": -1.1842751146456578
+  },
+  {
+   "tag": "R287BF007_s108",
+   "dir": "R287BF007_s108.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R108",
+   "t_end_s": 9.93,
+   "n_cycles": 7,
+   "n_cycles_in_window": 6,
+   "measured": true,
+   "knee_angle_LmR": 3.4638755561022236,
+   "hip_flexion_LmR": -2.843513142861589
+  },
+  {
+   "tag": "R287BF007_s109",
+   "dir": "R287BF007_s109.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R109",
+   "t_end_s": 16.17,
+   "n_cycles": 12,
+   "n_cycles_in_window": 6,
+   "measured": true,
+   "knee_angle_LmR": 2.690958355259731,
+   "hip_flexion_LmR": -1.6087126999819787
+  },
+  {
+   "tag": "R287BF008_s107",
+   "dir": "R287BF008_s107.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R107",
+   "t_end_s": 7.17,
+   "n_cycles": 5,
+   "n_cycles_in_window": 4,
+   "measured": false,
+   "guard": "t_end 7.170 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  },
+  {
+   "tag": "R287BF008_s108",
+   "dir": "R287BF008_s108.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R108",
+   "t_end_s": 8.55,
+   "n_cycles": 6,
+   "n_cycles_in_window": 5,
+   "measured": false,
+   "guard": "t_end 8.550 < 9.73",
+   "knee_angle_LmR": null,
+   "hip_flexion_LmR": null
+  }
+ ],
+ "n_weakness_total": 35,
+ "n_weakness_in_band": 3,
+ "in_band": [
+  {
+   "tag": "R276WPF005_s101",
+   "t_end_s": 16.21,
+   "knee_angle_LmR": 2.734690886860527,
+   "hip_flexion_LmR": -2.114833058451488
+  },
+  {
+   "tag": "R285BF008_s105",
+   "t_end_s": 15.14,
+   "knee_angle_LmR": 2.2638164091303707,
+   "hip_flexion_LmR": -0.8792323845179979
+  },
+  {
+   "tag": "R287BF007_s109",
+   "t_end_s": 16.17,
+   "knee_angle_LmR": 2.690958355259731,
+   "hip_flexion_LmR": -1.6087126999819787
+  }
+ ],
+ "endpoint_evaluated": true,
+ "spastic_values": [
+  -0.9495390806288526,
+  -1.8889983057539084,
+  -0.2134542806604003,
+  -1.174013440534857,
+  -0.7150158049399593,
+  -0.3975754140412846
+ ],
+ "weakness_in_band_values": [
+  2.734690886860527,
+  2.2638164091303707,
+  2.690958355259731
+ ],
+ "ranges": {
+  "spastic": [
+   -1.8889983057539084,
+   -0.2134542806604003
+  ],
+  "weakness": [
+   2.2638164091303707,
+   2.734690886860527
+  ]
+ },
+ "disjoint": true,
+ "gap": 2.477270689790771,
+ "RUNG": "2 DISJOINT-AS-PREDICTED",
+ "permutation": {
+  "method": "exhaustive over C(9,6)",
+  "assignments": 84,
+  "count_ge_observed": 1,
+  "floor": 0.011904761904761904,
+  "note": "reported as a floor, never as a p-value"
+ },
+ "hip_secondary": {
+  "note": "deposited, NOT the endpoint, not promoted",
+  "spastic": [
+   -2.032596426116342,
+   -1.2098920576659609,
+   -2.772393801611315,
+   -1.683269788003031,
+   -2.346170497813503,
+   -2.5874430253430774
+  ],
+  "weakness_in_band": [
+   -2.114833058451488,
+   -0.8792323845179979,
+   -1.6087126999819787
+  ]
+ }
+}

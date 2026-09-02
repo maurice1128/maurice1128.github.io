@@ -1,0 +1,180 @@
+{
+  "round": "IC_KNEE_VS_ANKLE_r439",
+  "no_simulation_run": true,
+  "status": "EXPLORATORY. No registration. The contrast was chosen after observing that a stance-phase ankle result and an initial-contact ankle result disagreed. Must be confirmed on untouched material before carrying a confirmatory claim.",
+  "why": "the corpus asserted 'the ankle does not separate' for most of the project with no container; a cold audit then computed an ankle STANCE contrast, found it disjoint, and the assertion was withdrawn. Both statements were about different endpoints. This file measures both joints AT THE SAME INSTANT.",
+  "groups": {
+    "control": {
+      "n": 6,
+      "families": [
+        "R151C"
+      ]
+    },
+    "weakness_tib_ant": {
+      "n": 36,
+      "families": [
+        "R151W",
+        "R169W090",
+        "R169W095",
+        "R174W870",
+        "R174W892",
+        "R174W915"
+      ]
+    },
+    "spastic_plantarflexor": {
+      "n": 23,
+      "families": [
+        "R151S",
+        "R393SPg070",
+        "R393SPg100",
+        "R396SPg110",
+        "R396SPg120"
+      ]
+    }
+  },
+  "endpoints": {
+    "knee_ic": {
+      "joint": "knee",
+      "control": {
+        "n": 6,
+        "mean": -7.849999258121554,
+        "range": [
+          -8.239580001061439,
+          -7.587588407670272
+        ]
+      },
+      "weakness": {
+        "n": 36,
+        "mean": -6.491924781112322,
+        "range": [
+          -7.201048160763212,
+          -5.37492567048918
+        ]
+      },
+      "spastic": {
+        "n": 23,
+        "mean": -11.771846539823411,
+        "range": [
+          -14.565160110020656,
+          -8.692904208568947
+        ]
+      },
+      "displacement_from_control": {
+        "weakness": 1.3580744770092315,
+        "spastic": -3.921847281701857
+      },
+      "spastic_minus_weakness_deg": -5.2799217587110885,
+      "cohen_d_spastic_vs_weakness": -5.284346532955776,
+      "within_cell_seed_SD_deg": 0.4252536578528751,
+      "effect_in_seed_SDs": 12.4159349630751,
+      "clinical_SEM_single_measurement_deg": 2.7490579962456594,
+      "mean_cycles_averaged": 5.322033898305085,
+      "clinical_SEM_after_averaging_deg": 1.1916400304699832,
+      "effect_in_clinical_SEMs": 4.430802611279083
+    },
+    "ankle_ic": {
+      "joint": "ankle",
+      "control": {
+        "n": 6,
+        "mean": -0.6558163158567852,
+        "range": [
+          -0.7278396317190283,
+          -0.5755591381122762
+        ]
+      },
+      "weakness": {
+        "n": 36,
+        "mean": -1.5161309316228728,
+        "range": [
+          -2.240497026868547,
+          -0.7518487405746314
+        ]
+      },
+      "spastic": {
+        "n": 23,
+        "mean": -1.460217197555857,
+        "range": [
+          -3.374163734399955,
+          -0.20581408326797873
+        ]
+      },
+      "displacement_from_control": {
+        "weakness": -0.8603146157660876,
+        "spastic": -0.8044008816990719
+      },
+      "spastic_minus_weakness_deg": 0.05591373406701572,
+      "cohen_d_spastic_vs_weakness": 0.08094539990741295,
+      "within_cell_seed_SD_deg": 0.15252247348848963,
+      "effect_in_seed_SDs": 0.36659341268311746,
+      "clinical_SEM_single_measurement_deg": 2.5253813613805267,
+      "mean_cycles_averaged": 5.322033898305085,
+      "clinical_SEM_after_averaging_deg": 1.0946824426889608,
+      "effect_in_clinical_SEMs": 0.05107758367775599
+    },
+    "ankle_stance": {
+      "joint": "ankle",
+      "control": {
+        "n": 6,
+        "mean": 4.484938121587132,
+        "range": [
+          4.438821266367993,
+          4.513951513721978
+        ]
+      },
+      "weakness": {
+        "n": 36,
+        "mean": 4.520687396571682,
+        "range": [
+          4.408261744243689,
+          4.620029302843623
+        ]
+      },
+      "spastic": {
+        "n": 23,
+        "mean": 2.179083816419876,
+        "range": [
+          1.0985992170504462,
+          3.1263698737450953
+        ]
+      },
+      "displacement_from_control": {
+        "weakness": 0.03574927498454983,
+        "spastic": -2.305854305167256
+      },
+      "spastic_minus_weakness_deg": -2.341603580151806,
+      "cohen_d_spastic_vs_weakness": -5.611121407062117,
+      "within_cell_seed_SD_deg": 0.07096225499136909,
+      "effect_in_seed_SDs": 32.99787443953983,
+      "clinical_SEM_single_measurement_deg": 2.5253813613805267,
+      "mean_cycles_averaged": 5.322033898305085,
+      "clinical_SEM_after_averaging_deg": 1.0946824426889608,
+      "effect_in_clinical_SEMs": 2.139071103031421
+    }
+  },
+  "independence": {
+    "pearson_r_knee_ic_vs_ankle_ic": 0.1828645965878498,
+    "within_group_centred_r": 0.6188973403307056,
+    "reading": "a low raw correlation means the two endpoints are not redundant; the knee is not a mirror of the ankle."
+  },
+  "classification_LOO": {
+    "knee_ic_only": 0.9830508474576272,
+    "ankle_ic_only": 0.5084745762711864,
+    "both": 1.0,
+    "n": 59,
+    "note": "leave-one-out, nearest-centroid with pooled covariance; cells share optimisation lineages so effective n is below the cell count and no p-value is reported"
+  },
+  "READING": {
+    "at_initial_contact_the_ankle_is_the_SAME_for_both_lesions": "weakness displaces the ankle -0.860 deg from control and spasticity -0.804 deg -- a difference of 0.056 deg between the two lesions, d = +0.081, and leave-one-out classification on that endpoint alone is 50.8%, i.e. chance.",
+    "the_mechanical_reading": "both lesions plantarflex the foot at contact -- spasticity actively through plantarflexor overactivity, dorsiflexor weakness passively through foot drop. Different causes, the same angle.",
+    "at_the_same_instant_the_knee_moves_in_OPPOSITE_directions": "weakness +1.358 deg, spasticity -3.922 deg from control; the two lesions differ by 5.280 deg, d = -5.284, and classify at 98.3%.",
+    "ratio_of_the_two_contrasts": 94.4297827146155,
+    "the_ankle_DOES_separate_but_LATER": "over stance the ankle separates (2.342 deg, 33.0 seed SD) because dorsiflexor weakness is a SWING problem that resolves once the foot is loaded, while spastic plantarflexors keep acting through stance. The instant matters.",
+    "candidate_anatomical_account": "gastrocnemius spans knee AND ankle; soleus and tibialis anterior span the ankle only. The ankle therefore sums three muscles while the knee sees only the biarticular one. THIS IS AN INTERPRETATION, NOT A RESULT -- SPANNING_RESULT_r421 tested the spanning rule at single-muscle level and it failed at the hip, so joint-level anatomical inference is not reliable in this system.",
+    "what_this_does_not_establish": [
+      "exploratory: the contrast was chosen after seeing the stance/contact disagreement",
+      "one model, six seeds from one control optimisation, cells share lineages",
+      "no patients; no contracture arm; both lesions have severity ceilings",
+      "the clinical SEM figures are back-derived from published MDCs in other cohorts and are extrapolations, as KNEE_MDC_BATCHNULL_r399 records"
+    ]
+  }
+}

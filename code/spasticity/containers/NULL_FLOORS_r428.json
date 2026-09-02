@@ -1,0 +1,364 @@
+{
+  "round": "NULL_FLOORS_r428",
+  "no_simulation_run": true,
+  "method": "identical to KNEE_MDC_BATCHNULL_r399: the largest edge gap between two families that share a MECHANISM is noise by construction, and is the floor any between-mechanism claim on that endpoint must beat.",
+  "window": "SETTLE 1.00 s, T1 9.73 s, cycles wholly inside, last kept cycle dropped, >= 5 required, stance = leg0_l.grf_norm_y > 0.05, terminal swing = last 15%",
+  "groups": {
+    "dorsiflexor_weakness": {
+      "R151W": {
+        "n": 6
+      },
+      "R169W090": {
+        "n": 6
+      },
+      "R169W095": {
+        "n": 6
+      },
+      "R174W870": {
+        "n": 6
+      },
+      "R174W892": {
+        "n": 6
+      },
+      "R174W915": {
+        "n": 6
+      }
+    },
+    "spastic_plantarflexor": {
+      "R151S": {
+        "n": 6
+      },
+      "R393SPg070": {
+        "n": 6
+      },
+      "R393SPg100": {
+        "n": 4
+      },
+      "R396SPg110": {
+        "n": 4
+      }
+    }
+  },
+  "floors": {
+    "ANKLE_st_deg": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 1.2019214269747,
+      "largest_pair": "R151S|R396SPg110",
+      "group": "spastic_plantarflexor",
+      "median_null_edge_gap": 0.0,
+      "n_pairs_with_nonzero_gap": 6,
+      "separation_rate": 0.2857142857142857
+    },
+    "GASDRIVE_stance": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 0.007371488100197943,
+      "largest_pair": "R151S|R396SPg110",
+      "group": "spastic_plantarflexor",
+      "median_null_edge_gap": 0.0,
+      "n_pairs_with_nonzero_gap": 4,
+      "separation_rate": 0.19047619047619047
+    },
+    "GASDRIVE_swing": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 0.0,
+      "largest_pair": "R393SPg100|R396SPg110",
+      "group": "spastic_plantarflexor",
+      "median_null_edge_gap": 0.0,
+      "n_pairs_with_nonzero_gap": 0,
+      "separation_rate": 0.0
+    },
+    "GASLEN_norm_stance": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 0.008882331010430233,
+      "largest_pair": "R151S|R396SPg110",
+      "group": "spastic_plantarflexor",
+      "median_null_edge_gap": 0.0,
+      "n_pairs_with_nonzero_gap": 5,
+      "separation_rate": 0.23809523809523808
+    },
+    "GASLEN_norm_swing": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 0.06486749086188992,
+      "largest_pair": "R151S|R396SPg110",
+      "group": "spastic_plantarflexor",
+      "median_null_edge_gap": 0.0013828833333332513,
+      "n_pairs_with_nonzero_gap": 13,
+      "separation_rate": 0.6190476190476191
+    },
+    "HIP_ic_deg": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 0.12437767816699363,
+      "largest_pair": "R151S|R393SPg070",
+      "group": "spastic_plantarflexor",
+      "median_null_edge_gap": 0.0,
+      "n_pairs_with_nonzero_gap": 1,
+      "separation_rate": 0.047619047619047616
+    },
+    "KNEE_ic_deg": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 1.5732924490869955,
+      "largest_pair": "R151S|R396SPg110",
+      "group": "spastic_plantarflexor",
+      "median_null_edge_gap": 0.0,
+      "n_pairs_with_nonzero_gap": 8,
+      "separation_rate": 0.38095238095238093
+    },
+    "KNEE_sw_min_deg": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 0.6789167900436865,
+      "largest_pair": "R151S|R396SPg110",
+      "group": "spastic_plantarflexor",
+      "median_null_edge_gap": 0.0,
+      "n_pairs_with_nonzero_gap": 3,
+      "separation_rate": 0.14285714285714285
+    },
+    "KTQ_tsw": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 0.5684708770474813,
+      "largest_pair": "R151S|R393SPg100",
+      "group": "spastic_plantarflexor",
+      "median_null_edge_gap": 0.0,
+      "n_pairs_with_nonzero_gap": 5,
+      "separation_rate": 0.23809523809523808
+    },
+    "SOLDRIVE_stance": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 0.026905799458061347,
+      "largest_pair": "R151S|R396SPg110",
+      "group": "spastic_plantarflexor",
+      "median_null_edge_gap": 0.0,
+      "n_pairs_with_nonzero_gap": 6,
+      "separation_rate": 0.2857142857142857
+    },
+    "SOLDRIVE_swing": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 0.004917036111111099,
+      "largest_pair": "R151W|R169W095",
+      "group": "dorsiflexor_weakness",
+      "median_null_edge_gap": 0.000313716666666658,
+      "n_pairs_with_nonzero_gap": 12,
+      "separation_rate": 0.5714285714285714
+    },
+    "SOLLEN_norm_stance": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 0.02680330733942493,
+      "largest_pair": "R151S|R396SPg110",
+      "group": "spastic_plantarflexor",
+      "median_null_edge_gap": 0.0,
+      "n_pairs_with_nonzero_gap": 6,
+      "separation_rate": 0.2857142857142857
+    },
+    "SOLLEN_norm_swing": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 0.043052661621397426,
+      "largest_pair": "R151S|R396SPg110",
+      "group": "spastic_plantarflexor",
+      "median_null_edge_gap": 0.003082033333333345,
+      "n_pairs_with_nonzero_gap": 13,
+      "separation_rate": 0.6190476190476191
+    },
+    "TADRIVE_stance": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 0.002182965070422538,
+      "largest_pair": "R151W|R169W095",
+      "group": "dorsiflexor_weakness",
+      "median_null_edge_gap": 0.0,
+      "n_pairs_with_nonzero_gap": 10,
+      "separation_rate": 0.47619047619047616
+    },
+    "TADRIVE_swing": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 0.03613950261887647,
+      "largest_pair": "R151S|R396SPg110",
+      "group": "spastic_plantarflexor",
+      "median_null_edge_gap": 0.0,
+      "n_pairs_with_nonzero_gap": 6,
+      "separation_rate": 0.2857142857142857
+    },
+    "TALEN_norm_stance": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 0.009805482682799904,
+      "largest_pair": "R151S|R396SPg110",
+      "group": "spastic_plantarflexor",
+      "median_null_edge_gap": 0.0,
+      "n_pairs_with_nonzero_gap": 6,
+      "separation_rate": 0.2857142857142857
+    },
+    "TALEN_norm_swing": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 0.01164567735042743,
+      "largest_pair": "R151S|R396SPg110",
+      "group": "spastic_plantarflexor",
+      "median_null_edge_gap": 0.0009640828141224134,
+      "n_pairs_with_nonzero_gap": 11,
+      "separation_rate": 0.5238095238095238
+    },
+    "t_end_s": {
+      "n_pairs": 21,
+      "largest_null_edge_gap": 2.4700000000000006,
+      "largest_pair": "R151S|R396SPg110",
+      "group": "spastic_plantarflexor",
+      "median_null_edge_gap": 0.0,
+      "n_pairs_with_nonzero_gap": 4,
+      "separation_rate": 0.19047619047619047
+    }
+  },
+  "cross_check_against_r399": {
+    "r399_knee_floor_deg": 0.5697331886598267,
+    "r428_KNEE_ic_floor_deg": 1.5732924490869955,
+    "note": "r399 used only the dorsiflexor-weakness families; r428 pools weakness AND spastic families, so its floor is expected to be at least as large. The LARGER value is the one a claim must beat."
+  },
+  "FLOORS_FINAL_r428": {
+    "grouping": "six dorsiflexor-weakness families, x0.80-0.95: same mechanism, similar severity. The spastic families are NOT pooled -- they differ in KV, and a dose difference is a real effect, not noise. That error inflated the first pass of this round.",
+    "statistic": "largest_mean_difference is the floor to use. largest_edge_gap is reported too but collapses to 0.0000 whenever every pair overlaps, which makes it uninformative rather than strict on tightly-controlled endpoints such as ankle angle.",
+    "per_endpoint": {
+      "ANKLE_st_deg": {
+        "largest_mean_difference": 0.06902210340739501,
+        "largest_edge_gap": 0.0,
+        "family_mean_SD": 0.02432406442146895,
+        "mean_within_family_SD": 0.05521558123067139,
+        "n_families": 6,
+        "n_pairs": 15
+      },
+      "GASDRIVE_stance": {
+        "largest_mean_difference": 0.008881048409343395,
+        "largest_edge_gap": 0.000348795371894306,
+        "family_mean_SD": 0.0031397981628155714,
+        "mean_within_family_SD": 0.0022867186509083364,
+        "n_families": 6,
+        "n_pairs": 15
+      },
+      "GASDRIVE_swing": {
+        "largest_mean_difference": 0.002583144135802469,
+        "largest_edge_gap": 0.0,
+        "family_mean_SD": 0.0008973243695699213,
+        "mean_within_family_SD": 0.002010880974314629,
+        "n_families": 6,
+        "n_pairs": 15
+      },
+      "GASLEN_norm_stance": {
+        "largest_mean_difference": 0.006538389979792281,
+        "largest_edge_gap": 0.0,
+        "family_mean_SD": 0.002237813289457842,
+        "mean_within_family_SD": 0.0017468473877003774,
+        "n_families": 6,
+        "n_pairs": 15
+      },
+      "GASLEN_norm_swing": {
+        "largest_mean_difference": 0.01016527808641976,
+        "largest_edge_gap": 0.007734138888888742,
+        "family_mean_SD": 0.0035111465991185128,
+        "mean_within_family_SD": 0.0014487332003580427,
+        "n_families": 6,
+        "n_pairs": 15
+      },
+      "HIP_ic_deg": {
+        "largest_mean_difference": 0.6127306154094825,
+        "largest_edge_gap": 0.0,
+        "family_mean_SD": 0.2280542499350519,
+        "mean_within_family_SD": 0.274962562970785,
+        "n_families": 6,
+        "n_pairs": 15
+      },
+      "KNEE_ic_deg": {
+        "largest_mean_difference": 1.0974513822027099,
+        "largest_edge_gap": 0.5697331886598267,
+        "family_mean_SD": 0.3770677793224923,
+        "mean_within_family_SD": 0.2687743139244994,
+        "n_families": 6,
+        "n_pairs": 15
+      },
+      "KNEE_sw_min_deg": {
+        "largest_mean_difference": 0.32782416868182906,
+        "largest_edge_gap": 0.0,
+        "family_mean_SD": 0.11978756292679964,
+        "mean_within_family_SD": 0.15362391581808824,
+        "n_families": 6,
+        "n_pairs": 15
+      },
+      "KTQ_tsw": {
+        "largest_mean_difference": 0.06841339197530694,
+        "largest_edge_gap": 0.0,
+        "family_mean_SD": 0.02519129365352633,
+        "mean_within_family_SD": 0.046489176363808477,
+        "n_families": 6,
+        "n_pairs": 15
+      },
+      "SOLDRIVE_stance": {
+        "largest_mean_difference": 0.001869318568349182,
+        "largest_edge_gap": 0.0,
+        "family_mean_SD": 0.0007534619030970008,
+        "mean_within_family_SD": 0.001531489387975547,
+        "n_families": 6,
+        "n_pairs": 15
+      },
+      "SOLDRIVE_swing": {
+        "largest_mean_difference": 0.006888906388888887,
+        "largest_edge_gap": 0.004917036111111099,
+        "family_mean_SD": 0.0023521232531275096,
+        "mean_within_family_SD": 0.0009290172269015951,
+        "n_families": 6,
+        "n_pairs": 15
+      },
+      "SOLLEN_norm_stance": {
+        "largest_mean_difference": 0.0010446060763479315,
+        "largest_edge_gap": 0.0,
+        "family_mean_SD": 0.00033890996168656597,
+        "mean_within_family_SD": 0.000722193806948086,
+        "n_families": 6,
+        "n_pairs": 15
+      },
+      "SOLLEN_norm_swing": {
+        "largest_mean_difference": 0.02130080617283947,
+        "largest_edge_gap": 0.01267168888888881,
+        "family_mean_SD": 0.007362750347939589,
+        "mean_within_family_SD": 0.0026839599545893825,
+        "n_families": 6,
+        "n_pairs": 15
+      },
+      "TADRIVE_stance": {
+        "largest_mean_difference": 0.004613281846330669,
+        "largest_edge_gap": 0.002182965070422538,
+        "family_mean_SD": 0.0015473461155119008,
+        "mean_within_family_SD": 0.0006672293595946351,
+        "n_families": 6,
+        "n_pairs": 15
+      },
+      "TADRIVE_swing": {
+        "largest_mean_difference": 0.0020109161728395497,
+        "largest_edge_gap": 0.0,
+        "family_mean_SD": 0.0007470523704941846,
+        "mean_within_family_SD": 0.0013720451516242027,
+        "n_families": 6,
+        "n_pairs": 15
+      },
+      "TALEN_norm_stance": {
+        "largest_mean_difference": 0.0006538807598180929,
+        "largest_edge_gap": 0.0,
+        "family_mean_SD": 0.0002151935311677999,
+        "mean_within_family_SD": 0.00044942951467319024,
+        "n_families": 6,
+        "n_pairs": 15
+      },
+      "TALEN_norm_swing": {
+        "largest_mean_difference": 0.010622048148148155,
+        "largest_edge_gap": 0.005596366666666963,
+        "family_mean_SD": 0.0037025976730072564,
+        "mean_within_family_SD": 0.0014841741688785322,
+        "n_families": 6,
+        "n_pairs": 15
+      },
+      "t_end_s": {
+        "largest_mean_difference": 0.0,
+        "largest_edge_gap": 0.0,
+        "family_mean_SD": 0.0,
+        "mean_within_family_SD": 0.0,
+        "n_families": 6,
+        "n_pairs": 15
+      }
+    }
+  },
+  "HOW_TO_USE": "divide any between-mechanism difference by the floor FOR ITS OWN ENDPOINT. Applying the knee floor to the ankle is what produced the withdrawn CORRECTION_r427 in SPANNING_RESULT_r421.json.",
+  "SUPERSEDED_r436": "the family-based floors in this file are CONFOUNDED: the six dorsiflexor-weakness families differ in weakness depth AND in optimisation round, and the two are collinear. For KNEE_ic the family spread is 101% accounted for by weakness depth (r = -0.9966), so it is a dose-response curve, not a noise floor. Use the within-cell seed SD instead; see FLOOR_CORRECTION_r436.json. Every endpoint in this file needs the same re-derivation before being quoted.",
+  "UNREGISTERED_OR_SUPERSEDED_LABEL_r438": "SUPERSEDED for KNEE_ic by FLOOR_CORRECTION_r436, and every other endpoint in this file needs the same re-derivation before being quoted. Files still carrying its floors unamended: SPANNING_RESULT_r421 (ankle 0.069, hip 0.6127), MEDIATION_RESULT_r431, MIXED_RESULT_r424, TERMINALSWING_RESULT_r408, MECHANISM_SCOREBOARD_r430, SHANKVEL_r430."
+}

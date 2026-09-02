@@ -1,0 +1,56 @@
+{
+ "round": 311,
+ "INVENTORY_COUNT_IS_STALE": {
+  "manuscript_claims": "20 deposits cited, all present.",
+  "measured_now": {
+   "distinct_json_deposits_cited_in_manuscript": 40,
+   "present_on_disk": 40,
+   "missing_from_disk": [],
+   "entries_in_DEPOSIT_INVENTORY_r246": 20
+  },
+  "finding": "The manuscript's count of 20 is STALE. 40 distinct json deposits are cited by name and the inventory holds 20 entries.",
+  "why_not_regenerated": "gen_inventory_r246.py was NOT re-run. DEPOSIT_INVENTORY_r246.json is the subject of the manifest violation recorded in MANIFEST_VIOLATION_r311.json -- BODY2_HASHES_r229.json attests it unchanged and it has changed. Regenerating it now would overwrite the attested target a second time and destroy what little comparison remains. The count is declared stale instead.",
+  "all_cited_deposits_present": true
+ },
+ "VERIFY_F5_UNCONTAINED_NUMBERS": {
+  "claim_in_manuscript": "Five numbers in sec9 and sec6b cite VERIFY_F5_r231.json as their container: 1071, 0.1458, 0.6569, 0.1246, 0.2793.",
+  "checked_by_parsing_the_cited_file": {
+   "1071": false,
+   "0.1458": false,
+   "0.6569": false,
+   "0.1246": false,
+   "0.2793": false
+  },
+  "finding": "NONE of the five appears in VERIFY_F5_r231.json. The citation is wrong for all five.",
+  "where_they_actually_occur": {
+   "1071": [
+    "BODY2_CONVENTION_r229.json",
+    "CHANNELS_G2_r219.json",
+    "DEPTH_STEP2_r212.json",
+    "FROZEN_MANIFEST.json",
+    "METRIC_r255.json",
+    "OPTDIST_r233.json"
+   ],
+   "0.1458": [
+    "METRIC_r255.json",
+    "PHASE_r258.json"
+   ],
+   "0.6569": [
+    "METRIC_r255.json",
+    "PHASE_r258.json"
+   ],
+   "0.1246": [
+    "PHASE_r258.json",
+    "VIDEO_DEGRADATION_A5.json"
+   ],
+   "0.2793": [
+    "METRIC_r255.json",
+    "PHASE_r258.json",
+    "VIDEO_DEGRADATION_A5.json"
+   ]
+  },
+  "what_IS_correctly_contained": "The '0 clipped' count IS in VERIFY_F5_r231.json and is correct. The file is not empty or wrong -- it simply does not contain these five quantities.",
+  "status": "UNCONTAINED unless a carrier above is confirmed as the intended source. Recorded rather than repaired, because guessing a container would manufacture provenance."
+ },
+ "written_at": "2026-08-18T03:21:14"
+}

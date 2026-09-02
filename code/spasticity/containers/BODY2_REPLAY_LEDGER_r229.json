@@ -1,0 +1,425 @@
+{
+ "provenance": {
+  "script": "body2_replay_r229.py",
+  "script_sha256": "3b710e355e78db06d5b4bed0b7119b680c83befc6567bf508f4bdbf12fc8b445",
+  "script_bytes": 8845,
+  "prereg": "PREREG_2ndbody_r229.md",
+  "prereg_sha256": "d61d6f8237c603e456a9d9e69752794a3ed8a26d838bce64b6c50088a5138570",
+  "prereg_bytes": 25839,
+  "scope": "baseline forward only (defect register #534, #539)"
+ },
+ "note": "every attempt including failures (#205); field3=best_fitness",
+ "fit_gate": 1.5,
+ "attempts": [
+  {
+   "family": "SG2_DR2K075",
+   "seed": 116,
+   "par": "0059_0.881_0.744.par",
+   "best_fitness_field3": 0.744,
+   "generation": 59,
+   "outcome": "ok",
+   "sto_bytes": 3071490,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_DR2K200",
+   "seed": 101,
+   "par": "0088_61.724_0.850.par",
+   "best_fitness_field3": 0.85,
+   "generation": 88,
+   "outcome": "ok",
+   "sto_bytes": 3070984,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_DR2K200",
+   "seed": 102,
+   "par": "0064_15.731_0.857.par",
+   "best_fitness_field3": 0.857,
+   "generation": 64,
+   "outcome": "ok",
+   "sto_bytes": 3071276,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_DR2K200",
+   "seed": 103,
+   "par": "0074_6.314_0.810.par",
+   "best_fitness_field3": 0.81,
+   "generation": 74,
+   "outcome": "ok",
+   "sto_bytes": 3069190,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_DR2K200",
+   "seed": 104,
+   "par": "0085_10.822_0.846.par",
+   "best_fitness_field3": 0.846,
+   "generation": 85,
+   "outcome": "ok",
+   "sto_bytes": 3067251,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR20",
+   "seed": 101,
+   "par": "0086_0.811_0.665.par",
+   "best_fitness_field3": 0.665,
+   "generation": 86,
+   "outcome": "ok",
+   "sto_bytes": 3029683,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR20",
+   "seed": 102,
+   "par": "0085_0.722_0.622.par",
+   "best_fitness_field3": 0.622,
+   "generation": 85,
+   "outcome": "ok",
+   "sto_bytes": 3033103,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR20",
+   "seed": 103,
+   "par": "0089_59.954_0.651.par",
+   "best_fitness_field3": 0.651,
+   "generation": 89,
+   "outcome": "ok",
+   "sto_bytes": 3038586,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR20",
+   "seed": 104,
+   "par": "0087_3.242_0.616.par",
+   "best_fitness_field3": 0.616,
+   "generation": 87,
+   "outcome": "ok",
+   "sto_bytes": 3036263,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR20",
+   "seed": 105,
+   "par": "0081_0.729_0.640.par",
+   "best_fitness_field3": 0.64,
+   "generation": 81,
+   "outcome": "ok",
+   "sto_bytes": 3034532,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR20",
+   "seed": 106,
+   "par": "0086_0.694_0.626.par",
+   "best_fitness_field3": 0.626,
+   "generation": 86,
+   "outcome": "ok",
+   "sto_bytes": 3022629,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR20",
+   "seed": 107,
+   "par": "0070_0.748_0.655.par",
+   "best_fitness_field3": 0.655,
+   "generation": 70,
+   "outcome": "ok",
+   "sto_bytes": 3032408,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR20",
+   "seed": 108,
+   "par": "0079_36.584_0.649.par",
+   "best_fitness_field3": 0.649,
+   "generation": 79,
+   "outcome": "ok",
+   "sto_bytes": 3026801,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR20",
+   "seed": 109,
+   "par": "0089_35.372_0.646.par",
+   "best_fitness_field3": 0.646,
+   "generation": 89,
+   "outcome": "ok",
+   "sto_bytes": 3030755,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR20",
+   "seed": 110,
+   "par": "0089_8.895_0.666.par",
+   "best_fitness_field3": 0.666,
+   "generation": 89,
+   "outcome": "ok",
+   "sto_bytes": 3036261,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR20",
+   "seed": 111,
+   "par": "0082_0.739_0.592.par",
+   "best_fitness_field3": 0.592,
+   "generation": 82,
+   "outcome": "ok",
+   "sto_bytes": 3047758,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR20",
+   "seed": 112,
+   "par": "0081_0.693_0.630.par",
+   "best_fitness_field3": 0.63,
+   "generation": 81,
+   "outcome": "ok",
+   "sto_bytes": 3027797,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR20",
+   "seed": 113,
+   "par": "0084_0.733_0.630.par",
+   "best_fitness_field3": 0.63,
+   "generation": 84,
+   "outcome": "ok",
+   "sto_bytes": 3030439,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR20",
+   "seed": 114,
+   "par": "0085_0.691_0.574.par",
+   "best_fitness_field3": 0.574,
+   "generation": 85,
+   "outcome": "ok",
+   "sto_bytes": 3043949,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR20",
+   "seed": 115,
+   "par": "0082_0.778_0.700.par",
+   "best_fitness_field3": 0.7,
+   "generation": 82,
+   "outcome": "ok",
+   "sto_bytes": 3024102,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR20",
+   "seed": 116,
+   "par": "0089_0.683_0.636.par",
+   "best_fitness_field3": 0.636,
+   "generation": 89,
+   "outcome": "ok",
+   "sto_bytes": 3030803,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR40",
+   "seed": 101,
+   "par": "0089_37.373_0.645.par",
+   "best_fitness_field3": 0.645,
+   "generation": 89,
+   "outcome": "ok",
+   "sto_bytes": 3035311,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR40",
+   "seed": 102,
+   "par": "0088_0.782_0.647.par",
+   "best_fitness_field3": 0.647,
+   "generation": 88,
+   "outcome": "ok",
+   "sto_bytes": 3040508,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR40",
+   "seed": 103,
+   "par": "0052_0.729_0.638.par",
+   "best_fitness_field3": 0.638,
+   "generation": 52,
+   "outcome": "ok",
+   "sto_bytes": 3029352,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR40",
+   "seed": 104,
+   "par": "0086_0.771_0.651.par",
+   "best_fitness_field3": 0.651,
+   "generation": 86,
+   "outcome": "ok",
+   "sto_bytes": 3040755,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR40",
+   "seed": 105,
+   "par": "0085_0.703_0.634.par",
+   "best_fitness_field3": 0.634,
+   "generation": 85,
+   "outcome": "ok",
+   "sto_bytes": 3033654,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR40",
+   "seed": 106,
+   "par": "0080_0.729_0.671.par",
+   "best_fitness_field3": 0.671,
+   "generation": 80,
+   "outcome": "ok",
+   "sto_bytes": 3035492,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR40",
+   "seed": 107,
+   "par": "0061_10.093_0.666.par",
+   "best_fitness_field3": 0.666,
+   "generation": 61,
+   "outcome": "ok",
+   "sto_bytes": 3031127,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR40",
+   "seed": 108,
+   "par": "0083_0.833_0.659.par",
+   "best_fitness_field3": 0.659,
+   "generation": 83,
+   "outcome": "ok",
+   "sto_bytes": 3039861,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR40",
+   "seed": 109,
+   "par": "0088_3.604_0.579.par",
+   "best_fitness_field3": 0.579,
+   "generation": 88,
+   "outcome": "ok",
+   "sto_bytes": 3039323,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR40",
+   "seed": 110,
+   "par": "0084_13.338_0.632.par",
+   "best_fitness_field3": 0.632,
+   "generation": 84,
+   "outcome": "ok",
+   "sto_bytes": 3035810,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR40",
+   "seed": 111,
+   "par": "0059_4.128_0.614.par",
+   "best_fitness_field3": 0.614,
+   "generation": 59,
+   "outcome": "ok",
+   "sto_bytes": 3033338,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR40",
+   "seed": 112,
+   "par": "0081_0.710_0.672.par",
+   "best_fitness_field3": 0.672,
+   "generation": 81,
+   "outcome": "ok",
+   "sto_bytes": 3030605,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR40",
+   "seed": 113,
+   "par": "0079_22.745_0.649.par",
+   "best_fitness_field3": 0.649,
+   "generation": 79,
+   "outcome": "ok",
+   "sto_bytes": 3025393,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR40",
+   "seed": 114,
+   "par": "0082_0.685_0.659.par",
+   "best_fitness_field3": 0.659,
+   "generation": 82,
+   "outcome": "ok",
+   "sto_bytes": 3031290,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR40",
+   "seed": 115,
+   "par": "0062_35.793_0.632.par",
+   "best_fitness_field3": 0.632,
+   "generation": 62,
+   "outcome": "ok",
+   "sto_bytes": 3032940,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_PAR40",
+   "seed": 116,
+   "par": "0088_0.775_0.638.par",
+   "best_fitness_field3": 0.638,
+   "generation": 88,
+   "outcome": "ok",
+   "sto_bytes": 3028413,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_CMW80",
+   "seed": 101,
+   "par": "0069_29.182_1.021.par",
+   "best_fitness_field3": 1.021,
+   "generation": 69,
+   "outcome": "ok",
+   "sto_bytes": 3037763,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_CMW80",
+   "seed": 102,
+   "par": "0088_26.908_1.147.par",
+   "best_fitness_field3": 1.147,
+   "generation": 88,
+   "outcome": "ok",
+   "sto_bytes": 3036222,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_CMW80",
+   "seed": 103,
+   "par": "0064_40.612_1.040.par",
+   "best_fitness_field3": 1.04,
+   "generation": 64,
+   "outcome": "ok",
+   "sto_bytes": 3036963,
+   "ts": "2026-08-17T04:17:08"
+  },
+  {
+   "family": "SG2_CMW80",
+   "seed": 104,
+   "par": "0071_59.247_1.154.par",
+   "best_fitness_field3": 1.154,
+   "generation": 71,
+   "outcome": "ok",
+   "sto_bytes": 3036168,
+   "ts": "2026-08-17T04:17:08"
+  }
+ ]
+}

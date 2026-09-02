@@ -1,0 +1,49 @@
+{
+ "what": "For each severity, the number of the 924 label assignments in which EACH channel reaches the observed hip_flexion_LmR gap. Answers whether any channel other than hip_flexion_LmR ever reaches it, which familywise+hip-only counts cannot.",
+ "window": [
+  1.0,
+  9.73
+ ],
+ "observed_gaps_deg": {
+  "W870": 1.0127716578291484,
+  "W892": 1.5714055080817033,
+  "W915": 1.2360189331239226
+ },
+ "severities": {
+  "W870": {
+   "observed_gap_deg": 1.0127716578291484,
+   "n_assignments": 924,
+   "channels_reaching_at_least_once": {
+    "hip_flexion_r": 2,
+    "hip_flexion_LmR": 2
+   },
+   "assignments_where_a_channel_OTHER_than_hip_reaches_without_hip": 0,
+   "key_name_caveat": "The key 'assignments_where_a_channel_OTHER_than_hip_reaches_without_hip' is ambiguous exactly where precision matters: the only other reaching channel is hip_flexion_r, which is ALSO a hip channel. It should be read as 'assignments where a channel other than hip_flexion_LmR reaches while hip_flexion_LmR does not'. The value 0 is correct under that reading."
+  },
+  "W892": {
+   "observed_gap_deg": 1.5714055080817033,
+   "n_assignments": 924,
+   "channels_reaching_at_least_once": {
+    "hip_flexion_r": 2,
+    "hip_flexion_LmR": 2
+   },
+   "assignments_where_a_channel_OTHER_than_hip_reaches_without_hip": 0,
+   "key_name_caveat": "The key 'assignments_where_a_channel_OTHER_than_hip_reaches_without_hip' is ambiguous exactly where precision matters: the only other reaching channel is hip_flexion_r, which is ALSO a hip channel. It should be read as 'assignments where a channel other than hip_flexion_LmR reaches while hip_flexion_LmR does not'. The value 0 is correct under that reading."
+  },
+  "W915": {
+   "observed_gap_deg": 1.2360189331239226,
+   "n_assignments": 924,
+   "channels_reaching_at_least_once": {
+    "hip_flexion_r": 2,
+    "hip_flexion_LmR": 2
+   },
+   "assignments_where_a_channel_OTHER_than_hip_reaches_without_hip": 0,
+   "key_name_caveat": "The key 'assignments_where_a_channel_OTHER_than_hip_reaches_without_hip' is ambiguous exactly where precision matters: the only other reaching channel is hip_flexion_r, which is ALSO a hip channel. It should be read as 'assignments where a channel other than hip_flexion_LmR reaches while hip_flexion_LmR does not'. The value 0 is correct under that reading."
+  }
+ },
+ "any_channel_other_than_hip_ever_reaches": true,
+ "channels_other_than_hip_that_ever_reach": [
+  "hip_flexion_r"
+ ],
+ "what_the_two_reaching_channels_are": "hip_flexion_LmR and hip_flexion_r. They are NOT independent: hip_flexion_LmR = hip_flexion_l - hip_flexion_r. Confirmable from CHANNELS_G2_r219.json -> channels: 55.874220 - 57.979515 = -2.105294, which is channels.hip_flexion_LmR.S_mean exactly."
+}

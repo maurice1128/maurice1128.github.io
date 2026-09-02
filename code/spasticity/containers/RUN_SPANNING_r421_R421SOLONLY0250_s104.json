@@ -1,0 +1,41 @@
+{
+ "prefix": "R421SOLONLY0250_s104",
+ "arm": "SOLONLY",
+ "rung": "0250",
+ "value": 0.025,
+ "seed": 104,
+ "parent_prefix": "R421SOLONLY0125_s104",
+ "parent_is_root": false,
+ "parent_result_dir": "R421SOLONLY0125_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+ "parent_gate_G": true,
+ "parent_t_end_s": 20.0,
+ "parent_n_cycles": 5,
+ "parent_par": "0081_1.085_1.026.par",
+ "parent_par_sha256": "11a3d4f2592f9da6ed9a2b938a461ccb60d882662744005d138abd63f5a869f7",
+ "parent_par_generation": 81,
+ "staged_warm_as": "WARM_R421SOLONLY0125_s104_g0081.par",
+ "fmax_readback": {
+  "tib_ant_l": 1759.0,
+  "soleus_l": 3549.0,
+  "gastroc_l": 2241.0
+ },
+ "spastic_targets": [
+  "soleus"
+ ],
+ "config_sha256": "c823c4839477b6083368477abfa1a272f8799f2fe07aa65b13dac48fa7a3cc11",
+ "init_line_readback": "init { file = \"par/WARM_R421SOLONLY0125_s104_g0081.par\" }",
+ "seconds": 177.4,
+ "result_dir": "R421SOLONLY0250_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+ "gate_G": true,
+ "t_end_s": 20.0,
+ "n_cycles_in_window": 5,
+ "knee_hs_deg": null,
+ "resolved_par": "0072_37.912_1.095.par",
+ "run_status": "OK",
+ "status": "RUN_OK",
+ "scone_tail": [
+  "12:37:53 Successfully initialized OpenSim-4.4",
+  "12:37:53 Successfully initialized Hyfydy-1.12.6.1412",
+  "12:37:53 Successfully initialized Hyfydy-1.12.6.1412-DBL"
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "what": "independent recomputation of r291 reading A; the agent's deposit was not read",
+ "self_check": "R151S hip reproduces LADDER36_r228.json to < 1e-9 deg",
+ "band": [
+  13.58,
+  17.85
+ ],
+ "n_weak_measured": 47,
+ "n_weak_in_band": 11,
+ "weak_in_band": [
+  {
+   "tag": "R291BF008_s158",
+   "t_end_s": 17.56,
+   "knee_angle_LmR": 2.683099475155771
+  },
+  {
+   "tag": "R291BF007_s165",
+   "t_end_s": 17.08,
+   "knee_angle_LmR": 1.876500950326509
+  },
+  {
+   "tag": "R291BF008_s166",
+   "t_end_s": 17.04,
+   "knee_angle_LmR": 1.9472113906969781
+  },
+  {
+   "tag": "R291BF008_s155",
+   "t_end_s": 16.75,
+   "knee_angle_LmR": 3.027128927467153
+  },
+  {
+   "tag": "R276WPF005_s101",
+   "t_end_s": 16.21,
+   "knee_angle_LmR": 2.734690886860527
+  },
+  {
+   "tag": "R287BF007_s109",
+   "t_end_s": 16.17,
+   "knee_angle_LmR": 2.690958355259731
+  },
+  {
+   "tag": "R291BF008_s160",
+   "t_end_s": 15.97,
+   "knee_angle_LmR": 2.7614092457490003
+  },
+  {
+   "tag": "R291BF007_s162",
+   "t_end_s": 15.91,
+   "knee_angle_LmR": 2.728257716736813
+  },
+  {
+   "tag": "R291BF008_s152",
+   "t_end_s": 15.83,
+   "knee_angle_LmR": 3.298164702594484
+  },
+  {
+   "tag": "R285BF008_s105",
+   "t_end_s": 15.14,
+   "knee_angle_LmR": 2.2638164091303707
+  },
+  {
+   "tag": "R291BF008_s163",
+   "t_end_s": 14.72,
+   "knee_angle_LmR": 2.989582048222587
+  }
+ ],
+ "spastic": [
+  {
+   "tag": "R151S_s101",
+   "t_end_s": 17.85,
+   "knee_angle_LmR": -0.9495390806288526
+  },
+  {
+   "tag": "R151S_s102",
+   "t_end_s": 14.96,
+   "knee_angle_LmR": -1.8889983057539084
+  },
+  {
+   "tag": "R151S_s103",
+   "t_end_s": 13.58,
+   "knee_angle_LmR": -0.2134542806604003
+  },
+  {
+   "tag": "R151S_s104",
+   "t_end_s": 16.94,
+   "knee_angle_LmR": -1.174013440534857
+  },
+  {
+   "tag": "R151S_s105",
+   "t_end_s": 14.27,
+   "knee_angle_LmR": -0.7150158049399593
+  },
+  {
+   "tag": "R151S_s106",
+   "t_end_s": 14.82,
+   "knee_angle_LmR": -0.3975754140412846
+  }
+ ],
+ "spastic_range": [
+  -1.8889983057539084,
+  -0.2134542806604003
+ ],
+ "weak_range": [
+  1.876500950326509,
+  3.298164702594484
+ ],
+ "disjoint": true,
+ "gap_deg": 2.0899552309869094,
+ "RUNG": 2,
+ "VERDICT": "DISJOINT-AS-PREDICTED",
+ "permutation": {
+  "assignments": 12376,
+  "count_ge": 1,
+  "floor": 8.080155138978668e-05
+ }
+}

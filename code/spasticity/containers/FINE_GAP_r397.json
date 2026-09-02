@@ -1,0 +1,296 @@
+{
+  "what": "fine chained spastic ladder vs the weakness arm at x0.80",
+  "endpoint": "mean ankle_angle_l over stance samples of admissible cycles, deg",
+  "MDC_floor_deg": 7.62,
+  "cells": {
+    "R151W_s101": {
+      "gate_G": true,
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "mean_ankle_stance_deg": 4.498609673448278
+    },
+    "R151W_s102": {
+      "gate_G": true,
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 4.580838449832868
+    },
+    "R151W_s103": {
+      "gate_G": true,
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 4.564946575701268
+    },
+    "R151W_s104": {
+      "gate_G": true,
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 4.512690687003339
+    },
+    "R151W_s105": {
+      "gate_G": true,
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 4.454077942429491
+    },
+    "R151W_s106": {
+      "gate_G": true,
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "mean_ankle_stance_deg": 4.408261744243689
+    },
+    "R151S_s101": {
+      "gate_G": true,
+      "t_end_s": 17.85,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 2.887835543045907
+    },
+    "R151S_s102": {
+      "gate_G": true,
+      "t_end_s": 14.96,
+      "n_cycles_in_window": 5,
+      "mean_ankle_stance_deg": 2.894419060526819
+    },
+    "R151S_s103": {
+      "gate_G": true,
+      "t_end_s": 13.58,
+      "n_cycles_in_window": 5,
+      "mean_ankle_stance_deg": 3.1263698737450953
+    },
+    "R151S_s104": {
+      "gate_G": true,
+      "t_end_s": 16.94,
+      "n_cycles_in_window": 5,
+      "mean_ankle_stance_deg": 2.9606639647302355
+    },
+    "R151S_s105": {
+      "gate_G": true,
+      "t_end_s": 14.27,
+      "n_cycles_in_window": 5,
+      "mean_ankle_stance_deg": 2.8283749243386853
+    },
+    "R151S_s106": {
+      "gate_G": true,
+      "t_end_s": 14.82,
+      "n_cycles_in_window": 5,
+      "mean_ankle_stance_deg": 3.070153745257757
+    },
+    "R393SPg070_s101": {
+      "gate_G": true,
+      "t_end_s": 13.95,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 2.44366497066405
+    },
+    "R393SPg070_s102": {
+      "gate_G": true,
+      "t_end_s": 13.05,
+      "n_cycles_in_window": 5,
+      "mean_ankle_stance_deg": 2.5133079972380368
+    },
+    "R393SPg070_s103": {
+      "gate_G": true,
+      "t_end_s": 12.08,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 2.5448887132387017
+    },
+    "R393SPg070_s104": {
+      "gate_G": true,
+      "t_end_s": 17.29,
+      "n_cycles_in_window": 5,
+      "mean_ankle_stance_deg": 2.679889061690993
+    },
+    "R393SPg070_s105": {
+      "gate_G": true,
+      "t_end_s": 13.09,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 2.647429205111808
+    },
+    "R393SPg070_s106": {
+      "gate_G": true,
+      "t_end_s": 13.3,
+      "n_cycles_in_window": 5,
+      "mean_ankle_stance_deg": 2.5465174202212886
+    },
+    "R393SPg100_s101": {
+      "gate_G": true,
+      "t_end_s": 10.74,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 1.732364481415451
+    },
+    "R393SPg100_s102": {
+      "gate_G": true,
+      "t_end_s": 11.76,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 1.8826131179411132
+    },
+    "R393SPg100_s103": {
+      "gate_G": false,
+      "t_end_s": 7.89,
+      "n_cycles_in_window": 5
+    },
+    "R393SPg100_s104": {
+      "gate_G": false,
+      "t_end_s": 8.4,
+      "n_cycles_in_window": 5
+    },
+    "R393SPg100_s105": {
+      "gate_G": true,
+      "t_end_s": 10.16,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 1.7852237859713265
+    },
+    "R393SPg100_s106": {
+      "gate_G": true,
+      "t_end_s": 10.14,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 1.8487105103335824
+    },
+    "R396SPg110_s101": {
+      "gate_G": true,
+      "t_end_s": 9.81,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 1.4394348699120196
+    },
+    "R396SPg110_s102": {
+      "gate_G": true,
+      "t_end_s": 10.81,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 1.5325261900925893
+    },
+    "R396SPg110_s105": {
+      "gate_G": true,
+      "t_end_s": 10.81,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 1.3778440407364836
+    },
+    "R396SPg110_s106": {
+      "gate_G": true,
+      "t_end_s": 11.11,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 1.6264534973639853
+    },
+    "R396SPg120_s101": {
+      "gate_G": false,
+      "t_end_s": 8.74,
+      "n_cycles_in_window": 5
+    },
+    "R396SPg120_s102": {
+      "gate_G": true,
+      "t_end_s": 10.63,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 1.1393209591483002
+    },
+    "R396SPg120_s105": {
+      "gate_G": true,
+      "t_end_s": 10.11,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 1.0985992170504462
+    },
+    "R396SPg120_s106": {
+      "gate_G": true,
+      "t_end_s": 11.3,
+      "n_cycles_in_window": 6,
+      "mean_ankle_stance_deg": 1.5123226278824793
+    },
+    "R396SPg130_s101": null,
+    "R396SPg130_s102": {
+      "gate_G": false,
+      "t_end_s": 1.55,
+      "n_cycles_in_window": 0
+    },
+    "R396SPg130_s105": {
+      "gate_G": false,
+      "t_end_s": 1.56,
+      "n_cycles_in_window": 0
+    },
+    "R396SPg130_s106": {
+      "gate_G": false,
+      "t_end_s": 9.66,
+      "n_cycles_in_window": 5
+    }
+  },
+  "weakness_x080": {
+    "n": 6,
+    "range": [
+      4.408261744243689,
+      4.580838449832868
+    ],
+    "mean": 4.5032375121098225
+  },
+  "rungs": {
+    "0.05": {
+      "n_gate_G": 6,
+      "range": [
+        2.8283749243386853,
+        3.1263698737450953
+      ],
+      "mean": 2.9613028519407494,
+      "gap_vs_x080_mean_deg": 1.541934660169073,
+      "nearest_edge_gap_deg": 1.281891870498594,
+      "reaches_MDC": false
+    },
+    "0.07": {
+      "n_gate_G": 6,
+      "range": [
+        2.44366497066405,
+        2.679889061690993
+      ],
+      "mean": 2.5626162280274793,
+      "gap_vs_x080_mean_deg": 1.9406212840823431,
+      "nearest_edge_gap_deg": 1.7283726825526964,
+      "reaches_MDC": false
+    },
+    "0.1": {
+      "n_gate_G": 4,
+      "range": [
+        1.732364481415451,
+        1.8826131179411132
+      ],
+      "mean": 1.8122279739153682,
+      "gap_vs_x080_mean_deg": 2.6910095381944545,
+      "nearest_edge_gap_deg": 2.5256486263025764,
+      "reaches_MDC": false
+    },
+    "0.11": {
+      "n_gate_G": 4,
+      "range": [
+        1.3778440407364836,
+        1.6264534973639853
+      ],
+      "mean": 1.4940646495262695,
+      "gap_vs_x080_mean_deg": 3.009172862583553,
+      "nearest_edge_gap_deg": 2.781808246879704,
+      "reaches_MDC": false
+    },
+    "0.12": {
+      "n_gate_G": 3,
+      "range": [
+        1.0985992170504462,
+        1.5123226278824793
+      ],
+      "mean": 1.2500809346937418,
+      "gap_vs_x080_mean_deg": 3.253156577416081,
+      "nearest_edge_gap_deg": 2.89593911636121,
+      "reaches_MDC": false
+    },
+    "0.13": {
+      "n": 0
+    }
+  },
+  "fit": {
+    "slope_deg_per_KV": 24.764246431673,
+    "intercept_deg": 0.25839680563853146,
+    "pearson_r": 0.9981235092147498,
+    "KV_for_MDC": 0.2972674018033562,
+    "n_points": 5
+  },
+  "highest_walking_KV": 0.12,
+  "VERDICT": "NOT REACHED -- the highest KV with Gate-G cells is 0.120 and the fit needs 0.2973",
+  "READING_CORRECTION_r438": {
+    "what_this_file_actually_shows": "the endpoint here is mean ankle_angle_l over stance. Its nearest_edge_gap_deg is POSITIVE AND DISJOINT at every rung -- 1.2819, 1.7284, 2.5256, 2.7818, 2.8959 -- and rises monotonically with spastic gain. THE ANKLE SEPARATES.",
+    "what_VERDICT_means": "'NOT REACHED' refers to the clinical MDC threshold, NOT to separation. The file asks whether the gap reaches a clinically detectable magnitude and answers no.",
+    "the_error_this_caused": "across the corpus and in the first advisor summary, 'the ankle gap does not reach the clinical threshold' was compressed into 'the ankle does not separate', and an anatomical narrative was built on the compressed version. Verified 2026-08-27 from the .sto files at group level: 23 spastic vs 36 weakness cells give an ankle stance edge gap of +1.282 deg, DISJOINT, alongside a knee edge gap of +1.492 deg.",
+    "which_joint_is_actually_the_better_clinical_channel": "the KNEE. In model-noise units the ankle looks cleaner (its seed SD is 0.054 deg against the knee's 0.511), but patient measurement error is what limits a clinic and it is similar at both joints (SEM 2.53 vs 2.75 deg). What decides is raw magnitude: the headline contrast is 6.39 deg at the knee against 2.78 deg at the ankle. Averaged over six steps that is 5.70 versus 2.70 clinical SEM. The knee is the better channel by a factor of about two, which is the original reason it was chosen.",
+    "found_by": "cold container audit, 2026-08-26; re-derived independently from .sto 2026-08-27"
+  }
+}

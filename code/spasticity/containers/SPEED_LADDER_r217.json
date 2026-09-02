@@ -1,0 +1,378 @@
+{
+ "prereg": "PREREG_speed_ladder_r217.md",
+ "sha256_prefix": "bd2b2443a00467d3",
+ "method": "pelvis_tx displacement / elapsed over GRF-delimited window [1.00, 13.58]; identical to speed_gate_r203.py",
+ "arms": {
+  "spastic KV 0.050": {
+   "prefix": "R151S",
+   "tib_ant_scale": null,
+   "n_run": 6,
+   "n_gateG_admitted": 6,
+   "per_seed": [
+    {
+     "seed": 101,
+     "speed_mps": 1.000770538243626,
+     "dur_s": 17.85,
+     "cycles": 12,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 102,
+     "speed_mps": 0.9678508442776735,
+     "dur_s": 14.96,
+     "cycles": 11,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 103,
+     "speed_mps": 1.003975903614458,
+     "dur_s": 13.58,
+     "cycles": 9,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 104,
+     "speed_mps": 0.9928921200750469,
+     "dur_s": 16.94,
+     "cycles": 12,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 105,
+     "speed_mps": 0.9415781544256122,
+     "dur_s": 14.27,
+     "cycles": 10,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 106,
+     "speed_mps": 0.98586261682243,
+     "dur_s": 14.82,
+     "cycles": 10,
+     "gateG_admitted": true
+    }
+   ],
+   "mean_speed_mps": 0.9821550295764746,
+   "min_speed_mps": 0.9415781544256122,
+   "max_speed_mps": 1.003975903614458
+  },
+  "weak x0.800": {
+   "prefix": "R151W",
+   "tib_ant_scale": 0.8,
+   "n_run": 6,
+   "n_gateG_admitted": 6,
+   "per_seed": [
+    {
+     "seed": 101,
+     "speed_mps": 1.0331083883129122,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 102,
+     "speed_mps": 1.0487433460076043,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 103,
+     "speed_mps": 1.0472466666666667,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 104,
+     "speed_mps": 1.040686013320647,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 105,
+     "speed_mps": 1.0393403041825096,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 106,
+     "speed_mps": 1.0307663197729424,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    }
+   ],
+   "mean_speed_mps": 1.0399818397105471,
+   "min_speed_mps": 1.0307663197729424,
+   "max_speed_mps": 1.0487433460076043
+  },
+  "weak x0.870": {
+   "prefix": "R174W870",
+   "tib_ant_scale": 0.87,
+   "n_run": 6,
+   "n_gateG_admitted": 6,
+   "per_seed": [
+    {
+     "seed": 101,
+     "speed_mps": 1.0344210028382215,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 102,
+     "speed_mps": 1.0408817407757804,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 103,
+     "speed_mps": 1.037453686200378,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 104,
+     "speed_mps": 1.0294765037593985,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 105,
+     "speed_mps": 1.0326748815165876,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 106,
+     "speed_mps": 1.0333705103969753,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    }
+   ],
+   "mean_speed_mps": 1.0347130542478904,
+   "min_speed_mps": 1.0294765037593985,
+   "max_speed_mps": 1.0408817407757804
+  },
+  "weak x0.892": {
+   "prefix": "R174W892",
+   "tib_ant_scale": 0.892,
+   "n_run": 6,
+   "n_gateG_admitted": 6,
+   "per_seed": [
+    {
+     "seed": 101,
+     "speed_mps": 1.0356967984934085,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 102,
+     "speed_mps": 1.0346378174976483,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 103,
+     "speed_mps": 1.03128369462771,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 104,
+     "speed_mps": 1.0339707271010388,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 105,
+     "speed_mps": 1.0290338345864662,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 106,
+     "speed_mps": 1.0343147448015122,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    }
+   ],
+   "mean_speed_mps": 1.0331562695179641,
+   "min_speed_mps": 1.0290338345864662,
+   "max_speed_mps": 1.0356967984934085
+  },
+  "weak x0.900": {
+   "prefix": "R169W090",
+   "tib_ant_scale": 0.9,
+   "n_run": 6,
+   "n_gateG_admitted": 6,
+   "per_seed": [
+    {
+     "seed": 101,
+     "speed_mps": 1.0317455230914232,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 102,
+     "speed_mps": 1.0399554502369668,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 103,
+     "speed_mps": 1.0240431519699813,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 104,
+     "speed_mps": 1.0361326434619003,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 105,
+     "speed_mps": 1.0390293282876064,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 106,
+     "speed_mps": 1.0295773584905659,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    }
+   ],
+   "mean_speed_mps": 1.0334139092564072,
+   "min_speed_mps": 1.0240431519699813,
+   "max_speed_mps": 1.0399554502369668
+  },
+  "weak x0.915": {
+   "prefix": "R174W915",
+   "tib_ant_scale": 0.915,
+   "n_run": 6,
+   "n_gateG_admitted": 6,
+   "per_seed": [
+    {
+     "seed": 101,
+     "speed_mps": 1.036750946969697,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 102,
+     "speed_mps": 1.0294003777148253,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 103,
+     "speed_mps": 1.0283766478342748,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 104,
+     "speed_mps": 1.0330902255639096,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 105,
+     "speed_mps": 1.0313487712665408,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 106,
+     "speed_mps": 1.0284209039548022,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    }
+   ],
+   "mean_speed_mps": 1.0312313122173415,
+   "min_speed_mps": 1.0283766478342748,
+   "max_speed_mps": 1.036750946969697
+  },
+  "weak x0.950": {
+   "prefix": "R169W095",
+   "tib_ant_scale": 0.95,
+   "n_run": 6,
+   "n_gateG_admitted": 6,
+   "per_seed": [
+    {
+     "seed": 101,
+     "speed_mps": 1.0220084666039513,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 102,
+     "speed_mps": 1.0268236397748594,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 103,
+     "speed_mps": 1.0261880261927032,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 104,
+     "speed_mps": 1.0293158388003747,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 105,
+     "speed_mps": 1.0261061032863852,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    },
+    {
+     "seed": 106,
+     "speed_mps": 1.0298184383819378,
+     "dur_s": 20.0,
+     "cycles": 14,
+     "gateG_admitted": true
+    }
+   ],
+   "mean_speed_mps": 1.026710085506702,
+   "min_speed_mps": 1.0220084666039513,
+   "max_speed_mps": 1.0298184383819378
+  }
+ }
+}

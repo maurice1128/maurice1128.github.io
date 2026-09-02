@@ -1,0 +1,1004 @@
+{
+ "count": 199,
+ "entries": {
+  ".bak_r100_WATCHDOG.md": {
+   "bytes": 368440,
+   "mtime": 1785825965.6298215,
+   "sha256": "cae28cef15c87b08902fc29c70c2b9eafd3089821e037b6353908e4908ed03b2"
+  },
+  ".bak_r101_WATCHDOG.md": {
+   "bytes": 374870,
+   "mtime": 1785827478.1330583,
+   "sha256": "3c0af309cfa2d68015f393973aceb7bd7d37ec752ffa0cdf43e1e659ac4d4ec7"
+  },
+  ".bak_r103_WATCHDOG.md": {
+   "bytes": 380255,
+   "mtime": 1785830019.6717136,
+   "sha256": "4cae910e8a3ec9858e21a559b2839963da9b92dcd2764727fc88f75126d3b46a"
+  },
+  ".bak_r105_WATCHDOG.md": {
+   "bytes": 386269,
+   "mtime": 1785831948.5989773,
+   "sha256": "089bd67ffaeeaf532c6b18d0ccbde60520fbf6640d31999324c80a0d85533f22"
+  },
+  ".bak_r107_WATCHDOG.md": {
+   "bytes": 391669,
+   "mtime": 1785833745.0939245,
+   "sha256": "b7b8fcf1bc353f760a2f8e7e3ad908ad3884bcf407002e567fe203e1cee54d2c"
+  },
+  ".bak_r109_WATCHDOG.md": {
+   "bytes": 397679,
+   "mtime": 1785836104.1769867,
+   "sha256": "97b65fd704132e3ce3ca402e5ca0f01fae859004b83cf4e892096c79bf2fcef3"
+  },
+  ".bak_r111_WATCHDOG.md": {
+   "bytes": 403650,
+   "mtime": 1785837890.9700577,
+   "sha256": "2171ad1f03ba4adafed88093378555af385c7a861b5c17af6eeaad64c7c1d73f"
+  },
+  ".bak_r114_WATCHDOG.md": {
+   "bytes": 409825,
+   "mtime": 1785839700.763386,
+   "sha256": "c252f57c0d7bf1c94604c873877d8b7950bbebb1f1998f649587e9901bbd0633"
+  },
+  ".bak_r116_WATCHDOG.md": {
+   "bytes": 414609,
+   "mtime": 1785841520.169641,
+   "sha256": "eae9b2bb9795513446f35fd37023114c6435372e09dadf8fb64eae65d9c8ced2"
+  },
+  ".bak_r117_WATCHDOG.md": {
+   "bytes": 420308,
+   "mtime": 1785842478.706997,
+   "sha256": "57c997fdb1e137f719e31ae2433ae0613a27da58564aa58490861faacc80fcbf"
+  },
+  ".bak_r118_WATCHDOG.md": {
+   "bytes": 424676,
+   "mtime": 1785855830.662042,
+   "sha256": "74eb2358cd698678241bde448d0f4708cb1269bc58de7023f19e18cc3acf2a39"
+  },
+  ".bak_r119_WATCHDOG.md": {
+   "bytes": 426930,
+   "mtime": 1785856087.1053588,
+   "sha256": "3f137da9037f7ea6abc88b44937807a2d385a5f352c93afa917bd4293b0fe30d"
+  },
+  ".bak_r120_WATCHDOG.md": {
+   "bytes": 428321,
+   "mtime": 1785856522.797685,
+   "sha256": "e78cf78d0b4983c07e1c8daca05434adaf8b0ccc930d95dadee221ecd5cde487"
+  },
+  ".bak_r121_WATCHDOG.md": {
+   "bytes": 432428,
+   "mtime": 1785857178.1362343,
+   "sha256": "d6adbdaf8700a704874f11f0c05f73a896a568517e7cc4175a102ce2af53b92c"
+  },
+  ".bak_r122_WATCHDOG.md": {
+   "bytes": 436986,
+   "mtime": 1785857474.7666976,
+   "sha256": "aa30b3a0aff40108703e7f15f0bdfd103a7143f3865dcfd3637fa3c7b38dc101"
+  },
+  ".bak_r123_WATCHDOG.md": {
+   "bytes": 440952,
+   "mtime": 1785858088.0799725,
+   "sha256": "99f411d05e377bbac3bb68c7c64b7fa543439c5b5efe4e8b71c409696dcae944"
+  },
+  ".bak_r124_WATCHDOG.md": {
+   "bytes": 445858,
+   "mtime": 1785859480.745956,
+   "sha256": "7d9930f2a55fb9808114bebc4754efc4189b75bba78761254227822a30428588"
+  },
+  ".bak_r125_WATCHDOG.md": {
+   "bytes": 450451,
+   "mtime": 1785862660.4197445,
+   "sha256": "2413b4f351ef9ad7a831f09f0b85ebcd3b52ef8b0cc75d4481edbcd9bb2186c6"
+  },
+  ".bak_r127_WATCHDOG.md": {
+   "bytes": 453615,
+   "mtime": 1785865417.1435933,
+   "sha256": "dfb8809161df8ed8f0c9aced5719e6608bfea6fdfc85c43bd003d754a3be664d"
+  },
+  ".bak_r129_WATCHDOG.md": {
+   "bytes": 457094,
+   "mtime": 1785867104.5656743,
+   "sha256": "a3cd152f1e0b64bc178764dc5a63154eaf1b40ce8f541c94eb1b4e2a8e28da19"
+  },
+  ".bak_r131_WATCHDOG.md": {
+   "bytes": 460315,
+   "mtime": 1785868491.087136,
+   "sha256": "3b39b20a61b9a1d78802b2560e517514715b977d3aed24686b6d95190096b794"
+  },
+  ".bak_r134_WATCHDOG.md": {
+   "bytes": 464757,
+   "mtime": 1785869902.6067245,
+   "sha256": "e63d4c0e9825c95b87761e1a10020a889c9362b50f093069fb0c81b8957f7c7f"
+  },
+  ".bak_r135_WATCHDOG.md": {
+   "bytes": 468159,
+   "mtime": 1785870998.7239854,
+   "sha256": "b81b06cc6f43e9946140b180d34b3663117ac097c1c2618d4371e705284d30df"
+  },
+  ".bak_r136_WATCHDOG.md": {
+   "bytes": 471731,
+   "mtime": 1785872439.4280362,
+   "sha256": "627965b1e403b32df43ddea2baafe7a894d13256db660c5db840ea79c1000903"
+  },
+  ".bak_r138_WATCHDOG.md": {
+   "bytes": 475134,
+   "mtime": 1785873117.8774939,
+   "sha256": "18608eea101ad78d619f99b135b9e7c0ff7088dd977acad0ef8ed1f87b1092a5"
+  },
+  ".bak_r72_WATCHDOG.md": {
+   "bytes": 256828,
+   "mtime": 1785788757.539119,
+   "sha256": "aa9149eb2f97d8b35ed02c31f6f341dce72ba8446d7fc3c2775d2364a87b6d05"
+  },
+  ".bak_r75_WATCHDOG.md": {
+   "bytes": 263489,
+   "mtime": 1785790560.4031734,
+   "sha256": "966d8154fb020067426f36780d09db7ddd062a167a1e88badcfd4c777029cc7d"
+  },
+  ".bak_r76_WATCHDOG.md": {
+   "bytes": 272978,
+   "mtime": 1785791689.2374048,
+   "sha256": "642400c04fcf20fe68d1dc851d5fa6014d23fa482970e2ce36adb28eae2eb5a9"
+  },
+  ".bak_r77_WATCHDOG.md": {
+   "bytes": 283776,
+   "mtime": 1785793233.3203948,
+   "sha256": "38e072f8274628a130de236ed92f49723f3368fd5a2ca21f560b29464cf8e4eb"
+  },
+  ".bak_r78_WATCHDOG.md": {
+   "bytes": 294424,
+   "mtime": 1785796008.0794015,
+   "sha256": "9e0e335543f4ba9884b1fd1b6a71efc71646f4064abdb77b77664ec2391d535d"
+  },
+  ".bak_r79_WATCHDOG.md": {
+   "bytes": 301424,
+   "mtime": 1785799536.0272906,
+   "sha256": "3d7491feba9244639eee058297bf8ed84432345fab86e5fdec07c14bcab85db4"
+  },
+  ".bak_r80_WATCHDOG.md": {
+   "bytes": 308343,
+   "mtime": 1785802222.6276464,
+   "sha256": "cb30b1e42d804b581d06d9939a4255554b06fc3662edc679fb81a32d32013d45"
+  },
+  ".bak_r82_WATCHDOG.md": {
+   "bytes": 317190,
+   "mtime": 1785803511.507622,
+   "sha256": "48bad14b9cad6f0724815e0e5f4e1f8b40eebff797e65ab5de982434cc95c7f3"
+  },
+  ".bak_r83_WATCHDOG.md": {
+   "bytes": 324593,
+   "mtime": 1785804977.4407012,
+   "sha256": "0a49e2093e929de755ad156e73bfafae96891a52d2bd4a70165827eef064b0ea"
+  },
+  ".bak_r85_WATCHDOG.md": {
+   "bytes": 328536,
+   "mtime": 1785808019.1494608,
+   "sha256": "8bd4cdff8d1a91adf3e74596f039d276f0ef74a11b48d72f2ece84d7ed0ea49f"
+  },
+  ".bak_r86_WATCHDOG.md": {
+   "bytes": 332207,
+   "mtime": 1785809844.0886588,
+   "sha256": "9df13845d8294df3f239739ef673573822b1ac637d02aa4447ceb6b0cc472879"
+  },
+  ".bak_r87_WATCHDOG.md": {
+   "bytes": 335518,
+   "mtime": 1785812131.1806073,
+   "sha256": "bdcc155da33803f523746187a50644d507d8157cd515c7031aca6be2e9d4725f"
+  },
+  ".bak_r89_WATCHDOG.md": {
+   "bytes": 344719,
+   "mtime": 1785817536.01917,
+   "sha256": "8aafd1598b44280456110c4583b7d8e146361368384460c97b0fc3aa9fffeede"
+  },
+  ".bak_r93_WATCHDOG.md": {
+   "bytes": 356422,
+   "mtime": 1785823397.3125472,
+   "sha256": "3b593903e04748dff0976b8713934adfb84d5595a8b939e237e86f525c4b255b"
+  },
+  ".bak_r95_WATCHDOG.md": {
+   "bytes": 361022,
+   "mtime": 1785823664.4431624,
+   "sha256": "8d474e0507cf3271a5f219f4a42135a8c3c04f37f7cbfca0b7213e51cd111aac"
+  },
+  ".bak_r97_WATCHDOG.md": {
+   "bytes": 364456,
+   "mtime": 1785823963.4370382,
+   "sha256": "efa3cf66b308291c95392ef807c53074cff763fd26fe4edaa7c459f564f73c68"
+  },
+  ".bak_r98_WATCHDOG.md": {
+   "bytes": 367314,
+   "mtime": 1785824072.137317,
+   "sha256": "0375fd7e41a048054332db0d9c0a5f9dbde6ce4b5a7c0b861d8d7b93b144c834"
+  },
+  "paper\\.bak_r102_RESULTS_discrimination.md": {
+   "bytes": 142346,
+   "mtime": 1785828638.5756817,
+   "sha256": "de0d3c827c40362e32ada9b2ae86ab3662e50708d3b69f799d3ea1a8c055cde4"
+  },
+  "paper\\.bak_r104_RESULTS_discrimination.md": {
+   "bytes": 142346,
+   "mtime": 1785830194.804554,
+   "sha256": "6ff7530b6f92bd2d73788c2dc0ac587bb84b35dfa2d8e2eec1ed5cb1c75d96c8"
+  },
+  "paper\\.bak_r106_RESULTS_discrimination.md": {
+   "bytes": 142996,
+   "mtime": 1785832087.64923,
+   "sha256": "d4d66e028482f1ecb4b8d216c7be2ad73b287711987cb7f6fe178927fd1b2208"
+  },
+  "paper\\.bak_r108_METHODS_contribution.md": {
+   "bytes": 57993,
+   "mtime": 1785833881.1848347,
+   "sha256": "db9a0692487cac8f3f0941666d5da6c1dda5f9ce0ab6da3e45e5663f103df2a9"
+  },
+  "paper\\.bak_r108_RESULTS_discrimination.md": {
+   "bytes": 146355,
+   "mtime": 1785833881.133045,
+   "sha256": "548d579a259f92f1d360fda6743bc1d63d34c05de5a8ab572137e7d05cc4ddb4"
+  },
+  "paper\\.bak_r110_RESULTS_discrimination.md": {
+   "bytes": 154016,
+   "mtime": 1785836364.908032,
+   "sha256": "c6706b405030d9ca057c2ca67cc2ce4eb7a8055665b8c9297dc3e8b2b9c2ecee"
+  },
+  "paper\\.bak_r112_RESULTS_discrimination.md": {
+   "bytes": 157080,
+   "mtime": 1785838108.9357584,
+   "sha256": "b071496bf8f3362f786ec3e6a7b93d5e5b63c36ac5b22b06dcff80c2aa609dbc"
+  },
+  "paper\\.bak_r113_RESULTS_discrimination.md": {
+   "bytes": 160562,
+   "mtime": 1785839644.5758853,
+   "sha256": "d13eb6a9ef4df8516d485f51dad6cb80ac3338fe884799bb9858dc67176d4a13"
+  },
+  "paper\\.bak_r115_RESULTS_discrimination.md": {
+   "bytes": 161279,
+   "mtime": 1785839951.6690457,
+   "sha256": "18063057cb77120633c673e3c39a26a73f1ff843176fce78d3d4110a979bbb0c"
+  },
+  "paper\\.bak_r126_METHODS_contribution.md": {
+   "bytes": 58052,
+   "mtime": 1785863739.7643187,
+   "sha256": "9944a333bb80a412238b7a44432a54490db4c6953fb255a73b568df11d454625"
+  },
+  "paper\\.bak_r126_RESULTS_discrimination.md": {
+   "bytes": 165610,
+   "mtime": 1785863739.5152314,
+   "sha256": "706767df652747c5754ad2e6d4bf18fc18289acc08ccf1401b146917e01c4da2"
+  },
+  "paper\\.bak_r128_METHODS_contribution.md": {
+   "bytes": 64669,
+   "mtime": 1785865690.6754644,
+   "sha256": "8bb9f19a63961614bd1371e9237914ea6f48d444216af03082da0a8c7caaf84c"
+  },
+  "paper\\.bak_r130_METHODS_contribution.md": {
+   "bytes": 66959,
+   "mtime": 1785867357.576706,
+   "sha256": "786af2bcb8382e26b2c78b5cf643eb11e7febc8a1baba68194fe577c78f9462a"
+  },
+  "paper\\.bak_r132_METHODS_contribution.md": {
+   "bytes": 68448,
+   "mtime": 1785868646.9016967,
+   "sha256": "e2ed007613027831e5236e9df35367b4cc8f27f004a963b6dd3cb9ab95f02d9e"
+  },
+  "paper\\.bak_r133_DEFECT_REGISTER_r100.md": {
+   "bytes": 198420,
+   "mtime": 1785911239.8542655,
+   "sha256": "10631e8da2235d7c1f346a8c0fc72e53101042c9bb78396496b6738b73486c8d"
+  },
+  "paper\\.bak_r133_METHODS_contribution.md": {
+   "bytes": 71302,
+   "mtime": 1785869805.8466468,
+   "sha256": "a1fcaf72a8d750b3f9757fb1e5fc14b7418b909e1518c60310cec61d6297112b"
+  },
+  "paper\\.bak_r134_DEFECT_REGISTER_r100.md": {
+   "bytes": 218875,
+   "mtime": 1785913245.4028254,
+   "sha256": "b57a81675ecd6eb4a2bf4722ec3bd96c9996e68165d6b0a17a5aecc0c607e126"
+  },
+  "paper\\.bak_r135_DEFECT_REGISTER_r100.md": {
+   "bytes": 233176,
+   "mtime": 1785914736.914061,
+   "sha256": "5ef0b99fd8b041742328a96cdb77809a92fdc91914aa500ba6a79c756ef5f5dd"
+  },
+  "paper\\.bak_r136_DEFECT_REGISTER_r100.md": {
+   "bytes": 237443,
+   "mtime": 1785916214.5657153,
+   "sha256": "ac9c5906be67ca98fdf852fd53b85fc04f5e1fb0dfadcf325d11320e620520c2"
+  },
+  "paper\\.bak_r137_METHODS_contribution.md": {
+   "bytes": 72232,
+   "mtime": 1785872725.7596617,
+   "sha256": "fd0cfd967cd7b0ea8f6956904a7542447edd60c82b7454cddfc61816465684fc"
+  },
+  "paper\\.bak_r139_ARTIFACT_HASHES_r106.sha256": {
+   "bytes": 2098,
+   "mtime": 1786174485.2269404,
+   "sha256": "ccecafe044652acbacce1b27eae6781fd56542b12bbd2114d11b31dbe4dfb3ef"
+  },
+  "paper\\.bak_r139_ARTIFACT_HASHES_r106.txt": {
+   "bytes": 9805,
+   "mtime": 1786174485.2607956,
+   "sha256": "92ca56d9799e16947949b5a7b995ee9e04cdc3f43e78913564ee4dfab4e03a27"
+  },
+  "paper\\.bak_r139_METHODS_contribution.md": {
+   "bytes": 72976,
+   "mtime": 1785873358.3596964,
+   "sha256": "9224572f1a8f2a131c6ebd0418d30caf2f4e6a93f2a1696dc89cf2051f366dac"
+  },
+  "paper\\.bak_r140_METHODS_contribution.md": {
+   "bytes": 73590,
+   "mtime": 1785874074.1570182,
+   "sha256": "aa11ce742db34573577ea876bd476cd7df4dad517f0bc5738d2380037c15b265"
+  },
+  "paper\\.bak_r141_DEFECT_REGISTER_r100.md": {
+   "bytes": 10538,
+   "mtime": 1785874141.4927578,
+   "sha256": "0e3e112d9c962cf8d49349435bb05aebf4160abbee27c365a86457214ea91f3c"
+  },
+  "paper\\.bak_r142_DEFECT_REGISTER_r100.md": {
+   "bytes": 244004,
+   "mtime": 1785917281.3381457,
+   "sha256": "633710634501db9e9c46c678a1170ff785a17b34c16b9ca0266232ee4b8bc35b"
+  },
+  "paper\\.bak_r142_METHODS_contribution.md": {
+   "bytes": 73866,
+   "mtime": 1786290634.7941415,
+   "sha256": "fad344b9632a00fa9ab3f374966f3a5e8b3007fa22ece3802acfa6ce0046ac55"
+  },
+  "paper\\.bak_r143_DEFECT_REGISTER_r100.md": {
+   "bytes": 258368,
+   "mtime": 1786179395.7235699,
+   "sha256": "60d0bb377edf300766b32968fce285f7a04b3e503002628fe578a153d90bf6a1"
+  },
+  "paper\\.bak_r143_WATCHDOG.md": {
+   "bytes": 478436,
+   "mtime": 1785874723.839936,
+   "sha256": "95875c079c1192ca1d46341199b0664409dad81c866ca48049e5d469f1069427"
+  },
+  "paper\\.bak_r145_DEFECT_REGISTER_r100.md": {
+   "bytes": 14419,
+   "mtime": 1785875225.5396912,
+   "sha256": "f3a44e68f8bd67cc694165f659db2601e41ed2cf6699212adc68f1f0794a9c7b"
+  },
+  "paper\\.bak_r146_METHODS_contribution.md": {
+   "bytes": 77583,
+   "mtime": 1785875716.1034384,
+   "sha256": "815d9f6191462565ec2224b215d24f4583f396aca3a94a44b9ae3ecd1d7b6cd3"
+  },
+  "paper\\.bak_r147_METHODS_contribution.md": {
+   "bytes": 79033,
+   "mtime": 1785876156.677855,
+   "sha256": "b135cf134c2a009c489bb7dde12e427b58f634ff4ac75a731dc40c0c7ccfff52"
+  },
+  "paper\\.bak_r148_WATCHDOG.md": {
+   "bytes": 483848,
+   "mtime": 1785876322.0464487,
+   "sha256": "2e2da8311795ac986939e123c662edd927ad550180b586b0170bc0c4b25f43f1"
+  },
+  "paper\\.bak_r149_DEFECT_REGISTER_r100.md": {
+   "bytes": 23435,
+   "mtime": 1785876380.6375084,
+   "sha256": "980b993fc500e8f30bcbc37d883e1c43a9b7fab9af70fcde1d9f36cc3418d8c3"
+  },
+  "paper\\.bak_r150_METHODS_contribution.md": {
+   "bytes": 80443,
+   "mtime": 1785876653.2097082,
+   "sha256": "fd4aa10c97660e26e6b045498229a743ae5a1096509cf6e71d9d07e96c0f339c"
+  },
+  "paper\\.bak_r151_DEFECT_REGISTER_r100.md": {
+   "bytes": 29148,
+   "mtime": 1785876762.5613625,
+   "sha256": "bb9285fa4910204a35c575483ae79080a6362594b4eb6e0dc90f2e44916e7ebc"
+  },
+  "paper\\.bak_r152_METHODS_contribution.md": {
+   "bytes": 84786,
+   "mtime": 1785877963.959243,
+   "sha256": "46573e7632adfc7ed43da04c64187921c72e6f3589a4e2da85ca429fc7f4aa9e"
+  },
+  "paper\\.bak_r153_DEFECT_REGISTER_r100.md": {
+   "bytes": 29856,
+   "mtime": 1785878081.828504,
+   "sha256": "994f9ebc30da92c58f701ae2593c5e0eab30c7fe70bcf63d4ab3f673b4c5d4a3"
+  },
+  "paper\\.bak_r154_METHODS_contribution.md": {
+   "bytes": 86504,
+   "mtime": 1785878120.972493,
+   "sha256": "5717725e96b955ef6c9988316bd1e35044fad3e360fe96235c810ea1b78ca6e6"
+  },
+  "paper\\.bak_r155_DEFECT_REGISTER_r100.md": {
+   "bytes": 32910,
+   "mtime": 1785878147.9054177,
+   "sha256": "127c1848abced9b017837d918637048a8e53d74b7ed8b3e6b9f41b43f4773199"
+  },
+  "paper\\.bak_r156_WATCHDOG.md": {
+   "bytes": 492984,
+   "mtime": 1785878255.224342,
+   "sha256": "e09b27e4496cef212d7664e1048b7c51935cd8909092384750d2e7ac4e1aa86a"
+  },
+  "paper\\.bak_r157_METHODS_contribution.md": {
+   "bytes": 87883,
+   "mtime": 1785879311.9477575,
+   "sha256": "7981bf64e7e8e1b41cfd36fcb223e01d1db84281bc39dc6cfc2971d501a7134d"
+  },
+  "paper\\.bak_r158_DEFECT_REGISTER_r100.md": {
+   "bytes": 32910,
+   "mtime": 1785881010.907186,
+   "sha256": "5c0c003d259876d49f7546fdd66e03da2d2867911c5271c70c336b3e31ebfd44"
+  },
+  "paper\\.bak_r159_WATCHDOG.md": {
+   "bytes": 499039,
+   "mtime": 1785881103.391233,
+   "sha256": "6fb0bfe8b0a2da4605ad5226cced43425302d956ec20b4d432c2664d50ea05a8"
+  },
+  "paper\\.bak_r160_DEFECT_REGISTER_r100.md": {
+   "bytes": 38277,
+   "mtime": 1785881432.007413,
+   "sha256": "f6d80921ac9915669d0500e534cc005cccc7a1b6b76235a01894672fc8c07f70"
+  },
+  "paper\\.bak_r161_WATCHDOG.md": {
+   "bytes": 503138,
+   "mtime": 1785881521.418945,
+   "sha256": "8234f779fcdcacb09db27cd67c59015dc75f8bab310b659ec042ae748c91394d"
+  },
+  "paper\\.bak_r162_DEFECT_REGISTER_r100.md": {
+   "bytes": 45366,
+   "mtime": 1785881792.737564,
+   "sha256": "4e391e9048993fcad20ccbd98732e2520a407c78624601359a17507a7ca62d69"
+  },
+  "paper\\.bak_r163_WATCHDOG.md": {
+   "bytes": 507749,
+   "mtime": 1785881866.4526224,
+   "sha256": "55d8ec06661b6cbf5fd0b1847d51d9608f54310685ac62e28abb79f812a4319e"
+  },
+  "paper\\.bak_r164_DEFECT_REGISTER_r100.md": {
+   "bytes": 50895,
+   "mtime": 1785883021.6927803,
+   "sha256": "880e3d213a2bf03595a2743632ed2068580ff20dcd7d951320814e9a2ba82ae4"
+  },
+  "paper\\.bak_r165_DEFECT_REGISTER_r100.md": {
+   "bytes": 56559,
+   "mtime": 1785883099.9724433,
+   "sha256": "e9ad983c9fe155973f1c266c81305d67369e41601b789d35a9cae310b4845993"
+  },
+  "paper\\.bak_r166_WATCHDOG.md": {
+   "bytes": 512806,
+   "mtime": 1785883173.5587654,
+   "sha256": "d660edaf3d653f3baea0b6eaf2ad8d3f7f31ffa1c62b716808ced2e031c9aa40"
+  },
+  "paper\\.bak_r167_WATCHDOG.md": {
+   "bytes": 516831,
+   "mtime": 1785884339.521395,
+   "sha256": "1c66d6450888081d0a863181fad858c85f1df0fa69d9fd7395f37d69ea63c1c4"
+  },
+  "paper\\.bak_r168_DEFECT_REGISTER_r100.md": {
+   "bytes": 58638,
+   "mtime": 1785886028.102695,
+   "sha256": "fa92a16363c62978f0389b3ba5f517baaac187449619df2f6398c2a44f5c4eb0"
+  },
+  "paper\\.bak_r169_WATCHDOG.md": {
+   "bytes": 518870,
+   "mtime": 1785886121.0229108,
+   "sha256": "abfc8457612f2db5c52b5069e8ae5c718c2b1a0ef0382e4ea9cbd68870616c1e"
+  },
+  "paper\\.bak_r170_HANDOFF.md": {
+   "bytes": 12030,
+   "mtime": 1785886453.553426,
+   "sha256": "509c27ddf58dd566bd249d0aa299ab2c5f78ddb132369d24f8539e791c416997"
+  },
+  "paper\\.bak_r171_DEFECT_REGISTER_r100.md": {
+   "bytes": 67493,
+   "mtime": 1785886548.7017875,
+   "sha256": "7a80debf38f481adf7265269a8c264ffeebb4144a4d5227162c0d91b3e211e0f"
+  },
+  "paper\\.bak_r172_WATCHDOG.md": {
+   "bytes": 526208,
+   "mtime": 1785886548.706032,
+   "sha256": "65eb6738a617e916b441176dcb294b9955af51d62b813c070b5c259e9603f15c"
+  },
+  "paper\\.bak_r173_DEFECT_REGISTER_r100.md": {
+   "bytes": 73779,
+   "mtime": 1785888461.45908,
+   "sha256": "0410f1f8fd6ce1facbf411e286e42eecade6ac69fe1d31fa1f177096c26df784"
+  },
+  "paper\\.bak_r174_WATCHDOG.md": {
+   "bytes": 530311,
+   "mtime": 1785888461.4648688,
+   "sha256": "8bb43c8cf2207e6cf63bd2ed61fb54ea73a7e893021905357b1da43ed8726e4b"
+  },
+  "paper\\.bak_r175_HANDOFF.md": {
+   "bytes": 16145,
+   "mtime": 1785888692.4805465,
+   "sha256": "759c71028c8647eec2c734c8344f00bcd5f20e52d1d9701f1751eea163817f8d"
+  },
+  "paper\\.bak_r176_resume_slope_tier2_r110.py": {
+   "bytes": 8394,
+   "mtime": 1785888692.4866219,
+   "sha256": "8ef6f48c29d4f52f5c17b1bf43c82616cde0f83a4ff330b9e3cfb192999b3a24"
+  },
+  "paper\\.bak_r177_DEFECT_REGISTER_r100.md": {
+   "bytes": 82155,
+   "mtime": 1785888811.5658686,
+   "sha256": "c23262aa5a41b54833f3239519fbef95d421ef92aab655039348258d3af9b3a8"
+  },
+  "paper\\.bak_r178_WATCHDOG.md": {
+   "bytes": 535318,
+   "mtime": 1785888811.5728667,
+   "sha256": "6e0587c77c4299a09cb6573a14ee46cfde4a23048137f5731b8de1b947c5c303"
+  },
+  "paper\\.bak_r179_DEFECT_REGISTER_r100.md": {
+   "bytes": 86494,
+   "mtime": 1785889571.2193494,
+   "sha256": "b26f734b32790d7a4f01a237ab9b2d4614bf4a88e090b3d1263758dce0117216"
+  },
+  "paper\\.bak_r180_WATCHDOG.md": {
+   "bytes": 539508,
+   "mtime": 1785889571.2259426,
+   "sha256": "dcf940d44c01e4a722e57d0cdee7c7fde38cf115684e19b775e605ce504b3e2a"
+  },
+  "paper\\.bak_r181_HANDOFF.md": {
+   "bytes": 18999,
+   "mtime": 1785889780.315187,
+   "sha256": "c11653ce101a3f67ae00cef6d78cde0bd0bbcec9bcd238d30aa674d68b4b0a0b"
+  },
+  "paper\\.bak_r182_DEFECT_REGISTER_r100.md": {
+   "bytes": 93470,
+   "mtime": 1785889873.3386247,
+   "sha256": "6bd9dcf34ae70aa7cad8ff56c59c97490bf2428a5a52b5159217f92cfce1a758"
+  },
+  "paper\\.bak_r183_HANDOFF.md": {
+   "bytes": 21285,
+   "mtime": 1785890328.7925527,
+   "sha256": "c97368a605423245126534a363d9838dc0072bda853a1da231f2143bdf6f41ac"
+  },
+  "paper\\.bak_r184_DEFECT_REGISTER_r100.md": {
+   "bytes": 94310,
+   "mtime": 1785890328.7975552,
+   "sha256": "549165dee9d5c229e46cef286e4b650c4cf17b49bc631388e1585edb065b6bc7"
+  },
+  "paper\\.bak_r185_DEFECT_REGISTER_r100.md": {
+   "bytes": 97784,
+   "mtime": 1785890397.2148857,
+   "sha256": "619a35460c048047f70071aecd14c1ecd693b2c52f05d7309eb864fc8dd00631"
+  },
+  "paper\\.bak_r186_WATCHDOG.md": {
+   "bytes": 544084,
+   "mtime": 1785890526.4929328,
+   "sha256": "1f0186084855ebd74c4ab6eb86c0148001319e7d772e1649f69be31332aa6df6"
+  },
+  "paper\\.bak_r187_HANDOFF.md": {
+   "bytes": 21665,
+   "mtime": 1785892078.3945947,
+   "sha256": "b705b79a0d405a183cf5807b9b593644a558027afc233f47a263aaaa623ca20f"
+  },
+  "paper\\.bak_r188_DEFECT_REGISTER_r100.md": {
+   "bytes": 106035,
+   "mtime": 1785892126.7211003,
+   "sha256": "5bb507f2d8fcdb3a467a58072d7061f3938bf8ab89423828b3a2e8e02bbcde54"
+  },
+  "paper\\.bak_r189_HANDOFF.md": {
+   "bytes": 22169,
+   "mtime": 1785893152.2789185,
+   "sha256": "00f67fa3fc87ae1877800698af32a8b05302ed8482e53059df572635dd2cd729"
+  },
+  "paper\\.bak_r190_DEFECT_REGISTER_r100.md": {
+   "bytes": 108302,
+   "mtime": 1785893220.874601,
+   "sha256": "b7173c8b6bf2b8ae8ac31e4874a893650f3e82899b998117e75bfdef3bde8783"
+  },
+  "paper\\.bak_r191_HANDOFF.md": {
+   "bytes": 22640,
+   "mtime": 1785894336.7545705,
+   "sha256": "2d0d5efd48d798188a6de103ad1219577fd14194e30f36cdd76395a6995cefd6"
+  },
+  "paper\\.bak_r192_resume_slope_tier2_r110.py": {
+   "bytes": 8990,
+   "mtime": 1785894336.759988,
+   "sha256": "7abaa9b1eb7e92ae4d21fb14934e171314ab6641e94f7b50ca1658e85fbefa59"
+  },
+  "paper\\.bak_r193_DEFECT_REGISTER_r100.md": {
+   "bytes": 110759,
+   "mtime": 1785894403.4171612,
+   "sha256": "7630a4fda398aaaaec223e52ae4fee6189e88bbcb2f93aeb6299f04b77a2684c"
+  },
+  "paper\\.bak_r194_SLOPE_RESULT_r62.json": {
+   "bytes": 21214,
+   "mtime": 1785895588.7126184,
+   "sha256": "de3b9c82cdac5677c98390d5f0a94af81b03e60307fd3e81bd9d7e17d75388ff"
+  },
+  "paper\\.bak_r194_SLOPE_SELFTEST_r62.json": {
+   "bytes": 4322,
+   "mtime": 1785895588.863165,
+   "sha256": "a91ed03ea8444ac5dd8b471c25f0ebba60cca0bdb73da7e884697411eb96ccc7"
+  },
+  "paper\\.bak_r194_SLOPE_VERIFICATION_r62.json": {
+   "bytes": 385698,
+   "mtime": 1785895588.7914827,
+   "sha256": "3a25f1e3d9358aa49ebcdf9d93275a65fb5d47a6ce5c8c38d2ee304a8a100615"
+  },
+  "paper\\.bak_r195_DEFECT_REGISTER_r100.md": {
+   "bytes": 113619,
+   "mtime": 1785895804.8542483,
+   "sha256": "5b5603429faaeea1d4f4bdd4493b4a3f0b76a5264285ad20900a3cc30de92cd2"
+  },
+  "paper\\.bak_r196_HANDOFF.md": {
+   "bytes": 23307,
+   "mtime": 1785896020.7600276,
+   "sha256": "76851146e193156ff0ae88ef87a1d0fde9f3fc6e3e52bffa96b98c52b581d485"
+  },
+  "paper\\.bak_r197_DEFECT_REGISTER_r100.md": {
+   "bytes": 118394,
+   "mtime": 1785896146.2234414,
+   "sha256": "ddc4e1da0460612cc69bafe8bfd4778c4cba80ceef9f0f900df9e128ab9bf970"
+  },
+  "paper\\.bak_r198_DEFECT_REGISTER_r100.md": {
+   "bytes": 122216,
+   "mtime": 1785897994.672953,
+   "sha256": "f775e6fb7f157d9058185d0aa9f1c6ca34ce72c0f7833b8b2678f4bf3a22e893"
+  },
+  "paper\\.bak_r199_DEFECT_REGISTER_r100.md": {
+   "bytes": 128860,
+   "mtime": 1785898235.2037804,
+   "sha256": "c8b8d706602fb5d13ee22882897210c77f6790afd4db785550215c1b92c085d9"
+  },
+  "paper\\.bak_r200_HANDOFF.md": {
+   "bytes": 27279,
+   "mtime": 1785898475.0976763,
+   "sha256": "847a2fdafc6dea582efcad1b251445d1cadf1af67ec83f2f781f06e61f06cc49"
+  },
+  "paper\\.bak_r201_DEFECT_REGISTER_r100.md": {
+   "bytes": 132219,
+   "mtime": 1785898566.9222033,
+   "sha256": "33a6c2698fea798c250498e6475bb91f28c57cf8512086538c0bbeb8767a2334"
+  },
+  "paper\\.bak_r202_DEFECT_REGISTER_r100.md": {
+   "bytes": 136837,
+   "mtime": 1785900013.7742715,
+   "sha256": "ce934d4a5c6dabbb1de7d6f4c2f764abee96a7bd58fd0c53289b8f9ee562c6f0"
+  },
+  "paper\\.bak_r203_DEFECT_REGISTER_r100.md": {
+   "bytes": 142789,
+   "mtime": 1785900240.7811146,
+   "sha256": "27dc55bdc71664e0fa71a83a8afc965d98c7b4c86a0111c87842d73de83f6d11"
+  },
+  "paper\\.bak_r204_HANDOFF.md": {
+   "bytes": 30379,
+   "mtime": 1785900483.5335455,
+   "sha256": "7454bea52bd64f2e75002cc33b08e75f364119f697a698939e5ac4f9a611544b"
+  },
+  "paper\\.bak_r205_DEFECT_REGISTER_r100.md": {
+   "bytes": 145722,
+   "mtime": 1785900573.56013,
+   "sha256": "c35f25ffbeaf9acd2a5f35771a651788483362c1e0b7b24af4e922a188ca7a88"
+  },
+  "paper\\.bak_r206_DEFECT_REGISTER_r100.md": {
+   "bytes": 150421,
+   "mtime": 1785901855.9996486,
+   "sha256": "33889fa6940c852016b29ed174426d41ea0e3c3530dedef512e5eaad50e7ef43"
+  },
+  "paper\\.bak_r207_SLOPE_RESULT_r62.json": {
+   "bytes": 21214,
+   "mtime": 1785902727.7396305,
+   "sha256": "de3b9c82cdac5677c98390d5f0a94af81b03e60307fd3e81bd9d7e17d75388ff"
+  },
+  "paper\\.bak_r207_SLOPE_SELFTEST_r62.json": {
+   "bytes": 4322,
+   "mtime": 1785902727.6423178,
+   "sha256": "a91ed03ea8444ac5dd8b471c25f0ebba60cca0bdb73da7e884697411eb96ccc7"
+  },
+  "paper\\.bak_r207_SLOPE_VERIFICATION_r62.json": {
+   "bytes": 385698,
+   "mtime": 1785902727.8349342,
+   "sha256": "3a25f1e3d9358aa49ebcdf9d93275a65fb5d47a6ce5c8c38d2ee304a8a100615"
+  },
+  "paper\\.bak_r208_DEFECT_REGISTER_r100.md": {
+   "bytes": 154679,
+   "mtime": 1785902853.0447683,
+   "sha256": "99cf45097c59f98f1f7b43316df0aa7d31774822e056ad239b08aeb0dcb2d7ec"
+  },
+  "paper\\.bak_r209_DEFECT_REGISTER_r100.md": {
+   "bytes": 158446,
+   "mtime": 1785904151.1701326,
+   "sha256": "627d3cd9886c9cd4dbb08e182fd35be52497cac9db776c5e0f14360ae56bbdc4"
+  },
+  "paper\\.bak_r210_HANDOFF.md": {
+   "bytes": 31422,
+   "mtime": 1785905168.8896997,
+   "sha256": "40af3554dae10022e829bc91e94389793fa776950b890c5887c2af85d9ecc529"
+  },
+  "paper\\.bak_r211_DEFECT_REGISTER_r100.md": {
+   "bytes": 162942,
+   "mtime": 1785905231.8924289,
+   "sha256": "5cbabd8120cd3e6ddc385f911aa4144dd3fe6db327c625bac1628a0c31770da0"
+  },
+  "paper\\.bak_r212_DEFECT_REGISTER_r100.md": {
+   "bytes": 166313,
+   "mtime": 1785906700.4652574,
+   "sha256": "c44dd2366ab9dec0183c892528bfc6b8c9fee8a2a9807ad2a065dbd562793e7f"
+  },
+  "paper\\.bak_r213_DEFECT_REGISTER_r100.md": {
+   "bytes": 171241,
+   "mtime": 1785906907.6148121,
+   "sha256": "7fb015e6e24323de046fcb623f9bffd094140a8efde29dc36f581662261cb1e7"
+  },
+  "paper\\.bak_r214_HANDOFF.md": {
+   "bytes": 33054,
+   "mtime": 1785907167.7731504,
+   "sha256": "36ff5d847c30f4f10d470782bd6c3a935ab1540ca2a88d4f46b4728213e2e16c"
+  },
+  "paper\\.bak_r215_DEFECT_REGISTER_r100.md": {
+   "bytes": 175419,
+   "mtime": 1785907255.155223,
+   "sha256": "6e49f4277b87998b6343fa3f22ad8eb8acd50393164998433da470e5eb3c8764"
+  },
+  "paper\\.bak_r217_DEFECT_REGISTER_r100.md": {
+   "bytes": 179563,
+   "mtime": 1785908422.398608,
+   "sha256": "20c590f2a855379125dc3869183dfd0286eced60a76f5926f1cd518b0c400680"
+  },
+  "paper\\.bak_r218_DEFECT_REGISTER_r100.md": {
+   "bytes": 183773,
+   "mtime": 1785909675.1845508,
+   "sha256": "15e11be4937fd47205814033481a57ee32bd0a2d8961e53760daf5214b70b74b"
+  },
+  "paper\\.bak_r219_DEFECT_REGISTER_r100.md": {
+   "bytes": 189641,
+   "mtime": 1785909731.346614,
+   "sha256": "bf4c58606a1539bac1f9434721737627282929023d8a825d7c186cba0ddb99e8"
+  },
+  "paper\\.bak_r220_DEFECT_REGISTER_r100.md": {
+   "bytes": 190936,
+   "mtime": 1785911239.8259623,
+   "sha256": "b921e75a8f12273bc9c6122fef5858feae1d908e4bcf8ba85f7f2c10dc0b57cd"
+  },
+  "paper\\.bak_r221_RESULTS_discrimination.md": {
+   "bytes": 165610,
+   "mtime": 1785841471.8018253,
+   "sha256": "706767df652747c5754ad2e6d4bf18fc18289acc08ccf1401b146917e01c4da2"
+  },
+  "paper\\.bak_r222_METHODS_contribution.md": {
+   "bytes": 89206,
+   "mtime": 1785879311.950632,
+   "sha256": "fcc383ae8cf25118034c1a463f25fbc753588c409402b0d25d4439434db5594b"
+  },
+  "paper\\.bak_r223_DEFECT_REGISTER_r100.md": {
+   "bytes": 263546,
+   "mtime": 1786179825.858252,
+   "sha256": "f8955758462581f458de7d5ac1c9657cd122865eceb41f69f7bf9a31aac83c43"
+  },
+  "paper\\.bak_r224_STANDING_OBSERVATIONS.md": {
+   "bytes": 8249,
+   "mtime": 1786179686.3529806,
+   "sha256": "5481d9af16892c9eeb036bf96023c94db9704602eaf0dca577147038dce9747b"
+  },
+  "paper\\.bak_r225_DEFECT_REGISTER_r100.md": {
+   "bytes": 267968,
+   "mtime": 1786288301.6612396,
+   "sha256": "3f3d45b5a13f5c7e7e4090a7ac3bbc6acce0567b7405bd327327d4b2ebfcaea1"
+  },
+  "paper\\.bak_r226_DEFECT_REGISTER_r100.md": {
+   "bytes": 275826,
+   "mtime": 1786288997.2037182,
+   "sha256": "6f68004fc3d703bf656c15311b49dca682291308889e9b74a058ddb8bba3a749"
+  },
+  "paper\\.bak_r227_DEFECT_REGISTER_r100.md": {
+   "bytes": 279713,
+   "mtime": 1786289363.5741787,
+   "sha256": "c6d4b66fd2e334d6458318561d5fbf288329b41dfc80c6b5874c2c6c8195c7d3"
+  },
+  "paper\\.bak_r228_BACKUP_MANIFEST_r145.json": {
+   "bytes": 35503,
+   "mtime": 1786290431.2956083,
+   "sha256": "3c35081fc26b9a78896817c631a4019badbc80daf70e5cbb493e87b50bde0e40"
+  },
+  "paper\\.bak_r229_DEFECT_REGISTER_r100.md": {
+   "bytes": 282246,
+   "mtime": 1786290399.6196847,
+   "sha256": "09d7542c57525772f24da1853af18b10fb8bfbd91e083fd4b2b2807c131265ee"
+  },
+  "paper\\.bak_r230_DEFECT_REGISTER_r100.md": {
+   "bytes": 284889,
+   "mtime": 1786290594.6445484,
+   "sha256": "c3b371b21c307602105772cdf60634a6eef3bf46e0ef88d9cafc5bd046d28754"
+  },
+  "paper\\.bak_r51_METHODS_contribution.md": {
+   "bytes": 15195,
+   "mtime": 1785754542.9717894,
+   "sha256": "a9dd58e1c1da8910ad3a111e0437e06cc2c036dd363fba76ebaecab1c243138c"
+  },
+  "paper\\.bak_r53_METHODS_contribution.md": {
+   "bytes": 22503,
+   "mtime": 1785757240.790498,
+   "sha256": "055594a85aff20a876733bb871af68a4fdb805db039e0b285289ab20eb6c95cd"
+  },
+  "paper\\.bak_r53_RESULTS_discrimination.md": {
+   "bytes": 20283,
+   "mtime": 1785757240.771314,
+   "sha256": "82f1e62fad4634547f4112ba790b6010cfe64df9ab3a6a9c2ed85772a8af5527"
+  },
+  "paper\\.bak_r55_METHODS_contribution.md": {
+   "bytes": 33775,
+   "mtime": 1785759309.18904,
+   "sha256": "34f94b8a3c5da26c3f10f2e9118aeb07cdea7c585e55aaaca0b4d46eeee1b2a3"
+  },
+  "paper\\.bak_r55_RESULTS_discrimination.md": {
+   "bytes": 43375,
+   "mtime": 1785759309.1711912,
+   "sha256": "9400b3375f98d0b5b28fd66b4034b4503ff23bb26ccadd021762f06a8ed0283e"
+  },
+  "paper\\.bak_r61_METHODS_contribution.md": {
+   "bytes": 42151,
+   "mtime": 1785766748.9827125,
+   "sha256": "a098c53c83a8b959291fd32df49598a62e4427d45b1e388566eb186d48e2e9a3"
+  },
+  "paper\\.bak_r61_RESULTS_discrimination.md": {
+   "bytes": 65495,
+   "mtime": 1785766748.7822924,
+   "sha256": "27db1a6aa98ddbd39e9584f91b08726f2595ca6852791ba3317e475c5a142bdc"
+  },
+  "paper\\.bak_r63_METHODS_contribution.md": {
+   "bytes": 43563,
+   "mtime": 1785770633.9016347,
+   "sha256": "276670da930370a7e508aabe38decf1f51edc2074db333c0c8c21430c939c96b"
+  },
+  "paper\\.bak_r63_RESULTS_discrimination.md": {
+   "bytes": 81394,
+   "mtime": 1785770633.9954228,
+   "sha256": "26ed5a230e0a1b06e56ca6386d156724331c84822dacec8b24434766ff05a85c"
+  },
+  "paper\\.bak_r65_RESULTS_discrimination.md": {
+   "bytes": 83188,
+   "mtime": 1785776724.2665899,
+   "sha256": "c265e17cea41a8fdd8178370dd9e53d6561f27e28b23c494b4b61779fa1ded4f"
+  },
+  "paper\\.bak_r66_METHODS_contribution.md": {
+   "bytes": 45357,
+   "mtime": 1785777904.8767304,
+   "sha256": "d237e6f031f7cc90b8cd3b0b9bc99b31217eed8e57eb0bf64e1ef56017b5d650"
+  },
+  "paper\\.bak_r67_RESULTS_discrimination.md": {
+   "bytes": 87535,
+   "mtime": 1785779600.6005275,
+   "sha256": "37aef2cb752cc0fc9fecf06942fd915cca0789b1f44a561a9b675343915d1e81"
+  },
+  "paper\\.bak_r68_METHODS_contribution.md": {
+   "bytes": 49194,
+   "mtime": 1785780930.3870308,
+   "sha256": "bf0ae48a9597fe833edb2c76dabc12513d0b6ba04693dddc86619bf3d0e480b2"
+  },
+  "paper\\.bak_r68_RESULTS_discrimination.md": {
+   "bytes": 89399,
+   "mtime": 1785780930.455901,
+   "sha256": "4d3774cf992d59f647c96483805c32a3128d0039b4e1292c181f46637511cdf6"
+  },
+  "paper\\.bak_r69_METHODS_contribution.md": {
+   "bytes": 50925,
+   "mtime": 1785783306.4792478,
+   "sha256": "a21a2f4046ee7c8019323d6ecd15dadc2f953150188fc255c8f490156c2bc249"
+  },
+  "paper\\.bak_r69_RESULTS_discrimination.md": {
+   "bytes": 89682,
+   "mtime": 1785783306.3964567,
+   "sha256": "c32b8d275dc905d953112459c2fa5a00d8b2ec574cfca77c67c3e3c138764cc5"
+  },
+  "paper\\.bak_r70_METHODS_contribution.md": {
+   "bytes": 51531,
+   "mtime": 1785784947.7257822,
+   "sha256": "62a797219d13d9555ad7c67a1534434028ad67601bed4a30f49ec7f1a0f5fde4"
+  },
+  "paper\\.bak_r70_RESULTS_discrimination.md": {
+   "bytes": 90882,
+   "mtime": 1785784947.6601794,
+   "sha256": "acccffeae95c2da5ccbe3a74b7969b591f28ade42248e2df169bc7aeb7f23a8c"
+  },
+  "paper\\.bak_r71_METHODS_contribution.md": {
+   "bytes": 52097,
+   "mtime": 1785786922.1758525,
+   "sha256": "8211f2a1ada9b4beb21b32bbadeb8a07d9693a5cae3ab78f4ae057faed820444"
+  },
+  "paper\\.bak_r71_RESULTS_discrimination.md": {
+   "bytes": 92533,
+   "mtime": 1785786922.0963395,
+   "sha256": "368c59c8e8dbcb79293f42467c7b37d872b1b7b71e7a30dbb827ea0cd17c9fee"
+  },
+  "paper\\.bak_r73_RESULTS_discrimination.md": {
+   "bytes": 94606,
+   "mtime": 1785788870.4341311,
+   "sha256": "466dadea48655c96bca40b7550e983f359c472ba47f008f3648a3f69a9109780"
+  },
+  "paper\\.bak_r74_RESULTS_discrimination.md": {
+   "bytes": 95580,
+   "mtime": 1785788935.0748787,
+   "sha256": "38b6b974e84161b07931d99d013ef7a2bc44593bf3ca5f329b7ab617b8417135"
+  },
+  "paper\\.bak_r76_RESULTS_discrimination.md": {
+   "bytes": 95579,
+   "mtime": 1785791689.1491425,
+   "sha256": "4efd9bb7b7eeed98416ab01c1b97beadbc53415c24a00c497f652b3751be061f"
+  },
+  "paper\\.bak_r77_RESULTS_discrimination.md": {
+   "bytes": 107379,
+   "mtime": 1785793233.2492104,
+   "sha256": "d5f2bb669c04546f498316722a05796e4abac2681f1fc73bbf7bfd970ff175bc"
+  },
+  "paper\\.bak_r78_METHODS_contribution.md": {
+   "bytes": 52374,
+   "mtime": 1785796008.0471046,
+   "sha256": "5d850d7f74966ff66668e686956fd8d577d1d557b98ac03752b3340a95a7bd77"
+  },
+  "paper\\.bak_r78_OUTCOME_COVERAGE_r64.md": {
+   "bytes": 17050,
+   "mtime": 1785796311.7690866,
+   "sha256": "93597d6a5cda81f7475e093590bfa9bfc1dfcf15c0802830ca84717b3015f5e5"
+  },
+  "paper\\.bak_r78_RESULTS_discrimination.md": {
+   "bytes": 120141,
+   "mtime": 1785796008.0161078,
+   "sha256": "b96b60e76d948ca3493ee1a14e18efb1445dd92085bf81955b9c1865c5c30af7"
+  },
+  "paper\\.bak_r79_METHODS_contribution.md": {
+   "bytes": 52382,
+   "mtime": 1785800760.9077766,
+   "sha256": "d4696cc04235c5a100d341e2d5612204d23082229edafbfca17855fbb432fe3c"
+  },
+  "paper\\.bak_r79_RESULTS_discrimination.md": {
+   "bytes": 122081,
+   "mtime": 1785800760.8528388,
+   "sha256": "dbdc99b72efb06dee77a0df2a7fcaed524b1643b53c3a3a5834dbb6a1883d268"
+  },
+  "paper\\.bak_r83_RESULTS_discrimination.md": {
+   "bytes": 126139,
+   "mtime": 1785804977.3828504,
+   "sha256": "882e3c115c63100657828916f19a0f9f354682645b8139186435a699a3c0de13"
+  },
+  "paper\\.bak_r84_METHODS_contribution.md": {
+   "bytes": 52382,
+   "mtime": 1785806355.6857908,
+   "sha256": "d4696cc04235c5a100d341e2d5612204d23082229edafbfca17855fbb432fe3c"
+  },
+  "paper\\.bak_r85_RESULTS_discrimination.md": {
+   "bytes": 128111,
+   "mtime": 1785808019.108529,
+   "sha256": "8b6a6cb7835ae46ca14ddab465358d2b1484932625a59f997a0acc5b7b81f1bb"
+  },
+  "paper\\.bak_r86_METHODS_contribution.md": {
+   "bytes": 52380,
+   "mtime": 1785809844.0367372,
+   "sha256": "f481a16f0ee4d3881a6a47c81d2ef1ded49d21c228284a7795c6290ebe2042a6"
+  },
+  "paper\\.bak_r86_RESULTS_discrimination.md": {
+   "bytes": 136069,
+   "mtime": 1785809843.9787753,
+   "sha256": "5629b792304256c027f3827aba986c69c2019c4fb668ec5add460245ceed0492"
+  },
+  "paper\\.bak_r87_RESULTS_discrimination.md": {
+   "bytes": 142171,
+   "mtime": 1785812131.0958595,
+   "sha256": "e22fe8ca8edae7707dac92a262dbd7e5aa5f7a6fc776ac3a06123c04ab734f57"
+  },
+  "paper\\.bak_r88_RESULTS_discrimination.md": {
+   "bytes": 141313,
+   "mtime": 1785814504.4343867,
+   "sha256": "4ec1eb90faa453e308d27b28580ff174a500f95a8c33b827d5e1b9c23060eb4c"
+  },
+  "paper\\.bak_r89_METHODS_contribution.md": {
+   "bytes": 57998,
+   "mtime": 1785817535.9261556,
+   "sha256": "e92211c8d451279bc5687ab8eed3ee4f69309c63bd1506a84ba46f247242a722"
+  },
+  "paper\\.bak_r91_RESULTS_discrimination.md": {
+   "bytes": 142295,
+   "mtime": 1785820094.7689016,
+   "sha256": "680cd96162c798e29c0d0689ecfedc79cac61fb9702f7ab299f0944903fb2c9b"
+  },
+  "paper\\.bak_r94_COUNCIL_round76.md": {
+   "bytes": 8828,
+   "mtime": 1785823664.3781517,
+   "sha256": "37fa0b199933369f5a4a47326b0c743bf6e5ca5a2eb8c2d8d11c2ff697553722"
+  }
+ },
+ "flagged": {},
+ "note": "entries listed in `flagged` retain their ORIGINAL baseline digest, not the observed one -- an overwrite must not clear itself",
+ "scope": "attests these pre-images have not changed SINCE the run that wrote this file; attests NOTHING about their state before, and cannot recover the pre-image destroyed in round 144",
+ "what": "digests of every retained pre-image"
+}

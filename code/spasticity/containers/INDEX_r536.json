@@ -1,0 +1,42 @@
+{
+ "id": "INDEX_r536",
+ "why": "The corpus permits a graded tone readout and forbids a graded weakness readout. This defines an index that returns only what is permitted, and measures it rather than asserting it.",
+ "definition": {
+  "inputs": "one instrumented gait recording of the paretic side, at least five clean cycles",
+  "A": "peak ankle dorsiflexion during swing, mean over cycles, degrees, dorsiflexion positive",
+  "B": "knee flexion angle at initial contact, mean over cycles, degrees",
+  "reference": "A0 and B0 from the laboratory's own unimpaired controls",
+  "tone_score_T": "A0 - A; larger means more plantarflexor overactivity",
+  "direction_call_D": "only interpreted when T is below the tone threshold: knee extended relative to B0 indicates the weakness pattern",
+  "what_it_does_NOT_return": "a graded weakness magnitude. No readout or combination in this corpus recovers it (PAIR_r533: every leave-one-level-out R2 negative). A strength measurement is required and cannot be substituted by gait"
+ },
+ "control_reference_deg": {
+  "A0": 9.55516367333586,
+  "B0": -7.849999258121554
+ },
+ "tone_score": {
+  "spearman_rho_vs_delivered_gain": 0.9555335968379446,
+  "lofo_gain_RMSE": 0.006232280006393198,
+  "ladder_width": 0.13999999999999999,
+  "by_dose": {
+   "0.1": 7.245029101399204,
+   "0.14": 8.330701585418627,
+   "0.2": 10.199722189757832,
+   "0.22": 10.577944283141663,
+   "0.24": 11.380872997377624
+  }
+ },
+ "classification_lofo": {
+  "A only (peak swing dorsiflexion)": 1.0,
+  "B only (knee at contact)": 0.9830508474576272,
+  "A and B": 1.0
+ },
+ "majority_baseline": 0.6101694915254238,
+ "threshold": {
+  "T_threshold_deg": 4.018678801522462,
+  "margin_deg": 3.1325269966985934,
+  "laboratory_SEM_deg": 1.7677669529663689,
+  "margin_in_SEM": 1.772024865292404,
+  "CAVEAT": "this margin contains no between-patient variance. Against the spread a stroke population presents, the relevant figure is the 22.7 per cent misclassification of SWINGDF_r525"
+ }
+}

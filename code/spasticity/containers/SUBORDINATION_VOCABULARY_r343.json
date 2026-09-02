@@ -1,0 +1,828 @@
+{
+ "round": 343,
+ "what": "Census of the vocabulary used to mark a field as superseded/not-live, plus a proposal. NO retrofit performed.",
+ "scope": "274 live .json files in paper/, .bak_ excluded; 104263 keys walked",
+ "distinct_marking_keys": 128,
+ "total_occurrences": 160,
+ "by_family": {
+  "WRONG": 13,
+  "ORIGINAL": 9,
+  "OTHER": 80,
+  "LINE_CITATION_SUPERSEDED": 3,
+  "ORIGINAL_WRONG": 11,
+  "STALE": 5,
+  "REFUTED": 4,
+  "SUPERSEDED": 14,
+  "ORIGINAL_REFUTED": 1,
+  "PREMISE_REFUTED": 1,
+  "UNDATED_ORIGINAL": 5,
+  "RETIRED": 2,
+  "ORIGINAL_STALE": 2,
+  "KEY_RETIRED": 2,
+  "WITHDRAWN": 3,
+  "DEFECTIVE": 4,
+  "WITHDRAWAL": 1
+ },
+ "all_keys": {
+  "GUARDED_r312": {
+   "count": 4,
+   "files": [
+    "YAW_RECOVERED_r309.json"
+   ]
+  },
+  "UNGUARDED_SUPERSEDED": {
+   "count": 4,
+   "files": [
+    "YAW_RECOVERED_r309.json"
+   ]
+  },
+  "why_superseded": {
+   "count": 4,
+   "files": [
+    "YAW_RECOVERED_r309.json"
+   ]
+  },
+  "status_ORIGINAL_WRONG": {
+   "count": 3,
+   "files": [
+    "BANDFILL_ENDPOINT_r291.json",
+    "MATCHED20_ENDPOINT_r298.json"
+   ]
+  },
+  "CORRECTIONS_r308": {
+   "count": 3,
+   "files": [
+    "BISTABILITY_r288.json",
+    "DFSEVERE_RESULT_r303.json",
+    "R294_GAIN_r302.json"
+   ]
+  },
+  "channel_per_fold": {
+   "count": 3,
+   "files": [
+    "CLASSIFIER_r222.json",
+    "LADDER36CLF_r228.json",
+    "LMRONLY_r223.json"
+   ]
+  },
+  "gap_deg_SUPERSEDED_signed_difference": {
+   "count": 3,
+   "files": [
+    "VERIFY_R298.json"
+   ]
+  },
+  "LINE_CITATION_ANCHORED_r333": {
+   "count": 2,
+   "files": [
+    "BANDFILL_ENDPOINT_r291.json",
+    "CYCLE_CONVENTION_CONTRADICTION_r322.json"
+   ]
+  },
+  "note_ORIGINAL_WRONG_LINE_NUMBERS": {
+   "count": 2,
+   "files": [
+    "CLASSIFIER_r222.json",
+    "LMRONLY_r223.json"
+   ]
+  },
+  "LINE_NUMBERS_WERE_WRONG_r324": {
+   "count": 2,
+   "files": [
+    "CLASSIFIER_r222.json",
+    "LMRONLY_r223.json"
+   ]
+  },
+  "what_those_lines_hold_now": {
+   "count": 2,
+   "files": [
+    "CLASSIFIER_r222.json",
+    "LMRONLY_r223.json"
+   ]
+  },
+  "these_line_numbers_will_also_go_stale": {
+   "count": 2,
+   "files": [
+    "CLASSIFIER_r222.json",
+    "LMRONLY_r223.json"
+   ]
+  },
+  "paper/RESULT_coadaptation_refuted.md": {
+   "count": 2,
+   "files": [
+    "CORPUS_MANIFEST.json",
+    "_VOID_CORPUS_MANIFEST_superseded.json"
+   ]
+  },
+  "wrong_because": {
+   "count": 2,
+   "files": [
+    "DFSEVERE_RESULT_r303.json"
+   ]
+  },
+  "success_threshold_mps": {
+   "count": 2,
+   "files": [
+    "R294_GAIN_r302.json",
+    "VERIFY_R294.json"
+   ]
+  },
+  "resolved_par_DEFECTIVE": {
+   "count": 2,
+   "files": [
+    "RUN_FASTSTART_r294_cell00.json",
+    "RUN_FASTSTART_r294_cell01.json"
+   ]
+  },
+  "achieved_speed_mps_DEFECTIVE": {
+   "count": 2,
+   "files": [
+    "RUN_FASTSTART_r294_cell00.json",
+    "RUN_FASTSTART_r294_cell01.json"
+   ]
+  },
+  "achieved_speed_mps_reference_r302": {
+   "count": 2,
+   "files": [
+    "RUN_FASTSTART_r294_cell00.json",
+    "RUN_FASTSTART_r294_cell01.json"
+   ]
+  },
+  "CORRECTION_r302": {
+   "count": 2,
+   "files": [
+    "RUN_FASTSTART_r294_cell00.json",
+    "RUN_FASTSTART_r294_cell01.json"
+   ]
+  },
+  "wrong_values_retained_as": {
+   "count": 2,
+   "files": [
+    "RUN_FASTSTART_r294_cell00.json",
+    "RUN_FASTSTART_r294_cell01.json"
+   ]
+  },
+  "dose_range_fold": {
+   "count": 2,
+   "files": [
+    "TURN_DOSE_r262.json"
+   ]
+  },
+  "ref_threshold_deg": {
+   "count": 2,
+   "files": [
+    "VIDEO_DEGRADATION.json",
+    "VIDEO_DEGRADATION_A5.json"
+   ]
+  },
+  "hours_wrong_unnoticed": {
+   "count": 1,
+   "files": [
+    "ATTESTATION_VIOLATIONS_r319.json"
+   ]
+  },
+  "RUNG_original_label": {
+   "count": 1,
+   "files": [
+    "BANDFILL_ENDPOINT_r291.json"
+   ]
+  },
+  "CONVENTION_IDENTIFIED_r308": {
+   "count": 1,
+   "files": [
+    "BANDFILL_ENDPOINT_r291.json"
+   ]
+  },
+  "what_it_does_and_does_not_affect_LINE_CITATION_SUPERSEDED_r333": {
+   "count": 1,
+   "files": [
+    "BANDFILL_ENDPOINT_r291.json"
+   ]
+  },
+  "COVERAGE_METHOD_ORIGINAL_WRONG": {
+   "count": 1,
+   "files": [
+    "BANDFILL_ENDPOINT_r291.json"
+   ]
+  },
+  "IMPLIED_THRESHOLD_RECOVERED": {
+   "count": 1,
+   "files": [
+    "BISTABILITY_r288.json"
+   ]
+  },
+  "this_files_threshold_t_end_ge_19": {
+   "count": 1,
+   "files": [
+    "BISTABILITY_r288.json"
+   ]
+  },
+  "claim_ORIGINAL_WRONG": {
+   "count": 1,
+   "files": [
+    "BISTABILITY_r288.json"
+   ]
+  },
+  "variance_prior_source": {
+   "count": 1,
+   "files": [
+    "BODY2_DELTA_r229.json"
+   ]
+  },
+  "INVENTORY_COUNT_IS_STALE": {
+   "count": 1,
+   "files": [
+    "CONTAINER_AUDIT_r311.json"
+   ]
+  },
+  "SUPERSEDED_BY_r306": {
+   "count": 1,
+   "files": [
+    "COVERAGE_RECONCILE_r305.json"
+   ]
+  },
+  "note_ORIGINAL_WRONG": {
+   "count": 1,
+   "files": [
+    "COVERAGE_RECONCILE_r305.json"
+   ]
+  },
+  "D14_internal_inconsistency_ORIGINAL_WRONG": {
+   "count": 1,
+   "files": [
+    "COVERAGE_RECONCILE_r305.json"
+   ]
+  },
+  "count_is_47_ORIGINAL_WRONG": {
+   "count": 1,
+   "files": [
+    "COVERAGE_RECONCILE_r305.json"
+   ]
+  },
+  "note_48_WORDING_SUPERSEDED": {
+   "count": 1,
+   "files": [
+    "COVERAGE_RECONCILE_r305.json"
+   ]
+  },
+  "FALSE_CORROBORATION_r321": {
+   "count": 1,
+   "files": [
+    "COVERAGE_RECONCILE_r305.json"
+   ]
+  },
+  "TEXT_2_CONVENTION_IDENTIFIED_r308": {
+   "count": 1,
+   "files": [
+    "CYCLE_CONVENTION_CONTRADICTION_r322.json"
+   ]
+  },
+  "checked_on_disk_r322": {
+   "count": 1,
+   "files": [
+    "CYCLE_CONVENTION_CONTRADICTION_r322.json"
+   ]
+  },
+  "RESULTS_3d_r214.md_LINE_CITATION_SUPERSEDED_r333": {
+   "count": 1,
+   "files": [
+    "CYCLE_CONVENTION_CONTRADICTION_r322.json"
+   ]
+  },
+  "CENSUS_METHOD_CORRECTION_r333": {
+   "count": 1,
+   "files": [
+    "CYCLE_CONVENTION_CONTRADICTION_r322.json"
+   ]
+  },
+  "three_wrong_counts": {
+   "count": 1,
+   "files": [
+    "CYCLE_CONVENTION_CONTRADICTION_r322.json"
+   ]
+  },
+  "status_ORIGINAL_REFUTED_r341": {
+   "count": 1,
+   "files": [
+    "CYCLE_CONVENTION_CONTRADICTION_r322.json"
+   ]
+  },
+  "status_PREMISE_REFUTED_r341": {
+   "count": 1,
+   "files": [
+    "CYCLE_CONVENTION_CONTRADICTION_r322.json"
+   ]
+  },
+  "original_claim": {
+   "count": 1,
+   "files": [
+    "CYCLE_CONVENTION_CONTRADICTION_r322.json"
+   ]
+  },
+  "refutation_1_it_WAS_edited": {
+   "count": 1,
+   "files": [
+    "CYCLE_CONVENTION_CONTRADICTION_r322.json"
+   ]
+  },
+  "refutation_2_the_premise_itself_is_WRONG": {
+   "count": 1,
+   "files": [
+    "CYCLE_CONVENTION_CONTRADICTION_r322.json"
+   ]
+  },
+  "status_UNDATED_ORIGINAL_r342": {
+   "count": 1,
+   "files": [
+    "CYCLE_CONVENTION_CONTRADICTION_r322.json"
+   ]
+  },
+  "NOT_REPAIRED_AND_WHY_UNDATED_ORIGINAL_r342": {
+   "count": 1,
+   "files": [
+    "CYCLE_CONVENTION_CONTRADICTION_r322.json"
+   ]
+  },
+  "correction_to_the_original_statement": {
+   "count": 1,
+   "files": [
+    "DEFECT_LIST_REVALIDATED_r332.json"
+   ]
+  },
+  "PROVENANCE_STALENESS_r316.json": {
+   "count": 1,
+   "files": [
+    "DEFECT_LIST_REVALIDATED_r332.json"
+   ]
+  },
+  "NET_PELVIS_YAW_original_claim_WRONG": {
+   "count": 1,
+   "files": [
+    "DEFECT_REGISTER_r308_D25.json"
+   ]
+  },
+  "NOT_RECOVERABLE_original_claim_WRONG": {
+   "count": 1,
+   "files": [
+    "DEFECT_REGISTER_r308_D25.json"
+   ]
+  },
+  "CORRECTION_r309": {
+   "count": 1,
+   "files": [
+    "DEFECT_REGISTER_r308_D25.json"
+   ]
+  },
+  "what_was_wrong": {
+   "count": 1,
+   "files": [
+    "DEFECT_REGISTER_r308_D25.json"
+   ]
+  },
+  "how_it_was_found": {
+   "count": 1,
+   "files": [
+    "DEFECT_REGISTER_r308_D25.json"
+   ]
+  },
+  "why_the_original_check_failed": {
+   "count": 1,
+   "files": [
+    "DEFECT_REGISTER_r308_D25.json"
+   ]
+  },
+  "n_cells_CORRECTED_r308": {
+   "count": 1,
+   "files": [
+    "DFSEVERE_RESULT_r303.json"
+   ]
+  },
+  "n_cells_original_value": {
+   "count": 1,
+   "files": [
+    "DFSEVERE_RESULT_r303.json"
+   ]
+  },
+  "populated_r308": {
+   "count": 1,
+   "files": [
+    "DFSEVERE_RESULT_r303.json"
+   ]
+  },
+  "original_value": {
+   "count": 1,
+   "files": [
+    "DFSEVERE_RESULT_r303.json"
+   ]
+  },
+  "retired_swing_min": {
+   "count": 1,
+   "files": [
+    "FOOTDROP_CORR.json"
+   ]
+  },
+  "supersedes": {
+   "count": 1,
+   "files": [
+    "FOOTING_r272.json"
+   ]
+  },
+  "refuted_by": {
+   "count": 1,
+   "files": [
+    "HEADLINE_FIGURES_r215.json"
+   ]
+  },
+  "why_the_first_was_wrong": {
+   "count": 1,
+   "files": [
+    "HEADLINE_FIGURES_r215.json"
+   ]
+  },
+  "why_the_retraction_was_wrong": {
+   "count": 1,
+   "files": [
+    "HEADLINE_FIGURES_r215.json"
+   ]
+  },
+  "band_s_RENAMED_r308": {
+   "count": 1,
+   "files": [
+    "KNEE_VS_DURATION_r284.json"
+   ]
+  },
+  "band_s_ORIGINAL_KEY_REMOVED": {
+   "count": 1,
+   "files": [
+    "KNEE_VS_DURATION_r284.json"
+   ]
+  },
+  "what_was_removed": {
+   "count": 1,
+   "files": [
+    "KNEE_VS_DURATION_r284.json"
+   ]
+  },
+  "why_not_a_threshold": {
+   "count": 1,
+   "files": [
+    "KNEE_VS_DURATION_r284.json"
+   ]
+  },
+  "FALSE_ZERO_r309": {
+   "count": 1,
+   "files": [
+    "KNEE_VS_DURATION_r284.json"
+   ]
+  },
+  "LINE_CITATION_CENSUS_r325": {
+   "count": 1,
+   "files": [
+    "LMRONLY_r223.json"
+   ]
+  },
+  "evidence_UNDATED_ORIGINAL_r342": {
+   "count": 1,
+   "files": [
+    "LMRONLY_r223.json"
+   ]
+  },
+  "holdout_l": {
+   "count": 1,
+   "files": [
+    "LR_CROSSVAL.json"
+   ]
+  },
+  "holdout_ratio": {
+   "count": 1,
+   "files": [
+    "LR_CROSSVAL.json"
+   ]
+  },
+  "holdout_l_over_const": {
+   "count": 1,
+   "files": [
+    "LR_CROSSVAL.json"
+   ]
+  },
+  "source_r308": {
+   "count": 1,
+   "files": [
+    "MATCHED20_ENDPOINT_r298.json"
+   ]
+  },
+  "REGISTRATION_SHORTFALL_r308": {
+   "count": 1,
+   "files": [
+    "MATCHED20_ENDPOINT_r298.json"
+   ]
+  },
+  "PER_KV_LADDER_r308": {
+   "count": 1,
+   "files": [
+    "MATCHED20_ENDPOINT_r298.json"
+   ]
+  },
+  "metric_was_never_registered": {
+   "count": 1,
+   "files": [
+    "METRIC_LADDER_r256.json"
+   ]
+  },
+  "thresholds": {
+   "count": 1,
+   "files": [
+    "P3D2_LADDER_r145.json"
+   ]
+  },
+  "kv_0.050_prior": {
+   "count": 1,
+   "files": [
+    "P3D2_LADDER_r145.json"
+   ]
+  },
+  "SECOND_DISAGREEMENT_PREDATING_r308": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "actual_values_now_ORIGINAL_STALE": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "STALE_MEASUREMENT_CORRECTED_r336": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "actual_values_now_KEY_RETIRED_r338": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "old_key": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "old_values_at_retirement": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "why_retired": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "finding_LINE_CITATION_SUPERSEDED_r334": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "DEFECT_15_LIVE_OK_VERDICTS_r330": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "measured_r330": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "why_not_the_verdict_reading_REFUTED_r335": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "RULING_r330_REASONING_WAS_FALSE": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "refutation_1_not_the_only_record": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "refutation_2_the_coincidence_is_not_evidence": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "ACTION_WAS_HARMLESS_REASONING_WAS_FALSE": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "what_the_OK_verdicts_now_rest_on_ORIGINAL_STALE": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "what_the_OK_verdicts_now_rest_on_KEY_RETIRED_r338": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "RULING_UNDATED_ORIGINAL_r342": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "EVIDENCE_FILE_RULING_r334": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "correction_to_r332": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "ROUND4_DEFECT9_HEADLINE_FALSE_r335": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "PERISHABILITY_RULE_r338": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "KEY_VS_WORDING_r339": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "WORDING_NOT_MARKER_r340": {
+   "count": 1,
+   "files": [
+    "PROVENANCE_STALENESS_r316.json"
+   ]
+  },
+  "failure_gain_threshold_mps_per_100gen": {
+   "count": 1,
+   "files": [
+    "R294_GAIN_r302.json"
+   ]
+  },
+  "D9_asymptote_claim_withdrawn": {
+   "count": 1,
+   "files": [
+    "R294_GAIN_r302.json"
+   ]
+  },
+  "VERDICT_ORIGINAL_WRONG": {
+   "count": 1,
+   "files": [
+    "R294_GAIN_r302.json"
+   ]
+  },
+  "P1_threshold": {
+   "count": 1,
+   "files": [
+    "ROM_REANALYSIS.json"
+   ]
+  },
+  "LIMIT_OF_THIS_DEPOSIT_UNDATED_ORIGINAL_r342": {
+   "count": 1,
+   "files": [
+    "SCRIPT_HASHES_r307.json"
+   ]
+  },
+  "REVERIFIED_r342": {
+   "count": 1,
+   "files": [
+    "SCRIPT_HASHES_r307.json"
+   ]
+  },
+  "STATUS_r308": {
+   "count": 1,
+   "files": [
+    "SEPARATION_r280.json"
+   ]
+  },
+  "SOURCE_SUPERSEDED": {
+   "count": 1,
+   "files": [
+    "SEPARATION_r280.json"
+   ]
+  },
+  "what_is_and_is_not_wrong": {
+   "count": 1,
+   "files": [
+    "SEPARATION_r280.json"
+   ]
+  },
+  "current_source_recomputed_r308": {
+   "count": 1,
+   "files": [
+    "SEPARATION_r280.json"
+   ]
+  },
+  "why_withdrawn_rather_than_recomputed": {
+   "count": 1,
+   "files": [
+    "SEPARATION_r280.json"
+   ]
+  },
+  "withdrawal_was_ordered_earlier_but_never_written": {
+   "count": 1,
+   "files": [
+    "SLAP3D_r295.json"
+   ]
+  },
+  "withdrawn_by_errata": {
+   "count": 1,
+   "files": [
+    "SUBREG_GATE_r236.json"
+   ]
+  },
+  "applied_r317": {
+   "count": 1,
+   "files": [
+    "VERIFY_R298.json"
+   ]
+  },
+  "RESOLVER_FIX_r309": {
+   "count": 1,
+   "files": [
+    "YAW_RECOVERED_r309.json"
+   ]
+  },
+  "GUARD_DEFECT_r312": {
+   "count": 1,
+   "files": [
+    "YAW_RECOVERED_r309.json"
+   ]
+  },
+  "LIVE_FIELD_POLICY_r313": {
+   "count": 1,
+   "files": [
+    "YAW_RECOVERED_r309.json"
+   ]
+  },
+  "PER_CELL_GUARD_MARKERS_r320": {
+   "count": 1,
+   "files": [
+    "YAW_RECOVERED_r309.json"
+   ]
+  },
+  "what_was_added": {
+   "count": 1,
+   "files": [
+    "YAW_RECOVERED_r309.json"
+   ]
+  },
+  "records_with_t_end_below_threshold": {
+   "count": 1,
+   "files": [
+    "YAW_RECOVERED_r309.json"
+   ]
+  },
+  "consistency_with_GUARD_DEFECT_r312": {
+   "count": 1,
+   "files": [
+    "YAW_RECOVERED_r309.json"
+   ]
+  }
+ },
+ "HOW_A_READER_IS_SUPPOSED_TO_KNOW": "By inferring it from the KEY NAME. There is no marker in the data. A field is live if its key does not look like one of the suffixes above -- a judgement the reader must make from an unwritten and growing convention.",
+ "IS_THE_CONVENTION_DOCUMENTED": {
+  "deposits_documenting_it": [],
+  "finding": "NONE. No deposit defines which suffixes mean not-live. The convention exists only in the practice of the rounds that created it."
+ },
+ "WHY_AN_EXCLUSION_LIST_CANNOT_WORK": "An enumerated suffix list is exactly as complete as its author's memory, and the vocabulary GROWS every repair round -- ORIGINAL_REFUTED and PREMISE_REFUTED were created at r341 and broke a filter written before them. Any checker built by enumeration is stale on arrival, which is the same perishability defect as an undated mtime, one level up: the CHECK is perishable, not just the fact.",
+ "PROPOSAL_NOT_IMPLEMENTED": {
+  "form": "A single explicit marker on the field's own container, e.g. {\"value\": ..., \"live\": false, \"superseded_by\": \"<key>\", \"as_of\": \"<ts>\"}. Subordination becomes a PROPERTY OF THE DATA rather than of the key name.",
+  "what_it_buys": "A checker becomes 'live is not false' -- one rule, no vocabulary, immune to new suffixes. Any reader, human or agent, applies it without prior knowledge.",
+  "retrofit_cost": "160 occurrences across 128 distinct key names would need converting. Each conversion is an edit to a deposit, and roughly a dozen of those deposits are evidence files or carry mtime-sensitive claims, so a blanket pass would trip the r330 rule.",
+  "what_it_would_break": "Every check written tonight matches on key names, including the ones that produced the 0 counts now on record. All would need rewriting, and until they were, both conventions would be live at once -- the worst state, since a reader could not tell which governs.",
+  "recommendation": "Adopt for NEW records only; do not retrofit. A convention change across 274 deposits at the end of a long session is precisely the move that produced round three's finding that repairs became the dominant defect source."
+ },
+ "measured_at": "2026-08-18 12:13"
+}

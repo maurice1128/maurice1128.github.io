@@ -1,0 +1,6 @@
+# PRE-COLD-READ DRAFT DIGEST. The digest below is of the DRAFT bytes as they stood BEFORE
+# the cold read. The target named on the digest line is the FINAL file. A MISMATCH AGAINST
+# THE FINAL FILE IS EXPECTED and is the mechanism reporting that the cold read changed
+# something; a match would mean the cold read changed nothing. Do not re-hash: the digest is
+# the evidence of what the draft was. Declaration added r349; digest line unaltered.
+eb73059217330e1c3eba4a506e714218719a6dd23a0405abad08b51103e4fbf5 *PREREG_3d_specificity_r178.md

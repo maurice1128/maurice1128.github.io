@@ -1,0 +1,13 @@
+{
+ "prefix": "R396SPg140_s101",
+ "axis": "spastic",
+ "rung": "140",
+ "value": 0.14,
+ "seed": 101,
+ "parent_prefix": "R396SPg130_s101",
+ "parent_is_root": false,
+ "status": "PARENT_NOT_RUN",
+ "parent_status": "NO_RESULT_DIR",
+ "cell": 12,
+ "ran": false
+}

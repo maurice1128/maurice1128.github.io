@@ -1,0 +1,41 @@
+{
+ "prefix": "R421GASONLY0500_s101",
+ "arm": "GASONLY",
+ "rung": "0500",
+ "value": 0.05,
+ "seed": 101,
+ "parent_prefix": "R421GASONLY0250_s101",
+ "parent_is_root": false,
+ "parent_result_dir": "R421GASONLY0250_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+ "parent_gate_G": true,
+ "parent_t_end_s": 20.0,
+ "parent_n_cycles": 6,
+ "parent_par": "0068_40.456_1.102.par",
+ "parent_par_sha256": "016b436614c908e76f60920a3ffb0f2d8ef9048e9022b0e04c52d94f4d936223",
+ "parent_par_generation": 68,
+ "staged_warm_as": "WARM_R421GASONLY0250_s101_g0068.par",
+ "fmax_readback": {
+  "tib_ant_l": 1759.0,
+  "soleus_l": 3549.0,
+  "gastroc_l": 2241.0
+ },
+ "spastic_targets": [
+  "gastroc"
+ ],
+ "config_sha256": "bb49b1655149cf607bd55067f4a72b3de9a8532cb3756b5daac94cdc0cf04fa0",
+ "init_line_readback": "init { file = \"par/WARM_R421GASONLY0250_s101_g0068.par\" }",
+ "seconds": 79.0,
+ "result_dir": "R421GASONLY0500_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+ "gate_G": true,
+ "t_end_s": 10.99,
+ "n_cycles_in_window": 6,
+ "knee_hs_deg": null,
+ "resolved_par": "0080_74.527_50.499.par",
+ "run_status": "OK",
+ "status": "RUN_OK",
+ "scone_tail": [
+  "12:42:54 Successfully initialized OpenSim-4.4",
+  "12:42:54 Successfully initialized Hyfydy-1.12.6.1412",
+  "12:42:54 Successfully initialized Hyfydy-1.12.6.1412-DBL"
+ ]
+}

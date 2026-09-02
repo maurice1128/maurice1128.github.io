@@ -1,0 +1,28 @@
+{
+ "computed_utc_date": "2026-08-03",
+ "computed_by": "round-61 audit",
+ "preregistered": false,
+ "corpus": "replay_crossed",
+ "ank_swing_min": {
+  "lesioned": {
+   "n": 40,
+   "r": -0.9728741599981892
+  },
+  "with_references": {
+   "n": 48,
+   "r": -0.9730436453935944
+  },
+  "reportable": true
+ },
+ "retired_swing_min": {
+  "lesioned": {
+   "n": 40,
+   "r": -0.9759402285044788
+  },
+  "with_references": {
+   "n": 48,
+   "r": -0.9760711151454841
+  },
+  "reportable": false
+ }
+}

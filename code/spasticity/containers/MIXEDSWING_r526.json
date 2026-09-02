@@ -1,0 +1,64 @@
+{
+ "id": "MIXEDSWING_r526",
+ "why": "Real patients carry both lesions. A readout offered for apportionment has to be tested where both are present, not only on the single-lesion ladders. Registered prediction P4 was tested this way on knee-at-contact and held; this applies the same test to peak swing dorsiflexion.",
+ "design": "R424W<weakness><archived gain>, 4 weakness levels x 4 gains, delivered gain = 2x label",
+ "n_cells_admitted": 74,
+ "cell_means_swing_df_deg": {
+  "x0.60_KV0.025": 6.63960172435634,
+  "x0.60_KV0.050": 5.681456372010785,
+  "x0.60_KV0.100": 3.693561731098676,
+  "x0.60_KV0.220": -0.20169174360525968,
+  "x0.70_KV0.025": 7.2277810982444715,
+  "x0.70_KV0.050": 5.806753297298094,
+  "x0.70_KV0.100": 3.3766604934852027,
+  "x0.70_KV0.220": -0.6600594757663834,
+  "x0.80_KV0.025": 7.570323916063434,
+  "x0.80_KV0.050": 5.7628339496250796,
+  "x0.80_KV0.100": 2.99609180370493,
+  "x0.80_KV0.220": -0.8652854076717439,
+  "x1.00_KV0.025": 7.8407574488860945,
+  "x1.00_KV0.050": 5.615565270641081,
+  "x1.00_KV0.100": 2.2442829728238283,
+  "x1.00_KV0.220": -0.9543365517404458
+ },
+ "regression": {
+  "swing_df": {
+   "intercept": 8.43571418409881,
+   "gain_coefficient_deg_per_unit_KV": -42.10136744252872,
+   "gain_SE": 1.1877415004859204,
+   "weakness_coefficient_deg_per_unit_scaling": -0.6321797696583951,
+   "weakness_SE": 0.5533524179307356,
+   "span_commanded_by_gain_deg": -8.209766651293101,
+   "span_commanded_by_weakness_deg": -0.25287190786335806,
+   "specificity_ratio": 32.466107922629874,
+   "weakness_span_in_seed_SD": 2.838164934063505,
+   "gain_span_in_seed_SD": 92.14416905152947,
+   "seed_SD_deg": 0.08909697418511617,
+   "R2": 0.9465208202194679,
+   "dof": 71
+  },
+  "knee_ic": {
+   "intercept": -2.5762465270691615,
+   "gain_coefficient_deg_per_unit_KV": -41.60324590089688,
+   "gain_SE": 1.2845155966043775,
+   "weakness_coefficient_deg_per_unit_scaling": -2.7290108909290858,
+   "weakness_SE": 0.598438137389306,
+   "span_commanded_by_gain_deg": -8.112632950674891,
+   "span_commanded_by_weakness_deg": -1.0916043563716344,
+   "specificity_ratio": 7.431843692563061,
+   "weakness_span_in_seed_SD": 1.9585106400230183,
+   "gain_span_in_seed_SD": 14.555344946872712,
+   "seed_SD_deg": 0.5573645269339996,
+   "R2": 0.93744898381935,
+   "dof": 71
+  }
+ },
+ "P4_on_this_variable": {
+  "seed_SD_floor_deg": 0.08909697418511617,
+  "n_pairs_at_different_gains": 96,
+  "n_confusable_below_floor": 0,
+  "closest_pair_deg": 0.8328484270582459,
+  "closest_pair_in_seed_SD": 9.347662304758437,
+  "confusable": []
+ }
+}

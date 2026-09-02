@@ -1,0 +1,16 @@
+﻿PREREG_slope.md
+  bytes  : 53689
+  sha256 : 678eba3d43d15391feffe53cca3544349daacdb3253eb5b28f2cad55738530a2
+
+The hash covers paper\PREREG_slope.md as of 2026-08-03, at the moment of registration:
+before any slope scenario, model file, or result directory was created, and before any
+feature was extracted from any slope run. Any modification after this moment invalidates
+the registration; amendments go in the document's section 10 and this file is re-issued
+carrying both hashes with their dates.
+
+
+NOTE ON A STALE HASH FILE IN THIS DIRECTORY. paper\PREREG_slope.md.sha256 (542 B, written
+2026-08-03 20:57:28) certifies sha256 c9bb74fc... over 11477 bytes -- the SUPERSEDED draft,
+which no longer exists at that path (see the supersession notice at the head of the current
+document). It will not verify against the file now on disk and must not be read as certifying it.
+This file, paper\PREREG_slope.sha256, is the live hash.

@@ -1,0 +1,80 @@
+{
+ "prereg": "PREREG_lmr_only_r223.md sha256 8f954702cd46a99adc6a",
+ "design": "leave-one-SEED-out, 6 spastic vs 18 weak, 4 LmR channels, window [1.00, 9.73]",
+ "confusion": {
+  "TP": 6,
+  "FN": 0,
+  "FP": 0,
+  "TN": 18
+ },
+ "accuracy": 1.0,
+ "majority_baseline": 0.75,
+ "channel_per_fold": [
+  "hip_flexion_LmR",
+  "hip_flexion_LmR",
+  "hip_flexion_LmR",
+  "hip_flexion_LmR",
+  "hip_flexion_LmR",
+  "hip_flexion_LmR"
+ ],
+ "hip_chosen_of_6": 6,
+ "permutation_null": {
+  "method": "exhaustive over C(24,6)",
+  "assignments_evaluated": 134596,
+  "count_ge_observed": 1,
+  "proportion": 7.429641296918184e-06
+ },
+ "lesion_laterality": {
+  "why_recorded": "The reading 'the discriminator is the unlesioned limb' (r222, hip_flexion_r) was BELIEVED and not RECORDED. Verified from source here.",
+  "spastic_side": "LEFT",
+  "spastic_evidence": "probe3d_r141/reopt_r151/R151S_s101/config.scone line 296 reads 'legs = left', scoping the ConditionalController named SpasticL whose MuscleReflex targets are 'soleus' (line 61) and 'gastroc' (line 68).",
+  "weak_side": "LEFT",
+  "weak_evidence": "diff of probe3d_r141/bench_D20/H1922v7b3.hfd against probe3d_r141/matched_r174/R174W870_s101/H1922v7b3.hfd yields exactly ONE differing line, 388: max_isometric_force 1759 -> 1530.3. Line 385 of that file is 'name = tib_ant_l'.",
+  "consequence": "Both lesions are LEFT-sided. hip_flexion_r is therefore CONTRALATERAL to both, so r222's blind selection of hip_flexion_r was a selection of the UNLESIONED limb. That reading is now recorded rather than assumed."
+ },
+ "PERMUTATION_NULL_STATUS": "WITHDRAWN AT r250",
+ "PERMUTATION_NULL_WITHDRAWAL": {
+  "status": "WITHDRAWN AT r250",
+  "round_recorded": 308,
+  "note": "The exhaustive permutation null deposited in this file is WITHDRAWN at r250 on this paper's own registered grounds. It is retained and readable, but it may not be cited as support for any claim. RESULTS_3d_r214.md sec1 states the withdrawal at the passage beginning \"THE PERMUTATION NULL FOR THIS RESULT IS WITHDRAWN AT r250. THE CLASSIFIER IS UNPRICED.\" and sec2 states it at the passage beginning \"Its exhaustive null of 3 in 134,596 is WITHDRAWN at r250 for the same two reasons as sec1's\". These are CONTENT ANCHORS, not line numbers, and they are how this passage should be located; sec0c cites the figure and, as of r308, names it as withdrawn at the point of use. Recorded here r308 because a reader holding only the deposits previously saw a live-looking null with no withdrawal marker anywhere in it.",
+  "values_retained": "No number is deleted. A withdrawn statistic stays readable and stops being usable.",
+  "note_ORIGINAL_WRONG_LINE_NUMBERS": "The exhaustive permutation null deposited in this file is WITHDRAWN at r250 on this paper's own registered grounds. It is retained and readable, but it may not be cited as support for any claim. RESULTS_3d_r214.md sec1 (lines 475-477) and sec2 (line 544) state the withdrawal and its two reasons; sec0c cites the figure and, as of r308, names it as withdrawn at the point of use. Recorded here r308 because a reader holding only the deposits previously saw a live-looking null with no withdrawal marker anywhere in it.",
+  "LINE_NUMBERS_WERE_WRONG_r324": {
+   "cited": "sec1 lines 475-477, sec2 line 544",
+   "what_those_lines_hold_now": {
+    "475": "| `DR2K200` | 0.200 | 1.0 | reflex |",
+    "477": "| `PAR40` | 0.000 | **0.6** | weakness \u00d70.600 |",
+    "544": ""
+   },
+   "where_the_text_actually_is_now": {
+    "sec1_anchor_line": 545,
+    "sec2_anchor_line": 614
+   },
+   "these_line_numbers_will_also_go_stale": "The two line numbers above are recorded as EVIDENCE of drift, not as a citation. Locate the passages by the quoted anchors in note.",
+   "why": "A deposit CANNOT pin a claim to line numbers in a file it does not control and cannot hash. RESULTS_3d_r214.md has been edited nine times in the last twenty-four hours -- five of them after these notes were written (r314, r315, r318, r319, r323) -- so any line number written into a deposit is stale on arrival. A quoted phrase survives edits that a line number cannot."
+  },
+  "LINE_CITATION_CENSUS_r325": {
+   "correction": "The r324 scan reported 5 deposits citing a manuscript by line number, and within this file it reported 4. BOTH FIGURES WERE TOO HIGH. The true figure is FOUR deposits citing a MUTABLE file, and within this file it is ONE.",
+   "THE_DISTINCTION": "A line number into an IMMUTABLE run artefact is legitimate provenance. A line number into a file still being edited is not. The r324 scan matched the pattern 'line N' without asking what the line was in.",
+   "sound_and_left_alone": {
+    "config.scone line 296": "'legs = left', scoping the ConditionalController named SpasticL",
+    "config.scone line 61": "the MuscleReflex target 'soleus'",
+    "H1922v7b3.hfd line 388": "max_isometric_force 1759 -> 1530.3, the single differing line",
+    "status": "LOAD-BEARING and CORRECT. These are the evidence chain for 'both lesions are LEFT-sided'. Not touched."
+   },
+   "IMMUTABILITY_VERIFIED_NOT_ASSUMED": {
+    "claim_tested": "that a completed SCONE result directory does not change after its run",
+    "evidence": "In R151S_s101, config.scone has mtime 2026-08-10 00:17:24 and the run's history.txt 2026-08-10 00:18:01 -- the config was written 37 seconds BEFORE the run finished and has AS MEASURED 2026-08-18 11:52, not been modified in the 8 days since. [r342: as-of instant placed inside the claiming clause. An undated 'not edited' assertion is falsified by any later write, including one of ours.]",
+    "scope_of_the_test": "One directory was checked, not all 112. This supports the practice as described; it does not prove immutability as a property of the tool, and it is recorded at that strength.",
+    "evidence_UNDATED_ORIGINAL_r342": "In R151S_s101, config.scone has mtime 2026-08-10 00:17:24 and the run's history.txt 2026-08-10 00:18:01 -- the config was written 37 seconds BEFORE the run finished and has not been modified in the 8 days since."
+   },
+   "the_one_unsound_citation_in_this_file": "The sec1/sec2 manuscript line numbers, fixed at r324 and replaced with content anchors.",
+   "still_open_elsewhere_not_fixed_here": [
+    "BANDFILL_ENDPOINT_r291.json -> line 134",
+    "CYCLE_CONVENTION_CONTRADICTION_r322.json -> line 134",
+    "PROVENANCE_STALENESS_r316.json -> lines 89-91"
+   ],
+   "two_of_those_are_mine": "CYCLE_CONVENTION_CONTRADICTION_r322.json and PROVENANCE_STALENESS_r316.json were both written tonight, while the rule against pinning line numbers in a live file was already visible in the record. A defect class was being created in the same hours it was being documented."
+  }
+ }
+}

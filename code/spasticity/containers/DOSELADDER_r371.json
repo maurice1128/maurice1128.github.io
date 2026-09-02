@@ -1,0 +1,1353 @@
+{
+  "registration": "PREREG_doseladder_r370.md",
+  "registration_sha256": "e4401084e5ad865c9160e99281f991909607fb60a376fbc35b15bf5821d252a2",
+  "endpoint": "A = mean soleus_l.activation over stance samples of admissible cycles",
+  "registered_predictions": {
+    "1_monotonic": "A per rung non-decreasing in KV over 0.00625, 0.0125, 0.035, 0.070",
+    "2_threshold": "KV* = 0.035; rungs >= KV* disjoint from DF-weak, below overlap",
+    "3_direction": "wherever a rung separates, SPASTIC HIGH"
+  },
+  "excluded_from_primary": "KV 0.050 (R203 S) -- values were seen before registration",
+  "cells": {
+    "R151W_s101": {
+      "tag": "R151W_s101",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17347325920679887
+    },
+    "R151W_s102": {
+      "tag": "R151W_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "A": 0.1736669903073286
+    },
+    "R151W_s103": {
+      "tag": "R151W_s103",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "A": 0.17154320262529832
+    },
+    "R151W_s104": {
+      "tag": "R151W_s104",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "A": 0.1690142144208038
+    },
+    "R151W_s105": {
+      "tag": "R151W_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "A": 0.1692079679245283
+    },
+    "R151W_s106": {
+      "tag": "R151W_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17342401464788734
+    },
+    "R169W090_s101": {
+      "tag": "R169W090_s101",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17222407082152974
+    },
+    "R169W090_s102": {
+      "tag": "R169W090_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17292509116809118
+    },
+    "R169W090_s103": {
+      "tag": "R169W090_s103",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17369874378531072
+    },
+    "R169W090_s104": {
+      "tag": "R169W090_s104",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17128465492957745
+    },
+    "R169W090_s105": {
+      "tag": "R169W090_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17274890113636363
+    },
+    "R169W090_s106": {
+      "tag": "R169W090_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17292377746478874
+    },
+    "R169W095_s101": {
+      "tag": "R169W095_s101",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.16975286005665724
+    },
+    "R169W095_s102": {
+      "tag": "R169W095_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17095513690140843
+    },
+    "R169W095_s103": {
+      "tag": "R169W095_s103",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.1730315092696629
+    },
+    "R169W095_s104": {
+      "tag": "R169W095_s104",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17314863569405098
+    },
+    "R169W095_s105": {
+      "tag": "R169W095_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17363461246458922
+    },
+    "R169W095_s106": {
+      "tag": "R169W095_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17096996468926554
+    },
+    "R174W870_s101": {
+      "tag": "R174W870_s101",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17246319036827193
+    },
+    "R174W870_s102": {
+      "tag": "R174W870_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17513178323863637
+    },
+    "R174W870_s103": {
+      "tag": "R174W870_s103",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.1735097403409091
+    },
+    "R174W870_s104": {
+      "tag": "R174W870_s104",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17534308898305084
+    },
+    "R174W870_s105": {
+      "tag": "R174W870_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17110784362606232
+    },
+    "R174W870_s106": {
+      "tag": "R174W870_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.1706212042492918
+    },
+    "R174W892_s101": {
+      "tag": "R174W892_s101",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17531991303116146
+    },
+    "R174W892_s102": {
+      "tag": "R174W892_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17381347655367232
+    },
+    "R174W892_s103": {
+      "tag": "R174W892_s103",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.1722596525568182
+    },
+    "R174W892_s104": {
+      "tag": "R174W892_s104",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17420770880681816
+    },
+    "R174W892_s105": {
+      "tag": "R174W892_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17410270760563382
+    },
+    "R174W892_s106": {
+      "tag": "R174W892_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17184210198863636
+    },
+    "R174W915_s101": {
+      "tag": "R174W915_s101",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17304591680911682
+    },
+    "R174W915_s102": {
+      "tag": "R174W915_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.16992956079545454
+    },
+    "R174W915_s103": {
+      "tag": "R174W915_s103",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17281853107344633
+    },
+    "R174W915_s104": {
+      "tag": "R174W915_s104",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.172575401971831
+    },
+    "R174W915_s105": {
+      "tag": "R174W915_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17242150821529745
+    },
+    "R174W915_s106": {
+      "tag": "R174W915_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17035338895184138
+    },
+    "R203V080C_s101": {
+      "tag": "R203V080C_s101",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17278512946175636
+    },
+    "R203V080C_s102": {
+      "tag": "R203V080C_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17395912372881359
+    },
+    "R203V080C_s103": {
+      "tag": "R203V080C_s103",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17303517443181818
+    },
+    "R203V080C_s104": {
+      "tag": "R203V080C_s104",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17278068926553675
+    },
+    "R203V080C_s105": {
+      "tag": "R203V080C_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17386605482954545
+    },
+    "R203V080C_s106": {
+      "tag": "R203V080C_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17441684871794869
+    },
+    "R203V105C_s101": {
+      "tag": "R203V105C_s101",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17437288502824858
+    },
+    "R203V105C_s102": {
+      "tag": "R203V105C_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17395912372881359
+    },
+    "R203V105C_s103": {
+      "tag": "R203V105C_s103",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17255424403409092
+    },
+    "R203V105C_s104": {
+      "tag": "R203V105C_s104",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17278068926553675
+    },
+    "R203V105C_s105": {
+      "tag": "R203V105C_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17305130880681818
+    },
+    "R203V105C_s106": {
+      "tag": "R203V105C_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17386940821529742
+    },
+    "R203V130C_s101": {
+      "tag": "R203V130C_s101",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "A": 0.1652823117647059
+    },
+    "R203V130C_s102": {
+      "tag": "R203V130C_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "A": 0.1686686092457421
+    },
+    "R203V130C_s103": {
+      "tag": "R203V130C_s103",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "A": 0.16417896472019464
+    },
+    "R203V130C_s104": {
+      "tag": "R203V130C_s104",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "A": 0.1675904583941606
+    },
+    "R203V130C_s105": {
+      "tag": "R203V130C_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "A": 0.17207916975609758
+    },
+    "R203V130C_s106": {
+      "tag": "R203V130C_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 6,
+      "gate_G": true,
+      "A": 0.17087356682926833
+    },
+    "R289KV00625_s101": {
+      "tag": "R289KV00625_s101",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17066840336134453
+    },
+    "R289KV00625_s102": {
+      "tag": "R289KV00625_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.1714504882352941
+    },
+    "R289KV00625_s103": {
+      "tag": "R289KV00625_s103",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.1727016069832402
+    },
+    "R289KV00625_s104": {
+      "tag": "R289KV00625_s104",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17132267458100556
+    },
+    "R289KV00625_s105": {
+      "tag": "R289KV00625_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.16822493117977527
+    },
+    "R289KV00625_s106": {
+      "tag": "R289KV00625_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.1717553308988764
+    },
+    "R289KV0125_s101": {
+      "tag": "R289KV0125_s101",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.1706469567039106
+    },
+    "R289KV0125_s102": {
+      "tag": "R289KV0125_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17611821039325842
+    },
+    "R289KV0125_s103": {
+      "tag": "R289KV0125_s103",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17548052893258426
+    },
+    "R289KV0125_s104": {
+      "tag": "R289KV0125_s104",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17482478291316525
+    },
+    "R289KV0125_s105": {
+      "tag": "R289KV0125_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17487222921348314
+    },
+    "R289KV0125_s106": {
+      "tag": "R289KV0125_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.17311030422535212
+    },
+    "R291KV0035_s101": {
+      "tag": "R291KV0035_s101",
+      "t_end_s": 18.74,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.18792137198879552
+    },
+    "R291KV0035_s102": {
+      "tag": "R291KV0035_s102",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.1914835824858757
+    },
+    "R291KV0035_s103": {
+      "tag": "R291KV0035_s103",
+      "t_end_s": 17.77,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.19092670168067227
+    },
+    "R291KV0035_s104": {
+      "tag": "R291KV0035_s104",
+      "t_end_s": 19.55,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.1913629075630252
+    },
+    "R291KV0035_s105": {
+      "tag": "R291KV0035_s105",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.19046743893557425
+    },
+    "R291KV0035_s106": {
+      "tag": "R291KV0035_s106",
+      "t_end_s": 20.0,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.19007915423728816
+    },
+    "R203V080S_s101": {
+      "tag": "R203V080S_s101",
+      "t_end_s": 17.02,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.20153311267605636
+    },
+    "R203V080S_s102": {
+      "tag": "R203V080S_s102",
+      "t_end_s": 14.52,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.19958985893854753
+    },
+    "R203V080S_s103": {
+      "tag": "R203V080S_s103",
+      "t_end_s": 17.13,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.19983810142045455
+    },
+    "R203V080S_s104": {
+      "tag": "R203V080S_s104",
+      "t_end_s": 13.53,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.20260591073446327
+    },
+    "R203V080S_s105": {
+      "tag": "R203V080S_s105",
+      "t_end_s": 15.04,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.20133274475920682
+    },
+    "R203V080S_s106": {
+      "tag": "R203V080S_s106",
+      "t_end_s": 15.95,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.2003923822535211
+    },
+    "R203V105S_s101": {
+      "tag": "R203V105S_s101",
+      "t_end_s": 18.33,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.20213216940509918
+    },
+    "R203V105S_s102": {
+      "tag": "R203V105S_s102",
+      "t_end_s": 15.19,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.20101490253521126
+    },
+    "R203V105S_s103": {
+      "tag": "R203V105S_s103",
+      "t_end_s": 16.57,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.20181676515580738
+    },
+    "R203V105S_s104": {
+      "tag": "R203V105S_s104",
+      "t_end_s": 16.03,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.20447679572649577
+    },
+    "R203V105S_s105": {
+      "tag": "R203V105S_s105",
+      "t_end_s": 16.49,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.1997202428969359
+    },
+    "R203V105S_s106": {
+      "tag": "R203V105S_s106",
+      "t_end_s": 13.97,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.20004239497206702
+    },
+    "R203V130S_s101": {
+      "tag": "R203V130S_s101",
+      "t_end_s": 15.2,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.19933868395415474
+    },
+    "R203V130S_s102": {
+      "tag": "R203V130S_s102",
+      "t_end_s": 15.71,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.1999035211864407
+    },
+    "R203V130S_s103": {
+      "tag": "R203V130S_s103",
+      "t_end_s": 17.51,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.1993785997175141
+    },
+    "R203V130S_s104": {
+      "tag": "R203V130S_s104",
+      "t_end_s": 17.26,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.19846066759776534
+    },
+    "R203V130S_s105": {
+      "tag": "R203V130S_s105",
+      "t_end_s": 19.97,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.19992429971910114
+    },
+    "R203V130S_s106": {
+      "tag": "R203V130S_s106",
+      "t_end_s": 17.52,
+      "n_cycles_in_window": 5,
+      "gate_G": true,
+      "A": 0.19916674507042256
+    },
+    "R291KV0070_s101": {
+      "tag": "R291KV0070_s101",
+      "t_end_s": 8.24,
+      "n_cycles_in_window": 5,
+      "gate_G": false,
+      "guard": "t_end 8.240 < 9.73"
+    },
+    "R291KV0070_s102": {
+      "tag": "R291KV0070_s102",
+      "t_end_s": 8.34,
+      "n_cycles_in_window": 4,
+      "gate_G": false,
+      "guard": "t_end 8.340 < 9.73"
+    },
+    "R291KV0070_s103": {
+      "tag": "R291KV0070_s103",
+      "t_end_s": 9.4,
+      "n_cycles_in_window": 5,
+      "gate_G": false,
+      "guard": "t_end 9.400 < 9.73"
+    },
+    "R291KV0070_s104": {
+      "tag": "R291KV0070_s104",
+      "t_end_s": 9.52,
+      "n_cycles_in_window": 6,
+      "gate_G": false,
+      "guard": "t_end 9.520 < 9.73"
+    },
+    "R291KV0070_s105": {
+      "tag": "R291KV0070_s105",
+      "t_end_s": 8.26,
+      "n_cycles_in_window": 4,
+      "gate_G": false,
+      "guard": "t_end 8.260 < 9.73"
+    },
+    "R291KV0070_s106": {
+      "tag": "R291KV0070_s106",
+      "t_end_s": 8.26,
+      "n_cycles_in_window": 4,
+      "gate_G": false,
+      "guard": "t_end 8.260 < 9.73"
+    }
+  },
+  "CONFOUND_AUDIT_sec7": {
+    "R289KV00625": {
+      "dir": "R289KV00625_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "min_velocity": 1.0,
+      "has_SpasticL": true,
+      "config_KV": 0.00625,
+      "model_file": "H1922v7b3.hfd",
+      "model_sha256": "0a6e3975427443ab",
+      "model_sha256_basis": "sha256 of the .hfd with CRLF normalised to LF, truncated to 16 hex. This is the digest that answers 'is this the same MODEL', which is what section 7 of PREREG_doseladder_r370.md asks. Recomputed from disk at r375.",
+      "model_sha256_RAW_BYTES_SUPERSEDED": "512cc251213926be",
+      "model_file_bytes_raw": 14259,
+      "model_file_crlf_count": 471,
+      "tib_ant_l_max_isometric_force": 1759.0
+    },
+    "R289KV0125": {
+      "dir": "R289KV0125_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "min_velocity": 1.0,
+      "has_SpasticL": true,
+      "config_KV": 0.0125,
+      "model_file": "H1922v7b3.hfd",
+      "model_sha256": "0a6e3975427443ab",
+      "model_sha256_basis": "sha256 of the .hfd with CRLF normalised to LF, truncated to 16 hex. This is the digest that answers 'is this the same MODEL', which is what section 7 of PREREG_doseladder_r370.md asks. Recomputed from disk at r375.",
+      "model_sha256_RAW_BYTES_SUPERSEDED": "512cc251213926be",
+      "model_file_bytes_raw": 14259,
+      "model_file_crlf_count": 471,
+      "tib_ant_l_max_isometric_force": 1759.0
+    },
+    "R291KV0035": {
+      "dir": "R291KV0035_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "min_velocity": 1.0,
+      "has_SpasticL": true,
+      "config_KV": 0.035,
+      "model_file": "H1922v7b3.hfd",
+      "model_sha256": "0a6e3975427443ab",
+      "model_sha256_basis": "sha256 of the .hfd with CRLF normalised to LF, truncated to 16 hex. This is the digest that answers 'is this the same MODEL', which is what section 7 of PREREG_doseladder_r370.md asks. Recomputed from disk at r375.",
+      "model_sha256_RAW_BYTES_SUPERSEDED": "0a6e3975427443ab",
+      "model_file_bytes_raw": 13788,
+      "model_file_crlf_count": 0,
+      "tib_ant_l_max_isometric_force": 1759.0
+    },
+    "R203V080S": {
+      "dir": "R203V080S_s101.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R101",
+      "min_velocity": 0.8,
+      "has_SpasticL": true,
+      "config_KV": 0.05,
+      "model_file": "H1922v7b3.hfd",
+      "model_sha256": "0a6e3975427443ab",
+      "model_sha256_basis": "sha256 of the .hfd with CRLF normalised to LF, truncated to 16 hex. This is the digest that answers 'is this the same MODEL', which is what section 7 of PREREG_doseladder_r370.md asks. Recomputed from disk at r375.",
+      "model_sha256_RAW_BYTES_SUPERSEDED": "512cc251213926be",
+      "model_file_bytes_raw": 14259,
+      "model_file_crlf_count": 471,
+      "tib_ant_l_max_isometric_force": 1759.0
+    },
+    "R203V105S": {
+      "dir": "R203V105S_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "min_velocity": 1.05,
+      "has_SpasticL": true,
+      "config_KV": 0.05,
+      "model_file": "H1922v7b3.hfd",
+      "model_sha256": "0a6e3975427443ab",
+      "model_sha256_basis": "sha256 of the .hfd with CRLF normalised to LF, truncated to 16 hex. This is the digest that answers 'is this the same MODEL', which is what section 7 of PREREG_doseladder_r370.md asks. Recomputed from disk at r375.",
+      "model_sha256_RAW_BYTES_SUPERSEDED": "512cc251213926be",
+      "model_file_bytes_raw": 14259,
+      "model_file_crlf_count": 471,
+      "tib_ant_l_max_isometric_force": 1759.0
+    },
+    "R203V130S": {
+      "dir": "R203V130S_s101.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R101",
+      "min_velocity": 1.3,
+      "has_SpasticL": true,
+      "config_KV": 0.05,
+      "model_file": "H1922v7b3.hfd",
+      "model_sha256": "0a6e3975427443ab",
+      "model_sha256_basis": "sha256 of the .hfd with CRLF normalised to LF, truncated to 16 hex. This is the digest that answers 'is this the same MODEL', which is what section 7 of PREREG_doseladder_r370.md asks. Recomputed from disk at r375.",
+      "model_sha256_RAW_BYTES_SUPERSEDED": "512cc251213926be",
+      "model_file_bytes_raw": 14259,
+      "model_file_crlf_count": 471,
+      "tib_ant_l_max_isometric_force": 1759.0
+    },
+    "R291KV0070": {
+      "dir": "R291KV0070_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "min_velocity": 1.0,
+      "has_SpasticL": true,
+      "config_KV": 0.07,
+      "model_file": "H1922v7b3.hfd",
+      "model_sha256": "0a6e3975427443ab",
+      "model_sha256_basis": "sha256 of the .hfd with CRLF normalised to LF, truncated to 16 hex. This is the digest that answers 'is this the same MODEL', which is what section 7 of PREREG_doseladder_r370.md asks. Recomputed from disk at r375.",
+      "model_sha256_RAW_BYTES_SUPERSEDED": "0a6e3975427443ab",
+      "model_file_bytes_raw": 13788,
+      "model_file_crlf_count": 0,
+      "tib_ant_l_max_isometric_force": 1759.0
+    },
+    "R151W": {
+      "dir": "R151W_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "min_velocity": 1.0,
+      "has_SpasticL": false,
+      "config_KV": null,
+      "model_file": "H1922v7b3.hfd",
+      "model_sha256": "cf2ec163b6dc84e9",
+      "model_sha256_basis": "sha256 of the .hfd with CRLF normalised to LF, truncated to 16 hex. This is the digest that answers 'is this the same MODEL', which is what section 7 of PREREG_doseladder_r370.md asks. Recomputed from disk at r375.",
+      "model_sha256_RAW_BYTES_SUPERSEDED": "9ed6f3ff6679dd6e",
+      "model_file_bytes_raw": 14260,
+      "model_file_crlf_count": 470,
+      "tib_ant_l_max_isometric_force": 1407.2
+    },
+    "R169W090": {
+      "dir": "R169W090_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "min_velocity": 1.0,
+      "has_SpasticL": false,
+      "config_KV": null,
+      "model_file": "H1922v7b3.hfd",
+      "model_sha256": "b8dc6330a98ff459",
+      "model_sha256_basis": "sha256 of the .hfd with CRLF normalised to LF, truncated to 16 hex. This is the digest that answers 'is this the same MODEL', which is what section 7 of PREREG_doseladder_r370.md asks. Recomputed from disk at r375.",
+      "model_sha256_RAW_BYTES_SUPERSEDED": "46df17a4d4bb91d6",
+      "model_file_bytes_raw": 14260,
+      "model_file_crlf_count": 470,
+      "tib_ant_l_max_isometric_force": 1583.1
+    },
+    "R169W095": {
+      "dir": "R169W095_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "min_velocity": 1.0,
+      "has_SpasticL": false,
+      "config_KV": null,
+      "model_file": "H1922v7b3.hfd",
+      "model_sha256": "131dec459d7e5203",
+      "model_sha256_basis": "sha256 of the .hfd with CRLF normalised to LF, truncated to 16 hex. This is the digest that answers 'is this the same MODEL', which is what section 7 of PREREG_doseladder_r370.md asks. Recomputed from disk at r375.",
+      "model_sha256_RAW_BYTES_SUPERSEDED": "6df4233e7c0d0571",
+      "model_file_bytes_raw": 14260,
+      "model_file_crlf_count": 470,
+      "tib_ant_l_max_isometric_force": 1671.0
+    },
+    "R174W870": {
+      "dir": "R174W870_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "min_velocity": 1.0,
+      "has_SpasticL": false,
+      "config_KV": null,
+      "model_file": "H1922v7b3.hfd",
+      "model_sha256": "62bef24c71063ffc",
+      "model_sha256_basis": "sha256 of the .hfd with CRLF normalised to LF, truncated to 16 hex. This is the digest that answers 'is this the same MODEL', which is what section 7 of PREREG_doseladder_r370.md asks. Recomputed from disk at r375.",
+      "model_sha256_RAW_BYTES_SUPERSEDED": "436d4359cc170a04",
+      "model_file_bytes_raw": 14260,
+      "model_file_crlf_count": 470,
+      "tib_ant_l_max_isometric_force": 1530.3
+    },
+    "R174W892": {
+      "dir": "R174W892_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "min_velocity": 1.0,
+      "has_SpasticL": false,
+      "config_KV": null,
+      "model_file": "H1922v7b3.hfd",
+      "model_sha256": "9a19d8f5e1fb4f0b",
+      "model_sha256_basis": "sha256 of the .hfd with CRLF normalised to LF, truncated to 16 hex. This is the digest that answers 'is this the same MODEL', which is what section 7 of PREREG_doseladder_r370.md asks. Recomputed from disk at r375.",
+      "model_sha256_RAW_BYTES_SUPERSEDED": "9f1f13d90df44bdd",
+      "model_file_bytes_raw": 14260,
+      "model_file_crlf_count": 470,
+      "tib_ant_l_max_isometric_force": 1569.0
+    },
+    "R174W915": {
+      "dir": "R174W915_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "min_velocity": 1.0,
+      "has_SpasticL": false,
+      "config_KV": null,
+      "model_file": "H1922v7b3.hfd",
+      "model_sha256": "3c6221fd1bf6a32c",
+      "model_sha256_basis": "sha256 of the .hfd with CRLF normalised to LF, truncated to 16 hex. This is the digest that answers 'is this the same MODEL', which is what section 7 of PREREG_doseladder_r370.md asks. Recomputed from disk at r375.",
+      "model_sha256_RAW_BYTES_SUPERSEDED": "36824b9a8d398f73",
+      "model_file_bytes_raw": 14260,
+      "model_file_crlf_count": 470,
+      "tib_ant_l_max_isometric_force": 1609.5
+    },
+    "R203V080C": {
+      "dir": "R203V080C_s101.H1922v7b3.TSG3Dv8g.R3.S08WA3K0G13.D20.R101",
+      "min_velocity": 0.8,
+      "has_SpasticL": false,
+      "config_KV": null,
+      "model_file": "H1922v7b3.hfd",
+      "model_sha256": "0a6e3975427443ab",
+      "model_sha256_basis": "sha256 of the .hfd with CRLF normalised to LF, truncated to 16 hex. This is the digest that answers 'is this the same MODEL', which is what section 7 of PREREG_doseladder_r370.md asks. Recomputed from disk at r375.",
+      "model_sha256_RAW_BYTES_SUPERSEDED": "512cc251213926be",
+      "model_file_bytes_raw": 14259,
+      "model_file_crlf_count": 471,
+      "tib_ant_l_max_isometric_force": 1759.0
+    },
+    "R203V105C": {
+      "dir": "R203V105C_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "min_velocity": 1.05,
+      "has_SpasticL": false,
+      "config_KV": null,
+      "model_file": "H1922v7b3.hfd",
+      "model_sha256": "0a6e3975427443ab",
+      "model_sha256_basis": "sha256 of the .hfd with CRLF normalised to LF, truncated to 16 hex. This is the digest that answers 'is this the same MODEL', which is what section 7 of PREREG_doseladder_r370.md asks. Recomputed from disk at r375.",
+      "model_sha256_RAW_BYTES_SUPERSEDED": "512cc251213926be",
+      "model_file_bytes_raw": 14259,
+      "model_file_crlf_count": 471,
+      "tib_ant_l_max_isometric_force": 1759.0
+    },
+    "R203V130C": {
+      "dir": "R203V130C_s101.H1922v7b3.TSG3Dv8g.R3.S13WA3K0G13.D20.R101",
+      "min_velocity": 1.3,
+      "has_SpasticL": false,
+      "config_KV": null,
+      "model_file": "H1922v7b3.hfd",
+      "model_sha256": "0a6e3975427443ab",
+      "model_sha256_basis": "sha256 of the .hfd with CRLF normalised to LF, truncated to 16 hex. This is the digest that answers 'is this the same MODEL', which is what section 7 of PREREG_doseladder_r370.md asks. Recomputed from disk at r375.",
+      "model_sha256_RAW_BYTES_SUPERSEDED": "512cc251213926be",
+      "model_file_bytes_raw": 14259,
+      "model_file_crlf_count": 471,
+      "tib_ant_l_max_isometric_force": 1759.0
+    },
+    "_min_velocity_groups": {
+      "1.0": [
+        "R151W",
+        "R169W090",
+        "R169W095",
+        "R174W870",
+        "R174W892",
+        "R174W915",
+        "R289KV00625",
+        "R289KV0125",
+        "R291KV0035",
+        "R291KV0070"
+      ],
+      "0.8": [
+        "R203V080C",
+        "R203V080S"
+      ],
+      "1.05": [
+        "R203V105C",
+        "R203V105S"
+      ],
+      "1.3": [
+        "R203V130C",
+        "R203V130S"
+      ]
+    },
+    "_MODEL_DIGEST_CORRECTION_r375": {
+      "LIVE_STATEMENT": "ALL TEN non-DF-weak families -- the four ladder rungs R289KV00625, R289KV0125, R291KV0035, R291KV0070, the three excluded KV 0.050 families R203V080S/V105S/V130S, and the three control families R203V080C/V105C/V130C -- RUN ON ONE AND THE SAME MODEL FILE. The separating rung KV 0.035 does NOT sit on a different model from the rungs that do not separate. The six DF-weak families each carry a genuinely different model file, differing from the ladder file in exactly one line, tib_ant_l max_isometric_force, which IS the declared lesion.",
+      "what_the_original_field_said_and_why_it_misled": "The original model_sha256 values were raw-byte digests. R291KV0035 and R291KV0070 carried 0a6e3975427443ab against 512cc251213926be for R289* and R203*, which reads as the separating rung sitting on a different model. The two .hfd files are TEXTUALLY IDENTICAL and differ only in line endings: the R289/R203 copies are 14259 bytes with 471 CRLF, the R291 copies are 13788 bytes with 0 CRLF, and 14259 - 471 = 13788. The digests were arithmetically correct and the inference a reader would draw from them was false.",
+      "verification_performed_at_r375": "Independently re-read all 16 family model files from the read-only SCONE results tree and re-hashed them twice, raw and with CRLF normalised to LF. All 16 raw digests reproduce the values r371 deposited. A direct byte comparison of the EOL-normalised R289KV00625 file against the raw R291KV0035 file returns EQUAL at 13788 bytes. A unified diff of the EOL-normalised R151W (DF-weak) file against the R291KV0035 file returns exactly one changed line, 'max_isometric_force = 1407.2' against 'max_isometric_force = 1759'.",
+      "families_by_RAW_digest16_ORIGINAL_WRONG": {
+        "512cc251213926be": [
+          "R289KV00625",
+          "R289KV0125",
+          "R203V080S",
+          "R203V105S",
+          "R203V130S",
+          "R203V080C",
+          "R203V105C",
+          "R203V130C"
+        ],
+        "0a6e3975427443ab": [
+          "R291KV0035",
+          "R291KV0070"
+        ],
+        "9ed6f3ff6679dd6e": [
+          "R151W"
+        ],
+        "46df17a4d4bb91d6": [
+          "R169W090"
+        ],
+        "6df4233e7c0d0571": [
+          "R169W095"
+        ],
+        "436d4359cc170a04": [
+          "R174W870"
+        ],
+        "9f1f13d90df44bdd": [
+          "R174W892"
+        ],
+        "36824b9a8d398f73": [
+          "R174W915"
+        ]
+      },
+      "families_by_EOL_NORMALISED_digest16": {
+        "0a6e3975427443ab": [
+          "R289KV00625",
+          "R289KV0125",
+          "R291KV0035",
+          "R203V080S",
+          "R203V105S",
+          "R203V130S",
+          "R291KV0070",
+          "R203V080C",
+          "R203V105C",
+          "R203V130C"
+        ],
+        "cf2ec163b6dc84e9": [
+          "R151W"
+        ],
+        "b8dc6330a98ff459": [
+          "R169W090"
+        ],
+        "131dec459d7e5203": [
+          "R169W095"
+        ],
+        "62bef24c71063ffc": [
+          "R174W870"
+        ],
+        "9a19d8f5e1fb4f0b": [
+          "R174W892"
+        ],
+        "3c6221fd1bf6a32c": [
+          "R174W915"
+        ]
+      },
+      "effect_on_the_result": "The correction REMOVES a confound rather than adding one, and therefore strengthens the threshold claim rather than weakening it. It changes no endpoint value and no verdict.",
+      "corroborated_by": "VERIFY_DOSELADDER_r372.json /e_model_digests_recomputed, whose 13-family table this r375 recomputation reproduces and extends to the three R203*S families it did not cover.",
+      "status": "r375 correction, post-hoc, changes no endpoint value and no verdict.",
+      "note_on_key_naming": "The per-family subordinate key is named _SUPERSEDED, not _ORIGINAL_WRONG, because the raw-byte digest is arithmetically correct for every family and is identical to the live value for the two R291 families whose file is already LF-only. What was WRONG is the GROUPING those digests induce, and that is carried explicitly at families_by_RAW_digest16_ORIGINAL_WRONG above."
+    }
+  },
+  "BETWEEN_SCENARIO": true,
+  "control_band": {
+    "n_seeds": 6,
+    "mean": 0.1716724311235774,
+    "sd": 0.0012748000596688844,
+    "seed_means": {
+      "s101": 0.1708134420849036,
+      "s102": 0.1721956189011231,
+      "s103": 0.16992279439536792,
+      "s104": 0.17105061230841137,
+      "s105": 0.17299884446415373,
+      "s106": 0.17305327458750483
+    }
+  },
+  "dfweak_arm": {
+    "n_seeds": 6,
+    "range": [
+      0.17168907533195185,
+      0.17281022994190762
+    ],
+    "seed_means": {
+      "s101": 0.17271320171558935,
+      "s102": 0.17273700649409854,
+      "s103": 0.17281022994190762,
+      "s104": 0.1725956174676887,
+      "s105": 0.17220392349541247,
+      "s106": 0.17168907533195185
+    }
+  },
+  "rungs": {
+    "0.00625": {
+      "KV": 0.00625,
+      "families": [
+        "R289KV00625"
+      ],
+      "in_primary": true,
+      "n_seeds": 6,
+      "seed_means": {
+        "s101": 0.17066840336134453,
+        "s102": 0.1714504882352941,
+        "s103": 0.1727016069832402,
+        "s104": 0.17132267458100556,
+        "s105": 0.16822493117977527,
+        "s106": 0.1717553308988764
+      },
+      "range": [
+        0.16822493117977527,
+        0.1727016069832402
+      ],
+      "mean": 0.17102057253992267,
+      "z_vs_control": -0.5113418207903552,
+      "gap_vs_dfweak": -0.0010125316512883398,
+      "separated": false,
+      "VERDICT": "OVERLAP"
+    },
+    "0.0125": {
+      "KV": 0.0125,
+      "families": [
+        "R289KV0125"
+      ],
+      "in_primary": true,
+      "n_seeds": 6,
+      "seed_means": {
+        "s101": 0.1706469567039106,
+        "s102": 0.17611821039325842,
+        "s103": 0.17548052893258426,
+        "s104": 0.17482478291316525,
+        "s105": 0.17487222921348314,
+        "s106": 0.17311030422535212
+      },
+      "range": [
+        0.1706469567039106,
+        0.17611821039325842
+      ],
+      "mean": 0.17417550206362564,
+      "z_vs_control": 1.9635008023912202,
+      "gap_vs_dfweak": -0.0021632732379970043,
+      "separated": false,
+      "VERDICT": "OVERLAP"
+    },
+    "0.035": {
+      "KV": 0.035,
+      "families": [
+        "R291KV0035"
+      ],
+      "in_primary": true,
+      "n_seeds": 6,
+      "seed_means": {
+        "s101": 0.18792137198879552,
+        "s102": 0.1914835824858757,
+        "s103": 0.19092670168067227,
+        "s104": 0.1913629075630252,
+        "s105": 0.19046743893557425,
+        "s106": 0.19007915423728816
+      },
+      "range": [
+        0.18792137198879552,
+        0.1914835824858757
+      ],
+      "mean": 0.19037352614853853,
+      "z_vs_control": 14.669825972410548,
+      "gap_vs_dfweak": 0.015111142046887904,
+      "separated": true,
+      "direction": "SPASTIC HIGH",
+      "permutation": {
+        "n_total": 924,
+        "n_at_least_as_extreme": 2,
+        "floor": "1/924",
+        "counting_convention_THIS_FILE": "TWO-SIDED, GAP-BASED. Statistic = max(min(B) - max(A), min(A) - max(B)), the signed disjointness gap in either direction; a relabelling counts as at-least-as-extreme if its gap is >= the observed gap. scone/doseladder_r371.py, function floor(). Under this statistic the observed labelling AND its exact complement both qualify, which is why the count is 2 and not 1.",
+        "n_at_least_as_extreme_under_r372_convention": 1,
+        "counting_convention_r372": "ONE-SIDED, DIFFERENCE-OF-MEANS. Statistic = mean(rung) - mean(DF-weak); only relabellings with a difference >= the observed one count. scone/verify_doseladder_r372.py. Under this statistic only the observed labelling qualifies, giving 1.",
+        "floor_is_unaffected": "1/924 either way. The floor is set by C(12,6) = 924, not by the count, and PREREG_doseladder_r370.md section 6 requires it to be reported as a floor and never as a p-value.",
+        "both_counts_reproduced_at_r375": true
+      },
+      "VERDICT": "SEPARATED"
+    },
+    "0.050": {
+      "KV": 0.05,
+      "families": [
+        "R203V080S",
+        "R203V105S",
+        "R203V130S"
+      ],
+      "in_primary": false,
+      "n_seeds": 6,
+      "seed_means": {
+        "s101": 0.2010013220117701,
+        "s102": 0.20016942755339984,
+        "s103": 0.200344488764592,
+        "s104": 0.20184779135290812,
+        "s105": 0.20032576245841463,
+        "s106": 0.19986717409867025
+      },
+      "range": [
+        0.19986717409867025,
+        0.20184779135290812
+      ],
+      "mean": 0.20059266103995918,
+      "z_vs_control": 22.68609080854098,
+      "gap_vs_dfweak": 0.02705694415676263,
+      "separated": true,
+      "direction": "SPASTIC HIGH",
+      "permutation": {
+        "n_total": 924,
+        "n_at_least_as_extreme": 2,
+        "floor": "1/924",
+        "counting_convention_THIS_FILE": "TWO-SIDED, GAP-BASED. Statistic = max(min(B) - max(A), min(A) - max(B)), the signed disjointness gap in either direction; a relabelling counts as at-least-as-extreme if its gap is >= the observed gap. scone/doseladder_r371.py, function floor(). Under this statistic the observed labelling AND its exact complement both qualify, which is why the count is 2 and not 1.",
+        "n_at_least_as_extreme_under_r372_convention": 1,
+        "counting_convention_r372": "ONE-SIDED, DIFFERENCE-OF-MEANS. Statistic = mean(rung) - mean(DF-weak); only relabellings with a difference >= the observed one count. scone/verify_doseladder_r372.py. Under this statistic only the observed labelling qualifies, giving 1.",
+        "floor_is_unaffected": "1/924 either way. The floor is set by C(12,6) = 924, not by the count, and PREREG_doseladder_r370.md section 6 requires it to be reported as a floor and never as a p-value.",
+        "both_counts_reproduced_at_r375": true
+      },
+      "VERDICT": "SEPARATED"
+    },
+    "0.070": {
+      "KV": 0.07,
+      "families": [
+        "R291KV0070"
+      ],
+      "in_primary": true,
+      "n_seeds": 0,
+      "seed_means": {},
+      "VERDICT": "UNINFORMATIVE",
+      "why": "section 8: fewer than 4 Gate-G seeds (0)"
+    }
+  },
+  "PREDICTION_ASSESSMENT": {
+    "primary_rungs": [
+      "0.00625",
+      "0.0125",
+      "0.035",
+      "0.070"
+    ],
+    "1_monotonic": {
+      "holds": true,
+      "rung_means": {
+        "0.00625": 0.17102057253992267,
+        "0.0125": 0.17417550206362564,
+        "0.035": 0.19037352614853853
+      },
+      "registered_over_rungs": [
+        "0.00625",
+        "0.0125",
+        "0.035",
+        "0.070"
+      ],
+      "actually_assessed_over_rungs": [
+        "0.00625",
+        "0.0125",
+        "0.035"
+      ],
+      "holds_ORIGINAL_scope": "'holds': true was computed over three rungs, not the four the prediction names. The three measurable rungs are non-decreasing. The top step, 0.0125 -> 0.035 -> 0.070, is UNTESTED at its upper end because 0.070 has no Gate-G cell. Monotonicity is therefore supported on the measured part of the ladder and untested above KV 0.035, in the same way and for the same reason as the threshold claim."
+    },
+    "2_threshold": {
+      "registered_KVstar": 0.035,
+      "observed_KVstar": 0.035,
+      "verdict": "PARTIALLY SUPPORTED -- A LOWER BOUND ON KV*, NOT A BRACKET",
+      "verdict_statement": "PREREG_doseladder_r370.md section 4 registered: 'There exists a rung KV* such that every rung at or above it is disjoint from the dorsiflexor-weakness arm on A, with spastic HIGH, and every rung below it overlaps.' The 'every rung below it overlaps' half is tested and holds: KV 0.00625 and KV 0.0125 both OVERLAP. The 'every rung at or above it is disjoint' half is satisfied at EXACTLY ONE RUNG, KV 0.035, and is UNTESTED above it, because the only registered rung above 0.035 is KV 0.070 and it contributes ZERO Gate-G cells. The result therefore establishes that the detection threshold lies at or below KV 0.035. It does NOT bracket KV*, and it says nothing about whether separation persists at higher gain -- indeed the only evidence about higher gain in this corpus is that the model stops walking there.",
+      "informative_rungs_tested": [
+        "0.00625",
+        "0.0125",
+        "0.035"
+      ],
+      "rungs_registered_but_NOT_measurable": {
+        "0.070": "0 of 6 cells pass Gate G; t_end 8.24-9.52 s against the registered 9.73 s gate. DOSELADDER_r371.json /rungs/0.070 and DYNAMICS_SWING_r361.json /cells/R291KV0070_s10*/t_end_s."
+      },
+      "single_clean_threshold_among_the_three_INFORMATIVE_rungs": true,
+      "no_rung_ABOVE_KVstar_was_measurable": true,
+      "pattern_is_not_alternating": "So the registration's 'NO THRESHOLD' branch, which fires if rungs alternate, does not fire. That is not the same as the threshold prediction being confirmed.",
+      "verdict_ORIGINAL_WRONG": "CONFIRMED",
+      "single_clean_threshold_ORIGINAL_WRONG": true,
+      "why_the_original_was_wrong": "'CONFIRMED' asserts the whole of a two-sided claim, and one side of it -- everything above KV* -- rests on a rung with no data. A claim supported at one point and untested above it is a lower bound. Recorded at r375; independently raised by VERIFY_DOSELADDER_r372.json /VERDICT_SUMMARY/caveats[1]."
+    },
+    "3_direction": {
+      "all_separations_spastic_high": true,
+      "observed": [
+        "SPASTIC HIGH"
+      ]
+    },
+    "primary_rungs_ORIGINAL_WRONG": [
+      "0.00625",
+      "0.0125",
+      "0.035"
+    ],
+    "primary_rungs_with_a_MEASURABLE_verdict": [
+      "0.00625",
+      "0.0125",
+      "0.035"
+    ],
+    "why_primary_rungs_was_corrected": "PREREG_doseladder_r370.md section 8 requires an uninformative rung to be reported as such and 'not dropped silently from the monotonicity or threshold assessment'. The original list omitted 0.070 entirely, which is the silent drop the registration forbids. The rung is now listed and its zero-cell status is carried alongside."
+  },
+  "DECLARED_LIMITATIONS_r375": {
+    "status": "Added at r375 by the standing auditor, after PREREG_doseladder_r370.md section 7's audit was re-run independently. These are limitations of the deposit as it stands, not amendments to the registration, which is hashed at e4401084e5ad865c9160e99281f991909607fb60a376fbc35b15bf5821d252a2 and is not edited. PREREG_doseladder_r370.md section 10 requires the failure region to be reported with the same prominence as the success region; that requirement governs this block.",
+    "L1_THE_ARMS_ARE_NOT_SPEED_MATCHED_AND_r371_DID_NOT_REPORT_IT": {
+      "the_omission": "r371 deposited min_velocity for every family and correctly found it identical at 1.0 across the ladder and the DF-weak arm. It never reported the ACHIEVED forward speed, which is not identical. The confound audit of section 7 asks what was ASKED of the optimiser; it does not ask what the optimiser DELIVERED, and the two differ here.",
+      "achieved_forward_speed_m_per_s_from_pelvis_pos_x": {
+        "KV0.00625": [
+          1.0180033500837522,
+          1.0323648648648647
+        ],
+        "KV0.0125": [
+          1.0244191919191918,
+          1.029212837837838
+        ],
+        "KV0.035": [
+          1.0073389544688027,
+          1.0247275803722502
+        ],
+        "DFWEAK": [
+          1.031432937181664,
+          1.0527032810271044
+        ]
+      },
+      "KV0035_vs_DFWEAK_overlap": false,
+      "plainly": "THEY DO NOT OVERLAP. The KV 0.035 arm is uniformly slower than the DF-weak arm by 0.0067-0.045 m/s.",
+      "arm_mean_deficit_m_per_s": -0.023763759731620482,
+      "container": "VERIFY_DOSELADDER_r372.json /e_speed/arms/*/range and /e_speed/CONFOUND_TEST",
+      "FOUR_GROUNDS_ON_WHICH_THE_CONFOUND_WAS_JUDGED_INSUFFICIENT": {
+        "g1_the_slope_required_is_an_order_of_magnitude_steeper_than_any_measured_slope": {
+          "slope_dA_dv_required_to_explain_the_whole_gap": -0.753893769746879,
+          "only_estimate_from_a_DELIBERATELY_MANIPULATED_speed_axis": {
+            "arm": "18 control cells at min_velocity 0.8 / 1.05 / 1.3",
+            "slope_dA_dv": -0.07800424414680038,
+            "r2": 0.6661238375397445,
+            "fraction_of_observed_gap_explained": 0.10346848226772111
+          },
+          "reading": "-0.7539 per (m/s) would be needed; -0.0780 per (m/s) is what a manipulated speed axis actually delivers, about 10x too shallow, accounting for 10.3% of the gap. Container: VERIFY_DOSELADDER_r372.json /e_speed/CONFOUND_TEST/slope_dA_dv_required_to_explain_it_entirely and /e_speed/CONFOUND_TEST/empirical_slope_estimates/controls_across_0.8_1.05_1.3_18cells"
+        },
+        "g2_every_WITHIN_ARM_slope_estimate_has_the_WRONG_SIGN": {
+          "within_DFWEAK_36cells": {
+            "slope_dA_dv": 0.018196382772101748,
+            "r2": 0.002756589754548733
+          },
+          "within_KV00625_KV0125_12cells": {
+            "slope_dA_dv": 0.20099141714738816,
+            "r2": 0.13833088093731394
+          },
+          "within_KV0035_6cells": {
+            "slope_dA_dv": 0.1315280796297435,
+            "r2": 0.5129090151554605
+          },
+          "nonelevated_pool_48cells": {
+            "slope_dA_dv": 0.01107234066148407,
+            "r2": 0.0025946086112584865
+          },
+          "reading": "All four within-arm slopes are POSITIVE, i.e. slower walking goes with LOWER activation, the opposite of what the confound needs; three of the four have r2 <= 0.14. A confound needs a mechanism with the right sign and none of the within-arm data supplies one. Container: VERIFY_DOSELADDER_r372.json /e_speed/CONFOUND_TEST/empirical_slope_estimates"
+        },
+        "g3_the_separation_survives_direct_speed_adjustment": {
+          "no_adjustment_gap": 0.015111142046887904,
+          "at_the_control_derived_slope_-0.0780_gap": 0.012294725108634164,
+          "at_3x_the_control_slope_-0.2340_gap": 0.006515444336508747,
+          "still_disjoint_in_all_three": true,
+          "slope_at_which_the_separation_finally_dies": -0.40989354902962577,
+          "that_is_this_multiple_of_the_measured_sensitivity": 5.254759577674069,
+          "container": "VERIFY_DOSELADDER_r372.json /e_speed/CONFOUND_TEST/speed_adjusted_separation"
+        },
+        "g4_DECISIVE_the_internal_control_two_slower_rungs_show_NIL_A_GAP": {
+          "KV0.00625": {
+            "speed_deficit_vs_DFWEAK_m_per_s": -0.01776624406207361,
+            "as_fraction_of_KV0035_deficit": 0.7476192430288516,
+            "A_gap_vs_DFWEAK_means": -0.0014376032011854112
+          },
+          "KV0.0125": {
+            "speed_deficit_vs_DFWEAK_m_per_s": -0.01415727037916148,
+            "as_fraction_of_KV0035_deficit": 0.5957504426508556,
+            "A_gap_vs_DFWEAK_means": 0.0017173263225175595
+          },
+          "KV0.035_for_comparison": {
+            "speed_deficit_vs_DFWEAK_m_per_s": -0.023763759731620482,
+            "A_gap_vs_DFWEAK_means": 0.017915350407430447
+          },
+          "reading": "KV 0.00625 and KV 0.0125 sit on the same lesion axis at the same min_velocity and are ALSO slower than DF-weak, by 0.01777 and 0.01416 m/s, 75% and 60% of KV 0.035's deficit. Their A gaps are -0.001438 and +0.001717, i.e. nil. A comparable speed deficit demonstrably produces no activation elevation in this corpus, so slowness is not what produces the KV 0.035 elevation. This is the strongest of the four because it is an observed control inside the same experiment, not a model of a slope. Container: VERIFY_DOSELADDER_r372.json /e_speed/CONFOUND_TEST/internal_control_low_rungs_are_also_slow and /VERDICT_SUMMARY/e_speed/but_speed_cannot_be_the_cause[4]"
+        }
+      },
+      "RESIDUAL_RISK_STATED_AT_ITS_WORST": "the speed non-overlap is real and unreported by r371. It is quantitatively far too small to manufacture the separation, but it is not zero and it must be declared.",
+      "what_this_limitation_does_NOT_say": "It does not say the separation is explained by speed; four independent grounds say it is not. It says the arms are not speed-matched, that r371 failed to report it, and that every statement of this result must carry the label."
+    },
+    "L2_THE_THRESHOLD_CLAIM_IS_A_LOWER_BOUND_NOT_A_BRACKET": {
+      "statement": "PREREG_doseladder_r370.md section 4 registered: 'There exists a rung KV* such that every rung at or above it is disjoint from the dorsiflexor-weakness arm on A, with spastic HIGH, and every rung below it overlaps.' The 'every rung below it overlaps' half is tested and holds: KV 0.00625 and KV 0.0125 both OVERLAP. The 'every rung at or above it is disjoint' half is satisfied at EXACTLY ONE RUNG, KV 0.035, and is UNTESTED above it, because the only registered rung above 0.035 is KV 0.070 and it contributes ZERO Gate-G cells. The result therefore establishes that the detection threshold lies at or below KV 0.035. It does NOT bracket KV*, and it says nothing about whether separation persists at higher gain -- indeed the only evidence about higher gain in this corpus is that the model stops walking there.",
+      "KV0.070_contributes_zero_cells": {
+        "n_gate_G": 0,
+        "of_n_cells": 6,
+        "t_end_range_s": [
+          8.24,
+          9.52
+        ],
+        "gate_s": 9.73,
+        "container": "DOSELADDER_r371.json /rungs/0.070 ; DYNAMICS_SWING_r361.json /cells/R291KV0070_s10*/t_end_s ; VERIFY_DOSELADDER_r372.json /VERDICT_SUMMARY/headline_numbers_reproduced/KV0.070_n_gate_G"
+      },
+      "the_registration_is_NOT_edited": "PREREG_doseladder_r370.md is hashed at e4401084e5ad865c9160e99281f991909607fb60a376fbc35b15bf5821d252a2 and its section 4 stands exactly as written. What is corrected is the ASSESSMENT of that prediction in this deposit, and the wording of the claim wherever the manuscript makes it.",
+      "where_this_is_also_recorded": "paper/DYNAMICS_RESULT_r375.md, and paper/RESULTS_3d_r214.md section r375."
+    },
+    "L3_PERMUTATION_COUNTING_CONVENTIONS_DIFFER_BETWEEN_THE_TWO_DEPOSITS": {
+      "this_file": "TWO-SIDED, GAP-BASED. Statistic = max(min(B) - max(A), min(A) - max(B)), the signed disjointness gap in either direction; a relabelling counts as at-least-as-extreme if its gap is >= the observed gap. scone/doseladder_r371.py, function floor(). Under this statistic the observed labelling AND its exact complement both qualify, which is why the count is 2 and not 1.",
+      "VERIFY_DOSELADDER_r372_json": "ONE-SIDED, DIFFERENCE-OF-MEANS. Statistic = mean(rung) - mean(DF-weak); only relabellings with a difference >= the observed one count. scone/verify_doseladder_r372.py. Under this statistic only the observed labelling qualifies, giving 1.",
+      "counts_at_KV_0.035": {
+        "this_file": 2,
+        "r372": 1,
+        "n_total": 924
+      },
+      "counts_at_KV_0.050_excluded_from_primary": {
+        "this_file": 2,
+        "r372_convention": 1,
+        "n_total": 924
+      },
+      "both_reproduced_at_r375": true,
+      "floor_unaffected": "1/924 under either convention. The floor is fixed by C(12,6) = 924 and by PREREG_doseladder_r370.md section 9.4, which registers in advance that six seeds per rung cap it there. Neither count is a p-value and neither is reported as one.",
+      "which_is_right": "Neither is an error. They are different statistics: this file's is two-sided on the disjointness gap, r372's is one-sided on the difference of means. The discrepancy is recorded because a reader comparing the two deposits would otherwise read it as one."
+    },
+    "L4_INHERITED_AND_UNCHANGED": [
+      "PREREG_doseladder_r370.md section 9.1: activation is a clean 0-1 simulator signal. Nothing in r371, r372 or r375 speaks to whether any of this survives surface-EMG noise, and this corpus cannot test it.",
+      "PREREG_doseladder_r370.md section 9.2: three individual non-R203 cells were seen before registration -- R289KV0125_s101, R151W_s101, R174W915_s102.",
+      "PREREG_doseladder_r370.md section 1: all 54 R203 cells were seen before registration and the KV 0.050 rung is reported for continuity only, excluded from every primary test.",
+      "BETWEEN_SCENARIO is deposited true at the top of this file. It is driven by the R203 families at min_velocity 0.8 / 1.05 / 1.3, which are excluded from the primary. Every family in the primary comparison -- the ladder rungs and all six DF-weak families -- is at min_velocity 1.0, verified independently from each cell's own config.scone at VERIFY_DOSELADDER_r372.json /e_min_velocity_from_config_scone. The flag errs conservative and is left as deposited.",
+      "Six seeds per rung. The DF-weak arm's 36 cells are reduced to 6 seed means to keep the unit consistent, as PREREG_doseladder_r370.md section 6 requires; that reduction is what caps the floor at 1/924."
+    ]
+  }
+}

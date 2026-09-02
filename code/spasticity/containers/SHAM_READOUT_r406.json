@@ -1,0 +1,85 @@
+{
+  "question": "does chaining itself move knee angle at heel strike, at unchanged severity?",
+  "endpoint": "knee_angle_l at left heel strike, per-cycle mean, deg",
+  "ladders": {
+    "SPASTIC KV 0.050 (unchanged severity)": {
+      "0 rounds  R151S": {
+        "n": 6,
+        "range": [
+          -11.092187893991076,
+          -8.692904208568947
+        ],
+        "mean": -9.931759282778765,
+        "shift_vs_unchained": 0.0
+      },
+      "1 round   c1": {
+        "n": 6,
+        "range": [
+          -10.916095045235567,
+          -8.532647913270855
+        ],
+        "mean": -9.966828437869292,
+        "shift_vs_unchained": -0.035069155090527104
+      },
+      "2 rounds  c2": {
+        "n": 6,
+        "range": [
+          -11.322127316332978,
+          -8.890574647889082
+        ],
+        "mean": -10.1492846195595,
+        "shift_vs_unchained": -0.21752533678073505
+      },
+      "3 rounds  c3": {
+        "n": 6,
+        "range": [
+          -11.256053823398492,
+          -8.962217290592239
+        ],
+        "mean": -10.383175540828487,
+        "shift_vs_unchained": -0.4514162580497221
+      }
+    },
+    "WEAK x0.80 (unchanged severity)": {
+      "0 rounds  R151W": {
+        "n": 6,
+        "range": [
+          -6.273548665667797,
+          -5.37492567048918
+        ],
+        "mean": -5.844344835419707,
+        "shift_vs_unchained": 0.0
+      },
+      "1 round   c1": {
+        "n": 6,
+        "range": [
+          -7.255192672403076,
+          -5.885852189930163
+        ],
+        "mean": -6.430359415602891,
+        "shift_vs_unchained": -0.5860145801831838
+      },
+      "2 rounds  c2": {
+        "n": 6,
+        "range": [
+          -7.020238723438188,
+          -5.624634046622412
+        ],
+        "mean": -6.346769679772586,
+        "shift_vs_unchained": -0.5024248443528787
+      },
+      "3 rounds  c3": {
+        "n": 6,
+        "range": [
+          -6.520683697357166,
+          -5.726920573054415
+        ],
+        "mean": -6.284201638121676,
+        "shift_vs_unchained": -0.4398568027019687
+      }
+    }
+  },
+  "largest_protocol_shift_deg": 0.5860145801831838,
+  "headline_gap_deg": 6.391931677410274,
+  "verdict": "protocol shift 0.5860 deg against a headline gap of 6.3919 deg -- chaining cannot account for the gap"
+}

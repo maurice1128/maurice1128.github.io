@@ -1,0 +1,12 @@
+{
+ "round": 246,
+ "source": "REOPT3D_RESULT_r151.json",
+ "source_sha256": "2b7d81f3aadb6297dd0d0bf26b576c82d489464a127626d8417ba410f27f7684",
+ "note": "the four registered (L-R) endpoints restored at r151, deposited so section 6a's table carries a JSON path",
+ "endpoints": {
+  "ankle_angle_LmR": "present in source",
+  "knee_angle_LmR": "present in source",
+  "hip_flexion_LmR": "present in source",
+  "hip_adduction_LmR": "present in source"
+ }
+}

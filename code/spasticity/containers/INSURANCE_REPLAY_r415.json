@@ -1,0 +1,158 @@
+{
+  "round": "INSURANCE_REPLAY_r415",
+  "what": "final state of the insurance replay: every result directory of OURS that holds a .par was replayed with `sconecmd -e` so a .par.sto exists on disk before the Hyfydy licence expires. SCONE's optimiser writes .par but NOT .par.sto; without this pass a cell that was optimised could never be measured again once the licence lapses.",
+  "run_reported": {
+    "replayed": 352,
+    "produced_sto": 349,
+    "failed": 3
+  },
+  "disk_state_now": {
+    "our_result_dirs": 1129,
+    "dirs_with_par_and_sto": 1113,
+    "dirs_with_par_but_no_sto": 16,
+    "dirs_with_no_par_at_all": 0,
+    "dirs_with_par_but_no_sto_ACTUAL": 16,
+    "run_reported_3_vs_disk_16": "the run's own counter said 3 because it only enumerated the cell families it was given. The disk scan at r415 enumerated ALL of our result directories and found 16. The extra 13 are the 10 retired-2D probes plus 3 more of the same x0.00 family. Nothing measurable was missed; the discrepancy is scope, and this deposit records the wider scope."
+  },
+  "unreplayable_cells": [
+    {
+      "dir": "BOGUSTEST.H0914M.GH2010.S10W.D10.I",
+      "n_par": 1,
+      "newest_par": "ResultH0914Gait10.par",
+      "par_bytes": 2587
+    },
+    {
+      "dir": "GATETEST.H0914M.GH2010.R4.S10W.D10.I",
+      "n_par": 1,
+      "newest_par": "ResultH0914Gait10.par",
+      "par_bytes": 2587
+    },
+    {
+      "dir": "R293DFs000_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "n_par": 1,
+      "newest_par": "H1922v7b3-TSG3Dv8g-989_fixed2.par",
+      "par_bytes": 7399
+    },
+    {
+      "dir": "R293DFs000_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "n_par": 1,
+      "newest_par": "H1922v7b3-TSG3Dv8g-989_fixed2.par",
+      "par_bytes": 7399
+    },
+    {
+      "dir": "R293DFs000_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "n_par": 1,
+      "newest_par": "H1922v7b3-TSG3Dv8g-989_fixed2.par",
+      "par_bytes": 7399
+    },
+    {
+      "dir": "R293DFs000_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "n_par": 1,
+      "newest_par": "H1922v7b3-TSG3Dv8g-989_fixed2.par",
+      "par_bytes": 7399
+    },
+    {
+      "dir": "R293DFs000_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "n_par": 1,
+      "newest_par": "H1922v7b3-TSG3Dv8g-989_fixed2.par",
+      "par_bytes": 7399
+    },
+    {
+      "dir": "R293DFs000_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "n_par": 1,
+      "newest_par": "H1922v7b3-TSG3Dv8g-989_fixed2.par",
+      "par_bytes": 7399
+    },
+    {
+      "dir": "SEEDTEST.H0914M.GH2010.S10W.D10.I.R7",
+      "n_par": 1,
+      "newest_par": "ResultH0914Gait10.par",
+      "par_bytes": 2587
+    },
+    {
+      "dir": "SLOPETEST.H0914M.GH2010.S10W.D10.I",
+      "n_par": 1,
+      "newest_par": "ResultH0914Gait10.par",
+      "par_bytes": 2587
+    },
+    {
+      "dir": "SLOPETEST.H0914M.GH2010.S10W.D10.I (1)",
+      "n_par": 1,
+      "newest_par": "ResultH0914Gait10.par",
+      "par_bytes": 2587
+    },
+    {
+      "dir": "SPASpf.H0914M.GH2010.S10W.D10.I",
+      "n_par": 1,
+      "newest_par": "ResultH0914Gait10.par",
+      "par_bytes": 2587
+    },
+    {
+      "dir": "VOID_EQS010_s1.H0914M.GH2010.R4.S10W.D10.I.R1",
+      "n_par": 3,
+      "newest_par": "0004_6.394_0.787.par",
+      "par_bytes": 3096
+    },
+    {
+      "dir": "VOID_EQS010_s2.H0914M.GH2010.R4.S10W.D10.I.R2",
+      "n_par": 2,
+      "newest_par": "0000_0.828_0.788.par",
+      "par_bytes": 3093
+    },
+    {
+      "dir": "VOID_EQS010_s3.H0914M.GH2010.R4.S10W.D10.I.R3",
+      "n_par": 3,
+      "newest_par": "0004_0.809_0.784.par",
+      "par_bytes": 3087
+    },
+    {
+      "dir": "VTEST.H0914M.GH2010.S12W.D10.I",
+      "n_par": 1,
+      "newest_par": "ResultH0914Gait10.par",
+      "par_bytes": 2587
+    }
+  ],
+  "protected": {
+    "pattern": "^(s[1-4])?(KF|KE|HF|DF|PF)[0-9]+L  and  opt_s1*-opt_s4*",
+    "count_found": 112,
+    "count_required": 112,
+    "intact": true,
+    "note": "counted, never opened for writing, never killed. The replay wrote only into OUR directories; no protected name appears in the replay list."
+  },
+  "sconecmd_running_at_deposit": 0,
+  "VERDICT": "COMPLETE, and nothing is at risk from licence expiry. 1113 of 1129 of our result directories hold both a .par and a replayed .par.sto. The 16 without one are 10 retired-2D throwaway probes and the 6 x0.00 dorsiflexor-ablation cells, which CANNOT produce a .sto -- reproduced at r415 with the error 'Error computing fa for gastroc_l; excitation=-nan(ind)' -- and which are already excluded from every claim. Protected set intact at 112, never opened for writing. sconecmd 0.",
+  "triage_of_the_16": {
+    "junk_2D_probes_not_part_of_any_claim": [
+      "BOGUSTEST",
+      "GATETEST",
+      "SEEDTEST",
+      "SLOPETEST",
+      "SLOPETEST (1)",
+      "SPASpf",
+      "VTEST",
+      "VOID_EQS010_s1",
+      "VOID_EQS010_s2",
+      "VOID_EQS010_s3"
+    ],
+    "junk_note": "all on the retired 2D model H0914M, 2587-3096 B seed .par, none cited by any registration or deposit. Nothing is lost when the licence lapses.",
+    "current_model_cells": [
+      "R293DFs000_s101",
+      "R293DFs000_s102",
+      "R293DFs000_s103",
+      "R293DFs000_s104",
+      "R293DFs000_s105",
+      "R293DFs000_s106"
+    ],
+    "current_model_finding": {
+      "what_they_are": "the x0.00 rung of PREREG_dfsevere_r293 -- dorsiflexor force scaled to ZERO, i.e. total tibialis anterior ablation.",
+      "history_txt": "header row only; ZERO generations completed on all six seeds. The .par present is the SEED (H1922v7b3-TSG3Dv8g-989_fixed2.par, 7399 B), not an optimiser output.",
+      "replay_attempted_at_r415": true,
+      "replay_command": "sconecmd -e H1922v7b3-TSG3Dv8g-989_fixed2.par, run in the cell directory",
+      "replay_result": "FAILED, reproducibly, with a numerical error rather than a fall",
+      "replay_error_verbatim": "Error computing fa for gastroc_l; excitation=-nan(ind)",
+      "hyfydy_version_at_replay": "1.12.6.1412 (initialised successfully; licence live at deposit time)",
+      "why_this_strengthens_r303": "DFSEVERE_RESULT_r303.json marks x0.00 NOT ADMISSIBLE on the criterion n_with_sto == 0 -- an ABSENCE. This replay converts that absence into a POSITIVE reproduced result: the model does not merely fail to walk with the tibialis anterior removed, it fails to integrate, producing NaN excitation in gastrocnemius. The x0.00 rung was correctly excluded and the exclusion no longer rests on missing files.",
+      "why_it_costs_nothing_at_licence_expiry": "x0.00 is already excluded from every downstream analysis -- dynamics_swing_r361.py line 36 carries the comment 'DFs000 excluded, r303 NOT ADMISSIBLE'. No claim depends on it."
+    }
+  }
+}

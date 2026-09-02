@@ -1,0 +1,63 @@
+{
+ "round": 275,
+ "why": "PREREG_weakpf_r274.md quoted these as sourced when they existed only as in-session measurements. Depositing them makes the citations honest.",
+ "source": "reach_2x2_r273.py configs() and decide(), N_SEEDS=14",
+ "self_consistency_rule": [
+  "hw must equal 0.29235 * delta (it is a deterministic function of delta at this n)",
+  "an arm cannot have more usable cells than cells completing >= 2 cycles",
+  "an HL interval must contain its own point estimate",
+  "four arm means inside a band of width delta force |effect| <= delta"
+ ],
+ "n_configurations": 190512,
+ "n_self_consistent": 4176,
+ "pct_self_consistent": 2.1919879062736207,
+ "pct_physically_impossible": 97.80801209372638,
+ "FAILURE_DOMINATED": {
+  "total": 63504,
+  "self_consistent": 0
+ },
+ "INTERACTION_sign_route": {
+  "total": 20736,
+  "with_overlapping_HL_intervals": 3840
+ },
+ "INCONCLUSIVE_split": {
+  "total": 5184,
+  "pattern_1": 1296,
+  "pattern_2": 3264,
+  "matching_neither": 624,
+  "registered_in_2x2_rev4": [
+   1296,
+   3792
+  ]
+ },
+ "completion_census": {
+  "note": "COST_r270.json tabulated 8 arms and omitted R172W090 and R172W080, which also completed 6/6 seeds at 20.0 s and 14 cycles",
+  "arms_completing": [
+   "R151C",
+   "R151S",
+   "R151W",
+   "R169W090",
+   "R169W095",
+   "R172W080",
+   "R172W090",
+   "R174W870",
+   "R174W892",
+   "R174W915"
+  ],
+  "n_arms": 10,
+  "s_per_cell": {
+   "R151C": 204.0003858009974,
+   "R151S": 99.99961491425832,
+   "R151W": 139.77065289020538,
+   "R174W870": 170.60932155450186,
+   "R174W892": 450.9627827008565,
+   "R174W915": 215.87709752718607,
+   "R169W090": 187.03757174809775,
+   "R169W095": 200.71231457591057,
+   "R172W090": 209.34484461943308,
+   "R172W080": 241.92815415064493
+  },
+  "mean_s_per_cell": 212.02427404820918,
+  "hours_for_18_cells": 1.060121370241046
+ }
+}

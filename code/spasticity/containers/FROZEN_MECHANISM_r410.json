@@ -1,0 +1,271 @@
+{
+  "round": "FROZEN_MECHANISM_r410",
+  "written_by": "scone/deposit_r412.py during the r412 pre-writeup audit",
+  "why_this_deposit_exists_late": "the probe was run and its arm means were reported to the user during the session, but no deposit was ever written. This file is that missing container. It is POST-HOC and UNREGISTERED: there is no PREREG for r410 or r411 anywhere in paper/.",
+  "status": "UNREGISTERED, POST-HOC, EXPLORATORY. Changes no verdict and may not be cited as confirmatory evidence for any mechanism claim.",
+  "staged_under": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\scone\\probe3d_r141\\frozen2_r410",
+  "readout": {
+    "name": "corpus window with Gate G WAIVED",
+    "window": "SETTLE 1.00 s, T1 9.73 s, cycles between left heel strikes wholly inside the window, LAST kept cycle dropped when >= 2 remain; stance = leg0_l.grf_norm_y > 0.05 (sto_utils.grf_vertical), heel strikes by sto_utils.heel_strikes.",
+    "endpoint": "knee_angle_l at left heel strike, per-cycle mean, degrees",
+    "DEVIATION_FROM_CORPUS": "the corpus Gate G (t_end >= 9.73 s AND >= 5 admissible cycles) is NOT applied to the arm means below. It CANNOT be applied: every lesioned arm dies in 3-5 s with 1-2 cycles. The arm means are therefore sub-Gate-G quantities and are reported as such."
+  },
+  "GATE_G_WARNING": {
+    "HEADLINE": "EVERY LESIONED ARM IN THIS DEPOSIT FAILS GATE G. Not one lesioned cell reaches the corpus 9.73 s / 5-cycle bar except where noted below. The arm means rest on ONE TO THREE gait cycles per seed.",
+    "why_it_matters": "the corpus endpoint is a per-cycle mean over >= 5 steady cycles. A mean over 1-2 cycles taken from a model that is falling over is not the same quantity, and the corpus has never characterised its variance. NONE of the numbers in this deposit may be compared with a Gate-G corpus value.",
+    "the_comparator_is_not_like_for_like": "the NONE arm is a 20.0 s run that passes Gate G on all six seeds with 15 cycles. Every lesioned arm dies in 3-5 s. The 'delta_vs_NONE_deg' figures therefore compare a steady walk against a fall and cannot be read as a lesion effect size."
+  },
+  "arms": {
+    "R410BOTH": {
+      "label": "soleus + gastrocnemius spastic reflex, frozen controller",
+      "n_seeds_run": 6,
+      "n_seeds_with_a_value": 6,
+      "knee_hs_deg_mean": -7.911286643607382,
+      "knee_hs_deg_range": [
+        -8.38752916292012,
+        -7.6170728158077035
+      ],
+      "knee_hs_deg_by_seed": {
+        "R410BOTH_s106": -8.38752916292012,
+        "R410BOTH_s103": -8.127921985946346,
+        "R410BOTH_s104": -7.875591372970731,
+        "R410BOTH_s105": -7.733440543998774,
+        "R410BOTH_s101": -7.726163980000612,
+        "R410BOTH_s102": -7.6170728158077035
+      },
+      "t_end_s_range": [
+        3.74,
+        4.05
+      ],
+      "t_end_s_by_seed": {
+        "R410BOTH_s101": 3.93,
+        "R410BOTH_s102": 3.74,
+        "R410BOTH_s103": 4.05,
+        "R410BOTH_s104": 3.84,
+        "R410BOTH_s105": 3.9,
+        "R410BOTH_s106": 3.93
+      },
+      "n_admissible_cycles_by_seed": {
+        "R410BOTH_s101": 1,
+        "R410BOTH_s102": 1,
+        "R410BOTH_s103": 1,
+        "R410BOTH_s104": 1,
+        "R410BOTH_s105": 1,
+        "R410BOTH_s106": 1
+      },
+      "GATE_G_pass_count": 0,
+      "GATE_G_ALL_FAIL": true,
+      "delta_vs_NONE_deg": -0.06128738548582824
+    },
+    "R410GAS": {
+      "label": "gastrocnemius-only spastic reflex, frozen controller",
+      "n_seeds_run": 6,
+      "n_seeds_with_a_value": 6,
+      "knee_hs_deg_mean": -18.843378670483002,
+      "knee_hs_deg_range": [
+        -20.4445665247556,
+        -17.862474925219033
+      ],
+      "knee_hs_deg_by_seed": {
+        "R410GAS_s103": -20.4445665247556,
+        "R410GAS_s101": -19.98488248572214,
+        "R410GAS_s106": -18.68558609370397,
+        "R410GAS_s105": -18.06003077298014,
+        "R410GAS_s104": -18.022731220517123,
+        "R410GAS_s102": -17.862474925219033
+      },
+      "t_end_s_range": [
+        3.27,
+        3.56
+      ],
+      "t_end_s_by_seed": {
+        "R410GAS_s101": 3.28,
+        "R410GAS_s102": 3.52,
+        "R410GAS_s103": 3.33,
+        "R410GAS_s104": 3.56,
+        "R410GAS_s105": 3.5,
+        "R410GAS_s106": 3.27
+      },
+      "n_admissible_cycles_by_seed": {
+        "R410GAS_s101": 1,
+        "R410GAS_s102": 1,
+        "R410GAS_s103": 1,
+        "R410GAS_s104": 1,
+        "R410GAS_s105": 1,
+        "R410GAS_s106": 1
+      },
+      "GATE_G_pass_count": 0,
+      "GATE_G_ALL_FAIL": true,
+      "delta_vs_NONE_deg": -10.993379412361449
+    },
+    "R410NONE": {
+      "label": "no lesion; frozen R151C controller replayed",
+      "n_seeds_run": 6,
+      "n_seeds_with_a_value": 6,
+      "knee_hs_deg_mean": -7.849999258121554,
+      "knee_hs_deg_range": [
+        -8.239580001061439,
+        -7.587588407670272
+      ],
+      "knee_hs_deg_by_seed": {
+        "R410NONE_s106": -8.239580001061439,
+        "R410NONE_s102": -7.901821380831819,
+        "R410NONE_s103": -7.855916002285937,
+        "R410NONE_s101": -7.8346019723070714,
+        "R410NONE_s104": -7.680487784572781,
+        "R410NONE_s105": -7.587588407670272
+      },
+      "t_end_s_range": [
+        20.0,
+        20.0
+      ],
+      "t_end_s_by_seed": {
+        "R410NONE_s101": 20.0,
+        "R410NONE_s102": 20.0,
+        "R410NONE_s103": 20.0,
+        "R410NONE_s104": 20.0,
+        "R410NONE_s105": 20.0,
+        "R410NONE_s106": 20.0
+      },
+      "n_admissible_cycles_by_seed": {
+        "R410NONE_s101": 5,
+        "R410NONE_s102": 5,
+        "R410NONE_s103": 5,
+        "R410NONE_s104": 5,
+        "R410NONE_s105": 5,
+        "R410NONE_s106": 5
+      },
+      "GATE_G_pass_count": 6,
+      "GATE_G_ALL_FAIL": false,
+      "delta_vs_NONE_deg": 0.0
+    },
+    "R410SOL": {
+      "label": "soleus-only spastic reflex, frozen controller",
+      "n_seeds_run": 6,
+      "n_seeds_with_a_value": 6,
+      "knee_hs_deg_mean": -7.737056862615709,
+      "knee_hs_deg_range": [
+        -9.179757906247511,
+        -6.77489934147876
+      ],
+      "knee_hs_deg_by_seed": {
+        "R410SOL_s102": -9.179757906247511,
+        "R410SOL_s103": -8.428438349492463,
+        "R410SOL_s104": -7.59909912977445,
+        "R410SOL_s101": -7.590086503657042,
+        "R410SOL_s106": -6.850059945044022,
+        "R410SOL_s105": -6.77489934147876
+      },
+      "t_end_s_range": [
+        3.98,
+        4.99
+      ],
+      "t_end_s_by_seed": {
+        "R410SOL_s101": 3.98,
+        "R410SOL_s102": 4.18,
+        "R410SOL_s103": 4.31,
+        "R410SOL_s104": 4.84,
+        "R410SOL_s105": 4.95,
+        "R410SOL_s106": 4.99
+      },
+      "n_admissible_cycles_by_seed": {
+        "R410SOL_s101": 1,
+        "R410SOL_s102": 1,
+        "R410SOL_s103": 1,
+        "R410SOL_s104": 2,
+        "R410SOL_s105": 2,
+        "R410SOL_s106": 2
+      },
+      "GATE_G_pass_count": 0,
+      "GATE_G_ALL_FAIL": true,
+      "delta_vs_NONE_deg": 0.11294239550584528
+    }
+  },
+  "question": "with the control controller FROZEN (no re-optimisation), which plantarflexor carries the knee-at-heel-strike displacement?",
+  "relation_to_r407": "r407 asked the same question WITH re-optimisation and returned UNINFORMATIVE at KV 0.110 (GAS and SOL had 0 Gate-G seeds). This probe removes re-optimisation. It does not rescue r407: it replaces one UNINFORMATIVE readout with a sub-Gate-G one.",
+  "CORRECTION_r416": {
+    "supersedes": "every use in this project of the phrase 'SOL-vs-GAS edge gap +8.6827 DISJOINT' as a defensible mechanism statement, including the r412 audit's own recommendation to keep it after retiring the 'vs NONE' framing.",
+    "what_the_r412_audit_caught": "the -10.99 deg GAS 'delta_vs_NONE_deg' subtracts a 20.0 s, 15-cycle steady walk from a 3.27-3.56 s fall. That much was already recorded.",
+    "what_r416_caught_that_the_audit_did_not": "the SOL-vs-GAS contrast, offered as the survivor, carries the SAME confound between its own two arms.",
+    "measurement": {
+      "GAS": {
+        "t_end_s": [
+          3.27,
+          3.56
+        ],
+        "knee_hs_deg": [
+          -20.4446,
+          -17.8625
+        ],
+        "within_arm_r_tend_knee": 0.7667,
+        "within_arm_slope_deg_per_s": 6.494
+      },
+      "SOL": {
+        "t_end_s": [
+          3.98,
+          4.99
+        ],
+        "knee_hs_deg": [
+          -9.1798,
+          -6.7749
+        ],
+        "within_arm_r_tend_knee": 0.7046,
+        "within_arm_slope_deg_per_s": 1.496
+      },
+      "t_end_overlap_between_arms": false,
+      "edge_gap_deg": 8.6827,
+      "duration_span_between_arms_s": 1.72,
+      "deg_explainable_by_duration_at_steepest_within_arm_slope": 11.1699
+    },
+    "the_argument": "Within BOTH arms, surviving longer goes with a LESS flexed knee at heel strike (r = +0.77 and +0.70, both positive). Soleus-only survives longer than gastrocnemius-only and has a less flexed knee. That is exactly the pattern survival duration alone produces. The properly pooled within-arm slope is +1.9064 deg/s (r +0.60, n=12), which over the 1.72 s span between the arms is 3.28 deg, 38% of the 8.68 deg claimed. See SELF_CORRECTION_r417.",
+    "can_it_be_rescued_by_duration_matching": false,
+    "why_not": "the two arms' t_end ranges are strictly disjoint (3.27-3.56 against 3.98-4.99). There is no common window, so the r414 duration-matched procedure cannot be applied here. The confound is structural to this probe, not a窗口 choice.",
+    "second_independent_warning_sign": "R410BOTH (soleus AND gastrocnemius spastic) sits at -7.911 deg, within 0.06 deg of the unlesioned R410NONE at -7.850 deg, while R410GAS alone sits at -18.843 deg. Adding soleus spasticity ON TOP of gastrocnemius spasticity abolishes an 11 deg gastrocnemius effect. No mechanism predicts that. It is what a single-cycle readout from a falling model looks like.",
+    "n_cycles_reminder": "every lesioned arm here contributes 1-2 admissible cycles per seed and 0/6 pass Gate G. The corpus endpoint is a mean over >= 5 steady cycles.",
+    "VERDICT": "FROZEN_MECHANISM_r410 CARRIES NO MECHANISM CLAIM. Neither 'GAS -10.99 vs NONE' nor 'SOL vs GAS +8.6827 disjoint' may be stated. Primary ground: 0/6 Gate-G on every lesioned arm, 1-2 cycles from a falling model against a >= 5-cycle endpoint. Secondary: BOTH is indistinguishable from NONE while GAS alone is 11 deg away. Tertiary: an unmatchable duration confound worth 38% of the gap (within-arm pooled +1.9064 deg/s, r +0.60) -- material but not sufficient, correcting r416's overstatement that duration accounted for the whole effect.",
+    "what_this_costs": "the frozen-controller decomposition was the last route to a muscle-level mechanism for the knee signature. With it retired, the position is the one PREREG_onedim_r409 already reached on untouched material: the lesion response is not decomposable into a single muscle's contribution in this design. The KINEMATIC SEPARATION is untouched by this -- knee-at-heel-strike edge gap 6.3919 deg, permutation 1/210, verified duration-matched at r414 -- because that comparison is between Gate-G-passing arms that walk for the full 9.73 s window.",
+    "method_note_for_the_writeup": "r414 duration-matched two arms and the numbers survived; r416 applied the same test to r410 and the claim did not. The test was not built to save or to kill anything in particular.",
+    "SYMMETRIC_STATISTIC_r417": {
+      "why": "the headline was subjected to the identical test at r417 and SURVIVED (within-rung pooled slope -0.0585 deg/s, r -0.1044, sign-unstable across rungs, 9% of the gap). This block records the same statistic for r410 so the two verdicts can be compared on one scale and neither can be read as a motivated choice.",
+      "per_arm": {
+        "R410GAS": {
+          "slope": 6.494128549334202,
+          "r": 0.7667224914122044
+        },
+        "R410SOL": {
+          "slope": 1.495904844617375,
+          "r": 0.7045658831472057
+        }
+      },
+      "within_arm_pooled_slope_deg_per_s": 1.9063958650920663,
+      "within_arm_pooled_r": 0.601969278927925,
+      "n": 12,
+      "extrapolated_deg_over_1.72_s": 3.279000887958354,
+      "fraction_of_8.6827": 0.3776479561820636,
+      "headline_comparator": {
+        "within_rung_pooled_slope_deg_per_s": -0.0585,
+        "pearson_r": -0.1044,
+        "fraction_of_6.3919": 0.086
+      },
+      "the_contrast": "r410's two arms give a strong, SAME-SIGN duration relationship (+6.49 and +1.50 deg/s, r +0.77 and +0.70) that pools to +1.9064 deg/s and covers the whole claimed gap. The headline's rungs give sign-unstable slopes that pool to essentially zero. The retirement of r410 and the survival of the headline come from the same test applied the same way."
+    },
+    "SELF_CORRECTION_r417": {
+      "what_was_overstated": "the r416 argument said 'Duration is sufficient to produce the whole effect', computed by propagating the STEEPEST single-arm slope (6.494 deg/s, the gastrocnemius arm alone) across the 1.72 s span to get 11.17 deg > 8.68 deg.",
+      "why_that_was_wrong": "the steepest of two arms is not the estimate of the common duration effect; it is the upper end of two noisy n=6 fits. The estimate that isolates duration is the within-arm centred pooled slope, the same statistic used on the headline at r417.",
+      "corrected_number": {
+        "within_arm_pooled_slope_deg_per_s": 1.9064,
+        "pearson_r": 0.602,
+        "n": 12,
+        "extrapolated_over_1.72_s_deg": 3.279,
+        "fraction_of_8.6827": 0.3777
+      },
+      "does_the_retirement_still_stand": true,
+      "revised_grounds_in_order_of_weight": [
+        "1. GATE G. 0 of 6 seeds pass on EVERY lesioned arm; each contributes 1-2 admissible cycles from a model that is falling. The corpus endpoint is a mean over >= 5 steady cycles. A quantity that cannot be computed on the corpus's own terms cannot carry a mechanism claim, independently of any confound. This ground alone is sufficient.",
+        "2. INCOHERENCE. R410BOTH (-7.911) sits within 0.06 deg of unlesioned R410NONE (-7.850) while R410GAS alone sits at -18.843. Adding soleus spasticity on top of gastrocnemius spasticity abolishes an 11 deg gastrocnemius effect. No mechanism predicts that.",
+        "3. DURATION. A material, same-sign, UNMATCHABLE confound worth 38% of the claimed gap -- serious, but NOT sufficient on its own, contrary to what r416 stated."
+      ],
+      "note": "this correction makes the r410 retirement rest on grounds that do not depend on the confound arithmetic at all, which is the stronger position, not the weaker one."
+    }
+  }
+}

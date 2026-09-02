@@ -1,0 +1,403 @@
+{
+ "arm": "CHAIN_r393_HEADLINE",
+ "written_at": "2026-08-24T11:59:37",
+ "endpoint": "mean ankle_angle_l over stance samples of the admissible cycles, degrees; corpus convention SETTLE 1.00, T1 9.73, cycles wholly inside the window, drop the last kept cycle, require >= 5, stance = leg0_l.grf_norm_y > 0.05",
+ "gap": "|mean(spastic rung k) - mean(weakness rung k)| over Gate-G seeds",
+ "reportability_rule": "both axes must have >= 4 Gate-G seeds at that rung",
+ "clinical_floor_deg": 3.8,
+ "per_axis": {
+  "spastic": {
+   "050": {
+    "value": 0.05,
+    "rung_index": 0,
+    "per_seed_ank_stance_mean_deg": {
+     "101": 2.8878355430459064,
+     "102": 2.894419060526819,
+     "103": 3.126369873745095,
+     "104": 2.9606639647302355,
+     "105": 2.8283749243386853,
+     "106": 3.0701537452577563
+    },
+    "n_gate_G": 6,
+    "seeds_pass": [
+     101,
+     102,
+     103,
+     104,
+     105,
+     106
+    ],
+    "seeds_fail": [],
+    "mean_deg": 2.9613028519407494,
+    "sd_deg": 0.11544415776198155
+   },
+   "070": {
+    "value": 0.07,
+    "rung_index": 1,
+    "per_seed_ank_stance_mean_deg": {
+     "101": 2.4436649706640496,
+     "102": 2.5133079972380363,
+     "103": 2.5448887132387017,
+     "104": 2.6798890616909934,
+     "105": 2.6474292051118082,
+     "106": 2.5465174202212895
+    },
+    "n_gate_G": 6,
+    "seeds_pass": [
+     101,
+     102,
+     103,
+     104,
+     105,
+     106
+    ],
+    "seeds_fail": [],
+    "mean_deg": 2.56261622802748,
+    "sd_deg": 0.08729295302906183
+   },
+   "100": {
+    "value": 0.1,
+    "rung_index": 2,
+    "per_seed_ank_stance_mean_deg": {
+     "101": 1.732364481415451,
+     "102": 1.882613117941113,
+     "105": 1.7852237859713265,
+     "106": 1.8487105103335828
+    },
+    "n_gate_G": 4,
+    "seeds_pass": [
+     101,
+     102,
+     105,
+     106
+    ],
+    "seeds_fail": [
+     {
+      "seed": 103,
+      "prefix": "R393SPg100_s103",
+      "status": "OK",
+      "t_end_s": 7.89,
+      "n_cycles": 5,
+      "guard": "t_end 7.890 < 9.73"
+     },
+     {
+      "seed": 104,
+      "prefix": "R393SPg100_s104",
+      "status": "OK",
+      "t_end_s": 8.4,
+      "n_cycles": 5,
+      "guard": "t_end 8.400 < 9.73"
+     }
+    ],
+    "mean_deg": 1.8122279739153684,
+    "sd_deg": 0.06681428880070649
+   },
+   "150": {
+    "value": 0.15,
+    "rung_index": 3,
+    "per_seed_ank_stance_mean_deg": {},
+    "n_gate_G": 0,
+    "seeds_pass": [],
+    "seeds_fail": [
+     {
+      "seed": 101,
+      "prefix": "R393SPg150_s101",
+      "status": "OK",
+      "t_end_s": 1.61,
+      "n_cycles": 0,
+      "guard": "t_end 1.610 < 9.73"
+     },
+     {
+      "seed": 102,
+      "prefix": "R393SPg150_s102",
+      "status": "OK",
+      "t_end_s": 1.09,
+      "n_cycles": 0,
+      "guard": "t_end 1.090 < 9.73"
+     },
+     {
+      "seed": 103,
+      "prefix": "R393SPg150_s103",
+      "status": "NO_RESULT_DIR",
+      "t_end_s": null,
+      "n_cycles": null,
+      "guard": null
+     },
+     {
+      "seed": 104,
+      "prefix": "R393SPg150_s104",
+      "status": "NO_RESULT_DIR",
+      "t_end_s": null,
+      "n_cycles": null,
+      "guard": null
+     },
+     {
+      "seed": 105,
+      "prefix": "R393SPg150_s105",
+      "status": "OK",
+      "t_end_s": 2.12,
+      "n_cycles": 0,
+      "guard": "t_end 2.120 < 9.73"
+     },
+     {
+      "seed": 106,
+      "prefix": "R393SPg150_s106",
+      "status": "OK",
+      "t_end_s": 0.66,
+      "n_cycles": 0,
+      "guard": "t_end 0.660 < 9.73"
+     }
+    ],
+    "mean_deg": null,
+    "sd_deg": null
+   }
+  },
+  "weakness": {
+   "080": {
+    "value": 0.8,
+    "rung_index": 0,
+    "per_seed_ank_stance_mean_deg": {
+     "101": 4.498609673448277,
+     "102": 4.580838449832867,
+     "103": 4.564946575701267,
+     "104": 4.512690687003338,
+     "105": 4.454077942429491,
+     "106": 4.408261744243689
+    },
+    "n_gate_G": 6,
+    "seeds_pass": [
+     101,
+     102,
+     103,
+     104,
+     105,
+     106
+    ],
+    "seeds_fail": [],
+    "mean_deg": 4.503237512109821,
+    "sd_deg": 0.0653876949341242
+   },
+   "060": {
+    "value": 0.6,
+    "rung_index": 1,
+    "per_seed_ank_stance_mean_deg": {
+     "101": 4.125343091529462,
+     "104": 4.028965524711437,
+     "105": 4.102027072139242
+    },
+    "n_gate_G": 3,
+    "seeds_pass": [
+     101,
+     104,
+     105
+    ],
+    "seeds_fail": [
+     {
+      "seed": 102,
+      "prefix": "R393WK060_s102",
+      "status": "OK",
+      "t_end_s": 7.52,
+      "n_cycles": 4,
+      "guard": "t_end 7.520 < 9.73"
+     },
+     {
+      "seed": 103,
+      "prefix": "R393WK060_s103",
+      "status": "OK",
+      "t_end_s": 7.52,
+      "n_cycles": 4,
+      "guard": "t_end 7.520 < 9.73"
+     },
+     {
+      "seed": 106,
+      "prefix": "R393WK060_s106",
+      "status": "OK",
+      "t_end_s": 7.5,
+      "n_cycles": 4,
+      "guard": "t_end 7.500 < 9.73"
+     }
+    ],
+    "mean_deg": 4.085445229460047,
+    "sd_deg": 0.05028296904935989
+   },
+   "040": {
+    "value": 0.4,
+    "rung_index": 2,
+    "per_seed_ank_stance_mean_deg": {},
+    "n_gate_G": 0,
+    "seeds_pass": [],
+    "seeds_fail": [
+     {
+      "seed": 101,
+      "prefix": "R393WK040_s101",
+      "status": "OK",
+      "t_end_s": 5.81,
+      "n_cycles": 2,
+      "guard": "t_end 5.810 < 9.73"
+     },
+     {
+      "seed": 102,
+      "prefix": "R393WK040_s102",
+      "status": "NO_RESULT_DIR",
+      "t_end_s": null,
+      "n_cycles": null,
+      "guard": null
+     },
+     {
+      "seed": 103,
+      "prefix": "R393WK040_s103",
+      "status": "NO_RESULT_DIR",
+      "t_end_s": null,
+      "n_cycles": null,
+      "guard": null
+     },
+     {
+      "seed": 104,
+      "prefix": "R393WK040_s104",
+      "status": "OK",
+      "t_end_s": 6.63,
+      "n_cycles": 3,
+      "guard": "t_end 6.630 < 9.73"
+     },
+     {
+      "seed": 105,
+      "prefix": "R393WK040_s105",
+      "status": "OK",
+      "t_end_s": 7.16,
+      "n_cycles": 3,
+      "guard": "t_end 7.160 < 9.73"
+     },
+     {
+      "seed": 106,
+      "prefix": "R393WK040_s106",
+      "status": "NO_RESULT_DIR",
+      "t_end_s": null,
+      "n_cycles": null,
+      "guard": null
+     }
+    ],
+    "mean_deg": null,
+    "sd_deg": null
+   },
+   "030": {
+    "value": 0.3,
+    "rung_index": 3,
+    "per_seed_ank_stance_mean_deg": {},
+    "n_gate_G": 0,
+    "seeds_pass": [],
+    "seeds_fail": [
+     {
+      "seed": 101,
+      "prefix": "R393WK030_s101",
+      "status": "NO_RESULT_DIR",
+      "t_end_s": null,
+      "n_cycles": null,
+      "guard": null
+     },
+     {
+      "seed": 102,
+      "prefix": "R393WK030_s102",
+      "status": "NO_RESULT_DIR",
+      "t_end_s": null,
+      "n_cycles": null,
+      "guard": null
+     },
+     {
+      "seed": 103,
+      "prefix": "R393WK030_s103",
+      "status": "NO_RESULT_DIR",
+      "t_end_s": null,
+      "n_cycles": null,
+      "guard": null
+     },
+     {
+      "seed": 104,
+      "prefix": "R393WK030_s104",
+      "status": "NO_RESULT_DIR",
+      "t_end_s": null,
+      "n_cycles": null,
+      "guard": null
+     },
+     {
+      "seed": 105,
+      "prefix": "R393WK030_s105",
+      "status": "NO_RESULT_DIR",
+      "t_end_s": null,
+      "n_cycles": null,
+      "guard": null
+     },
+     {
+      "seed": 106,
+      "prefix": "R393WK030_s106",
+      "status": "NO_RESULT_DIR",
+      "t_end_s": null,
+      "n_cycles": null,
+      "guard": null
+     }
+    ],
+    "mean_deg": null,
+    "sd_deg": null
+   }
+  }
+ },
+ "rungs": [
+  {
+   "rung_index": 0,
+   "spastic_KV": 0.05,
+   "weakness_scale": 0.8,
+   "spastic_n_gate_G": 6,
+   "weakness_n_gate_G": 6,
+   "reportable": true,
+   "why_not": null,
+   "spastic_mean_deg": 2.9613028519407494,
+   "weakness_mean_deg": 4.503237512109821,
+   "gap_deg": 1.5419346601690713,
+   "signed_gap_spastic_minus_weakness_deg": -1.5419346601690713,
+   "reaches_MDC_3.8": false
+  },
+  {
+   "rung_index": 1,
+   "spastic_KV": 0.07,
+   "weakness_scale": 0.6,
+   "spastic_n_gate_G": 6,
+   "weakness_n_gate_G": 3,
+   "reportable": false,
+   "why_not": "needs >= 4 Gate-G seeds on BOTH axes; spastic 6, weakness 3",
+   "spastic_mean_deg": 2.56261622802748,
+   "weakness_mean_deg": 4.085445229460047,
+   "gap_deg": null,
+   "signed_gap_spastic_minus_weakness_deg": null,
+   "reaches_MDC_3.8": null
+  },
+  {
+   "rung_index": 2,
+   "spastic_KV": 0.1,
+   "weakness_scale": 0.4,
+   "spastic_n_gate_G": 4,
+   "weakness_n_gate_G": 0,
+   "reportable": false,
+   "why_not": "needs >= 4 Gate-G seeds on BOTH axes; spastic 4, weakness 0",
+   "spastic_mean_deg": 1.8122279739153684,
+   "weakness_mean_deg": null,
+   "gap_deg": null,
+   "signed_gap_spastic_minus_weakness_deg": null,
+   "reaches_MDC_3.8": null
+  },
+  {
+   "rung_index": 3,
+   "spastic_KV": 0.15,
+   "weakness_scale": 0.3,
+   "spastic_n_gate_G": 0,
+   "weakness_n_gate_G": 0,
+   "reportable": false,
+   "why_not": "needs >= 4 Gate-G seeds on BOTH axes; spastic 0, weakness 0",
+   "spastic_mean_deg": null,
+   "weakness_mean_deg": null,
+   "gap_deg": null,
+   "signed_gap_spastic_minus_weakness_deg": null,
+   "reaches_MDC_3.8": null
+  }
+ ],
+ "any_rung_reaches_MDC": false,
+ "rungs_reaching_MDC": []
+}

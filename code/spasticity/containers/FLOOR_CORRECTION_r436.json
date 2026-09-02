@@ -1,0 +1,86 @@
+{
+  "round": "FLOOR_CORRECTION_r436",
+  "no_simulation_run": true,
+  "trigger": "the user asked whether the conclusion was stable. Two audits were run; one found a material defect in the noise floor used all day.",
+  "AUDIT_1_classification_threshold": {
+    "concern": "VIDEOMIXED_r435 set the classification threshold from the midpoint of BOTH group means computed on all cells, including the cell being classified. That is in-sample and optimistic. VIDEOKNEE_r422 used leave-one-out; r435 did not.",
+    "result": {
+      "sigma_0": {
+        "in_sample": 0.8404,
+        "loo": 0.8364
+      },
+      "sigma_2": {
+        "in_sample": 0.8289,
+        "loo": 0.8252
+      },
+      "sigma_5": {
+        "in_sample": 0.7702,
+        "loo": 0.7666
+      },
+      "sigma_10": {
+        "in_sample": 0.6856,
+        "loo": 0.6827
+      }
+    },
+    "VERDICT": "the optimism is 0.3-0.4 percentage points. The 83% figure stands. Corrected numbers are the LOO column."
+  },
+  "AUDIT_2_the_noise_floor_was_confounded": {
+    "what_was_used": "NULL_FLOORS_r428 set the KNEE_ic floor at 1.0975 deg, the largest difference between two of the six dorsiflexor-weakness family means.",
+    "the_defect_part_1_circular": "those six families differ in WEAKNESS DEPTH (x0.80 to x0.95). Regressing their knee means on their weakness scale gives slope -7.427 deg per unit with r = -0.9966, so 101% of the 1.0975 deg spread is accounted for by weakness depth and only 0.0923 deg is residual. Using that as the floor for a WEAKNESS effect is circular.",
+    "the_defect_part_2_confounded": "the six families come from THREE separate optimisation rounds (R151, R169, R174) and weakness depth is collinear with round: x0.800 is R151, x0.870 / x0.892 / x0.915 are R174, x0.900 / x0.950 are R169. The r = -0.9966 cannot distinguish a weakness effect from a round effect. The slope is not usable in either direction.",
+    "why_it_matters": "the grid's own weakness axis gives -2.6 deg per unit against the families' -7.4. The discrepancy is the confound, and it is what exposed the defect."
+  },
+  "THE_CORRECT_NOISE_SCALE": {
+    "statistic": "standard deviation of KNEE_ic across the six seeds WITHIN one grid cell. Same lesion, same lineage, same chaining route -- the only difference is the optimisation seed. This is what a repeat measurement of the same patient would vary by.",
+    "typical_value_deg": 0.5114,
+    "by_cell": {
+      "x1.00_KV0.0125": 0.3308,
+      "x0.80_KV0.0125": 0.3131,
+      "x0.70_KV0.0125": 0.2923,
+      "x1.00_KV0.050": 0.8931,
+      "x0.80_KV0.050": 1.084,
+      "x0.70_KV0.050": 0.634,
+      "R151W_pure_weakness": 0.3193,
+      "R151C_control": 0.2246
+    }
+  },
+  "EVERYTHING_RESCORED_ON_THE_CORRECT_SCALE": {
+    "spastic_axis_x1.00_KV0.0125_to_0.050": {
+      "effect_deg": 4.27,
+      "SDs": 8.3,
+      "detectable": true
+    },
+    "spastic_axis_x0.80_KV0.0125_to_0.110": {
+      "effect_deg": 8.033,
+      "SDs": 15.7,
+      "detectable": true
+    },
+    "weakness_axis_at_KV0.0125": {
+      "effect_deg": 0.52,
+      "SDs": 1.0,
+      "detectable": false
+    },
+    "weakness_axis_at_KV0.025": {
+      "effect_deg": 0.458,
+      "SDs": 0.9,
+      "detectable": false
+    },
+    "weakness_axis_at_KV0.050": {
+      "effect_deg": 1.784,
+      "SDs": 3.5,
+      "detectable": true
+    },
+    "r421_knee_GAS_vs_SOL": {
+      "effect_deg": 4.9354,
+      "SDs": 9.7,
+      "note": "was reported at 4.5x the confounded floor; on the correct scale it is 9.7 SD. The r421 conclusion STRENGTHENS."
+    }
+  },
+  "DOES_THE_CONCLUSION_CHANGE": "NO, but its justification does. 'The weakness axis is below the noise floor' was circular. The defensible statement is that the weakness effect at low spastic gain (0.46-0.52 deg) is the SAME SIZE as re-running the identical lesion with a different optimisation seed (0.51 deg). A difference smaller than a repeat measurement of the same condition cannot be graded.",
+  "what_this_does_NOT_change": [
+    "hypothesis 4's death: it died because both torque links are indistinguishable from zero (+0.0621 and -0.0519). Correlations near zero do not depend on any floor.",
+    "the 6.3919 deg headline: 12.5 SD on the corrected scale, against 11.2x on the old floor.",
+    "the spasticity grading result: 8.3 to 15.7 SD, and 83% under phone-grade video (LOO)."
+  ],
+  "STANDING_RULE_AMENDED": "a noise floor must come from cells that differ ONLY in the random seed. Floors built from different families are contaminated whenever those families differ in lesion severity or optimisation round, and in this corpus they differ in both. NULL_FLOORS_r428.json is superseded for KNEE_ic and its other endpoints must be re-derived the same way before any of them is quoted again."
+}

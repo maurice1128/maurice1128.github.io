@@ -1,0 +1,43 @@
+{
+  "round": "HYP2_BOOKKEEPING_r417",
+  "what_the_r412_audit_flagged": "the retirement of mechanism hypothesis 2 rested on a readout with n_gate_G = 3 that the deposit itself marks uninformative.",
+  "verified_from_MECHANISM_RESULT_r407_json": {
+    "rung": "KV 0.050",
+    "SOL": {
+      "n_gate_G": 3,
+      "uninformative": true
+    },
+    "GAS": {
+      "n_gate_G": 0,
+      "uninformative": true
+    },
+    "BOTH": {
+      "n_gate_G": 6,
+      "uninformative": false
+    },
+    "registration_bar": "a rung with fewer than 4 Gate-G seeds is UNINFORMATIVE and is reported, not dropped",
+    "GAS_at_every_other_rung": {
+      "0.070": 0,
+      "0.090": 0,
+      "0.110": 0
+    },
+    "SOL_at_every_other_rung": {
+      "0.070": 0,
+      "0.090": 0,
+      "0.110": 0
+    }
+  },
+  "the_error": "the sentence 'soleus-only produced 70% of the knee displacement at KV 0.050, against a registered ceiling of 40%' appears in PREREG_terminalswing_r408.md line 15 and PREREG_onedim_r409.md line 13 as the reason hypothesis 2 was killed. The soleus arm supplying the 70% was below the registration's own 4-seed bar, and the gastrocnemius arm it was being compared against had ZERO Gate-G seeds at that rung and at every other rung. There was no gastrocnemius number to compare with.",
+  "consequence": "MECHANISM HYPOTHESIS 2 -- that gastrocnemius carries the knee signature because it spans the knee -- WAS NEVER FALSIFIED. It was recorded as dead in two subsequent registrations on the strength of a comparison that could not be made. Those two registrations' provenance tables are wrong on this row.",
+  "does_this_revive_hypothesis_2": "it removes one of three strikes against it, not all three. r408 P3 still failed on properly powered arms (soleus separated, oppositely). r409 still failed all four predictions on untouched material. Hypothesis 2's status is UNTESTED, not SUPPORTED.",
+  "why_the_direct_test_could_not_be_run": "single-muscle spastic cells do not survive Gate G under re-optimisation at ANY rung: GAS 0/6 and SOL 0/6 or 3/6. Only BOTH walks. That is itself the finding below.",
+  "EXPLORATORY_OBSERVATION_requiring_its_own_registration": {
+    "the_pattern": "adding soleus spasticity RESCUES gastrocnemius spasticity, in two independent probes that used different machinery:",
+    "probe_1_reoptimised_r407": "GAS-only survives Gate G 0/6 at every rung; SOL-only 3/6 at 0.050 and 0/6 above; BOTH survives 6/6 at 0.050, 0.070, 0.090 AND 0.110. The combination is more stable than either component alone.",
+    "probe_2_frozen_r410": "GAS-only knee at heel strike -18.843 deg; BOTH -7.911 deg, within 0.06 deg of the unlesioned -7.850 deg. Adding soleus abolishes an 11 deg gastrocnemius effect.",
+    "a_candidate_mechanism": "gastrocnemius is biarticular. Soleus spasticity plantarflexes the ankle, which SHORTENS gastrocnemius at its distal end, reducing its stretch and therefore the velocity-dependent reflex drive that acts on the knee. Soleus spasticity would then be partially PROTECTIVE of the knee, which inverts the usual clinical intuition that more plantarflexor spasticity is worse.",
+    "status": "EXPLORATORY. Found by looking at r407 survival counts and r410 arm means. Nothing measured in finding it may serve as its test. A registration would have to fix the endpoint (gastrocnemius muscle-tendon or fibre length during swing) in advance and test it on cells that have not been read on that endpoint.",
+    "why_it_is_worth_recording_anyway": "it is the only mechanism candidate in this project that predicts something counterintuitive and specific, and it is testable WITHOUT new simulation because muscle length is already in every .sto file."
+  },
+  "VERDICT": "the retirement of hypothesis 2 is WITHDRAWN as unsupported. The provenance rows in PREREG_terminalswing_r408.md and PREREG_onedim_r409.md are annotated rather than edited, because a registration is not amended after the fact."
+}

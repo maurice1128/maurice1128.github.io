@@ -1,0 +1,63 @@
+{
+ "id": "ARMSURV_r538",
+ "why": "SWINGSURV_r528 compared two reflex GAINS on survival-matched cells and was described as settling Limitation 2, which is about the ARM contrast. They are different questions. This asks the arm question on the main corpus, where pure-weakness cells exist.",
+ "definition": "a family is intact if every one of its admitted cells reaches 20 s",
+ "survival_by_family": {
+  "R151S": {
+   "admitted": 6,
+   "full": 0
+  },
+  "R393SPg070": {
+   "admitted": 6,
+   "full": 0
+  },
+  "R393SPg100": {
+   "admitted": 4,
+   "full": 0
+  },
+  "R396SPg110": {
+   "admitted": 4,
+   "full": 0
+  },
+  "R396SPg120": {
+   "admitted": 3,
+   "full": 0
+  },
+  "R151W": {
+   "admitted": 6,
+   "full": 6
+  },
+  "R174W870": {
+   "admitted": 6,
+   "full": 6
+  },
+  "R174W892": {
+   "admitted": 6,
+   "full": 6
+  },
+  "R169W090": {
+   "admitted": 6,
+   "full": 6
+  },
+  "R174W915": {
+   "admitted": 6,
+   "full": 6
+  },
+  "R169W095": {
+   "admitted": 6,
+   "full": 6
+  }
+ },
+ "intact_families": {
+  "H": [],
+  "W": [
+   "R151W",
+   "R174W870",
+   "R174W892",
+   "R169W090",
+   "R174W915",
+   "R169W095"
+  ]
+ },
+ "VERDICT": "no arm contrast exists under survival matching on the main corpus, because no hyperreflexia family has every admitted seed reaching the horizon. The confound is a property of the corpus and is not escaped by changing the readout. Any claim that a new endpoint 'escapes Limitation 2' on the strength of SWINGSURV_r528 is wrong: that container compares two reflex GAINS, not the two arms."
+}

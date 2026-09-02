@@ -1,0 +1,73 @@
+{
+ "round": 236,
+ "rule": "every branch of every subsidiary registration must be reachable with a witness; a hashed sub-registration may not carry a branch arithmetic forbids",
+ "script_sha256": "d32953754fa56ac75a4d3a536dd6f32893a456e15dd66b0ded7108d6e6cf163c",
+ "gates": {
+  "r234": {
+   "registration": "PREREG_2Dsd_r234.md",
+   "delta_3d": 2.5854,
+   "delta_cap": 0.64635,
+   "delta_registered": 0.65,
+   "cap_ge_registered": false,
+   "note": "EQUIV power is monotone increasing in delta; with cap < registered delta, power(cap) <= power(registered) always",
+   "declared": [
+    "POWER ADEQUATE",
+    "DELTA RAISED",
+    "EQUIVALENCE UNREACHABLE"
+   ],
+   "withdrawn_by_errata": {
+    "DELTA RAISED": "ERRATA_delta_cap_r236.md"
+   },
+   "reachable": [
+    "EQUIVALENCE UNREACHABLE",
+    "POWER ADEQUATE"
+   ],
+   "MISSING_no_witness": [
+    "DELTA RAISED"
+   ],
+   "witnesses": {
+    "EQUIVALENCE UNREACHABLE": {
+     "p65": 0.0,
+     "pcap": 0.0
+    },
+    "POWER ADEQUATE": {
+     "p65": 0.8,
+     "pcap": 0.0
+    }
+   },
+   "unacknowledged_missing": [],
+   "GATE_PASSES": true,
+   "GATE_REPORTS_MISSING": true
+  },
+  "r235": {
+   "registration": "PREREG_ankle_ladder_r235.md",
+   "declared": [
+    "TWO-CHANNEL",
+    "NARROWING-JUSTIFIED-IN-SAMPLE",
+    "NARROWING-CLEAN"
+   ],
+   "reachable": [
+    "NARROWING-CLEAN",
+    "NARROWING-JUSTIFIED-IN-SAMPLE",
+    "TWO-CHANNEL"
+   ],
+   "MISSING_no_witness": [],
+   "witnesses": {
+    "NARROWING-CLEAN": {
+     "n_disjoint": 0,
+     "pooled": false
+    },
+    "NARROWING-JUSTIFIED-IN-SAMPLE": {
+     "n_disjoint": 1,
+     "pooled": false
+    },
+    "TWO-CHANNEL": {
+     "n_disjoint": 6,
+     "pooled": true
+    }
+   },
+   "GATE_PASSES": true
+  }
+ },
+ "GATE_PASSES": true
+}

@@ -1,0 +1,2491 @@
+{
+ "frozen_at": "2026-08-02T22:01:32",
+ "results_root": "C:\\Users\\maurice\\Documents\\SCONE\\results",
+ "n_dirs_total": 327,
+ "n_dirs_protected_excluded": 112,
+ "n_dirs_in_scope": 215,
+ "n_dirs_zero_sto": 118,
+ "n_dirs_multi_sto": 4,
+ "n_dirs_best_not_deepest": 2,
+ "n_project_files_hashed": 127,
+ "dirs": [
+  {
+   "dir": "260721.011120.H0914M.GH2010.R4.S10W.D10",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 10,
+   "best_fit": 72.708,
+   "best_fit_gen": 10,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "ARMA.H0914M.GH2010.R2.S10W.D10.I",
+   "n_par": 1,
+   "n_sto": 0,
+   "max_gen": 0,
+   "best_fit": 39.928,
+   "best_fit_gen": 0,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "ARMB.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 1,
+   "n_sto": 0,
+   "max_gen": 0,
+   "best_fit": 75.105,
+   "best_fit_gen": 0,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "ARMC.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 1,
+   "n_sto": 1,
+   "max_gen": 0,
+   "best_fit": 21.306,
+   "best_fit_gen": 0,
+   "best_is_deepest": true,
+   "sto": [
+    "0000_79.920_21.306.par.sto"
+   ]
+  },
+  {
+   "dir": "ARMD.H0914M.GH2010.S10W.D10.I",
+   "n_par": 1,
+   "n_sto": 0,
+   "max_gen": 0,
+   "best_fit": 17.371,
+   "best_fit_gen": 0,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "BHEALTHY_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 17,
+   "n_sto": 1,
+   "max_gen": 88,
+   "best_fit": 0.632,
+   "best_fit_gen": 88,
+   "best_is_deepest": true,
+   "sto": [
+    "0069_7.896_0.659.par.sto"
+   ]
+  },
+  {
+   "dir": "BHEALTHY_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 13,
+   "n_sto": 1,
+   "max_gen": 99,
+   "best_fit": 0.61,
+   "best_fit_gen": 99,
+   "best_is_deepest": true,
+   "sto": [
+    "0085_3.447_0.637.par.sto"
+   ]
+  },
+  {
+   "dir": "BOGUSTEST.H0914M.GH2010.S10W.D10.I",
+   "n_par": 0,
+   "n_sto": 0,
+   "max_gen": null,
+   "best_fit": null,
+   "best_fit_gen": null,
+   "best_is_deepest": null,
+   "sto": []
+  },
+  {
+   "dir": "BPAR60_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 18,
+   "n_sto": 1,
+   "max_gen": 81,
+   "best_fit": 0.609,
+   "best_fit_gen": 81,
+   "best_is_deepest": true,
+   "sto": [
+    "0081_35.586_0.609.par.sto"
+   ]
+  },
+  {
+   "dir": "BPAR60_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 10,
+   "n_sto": 1,
+   "max_gen": 81,
+   "best_fit": 0.658,
+   "best_fit_gen": 81,
+   "best_is_deepest": true,
+   "sto": [
+    "0081_85.308_0.658.par.sto"
+   ]
+  },
+  {
+   "dir": "BSPAS005_s1.H0914M.GH2010.R4.S10W.D10.I.R1",
+   "n_par": 18,
+   "n_sto": 1,
+   "max_gen": 92,
+   "best_fit": 0.775,
+   "best_fit_gen": 92,
+   "best_is_deepest": true,
+   "sto": [
+    "0080_3.624_0.794.par.sto"
+   ]
+  },
+  {
+   "dir": "BSPAS005_s2.H0914M.GH2010.R4.S10W.D10.I.R2",
+   "n_par": 21,
+   "n_sto": 1,
+   "max_gen": 96,
+   "best_fit": 0.78,
+   "best_fit_gen": 93,
+   "best_is_deepest": false,
+   "sto": [
+    "0083_1.139_0.894.par.sto"
+   ]
+  },
+  {
+   "dir": "BSPAS01_s1.H0914M.GH2010.R4.S10W.D10.I.R1",
+   "n_par": 19,
+   "n_sto": 1,
+   "max_gen": 83,
+   "best_fit": 1.097,
+   "best_fit_gen": 83,
+   "best_is_deepest": true,
+   "sto": [
+    "0083_71.329_1.097.par.sto"
+   ]
+  },
+  {
+   "dir": "BSPAS01_s2.H0914M.GH2010.R4.S10W.D10.I.R2",
+   "n_par": 20,
+   "n_sto": 1,
+   "max_gen": 88,
+   "best_fit": 0.928,
+   "best_fit_gen": 88,
+   "best_is_deepest": true,
+   "sto": [
+    "0076_7.337_1.033.par.sto"
+   ]
+  },
+  {
+   "dir": "CMS020_s1.H0914M.GH2010.R4.S10W.D10.I.R1",
+   "n_par": 14,
+   "n_sto": 1,
+   "max_gen": 78,
+   "best_fit": 0.724,
+   "best_fit_gen": 78,
+   "best_is_deepest": true,
+   "sto": [
+    "0078_0.954_0.724.par.sto"
+   ]
+  },
+  {
+   "dir": "CMS020_s2.H0914M.GH2010.R4.S10W.D10.I.R2",
+   "n_par": 14,
+   "n_sto": 1,
+   "max_gen": 72,
+   "best_fit": 0.658,
+   "best_fit_gen": 72,
+   "best_is_deepest": true,
+   "sto": [
+    "0046_47.954_0.677.par.sto"
+   ]
+  },
+  {
+   "dir": "CMS030_s1.H0914M.GH2010.R4.S10W.D10.I.R1",
+   "n_par": 15,
+   "n_sto": 1,
+   "max_gen": 82,
+   "best_fit": 0.722,
+   "best_fit_gen": 82,
+   "best_is_deepest": true,
+   "sto": [
+    "0082_10.204_0.722.par.sto"
+   ]
+  },
+  {
+   "dir": "CMS030_s2.H0914M.GH2010.R4.S10W.D10.I.R2",
+   "n_par": 16,
+   "n_sto": 1,
+   "max_gen": 71,
+   "best_fit": 0.714,
+   "best_fit_gen": 71,
+   "best_is_deepest": true,
+   "sto": [
+    "0058_11.101_0.719.par.sto"
+   ]
+  },
+  {
+   "dir": "CMW70_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 12,
+   "n_sto": 1,
+   "max_gen": 80,
+   "best_fit": 0.734,
+   "best_fit_gen": 80,
+   "best_is_deepest": true,
+   "sto": [
+    "0048_61.309_0.811.par.sto"
+   ]
+  },
+  {
+   "dir": "CMW70_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 10,
+   "n_sto": 1,
+   "max_gen": 72,
+   "best_fit": 0.73,
+   "best_fit_gen": 72,
+   "best_is_deepest": true,
+   "sto": [
+    "0072_54.221_0.730.par.sto"
+   ]
+  },
+  {
+   "dir": "CMW80_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 25,
+   "n_sto": 1,
+   "max_gen": 89,
+   "best_fit": 1.04,
+   "best_fit_gen": 89,
+   "best_is_deepest": true,
+   "sto": [
+    "0048_49.889_1.067.par.sto"
+   ]
+  },
+  {
+   "dir": "CMW80_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 17,
+   "n_sto": 1,
+   "max_gen": 57,
+   "best_fit": 1.009,
+   "best_fit_gen": 57,
+   "best_is_deepest": true,
+   "sto": [
+    "0057_55.534_1.009.par.sto"
+   ]
+  },
+  {
+   "dir": "CTLUP1.H0914M.GH2010.S10W.D10.I",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 10,
+   "best_fit": 74.341,
+   "best_fit_gen": 10,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "CTLZERO.H0914M.GH2010.S10W.D10.I",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 5,
+   "best_fit": 0.602,
+   "best_fit_gen": 5,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "D2HEALTHY.H0914M.GH2010.S10W.D10.I",
+   "n_par": 9,
+   "n_sto": 1,
+   "max_gen": 38,
+   "best_fit": 0.657,
+   "best_fit_gen": 38,
+   "best_is_deepest": true,
+   "sto": [
+    "0038_0.707_0.657.par.sto"
+   ]
+  },
+  {
+   "dir": "D2PAR40.H0914M.GH2010.S10W.D10.I",
+   "n_par": 9,
+   "n_sto": 1,
+   "max_gen": 40,
+   "best_fit": 0.682,
+   "best_fit_gen": 40,
+   "best_is_deepest": true,
+   "sto": [
+    "0040_0.801_0.682.par.sto"
+   ]
+  },
+  {
+   "dir": "D2PAR60.H0914M.GH2010.S10W.D10.I",
+   "n_par": 10,
+   "n_sto": 1,
+   "max_gen": 37,
+   "best_fit": 0.743,
+   "best_fit_gen": 37,
+   "best_is_deepest": true,
+   "sto": [
+    "0037_21.455_0.743.par.sto"
+   ]
+  },
+  {
+   "dir": "DHEALTHY_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 12,
+   "n_sto": 1,
+   "max_gen": 73,
+   "best_fit": 0.603,
+   "best_fit_gen": 73,
+   "best_is_deepest": true,
+   "sto": [
+    "0073_0.663_0.603.par.sto"
+   ]
+  },
+  {
+   "dir": "DHEALTHY_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 13,
+   "n_sto": 1,
+   "max_gen": 74,
+   "best_fit": 0.601,
+   "best_fit_gen": 74,
+   "best_is_deepest": true,
+   "sto": [
+    "0074_58.508_0.601.par.sto"
+   ]
+  },
+  {
+   "dir": "DHEALTHY_s3.H0914M.GH2010.S10W.D10.I.R3",
+   "n_par": 12,
+   "n_sto": 1,
+   "max_gen": 88,
+   "best_fit": 0.611,
+   "best_fit_gen": 88,
+   "best_is_deepest": true,
+   "sto": [
+    "0088_11.106_0.611.par.sto"
+   ]
+  },
+  {
+   "dir": "DOSER0000_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 12,
+   "n_sto": 2,
+   "max_gen": 34,
+   "best_fit": 0.628,
+   "best_fit_gen": 34,
+   "best_is_deepest": true,
+   "sto": [
+    "0005_13.034_0.937.par.sto",
+    "0009_0.809_0.742.par.sto"
+   ]
+  },
+  {
+   "dir": "DOSER1050_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 12,
+   "n_sto": 1,
+   "max_gen": 34,
+   "best_fit": 0.791,
+   "best_fit_gen": 34,
+   "best_is_deepest": true,
+   "sto": [
+    "0006_19.854_11.564.par.sto"
+   ]
+  },
+  {
+   "dir": "DOSER2071_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 11,
+   "n_sto": 2,
+   "max_gen": 41,
+   "best_fit": 0.772,
+   "best_fit_gen": 41,
+   "best_is_deepest": true,
+   "sto": [
+    "0011_27.655_9.700.par.sto",
+    "0012_25.592_6.228.par.sto"
+   ]
+  },
+  {
+   "dir": "DOSER3100_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 13,
+   "n_sto": 2,
+   "max_gen": 26,
+   "best_fit": 0.853,
+   "best_fit_gen": 26,
+   "best_is_deepest": true,
+   "sto": [
+    "0009_19.923_11.271.par.sto",
+    "0011_16.351_8.525.par.sto"
+   ]
+  },
+  {
+   "dir": "DPAR20_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 11,
+   "n_sto": 1,
+   "max_gen": 74,
+   "best_fit": 0.609,
+   "best_fit_gen": 74,
+   "best_is_deepest": true,
+   "sto": [
+    "0074_0.644_0.609.par.sto"
+   ]
+  },
+  {
+   "dir": "DPAR20_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 12,
+   "n_sto": 1,
+   "max_gen": 37,
+   "best_fit": 0.634,
+   "best_fit_gen": 37,
+   "best_is_deepest": true,
+   "sto": [
+    "0037_8.333_0.634.par.sto"
+   ]
+  },
+  {
+   "dir": "DPAR20_s3.H0914M.GH2010.S10W.D10.I.R3",
+   "n_par": 13,
+   "n_sto": 1,
+   "max_gen": 63,
+   "best_fit": 0.612,
+   "best_fit_gen": 63,
+   "best_is_deepest": true,
+   "sto": [
+    "0063_3.239_0.612.par.sto"
+   ]
+  },
+  {
+   "dir": "DPAR40_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 8,
+   "n_sto": 1,
+   "max_gen": 67,
+   "best_fit": 0.662,
+   "best_fit_gen": 67,
+   "best_is_deepest": true,
+   "sto": [
+    "0067_0.736_0.662.par.sto"
+   ]
+  },
+  {
+   "dir": "DPAR40_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 9,
+   "n_sto": 1,
+   "max_gen": 89,
+   "best_fit": 0.655,
+   "best_fit_gen": 89,
+   "best_is_deepest": true,
+   "sto": [
+    "0089_15.878_0.655.par.sto"
+   ]
+  },
+  {
+   "dir": "DPAR40_s3.H0914M.GH2010.S10W.D10.I.R3",
+   "n_par": 10,
+   "n_sto": 1,
+   "max_gen": 78,
+   "best_fit": 0.62,
+   "best_fit_gen": 78,
+   "best_is_deepest": true,
+   "sto": [
+    "0078_35.500_0.620.par.sto"
+   ]
+  },
+  {
+   "dir": "DPAR60_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 11,
+   "n_sto": 1,
+   "max_gen": 29,
+   "best_fit": 0.684,
+   "best_fit_gen": 29,
+   "best_is_deepest": true,
+   "sto": [
+    "0029_11.421_0.684.par.sto"
+   ]
+  },
+  {
+   "dir": "DPAR60_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 9,
+   "n_sto": 1,
+   "max_gen": 64,
+   "best_fit": 0.653,
+   "best_fit_gen": 64,
+   "best_is_deepest": true,
+   "sto": [
+    "0064_6.111_0.653.par.sto"
+   ]
+  },
+  {
+   "dir": "DPAR60_s3.H0914M.GH2010.S10W.D10.I.R3",
+   "n_par": 10,
+   "n_sto": 1,
+   "max_gen": 85,
+   "best_fit": 0.678,
+   "best_fit_gen": 85,
+   "best_is_deepest": true,
+   "sto": [
+    "0085_0.742_0.678.par.sto"
+   ]
+  },
+  {
+   "dir": "DSPAS005_s1.H0914M.GH2010.R4.S10W.D10.I.R1",
+   "n_par": 13,
+   "n_sto": 0,
+   "max_gen": 42,
+   "best_fit": 0.953,
+   "best_fit_gen": 42,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "DSPAS005_s2.H0914M.GH2010.R4.S10W.D10.I.R2",
+   "n_par": 9,
+   "n_sto": 0,
+   "max_gen": 19,
+   "best_fit": 12.054,
+   "best_fit_gen": 19,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "DSPAS005_s3.H0914M.GH2010.R4.S10W.D10.I.R3",
+   "n_par": 10,
+   "n_sto": 0,
+   "max_gen": 32,
+   "best_fit": 0.912,
+   "best_fit_gen": 32,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "DSPAS01_s1.H0914M.GH2010.R4.S10W.D10.I.R1",
+   "n_par": 12,
+   "n_sto": 0,
+   "max_gen": 37,
+   "best_fit": 8.626,
+   "best_fit_gen": 37,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "DSPAS01_s2.H0914M.GH2010.R4.S10W.D10.I.R2",
+   "n_par": 11,
+   "n_sto": 0,
+   "max_gen": 34,
+   "best_fit": 10.612,
+   "best_fit_gen": 34,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "DSPAS01_s3.H0914M.GH2010.R4.S10W.D10.I.R3",
+   "n_par": 14,
+   "n_sto": 0,
+   "max_gen": 35,
+   "best_fit": 9.373,
+   "best_fit_gen": 35,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "E2MIX40S01.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 11,
+   "n_sto": 1,
+   "max_gen": 58,
+   "best_fit": 1.158,
+   "best_fit_gen": 58,
+   "best_is_deepest": true,
+   "sto": [
+    "0058_1.255_1.158.par.sto"
+   ]
+  },
+  {
+   "dir": "E2SPAS005.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 5,
+   "n_sto": 1,
+   "max_gen": 37,
+   "best_fit": 0.795,
+   "best_fit_gen": 37,
+   "best_is_deepest": true,
+   "sto": [
+    "0037_3.432_0.795.par.sto"
+   ]
+  },
+  {
+   "dir": "E2SPAS01.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 5,
+   "n_sto": 1,
+   "max_gen": 36,
+   "best_fit": 0.888,
+   "best_fit_gen": 36,
+   "best_is_deepest": true,
+   "sto": [
+    "0036_22.646_0.888.par.sto"
+   ]
+  },
+  {
+   "dir": "EQS010_s1.H0914M.GH2010.R4.S10W.D10.I.R1",
+   "n_par": 5,
+   "n_sto": 0,
+   "max_gen": 89,
+   "best_fit": 0.995,
+   "best_fit_gen": 89,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "EQS010_s2.H0914M.GH2010.R4.S10W.D10.I.R2",
+   "n_par": 7,
+   "n_sto": 0,
+   "max_gen": 87,
+   "best_fit": 0.842,
+   "best_fit_gen": 87,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "EQS010_s3.H0914M.GH2010.R4.S10W.D10.I.R3",
+   "n_par": 4,
+   "n_sto": 0,
+   "max_gen": 72,
+   "best_fit": 0.981,
+   "best_fit_gen": 72,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "EQW60_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 84,
+   "best_fit": 0.656,
+   "best_fit_gen": 84,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "EQW60_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 51,
+   "best_fit": 0.656,
+   "best_fit_gen": 51,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "EQW60_s3.H0914M.GH2010.S10W.D10.I.R3",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 86,
+   "best_fit": 0.656,
+   "best_fit_gen": 86,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "G000.H0914M.GH2010.S10W.D10.I",
+   "n_par": 1,
+   "n_sto": 1,
+   "max_gen": 0,
+   "best_fit": 17.371,
+   "best_fit_gen": 0,
+   "best_is_deepest": true,
+   "sto": [
+    "0000_22.327_17.371.par.sto"
+   ]
+  },
+  {
+   "dir": "G001.H0914M.GH2010.S10W.D10.I",
+   "n_par": 1,
+   "n_sto": 1,
+   "max_gen": 0,
+   "best_fit": 17.371,
+   "best_fit_gen": 0,
+   "best_is_deepest": true,
+   "sto": [
+    "0000_22.327_17.371.par.sto"
+   ]
+  },
+  {
+   "dir": "G010.H0914M.GH2010.S10W.D10.I",
+   "n_par": 1,
+   "n_sto": 1,
+   "max_gen": 0,
+   "best_fit": 17.371,
+   "best_fit_gen": 0,
+   "best_is_deepest": true,
+   "sto": [
+    "0000_22.327_17.371.par.sto"
+   ]
+  },
+  {
+   "dir": "G011.H0914M.GH2010.S10W.D10.I",
+   "n_par": 1,
+   "n_sto": 1,
+   "max_gen": 0,
+   "best_fit": 17.371,
+   "best_fit_gen": 0,
+   "best_is_deepest": true,
+   "sto": [
+    "0000_22.327_17.371.par.sto"
+   ]
+  },
+  {
+   "dir": "G100.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 1,
+   "n_sto": 1,
+   "max_gen": 0,
+   "best_fit": 75.105,
+   "best_fit_gen": 0,
+   "best_is_deepest": true,
+   "sto": [
+    "0000_96.047_75.105.par.sto"
+   ]
+  },
+  {
+   "dir": "G101.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 1,
+   "n_sto": 1,
+   "max_gen": 0,
+   "best_fit": 75.105,
+   "best_fit_gen": 0,
+   "best_is_deepest": true,
+   "sto": [
+    "0000_96.047_75.105.par.sto"
+   ]
+  },
+  {
+   "dir": "G110.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 1,
+   "n_sto": 1,
+   "max_gen": 0,
+   "best_fit": 75.105,
+   "best_fit_gen": 0,
+   "best_is_deepest": true,
+   "sto": [
+    "0000_96.047_75.105.par.sto"
+   ]
+  },
+  {
+   "dir": "G111.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 1,
+   "n_sto": 1,
+   "max_gen": 0,
+   "best_fit": 75.105,
+   "best_fit_gen": 0,
+   "best_is_deepest": true,
+   "sto": [
+    "0000_96.047_75.105.par.sto"
+   ]
+  },
+  {
+   "dir": "GATE2.H0914M.GH2010.S10W.D10.I",
+   "n_par": 1,
+   "n_sto": 1,
+   "max_gen": 0,
+   "best_fit": 22.581,
+   "best_fit_gen": 0,
+   "best_is_deepest": true,
+   "sto": [
+    "0000_89.606_22.581.par.sto"
+   ]
+  },
+  {
+   "dir": "GATETEST.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 0,
+   "n_sto": 0,
+   "max_gen": null,
+   "best_fit": null,
+   "best_fit_gen": null,
+   "best_is_deepest": null,
+   "sto": []
+  },
+  {
+   "dir": "HEALTHY.H0914M.GH2010.S10W.D10.I",
+   "n_par": 10,
+   "n_sto": 3,
+   "max_gen": 35,
+   "best_fit": 0.624,
+   "best_fit_gen": 35,
+   "best_is_deepest": true,
+   "sto": [
+    "0007_9.019_0.756.par.sto",
+    "audit_best.sto",
+    "hq.sto.sto"
+   ]
+  },
+  {
+   "dir": "HEALTHY_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 11,
+   "n_sto": 1,
+   "max_gen": 22,
+   "best_fit": 0.689,
+   "best_fit_gen": 22,
+   "best_is_deepest": true,
+   "sto": [
+    "0022_3.271_0.689.par.sto"
+   ]
+  },
+  {
+   "dir": "HEALTHY_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 11,
+   "n_sto": 1,
+   "max_gen": 20,
+   "best_fit": 0.671,
+   "best_fit_gen": 20,
+   "best_is_deepest": true,
+   "sto": [
+    "0020_6.328_0.671.par.sto"
+   ]
+  },
+  {
+   "dir": "HEALTHY_s3.H0914M.GH2010.S10W.D10.I.R3",
+   "n_par": 8,
+   "n_sto": 1,
+   "max_gen": 7,
+   "best_fit": 0.733,
+   "best_fit_gen": 7,
+   "best_is_deepest": true,
+   "sto": [
+    "0007_8.133_0.733.par.sto"
+   ]
+  },
+  {
+   "dir": "HEALTHY_s4.H0914M.GH2010.S10W.D10.I.R4",
+   "n_par": 10,
+   "n_sto": 1,
+   "max_gen": 19,
+   "best_fit": 0.715,
+   "best_fit_gen": 19,
+   "best_is_deepest": true,
+   "sto": [
+    "0019_0.822_0.715.par.sto"
+   ]
+  },
+  {
+   "dir": "MIX20S01.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 7,
+   "n_sto": 0,
+   "max_gen": 21,
+   "best_fit": 36.964,
+   "best_fit_gen": 21,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "MIX20S05.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 5,
+   "n_sto": 0,
+   "max_gen": 10,
+   "best_fit": 66.908,
+   "best_fit_gen": 10,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "MIX20S05A.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 6,
+   "best_fit": 81.467,
+   "best_fit_gen": 6,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "MIX20S10.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 4,
+   "n_sto": 0,
+   "max_gen": 10,
+   "best_fit": 66.265,
+   "best_fit_gen": 10,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "MIX20S10A.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 2,
+   "best_fit": 82.657,
+   "best_fit_gen": 2,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "MIX20S2.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 5,
+   "best_fit": 91.395,
+   "best_fit_gen": 5,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "MIX40S01.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 5,
+   "n_sto": 0,
+   "max_gen": 11,
+   "best_fit": 53.493,
+   "best_fit_gen": 11,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "MIX40S02.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 7,
+   "n_sto": 0,
+   "max_gen": 24,
+   "best_fit": 43.81,
+   "best_fit_gen": 24,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "MIX40S02A.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 4,
+   "n_sto": 0,
+   "max_gen": 22,
+   "best_fit": 74.921,
+   "best_fit_gen": 22,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "MIX40S05.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 8,
+   "n_sto": 0,
+   "max_gen": 22,
+   "best_fit": 52.86,
+   "best_fit_gen": 22,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "MIX40S05A.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 4,
+   "n_sto": 0,
+   "max_gen": 7,
+   "best_fit": 74.002,
+   "best_fit_gen": 7,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "MIX40S1.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 7,
+   "best_fit": 90.4,
+   "best_fit_gen": 7,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "MIX40S2.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 5,
+   "best_fit": 86.414,
+   "best_fit_gen": 5,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "MMIX20S01_s1.H0914M.GH2010.R4.S10W.D10.I.R1",
+   "n_par": 23,
+   "n_sto": 1,
+   "max_gen": 103,
+   "best_fit": 0.953,
+   "best_fit_gen": 103,
+   "best_is_deepest": true,
+   "sto": [
+    "0082_56.193_1.088.par.sto"
+   ]
+  },
+  {
+   "dir": "MMIX20S01_s2.H0914M.GH2010.R4.S10W.D10.I.R2",
+   "n_par": 17,
+   "n_sto": 1,
+   "max_gen": 114,
+   "best_fit": 0.987,
+   "best_fit_gen": 114,
+   "best_is_deepest": true,
+   "sto": [
+    "0080_51.989_1.095.par.sto"
+   ]
+  },
+  {
+   "dir": "MMIX40S01_s1.H0914M.GH2010.R4.S10W.D10.I.R1",
+   "n_par": 5,
+   "n_sto": 0,
+   "max_gen": 22,
+   "best_fit": 62.949,
+   "best_fit_gen": 22,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "MMIX40S01_s2.H0914M.GH2010.R4.S10W.D10.I.R2",
+   "n_par": 8,
+   "n_sto": 0,
+   "max_gen": 78,
+   "best_fit": 25.199,
+   "best_fit_gen": 78,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "MMIX40S02_s1.H0914M.GH2010.R4.S10W.D10.I.R1",
+   "n_par": 15,
+   "n_sto": 0,
+   "max_gen": 59,
+   "best_fit": 14.008,
+   "best_fit_gen": 59,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "MMIX40S02_s2.H0914M.GH2010.R4.S10W.D10.I.R2",
+   "n_par": 7,
+   "n_sto": 0,
+   "max_gen": 76,
+   "best_fit": 55.209,
+   "best_fit_gen": 76,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "PAR20.H0914M.GH2010.S10W.D10.I",
+   "n_par": 7,
+   "n_sto": 0,
+   "max_gen": 8,
+   "best_fit": 0.809,
+   "best_fit_gen": 8,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "PAR20.H0914M.GH2010.S10W.D10.I (1)",
+   "n_par": 10,
+   "n_sto": 1,
+   "max_gen": 36,
+   "best_fit": 0.693,
+   "best_fit_gen": 36,
+   "best_is_deepest": true,
+   "sto": [
+    "0006_10.982_0.900.par.sto"
+   ]
+  },
+  {
+   "dir": "PAR20_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 8,
+   "n_sto": 1,
+   "max_gen": 18,
+   "best_fit": 0.713,
+   "best_fit_gen": 18,
+   "best_is_deepest": true,
+   "sto": [
+    "0018_0.791_0.713.par.sto"
+   ]
+  },
+  {
+   "dir": "PAR20_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 9,
+   "n_sto": 1,
+   "max_gen": 17,
+   "best_fit": 0.734,
+   "best_fit_gen": 17,
+   "best_is_deepest": true,
+   "sto": [
+    "0017_5.031_0.734.par.sto"
+   ]
+  },
+  {
+   "dir": "PAR20_s3.H0914M.GH2010.S10W.D10.I.R3",
+   "n_par": 10,
+   "n_sto": 1,
+   "max_gen": 18,
+   "best_fit": 0.743,
+   "best_fit_gen": 18,
+   "best_is_deepest": true,
+   "sto": [
+    "0018_10.619_0.743.par.sto"
+   ]
+  },
+  {
+   "dir": "PAR20_s4.H0914M.GH2010.S10W.D10.I.R4",
+   "n_par": 10,
+   "n_sto": 1,
+   "max_gen": 15,
+   "best_fit": 0.738,
+   "best_fit_gen": 15,
+   "best_is_deepest": true,
+   "sto": [
+    "0015_8.510_0.738.par.sto"
+   ]
+  },
+  {
+   "dir": "PAR40.H0914M.GH2010.S10W.D10.I",
+   "n_par": 9,
+   "n_sto": 1,
+   "max_gen": 27,
+   "best_fit": 0.681,
+   "best_fit_gen": 27,
+   "best_is_deepest": true,
+   "sto": [
+    "0009_8.917_0.788.par.sto"
+   ]
+  },
+  {
+   "dir": "PAR40_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 7,
+   "n_sto": 1,
+   "max_gen": 17,
+   "best_fit": 0.722,
+   "best_fit_gen": 17,
+   "best_is_deepest": true,
+   "sto": [
+    "0017_13.218_0.722.par.sto"
+   ]
+  },
+  {
+   "dir": "PAR40_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 6,
+   "n_sto": 1,
+   "max_gen": 11,
+   "best_fit": 0.781,
+   "best_fit_gen": 11,
+   "best_is_deepest": true,
+   "sto": [
+    "0011_8.744_0.781.par.sto"
+   ]
+  },
+  {
+   "dir": "PAR40_s3.H0914M.GH2010.S10W.D10.I.R3",
+   "n_par": 7,
+   "n_sto": 1,
+   "max_gen": 13,
+   "best_fit": 0.739,
+   "best_fit_gen": 13,
+   "best_is_deepest": true,
+   "sto": [
+    "0013_4.304_0.739.par.sto"
+   ]
+  },
+  {
+   "dir": "PAR40_s4.H0914M.GH2010.S10W.D10.I.R4",
+   "n_par": 9,
+   "n_sto": 1,
+   "max_gen": 19,
+   "best_fit": 0.727,
+   "best_fit_gen": 19,
+   "best_is_deepest": true,
+   "sto": [
+    "0019_8.349_0.727.par.sto"
+   ]
+  },
+  {
+   "dir": "PAR60.H0914M.GH2010.S10W.D10.I",
+   "n_par": 11,
+   "n_sto": 1,
+   "max_gen": 33,
+   "best_fit": 0.698,
+   "best_fit_gen": 33,
+   "best_is_deepest": true,
+   "sto": [
+    "0011_3.381_0.812.par.sto"
+   ]
+  },
+  {
+   "dir": "PAR60_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 10,
+   "n_sto": 1,
+   "max_gen": 16,
+   "best_fit": 0.715,
+   "best_fit_gen": 16,
+   "best_is_deepest": true,
+   "sto": [
+    "0016_7.251_0.715.par.sto"
+   ]
+  },
+  {
+   "dir": "PAR60_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 7,
+   "n_sto": 1,
+   "max_gen": 16,
+   "best_fit": 0.725,
+   "best_fit_gen": 16,
+   "best_is_deepest": true,
+   "sto": [
+    "0016_6.850_0.725.par.sto"
+   ]
+  },
+  {
+   "dir": "PAR60_s3.H0914M.GH2010.S10W.D10.I.R3",
+   "n_par": 7,
+   "n_sto": 1,
+   "max_gen": 24,
+   "best_fit": 0.805,
+   "best_fit_gen": 24,
+   "best_is_deepest": true,
+   "sto": [
+    "0024_0.907_0.805.par.sto"
+   ]
+  },
+  {
+   "dir": "PAR60_s4.H0914M.GH2010.S10W.D10.I.R4",
+   "n_par": 5,
+   "n_sto": 1,
+   "max_gen": 19,
+   "best_fit": 0.843,
+   "best_fit_gen": 19,
+   "best_is_deepest": true,
+   "sto": [
+    "0019_3.684_0.843.par.sto"
+   ]
+  },
+  {
+   "dir": "PROBEKV000.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 1,
+   "n_sto": 1,
+   "max_gen": 0,
+   "best_fit": 17.499,
+   "best_fit_gen": 0,
+   "best_is_deepest": true,
+   "sto": [
+    "0000_23.542_17.499.par.sto"
+   ]
+  },
+  {
+   "dir": "PROBEKV050.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 1,
+   "n_sto": 1,
+   "max_gen": 0,
+   "best_fit": 23.167,
+   "best_fit_gen": 0,
+   "best_is_deepest": true,
+   "sto": [
+    "0000_88.429_23.167.par.sto"
+   ]
+  },
+  {
+   "dir": "RD2HEALTHY.H0914M.GH2010.S10W.D10.I (1)",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 39,
+   "best_fit": 0.613,
+   "best_fit_gen": 39,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "RD2PAR40.H0914M.GH2010.S10W.D10.I (1)",
+   "n_par": 4,
+   "n_sto": 0,
+   "max_gen": 56,
+   "best_fit": 0.621,
+   "best_fit_gen": 56,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "RD2PAR60.H0914M.GH2010.S10W.D10.I (1)",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 53,
+   "best_fit": 0.692,
+   "best_fit_gen": 53,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "RE2MIX40S01.H0914M.GH2010.R4.S10W.D10.I (1)",
+   "n_par": 4,
+   "n_sto": 0,
+   "max_gen": 26,
+   "best_fit": 0.953,
+   "best_fit_gen": 26,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "RE2SPAS005.H0914M.GH2010.R4.S10W.D10.I (1)",
+   "n_par": 4,
+   "n_sto": 0,
+   "max_gen": 28,
+   "best_fit": 0.73,
+   "best_fit_gen": 28,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "RE2SPAS01.H0914M.GH2010.R4.S10W.D10.I (1)",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 33,
+   "best_fit": 0.816,
+   "best_fit_gen": 33,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "SEEDTEST.H0914M.GH2010.S10W.D10.I.R7",
+   "n_par": 0,
+   "n_sto": 0,
+   "max_gen": null,
+   "best_fit": null,
+   "best_fit_gen": null,
+   "best_is_deepest": null,
+   "sto": []
+  },
+  {
+   "dir": "SLDN2.H0914M.GH2010.S10W.D10.I",
+   "n_par": 18,
+   "n_sto": 1,
+   "max_gen": 56,
+   "best_fit": 0.671,
+   "best_fit_gen": 56,
+   "best_is_deepest": true,
+   "sto": [
+    "0012_36.255_1.107.par.sto"
+   ]
+  },
+  {
+   "dir": "SLOPEDN5.H0914M.GH2010.S10W.D10.I",
+   "n_par": 4,
+   "n_sto": 0,
+   "max_gen": 22,
+   "best_fit": 79.541,
+   "best_fit_gen": 22,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "SLOPETEST.H0914M.GH2010.S10W.D10.I",
+   "n_par": 0,
+   "n_sto": 0,
+   "max_gen": null,
+   "best_fit": null,
+   "best_fit_gen": null,
+   "best_is_deepest": null,
+   "sto": []
+  },
+  {
+   "dir": "SLOPETEST.H0914M.GH2010.S10W.D10.I (1)",
+   "n_par": 0,
+   "n_sto": 0,
+   "max_gen": null,
+   "best_fit": null,
+   "best_fit_gen": null,
+   "best_is_deepest": null,
+   "sto": []
+  },
+  {
+   "dir": "SLOPEUP5.H0914M.GH2010.S10W.D10.I",
+   "n_par": 5,
+   "n_sto": 0,
+   "max_gen": 38,
+   "best_fit": 73.709,
+   "best_fit_gen": 38,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "SLUP2.H0914M.GH2010.S10W.D10.I",
+   "n_par": 15,
+   "n_sto": 0,
+   "max_gen": 50,
+   "best_fit": 16.569,
+   "best_fit_gen": 50,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "SPAS005.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 17,
+   "n_sto": 1,
+   "max_gen": 74,
+   "best_fit": 0.814,
+   "best_fit_gen": 74,
+   "best_is_deepest": true,
+   "sto": [
+    "0074_1.026_0.814.par.sto"
+   ]
+  },
+  {
+   "dir": "SPAS005_s2.H0914M.GH2010.R4.S10W.D10.I.R2",
+   "n_par": 19,
+   "n_sto": 1,
+   "max_gen": 320,
+   "best_fit": 0.672,
+   "best_fit_gen": 320,
+   "best_is_deepest": true,
+   "sto": [
+    "0320_0.686_0.672.par.sto"
+   ]
+  },
+  {
+   "dir": "SPAS005_s3.H0914M.GH2010.R4.S10W.D10.I.R3",
+   "n_par": 16,
+   "n_sto": 1,
+   "max_gen": 337,
+   "best_fit": 0.667,
+   "best_fit_gen": 337,
+   "best_is_deepest": true,
+   "sto": [
+    "0059_0.878_0.731.par.sto"
+   ]
+  },
+  {
+   "dir": "SPAS005_s4.H0914M.GH2010.R4.S10W.D10.I.R4",
+   "n_par": 22,
+   "n_sto": 1,
+   "max_gen": 314,
+   "best_fit": 0.745,
+   "best_fit_gen": 314,
+   "best_is_deepest": true,
+   "sto": [
+    "0071_0.976_0.835.par.sto"
+   ]
+  },
+  {
+   "dir": "SPAS01.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 20,
+   "n_sto": 1,
+   "max_gen": 79,
+   "best_fit": 1.138,
+   "best_fit_gen": 79,
+   "best_is_deepest": true,
+   "sto": [
+    "0079_8.322_1.138.par.sto"
+   ]
+  },
+  {
+   "dir": "SPAS01_s2.H0914M.GH2010.R4.S10W.D10.I.R2",
+   "n_par": 24,
+   "n_sto": 1,
+   "max_gen": 265,
+   "best_fit": 0.804,
+   "best_fit_gen": 265,
+   "best_is_deepest": true,
+   "sto": [
+    "0265_0.821_0.804.par.sto"
+   ]
+  },
+  {
+   "dir": "SPAS01_s3.H0914M.GH2010.R4.S10W.D10.I.R3",
+   "n_par": 25,
+   "n_sto": 1,
+   "max_gen": 333,
+   "best_fit": 0.79,
+   "best_fit_gen": 333,
+   "best_is_deepest": true,
+   "sto": [
+    "0180_7.509_0.888.par.sto"
+   ]
+  },
+  {
+   "dir": "SPAS01_s4.H0914M.GH2010.R4.S10W.D10.I.R4",
+   "n_par": 19,
+   "n_sto": 1,
+   "max_gen": 242,
+   "best_fit": 0.808,
+   "best_fit_gen": 242,
+   "best_is_deepest": true,
+   "sto": [
+    "0099_7.294_0.838.par.sto"
+   ]
+  },
+  {
+   "dir": "SPAS02.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 7,
+   "n_sto": 0,
+   "max_gen": 21,
+   "best_fit": 32.991,
+   "best_fit_gen": 21,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "SPAS02A.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 5,
+   "n_sto": 0,
+   "max_gen": 14,
+   "best_fit": 27.257,
+   "best_fit_gen": 14,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "SPAS05.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 7,
+   "n_sto": 0,
+   "max_gen": 28,
+   "best_fit": 57.729,
+   "best_fit_gen": 28,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "SPAS05A.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 22,
+   "best_fit": 79.781,
+   "best_fit_gen": 22,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "SPAS1.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 4,
+   "best_fit": 87.462,
+   "best_fit_gen": 4,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "SPAS10.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 8,
+   "n_sto": 0,
+   "max_gen": 26,
+   "best_fit": 49.14,
+   "best_fit_gen": 26,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "SPAS10A.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 1,
+   "best_fit": 71.167,
+   "best_fit_gen": 1,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "SPAS2.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 5,
+   "best_fit": 91.078,
+   "best_fit_gen": 5,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "SPAS20.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 5,
+   "n_sto": 0,
+   "max_gen": 25,
+   "best_fit": 57.516,
+   "best_fit_gen": 25,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "SPAS20A.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 17,
+   "best_fit": 79.98,
+   "best_fit_gen": 17,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "SPAS2L.H0914M.GH2010.R4.S10W.D12.I",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 8,
+   "best_fit": 86.979,
+   "best_fit_gen": 8,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "SPAS3.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 4,
+   "best_fit": 79.844,
+   "best_fit_gen": 4,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "SPASpf.H0914M.GH2010.S10W.D10.I",
+   "n_par": 0,
+   "n_sto": 1,
+   "max_gen": null,
+   "best_fit": null,
+   "best_fit_gen": null,
+   "best_is_deepest": null,
+   "sto": [
+    "eval_ident.sto.sto"
+   ]
+  },
+  {
+   "dir": "SPASpf.H0914M.GH2010.S10W.D10.I (1)",
+   "n_par": 7,
+   "n_sto": 1,
+   "max_gen": 7,
+   "best_fit": 0.756,
+   "best_fit_gen": 7,
+   "best_is_deepest": true,
+   "sto": [
+    "eval_spas.sto.sto"
+   ]
+  },
+  {
+   "dir": "SPASpf2.H0914M.GH2010.S10W.D10.I",
+   "n_par": 12,
+   "n_sto": 1,
+   "max_gen": 584,
+   "best_fit": 0.551,
+   "best_fit_gen": 584,
+   "best_is_deepest": true,
+   "sto": [
+    "eval_spas2.sto.sto"
+   ]
+  },
+  {
+   "dir": "STALE_RD2HEALTHY.H0914M.GH2010.S10W.D10.I",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 14,
+   "best_fit": 0.646,
+   "best_fit_gen": 14,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "STALE_RD2PAR40.H0914M.GH2010.S10W.D10.I",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 17,
+   "best_fit": 0.657,
+   "best_fit_gen": 17,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "STALE_RD2PAR60.H0914M.GH2010.S10W.D10.I",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 17,
+   "best_fit": 0.71,
+   "best_fit_gen": 17,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "STALE_RE2MIX40S01.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 16,
+   "best_fit": 1.041,
+   "best_fit_gen": 16,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "STALE_RE2SPAS005.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 15,
+   "best_fit": 0.731,
+   "best_fit_gen": 15,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "STALE_RE2SPAS01.H0914M.GH2010.R4.S10W.D10.I",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 16,
+   "best_fit": 0.834,
+   "best_fit_gen": 16,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "TON005_s1.H0914M.GH2010.R4.S10W.D10.I.R1",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 5,
+   "best_fit": 95.014,
+   "best_fit_gen": 5,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "TON005_s2.H0914M.GH2010.R4.S10W.D10.I.R2",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 4,
+   "best_fit": 94.169,
+   "best_fit_gen": 4,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "TON01_s1.H0914M.GH2010.R4.S10W.D10.I.R1",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 5,
+   "best_fit": 88.56,
+   "best_fit_gen": 5,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "TON01_s2.H0914M.GH2010.R4.S10W.D10.I.R2",
+   "n_par": 5,
+   "n_sto": 0,
+   "max_gen": 7,
+   "best_fit": 76.135,
+   "best_fit_gen": 7,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "UPL05.H0914M.GH2010.S08W.D10.I",
+   "n_par": 6,
+   "n_sto": 0,
+   "max_gen": 51,
+   "best_fit": 0.616,
+   "best_fit_gen": 51,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "UPL10.H0914M.GH2010.S08W.D10.I",
+   "n_par": 7,
+   "n_sto": 0,
+   "max_gen": 53,
+   "best_fit": 0.646,
+   "best_fit_gen": 53,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "UPL15.H0914M.GH2010.S08W.D10.I",
+   "n_par": 11,
+   "n_sto": 0,
+   "max_gen": 45,
+   "best_fit": 0.69,
+   "best_fit_gen": 45,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "UPU2V6.H0914M.GH2010.S06W.D10.I",
+   "n_par": 14,
+   "n_sto": 0,
+   "max_gen": 54,
+   "best_fit": 0.837,
+   "best_fit_gen": 54,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "UPU2V8.H0914M.GH2010.S08W.D10.I",
+   "n_par": 12,
+   "n_sto": 0,
+   "max_gen": 54,
+   "best_fit": 0.744,
+   "best_fit_gen": 54,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "UPU5V6.H0914M.GH2010.S06W.D10.I",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 57,
+   "best_fit": 93.646,
+   "best_fit_gen": 57,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VHEALTHY_s1.H0914M.GH2010.S12W.D10.I.R1",
+   "n_par": 16,
+   "n_sto": 1,
+   "max_gen": 44,
+   "best_fit": 0.852,
+   "best_fit_gen": 44,
+   "best_is_deepest": true,
+   "sto": [
+    "0031_10.083_0.857.par.sto"
+   ]
+  },
+  {
+   "dir": "VHEALTHY_s2.H0914M.GH2010.S12W.D10.I.R2",
+   "n_par": 10,
+   "n_sto": 1,
+   "max_gen": 45,
+   "best_fit": 0.958,
+   "best_fit_gen": 45,
+   "best_is_deepest": true,
+   "sto": [
+    "0045_10.007_0.958.par.sto"
+   ]
+  },
+  {
+   "dir": "VHEALTHY_s3.H0914M.GH2010.S12W.D10.I.R3",
+   "n_par": 15,
+   "n_sto": 1,
+   "max_gen": 38,
+   "best_fit": 0.763,
+   "best_fit_gen": 38,
+   "best_is_deepest": true,
+   "sto": [
+    "0038_36.818_0.763.par.sto"
+   ]
+  },
+  {
+   "dir": "VHEALTHY_s4.H0914M.GH2010.S12W.D10.I.R4",
+   "n_par": 16,
+   "n_sto": 1,
+   "max_gen": 29,
+   "best_fit": 0.926,
+   "best_fit_gen": 29,
+   "best_is_deepest": true,
+   "sto": [
+    "0029_56.202_0.926.par.sto"
+   ]
+  },
+  {
+   "dir": "VOID_EQS010_s1.H0914M.GH2010.R4.S10W.D10.I.R1",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 4,
+   "best_fit": 0.787,
+   "best_fit_gen": 4,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_EQS010_s2.H0914M.GH2010.R4.S10W.D10.I.R2",
+   "n_par": 1,
+   "n_sto": 0,
+   "max_gen": 0,
+   "best_fit": 0.788,
+   "best_fit_gen": 0,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_EQS010_s3.H0914M.GH2010.R4.S10W.D10.I.R3",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 4,
+   "best_fit": 0.784,
+   "best_fit_gen": 4,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_EQW60_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 85,
+   "best_fit": 0.678,
+   "best_fit_gen": 85,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_EQW60_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 85,
+   "best_fit": 0.675,
+   "best_fit_gen": 0,
+   "best_is_deepest": false,
+   "sto": []
+  },
+  {
+   "dir": "VOID_EQW60_s3.H0914M.GH2010.S10W.D10.I.R3",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 85,
+   "best_fit": 0.678,
+   "best_fit_gen": 85,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L000_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 8,
+   "n_sto": 0,
+   "max_gen": 8,
+   "best_fit": 0.77,
+   "best_fit_gen": 8,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L000_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 5,
+   "n_sto": 0,
+   "max_gen": 4,
+   "best_fit": 8.15,
+   "best_fit_gen": 4,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L000_s3.H0914M.GH2010.S10W.D10.I.R3",
+   "n_par": 5,
+   "n_sto": 0,
+   "max_gen": 4,
+   "best_fit": 11.618,
+   "best_fit_gen": 4,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L000_s4.H0914M.GH2010.S10W.D10.I.R4",
+   "n_par": 5,
+   "n_sto": 0,
+   "max_gen": 4,
+   "best_fit": 10.294,
+   "best_fit_gen": 4,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L000_s5.H0914M.GH2010.S10W.D10.I.R5",
+   "n_par": 4,
+   "n_sto": 0,
+   "max_gen": 4,
+   "best_fit": 7.463,
+   "best_fit_gen": 4,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L050_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 4,
+   "best_fit": 18.173,
+   "best_fit_gen": 4,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L050_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 4,
+   "n_sto": 0,
+   "max_gen": 5,
+   "best_fit": 13.909,
+   "best_fit_gen": 5,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L050_s3.H0914M.GH2010.S10W.D10.I.R3",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 4,
+   "best_fit": 14.441,
+   "best_fit_gen": 4,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L050_s4.H0914M.GH2010.S10W.D10.I.R4",
+   "n_par": 4,
+   "n_sto": 0,
+   "max_gen": 4,
+   "best_fit": 12.429,
+   "best_fit_gen": 4,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L050_s5.H0914M.GH2010.S10W.D10.I.R5",
+   "n_par": 5,
+   "n_sto": 0,
+   "max_gen": 4,
+   "best_fit": 13.327,
+   "best_fit_gen": 4,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L100_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 5,
+   "best_fit": 20.861,
+   "best_fit_gen": 5,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L100_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 4,
+   "n_sto": 0,
+   "max_gen": 5,
+   "best_fit": 15.278,
+   "best_fit_gen": 5,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L100_s3.H0914M.GH2010.S10W.D10.I.R3",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 2,
+   "best_fit": 18.639,
+   "best_fit_gen": 2,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L100_s4.H0914M.GH2010.S10W.D10.I.R4",
+   "n_par": 4,
+   "n_sto": 0,
+   "max_gen": 6,
+   "best_fit": 18.165,
+   "best_fit_gen": 6,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L100_s5.H0914M.GH2010.S10W.D10.I.R5",
+   "n_par": 5,
+   "n_sto": 0,
+   "max_gen": 6,
+   "best_fit": 12.493,
+   "best_fit_gen": 6,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L150_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 4,
+   "n_sto": 0,
+   "max_gen": 3,
+   "best_fit": 21.213,
+   "best_fit_gen": 3,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L150_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 4,
+   "n_sto": 0,
+   "max_gen": 5,
+   "best_fit": 22.815,
+   "best_fit_gen": 5,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L150_s3.H0914M.GH2010.S10W.D10.I.R3",
+   "n_par": 5,
+   "n_sto": 0,
+   "max_gen": 8,
+   "best_fit": 21.487,
+   "best_fit_gen": 8,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L150_s4.H0914M.GH2010.S10W.D10.I.R4",
+   "n_par": 5,
+   "n_sto": 0,
+   "max_gen": 8,
+   "best_fit": 23.668,
+   "best_fit_gen": 8,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L150_s5.H0914M.GH2010.S10W.D10.I.R5",
+   "n_par": 3,
+   "n_sto": 0,
+   "max_gen": 6,
+   "best_fit": 21.625,
+   "best_fit_gen": 6,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L200_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 6,
+   "n_sto": 0,
+   "max_gen": 8,
+   "best_fit": 16.61,
+   "best_fit_gen": 8,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L200_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 2,
+   "n_sto": 0,
+   "max_gen": 2,
+   "best_fit": 25.206,
+   "best_fit_gen": 2,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L200_s3.H0914M.GH2010.S10W.D10.I.R3",
+   "n_par": 6,
+   "n_sto": 0,
+   "max_gen": 5,
+   "best_fit": 23.26,
+   "best_fit_gen": 5,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L200_s4.H0914M.GH2010.S10W.D10.I.R4",
+   "n_par": 5,
+   "n_sto": 0,
+   "max_gen": 11,
+   "best_fit": 18.494,
+   "best_fit_gen": 11,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L200_s5.H0914M.GH2010.S10W.D10.I.R5",
+   "n_par": 6,
+   "n_sto": 0,
+   "max_gen": 8,
+   "best_fit": 22.848,
+   "best_fit_gen": 8,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L300_s1.H0914M.GH2010.S10W.D10.I.R1",
+   "n_par": 8,
+   "n_sto": 0,
+   "max_gen": 12,
+   "best_fit": 35.022,
+   "best_fit_gen": 12,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L300_s2.H0914M.GH2010.S10W.D10.I.R2",
+   "n_par": 6,
+   "n_sto": 0,
+   "max_gen": 10,
+   "best_fit": 35.296,
+   "best_fit_gen": 10,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L300_s3.H0914M.GH2010.S10W.D10.I.R3",
+   "n_par": 6,
+   "n_sto": 0,
+   "max_gen": 17,
+   "best_fit": 54.371,
+   "best_fit_gen": 17,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L300_s4.H0914M.GH2010.S10W.D10.I.R4",
+   "n_par": 5,
+   "n_sto": 0,
+   "max_gen": 10,
+   "best_fit": 23.054,
+   "best_fit_gen": 10,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VOID_L300_s5.H0914M.GH2010.S10W.D10.I.R5",
+   "n_par": 6,
+   "n_sto": 0,
+   "max_gen": 13,
+   "best_fit": 29.455,
+   "best_fit_gen": 13,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VPAR20_s1.H0914M.GH2010.S12W.D10.I.R1",
+   "n_par": 15,
+   "n_sto": 1,
+   "max_gen": 42,
+   "best_fit": 0.764,
+   "best_fit_gen": 42,
+   "best_is_deepest": true,
+   "sto": [
+    "0042_6.891_0.764.par.sto"
+   ]
+  },
+  {
+   "dir": "VPAR20_s2.H0914M.GH2010.S12W.D10.I.R2",
+   "n_par": 17,
+   "n_sto": 1,
+   "max_gen": 45,
+   "best_fit": 0.757,
+   "best_fit_gen": 45,
+   "best_is_deepest": true,
+   "sto": [
+    "0045_11.027_0.757.par.sto"
+   ]
+  },
+  {
+   "dir": "VPAR20_s3.H0914M.GH2010.S12W.D10.I.R3",
+   "n_par": 16,
+   "n_sto": 1,
+   "max_gen": 25,
+   "best_fit": 0.838,
+   "best_fit_gen": 25,
+   "best_is_deepest": true,
+   "sto": [
+    "0025_15.189_0.838.par.sto"
+   ]
+  },
+  {
+   "dir": "VPAR20_s4.H0914M.GH2010.S12W.D10.I.R4",
+   "n_par": 13,
+   "n_sto": 1,
+   "max_gen": 33,
+   "best_fit": 0.841,
+   "best_fit_gen": 33,
+   "best_is_deepest": true,
+   "sto": [
+    "0033_8.463_0.841.par.sto"
+   ]
+  },
+  {
+   "dir": "VPAR40_s1.H0914M.GH2010.S12W.D10.I.R1",
+   "n_par": 13,
+   "n_sto": 1,
+   "max_gen": 35,
+   "best_fit": 0.979,
+   "best_fit_gen": 35,
+   "best_is_deepest": true,
+   "sto": [
+    "0035_18.592_0.979.par.sto"
+   ]
+  },
+  {
+   "dir": "VPAR40_s2.H0914M.GH2010.S12W.D10.I.R2",
+   "n_par": 14,
+   "n_sto": 0,
+   "max_gen": 45,
+   "best_fit": 7.062,
+   "best_fit_gen": 45,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VPAR40_s3.H0914M.GH2010.S12W.D10.I.R3",
+   "n_par": 15,
+   "n_sto": 1,
+   "max_gen": 21,
+   "best_fit": 0.99,
+   "best_fit_gen": 21,
+   "best_is_deepest": true,
+   "sto": [
+    "0021_22.983_0.990.par.sto"
+   ]
+  },
+  {
+   "dir": "VPAR40_s4.H0914M.GH2010.S12W.D10.I.R4",
+   "n_par": 15,
+   "n_sto": 1,
+   "max_gen": 25,
+   "best_fit": 0.933,
+   "best_fit_gen": 25,
+   "best_is_deepest": true,
+   "sto": [
+    "0025_11.240_0.933.par.sto"
+   ]
+  },
+  {
+   "dir": "VPAR60_s1.H0914M.GH2010.S12W.D10.I.R1",
+   "n_par": 17,
+   "n_sto": 1,
+   "max_gen": 44,
+   "best_fit": 1.012,
+   "best_fit_gen": 44,
+   "best_is_deepest": true,
+   "sto": [
+    "0044_12.631_1.012.par.sto"
+   ]
+  },
+  {
+   "dir": "VPAR60_s2.H0914M.GH2010.S12W.D10.I.R2",
+   "n_par": 14,
+   "n_sto": 0,
+   "max_gen": 44,
+   "best_fit": 7.087,
+   "best_fit_gen": 44,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VPAR60_s3.H0914M.GH2010.S12W.D10.I.R3",
+   "n_par": 13,
+   "n_sto": 1,
+   "max_gen": 43,
+   "best_fit": 1.101,
+   "best_fit_gen": 43,
+   "best_is_deepest": true,
+   "sto": [
+    "0043_69.136_1.101.par.sto"
+   ]
+  },
+  {
+   "dir": "VPAR60_s4.H0914M.GH2010.S12W.D10.I.R4",
+   "n_par": 10,
+   "n_sto": 0,
+   "max_gen": 26,
+   "best_fit": 10.087,
+   "best_fit_gen": 26,
+   "best_is_deepest": true,
+   "sto": []
+  },
+  {
+   "dir": "VTEST.H0914M.GH2010.S12W.D10.I",
+   "n_par": 0,
+   "n_sto": 0,
+   "max_gen": null,
+   "best_fit": null,
+   "best_fit_gen": null,
+   "best_is_deepest": null,
+   "sto": []
+  }
+ ],
+ "project_file_sha256": {
+  "scone/adapted_vs_naive.py": "646da79b53dce4ad62aa1fa0d3e18021ec75fdd429f5d7d2a5183579021b11a0",
+  "scone/analyze_scone.py": "9f4709d532e7511e0680802fcf1f828d3c143158ef040c707756d8778b78a5fe",
+  "scone/asym_controller_test.py": "061c0a3c7a491d2d335c6b709dc83cc01938f10824f42d92556bf19d8bba52fb",
+  "scone/cc2.py": "541d826a770ce8ba4cef1b7e80d56a7a12dec42241a6622e4fa8051c23a921fa",
+  "scone/check_structure.py": "734f4dd05ef8b079d79d6fe37224cdcf9042b0ad2ef4b3a074f702061114e4c8",
+  "scone/check_unused.py": "4c84b06a7e9bdbc8198450d2d4fb859129666be360f36c95c258285669f05b9a",
+  "scone/coadaptation_check.py": "fd1e07077a2db8bed1d262e093718f29d0f8437b5847355ad81478f701cd6dd3",
+  "scone/confound_check.py": "b35133db88ff3b4ecaa60991e45fd116e6b6a51cfd882b3d21446db1cc5eca04",
+  "scone/cost_matched.py": "d06f39fa808fbabd998ef9365e57d48fca5d086e299edb501ca0e9057d13de7f",
+  "scone/delivered_gain.py": "30d1ab3e862f2215042d5e4a60e61ccc60ddacdb6e4b554b4b512a8f247937f3",
+  "scone/equinus_ladder.py": "75d4f55d640cce8dac9bfcaa6b9dab1290db6fb185ee5a1a6def5ebdea42adc5",
+  "scone/fitness_overlap.py": "4776fda9de9ec979f6506be9b92a786b37dadaeaa5aa9126d2fd1a47e7ff0948",
+  "scone/freeze_corpus.py": "cc8347d96845a8283813fb3818fc49dbe2337598b6b44aa92c8963e50bf9a2d7",
+  "scone/gen_conditions.py": "32d206779621e6ac710530340f244cc392183786aba7702a4b41b520875ea6f5",
+  "scone/gen_seeds.py": "79d84c0e9be102c863067cf70b8638a03a0b001a69c7a0eb983787ca55681e92",
+  "scone/grid_2x2x2.py": "7699fc0d6db52e36bc9714e9d40793cb505fb6364f561935ddd7577ed98f8cc0",
+  "scone/kv_dose_response.py": "c98d225787779a038da8c8a363ffb3c1d1049cb1267b9d6787cb60dc42231afe",
+  "scone/kv_screen.py": "09a40b3c84082984f68b1788d2a6062f7d04175a8881c8b5ffd9e06646bac2b7",
+  "scone/kv_zero_test.py": "11df66f0b206d82428ec60ec36af407a68709006c5f3b6967a8824baa287d818",
+  "scone/matched_class1.py": "7dc007f02328f73e8df3d0a491edf72156df18b045ab467e69ffaccea684a832",
+  "scone/mutate.py": "210c64aba2b403aaa5e1c3562e21428ab8c144505808b6d982a5e2e002a5cbf9",
+  "scone/naive_severity_ladder.py": "6c4fa966ba490ab8e3941e64387e3d811729efb58156560850deb8976ab1c6da",
+  "scone/noise_test.py": "d33cdae6efe549900b6a37b0ee6d6f4030aab26eae698c4902d4494ec6ac4947",
+  "scone/parcheck.py": "edaa23e741fbd1d36ba752037f0172be504891849fd5e52071a10fb8132d1f9f",
+  "scone/perturbation_test.py": "606a04691ab4ab8361f31f5387f4b126950ddb7fd7bfa0f9c0e2af5fe11a47da",
+  "scone/reflex_magnitude.py": "89ed54fa78a51f50f3e5d056a17237c936ab1e73a641f69cdd0c10dd7c00f776",
+  "scone/replay_all.py": "408b12aa6e5996ea7cc9baadbfa462d7cf9c956194b87a7160a1983720f6a3bd",
+  "scone/replay_cache.py": "a654b5e8f5cce43cc572dafd7310dccdf5e9afa665e43ac84fcd32e05195cc7c",
+  "scone/replay_final.py": "5acd3663d3dda07532a03ce591d135c70340ecfea4e5b59d3001dc9f3196247e",
+  "scone/seed_spread.py": "0f5afec13816c97a33e1029503c769c2edc8028389c0042375e9075f78f9093d",
+  "scone/slap_noise_test.py": "6c5a56779948d6ccf811a6c97756dc91eb8e6b765a20bb12c75f1530b6b927b6",
+  "scone/spas_gradient.py": "dfc9d407b134ecd44932971d813f4e1807aeb582e3403a6d785df8acfff824ea",
+  "scone/spas_scone.py": "1ca8029df360383a6e78ee6c2656b8a4c35c7534b1b6fbe52b26b76462c15674",
+  "scone/spatiotemporal.py": "6bb44c3e2b075f23d057401dc8c287734c68ef1ee81e70a6c5dbac21a0864938",
+  "scone/stage2_asym.py": "f9359f12a9d07a01b1037c65b6399975b8559556c9365afb3d063f5fec502164",
+  "scone/state_gating.py": "7de676c47070bad5e5b80f7a2d3d8de403dc3f68673a9c8fbc636d1a30171145",
+  "scone/sto_utils.py": "704d46a407e654b77e613bcab25dcc665ef49a7847a38c4b2f9bc553c38c0cba",
+  "scone/swing_cocontraction.py": "b52aa44630c5245c1a19bf1901a14f157506b34afca19b74b4c6b01067dce84f",
+  "scone/task_slope.py": "553c976f9dff7d58a0c82daba015fc92eb6833a9c1342e6dc28c6807cf88b7f4",
+  "scone/tonic_matched_control.py": "7da88b1a001c645b3d9b09b03f18dbe00098d18fe0370b39c59fea4455836cde",
+  "scone/tonic_swap_test.py": "860ebfb9557f85b33e7be53f37a3ef000cc9ebb0e756c9203193f660a49b13a4",
+  "scone/uphill_ladder.py": "e7e8123a51f1f0307664bf927d820b270fbe72a5070e7dd6231cc3c6e58e77cb",
+  "scone/verify_equinus.py": "994e0a73a08dcac7bf6fc933cfd1cc863da46e6074bcab61c36330a4a8e1a2fe",
+  "scone/verify_injection.py": "c7c20f50d8877ec5a7947a844c90701a8e4af64214df960773f5449e2f7fc53d",
+  "scone/verify_placement.py": "8247ade7405aa783b92132a08030a8c9f32a9454288eb97054d6e2d989ef9933",
+  "scone/video_observable.py": "8b033abe05659434b7fb9191acda10558dd57eaccda684467aac1568b11ad694",
+  "scone/waveform_classify.py": "3f31b5fad1322e3e9cf1654fe6f39eb6c72d825027ec8860eb01aa402f3c286f",
+  "paper/ABANDONED_arms.md": "55e8c387145e7097c814688e7dd23d69b3975c8b9d01235c4d0cf3f737a8e52b",
+  "paper/COUNCIL_audit.md": "4b54ca6856e4dcf1ca8c8e7eef6da35249f02b33c86c60d0c37aacb3c968dd00",
+  "paper/COUNCIL_round10.md": "8c9d63f984fffd02556ca87554df345274de7f77f1ce42c8917594de8418c227",
+  "paper/COUNCIL_round11.md": "65a96ff53e8b78f43cbc3b65a03ff3bfb7275545589f02a17bf116848917c077",
+  "paper/COUNCIL_round12.md": "929840246592657dd6bb398b31cbd860c687194796b808c1fbcf6eff8f8df3f8",
+  "paper/COUNCIL_round13.md": "d9a46d2b915841a214ecc6f95c70a35c9537a6a384317ecf2a3ed277dc8a391d",
+  "paper/COUNCIL_round14.md": "7b511fd54e4301cf553566bbf403649747cdcaf09be549babc3b296f81bb6212",
+  "paper/COUNCIL_round15.md": "90d80bbfd87855871f012808d80f4c0818db2d1c2d4e643d218c3d2d5fe72a68",
+  "paper/COUNCIL_round16.md": "d70cacb4b27d2eeaf3e90247750ffaad82a1067764f3f62fec8a98272ba8402b",
+  "paper/COUNCIL_round17.md": "632d9a338f51e3324a76382eba30bd17557813a7dc39d1eac10f3dcebbfc8292",
+  "paper/COUNCIL_round18.md": "473386891df287382acc0df5708d710198a4c17dbe57291d519f83f3f0281130",
+  "paper/COUNCIL_round19.md": "13b9042861f4b5c80747bf384f5fab08392fdf4607f42945ac5c5db744e2451c",
+  "paper/COUNCIL_round2.md": "c768ccdbe62defc483fcfe0ba503df0c8215179b93a1e6e01a77bb388fae0eee",
+  "paper/COUNCIL_round20.md": "9d53783046b1eee75fc7883f74f96dc88951285224560d256a4d76c7fbdfd5d3",
+  "paper/COUNCIL_round21.md": "de215b21733789a8e883d6733b4effb00d3f470933d2b098fef667f03781f11f",
+  "paper/COUNCIL_round22.md": "b7e503677addc54f40fdd6438357a1347ad377ce7e98710f7916e23e956536b3",
+  "paper/COUNCIL_round23.md": "bd3cf3c6d0cb278fcd0763ee1c8822674b690a3ecdfa5b45275765b990c65648",
+  "paper/COUNCIL_round24.md": "80ad08165e7a245b7639357f5240c64fae5f8a9c624d8d86239ac20b28745d97",
+  "paper/COUNCIL_round25.md": "2fc21df948e333055e3b4f0953554a8a8abd24562eeb220d5bc8aa6644d3ea27",
+  "paper/COUNCIL_round26.md": "601db0922c241558b8e5d76e5f8fcc57a43b521efc7ee7c45e177e0098002d1c",
+  "paper/COUNCIL_round27.md": "297e42ab2fbaa25d208283bc30bf7ab0e922620128b3e11c0d061317a8f202b8",
+  "paper/COUNCIL_round28.md": "4a619ec59ab154ea364030b3a6d8a14b05fba6e1a1165573f9d7a6886c36a289",
+  "paper/COUNCIL_round29.md": "5279f2b208c9e295420fa024c0e8d42624d20589e4308e7030d9afe3ed330cc6",
+  "paper/COUNCIL_round30.md": "20896123b53ac621c8825cf40a67fd83675093bade71edc080b3c8d359f1b1f6",
+  "paper/COUNCIL_round31.md": "291cc4bac7640781578dfa0037495096fe8b39d2c3986536d082dd4f541a7dff",
+  "paper/COUNCIL_round33.md": "d418cd93d02689f71fe40a7f90dbca84c2725fed481c4b9dc7dca62bafa23e81",
+  "paper/COUNCIL_round34.md": "f23a1596ab046bb404a41bacd39bb8293710f63d4d6221c0055b28a1517bf0bb",
+  "paper/COUNCIL_round35.md": "71f432e0ed91e3737c1009ad27ecc0b034494d7100a8e9740a2202b711b7a168",
+  "paper/COUNCIL_round36.md": "2e68b2bc5a786aead3364d509196f46d7f6fb2c5dc3c85773b57080a0fac7c20",
+  "paper/COUNCIL_round37.md": "1387dcc648aa2251c8fcebc4fbed061cc23054c5bd8a4547b82358a265d99b60",
+  "paper/COUNCIL_round38.md": "dc00e8e69f32bc156a3d3b913b90c3eaa0715ee6785cd8cb489ba49e0730c0dc",
+  "paper/COUNCIL_round39.md": "1460c44cd429d3fac1daf29c2350707c2a0006d1d927f93e7495e5f26f399c9a",
+  "paper/COUNCIL_round4_scone.md": "27c960c8d7954bea595fe64d8dfa80fdb798e5f8390e11021c9f90fe6e375db3",
+  "paper/COUNCIL_round5_forward.md": "6615fcc38780685c3358b8eb4a4ff921a0ddd3da6e50b74828a328d8c30bb728",
+  "paper/COUNCIL_round6_and_7.md": "7951a73e0718a48e5210733459df66e8a2e3e633593050f971ccbefe41aedff9",
+  "paper/COUNCIL_round8.md": "e7140762fdfd6157b20d0af84f95cbdf348d787aec3ae81a404bebd0e48efb6d",
+  "paper/COUNCIL_round9.md": "9c42d6a3f5a42ec813f3d800c902af5e1be7b3931f98ece118d812a579038c5a",
+  "paper/DEEPRESEARCH_metabolic_cost_novelty.md": "db016788a771591e390e575420cee2bcd6a92038c461e591c251adc55b60a1bb",
+  "paper/DRAFT_2D_level_ground.md": "f521a80a67ba947e418da4cf888e5f5e211518bdf57abd4dc1eae3f86ba9f1e3",
+  "paper/FINDINGS_decisive.md": "df4ec7299f3cb05255be2c5ae36063c2bfb3ed48ec6e9226d9b41104daf11150",
+  "paper/HANDOFF.md": "646f9e3bd4c78611b8090811f264224b518276d0602836cfe2a48b89ba42632b",
+  "paper/KV_RELABELLING_NOTE.md": "da9162d5b123221261366da319d155f67418f0198505d573a8ff43230f2b962b",
+  "paper/LITREVIEW_and_positioning.md": "49f1da9cecc6e50bf9ae8ac1503063eeff5d5628f44b24f4760c84068e36dd6d",
+  "paper/MANUSCRIPT_full.md": "71a1996fa001d0e68cf14e663029d9c78fc80402ffa51d9eae92c75adcbb8cc2",
+  "paper/MANUSCRIPT_skeleton.md": "31da270dafce5c5adb51f7e6c90432f169a70d016d3e24c2d0d8ccb959fbacc5",
+  "paper/METHODS_spasticity.md": "4d32c5105506a27e73b5ac4641aaf18eb1f337abf48299e7c084db84a4b1589e",
+  "paper/PREREGISTRATION_dose_response.md": "fed5153b150827a9988eaea505f1ad0e1d2f9bcd7bd4cdd65ef7ca6f7a19b905",
+  "paper/PREREGISTRATION_dose_response_v2.md": "78eb037dc0124f47b6c97b860a6f2c293cf541ac98cb99050d48838325bdae24",
+  "paper/PREREGISTRATION_slope_velocity_dependence.md": "a0219a37b91f2dd6f0dee05c6aeed7f2d74614dc8dd66ce8a842becccec2a852",
+  "paper/PUBLICATION_PATH.md": "506f2d5e6ab7a3f03b7fe71c57875ab5f116fb63add2ba44ef2a7780cb892565",
+  "paper/REFEREE_methods_contribution.md": "02cc453415b8cb5cebe8ed47d30cd495bf2b508a2deae8d170bdbe6d06ae758b",
+  "paper/RESULTS_draft.md": "074aa26922a61ceeb32772896d3eb955a9b5ee4a3a6ad97017ef3b96e3017c62",
+  "paper/RESULTS_final.md": "6f2e0c4d433ee2220181ec15f196138819abcaed7fe8c620b983d795f9a109f3",
+  "paper/RESULT_coadaptation_refuted.md": "3603e2900302c49faf3b01b50349d53177ed8eaf324347d0fe4f14101cd18e49",
+  "paper/RESULT_equinus_check.md": "ca09e96e6f9833761280f7f38dd24842c4baf6561f1a57efba693352635af595",
+  "paper/RESULT_fitness_is_severity_not_mechanism.md": "506d6d8e94c0231a5351c3711e2095d1c3d64cc7ee978c66a57852ba96751ca4",
+  "paper/RETRACTION_kv_is_2x_and_tonic_void.md": "87b7fa965af8b8e606cf1421d532369d40cd243527592e7904bee7874b2897e9",
+  "paper/SCONE_FINDINGS.md": "0a5a55bd88cb38745c06ae7ba0ab02c1ffe30ae37b0ec95d72adfb35f9a46403",
+  "paper/SCONE_V2_DISCOVERY.md": "f6112a8059e782eb9ab6c90dce45a678034c5147cf06904747cd65dd0936e2dc",
+  "paper/SCONE_V3_MAIN_RESULT.md": "a96e9117bfd7bf4255eff6f4fa20ac50e28254602f4383fe422e519686162ba5",
+  "paper/SCONE_V4_RETRACTION.md": "ca1b59e920e295650e535211f0307884c8ff96191a70781129f8a770e05f1317",
+  "paper/SCONE_V5_DEPTH_MATCHED.md": "4b0e593c48852bde068ca803ba3afdcf1ba477b4758033ffbaf87e809e613183",
+  "paper/SCONE_V6_RETRACTION_AND_VERDICT.md": "33d62e4745b7efe026c1a84c09e2cbb5de51b3913f5bed4467865f7236700514",
+  "paper/STATUS_2026-07-26.md": "9a4e1fb598809e1dcc93a8bca7369ecdcb842b2bb321cb8201f2670207bba729",
+  "paper/_VOID_PREREGISTRATION_dose_response_prelaunch.md": "4b28523c25d3054253e550e299847eb3a1b4a5af8b8f26f2472a0516c04df459",
+  "scone/legs_calibration/legstest/T0NOINJ.scone": "945f498ceb6c69918925b17481cf6599df982ee94f3144fe4fd5f9f125b83779",
+  "scone/legs_calibration/legstest/T1LEGS.scone": "9df092766bfd0ce66c98e2ac984b5e913296ad29c8ba19ffe6b5cde3499c9799",
+  "scone/legs_calibration/legstest/T2BOGUS.scone": "8345ff1ed42ac979d9466b2880e9b1e1e666b7deef4b60e164da657083440c21",
+  "scone/legs_calibration/legstest/T3NONE.scone": "4c409611d5d679113062a7c777c33aecc2d058ecb3343493f8ee9738721ff832",
+  "scone/legs_calibration/legstest/V_banana.scone": "877e717ee881628087e715b051901ae6af7dd39bfdc0166c8fd4af0388948d1f",
+  "scone/legs_calibration/legstest/V_both.scone": "ca93e6e25e3f30a1b167b20c5fb2d14a7f62e5a6a8c229a04f8d40f025632a83",
+  "scone/legs_calibration/legstest/V_left_suffixed.scone": "aa5120a1908d5a849220e4d76e74fe3336f524059af20313c64cb6f6cc4b2e80",
+  "scone/legs_calibration/legstest/V_lr.scone": "5a4b6d2ed01e97191f3ead05a9ed3c69b6230eac35aab1eea60e95c9f59bf313",
+  "scone/legs_calibration/legstest/V_one.scone": "d493d0925ce4130a775eb33bb702d9c945e42835a03c9948fe3df73382d1f33b",
+  "scone/legs_calibration/legstest/V_opposite.scone": "b6030e9f1cdae4b29e969a4ce18c118456a7b51683860de7d267fcb1b0db4223",
+  "scone/legs_calibration/legstest/V_other.scone": "586c22117cb2ca8d879cb6405afd5d062fb69c05654ef9b38dffa07474e3bf76",
+  "scone/legs_calibration/legstest/V_qleft.scone": "0d95e221c0ecf094897afdb6e1094c90cc59e2a74b8e177abbba025381cb0411",
+  "scone/legs_calibration/legstest/V_right.scone": "fe46f9f9413583cca1137e84a21e1a30ef2230bce323878ecf2181f0f9c652c1",
+  "scone/legs_calibration/legstest/V_right_suffixed.scone": "6a3f26e5e5122111c518fc20624f16e6a2bc1803bb7126bae6a04e0c77fe22b9",
+  "scone/legs_calibration/legstest/V_zero.scone": "f9056c778beb652dd2e182416e7d7611a20eccf5d3e562140474905bcbbb629e"
+ }
+}

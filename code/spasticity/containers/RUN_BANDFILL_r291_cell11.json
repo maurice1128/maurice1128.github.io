@@ -1,0 +1,18 @@
+{
+ "cell": 11,
+ "prefix": "R291KV0070_s106",
+ "kind": "spastic",
+ "seed": 106,
+ "kv": 0.07,
+ "f": null,
+ "scale": null,
+ "wall_clock_s": 70.7209997177124,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R291KV0070_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106"
+ ],
+ "result_dir": "R291KV0070_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+ "resolved_par": "0065_85.110_64.784.par",
+ "t_end_s": 8.26,
+ "in_band": false
+}

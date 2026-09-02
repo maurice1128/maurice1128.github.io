@@ -1,0 +1,27 @@
+{
+ "prereg": "PREREG_ladder36_r228.md sha256 ab738d522a4ad937ce2d",
+ "design": "leave-one-SEED-out, 6 spastic vs 36 weak, 4 LmR channels, window [1.00, 9.73]",
+ "confusion": {
+  "TP": 6,
+  "FN": 0,
+  "FP": 0,
+  "TN": 36
+ },
+ "accuracy": 1.0,
+ "majority_baseline": 0.8571428571428571,
+ "channel_per_fold": [
+  "hip_flexion_LmR",
+  "hip_flexion_LmR",
+  "hip_flexion_LmR",
+  "hip_flexion_LmR",
+  "hip_flexion_LmR",
+  "hip_flexion_LmR"
+ ],
+ "hip_chosen_of_6": 6,
+ "permutation_null": {
+  "method": "SAMPLED, 20000 of C(42,6)=5245786 assignments, seed 20228",
+  "assignments_evaluated": 20000,
+  "count_ge_observed": 0,
+  "proportion": 0.0
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "prefix": "R393WK030_s106",
+ "axis": "weakness",
+ "rung": "030",
+ "value": 0.3,
+ "seed": 106,
+ "parent_prefix": "R393WK040_s106",
+ "parent_is_root": false,
+ "status": "PARENT_NOT_RUN",
+ "parent_status": "NO_RESULT_DIR",
+ "cell": 35,
+ "ran": false
+}

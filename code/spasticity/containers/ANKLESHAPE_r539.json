@@ -1,0 +1,64 @@
+{
+ "id": "ANKLESHAPE_r539",
+ "why": "The manuscript certifies the model's knee against normal adult values and never does so for the ankle. A phase-specific ankle readout is only transferable if the model's phase corresponds to the same physiological event in a patient.",
+ "control_ankle_curve_deg": {
+  "0": -0.6558163158567851,
+  "5": 1.1585811743960297,
+  "10": 8.56141364134726,
+  "15": 10.668720708173769,
+  "20": 8.801875815568605,
+  "25": 5.799107525662948,
+  "30": 4.698146815162248,
+  "35": 5.897284493210782,
+  "40": 6.79514728798682,
+  "45": 5.862851563188363,
+  "50": 2.7590369139982642,
+  "55": -1.9189660477755812,
+  "60": -14.635213749771996,
+  "65": -17.461106339588046,
+  "70": -6.5048735572541085,
+  "75": 3.784652471227891,
+  "80": 9.39745665825424,
+  "85": 6.9412468943363335,
+  "90": 1.4788341628859123,
+  "95": -1.3534442936583189,
+  "100": -0.5732585406774874
+ },
+ "toe_off_pct_of_cycle": 59.45731014992197,
+ "landmarks": {
+  "loading-response trough": {
+   "model_pct": 3,
+   "model_deg": -2.244155056812966,
+   "normal_pct": "5-12",
+   "normal_deg": "-3 to -7"
+  },
+  "stance dorsiflexion peak": {
+   "model_pct": 40,
+   "model_deg": 6.79514728798682,
+   "normal_pct": "45-50",
+   "normal_deg": "about +10"
+  },
+  "toe-off plantarflexion": {
+   "model_pct": 63,
+   "model_deg": -19.83306773040846,
+   "normal_pct": "60-62",
+   "normal_deg": "-15 to -20"
+  },
+  "swing dorsiflexion peak": {
+   "model_pct": 81,
+   "model_deg": 9.476514024178556,
+   "normal_pct": "70-100",
+   "normal_deg": "0 to +5"
+  }
+ },
+ "landmark_phase_correct": {
+  "loading-response trough": false,
+  "stance dorsiflexion peak": false,
+  "toe-off plantarflexion": false,
+  "swing dorsiflexion peak": true
+ },
+ "loading_response_wave_present": true,
+ "knee_contact_deg": -7.849999258121555,
+ "knee_peak_flexion_deg": -64.44031990228669,
+ "n_cycles_pooled": 30
+}

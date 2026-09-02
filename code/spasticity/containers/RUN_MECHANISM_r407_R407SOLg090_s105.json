@@ -1,0 +1,11 @@
+{
+ "prefix": "R407SOLg090_s105",
+ "arm": "SOL",
+ "kv": 0.09,
+ "seed": 105,
+ "rung_index": 2,
+ "status": "BROKEN_PARENT",
+ "gate_G": false,
+ "parent_prefix": "R407SOLg070_s105",
+ "note": "parent failed Gate G; this seed's chain in this arm is BROKEN and no substitute parent is used"
+}

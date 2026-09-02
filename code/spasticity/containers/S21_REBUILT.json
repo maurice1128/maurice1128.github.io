@@ -1,0 +1,109 @@
+{
+ "measure_note": "SCONE sign; negative = plantarflexed = more equinus",
+ "cells": {
+  "ank_stance_mean": {
+   "healthy_0.000": {
+    "mean": -0.9471720253975369,
+    "sd": 0.8713209841429715,
+    "n": 8
+   },
+   "control_0.000": {
+    "mean": -0.1294031027874653,
+    "sd": null,
+    "n": 1
+   },
+   "kv_0.050": {
+    "mean": -1.0892260237018856,
+    "sd": null,
+    "n": 1
+   },
+   "kv_0.071": {
+    "mean": -1.2349596960646778,
+    "sd": null,
+    "n": 1
+   },
+   "kv_0.100": {
+    "mean": -2.5587955054124913,
+    "sd": 3.920496795884515,
+    "n": 5
+   },
+   "kv_0.200": {
+    "mean": -6.841985042356658,
+    "sd": 6.57700977979616,
+    "n": 4
+   }
+  },
+  "ank_mean": {
+   "healthy_0.000": {
+    "mean": -1.0349284953238889,
+    "sd": 0.6629430090927092,
+    "n": 8
+   },
+   "control_0.000": {
+    "mean": -0.451823035365546,
+    "sd": null,
+    "n": 1
+   },
+   "kv_0.050": {
+    "mean": -0.5481994793475857,
+    "sd": null,
+    "n": 1
+   },
+   "kv_0.071": {
+    "mean": -1.8355864002516165,
+    "sd": null,
+    "n": 1
+   },
+   "kv_0.100": {
+    "mean": -3.290332975528062,
+    "sd": 3.980397640145651,
+    "n": 5
+   },
+   "kv_0.200": {
+    "mean": -7.968652748339335,
+    "sd": 6.116930111430636,
+    "n": 4
+   }
+  }
+ },
+ "excluded": {
+  "BSPAS005_s1": "E6 -- delivered_gain ABSTAIN, side unresolvable (symmetric=0, side-free target)",
+  "BSPAS005_s2": "E6 -- delivered_gain ABSTAIN, side unresolvable (same config form as its three B* siblings). NOTE: the earlier 'E5_SELECTION, 0.780 tie at gen 93/96' reason is WITHDRAWN -- history.txt gives 0.779924 vs 0.779612, not a tie; gen 96 is the best. E5 was never the operative exclusion.",
+  "BSPAS01_s1": "E6 -- delivered_gain ABSTAIN, side unresolvable (symmetric=0, side-free target)",
+  "BSPAS01_s2": "E6 -- delivered_gain ABSTAIN, side unresolvable (symmetric=0, side-free target)"
+ },
+ "membership": {
+  "healthy_0.000": [
+   "HEALTHY_s1",
+   "HEALTHY_s2",
+   "HEALTHY_s3",
+   "HEALTHY_s4",
+   "DHEALTHY_s1",
+   "DHEALTHY_s2",
+   "DHEALTHY_s3",
+   "HEALTHY"
+  ],
+  "control_0.000": [
+   "DOSER0000_s1"
+  ],
+  "kv_0.050": [
+   "DOSER1050_s1"
+  ],
+  "kv_0.071": [
+   "DOSER2071_s1"
+  ],
+  "kv_0.100": [
+   "DOSER3100_s1",
+   "SPAS005",
+   "SPAS005_s2",
+   "SPAS005_s3",
+   "SPAS005_s4"
+  ],
+  "kv_0.200": [
+   "SPAS01",
+   "SPAS01_s2",
+   "SPAS01_s3",
+   "SPAS01_s4"
+  ]
+ }
+}

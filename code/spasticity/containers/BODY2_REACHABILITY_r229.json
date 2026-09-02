@@ -1,0 +1,459 @@
+{
+ "rev": 7,
+ "n_configurations": 18144,
+ "delta_3d_hl": 2.5854118899593352,
+ "delta_equiv": 0.65,
+ "alpha_per_direction": 0.025,
+ "rule": "every outcome named in the registration must appear with a witness; any without one is deleted or fixed before hashing",
+ "counts": {
+  "A": 72,
+  "A-HIP-ONLY": 60,
+  "B-reversed-ANKLE": 444,
+  "A-MIXED": 308,
+  "B-reversed": 120,
+  "B-reversed-BOTH": 60,
+  "ATTENUATED-reversed": 102,
+  "D4": 56,
+  "A-ANKLE-ONLY": 76,
+  "EQUIV": 76,
+  "ATTENUATED": 60,
+  "CONSISTENT-WITH-3D": 48,
+  "D5": 30,
+  "C": 1512,
+  "F": 4536,
+  "E": 1512,
+  "D2": 9072,
+  "D1": 2
+ },
+ "reachable": [
+  "A",
+  "A-ANKLE-ONLY",
+  "A-HIP-ONLY",
+  "A-MIXED",
+  "ATTENUATED",
+  "ATTENUATED-reversed",
+  "B-reversed",
+  "B-reversed-ANKLE",
+  "B-reversed-BOTH",
+  "C",
+  "CONSISTENT-WITH-3D",
+  "D1",
+  "D2",
+  "D4",
+  "D5",
+  "E",
+  "EQUIV",
+  "F"
+ ],
+ "declared": [
+  "A",
+  "A-HIP-ONLY",
+  "A-ANKLE-ONLY",
+  "A-MIXED",
+  "B-reversed",
+  "B-reversed-ANKLE",
+  "B-reversed-BOTH",
+  "EQUIV",
+  "ATTENUATED",
+  "ATTENUATED-reversed",
+  "CONSISTENT-WITH-3D",
+  "C",
+  "E",
+  "F",
+  "D1",
+  "D2",
+  "D4",
+  "D5"
+ ],
+ "MISSING_no_witness": [],
+ "UNDECLARED_but_reachable": [],
+ "witnesses": {
+  "A": {
+   "witness": {
+    "other_gap": 1.2,
+    "ankle_sep": true,
+    "meets_n": true,
+    "planes_agree": true,
+    "gbrate": [
+     0.0,
+     0.0
+    ],
+    "partial": false,
+    "p_fwd": 0.005,
+    "p_rev": 0.995,
+    "smd": 1.0,
+    "ci_centre": 0.0,
+    "ci_halfwidth95": 0.08
+   },
+   "reason": "both hip_flexion_LmR (p 0.00500) and ankle_angle_LmR (p 0.00500) separate in the predicted direction: this is what the 3D data shows at the only shared severity"
+  },
+  "A-HIP-ONLY": {
+   "witness": {
+    "other_gap": 1.2,
+    "ankle_sep": false,
+    "meets_n": true,
+    "planes_agree": true,
+    "gbrate": [
+     0.0,
+     0.0
+    ],
+    "partial": false,
+    "p_fwd": 0.005,
+    "p_rev": 0.995,
+    "smd": 1.0,
+    "ci_centre": 0.0,
+    "ci_halfwidth95": 0.08
+   },
+   "reason": "hip_flexion_LmR separates (p 0.00500) and ankle_angle_LmR is BOUNDED below 0.65 deg (HL 90% CI [-0.067, 0.067]): the 2D body separates more specifically than 3D does here"
+  },
+  "B-reversed-ANKLE": {
+   "witness": {
+    "other_gap": 1.2,
+    "ankle_sep": "rev",
+    "meets_n": true,
+    "planes_agree": true,
+    "gbrate": [
+     0.0,
+     0.0
+    ],
+    "partial": false,
+    "p_fwd": 0.005,
+    "p_rev": 0.995,
+    "smd": 1.0,
+    "ci_centre": 0.0,
+    "ci_halfwidth95": 0.08
+   },
+   "reason": "ankle_angle_LmR separates in the OPPOSITE direction (p 0.00500): a positive reversed finding on the site channel"
+  },
+  "A-MIXED": {
+   "witness": {
+    "other_gap": 1.2,
+    "ankle_sep": false,
+    "meets_n": true,
+    "planes_agree": true,
+    "gbrate": [
+     0.0,
+     0.0
+    ],
+    "partial": false,
+    "p_fwd": 0.005,
+    "p_rev": 0.995,
+    "smd": 1.0,
+    "ci_centre": 0.0,
+    "ci_halfwidth95": 1.2
+   },
+   "reason": "one channel separates and the other is neither significant nor bounded below 0.65 deg: no claim may be made about the quiet channel"
+  },
+  "B-reversed": {
+   "witness": {
+    "other_gap": 1.2,
+    "ankle_sep": true,
+    "meets_n": true,
+    "planes_agree": true,
+    "gbrate": [
+     0.0,
+     0.0
+    ],
+    "partial": false,
+    "p_fwd": 0.995,
+    "p_rev": 0.005,
+    "smd": -1.0,
+    "ci_centre": -3.2,
+    "ci_halfwidth95": 0.08
+   },
+   "reason": "hip_flexion_LmR separates in the OPPOSITE direction (p 0.00500): a positive reversed finding"
+  },
+  "B-reversed-BOTH": {
+   "witness": {
+    "other_gap": 1.2,
+    "ankle_sep": "rev",
+    "meets_n": true,
+    "planes_agree": true,
+    "gbrate": [
+     0.0,
+     0.0
+    ],
+    "partial": false,
+    "p_fwd": 0.995,
+    "p_rev": 0.005,
+    "smd": -1.0,
+    "ci_centre": -3.2,
+    "ci_halfwidth95": 0.08
+   },
+   "reason": "both hip_flexion_LmR (p 0.00500) and ankle_angle_LmR (p 0.00500) separate in the OPPOSITE direction: a positive reversed finding on both channels"
+  },
+  "ATTENUATED-reversed": {
+   "witness": {
+    "other_gap": 1.2,
+    "ankle_sep": false,
+    "meets_n": true,
+    "planes_agree": true,
+    "gbrate": [
+     0.0,
+     0.0
+    ],
+    "partial": false,
+    "p_fwd": 0.4,
+    "p_rev": 0.6,
+    "smd": 0.0,
+    "ci_centre": -3.2,
+    "ci_halfwidth95": 0.08
+   },
+   "reason": "HL 95% CI [-3.280, -3.120] lies entirely BELOW zero: the 2D effect runs opposite to the 3D one, with the SMD test non-significant"
+  },
+  "D4": {
+   "witness": {
+    "other_gap": 1.2,
+    "ankle_sep": false,
+    "meets_n": true,
+    "planes_agree": true,
+    "gbrate": [
+     0.0,
+     0.0
+    ],
+    "partial": false,
+    "p_fwd": 0.4,
+    "p_rev": 0.6,
+    "smd": 0.0,
+    "ci_centre": -0.9,
+    "ci_halfwidth95": 1.2
+   },
+   "reason": "neither channel separates, the interval spans zero and at least one channel is not bounded below 0.65 deg: uninformative"
+  },
+  "A-ANKLE-ONLY": {
+   "witness": {
+    "other_gap": 1.2,
+    "ankle_sep": true,
+    "meets_n": true,
+    "planes_agree": true,
+    "gbrate": [
+     0.0,
+     0.0
+    ],
+    "partial": false,
+    "p_fwd": 0.4,
+    "p_rev": 0.6,
+    "smd": 0.0,
+    "ci_centre": -0.3,
+    "ci_halfwidth95": 0.08
+   },
+   "reason": "ankle_angle_LmR separates (p 0.00500) and hip_flexion_LmR is BOUNDED below 0.65 deg (HL 90% CI [-0.367, -0.233]): the site channel transfers and the compensation channel is bounded"
+  },
+  "EQUIV": {
+   "witness": {
+    "other_gap": 1.2,
+    "ankle_sep": false,
+    "meets_n": true,
+    "planes_agree": true,
+    "gbrate": [
+     0.0,
+     0.0
+    ],
+    "partial": false,
+    "p_fwd": 0.4,
+    "p_rev": 0.6,
+    "smd": 0.0,
+    "ci_centre": -0.3,
+    "ci_halfwidth95": 0.08
+   },
+   "reason": "neither channel separates and both are BOUNDED below 0.65 deg (hip HL 90% CI [-0.367, -0.233]): the effect does not transfer at a magnitude this design can detect"
+  },
+  "ATTENUATED": {
+   "witness": {
+    "other_gap": 1.2,
+    "ankle_sep": false,
+    "meets_n": true,
+    "planes_agree": true,
+    "gbrate": [
+     0.0,
+     0.0
+    ],
+    "partial": false,
+    "p_fwd": 0.4,
+    "p_rev": 0.6,
+    "smd": 0.0,
+    "ci_centre": 0.9,
+    "ci_halfwidth95": 0.08
+   },
+   "reason": "HL 95% CI [+0.820, +0.980] is positive and bounded above by the 3D shift +2.585: the 2D effect is SMALLER than the 3D one, and is not absent"
+  },
+  "CONSISTENT-WITH-3D": {
+   "witness": {
+    "other_gap": 1.2,
+    "ankle_sep": false,
+    "meets_n": true,
+    "planes_agree": true,
+    "gbrate": [
+     0.0,
+     0.0
+    ],
+    "partial": false,
+    "p_fwd": 0.4,
+    "p_rev": 0.6,
+    "smd": 0.0,
+    "ci_centre": 1.6,
+    "ci_halfwidth95": 1.2
+   },
+   "reason": "HL 95% CI [+0.400, +2.800] is wholly positive and reaches or exceeds the 3D shift +2.585: the interval is consistent with a 3D-sized effect"
+  },
+  "D5": {
+   "witness": {
+    "other_gap": 1.2,
+    "ankle_sep": false,
+    "meets_n": true,
+    "planes_agree": true,
+    "gbrate": [
+     0.0,
+     0.0
+    ],
+    "partial": false,
+    "p_fwd": 0.4,
+    "p_rev": 0.6,
+    "smd": 0.0,
+    "ci_centre": 3.4,
+    "ci_halfwidth95": 0.08
+   },
+   "reason": "HL 95% CI [+3.320, +3.480] lies ENTIRELY ABOVE the 3D shift +2.585 while the SMD test is non-significant: internally inconsistent, to be investigated rather than reported"
+  },
+  "C": {
+   "witness": {
+    "other_gap": 1.2,
+    "ankle_sep": true,
+    "meets_n": true,
+    "planes_agree": true,
+    "gbrate": [
+     0.0,
+     0.0
+    ],
+    "partial": true,
+    "p_fwd": 0.005,
+    "p_rev": 0.995,
+    "smd": 1.0,
+    "ci_centre": 0.0,
+    "ci_halfwidth95": 0.08
+   },
+   "reason": "primary pair relative dose difference exceeds 25 percent"
+  },
+  "F": {
+   "witness": {
+    "other_gap": 1.2,
+    "ankle_sep": true,
+    "meets_n": true,
+    "planes_agree": true,
+    "gbrate": [
+     0.0,
+     0.9
+    ],
+    "partial": false,
+    "p_fwd": 0.005,
+    "p_rev": 0.995,
+    "smd": 1.0,
+    "ci_centre": 0.0,
+    "ci_halfwidth95": 0.08
+   },
+   "reason": "Gate B exclusion rates 0.00 vs 0.90 differ by more than 0.20: null is VOID: no substantive rung may be claimed"
+  },
+  "E": {
+   "witness": {
+    "other_gap": 1.2,
+    "ankle_sep": true,
+    "meets_n": true,
+    "planes_agree": false,
+    "gbrate": [
+     0.0,
+     0.0
+    ],
+    "partial": false,
+    "p_fwd": 0.005,
+    "p_rev": 0.995,
+    "smd": 1.0,
+    "ci_centre": 0.0,
+    "ci_halfwidth95": 0.08
+   },
+   "reason": "SG0 and SG2 disagree in SMD sign on the primary channel for the same pair, and the SG2 comparison is large enough and significant enough to support the disagreement"
+  },
+  "D2": {
+   "witness": {
+    "other_gap": 1.2,
+    "ankle_sep": true,
+    "meets_n": false,
+    "planes_agree": true,
+    "gbrate": [
+     0.0,
+     0.0
+    ],
+    "partial": false,
+    "p_fwd": 0.005,
+    "p_rev": 0.995,
+    "smd": 1.0,
+    "ci_centre": 0.0,
+    "ci_halfwidth95": 0.08
+   },
+   "reason": "n < 5 per arm after Gate B"
+  },
+  "D1": {
+   "witness": {
+    "degenerate": "primary=None"
+   },
+   "reason": "no primary comparison object could be formed"
+  }
+ },
+ "decide_source": "body2_channels_r229.py (imported, not re-implemented)",
+ "channels_sha256": "efc12b026c3670a715aedb7dfa6eb8d2b3b000f1b5e0d04c4067100698c3a0aa",
+ "script_sha256": "5c988f3ef77bbff3b2d77d4ac20c55b3161049602cd74c839320621852422d40",
+ "prose_ladder_order": [
+  "D1",
+  "D2",
+  "F",
+  "E",
+  "C",
+  "B-reversed-BOTH",
+  "B-reversed",
+  "B-reversed-ANKLE",
+  "A",
+  "A-HIP-ONLY",
+  "A-ANKLE-ONLY",
+  "A-MIXED",
+  "EQUIV",
+  "D5",
+  "ATTENUATED-reversed",
+  "ATTENUATED",
+  "CONSISTENT-WITH-3D",
+  "D4"
+ ],
+ "code_ladder_order": [
+  "D1",
+  "D2",
+  "F",
+  "E",
+  "C",
+  "B-reversed-BOTH",
+  "B-reversed",
+  "B-reversed-ANKLE",
+  "A",
+  "A-HIP-ONLY",
+  "A-ANKLE-ONLY",
+  "A-MIXED",
+  "EQUIV",
+  "D5",
+  "ATTENUATED-reversed",
+  "ATTENUATED",
+  "CONSISTENT-WITH-3D",
+  "D4"
+ ],
+ "prose_matches_code_ladder": true,
+ "prose_ladder_note": "match",
+ "attainable_halfwidth_lo": 0.05999548661314981,
+ "attainable_halfwidth_hi": 1.8985263689177247,
+ "attainability_sigmas": [
+  0.1097,
+  0.1757,
+  0.4309,
+  0.5276
+ ],
+ "attainability_n": 16,
+ "attainability_caveat": "the 2D LESION-arm sigma has never been measured; 0.5276 transports a 3.0x inflation ratio from the 3D body. If the true sigma exceeds it, rungs the gate certifies may be unreachable in fact",
+ "message_truth_violations": [],
+ "n_message_truth_violations": 0,
+ "GATE_PASSES": true
+}

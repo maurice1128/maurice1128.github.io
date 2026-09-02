@@ -1,0 +1,60 @@
+{
+ "id": "SWINGSPEC_r529",
+ "why": "r526's additive model returned a weakness coefficient near zero, which reads as immunity. The weakness effect changes sign across the gain range, so an additive model averages it to nothing. The near-zero coefficient is an artefact of the model. This recomputes the specificity without assuming additivity.",
+ "CORRECTION": "the 32.5:1 specificity ratio in MIXEDSWING_r526 must not be quoted. It divides the gain span by an additive weakness span that is near zero only because the effect reverses sign. The defensible figure is the worst-case ratio in (a).",
+ "weakness_excursion_by_gain_deg": {
+  "0.025": 1.2011557245297544,
+  "0.05": 0.19118802665701295,
+  "0.1": 1.4492787582748479,
+  "0.22": 0.7526448081351862
+ },
+ "gain_steps_deg": [
+  {
+   "from": 0.025,
+   "to": 0.05,
+   "step_deg": 1.6029638244938251
+  },
+  {
+   "from": 0.05,
+   "to": 0.1,
+   "step_deg": 2.639002972115601
+  },
+  {
+   "from": 0.1,
+   "to": 0.22,
+   "step_deg": 3.7479925449741174
+  }
+ ],
+ "worst_case_specificity": {
+  "largest_weakness_excursion_deg": 1.4492787582748479,
+  "smallest_gain_step_deg": 1.6029638244938251,
+  "ratio": 1.1060424472114092
+ },
+ "interaction_model": {
+  "coefficients": {
+   "intercept": 6.928575865276183,
+   "gain": -25.591918404818013,
+   "weakness": 1.1112607620929096,
+   "gain_x_weakness": -18.31549147840292
+  },
+  "SE": {
+   "intercept": 1.440992214237287,
+   "gain": 11.618921533520652,
+   "weakness": 1.826383421958266,
+   "gain_x_weakness": 14.726384681466188
+  },
+  "R2": 0.9654800097461048,
+  "weakness_slope_by_gain": {
+   "0.025": 0.6533734751328366,
+   "0.05": 0.19548618817276364,
+   "0.1": -0.7202883857473823,
+   "0.22": -2.9181473631557324
+  },
+  "slope_changes_sign": true
+ },
+ "ordering": {
+  "monotone_in_gain_at_every_weakness_level": true,
+  "adjacent_gain_inversions_caused_by_weakness": 0,
+  "inversions": []
+ }
+}

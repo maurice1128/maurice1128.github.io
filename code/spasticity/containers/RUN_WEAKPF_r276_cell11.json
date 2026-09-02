@@ -1,0 +1,24 @@
+{
+ "cell": 11,
+ "prefix": "R276WPF010_s106",
+ "f": 0.1,
+ "scale": 0.9,
+ "seed": 106,
+ "wall_clock_s": 214.78198671340942,
+ "returncode": 0,
+ "new_result_dirs": [
+  "R276WPF010_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106 (1)"
+ ],
+ "stdout_tail": "17:14:53 SCONE version 2.4.4.3333\n17:14:53 Successfully initialized OpenSim-3.3-2021-01-28\n17:14:53 Successfully initialized OpenSim-4.4\n17:14:53 Successfully initialized Hyfydy-1.12.6.1412\n17:14:53 Successfully initialized Hyfydy-1.12.6.1412-DBL\n",
+ "stderr_tail": "",
+ "status": "OK",
+ "result_dir": "R276WPF010_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106 (1)",
+ "terminal_objective": 62.6459,
+ "objective_gen0": 89.1169,
+ "descent_final_10_gens": 0.0,
+ "terminal_fitness_progress": 0.000291968,
+ "n_generations": 90,
+ "resolved_par": "0061_79.757_62.646.par",
+ "tie_break": "unique minimum",
+ "tied_files": []
+}

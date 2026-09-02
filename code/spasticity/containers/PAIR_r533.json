@@ -1,0 +1,122 @@
+{
+ "id": "PAIR_r533",
+ "why": "Neither single angle apportions: the knee confounds the two lesions, the ankle swing peak is silent about weakness. Their failures are complementary, so this asks whether the pair recovers both lesion magnitudes on the grid where both are known.",
+ "n_cells": 74,
+ "grid": "R424W<weakness><archived gain>, delivered gain = 2x label",
+ "results": {
+  "knee at contact alone": {
+   "kv": {
+    "loo": {
+     "R2": 0.9138332997385853,
+     "RMSE": 0.0188765444767278,
+     "n": 74
+    },
+    "logo": {
+     "R2": 0.8209237861457879,
+     "RMSE": 0.027212705174878237,
+     "n": 74
+    }
+   },
+   "weak": {
+    "loo": {
+     "R2": -0.040422898849233224,
+     "RMSE": 0.14079195355196325,
+     "n": 74
+    },
+    "logo": {
+     "R2": -0.7231792108388606,
+     "RMSE": 0.1811916196837255,
+     "n": 74
+    }
+   }
+  },
+  "peak swing dorsiflexion alone": {
+   "kv": {
+    "loo": {
+     "R2": 0.9415888495160301,
+     "RMSE": 0.015541775983549003,
+     "n": 74
+    },
+    "logo": {
+     "R2": 0.7620933287559161,
+     "RMSE": 0.031365778765214146,
+     "n": 74
+    }
+   },
+   "weak": {
+    "loo": {
+     "R2": -0.05371336104263413,
+     "RMSE": 0.1416883449675052,
+     "n": 74
+    },
+    "logo": {
+     "R2": -0.743570234057459,
+     "RMSE": 0.18226052086274672,
+     "n": 74
+    }
+   }
+  },
+  "both angles": {
+   "kv": {
+    "loo": {
+     "R2": 0.9504146312523066,
+     "RMSE": 0.01431955554130975,
+     "n": 74
+    },
+    "logo": {
+     "R2": 0.7740026044447822,
+     "RMSE": 0.030570636548698786,
+     "n": 74
+    }
+   },
+   "weak": {
+    "loo": {
+     "R2": 0.051546114419417144,
+     "RMSE": 0.1344252936917623,
+     "n": 74
+    },
+    "logo": {
+     "R2": -0.6207403808353649,
+     "RMSE": 0.17572340512353274,
+     "n": 74
+    }
+   }
+  },
+  "both angles + their product": {
+   "kv": {
+    "loo": {
+     "R2": 0.9774176459943402,
+     "RMSE": 0.009663564957194818,
+     "n": 74
+    },
+    "logo": {
+     "R2": 0.6399840380603408,
+     "RMSE": 0.03858456806159743,
+     "n": 74
+    }
+   },
+   "weak": {
+    "loo": {
+     "R2": 0.06275710440156979,
+     "RMSE": 0.1336284597230389,
+     "n": 74
+    },
+    "logo": {
+     "R2": -0.6538387884483379,
+     "RMSE": 0.17750862940515633,
+     "n": 74
+    }
+   }
+  }
+ },
+ "decomposition": {
+  "step1_ankle_to_gain_R2": 0.9455377060560193,
+  "step2_knee_residual_vs_weakness_r": -0.3597840216436124,
+  "step2_R2": 0.12944454223005136
+ },
+ "CAVEATS": [
+  "the grid has four weakness levels and four gains; leave-one-level-out is reported because a model fitted and tested on the same levels would flatter itself",
+  "the weakness scalings run x0.60 to x1.00, a 40 per cent force reduction at the deepest. Clinical drop foot is more severe than anything in this range",
+  "both angles come from the same recording and share its errors, so their measurement errors are not independent; this analysis uses noise-free simulation values and says nothing about how the pair behaves under motion-capture error. That is SWINGMOCAP_r531's question"
+ ]
+}

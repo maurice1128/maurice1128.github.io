@@ -1,0 +1,26 @@
+{
+ "what": "t_end only for r289 cells landed so far; endpoint deliberately not computed",
+ "endpoint_not_read": "knee_angle_LmR was not requested from any file by this script",
+ "forbidden_substrings_never_requested": [
+  "knee",
+  "hip",
+  "ankle",
+  "pelvis",
+  "lumbar"
+ ],
+ "n_cells": 1,
+ "n_complete_20": 1,
+ "cells": [
+  {
+   "cell": 0,
+   "kv": 0.0125,
+   "seed": 101,
+   "result_dir": "R289KV0125_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+   "t_end_s": 20.0,
+   "cycles_after_settle": 15,
+   "wall_clock_s": 419.52956533432007,
+   "completes_20": true
+  }
+ ],
+ "note": "PREREG_matched20_r289.md admits only cells with t_end = 20.000 s"
+}

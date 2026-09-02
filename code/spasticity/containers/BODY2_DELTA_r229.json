@@ -1,0 +1,68 @@
+{
+ "rev": 6,
+ "n_per_arm": 16,
+ "n_sim": 500,
+ "b_bootstrap": 800,
+ "seed": 229229,
+ "delta_3d_hl_deg": 2.5854,
+ "variance_prior_source": "LADDER36_r228.json per-arm within-arm SD",
+ "per_arm_sd_3d_deg": {
+  "C": 0.15747338278311124,
+  "S": 0.586625148837554,
+  "W800": 0.25612418267985093,
+  "W870": 0.3611351330830911,
+  "W892": 0.17032091914026373,
+  "W900": 0.2777036293978265,
+  "W915": 0.3937425457917527,
+  "W950": 0.3579031926741047
+ },
+ "pooled_lesioned_arm_sd_3d_deg": 0.3643788561216086,
+ "effective_spastic_vs_weak_sd_3d_deg": 0.4728750215693256,
+ "effective_over_pooled_ratio": 1.2977564796227015,
+ "registered_delta_equiv_deg": 0.65,
+ "n_per_arm_caveat": "n = 16 is the PRE-Gate-B count. No .par.sto exists yet, so the post-gate arm size is unmeasured and may be smaller; every power figure here assumes zero attrition.",
+ "method": "TOST at alpha=0.05 concludes equivalence within +/-delta when the 90 percent bootstrap CI lies inside (-delta,+delta); delta reported at 80 percent power under a TRUE ZERO effect",
+ "scenarios": [
+  {
+   "scenario": "pooled lesioned-arm SD (rev 6 case, understated)",
+   "sigma_deg": 0.3643788561216086,
+   "median_90pct_CI_halfwidth_deg": 0.21789549911226005,
+   "delta_for_80pct_power_deg": 0.3816747282623124,
+   "delta_as_fraction_of_delta3d": 0.14762695453790997,
+   "rev5_rung9_fires_on_true_zero": 1.0,
+   "rev5_rung9_fires_on_quarter_magnitude_real_effect": 1.0,
+   "equiv_power_at_delta_0.65": 0.998
+  },
+  {
+   "scenario": "CENTRAL: spastic-vs-weak effective SD",
+   "sigma_deg": 0.4728750215693256,
+   "median_90pct_CI_halfwidth_deg": 0.27976049672369463,
+   "delta_for_80pct_power_deg": 0.5319599590897968,
+   "delta_as_fraction_of_delta3d": 0.20575537985990439,
+   "rev5_rung9_fires_on_true_zero": 1.0,
+   "rev5_rung9_fires_on_quarter_magnitude_real_effect": 1.0,
+   "equiv_power_at_delta_0.65": 0.97
+  },
+  {
+   "scenario": "1.5x pooled",
+   "sigma_deg": 0.5465682841824129,
+   "median_90pct_CI_halfwidth_deg": 0.3237704064352917,
+   "delta_for_80pct_power_deg": 0.5888654994154305,
+   "delta_as_fraction_of_delta3d": 0.22776572267944248,
+   "rev5_rung9_fires_on_true_zero": 1.0,
+   "rev5_rung9_fires_on_quarter_magnitude_real_effect": 1.0,
+   "equiv_power_at_delta_0.65": 0.88
+  },
+  {
+   "scenario": "2x pooled",
+   "sigma_deg": 0.7287577122432172,
+   "median_90pct_CI_halfwidth_deg": 0.4382844701654264,
+   "delta_for_80pct_power_deg": 0.7979908787318758,
+   "delta_as_fraction_of_delta3d": 0.3086527727747644,
+   "rev5_rung9_fires_on_true_zero": 1.0,
+   "rev5_rung9_fires_on_quarter_magnitude_real_effect": 1.0,
+   "equiv_power_at_delta_0.65": 0.532
+  }
+ ],
+ "script_sha256": "7bb049b99b872d921a070c6487b29b777a42abfdd672bb62f43c758af375ae76"
+}

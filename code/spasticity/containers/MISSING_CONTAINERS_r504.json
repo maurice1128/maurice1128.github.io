@@ -1,0 +1,52 @@
+{
+ "id": "MISSING_CONTAINERS_r504",
+ "why": "A cold verification pass found these three quantities in the manuscript text and in no deposit. They are recomputed here from the archived .sto under the same Gate G.",
+ "n_cells": {
+  "hyperreflexia": 23,
+  "weakness": 36,
+  "control": 6
+ },
+ "speed_control": {
+  "definition": "pelvis forward translation over the analysed window divided by its duration",
+  "mean_speed_mps": {
+   "hyperreflexia": 0.9880920313629034,
+   "weakness": 1.040934469864923,
+   "control": 1.0319945927877399
+  },
+  "sd_mps": {
+   "hyperreflexia": 0.024353698476825465,
+   "weakness": 0.004714939787680209,
+   "control": 0.0033367324169736932
+  },
+  "arm_gap_mps": -0.05284243850201964,
+  "within_dose_slope_deg_per_mps": 4.906642745625471,
+  "propagated_deg": -0.2592789675370948,
+  "as_fraction_of_knee_effect": 0.04910679511678153,
+  "CAVEAT": "walking speed is a consequence of the lesion, not a variable independent of it, so this adjusts a mediator. It is an indication of scale, not a bound."
+ },
+ "per_cycle_knee_difference_deg": {
+  "by_cycle_index": [
+   -5.016030644116963,
+   -5.756910155588697,
+   -5.177834825033325,
+   -5.159441156784371,
+   -5.134398673151498
+  ],
+  "sign_constant": true,
+  "spread": 0.7408795114717339,
+  "first_to_last_drift": -0.11836802903453503
+ },
+ "peak_swing_dorsiflexion_deg": {
+  "definition": "mean over kept cycles of the maximum ankle angle during the swing span",
+  "control": 9.55516367333586,
+  "weakness": 9.125145691281547,
+  "hyperreflexia": 0.39396067313421496,
+  "sd": {
+   "weakness": 0.21157190116199365,
+   "hyperreflexia": 1.5619729080183897
+  },
+  "hyper_minus_weak": -8.731185018147332,
+  "cohens_d": -7.833696878112664,
+  "weakness_displacement_from_control": -0.43001798205431285
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "round": 319,
+ "status": "RECORD ONLY. Nothing was re-attested, no sidecar regenerated, and BODY2_HASHES_r229.json was not touched. Re-hashing would certify the current state and destroy the only evidence of the divergence -- the r280 and r308 lesson, twice over.",
+ "why_a_separate_file": "The evidence is a digest and a byte count held in the attesting files. Editing them to explain the problem is what destroys the problem.",
+ "DEFECT_5_SIDECAR_FALSE": {
+  "file": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\paper\\RESULTS_3d_r214.md.sha256",
+  "attests": {
+   "sha256": "9505a3c70223a5df9f7609343bd629a77d1aebfb1d06725f3f7e9fe4ebaf3fa3",
+   "bytes": 51268,
+   "written": "2026-08-17T05:47:49",
+   "scope": "baseline forward only: attests this file is unchanged since the timestamp below"
+  },
+  "actual": {
+   "sha256": "e5d525a34195bc06ee6714f2c1e87aae385f61975db2b56287e04760d72d51dd",
+   "bytes": 123167
+  },
+  "FALSIFIABLE_WITHOUT_HASHING": "The sidecar declares '# bytes : 51268'. The file it names is 123167 B. The attestation is therefore refuted by comparing two integers, with no cryptography and no recomputation of any digest. A one-line check would have caught it.",
+  "bytes_delta": 71899,
+  "hours_wrong_unnoticed": 23.4,
+  "nobody_checked": "The sidecar has been false for approximately 23.4 hours, across three audit rounds and every repair round, and no check in the corpus compared its declared byte count against the file. The cheapest possible test of this artefact was never run.",
+  "growth_is_expected_silence_is_not": "The manuscript's growth from 51,268 B is expected and uncontroversial -- it is an actively edited document. What is not acceptable is an attestation that continues to assert the file is UNCHANGED while it changes. The defect is the silence, not the growth."
+ },
+ "DEFECT_7_MANIFEST_FALSE_ON_A_SECOND_ENTRY": {
+  "file": "C:\\Users\\maurice\\Desktop\\spasticity_paper\\paper\\BODY2_HASHES_r229.json",
+  "finding": "This manifest falsely attests TWO of its 34 entries, not one. DEPOSIT_INVENTORY_r246.json was recorded at r311 in MANIFEST_VIOLATION_r311.json. RESULTS_3d_r214.md is equally false and that violation was recorded NOWHERE until this file.",
+  "manuscript_entry": {
+   "attested_sha256": "9505a3c70223a5df9f7609343bd629a77d1aebfb1d06725f3f7e9fe4ebaf3fa3",
+   "actual_sha256": "e5d525a34195bc06ee6714f2c1e87aae385f61975db2b56287e04760d72d51dd",
+   "actual_bytes": 123167,
+   "matches": false
+  },
+  "same_digest_two_attestations": "The sidecar and the manifest attest the SAME digest 9505a3c70223... for the manuscript, so both were written against the same 51,268 B state and both are now false in the same way. Two independent-looking attestations are not independent evidence.",
+  "coverage_note": "The manifest covers 34 files, 13 of them .json. This record concerns two entries; the remaining 32 were not re-verified here and their status is NOT asserted either way."
+ },
+ "RULE_RESTATED": "An attestation whose own declared metadata contradicts the file it names is self-falsifying and needs no tooling to detect. Where an artefact's evidence is a digest, a byte count, a timestamp or an ordering, it must not be edited and its breakage must be recorded in a different file.",
+ "not_repaired": "Neither artefact is corrected. Re-attesting would replace evidence of a 23-hour-old divergence with a certificate of the present moment.",
+ "written_at": "2026-08-18T05:12:52",
+ "SCOPE_CORRECTION_r344": "AS MEASURED 2026-08-18 12:32, this deposit examined exactly ONE of the 97 .sha256 sidecars in paper/ -- RESULTS_3d_r214.md.sha256 -- and stated no scope for the remaining 96. A finding without a stated scope is the same defect class as an undated one: it gives a reader no way to know what it does not cover. The full population was recomputed at r344 and deposited at SIDECAR_AUDIT_r344.json: 59 verify, 7 false, 31 unresolvable."
+}

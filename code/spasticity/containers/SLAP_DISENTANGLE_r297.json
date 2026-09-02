@@ -1,0 +1,356 @@
+{
+ "round": 297,
+ "status": "EXPLORATORY, UNREGISTERED, POST-HOC. Read-only; every value read from SLAP_LMR_r296.json. Generates a hypothesis; settles nothing.",
+ "baseline_correction": {
+  "control_slap_LmR_raw_mean": 2.27585316105831,
+  "control_range": [
+   0.8969996693268598,
+   3.6297258293418366
+  ],
+  "note": "the model has a baseline left-right asymmetry. r296's LmR figures are uncorrected. Every 'corrected' value here is raw minus this mean, and the correction is stated rather than left implicit."
+ },
+ "why_WPF": "WPF is the only arm holding both fallers and completers at the same dose, so it is the only place severity and outcome can be varied one at a time without a new simulation.",
+ "per_cell": [
+  {
+   "cell": "c00",
+   "f": 0.05,
+   "t_end_s": 16.21,
+   "completes": false,
+   "slap_LmR_raw": 33.27827180371864,
+   "slap_LmR_corrected": 31.002418642660327,
+   "slap_l_raw": 100.53023474864438,
+   "slap_r_raw": 67.25196294492574
+  },
+  {
+   "cell": "c01",
+   "f": 0.05,
+   "t_end_s": 20.0,
+   "completes": true,
+   "slap_LmR_raw": 19.646496285722648,
+   "slap_LmR_corrected": 17.370643124664337,
+   "slap_l_raw": 92.26334103779962,
+   "slap_r_raw": 72.61684475207697
+  },
+  {
+   "cell": "c02",
+   "f": 0.05,
+   "t_end_s": 20.0,
+   "completes": true,
+   "slap_LmR_raw": 22.195535095971664,
+   "slap_LmR_corrected": 19.919681934913353,
+   "slap_l_raw": 89.34552023454187,
+   "slap_r_raw": 67.1499851385702
+  },
+  {
+   "cell": "c03",
+   "f": 0.05,
+   "t_end_s": 7.46,
+   "completes": false,
+   "slap_LmR_raw": 27.090440067955484,
+   "slap_LmR_corrected": 24.814586906897173,
+   "slap_l_raw": 88.08309367664195,
+   "slap_r_raw": 60.99265360868647
+  },
+  {
+   "cell": "c04",
+   "f": 0.05,
+   "t_end_s": 20.0,
+   "completes": true,
+   "slap_LmR_raw": 12.977038967521068,
+   "slap_LmR_corrected": 10.701185806462759,
+   "slap_l_raw": 87.41758600886382,
+   "slap_r_raw": 74.44054704134275
+  },
+  {
+   "cell": "c05",
+   "f": 0.05,
+   "t_end_s": 20.0,
+   "completes": true,
+   "slap_LmR_raw": 25.353309859884305,
+   "slap_LmR_corrected": 23.077456698825994,
+   "slap_l_raw": 94.45093515256848,
+   "slap_r_raw": 69.09762529268417
+  },
+  {
+   "cell": "c06",
+   "f": 0.1,
+   "t_end_s": 12.35,
+   "completes": false,
+   "slap_LmR_raw": 35.07746138700821,
+   "slap_LmR_corrected": 32.801608225949906,
+   "slap_l_raw": 97.94760458469699,
+   "slap_r_raw": 62.870143197688776
+  },
+  {
+   "cell": "c07",
+   "f": 0.1,
+   "t_end_s": 10.79,
+   "completes": false,
+   "slap_LmR_raw": 55.860972975251144,
+   "slap_LmR_corrected": 53.585119814192836,
+   "slap_l_raw": 127.69540102266387,
+   "slap_r_raw": 71.83442804741273
+  },
+  {
+   "cell": "c08",
+   "f": 0.1,
+   "t_end_s": 8.48,
+   "completes": false,
+   "slap_LmR_raw": 47.677667545107674,
+   "slap_LmR_corrected": 45.401814384049366,
+   "slap_l_raw": 109.2813494161016,
+   "slap_r_raw": 61.60368187099393
+  },
+  {
+   "cell": "c09",
+   "f": 0.1,
+   "t_end_s": 13.31,
+   "completes": false,
+   "slap_LmR_raw": 53.55904171972428,
+   "slap_LmR_corrected": 51.28318855866597,
+   "slap_l_raw": 110.95152377623033,
+   "slap_r_raw": 57.392482056506054
+  },
+  {
+   "cell": "c10",
+   "f": 0.1,
+   "t_end_s": 7.53,
+   "completes": false,
+   "slap_LmR_raw": 36.3979604005431,
+   "slap_LmR_corrected": 34.12210723948479,
+   "slap_l_raw": 97.91264301834761,
+   "slap_r_raw": 61.51468261780451
+  },
+  {
+   "cell": "c11",
+   "f": 0.1,
+   "t_end_s": 8.48,
+   "completes": false,
+   "slap_LmR_raw": -16.345087400595958,
+   "slap_LmR_corrected": -18.62094056165427,
+   "slap_l_raw": 79.675568764136,
+   "slap_r_raw": 96.02065616473196
+  },
+  {
+   "cell": "c12",
+   "f": 0.2,
+   "t_end_s": 7.59,
+   "completes": false,
+   "slap_LmR_raw": -36.00282960642953,
+   "slap_LmR_corrected": -38.27868276748784,
+   "slap_l_raw": 91.2200853514659,
+   "slap_r_raw": 127.22291495789543
+  },
+  {
+   "cell": "c13",
+   "f": 0.2,
+   "t_end_s": 6.84,
+   "completes": false,
+   "slap_LmR_raw": 28.84866132992815,
+   "slap_LmR_corrected": 26.572808168869837,
+   "slap_l_raw": 126.30159882332407,
+   "slap_r_raw": 97.45293749339592
+  },
+  {
+   "cell": "c14",
+   "f": 0.2,
+   "t_end_s": 6.4,
+   "completes": false,
+   "slap_LmR_raw": -36.71641034307777,
+   "slap_LmR_corrected": -38.992263504136076,
+   "slap_l_raw": 84.09479892248837,
+   "slap_r_raw": 120.81120926556613
+  },
+  {
+   "cell": "c15",
+   "f": 0.2,
+   "t_end_s": 6.05,
+   "completes": false,
+   "slap_LmR_raw": -61.171535329511826,
+   "slap_LmR_corrected": -63.447388490570134,
+   "slap_l_raw": 83.17321349775476,
+   "slap_r_raw": 144.34474882726659
+  },
+  {
+   "cell": "c16",
+   "f": 0.2,
+   "t_end_s": 6.54,
+   "completes": false,
+   "slap_LmR_raw": -3.6744012584828596,
+   "slap_LmR_corrected": -5.950254419541169,
+   "slap_l_raw": 102.42563676494224,
+   "slap_r_raw": 106.1000380234251
+  },
+  {
+   "cell": "c17",
+   "f": 0.2,
+   "t_end_s": 6.53,
+   "completes": false,
+   "slap_LmR_raw": -51.831380753303165,
+   "slap_LmR_corrected": -54.10723391436147,
+   "slap_l_raw": 98.99238198327296,
+   "slap_r_raw": 150.82376273657613
+  }
+ ],
+ "contrast_1_OUTCOME_at_fixed_severity": {
+  "f=0.05": {
+   "n_completers": 4,
+   "n_fallers": 2,
+   "completers_corrected": [
+    17.370643124664337,
+    19.919681934913353,
+    10.701185806462759,
+    23.077456698825994
+   ],
+   "fallers_corrected": [
+    31.002418642660327,
+    24.814586906897173
+   ],
+   "completers_mean": 17.76724189121661,
+   "fallers_mean": 27.90850277477875,
+   "both_present": true,
+   "difference_of_means": -10.14126088356214,
+   "signs_differ": false
+  },
+  "f=0.10": {
+   "n_completers": 0,
+   "n_fallers": 6,
+   "completers_corrected": [],
+   "fallers_corrected": [
+    32.801608225949906,
+    53.585119814192836,
+    45.401814384049366,
+    51.28318855866597,
+    34.12210723948479,
+    -18.62094056165427
+   ],
+   "completers_mean": null,
+   "fallers_mean": 33.0954829434481,
+   "both_present": false,
+   "difference_of_means": null,
+   "signs_differ": false
+  },
+  "f=0.20": {
+   "n_completers": 0,
+   "n_fallers": 6,
+   "completers_corrected": [],
+   "fallers_corrected": [
+    -38.27868276748784,
+    26.572808168869837,
+    -38.992263504136076,
+    -63.447388490570134,
+    -5.950254419541169,
+    -54.10723391436147
+   ],
+   "completers_mean": null,
+   "fallers_mean": -29.033835821204477,
+   "both_present": false,
+   "difference_of_means": null,
+   "signs_differ": false
+  }
+ },
+ "contrast_2_SEVERITY_at_fixed_outcome": {
+  "f=0.05": {
+   "n": 2,
+   "corrected": [
+    31.002418642660327,
+    24.814586906897173
+   ],
+   "mean": 27.90850277477875,
+   "t_end": [
+    16.21,
+    7.46
+   ]
+  },
+  "f=0.10": {
+   "n": 6,
+   "corrected": [
+    32.801608225949906,
+    53.585119814192836,
+    45.401814384049366,
+    51.28318855866597,
+    34.12210723948479,
+    -18.62094056165427
+   ],
+   "mean": 33.0954829434481,
+   "t_end": [
+    12.35,
+    10.79,
+    8.48,
+    13.31,
+    7.53,
+    8.48
+   ]
+  },
+  "f=0.20": {
+   "n": 6,
+   "corrected": [
+    -38.27868276748784,
+    26.572808168869837,
+    -38.992263504136076,
+    -63.447388490570134,
+    -5.950254419541169,
+    -54.10723391436147
+   ],
+   "mean": -29.033835821204477,
+   "t_end": [
+    7.59,
+    6.84,
+    6.4,
+    6.05,
+    6.54,
+    6.53
+   ]
+  },
+  "_monotone_in_dose": false,
+  "_range_across_doses": 62.129318764652574,
+  "_all_same_sign": false
+ },
+ "arms_with_baseline_correction": {
+  "C": {
+   "n": 6,
+   "raw_mean": 2.27585316105831,
+   "corrected_mean": 0.0,
+   "raw_range": [
+    0.8969996693268598,
+    3.6297258293418366
+   ]
+  },
+  "S": {
+   "n": 6,
+   "raw_mean": -13.671421089544433,
+   "corrected_mean": -15.947274250602742,
+   "raw_range": [
+    -28.321404399240684,
+    2.787554139861271
+   ]
+  },
+  "S289": {
+   "n": 10,
+   "raw_mean": 18.344234628392332,
+   "corrected_mean": 16.06838146733402,
+   "raw_range": [
+    12.959033632391936,
+    23.003492894958796
+   ]
+  },
+  "W870": {
+   "n": 6,
+   "raw_mean": -5.284858023807054,
+   "corrected_mean": -7.560711184865363,
+   "raw_range": [
+    -9.63140334741692,
+    -1.5215126161186845
+   ]
+  },
+  "W950": {
+   "n": 6,
+   "raw_mean": -3.3322125149421,
+   "corrected_mean": -5.608065676000409,
+   "raw_range": [
+    -6.058048516424066,
+    -1.0931830103317566
+   ]
+  }
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "round": 272,
+ "supersedes": "the r270 rev-2 constants DF 129.2395 and PF 663.4508, which had no source on disk and were computed without the drop-last-cycle rule",
+ "validated_path": "body2_dose_r229.py cycles_of(): cycles wholly inside the window, then drop the last. Window [1.00, 13.58].",
+ "self_tests": {
+  "tib_ant_achieved_vs_deposit": {
+   "computed": 125.85307120231857,
+   "deposited": 125.85307120231857,
+   "rel_err": 0.0,
+   "passed": true
+  },
+  "pf_dose_at_KV050_vs_deposit": {
+   "computed": 136.2663747371695,
+   "deposited": 136.2663747371695,
+   "rel_err": 0.0,
+   "passed": true
+  }
+ },
+ "achieved_force_N": {
+  "per_muscle": {
+   "soleus_l": 294.542921389456,
+   "gastroc_l": 390.2396424021609,
+   "tib_ant_l": 125.85307120231857
+  },
+  "plantarflexors": 684.7825637916169,
+  "dorsiflexor": 125.85307120231857,
+  "ratio_PF_over_DF": 5.441127159231385,
+  "dorsiflexor_source": "VERIFY_F5_r231.json / DOSE_r174.json -> tib_ant_mean_force_N (reproduced here to zero error)",
+  "plantarflexor_source": "computed here; no prior deposit carried it"
+ },
+ "newtons_per_unit_KV": {
+  "per_muscle": {
+   "soleus_l": 1724.9040327907414,
+   "gastroc_l": 1000.4234619526487,
+   "tib_ant_l": 543.5133331981351
+  },
+  "plantarflexors": 2725.32749474339,
+  "dorsiflexor": 543.5133331981351,
+  "ratio_PF_over_DF": 5.014279003436858
+ },
+ "existing_arms_on_this_footing": {
+  "WEAK_DF": {
+   "x0.950": 0.05,
+   "x0.900": 0.1,
+   "x0.800": 0.2
+  },
+  "SPASTIC_PF_by_KV": {
+   "0.05": 0.19899217933159308,
+   "0.15": 0.5969765379947792,
+   "0.4": 1.5919374346527446
+  },
+  "note": "SPASTIC-PF exists at THREE gains, not one: KV 0.050, 0.150 and 0.400, six seeds each, 24 gate-failed cells at the upper two (GAIN_LADDER_r264.json). f = 0.40 lies BELOW the KV 0.150 point."
+ },
+ "dose_grid": [
+  0.05,
+  0.1,
+  0.2
+ ],
+ "cells_required": {
+  "f=0.05": {
+   "WEAK_DF": "EXISTS (x0.950)",
+   "SPASTIC_PF": "NEW, KV = 0.012563",
+   "WEAK_PF": "NEW, scale = 0.950000",
+   "SPASTIC_DF": "NEW, KV = 0.011578",
+   "DF_target_N": 6.292653560115929,
+   "PF_target_N": 34.239128189580846,
+   "absolute_force_ratio_PF_over_DF": 5.441127159231385
+  },
+  "f=0.10": {
+   "WEAK_DF": "EXISTS (x0.900)",
+   "SPASTIC_PF": "NEW, KV = 0.025127",
+   "WEAK_PF": "NEW, scale = 0.900000",
+   "SPASTIC_DF": "NEW, KV = 0.023155",
+   "DF_target_N": 12.585307120231858,
+   "PF_target_N": 68.47825637916169,
+   "absolute_force_ratio_PF_over_DF": 5.441127159231385
+  },
+  "f=0.20": {
+   "WEAK_DF": "EXISTS (x0.800)",
+   "SPASTIC_PF": "EXISTS at KV 0.050 (f=0.19899)",
+   "WEAK_PF": "NEW, scale = 0.800000",
+   "SPASTIC_DF": "NEW, KV = 0.046311",
+   "DF_target_N": 25.170614240463717,
+   "PF_target_N": 136.95651275832338,
+   "absolute_force_ratio_PF_over_DF": 5.441127159231385
+  }
+ }
+}

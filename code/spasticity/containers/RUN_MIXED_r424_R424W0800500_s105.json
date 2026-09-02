@@ -1,0 +1,37 @@
+{
+ "prefix": "R424W0800500_s105",
+ "row": "W080",
+ "weak_scale": 0.8,
+ "col": "0500",
+ "KV": 0.05,
+ "seed": 105,
+ "parent_prefix": "R424W0800250_s105",
+ "parent_is_root": false,
+ "parent_gate_G": true,
+ "parent_t_end_s": 20.0,
+ "parent_n_cycles": 5,
+ "parent_result_dir": "R424W0800250_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+ "parent_par": "0063_36.033_1.100.par",
+ "parent_par_sha256": "57a2896ccfd1a4ba0583473f8fcb529e106ea9967b322489b0c48989e823b932",
+ "parent_par_generation": 63,
+ "staged_warm_as": "WARM_R424W0800250_s105_g0063.par",
+ "fmax_readback": {
+  "tib_ant_l": 1407.2,
+  "soleus_l": 3549.0,
+  "gastroc_l": 2241.0
+ },
+ "config_sha256": "380615b5b7a05be5c844e09264d7667fcc105eb627dde9f9000cb4ffe06e51f3",
+ "init_line_readback": "init { file = \"par/WARM_R424W0800250_s105_g0063.par\" }",
+ "status": "RUN_OK",
+ "seconds": 161.0,
+ "result_dir": "R424W0800500_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+ "gate_G": true,
+ "t_end_s": 14.36,
+ "n_cycles_in_window": 5,
+ "knee_hs_deg": null,
+ "scone_tail": [
+  "15:37:39 Successfully initialized OpenSim-4.4",
+  "15:37:39 Successfully initialized Hyfydy-1.12.6.1412",
+  "15:37:39 Successfully initialized Hyfydy-1.12.6.1412-DBL"
+ ]
+}

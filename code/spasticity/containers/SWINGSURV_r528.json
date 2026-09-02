@@ -1,0 +1,85 @@
+{
+ "id": "SWINGSURV_r528",
+ "why": "Limitation 2 binds the knee: its separating window coincides with the model's survival edge, so the knee cannot be shown to separate independently of cells dying. This applies the manuscript's own survival-matched definition to peak swing dorsiflexion.",
+ "survival_matched_definition": "every existing seed of the cell runs the full 20 s",
+ "matched_cells": {
+  "x0.60_KV0.025": false,
+  "x0.60_KV0.050": false,
+  "x0.60_KV0.100": false,
+  "x0.60_KV0.220": false,
+  "x0.70_KV0.025": true,
+  "x0.70_KV0.050": false,
+  "x0.70_KV0.100": false,
+  "x0.70_KV0.220": false,
+  "x0.80_KV0.025": true,
+  "x0.80_KV0.050": true,
+  "x0.80_KV0.100": false,
+  "x0.80_KV0.220": false,
+  "x1.00_KV0.025": true,
+  "x1.00_KV0.050": true,
+  "x1.00_KV0.100": false,
+  "x1.00_KV0.220": false
+ },
+ "results": {
+  "swing_df": {
+   "computable": true,
+   "seed_SD_deg": 0.05922638099115142,
+   "matched_gains": [
+    0.025,
+    0.05
+   ],
+   "mean_by_gain_deg": {
+    "0.025": 7.546287487731334,
+    "0.05": 5.68919961013308
+   },
+   "span_deg": 1.8570878775982536,
+   "span_in_seed_SD": 31.35575475860508,
+   "adjacent": [
+    {
+     "from": 0.025,
+     "to": 0.05,
+     "diff_deg": 1.8570878775982536,
+     "in_seed_SD": 31.35575475860508
+    }
+   ],
+   "adjacent_cell_disjointness": [
+    {
+     "from": 0.025,
+     "to": 0.05,
+     "disjoint": true,
+     "gap_deg": 1.2441644831113639
+    }
+   ]
+  },
+  "knee_ic": {
+   "computable": true,
+   "seed_SD_deg": 0.2737002262335885,
+   "matched_gains": [
+    0.025,
+    0.05
+   ],
+   "mean_by_gain_deg": {
+    "0.025": -5.834686231219279,
+    "0.05": -6.65815470255146
+   },
+   "span_deg": 0.8234684713321814,
+   "span_in_seed_SD": 3.0086510437495773,
+   "adjacent": [
+    {
+     "from": 0.025,
+     "to": 0.05,
+     "diff_deg": 0.8234684713321814,
+     "in_seed_SD": 3.0086510437495773
+    }
+   ],
+   "adjacent_cell_disjointness": [
+    {
+     "from": 0.025,
+     "to": 0.05,
+     "disjoint": false,
+     "gap_deg": -0.4414204363558696
+    }
+   ]
+  }
+ }
+}

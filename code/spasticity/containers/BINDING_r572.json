@@ -1,0 +1,3734 @@
+{
+ "bound": {
+  "0.000": {
+   "containers": [
+    [
+     "BANDFILL_ENDPOINT_r291.json",
+     "/spastic_conditions/KV 0.070/n_in_band"
+    ],
+    [
+     "BANDFILL_ENDPOINT_r291.json",
+     "/READING_A/permutation/floor"
+    ],
+    [
+     "BATCHNULL_r389.json",
+     "/STEP1_BATCH_NULL/NULL_DF/by_endpoint/BETA_abs/pairs[6]/gap"
+    ],
+    [
+     "BATCHNULL_r389.json",
+     "/STEP1_BATCH_NULL/NULL_DF/by_endpoint/BETA_abs/pairs[8]/gap"
+    ]
+   ],
+   "n_containers": 673,
+   "n_sites": 1
+  },
+  "0.001": {
+   "containers": [
+    [
+     "ANKLE_LADDER_r235.json",
+     "/permutation_null/W800/target_proportion"
+    ],
+    [
+     "ANKLE_LADDER_r235.json",
+     "/permutation_null/W800/familywise_proportion"
+    ],
+    [
+     "ANKLE_LADDER_r235.json",
+     "/permutation_null/W870/target_proportion"
+    ],
+    [
+     "ANKLE_LADDER_r235.json",
+     "/permutation_null/W870/familywise_proportion"
+    ]
+   ],
+   "n_containers": 134,
+   "n_sites": 3
+  },
+  "0.00216": {
+   "containers": [
+    [
+     "BATCHNULL_r389.json",
+     "/STEP1_BATCH_NULL/quoted_permutation_floor"
+    ],
+    [
+     "BATCHNULL_r389.json",
+     "/PUBLISHED_GEOMETRY_REPRODUCED/by_rung/0.00625/by_endpoint/BETA_abs/permutation_floor/p"
+    ],
+    [
+     "BATCHNULL_r389.json",
+     "/PUBLISHED_GEOMETRY_REPRODUCED/by_rung/0.00625/by_endpoint/mean_ankle_stance_deg/permutation_floor/p"
+    ],
+    [
+     "BATCHNULL_r389.json",
+     "/PUBLISHED_GEOMETRY_REPRODUCED/by_rung/0.00625/by_endpoint/BETA_abs_R/permutation_floor/p"
+    ]
+   ],
+   "n_containers": 34,
+   "n_sites": 1
+  },
+  "0.0022": {
+   "containers": [
+    [
+     "ANKLE_LADDER_r235.json",
+     "/permutation_null/W900/familywise_proportion"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/RUNG_TESTS/KV0.00625|soleus_l_MIDTERT|ratio/permutation/attained_value"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/RUNG_TESTS/KV0.00625|gastroc_l_MIDTERT|ratio/permutation/attained_value"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/RUNG_TESTS/KV0.00625|tib_ant_l_ALL|diff/permutation/attained_value"
+    ]
+   ],
+   "n_containers": 339,
+   "n_sites": 2
+  },
+  "0.003": {
+   "containers": [
+    [
+     "ANKLE_LADDER_r235.json",
+     "/permutation_null/W915/target_proportion"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R203V130C_s106/asym/ankle_l_torque_MIDTERT/ratio"
+    ],
+    [
+     "BATCHNULL_r389.json",
+     "/STEP3_LIKE_FOR_LIKE/by_rung/0.00625/by_endpoint/A/comparisons[2]/gap"
+    ],
+    [
+     "BATCHNULL_r389.json",
+     "/STEP3_LIKE_FOR_LIKE/by_rung/0.00625/by_endpoint/A/comparisons[5]/gap"
+    ]
+   ],
+   "n_containers": 75,
+   "n_sites": 2
+  },
+  "0.005": {
+   "containers": [
+    [
+     "SHAPE_TEST_r139.json",
+     "/features/C2/condition_means/PAR20"
+    ],
+    [
+     "FALLER_r544.json",
+     "/duration_slope_per_family[1]"
+    ],
+    [
+     "PERCYCLE_r279.json",
+     "/per_cell/C/102/slope_deg_per_cycle"
+    ],
+    [
+     "TURN_DOSE_r262.json",
+     "/windows/9.73/weakness_regression/se_slope"
+    ]
+   ],
+   "n_containers": 5,
+   "n_sites": 1
+  },
+  "0.006": {
+   "containers": [
+    [
+     "FALLER_r544.json",
+     "/duration_slope_per_family[0]"
+    ],
+    [
+     "PERCYCLE_r279.json",
+     "/per_cell/W800/101/slope_deg_per_cycle"
+    ],
+    [
+     "SHAPE_TEST_r139.json",
+     "/features/A1/condition_means/DR2K150"
+    ],
+    [
+     "SLOPE_SELFTEST_r62.json",
+     "/checks[13]/bias"
+    ]
+   ],
+   "n_containers": 7,
+   "n_sites": 1
+  },
+  "0.0062": {
+   "containers": [
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/ranked_by_gap_desc[164]/family_level_gap"
+    ],
+    [
+     "INDEX_r536.json",
+     "/tone_score/lofo_gain_RMSE"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 2
+  },
+  "0.009": {
+   "containers": [
+    [
+     "DIRECTION_r398.json",
+     "/endpoints/stance_frac/arm_separation"
+    ],
+    [
+     "KINPAIR_r379.json",
+     "/rungs/0.0125/endpoints/A_gastroc/gap_vs_control"
+    ],
+    [
+     "NULL_FLOORS_r428.json",
+     "/FLOORS_FINAL_r428/per_endpoint/GASDRIVE_stance/largest_mean_difference"
+    ],
+    [
+     "SWINGFULL_r530.json",
+     "/sham_chains/weak x0.80/R400WKc3/shift"
+    ]
+   ],
+   "n_containers": 4,
+   "n_sites": 1
+  },
+  "0.0125": {
+   "containers": [
+    [
+     "BETA2CONTROL_r388.json",
+     "/PREDICTION_ASSESSMENT/P3_separates_at_low_rungs/rungs_that_separated[1]"
+    ],
+    [
+     "R289_TEND_PARTIAL.json",
+     "/cells[0]/kv"
+    ],
+    [
+     "RECTIFIER_r385.json",
+     "/PREDICTION_ASSESSMENT/P3_separates_at_low_rungs/rungs_that_separated[1]"
+    ],
+    [
+     "RUN_MATCHED20_r289_cell00.json",
+     "/kv"
+    ]
+   ],
+   "n_containers": 65,
+   "n_sites": 2
+  },
+  "0.017": {
+   "containers": [
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R203V105C_s103/asym/ankle_l_torque_ALL/ratio"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/RUNG_TESTS/KV0.0125|ankle_l_torque_MIDTERT|ratio/gap"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/DOSE_RESPONSE/ankle_l_torque_ALL|diff/abs_distance_from_dfweak[0]"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R174W892_s101/fits/gastroc_swing/c"
+    ]
+   ],
+   "n_containers": 139,
+   "n_sites": 1
+  },
+  "0.018": {
+   "containers": [
+    [
+     "MATCHED20_ENDPOINT_r298.json",
+     "/hip_secondary/spastic_range[0]"
+    ],
+    [
+     "MATCHED20_ENDPOINT_r298.json",
+     "/hip_secondary/reading_C_hip/spastic_range[0]"
+    ],
+    [
+     "MATCHED20_ENDPOINT_r298.json",
+     "/hip_secondary/reading_P_hip/spastic_range[0]"
+    ],
+    [
+     "MATCHED20_ENDPOINT_r298.json",
+     "/cells/spastic[2]/hip_flexion_LmR"
+    ]
+   ],
+   "n_containers": 13,
+   "n_sites": 1
+  },
+  "0.019": {
+   "containers": [
+    [
+     "ASYMMETRY_r384.json",
+     "/DOSE_RESPONSE/gastroc_l_ALL|diff/abs_distance_from_dfweak[1]"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R151W_s101/fits/gastroc_swing/b1"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R151W_s102/fits/gastroc_swing/b1"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R151W_s104/fits/gastroc_swing/b1"
+    ]
+   ],
+   "n_containers": 192,
+   "n_sites": 1
+  },
+  "0.020": {
+   "containers": [
+    [
+     "CHAIN_STAGE_r393.json",
+     "/axes/spastic/delay_s"
+    ],
+    [
+     "CHAIN_STAGE_r396.json",
+     "/axes/spastic/delay_s"
+    ],
+    [
+     "CHAIN_STAGE_r400.json",
+     "/axes/spastic/delay_s"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R174W915_s102/sig/soleus_l.activation/harm_abs[2]"
+    ]
+   ],
+   "n_containers": 115,
+   "n_sites": 1
+  },
+  "0.025": {
+   "containers": [
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R174W892_s102/asym/ankle_l_torque_ALL/ratio"
+    ],
+    [
+     "BATCHNULL_r389.json",
+     "/cells/R174W915_s101/BETA_abs"
+    ],
+    [
+     "BATCHNULL_r389.json",
+     "/cells/R174W915_s101/BETA_abs_fit/b2"
+    ],
+    [
+     "BATCHNULL_r389.json",
+     "/cells/R289KV00625_s102/BETA_abs_fit/b1"
+    ]
+   ],
+   "n_containers": 780,
+   "n_sites": 8
+  },
+  "0.032": {
+   "containers": [
+    [
+     "ASYMMETRY_r384.json",
+     "/DOSE_RESPONSE/gastroc_l_ALL|diff/abs_distance_from_dfweak[2]"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/DOSE_RESPONSE/gastroc_l_MIDTERT|ratio/abs_distance_from_dfweak[0]"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/DOSE_RESPONSE/tib_ant_l_MIDTERT|diff/abs_distance_from_dfweak[1]"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/DOSE_RESPONSE/ankle_l_torque_ALL|ratio/rung_means/0.00625"
+    ]
+   ],
+   "n_containers": 24,
+   "n_sites": 4
+  },
+  "0.033": {
+   "containers": [
+    [
+     "SWINGFULL_r530.json",
+     "/sham_chains/spastic KV0.100/R400SPgc1/shift"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "0.035": {
+   "containers": [
+    [
+     "EMGVSKIN_r377.json",
+     "/PRIMARY/KV_kin_per_endpoint/knee_at_heelstrike_deg"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R289KV00625_s103/ASYM/knee_torque_swing_mean"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R289KV00625_s102/sig/ankle_angle_r/A0_dc"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R289KV00625_s106/sig/ankle_angle_r/A0_dc"
+    ]
+   ],
+   "n_containers": 67,
+   "n_sites": 1
+  },
+  "0.0358": {
+   "containers": [
+    [
+     "AUDIT_r554.json",
+     "/artefact_floor_deg"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/ranked_by_effect_size_desc[38]/family_means_spastic[0]"
+    ],
+    [
+     "FALLER_r544.json",
+     "/artefact_floor_deg"
+    ],
+    [
+     "GATES_r534.json",
+     "/candidates/ankle peak in swing/artefact_floor"
+    ]
+   ],
+   "n_containers": 7,
+   "n_sites": 2
+  },
+  "0.036": {
+   "containers": [
+    [
+     "COMPENSATION_MAP_r384.json",
+     "/map/add_mag_l_swing/KV0.035_range[0]"
+    ],
+    [
+     "COMPENSATION_r381.json",
+     "/cells/R291KV0035_s106/secondary/add_mag_l_swing"
+    ],
+    [
+     "COMPENSATION_r381.json",
+     "/SECONDARY_descriptive_map/add_mag_l_swing/KV0.035_range[0]"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/ranked_by_effect_size_desc[39]/weak_mean"
+    ]
+   ],
+   "n_containers": 130,
+   "n_sites": 7
+  },
+  "0.039": {
+   "containers": [
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R169W090_s102/fits/tib_ant_swing/b1"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R169W095_s101/fits/tib_ant_swing/b1"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R169W095_s102/fits/tib_ant_swing/b1"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R169W095_s103/fits/tib_ant_swing/b1"
+    ]
+   ],
+   "n_containers": 73,
+   "n_sites": 2
+  },
+  "0.041": {
+   "containers": [
+    [
+     "BETA2CONTROL_r388.json",
+     "/SECONDARY_never_promoted/tib_ant_cycle_b2/CONTROL/mean"
+    ],
+    [
+     "COMPENSATION_MAP_r384.json",
+     "/TOP15_corrected[2]/KV0.035_mean"
+    ],
+    [
+     "COMPENSATION_MAP_r384.json",
+     "/map/add_mag_r_stance/KV0.035_mean"
+    ],
+    [
+     "COMPENSATION_MAP_r384.json",
+     "/map/hamstrings_r_swing/DFWEAK_mean"
+    ]
+   ],
+   "n_containers": 45,
+   "n_sites": 2
+  },
+  "0.044": {
+   "containers": [
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R289KV00625_s101/asym/soleus_l_MIDTERT/A_lengthen"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R289KV00625_s105/asym/soleus_l_MIDTERT/A_lengthen"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R291KV0035_s102/asym/soleus_l_ALL/diff"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R291KV0035_s105/asym/soleus_l_ALL/diff"
+    ]
+   ],
+   "n_containers": 455,
+   "n_sites": 4
+  },
+  "0.047": {
+   "containers": [
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R169W090_s103/fits/soleus_stance/b1"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R169W095_s101/fits/soleus_stance/b1"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R169W095_s102/fits/soleus_stance/b1"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R169W095_s104/fits/soleus_stance/b1"
+    ]
+   ],
+   "n_containers": 59,
+   "n_sites": 2
+  },
+  "0.050": {
+   "containers": [
+    [
+     "BODY2_CONVENTION_r229.json",
+     "/variants[1]/mask_frac_of_peak"
+    ],
+    [
+     "BODY2_CONVENTION_r229.json",
+     "/variants[4]/mask_frac_of_peak"
+    ],
+    [
+     "BODY2_CONVENTION_r229.json",
+     "/variants[7]/mask_frac_of_peak"
+    ],
+    [
+     "BODY2_CONVENTION_r229.json",
+     "/variants[10]/mask_frac_of_peak"
+    ]
+   ],
+   "n_containers": 695,
+   "n_sites": 9
+  },
+  "0.056": {
+   "containers": [
+    [
+     "COMPENSATION_MAP_r384.json",
+     "/map/gastroc_l_swing/DFWEAK_range[0]"
+    ],
+    [
+     "COMPENSATION_r381.json",
+     "/SECONDARY_descriptive_map/gastroc_l_swing/DFWEAK_range[0]"
+    ],
+    [
+     "DYNAMICS_LIMITATION_r365.json",
+     "/FINDING/4_why_the_endpoint_still_sees_nothing/c_the_swing_value_is_not_a_floor_artefact/act_swing_gastroc_mean_ALL"
+    ],
+    [
+     "ANKLE_CONTROLS_HIP_r510.json",
+     "/ankle_at_contact_rule2_duration/arm_difference_deg"
+    ]
+   ],
+   "n_containers": 20,
+   "n_sites": 3
+  },
+  "0.064": {
+   "containers": [
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R289KV00625_s103/fits/gastroc_cycle/b2"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/ranked_by_gap_desc[211]/family_means_spastic[0]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/W800/hip_adduction_r[31]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/W870/knee_angle_r[52]"
+    ]
+   ],
+   "n_containers": 59,
+   "n_sites": 1
+  },
+  "0.070": {
+   "containers": [
+    [
+     "BANDFILL_ENDPOINT_r286.json",
+     "/weak_cells_measured[0]/f"
+    ],
+    [
+     "BANDFILL_ENDPOINT_r286.json",
+     "/weak_cells_measured[1]/f"
+    ],
+    [
+     "BANDFILL_ENDPOINT_r286.json",
+     "/weak_cells_measured[2]/f"
+    ]
+   ],
+   "n_containers": 3,
+   "n_sites": 1
+  },
+  "0.079": {
+   "containers": [
+    [
+     "ASYMMETRY_r384.json",
+     "/ARM_SEED_MEANS/soleus_l_ALL|diff/CONTROL_between_scenario/s101"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/ARM_SEED_MEANS/soleus_l_ALL|diff/CONTROL_between_scenario/s102"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/ARM_SEED_MEANS/ankle_l_torque_ALL|ratio/KV0.035/s106"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/CONTROL_COINCIDENCE/soleus_l_ALL|diff/CONTROL_mean"
+    ]
+   ],
+   "n_containers": 65,
+   "n_sites": 1
+  },
+  "0.0819": {
+   "containers": [
+    [
+     "GATES_r534.json",
+     "/candidates/ankle peak in swing/seed_SD"
+    ],
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[48]/seed_SD"
+    ],
+    [
+     "SWINGDF_r525.json",
+     "/simulation/mean_within_family_seed_SD_deg"
+    ],
+    [
+     "SWINGFULL_r530.json",
+     "/seed_SD_deg"
+    ]
+   ],
+   "n_containers": 4,
+   "n_sites": 1
+  },
+  "0.082": {
+   "containers": [
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R151W_s104/fits/gastroc_stance/b1"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R151W_s106/fits/gastroc_stance/b1"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R174W870_s102/fits/gastroc_stance/b1"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R289KV0125_s105/fits/gastroc_stance/b1"
+    ]
+   ],
+   "n_containers": 46,
+   "n_sites": 2
+  },
+  "0.086": {
+   "containers": [
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R151C_s106/fits/gastroc_stance/b2"
+    ],
+    [
+     "COMPENSATION_MAP_r384.json",
+     "/map/bifemsh_l_swing/KV0.035_range[0]"
+    ],
+    [
+     "COMPENSATION_r381.json",
+     "/cells/R174W892_s105/secondary/bifemsh_l_swing"
+    ],
+    [
+     "COMPENSATION_r381.json",
+     "/cells/R291KV0035_s104/secondary/bifemsh_l_swing"
+    ]
+   ],
+   "n_containers": 87,
+   "n_sites": 1
+  },
+  "0.089": {
+   "containers": [
+    [
+     "AUDIT_r554.json",
+     "/grid_pairs/floor_deg"
+    ],
+    [
+     "AUDIT_r554.json",
+     "/grid_pairs/below_floor[3]/d"
+    ],
+    [
+     "COMPENSATION_MAP_r384.json",
+     "/map/bifemsh_l_swing/KV0.035_range[1]"
+    ],
+    [
+     "COMPENSATION_r381.json",
+     "/cells/R291KV0035_s102/secondary/bifemsh_l_swing"
+    ]
+   ],
+   "n_containers": 14,
+   "n_sites": 3
+  },
+  "0.100": {
+   "containers": [
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R174W892_s102/asym/tib_ant_l_MIDTERT/diff"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R289KV00625_s104/asym/tib_ant_l_ALL/diff"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R289KV00625_s106/asym/tib_ant_l_ALL/diff"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R291KV0035_s103/asym/gastroc_l_ALL/diff"
+    ]
+   ],
+   "n_containers": 473,
+   "n_sites": 8
+  },
+  "0.101": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/W892/hip_adduction_l[74]"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/ARM_SEED_MEANS/tib_ant_l_ALL|diff/KV0.00625/s101"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/RUNG_TESTS/KV0.00625|tib_ant_l_ALL|diff/spastic_mean"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/DOSE_RESPONSE/tib_ant_l_ALL|diff/rung_means/0.00625"
+    ]
+   ],
+   "n_containers": 45,
+   "n_sites": 1
+  },
+  "0.102": {
+   "containers": [
+    [
+     "METRIC_LADDER_r256.json",
+     "/windows/9.73/mean_angle/hip_flexion_LmR/per_seed/W915[0]"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/ARM_SEED_MEANS/tib_ant_l_ALL|diff/CONTROL_between_scenario/s101"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/ARM_SEED_MEANS/tib_ant_l_ALL|diff/CONTROL_between_scenario/s103"
+    ],
+    [
+     "COMPENSATION_MAP_r384.json",
+     "/map/glut_med_r_stance/KV0.035_mean"
+    ]
+   ],
+   "n_containers": 27,
+   "n_sites": 2
+  },
+  "0.109": {
+   "containers": [
+    [
+     "HARMONIC_r383.json",
+     "/cells/R203V080C_s106/sig/ankle_vel_l/harm_abs[5]"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/ARM_SEED_MEANS/tib_ant_l_ALL|diff/DFWEAK/s105"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/ARM_SEED_MEANS/tib_ant_l_ALL|diff/DFWEAK/s106"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/CONTROL_COINCIDENCE/tib_ant_l_ALL|diff/DFWEAK_range[0]"
+    ]
+   ],
+   "n_containers": 53,
+   "n_sites": 1
+  },
+  "0.112": {
+   "containers": [
+    [
+     "FALLER_r544.json",
+     "/duration_slope_per_family[4]"
+    ],
+    [
+     "SLOPE_SELFTEST_r62.json",
+     "/checks[15]/recovered_spastic"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "0.128": {
+   "containers": [
+    [
+     "FALLER_r544.json",
+     "/duration_slope_per_family[2]"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "0.129": {
+   "containers": [
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R289KV0125_s103/ASYM/hip_torque_peak_abs"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R169W095_s101/ASYM/ankle_peak_dorsiflexion_swing_deg"
+    ],
+    [
+     "METRIC_r255.json",
+     "/windows/9.73/tables/peak_pf/hip_flexion_r/arms/W915/margin"
+    ],
+    [
+     "TIMING_STABILITY_r386.json",
+     "/cells/R151W_s102/lag_resid/l/gastroc/v/peak_corr"
+    ]
+   ],
+   "n_containers": 5,
+   "n_sites": 2
+  },
+  "0.138": {
+   "containers": [
+    [
+     "CLAIMS_r537.json",
+     "/results/ankle at 85%/by_sigma/3.0/claim3_weakness_severity_rho"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "0.140": {
+   "containers": [
+    [
+     "CELL_CACHE_r501.json",
+     "/R393SPg070/kv_delivered"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 2
+  },
+  "0.146": {
+   "containers": [
+    [
+     "ASYMMETRY_r384.json",
+     "/ARM_SEED_MEANS/ankle_l_torque_MIDTERT|ratio/CONTROL_between_scenario/s102"
+    ],
+    [
+     "METRIC_LADDER_r256.json",
+     "/windows/9.73/mean_angle/ankle_angle_LmR/per_seed/W900[5]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/W892/hip_flexion_l[6]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/W950/hip_flexion_l[21]"
+    ]
+   ],
+   "n_containers": 52,
+   "n_sites": 1
+  },
+  "0.158": {
+   "containers": [
+    [
+     "COMPENSATION_r381.json",
+     "/cells/R289KV0125_s102/secondary/vasti_r_swing"
+    ],
+    [
+     "DRIFT_r545.json",
+     "/peak_geometry/hyperreflexia/curvature"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R174W870_s102/ASYM/knee_torque_swing_mean"
+    ],
+    [
+     "METRIC_r255.json",
+     "/windows/13.58/tables/peak_pf/lumbar_bending/arms/W892/margin"
+    ]
+   ],
+   "n_containers": 14,
+   "n_sites": 1
+  },
+  "0.191": {
+   "containers": [
+    [
+     "SWINGSPEC_r529.json",
+     "/weakness_excursion_by_gain_deg/0.05"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 2
+  },
+  "0.200": {
+   "containers": [
+    [
+     "CELL_CACHE_r501.json",
+     "/R393SPg100/kv_delivered"
+    ],
+    [
+     "PUBLICDATA_VALIDATION_r405.json",
+     "/step4_prediction_P_test/measurement_validity_positive_controls/stroke_paretic_vs_able__GAS early stance 0-15%/stroke_mean"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 2
+  },
+  "0.218": {
+   "containers": [
+    [
+     "CLAIMS_r537.json",
+     "/results/knee at contact  [current]/by_sigma/3.0/claim3_weakness_severity_rho"
+    ],
+    [
+     "DISCRIMINABILITY_r519.json",
+     "/by_effect_size/round-151 4.087/error_rate_measurement_only"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R203V080C_s106/sig/ankle_angle_r/H4_ratio"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/W915/ankle_angle_l[33]"
+    ]
+   ],
+   "n_containers": 10,
+   "n_sites": 2
+  },
+  "0.220": {
+   "containers": [
+    [
+     "CAWOOD_CORRECTION_r450.json",
+     "/CORRECT_VALUES/initial_contact/GAS_p"
+    ],
+    [
+     "CELL_CACHE_r501.json",
+     "/R396SPg110/kv_delivered"
+    ],
+    [
+     "LIMBDIFF_r521.json",
+     "/per_cell[16]/kv"
+    ],
+    [
+     "LIMBDIFF_r521.json",
+     "/per_cell[17]/kv"
+    ]
+   ],
+   "n_containers": 166,
+   "n_sites": 8
+  },
+  "0.227": {
+   "containers": [
+    [
+     "CLAIMS_r537.json",
+     "/results/ankle peak in swing/by_sigma/3.0/claim3_weakness_severity_rho"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "0.240": {
+   "containers": [
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R151W_s106/asym/gastroc_l_MIDTERT/diff"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R174W915_s106/asym/ankle_l_torque_ALL/diff"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R289KV00625_s103/asym/gastroc_l_ALL/ratio"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/ARM_SEED_MEANS/gastroc_l_ALL|ratio/KV0.00625/s103"
+    ]
+   ],
+   "n_containers": 163,
+   "n_sites": 3
+  },
+  "0.251": {
+   "containers": [
+    [
+     "PUBLICDATA_VALIDATION_r405.json",
+     "/step3_extracted_values/per_participant_able_bodied[104]/TA_mean_swing_peaknorm"
+    ],
+    [
+     "TIMING_STABILITY_r386.json",
+     "/cells/R169W090_s103/lag_resid/r/soleus/v/peak_corr"
+    ],
+    [
+     "DRIFT_r545.json",
+     "/peak_geometry/control/curvature"
+    ],
+    [
+     "DYNAMICS_SWING_r363.json",
+     "/cells/R169W090_s104/secondary/cocontraction_swing"
+    ]
+   ],
+   "n_containers": 16,
+   "n_sites": 1
+  },
+  "0.276": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/W892/hip_flexion_r[6]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/W950/lumbar_bending[59]"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/ARM_SEED_MEANS/tib_ant_l_MIDTERT|ratio/KV0.0125/s105"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R174W915_s102/ASYM/ankle_mean_swing_deg"
+    ]
+   ],
+   "n_containers": 34,
+   "n_sites": 2
+  },
+  "0.293": {
+   "containers": [
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R151W_s103/ASYM/ankle_torque_stance_mean"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R151W_s106/fits/gastroc_stance/r2"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R169W090_s105/fits/gastroc_stance/r2"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R174W870_s103/fits/gastroc_stance/r2"
+    ]
+   ],
+   "n_containers": 51,
+   "n_sites": 1
+  },
+  "0.298": {
+   "containers": [
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/ranked_by_effect_size_desc[23]/weak_range[1]"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/ranked_by_effect_size_desc[24]/family_means_weak[1]"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "0.302": {
+   "containers": [
+    [
+     "DEPTH_STEP2_r212.json",
+     "/cells/S/R151S_s103/59/ch/ankle_angle_LmR"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R169W090_s101/R/ratio_gastroc_over_tibant_swing"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R174W892_s102/ASYM/ankle_peak_dorsiflexion_cycle_deg"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R174W892_s102/ASYM/ankle_peak_dorsiflexion_stance_deg"
+    ]
+   ],
+   "n_containers": 33,
+   "n_sites": 2
+  },
+  "0.330": {
+   "containers": [
+    [
+     "CLAIMS_r537.json",
+     "/results/ankle 40-50% window/by_sigma/3.0/claim3_weakness_severity_rho"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "0.378": {
+   "containers": [
+    [
+     "BODY2_CHANNELS_r229.json",
+     "/planes/SG2/comparisons[0]/weak_values/hip_flexion_LmR[14]"
+    ],
+    [
+     "DRIFT_r545.json",
+     "/adjacent_rung_gaps_deg[2]"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R289KV0125_s103/R/phase_of_peak_hip_torque"
+    ]
+   ],
+   "n_containers": 3,
+   "n_sites": 1
+  },
+  "0.394": {
+   "containers": [
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R151C_s103/fits/soleus_stance/ratio_abs"
+    ],
+    [
+     "DRIFT_r545.json",
+     "/clean_means/hyperreflexia"
+    ],
+    [
+     "FALLER_r544.json",
+     "/groups/hyperreflexia, in band/peak_mean"
+    ],
+    [
+     "FALLER_r544.json",
+     "/groups/hyperreflexia, all/peak_mean"
+    ]
+   ],
+   "n_containers": 42,
+   "n_sites": 2
+  },
+  "0.400": {
+   "containers": [
+    [
+     "CHAIN_HEADLINE_r393.json",
+     "/per_axis/weakness/040/value"
+    ],
+    [
+     "CHAIN_HEADLINE_r393.json",
+     "/rungs[2]/weakness_scale"
+    ],
+    [
+     "CHAIN_RESULT_r393.json",
+     "/survival/weakness/040/value"
+    ],
+    [
+     "CHAIN_STAGE_r393.json",
+     "/axes/weakness/rungs[2]"
+    ]
+   ],
+   "n_containers": 33,
+   "n_sites": 2
+  },
+  "0.425": {
+   "containers": [
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R169W090_s103/asym/tib_ant_l_MIDTERT/ratio"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R169W095_s105/asym/ankle_l_torque_ALL/diff"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R203V105C_s103/asym/tib_ant_l_MIDTERT/ratio"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R174W892_s101/fits/soleus_swing/ratio_abs"
+    ]
+   ],
+   "n_containers": 106,
+   "n_sites": 1
+  },
+  "0.430": {
+   "containers": [
+    [
+     "FALLER_r544.json",
+     "/groups/dorsiflexor weakness, all/vs_control"
+    ],
+    [
+     "GATES_r534.json",
+     "/candidates/ankle peak in swing/disp_weak"
+    ],
+    [
+     "MISSING_CONTAINERS_r504.json",
+     "/peak_swing_dorsiflexion_deg/weakness_displacement_from_control"
+    ],
+    [
+     "PAIRING_r251.json",
+     "/ankle_angle_LmR/pairwise/S~W800/pearson"
+    ]
+   ],
+   "n_containers": 33,
+   "n_sites": 6
+  },
+  "0.433": {
+   "containers": [
+    [
+     "FALLER_r544.json",
+     "/duration_slope_per_family[3]"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "0.440": {
+   "containers": [
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R289KV00625_s102/ASYM/knee_torque_stance_mean"
+    ],
+    [
+     "METRIC_r255.json",
+     "/windows/9.73/tables/mean_angle/hip_adduction_LmR/arms/W870/mean"
+    ],
+    [
+     "METRIC_r255.json",
+     "/windows/13.58/tables/excursion/ankle_angle_l/arms/W900/delta_from_control"
+    ],
+    [
+     "METRIC_r255.json",
+     "/windows/13.58/tables/mean_angle/hip_flexion_LmR/arms/W950/delta_from_control"
+    ]
+   ],
+   "n_containers": 11,
+   "n_sites": 1
+  },
+  "0.451": {
+   "containers": [
+    [
+     "METRIC_r255.json",
+     "/windows/13.58/tables/mean_angle/hip_adduction_LmR/arms/W892/delta_from_control"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/S/knee_angle_r[3]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/W892/ankle_angle_l[40]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/W892/ankle_angle_LmR[53]"
+    ]
+   ],
+   "n_containers": 11,
+   "n_sites": 1
+  },
+  "0.479": {
+   "containers": [
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/ranked_by_gap_desc[161]/family_means_weak[5]"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/ranked_by_gap_desc[239]/family_means_weak[1]"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/rungs/0.00625/by_signal/gastroc_l.activation/phase2_rel/spastic_seed_means/s104"
+    ],
+    [
+     "METRIC_LADDER_r256.json",
+     "/windows/9.73/excursion/hip_flexion_LmR/disjointness/pooled_36/weak_mean"
+    ]
+   ],
+   "n_containers": 12,
+   "n_sites": 1
+  },
+  "0.484": {
+   "containers": [
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R169W095_s104/fits/gastroc_stance/ratio_abs"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R289KV00625_s102/R/phase_of_peak_knee_torque"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R289KV0125_s102/ASYM/knee_positive_work_per_cycle"
+    ],
+    [
+     "KINPAIR_r379.json",
+     "/rungs/0.035/endpoints/ankle_rom_cycle_deg/gap_vs_control"
+    ]
+   ],
+   "n_containers": 32,
+   "n_sites": 1
+  },
+  "0.502": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/W915/ankle_angle_LmR[83]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/W950/ankle_angle_l[49]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/W800/knee_angle_l[96]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/W892/ankle_angle_l[56]"
+    ]
+   ],
+   "n_containers": 6,
+   "n_sites": 1
+  },
+  "0.511": {
+   "containers": [
+    [
+     "DERIVED_r515.json",
+     "/registered_x080_span/seed_SD_scale_deg"
+    ],
+    [
+     "FLOOR_CORRECTION_r436.json",
+     "/THE_CORRECT_NOISE_SCALE/typical_value_deg"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R203V130C_s105/sig/soleus_l.activation/H2_ratio_grid64"
+    ],
+    [
+     "METRIC_r255.json",
+     "/windows/9.73/tables/peak_pf/knee_angle_LmR/arms/W900/margin"
+    ]
+   ],
+   "n_containers": 11,
+   "n_sites": 2
+  },
+  "0.512": {
+   "containers": [
+    [
+     "CLAIMS_r537.json",
+     "/results/ankle peak in swing/by_sigma/3.0/claim1_detect_weak"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R174W870_s101/L/dfonly_pearson_soleus_activation_vs_ankvel_lag20ms"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R174W870_s103/L/dfonly_pearson_soleus_activation_vs_ankvel_lag20ms"
+    ],
+    [
+     "PUBLICDATA_VALIDATION_r405.json",
+     "/step3_extracted_values/per_participant_able_bodied[100]/TA_mean_swing_peaknorm"
+    ]
+   ],
+   "n_containers": 4,
+   "n_sites": 2
+  },
+  "0.535": {
+   "containers": [
+    [
+     "CLAIMS_r537.json",
+     "/results/knee at contact  [current]/by_sigma/3.0/claim1_detect_weak"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "0.537": {
+   "containers": [
+    [
+     "CLAIMS_r537.json",
+     "/results/ankle at 85%/by_sigma/3.0/claim1_detect_weak"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "0.557": {
+   "containers": [
+    [
+     "HARMONIC_r383.json",
+     "/cells/R291KV0035_s102/sig/ankle_angle_l/H2_ratio_grid64"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "0.5697": {
+   "containers": [
+    [
+     "FINAL_AUDIT_r412.json",
+     "/claims/c/deposited/largest_null_edge_gap_deg"
+    ],
+    [
+     "KNEE_MDC_BATCHNULL_r399.json",
+     "/STEP1_BATCH_NULL/by_endpoint/knee_hs_L_deg/NULL_DF/largest_null_edge_gap_deg"
+    ],
+    [
+     "KNEE_MDC_BATCHNULL_r399.json",
+     "/STEP1_BATCH_NULL/by_endpoint/knee_hs_L_deg/NULL_DF/all_edge_gaps_deg_sorted[0]"
+    ],
+    [
+     "KNEE_MDC_BATCHNULL_r399.json",
+     "/STEP1_BATCH_NULL/by_endpoint/knee_hs_L_deg/NULL_DF/pairs[1]/edge_gap"
+    ]
+   ],
+   "n_containers": 10,
+   "n_sites": 1
+  },
+  "0.577": {
+   "containers": [
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R174W892_s101/fits/gastroc_cycle/ratio_abs"
+    ],
+    [
+     "BETA2CONTROL_r388.json",
+     "/cells/R174W915_s104/fits/gastroc_cycle/ratio_abs"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R291KV0035_s106/sig/ankle_l.torque/THD_ratio_grid64"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R169W095_s103/sig/ankle_l.torque/percycle_THD_mean"
+    ]
+   ],
+   "n_containers": 18,
+   "n_sites": 1
+  },
+  "0.586": {
+   "containers": [
+    [
+     "BANDFILL_ENDPOINT_r291.json",
+     "/weakness_in_band[10]/hip_flexion_LmR"
+    ],
+    [
+     "BANDFILL_ENDPOINT_r291.json",
+     "/hip_secondary/weakness_in_band[10]"
+    ],
+    [
+     "BANDFILL_ENDPOINT_r291.json",
+     "/all_cells/weakness[81]/hip_flexion_LmR"
+    ],
+    [
+     "DERIVED_r515.json",
+     "/artefact_floor_deg"
+    ]
+   ],
+   "n_containers": 26,
+   "n_sites": 5
+  },
+  "0.645": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W950/lumbar_bending[43]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/W870/ankle_angle_LmR[87]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/W950/ankle_angle_r[23]"
+    ],
+    [
+     "SWINGFULL_r530.json",
+     "/family_means_deg/hyperreflexia[2]"
+    ]
+   ],
+   "n_containers": 12,
+   "n_sites": 1
+  },
+  "0.650": {
+   "containers": [
+    [
+     "CLAIMS_r537.json",
+     "/results/ankle 40-50% window/by_sigma/3.0/claim1_detect_weak"
+    ],
+    [
+     "BANDFILL_ENDPOINT_r291.json",
+     "/all_cells/weakness[47]/hip_flexion_LmR"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "0.662": {
+   "containers": [
+    [
+     "CAWOOD_CORRECTION_r450.json",
+     "/CORRECT_VALUES/initial_contact/TA_rho"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R169W095_s105/asym/gastroc_l_MIDTERT/ratio"
+    ],
+    [
+     "METRIC_r255.json",
+     "/windows/9.73/tables/mean_angle/hip_flexion_LmR/arms/W892/delta_from_control"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/W800/ankle_angle_r[73]"
+    ]
+   ],
+   "n_containers": 5,
+   "n_sites": 1
+  },
+  "0.672": {
+   "containers": [
+    [
+     "SUBPHASE_r441.json",
+     "/cawood_table5_plantarflexor_tone_vs_knee/pre_swing/rho"
+    ],
+    [
+     "CLAIMS_r537.json",
+     "/results/knee at contact  [current]/by_sigma/3.0/claim3_tone_severity_rho"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "0.687": {
+   "containers": [
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R174W892_s104/asym/gastroc_l_MIDTERT/ratio"
+    ],
+    [
+     "BANDFILL_ENDPOINT_r291.json",
+     "/all_cells/weakness[36]/hip_flexion_LmR"
+    ],
+    [
+     "CHANNELS_G2_r219.json",
+     "/channels/hip_adduction_LmR/control_mean"
+    ],
+    [
+     "CLAIMS_r537.json",
+     "/results/ankle peak in swing/by_sigma/3.0/claim1_lesioned_vs_control_acc"
+    ]
+   ],
+   "n_containers": 36,
+   "n_sites": 3
+  },
+  "0.743": {
+   "containers": [
+    [
+     "METRIC_r255.json",
+     "/windows/13.58/tables/excursion/hip_adduction_LmR/arms/S/mean"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W870/hip_flexion_l[61]"
+    ],
+    [
+     "PRIMARYB_RESULT_r179.json",
+     "/channels/hip_adduction_LmR/S_mean"
+    ],
+    [
+     "REOPT3D_RESULT_r151.json",
+     "/registered_asymmetry_endpoints/endpoints/hip_adduction_LmR/S_mean"
+    ]
+   ],
+   "n_containers": 37,
+   "n_sites": 1
+  },
+  "0.753": {
+   "containers": [
+    [
+     "HARMONIC_r383.json",
+     "/cells/R174W892_s101/sig/ankle_angle_r/H2_ratio_grid64"
+    ],
+    [
+     "SWINGSPEC_r529.json",
+     "/weakness_excursion_by_gain_deg/0.22"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 2
+  },
+  "0.759": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/W870/knee_angle_r[48]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/W892/knee_angle_LmR[67]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/W915/knee_angle_l[8]"
+    ],
+    [
+     "VIDEOKNEE_r422.json",
+     "/grid/fs60_yaw30_k2_s10/accuracy_mean"
+    ]
+   ],
+   "n_containers": 4,
+   "n_sites": 1
+  },
+  "0.766": {
+   "containers": [
+    [
+     "CLAIMS_r537.json",
+     "/results/knee at contact  [current]/by_sigma/3.0/claim1_detect_hyper"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "0.792": {
+   "containers": [
+    [
+     "CLAIMS_r537.json",
+     "/results/ankle at 85%/by_sigma/3.0/claim3_tone_severity_rho"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "0.803": {
+   "containers": [
+    [
+     "DRIFT_r545.json",
+     "/adjacent_rung_gaps_deg[3]"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "0.820": {
+   "containers": [
+    [
+     "METRIC_r255.json",
+     "/windows/13.58/tables/peak_pf/ankle_angle_LmR/arms/W892/mean"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/W915/ankle_angle_r[64]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/W950/ankle_angle_LmR[67]"
+    ]
+   ],
+   "n_containers": 3,
+   "n_sites": 3
+  },
+  "0.822": {
+   "containers": [
+    [
+     "DEPTH_STEP2_r212.json",
+     "/cells/W892/R174W892_s106/78/ch/hip_flexion_LmR"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R174W892_s102/ASYM/knee_ROM_cycle_deg"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R174W870_s101/sig/ankle_angle_r/H2_ratio"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R174W870_s101/sig/ankle_angle_r/H2_ratio_grid64"
+    ]
+   ],
+   "n_containers": 8,
+   "n_sites": 3
+  },
+  "0.833": {
+   "containers": [
+    [
+     "AUDIT_r554.json",
+     "/grid_pairs/closest_different_gain/d"
+    ],
+    [
+     "BATCHNULL_r389.json",
+     "/STEP3_LIKE_FOR_LIKE/by_rung/0.035/by_endpoint/BETA_abs_R/hit_rate"
+    ],
+    [
+     "BATCHNULL_r389.json",
+     "/STEP4_NEGATIVE_CONTROL_SIDE/by_endpoint/BETA_abs_R/by_rung/0.035/hit_rate"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R151W_s101/sig/ankle_angle_r/H2_ratio_grid64"
+    ]
+   ],
+   "n_containers": 8,
+   "n_sites": 3
+  },
+  "0.849": {
+   "containers": [
+    [
+     "BANDFILL_ENDPOINT_r291.json",
+     "/all_cells/weakness[45]/hip_flexion_LmR"
+    ],
+    [
+     "CLAIMS_r537.json",
+     "/results/ankle 40-50% window/by_sigma/3.0/claim3_tone_severity_rho"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "0.886": {
+   "containers": [
+    [
+     "VIDEO_DEGRADATION_A5.json",
+     "/cells[105]/seg/DET_B/splits/ALL/ref_mean"
+    ],
+    [
+     "VIDEO_DEGRADATION_A5.json",
+     "/cells[105]/seg/DET_B/splits/ALL/ref_cc_mean"
+    ],
+    [
+     "VIDEO_DEGRADATION_A5.json",
+     "/cells[113]/seg/DET_A/splits/ALL/loso_mean"
+    ],
+    [
+     "VIDEO_DEGRADATION_A5.json",
+     "/cells[113]/seg/DET_A/splits/ALL/loso_cc_mean"
+    ]
+   ],
+   "n_containers": 39,
+   "n_sites": 1
+  },
+  "0.892": {
+   "containers": [
+    [
+     "MARGINS_r248.json",
+     "/lesion_magnitude/weakness_ladder/W892/scale"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "0.900": {
+   "containers": [
+    [
+     "FLOOR_CORRECTION_r436.json",
+     "/EVERYTHING_RESCORED_ON_THE_CORRECT_SCALE/weakness_axis_at_KV0.025/SDs"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R203V130C_s105/sig/ankle_l.torque/harm_abs[2]"
+    ],
+    [
+     "MARGINS_r248.json",
+     "/ankle_angle_LmR/dose_response/severity_scale_ascending[3]"
+    ],
+    [
+     "MARGINS_r248.json",
+     "/lesion_magnitude/weakness_ladder/W900/scale"
+    ]
+   ],
+   "n_containers": 5,
+   "n_sites": 3
+  },
+  "0.902": {
+   "containers": [
+    [
+     "CLAIMS_r537.json",
+     "/results/ankle peak in swing/by_sigma/3.0/claim3_tone_severity_rho"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 2
+  },
+  "0.915": {
+   "containers": [
+    [
+     "MARGINS_r248.json",
+     "/lesion_magnitude/weakness_ladder/W915/scale"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "0.929": {
+   "containers": [
+    [
+     "KNEE_MDC_BATCHNULL_r399.json",
+     "/STEP1_BATCH_NULL/by_endpoint/knee_hs_R_deg/NULL_DF/all_edge_gaps_deg_sorted[5]"
+    ],
+    [
+     "KNEE_MDC_BATCHNULL_r399.json",
+     "/STEP1_BATCH_NULL/by_endpoint/knee_hs_R_deg/NULL_DF/pairs[13]/edge_gap"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/W950/ankle_angle_LmR[86]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/W915/ankle_angle_r[65]"
+    ]
+   ],
+   "n_containers": 9,
+   "n_sites": 1
+  },
+  "0.939": {
+   "containers": [
+    [
+     "CLAIMS_r537.json",
+     "/results/knee at contact  [current]/by_sigma/3.0/claim2_arm_lofo_acc"
+    ],
+    [
+     "VIDEOKNEE_r422.json",
+     "/grid/fs30_yaw10_k1_s4/accuracy_mean"
+    ],
+    [
+     "VIDEOKNEE_r422.json",
+     "/grid/fs60_yaw0_k2_s5/accuracy_mean"
+    ],
+    [
+     "VIDEOKNEE_r422.json",
+     "/grid/fs60_yaw20_k0_s5/accuracy_mean"
+    ]
+   ],
+   "n_containers": 5,
+   "n_sites": 2
+  },
+  "0.940": {
+   "containers": [
+    [
+     "VIDEOKNEE_r422.json",
+     "/grid/fs30_yaw10_k2_s0/accuracy_mean"
+    ],
+    [
+     "KNEE_MDC_BATCHNULL_r399.json",
+     "/STEP1_BATCH_NULL/by_endpoint/knee_hs_R_deg/NULL_DF/all_edge_gaps_deg_sorted[6]"
+    ],
+    [
+     "KNEE_MDC_BATCHNULL_r399.json",
+     "/STEP1_BATCH_NULL/by_endpoint/knee_hs_R_deg/NULL_DF/pairs[1]/edge_gap"
+    ]
+   ],
+   "n_containers": 3,
+   "n_sites": 1
+  },
+  "0.946": {
+   "containers": [
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R169W090_s103/R/hip_torque_swing_mean"
+    ],
+    [
+     "PAIR_r533.json",
+     "/decomposition/step1_ankle_to_gain_R2"
+    ],
+    [
+     "SHAPE_TEST_r139.json",
+     "/features/A1/r2"
+    ]
+   ],
+   "n_containers": 3,
+   "n_sites": 2
+  },
+  "0.963": {
+   "containers": [
+    [
+     "CLAIMS_r537.json",
+     "/results/ankle at 85%/by_sigma/3.0/claim1_detect_hyper"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "0.964": {
+   "containers": [
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R174W870_s103/R/hip_torque_swing_mean"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R174W915_s102/ASYM/knee_ROM_stance_deg"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/rungs/0.00625/by_signal/ankle_angle_r/A1/gap_over_pooled_sd"
+    ],
+    [
+     "MARGINS_r248.json",
+     "/ankle_angle_LmR/arms/W915/margin"
+    ]
+   ],
+   "n_containers": 6,
+   "n_sites": 2
+  },
+  "0.966": {
+   "containers": [
+    [
+     "TIE_r549.json",
+     "/endpoint/weak/rho_new"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/ranked_by_gap_desc[118]/effect_size_gap_over_pooled_sd"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R151W_s101/R/hip_torque_swing_mean"
+    ],
+    [
+     "VIDEO_DEGRADATION_A5.json",
+     "/cells[11]/seg/DET_A/splits/ALL/loso_mean"
+    ]
+   ],
+   "n_containers": 14,
+   "n_sites": 1
+  },
+  "0.981": {
+   "containers": [
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R174W915_s106/asym/ankle_l_torque_MIDTERT/mean_absv_shorten"
+    ],
+    [
+     "DERIVED_r515.json",
+     "/dose_response/ankle_r"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R169W090_s103/sig/ankle_l.torque/harm_abs[2]"
+    ],
+    [
+     "METRIC_LADDER_r256.json",
+     "/windows/13.58/excursion/ankle_angle_LmR/ladder/margins/W915"
+    ]
+   ],
+   "n_containers": 8,
+   "n_sites": 1
+  },
+  "0.983": {
+   "containers": [
+    [
+     "CLAIMS_r537.json",
+     "/results/knee at contact  [current]/by_sigma/0.0/claim2_arm_lofo_acc"
+    ],
+    [
+     "GATES_r534.json",
+     "/candidates/knee at contact  [current]/lofo_accuracy"
+    ],
+    [
+     "IC_KNEE_VS_ANKLE_r439.json",
+     "/classification_LOO/knee_ic_only"
+    ],
+    [
+     "INDEX_r536.json",
+     "/classification_lofo/B only (knee at contact)"
+    ]
+   ],
+   "n_containers": 7,
+   "n_sites": 3
+  },
+  "0.988": {
+   "containers": [
+    [
+     "CLAIMS_r537.json",
+     "/results/ankle 40-50% window/by_sigma/3.0/claim1_detect_hyper"
+    ],
+    [
+     "MISSING_CONTAINERS_r504.json",
+     "/speed_control/mean_speed_mps/hyperreflexia"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "0.993": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/C/ankle_angle_LmR[86]"
+    ],
+    [
+     "BODY2_CHANNELS_r229.json",
+     "/planes/SG2/comparisons[0]/weak_values/knee_angle_LmR[14]"
+    ],
+    [
+     "DERIVED_r515.json",
+     "/dose_response/knee_r"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R169W090_s103/ASYM/knee_ROM_cycle_deg"
+    ]
+   ],
+   "n_containers": 9,
+   "n_sites": 1
+  },
+  "0.994": {
+   "containers": [
+    [
+     "CLAIMS_r537.json",
+     "/results/ankle 40-50% window/by_sigma/2.0/claim1_detect_hyper"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/T2_dose_collinearity/ankle_angle_LmR/dose_line/mean_of_diff/r2_on_weakness"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "0.995": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/W950/knee_angle_l[1]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/T2_dose_collinearity/ankle_angle_LmR/dose_line/mean_of_diff/r2_on_weakness"
+    ],
+    [
+     "VIDEOKNEE_r422.json",
+     "/grid/fs60_yaw0_k1_s3/accuracy_mean"
+    ],
+    [
+     "VIDEOKNEE_r422.json",
+     "/grid/fs60_yaw20_k2_s2/accuracy_mean"
+    ]
+   ],
+   "n_containers": 4,
+   "n_sites": 2
+  },
+  "1.000": {
+   "containers": [
+    [
+     "ADAPT_RESULT_r391.json",
+     "/cells/R390ADAPTSg001_s101/n_generations"
+    ],
+    [
+     "ADAPT_RESULT_r391.json",
+     "/cells/R390ADAPTWg001_s102/n_generations"
+    ],
+    [
+     "ADAPT_RESULT_r391.json",
+     "/cells/R390ADAPTWg001_s104/n_generations"
+    ],
+    [
+     "ADAPT_RESULT_r391.json",
+     "/cells/R390ADAPTWg001_s105/n_generations"
+    ]
+   ],
+   "n_containers": 2989,
+   "n_sites": 18
+  },
+  "1.023": {
+   "containers": [
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R169W090_s101/asym/soleus_l_MIDTERT/mean_absv_shorten"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R169W090_s101/asym/gastroc_l_MIDTERT/mean_absv_shorten"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R169W090_s101/asym/tib_ant_l_MIDTERT/mean_absv_shorten"
+    ],
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R169W090_s101/asym/ankle_l_torque_MIDTERT/mean_absv_shorten"
+    ]
+   ],
+   "n_containers": 20,
+   "n_sites": 1
+  },
+  "1.086": {
+   "containers": [
+    [
+     "DRIFT_r545.json",
+     "/adjacent_rung_gaps_deg[0]"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R289KV00625_s102/ASYM/hip_ROM_swing_deg"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "1.201": {
+   "containers": [
+    [
+     "SWINGSPEC_r529.json",
+     "/weakness_excursion_by_gain_deg/0.025"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 2
+  },
+  "1.224": {
+   "containers": [
+    [
+     "SWINGFULL_r530.json",
+     "/family_means_deg/hyperreflexia[1]"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "1.358": {
+   "containers": [
+    [
+     "BODY2_CHANNELS_r229.json",
+     "/planes/SG0/comparisons[0]/spastic_values/knee_angle_LmR[2]"
+    ],
+    [
+     "GATES_r534.json",
+     "/candidates/knee at contact  [current]/disp_weak"
+    ],
+    [
+     "IC_KNEE_VS_ANKLE_r439.json",
+     "/endpoints/knee_ic/displacement_from_control/weakness"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W892/pelvis_list[99]"
+    ]
+   ],
+   "n_containers": 9,
+   "n_sites": 1
+  },
+  "1.449": {
+   "containers": [
+    [
+     "HARMONIC_r383.json",
+     "/cells/R289KV0125_s102/sig/ankle_vel_l/H2_ratio_grid64"
+    ],
+    [
+     "SWINGSPEC_r529.json",
+     "/weakness_excursion_by_gain_deg/0.1"
+    ],
+    [
+     "SWINGSPEC_r529.json",
+     "/worst_case_specificity/largest_weakness_excursion_deg"
+    ]
+   ],
+   "n_containers": 3,
+   "n_sites": 2
+  },
+  "1.492": {
+   "containers": [
+    [
+     "KNEE_MDC_BATCHNULL_r399.json",
+     "/STEP4_UNLESIONED_SIDE_NEGATIVE_CONTROL/by_rung/0.050/LEFT_edge_gaps/min"
+    ],
+    [
+     "METRIC_r255.json",
+     "/windows/13.58/tables/peak_pf/knee_angle_LmR/arms/S/delta_from_control"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/W915/ankle_angle_LmR[70]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/W915/knee_angle_LmR[43]"
+    ]
+   ],
+   "n_containers": 7,
+   "n_sites": 1
+  },
+  "1.505": {
+   "containers": [
+    [
+     "DRIFT_r545.json",
+     "/largest_drift_deg"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/ranked_by_gap_desc[146]/effect_size_gap_over_pooled_sd"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/ranked_by_gap_desc[147]/effect_size_gap_over_pooled_sd"
+    ]
+   ],
+   "n_containers": 3,
+   "n_sites": 2
+  },
+  "1.690": {
+   "containers": [
+    [
+     "BANDFILL_ENDPOINT_r290.json",
+     "/weakness_cells[5]/knee_angle_LmR"
+    ],
+    [
+     "BANDFILL_ENDPOINT_r291.json",
+     "/all_cells/weakness[5]/knee_angle_LmR"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R203V130C_s106/sig/ankle_vel_l/H2_ratio_grid64"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/W800/ankle_angle_LmR[57]"
+    ]
+   ],
+   "n_containers": 7,
+   "n_sites": 1
+  },
+  "1.826": {
+   "containers": [
+    [
+     "ASYMMETRY_r384.json",
+     "/ARM_SEED_MEANS/ankle_l_torque_MIDTERT|diff/CONTROL_between_scenario/s105"
+    ],
+    [
+     "OPTDIST_r233.json",
+     "/correlations/D_raw/arm_means/W800"
+    ],
+    [
+     "SWINGFULL_r530.json",
+     "/family_means_deg/hyperreflexia[4]"
+    ],
+    [
+     "TIMING_STABILITY_r386.json",
+     "/TEST2_cycle/0.0125/PRIMARY/abs_drift_over_sd/a_seed_means/s106"
+    ]
+   ],
+   "n_containers": 4,
+   "n_sites": 1
+  },
+  "1.827": {
+   "containers": [
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R174W915_s102/R/ankle_mean_swing_deg"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/S/ankle_angle_LmR[34]"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "1.869": {
+   "containers": [
+    [
+     "DRIFT_r545.json",
+     "/adjacent_rung_gaps_deg[1]"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R174W892_s102/L/ankle_mean_cycle_deg"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "1.974": {
+   "containers": [
+    [
+     "FALLER_r544.json",
+     "/groups/hyperreflexia, in band/peak_min"
+    ],
+    [
+     "FALLER_r544.json",
+     "/groups/hyperreflexia, all/peak_min"
+    ],
+    [
+     "HAMCTRL_r600.json",
+     "/groups/hyperreflexia, all admitted/peak_min"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/W915/lumbar_bending[68]"
+    ]
+   ],
+   "n_containers": 5,
+   "n_sites": 1
+  },
+  "10.200": {
+   "containers": [
+    [
+     "DRIFT_r545.json",
+     "/tone_score_by_dose_and_sigma/0.2/0.0"
+    ],
+    [
+     "INDEX_r536.json",
+     "/tone_score/by_dose/0.2"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W900/ankle_angle_r[64]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W915/ankle_angle_l[17]"
+    ]
+   ],
+   "n_containers": 5,
+   "n_sites": 1
+  },
+  "10.578": {
+   "containers": [
+    [
+     "DRIFT_r545.json",
+     "/tone_score_by_dose_and_sigma/0.22/0.0"
+    ],
+    [
+     "INDEX_r536.json",
+     "/tone_score/by_dose/0.22"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "11.226": {
+   "containers": [
+    [
+     "TIMING_STABILITY_r386.json",
+     "/TEST1_lag/0.00625/left_PRIMARY/resid.l.tib_ant.vrect.centroid_lag_ms/b_seed_means/s102"
+    ],
+    [
+     "TIMING_STABILITY_r386.json",
+     "/TEST1_lag/0.00625/left_PRIMARY/resid.l.tib_ant.vrect.centroid_lag_contig_ms/b_seed_means/s102"
+    ],
+    [
+     "TIMING_STABILITY_r386.json",
+     "/TEST1_lag/0.0125/left_PRIMARY/resid.l.tib_ant.vrect.centroid_lag_ms/b_seed_means/s102"
+    ],
+    [
+     "TIMING_STABILITY_r386.json",
+     "/TEST1_lag/0.0125/left_PRIMARY/resid.l.tib_ant.vrect.centroid_lag_contig_ms/b_seed_means/s102"
+    ]
+   ],
+   "n_containers": 9,
+   "n_sites": 1
+  },
+  "11.316": {
+   "containers": [
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[20]/hyperreflexia"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "11.381": {
+   "containers": [
+    [
+     "DRIFT_r545.json",
+     "/tone_score_by_dose_and_sigma/0.24/0.0"
+    ],
+    [
+     "INDEX_r536.json",
+     "/tone_score/by_dose/0.24"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "11.772": {
+   "containers": [
+    [
+     "FALLER_r544.json",
+     "/groups/hyperreflexia, in band/knee_ic_mean"
+    ],
+    [
+     "FALLER_r544.json",
+     "/groups/hyperreflexia, all/knee_ic_mean"
+    ],
+    [
+     "GATES_r534.json",
+     "/candidates/knee at contact  [current]/hyperreflexia"
+    ],
+    [
+     "IC_KNEE_VS_ANKLE_r439.json",
+     "/endpoints/knee_ic/spastic/mean"
+    ]
+   ],
+   "n_containers": 7,
+   "n_sites": 3
+  },
+  "17.232": {
+   "containers": [
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[1]/weakness"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "18.521": {
+   "containers": [
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[1]/control"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "2.000000": {
+   "containers": [
+    [
+     "CLAIMS_r537.json",
+     "/motion_capture_model/jitter_sigma_deg[2]"
+    ],
+    [
+     "DFSEVERE_RESULT_r303.json",
+     "/per_cell[12]/n_par_files"
+    ],
+    [
+     "DFSEVERE_RESULT_r303.json",
+     "/per_cell[13]/n_par_files"
+    ],
+    [
+     "DFSEVERE_RESULT_r303.json",
+     "/per_cell[14]/n_par_files"
+    ]
+   ],
+   "n_containers": 27,
+   "n_sites": 1
+  },
+  "2.070": {
+   "containers": [
+    [
+     "GATES_r534.json",
+     "/candidates/ankle at 45%/cell_gap"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/W892/pelvis_rotation[25]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/W900/pelvis_rotation[21]"
+    ]
+   ],
+   "n_containers": 3,
+   "n_sites": 1
+  },
+  "2.077": {
+   "containers": [
+    [
+     "HARMONIC_r383.json",
+     "/cells/R203V105C_s101/sig/ankle_angle_l/phase2_rel"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/W800/ankle_angle_LmR[10]"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "2.208": {
+   "containers": [
+    [
+     "ASYMMETRY_r384.json",
+     "/ARM_SEED_MEANS/ankle_l_torque_MIDTERT|diff/DFWEAK/s102"
+    ],
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R169W090_s102/L/ankle_mean_swing_deg"
+    ],
+    [
+     "GRADEALL_r543.json",
+     "/all[43]/weak/span_deg"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R291KV0035_s102/sig/ankle_angle_r/phase2_rel"
+    ]
+   ],
+   "n_containers": 11,
+   "n_sites": 4
+  },
+  "2.272": {
+   "containers": [
+    [
+     "GRADEALL_r543.json",
+     "/all[45]/weak/span_deg"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W950/hip_adduction_l[90]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W950/pelvis_list[42]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/W900/pelvis_rotation[14]"
+    ]
+   ],
+   "n_containers": 6,
+   "n_sites": 4
+  },
+  "2.304": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W915/ankle_angle_LmR[37]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/W915/ankle_angle_l[73]"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "2.310": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/W950/lumbar_bending[36]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/W900/lumbar_bending[87]"
+    ],
+    [
+     "SWINGFULL_r530.json",
+     "/sham_chains/spastic KV0.100/R151S/mean"
+    ],
+    [
+     "SWINGFULL_r530.json",
+     "/family_means_deg/hyperreflexia[0]"
+    ]
+   ],
+   "n_containers": 4,
+   "n_sites": 1
+  },
+  "2.404": {
+   "containers": [
+    [
+     "FALLER_r544.json",
+     "/groups/hyperreflexia, in band/peak_max"
+    ],
+    [
+     "FALLER_r544.json",
+     "/groups/hyperreflexia, all/peak_max"
+    ],
+    [
+     "HAMCTRL_r600.json",
+     "/groups/hyperreflexia, all admitted/peak_max"
+    ]
+   ],
+   "n_containers": 3,
+   "n_sites": 1
+  },
+  "2.541": {
+   "containers": [
+    [
+     "ASYMMETRY_r384.json",
+     "/cells/R169W095_s102/asym/ankle_l_torque_MIDTERT/diff"
+    ],
+    [
+     "GATES_r534.json",
+     "/candidates/ankle at 45%/hyperreflexia"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R174W870_s104/sig/ankle_vel_l/phase2_rel"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W900/ankle_angle_l[6]"
+    ]
+   ],
+   "n_containers": 5,
+   "n_sites": 1
+  },
+  "2.759": {
+   "containers": [
+    [
+     "ANKLESHAPE_r539.json",
+     "/control_ankle_curve_deg/50"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/S/hip_adduction_LmR[49]"
+    ],
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[37]/control"
+    ],
+    [
+     "VELOCITYDEP_r369.json",
+     "/slopes/C/s102/SLOPE_ankle_rom_deg"
+    ]
+   ],
+   "n_containers": 4,
+   "n_sites": 1
+  },
+  "2.870": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/S/lumbar_bending[62]"
+    ],
+    [
+     "GRADEALL_r543.json",
+     "/all[42]/weak/span_deg"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W870/knee_angle_r[85]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/W892/lumbar_bending[64]"
+    ]
+   ],
+   "n_containers": 5,
+   "n_sites": 4
+  },
+  "23.706": {
+   "containers": [
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[1]/hyperreflexia"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "3.287": {
+   "containers": [
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[35]/arm_difference"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "3.437": {
+   "containers": [
+    [
+     "DERIVED_r515.json",
+     "/dose_response/knee_total_rise_deg"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/W892/knee_angle_LmR[59]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/summary/W892/knee_angle_LmR/max_abs_dev"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/summary/W892/knee_angle_LmR/dev_at_max_phase"
+    ]
+   ],
+   "n_containers": 5,
+   "n_sites": 2
+  },
+  "3.529": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/S/ankle_angle_LmR[0]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W900/ankle_angle_l[56]"
+    ],
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[37]/weakness"
+    ]
+   ],
+   "n_containers": 3,
+   "n_sites": 1
+  },
+  "3.922": {
+   "containers": [
+    [
+     "GATES_r534.json",
+     "/candidates/knee at contact  [current]/disp_hyper"
+    ],
+    [
+     "IC_KNEE_VS_ANKLE_r439.json",
+     "/endpoints/knee_ic/displacement_from_control/spastic"
+    ],
+    [
+     "SUBPHASE_r441.json",
+     "/windows/initial_contact/displacement_from_control/spastic"
+    ]
+   ],
+   "n_containers": 3,
+   "n_sites": 1
+  },
+  "3.954": {
+   "containers": [
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[35]/hyperreflexia"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "4.021": {
+   "containers": [
+    [
+     "GATES_r534.json",
+     "/candidates/ankle at 45%/arm_difference"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R174W892_s103/sig/ankle_vel_l/THD_ratio_grid64"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W870/ankle_angle_l[49]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W950/ankle_angle_LmR[1]"
+    ]
+   ],
+   "n_containers": 6,
+   "n_sites": 1
+  },
+  "4.106": {
+   "containers": [
+    [
+     "HARMONIC_r383.json",
+     "/cells/R289KV00625_s102/sig/ankle_vel_l/THD_ratio"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/rungs/0.00625/by_signal/ankle_vel_l/THD_ratio/spastic_seed_means/s102"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/rungs/0.00625/by_signal/ankle_vel_l/THD_ratio/spastic_range[0]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/W800/ankle_angle_l[70]"
+    ]
+   ],
+   "n_containers": 5,
+   "n_sites": 1
+  },
+  "4.148": {
+   "containers": [
+    [
+     "GRADEALL_r543.json",
+     "/all[45]/hyper/span_deg"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/C/lumbar_bending[55]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/W950/lumbar_bending[5]"
+    ],
+    [
+     "TIE_r549.json",
+     "/all[45]/hyper/span_deg"
+    ]
+   ],
+   "n_containers": 4,
+   "n_sites": 2
+  },
+  "5.033": {
+   "containers": [
+    [
+     "GATES_r534.json",
+     "/candidates/ankle at 85%  [scan winner]/cell_gap"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W800/ankle_angle_l[72]"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "5.280": {
+   "containers": [
+    [
+     "ENDPOINT_r523.json",
+     "/readouts[0]/arm_difference_deg"
+    ],
+    [
+     "GATES_r534.json",
+     "/candidates/knee at contact  [current]/arm_difference"
+    ],
+    [
+     "IC_KNEE_VS_ANKLE_r439.json",
+     "/endpoints/knee_ic/spastic_minus_weakness_deg"
+    ],
+    [
+     "LIMBDIFF_r521.json",
+     "/scores/paretic_side_only/arm_difference_deg"
+    ]
+   ],
+   "n_containers": 8,
+   "n_sites": 1
+  },
+  "5.456": {
+   "containers": [
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[20]/arm_difference"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "5.861": {
+   "containers": [
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[20]/weakness"
+    ],
+    [
+     "TIMING_STABILITY_r386.json",
+     "/TEST1_lag/0.035/vs_control_BETWEEN_SCENARIO/raw.l.tib_ant.v.centroid_lag_ms/gap"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "5.863": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/W870/ankle_angle_l[8]"
+    ],
+    [
+     "ANKLESHAPE_r539.json",
+     "/control_ankle_curve_deg/45"
+    ],
+    [
+     "GATES_r534.json",
+     "/candidates/ankle at 45%/control"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W950/ankle_angle_r[20]"
+    ]
+   ],
+   "n_containers": 5,
+   "n_sites": 1
+  },
+  "6.055": {
+   "containers": [
+    [
+     "GRADEALL_r543.json",
+     "/all[43]/hyper/span_deg"
+    ],
+    [
+     "TIE_r549.json",
+     "/all[43]/hyper/span_deg"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 2
+  },
+  "6.265": {
+   "containers": [
+    [
+     "GATES_r534.json",
+     "/candidates/ankle peak in swing/cell_gap"
+    ],
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[48]/cell_gap"
+    ],
+    [
+     "SWINGDF_r525.json",
+     "/simulation/cell_gap_deg"
+    ],
+    [
+     "SWINGFULL_r530.json",
+     "/cell_gap_deg"
+    ]
+   ],
+   "n_containers": 4,
+   "n_sites": 7
+  },
+  "6.308": {
+   "containers": [
+    [
+     "GRADEALL_r543.json",
+     "/all[42]/hyper/span_deg"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/C/knee_angle_l[24]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/W892/ankle_angle_l[45]"
+    ],
+    [
+     "TIE_r549.json",
+     "/all[42]/hyper/span_deg"
+    ]
+   ],
+   "n_containers": 4,
+   "n_sites": 2
+  },
+  "6.474": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W870/ankle_angle_l[45]"
+    ],
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[1]/arm_difference"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "6.492": {
+   "containers": [
+    [
+     "FALLER_r544.json",
+     "/groups/dorsiflexor weakness, all/knee_ic_mean"
+    ],
+    [
+     "FAMILY_LEVEL_r494.json",
+     "/arm_means_deg/weakness"
+    ],
+    [
+     "FINAL_AUDIT_r412.json",
+     "/claims/b/recompute_attempt/WEAK_arm_DOES_NOT_REPRODUCE/dorsiflexor_weakness_all_Gate_G/mean"
+    ],
+    [
+     "GATES_r534.json",
+     "/candidates/knee at contact  [current]/weakness"
+    ]
+   ],
+   "n_containers": 12,
+   "n_sites": 1
+  },
+  "6.562": {
+   "containers": [
+    [
+     "GATES_r534.json",
+     "/candidates/ankle at 45%/weakness"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/C/ankle_angle_LmR[46]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/S/ankle_angle_r[92]"
+    ],
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[36]/weakness"
+    ]
+   ],
+   "n_containers": 4,
+   "n_sites": 1
+  },
+  "6.795": {
+   "containers": [
+    [
+     "ANKLESHAPE_r539.json",
+     "/control_ankle_curve_deg/40"
+    ],
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[35]/control"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "6.941": {
+   "containers": [
+    [
+     "ANKLESHAPE_r539.json",
+     "/control_ankle_curve_deg/85"
+    ],
+    [
+     "GATES_r534.json",
+     "/candidates/ankle at 85%  [scan winner]/control"
+    ],
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[44]/control"
+    ]
+   ],
+   "n_containers": 3,
+   "n_sites": 1
+  },
+  "7.008": {
+   "containers": [
+    [
+     "WELCH_CORRECTION_r573.json",
+     "/ci95_corrected[0]"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "7.025": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W950/ankle_angle_l[41]"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "7.241": {
+   "containers": [
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[35]/weakness"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "7.245": {
+   "containers": [
+    [
+     "DRIFT_r545.json",
+     "/tone_score_by_dose_and_sigma/0.1/0.0"
+    ],
+    [
+     "INDEX_r536.json",
+     "/tone_score/by_dose/0.1"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "7.278": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/C/ankle_angle_LmR[93]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/W950/ankle_angle_r[59]"
+    ],
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[20]/control"
+    ]
+   ],
+   "n_containers": 3,
+   "n_sites": 1
+  },
+  "7.431": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/diff_from_control/S/pelvis_rotation[22]"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 2
+  },
+  "7.488": {
+   "containers": [
+    [
+     "FALLER_r544.json",
+     "/groups/non-reflex fallers, in band/knee_ic_mean"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "7.850": {
+   "containers": [
+    [
+     "ANKLESHAPE_r539.json",
+     "/knee_contact_deg"
+    ],
+    [
+     "CELL_CACHE_r501.json",
+     "/R151C/knee_mean"
+    ],
+    [
+     "DIRECTION_r398.json",
+     "/endpoints/knee_at_heelstrike/control_mean"
+    ],
+    [
+     "FALLER_r544.json",
+     "/groups/control R151C/knee_ic_mean"
+    ]
+   ],
+   "n_containers": 27,
+   "n_sites": 3
+  },
+  "8.046": {
+   "containers": [
+    [
+     "GATES_r534.json",
+     "/candidates/ankle at 85%  [scan winner]/weakness"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R203V080C_s102/sig/ankle_l.torque/A0_dc"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R203V105C_s102/sig/ankle_l.torque/A0_dc"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/diff_from_control/S/pelvis_rotation[76]"
+    ]
+   ],
+   "n_containers": 5,
+   "n_sites": 1
+  },
+  "8.113": {
+   "containers": [
+    [
+     "MIXEDSWING_r526.json",
+     "/regression/knee_ic/span_commanded_by_gain_deg"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 2
+  },
+  "8.155": {
+   "containers": [
+    [
+     "GATES_r534.json",
+     "/candidates/ankle at 85%  [scan winner]/arm_difference"
+    ],
+    [
+     "HARMONIC_r383.json",
+     "/cells/R289KV0125_s103/sig/ankle_l.torque/A0_dc"
+    ],
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[44]/arm_difference"
+    ]
+   ],
+   "n_containers": 3,
+   "n_sites": 1
+  },
+  "8.210": {
+   "containers": [
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R169W095_s102/R/hip_torque_peak_abs"
+    ],
+    [
+     "MIXEDSWING_r526.json",
+     "/regression/swing_df/span_commanded_by_gain_deg"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 2
+  },
+  "8.284": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/W800/hip_flexion_l[58]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/W892/ankle_angle_l[84]"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "8.331": {
+   "containers": [
+    [
+     "DRIFT_r545.json",
+     "/tone_score_by_dose_and_sigma/0.14/0.0"
+    ],
+    [
+     "INDEX_r536.json",
+     "/tone_score/by_dose/0.14"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W800/pelvis_rotation[14]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W900/hip_adduction_LmR[7]"
+    ]
+   ],
+   "n_containers": 4,
+   "n_sites": 1
+  },
+  "8.654": {
+   "containers": [
+    [
+     "GATES_r534.json",
+     "/candidates/ankle peak in swing/per_cycle[4]"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "8.656": {
+   "containers": [
+    [
+     "GATES_r534.json",
+     "/candidates/ankle peak in swing/per_cycle[1]"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "8.731": {
+   "containers": [
+    [
+     "GATES_r534.json",
+     "/candidates/ankle peak in swing/arm_difference"
+    ],
+    [
+     "MISSING_CONTAINERS_r504.json",
+     "/peak_swing_dorsiflexion_deg/hyper_minus_weak"
+    ],
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[48]/arm_difference"
+    ],
+    [
+     "SWINGDF_r525.json",
+     "/simulation/effect_deg"
+    ]
+   ],
+   "n_containers": 6,
+   "n_sites": 10
+  },
+  "8.734": {
+   "containers": [
+    [
+     "SWINGFULL_r530.json",
+     "/sham_chains/weak x0.80/R151W/mean"
+    ],
+    [
+     "SWINGFULL_r530.json",
+     "/sham_chains/weak x0.80/R400WKc2/mean"
+    ],
+    [
+     "SWINGFULL_r530.json",
+     "/family_means_deg/weakness[0]"
+    ]
+   ],
+   "n_containers": 3,
+   "n_sites": 1
+  },
+  "8.761": {
+   "containers": [
+    [
+     "EXPLORATORY_SCAN_r367.json",
+     "/per_cell_values/R151W_s102/L/ankle_peak_dorsiflexion_swing_deg"
+    ],
+    [
+     "VIDEO_DEGRADATION_A5.json",
+     "/cells[18]/seg/GRF/splits/SEVERE/margin_gap"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "8.777": {
+   "containers": [
+    [
+     "GATES_r534.json",
+     "/candidates/ankle peak in swing/per_cycle[3]"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "8.790": {
+   "containers": [
+    [
+     "GATES_r534.json",
+     "/candidates/ankle peak in swing/per_cycle[2]"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "8.930": {
+   "containers": [
+    [
+     "GATES_r534.json",
+     "/candidates/ankle peak in swing/per_cycle[0]"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "9.045": {
+   "containers": [
+    [
+     "SWINGFULL_r530.json",
+     "/family_means_deg/weakness[1]"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "9.117": {
+   "containers": [
+    [
+     "SWINGFULL_r530.json",
+     "/welch/difference_deg"
+    ],
+    [
+     "WELCH_CORRECTION_r573.json",
+     "/difference_deg"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 2
+  },
+  "9.125": {
+   "containers": [
+    [
+     "DRIFT_r545.json",
+     "/clean_means/weakness"
+    ],
+    [
+     "FALLER_r544.json",
+     "/groups/dorsiflexor weakness, all/peak_mean"
+    ],
+    [
+     "GATES_r534.json",
+     "/candidates/ankle peak in swing/weakness"
+    ],
+    [
+     "MISSING_CONTAINERS_r504.json",
+     "/peak_swing_dorsiflexion_deg/weakness"
+    ]
+   ],
+   "n_containers": 7,
+   "n_sites": 1
+  },
+  "9.145": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/W915/pelvis_rotation[94]"
+    ],
+    [
+     "SWINGFULL_r530.json",
+     "/family_means_deg/weakness[2]"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "9.161": {
+   "containers": [
+    [
+     "FALLER_r544.json",
+     "/groups/hyperreflexia, in band/vs_control"
+    ],
+    [
+     "FALLER_r544.json",
+     "/groups/hyperreflexia, all/vs_control"
+    ],
+    [
+     "GATES_r534.json",
+     "/candidates/ankle peak in swing/disp_hyper"
+    ],
+    [
+     "SWEEP_r532.json",
+     "/all_candidates[48]/disp_hyper"
+    ]
+   ],
+   "n_containers": 4,
+   "n_sites": 7
+  },
+  "9.168": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/S/hip_adduction_LmR[56]"
+    ],
+    [
+     "SWINGFULL_r530.json",
+     "/family_means_deg/weakness[3]"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W915/ankle_angle_LmR[22]"
+    ]
+   ],
+   "n_containers": 3,
+   "n_sites": 1
+  },
+  "9.263": {
+   "containers": [
+    [
+     "SWINGFULL_r530.json",
+     "/family_means_deg/weakness[4]"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "9.396": {
+   "containers": [
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/W950/pelvis_rotation[8]"
+    ],
+    [
+     "SWINGFULL_r530.json",
+     "/family_means_deg/weakness[5]"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "9.398": {
+   "containers": [
+    [
+     "HAMCTRL_r600.json",
+     "/groups/hamstring weakness x0.60/knee_ic_mean"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "9.470": {
+   "containers": [
+    [
+     "HAMCTRL_r600.json",
+     "/groups/hamstring weakness x0.60/peak_mean"
+    ]
+   ],
+   "n_containers": 1,
+   "n_sites": 1
+  },
+  "9.512": {
+   "containers": [
+    [
+     "FALLER_r544.json",
+     "/groups/non-reflex fallers, in band/peak_min"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/9.73/mean_curve/S/hip_flexion_r[1]"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  },
+  "9.555": {
+   "containers": [
+    [
+     "AUDIT_r554.json",
+     "/control_deg"
+    ],
+    [
+     "DRIFT_r545.json",
+     "/clean_means/control"
+    ],
+    [
+     "FALLER_r544.json",
+     "/groups/control R151C/peak_mean"
+    ],
+    [
+     "GATES_r534.json",
+     "/candidates/ankle peak in swing/control"
+    ]
+   ],
+   "n_containers": 11,
+   "n_sites": 2
+  },
+  "9.572": {
+   "containers": [
+    [
+     "AUDIT_r554.json",
+     "/faller_selection_order/as shipped (gate, then pick)/peak_mean"
+    ],
+    [
+     "AUDIT_r554.json",
+     "/faller_selection_order/corrected (pick, then gate)/peak_mean"
+    ],
+    [
+     "FALLER_r544.json",
+     "/groups/non-reflex fallers, in band/peak_mean"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/W892/hip_adduction_LmR[63]"
+    ]
+   ],
+   "n_containers": 4,
+   "n_sites": 2
+  },
+  "9.673": {
+   "containers": [
+    [
+     "FALLER_r544.json",
+     "/groups/non-reflex fallers, in band/peak_max"
+    ],
+    [
+     "PHASE_r258.json",
+     "/windows/13.58/mean_curve/W915/ankle_angle_LmR[7]"
+    ]
+   ],
+   "n_containers": 2,
+   "n_sites": 1
+  }
+ },
+ "id": "BINDING_r572",
+ "n_bound": 199,
+ "n_tokens": 222,
+ "n_unbound": 23,
+ "unbound": {
+  "0.110": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "Gains below are delivered, measured directly in the model file as a multiplier of 2.000000 ± 7 × 10⁻⁶ over 102 measurements, and the archived outputs ",
+   "n_sites": 1,
+   "n_unrelated_deposits": 456,
+   "value_present_but_unrelated": true
+  },
+  "0.120": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "Gains below are delivered, measured directly in the model file as a multiplier of 2.000000 ± 7 × 10⁻⁶ over 102 measurements, and the archived outputs ",
+   "n_sites": 1,
+   "n_unrelated_deposits": 294,
+   "value_present_but_unrelated": true
+  },
+  "0.563": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "Dorsiflexor strength is the strongest single determinant of gait velocity in chronic hemiparesis [27], and this endpoint depends on speed at −0.563 °/",
+   "n_sites": 3,
+   "n_unrelated_deposits": 89,
+   "value_present_but_unrelated": true
+  },
+  "0.640": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "The first figure is not comparable to the 0.640 to 0.821 above, which are leave-one-gain-level-out and therefore a harder fold.",
+   "n_sites": 1,
+   "n_unrelated_deposits": 47,
+   "value_present_but_unrelated": true
+  },
+  "0.682": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "**The three weakness-grading variables under the noise model.** Their rank correlations with weakness depth fall from 0.822, 0.900 and 0.820 on noise-",
+   "n_sites": 1,
+   "n_unrelated_deposits": 48,
+   "value_present_but_unrelated": true
+  },
+  "0.693": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "**The three weakness-grading variables under the noise model.** Their rank correlations with weakness depth fall from 0.822, 0.900 and 0.820 on noise-",
+   "n_sites": 1,
+   "n_unrelated_deposits": 54,
+   "value_present_but_unrelated": true
+  },
+  "0.707": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "**The three weakness-grading variables under the noise model.** Their rank correlations with weakness depth fall from 0.822, 0.900 and 0.820 on noise-",
+   "n_sites": 1,
+   "n_unrelated_deposits": 57,
+   "value_present_but_unrelated": true
+  },
+  "0.821": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "The first figure is not comparable to the 0.640 to 0.821 above, which are leave-one-gain-level-out and therefore a harder fold.",
+   "n_sites": 1,
+   "n_unrelated_deposits": 30,
+   "value_present_but_unrelated": true
+  },
+  "1.008": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "Measured over 250 realisations for the biases and 50 for the tone scores, per-frame jitter of 1, 2 and 3° biases the reading upward by 1.008, 2.397 an",
+   "n_sites": 1,
+   "n_unrelated_deposits": 27,
+   "value_present_but_unrelated": true
+  },
+  "1.030": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "Measured over 250 realisations for the biases and 50 for the tone scores, per-frame jitter of 1, 2 and 3° biases the reading upward by 1.008, 2.397 an",
+   "n_sites": 1,
+   "n_unrelated_deposits": 34,
+   "value_present_but_unrelated": true
+  },
+  "1.101": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "Pooling all runs across both groups instead gives 1.101 °·s⁻¹ and propagates 92 per cent of the effect, but that estimator is circular, since pooling ",
+   "n_sites": 1,
+   "n_unrelated_deposits": 29,
+   "value_present_but_unrelated": true
+  },
+  "1.477": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "Measured over 250 realisations for the biases and 50 for the tone scores, per-frame jitter of 1, 2 and 3° biases the reading upward by 1.008, 2.397 an",
+   "n_sites": 1,
+   "n_unrelated_deposits": 18,
+   "value_present_but_unrelated": true
+  },
+  "2.397": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "Measured over 250 realisations for the biases and 50 for the tone scores, per-frame jitter of 1, 2 and 3° biases the reading upward by 1.008, 2.397 an",
+   "n_sites": 1,
+   "n_unrelated_deposits": 7,
+   "value_present_but_unrelated": true
+  },
+  "2.432": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "Measured over 250 realisations for the biases and 50 for the tone scores, per-frame jitter of 1, 2 and 3° biases the reading upward by 1.008, 2.397 an",
+   "n_sites": 1,
+   "n_unrelated_deposits": 12,
+   "value_present_but_unrelated": true
+  },
+  "3.323": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "Measured over 250 realisations for the biases and 50 for the tone scores, per-frame jitter of 1, 2 and 3° biases the reading upward by 1.008, 2.397 an",
+   "n_sites": 1,
+   "n_unrelated_deposits": 4,
+   "value_present_but_unrelated": true
+  },
+  "3.897": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "Measured over 250 realisations for the biases and 50 for the tone scores, per-frame jitter of 1, 2 and 3° biases the reading upward by 1.008, 2.397 an",
+   "n_sites": 1,
+   "n_unrelated_deposits": 10,
+   "value_present_but_unrelated": true
+  },
+  "3.960": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "Measured over 250 realisations for the biases and 50 for the tone scores, per-frame jitter of 1, 2 and 3° biases the reading upward by 1.008, 2.397 an",
+   "n_sites": 1,
+   "n_unrelated_deposits": 10,
+   "value_present_but_unrelated": true
+  },
+  "5.260": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "Measured over 250 realisations for the biases and 50 for the tone scores, per-frame jitter of 1, 2 and 3° biases the reading upward by 1.008, 2.397 an",
+   "n_sites": 1,
+   "n_unrelated_deposits": 5,
+   "value_present_but_unrelated": true
+  },
+  "6.275": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "Raising it to 10.50, 11.50, 12.50 and 13.00 s removes 4, 10, 12 and 12 of the 23 hyperreflexia runs and none of the 36 weakness runs, and the run-leve",
+   "n_sites": 1,
+   "n_unrelated_deposits": 5,
+   "value_present_but_unrelated": true
+  },
+  "6.295": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "Raising it to 10.50, 11.50, 12.50 and 13.00 s removes 4, 10, 12 and 12 of the 23 hyperreflexia runs and none of the 36 weakness runs, and the run-leve",
+   "n_sites": 1,
+   "n_unrelated_deposits": 5,
+   "value_present_but_unrelated": true
+  },
+  "6.302": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "Raising the admissibility criterion from 9.73 s to 13.00 s removes 12 of the 23 hyperreflexia runs and none of the 36 weakness runs while the run-leve",
+   "n_sites": 3,
+   "n_unrelated_deposits": 4,
+   "value_present_but_unrelated": true
+  },
+  "7.108": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "Seventeen end between 9.93 and 17.56 s, inside the hyperreflexia group's own band, and their swing ankle is normal: mean 9.572°, displaced 0.017° from",
+   "n_sites": 1,
+   "n_unrelated_deposits": 2,
+   "value_present_but_unrelated": true
+  },
+  "7.840": {
+   "all_sites_carry_a_citation": false,
+   "first_site": "The group difference is set by the second and third of those, not by the control, and compresses from 8.731 to 8.284, 7.840 and 7.431°: to 85 per cent",
+   "n_sites": 1,
+   "n_unrelated_deposits": 4,
+   "value_present_but_unrelated": true
+  }
+ },
+ "what": "every numeric token of three or more decimals in the manuscript and supplement, and the deposits that carry it. Frozen so that a later unbinding is a failure."
+}

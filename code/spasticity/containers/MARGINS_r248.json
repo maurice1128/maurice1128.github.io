@@ -1,0 +1,251 @@
+{
+ "round": 248,
+ "question": "band-edge margins per severity, and lesion-magnitude confound",
+ "inputs": [
+  "LADDER36_r228.json",
+  "ANKLE_LADDER_r235.json",
+  "VERIFY_F5_r231.json"
+ ],
+ "recomputed_from_sto": false,
+ "corpus_shape": {
+  "weakness_severities": 6,
+  "spastic_conditions": 1,
+  "spastic_kv": 0.05,
+  "note": "The weakness arm has a six-point severity ladder. The spastic arm is ONE condition at KV=0.05, reused unchanged in every severity comparison; LADDER36_r228.json carries a single constant spastic_max for all six."
+ },
+ "hip_flexion_LmR": {
+  "band": [
+   -0.06909871009278135,
+   0.35020326353986064
+  ],
+  "band_definition": "[min, max] over the 6 control seeds",
+  "control_mean": 0.15525437374659865,
+  "arms": {
+   "S": {
+    "mean": -2.105294266092205,
+    "margin": 2.0361955559994236,
+    "side": "below",
+    "clears_band": true
+   },
+   "W800": {
+    "mean": 0.2807865618707825,
+    "margin": -0.06941670166907815,
+    "side": "INSIDE",
+    "clears_band": false
+   },
+   "W870": {
+    "mean": 0.35937058826195667,
+    "margin": 0.009167324722096026,
+    "side": "above",
+    "clears_band": true
+   },
+   "W892": {
+    "mean": 0.5532805145867172,
+    "margin": 0.2030772510468566,
+    "side": "above",
+    "clears_band": true
+   },
+   "W900": {
+    "mean": 0.5123025730789562,
+    "margin": 0.16209930953909557,
+    "side": "above",
+    "clears_band": true
+   },
+   "W915": {
+    "mean": 0.4429307531038364,
+    "margin": 0.09272748956397575,
+    "side": "above",
+    "clears_band": true
+   },
+   "W950": {
+    "mean": 0.725677785563627,
+    "margin": 0.3754745220237664,
+    "side": "above",
+    "clears_band": true
+   }
+  },
+  "dose_response": {
+   "severity_scale_ascending": [
+    0.8,
+    0.87,
+    0.892,
+    0.9,
+    0.915,
+    0.95
+   ],
+   "margins_in_that_order": [
+    -0.06941670166907815,
+    0.009167324722096026,
+    0.2030772510468566,
+    0.16209930953909557,
+    0.09272748956397575,
+    0.3754745220237664
+   ],
+   "spearman_rho_margin_vs_scale": 0.7714285714285715,
+   "expected_if_driven_by_the_weakness_lesion": -1.0,
+   "strictly_monotone_decreasing": false
+  },
+  "asymmetry": {
+   "spastic_margin": 2.0361955559994236,
+   "weak_margins": {
+    "W800": -0.06941670166907815,
+    "W870": 0.009167324722096026,
+    "W892": 0.2030772510468566,
+    "W900": 0.16209930953909557,
+    "W915": 0.09272748956397575,
+    "W950": 0.3754745220237664
+   },
+   "weak_arms_inside_band": [
+    "W800"
+   ],
+   "spastic_over_largest_weak": 5.422992604197359,
+   "spastic_over_smallest_cleared_weak": 222.11447916659657,
+   "largest_weak_over_spastic": 0.18440003020214465,
+   "dominant_arm": "spastic"
+  },
+  "channel": "hip_flexion_LmR"
+ },
+ "ankle_angle_LmR": {
+  "band": [
+   -1.0269466336806836,
+   -0.09382756853062446
+  ],
+  "band_definition": "[min, max] over the 6 control seeds",
+  "control_mean": -0.3826746916492419,
+  "arms": {
+   "S": {
+    "mean": 0.014444902635020776,
+    "margin": 0.10827247116564524,
+    "side": "above",
+    "clears_band": true
+   },
+   "W800": {
+    "mean": 2.231036220431393,
+    "margin": 2.3248637889620176,
+    "side": "above",
+    "clears_band": true
+   },
+   "W870": {
+    "mean": 1.461645893127806,
+    "margin": 1.5554734616584305,
+    "side": "above",
+    "clears_band": true
+   },
+   "W892": {
+    "mean": 1.1605432027713363,
+    "margin": 1.2543707713019607,
+    "side": "above",
+    "clears_band": true
+   },
+   "W900": {
+    "mean": 0.9488104692993744,
+    "margin": 1.0426380378299989,
+    "side": "above",
+    "clears_band": true
+   },
+   "W915": {
+    "mean": 0.8699600175334723,
+    "margin": 0.9637875860640968,
+    "side": "above",
+    "clears_band": true
+   },
+   "W950": {
+    "mean": 0.23280612117687363,
+    "margin": 0.32663368970749806,
+    "side": "above",
+    "clears_band": true
+   }
+  },
+  "dose_response": {
+   "severity_scale_ascending": [
+    0.8,
+    0.87,
+    0.892,
+    0.9,
+    0.915,
+    0.95
+   ],
+   "margins_in_that_order": [
+    2.3248637889620176,
+    1.5554734616584305,
+    1.2543707713019607,
+    1.0426380378299989,
+    0.9637875860640968,
+    0.32663368970749806
+   ],
+   "spearman_rho_margin_vs_scale": -1.0,
+   "expected_if_driven_by_the_weakness_lesion": -1.0,
+   "strictly_monotone_decreasing": true
+  },
+  "asymmetry": {
+   "spastic_margin": 0.10827247116564524,
+   "weak_margins": {
+    "W800": 2.3248637889620176,
+    "W870": 1.5554734616584305,
+    "W892": 1.2543707713019607,
+    "W900": 1.0426380378299989,
+    "W915": 0.9637875860640968,
+    "W950": 0.32663368970749806
+   },
+   "weak_arms_inside_band": [],
+   "spastic_over_largest_weak": 0.04657153321398914,
+   "spastic_over_smallest_cleared_weak": 0.3314798031476904,
+   "largest_weak_over_spastic": 21.472344391264755,
+   "dominant_arm": "weakness"
+  },
+  "channel": "ankle_angle_LmR"
+ },
+ "lesion_magnitude": {
+  "tib_ant_mean_force_N": 125.85307120231857,
+  "spastic_dose_corrected": 136.2663747371695,
+  "spastic_dose_as_registered": 13.626637473716952,
+  "weakness_ladder": {
+   "W800": {
+    "scale": 0.8,
+    "force_removed": 25.17061424046371,
+    "spastic_over_this_corrected": 5.413708757178869,
+    "spastic_over_this_as_registered": 0.5413708757178869
+   },
+   "W870": {
+    "scale": 0.87,
+    "force_removed": 16.360899256301416,
+    "spastic_over_this_corrected": 8.328782703352102,
+    "spastic_over_this_as_registered": 0.8328782703352103
+   },
+   "W892": {
+    "scale": 0.892,
+    "force_removed": 13.592131689850405,
+    "spastic_over_this_corrected": 10.025386587368274,
+    "spastic_over_this_as_registered": 1.0025386587368275
+   },
+   "W900": {
+    "scale": 0.9,
+    "force_removed": 12.585307120231855,
+    "spastic_over_this_corrected": 10.827417514357737,
+    "spastic_over_this_as_registered": 1.0827417514357738
+   },
+   "W915": {
+    "scale": 0.915,
+    "force_removed": 10.697511052197074,
+    "spastic_over_this_corrected": 12.738138252185577,
+    "spastic_over_this_as_registered": 1.2738138252185578
+   },
+   "W950": {
+    "scale": 0.95,
+    "force_removed": 6.292653560115935,
+    "spastic_over_this_corrected": 21.65483502871545,
+    "spastic_over_this_as_registered": 2.165483502871545
+   }
+  },
+  "corrected_ratio_range": [
+   5.413708757178869,
+   21.65483502871545
+  ],
+  "as_registered_ratio_range": [
+   0.5413708757178869,
+   2.165483502871545
+  ],
+  "units_caveat": "Both quantities are dimensionally newtons, so the ratio is not a unit error. But they are not the same KIND of newton: the numerator is a NOMINAL COMMANDED force increment (a dimensionless excitation increment KV*V multiplied by Fmax), while the denominator is an ACHIEVED mean muscle force read from .sto. RESULTS_3d_r214.md section 9 withdraws the newton unit from ce_vel_norm-derived figures and forbids comparing them to force quantities outside that section; the corrected 136.266 is on the V scale, not the ce_vel_norm scale, so section 9's stated REASON does not reach it, but section 9's blanket prohibition textually does. The scope conflict is unresolved.",
+  "what_survives": "'No arm is dose-matched' survives: it needs only that the ratio corrected/tib_ant exceeds 1, which makes the required matching scale negative. The ORDER-OF-MAGNITUDE claim depends entirely on the measured factor 10 between V and ce_vel_norm: on the as-registered scale the spastic arm is 0.54x-2.17x the ladder, i.e. comparable."
+ }
+}

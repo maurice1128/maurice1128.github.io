@@ -1,0 +1,98 @@
+{
+ "source": "PRIMARYB_RESULT_r179.json",
+ "label": "BOOKKEEPING: re-read of a deposited result, not a new measurement",
+ "families": {
+  "paired": {
+   "W870": {
+    "both_displaced": 5,
+    "parallel": 5,
+    "opposed": [],
+    "fraction": 1.0
+   },
+   "W892": {
+    "both_displaced": 4,
+    "parallel": 4,
+    "opposed": [],
+    "fraction": 1.0
+   },
+   "W915": {
+    "both_displaced": 3,
+    "parallel": 3,
+    "opposed": [],
+    "fraction": 1.0
+   }
+  },
+  "unpaired": {
+   "W870": {
+    "both_displaced": 1,
+    "parallel": 1,
+    "opposed": [],
+    "fraction": 1.0
+   },
+   "W892": {
+    "both_displaced": 1,
+    "parallel": 1,
+    "opposed": [],
+    "fraction": 1.0
+   },
+   "W915": {
+    "both_displaced": 1,
+    "parallel": 1,
+    "opposed": [],
+    "fraction": 1.0
+   }
+  },
+  "LmR": {
+   "W870": {
+    "both_displaced": 3,
+    "parallel": 2,
+    "opposed": [
+     "hip_flexion_LmR"
+    ],
+    "fraction": 0.6666666666666666
+   },
+   "W892": {
+    "both_displaced": 3,
+    "parallel": 2,
+    "opposed": [
+     "hip_flexion_LmR"
+    ],
+    "fraction": 0.6666666666666666
+   },
+   "W915": {
+    "both_displaced": 3,
+    "parallel": 2,
+    "opposed": [
+     "hip_flexion_LmR"
+    ],
+    "fraction": 0.6666666666666666
+   }
+  }
+ },
+ "pooled_check": {
+  "W870": {
+   "summed_both": 9,
+   "summed_parallel": 8,
+   "published_both": 9,
+   "published_parallel": 8,
+   "fraction": 0.8888888888888888,
+   "reproduces": true
+  },
+  "W892": {
+   "summed_both": 8,
+   "summed_parallel": 7,
+   "published_both": 8,
+   "published_parallel": 7,
+   "fraction": 0.875,
+   "reproduces": true
+  },
+  "W915": {
+   "summed_both": 7,
+   "summed_parallel": 6,
+   "published_both": 7,
+   "published_parallel": 6,
+   "fraction": 0.8571428571428571,
+   "reproduces": true
+  }
+ }
+}

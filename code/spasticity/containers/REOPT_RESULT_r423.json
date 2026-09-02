@@ -1,0 +1,454 @@
+{
+  "round": "REOPT_RESULT_r423",
+  "registration": "PREREG_reopt_r423.md",
+  "registration_sha256": "5f1a285234ca22742bc78ff6f028ad72a6cb2c1941c552c5a21b1191dc3b7113",
+  "no_optimisation_run": true,
+  "frozen": {
+    "0.0125": {
+      "GASONLY": {
+        "n_gate_G": 0,
+        "uninformative": true,
+        "t_end_range": [
+          5.52,
+          7.13
+        ],
+        "KNEE_ic": null,
+        "ANKLE_st": null,
+        "HIP_ic": null,
+        "cycle_s_mean": null
+      },
+      "SOLONLY": {
+        "n_gate_G": 1,
+        "uninformative": true,
+        "t_end_range": [
+          7.03,
+          19.31
+        ],
+        "KNEE_ic": {
+          "n": 1,
+          "mean": -4.2550378339869415,
+          "range": [
+            -4.2550378339869415,
+            -4.2550378339869415
+          ]
+        },
+        "ANKLE_st": {
+          "n": 1,
+          "mean": 4.040215483433997,
+          "range": [
+            4.040215483433997,
+            4.040215483433997
+          ]
+        },
+        "HIP_ic": {
+          "n": 1,
+          "mean": 30.275823280690464,
+          "range": [
+            30.275823280690464,
+            30.275823280690464
+          ]
+        },
+        "cycle_s_mean": {
+          "n": 1,
+          "mean": 1.1720000000000002,
+          "range": [
+            1.1720000000000002,
+            1.1720000000000002
+          ]
+        }
+      },
+      "BOTH": {
+        "n_gate_G": 2,
+        "uninformative": true,
+        "t_end_range": [
+          6.76,
+          13.44
+        ],
+        "KNEE_ic": {
+          "n": 2,
+          "mean": -5.6580544838264615,
+          "range": [
+            -5.69290292284191,
+            -5.623206044811014
+          ]
+        },
+        "ANKLE_st": {
+          "n": 2,
+          "mean": 3.8372286647034306,
+          "range": [
+            3.7709221908394674,
+            3.903535138567394
+          ]
+        },
+        "HIP_ic": {
+          "n": 2,
+          "mean": 29.83653176451537,
+          "range": [
+            29.324084997057977,
+            30.34897853197277
+          ]
+        },
+        "cycle_s_mean": {
+          "n": 2,
+          "mean": 1.1756666666666669,
+          "range": [
+            1.1633333333333333,
+            1.1880000000000002
+          ]
+        }
+      }
+    },
+    "0.025": {
+      "GASONLY": {
+        "n_gate_G": 0,
+        "uninformative": true,
+        "t_end_range": [
+          4.21,
+          4.59
+        ],
+        "KNEE_ic": null,
+        "ANKLE_st": null,
+        "HIP_ic": null,
+        "cycle_s_mean": null
+      },
+      "SOLONLY": {
+        "n_gate_G": 0,
+        "uninformative": true,
+        "t_end_range": [
+          5.92,
+          8.59
+        ],
+        "KNEE_ic": null,
+        "ANKLE_st": null,
+        "HIP_ic": null,
+        "cycle_s_mean": null
+      },
+      "BOTH": {
+        "n_gate_G": 0,
+        "uninformative": true,
+        "t_end_range": [
+          6.94,
+          8.47
+        ],
+        "KNEE_ic": null,
+        "ANKLE_st": null,
+        "HIP_ic": null,
+        "cycle_s_mean": null
+      }
+    }
+  },
+  "cells": {
+    "R410NONE_s101": {
+      "gate_G": true,
+      "t_end": 20.0,
+      "n_cycles": 5,
+      "cycle_s_mean": 1.1880000000000002,
+      "KNEE_ic": -7.8346019723070714,
+      "ANKLE_st": 4.438821266367993,
+      "HIP_ic": 31.11017588111588
+    },
+    "R410NONE_s102": {
+      "gate_G": true,
+      "t_end": 20.0,
+      "n_cycles": 5,
+      "cycle_s_mean": 1.192,
+      "KNEE_ic": -7.901821380831819,
+      "ANKLE_st": 4.513951513721978,
+      "HIP_ic": 31.084782391635677
+    },
+    "R410NONE_s103": {
+      "gate_G": true,
+      "t_end": 20.0,
+      "n_cycles": 5,
+      "cycle_s_mean": 1.19,
+      "KNEE_ic": -7.855916002285937,
+      "ANKLE_st": 4.442206681431494,
+      "HIP_ic": 31.288663693455028
+    },
+    "R410NONE_s104": {
+      "gate_G": true,
+      "t_end": 20.0,
+      "n_cycles": 5,
+      "cycle_s_mean": 1.19,
+      "KNEE_ic": -7.680487784572781,
+      "ANKLE_st": 4.5123693292106895,
+      "HIP_ic": 31.22760931080589
+    },
+    "R410NONE_s105": {
+      "gate_G": true,
+      "t_end": 20.0,
+      "n_cycles": 5,
+      "cycle_s_mean": 1.19,
+      "KNEE_ic": -7.587588407670272,
+      "ANKLE_st": 4.500608396625777,
+      "HIP_ic": 31.131948277330842
+    },
+    "R410NONE_s106": {
+      "gate_G": true,
+      "t_end": 20.0,
+      "n_cycles": 5,
+      "cycle_s_mean": 1.1880000000000002,
+      "KNEE_ic": -8.239580001061439,
+      "ANKLE_st": 4.501671542164866,
+      "HIP_ic": 31.515417470456004
+    },
+    "R423GASONLY00125_s101": {
+      "gate_G": false,
+      "t_end": 7.13,
+      "n_cycles": 4
+    },
+    "R423GASONLY00125_s102": {
+      "gate_G": false,
+      "t_end": 5.52,
+      "n_cycles": 2
+    },
+    "R423GASONLY00125_s103": {
+      "gate_G": false,
+      "t_end": 5.68,
+      "n_cycles": 3
+    },
+    "R423GASONLY00125_s104": {
+      "gate_G": false,
+      "t_end": 5.59,
+      "n_cycles": 2
+    },
+    "R423GASONLY00125_s105": {
+      "gate_G": false,
+      "t_end": 7.01,
+      "n_cycles": 3
+    },
+    "R423GASONLY00125_s106": {
+      "gate_G": false,
+      "t_end": 5.76,
+      "n_cycles": 2
+    },
+    "R423SOLONLY00125_s101": {
+      "gate_G": false,
+      "t_end": 8.03,
+      "n_cycles": 4
+    },
+    "R423SOLONLY00125_s102": {
+      "gate_G": false,
+      "t_end": 7.32,
+      "n_cycles": 3
+    },
+    "R423SOLONLY00125_s103": {
+      "gate_G": true,
+      "t_end": 19.31,
+      "n_cycles": 5,
+      "cycle_s_mean": 1.1720000000000002,
+      "KNEE_ic": -4.2550378339869415,
+      "ANKLE_st": 4.040215483433997,
+      "HIP_ic": 30.275823280690464
+    },
+    "R423SOLONLY00125_s104": {
+      "gate_G": false,
+      "t_end": 7.03,
+      "n_cycles": 4
+    },
+    "R423SOLONLY00125_s105": {
+      "gate_G": false,
+      "t_end": 9.16,
+      "n_cycles": 5
+    },
+    "R423SOLONLY00125_s106": {
+      "gate_G": false,
+      "t_end": 7.92,
+      "n_cycles": 4
+    },
+    "R423BOTH00125_s101": {
+      "gate_G": true,
+      "t_end": 13.44,
+      "n_cycles": 5,
+      "cycle_s_mean": 1.1880000000000002,
+      "KNEE_ic": -5.623206044811014,
+      "ANKLE_st": 3.7709221908394674,
+      "HIP_ic": 30.34897853197277
+    },
+    "R423BOTH00125_s102": {
+      "gate_G": false,
+      "t_end": 6.76,
+      "n_cycles": 3
+    },
+    "R423BOTH00125_s103": {
+      "gate_G": false,
+      "t_end": 9.64,
+      "n_cycles": 6
+    },
+    "R423BOTH00125_s104": {
+      "gate_G": false,
+      "t_end": 7.66,
+      "n_cycles": 4
+    },
+    "R423BOTH00125_s105": {
+      "gate_G": true,
+      "t_end": 9.85,
+      "n_cycles": 6,
+      "cycle_s_mean": 1.1633333333333333,
+      "KNEE_ic": -5.69290292284191,
+      "ANKLE_st": 3.903535138567394,
+      "HIP_ic": 29.324084997057977
+    },
+    "R423BOTH00125_s106": {
+      "gate_G": false,
+      "t_end": 7.42,
+      "n_cycles": 3
+    },
+    "R423GASONLY0025_s101": {
+      "gate_G": false,
+      "t_end": 4.3,
+      "n_cycles": 1
+    },
+    "R423GASONLY0025_s102": {
+      "gate_G": false,
+      "t_end": 4.26,
+      "n_cycles": 1
+    },
+    "R423GASONLY0025_s103": {
+      "gate_G": false,
+      "t_end": 4.31,
+      "n_cycles": 1
+    },
+    "R423GASONLY0025_s104": {
+      "gate_G": false,
+      "t_end": 4.59,
+      "n_cycles": 2
+    },
+    "R423GASONLY0025_s105": {
+      "gate_G": false,
+      "t_end": 4.21,
+      "n_cycles": 1
+    },
+    "R423GASONLY0025_s106": {
+      "gate_G": false,
+      "t_end": 4.37,
+      "n_cycles": 1
+    },
+    "R423SOLONLY0025_s101": {
+      "gate_G": false,
+      "t_end": 6.17,
+      "n_cycles": 3
+    },
+    "R423SOLONLY0025_s102": {
+      "gate_G": false,
+      "t_end": 5.92,
+      "n_cycles": 3
+    },
+    "R423SOLONLY0025_s103": {
+      "gate_G": false,
+      "t_end": 8.59,
+      "n_cycles": 5
+    },
+    "R423SOLONLY0025_s104": {
+      "gate_G": false,
+      "t_end": 6.14,
+      "n_cycles": 3
+    },
+    "R423SOLONLY0025_s105": {
+      "gate_G": false,
+      "t_end": 8.43,
+      "n_cycles": 5
+    },
+    "R423SOLONLY0025_s106": {
+      "gate_G": false,
+      "t_end": 7.36,
+      "n_cycles": 3
+    },
+    "R423BOTH0025_s101": {
+      "gate_G": false,
+      "t_end": 8.47,
+      "n_cycles": 5
+    },
+    "R423BOTH0025_s102": {
+      "gate_G": false,
+      "t_end": 6.94,
+      "n_cycles": 3
+    },
+    "R423BOTH0025_s103": {
+      "gate_G": false,
+      "t_end": 7.63,
+      "n_cycles": 3
+    },
+    "R423BOTH0025_s104": {
+      "gate_G": false,
+      "t_end": 7.39,
+      "n_cycles": 4
+    },
+    "R423BOTH0025_s105": {
+      "gate_G": false,
+      "t_end": 7.56,
+      "n_cycles": 4
+    },
+    "R423BOTH0025_s106": {
+      "gate_G": false,
+      "t_end": 7.62,
+      "n_cycles": 4
+    }
+  },
+  "frozen_control": {
+    "n_gate_G": 6,
+    "KNEE_ic": {
+      "n": 6,
+      "mean": -7.849999258121554,
+      "range": [
+        -8.239580001061439,
+        -7.587588407670272
+      ]
+    },
+    "ANKLE_st": {
+      "n": 6,
+      "mean": 4.484938121587132,
+      "range": [
+        4.438821266367993,
+        4.513951513721978
+      ]
+    },
+    "HIP_ic": {
+      "n": 6,
+      "mean": 31.226432837466557,
+      "range": [
+        31.084782391635677,
+        31.515417470456004
+      ]
+    }
+  },
+  "reading_dose": null,
+  "VERDICT": "UNINFORMATIVE -- the frozen side reaches 4/6 Gate G at neither dose. Section 5 forbids substituting non-Gate-G frozen readouts, which is the ground on which CORRECTION_r416 retired r410.",
+  "WHAT_SURVIVES_THE_UNINFORMATIVE_VERDICT": {
+    "status": "the registered predictions P1-P4 CANNOT BE TESTED and are reported as UNINFORMATIVE, not as failures and not as partial support. Section 5 forbids reading non-Gate-G frozen cells, which is exactly the rule that retired FROZEN_MECHANISM_r410.",
+    "but_one_comparison_needs_no_joint_angle": {
+      "what": "survival does not require Gate G to be meaningful. Falling at 5.5 s and walking 20 s are unambiguous whatever the knee is doing.",
+      "matched_lesion_KV_0.0125_GASONLY": {
+        "re_optimised_r421": {
+          "gate_G": "6/6",
+          "t_end_s": 20.0
+        },
+        "frozen_r423": {
+          "gate_G": "0/6",
+          "t_end_s_range": [
+            5.52,
+            7.13
+          ]
+        }
+      },
+      "matched_lesion_KV_0.025_GASONLY": {
+        "re_optimised_r421": {
+          "gate_G": "6/6",
+          "t_end_s": "20.0 except one seed at 18.12"
+        },
+        "frozen_r423": {
+          "gate_G": "0/6",
+          "t_end_s_range": [
+            4.21,
+            4.59
+          ]
+        }
+      },
+      "reading": "an identical spastic reflex, at an identical gain, on an identical model, walks the full 20 s when the controller may re-optimise and falls in 4-7 s when it may not. Re-optimisation is not a detail of the protocol; it is what makes the lesioned model walk at all.",
+      "what_it_supports": "that the optimiser is doing substantial work. It does NOT establish that the optimiser is what SPREADS the response across non-spanned joints -- that was P1-P3 and they could not be run.",
+      "what_it_does_not_support": "any joint-angle claim from the frozen side. None is made."
+    },
+    "why_the_comparison_is_structurally_impossible_here": "the frozen and re-optimised sides cannot both pass Gate G at any dose tested. Frozen single-muscle cells reach at best 1/6 (RECON_LOWDOSE_r420 at KV 0.005) and 0/6 at every dose where the re-optimised side is 6/6. The two regimes have no common walking dose. This is the same structural obstacle as the headline's duration matching (HEADLINE_MATCHED_r417): the arms being compared do not overlap on the variable that would have to be held constant.",
+    "recorded_for_the_writeup": "the claim 'the redistribution is produced by re-optimisation' is therefore SUPPORTED BY ARGUMENT AND BY SURVIVAL, NOT BY A MATCHED JOINT-ANGLE MEASUREMENT. The paper must say so."
+  }
+}

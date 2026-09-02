@@ -1,0 +1,1173 @@
+{
+  "registration": "PREREG_dynamics_r362.md",
+  "registration_sha256": "875dd20bac7c5542ccf846c4b45488702b1de8157799ad1f5d5ca54fef0534b2",
+  "endpoint": "PF_swing = mean over swing of (soleus_l.activation+gastroc_l.activation)/2",
+  "registered_prediction": "SPASTIC HIGH, DORSIFLEXOR-WEAK LOW",
+  "window_s": [
+    1.0,
+    9.73
+  ],
+  "band_s": [
+    13.58,
+    17.85
+  ],
+  "cells": {
+    "R289KV00625_s101": {
+      "tag": "R289KV00625_s101",
+      "dir": "R289KV00625_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "sto": "0049_1.028_0.995.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.051793331702127667,
+      "secondary": {
+        "tib_ant_swing": 0.19391683872340426,
+        "cocontraction_swing": 0.26711619640258055,
+        "ankle_torque_swing": 3.7148048936170213,
+        "PF_stance": 0.28114119624586403,
+        "tib_ant_stance": 0.05117766438106417,
+        "ankle_torque_stance": 10.971285625106194
+      }
+    },
+    "R289KV00625_s102": {
+      "tag": "R289KV00625_s102",
+      "dir": "R289KV00625_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "sto": "0087_1.014_0.998.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.052062293453014184,
+      "secondary": {
+        "tib_ant_swing": 0.19204836703900713,
+        "cocontraction_swing": 0.27111987254112246,
+        "ankle_torque_swing": 3.687380787234042,
+        "PF_stance": 0.28282407693661976,
+        "tib_ant_stance": 0.04954179431924883,
+        "ankle_torque_stance": 10.954362550860719
+      }
+    },
+    "R289KV00625_s103": {
+      "tag": "R289KV00625_s103",
+      "dir": "R289KV00625_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "sto": "0061_37.339_0.992.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05162488423758864,
+      "secondary": {
+        "tib_ant_swing": 0.1939465647901288,
+        "cocontraction_swing": 0.2662068005401372,
+        "ankle_torque_swing": 3.720216004577363,
+        "PF_stance": 0.2859547861697965,
+        "tib_ant_stance": 0.049661647214397496,
+        "ankle_torque_stance": 10.999270743740219
+      }
+    },
+    "R289KV00625_s104": {
+      "tag": "R289KV00625_s104",
+      "dir": "R289KV00625_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "sto": "0014_1.023_0.996.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05192422326150673,
+      "secondary": {
+        "tib_ant_swing": 0.19255647835015924,
+        "cocontraction_swing": 0.26969817845988825,
+        "ankle_torque_swing": 3.6994007563504128,
+        "PF_stance": 0.2836884191079812,
+        "tib_ant_stance": 0.049560609796557124,
+        "ankle_torque_stance": 11.02710123513302
+      }
+    },
+    "R289KV00625_s105": {
+      "tag": "R289KV00625_s105",
+      "dir": "R289KV00625_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "sto": "0068_1.085_0.995.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05197031874518193,
+      "secondary": {
+        "tib_ant_swing": 0.19267221061170212,
+        "cocontraction_swing": 0.26978211976570765,
+        "ankle_torque_swing": 3.7030979518963933,
+        "PF_stance": 0.2815207551984127,
+        "tib_ant_stance": 0.050423487611111116,
+        "ankle_torque_stance": 10.863754592063493
+      }
+    },
+    "R289KV00625_s106": {
+      "tag": "R289KV00625_s106",
+      "dir": "R289KV00625_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "sto": "0073_1.018_0.996.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05095022683664817,
+      "secondary": {
+        "tib_ant_swing": 0.19380374626618868,
+        "cocontraction_swing": 0.2629242464050895,
+        "ankle_torque_swing": 3.7052203649398705,
+        "PF_stance": 0.28224537488737983,
+        "tib_ant_stance": 0.05020664068321038,
+        "ankle_torque_stance": 10.902441200927788
+      }
+    },
+    "R289KV0125_s101": {
+      "tag": "R289KV0125_s101",
+      "dir": "R289KV0125_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "sto": "0060_16.470_1.008.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.051366532451433855,
+      "secondary": {
+        "tib_ant_swing": 0.19543973518038854,
+        "cocontraction_swing": 0.2628764277805769,
+        "ankle_torque_swing": 3.767005749306198,
+        "PF_stance": 0.28186393932777026,
+        "tib_ant_stance": 0.050233543751098675,
+        "ankle_torque_stance": 10.923673491703646
+      }
+    },
+    "R289KV0125_s102": {
+      "tag": "R289KV0125_s102",
+      "dir": "R289KV0125_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "sto": "0057_41.171_1.012.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.0510271254155654,
+      "secondary": {
+        "tib_ant_swing": 0.19459872933955083,
+        "cocontraction_swing": 0.26226758471174955,
+        "ankle_torque_swing": 3.75276703752352,
+        "PF_stance": 0.2856835030450925,
+        "tib_ant_stance": 0.048790455479617426,
+        "ankle_torque_stance": 11.150986494462668
+      }
+    },
+    "R289KV0125_s103": {
+      "tag": "R289KV0125_s103",
+      "dir": "R289KV0125_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "sto": "0081_37.332_1.007.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.052007345638297876,
+      "secondary": {
+        "tib_ant_swing": 0.19494564419326238,
+        "cocontraction_swing": 0.26684862973478773,
+        "ankle_torque_swing": 3.768519990248227,
+        "PF_stance": 0.28563457842857143,
+        "tib_ant_stance": 0.0491339459047619,
+        "ankle_torque_stance": 11.072722834126985
+      }
+    },
+    "R289KV0125_s104": {
+      "tag": "R289KV0125_s104",
+      "dir": "R289KV0125_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "sto": "0006_29.558_1.011.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05190486037822436,
+      "secondary": {
+        "tib_ant_swing": 0.19466515042934707,
+        "cocontraction_swing": 0.2667113491845482,
+        "ankle_torque_swing": 3.7582162111738313,
+        "PF_stance": 0.28496502480377855,
+        "tib_ant_stance": 0.04924604183807105,
+        "ankle_torque_stance": 11.072196005122517
+      }
+    },
+    "R289KV0125_s105": {
+      "tag": "R289KV0125_s105",
+      "dir": "R289KV0125_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "sto": "0057_10.757_1.014.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.051713024287311136,
+      "secondary": {
+        "tib_ant_swing": 0.19482671145505703,
+        "cocontraction_swing": 0.26547251729706545,
+        "ankle_torque_swing": 3.747686397317299,
+        "PF_stance": 0.28457560633802814,
+        "tib_ant_stance": 0.049285542748826294,
+        "ankle_torque_stance": 10.990135072423428
+      }
+    },
+    "R289KV0125_s106": {
+      "tag": "R289KV0125_s106",
+      "dir": "R289KV0125_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "sto": "0071_1.060_1.006.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.052272835443647844,
+      "secondary": {
+        "tib_ant_swing": 0.19563574199275363,
+        "cocontraction_swing": 0.2672178655370442,
+        "ankle_torque_swing": 3.782499593740364,
+        "PF_stance": 0.28564320674457855,
+        "tib_ant_stance": 0.050049647728370214,
+        "ankle_torque_stance": 11.062038687804606
+      }
+    },
+    "R151W_s101": {
+      "tag": "R151W_s101",
+      "dir": "R151W_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "sto": "0086_18.186_1.049.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.048224788646867606,
+      "secondary": {
+        "tib_ant_swing": 0.2123491708611111,
+        "cocontraction_swing": 0.22711629929695057,
+        "ankle_torque_swing": 3.275093985047282,
+        "PF_stance": 0.27435718214899296,
+        "tib_ant_stance": 0.05780988372899232,
+        "ankle_torque_stance": 10.732490838599713
+      }
+    },
+    "R151W_s102": {
+      "tag": "R151W_s102",
+      "dir": "R151W_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "sto": "0060_19.759_1.051.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 6,
+      "measured": true,
+      "n_cycles_used": 6,
+      "PF_swing": 0.04803640726395741,
+      "secondary": {
+        "tib_ant_swing": 0.21206835249974298,
+        "cocontraction_swing": 0.2265365518627506,
+        "ankle_torque_swing": 3.2566683424062934,
+        "PF_stance": 0.27255997909746926,
+        "tib_ant_stance": 0.05778736757194941,
+        "ankle_torque_stance": 10.634279901023694
+      }
+    },
+    "R151W_s103": {
+      "tag": "R151W_s103",
+      "dir": "R151W_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "sto": "0018_55.873_1.052.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 6,
+      "measured": true,
+      "n_cycles_used": 6,
+      "PF_swing": 0.05021707744703335,
+      "secondary": {
+        "tib_ant_swing": 0.2100825616781872,
+        "cocontraction_swing": 0.23907861135859368,
+        "ankle_torque_swing": 3.243107439564275,
+        "PF_stance": 0.27511740825613096,
+        "tib_ant_stance": 0.05777166834460872,
+        "ankle_torque_stance": 10.762764572907493
+      }
+    },
+    "R151W_s104": {
+      "tag": "R151W_s104",
+      "dir": "R151W_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "sto": "0061_6.964_1.051.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 6,
+      "measured": true,
+      "n_cycles_used": 6,
+      "PF_swing": 0.048324855147497174,
+      "secondary": {
+        "tib_ant_swing": 0.21175191149552883,
+        "cocontraction_swing": 0.2282637576921265,
+        "ankle_torque_swing": 3.2519888190632806,
+        "PF_stance": 0.2741445269584171,
+        "tib_ant_stance": 0.0578020870590208,
+        "ankle_torque_stance": 10.599799382293762
+      }
+    },
+    "R151W_s105": {
+      "tag": "R151W_s105",
+      "dir": "R151W_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "sto": "0046_1.089_1.046.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 6,
+      "measured": true,
+      "n_cycles_used": 6,
+      "PF_swing": 0.04873129358729914,
+      "secondary": {
+        "tib_ant_swing": 0.2113604430794532,
+        "cocontraction_swing": 0.2306105127436502,
+        "ankle_torque_swing": 3.2511128149861244,
+        "PF_stance": 0.27383997457411136,
+        "tib_ant_stance": 0.057538459004024156,
+        "ankle_torque_stance": 10.639575148893362
+      }
+    },
+    "R151W_s106": {
+      "tag": "R151W_s106",
+      "dir": "R151W_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "sto": "0069_36.357_1.044.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.04819180658977028,
+      "secondary": {
+        "tib_ant_swing": 0.21066596616982736,
+        "cocontraction_swing": 0.2288058891950306,
+        "ankle_torque_swing": 3.2444138323697196,
+        "PF_stance": 0.27856661289660184,
+        "tib_ant_stance": 0.055401026003241684,
+        "ankle_torque_stance": 10.89951736689023
+      }
+    },
+    "R169W090_s101": {
+      "tag": "R169W090_s101",
+      "dir": "R169W090_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "sto": "0048_44.389_1.020.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05056781882535462,
+      "secondary": {
+        "tib_ant_swing": 0.20058764298758866,
+        "cocontraction_swing": 0.2521676459557764,
+        "ankle_torque_swing": 3.470316244680851,
+        "PF_stance": 0.2783187994297355,
+        "tib_ant_stance": 0.05437096066210791,
+        "ankle_torque_stance": 10.794718946012305
+      }
+    },
+    "R169W090_s102": {
+      "tag": "R169W090_s102",
+      "dir": "R169W090_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "sto": "0050_31.388_1.017.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05076914649090347,
+      "secondary": {
+        "tib_ant_swing": 0.1989206910040857,
+        "cocontraction_swing": 0.25524308779219185,
+        "ankle_torque_swing": 3.4430687070228188,
+        "PF_stance": 0.2788741158721314,
+        "tib_ant_stance": 0.053893372830606835,
+        "ankle_torque_stance": 10.838053132330213
+      }
+    },
+    "R169W090_s103": {
+      "tag": "R169W090_s103",
+      "dir": "R169W090_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "sto": "0059_35.364_1.013.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05067234038949277,
+      "secondary": {
+        "tib_ant_swing": 0.19925965692028985,
+        "cocontraction_swing": 0.2543085989217968,
+        "ankle_torque_swing": 3.4512142536231876,
+        "PF_stance": 0.27867870251307847,
+        "tib_ant_stance": 0.05329453993963783,
+        "ankle_torque_stance": 10.814802762173038
+      }
+    },
+    "R169W090_s104": {
+      "tag": "R169W090_s104",
+      "dir": "R169W090_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "sto": "0021_1.062_1.021.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.050421175404910576,
+      "secondary": {
+        "tib_ant_swing": 0.2010446596904872,
+        "cocontraction_swing": 0.2508224408733093,
+        "ankle_torque_swing": 3.4710898799337038,
+        "PF_stance": 0.2767771198718981,
+        "tib_ant_stance": 0.05499485659982115,
+        "ankle_torque_stance": 10.810083016800805
+      }
+    },
+    "R169W090_s105": {
+      "tag": "R169W090_s105",
+      "dir": "R169W090_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "sto": "0009_22.859_1.024.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05083032940024669,
+      "secondary": {
+        "tib_ant_swing": 0.19966773166782298,
+        "cocontraction_swing": 0.2546002461711418,
+        "ankle_torque_swing": 3.452658121839346,
+        "PF_stance": 0.27771503320284013,
+        "tib_ant_stance": 0.054442584569678945,
+        "ankle_torque_stance": 10.796176042900886
+      }
+    },
+    "R169W090_s106": {
+      "tag": "R169W090_s106",
+      "dir": "R169W090_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "sto": "0068_35.019_1.016.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05001294395062441,
+      "secondary": {
+        "tib_ant_swing": 0.20081899081251925,
+        "cocontraction_swing": 0.24905880372741002,
+        "ankle_torque_swing": 3.461372119796485,
+        "PF_stance": 0.27995489460462775,
+        "tib_ant_stance": 0.05383972820590207,
+        "ankle_torque_stance": 10.858634046478873
+      }
+    },
+    "R169W095_s101": {
+      "tag": "R169W095_s101",
+      "dir": "R169W095_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "sto": "0084_1.075_1.004.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05182291268424298,
+      "secondary": {
+        "tib_ant_swing": 0.19478585747802962,
+        "cocontraction_swing": 0.2660711387272489,
+        "ankle_torque_swing": 3.5509502416358307,
+        "PF_stance": 0.28010174344869215,
+        "tib_ant_stance": 0.05253031859959759,
+        "ankle_torque_stance": 10.75524762414487
+      }
+    },
+    "R169W095_s102": {
+      "tag": "R169W095_s102",
+      "dir": "R169W095_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "sto": "0023_19.921_1.012.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.050396508980496454,
+      "secondary": {
+        "tib_ant_swing": 0.1965868259840426,
+        "cocontraction_swing": 0.2563996637360486,
+        "ankle_torque_swing": 3.5729756436170215,
+        "PF_stance": 0.277734132904706,
+        "tib_ant_stance": 0.053224524596914825,
+        "ankle_torque_stance": 10.628462839291304
+      }
+    },
+    "R169W095_s103": {
+      "tag": "R169W095_s103",
+      "dir": "R169W095_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "sto": "0083_20.256_1.008.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.050253066981457706,
+      "secondary": {
+        "tib_ant_swing": 0.19656222557237094,
+        "cocontraction_swing": 0.25566964423721716,
+        "ankle_torque_swing": 3.5783235989698374,
+        "PF_stance": 0.2785062535648334,
+        "tib_ant_stance": 0.0530762017481556,
+        "ankle_torque_stance": 10.731577850134139
+      }
+    },
+    "R169W095_s104": {
+      "tag": "R169W095_s104",
+      "dir": "R169W095_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "sto": "0084_29.474_1.007.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05173349152292299,
+      "secondary": {
+        "tib_ant_swing": 0.1957887556221957,
+        "cocontraction_swing": 0.26425292826381824,
+        "ankle_torque_swing": 3.576029469749602,
+        "PF_stance": 0.2796836108511941,
+        "tib_ant_stance": 0.05280625384364157,
+        "ankle_torque_stance": 10.899387597060628
+      }
+    },
+    "R169W095_s105": {
+      "tag": "R169W095_s105",
+      "dir": "R169W095_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105 (1)",
+      "sto": "0082_1.081_1.008.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05230772314716312,
+      "secondary": {
+        "tib_ant_swing": 0.19487807930851064,
+        "cocontraction_swing": 0.2684360649512032,
+        "ankle_torque_swing": 3.5509383838652484,
+        "PF_stance": 0.28129968903330127,
+        "tib_ant_stance": 0.05192081523904296,
+        "ankle_torque_stance": 10.920912525402171
+      }
+    },
+    "R169W095_s106": {
+      "tag": "R169W095_s106",
+      "dir": "R169W095_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106 (1)",
+      "sto": "0071_16.549_1.008.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05194819405551675,
+      "secondary": {
+        "tib_ant_swing": 0.19451370060597553,
+        "cocontraction_swing": 0.26709941094432377,
+        "ankle_torque_swing": 3.543548671553959,
+        "PF_stance": 0.2784467330062039,
+        "tib_ant_stance": 0.052891226150346526,
+        "ankle_torque_stance": 10.844415338888888
+      }
+    },
+    "R174W870_s101": {
+      "tag": "R174W870_s101",
+      "dir": "R174W870_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "sto": "0055_1.134_1.026.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.049381323612588644,
+      "secondary": {
+        "tib_ant_swing": 0.20389569857038237,
+        "cocontraction_swing": 0.24220007129401183,
+        "ankle_torque_swing": 3.3990794148165278,
+        "PF_stance": 0.278584990234127,
+        "tib_ant_stance": 0.05510527779778672,
+        "ankle_torque_stance": 10.706508321048513
+      }
+    },
+    "R174W870_s102": {
+      "tag": "R174W870_s102",
+      "dir": "R174W870_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "sto": "0002_60.154_1.033.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.050149785926303855,
+      "secondary": {
+        "tib_ant_swing": 0.2032927973197279,
+        "cocontraction_swing": 0.24672661613448174,
+        "ankle_torque_swing": 3.39210577414966,
+        "PF_stance": 0.27927651260563385,
+        "tib_ant_stance": 0.05500299688933602,
+        "ankle_torque_stance": 10.8557179261167
+      }
+    },
+    "R174W870_s103": {
+      "tag": "R174W870_s103",
+      "dir": "R174W870_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "sto": "0082_13.850_1.032.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.04995994514842356,
+      "secondary": {
+        "tib_ant_swing": 0.20203700635219762,
+        "cocontraction_swing": 0.2473147353565927,
+        "ankle_torque_swing": 3.3864995169368455,
+        "PF_stance": 0.27774982995056285,
+        "tib_ant_stance": 0.054262102218033695,
+        "ankle_torque_stance": 10.863079345560948
+      }
+    },
+    "R174W870_s104": {
+      "tag": "R174W870_s104",
+      "dir": "R174W870_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "sto": "0086_1.122_1.029.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.04909675793439716,
+      "secondary": {
+        "tib_ant_swing": 0.2045765289242214,
+        "cocontraction_swing": 0.24001066322916964,
+        "ankle_torque_swing": 3.412734365055504,
+        "PF_stance": 0.281379818917505,
+        "tib_ant_stance": 0.053592236837022134,
+        "ankle_torque_stance": 10.891863902213277
+      }
+    },
+    "R174W870_s105": {
+      "tag": "R174W870_s105",
+      "dir": "R174W870_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "sto": "0082_23.773_1.021.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.04981834573640662,
+      "secondary": {
+        "tib_ant_swing": 0.20351931597281325,
+        "cocontraction_swing": 0.2448009905673912,
+        "ankle_torque_swing": 3.3986099970449173,
+        "PF_stance": 0.27636410112012894,
+        "tib_ant_stance": 0.055560894919847593,
+        "ankle_torque_stance": 10.710672409173398
+      }
+    },
+    "R174W870_s106": {
+      "tag": "R174W870_s106",
+      "dir": "R174W870_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "sto": "0035_16.774_1.031.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05021911099213692,
+      "secondary": {
+        "tib_ant_swing": 0.2031665062164662,
+        "cocontraction_swing": 0.24725027805756206,
+        "ankle_torque_swing": 3.3960721688251616,
+        "PF_stance": 0.2758284421977202,
+        "tib_ant_stance": 0.05555672649519339,
+        "ankle_torque_stance": 10.643144732103249
+      }
+    },
+    "R174W892_s101": {
+      "tag": "R174W892_s101",
+      "dir": "R174W892_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "sto": "0047_1.041_1.016.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.050751446953144444,
+      "secondary": {
+        "tib_ant_swing": 0.19989923450000727,
+        "cocontraction_swing": 0.25393793298966705,
+        "ankle_torque_swing": 3.44914385608554,
+        "PF_stance": 0.2798748708956541,
+        "tib_ant_stance": 0.05316271511577678,
+        "ankle_torque_stance": 11.16128888105347
+      }
+    },
+    "R174W892_s102": {
+      "tag": "R174W892_s102",
+      "dir": "R174W892_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "sto": "0050_13.629_1.024.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05092131363435374,
+      "secondary": {
+        "tib_ant_swing": 0.2006625190430839,
+        "cocontraction_swing": 0.25382288791831564,
+        "ankle_torque_swing": 3.43882544829932,
+        "PF_stance": 0.2779706770613123,
+        "tib_ant_stance": 0.05489519750447127,
+        "ankle_torque_stance": 10.87580838499888
+      }
+    },
+    "R174W892_s103": {
+      "tag": "R174W892_s103",
+      "dir": "R174W892_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "sto": "0038_8.123_1.022.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05122903956136293,
+      "secondary": {
+        "tib_ant_swing": 0.20048403445652174,
+        "cocontraction_swing": 0.25554735412786134,
+        "ankle_torque_swing": 3.4408724493139076,
+        "PF_stance": 0.27888469619114686,
+        "tib_ant_stance": 0.05477769252313884,
+        "ankle_torque_stance": 10.784795205231388
+      }
+    },
+    "R174W892_s104": {
+      "tag": "R174W892_s104",
+      "dir": "R174W892_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "sto": "0056_11.838_1.024.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05071905201684397,
+      "secondary": {
+        "tib_ant_swing": 0.2007654805407802,
+        "cocontraction_swing": 0.25265060013802343,
+        "ankle_torque_swing": 3.441133330673759,
+        "PF_stance": 0.2792800447674574,
+        "tib_ant_stance": 0.054295680159950045,
+        "ankle_torque_stance": 10.790242894207758
+      }
+    },
+    "R174W892_s105": {
+      "tag": "R174W892_s105",
+      "dir": "R174W892_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "sto": "0087_23.496_1.014.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05089087299482559,
+      "secondary": {
+        "tib_ant_swing": 0.20047524967071934,
+        "cocontraction_swing": 0.2538703940529793,
+        "ankle_torque_swing": 3.4393768701874365,
+        "PF_stance": 0.2793958348165442,
+        "tib_ant_stance": 0.0538928779092672,
+        "ankle_torque_stance": 10.891472085153435
+      }
+    },
+    "R174W892_s106": {
+      "tag": "R174W892_s106",
+      "dir": "R174W892_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "sto": "0078_1.081_1.020.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.050422279362665745,
+      "secondary": {
+        "tib_ant_swing": 0.2011092754343972,
+        "cocontraction_swing": 0.25075072672051946,
+        "ankle_torque_swing": 3.4498561494757936,
+        "PF_stance": 0.277716386727787,
+        "tib_ant_stance": 0.05471820094649053,
+        "ankle_torque_stance": 10.715961032747208
+      }
+    },
+    "R174W915_s101": {
+      "tag": "R174W915_s101",
+      "dir": "R174W915_s101.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R101",
+      "sto": "0002_54.223_1.016.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05133064484929077,
+      "secondary": {
+        "tib_ant_swing": 0.19886949858156028,
+        "cocontraction_swing": 0.25816593648800096,
+        "ankle_torque_swing": 3.4871586826241137,
+        "PF_stance": 0.2798505422762226,
+        "tib_ant_stance": 0.053782463394589766,
+        "ankle_torque_stance": 10.835475146092497
+      }
+    },
+    "R174W915_s102": {
+      "tag": "R174W915_s102",
+      "dir": "R174W915_s102.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R102",
+      "sto": "0059_28.242_1.016.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.05226662090791705,
+      "secondary": {
+        "tib_ant_swing": 0.19799287955211226,
+        "cocontraction_swing": 0.2639908294834621,
+        "ankle_torque_swing": 3.4793307281837813,
+        "PF_stance": 0.2769201787037588,
+        "tib_ant_stance": 0.05457519044971278,
+        "ankle_torque_stance": 10.68853013680343
+      }
+    },
+    "R174W915_s103": {
+      "tag": "R174W915_s103",
+      "dir": "R174W915_s103.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R103",
+      "sto": "0081_37.861_1.014.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.050542973497918586,
+      "secondary": {
+        "tib_ant_swing": 0.19873673695729263,
+        "cocontraction_swing": 0.25433959129240785,
+        "ankle_torque_swing": 3.4899830341119333,
+        "PF_stance": 0.28063327122535214,
+        "tib_ant_stance": 0.05303191852716298,
+        "ankle_torque_stance": 10.83767134366197
+      }
+    },
+    "R174W915_s104": {
+      "tag": "R174W915_s104",
+      "dir": "R174W915_s104.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R104",
+      "sto": "0020_15.036_1.019.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.04990841924761023,
+      "secondary": {
+        "tib_ant_swing": 0.200429037985276,
+        "cocontraction_swing": 0.24907633577648358,
+        "ankle_torque_swing": 3.5118205196191794,
+        "PF_stance": 0.27929860930835015,
+        "tib_ant_stance": 0.053718527395484016,
+        "ankle_torque_stance": 10.888070161491168
+      }
+    },
+    "R174W915_s105": {
+      "tag": "R174W915_s105",
+      "dir": "R174W915_s105.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R105",
+      "sto": "0036_1.039_1.015.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.051643491829710134,
+      "secondary": {
+        "tib_ant_swing": 0.1982208280978261,
+        "cocontraction_swing": 0.2605492264793222,
+        "ankle_torque_swing": 3.4801200525362317,
+        "PF_stance": 0.27976827309456737,
+        "tib_ant_stance": 0.05361705881287726,
+        "ankle_torque_stance": 10.905880648289736
+      }
+    },
+    "R174W915_s106": {
+      "tag": "R174W915_s106",
+      "dir": "R174W915_s106.H1922v7b3.TSG3Dv8g.R3.S10WA3K0G13.D20.R106",
+      "sto": "0075_16.687_1.018.par.sto",
+      "t_end_s": 20.0,
+      "grf_threshold": 0.05,
+      "n_cycles": 15,
+      "n_cycles_in_window": 5,
+      "measured": true,
+      "n_cycles_used": 5,
+      "PF_swing": 0.050897475206020656,
+      "secondary": {
+        "tib_ant_swing": 0.1984892451422294,
+        "cocontraction_swing": 0.25645149157656255,
+        "ankle_torque_swing": 3.4870771697116867,
+        "PF_stance": 0.27694310550112267,
+        "tib_ant_stance": 0.05429482555623597,
+        "ankle_torque_stance": 10.682766656460503
+      }
+    }
+  },
+  "duration_invariance": {
+    "spearman_rho_PFswing_vs_tend": {
+      "SPASTIC": null,
+      "DFWEAK": null
+    },
+    "threshold": 0.5,
+    "contaminated": false
+  },
+  "READING_U_unmatched": {
+    "name": "U (unmatched, all Gate-G cells)",
+    "n_spastic": 12,
+    "n_weak": 36,
+    "spastic_cells": {
+      "R289KV00625_s101": 0.051793331702127667,
+      "R289KV00625_s102": 0.052062293453014184,
+      "R289KV00625_s103": 0.05162488423758864,
+      "R289KV00625_s104": 0.05192422326150673,
+      "R289KV00625_s105": 0.05197031874518193,
+      "R289KV00625_s106": 0.05095022683664817,
+      "R289KV0125_s101": 0.051366532451433855,
+      "R289KV0125_s102": 0.0510271254155654,
+      "R289KV0125_s103": 0.052007345638297876,
+      "R289KV0125_s104": 0.05190486037822436,
+      "R289KV0125_s105": 0.051713024287311136,
+      "R289KV0125_s106": 0.052272835443647844
+    },
+    "weak_cells": {
+      "R151W_s101": 0.048224788646867606,
+      "R151W_s102": 0.04803640726395741,
+      "R151W_s103": 0.05021707744703335,
+      "R151W_s104": 0.048324855147497174,
+      "R151W_s105": 0.04873129358729914,
+      "R151W_s106": 0.04819180658977028,
+      "R169W090_s101": 0.05056781882535462,
+      "R169W090_s102": 0.05076914649090347,
+      "R169W090_s103": 0.05067234038949277,
+      "R169W090_s104": 0.050421175404910576,
+      "R169W090_s105": 0.05083032940024669,
+      "R169W090_s106": 0.05001294395062441,
+      "R169W095_s101": 0.05182291268424298,
+      "R169W095_s102": 0.050396508980496454,
+      "R169W095_s103": 0.050253066981457706,
+      "R169W095_s104": 0.05173349152292299,
+      "R169W095_s105": 0.05230772314716312,
+      "R169W095_s106": 0.05194819405551675,
+      "R174W870_s101": 0.049381323612588644,
+      "R174W870_s102": 0.050149785926303855,
+      "R174W870_s103": 0.04995994514842356,
+      "R174W870_s104": 0.04909675793439716,
+      "R174W870_s105": 0.04981834573640662,
+      "R174W870_s106": 0.05021911099213692,
+      "R174W892_s101": 0.050751446953144444,
+      "R174W892_s102": 0.05092131363435374,
+      "R174W892_s103": 0.05122903956136293,
+      "R174W892_s104": 0.05071905201684397,
+      "R174W892_s105": 0.05089087299482559,
+      "R174W892_s106": 0.050422279362665745,
+      "R174W915_s101": 0.05133064484929077,
+      "R174W915_s102": 0.05226662090791705,
+      "R174W915_s103": 0.050542973497918586,
+      "R174W915_s104": 0.04990841924761023,
+      "R174W915_s105": 0.051643491829710134,
+      "R174W915_s106": 0.050897475206020656
+    },
+    "spastic_range": [
+      0.05095022683664817,
+      0.052272835443647844
+    ],
+    "weak_range": [
+      0.04803640726395741,
+      0.05230772314716312
+    ],
+    "gap": -0.0013574963105149537,
+    "separated": false,
+    "VERDICT": "OVERLAP"
+  },
+  "READING_M_duration_matched": {
+    "name": "M (duration-matched, band [13.58, 17.85])",
+    "n_spastic": 0,
+    "n_weak": 0,
+    "spastic_cells": {},
+    "weak_cells": {},
+    "VERDICT": "UNINFORMATIVE",
+    "why": "section 4 requires >=3 per arm in band; got 0 spastic, 0 weak"
+  },
+  "PRIMARY_READING": "READING_U_unmatched",
+  "why_primary": "section 4: |rho| < 0.5 in both arms, so the endpoint is duration-invariant and READING U is primary",
+  "SECONDARY_never_promoted": {
+    "tib_ant_swing": {
+      "SPASTIC": {
+        "n": 12,
+        "range": [
+          0.19204836703900713,
+          0.19563574199275363
+        ],
+        "mean": 0.1940879931975792
+      },
+      "DFWEAK": {
+        "n": 36,
+        "range": [
+          0.19451370060597553,
+          0.2123491708611111
+        ],
+        "mean": 0.20161986379876068
+      }
+    },
+    "cocontraction_swing": {
+      "SPASTIC": {
+        "n": 12,
+        "range": [
+          0.26226758471174955,
+          0.27111987254112246
+        ],
+        "mean": 0.26652014903002486
+      },
+      "DFWEAK": {
+        "n": 36,
+        "range": [
+          0.2265365518627506,
+          0.2684360649512032
+        ],
+        "mean": 0.2501666099481501
+      }
+    },
+    "ankle_torque_swing": {
+      "SPASTIC": {
+        "n": 12,
+        "range": [
+          3.687380787234042,
+          3.782499593740364
+        ],
+        "mean": 3.733901311493712
+      },
+      "DFWEAK": {
+        "n": 36,
+        "range": [
+          3.243107439564275,
+          3.5783235989698374
+        ],
+        "mean": 3.4340186138160047
+      }
+    },
+    "PF_stance": {
+      "SPASTIC": {
+        "n": 12,
+        "range": [
+          0.28114119624586403,
+          0.2859547861697965
+        ],
+        "mean": 0.2838117056028228
+      },
+      "DFWEAK": {
+        "n": 36,
+        "range": [
+          0.27255997909746926,
+          0.281379818917505
+        ],
+        "mean": 0.27806657493972
+      }
+    },
+    "tib_ant_stance": {
+      "SPASTIC": {
+        "n": 12,
+        "range": [
+          0.048790455479617426,
+          0.05117766438106417
+        ],
+        "mean": 0.04977591845469454
+      },
+      "DFWEAK": {
+        "n": 36,
+        "range": [
+          0.05192081523904296,
+          0.05780988372899232
+        ],
+        "mean": 0.054534401615268555
+      }
+    },
+    "ankle_torque_stance": {
+      "SPASTIC": {
+        "n": 12,
+        "range": [
+          10.863754592063493,
+          11.150986494462668
+        ],
+        "mean": 10.999164044456274
+      },
+      "DFWEAK": {
+        "n": 36,
+        "range": [
+          10.599799382293762,
+          11.16128888105347
+        ],
+        "mean": 10.79694022623983
+      }
+    }
+  }
+}

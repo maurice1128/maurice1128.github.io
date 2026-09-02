@@ -1,0 +1,176 @@
+{
+ "written": "2026-08-17T05:47:49",
+ "scope": "baseline forward only: attests this file is unchanged since the timestamp below; attests nothing about its state before it (defect register #534, #539)",
+ "files": {
+  "PREREG_2ndbody_r229.md": {
+   "sha256": "ce572133a1b39f843f64cd48293ada2c80191deb948d198f06baf3ec2cf32514",
+   "bytes": 27260,
+   "sidecar": "PREREG_2ndbody_r229.md.sha256"
+  },
+  "body2_replay_r229.py": {
+   "sha256": "3b710e355e78db06d5b4bed0b7119b680c83befc6567bf508f4bdbf12fc8b445",
+   "bytes": 8845,
+   "sidecar": "body2_replay_r229.py.sha256"
+  },
+  "body2_dose_r229.py": {
+   "sha256": "ecf5c31266a9bbf2ec074c9509c207b4e01501e872ba03d9f219fd9d5832010d",
+   "bytes": 16607,
+   "sidecar": "body2_dose_r229.py.sha256"
+  },
+  "body2_channels_r229.py": {
+   "sha256": "efc12b026c3670a715aedb7dfa6eb8d2b3b000f1b5e0d04c4067100698c3a0aa",
+   "bytes": 40311,
+   "sidecar": "body2_channels_r229.py.sha256"
+  },
+  "body2_convention_r229.py": {
+   "sha256": "838b05a25e5532f56f901b6172fea6c67a6cf4a67e2046b6d256b80741236547",
+   "bytes": 8470,
+   "sidecar": "body2_convention_r229.py.sha256"
+  },
+  "body2_hash_r229.py": {
+   "sha256": "c83d13fd978fc228fd54f572c9329b177340eb49c6286a74ed65060c1afcf229",
+   "bytes": 6166,
+   "sidecar": "body2_hash_r229.py.sha256"
+  },
+  "body2_delta_r229.py": {
+   "sha256": "7bb049b99b872d921a070c6487b29b777a42abfdd672bb62f43c758af375ae76",
+   "bytes": 6859,
+   "sidecar": "body2_delta_r229.py.sha256"
+  },
+  "body2_reachability_r229.py": {
+   "sha256": "5c988f3ef77bbff3b2d77d4ac20c55b3161049602cd74c839320621852422d40",
+   "bytes": 21001,
+   "sidecar": "body2_reachability_r229.py.sha256"
+  },
+  "sto_utils.py": {
+   "sha256": "704d46a407e654b77e613bcab25dcc665ef49a7847a38c4b2f9bc553c38c0cba",
+   "bytes": 14550,
+   "sidecar": "sto_utils.py.sha256"
+  },
+  "dose_r174.py": {
+   "sha256": "aa94bc8808206a4c8ca82452bbfb4c5cdc29d575bbca3adda27ddb3e0dd0d2ad",
+   "bytes": 5300,
+   "sidecar": "dose_r174.py.sha256"
+  },
+  "BODY2_DELTA_r229.json": {
+   "sha256": "97aa84c59d4e5baff89c073cba860b18ad0142d6d632d2d9f445e0d5c60a2c9e",
+   "bytes": 2777,
+   "sidecar": "BODY2_DELTA_r229.json.sha256"
+  },
+  "LADDER36_r228.json": {
+   "sha256": "72f4b668af691564eee770067b76a45a0a221815e707a14d47e2c87556abe820",
+   "bytes": 4878,
+   "sidecar": "LADDER36_r228.json.sha256"
+  },
+  "BODY2_REACHABILITY_r229.json": {
+   "sha256": "9dfa9da0d7dd9a3cce3013e54a9a70b5775453643812b75d0bb9dcffb8010135",
+   "bytes": 10773,
+   "sidecar": "BODY2_REACHABILITY_r229.json.sha256"
+  },
+  "BODY2_CORPUS_r229.json": {
+   "sha256": "739b8ac77f37faa5a00fd643d63d80d8703976d8e76527f7f6483c2728b58424",
+   "bytes": 8717,
+   "sidecar": "BODY2_CORPUS_r229.json.sha256"
+  },
+  "body2_fixture_r229.py": {
+   "sha256": "5fdd44c75304af63c4c3694d548caa436d21cc5eb91b4e149221efc70cda885b",
+   "bytes": 9858,
+   "sidecar": "body2_fixture_r229.py.sha256"
+  },
+  "body2_sd_r234.py": {
+   "sha256": "37d58bbd223bd42a598aa4cf75bf98b5e98c9434e26977b2c1138607a59d5b9b",
+   "bytes": 10300,
+   "sidecar": "body2_sd_r234.py.sha256"
+  },
+  "ankle_ladder_r235.py": {
+   "sha256": "48d03ad1a27b042c6b413373e1c8903d0fef874ffbda243a172d87f0e1de17a5",
+   "bytes": 7938,
+   "sidecar": "ankle_ladder_r235.py.sha256"
+  },
+  "subreg_gate_r236.py": {
+   "sha256": "d32953754fa56ac75a4d3a536dd6f32893a456e15dd66b0ded7108d6e6cf163c",
+   "bytes": 6666,
+   "sidecar": "subreg_gate_r236.py.sha256"
+  },
+  "PREREG_2Dsd_r234.md": {
+   "sha256": "88ca5ad8205c776cadb79b2930ad4869c11cf84bd64727a8f5a3bfc13d1056f5",
+   "bytes": 3838,
+   "sidecar": "PREREG_2Dsd_r234.md.sha256"
+  },
+  "BODY2_SD_r234.json": {
+   "sha256": "8d9bf9b91d8ef4298cb64b90dd39fc5c6868169ce0eef2bcc094692bce0f440f",
+   "bytes": 1984,
+   "sidecar": "BODY2_SD_r234.json.sha256"
+  },
+  "PREREG_ankle_ladder_r235.md": {
+   "sha256": "a180a08049563e86e95dfb8bcc05020b456df4d79d570db16c65bb2561b481cb",
+   "bytes": 4534,
+   "sidecar": "PREREG_ankle_ladder_r235.md.sha256"
+  },
+  "ANKLE_LADDER_r235.json": {
+   "sha256": "d637488ec3bb0d18bdae6a3301fc09d6fe84c5aeb93b7c36e6596910221890a9",
+   "bytes": 5815,
+   "sidecar": "ANKLE_LADDER_r235.json.sha256"
+  },
+  "SUBREG_GATE_r236.json": {
+   "sha256": "f7920e644dcd352082feaa79fd5070ed8c8ad77a5a81c3ca4898673f3c7a951b",
+   "bytes": 1800,
+   "sidecar": "SUBREG_GATE_r236.json.sha256"
+  },
+  "ERRATA_delta_cap_r236.md": {
+   "sha256": "67db702e70f59feb4b4d66ca87fe01e1c243e2e67b14282c10bb08e43bde1dce",
+   "bytes": 3710,
+   "sidecar": "ERRATA_delta_cap_r236.md.sha256"
+  },
+  "ERRATA_transfer_framing_r240.md": {
+   "sha256": "a707e578beea8d4eec83227f46b8be26362daefa6dc62bea73068dc2660e6860",
+   "bytes": 14651,
+   "sidecar": "ERRATA_transfer_framing_r240.md.sha256"
+  },
+  "BODY2_POWERTABLE_r238.json": {
+   "sha256": "de9568279155e55e733eefa71bd7995db33df90b1844b54241cdfca54ba28cf9",
+   "bytes": 862,
+   "sidecar": "BODY2_POWERTABLE_r238.json.sha256"
+  },
+  "body2_channels_r229_AS_EXECUTED.py": {
+   "sha256": "9acb67baf9d39accc342f3afcaa1efa4530e38eaedc093373c3e7ec68f2ba355",
+   "bytes": 37888,
+   "sidecar": "body2_channels_r229_AS_EXECUTED.py.sha256"
+  },
+  "BODY2_CHANNELS_r229.json": {
+   "sha256": "e3f738e4f422e33958e04125de5023dd86ee7a15d722641601a0fd6f3bf254bc",
+   "bytes": 24563,
+   "sidecar": "BODY2_CHANNELS_r229.json.sha256"
+  },
+  "BODY2_DOSE_r229.json": {
+   "sha256": "826554b7a84d08261db13fb6eba8099738ce9ec413048aba7b9a38627c71d2ed",
+   "bytes": 19285,
+   "sidecar": "BODY2_DOSE_r229.json.sha256"
+  },
+  "BODY2_REPLAY_LEDGER_r229.json": {
+   "sha256": "8a0291eda3519be02d6826982676dae9777a51b7682b97dc85bab59c82c6cff1",
+   "bytes": 9749,
+   "sidecar": "BODY2_REPLAY_LEDGER_r229.json.sha256"
+  },
+  "REPRODUCTION_r243.json": {
+   "sha256": "8fdbf17085cb52ee6abe67034bcedd382b1c1d4eba94c14592b9d802547c9fb9",
+   "bytes": 1757,
+   "sidecar": "REPRODUCTION_r243.json.sha256"
+  },
+  "gen_inventory_r246.py": {
+   "sha256": "e46df6d19afa2462e13ef1b29b3b2b5f744036719a733474329c6360e015036f",
+   "bytes": 3379,
+   "sidecar": "gen_inventory_r246.py.sha256"
+  },
+  "RESULTS_3d_r214.md": {
+   "sha256": "9505a3c70223a5df9f7609343bd629a77d1aebfb1d06725f3f7e9fe4ebaf3fa3",
+   "bytes": 51268,
+   "sidecar": "RESULTS_3d_r214.md.sha256"
+  },
+  "DEPOSIT_INVENTORY_r246.json": {
+   "sha256": "d2c7568d69bee44c71731faca62c1e9874557d441febe2c2d67e313b9263981d",
+   "bytes": 1339,
+   "sidecar": "DEPOSIT_INVENTORY_r246.json.sha256"
+  }
+ }
+}
