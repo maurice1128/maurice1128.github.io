@@ -18,8 +18,8 @@
   #traceSvg{width:100%;height:auto;display:block}
   #traceSvg .grid{stroke:var(--rule-2);stroke-width:1}
   #traceSvg .ax{fill:var(--ink-3);font-family:var(--mono);font-size:9px}
-  #traceSvg .clean{fill:none;stroke:var(--plot-a);stroke-width:2.2;stroke-linejoin:round}
-  #traceSvg .noisy{fill:none;stroke:var(--plot-b);stroke-width:1.2;stroke-linejoin:round;opacity:.9}
+  #traceSvg .sound{fill:none;stroke:var(--ink-3);stroke-width:1.2;stroke-linejoin:round}
+  #traceSvg .paretic{fill:none;stroke:var(--plot-b);stroke-width:1.9;stroke-linejoin:round}
 </style>
 </head>
 <body>
@@ -83,15 +83,17 @@
   <p class="desc">Markerless motion capture is
   making it possible to measure gait outside a laboratory &mdash; at a cost in accuracy. The trace
   below is the real simulated ankle trajectory from the 60&nbsp;% plantarflexor condition, 200
-  samples over the analysis window. Drag the slider to add zero-mean Gaussian error at the
-  &sigma; you choose, exactly as the study does, and watch what the classifier is left with.</p>
+  samples over the analysis window, for both limbs. Drag the slider to add zero-mean Gaussian
+  error at the &sigma; you choose, exactly as the study does. What identifies the weak group is
+  the gap between the two sides, so watch that gap rather than either trace on its own.</p>
 
   <div class="figrow" style="margin-top:0">
     <figure class="fig" style="margin:0">
       <svg id="traceSvg" viewBox="0 0 640 300" role="img"
-           aria-label="Simulated ankle angle with added capture error"></svg>
-      <p class="cap"><b>Black: the true trajectory. Red: what a camera at this error level
-      hands the classifier.</b> The noise is seeded, so the trace is stable while you drag.</p>
+           aria-label="Simulated paretic and sound ankle angles with added capture error"></svg>
+      <p class="cap"><b>Red: the paretic ankle. Grey: the sound ankle.</b> The deficit is the
+      gap between them, and each side carries its own independent error. The noise is seeded, so
+      the traces are stable while you drag.</p>
     </figure>
 
     <div>
@@ -337,16 +339,24 @@ var WAVE = {"ankle_paretic":[10.499,6.26,-0.241,-4.934,-4.61,-1.9,1.957,6.63,11.
   }
 
   // ---- fixed seeded standard normals, so dragging is stable ---------------
-  var seed=20260901, N=WAVE.ankle_paretic.length, Z=new Array(N);
-  function rnd(){ seed=(seed*1103515245+12345)&0x7fffffff; return seed/0x7fffffff; }
-  for(var i=0;i<N;i++){
-    var u=Math.max(rnd(),1e-9), v=rnd();
-    Z[i]=Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);
+  // One sequence per limb. The camera errs on each side independently, and it is the difference
+  // between the sides that carries the deficit, so sharing one sequence would leave that
+  // difference untouched no matter how far the slider is dragged.
+  var N=WAVE.ankle_paretic.length;
+  function normals(n, seed){
+    var o=new Array(n), i;
+    function rnd(){ seed=(seed*1103515245+12345)&0x7fffffff; return seed/0x7fffffff; }
+    for(i=0;i<n;i++){
+      var u=Math.max(rnd(),1e-9), v=rnd();
+      o[i]=Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);
+    }
+    return o;
   }
+  var Zp=normals(N,20260901), Zs=normals(N,987654321);
 
   var svg=document.getElementById("traceSvg");
   var W=640,H=300,PL=42,PR=12,PT=16,PB=30;
-  var y=WAVE.ankle_paretic, lo=-34, hi=50;
+  var yp=WAVE.ankle_paretic, ys=WAVE.ankle_sound, lo=-42, hi=52;
   function X(i){ return PL+(i/(N-1))*(W-PL-PR); }
   function Y(v){ return PT+(1-(v-lo)/(hi-lo))*(H-PT-PB); }
   function path(arr){
@@ -356,25 +366,28 @@ var WAVE = {"ankle_paretic":[10.499,6.26,-0.241,-4.934,-4.61,-1.9,1.957,6.63,11.
   }
 
   var base='<defs><clipPath id="plotClip"><rect x="'+PL+'" y="'+PT+'" width="'+(W-PL-PR)+'" height="'+(H-PT-PB)+'"/></clipPath></defs>';
-  for(var g=-20;g<=40;g+=20){
+  for(var g=-40;g<=40;g+=20){
     base+='<line class="grid" x1="'+PL+'" y1="'+Y(g).toFixed(1)+'" x2="'+(W-PR)+'" y2="'+Y(g).toFixed(1)+'"/>'
         + '<text class="ax" x="'+(PL-6)+'" y="'+(Y(g)+3).toFixed(1)+'" text-anchor="end">'+g+'&#176;</text>';
   }
   base+='<text class="ax" x="'+PL+'" y="'+(H-8)+'">0 % of window</text>'
       + '<text class="ax" x="'+(W-PR)+'" y="'+(H-8)+'" text-anchor="end">100 %</text>'
-      + '<text class="ax" x="'+PL+'" y="'+(PT-4)+'">ankle angle, 60 % plantarflexor weakness</text>';
+      + '<text class="ax" x="'+PL+'" y="'+(PT-4)+'">ankle angle, 60 % plantarflexor weakness'
+      + '  —  paretic and sound side</text>';
 
   var sig=document.getElementById("sig"),
       sigOut=document.getElementById("sigOut"),
       accOut=document.getElementById("accOut");
 
   function draw(){
-    var s=parseFloat(sig.value);
-    var noisy=new Array(N);
-    for(var i=0;i<N;i++) noisy[i]=y[i]+s*Z[i];
+    var s=parseFloat(sig.value), i;
+    var mp=new Array(N), ms=new Array(N);
+    for(i=0;i<N;i++){ mp[i]=yp[i]+s*Zp[i]; ms[i]=ys[i]+s*Zs[i]; }
     svg.innerHTML = base
-      + (s>0 ? '<g clip-path="url(#plotClip)"><path class="noisy" d="'+path(noisy)+'"/></g>' : '')
-      + '<path class="clean" d="'+path(y)+'"/>';
+      + '<g clip-path="url(#plotClip)">'
+      +   '<path class="sound" d="'+path(ms)+'"/>'
+      +   '<path class="paretic" d="'+path(mp)+'"/>'
+      + '</g>';
     sigOut.innerHTML = s.toFixed(1)+"&#176;";
     accOut.textContent = accuracy(s).toFixed(3);
   }
