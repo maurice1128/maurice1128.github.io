@@ -45,16 +45,20 @@
   <figure class="fig">
     <video src="../assets/spasticity/vid_gait.mp4" autoplay muted loop playsinline
            preload="metadata"></video>
-    <p class="cap"><b>One gait cycle from each condition</b> (10&nbsp;s, no sound). Joint centres
-    are solved from the archived simulation output by least squares on the rigid-body constraint,
-    so the postures drawn are the ones the model held; the closure residual is 0.3&nbsp;mm. The
-    left leg is the lesioned side and the camera follows the pelvis. The trace under each figure
-    is the ankle-angle column the endpoint is taken from, with plantarflexor activation shaded
-    behind it. <b>These are single cycles of a single seed, not the group means reported below</b>,
-    and the hyperreflexia run falls later in the simulation than the cycle shown. Read the two
-    lesions against each other rather than against normality: the unlesioned control's swing peak
-    sits outside the normal adult range of 0&ndash;5&deg; and the hyperreflexia model's sits
-    inside it.</p>
+    <p class="cap"><b>One gait cycle from each condition</b> (10&nbsp;s, no sound). This is the
+    archived model itself: the bone meshes it was built from, posed by its own recorded body poses,
+    with its own muscle paths shaded by their recorded activation. Joint centres are solved from
+    the rigid-body constraint that a joint is fixed in both bodies it connects, closure residual
+    0.3&nbsp;mm; the only approximation in the drawing is that each bone's silhouette is taken in
+    its own sagittal plane and not re-projected for out-of-plane rotation. The left leg is lesioned
+    and the camera follows the pelvis. <b>The separation is about seven degrees, which is small at
+    whole-body scale</b>, so it is also shown magnified with the shank held vertical &mdash; what
+    remains there is the ankle angle alone &mdash; and as all three traces on one axis. Nothing is
+    exaggerated; the only magnified panel is the one that says so. <b>These are single cycles of a
+    single seed, not the group means reported below</b>, and the hyperreflexia run falls later in
+    the simulation than the cycle shown. Read the two lesions against each other rather than
+    against normality: the control's swing peak sits outside the normal adult range of
+    0&ndash;5&deg; and the hyperreflexia model's sits inside it.</p>
   </figure>
 </section>
 

@@ -98,6 +98,13 @@ def skeleton(fam, seed=101):
            "t_end": float(t[-1]), "sto": f}
     for mus in ["tib_ant_l", "soleus_l", "gastroc_l"]:
         out[mus] = S.col(c, dat, mus + ".activation")[m]
+    out["act"] = {n[:-len(".activation")]: dat[m, i] for i, n in enumerate(c)
+                  if n.endswith(".activation")}
+    out["body"] = {}
+    for b in ["pelvis", "torso", "femur_l", "tibia_l", "calcn_l",
+              "femur_r", "tibia_r", "calcn_r"]:
+        p, R = body(c, dat, b)
+        out["body"][b] = (p[m], R[m])
     grf, thr = S.grf_vertical(c, dat, "l")
     hs = S.heel_strikes(t, grf, thresh=thr)
     out["heel_strikes_s"] = [float(t[i]) for i in hs if SETTLE <= t[i] <= T1]
