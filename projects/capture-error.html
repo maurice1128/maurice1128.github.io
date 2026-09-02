@@ -8,13 +8,28 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../css/style.css">
 <style>
-  .clips{display:grid;gap:1rem;grid-template-columns:repeat(5,minmax(0,1fr))}
-  @media (max-width:1080px){.clips{grid-template-columns:repeat(3,minmax(0,1fr))}}
-  @media (max-width:680px){.clips{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  /* the row leaves the 830 px text column, so five 880 px figures are not shown at 153 px */
+  .clips{display:grid;gap:14px 12px;grid-template-columns:repeat(5,minmax(0,1fr));
+    width:min(1560px,calc(100vw - 32px));margin-left:50%;transform:translateX(-50%)}
+  @media (max-width:1200px){.clips{grid-template-columns:repeat(3,minmax(0,1fr))}}
+  @media (max-width:760px){.clips{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  .clip{display:block;width:100%;padding:0;border:0;background:none;text-align:left;
+    font:inherit;color:inherit;cursor:zoom-in}
   .clip video{width:100%;display:block;border:1px solid var(--rule);border-radius:4px;background:#0B0E0F}
-  .clip .lab{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;
-    color:var(--ink-3);margin-top:.5rem}
+  .clip:hover video,.clip:focus-visible video{border-color:var(--plot-b)}
+  .clip .lab{display:block;font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--ink-3);margin-top:.5rem}
   .clip .lab b{color:var(--ink)}
+  #clipZoom{border:1px solid var(--rule);background:var(--bg);color:var(--ink);padding:14px;width:auto}
+  #clipZoom::backdrop{background:rgba(0,0,0,.72)}
+  #clipZoom video{display:block;width:min(880px,92vw);height:auto;
+    border:1px solid var(--rule);background:#0B0E0F}
+  #clipZoom .zrow{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-top:.6rem}
+  #clipZoom .lab{font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--ink-3)}
+  #clipZoom .lab b{color:var(--ink)}
+  #zoomClose{font-family:var(--mono);font-size:.74rem;background:none;color:var(--ink-3);
+    border:1px solid var(--rule);padding:3px 10px;cursor:pointer}
   #traceSvg{width:100%;height:auto;display:block}
   #traceSvg .grid{stroke:var(--rule-2);stroke-width:1}
   #traceSvg .ax{fill:var(--ink-3);font-family:var(--mono);font-size:9px}
@@ -60,20 +75,25 @@
   indicated. Each clip shows healthy gait beside the weakened condition on a shared clock. Muscle
   activation is colour-coded on the skeleton, the weakened group is drawn in red, and the green
   arrows are the ground reaction force. <b>Watch them before reading a single number: the five
-  patterns are obviously different.</b></p>
+  patterns are obviously different.</b> Click any one of them to open it large.</p>
 
   <div class="clips">
-    <div class="clip"><video src="../assets/capture-error/PF60.mp4" autoplay muted loop playsinline></video>
-      <p class="lab"><b>Plantarflexors</b> &middot; 60&nbsp;% force loss</p></div>
-    <div class="clip"><video src="../assets/capture-error/DF60.mp4" autoplay muted loop playsinline></video>
-      <p class="lab"><b>Dorsiflexors</b> &middot; 60&nbsp;%</p></div>
-    <div class="clip"><video src="../assets/capture-error/KE60.mp4" autoplay muted loop playsinline></video>
-      <p class="lab"><b>Knee extensors</b> &middot; 60&nbsp;%</p></div>
-    <div class="clip"><video src="../assets/capture-error/KF40.mp4" autoplay muted loop playsinline></video>
-      <p class="lab"><b>Knee flexors</b> &middot; 40&nbsp;%</p></div>
-    <div class="clip"><video src="../assets/capture-error/HF60.mp4" autoplay muted loop playsinline></video>
-      <p class="lab"><b>Hip flexors</b> &middot; 60&nbsp;%</p></div>
+    <button class="clip" type="button" data-src="../assets/capture-error/PF60.mp4"><video src="../assets/capture-error/PF60.mp4" autoplay muted loop playsinline></video>
+      <span class="lab"><b>Plantarflexors</b> &middot; 60&nbsp;% force loss</span></button>
+    <button class="clip" type="button" data-src="../assets/capture-error/DF60.mp4"><video src="../assets/capture-error/DF60.mp4" autoplay muted loop playsinline></video>
+      <span class="lab"><b>Dorsiflexors</b> &middot; 60&nbsp;%</span></button>
+    <button class="clip" type="button" data-src="../assets/capture-error/KE60.mp4"><video src="../assets/capture-error/KE60.mp4" autoplay muted loop playsinline></video>
+      <span class="lab"><b>Knee extensors</b> &middot; 60&nbsp;%</span></button>
+    <button class="clip" type="button" data-src="../assets/capture-error/KF40.mp4"><video src="../assets/capture-error/KF40.mp4" autoplay muted loop playsinline></video>
+      <span class="lab"><b>Knee flexors</b> &middot; 40&nbsp;%</span></button>
+    <button class="clip" type="button" data-src="../assets/capture-error/HF60.mp4"><video src="../assets/capture-error/HF60.mp4" autoplay muted loop playsinline></video>
+      <span class="lab"><b>Hip flexors</b> &middot; 60&nbsp;%</span></button>
   </div>
+
+  <dialog id="clipZoom">
+    <video id="zoomVid" autoplay muted loop playsinline controls></video>
+    <div class="zrow"><span class="lab" id="zoomLab"></span><button id="zoomClose" type="button">Close</button></div>
+  </dialog>
 </section>
 
 <!-- ===================== 2. TAKE THE MEASUREMENT AWAY ===================== -->
@@ -393,6 +413,43 @@ var WAVE = {"ankle_paretic":[10.499,6.26,-0.241,-4.934,-4.61,-1.9,1.957,6.63,11.
   }
   sig.addEventListener("input",draw);
   draw();
+})();
+</script>
+
+<script>
+// Open one clip near its native 880 px. Where <dialog> is missing the grid is left as it is.
+(function(){
+  var dlg=document.getElementById('clipZoom');
+  if(!dlg || !dlg.showModal) return;
+  var vid=document.getElementById('zoomVid'), lab=document.getElementById('zoomLab');
+
+  // some contexts suppress the autoplay attribute but still allow a scripted play()
+  function nudge(v){
+    var q=v.play();
+    if(q && q.catch) q.catch(function(){});
+  }
+  vid.addEventListener('loadeddata', function(){ nudge(vid); });
+
+  function shut(){
+    if(dlg.open) dlg.close();
+    vid.pause();
+    vid.removeAttribute('src');
+    vid.load();                      // drops the buffered clip
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll('.clip'), function(b){
+    b.addEventListener('click', function(){
+      vid.src=b.getAttribute('data-src');
+      lab.innerHTML=b.querySelector('.lab').innerHTML;
+      dlg.showModal();
+      nudge(vid);
+    });
+  });
+
+  dlg.addEventListener('click', function(e){ if(e.target===dlg) shut(); });
+  document.getElementById('zoomClose').addEventListener('click', shut);
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && dlg.open) shut(); });
+  dlg.addEventListener('close', shut);   // where the event does fire, this is a no-op second call
 })();
 </script>
 
