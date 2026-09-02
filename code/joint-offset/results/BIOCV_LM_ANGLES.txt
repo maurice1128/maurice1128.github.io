@@ -1,0 +1,22 @@
+LM TRIANGULATION AT THE JOINT-ANGLE LEVEL -- decisive test of the surrogate-invalidity thesis.
+Cache=D:/BioCV/_cache_undist  N=1560 knee-angle observations, 11 subjects, stride=8.
+Shared candidate camera set per observation; each arm runs its own rejection + estimator.
+
+           arm   mean knee angle error (deg)
+     dlt_noRej                         2.338
+   dlt_objdRej                         2.538
+      lm_noRej                         2.374
+     lm_repRej                         2.620
+    lm_objdRej                         2.569
+
+CONTRASTS (positive = the SECOND arm has lower angle error):
+  THE DECISIVE ONE: with LM, does rejection help the ANGLE?  -0.246 [-0.390,-0.084]*
+  with LM, does the object-space criterion help the angle?   +0.051 [-0.028,+0.142] 
+  does LM beat DLT at the angle level (no rejection)?        -0.036 [-0.125,+0.069] 
+  best-LM vs plain DLT no-rejection                          -0.282 [-0.426,-0.128]*
+  DLT reference: does objd rejection help the angle?         -0.200 [-0.287,-0.109]*
+
+READ: in 3D POSITION, lm_repRej beats lm_noRej by +4.12 mm [3.11,5.18] -- the largest
+effect in the project. If the surrogate-invalidity thesis holds, the same contrast at
+the knee should be ~0. If instead it is a large significant angular gain, the thesis
+is FALSE and must not be built on.

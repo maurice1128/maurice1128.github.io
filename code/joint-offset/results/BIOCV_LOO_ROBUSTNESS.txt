@@ -1,0 +1,26 @@
+LEAVE-ONE-PARTICIPANT-OUT ROBUSTNESS OF THE HEADLINE CONTRASTS
+
+Each participant dropped in turn; the exact sign-flip test re-run on the remaining ten
+(2^10 = 1024 patterns, smallest attainable p = 0.001953). 'worst p' is the largest p over the
+eleven refits and 'driver' the participant whose removal produces it. A contrast is robust
+when the direction is unchanged in all eleven refits and the worst p stays below 0.05.
+
+contrast                                           effect        p   LOO min   LOO max  worst p  driver  verdict
+[pos:HKA] uniform vs confidence weighting          +0.917   0.0010    +0.832    +0.967   0.0020     P03  robust
+[pos:HKA] criterion, adaptive rejection            +0.168   0.0078    +0.148    +0.190   0.0156     P04  robust
+[pos:HKA] LOO offset correction                    +9.848   0.0010    +9.328   +10.643   0.0020     P03  robust
+[pos:HKA] GN: no rejection vs reproj rejection     +0.858   0.0020    +0.702    +0.958   0.0039     P03  robust
+hip, criterion at matched k=2                      +0.530   0.0020    +0.432    +0.586   0.0039     P04  robust
+knee, criterion at matched k=2                     -0.655   0.0020    -0.734    -0.575   0.0039     P03  robust
+knee, criterion, adaptive rejection                +0.339   0.0020    +0.312    +0.378   0.0039     P03  robust
+hip, uniform vs confidence weighting               +1.564   0.0010    +1.437    +1.678   0.0020     P03  robust
+knee flexion, LOO offset correction                -0.606   0.0068    -0.676    -0.540   0.0137     P03  robust
+knee flexion, GN: no rejection vs reproj           -0.169   0.0146    -0.198    -0.143   0.0293     P03  robust
+knee flexion, adaptive reprojection rejection      -0.188   0.0098    -0.221    -0.164   0.0195     P03  robust
+frontal knee, uniform vs confidence weighting      +0.078   0.0010    +0.070    +0.083   0.0020     P03  robust
+hip flexion, uniform vs confidence weighting       +0.227   0.0020    +0.213    +0.265   0.0039     P03  robust
+{knee,ankle} vs {hip,ankle} at matched k=2 (mm)    -0.593   0.0010    -0.634    -0.550   0.0020     P03  robust
+
+14 of 14 headline contrasts are robust to dropping any single participant.
+
+No headline result depends on any one participant.

@@ -1,0 +1,17 @@
+ESTIMATOR-BY-REJECTION INTERACTION: is discarding position-neutral under DLT ONLY?
+
+Rejection effect under each estimator, per participant, then the difference of the two.
+POSITIVE component = rejection LOWERS the error. POSITIVE interaction = rejection does
+better under Gauss-Newton than under DLT. Same accumulation, so the pairing is exact.
+
+outcome                  n       DLT        GN   interaction          exact 95% CI          exact 90% CI        p        q   verdict
+[pos:HKA] position      11    -0.005    +0.858        +0.863   [ +0.576,  +1.152]   [ +0.625,  +1.096]   0.0010   0.0020   SURVIVES
+knee flexion            11    -0.188    -0.169        +0.019   [ -0.025,  +0.061]   [ -0.016,  +0.053]   0.3418   0.3418   n.s.
+
+Units: position in mm, angle in deg. The 95% interval is the one to read beside a
+5%-level verdict; the 90% interval is the equivalence bound for the null row.
+BH within a declared family of two, fixed in this file's header before the numbers existed.
+
+=== VERDICTS, against the rule fixed in this file's header ===
+(1) POSITION, q = 0.0020  ->  the estimator changes what discarding does to position; Section 3.2 may state it as a tested difference
+(2) ANGLE, q = 0.3418  ->  no evidence the angle cost differs by estimator, as the paper's account predicts

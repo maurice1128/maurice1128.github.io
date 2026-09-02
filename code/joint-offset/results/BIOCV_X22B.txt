@@ -1,0 +1,33 @@
+X22b -- CORRECTED ANGLE ERROR DECOMPOSITION (MSE, per-arm), watchdog Cycle 3g
+Cache=D:/BioCV/_cache_undist  N=12480 knee-angle observations, 11 subjects.
+
+=== A2 FIX: MSE decomposition of SIGNED angle error (comparable to B14's position 55%) ===
+         arm  RMSE deg  bias deg  random deg  bias% of MSE  mean|err|
+  noRej_conf     3.279     2.318       2.319           50%      2.575
+    noRej_wd     3.243     2.216       2.367           47%      2.528
+    rep_conf     3.525     2.392       2.588           46%      2.772
+   objd_conf     3.475     2.343       2.566           45%      2.722
+      rep_wd     3.390     2.251       2.535           44%      2.651
+     objd_wd     3.321     2.213       2.476           44%      2.590
+  (compare: systematic share of PERIPHERAL-JOINT squared POSITION error = 55%)
+
+=== A3 TEST: is the systematic position offset b the same for every arm? ===
+  If b is invariant -> it is a joint-centre convention offset, not triangulation-induced.
+  If b varies      -> part of the systematic error IS triangulation-induced.
+    joint  noRej_conf    noRej_wd    rep_conf   objd_conf      rep_wd     objd_wd  max spread
+    L-hip       30.19       30.21       28.71       28.55       28.36       29.14        1.45
+    R-hip       33.95       36.04       30.81       31.55       32.88       34.74        3.10
+   L-knee       23.71       24.64       24.80       24.39       25.83       25.29        1.75
+   R-knee       27.61       28.13       28.45       28.16       29.01       28.69        1.46
+  L-ankle        9.54        9.59       10.05        9.89       10.11       10.10        0.81
+  R-ankle        9.78        9.43        9.71        9.52        9.33        9.33        0.87
+  columns = ||mean offset|| (mm) per arm; 'max spread' = largest deviation of any arm
+  from the across-arm mean, in mm.
+
+=== A1: power of the 'random component' estimate (this is a NULL, not an absence) ===
+  RMSE of objd_conf = 3.475 deg, subject-cluster CI [3.054,3.981]
+  Table 4 detects triangulation effects of 0.03-0.20 deg with CIs EXCLUDING zero.
+  Any 'no detectable triangulation contribution' claim must be checked against that.
+
+READ: report the MSE-based bias share (comparable to B14). Do NOT claim the
+triangulation stage is uninvolved -- Table 4 detects it with tighter intervals.

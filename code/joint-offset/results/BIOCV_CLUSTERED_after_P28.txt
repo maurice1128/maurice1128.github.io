@@ -1,0 +1,11 @@
+BioCV real Vicon GT, clustered 6-cam subsets, N=566020 subset-obs (NOT the inferential N) from 3 subjects / 29 trials, asym median=1.85 p90=2.39 max=3.79
+d = err_reproj - err_dist (mm); +=distance better. SUBJECT-cluster bootstrap 95% CI (inferential unit = subject; n=3 subjects -> CI is degenerate/wide until more subjects).
+  asym bin       n  mean_re  mean_di   dMEAN       dMEAN 95%CI    dP95
+      <1.5   47395     18.0     18.0   -0.01[-0.18,+0.13] UNDEF(n_subj=3<4)    -0.2
+     1.5-2  333693     23.0     23.0   -0.00[-0.22,+0.17] UNDEF(n_subj=3<4)    -0.4
+       2-3  180427     49.0     48.6   +0.39[+0.25,+0.59] UNDEF(n_subj=3<4)    +0.5
+       3-4    4505     73.6     69.7   +3.96[+2.69,+11.61] UNDEF(n_subj=3<4)    +2.0
+       4-6       0   few
+        >6       0   few
+NOTE: with <4 subjects the subject-cluster CI is UNDEFINED (degeneracy), not significance.
+Interpretation needs >=~8 subjects; current point estimates are within-subject descriptive only.

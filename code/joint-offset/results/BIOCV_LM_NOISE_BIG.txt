@@ -1,0 +1,49 @@
+LM (geometric/ML) triangulation vs DLT variants, and detector noise scaling.
+Cache=D:/BioCV/_cache_undist  N=2080 obs, 11 subjects, severe joints.
+
+--- (b) DETECTOR PIXEL ERROR vs CAMERA DISTANCE (vs Vicon GT projection) ---
+     dist bin (mm)       n  median e_px  mean e_px  p90 e_px
+         2302-3501    3718         6.01      11.52     23.52
+         3501-3884    3718         5.76      13.46     30.38
+         3884-4601    3718         4.38       8.14     17.71
+         4601-5601    3718         3.35       4.63      8.72
+         5601-8116    3719         3.10       4.10      7.77
+power-law fit on medians: sigma_px ~ d^alpha with alpha = -1.111
+  alpha~0 => pixel noise distance-independent => REPROJECTION is the correctly-
+            weighted residual, object-space over-weights far cameras.
+  alpha~1 => pixel error grows linearly with d => OBJECT-SPACE residuals are the
+            homoscedastic ones => object-space correct by derivation.
+
+--- (a) ARM MATRIX incl. proper geometric (LM) triangulation ---
+ asym bin      n    dlt_conf      dlt_wd   objd_conf    lm_noRej   lm_repRej  lm_objdRej
+    1.5-2   1301       15.43       15.48       15.28       18.16       14.61       14.46
+    2-2.5    604       16.98       17.16       16.46       20.31       15.69       15.43
+    2.5-3    162       19.41       18.82       17.35       23.47       16.44       16.33
+      ALL   2080       16.18       16.22       15.78       19.18       15.06       14.89
+
+--- Does proper LM beat the best DLT tweak (1/d weighting)?: dlt_wd minus lm_noRej (POSITIVE = 'lm_noRej' better) ---
+    1.5-2   1301    -2.68      [-3.04,-2.36]*
+    2-2.5    604    -3.15      [-4.25,-2.24]*
+    2.5-3    162    -4.65      [-6.20,-3.17]*
+      ALL   2080    -2.96      [-3.44,-2.53]*
+
+--- Does proper LM beat the paper's object-space rejection?: objd_conf minus lm_noRej (POSITIVE = 'lm_noRej' better) ---
+    1.5-2   1301    -2.88      [-4.11,-1.75]*
+    2-2.5    604    -3.85      [-5.41,-2.37]*
+    2.5-3    162    -6.12      [-8.18,-3.85]*
+      ALL   2080    -3.40      [-4.46,-2.40]*
+
+--- With LM, does reprojection rejection still add anything?: lm_noRej minus lm_repRej (POSITIVE = 'lm_repRej' better) ---
+    1.5-2   1301    +3.55      [+2.43,+4.86]*
+    2-2.5    604    +4.62      [+3.25,+5.96]*
+    2.5-3    162    +7.04      [+4.69,+9.24]*
+      ALL   2080    +4.12      [+3.11,+5.18]*
+
+--- With LM, does the object-space CRITERION help?: lm_repRej minus lm_objdRej (POSITIVE = 'lm_objdRej' better) ---
+    1.5-2   1301    +0.15      [-0.01,+0.32] 
+    2-2.5    604    +0.25      [+0.07,+0.44]*
+    2.5-3    162    +0.11      [-0.25,+0.53] 
+      ALL   2080    +0.18      [+0.04,+0.30]*
+
+READ: if lm_noRej dominates dlt_wd and objd_conf, the entire DLT-tweak comparison
+is moot and the honest recommendation is 'use a proper geometric triangulation'.

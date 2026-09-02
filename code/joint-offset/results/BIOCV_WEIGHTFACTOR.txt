@@ -1,0 +1,32 @@
+WEIGHT FACTORISATION -- which factor in the DLT weights is doing the work?
+Cache=D:/BioCV/_cache_undist, 11 subjects. NO rejection in any arm; only weighting differs.
+
+--- DIAGNOSTIC: is detector confidence itself distance-dependent? ---
+corr(confidence, camera distance) = +0.145   (n=222520)
+   distance bin (mm)        n  mean conf  median conf
+           2096-3737    55630      0.813        0.838
+           3737-4331    55630      0.796        0.846
+           4331-5442    55630      0.835        0.869
+           5442-8764    55630      0.852        0.874
+power-law fit: confidence ~ d^+0.093
+  If beta is strongly negative, 'conf' already encodes distance and dividing by d
+  again double-counts it -- the same error as combining distance rejection + weighting.
+
+--- 3D POSITION error, peripheral joints (N=24960 obs) ---
+   weighting      mean          vs conf (95% CI)
+     uniform    21.678   -5.086 [-5.844,-4.428]*
+        conf    16.592               (reference)
+       inv_d    21.604   -5.012 [-5.879,-4.295]*
+      conf_d    16.346   +0.246 [+0.073,+0.427]*
+     conf_d2    16.591   +0.001 [-0.326,+0.356] 
+   (mm; POSITIVE = better than the current confidence weighting)
+
+--- KNEE ANGLE error (N=12480 obs) ---
+   weighting      mean          vs conf (95% CI)
+     uniform     2.607   -0.032 [-0.099,+0.040] 
+        conf     2.575               (reference)
+       inv_d     2.586   -0.011 [-0.168,+0.141] 
+      conf_d     2.528   +0.047 [-0.057,+0.145] 
+     conf_d2     2.550   +0.025 [-0.164,+0.195] 
+   (deg; POSITIVE = better than the current confidence weighting)
+

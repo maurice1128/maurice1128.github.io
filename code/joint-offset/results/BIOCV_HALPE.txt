@@ -1,0 +1,107 @@
+HALPE-26: A DIFFERENT MODEL AND TRAINING CORPUS, AND THE SHANK-FOOT ANGLE
+
+The same frames, ground truth, calibration and association rule; only the detector and
+its keypoint convention differ. Both caches distortion-corrected.
+
+PART A -- DOES THE OFFSET SURVIVE A CHANGE OF MODEL AND TRAINING CORPUS?
+HALPE-26 carries COCO-17's body landmark definitions at indices 0-16, so at hip,
+knee and ankle the DEFINITION is unchanged and only the model and corpus differ.
+
+    joint             RTMPose / COCO-17            RTMPose / HALPE-26
+               bias mm  random  share      bias mm  random  share
+    L-hip         35.3    17.0    78%         35.7    16.6    77%
+    R-hip         37.8    15.3    84%         39.3    15.3    84%
+   L-knee         25.8    13.7    75%         24.4    13.7    72%
+   R-knee         29.2    14.5    80%         27.6    14.8    77%
+  L-ankle         10.9    13.6    40%         10.4    13.9    37%
+  R-ankle         11.3    12.8    45%         11.4    12.7    46%
+
+DIRECTION: cosine between the two models' mean offset vectors, per participant.
+    joint  participants  mean cos     min     max
+    L-hip            11      0.97    0.92    0.99
+    R-hip            11      0.98    0.96    0.99
+   L-knee            11      0.99    0.89    1.00
+   R-knee            11      1.00    0.99    1.00
+  L-ankle            11      0.99    0.98    1.00
+  R-ankle            11      0.99    0.99    1.00
+
+=== PART A VERDICTS, against the rule fixed in this file's header ===
+(A1) SHARE at hip and knee under HALPE-26: 77%  ->  not specific to one model or training run; it says nothing about a different landmark definition
+(A2) MAGNITUDE ratio HALPE-26/COCO-17 at hip and knee: 0.98x  ->  within a factor of two
+(A3) DIRECTION, mean cosine at hip and knee: +0.98  ->  the two models disagree with the reference in the same direction
+(A4) ANKLE, mean cosine: +0.99  ->  the ankle offset is stable across model as well as architecture
+
+PART B -- ANKLE DORSIFLEXION, angle(knee, ankle, toe), reference toe = LTOE/RTOE.
+
+Mean absolute error on the plainest arm: 7.524 deg on the toe angle and 25.202 deg
+on the heel angle, over 11 participants. Both baselines are given because an
+effect on the heel angle can only be read against its own.
+
+EFFECT = mean|e| of the FIRST-named arm minus mean|e| of the SECOND, the convention of
+Table S1. So a POSITIVE row means the second-named arm has the lower error: positive on
+a rejection row means discarding HELPS this angle, negative means it COSTS, as it does
+at the other three angles.
+
+contrast                                     effect deg   exact p     BH q   n   verdict
+none vs adaptive reprojection rejection          -0.522    0.0010   0.0020  11   NO VERDICT: heel disagrees in sign
+none vs adaptive object-space rejection          -0.643    0.0010   0.0020  11   NO VERDICT: heel disagrees in sign
+uniform vs confidence weighting                  +0.025    0.8018   0.8018  11   n.s.
+none vs population offset table                  +0.981    0.0088     --    11   q withheld: leave-one-out rows are not exchangeable (Section 2.5)
+
+Declared family of four, fixed in this file's header before the numbers existed.
+
+DECLARED SENSITIVITY -- the same four contrasts on the heel (HEEL_L/HEEL_R):
+contrast                                     effect deg   exact p
+none vs adaptive reprojection rejection          +0.651    0.0010
+none vs adaptive object-space rejection          +0.578    0.0010
+uniform vs confidence weighting                  +0.123    0.3242
+none vs population offset table                 +15.014    0.0010
+
+READ: the toe is primary and the heel is the pre-declared sensitivity. Where the two
+disagree in sign, THIS PAPER REPORTS NO VERDICT, whichever way the toe row falls.
+
+B5 -- IS THE DISSOCIATION JOINT-SPECIFIC WITHIN ONE CONVENTION?
+
+The thigh-shank angle recomputed on THIS cache and these frames, so both angles carry the
+same keypoints. POSITIVE = the offset table LOWERS that angle's error.
+
+quantity                              effect          exact 95% CI   exact p
+shank-foot angle, deg                 +0.981   [ +0.386,  +1.548]    0.0088
+thigh-shank angle, deg                -0.641   [ -0.954,  -0.329]    0.0029
+interaction, deg                      +1.622   [ +0.911,  +2.236]    0.0029
+interaction, fractional              +41.391   [+21.929, +59.422]    0.0029
+
+n = 11 participants. Baselines: 7.524 deg on the shank-foot angle, 2.620 deg on the thigh-shank angle.
+=== B5 VERDICT, against the rule fixed in this file's header ===
+    -> WITHHELD. Both arms are the leave-one-participant-out offset table, whose
+       differences are not exchangeable, so the exact p above does not apply and no
+       dissociation is claimed here. The effects and intervals stand as description
+       only (Section 2.5).
+
+IS THE HEEL FIT TO VETO? The foot keypoints' own 3D offset against their reference markers.
+    keypoint   bias mm   random   share  participants
+   L-big toe      55.7     32.5     74%            11
+   R-big toe      54.6     30.4     76%            11
+      L-heel      34.1     28.4     59%            11
+      R-heel      33.1     27.1     60%            11
+
+heel/toe offset ratio: 0.61x  ->  same order; the heel is a comparable landmark and the declared veto stands
+
+SEGMENT GEOMETRY, because it bears on how much weight the heel row can carry.
+An error e perpendicular to the distal segment of a three-point angle moves that angle
+by about e/L radians, so a short distal segment amplifies the same positional error.
+               segment  mean length mm   deg per mm
+      ankle -> big toe           134.7         0.43
+         ankle -> heel            87.0         0.66
+         knee -> ankle           391.0         0.15
+
+The heel angle is only 1.5x as sensitive to the same positional error as the
+toe angle, which is far too small to explain the disagreement on its own. The
+BASELINES carry more of it: the heel angle starts from 25.2 deg of mean absolute
+error against the toe angle's 7.5, so the offset table's +15.0 deg is a 60% reduction
+against the toe row's 13%. That makes the magnitude reconcilable in kind but not in
+size, and it does not touch the SIGN REVERSAL on the two rejection rows, which stays
+unexplained. The declared rule applies as written: no verdict where the signs differ.
+The offset-table row agrees in sign on both endpoints and is reported as a direction
+only; its magnitude is not stable across them and must not be quoted as an effect
+size.

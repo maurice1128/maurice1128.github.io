@@ -1,0 +1,36 @@
+EXACT INTERVALS FOR THE [pos:AW] CONTRASTS, FROM THE PERSISTED ACCUMULATOR
+
+Effect = first arm minus second, the order each label names, in millimetres. Intervals are
+exact 95%, constructed by inverting the two-sided sign-flip test over all 2^11 = 2048 sign
+patterns -- the same construction as Table S8.
+
+contrast                                                n   effect  published        exact 95% interval   width
+[pos:AW] uniform vs confidence weighting               11   +5.062     +5.062          [+4.309, +5.930]   1.621
+[pos:AW] 1/d alone vs confidence                       11   +4.971     +4.971          [+4.069, +5.897]   1.828
+[pos:AW] does 1/d refine confidence?                   11   +0.256     +0.256          [+0.058, +0.462]   0.404
+[pos:AW] reprojection vs object-space criterion        11   +0.332     +0.332          [+0.202, +0.458]   0.256
+
+=== VERDICT (1)/(2), against the rule fixed in this file's header ===
+(1) REPRODUCES: +5.062 against the published +5.062, within 0.01 mm. The exact
+    95% interval on the paper's largest triangulation effect is [+4.309, +5.930] mm,
+    a width of 1.621 mm, and Table S8 gains its [pos:AW] rows.
+
+=== VERDICT (3): are 5.062 and 5.086 the same contrast weighted two ways? ===
+Frame-pooled means: uniform 21.678 mm, confidence 16.592 mm, difference +5.086 mm.
+Per-participant mean of differences: +5.062 mm.
+ESTABLISHED: the pooled computation returns 5.086, matching the 5.086 of
+    Table S2c. The two published figures are the same contrast under two weightings of
+    the participants -- equally, and by frame count -- and both documents may say so.
+
+ participant  uniform mm  confidence mm  difference
+         P03      30.803         22.776      +8.027
+         P04      25.340         20.457      +4.882
+         P06      20.516         15.923      +4.593
+         P08      20.951         16.935      +4.016
+         P09      16.077         12.115      +3.962
+         P10      21.907         17.684      +4.222
+         P13      18.963         13.451      +5.512
+         P16      21.653         15.018      +6.635
+         P17      19.994         15.761      +4.233
+         P26      19.586         15.114      +4.472
+         P28      22.251         17.126      +5.125

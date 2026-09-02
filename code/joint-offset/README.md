@@ -51,3 +51,13 @@ part of the record, not commentary added afterwards.
 Python 3.11 with `numpy`, `scipy`, `matplotlib`, `ezc3d`, `python-docx`, `PyMuPDF`. Pose
 detection additionally needs `mmpose`/`mmdet` and a CUDA device. Paths to the dataset and to
 the result directory are set at the top of each script.
+
+## Result files
+
+`results/` holds every result file the scripts write — 139 of them, the ones the supplementary
+material reproduces verbatim. They are aggregate statistics, not data: no recording, marker
+trajectory or calibration is included, and no participant is identifiable from them. The
+labels `P03`, `P26` and so on are the archive's trial identifiers.
+
+Each file carries, in its own header, the reading that was fixed before it was written. Where
+a pre-declared branch fired against the paper, the file says so.

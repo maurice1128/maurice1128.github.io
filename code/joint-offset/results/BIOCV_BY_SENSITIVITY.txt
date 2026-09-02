@@ -1,0 +1,72 @@
+BENJAMINI-YEKUTIELI SENSITIVITY: THE PRICE OF NOT ASSUMING POSITIVE DEPENDENCE
+
+Section 2.5 corrects with Benjamini-Hochberg within each declared family and appeals to the
+positive-regression-dependence extension (Benjamini and Yekutieli, 2001) because the
+contrasts in a family share arms, participants and baselines. PRDS is assumed there, not
+shown. This is what the same authors' ARBITRARY-dependence procedure gives instead: the BH
+threshold divided by H_m = sum_{i=1..m} 1/i. It is deliberately conservative and is NOT the
+convention the manuscript adopts; it is reported so a reader can see which verdicts depend on
+the positive-dependence assumption.
+
+family                           m    H_m    BH    BY  contrasts losing significance under BY
+main contrasts                  50   4.50    27    18  9
+position vs angle               20   3.60    13    10  3
+joint set vs joint set           8   2.72     6     6  0
+per-joint                       12   3.10     7     7  0
+posture                         13   3.18    11     6  5
+dose-response                    6   2.45     6     6  0
+estimator x rejection            2   1.50     1     1  0
+shank-foot angle                 3   1.83     2     2  0
+within-limb: membership, %      30   3.99    17     9  8
+within-limb: membership, mm     30   3.99    13    10  3
+within-limb: subset alone       20   3.60    14    10  4
+offset control: per-joint       18   3.50     8     7  1
+offset control: per-subset      16   3.38     8     7  1
+offset control: reversal test   18   3.50    13     8  5
+
+TOTAL                                       146   107
+
+Verdicts that hold under BH and not under BY, i.e. those resting on the positive-dependence
+assumption:
+  main contrasts                [pos:AW] does 1/d refine confidence? 11
+  main contrasts                [pos:HKA] reprojection vs object-space criterion 11
+  main contrasts                knee flex: reproj rejection vs none 11
+  main contrasts                hip flex: reproj rejection vs none 11
+  main contrasts                hip flex: objd rejection vs none 11
+  main contrasts                knee flex matched-k=1: reprojection vs object-space at equal retention 11
+  main contrasts                knee flex matched-k=2: reprojection vs object-space at equal retention 11
+  main contrasts                knee flex: LOO population offset correction 11
+  main contrasts                knee flex GN: no rejection vs reprojection rejection 11
+  position vs angle             no rejection->objd rejection [hip flex] +0.51 -5.83
+  position vs angle             no rejection->reproj rejection [knee flex] -0.10 -8.16
+  position vs angle             reproj->object-space criterion [frontal knee] +0.61 -2.61
+  posture                       knee |off|
+  posture                       ankle y
+  posture                       ankle x
+  posture                       knee x
+  posture                       ankle z
+  within-limb: membership, %    uniform vs confidence weighting y knee+ankle hip+ankle +2.53 +4.15
+  within-limb: membership, %    LOO offset correction y hip+knee+ankle hip+knee +34.04 +37.25
+  within-limb: membership, %    criterion, adaptive rejection y hip+knee+ankle knee+ankle +0.61 +1.13
+  within-limb: membership, %    criterion, adaptive rejection y knee+ankle hip+ankle +1.13 +0.32
+  within-limb: membership, %    LOO offset correction y hip+knee hip+ankle +37.25 +28.49
+  within-limb: membership, %    criterion at matched k=1 n hip+knee+ankle knee+ankle +0.05 -0.45
+  within-limb: membership, %    criterion, adaptive rejection y knee+ankle hip+knee +1.13 +0.45
+  within-limb: membership, %    criterion at matched k=2 n knee+ankle hip+knee -0.97 -0.20
+  within-limb: membership, mm   criterion at matched k=1 n hip+knee hip+ankle -0.035 +0.193
+  within-limb: membership, mm   uniform vs confidence weighting y hip+knee+ankle knee+ankle +0.917 +0.594
+  within-limb: membership, mm   LOO offset correction y knee+ankle hip+knee +7.862 +13.262
+  within-limb: subset alone     criterion, adaptive rejection y hip+knee+ankle +0.168
+  within-limb: subset alone     criterion, adaptive rejection y hip+knee +0.157
+  within-limb: subset alone     criterion at matched k=1 n hip+ankle +0.193
+  within-limb: subset alone     criterion at matched k=2 n knee+ankle -0.218
+  offset control: per-joint     uniform -> confidence hip midpoint
+  offset control: per-subset    hip+knee -0.063 2nd arm
+  offset control: reversal test adaptive criterion hip -0.024 +0.264
+  offset control: reversal test adaptive criterion knee +0.339 +0.181
+  offset control: reversal test uniform -> confidence ankle +0.822 +0.912
+  offset control: reversal test no rejection -> object-space rejection knee -0.546 -0.020
+  offset control: reversal test no rejection -> reprojection rejection knee -0.885 -0.203
+
+Verdicts holding under BOTH are those whose p reaches the sign-flip floor or close to it, and
+are unaffected by which dependence assumption is made.

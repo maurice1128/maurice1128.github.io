@@ -1,0 +1,330 @@
+IS THE PER-JOINT SIGN STRUCTURE AN ARTEFACT OF OFFSET DIRECTION?
+
+Cache=D:/BioCV/_cache_undist. 11 subjects -> 2^11 = 2048 sign patterns, fully enumerated.
+POSITIVE effect = the SECOND-NAMED arm is better (effect = mean|e| of the first arm minus
+mean|e| of the second), the same convention as every other family in this paper.
+Error vectors are expressed in a body frame (x right, y anterior, z up).
+
+=== (A) THE SAME CONTRASTS ON OFFSET-REMOVED ERROR ===
+
+|e - b| where b is that participant's own mean error vector for the joint, taken from ONE
+reference arm and subtracted from BOTH arms. 'as measured' repeats the published per-joint
+effect for comparison. If the hip/knee signs oppose in the offset-removed columns too, the
+dissociation is a property of triangulation and not of where each joint's offset points.
+
+Verdicts come from the MIDPOINT column. The two single-arm columns are the endpoints of a
+known downward/upward bias (see the note above pair_scalars) and are shown for reference
+only; a range must not be built from them.
+
+contrast                     joint  as measured    p meas     midpoint         p  ref=1st arm  ref=2nd arm
+adaptive criterion             hip       -0.024    0.8350       +0.264    0.0010       +0.221       +0.308
+adaptive criterion            knee       +0.339    0.0020       +0.181    0.0547       +0.170       +0.192
+adaptive criterion           ankle       +0.190    0.0352       +0.150    0.1084       +0.142       +0.158
+
+criterion at matched k=1       hip       +0.253    0.0840       -0.718    0.0010       -0.800       -0.632
+criterion at matched k=1      knee       -0.322    0.0029       +0.399    0.0039       +0.372       +0.426
+criterion at matched k=1     ankle       +0.134    0.1484       +0.076    0.3066       +0.063       +0.088
+
+criterion at matched k=2       hip       +0.530    0.0020       -0.108    0.5771       -0.222       +0.009
+criterion at matched k=2      knee       -0.655    0.0020       +0.738    0.0029       +0.643       +0.828
+criterion at matched k=2     ankle       +0.219    0.0762       +0.215    0.0664       +0.181       +0.247
+
+uniform -> confidence          hip       +1.564    0.0010       +0.253    0.0088       +0.069       +0.435
+uniform -> confidence         knee       +0.365    0.0010       -0.024    0.7266       -0.031       -0.017
+uniform -> confidence        ankle       +0.822    0.0010       +0.912    0.0010       +0.903       +0.921
+
+no rejection -> object-space rejection   hip       +0.608    0.0234       -1.726    0.0010       -1.878       -1.564
+no rejection -> object-space rejection  knee       -0.546    0.0039       -0.020    0.8486       -0.086       +0.046
+no rejection -> object-space rejection ankle       +0.426    0.0039       +0.256    0.1621       +0.213       +0.299
+
+no rejection -> reprojection rejection   hip       +0.633    0.0439       -1.983    0.0010       -2.240       -1.714
+no rejection -> reprojection rejection  knee       -0.885    0.0010       -0.203    0.2051       -0.279       -0.125
+no rejection -> reprojection rejection ankle       +0.237    0.1738       +0.107    0.6035       +0.084       +0.130
+
+Benjamini-Hochberg within m = 18, run twice -- once per reference arm -- so each
+column is a complete correction over the same contrasts, not one correction over both. The
+first four contrasts are Table 1b's; the last two are the rejection contrasts the
+Conclusion's position null rests on, added under the rule declared at the top of this file.
+contrast                     joint  reference  effect mm        p        q   verdict
+adaptive criterion             hip   midpoint     +0.264   0.0010   0.0035   SURVIVES
+adaptive criterion             hip    1st arm     +0.221   0.0322   0.0829   n.s.
+adaptive criterion             hip    2nd arm     +0.308   0.0010   0.0035   SURVIVES
+adaptive criterion            knee   midpoint     +0.181   0.0547   0.1094   n.s.
+adaptive criterion            knee    1st arm     +0.170   0.0645   0.1450   n.s.
+adaptive criterion            knee    2nd arm     +0.192   0.0449   0.0809   n.s.
+adaptive criterion           ankle   midpoint     +0.150   0.1084   0.1774   n.s.
+adaptive criterion           ankle    1st arm     +0.142   0.1221   0.1998   n.s.
+adaptive criterion           ankle    2nd arm     +0.158   0.0879   0.1438   n.s.
+criterion at matched k=1       hip   midpoint     -0.718   0.0010   0.0035   SURVIVES
+criterion at matched k=1       hip    1st arm     -0.800   0.0010   0.0044   SURVIVES
+criterion at matched k=1       hip    2nd arm     -0.632   0.0010   0.0035   SURVIVES
+criterion at matched k=1      knee   midpoint     +0.399   0.0039   0.0100   SURVIVES
+criterion at matched k=1      knee    1st arm     +0.372   0.0049   0.0146   SURVIVES
+criterion at matched k=1      knee    2nd arm     +0.426   0.0039   0.0088   SURVIVES
+criterion at matched k=1     ankle   midpoint     +0.076   0.3066   0.3943   n.s.
+criterion at matched k=1     ankle    1st arm     +0.063   0.3828   0.4594   n.s.
+criterion at matched k=1     ankle    2nd arm     +0.088   0.2295   0.3178   n.s.
+criterion at matched k=2       hip   midpoint     -0.108   0.5771   0.6790   n.s.
+criterion at matched k=2       hip    1st arm     -0.222   0.2930   0.4056   n.s.
+criterion at matched k=2       hip    2nd arm     +0.009   0.9619   0.9619   n.s.
+criterion at matched k=2      knee   midpoint     +0.738   0.0029   0.0088   SURVIVES
+criterion at matched k=2      knee    1st arm     +0.643   0.0049   0.0146   SURVIVES
+criterion at matched k=2      knee    2nd arm     +0.828   0.0020   0.0050   SURVIVES
+criterion at matched k=2     ankle   midpoint     +0.215   0.0664   0.1195   n.s.
+criterion at matched k=2     ankle    1st arm     +0.181   0.1191   0.1998   n.s.
+criterion at matched k=2     ankle    2nd arm     +0.247   0.0391   0.0781   n.s.
+uniform -> confidence          hip   midpoint     +0.253   0.0088   0.0198   SURVIVES
+uniform -> confidence          hip    1st arm     +0.069   0.3340   0.4294   n.s.
+uniform -> confidence          hip    2nd arm     +0.435   0.0020   0.0050   SURVIVES
+uniform -> confidence         knee   midpoint     -0.024   0.7266   0.7693   n.s.
+uniform -> confidence         knee    1st arm     -0.031   0.6543   0.6787   n.s.
+uniform -> confidence         knee    2nd arm     -0.017   0.8018   0.8489   n.s.
+uniform -> confidence        ankle   midpoint     +0.912   0.0010   0.0035   SURVIVES
+uniform -> confidence        ankle    1st arm     +0.903   0.0010   0.0044   SURVIVES
+uniform -> confidence        ankle    2nd arm     +0.921   0.0010   0.0035   SURVIVES
+no rejection -> object-space rejection   hip   midpoint     -1.726   0.0010   0.0035   SURVIVES
+no rejection -> object-space rejection   hip    1st arm     -1.878   0.0010   0.0044   SURVIVES
+no rejection -> object-space rejection   hip    2nd arm     -1.564   0.0010   0.0035   SURVIVES
+no rejection -> object-space rejection  knee   midpoint     -0.020   0.8486   0.8486   n.s.
+no rejection -> object-space rejection  knee    1st arm     -0.086   0.4336   0.4878   n.s.
+no rejection -> object-space rejection  knee    2nd arm     +0.046   0.6504   0.7317   n.s.
+no rejection -> object-space rejection ankle   midpoint     +0.256   0.1621   0.2432   n.s.
+no rejection -> object-space rejection ankle    1st arm     +0.213   0.2539   0.3809   n.s.
+no rejection -> object-space rejection ankle    2nd arm     +0.299   0.1123   0.1685   n.s.
+no rejection -> reprojection rejection   hip   midpoint     -1.983   0.0010   0.0035   SURVIVES
+no rejection -> reprojection rejection   hip    1st arm     -2.240   0.0010   0.0044   SURVIVES
+no rejection -> reprojection rejection   hip    2nd arm     -1.714   0.0010   0.0035   SURVIVES
+no rejection -> reprojection rejection  knee   midpoint     -0.203   0.2051   0.2840   n.s.
+no rejection -> reprojection rejection  knee    1st arm     -0.279   0.0986   0.1973   n.s.
+no rejection -> reprojection rejection  knee    2nd arm     -0.125   0.4219   0.5424   n.s.
+no rejection -> reprojection rejection ankle   midpoint     +0.107   0.6035   0.6790   n.s.
+no rejection -> reprojection rejection ankle    1st arm     +0.084   0.6787   0.6787   n.s.
+no rejection -> reprojection rejection ankle    2nd arm     +0.130   0.5205   0.6246   n.s.
+
+No row has a midpoint verdict differing from both single-arm verdicts.
+
+=== (B) HOW MUCH OF EACH EFFECT IS MOTION ALONG THE OFFSET DIRECTION? ===
+
+For each participant, dvec = mean(e_first) - mean(e_second) and bhat = the unit mean error
+vector of the first-named arm. To first order the scalar effect equals bhat . dvec, so the
+'along' column is the linearised prediction of the 'as measured' column. 'share' is
+along / as-measured: near 1 means the reported effect is entirely offset-mediated.
+
+contrast                     joint   |b| mm  as measured     along      perp    share
+adaptive criterion             hip    34.67       -0.024    -0.286     1.051    11.80
+adaptive criterion            knee    28.27       +0.339    +0.295     0.365     0.87
+adaptive criterion           ankle    11.25       +0.190    +0.162     0.420     0.86
+
+criterion at matched k=1       hip    33.82       +0.253    +0.594     1.329     2.35
+criterion at matched k=1      knee    28.27       -0.322    -0.488     0.651     1.52
+criterion at matched k=1     ankle    11.19       +0.134    +0.202     0.445     1.51
+
+criterion at matched k=2       hip    32.78       +0.530    +0.810     1.688     1.53
+criterion at matched k=2      knee    28.57       -0.655    -0.987     1.355     1.51
+criterion at matched k=2     ankle    11.33       +0.219    +0.276     0.832     1.26
+
+uniform -> confidence          hip    38.30       +1.564    +1.726     1.692     1.10
+uniform -> confidence         knee    27.70       +0.365    +0.289     0.235     0.79
+uniform -> confidence        ankle    10.57       +0.822    -0.444     0.621    -0.54
+
+no rejection -> object-space rejection   hip    36.63       +0.608    +1.697     1.495     2.79
+no rejection -> object-space rejection  knee    27.41       -0.546    -0.540     1.038     0.99
+no rejection -> object-space rejection ankle    11.07       +0.426    -0.007     0.774    -0.02
+
+no rejection -> reprojection rejection   hip    36.63       +0.633    +2.039     1.782     3.22
+no rejection -> reprojection rejection  knee    27.41       -0.885    -0.829     1.032     0.94
+no rejection -> reprojection rejection ankle    11.07       +0.237    -0.164     0.640    -0.69
+
+=== (D) THE SAME CONTRASTS WITH THE OFFSET ESTIMATED OUT OF SAMPLE ===
+
+Three removals, weakest first. ODD/EVEN splits retained frames within a trial, which are
+90 ms apart at the same posture, so it tests only literal in-sample fitting. TRIAL holds one
+whole trial out and estimates from the rest. POSTURE removes the offset within quintiles of
+the reference thigh-shank angle, which is the confound Table 3c identifies: the residual
+after removing a participant MEAN still carries 2.82-6.19 mm of posture-dependent offset,
+larger than the effect read out of it.
+
+contrast                     joint  in sample  odd/even  trial-out  posture  p trial  p posture
+adaptive criterion             hip     +0.264    +0.313     +0.263   +0.322   0.0010     0.0088
+adaptive criterion            knee     +0.181    +0.161     +0.181   +0.341   0.0547     0.0088
+adaptive criterion           ankle     +0.150    +0.122     +0.149   +0.095   0.1104     0.2793
+
+criterion at matched k=1       hip     -0.718    -0.813     -0.717   -0.781   0.0010     0.0010
+criterion at matched k=1      knee     +0.399    +0.412     +0.398   +0.495   0.0039     0.0020
+criterion at matched k=1     ankle     +0.076    +0.089     +0.075   +0.067   0.3125     0.3408
+
+criterion at matched k=2       hip     -0.108    -0.193     -0.108   -0.060   0.5752     0.7520
+criterion at matched k=2      knee     +0.738    +0.745     +0.736   +0.909   0.0029     0.0020
+criterion at matched k=2     ankle     +0.215    +0.202     +0.215   +0.252   0.0684     0.0293
+
+uniform -> confidence          hip     +0.253    +0.216     +0.252   +0.249   0.0098     0.0078
+uniform -> confidence         knee     -0.024    -0.017     -0.024   +0.012   0.7285     0.8525
+uniform -> confidence        ankle     +0.912    +0.994     +0.912   +0.881   0.0010     0.0010
+
+no rejection -> object-space rejection   hip     -1.726    -1.730     -1.723   -1.924   0.0010     0.0010
+no rejection -> object-space rejection  knee     -0.020    -0.023     -0.022   +0.226   0.8320     0.0635
+no rejection -> object-space rejection ankle     +0.256    +0.278     +0.257   +0.261   0.1602     0.1182
+
+no rejection -> reprojection rejection   hip     -1.983    -2.039     -1.979   -2.235   0.0010     0.0010
+no rejection -> reprojection rejection  knee     -0.203    -0.188     -0.204   -0.110   0.1992     0.4805
+no rejection -> reprojection rejection ankle     +0.107    +0.155     +0.109   +0.165   0.5967     0.3838
+
+=== VERDICT (D), against the rule fixed above ===
+  no rejection -> object-space rejection [hip]: -1.726 in sample, -1.723 trial-out (p = 0.0010), -1.924 within posture (p = 0.0010)
+      trial-out HOLDS; posture-conditioned HOLDS
+  no rejection -> reprojection rejection [hip]: -1.983 in sample, -1.979 trial-out (p = 0.0010), -2.235 within posture (p = 0.0010)
+      trial-out HOLDS; posture-conditioned HOLDS
+  The hip degradation survives removal of the offset WITHIN posture, so it is not the
+  posture-dependent residual Table 3c identifies.
+
+=== (E) IS THE OFFSET-REMOVED EFFECT DISPERSION OR A RESIDUAL MEAN SHIFT? ===
+
+Part A subtracts one vector from both arms, so each arm keeps a residual mean. The effect on
+|e - b| is split into the part from those residual means and the part from scatter about
+them. POSITIVE = the second-named arm is better, as everywhere else.
+
+contrast                     joint     total  mean-shift  dispersion  disp share
+adaptive criterion             hip    +0.264      +0.000      +0.281        1.06
+adaptive criterion            knee    +0.181      +0.000      +0.173        0.96
+adaptive criterion           ankle    +0.150      +0.000      +0.125        0.83
+
+criterion at matched k=1       hip    -0.718      +0.000      -0.727        1.01
+criterion at matched k=1      knee    +0.399      +0.000      +0.338        0.85
+criterion at matched k=1     ankle    +0.076      -0.000      +0.041        0.54
+
+criterion at matched k=2       hip    -0.108      +0.000      -0.121        1.13
+criterion at matched k=2      knee    +0.738      -0.000      +0.652        0.88
+criterion at matched k=2     ankle    +0.215      -0.000      +0.157        0.73
+
+uniform -> confidence          hip    +0.253      +0.000      +0.162        0.64
+uniform -> confidence         knee    -0.024      -0.000      -0.016        0.65
+uniform -> confidence        ankle    +0.912      +0.000      +1.000        1.10
+
+no rejection -> object-space rejection   hip    -1.726      +0.000      -1.801        1.04
+no rejection -> object-space rejection  knee    -0.020      +0.000      -0.125        6.21
+no rejection -> object-space rejection ankle    +0.256      +0.000      +0.219        0.86
+
+no rejection -> reprojection rejection   hip    -1.983      +0.000      -2.082        1.05
+no rejection -> reprojection rejection  knee    -0.203      +0.000      -0.299        1.47
+no rejection -> reprojection rejection ankle    +0.107      +0.000      +0.094        0.88
+
+=== VERDICT (E), against the rule fixed above ===
+  no rejection -> object-space rejection: total -1.726, mean-shift +0.000, dispersion -1.801 (dispersion carries 104%)
+  no rejection -> reprojection rejection: total -1.983, mean-shift +0.000, dispersion -2.082 (dispersion carries 105%)
+  Dispersion carries at least half of each hip effect, so the precision wording in
+  Section 3.2 stands.
+
+READ: (A) is decisive. If a contrast keeps its SIGN and survives BH on offset-removed error
+under BOTH reference choices, the reviewer's confound does not explain it. If it loses
+significance, the effect is a statement about offset geometry and Section 3.4's mechanism
+must be restated -- the aggregation lesson would survive either way, since opposed effects
+cancel whatever produces them.
+=== (C) THE MATCHED-k SUBSET CONTROL ON OFFSET-REMOVED ERROR ===
+
+Section 3.4's verdict pair -- the criterion harmful on {knee, ankle}, beneficial on {hip,
+ankle}, null on all three -- is a mean over the same per-joint scalars Part A shows to be
+offset-mediated, so the caveat has to be carried into it rather than estimated. Each subset
+mean is rebuilt from the same offset-removed observations, per participant, and tested the
+same way. Family of four subsets x two retentions, BH within each reference arm (m = 8),
+
+This subsection keeps the two single-arm offsets because Table S4b declares the family that
+way; re-declaring it now would be a further degree of freedom. The downward/upward bias
+described above pair_scalars applies here too, so the two columns bracket the symmetric
+value rather than offering a choice between them.
+
+BH within each reference arm over all 8 tests (4 subsets x 2 retentions).
+
+criterion at matched k=1
+  subset              as measured  reference  offset-removed        p        q   verdict
+  hip+knee+ankle           +0.022    1st arm          -0.122   0.0479   0.0638   n.s.
+  hip+knee+ankle           +0.022    2nd arm          -0.039   0.4307   0.4307   n.s.
+  knee+ankle               -0.094    1st arm          +0.218   0.0049   0.0130   SURVIVES
+  knee+ankle               -0.094    2nd arm          +0.257   0.0029   0.0059   SURVIVES
+  hip+knee                 -0.035    1st arm          -0.214   0.0391   0.0625   n.s.
+  hip+knee                 -0.035    2nd arm          -0.103   0.2139   0.2444   n.s.
+  hip+ankle                +0.193    1st arm          -0.369   0.0020   0.0130   SURVIVES
+  hip+ankle                +0.193    2nd arm          -0.272   0.0029   0.0059   SURVIVES
+
+criterion at matched k=2
+  subset              as measured  reference  offset-removed        p        q   verdict
+  hip+knee+ankle           +0.031    1st arm          +0.201   0.0391   0.0625   n.s.
+  hip+knee+ankle           +0.031    2nd arm          +0.361   0.0010   0.0059   SURVIVES
+  knee+ankle               -0.218    1st arm          +0.412   0.0039   0.0130   SURVIVES
+  knee+ankle               -0.218    2nd arm          +0.538   0.0020   0.0059   SURVIVES
+  hip+knee                 -0.063    1st arm          +0.211   0.1826   0.2087   n.s.
+  hip+knee                 -0.063    2nd arm          +0.418   0.0098   0.0156   SURVIVES
+  hip+ankle                +0.374    1st arm          -0.020   0.8076   0.8076   n.s.
+  hip+ankle                +0.374    2nd arm          +0.128   0.1445   0.1927   n.s.
+
+READ: if the harmful and beneficial subset verdicts do not survive as an OPPOSED pair on
+offset-removed error, the matched-k verdict flip is a statement about what the conventional
+metric reports, not about triangulation, and Section 3.4 and the abstract must say so.
+
+=== (F) DISPERSION OR CENTROID? THE TEST PART E COULD NOT BE ===
+
+Part E's mean-shift column is zero by construction: it subtracts the midpoint of the two
+arms' mean errors from both, which leaves residual means of equal norm and opposite sign.
+It is withdrawn. Below, DISPERSION is scatter about each arm's own centre and CENTROID is
+the distance of that centre from the reference joint centre; both are free to differ.
+POSITIVE = the second-named arm is better, as everywhere else.
+
+contrast                     joint     total  dispersion   centroid   verdict
+adaptive criterion             hip    +0.264      +0.281     -0.310       NOT
+adaptive criterion            knee    +0.181      +0.173     +0.291       NOT
+adaptive criterion           ankle    +0.150      +0.125     +0.147       NOT
+criterion at matched k=1       hip    -0.718      -0.727     +0.554 precision
+criterion at matched k=1      knee    +0.399      +0.338     -0.498       NOT
+criterion at matched k=1     ankle    +0.076      +0.041     +0.190       NOT
+criterion at matched k=2       hip    -0.108      -0.121     +0.744       NOT
+criterion at matched k=2      knee    +0.738      +0.652     -1.025       NOT
+criterion at matched k=2     ankle    +0.215      +0.157     +0.236       NOT
+uniform -> confidence          hip    +0.253      +0.162     +1.676       NOT
+uniform -> confidence         knee    -0.024      -0.016     +0.287       NOT
+uniform -> confidence        ankle    +0.912      +1.000     -0.498 precision
+no rejection -> object-space rejection   hip    -1.726      -1.801     +1.648 precision
+no rejection -> object-space rejection  knee    -0.020      -0.125     -0.566       NOT
+no rejection -> object-space rejection ankle    +0.256      +0.219     -0.042 precision
+no rejection -> reprojection rejection   hip    -1.983      -2.082     +1.958 precision
+no rejection -> reprojection rejection  knee    -0.203      -0.299     -0.856       NOT
+no rejection -> reprojection rejection ankle    +0.107      +0.094     -0.189       NOT
+
+=== VERDICT, against the rule fixed above ===
+(1) PRECISION STANDS. At the hip the dispersion contrast carries the sign of the total and
+    at least half its magnitude, and the centroid contrast is the smaller of the two, on
+    both rejection rows. Section 3.2 and the Conclusion may keep the word.
+
+NOTE. Part E is degenerate whichever way this falls, and is reported as such.
+
+=== (G) IS THE REVERSAL A TESTED DIFFERENCE, OR A PAIR OF VERDICTS? ===
+
+Per participant, (offset-removed effect) minus (as-measured effect), same contrast and joint.
+The offset-removed arm uses the symmetric midpoint, as in Part A. Exact sign-flip over all
+2^11 sign patterns; BH within the same declared family of eighteen.
+
+contrast                     joint  as measured  offset-removed  difference   exact p     BH q   verdict
+adaptive criterion             hip       -0.024          +0.264      +0.288    0.0146   0.0256   SURVIVES
+adaptive criterion            knee       +0.339          +0.181      -0.158    0.0332   0.0460   SURVIVES
+adaptive criterion           ankle       +0.190          +0.150      -0.040    0.4238   0.4488   n.s.
+criterion at matched k=1       hip       +0.253          -0.718      -0.971    0.0010   0.0029   SURVIVES
+criterion at matched k=1      knee       -0.322          +0.399      +0.721    0.0020   0.0050   SURVIVES
+criterion at matched k=1     ankle       +0.134          +0.076      -0.058    0.4111   0.4488   n.s.
+criterion at matched k=2       hip       +0.530          -0.108      -0.638    0.0039   0.0088   SURVIVES
+criterion at matched k=2      knee       -0.655          +0.738      +1.393    0.0010   0.0029   SURVIVES
+criterion at matched k=2     ankle       +0.219          +0.215      -0.004    0.9639   0.9639   n.s.
+uniform -> confidence          hip       +1.564          +0.253      -1.311    0.0010   0.0029   SURVIVES
+uniform -> confidence         knee       +0.365          -0.024      -0.389    0.0010   0.0029   SURVIVES
+uniform -> confidence        ankle       +0.822          +0.912      +0.090    0.0078   0.0156   SURVIVES
+no rejection -> object-space rejection   hip       +0.608          -1.726      -2.335    0.0010   0.0029   SURVIVES
+no rejection -> object-space rejection  knee       -0.546          -0.020      +0.526    0.0254   0.0381   SURVIVES
+no rejection -> object-space rejection ankle       +0.426          +0.256      -0.170    0.2402   0.2883   n.s.
+no rejection -> reprojection rejection   hip       +0.633          -1.983      -2.616    0.0010   0.0029   SURVIVES
+no rejection -> reprojection rejection  knee       -0.885          -0.203      +0.682    0.0156   0.0256   SURVIVES
+no rejection -> reprojection rejection ankle       +0.237          +0.107      -0.130    0.2051   0.2637   n.s.
+
+=== VERDICT, against the rule fixed above ===
+(1) DEMONSTRATED. The difference between the as-measured and offset-removed effects
+    survives correction at the hip on both deployable rejection contrasts, so the
+    reversal is a tested difference in effect and the title may say 'reverses'.
+
+(3) The matched-k knee rows above are control arms and carry no practical claim either way.
+

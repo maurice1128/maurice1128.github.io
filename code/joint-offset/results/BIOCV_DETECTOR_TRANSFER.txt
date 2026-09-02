@@ -1,0 +1,28 @@
+DOES THE JOINT-CENTRE OFFSET BELONG TO THE DETECTOR OR TO THE KEYPOINT CONVENTION?
+
+The same frames, ground truth, calibration and association rule; only the detector differs.
+Both scored on the plainest arm: no rejection, confidence weights, weighted DLT.
+
+    joint             RTMPose (two-stage)            RTMO (one-stage)
+               bias mm  random  share      bias mm  random  share
+    L-hip         35.3    17.0    78%         36.4    16.4    81%
+    R-hip         37.8    15.3    84%         39.7    15.4    86%
+   L-knee         25.8    13.7    75%         29.3    14.1    78%
+   R-knee         29.2    14.5    80%         33.3    14.6    84%
+  L-ankle         10.9    13.6    40%         12.3    15.6    39%
+  R-ankle         11.3    12.8    45%         12.3    14.7    41%
+
+DIRECTION: cosine between the two detectors' mean offset vectors, per participant and joint.
+    joint  participants  mean cos     min     max
+    L-hip            11      0.97    0.91    0.99
+    R-hip            11      0.98    0.91    1.00
+   L-knee            11      0.99    0.98    1.00
+   R-knee            11      0.99    0.97    1.00
+  L-ankle            11      0.94    0.80    0.99
+  R-ankle            11      0.94    0.74    0.99
+
+=== VERDICTS, against the rule fixed in this file's header ===
+(1) SHARE at hip and knee under RTMO: 82%  ->  NOT detector-specific; the claim may be stated for the keypoint convention
+(2) MAGNITUDE ratio RTMO/RTMPose at hip and knee: 1.09x  ->  within a factor of two
+(3) DIRECTION, mean cosine at hip and knee: +0.98  ->  same wrong place; between-detector comparison is contaminated the same way
+(4) COVERAGE: sufficient (fewest participants at any joint: 11)

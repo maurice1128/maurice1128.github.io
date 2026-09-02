@@ -1,0 +1,58 @@
+AN UPPER BOUND ON THE SUB-FRAME SYNCHRONISATION RESIDUAL, IN MILLIMETRES
+
+108 walking trials, marker-based reference at 200 Hz. This count exceeds the 104
+trials analysed elsewhere because it needs only the reference markers, not video: the
+trials excluded for missing or unusable video still carry usable reference trajectories,
+and a bound on the residual is better estimated on all of them.
+A sub-frame residual is less
+than one frame period (5.00 ms); the expected magnitude for a residual uniform within one
+frame is half of that (2.50 ms). Speed is the per-frame displacement of the reference
+marker itself, so no assumption about gait speed enters.
+
+       joint  median spd  p95 speed  typ. bound  worst bound
+                    mm/s       mm/s   mm @2.5ms      mm @5ms
+    LEFT_HIP      1461.8     2031.3        3.65        10.16
+   RIGHT_HIP      1470.1     2027.0        3.68        10.14
+   LEFT_KNEE      1400.9     3139.3        3.50        15.70
+  RIGHT_KNEE      1395.2     3155.8        3.49        15.78
+  LEFT_ANKLE       790.1     4381.9        1.98        21.91
+ RIGHT_ANKLE       795.7     4378.0        1.99        21.89
+
+=== READ ===
+Largest worst-case contribution at any joint: 21.91 mm (p95 speed x one frame).
+Typical contribution at hip and knee: 3.58 mm (median speed x half a frame).
+Section 3.1's systematic offset at hip and knee is 27-37 mm and the random residual it is
+compared against is 13-17 mm.
+
+AGAINST THE PAPER: the bound is comparable to the random residual, so a material part
+of what Section 3.1 calls random error may be synchronisation. The offset SHARE must
+be qualified accordingly, and the random half must not be described as triangulation
+noise.
+
+It also largely cancels between arms, which share the same frames, and every contrast in
+this paper is between arms; the share is the one quantity it can move.
+
+=== THE RULE ABOVE USED THE WRONG THRESHOLD, AND THIS TABLE THE WRONG ATTRIBUTION ===
+
+Two things are wrong with what precedes, and both are left standing rather than replaced.
+
+First, the threshold fixed in this file's header compares a COMPOUNDED worst case -- the
+95th percentile of joint speed times a FULL frame period, when the whole-frame offset was
+already corrected -- against an RMS quantity, in linear mm, while the decomposition it
+bears on is in SQUARED error. That is why it fired.
+
+Second, and more seriously, the arithmetic this file originally offered as a rebuttal
+placed the residual in the RANDOM half and concluded it 'can only raise the offset share'.
+That attribution is wrong. Heading varies little WITHIN a participant -- 1.0 to 14.1 deg
+for ten of the eleven, 53.7 for P26, against 56.0 across all trials (Table S20) -- and the
+offset is estimated within participant, so a
+CONSTANT sub-frame residual displaces every estimate the same way in the world frame and
+lands in the BIAS term. Table S14 measures the direction and finds the offset is indeed
+substantially along-track (|cos| = 0.60 at hip and knee). The correction therefore runs
+the OTHER way: removing a timing component shrinks the numerator of the share, and the
+share FALLS rather than rises. Table S14 carries that arithmetic, and Section 3.1 now
+quotes the resulting bracket instead of a point.
+
+What survives from this table is the magnitude bound alone: the residual is about 3.6 mm
+at hip and knee on the typical figure and under 7.7 mm at worst. What does NOT survive is
+this file's original claim about which half of the decomposition it enters.

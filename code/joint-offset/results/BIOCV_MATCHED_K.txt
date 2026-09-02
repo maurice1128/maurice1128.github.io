@@ -1,0 +1,22 @@
+MATCHED-RETENTION CONTROL (referee M1): exactly k cameras dropped by each criterion,
+so retention is identical by construction and ONLY the ordering differs.
+Cache=D:/BioCV/_cache_undist, 11 subjects.
+
+=== 3D POSITION, peripheral joints ===
+ k dropped       n  keep_re  keep_ob  reproj mm   objd mm       objd advantage (95% CI)
+         0   24936     8.92     8.92      16.56     16.56       +0.000 [+0.000,+0.000] 
+         1   24936     7.92     7.92      16.32     16.18       +0.143 [+0.084,+0.209]*
+         2   24936     6.92     6.92      16.75     16.33       +0.419 [+0.326,+0.520]*
+         3   24936     5.92     5.92      17.50     16.73       +0.771 [+0.625,+0.927]*
+
+=== KNEE FLEXION ANGLE ===
+ k dropped       n  reproj deg  objd deg       objd advantage (95% CI)
+         0   12468       2.570     2.570       +0.000 [+0.000,+0.000] 
+         1   12468       2.880     2.966       -0.087 [-0.143,-0.037]*
+         2   12468       3.090     3.217       -0.127 [-0.187,-0.068]*
+         3   12468       3.358     3.412       -0.055 [-0.149,+0.042] 
+
+READ: k=0 is the no-rejection reference (both arms identical by construction; any
+nonzero value there would indicate a bug). If the object-space advantage seen with
+MAD thresholding survives at matched k, referee M1 is answered. If it collapses, the
+criterion effect was an artefact of object-space discarding fewer cameras.

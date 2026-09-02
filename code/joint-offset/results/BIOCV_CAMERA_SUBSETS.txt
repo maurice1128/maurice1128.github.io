@@ -1,0 +1,33 @@
+IS THE TRIANGULATION NULL A PROPERTY OF THE RULE, OR OF A REDUNDANT RIG?
+
+Same frames, same detections, same adaptive rule at k = 3 MAD with a four-camera floor.
+Only the set of candidate cameras changes. EFFECT = no rejection minus rejection, per
+participant then averaged; POSITIVE means rejection is better. Frames are those where all
+six lower-limb joints keep at least four cameras within the subset, so the frame set
+narrows as cameras are removed and the LEVELS are not comparable across rows -- the
+CONTRAST is.
+
+     subset    arm   kept  position mm  effect mm   exact p  angle deg  effect deg   exact p
+  9 cameras   none   8.92       28.280     +0.000       nan      2.669      +0.000       nan
+  9 cameras    rep   8.26       28.285     -0.005    0.9639      2.857      -0.188    0.0098
+  9 cameras   objd   8.45       28.117     +0.163    0.1416      2.810      -0.141    0.0039
+  7 cameras   none   6.92       28.612     +0.000       nan      2.922      +0.000       nan
+  7 cameras    rep   6.41       28.553     +0.059    0.6533      3.129      -0.206    0.0059
+  7 cameras   objd   6.55       28.448     +0.164    0.1357      3.068      -0.145    0.0068
+  5 cameras   none   4.99       30.045     +0.000       nan      2.886      +0.000       nan
+  5 cameras    rep   4.72       29.188     +0.857    0.0010      3.006      -0.120    0.0225
+  5 cameras   objd   4.79       29.616     +0.428    0.0029      2.931      -0.045    0.1592
+
+=== VERDICTS, against the rule fixed in this file's header ===
+(2) AGAINST THE PAPER: the null IS rig-dependent. 2 contrast(s) leave the
+    +/-0.35 mm bound once cameras are removed:
+      5 cameras, rep: +0.857 mm
+      5 cameras, objd: +0.428 mm
+    The null of Sections 3.2 and 5 is therefore conditional on a nine-camera ring,
+    and a sparser rig was not tested to the same conclusion.
+
+(3) ANGLE: the cost of discarding keeps its sign at every camera count, so its direction
+    is not an artefact of redundancy.
+
+(5) One subset per size, not an average over subsets. This is evidence about these camera
+    sets, not about five-camera rigs in general.

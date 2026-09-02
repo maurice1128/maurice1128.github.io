@@ -1,0 +1,18 @@
+DOES REJECTION'S HIGH-ASYMMETRY POSITION BENEFIT SURVIVE AT [pos:HKA]?
+Cache=D:/BioCV/_cache_undist. N=37440 joint-observations over hip/knee/ankle, 11 subjects.
+Compare with BIOCV_WEIGHTING.txt, which ran the same contrast on ankles+WRISTS.
+POSITIVE = the rejection arm is better (lower error) than no rejection.
+
+  asym bin       n   none mm  reproj mm   objd mm  keepRe  keepOb  none-rep       p  none-objd       p
+   1.5-2.0   20621     27.41      27.49     27.39    8.48    8.56     -0.08  0.4629      +0.00  0.9619
+   2.0-2.5   11644     29.46      29.44     29.18    8.19    8.45     -0.03  0.8369      +0.25  0.0215
+   2.5-3.0    4831     30.17      29.92     29.70    7.59    8.01     +0.12  0.7344      +0.42  0.1104
+   3.0-4.0     344     37.17      34.27     34.01    7.13    7.60     +4.32  0.6133      +5.33  0.1367
+       ALL   37440     28.49      28.47     28.31    8.26    8.45     -0.01  0.9639      +0.16  0.1416
+
+Share of hip/knee/ankle observations at asymmetry >= 3: 0.92%  (n=344)
+
+READ: BIOCV_WEIGHTING.txt reports +7.64 mm (reproj) and +8.31 mm (object-space) for the
+3-4 bin on ankles+wrists. If the 3-4 row above is small or non-significant, Section 4.3's
+geometric exception does not hold on the joints the reported angles are built from, and
+the recommendation becomes unconditional: weight, do not discard.

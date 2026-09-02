@@ -1,0 +1,12 @@
+BioCV real Vicon GT -- FULL-RIG (deployable) analysis, N=24960 joint-observations from 11 subjects. Each obs uses ALL cameras that detect the joint (mean 8.9, range 5-9).
+REAL deployable asymmetry distribution (max/min camera-distance over the full rig): median=1.98 p25=1.80 p75=2.27 p90=2.59 p95=2.79 max=3.94
+Fraction of real full-rig observations at asym>=3 (where the subset study saw the effect): 2.0%
+d = err_reproj - err_dist (mm); +=object-space better. SUBJECT-cluster bootstrap 95% CI (inferential unit = subject; n=11).
+  asym bin       n  mean_re  mean_di   dMEAN         dMEAN 95%CI
+      <1.5       0   few
+     1.5-2   13239     16.5     16.7   -0.13      [-0.38,+0.07] 
+     2-2.5    8203     34.9     35.0   -0.13      [-0.30,+0.07] 
+     2.5-3    3023     63.1     61.8   +1.35      [+0.61,+1.98]*
+       3-4     495     82.4     77.8   +4.62      [+2.16,+8.45]*
+        >4       0   few
+OVERALL (full-rig, all obs pooled): dMEAN=+0.15 mm, subject-cluster CI [+0.04,+0.26] -> the net effect a real deployment sees.

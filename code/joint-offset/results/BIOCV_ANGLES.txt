@@ -1,0 +1,52 @@
+JOINT-ANGLE error (degrees) vs Vicon -- the outcome biomechanists care about.
+Cache=D:/BioCV/_cache_undist  N=24960 joint-angle observations, 11 subjects.
+All arms use the SAME camera set per observation; only rejection/weighting differs.
+
+=== KNEE (gait-relevant) | n=12480 ===
+ asym bin      n  noRej_conf    noRej_wd    rep_conf   objd_conf      rep_wd     objd_wd
+    1.5-2   6755        2.53        2.49        2.67        2.65        2.57        2.55
+    2-2.5   3985        2.50        2.46        2.80        2.72        2.66        2.57
+    2.5-3   1630        2.85        2.79        3.05        2.97        2.87        2.75
+      3-4    110        3.62        3.47        3.88        3.82        3.88        3.48
+      ALL  12480        2.58        2.53        2.77        2.72        2.65        2.59
+   does reproj rejection beat NO rejection?         rep_conf - noRej_conf = +0.197 deg [+0.095,+0.289]*
+   does object-space rejection beat NO rejection?   objd_conf - noRej_conf = +0.147 deg [+0.081,+0.205]*
+   object-space vs reprojection criterion           rep_conf - objd_conf = +0.050 deg [-0.008,+0.109] 
+   does 1/d triangulation weighting help?           rep_conf - rep_wd = +0.121 deg [+0.001,+0.215]*
+   1/d weighting WITHOUT any rejection              noRej_conf - noRej_wd = +0.047 deg [-0.061,+0.142] 
+   best-weighted: is rejection still harmful?       rep_wd - noRej_wd = +0.123 deg [+0.033,+0.205]*
+   no-rejection+1/d vs objd+1/d                     objd_wd - noRej_wd = +0.062 deg [+0.007,+0.111]*
+
+=== ELBOW | n=12480 ===
+ asym bin      n  noRej_conf    noRej_wd    rep_conf   objd_conf      rep_wd     objd_wd
+    1.5-2   5918       12.01       12.15       11.76       11.90       12.00       12.09
+    2-2.5   4570       12.07       12.11       11.84       11.90       11.90       12.04
+    2.5-3   1626       12.41       12.45       11.68       11.91       12.19       12.58
+      3-4    366       11.67       11.85       11.83       11.89       12.33       12.76
+      ALL  12480       12.07       12.17       11.78       11.90       12.00       12.16
+   does reproj rejection beat NO rejection?         rep_conf - noRej_conf = -0.295 deg [-0.494,-0.121]*
+   does object-space rejection beat NO rejection?   objd_conf - noRej_conf = -0.172 deg [-0.385,+0.022] 
+   object-space vs reprojection criterion           rep_conf - objd_conf = -0.123 deg [-0.186,-0.066]*
+   does 1/d triangulation weighting help?           rep_conf - rep_wd = -0.220 deg [-0.423,-0.027]*
+   1/d weighting WITHOUT any rejection              noRej_conf - noRej_wd = -0.094 deg [-0.188,-0.002]*
+   best-weighted: is rejection still harmful?       rep_wd - noRej_wd = -0.168 deg [-0.436,+0.086] 
+   no-rejection+1/d vs objd+1/d                     objd_wd - noRej_wd = -0.010 deg [-0.241,+0.218] 
+
+=== ALL CHAINS | n=24960 ===
+ asym bin      n  noRej_conf    noRej_wd    rep_conf   objd_conf      rep_wd     objd_wd
+    1.5-2  12673        6.96        7.00        6.91        6.97        6.97        7.01
+    2-2.5   8555        7.61        7.61        7.63        7.62        7.60        7.63
+    2.5-3   3256        7.63        7.61        7.36        7.43        7.52        7.66
+      3-4    476        9.81        9.91        9.99       10.03       10.38       10.61
+      ALL  24960        7.32        7.35        7.27        7.31        7.32        7.37
+   does reproj rejection beat NO rejection?         rep_conf - noRej_conf = -0.049 deg [-0.168,+0.061] 
+   does object-space rejection beat NO rejection?   objd_conf - noRej_conf = -0.012 deg [-0.136,+0.104] 
+   object-space vs reprojection criterion           rep_conf - objd_conf = -0.036 deg [-0.071,-0.002]*
+   does 1/d triangulation weighting help?           rep_conf - rep_wd = -0.050 deg [-0.164,+0.059] 
+   1/d weighting WITHOUT any rejection              noRej_conf - noRej_wd = -0.023 deg [-0.088,+0.030] 
+   best-weighted: is rejection still harmful?       rep_wd - noRej_wd = -0.022 deg [-0.171,+0.119] 
+   no-rejection+1/d vs objd+1/d                     objd_wd - noRej_wd = +0.026 deg [-0.095,+0.152] 
+
+READ: POSITIVE contrast = the SECOND arm has lower angle error (is better).
+If noRej beats both rejection arms on knee angle, the honest message for a
+biomechanics readership is that the outlier-rejection step degrades kinematics.

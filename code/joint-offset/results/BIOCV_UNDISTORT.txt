@@ -1,0 +1,33 @@
+DECISIVE TEST: does uncorrected lens distortion manufacture the asymmetry effect?
+N=24960 joint-observations, 11 subjects. Distortion applied via cv2.undistortPoints.
+
+--- (1) DIAGNOSTIC: distortion displacement at the actual detections ---
+distortion displacement (px): mean=6.09 median=1.62 p90=18.41 max=84.80
+  (compare: effect sizes are ~0.05 px equivalent for the pooled +0.15mm, ~1.5-2 px for +4.6mm)
+corr(distortion displacement, camera-to-joint distance) = -0.235
+  NEAR cameras (bottom quartile dist, 3364mm): mean distortion 8.33 px, mean image radius 365 px
+  FAR  cameras (top quartile dist, 6300mm): mean distortion 2.95 px, mean image radius 246 px
+  -> the near-camera mechanism requires NEAR >> FAR distortion. Ratio near/far = 2.82
+
+--- (2a) UNCORRECTED (pinhole projection, distorted detections) ---
+  asym bin       n  mean_re  mean_di   dMEAN         dMEAN 95%CI
+      <1.5       0   few
+     1.5-2   13239     16.5     16.7   -0.13      [-0.38,+0.07] 
+     2-2.5    8203     34.9     35.0   -0.13      [-0.30,+0.07] 
+     2.5-3    3023     63.1     61.8   +1.35      [+0.61,+1.98]*
+       3-4     495     82.4     77.8   +4.62      [+2.16,+8.45]*
+        >4       0   few
+POOLED: dMEAN=+0.147 mm, CI [+0.036,+0.257]  | mean abs error reproj=29.5 objd=29.4 mm
+
+--- (2b) DISTORTION-CORRECTED (detections undistorted to ideal pinhole) ---
+  asym bin       n  mean_re  mean_di   dMEAN         dMEAN 95%CI
+      <1.5       0   few
+     1.5-2   13239     15.9     15.7   +0.16      [+0.08,+0.26]*
+     2-2.5    8203     16.8     16.3   +0.47      [+0.34,+0.61]*
+     2.5-3    3023     17.3     16.7   +0.67      [+0.43,+1.00]*
+       3-4     495     20.4     19.7   +0.68      [-1.39,+2.23] 
+        >4       0   few
+POOLED: dMEAN=+0.334 mm, CI [+0.225,+0.439]  | mean abs error reproj=16.5 objd=16.1 mm
+
+READ: if the corrected table keeps the asymmetry-dependent advantage, objection M1 dies.
+If the advantage collapses or reverses, the published effect was a distortion artefact.

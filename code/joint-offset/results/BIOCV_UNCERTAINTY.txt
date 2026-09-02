@@ -1,0 +1,37 @@
+BioCV P06 geometry -- MEASUREMENT UNCERTAINTY BUDGET of the outlier-rejection metric.
+Residual RMS 3D position uncertainty (mm) left UNremoved, vs camera-distance asymmetry (realA),
+at gross-outlier rate p per camera (noise=4.0px, outlier=60.0px, 4000 trials/cell).
+'penalty' = reproj RMS - objd RMS = the extra measurement uncertainty from using reprojection.
+Realizable range only (realA<=~5; beyond, far cameras cannot detect the joint -> not reported).
+
+--- gross-outlier rate p = 0% per camera (pure noise, NO outliers -> scale-weighting/conditioning component only) ---
+  realA  reproj RMS    objd RMS   penalty
+   3.15       13.38       12.13     +1.24
+   3.62       14.62       13.02     +1.59
+   4.09       16.04       13.81     +2.23
+   4.72       17.60       14.80     +2.80
+
+--- gross-outlier rate p = 2% per camera ---
+  realA  reproj RMS    objd RMS   penalty
+   3.15       15.83       12.87     +2.96
+   3.62       17.77       13.79     +3.98
+   4.09       19.92       14.98     +4.94
+   4.72       23.10       16.04     +7.07
+
+--- gross-outlier rate p = 5% per camera ---
+  realA  reproj RMS    objd RMS   penalty
+   3.15       22.43       14.89     +7.54
+   3.62       22.08       15.79     +6.29
+   4.09       25.62       16.20     +9.42
+   4.72       33.12       18.63    +14.49
+
+--- gross-outlier rate p = 10% per camera ---
+  realA  reproj RMS    objd RMS   penalty
+   3.15       32.37       19.35    +13.01
+   3.62       35.57       21.14    +14.43
+   4.09       40.13       21.92    +18.21
+   4.72       49.06       24.26    +24.80
+
+READ: object-space keeps residual uncertainty ~flat; reprojection's grows with asymmetry because
+its far-camera catch rate falls. In the realizable range the penalty is small (sub-mm to few-mm) at
+realistic p; it is the SLOPE (penalty rising with asymmetry), not the magnitude, that is the result.

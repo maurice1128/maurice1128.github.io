@@ -1,0 +1,19 @@
+GAUSS-NEWTON REJECTION CONTRAST -- BASELINES AND RELATIVE EFFECTS
+
+POSITIVE effect = the rejection arm has the LOWER error, matching the FAMILY tuple
+(level, lm_noRej, lm_repRej) in biocv_permutation_v2.py. q-values are those of the m = 50
+family in BIOCV_PERM_V3.txt; the p reprinted here is recomputed from the per-participant
+means as a check that the same contrast is being described.
+
+contrast                                                baseline    effect    rel %        p
+[pos:HKA] GN: no rejection vs reprojection rejection      29.664    +0.858    +2.79   0.0020
+[pos:HKA] GN: no rejection vs object-space rejection      29.664    +0.734    +2.40   0.0020
+knee flexion, GN: no rejection vs reprojection             2.673    -0.169    -7.25   0.0146
+knee flexion, GN: no rejection vs object-space             2.673    -0.124    -5.22   0.0049
+hip flexion, GN: no rejection vs reprojection              4.047    -0.022    -0.93   0.7148
+frontal knee, GN: no rejection vs reprojection             2.911    +0.052    +2.16   0.1895
+
+READ: the first and third rows are the pair Section 3.2 quotes. Position improves and the
+knee angle degrades, both surviving multiplicity correction in the m = 50 family, under the
+same estimator on the same trials. The four statements elsewhere in the paper that discarding
+is position-neutral hold for weighted DLT and not for this estimator.

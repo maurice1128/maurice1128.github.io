@@ -1,0 +1,22 @@
+DOSE-RESPONSE: DOES DISCARDING COST THE KNEE ANGLE, AND BY HOW MUCH PER CAMERA?
+
+Family size m = 6: two criteria x three retention levels, each against k = 0 (no
+rejection). Knee flexion, mean absolute error in degrees. The inferential unit is the
+participant; exact sign-flip over 2^11 = 2048 patterns; Benjamini-Hochberg within the six.
+
+POSITIVE effect = discarding RAISES knee-flexion error, which is the cost the manuscript's
+practical recommendation claims. A negative effect would mean discarding helps.
+
+criterion                 k   k=0 deg    k deg  cost deg  per camera        p     BH q  verdict
+reprojection criterion    1     2.669    2.955    +0.286      +0.286   0.0107   0.0107  SURVIVES
+reprojection criterion    2     2.669    3.151    +0.482      +0.241   0.0049   0.0059  SURVIVES
+reprojection criterion    3     2.669    3.416    +0.747      +0.249   0.0010   0.0059  SURVIVES
+object-space criterion    1     2.669    3.044    +0.375      +0.375   0.0029   0.0059  SURVIVES
+object-space criterion    2     2.669    3.281    +0.612      +0.306   0.0039   0.0059  SURVIVES
+object-space criterion    3     2.669    3.467    +0.798      +0.266   0.0020   0.0059  SURVIVES
+
+6 of 6 survive BH.
+Per-camera cost across the surviving steps: 0.24 to 0.38 deg.
+That range, and only that range, may be quoted as the per-camera cost.
+
+Cumulative cost at k = 3: object-space criterion +0.798 deg; reprojection criterion +0.747 deg

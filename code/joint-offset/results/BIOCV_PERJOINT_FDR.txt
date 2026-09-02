@@ -1,0 +1,32 @@
+BENJAMINI-HOCHBERG OVER THE PER-JOINT FAMILY
+Family size m = 12: four interventions x three lower-limb joints. Exact sign-flip
+p-values taken verbatim from D:/BioCV/BIOCV_PERJOINT_GN.txt (Part 1). The pooled [pos:HKA] rows are excluded
+because they belong to the m=50 family; including them would double-count.
+
+POSITIVE effect = the second-named arm has the lower error at that joint.
+
+intervention                    joint  baseline  effect mm   rel %        p     BH q  verdict
+uniform -> confidence             hip     39.31     +1.564   +3.98   0.0010   0.0040  SURVIVES
+uniform -> confidence            knee     30.03     +0.365   +1.22   0.0010   0.0040  SURVIVES
+uniform -> confidence           ankle     15.50     +0.822   +5.30   0.0010   0.0040  SURVIVES
+adaptive criterion               knee     30.58     +0.339   +1.11   0.0020   0.0040  SURVIVES
+criterion at matched k=2          hip     38.12     +0.530   +1.39   0.0020   0.0040  SURVIVES
+criterion at matched k=2         knee     32.32     -0.655   -2.03   0.0020   0.0040  SURVIVES
+criterion at matched k=1         knee     31.33     -0.322   -1.03   0.0029   0.0050  SURVIVES
+adaptive criterion              ankle     15.07     +0.190   +1.26   0.0352   0.0528  raw only
+criterion at matched k=2        ankle     15.56     +0.219   +1.40   0.0762   0.1008  n.s.
+criterion at matched k=1          hip     37.74     +0.253   +0.67   0.0840   0.1008  n.s.
+criterion at matched k=1        ankle     15.18     +0.134   +0.88   0.1484   0.1619  n.s.
+adaptive criterion                hip     38.70     -0.024   -0.06   0.8350   0.8350  n.s.
+
+7 of 12 survive BH; 8 were significant unadjusted.
+Contrasts significant unadjusted that do not survive correction are exploratory.
+
+NOTE ON THE HEADLINE PAIR: the criterion at matched k=2 improves the hip and degrades the
+knee, and the manuscript quotes both. Their corrected q-values are printed above and the
+manuscript should quote those, not the unadjusted p.
+
+NOTE ON SIGN: the adaptive criterion and the criterion at matched k=2 act on the knee in
+OPPOSITE directions -- adaptive improves it, matched-k degrades it, both at small p. The
+mechanism account is therefore specific to the retention rule and the manuscript must say
+so wherever it states the mechanism.

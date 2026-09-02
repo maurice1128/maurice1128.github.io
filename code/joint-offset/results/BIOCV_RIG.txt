@@ -1,0 +1,51 @@
+CAMERA RIG GEOMETRY AND LENS PARAMETERS
+Source: the updated `mocAligned2` calibration in D:/BioCV/_calib, which is the
+calibration the analysis reads. Camera centres C = -R^T t; the files are in millimetres and
+distances are reported here in metres. 'radius' is the horizontal distance from the mean
+horizontal position of that participant's nine camera centres.
+
+participant    n    h min    h max    r min    r med    r max
+P03            9    1.086    1.539    3.061    4.464    6.016
+P04            9    1.080    1.536    3.200    4.388    5.978
+P06            9    1.075    1.545    3.026    4.507    6.013
+P08            9    1.078    1.547    3.204    4.393    5.990
+P09            9    1.093    1.535    3.061    4.468    6.035
+P10            9    1.072    1.543    2.994    4.502    5.995
+P13            9    1.089    1.535    3.076    4.464    6.051
+P16            9    1.088    1.542    3.062    4.468    6.027
+P17            9    1.098    1.539    3.233    4.489    6.013
+P18            9    1.090    1.536    3.212    4.455    6.037
+P19            9    1.080    1.543    3.198    4.385    5.983
+P24            9    1.095    1.533    3.222    4.472    5.988
+P26            9    1.086    1.536    3.075    4.463    6.039
+P27            9    1.088    1.535    3.061    4.463    6.032
+P28            9    1.088    1.528    3.074    4.462    6.033
+
+participants: 15    cameras per participant: [9]    calibrations: 135
+height above floor:      1.07 to 1.55 m
+radius from centroid:    3.0 to 6.1 m   (median 4.46 m)
+ring non-circularity:    2.02x
+
+focal length, lower group (105 cameras per participant): 1233 to 1245 px
+focal length, upper group (30 cameras per participant): 1643 to 1654 px
+focal-length spread:     1.341x
+
+radial k1:               -0.1750 to -0.1421
+radial k2:               +0.0717 to +0.1351
+tangential p1, p2:       +0.0000 to +0.0000  (identically zero)
+
+=== RESTRICTED TO THE PARTICIPANTS ANALYSED ===
+The block above covers every archived calibration. Section 2.1 quotes these ranges as holding
+across the calibrations the analysis actually used, which is a smaller set, so they are
+recomputed over it here. Quote these.
+
+participants analysed:   11 (P03, P04, P06, P08, P09, P10, P13, P16, P17, P26, P28)
+calibrations used:       99
+radial k1:               -0.1750 to -0.1421
+radial k2:               +0.0717 to +0.1351
+focal length, lower:     1233 to 1245 px
+focal length, upper:     1643 to 1654 px
+focal-length spread:     1.341x
+
+These are the figures Section 2.1 quotes for the rig. A value quoted in the manuscript must
+lie inside the corresponding interval printed here.

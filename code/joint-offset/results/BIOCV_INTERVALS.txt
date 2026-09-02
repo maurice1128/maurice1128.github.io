@@ -1,0 +1,67 @@
+EXACT INTERVALS FOR THE QUOTED POSITION EFFECTS
+
+Exact sign-flip over 11 participants (2^11 = 2048 patterns). The interval is the set of
+shifts the same test does not reject at alpha = 0.10, obtained by inverting it -- the
+procedure already used for the null angle contrasts of Table S3k, applied here to the
+effects the manuscript quotes. POSITIVE = the SECOND-NAMED arm has the lower error.
+
+A subset row is the mean of its member joints, per participant, which is how the subsets are
+built throughout; the point estimates reproduce the published values exactly.
+
+contrast                                       effect          exact 95% CI          exact 90% CI   exact p
+criterion at matched k=2 [hip]                 +0.530   [ +0.273,  +0.817]   [ +0.310,  +0.761]    0.0020
+criterion at matched k=2 [knee]                -0.655   [ -0.939,  -0.366]   [ -0.882,  -0.423]    0.0020
+criterion at matched k=2 [ankle]               +0.219   [ -0.023,  +0.463]   [ +0.016,  +0.415]    0.0762
+criterion at matched k=2 {hip,knee,ankle}      +0.031   [ -0.102,  +0.175]   [ -0.082,  +0.145]    0.6543
+criterion at matched k=2 {knee,ankle}          -0.218   [ -0.360,  -0.074]   [ -0.334,  -0.104]    0.0098
+criterion at matched k=2 {hip,ankle}           +0.374   [ +0.190,  +0.557]   [ +0.228,  +0.521]    0.0010
+criterion at matched k=1 {knee,ankle}          -0.094   [ -0.184,  -0.003]   [ -0.167,  -0.019]    0.0459
+criterion at matched k=1 {hip,ankle}           +0.193   [ +0.020,  +0.368]   [ +0.053,  +0.333]    0.0332
+adaptive criterion [hip]                       -0.024   [ -0.275,  +0.227]   [ -0.228,  +0.186]    0.8350
+adaptive criterion [knee]                      +0.339   [ +0.202,  +0.471]   [ +0.236,  +0.447]    0.0020
+adaptive criterion [ankle]                     +0.190   [ +0.017,  +0.360]   [ +0.053,  +0.326]    0.0352
+adaptive criterion [pos:HKA]                   +0.168   [ +0.064,  +0.271]   [ +0.084,  +0.252]    0.0078
+uniform -> confidence [hip]                    +1.564   [ +1.061,  +2.066]   [ +1.167,  +1.963]    0.0010
+uniform -> confidence [knee]                   +0.365   [ +0.181,  +0.566]   [ +0.208,  +0.526]    0.0010
+uniform -> confidence [ankle]                  +0.822   [ +0.389,  +1.307]   [ +0.455,  +1.208]    0.0010
+uniform -> confidence [pos:HKA]                +0.917   [ +0.687,  +1.175]   [ +0.720,  +1.118]    0.0010
+adaptive reprojection rejection [pos:HKA]      -0.005   [ -0.283,  +0.249]   [ -0.233,  +0.224]    0.9639
+adaptive object-space rejection [pos:HKA]      +0.163   [ -0.064,  +0.392]   [ -0.023,  +0.347]    0.1416
+population offset table [pos:HKA]              +9.848   [ +7.202, +12.389]   [ +7.795, +11.953]    0.0010
+population offset table [knee flex]            -0.606   [ -0.932,  -0.287]   [ -0.868,  -0.350]    0.0068
+GN: reprojection rejection [pos:HKA]           +0.858   [ +0.356,  +1.390]   [ +0.464,  +1.262]    0.0020
+GN: reprojection rejection [knee flex]         -0.169   [ -0.291,  -0.045]   [ -0.268,  -0.071]    0.0146
+uniform -> confidence [frontal thigh-shank]    +0.078   [ +0.053,  +0.104]   [ +0.056,  +0.099]    0.0010
+uniform -> confidence [trunk-thigh]            +0.227   [ +0.132,  +0.297]   [ +0.153,  +0.290]    0.0020
+adaptive reproj rejection [thigh-shank]        -0.188   [ -0.307,  -0.066]   [ -0.285,  -0.089]    0.0098
+adaptive reproj rejection [trunk-thigh]        -0.192   [ -0.324,  -0.060]   [ -0.300,  -0.087]    0.0107
+adaptive objd rejection [thigh-shank]          -0.141   [ -0.213,  -0.064]   [ -0.202,  -0.081]    0.0039
+adaptive objd rejection [trunk-thigh]          -0.167   [ -0.284,  -0.044]   [ -0.263,  -0.068]    0.0146
+criterion at matched k=1 [thigh-shank]         -0.089   [ -0.154,  -0.025]   [ -0.140,  -0.039]    0.0068
+criterion at matched k=2 [thigh-shank]         -0.129   [ -0.197,  -0.061]   [ -0.186,  -0.074]    0.0049
+population offset table [frontal thigh-shank]   -0.149   [ -0.587,  +0.297]   [ -0.507,  +0.199]    0.4434
+population offset table [trunk-thigh]          +0.164   [ -0.932,  +1.205]   [ -0.687,  +1.022]    0.7314
+dose k=1, reprojection [thigh-shank]           -0.286   [ -0.478,  -0.093]   [ -0.441,  -0.129]    0.0107
+dose k=2, reprojection [thigh-shank]           -0.482   [ -0.752,  -0.210]   [ -0.704,  -0.260]    0.0049
+dose k=3, reprojection [thigh-shank]           -0.747   [ -1.085,  -0.408]   [ -1.020,  -0.477]    0.0010
+dose k=1, object-space [thigh-shank]           -0.375   [ -0.583,  -0.171]   [ -0.540,  -0.204]    0.0029
+dose k=2, object-space [thigh-shank]           -0.612   [ -0.913,  -0.317]   [ -0.852,  -0.371]    0.0039
+dose k=3, object-space [thigh-shank]           -0.798   [ -1.154,  -0.445]   [ -1.081,  -0.512]    0.0020
+DLT -> Gauss-Newton [hip]                      -2.415   [ -3.074,  -1.780]   [ -2.941,  -1.881]    0.0010
+DLT -> Gauss-Newton [knee]                     -0.781   [ -1.190,  -0.394]   [ -1.116,  -0.460]    0.0010
+DLT -> Gauss-Newton [ankle]                    -0.955   [ -1.524,  -0.417]   [ -1.412,  -0.506]    0.0029
+GN rejection, w2-matched [hip]                 +2.469   [ +1.524,  +3.417]   [ +1.698,  +3.241]    0.0010
+GN rejection, w2-matched [knee]                -0.616   [ -1.019,  -0.188]   [ -0.949,  -0.278]    0.0107
+GN rejection, w2-matched [ankle]               +1.316   [ +0.632,  +2.032]   [ +0.720,  +1.883]    0.0010
+DLT -> Gauss-Newton [pos:HKA]                  -1.384   [ -1.794,  -0.991]   [ -1.717,  -1.060]    0.0010
+GN rejection, w2-matched [pos:HKA]             +1.057   [ +0.528,  +1.635]   [ +0.635,  +1.497]    0.0020
+GN rejection, w2-matched [knee flex]           -0.175   [ -0.309,  -0.042]   [ -0.281,  -0.068]    0.0186
+
+HOW TO READ THIS. The 95% interval is the one to read beside a 5%-level verdict, and it is
+what the manuscript quotes. The 90% interval is kept because it is the equivalence bound: it
+is the one that corresponds to two one-sided tests at 5%, and it is what the null rows are
+read against. A 90% interval excluding zero corresponds to p < 0.10, NOT p < 0.05 -- the
+matched k=2 ankle row excludes zero at p = 0.076 on the 90% interval and not on the 95%.
+Where an interval is wide relative to its point estimate, the effect's SIZE is not
+established even though its DIRECTION is, and no recommendation should be scaled to the
+point estimate.

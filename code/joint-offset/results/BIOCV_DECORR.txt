@@ -1,0 +1,30 @@
+MECHANISM TEST -- does rejection destroy common-mode cancellation between joints?
+Cache=D:/BioCV/_cache_undist. Hip/knee/ankle chains, exactly k cameras dropped per joint independently.
+cos = mean pairwise cosine between the three joints' 3D error vectors (1 = perfectly
+      common-mode and therefore cancelling in the angle; 0 = independent).
+ov  = mean pairwise Jaccard overlap of the retained camera sets across the three joints.
+mag = mean per-joint |position error| (mm).
+
+ criterion   k       n      cos  overlap   mag mm
+    reproj   0   12468   0.2412   1.0000    28.48
+    reproj   1   12468   0.2011   0.8232    28.28
+    reproj   2   12468   0.1760   0.6978    28.86
+    reproj   3   12468   0.1539   0.5967    29.50
+      objd   0   12468   0.2412   1.0000    28.48
+      objd   1   12468   0.1884   0.8164    28.25
+      objd   2   12468   0.1613   0.6703    28.82
+      objd   3   12468   0.1412   0.5467    29.32
+
+P1  cos falls as k rises            -> rejection decorrelates the joints
+P2  cos(objd) < cos(reproj) at same k -> the arm better in position, worse in angle,
+                                       decorrelates more
+P3  overlap falls with k, lower for objd -> the joints stop sharing cameras
+
+  k=0: cos(objd)-cos(reproj) = +0.0000   overlap(objd)-overlap(reproj) = +0.0000
+  k=1: cos(objd)-cos(reproj) = -0.0126   overlap(objd)-overlap(reproj) = -0.0068
+  k=2: cos(objd)-cos(reproj) = -0.0148   overlap(objd)-overlap(reproj) = -0.0275
+  k=3: cos(objd)-cos(reproj) = -0.0127   overlap(objd)-overlap(reproj) = -0.0500
+
+READ: if P1-P3 hold, the harm mechanism is established -- per-joint accuracy gains are
+bought by decorrelating errors that used to cancel in the angle. If they fail, the
+paper must report the harm as unexplained rather than assert a mechanism.

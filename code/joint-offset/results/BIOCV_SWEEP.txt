@@ -1,0 +1,6 @@
+BioCV real Vicon GT — object-space advantage vs REAL detector outlier rate (outlier = 2D err > 25px vs projected GT)
+    detector      N  med2Dpx outlier%   dMEAN    dP95 usable_re usable_di
+ lightweight   4800      6.7    10.9%   +0.31    +2.5       76%       76%
+    balanced   4800      6.2     9.6%   +0.32    +1.8       78%       78%
+ performance   (no cache)
+Rising dMEAN/dP95 with rising outlier% across detectors = object-space benefit scales with real detector outlier rate (real GT, real detectors).

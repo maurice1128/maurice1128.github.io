@@ -1,0 +1,20 @@
+WHY THE TOE AND HEEL ENDPOINTS DISAGREE: THE OFFSET'S DIRECTION, NOT ITS LENGTH
+
+Each endpoint's mean offset is decomposed against ITS OWN ankle-to-endpoint segment, in the
+plane of angle(knee, ankle, endpoint). Only the in-plane perpendicular component moves that
+angle. Baselines are Table S13's mean absolute angle errors: toe 7.524 deg, heel 25.202 deg.
+
+ endpoint    n  |offset|    axial  in-plane  out-plane  |segment|  implied deg  of baseline
+      toe   11     52.24    47.31     21.51       2.10      134.4         8.99       119.5%
+     heel   11     33.02    11.79     29.49       3.68       86.6        19.10        75.8%
+
+=== VERDICT, against the rule fixed in this file's header ===
+Toe:  the offset implies 8.99 deg of angle error, 119.5% of its 7.524 deg baseline.
+Heel: the offset implies 19.10 deg of angle error, 75.8% of its 25.202 deg baseline.
+
+(2) NOT EXPLAINED: the two implied angle offsets are comparable fractions of their
+    baselines, so geometry does not account for the disagreement. Table S13's
+    statement stands unchanged and this file adds only a bound.
+
+(4) The veto stands either way: Table S13 returns no verdict where the two endpoints
+    disagree in sign, and explaining a disagreement is not agreement.

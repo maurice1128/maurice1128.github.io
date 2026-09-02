@@ -1,0 +1,38 @@
+X22 -- IS THE FIXED JOINT-CENTRE OFFSET COMPATIBLE WITH THE OBSERVED KNEE-ANGLE ERROR?
+Cache=D:/BioCV/_cache_undist  N=12480 knee-angle observations, 11 subjects.
+bias-only angle = angle(GT + per-subject-per-joint systematic offset) - GT angle.
+
+                          quantity   mean deg   median      p90
+angle error from SYSTEMATIC offset      2.766    2.476    5.369
+        angle error, full pipeline      2.722    2.243    5.698
+
+RATIO OF MEAN ABSOLUTE ERRORS, bias-only / full pipeline: 101.6%
+PER-FRAME CORRELATION between the two: r = 0.199
+
+READ THIS PAIR TOGETHER, NOT THE FIRST LINE ALONE. The ratio says the systematic offset
+is SUFFICIENT on its own to produce a knee-angle error of the observed size. It is not a
+decomposition and it is not a share: both quantities are mean ABSOLUTE errors, which do
+not add, so a ratio near 100% is compatible with the two errors being unrelated. The
+correlation is what says whether they are the same error. Table 3a settles it from the
+other side: correcting each subject with their OWN mean offset -- removing exactly the
+quantity measured here -- lowers knee-flexion error from 2.575 to 2.495 deg, a recovery
+of 0.080 deg, or 3% of the observed error. The static offset therefore BOUNDS the
+magnitude of the angle error without accounting for it, and no causal claim may be built
+on this table. What the offset does explain is why a triangulation gain of about a
+millimetre need not reach the angle: the decomposition below shows only the in-plane
+perpendicular component driving flexion at all.
+
+--- why: per-frame decomposition of the knee offset relative to the hip-ankle chord ---
+             component  mean |mm|     (flexion sensitivity)
+    axial (along limb)      27.45  changes length, not flexion
+in-plane perpendicular      11.04      DRIVES flexion error
+          out-of-plane       8.63  ab/adduction, not flexion
+    total |rel offset|      32.36
+
+random (non-systematic) component of knee-angle error: -0.044 deg [-0.345,0.234] (subject-cluster bootstrap)
+
+READ: the bootstrap interval above is on the DIFFERENCE of the two mean absolute errors,
+so it says the offset-only error is indistinguishable in SIZE from the observed one. With
+r = 0.199 between them per frame, that is a coincidence of magnitude and not a shared
+cause, and the angle-level headroom this table shows is headroom against a target no
+triangulation change reaches.

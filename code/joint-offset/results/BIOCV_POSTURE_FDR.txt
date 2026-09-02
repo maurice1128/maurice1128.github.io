@@ -1,0 +1,28 @@
+BENJAMINI-HOCHBERG OVER THE POSTURE FAMILY
+Family size m = 13: the highest-minus-lowest flexion-quintile difference for each offset
+component at each lower-limb joint, exactly as run in BIOCV_POSTURE.txt.
+
+|off| is the offset MAGNITUDE, which is rotation-invariant: binning it by flexion is not
+circular. 'flex-sens' is the component resolved on the hip-ankle chord, whose orientation is
+set by the flexion angle used to form the bins, so that row IS circular and is reported here
+for completeness rather than as evidence.
+
+  joint   component   diff mm        p     BH q  verdict
+    hip           y    -13.60   0.0010   0.0065  SURVIVES
+   knee           z     -8.97   0.0010   0.0065  SURVIVES
+    hip       |off|     +6.19   0.0020   0.0065  SURVIVES
+   knee           y    -11.67   0.0020   0.0065  SURVIVES
+  ankle       |off|     -4.27   0.0049   0.0127  SURVIVES
+   knee   flex-sens     +6.17   0.0059   0.0128  SURVIVES  [circular]
+   knee       |off|     -2.82   0.0156   0.0290  SURVIVES
+  ankle           y     +3.97   0.0234   0.0380  SURVIVES
+  ankle           x     -1.48   0.0264   0.0381  SURVIVES
+   knee           x     -1.51   0.0342   0.0427  SURVIVES
+  ankle           z     -3.71   0.0361   0.0427  SURVIVES
+    hip           z     -1.95   0.1484   0.1608  n.s.
+    hip           x     +0.69   0.7930   0.7930  n.s.
+
+11 of 13 survive BH; 11 were significant unadjusted.
+
+Any claim in the manuscript resting on a contrast that does not survive must be restated as
+exploratory, and the |off| rows are the ones the posture argument should rest on.

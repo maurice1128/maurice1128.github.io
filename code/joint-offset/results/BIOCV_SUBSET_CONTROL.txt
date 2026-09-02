@@ -1,0 +1,142 @@
+IS IT THE JOINT SET, OR IS IT ARMS VERSUS LEGS?
+
+Subsets of the SAME lower limb, so body region, occlusion regime and camera geometry are held
+constant and only the membership of the set changes. Every subset, including the full
+three-joint one, is rebuilt from the same per-joint accumulators. Exact sign-flip over
+2^11 = 2048 sign patterns throughout. 'dep' marks an intervention a validation study could
+actually run: matched-k is a retention control and is not deployable.
+
+=== PART A. DOES MEMBERSHIP CHANGE THE EFFECT? relative scale, BH within m = 30 ===
+Each participant's effect as a percentage of that participant's own baseline for that subset;
+the tested quantity is the difference between two subsets. Every pair is tested, so the
+manuscript never has to compare two separate significance verdicts (Gelman and Stern, 2006).
+
+intervention                       dep  subset A        subset B              A%      B%    diff        p     BH q  verdict
+uniform vs confidence weighting      y  hip+knee+ankle  hip+ankle          +3.10   +4.15   -1.05   0.0010   0.0042  SURVIVES
+criterion at matched k=1             n  hip+knee+ankle  hip+ankle          +0.05   +0.73   -0.67   0.0010   0.0042  SURVIVES
+criterion at matched k=1             n  knee+ankle      hip+ankle          -0.45   +0.73   -1.18   0.0010   0.0042  SURVIVES
+criterion at matched k=2             n  hip+knee+ankle  knee+ankle         +0.11   -0.97   +1.08   0.0010   0.0042  SURVIVES
+criterion at matched k=2             n  hip+knee+ankle  hip+ankle          +0.11   +1.44   -1.33   0.0010   0.0042  SURVIVES
+criterion at matched k=2             n  knee+ankle      hip+ankle          -0.97   +1.44   -2.41   0.0010   0.0042  SURVIVES
+criterion at matched k=2             n  hip+knee        hip+ankle          -0.20   +1.44   -1.64   0.0010   0.0042  SURVIVES
+uniform vs confidence weighting      y  hip+knee        hip+ankle          +2.68   +4.15   -1.47   0.0029   0.0098  SURVIVES
+criterion at matched k=1             n  hip+knee        hip+ankle          -0.15   +0.73   -0.88   0.0029   0.0098  SURVIVES
+uniform vs confidence weighting      y  knee+ankle      hip+ankle          +2.53   +4.15   -1.62   0.0098   0.0293  SURVIVES
+LOO offset correction                y  hip+knee+ankle  hip+knee          +34.04  +37.25   -3.21   0.0117   0.0320  SURVIVES
+criterion, adaptive rejection        y  hip+knee+ankle  knee+ankle         +0.61   +1.13   -0.53   0.0166   0.0383  SURVIVES
+criterion, adaptive rejection        y  knee+ankle      hip+ankle          +1.13   +0.32   +0.81   0.0166   0.0383  SURVIVES
+LOO offset correction                y  hip+knee        hip+ankle         +37.25  +28.49   +8.76   0.0186   0.0398  SURVIVES
+criterion at matched k=1             n  hip+knee+ankle  knee+ankle         +0.05   -0.45   +0.51   0.0205   0.0403  SURVIVES
+criterion, adaptive rejection        y  knee+ankle      hip+knee           +1.13   +0.45   +0.68   0.0215   0.0403  SURVIVES
+criterion at matched k=2             n  knee+ankle      hip+knee           -0.97   -0.20   -0.78   0.0264   0.0465  SURVIVES
+criterion, adaptive rejection        y  hip+knee+ankle  hip+ankle          +0.61   +0.32   +0.29   0.0371   0.0618  raw only
+criterion at matched k=2             n  hip+knee+ankle  hip+knee           +0.11   -0.20   +0.31   0.0840   0.1297  n.s.
+criterion, adaptive rejection        y  hip+knee+ankle  hip+knee           +0.61   +0.45   +0.15   0.0879   0.1297  n.s.
+uniform vs confidence weighting      y  hip+knee+ankle  hip+knee           +3.10   +2.68   +0.42   0.0908   0.1297  n.s.
+criterion at matched k=1             n  hip+knee+ankle  hip+knee           +0.05   -0.15   +0.20   0.1055   0.1438  n.s.
+uniform vs confidence weighting      y  hip+knee+ankle  knee+ankle         +3.10   +2.53   +0.57   0.1533   0.2000  n.s.
+LOO offset correction                y  hip+knee+ankle  hip+ankle         +34.04  +28.49   +5.55   0.2090   0.2612  n.s.
+criterion at matched k=1             n  knee+ankle      hip+knee           -0.45   -0.15   -0.30   0.2959   0.3551  n.s.
+criterion, adaptive rejection        y  hip+knee        hip+ankle          +0.45   +0.32   +0.13   0.3975   0.4579  n.s.
+LOO offset correction                y  knee+ankle      hip+knee          +32.21  +37.25   -5.03   0.4121   0.4579  n.s.
+LOO offset correction                y  knee+ankle      hip+ankle         +32.21  +28.49   +3.73   0.7129   0.7637  n.s.
+LOO offset correction                y  hip+knee+ankle  knee+ankle        +34.04  +32.21   +1.82   0.7383   0.7637  n.s.
+uniform vs confidence weighting      y  knee+ankle      hip+knee           +2.53   +2.68   -0.15   0.8027   0.8027  n.s.
+
+17 of 30 survive BH.
+
+=== PART B. THE SAME CONTRASTS IN mm, BH within m = 30 ===
+Part A's null is equal FRACTIONAL change, which has no mechanical warrant: two subsets with
+different baselines can differ fractionally while the intervention moves them by identical
+absolute amounts. This part removes the denominator. A difference that survives in Part A but
+not here is a scale artefact rather than a membership effect.
+
+intervention                       dep  subset A        subset B            A mm    B mm    diff        p     BH q  verdict
+uniform vs confidence weighting      y  hip+knee+ankle  hip+ankle         +0.917  +1.193  -0.276   0.0010   0.0042  SURVIVES
+criterion at matched k=1             n  hip+knee+ankle  hip+ankle         +0.022  +0.193  -0.172   0.0010   0.0042  SURVIVES
+criterion at matched k=1             n  knee+ankle      hip+ankle         -0.094  +0.193  -0.287   0.0010   0.0042  SURVIVES
+criterion at matched k=2             n  hip+knee+ankle  knee+ankle        +0.031  -0.218  +0.249   0.0010   0.0042  SURVIVES
+criterion at matched k=2             n  hip+knee+ankle  hip+ankle         +0.031  +0.374  -0.343   0.0010   0.0042  SURVIVES
+criterion at matched k=2             n  knee+ankle      hip+ankle         -0.218  +0.374  -0.593   0.0010   0.0042  SURVIVES
+criterion at matched k=2             n  hip+knee        hip+ankle         -0.063  +0.374  -0.437   0.0010   0.0042  SURVIVES
+uniform vs confidence weighting      y  knee+ankle      hip+ankle         +0.594  +1.193  -0.599   0.0020   0.0059  SURVIVES
+LOO offset correction                y  hip+knee+ankle  hip+knee          +9.848 +13.262  -3.414   0.0020   0.0059  SURVIVES
+LOO offset correction                y  hip+knee        hip+ankle        +13.262  +8.419  +4.843   0.0020   0.0059  SURVIVES
+criterion at matched k=1             n  hip+knee        hip+ankle         -0.035  +0.193  -0.228   0.0059   0.0160  SURVIVES
+uniform vs confidence weighting      y  hip+knee+ankle  knee+ankle        +0.917  +0.594  +0.323   0.0078   0.0195  SURVIVES
+LOO offset correction                y  knee+ankle      hip+knee          +7.862 +13.262  -5.400   0.0215   0.0496  SURVIVES
+criterion at matched k=1             n  hip+knee+ankle  knee+ankle        +0.022  -0.094  +0.116   0.0283   0.0607  raw only
+uniform vs confidence weighting      y  hip+knee        hip+ankle         +0.965  +1.193  -0.228   0.0332   0.0664  raw only
+criterion, adaptive rejection        y  hip+knee+ankle  hip+ankle         +0.168  +0.083  +0.085   0.0381   0.0714  raw only
+criterion, adaptive rejection        y  knee+ankle      hip+ankle         +0.264  +0.083  +0.182   0.0439   0.0776  raw only
+uniform vs confidence weighting      y  knee+ankle      hip+knee          +0.594  +0.965  -0.371   0.0527   0.0879  n.s.
+criterion, adaptive rejection        y  hip+knee+ankle  knee+ankle        +0.168  +0.264  -0.096   0.0625   0.0987  n.s.
+criterion at matched k=2             n  knee+ankle      hip+knee          -0.218  -0.063  -0.156   0.1025   0.1493  n.s.
+criterion, adaptive rejection        y  hip+knee        hip+ankle         +0.157  +0.083  +0.075   0.1045   0.1493  n.s.
+criterion at matched k=2             n  hip+knee+ankle  hip+knee          +0.031  -0.063  +0.094   0.1250   0.1705  n.s.
+criterion, adaptive rejection        y  knee+ankle      hip+knee          +0.264  +0.157  +0.107   0.1377   0.1796  n.s.
+LOO offset correction                y  hip+knee+ankle  knee+ankle        +9.848  +7.862  +1.985   0.1895   0.2368  n.s.
+LOO offset correction                y  hip+knee+ankle  hip+ankle         +9.848  +8.419  +1.429   0.2070   0.2484  n.s.
+criterion at matched k=1             n  hip+knee+ankle  hip+knee          +0.022  -0.035  +0.056   0.2197   0.2535  n.s.
+criterion at matched k=1             n  knee+ankle      hip+knee          -0.094  -0.035  -0.059   0.4658   0.5176  n.s.
+uniform vs confidence weighting      y  hip+knee+ankle  hip+knee          +0.917  +0.965  -0.048   0.5996   0.6424  n.s.
+criterion, adaptive rejection        y  hip+knee+ankle  hip+knee          +0.168  +0.157  +0.011   0.6748   0.6981  n.s.
+LOO offset correction                y  knee+ankle      hip+ankle         +7.862  +8.419  -0.557   0.8223   0.8223  n.s.
+
+13 of 30 survive BH.
+Parts A and B agree on 22 of 30 contrasts.
+Surviving on the relative scale only -- report these as scale-dependent, not as membership
+effects:
+  uniform vs confidence weighting: hip+knee vs hip+ankle
+  criterion, adaptive rejection: hip+knee+ankle vs knee+ankle
+  criterion, adaptive rejection: knee+ankle vs hip+knee
+  criterion, adaptive rejection: knee+ankle vs hip+ankle
+  criterion at matched k=1: hip+knee+ankle vs knee+ankle
+  criterion at matched k=2: knee+ankle vs hip+knee
+
+=== PART C. EACH SUBSET'S OWN EFFECT, BH within m = 20 ===
+What a validation study would report had it chosen that subset. Parts A and B test whether
+subsets DIFFER; this tests whether the intervention has an effect on each subset alone. A
+verdict that changes across rows of one intervention is the paper's claim in its most direct
+form -- and needs Part A to license it, since two verdicts are not a difference.
+
+intervention                       dep  subset            effect mm   rel %        p     BH q  verdict
+uniform vs confidence weighting      y  hip+knee+ankle       +0.917   +3.10   0.0010   0.0024  SURVIVES
+uniform vs confidence weighting      y  knee+ankle           +0.594   +2.53   0.0010   0.0024  SURVIVES
+uniform vs confidence weighting      y  hip+knee             +0.965   +2.68   0.0010   0.0024  SURVIVES
+uniform vs confidence weighting      y  hip+ankle            +1.193   +4.15   0.0010   0.0024  SURVIVES
+criterion, adaptive rejection        y  hip+knee+ankle       +0.168   +0.61   0.0078   0.0142  SURVIVES
+criterion, adaptive rejection        y  knee+ankle           +0.264   +1.13   0.0010   0.0024  SURVIVES
+criterion, adaptive rejection        y  hip+knee             +0.157   +0.45   0.0098   0.0150  SURVIVES
+criterion, adaptive rejection        y  hip+ankle            +0.083   +0.32   0.2695   0.3369  n.s.
+criterion at matched k=1             n  hip+knee+ankle       +0.022   +0.05   0.7061   0.7061  n.s.
+criterion at matched k=1             n  knee+ankle           -0.094   -0.45   0.0459   0.0612  raw only
+criterion at matched k=1             n  hip+knee             -0.035   -0.15   0.6797   0.7061  n.s.
+criterion at matched k=1             n  hip+ankle            +0.193   +0.73   0.0332   0.0474  SURVIVES
+criterion at matched k=2             n  hip+knee+ankle       +0.031   +0.11   0.6543   0.7061  n.s.
+criterion at matched k=2             n  knee+ankle           -0.218   -0.97   0.0098   0.0150  SURVIVES
+criterion at matched k=2             n  hip+knee             -0.063   -0.20   0.5352   0.6296  n.s.
+criterion at matched k=2             n  hip+ankle            +0.374   +1.44   0.0010   0.0024  SURVIVES
+LOO offset correction                y  hip+knee+ankle       +9.848  +34.04   0.0010   0.0024  SURVIVES
+LOO offset correction                y  knee+ankle           +7.862  +32.21   0.0020   0.0043  SURVIVES
+LOO offset correction                y  hip+knee            +13.262  +37.25   0.0010   0.0024  SURVIVES
+LOO offset correction                y  hip+ankle            +8.419  +28.49   0.0029   0.0059  SURVIVES
+
+14 of 20 survive BH.
+
+VERDICT CHANGES WITHIN THE LOWER LIMB (anatomy constant, only membership varies):
+  [deployable] criterion, adaptive rejection
+      significant on: hip+knee+ankle, knee+ankle, hip+knee
+      null on:        hip+ankle
+  [control only] criterion at matched k=1
+      significant on: hip+ankle
+      null on:        hip+knee+ankle, knee+ankle, hip+knee
+  [control only] criterion at matched k=2
+      significant on: knee+ankle, hip+ankle
+      null on:        hip+knee+ankle, hip+knee
+
+HOW TO READ THIS. A surviving difference in Part A AND Part B means that dropping one joint
+from a lower-limb set changes the reported effect with anatomy held constant -- membership is
+doing the work, not upper-versus-lower limb. A verdict change in Part C on a DEPLOYABLE
+intervention bears on practice; a verdict change on matched-k arms, which are controls,
+shows the artefact rather than the behaviour of a deployed rule.

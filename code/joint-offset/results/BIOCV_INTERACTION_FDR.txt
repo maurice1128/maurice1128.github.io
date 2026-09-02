@@ -1,0 +1,34 @@
+BENJAMINI-HOCHBERG OVER THE INTERACTION FAMILY
+Family size m = 20. Recomputed from the per-participant means in D:/BioCV/_persubj.pkl, D:/BioCV/_persubj_round5.pkl, D:/BioCV/_persubj_v2.pkl,
+so the correction runs on exact sign-flip p-values rather than on values already rounded
+to four decimals, matching the other three families.
+
+Interaction = relative position effect minus relative angle effect, per participant, each
+expressed as a fraction of that participant's own BASELINE error -- the arm named first in
+the contrast. Position is measured at [pos:HKA], the hip, knee and ankle the angle is built
+from.
+
+intervention                                       dpos%   dang%   inter        p     BH q  verdict
+criterion at matched k=1 [knee flex]               +0.07   -3.21   +3.29   0.0010   0.0049  SURVIVES
+confidence->confidence x 1/d [hip flex]            -2.46   -6.58   +4.12   0.0010   0.0049  SURVIVES
+LOO offset correction [knee flex]                 +34.04  -27.03  +61.07   0.0010   0.0049  SURVIVES
+LOO offset correction [frontal knee]              +34.04  -10.31  +44.35   0.0010   0.0049  SURVIVES
+confidence->confidence x 1/d [frontal knee]        -2.46   -7.67   +5.22   0.0020   0.0078  SURVIVES
+LOO offset correction [hip flex]                  +34.04   -4.48  +38.52   0.0029   0.0098  SURVIVES
+criterion at matched k=2 [knee flex]               +0.13   -4.01   +4.14   0.0039   0.0098  SURVIVES
+GN: rejection (w^2-matched) [knee flex]            +3.45   -7.45  +10.90   0.0039   0.0098  SURVIVES
+no rejection->objd rejection [knee flex]           +0.51   -6.09   +6.60   0.0059   0.0117  SURVIVES
+GN: no rejection -> reproj rejection [knee flex]   +2.79   -7.25  +10.04   0.0059   0.0117  SURVIVES
+no rejection->objd rejection [hip flex]            +0.51   -5.83   +6.34   0.0078   0.0142  SURVIVES
+no rejection->reproj rejection [knee flex]         -0.10   -8.16   +8.07   0.0146   0.0244  SURVIVES
+reproj->object-space criterion [frontal knee]      +0.61   -2.61   +3.22   0.0225   0.0346  SURVIVES
+uniform->confidence weighting [hip flex]           +3.10   +5.69   -2.59   0.0498   0.0711  raw only
+DLT -> GN w^2-matched [knee flex]                  -3.31   +0.22   -3.54   0.1611   0.2148  n.s.
+criterion at matched k=3 [knee flex]               +0.58   -1.74   +2.31   0.1904   0.2380  n.s.
+uniform->confidence weighting [knee flex]          +3.10   +1.43   +1.67   0.2412   0.2838  n.s.
+reproj->object-space criterion [knee flex]         +0.61   +1.74   -1.13   0.3389   0.3765  n.s.
+GN objective: w^2-matched -> unmatched (w) [knee flex]   -1.53   -1.03   -0.50   0.3887   0.4091  n.s.
+uniform->confidence weighting [frontal knee]       +3.10   +3.06   +0.04   0.9473   0.9473  n.s.
+
+13 of 20 survive BH; 14 were significant unadjusted.
+Contrasts significant unadjusted that do not survive correction are exploratory.

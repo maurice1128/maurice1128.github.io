@@ -1,0 +1,10 @@
+BioCV real Vicon GT, clustered 6-cam subsets, N=1986560 subset-obs (NOT the inferential N) from 11 subjects / 104 trials, asym median=1.82 p90=2.36 max=3.79
+d = err_reproj - err_dist (mm); +=distance better. SUBJECT-cluster bootstrap 95% CI (inferential unit = subject; n=11 subjects -> CI computable but FRAGILE from only 11 clusters (well below the ~30+ needed for trustworthy coverage; >=~8 preferred; treat as preliminary)).
+  asym bin       n  mean_re  mean_di   dMEAN       dMEAN 95%CI    dP95
+      <1.5  193477     16.4     16.4   -0.01              [-0.05,+0.04]     -0.0
+     1.5-2 1205418     17.1     16.9   +0.19              [+0.13,+0.27]*    +0.7
+       2-3  575169     18.1     17.7   +0.42              [+0.33,+0.53]*    +1.2
+       3-4   12496     21.5     20.5   +0.91              [+0.30,+1.64]*    +1.9
+       4-6       0   few
+        >6       0   few
+NOTE: subject-cluster CIs are computable but FRAGILE from n=11 clusters (well below the ~30+ needed for trustworthy cluster-bootstrap coverage; >=~8 preferred). '*' = CI excludes 0 (subject-level significant, but PRELIMINARY at this cluster count).

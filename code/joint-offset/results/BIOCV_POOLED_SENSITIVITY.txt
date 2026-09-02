@@ -1,0 +1,53 @@
+POOLING ALL 14 INFERENTIAL FAMILIES INTO ONE BH CORRECTION
+
+The manuscript corrects within 14 declared families. This is the consequence of the
+alternative convention -- one correction over their union -- reported so that a reader can
+judge whether the split inflates survival.
+
+  main contrasts                m = 50
+  position vs angle             m = 20
+  per-joint                     m = 12
+  posture                       m = 13
+  joint set vs joint set        m = 8
+  within-limb: membership, %    m = 30
+  within-limb: membership, mm   m = 30
+  dose-response                 m = 6
+  within-limb: subset alone     m = 20
+  offset control: per-joint     m = 18
+  offset control: per-subset    m = 16
+  offset control: reversal test m = 18
+  estimator x rejection         m = 2
+  shank-foot angle              m = 1
+  POOLED                        m = 244
+
+5 of 244 contrasts change verdict when pooled.
+
+family                        contrast                                                  p    own q  pooled q
+within-limb: membership, mm   criterion at matched k=1                             0.0283   0.0607    0.0490  gains
+within-limb: subset alone     criterion at matched k=1                             0.0332   0.0474    0.0563  loses
+offset control: reversal test adaptive criterion knee                              0.0332   0.0460    0.0563  loses
+posture                       x                                                    0.0342   0.0427    0.0576  loses
+posture                       z                                                    0.0361   0.0427    0.0595  loses
+
+A row whose q RISES above 0.05 under pooling loses a verdict its own family granted,
+A row whose q FALLS below 0.05 gains a verdict the split correction withheld. Compare
+each row's own q with its pooled q: the two directions are not interchangeable.
+
+survivors, as each artefact printed the verdict:            144
+survivors, recomputing BH from p within the declared family: 144
+survivors under one pooled correction over m = 244:            141
+
+
+2 contrast(s) carry NO VERDICT in their artefact because a rule declared with
+the outcome withheld one, not because any correction disagreed. They are excluded from
+every count above:
+  shank-foot angle            none vs adaptive reprojection rejection   p=0.0010  own q=0.0020  artefact: NO VERDICT: heel disagrees in sign
+  shank-foot angle            none vs adaptive object-space rejection   p=0.0010  own q=0.0020  artefact: NO VERDICT: heel disagrees in sign
+
+CAVEAT ON POOLING. The declared families test different questions on partly overlapping
+observations: the per-joint family excludes the pooled [pos:HKA] rows precisely because
+those belong to the main family, and the joint-set interactions are computed from the same
+per-participant means as the main family rather than from an independent pass. Pooling
+therefore double-counts information and is conservative in a way that is not principled,
+which is why the manuscript does not adopt it. It is reported because a reader is entitled
+to see what the stricter convention would do.

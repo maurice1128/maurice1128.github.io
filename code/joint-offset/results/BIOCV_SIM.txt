@@ -1,0 +1,12 @@
+BioCV real-calib base, asymmetry manufactured by radial camera moves. noise=4.0px, outlier=80.0px, 4000 trials/level.
+  asym  realA  mean_re  mean_di   dMEAN       dMEAN 95%CI
+   1.0   3.15     15.5     12.5   +3.01    [+2.55,+3.47]*
+   1.5   4.72     27.5     15.5  +11.95  [+10.89,+12.95]*
+   2.0   6.30     56.2     19.1  +37.03  [+35.14,+39.04]*
+   3.0   9.45    125.3     25.3  +99.97 [+96.21,+103.79]*
+   4.0  12.59    206.0     33.1 +172.95[+166.33,+179.77]*
+   6.0  18.89    432.1     50.2 +381.90[+366.97,+396.58]*
+   8.0  25.19    741.7     89.0 +652.64[+627.18,+680.08]*
+  10.0  31.49   1154.1    288.3 +865.74[+829.10,+900.57]*
+A=1.0 row = conditioning check (want ~cm). If dMEAN grows with asym and CIs exclude 0,
+the asymmetry benefit is confirmed at HIGH asymmetry on realistic geometry.

@@ -1,0 +1,10 @@
+BioCV real Vicon GT — severe joints (ankle/wrist) N=24960 joint-obs; asym median=1.98 p90=2.59 max=3.94
+3D POSITION error (mm), reproj vs distance, by asymmetry — MEAN and P95:
+  asym bin       n  mean_re  mean_di  dMEAN   P95_re   P95_di    dP95
+      <1.3       0  few
+   1.3-1.6     159     13.8     13.6   +0.2     26.5     25.3    +1.3
+     1.6-2   13080     16.6     16.7   -0.1     33.3     34.2    -1.0
+     2-2.5    8203     34.9     35.0   -0.1     69.2     68.2    +1.0
+     2.5-3    3023     63.1     61.8   +1.4    117.0    113.9    +3.1
+        >3     495     82.4     77.8   +4.6    136.9    135.5    +1.4
+Positive dMEAN/dP95 = distance better (mm). Compare shape to AIST_SEVERE.txt.

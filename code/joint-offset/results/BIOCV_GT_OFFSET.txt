@@ -1,0 +1,119 @@
+B14 -- BIAS/VARIANCE DECOMPOSITION OF 3D JOINT ERROR
+Cache=D:/BioCV/_cache_undist. Arm = object-space rejection + confidence weights.
+MSE = ||mean(e)||^2 (systematic offset) + mean(||e-mean(e)||^2) (random).
+
+=== WORLD FRAME ===
+       joint       n     RMSE     bias    resid  bias%MSE
+  L-shoulder    6240     40.1     38.1     12.6       90%
+  R-shoulder    6240     38.5     37.2      9.7       94%
+     L-elbow    6240     28.4     24.6     14.3       75%
+     R-elbow    6240     26.8     23.7     12.6       78%
+     L-wrist    6240     20.4     16.5     12.0       65%
+     R-wrist    6240     17.5     13.9     10.6       63%
+       L-hip    6240     41.2     35.4     21.1       74%
+       R-hip    6240     41.3     36.9     18.6       80%
+      L-knee    6240     31.0     27.5     14.3       79%
+      R-knee    6240     33.4     30.1     14.6       81%
+     L-ankle    6240     17.4     11.5     13.0       44%
+     R-ankle    6240     17.3     11.5     13.0       44%
+
+THE SAME DECOMPOSITION WITH PARTICIPANTS POOLED, which is what a cohort-level validation
+study measures. The common offset is the mean over participants of their mean error
+vector; the between-participant scatter moves from the bias term into the random term.
+
+       joint   common  scatter   random  within-ppt share  pooled share
+  L-shoulder     36.6     11.0     12.6               90%           83%
+  R-shoulder     34.6     14.3      9.7               94%           80%
+     L-elbow     21.0     13.4     14.3               75%           54%
+     R-elbow     21.6     10.1     12.6               78%           64%
+     L-wrist     14.8      7.6     12.0               65%           52%
+     R-wrist     12.2      7.0     10.6               63%           48%
+       L-hip     28.5     21.9     21.1               74%           47%
+       R-hip     31.6     20.0     18.6               80%           57%
+      L-knee     24.4     13.4     14.3               79%           61%
+      R-knee     28.2     11.2     14.6               81%           70%
+     L-ankle      9.9      6.2     13.0               44%           32%
+     R-ankle      9.5      6.7     13.0               44%           30%
+
+READ: the two columns answer different questions. The within-participant share is the one
+this paper's contrasts live on, because every contrast is a difference within a participant
+and that participant's own offset is common to both arms. The pooled share is the one a
+cohort-level validation study would report. Any sentence about what 'the position metric'
+measures for such a study must quote the pooled column.
+
+         ALL   74880     30.9     27.4     14.2       79%
+
+=== BODY FRAME ===
+       joint       n     RMSE     bias    resid  bias%MSE
+  L-shoulder    6240     40.1     37.9     13.0       89%
+  R-shoulder    6240     38.5     37.1     10.3       93%
+     L-elbow    6240     28.4     24.3     14.7       73%
+     R-elbow    6240     26.8     23.5     13.0       76%
+     L-wrist    6240     20.4     16.4     12.1       65%
+     R-wrist    6240     17.5     13.8     10.7       63%
+       L-hip    6240     41.2     35.4     20.9       74%
+       R-hip    6240     41.3     36.9     18.5       80%
+      L-knee    6240     31.0     27.5     14.4       78%
+      R-knee    6240     33.4     30.0     14.9       80%
+     L-ankle    6240     17.4     11.5     13.0       44%
+     R-ankle    6240     17.3     11.5     13.0       44%
+
+THE SAME DECOMPOSITION WITH PARTICIPANTS POOLED, which is what a cohort-level validation
+study measures. The common offset is the mean over participants of their mean error
+vector; the between-participant scatter moves from the bias term into the random term.
+
+       joint   common  scatter   random  within-ppt share  pooled share
+  L-shoulder     36.5     10.8     13.0               89%           82%
+  R-shoulder     34.5     14.2     10.3               93%           79%
+     L-elbow     20.7     13.4     14.7               73%           52%
+     R-elbow     21.4     10.2     13.0               76%           63%
+     L-wrist     14.8      7.5     12.1               65%           52%
+     R-wrist     12.1      7.1     10.7               63%           47%
+       L-hip     28.4     22.3     20.9               74%           46%
+       R-hip     31.6     20.0     18.5               80%           57%
+      L-knee     24.3     13.4     14.4               78%           60%
+      R-knee     28.0     11.1     14.9               80%           70%
+     L-ankle      9.9      6.2     13.0               44%           32%
+     R-ankle      9.5      6.7     13.0               44%           30%
+
+READ: the two columns answer different questions. The within-participant share is the one
+this paper's contrasts live on, because every contrast is a difference within a participant
+and that participant's own offset is common to both arms. The pooled share is the one a
+cohort-level validation study would report. Any sentence about what 'the position metric'
+measures for such a study must quote the pooled column.
+
+         ALL   74880     30.9     27.3     14.3       78%
+
+=== IS THE OFFSET CONSISTENT ACROSS SUBJECTS? (body frame) ===
+A definitional joint-centre offset should point the same way for every subject;
+a per-subject calibration error should not.
+       joint     mean offset (x=right,y=ant,z=up) mm  across-subj SD
+  L-shoulder   [   +4.0,  -14.5,  -33.2]        [  6.9,  2.7,  7.3]
+  R-shoulder   [  -14.1,  -15.2,  -27.6]        [  6.9,  8.9,  7.5]
+     L-elbow   [   +2.0,  +16.5,  +12.3]        [  4.2,  6.8, 10.0]
+     R-elbow   [   -0.1,  +16.4,  +13.7]        [  5.2,  5.0,  6.5]
+     L-wrist   [   +7.9,  -11.6,   +4.7]        [  3.4,  2.7,  5.6]
+     R-wrist   [   -4.7,  -10.5,   +3.6]        [  4.1,  3.8,  3.8]
+       L-hip   [  -18.9,  -18.7,   -9.9]        [  7.9,  9.7, 17.2]
+       R-hip   [  +18.5,  -22.9,  -11.4]        [  8.0,  7.0, 15.9]
+      L-knee   [   -0.7,  -13.8,  +20.0]        [  2.8,  9.8,  7.8]
+      R-knee   [   +2.9,  -16.1,  +22.7]        [  2.1,  6.5,  8.1]
+     L-ankle   [   -1.7,   -8.8,   -4.2]        [  1.3,  3.3,  4.7]
+     R-ankle   [   +3.6,   -8.1,   -3.5]        [  1.2,  4.2,  4.6]
+
+=== THE MEDIOLATERAL SHARE OF THE SQUARED HIP OFFSET, FORMED PER PARTICIPANT ===
+
+share = (mediolateral component)^2 / |offset|^2, computed for each participant and then
+averaged. The ratio of the across-participant means is given beside it; the two differ
+because the mediolateral component varies across participants by about 8 mm.
+
+       joint   per-participant   ratio of means    n
+       L-hip             33.3%            44.4%   11
+       R-hip             27.9%            34.4%   11
+      L-knee              2.9%             0.1%   11
+      R-knee              1.3%             1.1%   11
+
+
+READ: 'bias%MSE' is the share of squared error that is a FIXED per-subject-per-joint
+offset. Triangulation improvements can only act on the remaining 'resid' component,
+so a high bias share is a hard ceiling on this entire line of work.

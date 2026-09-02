@@ -1,0 +1,60 @@
+IS THE JOINT-CENTRE OFFSET A SYNCHRONISATION LAG?
+
+A lag of tau displaces a joint by (velocity x tau) ALONG the direction of travel, so it must
+be collinear with walking direction AND scale with joint speed, tau being shared by all
+joints. Both are tested below against the rule fixed in this file's header.
+
+    joint  offset mm  |cos| with  along-track  speed m/s  implied lag
+                        walk dir           mm                      ms
+    L-hip       35.3        0.59        21.55       1.53        14.35
+    R-hip       37.8        0.64        24.06       1.53        16.06
+   L-knee       25.8        0.59        15.52       1.54        10.71
+   R-knee       29.2        0.57        16.46       1.54        11.16
+  L-ankle       10.9        0.74         8.17       0.92         9.25
+  R-ankle       11.3        0.65         7.79       0.86         9.16
+
+=== VERDICTS, against the rule fixed in this file's header ===
+(1) COLLINEARITY at hip and knee: |cos| = 0.60  ->  consistent with an along-track displacement; test (2) decides
+(2) SPEED SCALING. Hip and knee move at 1.53 and 1.54 m/s yet carry 22.80 and 15.99 mm along-track; the implied lag spans 9.2 to 16.1 ms across the six joints.
+    ->  A SHARED TIMING LAG IS EXCLUDED as the main source: one tau cannot give two joints of the same speed different displacements, and no single tau fits all six.
+(3) IMPLIED LAG at hip and knee: 13.1 ms  ->  far above one frame period (5.0 ms), so not a sub-frame residual
+
+WHAT A SUB-FRAME RESIDUAL COULD CONTRIBUTE, given it is under one frame period:
+    L-hip  at most  7.63 mm (speed x one frame), 21.6% of its 35.3 mm offset
+    R-hip  at most  7.67 mm (speed x one frame), 20.3% of its 37.8 mm offset
+   L-knee  at most  7.68 mm (speed x one frame), 29.8% of its 25.8 mm offset
+   R-knee  at most  7.72 mm (speed x one frame), 26.4% of its 29.2 mm offset
+  L-ankle  at most  4.61 mm (speed x one frame), 42.2% of its 10.9 mm offset
+  R-ankle  at most  4.29 mm (speed x one frame), 38.1% of its 11.3 mm offset
+
+WHAT THIS COSTS THE OFFSET SHARE OF SECTION 3.1, if the along-track part is timing.
+Share = |bias|^2 / (|bias|^2 + random^2). Removing a timing component shrinks the numerator.
+
+    joint  bias mm   share  typ. -   share  worst -   share
+    L-hip     35.3     81%    3.82     77%     7.63     73%
+    R-hip     37.8     86%    3.84     83%     7.67     80%
+   L-knee     25.8     78%    3.84     72%     7.68     64%
+   R-knee     29.2     80%    3.86     75%     7.72     69%
+  L-ankle     10.9     39%    2.30     29%     4.61     18%
+  R-ankle     11.3     44%    2.15     34%     4.29     23%
+
+
+THE SAME ARITHMETIC ON THE ARM THE HEADLINE QUOTES (Table 3a2, object-space rejection):
+    joint  bias mm   share  typ. share  worst share
+    L-hip     35.4     74%         71%          69%
+    R-hip     36.9     80%         78%          75%
+   L-knee     27.5     79%         76%          73%
+   R-knee     30.1     81%         79%          77%
+  L-ankle     11.5     44%         37%          31%
+  R-ankle     11.5     44%         38%          34%
+
+Headline arm, hip and knee: 74-81% as measured, 69-77% if the entire along-track component were timing.
+Offset magnitude at hip and knee: 27-37 mm as measured, 23-33 mm if the entire along-track component were timing.
+
+Worst-case drop at hip and knee: 10.2 percentage points  ->  the manuscript must report a BRACKET, not a point, and restate the offset magnitude net of the timing term.
+
+READ. The offset IS substantially along-track, so Section 2.1 may not say a timing residual
+enters only the random half -- a constant residual under a near-constant within-participant
+heading lands in the bias
+term. What the tests above establish is that it cannot be the SOURCE of the offset, and the
+line above bounds how much of the offset it could contribute at all.

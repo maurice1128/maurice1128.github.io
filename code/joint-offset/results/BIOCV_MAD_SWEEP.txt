@@ -1,0 +1,25 @@
+IS THE ADAPTIVE RULE'S THRESHOLD LOAD-BEARING?
+
+Both criteria at four MAD multipliers against no rejection, on the same frames.
+POSITIVE effect = rejection is better. Per participant, then averaged.
+
+     arm   kept/9  [pos:HKA] mm  effect mm   thigh-shank deg  effect deg
+    none     8.92        28.280     +0.000             2.669      +0.000
+objd k=2.5     8.22        28.172     +0.108             2.889      -0.219
+objd k=3.0     8.45        28.117     +0.163             2.810      -0.141
+objd k=3.5     8.59        28.098     +0.182             2.757      -0.088
+objd k=4.0     8.68        28.081     +0.199             2.722      -0.053
+rep  k=2.5     8.00        28.371     -0.092             2.955      -0.286
+rep  k=3.0     8.26        28.285     -0.005             2.857      -0.188
+rep  k=3.5     8.43        28.226     +0.054             2.809      -0.140
+rep  k=4.0     8.54        28.184     +0.096             2.776      -0.107
+
+=== VERDICT, against the rule fixed in this file's header ===
+(1) POSITION: the largest effect across multipliers is 0.199 mm.
+    Every multiplier keeps the contrast inside the +/-0.35 mm bound Section 3.2 quotes,
+    so that bound is not an artefact of the threshold.
+(2) ANGLE: effects objd k=2.5: -0.219, objd k=3.0: -0.141, objd k=3.5: -0.088, objd k=4.0: -0.053, rep k=2.5: -0.286, rep k=3.0: -0.188, rep k=3.5: -0.140, rep k=4.0: -0.107 deg.
+    The sign holds but the magnitude varies by more than a factor of two, so the
+    quoted size is conditional on the multiplier even though its direction is not.
+(3) Retention falls monotonically with the multiplier, which is the dose effect the
+    dose-response family already reports; it is not itself a verdict here.

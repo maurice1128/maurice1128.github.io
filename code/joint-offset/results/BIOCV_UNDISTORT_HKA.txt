@@ -1,0 +1,34 @@
+DECISIVE TEST: does uncorrected lens distortion manufacture the asymmetry effect?
+N=37440 joint-observations, 11 subjects, joint set [pos:HKA]. Distortion applied via cv2.undistortPoints.
+All intervals below are percentile bootstrap, B=3000, RESAMPLING SUBJECTS (not observations), so they carry the within-subject clustering.
+
+--- (1) DIAGNOSTIC: distortion displacement at the actual detections ---
+distortion displacement (px): mean=5.76 median=1.37 p90=17.80 max=84.80
+  (compare: effect sizes are ~0.05 px equivalent for the pooled +0.15mm, ~1.5-2 px for +4.6mm)
+corr(distortion displacement, camera-to-joint distance) = -0.232
+  NEAR cameras (bottom quartile dist, 3386mm): mean distortion 7.73 px, mean image radius 357 px
+  FAR  cameras (top quartile dist, 6288mm): mean distortion 2.84 px, mean image radius 239 px
+  -> the near-camera mechanism requires NEAR >> FAR distortion. Ratio near/far = 2.72
+
+--- (2a) UNCORRECTED (pinhole projection, distorted detections) ---
+  asym bin       n  mean_re  mean_di   dMEAN         dMEAN 95%CI
+      <1.5       0   few
+     1.5-2   20621     27.6     27.7   -0.12      [-0.39,+0.13] 
+     2-2.5   11644     43.5     43.6   -0.15      [-0.65,+0.38] 
+     2.5-3    4831     70.0     67.5   +2.49      [+0.88,+4.18]*
+       3-4     344     96.1     94.9   +1.22      [-1.29,+3.32] 
+        >4       0   few
+POOLED: dMEAN=+0.222 mm, CI [+0.039,+0.399]  | mean abs error reproj=38.6 objd=38.4 mm
+
+--- (2b) DISTORTION-CORRECTED (detections undistorted to ideal pinhole) ---
+  asym bin       n  mean_re  mean_di   dMEAN         dMEAN 95%CI
+      <1.5       0   few
+     1.5-2   20621     27.5     27.4   +0.10      [-0.00,+0.19] 
+     2-2.5   11644     29.4     29.2   +0.26      [+0.08,+0.42]*
+     2.5-3    4831     29.9     29.7   +0.21      [-0.19,+0.65] 
+       3-4     344     34.3     34.0   +0.26      [-2.63,+3.22] 
+        >4       0   few
+POOLED: dMEAN=+0.164 mm, CI [+0.079,+0.254]  | mean abs error reproj=28.5 objd=28.3 mm
+
+READ: if the corrected table keeps the asymmetry-dependent advantage, objection M1 dies.
+If the advantage collapses or reverses, the published effect was a distortion artefact.

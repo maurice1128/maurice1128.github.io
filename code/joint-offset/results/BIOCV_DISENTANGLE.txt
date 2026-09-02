@@ -1,0 +1,10 @@
+BioCV real GT, N=390180 subset-obs. baseline=mean pairwise cam-direction angle(deg).
+baseline range: p10=82 median=95 p90=102 deg
+dMEAN = err_reproj - err_dist (mm); + = distance better. Cell = mean dMEAN (n).
+     base\asym         <1.5        1.5-2        2-2.5        2.5-3           >3
+     narrow<45            -            -            -            -            -
+      mid45-65            -    -2.47(2k)    -4.57(1k)    +3.83(0k)            -
+       wide>65   +0.11(28k)   +0.14(218k)   +0.21(107k)   +1.38(27k)    +3.61(4k)
+
+KEY: read each ROW (fixed baseline) left->right. If dMEAN still grows with asym
+within a fixed-baseline row, asymmetry is the real driver (not the baseline confound).

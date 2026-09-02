@@ -1,0 +1,28 @@
+EXACT EQUIVALENCE BOUNDS ON THE NULL CONTRASTS
+Cache=D:/BioCV/_cache_undist. 11 subjects, 2^11 = 2048 sign patterns fully enumerated.
+Intervals are EXACT sign-flip confidence intervals (test inversion), not bootstrap.
+
+=== PART 1. EQUIVALENCE: how large an effect can we rule out? ===
+90% CI on the per-subject mean difference. Under TOST, a contrast is equivalent to
+zero at margin m if the whole 90% interval lies inside (-m, +m). We quote the
+SMALLEST margin at which each null is declared equivalent -- the tightest honest
+bound -- rather than testing one margin we chose ourselves.
+
+contrast                                       effect                90% CI    bound  % of 5deg MDC
+knee flex: criterion                           +0.047      [-0.007, +0.100]    0.100           2.0%
+frontal knee: criterion                        -0.054      [-0.099, -0.008]    0.099           2.0%
+hip flex: criterion                            +0.025      [-0.042, +0.090]    0.090           1.8%
+knee flex: uniform vs confidence               +0.023      [-0.050, +0.095]    0.095           1.9%
+frontal knee: uniform vs confidence            +0.078      [+0.056, +0.099]    0.099           2.0%
+hip flex: uniform vs confidence                +0.227      [+0.153, +0.290]    0.290           5.8%
+knee flex matched-k=3: criterion               -0.051      [-0.145, +0.045]    0.145           2.9%
+knee flex: 1/d weighting                       +0.052      [-0.048, +0.159]    0.159           3.2%
+
+READ: 'bound' is the smallest equivalence margin this dataset supports for that
+contrast. A bound of 0.15 deg means the data rule out any true effect larger than
+0.15 deg -- 3% of a ~5 deg minimal detectable change. That is an affirmative
+result, not an absence of evidence, and it is what the null-based claims should say.
+
+Part 2 of this file previously carried an interaction table on a denominator the project
+abandoned; the interaction family is now computed by biocv_interaction_fdr.py and reported
+in Table 2(c). It is not emitted here.

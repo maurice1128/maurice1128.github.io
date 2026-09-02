@@ -1,0 +1,52 @@
+IS THE JOINT-CENTRE OFFSET POSTURE-DEPENDENT?  (watchdog D4-13, third asking)
+Cache=D:/BioCV/_cache_undist. N=37440 joint-observations, 11 participants.
+Arm = confidence weights, no rejection. Offsets are (estimate - ground truth) in the
+body frame: x = mediolateral, y = anterior, z = superior. Bins are quintiles of the
+GROUND-TRUTH knee flexion angle, so the binning variable is not itself estimated.
+
+--- hip ---
+   GT knee flexion       n    off x    off y    off z    |off|
+       104-133 deg    2496     +0.0    -15.6     -8.2     36.4
+       133-159 deg    2496     -0.1    -20.9    -10.1     38.6
+       159-168 deg    2496     +0.4    -21.9    -14.7     38.7
+       168-173 deg    2496     -1.4    -29.2    -13.9     42.9
+       173-180 deg    2496     +0.7    -29.7    -11.3     43.0
+   most-extended bin minus most-flexed,          x:   +0.69 mm   exact p = 0.7930   (n=11 participants)
+   most-extended bin minus most-flexed,          y:  -13.60 mm   exact p = 0.0010   (n=11 participants)
+   most-extended bin minus most-flexed,          z:   -1.95 mm   exact p = 0.1484   (n=11 participants)
+   most-extended bin minus most-flexed,      |off|:   +6.19 mm   exact p = 0.0020   (n=11 participants)
+
+--- knee ---
+   GT knee flexion       n    off x    off y    off z    |off|   flex-sens
+       104-133 deg    2496     +1.9     -7.7    +26.9     32.2       -16.6
+       133-159 deg    2496     +1.6    -15.7    +22.8     32.3       -17.8
+       159-168 deg    2496     +1.1    -18.2    +17.7     29.1       -17.3
+       168-173 deg    2496     +0.6    -17.1    +16.5     28.1       -15.4
+       173-180 deg    2496     +0.3    -18.0    +17.2     28.5       -10.1
+   most-extended bin minus most-flexed,          x:   -1.51 mm   exact p = 0.0342   (n=11 participants)
+   most-extended bin minus most-flexed,          y:  -11.67 mm   exact p = 0.0020   (n=11 participants)
+   most-extended bin minus most-flexed,          z:   -8.97 mm   exact p = 0.0010   (n=11 participants)
+   most-extended bin minus most-flexed,      |off|:   -2.82 mm   exact p = 0.0156   (n=11 participants)
+   most-extended bin minus most-flexed,  flex-sens:   +6.17 mm   exact p = 0.0059   (n=11 participants)
+
+--- ankle ---
+   GT knee flexion       n    off x    off y    off z    |off|
+       104-133 deg    2496     +2.3    -12.1     -0.0     19.1
+       133-159 deg    2496     +1.4     -8.8     -6.1     16.3
+       159-168 deg    2496     +0.8     -5.9     -6.2     13.6
+       168-173 deg    2496     +0.1     -6.2     -5.8     14.0
+       173-180 deg    2496     +0.6     -7.6     -3.6     14.6
+   most-extended bin minus most-flexed,          x:   -1.48 mm   exact p = 0.0264   (n=11 participants)
+   most-extended bin minus most-flexed,          y:   +3.97 mm   exact p = 0.0234   (n=11 participants)
+   most-extended bin minus most-flexed,          z:   -3.71 mm   exact p = 0.0361   (n=11 participants)
+   most-extended bin minus most-flexed,      |off|:   -4.27 mm   exact p = 0.0049   (n=11 participants)
+
+READ: if the offset components swing significantly between the lowest and highest
+flexion quintiles, the 'fixed per-participant-per-joint offset' of Section 3.5 is
+posture-dependent. Consequences if so: part of the decomposition's 'random' component
+is structured, a static correction table cannot work even in principle (which is
+consistent with the LOO correction worsening knee flexion by 0.606 deg), and the knee's
+flexion-sensitive offset component is itself a function of the angle being measured --
+a circularity the manuscript must disclose. If the swings are small or non-significant,
+the fixed-offset account stands and the LOO failure is due to across-participant
+magnitude variation alone, as Section 3.5 currently argues.

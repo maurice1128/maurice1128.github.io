@@ -1,0 +1,57 @@
+DOES FILTERING MOVE THE OFFSET SHARE?
+
+44 trials from 11 participant(s), contiguous windows of up to 600 frames.
+Markerless trajectories filtered with the reference's own filter: Butterworth, order 4, 12 Hz, zero-phase.
+
+    joint  bias raw  bias filt  rand raw  rand filt  share raw  share filt   shift
+    L-hip      35.5       35.5      16.9       16.6      78.9%       79.5%   +0.54
+    R-hip      37.1       37.2      15.6       15.3      83.0%       83.5%   +0.49
+   L-knee      25.4       25.4      14.0       13.6      73.5%       74.4%   +0.92
+   R-knee      28.8       28.8      15.2       14.8      77.9%       78.6%   +0.70
+  L-ankle      10.9       10.9      13.1       12.6      43.4%       44.7%   +1.29
+  R-ankle      11.0       11.0      12.3       11.8      46.2%       47.6%   +1.38
+
+=== VERDICTS, against the rule fixed in this file's header ===
+(1) DIRECTION: filtering moves the hip/knee share by +0.7 points  ->  the manuscript's stated direction is CONFIRMED and may be quoted as measured
+(2) SIZE: 0.7 points  ->  under one point; the sampling choice did not matter and the caveat can be retired
+(3) SCOPE: a subset, so this settles the direction and bounds the size on these
+    participants. It does not replace the headline figure.
+
+DOES THE REJECTION COST TO THE ANGLE SURVIVE FILTERING?
+
+Thigh-shank angle, mean absolute error in degrees against the filtered reference.
+COST = rejection minus no rejection; positive means rejection is worse, which is the
+direction the manuscript reports. Filtering is applied to the joint POSITIONS and the
+angle formed afterwards.
+
+   pid  none raw  objd raw  cost raw  none filt  objd filt  cost filt
+   P03     1.950     2.191    +0.240      1.907      2.080     +0.174
+   P04     2.845     2.903    +0.058      2.816      2.838     +0.023
+   P06     3.119     3.315    +0.196      3.114      3.293     +0.179
+   P08     2.698     2.776    +0.078      2.660      2.673     +0.013
+   P09     2.010     2.166    +0.156      1.974      2.053     +0.079
+   P10     2.542     2.449    -0.093      2.527      2.359     -0.168
+   P13     2.741     2.948    +0.207      2.718      2.851     +0.133
+   P16     2.243     2.585    +0.342      2.206      2.499     +0.294
+   P17     1.984     2.218    +0.235      1.964      2.060     +0.096
+   P26     5.279     5.328    +0.049      5.286      5.348     +0.062
+   P28     1.861     1.889    +0.028      1.841      1.758     -0.082
+
+Mean cost raw +0.136 deg, filtered +0.073 deg (11 participant(s)).
+
+=== VERDICT (5), against the rule fixed in this file's header ===
+HOLDS (0.073 against 0.136, at least half). The angle conclusion stands and
+may be quoted as robust to the absence of temporal filtering, on this subset.
+
+SCOPE: a subset of participants and trials. It settles the DIRECTION and bounds
+the size of the filtering bias on the angle; it does not replace the headline
+figure.
+
+=== POST HOC: is the filtered cost distinguishable from zero? ===
+Declared post hoc. This test was added after the per-participant numbers were
+seen; it is not part of the rule fixed in this file's header, and it is not
+carried into any declared family.
+  raw: mean +0.136 deg, 1 of 11 participants negative, exact sign-flip p = 0.0078
+  filtered: mean +0.073 deg, 2 of 11 participants negative, exact sign-flip p = 0.0840
+
+source-sha256: 03ad94e6a6eebd41067ea90763d2a377fa70beb6bdaf5ab1996c232a1fd1b854

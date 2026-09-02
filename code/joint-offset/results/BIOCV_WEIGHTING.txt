@@ -1,0 +1,60 @@
+ARM MATRIX on DISTORTION-CORRECTED detections (D:/BioCV/_cache_undist). N=24960 obs, 11 subjects, severe joints.
+Mean 3D error (mm) per arm; rejection criterion x triangulation weighting.
+ asym bin      n   none_conf     none_wd    rep_conf   objd_conf      rep_wd     objd_wd
+    1.5-2  13239       15.76       15.58       15.88       15.72       15.34       15.28
+    2-2.5   8203       16.64       16.10       16.80       16.33       15.70       15.68
+    2.5-3   3023       18.22       18.29       17.34       16.67       16.32       16.95
+      3-4    495       28.03       29.08       20.39       19.72       20.03       21.64
+      ALL  24960       16.59       16.35       16.45       16.12       15.67       15.74
+
+--- PAPER'S CLAIM (conf weights): does object-space rejection help?:  rep_conf minus objd_conf   (POSITIVE = 'objd_conf' is better) ---
+ asym bin      n     diff               95%CI
+    1.5-2  13239    +0.16      [+0.08,+0.25]*
+    2-2.5   8203    +0.47      [+0.34,+0.60]*
+    2.5-3   3023    +0.67      [+0.43,+1.01]*
+      3-4    495    +0.68      [-1.34,+2.25] 
+      ALL  24960    +0.33      [+0.23,+0.44]*
+
+--- COUNCIL R2 BASELINE: does 1/d TRIANGULATION weighting beat the base?:  rep_conf minus rep_wd   (POSITIVE = 'rep_wd' is better) ---
+ asym bin      n     diff               95%CI
+    1.5-2  13239    +0.55      [+0.37,+0.70]*
+    2-2.5   8203    +1.10      [+0.90,+1.30]*
+    2.5-3   3023    +1.01      [+0.56,+1.52]*
+      3-4    495    +0.36      [-3.55,+3.15] 
+      ALL  24960    +0.78      [+0.63,+0.92]*
+
+--- R2's KEY REVERSAL: 1/d weighting vs the paper's object-space rejection:  objd_conf minus rep_wd   (POSITIVE = 'rep_wd' is better) ---
+ asym bin      n     diff               95%CI
+    1.5-2  13239    +0.39      [+0.24,+0.51]*
+    2-2.5   8203    +0.63      [+0.50,+0.76]*
+    2.5-3   3023    +0.34      [+0.06,+0.65]*
+      3-4    495    -0.32      [-2.27,+1.25] 
+      ALL  24960    +0.45      [+0.34,+0.54]*
+
+--- CONTROLLED (both 1/d weighted): does the CRITERION still help?:  rep_wd minus objd_wd   (POSITIVE = 'objd_wd' is better) ---
+ asym bin      n     diff               95%CI
+    1.5-2  13239    +0.05      [+0.01,+0.10]*
+    2-2.5   8203    +0.02      [-0.07,+0.12] 
+    2.5-3   3023    -0.62      [-0.94,-0.36]*
+      3-4    495    -1.61      [-2.83,-0.36]*
+      ALL  24960    -0.07      [-0.13,-0.01]*
+
+--- M5: does rejection help at all? (no-rejection vs reproj):  none_conf minus rep_conf   (POSITIVE = 'rep_conf' is better) ---
+ asym bin      n     diff               95%CI
+    1.5-2  13239    -0.12      [-0.52,+0.26] 
+    2-2.5   8203    -0.16      [-0.79,+0.42] 
+    2.5-3   3023    +0.89      [-0.00,+1.86] 
+      3-4    495    +7.64     [+4.10,+12.10]*
+      ALL  24960    +0.14      [-0.22,+0.53] 
+
+--- M5: no-rejection vs object-space:  none_conf minus objd_conf   (POSITIVE = 'objd_conf' is better) ---
+ asym bin      n     diff               95%CI
+    1.5-2  13239    +0.04      [-0.41,+0.46] 
+    2-2.5   8203    +0.31      [-0.34,+0.94] 
+    2.5-3   3023    +1.56      [+0.73,+2.59]*
+      3-4    495    +8.31     [+5.03,+12.95]*
+      ALL  24960    +0.48      [+0.08,+0.90]*
+
+READ: if 'rep_wd' wins big here too, distance-WEIGHTING (not distance-based rejection)
+is the real effect, and the paper must be restructured around it. If its advantage
+collapses relative to the uncorrected run, much of R2's reversal was a distortion artefact.

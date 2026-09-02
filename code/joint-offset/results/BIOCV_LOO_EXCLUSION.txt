@@ -1,0 +1,45 @@
+WHAT THE WITHHELD LEAVE-ONE-OUT ROWS DID TO EVERYONE ELSE'S q
+
+Benjamini-Hochberg is recomputed within each declared family with the leave-one-out rows
+removed. Only rows that REMAIN are compared; the removed rows have no q by the rule of
+Section 2.5.
+
+Survivor counts are over the ROWS THAT REMAIN, so 'with' and 'without' differ only
+through the ranking the removed rows imposed. Table captions that quote a survivor count
+out of the DECLARED family size are quoting a denominator that includes rows with no q.
+
+family                           m  m without LOO  surv with  surv without  verdicts moved
+main contrasts                  50             46         25            25               0
+position vs angle               20             17         10            10               0
+within-limb: membership, %      30             24         15            15               0
+within-limb: membership, mm     30             24         10            10               0
+within-limb: subset alone       20             16         10             9               1
+
+=== THE SURVIVOR CHAIN OVER ROWS THAT CARRY A VALID VERDICT ===
+
+A leave-one-out row has no valid q by the rule of Section 2.5, so it can be neither a
+survivor nor a denominator. The published chain counted it as both.
+
+  declared contrasts parsed                        244
+  carrying a verdict (endpoint veto removed)       244
+  of those, leave-one-out rows with no valid q      23
+  counted as BH survivors in the published chain    14
+  contrasts carrying a VALID verdict               221
+
+  BH survivors, families as declared               144 of 244
+  BH survivors, reduced families, valid rows only  129 of 221
+
+  BY survivors, families as declared               105 of 144  (39 fall)
+  BY survivors, reduced families, valid rows only   95 of 129  (34 fall)
+=== DAGGERS: rows crossing the BY line when the leave-one-out rows go: 0 ===
+
+
+
+=== VERDICT (2), against the rule fixed in this file's header ===
+1 verdict(s) move when the leave-one-out rows are removed:
+
+family                        contrast                                            p   q with  q without   change
+within-limb: subset alone     criterion at matched k=1                       0.0332   0.0474     0.0531   loses
+
+Each of these is published on the reduced family, the sizes are those Table S4b
+states, and the survivor count Section 2.5 reports is the reduced one.
