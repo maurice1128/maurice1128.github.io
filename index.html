@@ -41,10 +41,10 @@
     M.S. place there on approved leave; I am looking for a lab where these pieces can be
     assembled into a machine that does the task.</p>
 
-    <p class="tight"><b>Note on how the projects below are written.</b> Each one lists the
-    boundary it stops at next to the result. Every number traces to a stored run artifact,
-    non-significant cells are reported as not detected rather than as absent, and the negative
-    findings are reported as findings.</p>
+    <p class="tight"><b>Note on how the projects below are written.</b> Each carries a
+    <b>Scope</b> line stating where the result stops. Every number traces to a stored run
+    artifact, and non-significant cells are reported as not detected at that power rather than as
+    absent.</p>
   </div>
 </div>
 
@@ -79,10 +79,9 @@ four. Full drafts on request.</p>
     teacher, as priors for one SAC learner on two MyoSuite bodies, twelve matched seeds, run until
     the arms stop moving. The body model helps where the body is hard; guidance is only as good as
     its teacher; withdrawing either costs no dependence.</p>
-    <p class="against"><b>Against itself:</b> on the one-joint elbow the body model's advantage over
-    model-free learning is a transient of the first 12k and is not detected at 100k. The finger
-    teacher is within 3.2&nbsp;mm of doing nothing, so every finger result for the guidance route is
-    about distilling toward a near-no-op target.</p>
+    <p class="against"><b>Scope:</b> the elbow body-model advantage is a transient of the first 12k and is not
+    detected at 100k. The finger teacher is within 3.2&nbsp;mm of doing nothing, so the finger
+    guidance results describe distillation toward a near-no-op target.</p>
     <div class="links">
       <a href="projects/motor-prior.html">[Project page]</a>
       <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[Paper]</a>
@@ -104,9 +103,9 @@ four. Full drafts on request.</p>
     primitives stay usable. It is almost never measured. This builds the measurement &mdash; a
     paired split over six axes of three public hand datasets, behind five gates &mdash; plus a
     raw-data interaction statistic that runs in minutes, before any model is trained.</p>
-    <p class="against"><b>Against itself:</b> the paper's own negative control removed its
-    strongest result. On a bundle whose compositional penalty is zero by construction, the
-    normalised metric still returns 90&nbsp;% of the headline figure.</p>
+    <p class="against"><b>Scope:</b> no modular advantage is claimed at matched information rate. On a bundle whose
+    compositional penalty is zero by construction the normalised metric still returns 90&nbsp;% of
+    the headline figure, so that metric is reported as a robustness check rather than a result.</p>
     <div class="links">
       <a href="projects/hand-composition.html">[Project page]</a>
       <a href="assets/papers/hand_motion_composition_axes.pdf">[Paper]</a>
@@ -130,9 +129,8 @@ four. Full drafts on request.</p>
     <i>W</i><sub>&theta;</sub><i>M</i><sup>&minus;1</sup> leaves the function unchanged. A large
     family of "reorganise the code" proposals is settled before any experiment runs. Then the two
     conditions that identity needs are measured.</p>
-    <p class="against"><b>Against itself:</b> three of five planned mechanisms ran at two seeds
-    with no stored result file, and their numbers are withdrawn entirely rather than reported
-    weakly.</p>
+    <p class="against"><b>Scope:</b> three of the five planned mechanisms ran at two seeds with no stored result
+    file, so their numbers are not reported.</p>
     <div class="links">
       <a href="projects/body-codes.html">[Project page]</a>
       <a href="assets/papers/master_then_reorganise.pdf">[Paper]</a>
@@ -156,9 +154,9 @@ four. Full drafts on request.</p>
     that person, and the model can be wrong. Gentleness is defined on the recipient's side &mdash;
     the involuntary stretch-reflex response of the muscles the contact lengthens &mdash; and the
     robot's copy of the body is then degraded along seven physical axes over a 256-fold range.</p>
-    <p class="against"><b>Against itself:</b> the harm proxy is a simulated stretch reflex with no
-    human validation, and where descending control is altered it reads out neurological state
-    rather than how noxious the contact is. The end-effector is idealised, not a manipulator.</p>
+    <p class="against"><b>Scope:</b> the harm proxy is a simulated stretch reflex with no human validation; where
+    descending control is altered it reads out neurological state rather than contact
+    noxiousness. The end-effector is an idealised joint chain, not a manipulator.</p>
     <div class="links">
       <a href="projects/gentle-other-model.html">[Project page]</a>
       <a href="assets/papers/gentle_other_model.pdf">[Paper]</a>
@@ -185,9 +183,8 @@ dependent axis, in forward dynamics where ground truth is known by construction.
     against a decision. Weakness is imposed one muscle group at a time and error added in
     controlled amounts: top-1 identification falls 0.845 &rarr; 0.549 as joint-angle error grows
     0&deg; &rarr; 12&deg;, over 66 design cells.</p>
-    <p class="against"><b>Against itself:</b> the largest observed loss is the moderate deficit,
-    not the mild one &mdash; but with five model variants that difference is not statistically
-    separable, and the page says so.</p>
+    <p class="against"><b>Scope:</b> the largest observed loss is the moderate deficit rather than the mild one, but
+    with five model variants that difference is not statistically separable.</p>
     <div class="links">
       <a href="projects/capture-error.html">[Project page]</a>
       <a href="projects/capture-error.html#interactive">[Interactive demo]</a>
@@ -213,10 +210,9 @@ dependent axis, in forward dynamics where ground truth is known by construction.
     the keypoint lay 27&ndash;37&nbsp;mm from the reference joint centre &mdash; 74&ndash;81&nbsp;%
     of squared position error within a participant, against 2.5&nbsp;mm for the largest
     triangulation effect measured.</p>
-    <p class="against"><b>Against itself:</b> the hip offset cannot be apportioned between the two
-    systems, because the reference hip centre is itself a regression whose published accuracy is
-    the same size as the offset reported. The hip carries the largest reversal, which the paper
-    says it cannot explain.</p>
+    <p class="against"><b>Scope:</b> the hip offset cannot be apportioned between the two systems, since the
+    reference hip centre is itself a regression whose published accuracy is the size of the offset
+    reported. The hip carries the largest reversal and it is not yet explained.</p>
     <div class="links">
       <a href="projects/joint-offset.html">[Project page]</a>
       <a href="assets/papers/joint_centre_offset.pdf">[Paper]</a>
@@ -240,9 +236,9 @@ dependent axis, in forward dynamics where ground truth is known by construction.
     treatments, and telling them apart currently needs an invasive diagnostic nerve block. 81
     sagittal candidates scanned across three joints and the whole gait cycle, in a 19-DoF,
     22-muscle model where both lesion magnitudes are known.</p>
-    <p class="against"><b>Against itself:</b> the two lesion groups are completely confounded with
-    falling &mdash; 23 of 23 hyperreflexia runs fell, 36 of 36 weakness runs finished &mdash; and
-    that confound cannot be closed.</p>
+    <p class="against"><b>Scope:</b> the two lesion groups are completely confounded with falling &mdash; 23 of 23
+    hyperreflexia runs fell, 36 of 36 weakness runs finished &mdash; and that confound cannot be
+    closed in this design.</p>
     <div class="links">
       <a href="projects/spasticity.html">[Project page]</a>
       <a href="assets/papers/hyperreflexia_vs_weakness.pdf">[Paper]</a>
@@ -268,10 +264,8 @@ dependent axis, in forward dynamics where ground truth is known by construction.
     space Euclidean clustering gets wrong. Mapping the (post, pre) slope pair to a polar angle puts
     it on a torus, where a bivariate von Mises mixture can find it. 9,900 urine tests from 552
     patients, 2018&ndash;2022.</p>
-    <p class="against"><b>Against itself:</b> the dose-change association <b>did not replicate out
-    of time</b> across an April 2020 split, which the paper treats as a qualification of the
-    primary claim rather than a limitation; and the trajectory adds essentially nothing predictive
-    over attendance alone.</p>
+    <p class="against"><b>Scope:</b> the dose-change association did not replicate out of time across an April 2020
+    split, and the trajectory adds essentially nothing predictive over attendance alone.</p>
     <div class="links">
       <a href="projects/methadone.html">[Project page]</a>
       <a href="assets/papers/methadone_dose_trajectory.pdf">[Paper]</a>
