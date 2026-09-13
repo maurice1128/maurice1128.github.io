@@ -8,7 +8,7 @@ index.html              homepage — research interest, five projects, systems, 
 cv.html                 full CV
 css/style.css           shared design system (light + dark, three-state theme)
 projects/
-  motor-prior.html      Two Routes to a Motor Prior
+  motor-prior.html      What a Motor Prior Is Worth
   hand-composition.html Which Hand-Motion Composition Axes Are Worth Measuring
   body-codes.html       What Master-Then-Reorganise Does Not Buy
   capture-error.html    How Much Joint-Angle Error Can Identification Tolerate?
@@ -34,5 +34,6 @@ to every page here:
 2. **A non-significant result is "not detected at this power", never "absent" or "equal".**
    Several pages carry intervals wide enough to contain their own study's headline effect.
 
-Also: nothing here is a preprint, none of this is on arXiv, and no public code repository
-exists yet. Do not add wording that implies otherwise.
+Also: nothing here is a preprint and none of this is on arXiv. Do not add wording that
+implies otherwise. Code repositories do exist for some projects and are linked from the
+pages that have one; do not claim one for a project that does not.

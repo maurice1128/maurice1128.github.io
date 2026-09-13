@@ -49,7 +49,7 @@
 </div>
 
 <p class="note" style="margin-top:14px">
-  <b>Contact:</b> may.be13@nycu.edu.tw &nbsp;&middot;&nbsp; mauricewang1128@gmail.com &nbsp;&middot;&nbsp; +886 931 250 860
+  <b>Contact:</b> may.be13@nycu.edu.tw &nbsp;&middot;&nbsp; mauricewang1128@gmail.com
   &nbsp;&middot;&nbsp; Taipei, Taiwan &nbsp;&middot;&nbsp;
   <a href="cv.html">CV</a> &nbsp;&middot;&nbsp;
   <a href="assets/cv/WangMuHua_CV_2page.pdf">CV (PDF, 2 pages)</a> &nbsp;&middot;&nbsp;
@@ -63,7 +63,7 @@
 
 <p class="divider">&mdash; Robot learning and embodied AI &mdash;</p>
 <p class="note" style="margin-top:-8px">Independent, October 2025 onward. Sole author on all
-three. Full drafts on request.</p>
+four. Full drafts on request.</p>
 
 <div class="entry">
   <div class="thumb">
@@ -71,21 +71,21 @@ three. Full drafts on request.</p>
            preload="metadata"></video>
   </div>
   <div class="meta">
-    <a class="title" href="projects/motor-prior.html">Two Routes to a Motor Prior: Guidance
-      Versus a Frozen Body Model</a>
+    <a class="title" href="projects/motor-prior.html">What a Motor Prior Is Worth: A Frozen Body
+      Model and a Teacher Compared to Convergence and Through Withdrawal</a>
     <div class="authors"><b>Mu-Hua Wang</b></div>
-    <div class="venue">Submitted, Transactions on Machine Learning Research</div>
-    <p class="desc">A frozen forward model learned from task-agnostic, reward-free motor babbling,
-    against a distilled teacher policy, under one SAC backbone on MyoSuite musculoskeletal bodies.
-    Seven controls and a matched withdrawal at a common training step. Guidance buys the early
-    speed; on myoFinger that lead reverses inside the budget.</p>
-    <p class="against"><b>Against itself:</b> on myoFinger no condition is shown to beat model-free
-    SAC at the endpoint, the coach included. One matched control was never run, and the paper says
-    so.</p>
+    <div class="venue">Manuscript, 2026 &middot; prepared for IEEE TCDS</div>
+    <p class="desc">A frozen forward model learned from reward-free motor babbling, and a distilled
+    teacher, as priors for one SAC learner on two MyoSuite bodies, twelve matched seeds, run until
+    the arms stop moving. The body model helps where the body is hard; guidance is only as good as
+    its teacher; withdrawing either costs no dependence.</p>
+    <p class="against"><b>Against itself:</b> on the one-joint elbow the body model's advantage over
+    model-free learning is a transient of the first 12k and is not detected at 100k. The finger
+    teacher is within 3.2&nbsp;mm of doing nothing, so every finger result for the guidance route is
+    about distilling toward a near-no-op target.</p>
     <div class="links">
       <a href="projects/motor-prior.html">[Project page]</a>
-      <a href="assets/papers/two_routes_motor_prior.pdf">[Paper]</a>
-      <a href="assets/papers/two_routes_motor_prior_supplement.pdf">[Supplement]</a>
+      <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[Paper]</a>
     </div>
   </div>
 </div>
@@ -137,6 +137,31 @@ three. Full drafts on request.</p>
       <a href="projects/body-codes.html">[Project page]</a>
       <a href="assets/papers/master_then_reorganise.pdf">[Paper]</a>
       <a href="assets/papers/master_then_reorganise_supplement.pdf">[Supplement]</a>
+    </div>
+  </div>
+</div>
+
+<div class="entry">
+  <div class="thumb">
+    <video src="assets/gentle-other/explainer.mp4" autoplay muted loop playsinline
+           preload="metadata"></video>
+  </div>
+  <div class="meta">
+    <a class="title" href="projects/gentle-other-model.html">How Good Must a Robot's Model of Your
+      Body Be?</a>
+    <div class="authors"><b>Mu-Hua Wang</b></div>
+    <div class="venue">Draft, 2026</div>
+    <p class="desc">A care robot can be gentle by reacting to the force it measures, or by
+    predicting how the person's body will respond before it touches. The second needs a model of
+    that person, and the model can be wrong. Gentleness is defined on the recipient's side &mdash;
+    the involuntary stretch-reflex response of the muscles the contact lengthens &mdash; and the
+    robot's copy of the body is then degraded along seven physical axes over a 256-fold range.</p>
+    <p class="against"><b>Against itself:</b> the harm proxy is a simulated stretch reflex with no
+    human validation, and where descending control is altered it reads out neurological state
+    rather than how noxious the contact is. The end-effector is idealised, not a manipulator.</p>
+    <div class="links">
+      <a href="projects/gentle-other-model.html">[Project page]</a>
+      <a href="assets/papers/gentle_other_model.pdf">[Paper]</a>
     </div>
   </div>
 </div>
@@ -354,15 +379,16 @@ server and none is published.</p>
 <table>
   <thead><tr><th>Manuscript</th><th>Role</th><th>Status</th></tr></thead>
   <tbody>
-    <tr><td><a href="projects/motor-prior.html">Two Routes to a Motor Prior: Guidance Versus a
-        Frozen Body Model</a></td>
-        <td class="n">sole author</td><td><span class="tag hit">submitted &middot; TMLR</span> <a href="assets/papers/two_routes_motor_prior.pdf">[PDF]</a></td></tr>
+    <tr><td><a href="projects/motor-prior.html">What a Motor Prior Is Worth: A Frozen Body Model and a Teacher Compared to Convergence and Through Withdrawal</a> <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[PDF]</a></td>
+            <td class="n">sole author</td><td><span class="tag">draft</span></td></tr>
     <tr><td><a href="projects/hand-composition.html">Which Hand-Motion Composition Axes Are Worth
         Measuring</a></td>
         <td class="n">sole author</td><td><span class="tag hit">submitted &middot; IEEE RA-L</span> <a href="assets/papers/hand_motion_composition_axes.pdf">[PDF]</a></td></tr>
     <tr><td><a href="projects/body-codes.html">Reparameterisation Invariance Limits the Benefit of Reorganising a Body Code
         for Morphology Transfer</a></td>
         <td class="n">sole author</td><td><span class="tag">draft</span> <a href="assets/papers/master_then_reorganise.pdf">[PDF]</a></td></tr>
+    <tr><td><a href="projects/gentle-other-model.html">How Good Must a Robot's Model of Your Body Be?</a> <a href="assets/papers/gentle_other_model.pdf">[PDF]</a></td>
+        <td class="n">sole author</td><td><span class="tag">draft</span></td></tr>
     <tr><td><a href="projects/capture-error.html">Identification of a Weak Muscle Group Tolerates More Joint-Angle Error than
         Kinematic Reliability Conventions Allow</a> &middot; with H.-T. Shih</td>
         <td class="n">first author</td><td><span class="tag">draft</span> <a href="assets/papers/capture_error_tolerance.pdf">[PDF]</a></td></tr>
@@ -385,7 +411,6 @@ server and none is published.</p>
 <h2 id="contact">Contact</h2>
 <dl class="facts">
   <dt>Email</dt><dd>may.be13@nycu.edu.tw &middot; mauricewang1128@gmail.com</dd>
-  <dt>Phone</dt><dd>+886 931 250 860</dd>
   <dt>Location</dt><dd>Taipei, Taiwan</dd>
   <dt>Looking for</dt><dd>An M.S. place in robot learning / embodied AI</dd>
   <dt>CV</dt><dd><a href="assets/cv/WangMuHua_CV_2page.pdf">two-page PDF</a> &middot; <a href="assets/cv/WangMuHua_CV_full.pdf">full PDF</a> &middot; <a href="cv.html">web version</a></dd>

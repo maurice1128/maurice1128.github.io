@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Good Must a Robot's Model of Your Body Be? — Mu-Hua Wang</title>
+<meta name="description" content="A care robot that predicts how your body will flinch before it touches you is gentler than one that reacts to force — but only as good as its model. We measure how wrong that model may be: a specification, not a controller.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container">
+
+<nav>
+  <ul>
+    <li class="back"><a href="../index.html">← Home</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#videos">Videos</a></li>
+    <li><a href="#boundaries">Boundaries</a></li>
+    <li><a href="#method">Method</a></li>
+    <li><a href="#checked">How it was checked</a></li>
+    <li><a href="../cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<header>
+  <p class="note">Draft &middot; 2026 &middot; sole author</p>
+  <h1>How Good Must a Robot's Model of Your Body Be?</h1>
+  <p class="kicker">A care robot that predicts how your body will flinch before it touches
+  you is gentler than one that brakes on force — but only as good as its model. This is the
+  measurement of how wrong that model may be.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua (Maurice) Wang · National Yang Ming
+  Chiao Tung University</p>
+  <div class="links">
+    <a href="../assets/papers/gentle_other_model.pdf">[Paper (PDF)]</a>
+    <a href="../index.html">[All projects]</a>
+  </div>
+</header>
+
+<hr>
+<section>
+  <figure class="fig">
+    <video src="../assets/gentle-other/explainer.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+    <p class="cap"><b>Same person, same job, three ways to touch.</b> The forearm of a
+    simulated care recipient (MyoSuite myoArm, 63 muscles, with a stretch reflex) rests as if on
+    a bed; the robot has to press it until the elbow extends by 15 degrees. Left: a greedy
+    press at 1 m/s. Middle: the standard answer, a force barrier that brakes at 100 N — and
+    still lets the impact peak through, because the peak is over before the sensor has seen it.
+    Right: a controller that plans the press against a copy of the person's body and stops
+    where the copy says the muscles would flinch. Bars: peak force against the limit. 5× slow
+    motion.</p>
+  </figure>
+</section>
+
+<hr>
+<section>
+  <h2>Abstract</h2>
+  <div style="color:var(--ink-2)">
+    <p>A care robot that touches a person can be gentle in two ways: react to the contact force
+    it measures, or predict how the person's body will respond before it touches. Reactive
+    control needs no model of the person; predictive control needs one, and the model can be
+    wrong. We ask how wrong it may be. We define gentleness on the recipient's side, as the
+    involuntary stretch-reflex response of the muscles the contact lengthens, and measure it in
+    a musculoskeletal simulation of a supported forearm pressed by a robot end-effector.</p>
+    <p>A force-barrier controller protects the force it can observe but not the impact peak,
+    which precedes observation. A predictive controller that plans against a copy of the
+    recipient's body reaches the same task at 37&nbsp;% of the barrier's harm. We then degrade
+    that copy along seven physical axes over a 256-fold range in both directions. Two failure
+    modes appear where preregistered: over-estimating the body makes the robot conservative and
+    the task fails; under-estimating it makes the robot over-confident and harm rises. With
+    reflex prediction alone the over-confident branch crosses the barrier at a four-fold
+    reflex-gain error on one axis and comes within 8&nbsp;% of it at an eight-fold stiffness
+    error in six degrees of freedom. Adding contact-force prediction keeps the full margin
+    through a sixteen-fold error on every axis, because contact force depends on the robot's
+    own stiffness and the contact geometry, which the robot knows. Only muscle strength and
+    passive stiffness need to be accurate. The result is a specification, not a controller.</p>
+  </div>
+</section>
+
+<hr>
+<section id="results">
+  <h2>The finding, in one picture</h2>
+  <figure class="fig">
+    <img src="../assets/gentle-other/fig1_crossover.png" alt="Harm against model error for two fidelity axes, with and without force prediction, against the reactive barrier">
+    <p class="cap"><b>Harm on the recipient against how wrong the robot's model is</b>, on a
+    log scale from 1/16 to 16-fold, for the two parameters that turn out to matter. The grey
+    band is the reactive barrier (19 paired individuals); dotted is the greedy press. Left of
+    1 the model thinks the body is softer or weaker than it is and the robot presses harder
+    than it should; right of 1 it thinks the body is stiffer and stops pressing — hollow
+    markers mean the task was lost. <b>Red</b> plans against the predicted reflex alone and
+    climbs to within 8&nbsp;% of the barrier. <b>Blue</b> also predicts the contact force and
+    stays a clear 0.04–0.05 below it all the way to a sixteen-fold error.</p>
+  </figure>
+
+  <p class="note" style="margin-top:1.4rem"><b>What the harm axis is.</b> L2 is the rise in
+  activation of the muscles the contact lengthens, relative to that person's own contact-free
+  baseline — the stretch reflex the touch provokes. It is a proxy for a protective response,
+  not a measure of pain, and nothing on this page claims otherwise (see Boundaries).</p>
+</section>
+
+<hr>
+<section id="videos">
+  <h2>The experiments, on video</h2>
+  <div class="figrow">
+    <figure class="fig">
+      <video src="../assets/gentle-other/wrong_model.mp4" autoplay muted loop playsinline></video>
+      <p class="cap"><b>The same controller with a wrong model of the body.</b> Left: the
+      model believes the arm is eight times softer than it is, so the robot presses like the
+      greedy arm — this is the over-confident branch. Middle: the nominal model. Right: the
+      model believes the arm is four times stiffer, and the robot barely touches it — the task
+      is lost, and a harm-only score would have called this the gentlest of the three. Both
+      directions were preregistered; both appeared.</p>
+    </figure>
+    <figure class="fig">
+      <video src="../assets/gentle-other/force_budget.mp4" autoplay muted loop playsinline></video>
+      <p class="cap"><b>What holds the line: predicting the force as well.</b> Same
+      eight-times-too-soft model on both sides. Left plans against the predicted reflex only.
+      Right also refuses any plan whose predicted contact force exceeds 100 N — and stops
+      short, because contact force under a stiff position servo is set mostly by the robot's own
+      stiffness and where it touches, which the robot knows even when it is badly wrong about the
+      muscles.</p>
+    </figure>
+  </div>
+  <div class="figrow" style="margin-top:1.8rem">
+    <figure class="fig">
+      <video src="../assets/gentle-other/orientation.mp4" autoplay muted loop playsinline></video>
+      <p class="cap"><b>A freedom the wrong model misuses.</b> Let the planner also choose how
+      to orient its capsule and a model that under-estimates the body picks "across the bone"
+      in 7 of 7 individuals — and does more harm than with the orientation fixed. An extra
+      degree of freedom is an extra place to be wrong.</p>
+    </figure>
+    <figure class="fig">
+      <img src="../assets/gentle-other/fig4_timeseries.png" alt="Time series of one episode per arm: commanded depth, true and observed contact force, harm">
+      <p class="cap"><b>Why reacting is late, drawn.</b> One episode per arm. In the middle
+      panel the solid line is the force the recipient actually experienced within each 20 ms
+      control step and the dashed line is what the controller observed at the step boundary. The
+      barrier's true peak is 134 N against its 100 N limit; the largest force it ever saw was
+      98 N. It protected the quantity it could see.</p>
+    </figure>
+  </div>
+</section>
+
+<hr>
+<section id="boundaries">
+  <h2>Findings and their boundaries</h2>
+  <p class="note" style="margin-bottom:1.2rem">Every interval is a paired-<em>t</em> 95&nbsp;%
+  interval over simulated individuals (19 unless marked), one difference per individual. A
+  negative harm difference means the predictive arm was gentler than the barrier.</p>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Result</th><th>Estimate (95&nbsp;% CI)</th><th>Holds</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>The reactive barrier protects the steady force and misses the impact peak
+            <span class="sub">Peak above its own limit in 26 of 28 trials at 80–120 N. At the
+            ISO 160 N the barrier activates in 2&nbsp;% of steps: the filtered controller is the
+            unfiltered one.</span></td>
+          <td class="n">126 N peak vs 100 N limit<br>146 N vs 160 N (never binds)</td>
+          <td><span class="tag hit">1 and 6 DoF, four limits</span></td>
+        </tr>
+        <tr>
+          <td>Prediction with a nominal model completes the task at 37&nbsp;% of the barrier's harm
+            <span class="sub">Giving the copy the individual's own parameters instead of the
+            population nominal changes harm by 0.001.</span></td>
+          <td class="n">−0.086 [−0.094, −0.078]<br>50 N vs 123 N</td>
+          <td><span class="tag hit">n = 19</span></td>
+        </tr>
+        <tr>
+          <td>Under-estimating the body makes the robot over-confident; over-estimating it loses the task
+            <span class="sub">Harm rises monotonically from 0.050 to 0.092 as the model gets
+            softer; task completion falls from 0.97 to 0.01 as it gets stiffer. On one axis the
+            over-confident branch crosses the barrier (reflex gain ×1/4, reflex budget only,
+            7 individuals).</span></td>
+          <td class="n">6 DoF: no crossing in [1/16, 16]<br>1 DoF: +0.009 [+0.002, +0.015]</td>
+          <td><span class="tag hit">both directions, as preregistered</span></td>
+        </tr>
+        <tr>
+          <td>Force prediction is what keeps the over-confident branch below the barrier
+            <span class="sub">Remove the force budget and the eight-fold-too-soft model comes
+            within 8&nbsp;% of the barrier. With seven individuals that row was
+            indistinguishable from it (+0.002 [−0.005, +0.009]); nineteen resolve it.</span></td>
+          <td class="n">without: −0.012 [−0.020, −0.004]<br>with: −0.044 [−0.052, −0.035]</td>
+          <td><span class="tag hit">ablation, n = 19</span></td>
+        </tr>
+        <tr>
+          <td>Only muscle strength and passive stiffness need to be accurate
+            <span class="sub">Joint damping, segment mass and reflex delay move harm by at most
+            0.018 across a 256-fold range. Range of motion is one-sided: under-estimates
+            paralyse the robot, over-estimates are invisible because this task never reaches the
+            joint limit.</span></td>
+          <td class="n">7 axes × 8 factors<br>worst three-axis gap −0.062</td>
+          <td><span class="tag hit">specification</span></td>
+        </tr>
+        <tr>
+          <td>A learned network in the same loop buys about 60&nbsp;% of the physics copy's benefit
+            <span class="sub">One axis, at 0.25 m/s (2.5× its fastest training speed). An
+            untrained network reproduces the greedy press exactly — a knowledge-free learned
+            model is no better than no model, not worse.</span></td>
+          <td class="n">vs barrier −0.023 [−0.030, −0.015]<br>vs copy +0.016 [+0.006, +0.025]</td>
+          <td><span class="tag">n = 7, 1 DoF</span></td>
+        </tr>
+        <tr class="off">
+          <td>The planner's extra orientation choice hurts every wrong model and helps no correct one</td>
+          <td class="n">across chosen 7/7 at ×1/4 … ×1/16</td>
+          <td><span class="tag">n = 7, post hoc</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="box mark">
+    <h3>Three scope statements that travel with every number above</h3>
+    <ul>
+      <li>The harm proxy is a <b>simulated stretch reflex</b>, a person-specific protective
+      response. It has no human validation on this page; rating material and the analysis are
+      prepared and the study is pending ethics approval. Where descending control is altered
+      (complete spinal cord injury, spinal shock, sedation) the reflex reads out neurological
+      state, not contact noxiousness, and the proxy does not apply.</li>
+      <li>The <b>end-effector is idealised</b>: a position-servoed joint chain with a capsule
+      tip, not a manipulator. The capsule is symmetric about its axis, so five of six degrees
+      of freedom can affect the outcome.</li>
+      <li>The main table gives both arms a <b>common 100 N limit</b>, not the ISO 160 N,
+      because at 160 N the barrier never activates. The result holds at 80, 100, 120 and
+      160 N; the gap is smallest at 80 N.</li>
+    </ul>
+  </div>
+</section>
+
+<hr>
+<section>
+  <h2>Where it stops</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Model parameter</th><th>Error that still beats the barrier</th><th>What happens beyond</th></tr></thead>
+      <tbody>
+        <tr><td>Muscle strength</td><td class="n">1/16 – 16 with force prediction<br>~1/4 without</td><td>Too soft: over-confidence; too strong: task lost</td></tr>
+        <tr><td>Passive stiffness</td><td class="n">1/16 – 16 with force prediction<br>~1/4 without</td><td>Same shape; within 8&nbsp;% of the barrier at 1/8 without force prediction</td></tr>
+        <tr><td>Reflex gain</td><td class="n">1/16 – 16 (6 DoF)<br>crosses at 1/4 on one axis without force prediction</td><td>Over-estimates paralyse the robot at ×8</td></tr>
+        <tr><td>Range of motion</td><td class="n">2 – 16</td><td>Under-estimates paralyse the robot; over-estimates are invisible for this task</td></tr>
+        <tr class="off"><td>Joint damping, segment mass, reflex delay</td><td class="n">1/16 – 16</td><td>At most 0.018 of harm across the whole range</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note" style="margin-top:1.2rem;margin-left:0">One recipient body, one contact site
+  (the forearm), one task. Whether the same two parameters carry the specification at the
+  shoulder, the hip or the trunk is a question these data cannot answer, and the paper says so.</p>
+</section>
+
+<hr>
+<section id="method">
+  <h2>Method</h2>
+  <div style="color:var(--ink-2)">
+    <p>The recipient is MyoSuite's myoArm (38 joints, 63 Hill-type muscles, MuJoCo, 2 ms step)
+    with the upper arm fixed as if resting on a bed and a stretch reflex on the eight elbow
+    muscles, its gain fixed once against an independent anchor and never retuned. Individuals
+    differ by a log-normal factor (σ = 0.25) on strength, stiffness, damping and mass. The robot
+    is a capsule on a stiff position servo. Every controller sees exactly the same observation
+    — its own pose, the contact-force vector from a wrist sensor, and three noisy joint angles
+    of the recipient — and a counter proves none of them ever read the true harm.</p>
+    <p>The predictive arm carries a private MuJoCo copy of the recipient, runs it alongside the
+    real one corrected only by those observations, and picks the push direction and rate whose
+    rollout in the copy makes the most progress within two predicted budgets: reflex and force.
+    The fidelity sweep scales one parameter of the copy at a time by 1/16 to 16. The reactive
+    arm is a control barrier function on the measured force vector with an online-identified
+    contact stiffness; when its bound binds it removes the excess normal push and keeps the
+    tangential command, so it slides rather than brakes.</p>
+  </div>
+
+  <div class="figrow" style="margin-top:2rem">
+    <figure class="fig">
+      <img src="../assets/gentle-other/fig2_pareto.png" alt="Task completion against harm for every arm and condition, with the Pareto front">
+      <p class="cap"><b>Task against harm, every condition.</b> The front runs from the no-op
+      corner through the nominal model. Harm alone can be gamed by not touching; the front is
+      what stops that.</p>
+    </figure>
+    <figure class="fig">
+      <img src="../assets/gentle-other/fig3_force_limit.png" alt="Paired harm difference of the worst under-estimation row against the barrier at four force limits">
+      <p class="cap"><b>The common force limit, swept.</b> The worst eight-fold-error row
+      stays below the barrier at 80, 100, 120 and 160 N; the red point is the reflex-only
+      ablation.</p>
+    </figure>
+  </div>
+  <figure class="fig" style="margin-top:1.8rem">
+    <img src="../assets/gentle-other/fig5_orientation.png" alt="Harm with capsule orientation fixed versus planned, per model error">
+    <p class="cap"><b>Orientation as a planned choice.</b> Labels count the individuals (of 7)
+    for which the planner chose "across the bone".</p>
+  </figure>
+</section>
+
+<hr>
+<section id="checked">
+  <h2>What was run, and how it was checked</h2>
+  <div class="stats">
+    <div><span class="big">3,762</span>
+      <h3>episodes</h3>
+      <p>Across 24 result files: the main sweep and its preregistered domain extension, the
+      ablation, four force limits, the individual-model control, the orientation arm, the
+      planner check, the one-axis rerun and the learned-model arm. 3,375 of them are predictive
+      episodes.</p></div>
+    <div><span class="big">0</span>
+      <h3>reads of ground truth by any controller</h3>
+      <p>The harm channel sits behind a counted call. The audit runs before every experiment and
+      the self-test proves it catches a controller that peeks.</p></div>
+    <div><span class="big">129</span>
+      <h3>numbers recomputed</h3>
+      <p>Every number in the paper is rebuilt from the raw per-episode files by a script that
+      never reads the paper's own tables. The first pass caught 14 mismatches, including a
+      wrong critical value that had made every 19-individual interval 12&nbsp;% too wide. All
+      matched after correction.</p></div>
+    <div><span class="big">22</span>
+      <h3>ways the simulation lied, caught and logged</h3>
+      <p>A servo that was secretly a pendulum. A "true" model with half the real reflex gain. A
+      planner whose budget never actually bound. A random seed that varied the robot instead of
+      the person. Every one produced plausible numbers first; every one is in the build log
+      with the check that caught it.</p></div>
+  </div>
+  <p class="note" style="margin-top:1.4rem;margin-left:0"><b>Two conclusions were withdrawn</b>
+  in the course of this. The pilot's claim that under-estimating the body only paralyses the
+  robot turned out to be a property of the planner, not of the action space; and the seven-seed
+  ablation's "the wrong model meets the barrier" softened to "comes within 8&nbsp;%" once
+  nineteen individuals resolved it. The page reports the corrected versions and the paper keeps
+  the record.</p>
+</section>
+
+<footer>
+  <p><a href="../index.html">← Back to all projects</a> · Mu-Hua (Maurice) Wang
+  · <a href="mailto:may.be13@nycu.edu.tw">may.be13@nycu.edu.tw</a></p>
+  <p style="margin-top:.6rem">All videos are one simulated individual (seed 0) rendered
+  from the same camera at 5× slow motion; the bars under each panel show that arm's peak
+  contact force against the 100 N limit.</p>
+</footer>
+
+</div>
+</body>
+</html>

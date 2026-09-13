@@ -28,7 +28,7 @@
   <h1>Mu-Hua (Maurice) Wang</h1>
   <p class="contactline" style="margin-top:1rem">
     <a href="mailto:may.be13@nycu.edu.tw">may.be13@nycu.edu.tw</a> &middot; <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a> &middot;
-    +886 931 250 860 &middot; Taipei, Taiwan
+    Taipei, Taiwan
   </p>
   <div class="links">
     <a href="assets/cv/WangMuHua_CV_2page.pdf">[Download PDF, 2 pages]</a>
@@ -44,8 +44,8 @@
   <dl class="facts">
     <dt>Publications</dt>
     <dd><b>5 peer-reviewed conference papers</b> (1 first-author) &middot;
-        <b>7 manuscripts</b>, 3 of them sole-author &middot;
-        <b>11 of the 12</b> available as PDFs from this site</dd>
+        <b>8 manuscripts</b>, 4 of them sole-author &middot;
+        <b>12 of the 13</b> available as PDFs from this site</dd>
 
     <dt>Systems</dt>
     <dd>Built and clinically deployed an RGB markerless motion capture system:
@@ -53,7 +53,7 @@
         led a <b>5-person team</b>, <b>6 media features</b></dd>
 
     <dt>Independent</dt>
-    <dd><b>Three sole-author robot-learning manuscripts</b> since Oct 2025 &mdash; design,
+    <dd><b>Four sole-author robot-learning manuscripts</b> since Oct 2025 &mdash; design,
         implementation, experiments, statistics and writing done alone</dd>
 
     <dt>Education</dt>
@@ -123,18 +123,18 @@
     <div class="when">Oct 2025 &ndash; present</div>
     <div>
       <h3>Robot learning and embodied AI &mdash; independent research</h3>
-      <p class="where">Sole author on all three manuscripts</p>
+      <p class="where">Sole author on all four manuscripts</p>
       <p>A self-directed programme on one question: how does an agent acquire a model of a body,
       and what does that model actually buy? Design, implementation, experiments, statistics and
       writing done independently. Every result carries adversarial controls and
       multiple-comparison correction, and the negative findings are reported as findings.</p>
       <ul>
-        <li><a href="projects/motor-prior.html"><b>Two Routes to a Motor Prior: Guidance versus a
-        Frozen Body Model.</b></a> A frozen babble-learned forward model against a distilled teacher
-        policy under one SAC backbone on MyoSuite bodies, with seven controls and a matched
-        withdrawal. Guidance buys the early speed; on myoFinger that lead reverses inside the
-        budget. n&nbsp;=&nbsp;12 matched seeds, Holm&ndash;Bonferroni over six stated family
-        definitions.</li>
+        <li><a href="projects/motor-prior.html"><b>What a Motor Prior Is Worth: A Frozen Body Model
+        and a Teacher Compared to Convergence and Through Withdrawal.</b></a> Both priors under one
+        SAC learner on two MyoSuite bodies, twelve matched seeds, run until the arms stop moving.
+        The body model helps where the body is hard; guidance is only as good as its teacher; and
+        withdrawing either costs no dependence. Scoring at a fixed early endpoint instead reverses
+        the first two verdicts.</li>
 
         <li><a href="projects/hand-composition.html"><b>Which Hand-Motion Composition Axes Are
         Worth Measuring.</b></a> Built the measurement modular motion priors assume but rarely
@@ -148,6 +148,13 @@
         conditions it needs are then measured. A re-encoding that preserves decodability by
         construction still costs +0.875&nbsp;mm &mdash; a counterexample to decodability as a
         proxy for representation quality.</li>
+
+        <li><a href="projects/gentle-other-model.html"><b>How Good Must a Robot's Model of Your
+        Body Be?</b></a> A care robot can be gentle by reacting to measured force, or by predicting
+        how the person's body will respond before contact &mdash; which needs a model of that
+        person that can be wrong. Gentleness is defined on the recipient's side, as the involuntary
+        stretch-reflex response, and the robot's copy of the body is degraded along seven physical
+        axes over a 256-fold range.</li>
       </ul>
     </div>
   </div>
@@ -281,12 +288,14 @@
     <table>
       <thead><tr><th>Manuscript</th><th>Role</th><th>Status</th></tr></thead>
       <tbody>
-        <tr><td><a href="projects/motor-prior.html">Two Routes to a Motor Prior: Guidance Versus a Frozen Body Model</a></td>
-            <td class="n">sole author</td><td><span class="tag hit">submitted &middot; TMLR</span> <a href="assets/papers/two_routes_motor_prior.pdf">[PDF]</a></td></tr>
+        <tr><td><a href="projects/motor-prior.html">What a Motor Prior Is Worth: A Frozen Body Model and a Teacher Compared to Convergence and Through Withdrawal</a> <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[PDF]</a></td>
+            <td class="n">sole author</td><td><span class="tag">draft</span></td></tr>
         <tr><td><a href="projects/hand-composition.html">Which Hand-Motion Composition Axes Are Worth Measuring</a></td>
             <td class="n">sole author</td><td><span class="tag hit">submitted &middot; IEEE RA-L</span> <a href="assets/papers/hand_motion_composition_axes.pdf">[PDF]</a></td></tr>
         <tr><td><a href="projects/body-codes.html">Reparameterisation Invariance Limits the Benefit of Reorganising a Body Code for Morphology Transfer</a></td>
             <td class="n">sole author</td><td><span class="tag hit">draft</span> <a href="assets/papers/master_then_reorganise.pdf">[PDF]</a></td></tr>
+        <tr><td><a href="projects/gentle-other-model.html">How Good Must a Robot's Model of Your Body Be?</a> <a href="assets/papers/gentle_other_model.pdf">[PDF]</a></td>
+            <td class="n">sole author</td><td><span class="tag">draft</span></td></tr>
         <tr><td><a href="projects/capture-error.html">Identification of a Weak Muscle Group Tolerates More Joint-Angle Error than Kinematic Reliability Conventions Allow</a> &middot; with H.-T. Shih</td>
             <td class="n">first author</td><td><span class="tag">draft</span> <a href="assets/papers/capture_error_tolerance.pdf">[PDF]</a></td></tr>
         <tr><td><a href="projects/joint-offset.html">Joint-Centre Offset Dominates 3D Position Error and Can Reverse Comparisons Between Markerless Triangulation Methods</a> &middot; with H.-T. Shih <a href="assets/papers/joint_centre_offset.pdf">[PDF]</a></td>
