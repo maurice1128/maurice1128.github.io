@@ -24,7 +24,7 @@
 </nav>
 
 <header>
-  <p class="note">Submitted to IEEE RA-L &middot; 2026 &middot; sole author</p>
+  <p class="note">Under submission to IEEE RA-L &middot; 2026 &middot; sole author</p>
   <h1>Which Hand-Motion Composition Axes<br>
   Are Worth Measuring</h1>
   <p class="kicker">Modular motion priors rest on a premise that is
@@ -72,50 +72,81 @@
   <div class="figrow">
     <figure class="fig">
       <img src="../assets/hand-composition/screen_scatter.png"
-           alt="Interaction excess against measured compositional penalty, six axes">
-      <p class="cap">Every axis with a measurable penalty lies right of zero and none lies left
-      of it. <b>The vertical scatter inside the right-hand group is what the statistic does not
-      predict.</b></p>
+           alt="Interaction excess against measured compositional penalty, by axis">
+      <p class="cap">Every axis that sits <b>above the zero-truth control</b> lies right of zero on
+      interaction, and none lies left of it. <b>The vertical scatter inside the right-hand group is
+      what the statistic does not predict.</b></p>
     </figure>
     <figure class="fig">
       <img src="../assets/hand-composition/difficulty_survey.png"
            alt="Difficulty and modular advantage per axis, uninformative rows faded">
-      <p class="cap"><b>Difficulty and advantage, axis by axis.</b> Faded rows are the axes that
-      carry no measurable compositional difficulty.</p>
+      <p class="cap"><b>Difficulty and advantage, axis by axis</b>, ten rows. Faded rows sit at
+      the zero-truth control &mdash; including the two axes swept after the first submission.</p>
     </figure>
   </div>
 
-  <div class="tw" style="margin-top:2rem">
+  <div class="box mark" style="margin-top:2rem">
+    <h3>What "carries difficulty" is measured against</h3>
+    <p>Not zero. The zero-truth control <code>pc_easy</code>, whose compositional penalty is zero
+    by construction, itself returns <b>+2.9&nbsp;%</b> of the naive error (sd 2.8, n&nbsp;=&nbsp;20)
+    &mdash; and that is significant against zero, p&nbsp;=&nbsp;0.0002. <b>So a test against zero
+    at n&nbsp;=&nbsp;40 detects the instrument, not the composition.</b> Every verdict below is
+    read against the control instead.</p>
+  </div>
+
+  <div class="tw" style="margin-top:1.4rem">
     <table>
-      <thead><tr><th>Dataset, axis</th><th>Interaction excess (z)</th><th>Difficulty</th>
-        <th>Modular advantage</th><th>n</th><th>p</th></tr></thead>
+      <thead><tr><th>Dataset, axis</th><th>Interaction excess</th><th>Relative penalty</th>
+        <th>n</th><th>Against the control (Welch)</th></tr></thead>
       <tbody>
-        <tr><td>OakInk-Image, affordance &times; intent</td><td class="n">+0.0309 (14.9)</td>
-            <td class="n">+0.00873</td><td class="n">+0.00365</td><td class="n">130</td><td class="n">0.0002</td></tr>
+        <tr><td>OakInk-Image, affordance &times; intent</td><td class="n">+0.0309</td>
+            <td class="n">+12.2&nbsp;%</td><td class="n">130</td>
+            <td class="n">p &lt; 1e&minus;12 <span class="tag hit">above</span></td></tr>
         <tr><td><b>OakInk-Image, category &times; intent</b> <span class="tag hit">confirmatory</span></td>
-            <td class="n">+0.0238 (8.3)</td><td class="n">+0.01042</td><td class="n">+0.00397</td>
-            <td class="n">69</td><td class="n">0.0012</td></tr>
-        <tr><td>OakInk-Image, class &times; intent</td><td class="n">+0.0061 (4.1)</td>
-            <td class="n">+0.01650</td><td class="n">+0.00873</td><td class="n">12</td><td class="n">0.046</td></tr>
-        <tr class="off"><td>GRAB, shape &times; fine intent</td><td class="n">+0.0063 (3.9)</td>
-            <td class="n">+0.00041</td><td class="n">+0.00305</td><td class="n">40</td><td class="n">0.269</td></tr>
-        <tr class="off"><td>OakInk2, annotated transitions</td><td class="n">&minus;0.0120 (&minus;2.6)</td>
-            <td class="n">+0.00082</td><td class="n">&minus;0.00010</td><td class="n">12</td><td class="n">0.860</td></tr>
-        <tr><td>synthetic, via-point <span class="tag hit">positive control</span></td>
-            <td class="n">&mdash;</td><td class="n">+0.00904</td><td class="n">+0.00491</td>
-            <td class="n">18</td><td class="n">0.0002</td></tr>
+            <td class="n">+0.0238</td><td class="n">+15.2&nbsp;%</td><td class="n">70</td>
+            <td class="n">p &lt; 1e&minus;12, ten SE above</td></tr>
+        <tr class="off"><td>GRAB, shape &times; fine intent
+            <span class="sub">interaction, but no difficulty</span></td>
+            <td class="n">+0.0063</td><td class="n">+0.7&nbsp;%</td><td class="n">40</td>
+            <td class="n">p = 0.17, indistinguishable</td></tr>
+        <tr class="off"><td>OakInk2, annotated transitions</td><td class="n">&minus;0.0120</td>
+            <td class="n">+3.4&nbsp;%</td><td class="n">12</td>
+            <td class="n">p = 0.79, indistinguishable</td></tr>
+        <tr class="off"><td>OakInk2, scene &times; verb <span class="tag">new, post-submission</span></td>
+            <td class="n">&minus;0.0001</td><td class="n">+3.0&nbsp;%</td><td class="n">40</td>
+            <td class="n">p = 0.96, indistinguishable</td></tr>
+        <tr class="off"><td>GRAB, shape &times; intent class <span class="tag">new, post-submission</span></td>
+            <td class="n">&minus;0.0005</td><td class="n">+2.3&nbsp;%</td><td class="n">40</td>
+            <td class="n">p = 0.60, indistinguishable</td></tr>
       </tbody>
     </table>
   </div>
-  <p class="note" style="margin-top:.9rem">Budget 256. A sixth axis, OakInk-Image id-prefix
-  &times; intent, is <b>deprecated and omitted</b>: it keys on the first character of an object
-  id, which records which sub-collection the object came from, not what it is.</p>
+  <p class="note" style="margin-top:.9rem">Budget 256. <b>Both new axes are significant against
+  zero</b> (p&nbsp;=&nbsp;0.021 and 0.015) &mdash; and that is exactly why it does not count: so is
+  the control. A further axis, OakInk-Image id-prefix &times; intent, is <b>deprecated and
+  omitted</b>, because it keys on the first character of an object id, which records which
+  sub-collection the object came from rather than what it is.</p>
+
+  <div class="box">
+    <p><b>The two new sweeps were pre-registered and run after the first submission</b>, with the
+    declared test reported first and the control reading second. They are what took the necessity
+    claim from one axis to three, across two datasets.</p>
+    <p>On the modular-advantage view the same two rows are <b>uninformative, not negative</b>:
+    GRAB shape &times; intent class gives +0.00185 (25/40, p&nbsp;=&nbsp;0.129) at difficulty
+    +0.00103, and OakInk2 scene &times; verb gives &minus;0.00097 (18/40, p&nbsp;=&nbsp;0.186) at
+    difficulty +0.00051. There is no difficulty on either axis to act on.</p>
+    <p><b>Why only three tests exist.</b> Four other non-positive-excess axes cannot be tested at
+    all: on DexYCB's subject &times; object axis and GRAB's two object axes every transition
+    appears in exactly one fine label, so no leak-free split can hold anything out. Three tests are
+    all these datasets afford.</p>
+  </div>
 
   <div class="box mark">
     <h3>Two qualifications that travel with the finding</h3>
     <ul>
-      <li><b>This is one-sided evidence, not a law.</b> Only one of the six axes could have
-      falsified the direction.</li>
+      <li><b>Three axes could have falsified the direction</b>, across two datasets &mdash; and
+      all three sit at the zero-truth control. That is the evidence for necessity; it is not a
+      law.</li>
       <li><b>Sufficiency is demonstrably false.</b> GRAB's shape axis has positive interaction and
       returns no measurable difficulty at all. Interaction is not enough on its own.</li>
     </ul>
@@ -135,6 +166,15 @@
     <div><span class="big">r = 0.463</span>
       <h3>once that axis is included</h3>
       <p>p = 0.355. The screen diagnoses <em>whether</em>, not <em>how much</em>.</p></div>
+  </div>
+
+  <div class="box mark" style="margin-top:1.6rem">
+    <h3>Structure is not the reason</h3>
+    <p>The obvious alternative explanation is that some axes are simply better structured for the
+    split. A free structural statistic &mdash; how many transitions a leak-free split can hold out
+    &mdash; <b>anticorrelates</b> with the penalty (<i>r</i>&nbsp;=&nbsp;&minus;0.585) and would
+    rank OakInk2's transition axis <b>first</b>, where the sweep returns nothing. The interaction
+    screen ranks that same axis <b>last</b> (<i>r</i>&nbsp;=&nbsp;+0.843).</p>
   </div>
 </section>
 
