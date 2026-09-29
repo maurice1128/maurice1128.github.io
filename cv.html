@@ -75,8 +75,8 @@
   <h2>Research interest</h2>
   <div style="color:var(--ink-2)">
     <p><b>Physical assistive robotics for long-term care.</b> I want to build robots that carry
-    out contact-rich care tasks on a bedridden human body &mdash; starting with diaper changing, a
-    task that demands three things at once: perceiving a body that will not cooperate, knowing
+    out contact-rich care tasks on a bedridden human body, starting with diaper changing and the
+    cleaning that goes with it. The task demands three things at once: perceiving a body that will not cooperate, knowing
     enough about that particular person to move them without harm, and handling deformable
     material safely against skin.</p>
     <p>My work so far covers the first two and has begun the third. I built and clinically
@@ -125,13 +125,35 @@
   <div class="cvrow">
     <div class="when">2026 &ndash; present</div>
     <div>
-      <h3>Robot-assisted diaper changing &mdash; simulation platform</h3>
-      <p class="where">Current work &middot; in progress &middot; simulation only</p>
+      <h3>Care-robot simulation platform &mdash; independent</h3>
+      <p class="where">In progress &middot; simulation only</p>
       <p><a href="projects/caregiving-safety-sim.html"><b>Measuring Whether a Care Robot Hurts the
-      Patient.</b></a> A MuJoCo platform that scores robot-assisted diaper changing and perineal
-      cleaning on garment state, cleaning coverage and deep-tissue strain, on a physically settled
-      statistical body with real pelvic bones. The task the independent research below builds
-      toward.</p>
+      Patient</b></a>: a simulation platform for robot-assisted diaper changing and perineal
+      cleaning. Existing caregiving simulators ask whether the robot can finish the task. This
+      platform asks what the robot does to the body while trying.</p>
+      <ul>
+        <li><b>Three axes, scored on every run</b>: is the garment on, is the perineum cleaned, is
+        the patient injured.</li>
+        <li><b>The patient.</b> An SMPL-X body driven by MuJoCo, with pelvis, sacrum and femur
+        meshes registered under the skin (hip-centre residual 10.4&nbsp;mm). Every care position
+        (supine, side-lying, frog-leg) is settled physically and must pass gates before it is
+        used.</li>
+        <li><b>The tissue model.</b> A soft-tissue model of the sacral region with bone on the deep
+        side. Its solver reproduces closed-form compression tests to 1.8&times;10<sup>&minus;5</sup>
+        and its strain fields are converged across three mesh densities.</li>
+        <li><b>Tissue load.</b> After 285 simulated minutes supine, changing the mattress from rigid
+        to 30&nbsp;kPa foam lowers skin pressure by about 15&nbsp;% but shrinks the volume of deep
+        tissue above the 285-minute strain level from 69 to 4&nbsp;cm&sup3;. Interface pressure
+        alone does not tell you about deep tissue.</li>
+        <li><b>Cleaning.</b> Of 798 legal robot bases, 19 reach all four targets, with peak contact
+        force at most 2.8&nbsp;N and no skin penetration. With a compliant cloth pad at
+        13&ndash;15&nbsp;mmHg, 0.93 of the main perineal region is wiped at least three times under
+        a criterion fixed before the run.</li>
+        <li><b>Garment.</b> A brief is closed around the settled body: front panel pulled up with
+        stretch 1.24&times;, all four side tabs fastened.</li>
+        <li><b>Scope.</b> Simulation only, on a statistical body model; results are model-internal
+        and not validated against measurements on people. Ongoing.</li>
+      </ul>
     </div>
   </div>
 
@@ -241,7 +263,7 @@
         &theta;&nbsp;=&nbsp;atan2(post,&nbsp;pre). Shape becomes comparable independent of absolute
         magnitude, and the feature space becomes a torus.</li>
         <li><b>Clustered on the manifold, not in the plane.</b> Fitted a bivariate (product) von
-        Mises mixture by EM on the circle. For the stable-dose branch, reduced 114 variables by PCA
+        Mises mixture by EM on the circle, because Euclidean clustering does not respect wrap-around at 0&deg;/360&deg;. For the stable-dose branch, reduced 114 variables by PCA
         and cut a circular kernel-density estimate at its valleys. Nine patterns emerged, spanning
         positive/negative occurrence ratios 1.64 to 0.50.</li>
         <li><b>Attacked my own result.</b> Outcome-blind re-clustering, 500 bootstrap refits per
@@ -359,6 +381,15 @@
         <li>Class 8 held the second-narrowest score spread in the grade (SD 15.07 against a
         school-wide 21.86): the class improved by pulling up students who were behind, not by
         stretching students already ahead.</li>
+        <li><b>Designed the mechanism that produced it.</b> The class earned its reward only if
+        <i>every</i> student scored 100 &mdash; a 10-minute paper, then open discussion, then a
+        fresh paper, repeated until the whole class cleared it. The collective condition put the
+        strongest students to work teaching the weakest, which is where the measured gain came
+        from.</li>
+        <li><b>Ran self-initiated weekly remedial sessions</b> outside class hours across three
+        grades, targeted at the students who were behind &mdash; not assigned by the school.</li>
+        <li>Ran hands-on chemistry and physics activities outside the syllabus, and class events to
+        build cohesion.</li>
       </ul>
     </div>
   </div>
@@ -373,18 +404,19 @@
         <tr><td style="width:14rem"><b>Languages</b></td>
             <td>Python (advanced), MATLAB (advanced), C/C++ (intermediate)</td></tr>
         <tr><td><b>ML / RL</b></td>
-            <td>PyTorch, TensorFlow; SAC and Dyna-style model-based RL; policy distillation; world
-            models; CNN/VGG; LSTM</td></tr>
+            <td>PyTorch, TensorFlow; SAC, PPO and Dyna-style model-based RL; policy distillation;
+            offline policy learning; world models; behaviour cloning; CNN/VGG; LSTM</td></tr>
         <tr><td><b>Robotics &amp; simulation</b></td>
-            <td>MyoSuite; musculoskeletal forward dynamics; Geyer&ndash;Herr reflex control; Shadow
-            Hand; inverse kinematics; DLT triangulation; Unreal Engine</td></tr>
+            <td>MuJoCo; MyoSuite; Shadow Hand; Adroit; SMPL-X; musculoskeletal forward dynamics;
+            Geyer&ndash;Herr reflex control; inverse kinematics; DLT triangulation; Unreal
+            Engine</td></tr>
         <tr><td><b>High-performance computing</b></td>
             <td>CuPy, Numba, multiprocessing, GPU acceleration, CPU affinity and priority tuning</td></tr>
         <tr><td><b>Statistics &amp; experiment design</b></td>
-            <td>Matched-seed paired-<em>t</em> designs; Holm&ndash;Bonferroni with stated family
-            definitions; FDR control; von Mises / directional statistics; bootstrap
-            reproducibility; cluster-robust and conditional logistic regression; adversarial and
-            negative controls; pre-registered checks</td></tr>
+            <td>Matched-seed paired designs; predictions fixed before the runs; zero-truth, planted
+            and permuted-label controls; adversarial controls; non-inferiority and equivalence
+            margins; von Mises / directional statistics; bootstrap reproducibility; conditional
+            logistic regression</td></tr>
         <tr><td><b>Systems</b></td>
             <td>PyQt6, SQL, cloud data pipelines, ICD-10 clinical coding</td></tr>
       </tbody>
@@ -422,7 +454,19 @@
     <div class="when">Fall 2024 &ndash; Fall 2025</div>
     <div><h3>Leader, Rural Service Team</h3>
       <p>Led two 3-day service camps in Tamsui and Fenglin combining educational workshops with
-      community service.</p></div>
+      community service. Programme lead, Beitou church service team (2026).</p></div>
+  </div>
+  <div class="cvrow">
+    <div class="when">Fall 2021 &ndash; present</div>
+    <div><h3>Music Director, church worship team &middot; Founder &amp; President, ToGather Music
+      (YouTube)</h3>
+      <p>A team of 3 producers and 5 vocalists, a self-built recording studio, 13 original songs
+      published. Five years of continuous responsibility for a performing team.</p></div>
+  </div>
+  <div class="cvrow">
+    <div class="when">Ongoing</div>
+    <div><h3>Long-term mentor</h3>
+      <p>To a group of four students spanning primary to senior-high school.</p></div>
   </div>
   <div class="cvrow">
     <div class="when">Fall 2022</div>
@@ -432,12 +476,6 @@
   <div class="cvrow">
     <div class="when">Fall 2024</div>
     <div><h3>Graduation Representative</h3></div>
-  </div>
-  <div class="cvrow">
-    <div class="when">Fall 2021</div>
-    <div><h3>Founder &amp; President, ToGather Music (YouTube)</h3>
-      <p>Built a team of 3 producers and 5 vocalists, designed and built a recording studio,
-      composed and published 13 original songs.</p></div>
   </div>
 </section>
 
