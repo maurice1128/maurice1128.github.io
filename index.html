@@ -63,7 +63,7 @@
 
 <p class="divider">&mdash; Robot learning and embodied AI &mdash;</p>
 <p class="note" style="margin-top:-8px">Independent, October 2025 onward. Sole author on all
-four. Full drafts on request.</p>
+five. Full drafts on request.</p>
 
 <div class="entry">
   <div class="thumb">
@@ -71,8 +71,8 @@ four. Full drafts on request.</p>
            preload="metadata"></video>
   </div>
   <div class="meta">
-    <a class="title" href="projects/motor-prior.html">What a Motor Prior Is Worth: A Frozen Body
-      Model and a Teacher Compared to Convergence and Through Withdrawal</a>
+    <a class="title" href="projects/motor-prior.html">What a Motor Prior Is Worth: A Body Model
+      and a Teacher Compared to Convergence and Through Withdrawal</a>
     <div class="authors"><b>Mu-Hua Wang</b></div>
     <div class="venue">Manuscript, 2026 &middot; prepared for IEEE TCDS</div>
     <p class="desc">A frozen forward model learned from reward-free motor babbling, and a distilled
@@ -85,6 +85,31 @@ four. Full drafts on request.</p>
     <div class="links">
       <a href="projects/motor-prior.html">[Project page]</a>
       <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[Paper]</a>
+    </div>
+  </div>
+</div>
+
+<div class="entry">
+  <div class="thumb">
+    <video src="assets/hand-composition/thumb.mp4" autoplay muted loop playsinline
+           preload="metadata"></video>
+  </div>
+  <div class="meta">
+    <a class="title" href="projects/hand-modularity.html">Modularity Makes Dexterous Hands Learn
+      Faster, Not Better</a>
+    <div class="authors"><b>Mu-Hua Wang</b></div>
+    <div class="venue">Under submission, IEEE Robotics and Automation Letters</div>
+    <p class="desc">Modular motion models promise a hand that learns faster and reaches further.
+    Both promises were registered before the runs. As the action space of a dexterous policy a
+    keyframe interface learns held-out skill sequences far better early (0.59 against 0.22) but a
+    continuous latent catches up by the end (0.49 against 0.44), and separately learned skills do
+    no better than one flat policy on the same demonstrations.</p>
+    <p class="against"><b>Scope:</b> one prior architecture family on one hand. The one gain that
+    survives &mdash; choosing the best policy per stage, 97 against 61 &mdash; needs no separate
+    training, so it is not an argument for modular training.</p>
+    <div class="links">
+      <a href="projects/hand-modularity.html">[Project page]</a>
+      <a href="assets/papers/hand_modularity_faster_not_better.pdf">[Paper]</a>
     </div>
   </div>
 </div>
@@ -107,6 +132,8 @@ four. Full drafts on request.</p>
     <p class="against"><b>Scope:</b> one prior architecture; the error is reconstruction, not generation.</p>
     <div class="links">
       <a href="projects/hand-composition.html">[Project page]</a>
+    
+      <a href="assets/papers/hand_motion_composition_axes.pdf">[Paper]</a>
     </div>
   </div>
 </div>
@@ -142,8 +169,8 @@ four. Full drafts on request.</p>
            preload="metadata"></video>
   </div>
   <div class="meta">
-    <a class="title" href="projects/gentle-other-model.html">How Good Must a Robot's Model of Your
-      Body Be?</a>
+    <a class="title" href="projects/gentle-other-model.html">Gentle by Knowing: How Much Must a Care Robot
+      Know About a Person to Lift Their Arm Safely?</a>
     <div class="authors"><b>Mu-Hua Wang</b></div>
     <div class="venue">Draft, 2026</div>
     <p class="desc">A care robot can be gentle by reacting to the force it measures, or by
@@ -370,14 +397,16 @@ server and none is published.</p>
 <table>
   <thead><tr><th>Manuscript</th><th>Role</th><th>Status</th></tr></thead>
   <tbody>
-    <tr><td><a href="projects/motor-prior.html">What a Motor Prior Is Worth: A Frozen Body Model and a Teacher Compared to Convergence and Through Withdrawal</a> <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[PDF]</a></td>
+    <tr><td><a href="projects/motor-prior.html">What a Motor Prior Is Worth: A Body Model and a Teacher Compared to Convergence and Through Withdrawal</a> <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[PDF]</a></td>
             <td class="n">sole author</td><td><span class="tag">draft</span></td></tr>
-    <tr><td><a href="projects/hand-composition.html">A Hand-Motion Dataset Can Test Compositional Generalisation Only When Its Labels Describe the Scored Motion</a></td>
+    <tr><td><a href="projects/hand-composition.html">A Hand-Motion Dataset Can Test Compositional Generalisation Only When Its Labels Describe the Scored Motion</a> <a href="assets/papers/hand_motion_composition_axes.pdf">[PDF]</a></td>
         <td class="n">sole author</td><td><span class="tag">draft &middot; not yet submitted</span></td></tr>
+    <tr><td><a href="projects/hand-modularity.html">Modularity Makes Dexterous Hands Learn Faster, Not Better</a> <a href="assets/papers/hand_modularity_faster_not_better.pdf">[PDF]</a></td>
+        <td class="n">sole author</td><td><span class="tag hit">under submission &middot; IEEE RA-L</span></td></tr>
     <tr><td><a href="projects/body-codes.html">Reparameterisation Invariance Limits the Benefit of Reorganising a Body Code
         for Morphology Transfer</a></td>
         <td class="n">sole author</td><td><span class="tag">draft</span> <a href="assets/papers/master_then_reorganise.pdf">[PDF]</a></td></tr>
-    <tr><td><a href="projects/gentle-other-model.html">How Good Must a Robot's Model of Your Body Be?</a> <a href="assets/papers/gentle_other_model.pdf">[PDF]</a></td>
+    <tr><td><a href="projects/gentle-other-model.html">Gentle by Knowing: How Much Must a Care Robot Know About a Person to Lift Their Arm Safely?</a> <a href="assets/papers/gentle_other_model.pdf">[PDF]</a></td>
         <td class="n">sole author</td><td><span class="tag">draft</span></td></tr>
     <tr><td><a href="projects/capture-error.html">Identification of a Weak Muscle Group Tolerates More Joint-Angle Error than
         Kinematic Reliability Conventions Allow</a> &middot; with H.-T. Shih</td>

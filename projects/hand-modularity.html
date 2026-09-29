@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modularity Makes Dexterous Hands Learn Faster, Not Better &mdash; Mu-Hua Wang</title>
+<meta name="description" content="A MotionBricks-style keyframe interface as the action space of a dexterous policy learns held-out skill sequences far better early, but a continuous latent catches up by the end. Every prediction registered before the runs.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container">
+
+<nav>
+  <ul>
+    <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#promises">Two promises</a></li>
+    <li><a href="#results">What came out</a></li>
+    <li><a href="#instrument">The instrument</a></li>
+    <li><a href="../cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<header>
+  <p class="note">Under submission to IEEE RA-L &middot; 2026 &middot; sole author</p>
+  <h1>Modularity Makes Dexterous Hands Learn Faster, Not Better</h1>
+  <p class="kicker">Modular motion models promise a hand that learns faster <em>and</em> reaches
+  further. Both promises were registered before the runs. Only the first survives.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; National Yang Ming Chiao Tung
+  University</p>
+  <div class="links">
+    <a href="../assets/papers/hand_modularity_faster_not_better.pdf">[Paper (PDF)]</a>
+    <a href="../index.html">[All projects]</a>
+  </div>
+  <p class="note">Not posted to any preprint server. The hosted PDF is the anonymised submission
+  build, so it carries no author block.</p>
+</header>
+
+<hr>
+<section id="promises">
+  <h2>Abstract</h2>
+  <div style="color:var(--ink-2)">
+    <p>Modular motion models such as MotionBricks build motion from reusable parts, and the idea is
+    attractive for dexterous hands: a hand that learns in modules should learn faster and reach
+    further. We test both promises, with every prediction registered before the runs.</p>
+    <p>Used as the action space of a dexterous policy, a MotionBricks-style keyframe interface
+    learns held-out skill sequences far better early in training (0.59 against 0.22 success) but a
+    continuous latent catches up by the end (0.49 against 0.44). Separately learned skills do no
+    better than one flat policy trained on the same demonstrations (45 against 61 of 400 test
+    episodes), and a hand-off defined too loosely let one skill fling the ball out of the next
+    one's reach. The one gain, choosing the best policy for each stage (97 against 61), needs no
+    separate training.</p>
+    <p>Modularity makes dexterous hands learn faster, not better, and four conditions explain when
+    it would pay. To choose which motion data to test on, we also built an instrument for whether
+    hand-motion priors generalize to unseen combinations: over nine axes of three datasets,
+    difficulty appears only where the two factors interact, a statistic computed on raw poses in
+    minutes.</p>
+  </div>
+</section>
+
+<hr>
+<section id="results">
+  <h2>The two promises, scored separately</h2>
+  <div class="stats">
+    <div><span class="big">0.59 &rarr; 0.49</span>
+      <h3>keyframe interface</h3>
+      <p>Held-out skill sequences: far ahead early, then flat.</p></div>
+    <div><span class="big">0.22 &rarr; 0.44</span>
+      <h3>continuous latent</h3>
+      <p>Starts far behind and <b>catches up by the end</b>. The speed promise holds; the reach
+      promise does not.</p></div>
+    <div><span class="big">45 vs 61</span>
+      <h3>of 400 test episodes</h3>
+      <p>Separately learned skills against one flat policy on the same demonstrations. Modular is
+      not ahead.</p></div>
+    <div><span class="big">97 vs 61</span>
+      <h3>the one real gain</h3>
+      <p>Choosing the best policy for each stage &mdash; and it <b>needs no separate
+      training</b>.</p></div>
+  </div>
+
+  <div class="box mark" style="margin-top:1.4rem">
+    <h3>What went wrong at the seam</h3>
+    <p>A hand-off defined too loosely let one skill <b>fling the ball out of the next one's
+    reach</b>. The failure is at the join between modules, which is exactly the place a modular
+    design is supposed to buy you something.</p>
+  </div>
+</section>
+
+<hr>
+<section id="instrument">
+  <h2>Choosing what to test on</h2>
+  <p class="desc">Picking the dataset is not neutral: a benchmark whose labels carry no
+  compositional difficulty cannot answer the question. So the paper also builds an instrument for
+  it &mdash; over <b>nine axes of three datasets</b>, difficulty appears only where the two factors
+  interact, from a statistic computed on raw poses in minutes, before anything is trained.</p>
+  <p class="note">That instrument, and what it says about how a hand-motion dataset has to be
+  labelled before it can test compositional generalisation at all, is developed in a
+  <a href="hand-composition.html">separate paper</a>.</p>
+</section>
+
+<hr>
+<section>
+  <h2>Scope</h2>
+  <div class="box">
+    <ul>
+      <li>One prior architecture family (MotionBricks-style keyframes) against one continuous
+      latent, on one hand.</li>
+      <li>The advantage that survives &mdash; per-stage policy selection &mdash; is not an argument
+      for modular <em>training</em>, since it needs none.</li>
+      <li>This page states the paper's abstract-level results only. The full conditions under which
+      modularity would pay are in the manuscript.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang &middot;
+  <a href="mailto:may.be13@nycu.edu.tw">may.be13@nycu.edu.tw</a></p>
+</footer>
+
+</div>
+</body>
+</html>
