@@ -64,7 +64,7 @@
 <p class="divider">&mdash; Robot learning and embodied AI &mdash;</p>
 <p class="note" style="margin-top:-8px">Independent, October 2025 onward. Sole author throughout;
 full drafts of the manuscripts on request. Ordered by how directly each bears on the task: contact
-safety on a person, then the hand that has to do the work, then the body model behind both.</p>
+safety on a person, then the body model behind it, then the hand that has to do the work.</p>
 
 <div class="entry">
   <div class="thumb">
@@ -76,7 +76,7 @@ safety on a person, then the hand that has to do the work, then the body model b
     <a class="title" href="projects/gentle-care-robot.html">Gentle by Knowing: How Much Must a Care
       Robot Know About a Person to Lift Their Arm Safely?</a>
     <div class="authors"><b>Mu-Hua Wang</b></div>
-    <div class="venue">Brief Research Report prepared for Frontiers in Robotics and AI (not yet submitted)</div>
+    <div class="venue">Submitted to Frontiers in Robotics and AI (Brief Research Report), 2026</div>
     <p class="desc">Many care recipients cannot move a shoulder or elbow freely, and lifting their
     forearm can press that joint into the end of its range. In a musculoskeletal simulation,
     controllers that differ only in what they know about the person are compared, from nothing to
@@ -97,6 +97,30 @@ safety on a person, then the hand that has to do the work, then the body model b
 
 <div class="entry">
   <div class="thumb">
+    <video src="assets/motor-prior/thumb.mp4" autoplay muted loop playsinline
+           preload="metadata"></video>
+  </div>
+  <div class="meta">
+    <a class="title" href="projects/motor-prior.html">What a Motor Prior Is Worth: A Body Model
+      and a Teacher Compared to Convergence and Through Withdrawal</a>
+    <div class="authors"><b>Mu-Hua Wang</b></div>
+    <div class="venue">Submitted to IEEE Transactions on Cognitive and Developmental Systems, 2026</div>
+    <p class="desc">A frozen forward model learned from reward-free motor babbling, and a distilled
+    teacher, as priors for one SAC learner on two MyoSuite bodies, twelve matched seeds, run until
+    the arms stop moving. The body model helps where the body is hard; guidance is only as good as
+    its teacher; withdrawing either costs no dependence.</p>
+    <p class="against"><b>Scope:</b> the elbow body-model advantage is a transient of the first 12k and is not
+    detected at 100k. The finger teacher is within 3.2&nbsp;mm of doing nothing, so the finger
+    guidance results describe distillation toward a near-no-op target.</p>
+    <div class="links">
+      <a href="projects/motor-prior.html">[Project page]</a>
+      <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[Paper]</a>
+    </div>
+  </div>
+</div>
+
+<div class="entry">
+  <div class="thumb">
     <video src="assets/hand-composition/thumb.mp4" autoplay muted loop playsinline
            preload="metadata"></video>
   </div>
@@ -104,7 +128,7 @@ safety on a person, then the hand that has to do the work, then the body model b
     <a class="title" href="projects/hand-modularity.html">Modularity Makes Dexterous Hands Learn
       Faster, Not Better</a>
     <div class="authors"><b>Mu-Hua Wang</b></div>
-    <div class="venue">Under submission, IEEE Robotics and Automation Letters</div>
+    <div class="venue">Submitted to IEEE Robotics and Automation Letters, 2026</div>
     <p class="desc">Modular motion models promise a hand that learns faster and reaches further.
     Both promises were registered before the runs. As the action space of a dexterous policy a
     keyframe interface learns held-out skill sequences far better early (0.59 against 0.22) but a
@@ -122,30 +146,6 @@ safety on a person, then the hand that has to do the work, then the body model b
 
 <div class="entry">
   <div class="thumb">
-    <video src="assets/motor-prior/thumb.mp4" autoplay muted loop playsinline
-           preload="metadata"></video>
-  </div>
-  <div class="meta">
-    <a class="title" href="projects/motor-prior.html">What a Motor Prior Is Worth: A Body Model
-      and a Teacher Compared to Convergence and Through Withdrawal</a>
-    <div class="authors"><b>Mu-Hua Wang</b></div>
-    <div class="venue">Manuscript, 2026 &middot; prepared for IEEE TCDS</div>
-    <p class="desc">A frozen forward model learned from reward-free motor babbling, and a distilled
-    teacher, as priors for one SAC learner on two MyoSuite bodies, twelve matched seeds, run until
-    the arms stop moving. The body model helps where the body is hard; guidance is only as good as
-    its teacher; withdrawing either costs no dependence.</p>
-    <p class="against"><b>Scope:</b> the elbow body-model advantage is a transient of the first 12k and is not
-    detected at 100k. The finger teacher is within 3.2&nbsp;mm of doing nothing, so the finger
-    guidance results describe distillation toward a near-no-op target.</p>
-    <div class="links">
-      <a href="projects/motor-prior.html">[Project page]</a>
-      <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[Paper]</a>
-    </div>
-  </div>
-</div>
-
-<div class="entry">
-  <div class="thumb">
     <video src="assets/hand-composition/label_alignment.mp4"
            poster="assets/hand-composition/label_alignment_poster.png"
            autoplay muted loop playsinline preload="metadata"></video>
@@ -154,7 +154,7 @@ safety on a person, then the hand that has to do the work, then the body model b
     <a class="title" href="projects/hand-composition.html">A Hand-Motion Dataset Can Test Compositional
       Generalisation Only When Its Labels Describe the Scored Motion</a>
     <div class="authors"><b>Mu-Hua Wang</b></div>
-    <div class="venue">Manuscript prepared for Transactions on Machine Learning Research (not yet submitted)</div>
+    <div class="venue">Submitted to Transactions on Machine Learning Research, 2026</div>
     <p class="desc">The usual test of compositional generalisation holds out a combination of labels. On OakInk-Image,
     joining clips so that each correct label described only half of a trajectory, with training volume held fixed,
     took the penalty from +17.0 % to +3.9 %, not distinguishable from a zero-truth control. On TACO, whose labels each
@@ -421,23 +421,23 @@ Institute for Information Industry markerless motion capture system, February 20
 </ol>
 
 <p class="divider">&mdash; Manuscripts &mdash;</p>
-<p class="note" style="margin-top:-8px">None of these is published, and none is posted to a preprint
-server and none is published.</p>
+<p class="note" style="margin-top:-8px">Four are submitted and awaiting a decision; the rest are drafts. None is
+published, and none is posted to a preprint server.</p>
 <div class="tw">
 <table>
   <thead><tr><th>Manuscript</th><th>Role</th><th>Status</th></tr></thead>
   <tbody>
+    <tr><td><a href="projects/gentle-care-robot.html">Gentle by Knowing: How Much Must a Care Robot Know About a Person to Lift Their Arm Safely?</a> <a href="assets/papers/gentle_care_robot.pdf">[PDF]</a></td>
+        <td class="n">sole author</td><td><span class="tag hit">submitted &middot; Frontiers Robot. AI</span></td></tr>
     <tr><td><a href="projects/motor-prior.html">What a Motor Prior Is Worth: A Body Model and a Teacher Compared to Convergence and Through Withdrawal</a> <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[PDF]</a></td>
-            <td class="n">sole author</td><td><span class="tag">draft</span></td></tr>
-    <tr><td><a href="projects/hand-composition.html">A Hand-Motion Dataset Can Test Compositional Generalisation Only When Its Labels Describe the Scored Motion</a> <a href="assets/papers/hand_motion_composition_axes.pdf">[PDF]</a></td>
-        <td class="n">sole author</td><td><span class="tag">draft &middot; not yet submitted</span></td></tr>
+            <td class="n">sole author</td><td><span class="tag hit">submitted &middot; IEEE TCDS</span></td></tr>
     <tr><td><a href="projects/hand-modularity.html">Modularity Makes Dexterous Hands Learn Faster, Not Better</a> <a href="assets/papers/hand_modularity_faster_not_better.pdf">[PDF]</a></td>
-        <td class="n">sole author</td><td><span class="tag hit">under submission &middot; IEEE RA-L</span></td></tr>
+        <td class="n">sole author</td><td><span class="tag hit">submitted &middot; IEEE RA-L</span></td></tr>
+    <tr><td><a href="projects/hand-composition.html">A Hand-Motion Dataset Can Test Compositional Generalisation Only When Its Labels Describe the Scored Motion</a> <a href="assets/papers/hand_motion_composition_axes.pdf">[PDF]</a></td>
+        <td class="n">sole author</td><td><span class="tag hit">submitted &middot; TMLR</span></td></tr>
     <tr><td><a href="projects/body-codes.html">Reparameterisation Invariance Limits the Benefit of Reorganising a Body Code
         for Morphology Transfer</a></td>
         <td class="n">sole author</td><td><span class="tag">draft</span> <a href="assets/papers/master_then_reorganise.pdf">[PDF]</a></td></tr>
-    <tr><td><a href="projects/gentle-care-robot.html">Gentle by Knowing: How Much Must a Care Robot Know About a Person to Lift Their Arm Safely?</a> <a href="assets/papers/gentle_care_robot.pdf">[PDF]</a></td>
-        <td class="n">sole author</td><td><span class="tag">draft &middot; not yet submitted</span></td></tr>
     <tr><td><a href="projects/capture-error.html">Identification of a Weak Muscle Group Tolerates More Joint-Angle Error than
         Kinematic Reliability Conventions Allow</a> &middot; with H.-T. Shih</td>
         <td class="n">first author</td><td><span class="tag">draft</span> <a href="assets/papers/capture_error_tolerance.pdf">[PDF]</a></td></tr>
@@ -463,7 +463,7 @@ server and none is published.</p>
   <dt>Location</dt><dd>Taipei, Taiwan</dd>
   <dt>Looking for</dt><dd>An M.S. place in robot learning / embodied AI</dd>
   <dt>CV</dt><dd><a href="assets/cv/WangMuHua_CV_2page.pdf">two-page PDF</a> &middot; <a href="assets/cv/WangMuHua_CV_full.pdf">full PDF</a> &middot; <a href="cv.html">web version</a></dd>
-  <dt>Available</dt><dd>Manuscript drafts, run artifacts and code, on request. None is published.</dd>
+  <dt>Available</dt><dd>Manuscripts, run artifacts and code, on request. None is published.</dd>
 </dl>
 
 <footer>

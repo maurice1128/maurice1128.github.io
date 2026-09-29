@@ -44,7 +44,7 @@
   <dl class="facts">
     <dt>Publications</dt>
     <dd><b>5 peer-reviewed conference papers</b> (1 first-author) &middot;
-        <b>9 manuscripts</b>, 5 of them sole-author &middot;
+        <b>9 manuscripts</b>, 5 of them sole-author and <b>4 submitted</b> &middot;
         <b>13 of the 14</b> available as PDFs from this site</dd>
 
     <dt>Systems</dt>
@@ -53,7 +53,8 @@
         led a <b>5-person team</b>, <b>6 media features</b></dd>
 
     <dt>Independent</dt>
-    <dd><b>Five sole-author robot-learning manuscripts</b> since Oct 2025 &mdash; design,
+    <dd><b>Five sole-author robot-learning manuscripts</b> since Oct 2025, <b>four submitted</b>
+        (IEEE RA-L, IEEE TCDS, TMLR, Frontiers in Robotics and AI) &mdash; design,
         implementation, experiments, statistics and writing done alone</dd>
 
     <dt>Education</dt>
@@ -130,11 +131,18 @@
       multiple-comparison correction, and the negative findings are reported as findings.</p>
       <ul>
         <li><a href="projects/gentle-care-robot.html"><b>Gentle by Knowing: How Much Must a Care Robot
-        Know About a Person to Lift Their Arm Safely?</b></a> A care robot can be gentle by reacting to measured force, or by predicting
-        how the person's body will respond before contact &mdash; which needs a model of that
-        person that can be wrong. Gentleness is defined on the recipient's side, as the involuntary
-        stretch-reflex response, and the robot's copy of the body is degraded along seven physical
-        axes over a 256-fold range.</li>
+        Know About a Person to Lift Their Arm Safely?</b></a> In a musculoskeletal simulation,
+        controllers that differ only in what they know about the person. A policy learned offline
+        from a coarse care record cut harmful outcomes from 110 to 25 of 300 new simulated persons
+        at a similar number of safe completions, largely by declining to lift; no force-threshold
+        guard reduced harm by significantly more than 5 percentage points.</li>
+
+        <li><a href="projects/motor-prior.html"><b>What a Motor Prior Is Worth: A Body Model
+        and a Teacher Compared to Convergence and Through Withdrawal.</b></a> Both priors under one
+        SAC learner on two MyoSuite bodies, twelve matched seeds, run until the arms stop moving.
+        The body model helps where the body is hard; guidance is only as good as its teacher; and
+        withdrawing either costs no dependence. Scoring at a fixed early endpoint instead reverses
+        the first two verdicts.</li>
 
         <li><a href="projects/hand-modularity.html"><b>Modularity Makes Dexterous Hands Learn
         Faster, Not Better.</b></a> Both promises of a modular motion model registered before the
@@ -147,13 +155,6 @@
         compositional generalisation. On public hand-motion data, correct labels that described only half of a trajectory
         removed the penalty at matched training volume (+17.0 % to +3.9 %); on TACO, a penalty predicted before its data
         were opened was found (+10.6 %).</li>
-
-        <li><a href="projects/motor-prior.html"><b>What a Motor Prior Is Worth: A Body Model
-        and a Teacher Compared to Convergence and Through Withdrawal.</b></a> Both priors under one
-        SAC learner on two MyoSuite bodies, twelve matched seeds, run until the arms stop moving.
-        The body model helps where the body is hard; guidance is only as good as its teacher; and
-        withdrawing either costs no dependence. Scoring at a fixed early endpoint instead reverses
-        the first two verdicts.</li>
 
         <li><a href="projects/body-codes.html"><b>Reparameterisation Invariance Limits the Benefit of Reorganising a Body
         Code for Morphology Transfer.</b></a> An algebraic identity rules out a whole family
@@ -293,22 +294,22 @@
   </ol>
 
   <h3 style="margin:2.2rem 0 .5rem">Manuscripts</h3>
-  <p class="note" style="margin-bottom:1rem">None of these is published, and none is posted to a preprint
-  server and none is published.</p>
+  <p class="note" style="margin-bottom:1rem">Four are submitted and awaiting a decision; the rest are drafts. None is
+  published, and none is posted to a preprint server.</p>
   <div class="tw">
     <table>
       <thead><tr><th>Manuscript</th><th>Role</th><th>Status</th></tr></thead>
       <tbody>
+        <tr><td><a href="projects/gentle-care-robot.html">Gentle by Knowing: How Much Must a Care Robot Know About a Person to Lift Their Arm Safely?</a> <a href="assets/papers/gentle_care_robot.pdf">[PDF]</a></td>
+            <td class="n">sole author</td><td><span class="tag hit">submitted &middot; Frontiers Robot. AI</span></td></tr>
         <tr><td><a href="projects/motor-prior.html">What a Motor Prior Is Worth: A Body Model and a Teacher Compared to Convergence and Through Withdrawal</a> <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[PDF]</a></td>
-            <td class="n">sole author</td><td><span class="tag">draft</span></td></tr>
-        <tr><td><a href="projects/hand-composition.html">A Hand-Motion Dataset Can Test Compositional Generalisation Only When Its Labels Describe the Scored Motion</a> <a href="assets/papers/hand_motion_composition_axes.pdf">[PDF]</a></td>
-        <td class="n">sole author</td><td><span class="tag">draft &middot; not yet submitted</span></td></tr>
+            <td class="n">sole author</td><td><span class="tag hit">submitted &middot; IEEE TCDS</span></td></tr>
         <tr><td><a href="projects/hand-modularity.html">Modularity Makes Dexterous Hands Learn Faster, Not Better</a> <a href="assets/papers/hand_modularity_faster_not_better.pdf">[PDF]</a></td>
-            <td class="n">sole author</td><td><span class="tag hit">under submission &middot; IEEE RA-L</span></td></tr>
+            <td class="n">sole author</td><td><span class="tag hit">submitted &middot; IEEE RA-L</span></td></tr>
+        <tr><td><a href="projects/hand-composition.html">A Hand-Motion Dataset Can Test Compositional Generalisation Only When Its Labels Describe the Scored Motion</a> <a href="assets/papers/hand_motion_composition_axes.pdf">[PDF]</a></td>
+        <td class="n">sole author</td><td><span class="tag hit">submitted &middot; TMLR</span></td></tr>
         <tr><td><a href="projects/body-codes.html">Reparameterisation Invariance Limits the Benefit of Reorganising a Body Code for Morphology Transfer</a></td>
             <td class="n">sole author</td><td><span class="tag hit">draft</span> <a href="assets/papers/master_then_reorganise.pdf">[PDF]</a></td></tr>
-        <tr><td><a href="projects/gentle-care-robot.html">Gentle by Knowing: How Much Must a Care Robot Know About a Person to Lift Their Arm Safely?</a> <a href="assets/papers/gentle_care_robot.pdf">[PDF]</a></td>
-            <td class="n">sole author</td><td><span class="tag">draft &middot; not yet submitted</span></td></tr>
         <tr><td><a href="projects/capture-error.html">Identification of a Weak Muscle Group Tolerates More Joint-Angle Error than Kinematic Reliability Conventions Allow</a> &middot; with H.-T. Shih</td>
             <td class="n">first author</td><td><span class="tag">draft</span> <a href="assets/papers/capture_error_tolerance.pdf">[PDF]</a></td></tr>
         <tr><td><a href="projects/joint-offset.html">Joint-Centre Offset Dominates 3D Position Error and Can Reverse Comparisons Between Markerless Triangulation Methods</a> &middot; with H.-T. Shih <a href="assets/papers/joint_centre_offset.pdf">[PDF]</a></td>

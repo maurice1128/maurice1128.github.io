@@ -136,6 +136,10 @@ figcaption,.cap{margin-top:6px;font-size:.93em;color:var(--ink-3);line-height:1.
 .cap b{color:var(--ink-2)}
 .figrow{display:grid;gap:18px 20px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
 .figrow.three{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+/* wide figure: a multi-panel video may break the 830px column, up to 1120px */
+.fig.wide{margin-left:calc(415px - min(50vw - 16px, 560px));
+  margin-right:calc(415px - min(50vw - 16px, 560px))}
+@media (max-width:862px){.fig.wide{margin-left:0;margin-right:0}}
 
 /* -- stat strip ------------------------------------------------ */
 .stats{display:grid;gap:0;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
