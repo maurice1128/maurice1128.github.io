@@ -54,7 +54,7 @@
 
     <dt>Independent</dt>
     <dd><b>Five sole-author robot-learning manuscripts</b> since Oct 2025, <b>four submitted</b>
-        (IEEE RA-L, IEEE TCDS, TMLR, Frontiers in Robotics and AI) &mdash; design,
+        (<i>Machine Learning</i>, IEEE RA-L, TMLR, IEEE TCDS) &mdash; design,
         implementation, experiments, statistics and writing done alone</dd>
 
     <dt>Education</dt>
@@ -64,8 +64,8 @@
     <dt>Status</dt>
     <dd>M.S. place at NYCU held on an approved leave of absence since May 2025.
         <b>I took the leave deliberately</b>, to move from measuring human movement to building
-        systems that act on it &mdash; taught full time through it while producing the three
-        manuscripts above, and now research full time. I am applying to start again with that
+        systems that act on it &mdash; taught full time through it while starting the
+        robot-learning work below, and now research full time. I am applying to start again with that
         work as the foundation.</dd>
   </dl>
 </section>
@@ -76,13 +76,15 @@
   <div style="color:var(--ink-2)">
     <p><b>Physical assistive robotics for long-term care.</b> I want to build robots that carry
     out contact-rich care tasks on a bedridden human body &mdash; starting with diaper changing, a
-    task that demands three things at once: perceiving a body that will not cooperate, predicting
-    how that body moves when it is touched, and manipulating deformable material safely against
-    skin.</p>
-    <p>My work so far covers all three. I have built and clinically validated a markerless human
-    motion capture system, written learned dynamics models of musculoskeletal bodies, and measured
-    whether compositional motion priors survive transfer to a robot hand. I am looking for a lab
-    where these can be assembled into a machine that does the task.</p>
+    task that demands three things at once: perceiving a body that will not cooperate, knowing
+    enough about that particular person to move them without harm, and handling deformable
+    material safely against skin.</p>
+    <p>My work so far covers the first two and has begun the third. I built and clinically
+    validated a markerless human motion capture system. I have studied, in musculoskeletal
+    simulation, what a robot must know about a person before it moves their limb and what a
+    learned model of a body is worth to a learner. I am now building a simulation platform for
+    robot-assisted diaper changing. I am looking for a lab where these can be assembled into a
+    machine that does the task.</p>
   </div>
 </section>
 
@@ -137,11 +139,12 @@
     <div class="when">Oct 2025 &ndash; present</div>
     <div>
       <h3>Robot learning and embodied AI &mdash; independent research</h3>
-      <p class="where">Sole author on all five manuscripts</p>
-      <p>A self-directed programme on one question: how does an agent acquire a model of a body,
-      and what does that model actually buy? Design, implementation, experiments, statistics and
-      writing done independently. Every result carries adversarial controls and
-      multiple-comparison correction, and the negative findings are reported as findings.</p>
+      <p class="where">Sole author on five manuscripts, four submitted</p>
+      <p>A self-directed programme, without an advisor or a lab, on one question: what must a
+      robot know about a body, its own or the one it is touching, and what does that knowledge
+      buy? Study design, experiments, statistics and verification are my own. Each result is
+      tested against controls built to break it, and what it did not show is reported as a
+      finding.</p>
       <ul>
         <li><a href="projects/gentle-care-robot.html"><b>Gentle by Knowing: How Much Must a Care Robot
         Know About a Person to Lift Their Arm Safely?</b></a> In a musculoskeletal simulation,
@@ -151,11 +154,12 @@
         guard reduced harm by significantly more than 5 percentage points.</li>
 
         <li><a href="projects/motor-prior.html"><b>What a Motor Prior Is Worth: A Body Model
-        and a Teacher Compared to Convergence and Through Withdrawal.</b></a> Both priors under one
-        SAC learner on two MyoSuite bodies, twelve matched seeds, run until the arms stop moving.
-        The body model helps where the body is hard; guidance is only as good as its teacher; and
-        withdrawing either costs no dependence. Scoring at a fixed early endpoint instead reverses
-        the first two verdicts.</li>
+        and a Teacher Compared to Convergence and Through Withdrawal.</b></a> A babble-learned frozen
+        body model against a distilled teacher under one SAC learner on six muscle-driven bodies,
+        at least twelve matched seeds per condition, trained to a checked plateau. Once training
+        has converged, a learner that lost its teacher is never detectably worse than one never
+        guided; the body model beats model-free learning on four of six bodies and a random model
+        on all six.</li>
 
         <li><a href="projects/hand-modularity.html"><b>Modularity Makes Dexterous Hands Learn
         Faster, Not Better.</b></a> Both promises of a modular motion model registered before the
@@ -309,7 +313,7 @@
       <thead><tr><th>Manuscript</th><th>Role</th><th>Status</th></tr></thead>
       <tbody>
         <tr><td><a href="projects/gentle-care-robot.html">Gentle by Knowing: How Much Must a Care Robot Know About a Person to Lift Their Arm Safely?</a> <a href="assets/papers/gentle_care_robot.pdf">[PDF]</a></td>
-            <td class="n">sole author</td><td><span class="tag hit">submitted &middot; Frontiers Robot. AI</span></td></tr>
+            <td class="n">sole author</td><td><span class="tag hit">submitted &middot; Machine Learning</span></td></tr>
         <tr><td><a href="projects/motor-prior.html">What a Motor Prior Is Worth: A Body Model and a Teacher Compared to Convergence and Through Withdrawal</a> <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[PDF]</a></td>
             <td class="n">sole author</td><td><span class="tag hit">submitted &middot; IEEE TCDS</span></td></tr>
         <tr><td><a href="projects/hand-modularity.html">Modularity Makes Dexterous Hands Learn Faster, Not Better</a> <a href="assets/papers/hand_modularity_faster_not_better.pdf">[PDF]</a></td>
