@@ -62,29 +62,35 @@
 <h2 id="research">Research</h2>
 
 <p class="divider">&mdash; Robot learning and embodied AI &mdash;</p>
-<p class="note" style="margin-top:-8px">Independent, October 2025 onward. Sole author on all
-five. Full drafts on request.</p>
+<p class="note" style="margin-top:-8px">Independent, October 2025 onward. Sole author throughout;
+full drafts of the manuscripts on request. Ordered by how directly each bears on the task: contact
+safety on a person, then the hand that has to do the work, then the body model behind both.</p>
 
 <div class="entry">
   <div class="thumb">
-    <video src="assets/motor-prior/thumb.mp4" autoplay muted loop playsinline
-           preload="metadata"></video>
+    <video src="assets/gentle-care-robot/fixed_vs_learned.mp4"
+           poster="assets/gentle-care-robot/fixed_vs_learned_poster.png"
+           autoplay muted loop playsinline preload="metadata"></video>
   </div>
   <div class="meta">
-    <a class="title" href="projects/motor-prior.html">What a Motor Prior Is Worth: A Body Model
-      and a Teacher Compared to Convergence and Through Withdrawal</a>
+    <a class="title" href="projects/gentle-care-robot.html">Gentle by Knowing: How Much Must a Care
+      Robot Know About a Person to Lift Their Arm Safely?</a>
     <div class="authors"><b>Mu-Hua Wang</b></div>
-    <div class="venue">Manuscript, 2026 &middot; prepared for IEEE TCDS</div>
-    <p class="desc">A frozen forward model learned from reward-free motor babbling, and a distilled
-    teacher, as priors for one SAC learner on two MyoSuite bodies, twelve matched seeds, run until
-    the arms stop moving. The body model helps where the body is hard; guidance is only as good as
-    its teacher; withdrawing either costs no dependence.</p>
-    <p class="against"><b>Scope:</b> the elbow body-model advantage is a transient of the first 12k and is not
-    detected at 100k. The finger teacher is within 3.2&nbsp;mm of doing nothing, so the finger
-    guidance results describe distillation toward a near-no-op target.</p>
+    <div class="venue">Brief Research Report prepared for Frontiers in Robotics and AI (not yet submitted)</div>
+    <p class="desc">Many care recipients cannot move a shoulder or elbow freely, and lifting their
+    forearm can press that joint into the end of its range. In a musculoskeletal simulation,
+    controllers that differ only in what they know about the person are compared, from nothing to
+    perfect knowledge. A policy learned offline in simulation from a coarse care record reduced
+    harmful outcomes from 110 to 25 of 300 new simulated persons at a similar number of safe
+    completions; no force-threshold guard reduced harm by significantly more than 5 percentage
+    points.</p>
+    <p class="against"><b>Scope:</b> simulation only; harm is a mechanical exposure proxy, not pain
+    or injury. With half of the restrictions missing from the record, the policy still harmed 59%
+    as many persons as a fixed lift, and unrecorded persons were harmed at the fixed-lift rate.</p>
     <div class="links">
-      <a href="projects/motor-prior.html">[Project page]</a>
-      <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[Paper]</a>
+      <a href="projects/gentle-care-robot.html">[Project page]</a>
+      <a href="assets/papers/gentle_care_robot.pdf">[Paper]</a>
+      <a href="https://github.com/maurice1128/gentle-by-knowing">[Code]</a>
     </div>
   </div>
 </div>
@@ -110,6 +116,30 @@ five. Full drafts on request.</p>
     <div class="links">
       <a href="projects/hand-modularity.html">[Project page]</a>
       <a href="assets/papers/hand_modularity_faster_not_better.pdf">[Paper]</a>
+    </div>
+  </div>
+</div>
+
+<div class="entry">
+  <div class="thumb">
+    <video src="assets/motor-prior/thumb.mp4" autoplay muted loop playsinline
+           preload="metadata"></video>
+  </div>
+  <div class="meta">
+    <a class="title" href="projects/motor-prior.html">What a Motor Prior Is Worth: A Body Model
+      and a Teacher Compared to Convergence and Through Withdrawal</a>
+    <div class="authors"><b>Mu-Hua Wang</b></div>
+    <div class="venue">Manuscript, 2026 &middot; prepared for IEEE TCDS</div>
+    <p class="desc">A frozen forward model learned from reward-free motor babbling, and a distilled
+    teacher, as priors for one SAC learner on two MyoSuite bodies, twelve matched seeds, run until
+    the arms stop moving. The body model helps where the body is hard; guidance is only as good as
+    its teacher; withdrawing either costs no dependence.</p>
+    <p class="against"><b>Scope:</b> the elbow body-model advantage is a transient of the first 12k and is not
+    detected at 100k. The finger teacher is within 3.2&nbsp;mm of doing nothing, so the finger
+    guidance results describe distillation toward a near-no-op target.</p>
+    <div class="links">
+      <a href="projects/motor-prior.html">[Project page]</a>
+      <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[Paper]</a>
     </div>
   </div>
 </div>
@@ -165,25 +195,25 @@ five. Full drafts on request.</p>
 
 <div class="entry">
   <div class="thumb">
-    <video src="assets/gentle-other/explainer.mp4" autoplay muted loop playsinline
-           preload="metadata"></video>
+    <video src="assets/caregiving-safety-sim/supine_wide.mp4"
+           poster="assets/caregiving-safety-sim/supine_wide_poster.png"
+           autoplay muted loop playsinline preload="metadata"></video>
   </div>
   <div class="meta">
-    <a class="title" href="projects/gentle-other-model.html">Gentle by Knowing: How Much Must a Care Robot
-      Know About a Person to Lift Their Arm Safely?</a>
+    <a class="title" href="projects/caregiving-safety-sim.html">Measuring Whether a Care Robot Hurts
+      the Patient: A Simulation Platform for Robot-Assisted Diaper Changing and Perineal Cleaning</a>
     <div class="authors"><b>Mu-Hua Wang</b></div>
-    <div class="venue">Draft, 2026</div>
-    <p class="desc">A care robot can be gentle by reacting to the force it measures, or by
-    predicting how the person's body will respond before it touches. The second needs a model of
-    that person, and the model can be wrong. Gentleness is defined on the recipient's side &mdash;
-    the involuntary stretch-reflex response of the muscles the contact lengthens &mdash; and the
-    robot's copy of the body is then degraded along seven physical axes over a 256-fold range.</p>
-    <p class="against"><b>Scope:</b> the harm proxy is a simulated stretch reflex with no human validation; where
-    descending control is altered it reads out neurological state rather than contact
-    noxiousness. The end-effector is an idealised joint chain, not a manipulator.</p>
+    <div class="venue">Work in progress, 2026 &middot; simulation platform, not a manuscript</div>
+    <p class="desc">A MuJoCo simulation that scores robot-assisted excretion care on three axes at
+    once &mdash; is the garment on, is the perineum cleaned, is the patient injured &mdash; on a
+    physically settled SMPL-X patient with real pelvic bones and a converged soft-tissue model. After
+    285 simulated minutes supine, changing the mattress from rigid to 30&nbsp;kPa foam lowers skin
+    pressure by about 15&nbsp;% but shrinks the volume of deep tissue above the 285-minute strain
+    level from 69 to 4&nbsp;cm&sup3;.</p>
+    <p class="against"><b>Scope:</b> simulation only, on a statistical body model; results are
+    model-internal and not validated against measurements on people. Ongoing.</p>
     <div class="links">
-      <a href="projects/gentle-other-model.html">[Project page]</a>
-      <a href="assets/papers/gentle_other_model.pdf">[Paper]</a>
+      <a href="projects/caregiving-safety-sim.html">[Project page]</a>
     </div>
   </div>
 </div>
@@ -406,8 +436,8 @@ server and none is published.</p>
     <tr><td><a href="projects/body-codes.html">Reparameterisation Invariance Limits the Benefit of Reorganising a Body Code
         for Morphology Transfer</a></td>
         <td class="n">sole author</td><td><span class="tag">draft</span> <a href="assets/papers/master_then_reorganise.pdf">[PDF]</a></td></tr>
-    <tr><td><a href="projects/gentle-other-model.html">Gentle by Knowing: How Much Must a Care Robot Know About a Person to Lift Their Arm Safely?</a> <a href="assets/papers/gentle_other_model.pdf">[PDF]</a></td>
-        <td class="n">sole author</td><td><span class="tag">draft</span></td></tr>
+    <tr><td><a href="projects/gentle-care-robot.html">Gentle by Knowing: How Much Must a Care Robot Know About a Person to Lift Their Arm Safely?</a> <a href="assets/papers/gentle_care_robot.pdf">[PDF]</a></td>
+        <td class="n">sole author</td><td><span class="tag">draft &middot; not yet submitted</span></td></tr>
     <tr><td><a href="projects/capture-error.html">Identification of a Weak Muscle Group Tolerates More Joint-Angle Error than
         Kinematic Reliability Conventions Allow</a> &middot; with H.-T. Shih</td>
         <td class="n">first author</td><td><span class="tag">draft</span> <a href="assets/papers/capture_error_tolerance.pdf">[PDF]</a></td></tr>

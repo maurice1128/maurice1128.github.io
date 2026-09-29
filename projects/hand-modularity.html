@@ -1,124 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Modularity Makes Dexterous Hands Learn Faster, Not Better &mdash; Mu-Hua Wang</title>
-<meta name="description" content="A MotionBricks-style keyframe interface as the action space of a dexterous policy learns held-out skill sequences far better early, but a continuous latent catches up by the end. Every prediction registered before the runs.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="../css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Faster, Not Better</title>
+<meta name="description" content="Project page: modularity makes simulated dexterous hands learn faster, not better.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --ground: #F2F4F3;
+    --panel: #FFFFFF;
+    --ink: #17212B;
+    --muted: #525D66;
+    --rule: #D3D9D8;
+    --mod: #2446E0;      /* modular arm */
+    --flat: #56683C;     /* flat / continuous arm */
+    --plain: #6B757B;    /* no prior / arm A */
+    --on-bar: #FFFFFF;
+    --yes: #23613F;
+    --no: #9E3431;
+    --part: #7A5710;
+    --chip-yes: #E3F1E9;
+    --chip-no: #F6E4E3;
+    --chip-part: #F5ECD9;
+    --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --ground: #0F1518; --panel: #161E22; --ink: #E4EAEA; --muted: #A3B0B6; --rule: #2A3539;
+      --mod: #8098FF; --flat: #A9BD86; --plain: #9AA5AA; --on-bar: #0F1518;
+      --yes: #7CC79E; --no: #E58A86; --part: #D9B266;
+      --chip-yes: #1C3328; --chip-no: #3A2221; --chip-part: #372D18;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ground: #0F1518; --panel: #161E22; --ink: #E4EAEA; --muted: #A3B0B6; --rule: #2A3539;
+    --mod: #8098FF; --flat: #A9BD86; --plain: #9AA5AA; --on-bar: #0F1518;
+    --yes: #7CC79E; --no: #E58A86; --part: #D9B266;
+    --chip-yes: #1C3328; --chip-no: #3A2221; --chip-part: #372D18;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font-family: var(--body); font-size: 17px; line-height: 1.6;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; padding-block: 48px 72px; }
+  a { color: var(--mod); text-underline-offset: 3px; }
+  a:focus-visible, video:focus-visible { outline: 2px solid var(--mod); outline-offset: 2px; }
+
+  .eyebrow {
+    font-family: var(--mono); font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 14px;
+  }
+  h1 {
+    font-family: var(--display); font-stretch: 78%; font-weight: 800;
+    font-size: clamp(36px, 7vw, 62px); line-height: 1.03; letter-spacing: -.01em;
+    margin: 0 0 18px; text-wrap: balance;
+  }
+  h1 .not { color: var(--muted); }
+  .lede { font-size: 19px; max-width: 62ch; margin: 0 0 22px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px 22px; font-family: var(--mono); font-size: 13px; color: var(--muted); }
+  .meta a { font-weight: 500; }
+
+  h2 {
+    font-family: var(--display); font-stretch: 85%; font-weight: 700; font-size: 26px; line-height: 1.15;
+    margin: 64px 0 10px; text-wrap: balance;
+  }
+  h3 { font-family: var(--display); font-stretch: 90%; font-weight: 600; font-size: 18px; margin: 0 0 6px; }
+  p { margin: 0 0 14px; max-width: 66ch; }
+  .num { font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: .92em; }
+
+  figure { margin: 26px 0 8px; }
+  figcaption { font-size: 14px; color: var(--muted); margin-top: 8px; max-width: 66ch; }
+
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 22px; }
+  @media (max-width: 640px) { .two { grid-template-columns: 1fr; } }
+  .layer { border-top: 2px solid var(--ink); padding-top: 12px; }
+  .layer .tag { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+  .layer .verdict { font-family: var(--display); font-stretch: 85%; font-weight: 700; font-size: 21px; margin: 4px 0 8px; }
+
+  /* Q10 bars: full track = 100 of 400 episodes */
+  .bars { display: grid; gap: 18px; margin-top: 18px; }
+  .group h3 { font-size: 15px; color: var(--muted); font-weight: 600; margin-bottom: 8px; }
+  .bar { display: grid; grid-template-columns: minmax(150px, 34%) 1fr; gap: 12px; align-items: center; margin: 6px 0; }
+  .bar .name { font-size: 15px; line-height: 1.3; }
+  .bar .track { position: relative; height: 26px; border-left: 1px solid var(--rule); }
+  .bar .fill { height: 100%; border-radius: 0 2px 2px 0; min-width: 2px; }
+  .bar .val { position: absolute; top: 50%; transform: translateY(-50%); font-family: var(--mono); font-size: 13px; padding-left: 8px; white-space: nowrap; }
+  .bar .val.inside { color: var(--on-bar); padding-left: 0; }
+  .fill.a { background: var(--plain); } .fill.b { background: var(--flat); } .fill.c { background: var(--mod); }
+  .scale { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-top: 4px; }
+  @media (max-width: 520px) { .bar { grid-template-columns: 1fr; gap: 4px; } }
+
+  /* conditions */
+  .tablewrap { overflow-x: auto; margin-top: 18px; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 10px 10px 0; border-bottom: 1px solid var(--rule); }
+  th { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  td:first-child { font-family: var(--display); font-stretch: 90%; font-weight: 600; width: 30%; }
+  .chip { display: inline-block; font-family: var(--mono); font-size: 11.5px; letter-spacing: .05em; text-transform: uppercase; padding: 1px 7px; border-radius: 3px; margin-right: 6px; }
+  .chip.yes { background: var(--chip-yes); color: var(--yes); }
+  .chip.no { background: var(--chip-no); color: var(--no); }
+  .chip.part { background: var(--chip-part); color: var(--part); }
+
+  .video video { display: block; width: 100%; height: auto; border-radius: 2px; background: #0B0F12; }
+  .wide { margin-left: calc(50% - min(50vw, 560px) + 10px); margin-right: calc(50% - min(50vw, 560px) + 10px); }
+  @media (max-width: 800px) { .wide { margin-left: 0; margin-right: 0; } }
+  .img .frame { background: #FFFFFF; border: 1px solid var(--rule); padding: 10px; border-radius: 2px; }
+  .img img { display: block; margin: 0 auto; max-width: 100%; height: auto; }
+
+  footer { margin-top: 72px; padding-top: 16px; border-top: 1px solid var(--rule); font-size: 14px; color: var(--muted); }
+  @media (prefers-reduced-motion: no-preference) {
+    .fill { transform-origin: left; animation: grow .7s ease-out both; }
+    @keyframes grow { from { transform: scaleX(.001); } to { transform: scaleX(1); } }
+  }
+</style>
 </head>
 <body>
-<div class="container">
+<div class="wrap">
+  <p class="eyebrow back-to-site" style="margin-bottom:22px">
+    <a href="../index.html">&larr; Mu-Hua (Maurice) Wang</a> &nbsp;·&nbsp;
+    <a href="../cv.html">CV</a></p>
+  <header>
+    <p class="eyebrow">Dexterous manipulation · simulation · pre-registered comparisons · under double-anonymous review</p>
+    <h1>Modularity makes simulated dexterous hands learn faster, <span class="not">not better.</span></h1>
+    <p class="lede">MotionBricks builds motion from reusable parts. We tested both of its layers on simulated dexterous hands, registering the main comparisons before running them. A modular keyframe interface gives an early lead that a non-modular continuous latent closes, and training skills separately does not help. The one gain that survived is choosing the best policy for each stage, and it works on policies trained flat.</p>
+    <div class="meta">
+      <span>Anonymous authors</span>
+      <a href="../assets/papers/hand_modularity_faster_not_better.pdf">Paper (PDF)</a>
+      <span>Code and pre-registration log: on acceptance</span>
+    </div>
+    <figure class="video wide">
+      <video src="../assets/hand-modularity/arms.mp4" poster="../assets/hand-modularity/arms_poster.jpg" muted loop playsinline controls preload="metadata" data-autoplay aria-label="Three policies on the same test start, left to right A, B, C: grasp the ball, carry it to a target, carry it to a second target."></video>
+      <figcaption>Same start, three ways to run grasp → carry → carry again (left to right: A, B, C). B, the best flat policy for each stage, finishes all three stages in 3.3 s. A, one flat policy for every stage, grasps the ball but never delivers it before the 14 s limit; C, separately trained skills, never completes the grasp. This is one test episode, the first on which B finished all three stages, not a statistic: B did so in 47 of 400 test episodes. The counts are below.</figcaption>
+    </figure>
+  </header>
 
-<nav>
-  <ul>
-    <li class="back"><a href="../index.html">&larr; Home</a></li>
-    <li><a href="#promises">Two promises</a></li>
-    <li><a href="#results">What came out</a></li>
-    <li><a href="#instrument">The instrument</a></li>
-    <li><a href="../cv.html">CV</a></li>
-  </ul>
-</nav>
+  <section>
+    <h2>The early lead closes</h2>
+    <p>Each hand-motion prior became the action space of a PPO policy on a simulated Shadow Hand holding a cube under changing tilts. Policies trained on two-skill sequences and were scored on three-skill sequences they never saw.</p>
+    <figure class="img">
+      <div class="frame"><img src="../assets/hand-modularity/learning_curve.png" alt="Success against training frames for the keyframe interface, the continuous latent and plain PPO. The keyframe interface rises first; the other two catch up on the training sequences by about 2.5 to 5 million frames." width="680" height="430"></div>
+      <figcaption>Lines: success on the training sequences, mean and standard error over 10 seeds. Dots: success on the held-out sequences for the same seeds at 1.5 M and 5 M frames. At 1.5 M frames the keyframe interface won on held-out sequences in 17 of 20 seeds (0.59 against 0.22, declared). By 5 M frames the continuous latent scored 0.49 against 0.44; the keyframe interface had fallen from 0.65 on these seeds, as training drifted to holding and releasing half the time.</figcaption>
+    </figure>
+    <figure class="video">
+      <video src="../assets/hand-modularity/cube.mp4" poster="../assets/hand-modularity/cube_poster.jpg" muted loop playsinline controls preload="metadata" data-autoplay aria-label="Left, keyframe interface; right, continuous latent. Same held-out sequence at 1.5 million frames."></video>
+      <figcaption>At 1.5 M frames, on a held-out sequence (hold under a y tilt, hold under an x tilt, release). Left, the keyframe interface holds both tilts and releases; right, the continuous latent loses the cube at 1.8 s, during the first hold, which also appears in training. RL seed 13, whose success is closest to the 20-seed means; the episode is the first of 50 evaluation episodes in which the keyframe policy succeeds and the latent fails (33 of the 50 were like this). Real time.</figcaption>
+    </figure>
+    <p>The lead also stayed with the cube: on a heavier cube, a sphere and a cylinder it shrank to <span class="num">+0.18</span>, <span class="num">+0.02</span> and <span class="num">+0.01</span>, and the pre-registered pooled test failed (<span class="num">p = 0.067</span>).</p>
+  </section>
 
-<header>
-  <p class="note">Under submission to IEEE RA-L &middot; 2026 &middot; sole author</p>
-  <h1>Modularity Makes Dexterous Hands Learn Faster, Not Better</h1>
-  <p class="kicker">Modular motion models promise a hand that learns faster <em>and</em> reaches
-  further. Both promises were registered before the runs. Only the first survives.</p>
-  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; National Yang Ming Chiao Tung
-  University</p>
-  <div class="links">
-    <a href="../assets/papers/hand_modularity_faster_not_better.pdf">[Paper (PDF)]</a>
-    <a href="../index.html">[All projects]</a>
-  </div>
-  <p class="note">Not posted to any preprint server. The hosted PDF is the anonymised submission
-  build, so it carries no author block.</p>
-</header>
+  <section>
+    <h2>Both of MotionBricks' layers, tested</h2>
+    <div class="two">
+      <div class="layer">
+        <div class="tag">Motion level · poses joined by a learned in-betweener</div>
+        <div class="verdict">Faster, not higher</div>
+        <p>The same target poses joined by straight lines never learned to release, so the learned in-betweener carries the early gain. On Adroit (exploratory, one seed per task), priors did not beat PPO where PPO learned (hammer, pen), and did not unlock tasks it could not (door, relocate).</p>
+      </div>
+      <div class="layer">
+        <div class="tag">Skill level · units that act, chained</div>
+        <div class="verdict">No gain from separate training</div>
+        <p>Adroit relocate, extended into grasp then carry, with the 25 human demonstrations of D4RL and behaviour cloning. PPO from scratch never completed a strict carry. With a stage that counted as done at a single step, a carry skill flung the ball, and the ball then fell within about 18 steps in 98 of 100 episodes, whatever ran next. Every stage now has to hold for 25 steps.</p>
+      </div>
+    </div>
+    <figure class="video">
+      <video src="../assets/hand-modularity/fling.mp4" poster="../assets/hand-modularity/fling_poster.jpg" muted loop playsinline controls preload="metadata" data-autoplay aria-label="A carry skill throws the ball through the target and is counted as a success."></video>
+      <figcaption>The fling, shown at quarter speed. Under a one-step success criterion, a PPO carry skill learned to throw the ball through the target, at 3.0 to 5.4 m/s at the counted step in these three episodes (median 3.7 m/s over all episodes), and each throw counted as a success. After the counted step the hand is driven to its neutral pose so the ball's path stays visible. This policy predates the strict 25-step criterion and is used in no reported result.</figcaption>
+    </figure>
+  </section>
 
-<hr>
-<section id="promises">
-  <h2>Abstract</h2>
-  <div style="color:var(--ink-2)">
-    <p>Modular motion models such as MotionBricks build motion from reusable parts, and the idea is
-    attractive for dexterous hands: a hand that learns in modules should learn faster and reach
-    further. We test both promises, with every prediction registered before the runs.</p>
-    <p>Used as the action space of a dexterous policy, a MotionBricks-style keyframe interface
-    learns held-out skill sequences far better early in training (0.59 against 0.22 success) but a
-    continuous latent catches up by the end (0.49 against 0.44). Separately learned skills do no
-    better than one flat policy trained on the same demonstrations (45 against 61 of 400 test
-    episodes), and a hand-off defined too loosely let one skill fling the ball out of the next
-    one's reach. The one gain, choosing the best policy for each stage (97 against 61), needs no
-    separate training.</p>
-    <p>Modularity makes dexterous hands learn faster, not better, and four conditions explain when
-    it would pay. To choose which motion data to test on, we also built an instrument for whether
-    hand-motion priors generalize to unseen combinations: over nine axes of three datasets,
-    difficulty appears only where the two factors interact, a statistic computed on raw poses in
-    minutes.</p>
-  </div>
-</section>
+  <section>
+    <h2>Training or selection?</h2>
+    <p>A pre-registered test on fresh seeds, with 20 trainings per side and 400 test episodes never used for any choice. A is the best of 20 flat policies, used for every stage. B uses the same 20 flat policies, the best grasper for the grasp and the best carrier for every carry. C trains 10 grasp skills and 10 carry skills separately and chains the best of each.</p>
+    <div class="bars" role="img" aria-label="Episodes completing every stage, of 400. Two stages: A 61, B 97, C 45. Three stages: A 12, B 47, C 6.">
+      <div class="group">
+        <h3>Grasp, then carry</h3>
+        <div class="bar"><div class="name">A · best flat policy, every stage</div><div class="track"><div class="fill a" style="width:61%"></div><span class="val" style="left:61%">61 / 400</span></div></div>
+        <div class="bar"><div class="name">B · best flat policy per stage</div><div class="track"><div class="fill b" style="width:97%"></div><span class="val inside" style="left:calc(97% - 76px)">97 / 400</span></div></div>
+        <div class="bar"><div class="name">C · separately trained skills</div><div class="track"><div class="fill c" style="width:45%"></div><span class="val" style="left:45%">45 / 400</span></div></div>
+      </div>
+      <div class="group">
+        <h3>Grasp, carry, carry again</h3>
+        <div class="bar"><div class="name">A · best flat policy, every stage</div><div class="track"><div class="fill a" style="width:12%"></div><span class="val" style="left:12%">12 / 400</span></div></div>
+        <div class="bar"><div class="name">B · best flat policy per stage</div><div class="track"><div class="fill b" style="width:47%"></div><span class="val" style="left:47%">47 / 400</span></div></div>
+        <div class="bar"><div class="name">C · separately trained skills</div><div class="track"><div class="fill c" style="width:6%"></div><span class="val" style="left:6%">6 / 400</span></div></div>
+      </div>
+      <div class="scale">Bar length: episodes that completed every stage; the full track is 100 of the 400 test episodes.</div>
+    </div>
+    <p style="margin-top:18px">Our declared prediction, C above A, failed in the wrong direction (<span class="num">p = 0.12</span>), and so did the prediction that C would match B. Per stage, C lost at the grasp (<span class="num">0.57</span> against A's <span class="num">0.77</span>), while its carry after a grasp matched A's (<span class="num">0.20</span>). B won through the carry: its carrier completed <span class="num">0.34</span> of carries after a grasp, against A's <span class="num">0.20</span>. B beat A at two stages (<span class="num">p = 0.002</span>) and nearly quadrupled it at three (<span class="num">p &lt; 10⁻⁵</span>). The benefit belongs to modular deployment, not modular training. <span id="followup">B chose from 20 policies per stage and C from 10; a check with matched pools is running.</span></p>
+  </section>
 
-<hr>
-<section id="results">
-  <h2>The two promises, scored separately</h2>
-  <div class="stats">
-    <div><span class="big">0.59 &rarr; 0.49</span>
-      <h3>keyframe interface</h3>
-      <p>Held-out skill sequences: far ahead early, then flat.</p></div>
-    <div><span class="big">0.22 &rarr; 0.44</span>
-      <h3>continuous latent</h3>
-      <p>Starts far behind and <b>catches up by the end</b>. The speed promise holds; the reach
-      promise does not.</p></div>
-    <div><span class="big">45 vs 61</span>
-      <h3>of 400 test episodes</h3>
-      <p>Separately learned skills against one flat policy on the same demonstrations. Modular is
-      not ahead.</p></div>
-    <div><span class="big">97 vs 61</span>
-      <h3>the one real gain</h3>
-      <p>Choosing the best policy for each stage &mdash; and it <b>needs no separate
-      training</b>.</p></div>
-  </div>
+  <section>
+    <h2>When modularity pays</h2>
+    <p>A chain of modules succeeds with probability ∏ P(module i | end states of module i−1), so every benefit is paid for at the hand-offs. We formulated four conditions during the study and offer them as hypotheses. MotionBricks meets all four in animation; each dexterous layer we tested fails at least one.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Condition</th><th>Motion level</th><th>Skill level</th></tr></thead>
+        <tbody>
+          <tr><td>Solution lies inside the modules</td><td><span class="chip part">partly</span>the grip needs 83°, OakInk and TACO reach 73–76°; a residual covers the gap</td><td><span class="chip yes">yes</span>skills learned on the task</td></tr>
+          <tr><td>Clean hand-offs</td><td><span class="chip yes">yes</span>poses only</td><td><span class="chip part">if enforced</span>a one-step stage let carry fling the ball</td></tr>
+          <tr><td>Something to amortise</td><td><span class="chip part">partly</span>faster exploration, one task</td><td><span class="chip yes">yes</span>flat PPO scores 0</td></tr>
+          <tr><td>A flat learner cannot match it</td><td><span class="chip no">no</span>caught up at 5 M frames</td><td><span class="chip no">no</span>flat policies selected per stage did best</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-  <div class="box mark" style="margin-top:1.4rem">
-    <h3>What went wrong at the seam</h3>
-    <p>A hand-off defined too loosely let one skill <b>fling the ball out of the next one's
-    reach</b>. The failure is at the join between modules, which is exactly the place a modular
-    design is supposed to buy you something.</p>
-  </div>
-</section>
+  <section>
+    <h2>Where is recombination hard in hand-motion data?</h2>
+    <p>Testing recombination needs data where recombining is actually hard. We train two priors that differ only in whether they saw a held-out pairing of two labels (say, object category and intent), score both on the same trajectories, and read the difference against a synthetic control whose true value is zero. Over nine axes of three public datasets, difficulty appeared only where the two labels interact in the poses, a statistic computed in minutes. Interaction was not sufficient, every axis with difficulty came from one dataset (OakInk-Image), and the reading against the control was chosen after the declared test against zero.</p>
+    <figure class="img">
+      <div class="frame"><img src="../assets/hand-modularity/difficulty.png" alt="Bar chart of compositional difficulty for nine dataset axes and two synthetic controls." width="640" height="480"></div>
+      <figcaption>Compositional difficulty per axis, mean and standard error over seeds. Faded bars are indistinguishable from the zero-truth control (red dotted line).</figcaption>
+    </figure>
+  </section>
 
-<hr>
-<section id="instrument">
-  <h2>Choosing what to test on</h2>
-  <p class="desc">Picking the dataset is not neutral: a benchmark whose labels carry no
-  compositional difficulty cannot answer the question. So the paper also builds an instrument for
-  it &mdash; over <b>nine axes of three datasets</b>, difficulty appears only where the two factors
-  interact, from a statistic computed on raw poses in minutes, before anything is trained.</p>
-  <p class="note">That instrument, and what it says about how a hand-motion dataset has to be
-  labelled before it can test compositional generalisation at all, is developed in a
-  <a href="hand-composition.html">separate paper</a>.</p>
-</section>
-
-<hr>
-<section>
-  <h2>Scope</h2>
-  <div class="box">
-    <ul>
-      <li>One prior architecture family (MotionBricks-style keyframes) against one continuous
-      latent, on one hand.</li>
-      <li>The advantage that survives &mdash; per-stage policy selection &mdash; is not an argument
-      for modular <em>training</em>, since it needs none.</li>
-      <li>This page states the paper's abstract-level results only. The full conditions under which
-      modularity would pay are in the manuscript.</li>
-    </ul>
-  </div>
-</section>
-
-<footer>
-  <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang &middot;
-  <a href="mailto:may.be13@nycu.edu.tw">may.be13@nycu.edu.tw</a></p>
-</footer>
-
+  <footer>
+    Anonymous submission. Everything shown is in simulation. Author names, code and the full pre-registration log will be added after review.
+  </footer>
 </div>
+<script>
+  (function () {
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    document.querySelectorAll("video[data-autoplay]").forEach(function (v) {
+      if (reduce) return;
+      v.autoplay = true;
+      var p = v.play();
+      if (p && p.catch) p.catch(function () {});
+    });
+  })();
+</script>
 </body>
 </html>
