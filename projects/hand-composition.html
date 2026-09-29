@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Which Hand-Motion Composition Axes Are Worth Measuring &mdash; Mu-Hua Wang</title>
-<meta name="description" content="Modular motion priors assume novel recombinations of primitives stay usable. This builds the measurement — six axes, three hand datasets, five gates — and reports the control that removed its own headline result.">
+<title>Labels Must Describe the Scored Motion &mdash; Mu-Hua Wang</title>
+<meta name="description" content="Held-out label combinations are the usual test of compositional generalisation. On hand-motion data the test works only when each label describes the motion that is scored.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -14,383 +14,92 @@
 <nav>
   <ul>
     <li class="back"><a href="../index.html">&larr; Home</a></li>
-    <li><a href="#premise">Premise</a></li>
-    <li><a href="#finding">Finding</a></li>
-    <li><a href="#gates">Gates</a></li>
-    <li><a href="#transfer">Hardware</a></li>
-    <li><a href="#notclaimed">What we do not claim</a></li>
+    <li><a href="#idea">The idea</a></li>
+    <li><a href="#result">The result</a></li>
+    <li><a href="#taco">A test on new data</a></li>
+    <li><a href="#checked">How it was checked</a></li>
     <li><a href="../cv.html">CV</a></li>
   </ul>
 </nav>
 
 <header>
-  <p class="note">Under submission to IEEE RA-L &middot; 2026 &middot; sole author</p>
-  <h1>Which Hand-Motion Composition Axes<br>
-  Are Worth Measuring</h1>
-  <p class="kicker">Modular motion priors rest on a premise that is
-  almost never measured. This is the measurement &mdash; and the control that took the headline
-  back.</p>
-  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; National Yang Ming Chiao Tung
-  University</p>
+  <p class="note">Manuscript prepared for Transactions on Machine Learning Research (not yet submitted) &middot; 2026 &middot; sole author</p>
+  <h1>A hand-motion dataset can test compositional generalisation only when its labels describe the scored motion</h1>
+  <p class="kicker">To test whether a motion model can recombine what it learned, one holds out a combination of labels.
+  On hand-motion data that removes the motion only if each label describes the motion being scored.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; National Yang Ming Chiao Tung University</p>
   <div class="links">
-    <a href="../assets/papers/hand_motion_composition_axes.pdf">[Paper (PDF)]</a>
-    <a href="../assets/papers/hand_motion_composition_axes_supplement.pdf">[Supplement]</a>
-    <a href="https://github.com/maurice1128/hand-composition-axes">[Code &amp; results]</a>
-    <a href="#notclaimed">[What we do not claim]</a>
     <a href="../index.html">[All projects]</a>
   </div>
-  <p class="note">The code, the gate outputs as they came out, and every seed of every sweep reported here are in the linked repository.</p>
 </header>
 
 <hr>
-<section id="premise">
-  <h2>The premise</h2>
+<section id="idea">
+  <h2>The idea in 20 seconds</h2>
   <figure class="fig">
-    <video src="../assets/hand-composition/explainer.mp4" autoplay muted loop playsinline controls
-           preload="metadata"></video>
-    <p class="cap"><b>A modular motion prior emits one primitive selection per frame.</b> A bank
-    of reusable primitives is supposed to recombine: a model that never saw a particular pairing
-    of factors should still handle it. That whole family of models rests on this premise, and the
-    premise is almost never measured.</p>
+    <video src="../assets/hand-composition/label_alignment.mp4" poster="../assets/hand-composition/label_alignment_poster.png"
+           autoplay muted loop playsinline controls preload="metadata"></video>
+    <p class="cap">Schematic. A model is trained without one combination (red) and tested on it. When each label
+    describes its whole recording, the red motion leaves training and the model pays a clear penalty. When a label
+    describes only the first half, red motion stays in training under other labels and the penalty falls to the
+    level of the control. Numbers are from OakInk-Image (40 seeds each) and TACO (40 seeds).</p>
   </figure>
-
-  <div style="margin-top:2rem;color:var(--ink-2)">
-    <p>An <em>axis</em> is a pairing of two factors &mdash; object category crossed with intent,
-    say. The measurement is a <b>paired split</b>: the same target trajectories are scored under
-    two priors differing only in whether their training data contained the target's composition.
-    The gap is the <b>compositional penalty</b>.</p>
-    <p>Six axes over three public hand datasets, behind five gates. Four of the five gates exist
-    because an earlier design returned plausible numbers it could not have earned &mdash; one
-    gate per way I had been fooled. <b>The paper recommends the gates more than it recommends the
-    result.</b></p>
-  </div>
+  <p>A common test of compositional generalisation holds out a combination of labels &mdash; an action with a tool,
+  say &mdash; while keeping each label in training, then scores the model on the held-out combination. The split is
+  made on labels. In public hand-motion datasets a label often names one thing about a recording that contains more,
+  so a label can be correct and still describe only part of what is scored.</p>
 </section>
 
 <hr>
-<section id="finding">
-  <h2>The finding: difficulty needs interaction, not informative factors</h2>
-  <div class="figrow">
-    <figure class="fig">
-      <img src="../assets/hand-composition/screen_scatter.png"
-           alt="Interaction excess against measured compositional penalty, by axis">
-      <p class="cap">Every axis that sits <b>above the zero-truth control</b> lies right of zero on
-      interaction, and none lies left of it. <b>The vertical scatter inside the right-hand group is
-      what the statistic does not predict.</b></p>
-    </figure>
-    <figure class="fig">
-      <img src="../assets/hand-composition/difficulty_survey.png"
-           alt="Difficulty and modular advantage per axis, uninformative rows faded">
-      <p class="cap"><b>Difficulty and advantage, axis by axis</b>, ten rows. Faded rows sit at
-      the zero-truth control &mdash; including the two axes swept after the first submission.</p>
-    </figure>
-  </div>
-
-  <div class="box mark" style="margin-top:2rem">
-    <h3>What "carries difficulty" is measured against</h3>
-    <p>Not zero. The zero-truth control <code>pc_easy</code>, whose compositional penalty is zero
-    by construction, itself returns <b>+2.9&nbsp;%</b> of the naive error (sd 2.8, n&nbsp;=&nbsp;20)
-    &mdash; and that is significant against zero, p&nbsp;=&nbsp;0.0002. <b>So a test against zero
-    at n&nbsp;=&nbsp;40 detects the instrument, not the composition.</b> Every verdict below is
-    read against the control instead.</p>
-  </div>
-
-  <div class="tw" style="margin-top:1.4rem">
-    <table>
-      <thead><tr><th>Dataset, axis</th><th>Interaction excess</th><th>Relative penalty</th>
-        <th>n</th><th>Against the control (Welch)</th></tr></thead>
-      <tbody>
-        <tr><td>OakInk-Image, affordance &times; intent</td><td class="n">+0.0309</td>
-            <td class="n">+12.2&nbsp;%</td><td class="n">130</td>
-            <td class="n">p &lt; 1e&minus;12 <span class="tag hit">above</span></td></tr>
-        <tr><td><b>OakInk-Image, category &times; intent</b> <span class="tag hit">confirmatory</span></td>
-            <td class="n">+0.0238</td><td class="n">+15.2&nbsp;%</td><td class="n">70</td>
-            <td class="n">p &lt; 1e&minus;12, ten SE above</td></tr>
-        <tr class="off"><td>GRAB, shape &times; fine intent
-            <span class="sub">interaction, but no difficulty</span></td>
-            <td class="n">+0.0063</td><td class="n">+0.7&nbsp;%</td><td class="n">40</td>
-            <td class="n">p = 0.17, indistinguishable</td></tr>
-        <tr class="off"><td>OakInk2, annotated transitions</td><td class="n">&minus;0.0120</td>
-            <td class="n">+3.4&nbsp;%</td><td class="n">12</td>
-            <td class="n">p = 0.79, indistinguishable</td></tr>
-        <tr class="off"><td>OakInk2, scene &times; verb <span class="tag">new, post-submission</span></td>
-            <td class="n">&minus;0.0001</td><td class="n">+3.0&nbsp;%</td><td class="n">40</td>
-            <td class="n">p = 0.96, indistinguishable</td></tr>
-        <tr class="off"><td>GRAB, shape &times; intent class <span class="tag">new, post-submission</span></td>
-            <td class="n">&minus;0.0005</td><td class="n">+2.3&nbsp;%</td><td class="n">40</td>
-            <td class="n">p = 0.60, indistinguishable</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="note" style="margin-top:.9rem">Budget 256. <b>Both new axes are significant against
-  zero</b> (p&nbsp;=&nbsp;0.021 and 0.015) &mdash; and that is exactly why it does not count: so is
-  the control. A further axis, OakInk-Image id-prefix &times; intent, is <b>deprecated and
-  omitted</b>, because it keys on the first character of an object id, which records which
-  sub-collection the object came from rather than what it is.</p>
-
-  <div class="box">
-    <p><b>The two new sweeps were pre-registered and run after the first submission</b>, with the
-    declared test reported first and the control reading second. They are what took the necessity
-    claim from one axis to three, across two datasets.</p>
-    <p>On the modular-advantage view the same two rows are <b>uninformative, not negative</b>:
-    GRAB shape &times; intent class gives +0.00185 (25/40, p&nbsp;=&nbsp;0.129) at difficulty
-    +0.00103, and OakInk2 scene &times; verb gives &minus;0.00097 (18/40, p&nbsp;=&nbsp;0.186) at
-    difficulty +0.00051. There is no difficulty on either axis to act on.</p>
-    <p><b>Why only three tests exist.</b> Four other non-positive-excess axes cannot be tested at
-    all: on DexYCB's subject &times; object axis and GRAB's two object axes every transition
-    appears in exactly one fine label, so no leak-free split can hold anything out. Three tests are
-    all these datasets afford.</p>
-  </div>
-
-  <div class="box mark">
-    <h3>Two qualifications that travel with the finding</h3>
-    <ul>
-      <li><b>Three axes could have falsified the direction</b>, across two datasets &mdash; and
-      all three sit at the zero-truth control. That is the evidence for necessity; it is not a
-      law.</li>
-      <li><b>Sufficiency is demonstrably false.</b> GRAB's shape axis has positive interaction and
-      returns no measurable difficulty at all. Interaction is not enough on its own.</li>
-    </ul>
-  </div>
-
-  <h2 style="margin-top:3rem">The screen finds presence well and size badly</h2>
-  <p class="desc">A cheap statistic finds the interaction without
-  training anything, in minutes on raw pose data. The paper reports its own ranking failure.</p>
-  <div class="stats" style="margin-top:1.4rem">
-    <div><span class="big">r = 0.843</span>
-      <h3>over the first five axes</h3>
-      <p>Swept <em>before</em> the statistic chose one &mdash; and already not significant,
-      p = 0.073.</p></div>
-    <div><span class="big">5th of 6</span>
-      <h3>the axis it ranked lowest</h3>
-      <p>Swept anyway. It came back the <b>hardest</b> measured, +0.01650.</p></div>
-    <div><span class="big">r = 0.463</span>
-      <h3>once that axis is included</h3>
-      <p>p = 0.355. The screen diagnoses <em>whether</em>, not <em>how much</em>.</p></div>
-  </div>
-
-  <div class="box mark" style="margin-top:1.6rem">
-    <h3>Structure is not the reason</h3>
-    <p>The obvious alternative explanation is that some axes are simply better structured for the
-    split. A free structural statistic &mdash; how many transitions a leak-free split can hold out
-    &mdash; <b>anticorrelates</b> with the penalty (<i>r</i>&nbsp;=&nbsp;&minus;0.585) and would
-    rank OakInk2's transition axis <b>first</b>, where the sweep returns nothing. The interaction
-    screen ranks that same axis <b>last</b> (<i>r</i>&nbsp;=&nbsp;+0.843).</p>
-  </div>
+<section id="result">
+  <h2>The result: correct labels that describe only half remove the penalty</h2>
+  <figure class="fig">
+    <img src="../assets/hand-composition/fig2_window_classes.png" alt="Penalty by window class for the two joined-clip versions">
+    <p class="cap">OakInk-Image clips joined in pairs, with the same number of trajectories, the same 33 object
+    categories and the same training volume in both versions. Blue: the label describes both clips. Red: it describes
+    only the first. Grey band: the zero-truth control.</p>
+  </figure>
+  <ul>
+    <li>When the label described both halves, the penalty was <b>+17.0 %</b> of the naive error. When it described
+    only the first half, it fell to <b>+3.9 %</b>, not distinguishable from the control.</li>
+    <li>The windows the label <i>did</i> describe lost <b>82 %</b> of their penalty above the control. So the change
+    was in what the training sets contained, not in what was scored.</li>
+  </ul>
 </section>
 
 <hr>
-<section>
-  <h2>What the bank produces</h2>
-  <div class="figrow">
-    <figure class="fig">
-      <img src="../assets/hand-composition/primitive_library.png"
-           alt="Four learned primitives decoded from the same start pose">
-      <p class="cap">Four of the sixteen primitives in one bank, each decoded from the same start
-      pose and shown at five points through its window. <b>The last row is one primitive followed
-      by another, a pairing the bank never saw in training.</b></p>
-    </figure>
-    <div>
-      <h3>Primitive identity</h3>
-      <p style="color:var(--ink-2);font-size:.95rem">Between-primitive over within-primitive
-      variance in what a primitive produces; above 1 means the output is determined more by which
-      primitive it is than by what preceded it.</p>
-      <div class="tw" style="margin-top:1rem">
-        <table style="min-width:0">
-          <tbody>
-            <tr><td>Pooled over 13 runs</td>
-                <td class="n">1.841 &plusmn; 0.692<span class="sub">11 of 13 above 1 &middot; t = 4.38, p = 0.0009</span></td></tr>
-            <tr><td>Replicates on the dataset carrying the difficulty</td>
-                <td class="n">1.848<span class="sub">four banks, all four above 1 &middot; t = 5.07, p = 0.015</span></td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="box" style="margin-top:1.2rem">
-        <p><b>Read this as a target that was met, not as a discovery.</b> The training objective
-        optimises exactly this quantity.</p>
-      </div>
-    </div>
-  </div>
+<section id="taco">
+  <h2>A test on new data</h2>
+  <figure class="fig">
+    <img src="../assets/hand-composition/fig1_per_seed.png" alt="Per-seed penalties for controls and real label grids">
+    <p class="cap">Each point is one seed. Grey: the zero-truth control and permuted label grids. Blue: real label
+    grids.</p>
+  </figure>
+  <p>Before its data were opened, it was written down that TACO, whose labels each name one tool-use action, would
+  show a penalty above the control. It did: <b>+10.6 %</b> over 40 seeds, and 14.0 points above its own permuted
+  grid. Single seeds ranged from &minus;3.8 % to +27.4 %, so one split is not enough to read the result.</p>
 </section>
 
 <hr>
-<section id="gates">
-  <h2>What we checked &mdash; the five gates, with their real status</h2>
-  <p class="note" style="margin-bottom:1.2rem">Two of the five still fail. They are reported here
-  as they are reported in the paper.</p>
-  <div class="tw">
-    <table>
-      <thead><tr><th>Gate</th><th>What it catches</th><th>Status</th></tr></thead>
-      <tbody>
-        <tr><td>Informed coverage</td>
-            <td>Held-out compositions absent from the informed set pin the penalty at zero by
-            construction</td>
-            <td><span class="tag">exits 1</span><span class="sub">on three axes; failing
-            rows and an exclusion analysis are reported</span></td></tr>
-        <tr><td>Composition leak</td>
-            <td>48&ndash;69&nbsp;% of targets once had their exact composition in the informed
-            training set, against 0&nbsp;% for naive</td>
-            <td><span class="tag hit">passes</span><span class="sub">now 0.0&nbsp;% on both arms
-            across all 70 seeds</span></td></tr>
-        <tr><td>DOF health</td>
-            <td>An assumed abduction axis pinned a joint at its limit in 100&nbsp;% of frames on
-            two datasets</td>
-            <td><span class="tag">still exits 1</span><span class="sub">at 40&nbsp;% and
-            33&nbsp;% against its own 25&nbsp;% threshold</span></td></tr>
-        <tr><td>Primitive collapse</td>
-            <td>A &ldquo;modular&rdquo; model that is monolithic in disguise</td>
-            <td><span class="tag hit">passes</span><span class="sub">minimum 9.732 of 12;
-            16 models below 11.0, all from one sweep</span></td></tr>
-        <tr><td>Split balance</td>
-            <td>The risk that an unpaired design measures set difficulty</td>
-            <td><span class="tag">passes on the mean</span><span class="sub">+1.4&nbsp;%;
-            the per-seed spread it does not test is &minus;6.1&nbsp;% to +10.7&nbsp;%</span></td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<hr>
-<section id="transfer">
-  <h2>A null on hardware, and why that null is weak</h2>
-  <div class="figrow">
-    <figure class="fig">
-      <video src="../assets/hand-composition/grasp_real_seen_unseen.mp4" autoplay muted loop playsinline></video>
-      <p class="cap"><b>Real motion, a seen composition, and an unseen one, on a Shadow Hand.</b>
-      This is what &ldquo;fails to separate&rdquo; looks like.</p>
-    </figure>
-    <div>
-      <p class="desc" style="margin-bottom:1.1rem"><b>Sixteen of seventeen</b> defined comparisons
-      on a Shadow Hand fail to separate novel compositions from familiar ones, and the seventeenth
-      runs backwards.</p>
-      <div class="box">
-        <h3>Three reasons the null cannot be pushed</h3>
-        <ul>
-          <li>The retargeting has <b>no collision term</b>.</li>
-          <li>The banks were trained on the one dataset the instrument itself finds null.</li>
-          <li>The equivalence test <b>fails its own sensitivity check</b>.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="figrow" style="margin-top:2rem">
-    <figure class="fig">
-      <img src="../assets/hand-composition/hand_fixed.png"
-           alt="The same reference pose projected from each dataset after conventions are inferred">
-      <p class="cap"><b>The same reference pose projected from each dataset</b> after the axis
-      conventions are inferred per joint rather than assumed.</p>
-    </figure>
-    <div>
-      <h3>Retargeting to the Shadow Hand</h3>
-      <p style="color:var(--ink-2);font-size:.95rem">Direct retargeting of the first 40
-      trajectories per dataset interpenetrates in <b>24.6&nbsp;%, 76.8&nbsp;% and 59.0&nbsp;%</b>
-      of frames on OakInk-Image, DexYCB and GRAB. The abduction correction resolves
-      <b>92&nbsp;%, 97&nbsp;% and 64&nbsp;%</b> of that, leaving <b>2.1&nbsp;%, 2.1&nbsp;% and
-      21.2&nbsp;%</b>.</p>
-      <p class="note" style="margin-top:.9rem">GRAB is the residual case: the correction adjusts
-      finger spacing and cannot increase joint travel, which is what GRAB lacks.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== WHAT WE DO NOT CLAIM ===================== -->
-<hr>
-<section id="notclaimed">
-  <h2>What we do not claim</h2>
-  <p class="desc">This section is not a footnote.
-  The paper's own negative control removed its strongest result, and the withdrawal is the most
-  distinctive thing in the work.</p>
-
-  <div class="box mark">
-    <h3>No positive architecture result at matched information rate</h3>
-    <p>The two arms differ <b>elevenfold</b> in realized per-frame information. I re-swept with
-    the baseline's rate raised to match. On the raw penalty that removes most of the advantage.
-    On a scale-normalized penalty it appears to remove nothing &mdash; and then my own negative
-    control disposes of it.</p>
-    <div class="tw" style="margin-top:1.1rem">
-      <table>
-        <thead><tr><th>Contrast</th><th>Normalized advantage</th><th>Wins</th><th>Sign test p</th></tr></thead>
-        <tbody>
-          <tr><td>Real data, rate-matched arm</td><td class="n">+0.111</td><td class="n">52/70</td><td class="n">&lt;0.0001</td></tr>
-          <tr><td><b><code>pc_easy</code> control &mdash; true advantage zero by construction</b></td>
-              <td class="n"><b>+0.099</b></td><td class="n"><b>18/20</b></td><td class="n"><b>0.0004</b></td></tr>
-          <tr><td>Real data, unmatched arm</td><td class="n">+0.104</td><td class="n">46/70</td><td class="n">0.012</td></tr>
-          <tr class="off"><td><code>pc_easy</code> control, unmatched arm</td><td class="n">+0.018</td>
-              <td class="n">12/20</td><td class="n">not significant</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p style="margin-top:1.1rem">On a bundle whose compositional penalty is <b>zero by
-    construction</b>, the normalized metric returns <b>90&nbsp;% of the headline figure</b> and
-    clears both declared tests. On a real axis with no measurable difficulty it returns more
-    still.</p>
-    <p style="margin-top:.9rem"><b>Mechanism:</b> normalization divides by each arm's own
-    reconstruction error. On the control the matched baseline reconstructs <b>4.04&times;</b>
-    better than the modular arm, against <b>1.41&times;</b> on real data, so dividing inverts the
-    confound instead of removing it.</p>
-    <p style="margin-top:1.1rem;font-size:1rem"><b>So the paper states: we claim no modular
-    advantage at matched rate.</b> The normalized metric is reported as a robustness check that
-    failed.</p>
-  </div>
-
-  <div class="figrow" style="margin-top:2rem">
-    <div class="box">
-      <h3>What survives, and what does not</h3>
-      <p><b>Survives:</b> where difficulty exists, a modular bank pays a smaller compositional
-      penalty than a parameter-matched monolithic latent.</p>
-      <p style="margin-top:.7rem"><b>Does not survive:</b> attributing that to modular
-      <em>structure</em> rather than to channel bandwidth.</p>
-      <div class="tw" style="margin-top:1rem">
-        <table style="min-width:0">
-          <thead><tr><th>Sweep</th><th>Baseline</th><th>Modular</th><th>Ratio</th></tr></thead>
-          <tbody>
-            <tr><td>Confirmatory axis</td><td class="n">0.207</td><td class="n">2.275</td><td class="n"><b>11.0&times;</b></td></tr>
-            <tr><td>Positive control</td><td class="n">0.223</td><td class="n">2.399</td><td class="n">10.8&times;</td></tr>
-            <tr><td>Negative control</td><td class="n">0.230</td><td class="n">2.424</td><td class="n">10.6&times;</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="note" style="margin-top:.8rem">Realized per-frame information rate.</p>
-    </div>
-
-    <div class="box">
-      <h3>Two further things the paper does not answer</h3>
-      <p><b>The task-level question was never answered.</b> Sampling both priors unconditionally
-      gives the architectures no channel through which to differ on grasp retention. The
-      experiment that would answer it &mdash; each prior as the action space for a policy trying
-      to grasp &mdash; was not run.</p>
-      <p style="margin-top:.9rem"><b>No dataset design rule.</b> Every axis returning a penalty
-      belongs to one dataset, and across eleven screened axes no collection property I measured
-      predicts which.</p>
-    </div>
-  </div>
-</section>
-
-<hr>
-<section>
-  <h2>Supporting material</h2>
-  <div class="figrow three">
-    <figure class="fig">
-      <video src="../assets/hand-composition/grasp_four_way.mp4" autoplay muted loop playsinline></video>
-      <p class="cap">Four grasps side by side.</p>
-    </figure>
-    <figure class="fig">
-      <video src="../assets/hand-composition/validity_random_vs_generated.mp4" autoplay muted loop playsinline></video>
-      <p class="cap">Random poses against generated ones.</p>
-    </figure>
-    <figure class="fig">
-      <img src="../assets/hand-composition/primitive_library.gif" alt="Animated primitive library">
-      <p class="cap">The primitive library, animated.</p>
-    </figure>
-  </div>
+<section id="checked">
+  <h2>How it was checked</h2>
+  <ul>
+    <li><b>A known zero.</b> A synthetic dataset in which held-out pairs are predictable by construction returned
+    +2.6 %. Every penalty is read against this control, not against zero.</li>
+    <li><b>A shuffled grid.</b> With the label grid permuted, the penalty fell to +3.7 % on OakInk-Image and +1.4 % on
+    GRAB.</li>
+    <li><b>A planted effect.</b> An interaction planted on GRAB&rsquo;s real poses was recovered (+13.15 %).</li>
+    <li><b>Written down first.</b> The settings and readings of the main experiments were written down before
+    training; every sweep run, including those not in the main text, is listed in the paper.</li>
+  </ul>
+  <p class="against"><b>Scope:</b> one prior architecture; the error is reconstruction, not generation; the label
+  condition was changed on one dataset and tested on one other.</p>
 </section>
 
 <footer>
   <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang &middot;
   <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
 </footer>
-
-
 
 </div>
 </body>

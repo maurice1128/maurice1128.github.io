@@ -91,25 +91,22 @@ four. Full drafts on request.</p>
 
 <div class="entry">
   <div class="thumb">
-    <video src="assets/hand-composition/thumb.mp4" autoplay muted loop
-           playsinline preload="metadata"></video>
+    <video src="assets/hand-composition/label_alignment.mp4"
+           poster="assets/hand-composition/label_alignment_poster.png"
+           autoplay muted loop playsinline preload="metadata"></video>
   </div>
   <div class="meta">
-    <a class="title" href="projects/hand-composition.html">Which Hand-Motion Composition Axes Are
-      Worth Measuring</a>
+    <a class="title" href="projects/hand-composition.html">A Hand-Motion Dataset Can Test Compositional
+      Generalisation Only When Its Labels Describe the Scored Motion</a>
     <div class="authors"><b>Mu-Hua Wang</b></div>
-    <div class="venue">Under submission, IEEE Robotics and Automation Letters</div>
-    <p class="desc">Modular motion priors rest on one premise: novel recombinations of the
-    primitives stay usable. It is almost never measured. This builds the measurement &mdash; a
-    paired split over six axes of three public hand datasets, behind five gates &mdash; plus a
-    raw-data interaction statistic that runs in minutes, before any model is trained.</p>
-    <p class="against"><b>Scope:</b> no modular advantage is claimed at matched information rate. On a bundle whose
-    compositional penalty is zero by construction the normalised metric still returns 90&nbsp;% of
-    the headline figure, so that metric is reported as a robustness check rather than a result.</p>
+    <div class="venue">Manuscript prepared for Transactions on Machine Learning Research (not yet submitted)</div>
+    <p class="desc">The usual test of compositional generalisation holds out a combination of labels. On OakInk-Image,
+    joining clips so that each correct label described only half of a trajectory, with training volume held fixed,
+    took the penalty from +17.0 % to +3.9 %, not distinguishable from a zero-truth control. On TACO, whose labels each
+    name one action, a penalty predicted before its data were opened was found (+10.6 %).</p>
+    <p class="against"><b>Scope:</b> one prior architecture; the error is reconstruction, not generation.</p>
     <div class="links">
       <a href="projects/hand-composition.html">[Project page]</a>
-      <a href="assets/papers/hand_motion_composition_axes.pdf">[Paper]</a>
-      <a href="assets/papers/hand_motion_composition_axes_supplement.pdf">[Supplement]</a>
     </div>
   </div>
 </div>
@@ -375,9 +372,8 @@ server and none is published.</p>
   <tbody>
     <tr><td><a href="projects/motor-prior.html">What a Motor Prior Is Worth: A Frozen Body Model and a Teacher Compared to Convergence and Through Withdrawal</a> <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[PDF]</a></td>
             <td class="n">sole author</td><td><span class="tag">draft</span></td></tr>
-    <tr><td><a href="projects/hand-composition.html">Which Hand-Motion Composition Axes Are Worth
-        Measuring</a></td>
-        <td class="n">sole author</td><td><span class="tag hit">under submission &middot; IEEE RA-L</span> <a href="assets/papers/hand_motion_composition_axes.pdf">[PDF]</a></td></tr>
+    <tr><td><a href="projects/hand-composition.html">A Hand-Motion Dataset Can Test Compositional Generalisation Only When Its Labels Describe the Scored Motion</a></td>
+        <td class="n">sole author</td><td><span class="tag">draft &middot; not yet submitted</span></td></tr>
     <tr><td><a href="projects/body-codes.html">Reparameterisation Invariance Limits the Benefit of Reorganising a Body Code
         for Morphology Transfer</a></td>
         <td class="n">sole author</td><td><span class="tag">draft</span> <a href="assets/papers/master_then_reorganise.pdf">[PDF]</a></td></tr>
