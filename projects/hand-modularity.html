@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Modularity Makes Dexterous Hands Learn Faster, Not Better &mdash; Mu-Hua Wang</title>
-<meta name="description" content="MotionBricks builds motion from reusable parts. Both of its layers tested on simulated dexterous hands, with the main comparisons registered before the runs. The early lead closes, and the one gain that survives is selection, not modular training.">
+<title>Modularity Makes Simulated Dexterous Hands Learn Faster, Not Better &mdash; Mu-Hua Wang</title>
+<meta name="description" content="MotionBricks builds motion from reusable parts. Both of its layers tested on simulated dexterous hands, with the main comparisons registered before the runs. Modularity buys sample efficiency, not a higher ceiling, and the one skill-level gain is selection, not modular training.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -18,7 +18,6 @@
     <li><a href="#layers">Both layers</a></li>
     <li><a href="#selection">Training or selection</a></li>
     <li><a href="#conditions">When it pays</a></li>
-    <li><a href="#data">Where it is hard</a></li>
     <li><a href="../cv.html">CV</a></li>
   </ul>
 </nav>
@@ -29,9 +28,11 @@
   <h1>Modularity makes simulated dexterous hands learn faster, not better</h1>
   <p class="kicker">MotionBricks builds motion from reusable parts. We tested both of its layers on
   simulated dexterous hands, registering the main comparisons before running them. A modular
-  keyframe interface gives an early lead that a non-modular continuous latent closes, and training
-  skills separately does not help. The one gain that survived is choosing the best policy for each
-  stage, and it works on policies trained flat.</p>
+  keyframe interface learns far faster than a continuous latent and than plain PPO, and all three
+  end at the same level on the training sequences: modularity buys sample efficiency, not a higher
+  ceiling. Training skills
+  separately does not help; the gain comes from choosing the best policy for each stage, and it
+  works on policies trained flat.</p>
   <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; National Yang Ming Chiao Tung
   University &middot; sole author</p>
   <div class="links">
@@ -63,17 +64,21 @@
   <h2>The early lead closes</h2>
   <p>Each hand-motion prior became the action space of a PPO policy on a simulated Shadow Hand
   holding a cube under changing tilts. Policies trained on two-skill sequences and were scored on
-  three-skill sequences they never saw.</p>
+  three-skill sequences they never saw. Over the first 2.5&nbsp;M frames the keyframe interface&rsquo;s
+  mean training success was <b>0.40</b>, against 0.25 for plain PPO and 0.27 for the continuous
+  latent (10 seeds each, p&nbsp;=&nbsp;10<sup>&minus;4</sup> for both, post hoc). The latent also
+  takes one decision every 16 frames, so the difference is not the decision rate.</p>
 
   <figure class="fig">
     <img src="../assets/hand-modularity/learning_curve.png"
          alt="Success against training frames for the keyframe interface, the continuous latent and plain PPO. The keyframe interface rises first; the other two catch up on the training sequences by about 2.5 to 5 million frames.">
     <p class="cap">Lines: success on the training sequences, mean and standard error over 10 seeds.
-    Dots: success on the held-out sequences for the same seeds at 1.5&nbsp;M and 5&nbsp;M frames. At
-    1.5&nbsp;M frames the keyframe interface won on held-out sequences in <b>17 of 20 seeds</b>
-    (0.59 against 0.22, declared). By 5&nbsp;M frames the continuous latent scored <b>0.49 against
-    0.44</b>; the keyframe interface had fallen from 0.65 on these seeds, as training drifted to
-    holding and releasing half the time.</p>
+    Dots: success on the held-out sequences for the same 10 seeds at 1.5&nbsp;M and 5&nbsp;M frames.
+    At 1.5&nbsp;M frames the keyframe interface won on held-out sequences in <b>17 of 20 seeds</b>
+    (0.59 against 0.22, declared). By 5&nbsp;M frames all three reach the same level on the training
+    sequences, and on held-out sequences the continuous latent scored <b>0.49 against 0.44</b>; the
+    keyframe interface had fallen from 0.65 on these seeds, as training drifted to holding and
+    releasing less than half the time.</p>
   </figure>
 
   <figure class="fig">
@@ -84,15 +89,12 @@
     x tilt, release). Left, the keyframe interface holds both tilts and releases; right, the
     continuous latent loses the cube at 1.8&nbsp;s, during the first hold, <b>which also appears in
     training</b>. RL seed 13, whose success is closest to the 20-seed means; the episode is the
-    first of 50 evaluation episodes in which the keyframe policy succeeds and the latent fails
-    (33 of the 50 were like this). Real time.</p>
+    first evaluation episode (of 100) in which the keyframe policy succeeds and the latent fails.
+    Real time.</p>
   </figure>
 
-  <div class="box">
-    <p>The lead also stayed with the cube: on a heavier cube, a sphere and a cylinder it shrank to
-    <b>+0.18</b>, <b>+0.02</b> and <b>+0.01</b>, and the pre-registered pooled test
-    <b>failed</b> (p&nbsp;=&nbsp;0.067).</p>
-  </div>
+  <p class="note">On three other objects (a heavier cube, a sphere and a cylinder) the lead was
+  smaller and not significant (pooled test, p&nbsp;=&nbsp;0.067).</p>
 </section>
 
 <hr>
@@ -103,19 +105,18 @@
       <p class="note" style="margin-bottom:6px">Motion level &middot; poses joined by a learned
       in-betweener</p>
       <h3>Faster, not higher</h3>
-      <p>The same target poses joined by straight lines never learned to release, so the learned
-      in-betweener carries the early gain. On Adroit (exploratory, one seed per task), priors did
-      not beat PPO where PPO learned (hammer, pen), and did not unlock tasks it could not (door,
-      relocate).</p>
+      <p>The same target poses joined by straight lines never learned to release, so on this
+      task the learned in-betweener, not the keyframes alone, carries the early gain. With longer
+      training the keyframe interface, the latent and plain PPO end at the same level on the
+      training sequences.</p>
     </div>
     <div class="box">
       <p class="note" style="margin-bottom:6px">Skill level &middot; units that act, chained</p>
       <h3>No gain from separate training</h3>
       <p>Adroit relocate, extended into grasp then carry, with the 25 human demonstrations of D4RL
-      and behaviour cloning. PPO from scratch never completed a strict carry. With a stage that
-      counted as done at a single step, a carry skill flung the ball, and the ball then fell within
-      about 18 steps in <b>98 of 100 episodes</b>, whatever ran next. Every stage now has to hold
-      for 25 steps.</p>
+      and behaviour cloning; PPO from scratch never completed a carry. A stage counts as done only
+      after its goal has held for 25 consecutive steps: with a one-step criterion, a carry skill
+      learned to fling the ball through the target (video).</p>
     </div>
   </div>
 
@@ -164,9 +165,18 @@
     won through the carry: its carrier completed 0.34 of carries after a grasp, against A&rsquo;s
     0.20. B beat A at two stages (p&nbsp;=&nbsp;0.002) and nearly quadrupled it at three
     (p&nbsp;&lt;&nbsp;10<sup>&minus;5</sup>).</p>
-    <p><b>The benefit belongs to modular deployment, not modular training.</b> B chose from 20
-    policies per stage and C from 10; a check with matched pools is running.</p>
+    <p><b>The benefit belongs to modular deployment, not modular training.</b></p>
   </div>
+
+  <figure class="fig">
+    <img src="../assets/hand-modularity/selection_pools.png"
+         alt="Histogram over all 184,756 pools of 10 flat policies: per-stage selection (B) lies mostly above whole-policy selection (A), and almost always above separately trained skills (C, dashed line).">
+    <p class="cap"><b>Not a matter of pool size.</b> B chose from 20 policies per stage and C from 10.
+    A post hoc check, written down before it ran, repeated B&rsquo;s choice on every pool of 10 flat
+    policies (184&nbsp;756 of them), scoring each by the product of per-stage test rates. Per-stage
+    selection beat separate training in <b>99&nbsp;%</b> of pools (mean 0.23 against 0.10), and in
+    96&nbsp;% of 10&nbsp;000 redrawn pools; it beat whole-policy selection in 82&nbsp;%.</p>
+  </figure>
 </section>
 
 <hr>
@@ -189,7 +199,7 @@
             <td><b>if enforced</b> &mdash; a one-step stage let carry fling the ball</td></tr>
         <tr><td>Something to amortise</td>
             <td><b>partly</b> &mdash; faster exploration, one task</td>
-            <td><b>yes</b> &mdash; flat PPO scores 0</td></tr>
+            <td><b>yes</b> &mdash; PPO from scratch never carries</td></tr>
         <tr><td>A flat learner cannot match it</td>
             <td><b>no</b> &mdash; caught up at 5&nbsp;M frames</td>
             <td><b>no</b> &mdash; flat policies selected per stage did best</td></tr>
@@ -198,31 +208,6 @@
   </div>
 </section>
 
-<hr>
-<section id="data">
-  <h2>Where is recombination hard in hand-motion data?</h2>
-  <p>Testing recombination needs data where recombining is actually hard. We train two priors that
-  differ only in whether they saw a held-out pairing of two labels (say, object category and
-  intent), score both on the same trajectories, and read the difference against a synthetic control
-  whose true value is zero. Over <b>nine axes of three public datasets</b>, difficulty appeared only
-  where the two labels interact in the poses, a statistic computed in minutes.</p>
-
-  <figure class="fig">
-    <img src="../assets/hand-modularity/difficulty.png"
-         alt="Bar chart of compositional difficulty for nine dataset axes and two synthetic controls.">
-    <p class="cap">Compositional difficulty per axis, mean and standard error over seeds. Faded bars
-    are <b>indistinguishable from the zero-truth control</b> (red dotted line).</p>
-  </figure>
-
-  <div class="box mark">
-    <p><b>Three qualifications.</b> Interaction was <b>not sufficient</b>; every axis with
-    difficulty came from one dataset (OakInk-Image); and the reading against the control was chosen
-    <b>after</b> the declared test against zero.</p>
-  </div>
-  <p class="note">This instrument, and what it implies about how a hand-motion dataset must be
-  labelled before it can test compositional generalisation at all, is developed in a
-  <a href="hand-composition.html">separate paper</a>.</p>
-</section>
 
 <footer>
   <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang &middot;
