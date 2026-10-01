@@ -160,16 +160,15 @@ contact safety on a person, then the body model behind it, then the hand that ha
            autoplay muted loop playsinline preload="metadata"></video>
   </div>
   <div class="meta">
-    <a class="title" href="projects/hand-modularity.html">Modularity Makes Simulated Dexterous Hands
-      Learn Faster, Not Better</a>
+    <a class="title" href="projects/hand-modularity.html">Modular Action Spaces Make Simulated Dexterous
+      Hands Learn Faster, and Per-Stage Selection Makes Them Better</a>
     <div class="authors"><b>Mu-Hua Wang</b></div>
     <div class="venue">Submitted to IEEE Robotics and Automation Letters, 2026</div>
     <p class="desc">Modular motion models promise a hand that learns faster and reaches further.
     As the action space of a dexterous policy, a keyframe interface learns held-out skill sequences
-    far better early (0.59 against 0.22) but a continuous latent catches up by the end (0.49 against
-    0.44): modularity buys sample efficiency, not a higher ceiling. At the skill level the gain comes
-    from choosing the best policy for each stage (97 against 61 of 400), not from training skills
-    separately.</p>
+    far better early (0.59 against 0.22), ends no lower, and beats plain PPO on unseen sequences (0.44
+    against 0.22). At the skill level, choosing the best policy for each stage makes the hand better
+    (97 against 61 of 400); training the skills separately does not.</p>
     <p class="against"><b>Scope:</b> simulation, one task per level, behaviour cloning from 25
     demonstrations.</p>
     <div class="links">
@@ -441,7 +440,7 @@ published, and none is posted to a preprint server.</p>
         <td class="n">sole author</td><td><span class="tag hit">submitted &middot; Machine Learning</span></td></tr>
     <tr><td><a href="projects/motor-prior.html">What a Motor Prior Is Worth: A Body Model and a Teacher Compared to Convergence and Through Withdrawal</a> <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[PDF]</a></td>
             <td class="n">sole author</td><td><span class="tag hit">submitted &middot; IEEE TCDS</span></td></tr>
-    <tr><td><a href="projects/hand-modularity.html">Modularity Makes Simulated Dexterous Hands Learn Faster, Not Better</a> <a href="assets/papers/hand_modularity_faster_not_better.pdf">[PDF]</a></td>
+    <tr><td><a href="projects/hand-modularity.html">Modular Action Spaces Make Simulated Dexterous Hands Learn Faster, and Per-Stage Selection Makes Them Better</a> <a href="assets/papers/hand_modularity_faster_not_better.pdf">[PDF]</a></td>
         <td class="n">sole author</td><td><span class="tag hit">submitted &middot; IEEE RA-L</span></td></tr>
     <tr><td><a href="projects/hand-composition.html">A Hand-Motion Dataset Can Test Compositional Generalisation Only When Each Label Describes the Whole Trajectory It Is Attached To</a> <a href="assets/papers/hand_motion_composition_axes.pdf">[PDF]</a></td>
         <td class="n">sole author</td><td><span class="tag">draft &middot; not yet submitted</span></td></tr>

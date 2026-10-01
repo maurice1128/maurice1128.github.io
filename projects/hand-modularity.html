@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Modularity Makes Simulated Dexterous Hands Learn Faster, Not Better &mdash; Mu-Hua Wang</title>
-<meta name="description" content="MotionBricks builds motion from reusable parts. Both of its layers tested on simulated dexterous hands, with the main comparisons registered before the runs. Modularity buys sample efficiency, not a higher ceiling, and the one skill-level gain is selection, not modular training.">
+<title>Modular Action Spaces Make Simulated Dexterous Hands Learn Faster, and Per-Stage Selection Makes Them Better &mdash; Mu-Hua Wang</title>
+<meta name="description" content="MotionBricks builds motion from reusable parts. Both of its layers tested on simulated dexterous hands, with the main comparisons registered before the runs. A modular keyframe action space learns faster with an end point no lower, and selecting the best policy for each stage makes the hand better; training skills separately does not.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -14,9 +14,9 @@
 <nav>
   <ul>
     <li class="back"><a href="../index.html">&larr; Home</a></li>
-    <li><a href="#lead">The early lead</a></li>
+    <li><a href="#lead">Faster</a></li>
     <li><a href="#layers">Both layers</a></li>
-    <li><a href="#selection">Training or selection</a></li>
+    <li><a href="#selection">Better</a></li>
     <li><a href="#conditions">When it pays</a></li>
     <li><a href="../cv.html">CV</a></li>
   </ul>
@@ -25,14 +25,13 @@
 <header>
   <p class="note">Dexterous manipulation &middot; simulation &middot; pre-registered comparisons
   &middot; submitted to IEEE Robotics and Automation Letters, 2026</p>
-  <h1>Modularity makes simulated dexterous hands learn faster, not better</h1>
+  <h1>Modular action spaces make simulated dexterous hands learn faster, and per-stage selection makes them better</h1>
   <p class="kicker">MotionBricks builds motion from reusable parts. We tested both of its layers on
   simulated dexterous hands, registering the main comparisons before running them. A modular
-  keyframe interface learns far faster than a continuous latent and than plain PPO, and all three
-  end at the same level on the training sequences: modularity buys sample efficiency, not a higher
-  ceiling. Training skills
-  separately does not help; the gain comes from choosing the best policy for each stage, and it
-  works on policies trained flat.</p>
+  keyframe interface learns far faster than a continuous latent and than plain PPO, ends no lower,
+  and handles unseen skill sequences far better than plain PPO. At the skill level, choosing the best
+  policy for each stage makes the hand better; training the skills separately does not. Modularity
+  pays through the search, not through separately trained modules.</p>
   <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; National Yang Ming Chiao Tung
   University &middot; sole author</p>
   <div class="links">
@@ -61,7 +60,7 @@
 
 <hr>
 <section id="lead">
-  <h2>The early lead closes</h2>
+  <h2>A modular action space learns faster</h2>
   <p>Each hand-motion prior became the action space of a PPO policy on a simulated Shadow Hand
   holding a cube under changing tilts. Policies trained on two-skill sequences and were scored on
   three-skill sequences they never saw. Over the first 2.5&nbsp;M frames the keyframe interface&rsquo;s
@@ -75,10 +74,10 @@
     <p class="cap">Lines: success on the training sequences, mean and standard error over 10 seeds.
     Dots: success on the held-out sequences for the same 10 seeds at 1.5&nbsp;M and 5&nbsp;M frames.
     At 1.5&nbsp;M frames the keyframe interface won on held-out sequences in <b>17 of 20 seeds</b>
-    (0.59 against 0.22, declared). By 5&nbsp;M frames all three reach the same level on the training
-    sequences, and on held-out sequences the continuous latent scored <b>0.49 against 0.44</b>; the
-    keyframe interface had fallen from 0.65 on these seeds, as training drifted to holding and
-    releasing less than half the time.</p>
+    (0.59 against 0.22, declared; difference +0.38, 95&nbsp;% CI 0.23 to 0.52). Its end point is no
+    lower: at 5&nbsp;M frames it still beats plain PPO on held-out sequences (<b>0.44 against 0.22</b>,
+    declared), the data do not separate it from the continuous latent (0.44 against 0.49), and on the
+    training sequences the three end within 0.06 of each other.</p>
   </figure>
 
   <figure class="fig">
@@ -104,15 +103,14 @@
     <div class="box">
       <p class="note" style="margin-bottom:6px">Motion level &middot; poses joined by a learned
       in-betweener</p>
-      <h3>Faster, not higher</h3>
+      <h3>Faster, and no lower</h3>
       <p>The same target poses joined by straight lines never learned to release, so on this
-      task the learned in-betweener, not the keyframes alone, carries the early gain. With longer
-      training the keyframe interface, the latent and plain PPO end at the same level on the
-      training sequences.</p>
+      task the learned in-betweener, not the keyframes alone, carries the gain. Not every modular action
+      space helps: a bank of fixed primitives is the weakest prior.</p>
     </div>
     <div class="box">
       <p class="note" style="margin-bottom:6px">Skill level &middot; units that act, chained</p>
-      <h3>No gain from separate training</h3>
+      <h3>Better through per-stage selection</h3>
       <p>Adroit relocate, extended into grasp then carry, with the 25 human demonstrations of D4RL
       and behaviour cloning; PPO from scratch never completed a carry. A stage counts as done only
       after its goal has held for 25 consecutive steps: with a one-step criterion, a carry skill
@@ -136,7 +134,7 @@
 
 <hr>
 <section id="selection">
-  <h2>Training or selection?</h2>
+  <h2>Per-stage selection makes the hand better</h2>
   <p>A pre-registered test on fresh seeds, with 20 trainings per side and 400 test episodes never
   used for any choice. <b>A</b> is the best of 20 flat policies, used for every stage. <b>B</b> uses
   the same 20 flat policies, the best grasper for the grasp and the best carrier for every carry.
@@ -181,11 +179,11 @@
 
 <hr>
 <section id="conditions">
-  <h2>When modularity pays</h2>
+  <h2>When separately trained modules would pay</h2>
   <p>A chain of modules succeeds with probability &prod;&nbsp;P(module&nbsp;<i>i</i> | end states of
-  module&nbsp;<i>i</i>&minus;1), so every benefit is paid for at the hand-offs. We formulated four
-  conditions during the study and offer them as hypotheses. MotionBricks meets all four in
-  animation; each dexterous layer we tested fails at least one.</p>
+  module&nbsp;<i>i</i>&minus;1), so the cost of separate modules sits at the hand-offs. We formulated
+  four conditions during the study and offer them as hypotheses. MotionBricks, in animation,
+  plausibly meets all four; neither dexterous task meets the last.</p>
   <div class="tw">
     <table>
       <thead><tr><th>Condition</th><th>Motion level</th><th>Skill level</th></tr></thead>
@@ -201,7 +199,7 @@
             <td><b>partly</b> &mdash; faster exploration, one task</td>
             <td><b>yes</b> &mdash; PPO from scratch never carries</td></tr>
         <tr><td>A flat learner cannot match it</td>
-            <td><b>no</b> &mdash; caught up at 5&nbsp;M frames</td>
+            <td><b>no</b> &mdash; ends level with the latent</td>
             <td><b>no</b> &mdash; flat policies selected per stage did best</td></tr>
       </tbody>
     </table>
