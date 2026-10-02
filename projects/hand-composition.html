@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Labels Must Describe the Whole Trajectory &mdash; Mu-Hua Wang</title>
-<meta name="description" content="Held-out label combinations are the usual test of compositional generalisation. On hand-motion data the test works only when each label describes the motion that is scored.">
+<title>Partial Labels Hide Compositional Difficulty &mdash; Mu-Hua Wang</title>
+<meta name="description" content="Held-out label combinations are the usual test of compositional generalisation. On hand-motion data, a correct label that describes only part of a recording leaves the held-out motion in training and hides the difficulty.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -24,16 +24,16 @@
 
 <header>
   <p class="note">Manuscript prepared for Transactions on Machine Learning Research (not yet submitted) &middot; 2026 &middot; sole author</p>
-  <h1>A hand-motion dataset can test compositional generalisation only when each label describes the whole trajectory it is attached to</h1>
+  <h1>Partial labels hide compositional difficulty in hand-motion data</h1>
   <p class="kicker">To test whether a motion model can recombine what it learned, one holds out a combination of labels.
-  On hand-motion data that removes the motion only if each label describes the whole trajectory it is attached to.</p>
+  When a correct label describes only part of a recording, the held-out motion stays in training under other labels,
+  and the difficulty disappears from the measurement.</p>
   <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; National Yang Ming Chiao Tung University</p>
   <div class="links">
-    <a href="../assets/papers/hand_motion_composition_axes.pdf">[Paper (PDF)]</a>
+    <a href="../assets/papers/hand_label_alignment.pdf">[Paper (PDF)]</a>
     <a href="../index.html">[All projects]</a>
   </div>
-  <p class="note">Not posted to any preprint server. The hosted PDF is the anonymised build, so it
-  carries no author block.</p>
+  <p class="note">Not posted to any preprint server.</p>
 </header>
 
 <hr>
@@ -44,8 +44,8 @@
            autoplay muted loop playsinline controls preload="metadata"></video>
     <p class="cap">Schematic. A model is trained without one combination (red) and tested on it. When each label
     describes its whole recording, the red motion leaves training and the model pays a clear penalty. When a label
-    describes only the first half, red motion stays in training under other labels and the penalty falls to the
-    level of the control. Numbers are from OakInk-Image (40 seeds each) and TACO (40 seeds).</p>
+    describes only the first half, red motion stays in training under other labels and the penalty falls to near the
+    control. Numbers are from OakInk-Image (40 seeds each) and TACO (40 seeds).</p>
   </figure>
   <p>A common test of compositional generalisation holds out a combination of labels &mdash; an action with a tool,
   say &mdash; while keeping each label in training, then scores the model on the held-out combination. The split is
@@ -55,18 +55,18 @@
 
 <hr>
 <section id="result">
-  <h2>The result: correct labels that describe only half remove the penalty</h2>
+  <h2>The result: correct labels that describe only half hide the penalty</h2>
   <figure class="fig">
-    <img src="../assets/hand-composition/fig2_window_classes.png" alt="Penalty by window class for the two joined-clip versions">
+    <img src="../assets/hand-composition/fig2_window_classes.png" alt="Penalty by window class for the aligned and misaligned versions">
     <p class="cap">OakInk-Image clips joined in pairs, with the same number of trajectories, the same 33 object
-    categories and the same training volume in both versions. Blue: the label describes both clips. Red: it describes
-    only the first. Grey band: the zero-truth control.</p>
+    categories and the same training volume in both versions. Blue (aligned): the label describes both clips. Red
+    (misaligned): it describes only the first. Grey band: the zero-truth control.</p>
   </figure>
   <ul>
     <li>When the label described both halves, the penalty was <b>+17.0 %</b> of the naive error. When it described
-    only the first half, it fell to <b>+3.9 %</b>, not distinguishable from the control.</li>
-    <li>The windows the label <i>did</i> describe lost <b>82 %</b> of their penalty above the control. So the change
-    was in what the training sets contained, not in what was scored.</li>
+    only the first half, it fell to <b>+3.9 %</b>, at most 2.9 points above the control.</li>
+    <li>The windows the label <i>did</i> describe lost <b>82 %</b> of their penalty above the control (95 % CI 65 % to
+    97 %). So the change was mostly in what the training sets contained, not in what was scored.</li>
   </ul>
 </section>
 
