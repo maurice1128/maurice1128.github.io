@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>What a Motor Prior Is Worth &mdash; Mu-Hua Wang</title>
-<meta name="description" content="A babble-learned body model and a distilled teacher as motor priors for one SAC learner on six muscle-driven bodies, compared to convergence and through withdrawal. A learner that loses either prior is never worse, once training has converged, than one that never had it; what can remain is a shortfall against keeping it, not dependence.">
+<title>Withdrawn Teachers and Learned Body Models &mdash; Mu-Hua Wang</title>
+<meta name="description" content="One soft actor-critic learner on six muscle-driven bodies. A competent teacher can be taken away: the learner keeps more than half of its benefit. A body model is worth its content: a random model becomes increasingly harmful as joints are added, and the trained model avoids that harm.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -13,261 +13,191 @@
 <nav>
   <ul>
     <li class="back"><a href="../index.html">&larr; Home</a></li>
-    <li><a href="#withdrawal">Withdrawal</a></li>
-    <li><a href="#worth">What a prior is worth</a></li>
+    <li><a href="#teacher">The teacher</a></li>
+    <li><a href="#model">The body model</a></li>
     <li><a href="#boundaries">Boundaries</a></li>
     <li><a href="#method">Method</a></li>
-    <li><a href="#checked">How it was checked</a></li>
     <li><a href="../cv.html">CV</a></li>
   </ul>
 </nav>
 <header>
-  <p class="note">Submitted to IEEE Transactions on Cognitive and Developmental Systems &middot;
-  2026 &middot; sole author</p>
-  <h1>What a Motor Prior Is Worth:<br>
-  A Body Model and a Teacher Compared to Convergence and Through Withdrawal</h1>
-  <p class="kicker">Take a head start away, and wait until learning has converged: the learner that
-  lost it is never behind one that never had it. What remains is a shortfall, not dependence.</p>
+  <p class="note">Manuscript &middot; 2026 &middot; sole author &middot; prepared for IEEE Transactions on
+  Cognitive and Developmental Systems</p>
+  <h1>Withdrawn Teachers and Learned Body Models<br>in Muscle-Driven Motor Learning</h1>
+  <p class="kicker">A competent teacher can be taken away without leaving the learner behind. A body
+  model is worth its content: a model that knows nothing becomes more harmful the more joints there are.</p>
   <p class="note" style="margin-top:1.6rem">Mu-Hua (Maurice) Wang &middot; National Yang Ming
   Chiao Tung University</p>
   <div class="links">
-    <a href="../assets/papers/what_a_motor_prior_is_worth.pdf">[Paper (PDF)]</a>
+    <a href="../assets/papers/withdrawn_teachers_learned_body_models.pdf">[Paper (PDF)]</a>
     <a href="https://github.com/maurice1128/two-routes-motor-prior">[Code]</a>
     <a href="../index.html">[All projects]</a>
   </div>
-  <p class="note">This paper merges and supersedes two earlier drafts (<em>Two Routes to a Motor
-  Prior</em>, which scored every condition at a 12,000-step endpoint, and a separate
-  teacher-withdrawal study). Not posted to any preprint server.</p>
+  <p class="note">Supersedes the earlier drafts <em>Two Routes to a Motor Prior</em> and <em>What a
+  Motor Prior Is Worth</em>. Not posted to any preprint server.</p>
 </header>
 <hr>
 <section>
   <figure class="fig">
-    <video src="../assets/motor-prior/explainer_v3.mp4" autoplay muted loop playsinline controls
+    <video src="../assets/motor-prior/explainer_v4.mp4" autoplay muted loop playsinline controls
            preload="metadata"></video>
-    <p class="cap"><b>The whole study, no sound needed.</b> Where a body model comes from, what it
-    is worth and why, what a teacher is worth, and what happens when either is taken away. The
-    footage is myoFinger policies at the 100,000-step budget the paper scores; every number on a
-    card is a value of the audited paper.</p>
+    <p class="cap"><b>The whole study, no sound needed.</b> Where the body model comes from, what
+    its content is worth, what a teacher is worth, and what happens when the teacher is taken away.
+    Footage: myoFinger policies at 100,000 steps; every number on a card is a value of the paper.</p>
   </figure>
 </section>
 <hr>
 <section>
   <h2>Abstract</h2>
   <div style="color:var(--ink-2)">
-    <p>The guidance hypothesis holds that guidance breeds dependence: the longer a learner is
-    guided, the larger its fall when guidance is withdrawn. We test it, and the same question for a
-    model of the body, in one soft actor-critic learner on six muscle-driven bodies, two from
-    MyoSuite and four planar arms of one to four joints, given a frozen forward model learned from
-    reward-free babbling or a frozen teacher acting through a distillation term, with matched seeds,
-    an adversarial control for each prior and training to a checked plateau. Replacing a withdrawn
-    teacher by a frozen snapshot of the student, which keeps the loss term but adds no information,
-    separates what withdrawal removes: the teacher's share of the immediate drop falls with how long
-    it was attached, the deleted term's does not. Once training has converged, a learner that lost
-    its teacher is never detectably worse than one never guided, at any attachment duration, on
-    either body, whether guidance supplemented or replaced its own gradient; with a competent
-    teacher it is better, by more the longer it was guided. A withdrawn body model can leave the
-    learner short of one that kept it, never behind one that never had it. What remains after
-    withdrawal is a shortfall against keeping the prior, not dependence. What the priors are worth
-    is bound to their content: the babble model beats model-free learning on four of six bodies and
-    a random model on all six, and a teacher is worth its competence.</p>
+    <p>A motor learner can be helped by a more skilled teacher or by a model of its own body learned from self-generated movement. Withdrawing a teacher removes its knowledge and changes the learner's objective at once, so whether withdrawal leaves the learner worse off, and why it drops, have not been separated; for a body model, whether imagined experience helps because of what the model has learned is rarely tested. This paper uses controls that change one thing at a time, on one soft actor-critic learner and six muscle-driven bodies: an elbow and a finger from MyoSuite and four planar arms of one to four joints. A withdrawn teacher is compared with replacing it by a frozen copy of the student, which keeps the imitation objective and removes only the teacher; a frozen body model learned from reward-free babbling is compared with a random model in identical imagination machinery. On the finger, a learner whose competent teacher is withdrawn ends ahead of one never guided, and the share of the teacher's benefit it keeps rises with the time the teacher was attached, from about a quarter after 2,000 steps to about all of it after 7,000. There, after 4,000 or more steps of attachment, most of the drop that follows withdrawal is the removed imitation term rather than the teacher's not-yet-absorbed knowledge. On planar arms, a random model, whose predictions barely depend on the action, becomes increasingly harmful as joints are added; the babble-trained model avoids this harm.</p>
   </div>
 </section>
 <hr>
-<section id="withdrawal">
-  <h2>Taking the head start away</h2>
+<section id="teacher">
+  <h2>Taking a teacher away</h2>
   <div style="color:var(--ink-2)">
-    <p>Withdrawal as the literature performs it changes two things at once. Zeroing a teacher's
-    distillation weight deletes a loss term as well as the teacher's information. The control here
-    is a <b>self-anchor</b>: at withdrawal the teacher is replaced by a frozen copy of the student
-    itself, so the loss term survives with the same weight and form but carries nothing further.
-    The literature's own measure of dependence is the withdrawn learner against one never guided.</p>
+    <p>Withdrawing a teacher changes two things at once: the learner loses the teacher's knowledge,
+    and its training objective changes. The control is a <b>self-anchor</b>: at withdrawal the
+    teacher is replaced by a frozen copy of the student itself, so the imitation term stays and only
+    the teacher is gone.</p>
   </div>
-  <figure class="fig" style="margin-top:1.6rem">
-    <img src="../assets/motor-prior/sweep100k_components.png"
-         alt="Teacher-withdrawal components against attachment duration on myoElbow and myoFinger">
-    <p class="cap"><b>The withdrawal cost, taken apart, at seven attachment durations.</b> Top
-    myoElbow (mrad), bottom myoFinger with a competent teacher (mm); left the immediate drop, right
-    the endpoint at 100,000 steps; paired means with 95&nbsp;% intervals, 12 seeds. Right after
-    withdrawal the teacher's share (blue) <em>falls</em> with attachment, &minus;6.23
-    [&minus;7.79, &minus;4.68] mrad and &minus;4.65 [&minus;7.05, &minus;2.25] mm per 1,000
-    attached steps, while the deleted term's share (red) does not; on the finger it is the term
-    that grows. At 100k the withdrawn learner (green) is never behind one never guided: level on the
-    elbow at every duration, and on the finger ahead, by more the longer the teacher was attached
-    (&minus;8.44 [&minus;9.89, &minus;6.99] mm per 1,000 steps).</p>
+  <figure class="fig" style="margin-top:1.4rem">
+    <img src="../assets/motor-prior/schematic_withdrawal.png" alt="The teacher-withdrawal conditions and the self-anchor control">
+    <p class="cap"><b>The conditions.</b> Until t<sub>w</sub> every guided learner imitates the teacher
+    (red). At t<sub>w</sub> the withdrawn learner loses both the teacher and the imitation term; the
+    self-anchor keeps the term but points it at a frozen copy of the student (blue). Their differences
+    split the drop into a teacher component and an imitation-term component.</p>
   </figure>
-  <p class="note" style="margin-top:1.4rem"><b>The same holds when guidance replaces the learner's
-  own gradient</b> (cloning only until withdrawal): at 100k plain SAC after withdrawal is level with
-  a never-guided learner on the elbow and 38&ndash;59&nbsp;mm ahead of it on the finger. The two
-  bodies differ in what the collapse at withdrawal <em>is</em>: on the elbow it is switching on the
-  student's own gradient, and keeping the teacher does not prevent it; on the finger it is the
-  deleted term, and keeping the teacher does.</p>
-  <p class="note"><b>And for the body model.</b> Withdrawn at 8k with the learner's real-data
-  signal held fixed, it costs the elbow +22.11 [+4.94, +39.28] mrad at 12k, where the standard
-  protocol detects nothing, and is not detected at 100k. On the finger it leaves the learner
-  15&nbsp;mm short of one that kept the model and 25&nbsp;mm ahead of one that never had it.</p>
-</section>
-<hr>
-<section id="worth">
-  <h2>What a prior is worth</h2>
-  <figure class="fig">
-    <img src="../assets/motor-prior/converged_curves.png"
-         alt="Held-out error over 100,000 steps on myoElbow and myoFinger">
-    <p class="cap"><b>Held-out reach error over 100,000 training steps</b>, mean of 12 matched
-    seeds, band &plusmn;1&nbsp;SE, lower is better. <b>myoElbow</b> (1 joint, 6 muscles, mrad): the
-    body model's lead over model-free learning is a transient of the first 12k (&minus;4.09
-    [&minus;11.11, +2.94] at 100k). <b>myoFinger</b> (4 joints, 5 muscles, mm): the body model's
-    lead is stable, &minus;40.29 [&minus;57.95, &minus;22.64]. On the finger the teacher decides
-    everything: held near a teacher that barely moves the student ends +28.33 [+16.11, +40.56]
-    <em>worse</em> than no aid; with a competent teacher it ends at 34.50&nbsp;mm, ahead of every
-    condition without that teacher.</p>
+  <figure class="fig" style="margin-top:1.4rem">
+    <img src="../assets/motor-prior/teaser_slim.png"
+         alt="Left: random-model minus trained-model error on planar arms of one to four joints. Right: myoFinger teacher withdrawal curves">
+    <p class="cap"><b>Left: taking a competent teacher away on myoFinger.</b> Learners whose teacher
+    is withdrawn (dashed) drop sharply, recover, and end with far lower error than a learner never
+    guided (grey), the more so the longer they were guided. <b>Right:</b> the body-model result (see
+    below).</p>
   </figure>
-  <div class="figrow" style="margin-top:1.8rem">
+  <div class="figrow" style="margin-top:1.4rem">
     <figure class="fig">
-      <video src="../assets/motor-prior/compare_prior_vs_blank_100k.mp4" autoplay muted loop playsinline></video>
-      <p class="cap"><b>The body model against nothing.</b> myoFinger at 100k, same held-out target,
-      frame for frame. Left: the frozen babble-learned body model. Right: model-free SAC with the
-      same budget. 54.37&nbsp;mm against 94.66 over 12 seeds.</p>
+      <video src="../assets/motor-prior/compare_coachT2_vs_coach_100k.mp4" autoplay muted loop playsinline></video>
+      <p class="cap"><b>A teacher is worth its competence.</b> myoFinger, same seeds and loss. Left: a
+      competent teacher's student (37.46&nbsp;mm over 12 seeds). Right: the student of a teacher that
+      barely moves (120.53&nbsp;mm), worse than no teacher at all.</p>
     </figure>
     <figure class="fig">
+      <img src="../assets/motor-prior/dip_slim.png" alt="The drop at withdrawal against attachment time">
+      <p class="cap"><b>The drop after withdrawal.</b> On the finger, after 4,000 or more guided steps,
+      most of the drop is the removed imitation term (red) rather than the teacher's not-yet-absorbed
+      knowledge (blue).</p>
+    </figure>
+  </div>
+  <p class="note" style="margin-top:1.4rem"><b>No deficit against never being guided.</b> On myoFinger
+  the learner whose competent teacher is withdrawn ends &minus;43.25 [&minus;54.72, &minus;31.79]&nbsp;mm
+  ahead of a learner never guided. The share of the teacher's benefit it keeps rises with the time
+  the teacher was attached, from about a quarter after 2,000 steps to about all of it after 7,000;
+  averaged over 2,000&ndash;8,000 it is more than half, under both endpoints.
+  On myoElbow, where the teacher is worth little, its benefit goes with it, but the withdrawn learner
+  is not detectably behind a never-guided one, also when trained to 200k.</p>
+</section>
+<hr>
+<section id="model">
+  <h2>A body model is worth its content</h2>
+  <div style="color:var(--ink-2)">
+    <p>The control is a random model in the identical imagination machinery. Its predictions barely
+    depend on the action, so its imagined experience tells the learner that actions do not matter.
+    On a series of planar arms, that kind of imagination costs little on one joint and becomes
+    destructive as joints are added;
+    the model learned from babbling avoids the cost. Against model-free learning with the same real
+    data per update, the trained model's own advantage is not shown to grow with joint count.</p>
+  </div>
+  <div class="figrow" style="margin-top:1.8rem">
+    <figure class="fig">
       <video src="../assets/motor-prior/compare_prior_vs_randprior_100k.mp4" autoplay muted loop playsinline></video>
-      <p class="cap"><b>Content, not machinery.</b> Left: the babble-trained model. Right: a
-      random-initialised model in the identical Dyna loop. The trained model wins by &minus;48.71
-      [&minus;62.32, &minus;35.09] at 100k.</p>
+      <p class="cap"><b>Content, not machinery.</b> myoFinger at 100k, same held-out target, frame for
+      frame. Left: the babble-trained body model. Right: a random model in the identical imagination
+      loop. Over 12 seeds the trained model is ahead by &minus;50.11 [&minus;64.54, &minus;35.68]&nbsp;mm.</p>
+    </figure>
+    <figure class="fig">
+      <video src="../assets/motor-prior/compare_prior_vs_blank_100k.mp4" autoplay muted loop playsinline></video>
+      <p class="cap"><b>The body model against nothing.</b> Left: the frozen body model. Right:
+      model-free SAC with the same budget. Over 12 seeds: &minus;46.19 [&minus;58.70,
+      &minus;33.69]&nbsp;mm.</p>
     </figure>
   </div>
   <figure class="fig" style="margin-top:1.8rem">
-    <img src="../assets/motor-prior/joint_series.png"
-         alt="Joint-count series: planar muscle arms of one to four joints">
-    <p class="cap"><b>Four planar muscle arms of one to four joints</b> (24 seeds on the two
-    hardest). The babble model beats model-free learning on the one-, two- and four-joint arms and a
-    random model on every arm. A random model's harm grows with joint count, +0.41 [+0.18, +0.63]
-    of the model-free error per joint; the trained model's own benefit does not grow detectably. A
-    harder body makes a wrong model cost more, not a right one worth more.</p>
+    <img src="../assets/motor-prior/curves_slim.png"
+         alt="Learning curves on myoElbow, myoFinger and the four-joint arm">
+    <p class="cap"><b>Learning curves</b> with the trained body model (blue), a random body model
+    (cyan, dashed) and two model-free baselines (grey). On the four-joint arm the random model ends far
+    above model-free learning while the trained model ends far below it.</p>
   </figure>
-  <p class="note" style="margin-top:1.4rem"><b>A unit warning.</b> myoElbow error is in
-  milliradians, the finger and the planar arms in millimetres. Nothing on this page compares
-  magnitudes across bodies.</p>
 </section>
 <hr>
 <section id="boundaries">
   <h2>Findings and their boundaries</h2>
-  <p class="note" style="margin-bottom:1.2rem">Every non-significant cell is to be read as
-  <em>not detected at this power</em>, never as <em>equal</em>. Held-out targets, paired-<em>t</em>
-  95&nbsp;% intervals.</p>
+  <p class="note" style="margin-bottom:1.2rem">The primary results hold under two endpoints (mean over
+  90&ndash;100k and the single 100k evaluation) and survive a Holm correction. Paired-<em>t</em>
+  95&nbsp;% intervals; a non-significant cell is <em>not detected</em>, never <em>equal</em>.</p>
   <div class="tw">
     <table>
       <thead><tr><th>Result</th><th>Estimate (95&nbsp;% CI)</th><th>Holds on</th></tr></thead>
       <tbody>
         <tr>
-          <td>A withdrawn learner is never behind one never guided, once training has converged
-            <span class="sub">Abrupt withdrawal minus never guided, at 100k, over 22 cells: seven
-            attachment durations on each MyoSuite body in the additive regime, four on each in the
-            replacing regime. None is detectably positive.</span></td>
-          <td class="n">elbow slope +0.50 [&minus;0.37, +1.37]<br>finger slope &minus;8.44 [&minus;9.89, &minus;6.99]</td>
-          <td><span class="tag hit">both bodies, both regimes</span></td>
-        </tr>
-        <tr>
-          <td>Right after withdrawal, the teacher's share falls with attachment
-            <span class="sub">Self-anchor minus constant, at the immediate drop. What grows, where
-            anything does, is the deleted term (finger: +7.07 [+2.95, +11.19] per 1,000 steps).</span></td>
-          <td class="n">elbow &minus;6.23 [&minus;7.79, &minus;4.68]<br>finger &minus;4.65 [&minus;7.05, &minus;2.25]</td>
-          <td><span class="tag hit">both bodies</span></td>
-        </tr>
-        <tr>
-          <td>A withdrawn body model leaves a shortfall, not a deficit
-            <span class="sub">Matched withdrawal at 8k. Against keeping the model the finger
-            learner is +15.31 [+5.70, +24.91] mm short; against never having one it is ahead.</span></td>
-          <td class="n">finger vs never had &minus;24.99 [&minus;44.86, &minus;5.11]<br>elbow vs never had +0.97 [&minus;6.59, +8.53]</td>
-          <td><span class="tag hit">both bodies</span></td>
-        </tr>
-        <tr>
-          <td>The body model's worth is its content
-            <span class="sub">Babble-trained model minus a random one in identical machinery, 100k.
-            It beats model-free learning on four of six bodies and is never worse.</span></td>
-          <td class="n">elbow &minus;20.29 [&minus;32.00, &minus;8.59]<br>finger &minus;48.71 [&minus;62.32, &minus;35.09]</td>
-          <td><span class="tag hit">all six bodies</span></td>
-        </tr>
-        <tr>
-          <td>A teacher is worth its competence
-            <span class="sub">myoFinger, same seeds and loss, a near-no-op teacher (169.1&nbsp;mm)
-            against a competent one (35.6&nbsp;mm).</span></td>
-          <td class="n">competent &minus; near-no-op &minus;88.50 [&minus;93.12, &minus;83.88]</td>
+          <td>A competent teacher can be taken away
+            <span class="sub">Withdrawn minus never guided, pooled over withdrawal at 2k&ndash;8k
+            steps; the share of the teacher's benefit kept rises with attachment time (more than half
+            on average, p = 0.0008).</span></td>
+          <td class="n">&minus;43.25 [&minus;54.72, &minus;31.79] mm</td>
           <td><span class="tag hit">finger</span></td>
         </tr>
-        <tr class="off">
-          <td>Earlier claims withdrawn
-            <span class="sub">&ldquo;The body model helps where the body is hard&rdquo; (the
-            joint-count series does not support it); &ldquo;the body decides between the
-            routes&rdquo; (the teacher does); a 12k endpoint for everything (it sat inside a
-            transient on both MyoSuite bodies).</span></td>
-          <td class="n">&mdash;</td>
-          <td><span class="tag">withdrawn claim</span></td>
+        <tr>
+          <td>After longer attachment, the drop at withdrawal is mostly the removed imitation term
+            <span class="sub">Self-anchor decomposition of the rise in error over the 1,000 steps after
+            withdrawal; withdrawal at 4,000 steps or later, Holm-corrected across withdrawal times.</span></td>
+          <td class="n">loss term exceeds teacher component by 17.87 to 46.48 mm</td>
+          <td><span class="tag hit">finger</span></td>
+        </tr>
+        <tr>
+          <td>A body model is worth its content
+            <span class="sub">Trained minus random model in identical machinery; the gap is larger on
+            three and four joints than on one, compared between bodies.</span></td>
+          <td class="n">4 vs 1 joint: &minus;352.27 mm, p &lt; 0.001</td>
+          <td><span class="tag hit">planar arms</span></td>
         </tr>
       </tbody>
     </table>
   </div>
-
   <div class="box mark">
     <h3>Scope statements that travel with every number above</h3>
     <ul>
-      <li>Single-task reach, in simulation, on deterministic and fully observed bodies; the
-      one-joint bodies' held-out targets interpolate between the training targets.</li>
-      <li>The body-model condition is handed the environment's analytic reward at imagined
-      states. The self-anchor holds whatever the student had absorbed by withdrawal; the
-      convergence claim rests on the withdrawn-against-never-guided contrast, which needs no
-      anchor.</li>
-      <li>The finger's first teacher had drifted to within 3.2&nbsp;mm of doing nothing. Withdrawal
-      is a single step; contrasts were not pre-registered.</li>
+      <li>Single-task reach in simulation, on deterministic, fully observed bodies; the imagined
+      reward uses exact forward kinematics.</li>
+      <li>Along the arm series, joint count, muscle count and biarticular muscles change together, and
+      the one-joint arm cannot reach half of its held-out targets.</li>
+      <li>Each body has one teacher; the finger's competent teacher is the best of twelve candidate
+      runs. Withdrawal is a single step at 2k&ndash;8k steps, and guided-phase transitions stay in the
+      replay buffer.</li>
     </ul>
   </div>
 </section>
-
 <hr>
 <section id="method">
   <h2>Method</h2>
   <div style="color:var(--ink-2)">
-    <p>One soft actor-critic backbone in every condition (two hidden layers of 128, batch 128,
-    update-to-data ratio 2), at least 12 matched seeds per condition, and evaluation on twenty
-    held-out targets disjoint from the eight training targets. The body model is a forward model
-    learned once from task-agnostic, reward-free Ornstein&ndash;Uhlenbeck babbling, then frozen and
-    used for short-horizon Dyna rollouts. The teacher is attached through a distillation term on the
-    student's actor loss, either adding to the student's own gradient or replacing it until
-    withdrawal.</p>
-    <p>Each prior has an adversarial control: a random model in the same imagination machinery, a
-    random teacher in the same loss. Withdrawing the body model has a matched-replay condition that
-    holds real data per update fixed; withdrawing the teacher has the self-anchor, a random anchor,
-    and in the cloning-only regime a condition that switches on the student's gradient while keeping
-    the teacher. Every condition runs to 100,000 steps and is checked for a plateau.</p>
-  </div>
-</section>
-
-<hr>
-<section id="checked">
-  <h2>What was run, and how it was checked</h2>
-  <div class="stats">
-    <div><span class="big">1,500</span>
-      <h3>training runs</h3>
-      <p>Six bodies, about 1,500 single-thread CPU-hours. Every condition has at least twelve
-      matched seeds; the three- and four-joint arms have twenty-four.</p></div>
-    <div><span class="big">0</span>
-      <h3>rewards seen by the body model</h3>
-      <p>The babble data is task-agnostic and reward-free, recorded before any task exists.</p></div>
-    <div><span class="big">1,245</span>
-      <h3>numbers recomputed</h3>
-      <p>Every table cell, every significance mark, every interval quoted in the prose and every
-      worded claim, rebuilt from the raw per-seed files by one audit script. Zero mismatches.</p></div>
-    <div><span class="big">1,536+</span>
-      <h3>checkpoints reproduced to the digit</h3>
-      <p>Every run of the earlier 12k study with a counterpart here is reproduced at the
-      checkpoints they share, with no difference. Runs are deterministic on CPU.</p></div>
+    <p>One soft actor-critic learner in every condition (two hidden layers of 128, batch 128,
+    update-to-data ratio 2), twelve matched seeds per condition (twenty-four on the three- and
+    four-joint arms), evaluation on twenty held-out targets disjoint from the eight training targets,
+    100,000 training steps (the elbow withdrawal also to 200,000). The teacher is a frozen actor joined
+    through an imitation term; its control at withdrawal is the self-anchor. The body model is a
+    forward model learned once from reward-free Ornstein&ndash;Uhlenbeck babbling, frozen, and used for
+    short Dyna rollouts; its control is a random model in the same loop. 1,056 runs, about 1,100
+    single-thread CPU-hours.</p>
   </div>
 </section>
 
 <footer>
   <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua (Maurice) Wang
   &middot; <a href="mailto:may.be13@nycu.edu.tw">may.be13@nycu.edu.tw</a></p>
-  <p style="margin-top:.6rem">Rollout videos are myoFinger at 100,000 training steps, evaluated on
-  held-out targets under the same greedy action rule used throughout the study.</p>
 </footer>
 
 </div>
