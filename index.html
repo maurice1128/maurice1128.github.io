@@ -54,8 +54,7 @@
   <b>Contact:</b> may.be13@nycu.edu.tw &nbsp;&middot;&nbsp; mauricewang1128@gmail.com
   &nbsp;&middot;&nbsp; Taipei, Taiwan &nbsp;&middot;&nbsp;
   <a href="cv.html">CV</a> &nbsp;&middot;&nbsp;
-  <a href="assets/cv/WangMuHua_CV_2page.pdf">CV (PDF, 2 pages)</a> &nbsp;&middot;&nbsp;
-  <a href="assets/cv/WangMuHua_CV_full.pdf">CV (PDF, full)</a>
+  <a href="cv.html">CV</a>
 </p>
 
 <hr>
@@ -78,15 +77,12 @@ progress, not a manuscript; simulation only.</p>
       the Patient: A Simulation Platform for Robot-Assisted Diaper Changing and Perineal Cleaning</a>
     <div class="authors"><b>Mu-Hua Wang</b></div>
     <div class="venue">Work in progress, 2026 &middot; simulation platform, not a manuscript</div>
-    <p class="desc">A MuJoCo simulation that scores robot-assisted excretion care on three axes at
-    once &mdash; is the garment on, is the perineum cleaned, is the patient injured &mdash; on a
-    physically settled SMPL-X patient with real pelvic bones and a converged soft-tissue model. With
-    a compliant cloth pad, 0.93 of the main perineal region&rsquo;s area is wiped at least three
-    times under a criterion fixed before the run, and a closed brief is reached around the settled
-    patient with all four tabs fastened. After 285 simulated minutes supine, changing the mattress
-    from rigid to 30&nbsp;kPa foam lowers skin pressure by about 15&nbsp;% but shrinks the volume of
-    deep tissue above the 285-minute strain level from 69 to 4&nbsp;cm&sup3;.</p>
-    <p class="against"><b>Scope:</b> simulation only, on a statistical body model; results are
+    <p class="desc">A MuJoCo simulation platform, in development, designed to measure robot-assisted
+    excretion care on three axes separately &mdash; garment state, cleaning coverage and tissue
+    injury &mdash; on an SMPL-X body; none of the three is complete. On a rigid bed, in one body and
+    an older supine posture, skin pressure falls over 285 simulated minutes while deep compressive
+    strain rises, the two moving in opposite directions.</p>
+    <p class="against"><b>Scope:</b> simulation only, one statistical body model; results are
     model-internal and not validated against measurements on people. Ongoing.</p>
     <div class="links">
       <a href="projects/caregiving-safety-sim.html">[Project page]</a>
@@ -106,20 +102,19 @@ contact safety on a person, then the body model behind it, then the hand that ha
            autoplay muted loop playsinline preload="metadata"></video>
   </div>
   <div class="meta">
-    <a class="title" href="projects/gentle-care-robot.html">Gentle by Knowing: How Much Must a Care
-      Robot Know About a Person to Lift Their Arm Safely?</a>
+    <a class="title" href="projects/gentle-care-robot.html">Gentle by Knowing: Person Knowledge, Not
+      Force Thresholds, Protects Restricted Joints in Simulated Robotic Arm Lifting</a>
     <div class="authors"><b>Mu-Hua Wang</b></div>
-    <div class="venue">Submitted to Machine Learning (Springer), 2026</div>
-    <p class="desc">Many care recipients cannot move a shoulder or elbow freely, and lifting their
-    forearm can press that joint into the end of its range. In a musculoskeletal simulation,
+    <div class="venue">Brief Research Report prepared for Frontiers in Robotics and AI (not yet submitted)</div>
+    <p class="desc">Many care recipients cannot move a shoulder or elbow freely, and a robot lifting
+    their forearm can press that joint into the end of its range. In a musculoskeletal simulation,
     controllers that differ only in what they know about the person are compared, from nothing to
-    perfect knowledge. A policy learned offline in simulation from a coarse care record reduced
-    harmful outcomes from 110 to 25 of 300 new simulated persons at a similar number of safe
-    completions; no force-threshold guard reduced harm by significantly more than 5 percentage
-    points.</p>
-    <p class="against"><b>Scope:</b> simulation only; harm is a mechanical exposure proxy, not pain
-    or injury. With half of the restrictions missing from the record, the policy still harmed 59%
-    as many persons as a fixed lift, and unrecorded persons were harmed at the fixed-lift rate.</p>
+    perfect knowledge. With a complete care record, a policy learned offline in simulation reduced
+    harmful outcomes from 110 to 25 of 300 new simulated persons by declining 91 of them; no
+    force-magnitude guard reduced harmful outcomes by significantly more than 5 percentage points.</p>
+    <p class="against"><b>Scope:</b> simulation only; harm is a mechanical exposure proxy, not
+    injury. Non-inferiority on safe completions was not established, and with half of the
+    restrictions unrecorded the reduction shrank by almost half.</p>
     <div class="links">
       <a href="projects/gentle-care-robot.html">[Project page]</a>
       <a href="assets/papers/gentle_care_robot.pdf">[Paper]</a>
@@ -134,21 +129,27 @@ contact safety on a person, then the body model behind it, then the hand that ha
            preload="metadata"></video>
   </div>
   <div class="meta">
-    <a class="title" href="projects/motor-prior.html">What a Motor Prior Is Worth: A Body Model
-      and a Teacher Compared to Convergence and Through Withdrawal</a>
+    <a class="title" href="projects/motor-prior.html">Withdrawn Teachers and Learned Body Models in
+      Muscle-Driven Motor Learning</a>
     <div class="authors"><b>Mu-Hua Wang</b></div>
-    <div class="venue">Submitted to IEEE Transactions on Cognitive and Developmental Systems, 2026</div>
-    <p class="desc">A frozen forward model learned from reward-free motor babbling, and a distilled
-    teacher, as priors for one SAC learner on six muscle-driven bodies, at least twelve matched
-    seeds per condition, trained to a checked plateau. Once training has converged, a learner that
-    lost its teacher is never detectably worse than one never guided; the body model beats
-    model-free learning on four of six bodies and a random model on all six.</p>
-    <p class="against"><b>Scope:</b> single-task reach in simulation. The body-model condition is
-    handed the analytic reward at imagined states, and the finger&rsquo;s first teacher is within
-    3.2&nbsp;mm of doing nothing, so its results describe distillation toward a near-no-op target.</p>
+    <div class="venue">Manuscript prepared for IEEE Transactions on Cognitive and Developmental Systems (not yet submitted)</div>
+    <p class="desc">A competent teacher can be taken away without leaving the learner behind; a body
+    model is worth its content. One soft actor-critic learner on six muscle-driven bodies &mdash; an
+    elbow and a finger from MyoSuite and four planar arms of one to four joints &mdash; with 12
+    matched seeds per condition and controls that change one thing at a time. On the finger, a
+    learner whose competent teacher is withdrawn ends ahead of one never guided and keeps more than
+    half of the teacher&rsquo;s benefit on average, from about a quarter after 2,000 steps of
+    guidance to about all of it after 7,000; after 4,000 or more steps, most of the drop at
+    withdrawal is the removed imitation term. On the planar arms a random body model becomes
+    increasingly harmful as joints are added (5, 28, 133 and 357&nbsp;mm); the babble-trained model
+    avoids that harm.</p>
+    <p class="against"><b>Scope:</b> single-task reach in simulation on deterministic, fully observed
+    bodies; the imagined reward uses exact forward kinematics; one teacher and one trained model per
+    body.</p>
     <div class="links">
       <a href="projects/motor-prior.html">[Project page]</a>
-      <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[Paper]</a>
+      <a href="assets/papers/withdrawn_teachers_learned_body_models.pdf">[Paper]</a>
+      <a href="https://github.com/maurice1128/two-routes-motor-prior">[Code]</a>
     </div>
   </div>
 </div>
@@ -162,7 +163,7 @@ contact safety on a person, then the body model behind it, then the hand that ha
   <div class="meta">
     <a class="title" href="projects/hand-modularity.html">Learned In-Betweeners Make Simulated Dexterous Hands Learn Faster</a>
     <div class="authors"><b>Mu-Hua Wang</b></div>
-    <div class="venue">Submitted to IEEE Robotics and Automation Letters, 2026</div>
+    <div class="venue">Manuscript prepared for IEEE Robotics and Automation Letters (not yet submitted)</div>
     <p class="desc">Modular motion models promise a hand that learns faster and reaches further.
     As the action space of a dexterous policy, keyframes joined by a learned in-betweener lead a
     continuous latent at the same decision rate on held-out skill sequences (0.59 against 0.22) and
@@ -184,19 +185,19 @@ contact safety on a person, then the body model behind it, then the hand that ha
            autoplay muted loop playsinline preload="metadata"></video>
   </div>
   <div class="meta">
-    <a class="title" href="projects/hand-composition.html">A Hand-Motion Dataset Can Test Compositional
-      Generalisation Only When Each Label Describes the Whole Trajectory It Is Attached To</a>
+    <a class="title" href="projects/hand-composition.html">Partial Labels Hide Compositional Difficulty in
+      Hand-Motion Data</a>
     <div class="authors"><b>Mu-Hua Wang</b></div>
     <div class="venue">Manuscript prepared for Transactions on Machine Learning Research (not yet submitted)</div>
     <p class="desc">The usual test of compositional generalisation holds out a combination of labels. On OakInk-Image,
     joining clips so that each correct label described only half of a trajectory, with training volume held fixed,
-    took the penalty from +17.0 % to +3.9 %, not distinguishable from a zero-truth control. On TACO, whose labels each
+    took the penalty from +17.0 % to +3.9 %, at most 2.9 points above a zero-truth control. On TACO, whose labels each
     name one action, a penalty predicted before its data were opened was found (+10.6 %).</p>
     <p class="against"><b>Scope:</b> one prior architecture; the error is reconstruction, not generation.</p>
     <div class="links">
       <a href="projects/hand-composition.html">[Project page]</a>
     
-      <a href="assets/papers/hand_motion_composition_axes.pdf">[Paper]</a>
+      <a href="assets/papers/hand_label_alignment.pdf">[Paper]</a>
     </div>
   </div>
 </div>
@@ -429,20 +430,19 @@ Institute for Information Industry markerless motion capture system, February 20
 </ol>
 
 <p class="divider">&mdash; Manuscripts &mdash;</p>
-<p class="note" style="margin-top:-8px">Four are submitted and awaiting a decision; the rest are drafts. None is
-published, and none is posted to a preprint server.</p>
+<p class="note" style="margin-top:-8px">None of these is published or submitted, and none is posted to a preprint server.</p>
 <div class="tw">
 <table>
   <thead><tr><th>Manuscript</th><th>Role</th><th>Status</th></tr></thead>
   <tbody>
-    <tr><td><a href="projects/gentle-care-robot.html">Gentle by Knowing: How Much Must a Care Robot Know About a Person to Lift Their Arm Safely?</a> <a href="assets/papers/gentle_care_robot.pdf">[PDF]</a></td>
-        <td class="n">sole author</td><td><span class="tag hit">submitted &middot; Machine Learning</span></td></tr>
-    <tr><td><a href="projects/motor-prior.html">What a Motor Prior Is Worth: A Body Model and a Teacher Compared to Convergence and Through Withdrawal</a> <a href="assets/papers/what_a_motor_prior_is_worth.pdf">[PDF]</a></td>
-            <td class="n">sole author</td><td><span class="tag hit">submitted &middot; IEEE TCDS</span></td></tr>
+    <tr><td><a href="projects/gentle-care-robot.html">Gentle by Knowing: Person Knowledge, Not Force Thresholds, Protects Restricted Joints in Simulated Robotic Arm Lifting</a> <a href="assets/papers/gentle_care_robot.pdf">[PDF]</a></td>
+    <td class="n">sole author</td><td><span class="tag">draft &middot; not yet submitted</span></td></tr>
+    <tr><td><a href="projects/motor-prior.html">Withdrawn Teachers and Learned Body Models in Muscle-Driven Motor Learning</a> <a href="assets/papers/withdrawn_teachers_learned_body_models.pdf">[PDF]</a></td>
+    <td class="n">sole author</td><td><span class="tag">draft &middot; not yet submitted</span></td></tr>
     <tr><td><a href="projects/hand-modularity.html">Learned In-Betweeners Make Simulated Dexterous Hands Learn Faster</a> <a href="assets/papers/hand_modularity_faster_not_better.pdf">[PDF]</a></td>
-        <td class="n">sole author</td><td><span class="tag hit">submitted &middot; IEEE RA-L</span></td></tr>
-    <tr><td><a href="projects/hand-composition.html">A Hand-Motion Dataset Can Test Compositional Generalisation Only When Each Label Describes the Whole Trajectory It Is Attached To</a> <a href="assets/papers/hand_motion_composition_axes.pdf">[PDF]</a></td>
         <td class="n">sole author</td><td><span class="tag">draft &middot; not yet submitted</span></td></tr>
+    <tr><td><a href="projects/hand-composition.html">Partial Labels Hide Compositional Difficulty in Hand-Motion Data</a> <a href="assets/papers/hand_label_alignment.pdf">[PDF]</a></td>
+    <td class="n">sole author</td><td><span class="tag">draft &middot; not yet submitted</span></td></tr>
     <tr><td><a href="projects/body-codes.html">Reparameterisation Invariance Limits the Benefit of Reorganising a Body Code
         for Morphology Transfer</a></td>
         <td class="n">sole author</td><td><span class="tag">draft</span> <a href="assets/papers/master_then_reorganise.pdf">[PDF]</a></td></tr>
@@ -470,7 +470,7 @@ published, and none is posted to a preprint server.</p>
   <dt>Email</dt><dd>may.be13@nycu.edu.tw &middot; mauricewang1128@gmail.com</dd>
   <dt>Location</dt><dd>Taipei, Taiwan</dd>
   <dt>Looking for</dt><dd>An M.S. place in robot learning / embodied AI</dd>
-  <dt>CV</dt><dd><a href="assets/cv/WangMuHua_CV_2page.pdf">two-page PDF</a> &middot; <a href="assets/cv/WangMuHua_CV_full.pdf">full PDF</a> &middot; <a href="cv.html">web version</a></dd>
+  <dt>CV</dt><dd><a href="cv.html">web version</a> &middot; PDF on request</dd>
   <dt>Available</dt><dd>Manuscripts, run artifacts and code, on request. None is published.</dd>
 </dl>
 

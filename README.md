@@ -4,16 +4,22 @@ Static site for graduate-school applications. No build step: plain HTML, one sha
 stylesheet, and assets as files.
 
 ```
-index.html              homepage — research interest, five projects, systems, publications
-cv.html                 full CV
+index.html              homepage — research interest, current work, projects, systems, publications
+cv.html                 full CV (web version; the PDF CVs are withdrawn until rebuilt)
 css/style.css           shared design system (light + dark, three-state theme)
 projects/
-  motor-prior.html      What a Motor Prior Is Worth
-  hand-composition.html Which Hand-Motion Composition Axes Are Worth Measuring
-  body-codes.html       What Master-Then-Reorganise Does Not Buy
-  capture-error.html    How Much Joint-Angle Error Can Identification Tolerate?
-  spasticity.html       Hyperreflexia vs dorsiflexor weakness
-assets/<project>/       figures, videos and the one released PDF
+  caregiving-safety-sim.html  Measuring whether a care robot hurts the patient (platform, work in progress)
+  gentle-care-robot.html      Gentle by Knowing (person knowledge vs. force thresholds for robotic arm lifting)
+  motor-prior.html            Withdrawn teachers and learned body models in muscle-driven motor learning
+  hand-modularity.html        Learned in-betweeners make simulated dexterous hands learn faster
+  hand-composition.html       Partial labels hide compositional difficulty (hand datasets, TMLR draft)
+  body-codes.html             Reparameterisation invariance limits reorganising a body code
+  capture-error.html          How much joint-angle error can identification tolerate?
+  joint-offset.html           Joint-centre offset dominates 3D position error
+  spasticity.html             Hyperreflexia vs dorsiflexor weakness
+  methadone.html              Methadone dose patterns around random urine tests
+  gentle-other-model.html     Superseded earlier stage of the care-robot line
+assets/<project>/       figures and videos; assets/papers/ holds the manuscript PDFs
 ```
 
 ## Publishing to GitHub Pages
