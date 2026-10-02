@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Measuring Whether a Care Robot Hurts the Patient &mdash; Mu-Hua Wang</title>
-<meta name="description" content="Work in progress: a physics simulation platform that scores robot-assisted diaper changing and perineal cleaning on three axes — garment on, perineum cleaned, patient injured — with a converged soft-tissue model of the sacral region.">
+<meta name="description" content="Work in progress: a simulation platform being built to measure garment state, cleaning coverage and tissue injury separately during robot-assisted diaper changing and perineal cleaning on a statistical body model. Simulated, model-internal, not validated on people; no end-to-end task is complete.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -14,30 +14,75 @@
 <nav>
   <ul>
     <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#scope">Scope</a></li>
     <li><a href="#axes">Three axes</a></li>
     <li><a href="#patient">Patient</a></li>
     <li><a href="#injury">Injury</a></li>
     <li><a href="#cleaning">Cleaning</a></li>
     <li><a href="#garment">Garment</a></li>
-    <li><a href="#progress">In progress</a></li>
+    <li><a href="#progress">Next steps</a></li>
     <li><a href="../cv.html">CV</a></li>
   </ul>
 </nav>
 
 <header>
-  <p class="note">Work in progress &middot; platform v2 &middot; September 2026</p>
+  <p class="note">Work in progress &middot; platform v2 &middot; last revised 2026-10-02</p>
   <h1>Measuring whether a care robot hurts the patient</h1>
-  <p class="kicker">A physics simulation of robot-assisted diaper changing and perineal cleaning,
-  built to answer a question the existing caregiving simulators do not ask: not <em>can the robot
-  finish the task</em>, but <em>what does it do to the body while trying</em>.</p>
+  <p class="kicker">A physics simulation platform being built for robot-assisted diaper changing and
+  perineal cleaning on a statistical (SMPL-X) body. It is designed to measure three things
+  separately: garment state, cleaning coverage and tissue injury. None of the three is complete.</p>
   <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; independent</p>
   <div class="links">
     <a href="../index.html">[All projects]</a>
   </div>
-  <p class="note">This page describes an ongoing build. Every number is a simulation result on a
-  statistical body model, traceable to a round report and its stored output files; none has been
-  validated against measurements on people.</p>
 </header>
+
+<hr>
+<section>
+  <div class="box">
+    <p><b>WORK IN PROGRESS.</b> This is an unfinished research platform, not a finished system and
+    not a manuscript. All results are simulated, model-internal and not validated on humans.</p>
+  </div>
+  <h2 style="margin-top:1.6rem">Summary</h2>
+  <div style="color:var(--ink-2)">
+    <p>Work in progress; all results are simulated, model-internal, from one SMPL-X body,
+    unvalidated against people. A structured literature search (September 2026) found no published
+    simulation platform in which a manipulator performs perineal cleaning or diaper changing on a
+    statistical body while separately measuring garment state, true-skin cleaning and tissue injury.
+    On a rigid bed, in an older supine posture and with unswept tissue parameters, the
+    90th-percentile and 1&nbsp;cm&sup3;-peak compressive strain after 285 simulated minutes differ
+    by less than 1&nbsp;% between the two finest meshes run at that duration and between two time
+    schedules (a pairwise tolerance, not a demonstrated convergence order); skin pressure falls while
+    deep strain rises; the other tissue quantities listed below do not meet the same tolerance. No run yet gives a closed, layered, non-penetrating brief,
+    held after release, within the platform&rsquo;s own stretch bound, which has no physical
+    origin.</p>
+  </div>
+</section>
+
+<hr>
+<section id="scope">
+  <h2>Scope and limits</h2>
+  <div class="box">
+    <ul>
+      <li><b>Simulated.</b> Every result is a simulation result (one SMPL-X neutral body, or synthetic
+      test patches where stated), is model-internal, and has not been validated against measurements
+      on people.</li>
+      <li><b>Body geometry.</b> SMPL-X accuracy in the crotch/perineal region is unvalidated; the one
+      available whole-body figure is given under Cleaning.</li>
+      <li><b>Tissue numbers</b> are from a rigid flat bed, one body, an older supine posture, and
+      tissue parameters that have not been sensitivity-swept.</li>
+      <li><b>Assumed values.</b> Foam stiffness is an assumed bracket; garment acceptance limits and
+      pad parameters are chosen or assumed, not sourced.</li>
+      <li><b>Start state of garment and cleaning-pad results.</b> Where shown, they come from
+      synthetic patches or from an earlier frog-leg start state (internal label r86) that does not pass
+      all of the platform&rsquo;s own posture gates: it misses the thigh-overlap gate by 0.63&nbsp;mm,
+      is held at the knees by applied hold forces (68 and 90&nbsp;N) and has both ankles at the
+      &plusmn;90&deg; limit of their modelled range. The effect of these differences on those results
+      has not been computed. The side-lying access results below come from a separate side-lying
+      simulation state.</li>
+    </ul>
+  </div>
+</section>
 
 <hr>
 <section>
@@ -45,168 +90,167 @@
     <video src="../assets/caregiving-safety-sim/supine_wide.mp4"
            poster="../assets/caregiving-safety-sim/supine_wide_poster.png"
            autoplay muted loop playsinline preload="metadata"
+           aria-label="Rendered hospital room with a patient lying supine and a robot arm parked beside the bed"
            onerror="this.outerHTML='<img src=&quot;../assets/caregiving-safety-sim/supine_wide_poster.png&quot; alt=&quot;Rendered hospital room with a patient lying supine and a robot arm parked beside the bed&quot;>'"></video>
-    <p class="cap"><b>The scene</b> (5&nbsp;s, no sound). The patient is a physically settled body
-    on a pressure-sensing mattress; the robot is parked. Rendered from the simulation state, not
-    animated by hand. Patient realism (arm and head resting positions) is being refined; see
-    <a href="#progress">In progress</a>.</p>
+    <p class="cap"><b>The scene</b> (5&nbsp;s, no sound). A simulated patient on a simulated
+    pressure-sensing mattress with a chosen stiffness law; the robot is parked. Rendered from a
+    simulation state, not animated by hand. A rendering is not evidence that a posture is correct;
+    arm and head resting positions are being refined (see <a href="#progress">Next steps</a>).</p>
   </figure>
 </section>
 
 <hr>
 <section id="axes">
-  <h2>Every run is scored on the same three axes</h2>
+  <h2>Three axes, each measured separately (none complete)</h2>
   <div class="stats">
     <div><span class="big">&#9312;</span>
       <h3>Is the garment on?</h3>
-      <p>Coverage, leg-opening gap, waistband gap, tab and band tension, slip after release,
-      cloth-on-skin pressure. The cloth collides with the patient&rsquo;s true posed skin.</p></div>
+      <p>Designed to record leg-opening and waistband gaps, tab tension, stretch and slip after
+      release. Status: in development; see
+      <a href="#garment">Garment</a>.</p></div>
     <div><span class="big">&#9313;</span>
       <h3>Is the perineum cleaned?</h3>
-      <p>Tool reachability on the true skin, the robot arm chain (IK, transfer, wipe), and the
-      wiped-area fraction of each target region under a pre-registered pressure band.</p></div>
+      <p>Designed to record tool reachability, arm-chain feasibility (clearance and reach) and a
+      wiped-area fraction per target region. Status: reachability is simulated geometrically
+      (below); in the runs on file, per-region coverage is not yet established (see
+      <a href="#notyet">Open items</a>).</p></div>
     <div><span class="big">&#9314;</span>
       <h3>Is the patient injured?</h3>
-      <p>Bed reaction, interface pressure on a sensor grid, caregiver hand forces, and deep-tissue
-      compressive strain from a converged soft-tissue model of the sacral region.</p></div>
+      <p>Compressive strain in a soft-tissue model of the sacral region, and skin pressure, over 285
+      simulated minutes of supine loading (rigid bed, one body; below). No injury conclusion is
+      drawn.</p></div>
   </div>
 </section>
 
 <hr>
 <section id="patient">
-  <h2>A settled patient in clinical care positions</h2>
+  <h2>The simulated patient</h2>
   <div style="color:var(--ink-2)">
-    <p>The patient is an SMPL-X body driven by MuJoCo, with real MyoSkeleton pelvis, sacrum and
-    femur meshes registered under the skin (hip-centre residual 10.4&nbsp;mm) and passive joint
-    mechanics after Riener&nbsp;&amp;&nbsp;Edrich&nbsp;1999. Every care position is settled physically
-    and must pass gates before it is used: pose drift under 0.05&deg; in the final second, support
-    reaction equal to body weight within 2&nbsp;%, and pelvis roll under 5&deg; for supine.</p>
+    <p>The patient is an SMPL-X body driven by MuJoCo, with generic bone meshes registered to the
+    skin (hip-centre residual 10.4&nbsp;mm on this body) and passive joint mechanics: hip and knee use
+    the Riener&nbsp;&amp;&nbsp;Edrich&nbsp;1999 double-exponential form with coefficients transcribed
+    from secondary sources and units inferred; the ankle is a modified form.</p>
+    <p>The resting positions used so far are start states for tissue loading, route planning and
+    rendering. A state counts as at rest when it meets a preset drift criterion after the
+    simulation has been continued; support equal to body weight holds by construction, so it is a
+    consistency check, not evidence of a correct posture. Where a leg is raised it is held by ideal point welds and is
+    not self-supported.</p>
   </div>
-  <table style="margin-top:1.2rem">
-    <thead><tr><th>Position</th><th>Pelvis</th><th>Support</th><th>Notes</th></tr></thead>
-    <tbody>
-      <tr><td>True supine, legs extended</td><td class="n">roll 1.0&ndash;2.9&deg;</td><td class="n">99.9&nbsp;%</td><td>Left/right buttock load within 1.5&nbsp;%; sacral footprint 125.9&nbsp;N</td></tr>
-      <tr><td>Side-lying (perineal care)</td><td class="n">90.0&deg; lateral</td><td class="n">100.3&nbsp;%</td><td>Two bolsters, arm by the head; drift 0.011&deg; / 0.088&nbsp;mm</td></tr>
-      <tr><td>Supine frog-leg</td><td class="n">roll &lt;&nbsp;3&deg;</td><td class="n">100.0&nbsp;%</td><td>Knees held (69 / 90&nbsp;N); knees &plusmn;330&nbsp;mm apart</td></tr>
-    </tbody>
-  </table>
-  <div class="figrow" style="margin-top:1.6rem">
-    <figure class="fig">
-      <img src="../assets/caregiving-safety-sim/sidelying_room_wide.png" alt="Rendered hospital room: patient side-lying under a blanket with two bolsters, robot arm parked beside the bed">
-      <p class="cap"><b>Side-lying</b>, rendered from the settled physics state (gown and blanket draped).</p>
-    </figure>
-    <figure class="fig">
-      <img src="../assets/caregiving-safety-sim/frogleg_high.png" alt="Rendered view from above: patient supine with knees raised under a blanket, robot arm parked">
-      <p class="cap"><b>Supine frog-leg</b>, the clinical position for perineal care, seen from above.</p>
-    </figure>
-  </div>
+  <figure class="fig" style="margin-top:1.6rem">
+    <img src="../assets/caregiving-safety-sim/sidelying_room_wide.png" alt="Rendered hospital room: patient side-lying under a blanket with padded supports, robot arm parked beside the bed">
+    <p class="cap"><b>Side-lying</b> with padded supports, rendered from a simulation state (blanket
+    draped). A rendering, not evidence that the posture is correct.</p>
+  </figure>
 </section>
 
 <hr>
 <section id="injury">
-  <h2>Interface pressure alone does not tell you about deep-tissue risk</h2>
+  <h2>In one simulated body on a rigid bed, skin pressure falls while deep strain rises over 285 minutes</h2>
   <div style="color:var(--ink-2)">
-    <p>The sacral soft-tissue model has real bone on the deep side, a flat bed against the skin, a
-    tensor viscoelastic law, and locking-free F-bar elements solved by a static Newton method. The
-    solver reproduces closed-form compression tests to 1.8&times;10<sup>&minus;5</sup>, its
-    gradients match finite differences to 10<sup>&minus;11</sup>, and the strain fields are converged
-    across three mesh densities and against a 37-step time control. Contact with a compliant foam
-    mattress is verified: a very stiff foam reproduces the rigid bed within 1.6&nbsp;%.</p>
+    <p>The sacral soft-tissue model uses F-bar tetrahedral elements (a formulation that reduces
+    volumetric locking) solved by a static Newton method. Its production energy passes a finite-difference derivative check
+    (6&ndash;7&times;10<sup>&minus;12</sup>), a patch test (&le;&nbsp;7.6&times;10<sup>&minus;14</sup> in
+    four of five F-bar cases; the fifth 6.7&times;10<sup>&minus;10</sup>), and reproduces the target
+    stiffness and Poisson&rsquo;s ratio of homogeneous blocks to about 10<sup>&minus;4</sup>. The
+    solver&rsquo;s own convergence flag reads false for the fat, muscle and 15&nbsp;kPa foam block
+    tests because its tolerance was set below round-off; the values still agree to
+    10<sup>&minus;4</sup>.</p>
+    <p>On a rigid flat bed, for one body in an older supine posture and with tissue parameters not
+    swept, the 90th-percentile compressive strain (29.7&nbsp;%) and the peak compressive strain
+    averaged over 1&nbsp;cm&sup3; (48.7&nbsp;%) after 285 simulated minutes (applied load
+    125.92&nbsp;N, the taxel spring channel; net body load 123.57&nbsp;N) change by
+    +0.55&nbsp;% (P90) and +0.43&nbsp;% (peak) between the two finest tissue meshes run at
+    285&nbsp;minutes, and by
+    +0.66&nbsp;% / +0.56&nbsp;% with a 37-step instead of a 19-step time schedule. This agreement
+    holds only for these two quantities and only between the two finest meshes and between 19 and 37
+    steps (the next-coarser mesh pair differs by +2.6&nbsp;% in P90; a still finer mesh exists only for
+    shorter durations). This is a pairwise tolerance, not a demonstrated convergence order; for the
+    foam mattress the mesh sequence was not settling (see below). It is not extended to other
+    bodies. Strain here is engineering compressive strain,
+    1&nbsp;&minus;&nbsp;&lambda;<sub>min</sub> of the F-bar tetrahedron. The absolute 285-minute values
+    are not robust across postures (about &plusmn;3.1&nbsp;% in P90 and &plusmn;2.4&nbsp;% in the
+    peak; first-order bounds from one pair of states, assumed linear).</p>
+    <p>Over the same interval skin pressure falls while deep strain rises, the two moving in opposite
+    directions (a within-body statement over time for one body, not a population or mattress claim).
+    Interface pressure alone is therefore not a surrogate for deep-tissue load. The window pressure,
+    the 5&nbsp;cm mean, the contact area and the volume above 40&nbsp;% are not converged within
+    1&nbsp;% even on the rigid bed and are not quoted.</p>
   </div>
-  <table style="margin-top:1.2rem">
-    <thead><tr><th>After 285 min supine</th><th>Rigid bed</th><th>30 kPa foam</th><th>15 kPa foam</th></tr></thead>
-    <tbody>
-      <tr><td>Peak compressive strain (1&nbsp;cm&sup3; average)</td><td class="n">48.7&nbsp;%</td><td class="n">40.2&nbsp;%</td><td class="n">33.9&nbsp;%</td></tr>
-      <tr><td>Tissue above the 40&nbsp;% level</td><td class="n">69&nbsp;cm&sup3;</td><td class="n">4&nbsp;cm&sup3;</td><td class="n">1.3&nbsp;cm&sup3;</td></tr>
-      <tr><td>Skin pressure, 38&nbsp;mm window</td><td class="n">47&nbsp;mmHg</td><td class="n">40&nbsp;mmHg</td><td class="n">34&nbsp;mmHg</td></tr>
-      <tr><td>Where the peak sits</td><td colspan="3">Muscle, 23&ndash;30&nbsp;mm deep, about 3&nbsp;cm above bone &mdash; the same site on all three beds</td></tr>
-    </tbody>
-  </table>
-  <div class="stats" style="margin-top:2rem">
-    <div><span class="big">&minus;15&nbsp;%</span>
-      <h3>skin pressure, rigid &rarr; 30&nbsp;kPa foam</h3>
-      <p>47 to 40&nbsp;mmHg.</p></div>
-    <div><span class="big">&divide;17</span>
-      <h3>tissue above the 285-min strain level</h3>
-      <p>69 to 4&nbsp;cm&sup3; on the same change of mattress.</p></div>
-    <div><span class="big">3&nbsp;cm</span>
-      <h3>above bone, in muscle</h3>
-      <p>The robust strain peak sits at the same deep site on all three beds.</p></div>
-  </div>
-  <figure class="fig" style="margin-top:1.6rem">
-    <img src="../assets/caregiving-safety-sim/pressure_strain_maps.png" alt="Four columns of maps: skin pressure fades over time while a compact deep strain hotspot forms">
-    <p class="cap"><b>Skin pressure (top) and deep compressive strain (bottom)</b> at 0, 1&nbsp;h,
-    285&nbsp;min and long-term on the rigid bed. Over time the two move in opposite directions: skin
-    pressure spreads and fades while deep strain concentrates. This matches the direction of the
-    Gefen/Oomens deep-tissue-injury literature.</p>
-  </figure>
   <div class="box" style="margin-top:1.6rem">
-    <p>Strain levels follow Gefen 2008 (40&nbsp;% at 285&nbsp;min, 65&nbsp;% at 1&nbsp;h, in-vitro
-    constructs); the cleaning band follows Konya 2023 (10&ndash;20&nbsp;mmHg). Every threshold on this
-    page was checked against its primary source in a citation audit. Foam stiffnesses are bracketed
-    values pending published hospital-mattress data.</p>
+    <p>Strain levels are compared with Gefen et al. 2008 (compressive strain tolerated below
+    65&nbsp;% for 1&nbsp;h and below 40&nbsp;% for about 285&nbsp;min), measured on in-vitro
+    constructs and read at abstract level; the mapping from the model&rsquo;s 3D minimum-stretch strain
+    to the construct&rsquo;s applied strain is a modelling choice. No safe or injured conclusion is
+    drawn. A rigid-against-foam mattress comparison is not reported: foam stiffness values are assumed
+    bracketing values pending published hospital-mattress data, and the 285-minute foam results are
+    not mesh-converged.</p>
   </div>
 </section>
 
 <hr>
 <section id="cleaning">
-  <h2>Positioning opens the perineum; the robot reaches it on the true skin</h2>
+  <h2>Leg position changes geometric tool access (side-lying)</h2>
   <div class="stats">
-    <div><span class="big">100&nbsp;%</span>
-      <h3>reachable, supine, legs abducted 30&deg;</h3>
-      <p>All three perineal target regions, 20&nbsp;mm and 10&nbsp;mm tools. Frog-leg with knees held: 95&nbsp;%.</p></div>
-    <div><span class="big">83&nbsp;%</span>
-      <h3>reachable, side-lying, upper leg raised 30&deg;</h3>
-      <p>Holding the leg takes 122&nbsp;N, about the weight of the leg. Raising it 45&deg; gives 92&ndash;95&nbsp;%.</p></div>
-    <div><span class="big">19 / 798</span>
-      <h3>legal robot bases reach all four targets</h3>
-      <p>Approach and transfer complete with peak contact force &le;&nbsp;2.8&nbsp;N and no skin penetration.</p></div>
-    <div><span class="big">0.93</span>
-      <h3>wiped-area fraction, main perineal region</h3>
-      <p>Compliant cloth pad, patch-mean pressure 13&ndash;15&nbsp;mmHg, &ge;&nbsp;3 passes; criterion fixed before the run.</p></div>
+    <div><span class="big">19&nbsp;% &rarr; 83&nbsp;%</span>
+      <h3>10&nbsp;mm tool access to the perineal target, side-lying</h3>
+      <p>Straight-approach access of a 10&nbsp;mm sphere tool to the perineal target faces
+      (patch_1_0 only; 52 of 63 faces; one face is 1.6 percentage points; best of 25 approach
+      directions) rises from 19&nbsp;% with the legs stacked to 83&nbsp;% with the upper leg flexed
+      45&deg;, abducted 30&deg; and the knee at 90&deg;; 78&nbsp;% after the soft tissue is allowed to
+      sag under gravity, just under the platform&rsquo;s own 80&nbsp;% bar. For
+      the 20&nbsp;mm tool the corresponding value is 33&nbsp;%. With the upper leg abducted 45&deg;,
+      access is 92&nbsp;% (hip flexion 45&deg;) and 95&nbsp;% (70&deg;) before sag.</p></div>
+    <div><span class="big">abduction &ne; flexion</span>
+      <h3>which leg motion opens the slot, in this SMPL-X model</h3>
+      <p>With the upper leg not raised, 10&nbsp;mm-tool access to the main perineal patch
+      (patch_1_0) stays at 21&ndash;25&nbsp;% for hip flexion 45&ndash;90&deg; (19&nbsp;% at the
+      rest state). Abduction rather than flexion opens the slot
+      between the thighs (flexion 45&deg;: 21 / 41 / 83 / 92&nbsp;% at abduction 0 / 15 / 30 /
+      45&deg;). The clinical qualitative literature (Sano 2024, Kaneyuku 2024) describes hip flexion as
+      creating space; in this model, flexion alone does not open the slot. No source
+      measures groove access by posture.</p></div>
   </div>
-  <figure class="fig" style="margin-top:1.6rem">
-    <img src="../assets/caregiving-safety-sim/access_map84.png" alt="Heat maps of tool access versus upper-leg flexion and abduction in side-lying">
-    <p class="cap"><b>Side-lying access map.</b> 10&nbsp;mm tool access to the perineal (left) and
-    perianal (right) targets versus upper-leg flexion and abduction, with the leg on a pillow (top)
-    or held by the caregiver (bottom). Abduction, not flexion, opens the slot between the thighs.</p>
-  </figure>
   <div style="color:var(--ink-2);margin-top:1.2rem">
-    <p>Wiping is simulated against the soft-tissue model&rsquo;s own skin surface with a compliant
-    cloth pad at hand-and-cloth scale (about 1.2&nbsp;N). With a tilting approach cone, 16 of 17
-    planned strokes execute within the platform&rsquo;s safety rules: no false body contact and no
-    force spike above 20&nbsp;N.</p>
+    <p>These are geometric accessibility results under the platform&rsquo;s own rule, not task
+    success; the raised leg is held by ideal point welds, not self-supported; and SMPL-X accuracy in
+    the perineal region is unvalidated (supine whole-body SMPL against CT, chamfer error
+    15.8&nbsp;&plusmn;&nbsp;4.0&nbsp;mm, n&nbsp;=&nbsp;3; Zhang et al. 2026, arXiv:2607.02156).</p>
+    <p>Wiping is simulated as one-way, quasi-static finite-element contact between a compliant pad and
+    the soft-tissue model&rsquo;s skin surface, with a kinematic arm (older conditional start state; see
+    scope). Pad size, stiffness and friction are assumed, and no soil model exists.</p>
   </div>
 </section>
 
 <hr>
 <section id="garment">
-  <h2>A closed brief around a settled patient</h2>
+  <h2>Cloth model: isolated test cases</h2>
   <div style="color:var(--ink-2)">
-    <p>The blocker for the garment axis was that the cloth collided with a coarse body shell rather
-    than the skin. The platform now tiles the posed skin with thin convex prisms, one per skin face
-    and one body each. Verified on flat and curved patches: the cloth rests at exactly its radius
-    (4.00&nbsp;mm), a cloth sandwiched between skin and mattress carries the full sacral load within
-    1&nbsp;%, the tiles match the skin with zero holes, and every contact pair stays under
-    MuJoCo&rsquo;s limit.</p>
+    <p>Garment tests so far are on synthetic flat and 150&nbsp;mm-radius cylindrical patches or on the older
+    conditional start state named under scope. The garment toolchain exists only for that start state;
+    portability of any garment result to another pose is untested.</p>
   </div>
   <div class="figrow" style="margin-top:1.4rem">
     <div class="box">
-      <h3>Closing the brief (supine frog-leg)</h3>
+      <h3>Cloth and fastener tests</h3>
       <ul>
-        <li>Front panel pulled up between the legs: stretch 1.24&times;, no skin penetration.</li>
-        <li>All four side-wing tabs fastened from a path planned on the live front panel; the wings lie over the front panel with 0 layer crossings.</li>
-        <li>Holds after release; sacral load with the cloth under the body within 1&nbsp;% of the value without it.</li>
-        <li>Leg-opening gap p95 4.3&nbsp;mm; back waist gap 2.0&nbsp;mm.</li>
+        <li>The cloth rests on the skin prism tiles at 4.00&nbsp;mm (flat) and 4.04&nbsp;mm (curved),
+        i.e. at its 4&nbsp;mm numerical collision radius, with no compensation.</li>
+        <li>A cloth sandwiched between skin and mattress changes the sacral footprint load by
+        &minus;1.03&nbsp;% on the flat patch and &minus;5.17&nbsp;% on the curved patch, just outside
+        the platform&rsquo;s own &plusmn;5&nbsp;% tolerance.</li>
+        <li>A folded sheet in the minimal fold test keeps 7.46&ndash;7.68&nbsp;mm layer separation
+        (2r&nbsp;=&nbsp;8&nbsp;mm) with 0 crossings; in the larger fold the separation dips to
+        6.88&nbsp;mm and the solver&rsquo;s 50-contact limit for that pair is reached in 98&nbsp;% of steps.</li>
+        <li>A tab fastener slips 207.9&nbsp;mm per newton at the simulator&rsquo;s default constraint
+        stiffness and 0.39&ndash;0.89&nbsp;mm per newton at the platform&rsquo;s chosen constraint
+        setting; both are simulator parameters and the real tab stiffness is unsourced.</li>
       </ul>
     </div>
     <div class="box">
-      <h3>Cloth physics verified</h3>
+      <h3>Closing sequence</h3>
       <ul>
-        <li>Elastic leg cuffs and waistband by pre-strain: ring test matches the hoop-stress prediction within 1&nbsp;%.</li>
-        <li>Cloth self-collision: a folded sheet keeps 7.5&nbsp;mm layer separation, zero crossings.</li>
-        <li>Stress-free flat pattern: a free brief keeps its length exactly over 2&nbsp;s.</li>
-        <li>Seams carry 97&ndash;98&nbsp;% of force with gaps &le;&nbsp;0.7&nbsp;mm.</li>
+        <li>Wing layering, wing-path planning with signed skin clearance and the closed state are in
+        development; the stretch question is unresolved pending published diaper-material data.</li>
       </ul>
     </div>
   </div>
@@ -214,40 +258,67 @@
 
 <hr>
 <section>
-  <h2>No published simulator asks this question</h2>
+  <h2>Literature position</h2>
   <div style="color:var(--ink-2)">
     <p>A structured literature search (September 2026) found no published simulation platform in
-    which a manipulator performs perineal cleaning or diaper changing on a statistical human body
-    while measuring garment state, cleaning coverage and tissue injury separately. The nearest
-    neighbours cover supine care with regional deformable shells but no pelvis, mattress or tissue
-    strain, or seated bathing and scratching without the pelvic region. Twelve of the
-    platform&rsquo;s numerical thresholds were audited against their primary sources; the values on
-    this page are the audited ones.</p>
+    which a manipulator performs perineal cleaning or diaper changing on a statistical (SMPL-X-type)
+    human body while separately measuring garment state, true-skin cleaning and tissue injury. This
+    is the result of one search run, about simulation platforms only. The nearest works found are He
+    et al. 2026 (arXiv:2609.02402; forearm, upper arm and abdomen bathing only) and Wang et al. 2026
+    (arXiv:2604.08664; seated, no pelvis).</p>
+    <p>A citation audit (September 2026) checked platform numbers against sources: Gefen 2008 (40&nbsp;%
+    at 285&nbsp;min, 65&nbsp;% at 1&nbsp;h) is supported at abstract level; the Riener&ndash;Edrich 1999
+    form is supported but its coefficients and units were not seen in the original (secondary sources);
+    other thresholds the platform used earlier were flagged as not supported by their sources, and
+    none of them is quoted on this page.</p>
+  </div>
+</section>
+
+<hr>
+<section id="notyet">
+  <h2>Open items</h2>
+  <div class="box">
+    <ul>
+      <li>No simulated diaper change or perineal cleaning has been completed: in the runs on file, no
+      run gives a closed, layered, non-penetrating, held-after-release brief inside the platform&rsquo;s
+      own (unsourced) 1.397 stretch bound, and no cleaning definition reaches the platform&rsquo;s own
+      (unsourced) 0.8 area line for more than one of six bins.</li>
+      <li>The cleaning criteria have not yet been tested on a case whose correct answer is known
+      (only the pad-contact solver and the pass-counting code were checked on known cases). The
+      literature pressure and force ranges those criteria draw on were reported for a different
+      quantity than the one simulated, so they are not quoted here.</li>
+      <li>The support check (support equal to weight) is a consistency check, not evidence of a
+      correct posture.</li>
+      <li>Window pressure, 5&nbsp;cm mean, contact area and volume above 40&nbsp;% are not converged
+      even on the rigid bed.</li>
+      <li>No number on this page has been validated against measurements on people.</li>
+    </ul>
   </div>
 </section>
 
 <hr>
 <section id="progress">
-  <h2>In progress</h2>
+  <h2>Next steps</h2>
   <div class="figrow">
     <div class="box">
       <h3>Patient realism</h3>
-      <p>Natural resting arm and head positions (a pillow as a scene fixture; hands resting on the
-      abdomen), re-rendering the visual set from the settled positions, skin textures for the face.</p>
+      <p>Target: arms and head at natural resting positions, with hands resting on the abdomen (a
+      target, not a current result); a pillow as a scene fixture; re-rendering the visual set from
+      updated simulation states; skin textures for the face.</p>
     </div>
     <div class="box">
       <h3>Garment materials and layering</h3>
-      <p>Signed-clearance wing paths and measured fastener stiffness; nonwoven and elastic
+      <p>Signed-clearance wing paths and sourced fastener stiffness; nonwoven and elastic
       parameters from published diaper data; fit criteria from industry leakage tests.</p>
     </div>
     <div class="box">
       <h3>Mattress parameters</h3>
       <p>Replacing the bracketed foam stiffness with published hospital-mattress data and rerunning
-      the 285-minute comparison on it.</p>
+      the 285-minute comparison with mesh and time controls.</p>
     </div>
     <div class="box">
       <h3>Cleaning coverage</h3>
-      <p>Extending pad strokes to every target region and the perianal cleft; softer pad and
+      <p>A sourced coverage criterion tested on a state whose answer is known; softer pad and
       higher-friction variants.</p>
     </div>
   </div>
@@ -255,9 +326,10 @@
 
 <hr>
 <footer>
-  <p class="note">All figures are simulation results on an SMPL-X body model and are
-  model-internal; they have not been validated against measurements on people. Every number traces
-  to a round report and its output files in the platform repository. Updated 2026-09-29.</p>
+  <p class="note">All figures are simulation results (on an SMPL-X body model or, where stated, on
+  synthetic test patches) and are model-internal; they have not been validated against measurements
+  on people. Last revised 2026-10-02. The page text was checked against the author&rsquo;s internal
+  claims review of that date (not peer review, not public).</p>
 </footer>
 
 </div>
