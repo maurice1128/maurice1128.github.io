@@ -63,8 +63,8 @@
   <p>Each hand-motion prior became the action space of a PPO policy on a simulated Shadow Hand
   holding a cube under changing tilts. Policies trained on two-skill sequences and were scored on
   three-skill sequences they never saw. Over the first 2.5&nbsp;M frames the keyframe interface&rsquo;s
-  mean training success was <b>0.40</b>, against 0.25 for plain PPO and 0.27 for the continuous
-  latent (10 seeds each, p&nbsp;=&nbsp;10<sup>&minus;4</sup> for both, post hoc). The latent also
+  mean training success was <b>0.39</b>, against 0.25 for plain PPO and 0.27 for the continuous
+  latent (10 seeds each, exact two-sided Mann&ndash;Whitney p&nbsp;=&nbsp;1.1&times;10<sup>&minus;5</sup> for both, post hoc). The latent also
   takes one decision every 16 frames, so the difference is not the decision rate.</p>
 
   <figure class="fig">
@@ -76,7 +76,7 @@
     (0.59 against 0.22, declared; difference +0.38, 95&nbsp;% CI 0.23 to 0.52). At 5&nbsp;M frames the
     data do not separate it from the continuous latent on held-out sequences (0.44 against 0.49,
     inconclusive); it stays above plain PPO (0.44 against 0.22), which also decides every frame. On
-    the training sequences the three end within 0.06 of each other.</p>
+    the training sequences the three end within 0.07 of each other.</p>
   </figure>
 
   <figure class="fig">

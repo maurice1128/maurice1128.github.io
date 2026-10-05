@@ -49,10 +49,10 @@
     unvalidated against people. A structured literature search (September 2026) found no published
     simulation platform in which a manipulator performs perineal cleaning or diaper changing on a
     statistical body while separately measuring garment state, true-skin cleaning and tissue injury.
-    On a rigid bed, in an older supine posture and with unswept tissue parameters, the
-    90th-percentile and 1&nbsp;cm&sup3;-peak compressive strain after 285 simulated minutes differ
-    by less than 1&nbsp;% between the two finest meshes run at that duration and between two time
-    schedules (a pairwise tolerance, not a demonstrated convergence order); skin pressure falls while
+    On a rigid bed, in an older supine posture and at nominal tissue parameters, the
+    90th-percentile and 1&nbsp;cm&sup3;-peak compressive strain after 285 simulated minutes are
+    quoted as time-step-converged estimates and differ by less than 1&nbsp;% between the two finest
+    meshes run at that duration (a pairwise tolerance, not a demonstrated convergence order); skin pressure falls while
     deep strain rises; the other tissue quantities listed below do not meet the same tolerance. No run yet gives a closed, layered, non-penetrating brief,
     held after release, within the platform&rsquo;s own stretch bound, which has no physical
     origin.</p>
@@ -70,7 +70,8 @@
       <li><b>Body geometry.</b> SMPL-X accuracy in the crotch/perineal region is unvalidated; the one
       available whole-body figure is given under Cleaning.</li>
       <li><b>Tissue numbers</b> are from a rigid flat bed, one body, an older supine posture, and
-      tissue parameters that have not been sensitivity-swept.</li>
+      nominal tissue parameters; a one-at-a-time sweep over published parameter ranges shows that
+      the absolute strain values are parameter-dependent.</li>
       <li><b>Assumed values.</b> Foam stiffness is an assumed bracket; garment acceptance limits and
       pad parameters are chosen or assumed, not sourced.</li>
       <li><b>Start state of garment and cleaning-pad results.</b> Where shown, they come from
@@ -155,22 +156,28 @@
     solver&rsquo;s own convergence flag reads false for the fat, muscle and 15&nbsp;kPa foam block
     tests because its tolerance was set below round-off; the values still agree to
     10<sup>&minus;4</sup>.</p>
-    <p>On a rigid flat bed, for one body in an older supine posture and with tissue parameters not
-    swept, the 90th-percentile compressive strain (29.7&nbsp;%) and the peak compressive strain
-    averaged over 1&nbsp;cm&sup3; (48.7&nbsp;%) after 285 simulated minutes (applied load
-    125.92&nbsp;N, the taxel spring channel; net body load 123.57&nbsp;N) change by
-    +0.55&nbsp;% (P90) and +0.43&nbsp;% (peak) between the two finest tissue meshes run at
-    285&nbsp;minutes, and by
-    +0.66&nbsp;% / +0.56&nbsp;% with a 37-step instead of a 19-step time schedule. This agreement
-    holds only for these two quantities and only between the two finest meshes and between 19 and 37
-    steps (the next-coarser mesh pair differs by +2.6&nbsp;% in P90; a still finer mesh exists only for
-    shorter durations). This is a pairwise tolerance, not a demonstrated convergence order; for the
-    foam mattress the mesh sequence was not settling (see below). It is not extended to other
-    bodies. Strain here is engineering compressive strain,
-    1&nbsp;&minus;&nbsp;&lambda;<sub>min</sub> of the F-bar tetrahedron. The absolute 285-minute values
-    are not robust across postures (about &plusmn;3.1&nbsp;% in P90 and &plusmn;2.4&nbsp;% in the
-    peak; first-order bounds from one pair of states, assumed linear).</p>
-    <p>Over the same interval skin pressure falls while deep strain rises, the two moving in opposite
+    <p>On a rigid flat bed, for one body in an older supine posture and at nominal tissue
+    parameters, the 90th-percentile compressive strain after 285 simulated minutes is about
+    30.0&nbsp;% and the peak compressive strain averaged over 1&nbsp;cm&sup3; about 49.1&nbsp;%
+    (applied load 125.92&nbsp;N, the taxel spring channel; net body load 123.57&nbsp;N). The
+    49.1&nbsp;% is a lower bound, since its search is over candidate centres; searching all centres
+    on a 0.6&nbsp;mm lattice gives about 49.2&nbsp;%, itself not an exact maximum. Both values are
+    time-step-converged estimates on the finest tissue mesh run at 285&nbsp;minutes, extrapolated
+    from runs with 19, 37, 73 and 144 time steps; the remaining time-step uncertainty is under
+    0.1&nbsp;% of the value. The 19-step schedule used for the earlier figures (29.7&nbsp;% and
+    48.7&nbsp;%) reads about 0.9&nbsp;% (P90) and 0.8&nbsp;% (peak) lower. Between the two finest
+    tissue meshes run at 285&nbsp;minutes the values change by +0.55&nbsp;% (P90) and
+    +0.43&nbsp;% (peak), measured with the 19-step schedule; the next-coarser mesh pair differs by
+    +2.6&nbsp;% in P90, and a still finer mesh exists only for shorter durations. This is a
+    pairwise mesh tolerance, not a demonstrated convergence order, and it is not included in the
+    time-step uncertainty above; the last mesh refinement and the time-step refinement both raised
+    the values. It holds only for these two quantities; for the foam mattress the mesh sequence was
+    not settling (see below). It is not extended to other bodies. Strain here is engineering
+    compressive strain, 1&nbsp;&minus;&nbsp;&lambda;<sub>min</sub> of the F-bar tetrahedron. The
+    absolute 285-minute values are not robust across postures (about &plusmn;3.1&nbsp;% in P90 and
+    &plusmn;2.4&nbsp;% in the peak; first-order bounds from one pair of states, assumed
+    linear).</p>
+    <p>At nominal tissue parameters, over the same interval skin pressure falls while deep strain rises, the two moving in opposite
     directions (a within-body statement over time for one body, not a population or mattress claim).
     Interface pressure alone is therefore not a surrogate for deep-tissue load. The window pressure,
     the 5&nbsp;cm mean, the contact area and the volume above 40&nbsp;% are not converged within
@@ -180,8 +187,10 @@
     <p>Strain levels are compared with Gefen et al. 2008 (compressive strain tolerated below
     65&nbsp;% for 1&nbsp;h and below 40&nbsp;% for about 285&nbsp;min), measured on in-vitro
     constructs and read at abstract level; the mapping from the model&rsquo;s 3D minimum-stretch strain
-    to the construct&rsquo;s applied strain is a modelling choice. No safe or injured conclusion is
-    drawn. A rigid-against-foam mattress comparison is not reported: foam stiffness values are assumed
+    to the construct&rsquo;s applied strain is a modelling choice. Whether the model&rsquo;s 90th-percentile
+    strain lies below the 40&nbsp;% level depends on the tissue parameters chosen within literature
+    ranges.
+    No safe or injured conclusion is drawn. A rigid-against-foam mattress comparison is not reported: foam stiffness values are assumed
     bracketing values pending published hospital-mattress data, and the 285-minute foam results are
     not mesh-converged.</p>
   </div>
