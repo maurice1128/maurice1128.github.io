@@ -22,7 +22,7 @@ The critique is equally canonical. Job's friends defend retribution and are rebu
 
 The third strand places God with the sufferer. In Exodus 3:7 God says, "I have observed the misery of my people ... I have heard their cry ... Indeed, I know their sufferings." The Hebrew uses three verbs, *rāʾâ* (see, intensified with an infinitive absolute), *šāmaʿ* (hear) and *yādaʿ* (know). They pick up the four verbs of 2:24–25 (heard, remembered, saw, knew). The object of knowing is *makʾōb*, pain. The same noun recurs in Isaiah 53:3–4, where the servant is "a man of suffering" (*ʾîš makʾōbôt*) who carries "our diseases." Verse 8 then adds "I have come down to deliver them": knowledge leads to intervention. Fretheim's study of divine suffering treats such texts as showing God suffering because of, with and for Israel (Fretheim 1984).
 
-The identity of the *ʿebed YHWH* ("servant of the LORD") in Isaiah 52:13–53:12 is disputed. Isaiah 49:3 names the servant as Israel, which supports a collective reading. Individual readings point to the prophet or another historical figure. The New Testament reads the passage of Jesus (Acts 8:32–35), and the Ethiopian's question, "about whom ... does the prophet say this?" (Acts 8:34), already names the problem. Janowski and Stuhlmacher's collection traces the Jewish and Christian lines of interpretation (Janowski and Stuhlmacher 2004). Moyaert shows how Jewish criticism has pressed Christian christological readings (Moyaert 2016). For this review the dispute matters little. On every reading, a suffering figure despised by onlookers turns out to carry God's purpose.
+The identity of the *ʿebed YHWH* ("servant of the LORD") in Isaiah 52:13–53:12 is disputed. Isaiah 49:3 names the servant as Israel, supporting a collective reading; individual readings point to the prophet or another figure. The New Testament reads the passage of Jesus (Acts 8:32–35), and the Ethiopian's question, "about whom ... does the prophet say this?" (8:34), already names the problem. Janowski and Stuhlmacher (2004) trace the Jewish and Christian lines of interpretation, and Moyaert (2016) shows how Jewish criticism has pressed christological readings. On every reading, a despised sufferer turns out to carry God's purpose.
 
 The New Testament extends the strand. Christ is a high priest able "to sympathize with our weaknesses" (*sympathēsai*, Heb 4:15). In Matthew 25:31–46 the king identifies with "the least of these" (*elachistoi*). Whether they are all the needy or needy disciples (cf. Matt 10:42; 12:49–50) is a long-standing debate (Gray 1989). In 2 Corinthians 1:3–7 Paul links "affliction" (*thlipsis*) and "comfort" (*paraklēsis*) and calls the Corinthians partners (*koinōnoi*) in suffering. Colossians 1:24 speaks of "completing what is lacking in Christ's afflictions for the sake of his body, that is, the church." Most interpreters deny that it implies a deficit in Christ's atonement; how to read it otherwise is contested.
 
@@ -46,7 +46,7 @@ Several texts depict religious officials whose loyalty to the crown outweighs th
 
 The New Testament warns about the church's own favouritism toward the powerful. James 2:1–7 rebukes an assembly that seats the rich man with the gold ring and sends the poor to the floor. It reminds readers that "the rich ... oppress you" (2:6). James 5:1–6 denounces withheld wages that "cry out" (5:4). Revelation 18 laments the fall of "Babylon," whose merchants trade in luxuries and finally in "slaves—and human lives" (18:13). It calls, "Come out of her, my people" (18:4). Bauckham reads Revelation as theocentric prophecy, not a coded forecast, with a sharp critique of Roman power and its economy (Bauckham 1993a; 1993b).
 
-Interpretive caution is needed. Revelation 18 targets an imperial city and its trade, not a church, and applying it to churches is an analogy, not exegesis. Amos and Micaiah confront state cults in ancient monarchies, not voluntary churches in pluralist societies. The texts warrant a question, whether a church has become a "king's sanctuary," not a verdict on any particular church.
+Interpretive caution is needed. Revelation 18 targets an imperial city, not a church, so applying it to churches is analogy, not exegesis. Amos and Micaiah confront state cults in ancient monarchies, not voluntary churches. The texts warrant a question, whether a church has become a "king's sanctuary," not a verdict on any church.
 
 For the model, these texts give biblical language for the third church role, a church allied with perpetrators. They also show the faithful response as prophetic speech and, in Revelation, separation from complicity, not abandonment of God.
 
@@ -76,7 +76,7 @@ The Hebrew Bible provides a liturgy for corporate confession of collective and i
 
 Modern churches have adopted this form. In October 1945 the leaders of the German Evangelical Church declared in Stuttgart that "through us endless sufferings" had been brought to many peoples (Conway 1987). In 1990 the Presbyterian Church in Taiwan apologised to 228 victims and their families. It confessed that, out of fear under martial law, "整體教會並未給予受難者家屬應有的聲援" ("the church as a whole did not give the victims' families the support they were due") (PCT 1990). Churches in Canada and Australia apologised for their part in removing Indigenous children (TRC 2015; HREOC 1998). John Paul II asked forgiveness of the Indigenous peoples of Latin America and of Africans deported as slaves (ITC 2000).
 
-The International Theological Commission's study *Memory and Reconciliation* draws a distinction that matters here. In the biblical confessions of "the sins of the fathers," it notes, the confession is addressed solely to God, and the sins named are those committed against God rather than against other people (ITC 2000, §2.1). Modern apologies such as the PCT's are addressed to human victims, which goes beyond the biblical pattern. The same document distinguishes the Church's holiness from the sins of her members, a distinction Protestant churches draw differently. Whether institutions as such can repent was already debated in the 1970s (Elliott 1976). Prothro offers a recent canonical survey of confession and repentance (Prothro 2023).
+The International Theological Commission's *Memory and Reconciliation* draws a distinction that matters here. In the biblical confessions of "the sins of the fathers," it notes, confession is addressed solely to God, for sins against God rather than against other people (ITC 2000, §2.1). Modern apologies such as the PCT's are addressed to human victims, which goes beyond the biblical pattern. The same document distinguishes the Church's holiness from the sins of her members, a distinction Protestants draw differently. Whether institutions as such can repent was debated in the 1970s (Elliott 1976); Prothro (2023) offers a recent canonical survey.
 
 For the model, corporate confession is the biblical form of institutional repentance. It predicts that public, specific confession, followed by changed practice as in Acts 6, can begin to restore trust. The PCT's 1990 apology is a test case worth tracing in the descriptive articles.
 
@@ -126,23 +126,17 @@ For the model, the counterweights show that the biblical frame is not "sufferers
 
 ### 16.11 Annotated reading list
 
-**Biblical theology.** Brueggemann (1997) organises Old Testament theology as testimony and counter-testimony, which suits the retribution-versus-lament tension. Wright (2006) reads the canon as a narrative of God's mission. Hays (1996) is a standard method for moving from New Testament texts to ethics.
+Series labels describe genre; characterisations are general and should be checked against each volume.
 
-**Exodus.** Childs (1974) combines critical and canonical exegesis. Fretheim (1991) develops divine suffering and the relational God; read with Fretheim (1984).
-
-**Isaiah 40–66.** Westermann (1969) is the classic form-critical commentary. Childs (2001) offers a canonical reading. Blenkinsopp (2002; 2003) is the critical standard. Janowski and Stuhlmacher (2004) collect the Jewish and Christian reception of Isaiah 53.
-
-**Ezekiel.** Zimmerli (1979; 1983) is the critical standard. Block (1997; 1998) is a detailed confessional evangelical commentary. Joyce (1989) treats chapter 18 and responsibility.
-
-**Lamentations and Job.** Berlin (2002) reads Lamentations against ancient Near Eastern city laments. O'Connor (2002) reads it theologically and pastorally. Clines (1989) begins a three-volume philological commentary on Job; Newsom (2003) gives the literary-theological reading. Gutiérrez (1987) reads Job from the poor.
-
-**Jeremiah and Amos.** Holladay (1986) covers the temple sermon. Andersen and Freedman (1989) and Paul (1991) are the major critical commentaries on Amos.
-
-**Gospels and Acts.** Green (1997) emphasises Luke's social world, relevant to Luke 10 and 13. Davies and Allison (1997) treat Matthew 23 and 25; Gray (1989) surveys the interpretation of Matthew 25:31–46. Fitzmyer (1998) and Keener (2012–15) are the major Acts commentaries.
-
-**Epistles and Revelation.** Johnson (1995) on James and Elliott (2000) on 1 Peter both foreground social setting. Bauckham (1993a; 1993b) is the best entry to Revelation's critique of empire.
-
-**Confession and repentance.** Werline (1998), Boda (1999), ITC (2000) and Prothro (2023).
+- **Biblical theology:** Brueggemann (1997), testimony and counter-testimony; Wright (2006), mission as canonical narrative; Hays (1996), from New Testament texts to ethics.
+- **Exodus:** Childs (1974), critical and canonical; Fretheim (1991), with Fretheim (1984) on divine suffering.
+- **Isaiah 40–66:** Westermann (1969), form-critical; Childs (2001), canonical; Blenkinsopp (2002; 2003), critical; Janowski and Stuhlmacher (2004), reception of Isaiah 53.
+- **Ezekiel:** Zimmerli (1979; 1983), critical (Hermeneia); Block (1997; 1998), confessional (NICOT); Joyce (1989) on chapter 18.
+- **Lamentations and Job:** Berlin (2002); O'Connor (2002); Clines (1989), first of three volumes; Newsom (2003); Gutiérrez (1987).
+- **Jeremiah and Amos:** Holladay (1986); Andersen and Freedman (1989); Paul (1991).
+- **Gospels and Acts:** Green (1997) on Luke; Davies and Allison (1997) on Matthew; Gray (1989) on Matthew 25:31–46; Fitzmyer (1998) and Keener (2012–15) on Acts.
+- **Epistles and Revelation:** Johnson (1995) on James; Elliott (2000) on 1 Peter; Bauckham (1993a; 1993b).
+- **Confession and repentance:** Werline (1998); Boda (1999); ITC (2000); Prothro (2023).
 
 ### Implications for the model
 
