@@ -50,3 +50,31 @@ Started 2026-11-05.
   - Berger 1967 Sacred Canopy (Dixon review Sociological Analysis 1968) [verified]
   - Weber, From Max Weber, ed. Gerth & Mills 1946 (reviewed J Phil 1946 43(26):722) [verified]; Routledge 2014 reissue
   - Weber, The Sociology of Religion, trans. Fischoff (reviewed JSSR 1964 3(2):268 Bendix) [verified, 1963 Beacon to confirm OL]
+- [batch 3, Crossref] Verified:
+  - Morgan & Wilkinson 2001, Eur J Social Theory 4(2):199-214, doi 10.1177/13684310122225073 (sociological theodicy)
+  - Páez et al. 2015, JPSP 108(5):711-729, doi 10.1037/pspi0000014 (perceived emotional synchrony = empirical test of effervescence)
+  - Stark 1971 Psychopathology and religious commitment, RRR 12(3):165, doi 10.2307/3510420 (critique of deprivation)
+  - Stolz 2009 BJS 60(2):345-376 doi 10.1111/j.1468-4446.2009.01234.x
+  - Gill & Lundsgaarde 2004; Ruiter & van Tubergen 2009; Bentzen 2019 EJ 129(622):2295-2321; Henrich et al 2019 NHB 3(2):129-135; Belloc et al 2016 QJE 131(4):1875-1926; Dittmar & Meisenzahl 2020 REStud (87(2):959-996 per OA notes); Bottan & Perez-Truglia 2015 JPubE 129:106-119; Hungerman 2013 AEJ:Policy 5(3):227-253 — all [verified: Crossref]
+  - Kirkpatrick 2006 Precis, Archive for Psych of Religion 28(1):3-48 doi 10.1163/008467206777832616 (book 2005 Guilford - check OL)
+  - Pargament 1997 Psychology of Religion and Coping, New York: Guilford (Fitchett 1998 review) [verified]
+  - Exline 2013 "Religious and spiritual struggles," APA Handbook of Psychology, Religion, and Spirituality vol 1, pp.459-475, doi 10.1037/14045-025 (handbook ed. Pargament - verify editor list)
+  - Shaw, Joseph & Linley 2005, MHRC 8(1):1-11 doi 10.1080/1367467032000157981 (religion & PTG review)
+  - Bourdieu 1991 religious field article: NOT in Crossref -> check elsewhere
+- [Open Library] Verified [verified: OL]:
+  - Weber, Wirtschaft und Gesellschaft 1922; Eng. Economy and Society, UC Press Berkeley (year of Roth & Wittich ed. 1978 to confirm)
+  - Weber, The Sociology of Religion, Boston: Beacon Press 1963 [verified: OL]
+  - Gerth & Mills eds. From Max Weber, New York: Oxford University Press 1946 [verified: OL]
+  - Lee & Marty eds. 1964 Religion and Social Conflict, New York: OUP [verified: OL] -> Glock 1964 chapter verified as to container; pages [verify] (reprint pp.147-157 in Cults in Context 2018)
+  - Walzer 1985 Exodus and Revolution, New York: Basic Books [verified: OL]
+  - Moore 1987 Formation of a Persecuting Society, Oxford: Blackwell [verified: OL]; 2nd ed 2007
+  - Girard 1982 Le bouc émissaire, Paris: Grasset; Eng. trans. Yvonne Freccero, Johns Hopkins UP 1986 [verified: OL]
+  - Lincoln 1989 Discourse and the Construction of Society, New York: OUP [verified: OL]; Lincoln 1994 Authority: Construction and Corrosion, Chicago: U Chicago Press [verified: OL]
+  - Kirkpatrick, Attachment, Evolution, and the Psychology of Religion, Guilford; OL says 2004 (copyright usually 2005) -> cite 2005 [verify year]
+  - Granqvist 2020 Attachment in Religion and Spirituality, Guilford [verified: OL]
+  - Stark & Bainbridge 1987 A Theory of Religion, New York: Peter Lang; repr. Rutgers 1996 [verified: OL]
+  - Berger 1967 The Sacred Canopy, Garden City, NY: Doubleday [verified: OL]
+  - Davie 1994 Religion in Britain since 1945: Believing without Belonging, Oxford: Blackwell [verified: OL]
+  - Weber 1978 Economy and Society, ed. Roth & Wittich, Berkeley: UC Press [verified: OL]
+  - Collins 2004 Interaction Ritual Chains, Princeton UP [verified: OL]
+  - Erikson 1994 A New Species of Trouble, New York: Norton [verified: OL]
