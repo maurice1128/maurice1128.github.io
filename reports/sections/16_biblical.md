@@ -10,7 +10,7 @@ The Bible's first answer to collective suffering is not explanation but address:
 
 Westermann established lament as one of the two basic forms of psalmic prayer, alongside praise (Westermann 1981), and argued for its theological weight in the Old Testament as a whole (Westermann 1974). He distinguished the dirge over the dead (*qînâ*) from the plea addressed to God; only the latter expects an answer. Brueggemann's "The Costly Loss of Lament" gave the form a social function. Lament keeps the covenant two-sided and legitimates the "pain-bearer," and it makes justice a proper question to put before God (Brueggemann 1986). A church that loses it drifts toward a one-sided worship that serves established power.
 
-O'Connor stresses that God never speaks in Lamentations; the divine silence leaves room for survivors' voices (O'Connor 2002). Newsom reads Job as a contest of moral imaginations that the book refuses to resolve (Newsom 2003). Billman and Migliore argue for recovering lament in Christian worship and pastoral care (Billman and Migliore 1999). Kim reads the communal laments as a residue of trauma passed across generations (Kim 2021).
+O'Connor stresses that God never speaks in Lamentations, leaving room for survivors' voices (O'Connor 2002). Newsom reads Job as an unresolved contest of moral imaginations (Newsom 2003). Billman and Migliore (1999) argue for recovering lament in worship and pastoral care, and Kim (2021) reads the communal laments as a residue of transgenerational trauma.
 
 For the model, lament confirms that suffering raises demand for meaning and community. It also shows that the Bible authorises complaint *to* God *within* the worshipping assembly. Lament keeps faith and protest together, which helps explain why faith can rise while trust in an institution that silences complaint falls.
 
@@ -24,9 +24,9 @@ The third strand places God with the sufferer. In Exodus 3:7 God says, "I have o
 
 The identity of the *ʿebed YHWH* ("servant of the LORD") in Isaiah 52:13–53:12 is disputed. Isaiah 49:3 names the servant as Israel, supporting a collective reading; individual readings point to the prophet or another figure. The New Testament reads the passage of Jesus (Acts 8:32–35), and the Ethiopian's question, "about whom ... does the prophet say this?" (8:34), already names the problem. Janowski and Stuhlmacher (2004) trace the Jewish and Christian lines of interpretation, and Moyaert (2016) shows how Jewish criticism has pressed christological readings. On every reading, a despised sufferer turns out to carry God's purpose.
 
-The New Testament extends the strand. Christ is a high priest able "to sympathize with our weaknesses" (*sympathēsai*, Heb 4:15). In Matthew 25:31–46 the king identifies with "the least of these" (*elachistoi*). Whether they are all the needy or needy disciples (cf. Matt 10:42; 12:49–50) is a long-standing debate (Gray 1989). In 2 Corinthians 1:3–7 Paul links "affliction" (*thlipsis*) and "comfort" (*paraklēsis*) and calls the Corinthians partners (*koinōnoi*) in suffering. Colossians 1:24 speaks of "completing what is lacking in Christ's afflictions for the sake of his body, that is, the church." Most interpreters deny that it implies a deficit in Christ's atonement; how to read it otherwise is contested.
+The New Testament extends the strand. Christ can "sympathize with our weaknesses" (*sympathēsai*, Heb 4:15). In Matthew 25:31–46 the king identifies with "the least of these" (*elachistoi*); whether they are all the needy or needy disciples (cf. Matt 10:42; 12:49–50) is long debated (Gray 1989). In 2 Corinthians 1:3–7 Paul links affliction (*thlipsis*) and comfort (*paraklēsis*) and calls the Corinthians partners (*koinōnoi*) in suffering. Colossians 1:24 speaks of "completing what is lacking in Christ's afflictions for the sake of his body, that is, the church"; few read it as a deficit in the atonement, but its positive sense is contested.
 
-For the model, the canon holds both interpretive frames that section 3 calls retributive and solidarity theologies. The solidarity texts tie God's credibility to God's presence with the afflicted, which no outcome can falsify. That is the exegetical root of the model's second variable.
+For the model, the canon holds both frames that section 3 calls retributive and solidarity theologies. The solidarity texts tie God's credibility to presence with the afflicted, which no outcome can falsify: the exegetical root of the model's second variable.
 
 ### 16.3 The institution that fails the suffering: prophetic critique
 
@@ -34,11 +34,11 @@ The prophets judge religious leaders above all by how they treat the weak. Ezeki
 
 Mein offers a caution. Read against ancient animal husbandry, the shepherds are hired hands who misused the owner's property. The chapter may therefore stress divine ownership and power more than compassion (Mein 2007). The textual point stands either way: leaders are accountable to God for the flock. In Matthew 9:36 Jesus has compassion (*splanchnizomai*) on crowds "like sheep without a shepherd," taking up the same image.
 
-Jeremiah's temple sermon attacks confidence in the institution itself: "Do not trust in these deceptive words: 'This is the temple of the LORD'" (Jer 7:4). The true condition is justice for the alien, the orphan and the widow (7:5–7), and the sermon asks whether the house has become "a den of robbers" (7:11). Jeremiah 23:1 pronounces woe on shepherds who scatter the sheep. Amos 5:21–24 rejects festivals and offerings in favour of justice (*mišpāṭ*) and righteousness (*ṣĕdāqâ*). Micah 3:11 condemns priests who "teach for a price" while claiming "Surely the LORD is with us!" Malachi charges priests with causing "many to stumble" by their instruction and showing partiality (Mal 2:8–9).
+Jeremiah's temple sermon attacks confidence in the institution itself: "Do not trust in these deceptive words: 'This is the temple of the LORD'" (Jer 7:4). The true condition is justice for the alien, the orphan and the widow (7:5–7); otherwise the house becomes "a den of robbers" (7:11). Jeremiah 23:1 pronounces woe on shepherds who scatter the sheep. Amos 5:21–24 prefers justice (*mišpāṭ*) and righteousness (*ṣĕdāqâ*) to festivals. Micah 3:11 condemns priests who "teach for a price" while claiming "Surely the LORD is with us!" Malachi 2:8–9 charges priests with causing many to stumble and showing partiality.
 
-Jesus stands in this line. In the temple he cites Isaiah 56:7 ("a house of prayer for all the nations") and Jeremiah 7:11 ("a den of robbers") together (Mark 11:15–17). Matthew 23 condemns leaders who neglect "justice and mercy and faith" (23:23). In the parable of the Samaritan, the priest and the Levite pass "by on the other side." The outsider is "moved with pity" (*esplanchnisthē*) and acts (Luke 10:31–33). The religious professionals fail, and care comes from beyond the institution.
+Jesus stands in this line. In the temple he joins Isaiah 56:7 ("a house of prayer for all the nations") to Jeremiah 7:11 (Mark 11:15–17). Matthew 23:23 condemns leaders who neglect "justice and mercy and faith." In the parable of the Samaritan, the priest and the Levite pass "by on the other side," while the outsider is "moved with pity" (*esplanchnisthē*) and acts (Luke 10:31–33).
 
-For the model, these texts supply a biblical warrant for the "failing establishment" outcome. They judge the institution by a concrete test of care. They also show God displacing faithless leaders rather than abandoning the flock.
+For the model, these texts warrant the "failing establishment" outcome and judge the institution by a concrete test of care. They also show God displacing faithless leaders rather than abandoning the flock.
 
 ### 16.4 Religion allied with power
 
@@ -54,7 +54,7 @@ For the model, these texts give biblical language for the third church role, a c
 
 Acts portrays the earliest church as a community in which the needy were met by their own fellowship. The believers devoted themselves to the apostles' teaching and to *koinōnia* (fellowship, sharing), and "had all things in common" (Acts 2:42–44). Acts 4:34 reports "not a needy person among them." Its Greek *endeēs* (needy) appears to echo the Septuagint of Deuteronomy 15:4, "there will ... be no one in need among you." Luke presents the church as fulfilling the sabbatical-year ideal.
 
-Acts 6:1–7 is the most important text for the model, because it shows a church admitting failure. The Hellenists complained (*goggysmos*) "because their widows were being neglected in the daily distribution" (*diakonia*). The apostles did not deny the complaint. They called the community together, which chose seven men, all bearing Greek names, to oversee the distribution. In effect the aggrieved group received a share of control. Luke then reports that "the number of the disciples increased greatly" (6:7). The names suggest, but do not prove, that the seven came from the neglected group.
+Acts 6:1–7 matters most for the model, because it shows a church admitting failure. The Hellenists complained (*goggysmos*) "because their widows were being neglected in the daily distribution" (*diakonia*). The apostles did not deny it. The community chose seven men, all with Greek names, to oversee the distribution, so the aggrieved group apparently received a share of control (the names suggest but do not prove this). Luke then reports that "the number of the disciples increased greatly" (6:7).
 
 Paul makes shared suffering a mark of the body: "If one member suffers, all suffer together with it" (1 Cor 12:26). The Presbyterian Church in Taiwan cited this verse in its 2009 letter after Typhoon Morakot (see section on the contemporary church). Galatians 6:2 commands, "Bear one another's burdens." James 1:27 defines pure religion as caring "for orphans and widows in their distress" (*thlipsis*). 1 Peter 4:12–19 addresses a community under "fiery ordeal" (*pyrōsis*) and calls its members to "share Christ's sufferings" (4:13). It distinguishes suffering for the faith from deserved punishment (4:15).
 
@@ -64,9 +64,9 @@ For the model, Acts 6 is the canonical counter-case to migration. Faith did not 
 
 The Bible assumes that faith passes between generations through household and assembly, not through private belief alone. Deuteronomy 6:4–9 joins the *Šĕmaʿ* to the command to "recite them to your children" and to mark doors and gates. Deuteronomy 6:20–25 anticipates the child's question and answers with the Exodus story. Psalm 78:1–8 commits each generation to "tell to the coming generation" so that the next will not repeat its ancestors' unfaithfulness. 2 Timothy 1:5 traces Timothy's faith through his grandmother Lois and his mother Eunice. Hebrews 10:24–25 warns against "neglecting to meet together" (*episynagōgē*) and ties perseverance to mutual encouragement.
 
-These texts converge with Voas and Crockett's finding that in Britain belief declined at the same rate as belonging across cohorts, rather than surviving it (Voas and Crockett 2005). Believing without belonging is better seen as a lagged decay. Scripture, read normatively, predicts the same result. Faith that loses its community of transmission is unlikely to survive more than a generation.
+These texts converge with Voas and Crockett's finding that in Britain belief declined at the same rate as belonging across cohorts, rather than surviving it (Voas and Crockett 2005). Believing without belonging looks like a lagged decay, and Scripture, read normatively, expects the same.
 
-For the model, this strengthens the expectation that faith which leaves a failing institution must find a new community, or it will fade in the next generation. Migration to a sufferer-controlled body is thus not optional for the persistence of faith.
+For the model, faith that leaves a failing institution must find a new community or fade in the next generation. Migration to a sufferer-controlled body is thus a condition of persistence, not an optional extra.
 
 ### 16.7 Institutional repentance
 
@@ -96,9 +96,9 @@ Traditions weigh these texts differently, and each reading has strengths.
 | Orthodox | Scripture read within liturgy and tradition; lament built into the Holy Week cycle | Suffering read within the paschal pattern of cross and resurrection | Rationalist theodicy | Close church–state ties that soften prophetic critique |
 | Reformed | God's sovereignty; office accountable to the Word; limits on rulers (Calvin 1960, *Inst.* 4.20.31 *[verify locus]*) | Rom 13 conditioned by the ruler's calling; confessional resistance (Barmen 1934; Belhar 1986) | Both anarchy and idolatry of the state | Providentialism that reads disaster as judgment too quickly |
 
-The Orthodox row is a general characterisation, not drawn from a cited source, and should be checked with an Orthodox biblical scholar. On Romans 13 the range runs from Yoder's reading of subordination as non-violent, non-conforming witness (Yoder 1994) to Reformed traditions of resistance led by lesser magistrates.
+The Orthodox row is a general characterisation without a cited source. On Romans 13 the range runs from Yoder's reading of subordination as non-violent, non-conforming witness (Yoder 1994) to Reformed resistance led by lesser magistrates.
 
-For the model, the counterweights show that the biblical frame is not "sufferers good, institutions bad." It asks for accountable authority, personal repentance from everyone, and faith that sometimes waits without answers.
+For the model, the counterweights show that the biblical frame is not "sufferers good, institutions bad." It asks for accountable authority, repentance from everyone, and faith that sometimes waits without answers.
 
 ### 16.9 Summary: model elements and key texts
 
@@ -148,19 +148,11 @@ Series labels describe genre; characterisations are general and should be checke
 
 ### To verify
 
-- Lexical checks (BDB/HALOT, BDAG): *qînâ* versus complaint psalm; *makʾōb* in Exod 3:7 and Isa 53:3–4; *rāʾōh rāʾîtî* as infinitive absolute; *hitwaddâ* in Lev 26:40; *endeēs* in LXX Deut 15:4 and Acts 4:34; *paratheōreō* in Acts 6:1; *sympatheō* in Heb 4:15.
-- Ezek 34:16 textual variant (MT "destroy" versus LXX/Syriac "watch over").
-- Exod 2:25 MT "God knew" versus LXX reading.
-- Job 42:6 alternative renderings.
-- NRSV wording of all quotations, especially Ps 88:18, Mal 2:8–9, Neh 9:33, Ezek 34:4 and 34:15.
-- Westermann's dirge–lament distinction: confirm locus in Westermann 1981 or 1974.
-- Billman and Migliore 1999: subtitle.
-- Bauckham 1993a: chapter "The Economic Critique of Rome in Revelation 18."
-- Levenson 1991: confirm the argument summarised (Exodus detached from Sinai and covenant).
-- Carson 2006: confirm the sovereignty–responsibility emphasis attributed.
-- Yoder 1994: confirm the reading of Rom 13 attributed.
-- Calvin, *Inst.* 4.20.31 (lesser magistrates).
-- Barmen Declaration 1934 and Belhar Confession 1986: texts and dates.
-- Orthodox row of the traditions table: general characterisation without a cited source.
-- Moyaert 2016: volume editor. Clines: later volumes (2006, 2011). Zimmerli translators. Janowski and Stuhlmacher translator.
-- PCT 1990: English rendering of the quoted sentence is the writer's own translation.
+- Lexicon (BDB/HALOT, BDAG): *qînâ* versus complaint psalm; *makʾōb* in Exod 3:7 and Isa 53:3–4; the infinitive absolute in Exod 3:7; *hitwaddâ* (Lev 26:40); *endeēs* in LXX Deut 15:4 and Acts 4:34; *sympatheō* (Heb 4:15).
+- Textual points: Ezek 34:16 (MT "destroy" vs. LXX/Syriac "watch over"); Exod 2:25 (MT vs. LXX); Job 42:6 renderings.
+- NRSV wording of every quotation, especially Ps 88:18, Mal 2:8–9, Neh 9:33 and Ezek 34:4, 15.
+- Westermann's dirge–lament distinction: locus in 1974 or 1981.
+- Attributed views not checked against the source: Levenson 1991 (Exodus detached from Sinai), Carson 2006 (sovereignty), Yoder 1994 (Rom 13), Bauckham 1993a (Revelation 18 chapter).
+- Calvin, *Inst.* 4.20.31; Barmen 1934 and Belhar 1986 texts; the Orthodox row of the traditions table (no cited source).
+- Bibliographic details: Billman and Migliore subtitle; Moyaert 2016 editor; Clines later volumes; Zimmerli and Janowski–Stuhlmacher translators.
+- PCT 1990: the English rendering is the writer's translation.
