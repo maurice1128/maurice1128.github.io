@@ -12,7 +12,7 @@ Most of these works have no English translation. English-language articles there
 
 **The pogroms: power, not panic.** Alfred Haverkamp's long essay (1981, 27–93) dissected the 1348–50 persecutions in German towns. It analyses the role of each social group and offers a chronological table of the pogroms; its pages on the flagellants are 43–46. Haverkamp's central and widely cited thesis is that many pogroms preceded the plague's arrival in a given town [GK]. Town councils, lords, debt relations and urban factional conflict shaped the violence more than plague panic did [GK]. The reference infrastructure for this argument is *Germania Judaica* (vol. 3, Maimon, Breuer and Guggenheim 1987–2003), Haverkamp's atlas (2002), and Toch's handbook (1998). Samuel Cohn's English-language article (2007) engages this German literature directly [GK].
 
-For the model, Haverkamp shifts the explanatory weight to the first variable: position in the power structure. Religious language legitimized violence, but those with civic power decided whether violence happened. The Jewish communities' situation also illustrates the model's third outcome in reverse. For them, Christianity was the religion of the perpetrators, and conversion under threat was coerced rather than chosen.
+For the model, Haverkamp shifts the explanatory weight to the first variable: position in the power structure. Religious language legitimized violence, but those with civic power decided whether violence happened. The Jewish communities' situation also illustrates the model's third outcome in reverse. For them, Christianity was the religion of the perpetrators, and conversion under threat was coerced rather than chosen [GK].
 
 **Flagellant-song scholarship.** Arthur Hübner's edition and study of the German *Geisslerlieder* (1931; reprint 2020) is the primary-source base for lay penitential religion in 1349. The songs and the "heavenly letter" (*Himmelsbrief*) legitimated a movement led by laymen, not priests [GK]. Paul Runge's edition of the songs and melodies recorded by Hugo of Reutlingen is available in a 1969 reprint (Runge 1969). Teresa Proto's 2014 philological and musicological study renewed this field. Peter Segl's encyclopedia article (1984) summarizes the movement and Pope Clement VI's condemnation of October 1349 [GK].
 
@@ -147,4 +147,5 @@ For the model, this literature supplies the "church as slaveholder" case on the 
 - Cohn 1992: "1363 not 1348" thesis summarized from general knowledge.
 - Oldendorp 2000–2002: full editorial team beyond Gudrun Meier (Teil 1) and Hartmut Beck (Teil 2).
 - Fredericq 1896: series (Académie royale, *Mémoires couronnés*) and 1896 vs. 1897 date.
+- Verger 1968: title and imprint of the English translation; Lenders 1996: subtitle.
 - All summaries tagged [GK] should be checked against the texts before quotation.
