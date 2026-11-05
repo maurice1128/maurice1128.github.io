@@ -1,0 +1,7 @@
+status	source	matched_year	matched_title	entry
+MATCH	crossref	1995	The Black Death in the diocese of Ely: The evidence of the bishop's register	Aberth, John. 1995. "The Black Death in the Diocese of Ely: The Evidence of the Bishop's Register." *Journal of Medieval History* 21 (3): 275–87. https://doi.org/10.1016/0304-4181(95)00771-7.
+NOT_FOUND				Aberth, John. 2005. *The Black Death: The Great Mortality of 1348–1350; A Brief History with Documents*. Boston: Bedford/St. Martin's. 2nd ed., Boston: Bedford/St. Martin's, 2017.
+WEAK	crossref	2023	:<i>The Black Death: A New History of the Great Mortality in Europe, 1347–1500</i>	Aberth, John. 2021. *The Black Death: A New History of the Great Mortality in Europe, 1347–1500*. New York: Oxford University Press.
+NOT_FOUND				Archambeau, Nicole. 2021. *Souls under Siege: Stories of War, Plague, and Confession in Fourteenth-Century Provence*. Ithaca, NY: Cornell University Press. https://doi.org/10.7591/cornell/9781501753664.001.0001.
+MATCH	openlibrary	2005	Belief and Unbelief in Medieval Europe	Arnold, John H. 2005. *Belief and Unbelief in Medieval Europe*. London: Hodder Arnold.
+NOT_FOUND				Bailey, Mark. 2021. *After the Black Death: Economy, Society, and the Law in Fourteenth-Century England*. Oxford: Oxford University Press.
