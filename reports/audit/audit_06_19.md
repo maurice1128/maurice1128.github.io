@@ -246,3 +246,33 @@ Claims (60 checked):
 - partly verified: 3 (Miller attendance pattern at moderate confidence; Lehmann content not opened; Sinophone items)
 - misattributed: 0
 - fabricated-likely: 0
+
+## Fixes applied
+
+Fixer pass, 5 November 2026. Re-verified by the fixer: the QJE abstract for Belloc et al. 2016 (OpenAlex, doi 10.1093/qje/qjw020), the Macalester repository page for Zacharia (HTTP 200; Gregory Zacharia, History Honors Projects 24), the LMU portal record for Carmody 2012, the Pew report of 27 Jan 2021 (68% "not changed much"; fielded 10 June–3 Aug 2020), and the AGBU press release (dated 12 May 2015; it reports the 23 April 2015 canonization). The live doc has no reference lists for sections 6 and 19, so the ref-file changes are in the markdown only.
+
+| Item | Action | File changed | Doc changed |
+|---|---|---|---|
+| A1/A12 Belloc et al. 2016 row | Rewritten from the published QJE abstract: delayed communal self-government in bishop-ruled cities, including after quakes felt without damage; ancillary result that episcopal-see cities built and decorated more churches after quakes; lay belief and trust still not measured. Draft-only details (about 60 cities, about a decade) removed. §19.5 no. 4 reworded. §19.6 now excepts Belloc ("adds an indirect medieval proxy…") instead of "each infers its religious channel". Ref note: abstract via OpenAlex | 19_novelty.md; 19_novelty_refs.md | yes |
+| A2 Zacharia 2018 | Ref is now "Zacharia, Gregory … History Honors Projects 24", [verify] removed. Row rewritten: path-dependence "critical junctures"; ch. 1 says the Black Death exposed the Church's institutional shortcomings. Overlap marked direct on the "lost trust after 1348" claim. The §19.6 commonplace bullet now cites Zacharia ch. 1. Inline [verify] flags removed in §19.1 and §19.5. To-verify entry narrowed | 19_novelty.md; 19_novelty_refs.md | yes |
+| A3 "the only cross-catastrophe comparison" | Changed to "one of at least two"; Carmody 2012 added (new table row, §19.1, §19.4, §19.5 no. 1, 19.7 ProQuest row, To-verify, refs) | 19_novelty.md; 19_novelty_refs.md | yes |
+| A4 Boone n.d. | Now Boone, Kyle 2013, full title, Olivet senior thesis. Index-only verification via CORE; repository 404 noted. Row says it reads the theodicy of Jones and Allen's *Narrative* (the project's bridge text, section 10) and is the closest overlap with it. §19.4 and To-verify updated | 19_novelty.md; 19_novelty_refs.md | yes |
+| A5 COVID claim | Now "in mid-2020 about two-thirds of Americans (68 percent) said their own faith had not changed much (Pew Research Center 2021)". "Lasting" and the Bentzen attribution for this claim removed (Bentzen kept for prayer searches). Pew added to the coding table and refs | 06_comparative.md; 06_comparative_refs.md | yes (text, table) |
+| A6 Kim and Kim | 2015 → 2014 in text, table and ref; DOI added to the ref | 06_comparative.md; 06_comparative_refs.md | yes (text, table) |
+| A7 Kairos | Ref: Kairos Theologians, Braamfontein 1985; rev. 2nd ed. Skotaville/Eerdmans 1986 | 06_comparative_refs.md | no (no ref list in doc) |
+| A8 Malagrida | Rewritten: 1756 pamphlet; exiled from court; implicated by Pombal in the 1758 Távora plot; executed by the Inquisition for heresy on 21 Sept 1761, not for the sermon. Inline [verify] removed; To-verify keeps only the Molesky page reference | 06_comparative.md | yes |
+| A9 Tseng 2017 | 修訂版 [rev. ed.] added; first edition earlier (probably 2016); library record cited | 19_novelty_refs.md | no (no ref list) |
+| A10 Gao 2008 | Venue marked verified; issue and pages flagged "verify on CNKI"; inline [verify] removed from the table row; To-verify updated | 19_novelty.md; 19_novelty_refs.md | yes (row, list) |
+| A11 Li 2008 | Marked [verify on CNKI] in the ref and the table row; added to To-verify and the CNKI search row | 19_novelty.md; 19_novelty_refs.md | yes |
+| D7 Korea signatories | "Christians made up 16 of the 33 signatories (Park 2003)"; [verify count] removed | 06_comparative.md | yes |
+| D8 Armenian canonization | Date and place added (23 April 2015, Holy Etchmiadzin, about 1.5 million); AGBU 2015 ref added; [verify] removed | 06_comparative.md; 06_comparative_refs.md | yes (text) |
+| D10 Belhar | "adopted it in 1986" added; To-verify item (incl. WARC 1982) removed as confirmed | 06_comparative.md | yes |
+| D4 Miller 1975 | "1834 religious census" → "1834 Commissioners of Public Instruction returns" | 06_comparative.md | yes |
+| Note: Larkin 2014 | "in a posthumously published article" | 06_comparative.md | yes |
+| Note: Meier 2016 | Added that he judges short-term demographic consequences catastrophic | 06_comparative.md | yes |
+| D38 Chaney 2013 | Added the null on the popular-religiosity proxy (confirmed in the OpenAlex abstract) | 19_novelty.md | yes |
+| D39 Frijters 2024 | Abstract-level description (near-zero estimates; short-run negative attendance effects); [read before describing] dropped; To-verify now "full text" | 19_novelty.md | yes |
+| D41 Weber 1946 | Pages 267–301 added (ref, §19.1); [verify] flags removed; To-verify asks only to confirm the page range | 19_novelty.md; 19_novelty_refs.md | yes |
+| Confirmed flags removed (sec. 6 refs) | Becker translator, Braun & Radner (SVEC 2005:02 now stated), Elphick, Evans, Meier 2003, Stearns 2011, Yuval, Mooney (pp. 641–1136, 1892–93 added). Kim Sung-Gun subtitle variant noted with the Hull URL. Stauff already had no flag. Section 6 To-verify list trimmed (Park, Armenian, Belhar, Mooney, subtitles, Evans removed) | 06_comparative.md; 06_comparative_refs.md | yes (To-verify list); refs n/a |
+| Confirmed flags removed (sec. 19) | Furlong 2021 (text G12 and ref), Jones 1998, Pinn, Turner editor and subtitle; Furlong To-verify item deleted; Turner To-verify narrowed to the argument | 19_novelty.md; 19_novelty_refs.md | yes (text, list) |
+| Not applied | Cunningham & Grell reviewer name (E. Malcolm): no full citation for the review was available. Brenner "708 survivors" and the Phillips & Killingray title variant are optional | — | — |
