@@ -16,13 +16,13 @@ Arnold, John H. 2005. *Belief and Unbelief in Medieval Europe*. London: Hodder A
 
 Bailey, Mark. 2021. *After the Black Death: Economy, Society, and the Law in Fourteenth-Century England*. Oxford: Oxford University Press.
 
-Barker, Sheila. 2007. "The Making of a Plague Saint: Saint Sebastian's Imagery and Cult before the Counter-Reformation." In *Piety and Plague: From Byzantium to the Baroque*, edited by Franco Mormando and Thomas Worcester. Kirksville, MO: Truman State University Press. [verify: page range]
+Barker, Sheila. 2007. "The Making of a Plague Saint: Saint Sebastian's Imagery and Cult before the Counter-Reformation." In *Piety and Plague: From Byzantium to the Baroque*, edited by Franco Mormando and Thomas Worcester, 90–131. Kirksville, MO: Truman State University Press.
 
 Barzilay, Tzafrir. 2022. *Poisoned Wells: Accusations, Persecution, and Minorities in Medieval Europe, 1321–1422*. Philadelphia: University of Pennsylvania Press.
 
 Becker, Sascha O., and Luigi Pascali. 2019. "Religion, Division of Labor, and Conflict: Anti-Semitism in Germany over 600 Years." *American Economic Review* 109 (5): 1764–1804. https://doi.org/10.1257/aer.20170279.
 
-Belich, James. 2022. *The World the Plague Made: The Black Death and the Rise of Europe*. Princeton, NJ: Princeton University Press. https://doi.org/10.1515/9780691222875. [verify: subtitle]
+Belich, James. 2022. *The World the Plague Made: The Black Death and the Rise of Europe*. Princeton, NJ: Princeton University Press. https://doi.org/10.1515/9780691222875.
 
 Belloc, Marianna, Francesco Drago, and Roberto Galbiati. 2016. "Earthquakes, Religion, and Transition to Self-Government in Italian Cities." *Quarterly Journal of Economics* 131 (4): 1875–1926. https://doi.org/10.1093/qje/qjw020.
 
@@ -44,7 +44,7 @@ Cantor, Norman F. 2001. *In the Wake of the Plague: The Black Death and the Worl
 
 Chaney, Eric. 2013. "Revolt on the Nile: Economic Shocks, Religion, and Political Power." *Econometrica* 81 (5): 2033–53. https://doi.org/10.3982/ECTA10233.
 
-Chiffoleau, Jacques. 1980. *La comptabilité de l'au-delà: Les hommes, la mort et la religion dans la région d'Avignon à la fin du Moyen Âge (vers 1320–vers 1480)*. Collection de l'École française de Rome. Rome: École française de Rome.
+Chiffoleau, Jacques. 1980. *La comptabilité de l'au-delà: Les hommes, la mort et la religion dans la région d'Avignon à la fin du Moyen Âge (vers 1320–vers 1480)*. Preface by Jacques Le Goff. Collection de l'École française de Rome 47. Rome: École française de Rome. Reissued Paris: Albin Michel, 2011.
 
 Cohen, Kathleen. 1973. *Metamorphosis of a Death Symbol: The Transi Tomb in the Late Middle Ages and the Renaissance*. California Studies in the History of Art 15. Berkeley: University of California Press.
 
@@ -82,7 +82,7 @@ Green, Monica H., ed. 2014. "Pandemic Disease in the Medieval World: Rethinking 
 
 Green, Monica H. 2020. "The Four Black Deaths." *American Historical Review* 125 (5): 1601–31. https://doi.org/10.1093/ahr/rhaa511.
 
-Green, Monica H., Kathleen Walker-Meikle, and Wolfgang P. Müller. 2014. "Diagnosis of a 'Plague' Image: A Digital Cautionary Tale." *The Medieval Globe* 1 (1). [verify: co-authors' given names and page range]
+Green, Monica H., Kathleen Walker-Meikle, and Wolfgang P. Müller. 2014. "Diagnosis of a 'Plague' Image: A Digital Cautionary Tale." *The Medieval Globe* 1 (1): 310–26. https://doi.org/10.17302/tmg.1-1.12.
 
 Haensch, Stephanie, Raffaella Bianucci, Michel Signoli, Minoarisoa Rajerison, et al. 2010. "Distinct Clones of *Yersinia pestis* Caused the Black Death." *PLoS Pathogens* 6 (10): e1001134. https://doi.org/10.1371/journal.ppat.1001134.
 

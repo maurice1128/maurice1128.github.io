@@ -4,7 +4,7 @@ The Black Death raised demand for intercession and meaning far more clearly than
 
 ### 4.1 The shock and the state of the field
 
-The first wave (1347–52) killed perhaps a third to a half of Europe's population. Aberth (2021) argues that the familiar "one-third" estimate is too low. Diocesan evidence supports heavy local losses: Aberth (1995) estimates that about half of Cambridgeshire's population died in 1348–49, using the Ely bishop's register. Plague then returned repeatedly, in 1361–63 and at intervals for the rest of the period. Section 8 discusses the continental chronologies of these waves.
+The first wave (1347–52) killed perhaps a third to a half of Europe's population. Aberth (2021) argues that the familiar "one-third" estimate is too low. Diocesan evidence supports heavy local losses: Aberth (1995), re-evaluating the Ely bishop's register, finds that East Anglia, and Cambridgeshire in particular, was among the hardest hit in England in 1348–49. Plague then returned repeatedly, in 1361–63 and at intervals for the rest of the period. Section 8 discusses the continental chronologies of these waves.
 
 Recurrence matters for the model: several of the best studies find that religious change followed the second or third wave, not the first.
 
@@ -28,7 +28,7 @@ Scholarship agrees that devotion became more intense and more visible after 1348
 
 **Flagellants (1349).** The flagellant processions of 1349 are the clearest case of lay penance bypassing clerical mediation. Kieckhefer (1974) challenges the view that the movement began orthodox and was later radicalised from outside. He argues that anticlerical and heterodox tendencies developed within it. Clement VI condemned the movement in October 1349, citing its doubts about the sacraments and its denial of ordinary ecclesiastical jurisdiction *[verify date and bull]*. The movement collapsed within about a year. German scholarship on the flagellant songs and on Graus's (1987) "crisis" thesis is treated in section 8.
 
-A later comparison sharpens the point. Bornstein (1993) shows that the Bianchi processions of 1399, also driven by fear of plague and apocalyptic expectation, were absorbed by clergy and communes rather than condemned *[verify argument]*. The same penitential energy could run against the institution or through it, depending on the institution's response.
+A later comparison sharpens the point. Bornstein (1993) stresses the orthodoxy of the Bianchi processions of 1399, also driven by fear of plague and apocalyptic expectation, and uses them to challenge the separation of lay and clerical religion. That clergy and communes absorbed the movement rather than condemning it is not confirmed in the descriptions and reviews consulted *[verify]*. The same penitential energy could run against the institution or through it, depending on the institution's response.
 
 **Plague saints.** The cults of Sebastian and later Roch were new or newly intensified devotions. Marshall (1994) argues that the image of the wounded but living Sebastian worked as plague imagery. The arrow was an ancient symbol of pestilence, and the saint's acceptance of the arrows suggested vicarious sacrifice. Barker (2007) dates Sebastian's plague cult to after 1348. Mormando and Worcester (2007) collect essays on plague piety from Byzantium to the Baroque. These cults spread through altarpieces, confraternities and civic and clerical commissions, that is, through institutional channels.
 
@@ -52,7 +52,7 @@ The claim that trust in the church declined is the weaker half of the convention
 
 **The older thesis.** Ziegler (1969) and Gottfried (1983) associate the plague with heavy clerical losses, poorly prepared replacements and damage to the church's reputation *[verify specific claims]*. Cantor (2001) presents plague as weakening church authority, but specialists widely criticise the book. Jedwab, Johnson and Koyama (2022) list "a decline in the authority of religious institutions" among the plague's long-run effects. Following Johnson and Koyama (2019, 110–12), they argue that the plague's universality and the "inability of religious leaders to offer protection" called the church's legitimacy into question. Their evidence is historiographical, not a causal estimate.
 
-**Clerical mortality and replacement.** Robinson (2019) uses ordination lists from six English dioceses. He finds that about half of England's priests died. Ordinations in 1349 far exceeded the annual average, then fell below half the pre-plague level for the rest of the 1350s. Crucially, plague-era priests came from much the same social and economic background as earlier priests. This undercuts the chain from "inferior replacement clergy" to anticlericalism. Robinson (2022) extends the analysis to clerical career prospects.
+**Clerical mortality and replacement.** Starting from the estimate that about half of England's priests died, Robinson (2019) uses surviving English ordination lists. Ordinations in 1349 far exceeded the annual average, then fell below half the pre-plague level for the rest of the 1350s. Crucially, plague-era priests came from much the same social and economic background as earlier priests. This undercuts the chain from "inferior replacement clergy" to anticlericalism. Robinson (2022) extends the analysis to clerical career prospects.
 
 Diocesan studies point the same way. Dohar (1995) examines Hereford's administration, recruitment and pastoral provision across the century and stresses adaptation *[verify conclusion]*. Courtenay (1980) tests whether plague sharply reduced Oxford enrolment *[verify conclusion]*. Harper-Bill (1996) surveys the English church after the plague in cautious terms *[verify]*.
 
@@ -64,7 +64,7 @@ Diocesan studies point the same way. Dohar (1995) examines Hereford's administra
 
 **Lollardy and the Hussites.** No recent peer-reviewed English study argues a strong causal link from plague to Lollardy. The link survives mainly in older encyclopedic and confessional writing. For Bohemia, Mengel (2011) shows that the textbook map, in which Bohemia was spared in 1347–52, rests on a misreading. The 1380 epidemic was far more damaging there. Czech historiography has largely concluded that plague was not a decisive cause of the Hussite revolution (Nodl 2021 *[verify]*).
 
-**The long view.** Duffy (1992) argues that English Catholicism on the eve of the Reformation was "neither decadent nor decayed" but vigorous and popular. He does not centre the plague. But his work is the strongest evidence against a long post-plague erosion of institutional trust in England. Arnold (2005) supplies a useful distinction between belief, practice and trust in institutions. That distinction warns against reading anticlerical complaint as loss of faith.
+**The long view.** Duffy (1992) argues that English Catholicism on the eve of the Reformation was vigorous and popular, not decadent or in decline. He does not centre the plague. But his work is the strongest evidence against a long post-plague erosion of institutional trust in England. Arnold (2005) supplies a useful distinction between belief, practice and trust in institutions. That distinction warns against reading anticlerical complaint as loss of faith.
 
 **Relation to the model.** Trust tracked pastoral performance. It frayed where priests were absent from deathbeds and held where bishops dispensed, popes granted indulgences and parish provision recovered. The church's role should include its *capacity to deliver* care, not only its alignment with sufferers or perpetrators.
 
@@ -74,11 +74,11 @@ The massacres of 1348–51 destroyed the principal Jewish communities of the Rhi
 
 **Historical scholarship.** Cohn (2007) finds that the perpetrators differed socially from those in later pogroms. Town councils, princes and other elites were often involved. Barzilay (2022) traces well-poisoning accusations from the 1321 Lepers' Plot to their fifteenth-century decline. He argues that their preconditions existed in the thirteenth century and that municipal councils promoted them, partly for material gain. Nirenberg (1996) treats the 1348 attacks as contingent events shaped by local systems of coexistence, not as expressions of timeless hatred.
 
-Haverkamp (1981) showed that many German pogroms occurred *before* plague reached a town *[verify; see section 8]*. Dols (1974) links flagellant propaganda to a second wave of massacres from mid-1349. Cohn (2018), surveying epidemics from Athens to AIDS, argues that epidemics more often produced compassion than hatred. On that view the Black Death massacres are an exception that needs explaining.
+Haverkamp (1981) showed that many German pogroms occurred *before* plague reached a town *[verify; see section 8]*. Dols (1974) links flagellant propaganda to a second wave of massacres from mid-1349. For German towns, however, Haverkamp (1981, 43) finds the flagellant processions closer in time to the plague wave than to the pogroms, which argues against treating them as co-perpetrators. Cohn (2018), surveying epidemics from Athens to AIDS, argues that epidemics more often produced compassion than hatred. On that view the Black Death massacres are an exception that needs explaining.
 
 **Quantitative scholarship.** Jedwab, Johnson and Koyama (2019) use city-level data on mortality and persecution in Western Europe. They find that negative shocks raise the likelihood of persecution, but that more severe shocks lower it where Jews and Christians were economically complementary. Cities with higher plague mortality were less likely to persecute. In the working-paper version (Jedwab, Johnson, and Koyama 2017), the protective effect was weaker in cities first infected around Epiphany and Easter, and stronger in Advent and Lent.
 
-Finley and Koyama (2018) find that communities near archbishoprics, bishoprics and imperial free cities suffered more intense and violent persecutions than those under the emperor. Anderson, Johnson and Koyama (2017) show, over 1100–1800, that cold growing seasons raised the probability of persecution, especially where states were weak. Voigtländer and Voth (2012) find that plague-era pogroms predict anti-Jewish violence and Nazi support in the same German towns in the 1920s and 1930s. Becker and Pascali (2019) find that after the Reformation, persecution became more common in Protestant areas where Christians began to compete with Jews in moneylending.
+Finley and Koyama (2018) find that communities governed by archbishoprics, bishoprics and imperial free cities suffered more intense and violent persecutions than those governed by the emperor or by secular princes. Anderson, Johnson and Koyama (2017) show, over 1100–1800, that cold growing seasons raised the probability of persecution, especially where states were weak. Voigtländer and Voth (2012) find that plague-era pogroms predict anti-Jewish violence and Nazi support in the same German towns in the 1920s and 1930s. Becker and Pascali (2019) find that after the Reformation, persecution became more common in Protestant areas where Christians began to compete with Jews in moneylending.
 
 **Jewish religious responses.** Einbinder (2018) studies Jewish responses to plague and violence in Provence and Iberia. She finds a fundamental continuity of worldview and means of expression. Foa (2000) stresses Jewish cultural agency after 1348 rather than a catalogue of disasters.
 
@@ -88,7 +88,7 @@ Finley and Koyama (2018) find that communities near archbishoprics, bishoprics a
 
 Grand claims linking the Black Death to the Reformation or to secularisation come mainly from synthesisers. Specialists largely reject them in their strong form. A weaker claim, that recurrent plague reshaped the economy of salvation the reformers later attacked, is defensible.
 
-**Synthesis and rebuttal.** Huizinga's (1996 [1919]) image of an overwrought, death-obsessed late-medieval piety supplied the classic "crisis" frame, though he did not centre the plague. Bowsky (1971) framed the "turning point" as an open question. Herlihy (1997) treats the plague as a "terrible but effective catalyst" for renewal, mainly economic. Cohn (2002a) argues that falling mortality across successive waves bred cultural confidence, not religious despair. Bailey (2021) locates lasting institutional change in 1350–75, but in law, labour and economy rather than religion.
+**Synthesis and rebuttal.** Huizinga's (1996 [1919]) image of an overwrought, death-obsessed late-medieval piety supplied the classic "crisis" frame, though he did not centre the plague. Bowsky (1971) framed the "turning point" as an open question. Herlihy (1997) treats the plague as a destructive but ultimately effective spur to renewal, mainly economic. Cohn (2002a) argues that falling mortality across successive waves bred cultural confidence, not religious despair. Bailey (2021) locates lasting institutional change in 1350–75, but in law, labour and economy rather than religion.
 
 **Causal evidence.** Dittmar and Meisenzahl (2020) provide the cleanest causal link between plague and religious institutional change. They use plague outbreaks in 1500–1522 as an instrument for German cities' adoption of Protestant church ordinances, controlling for plague frequency in 1350–1499. Each additional outbreak raised the probability of adoption by 14 percentage points. Their proposed mechanism is that plagues weakened incumbent elites and increased demand for public-goods institutions.
 
@@ -104,7 +104,7 @@ Since about 2010, ancient-DNA studies and the global turn have transformed the b
 
 Green (2014; 2020) reframed the Black Death as a global, multi-lineage pandemic with Central Asian origins. Benedictow (2021) and Aberth (2021) offer full syntheses, and Aberth's includes religious responses to 1500. Belich (2022) offers an economic reading of the plague's long-term consequences.
 
-Recent religious work is scattered: besides the studies cited above, Nissi and Testoni (2025) read fourteenth-century Italian miracle testimonies through terror-management theory. A. T. Brown (2026) studies plague in English popular memory *[verify content]*. No English monograph since 2010 has systematically tested "devotion up, institutional trust down" for the Black Death. No study measures belief and institutional trust together before and after the plague.
+Recent religious work is scattered. A. T. Brown (2026) studies plague in English popular memory *[verify content]*. Nissi and Testoni (2025) read Italian miracle testimonies from the canonisation processes of Clare of Montefalco and Nicholas of Tolentino through terror-management theory. That evidence predates 1348, so it is not plague evidence, but it could serve as a pre-plague baseline for death anxiety. No English monograph since 2010 has systematically tested "devotion up, institutional trust down" for the Black Death. No study measures belief and institutional trust together before and after the plague.
 
 ### 4.8 Debates at a glance
 
@@ -134,15 +134,12 @@ Recent religious work is scattered: besides the studies cited above, Nissi and T
 - Clement VI's 1348 bulls protecting Jews: titles and dates.
 - Ralph of Shrewsbury's letter on lay confession: exact date (1348 or 1349) and wording in Horrox 1994 or Holmes's edition.
 - Julian of Norwich: that the *Showings* contain no direct reference to plague (only semi-popular sources consulted).
-- Bornstein 1993: argument that clergy and communes absorbed the Bianchi.
+- Bornstein 1993: argument that clergy and communes absorbed the Bianchi (the book's orthodoxy argument is confirmed by its description; the absorption claim is not).
 - Chiffoleau 1980 and Haverkamp 1981: argument summaries are from background knowledge (see section 8).
 - Cohen 1973: reading of transi tombs as expressions of hope for resurrection.
 - Van Os 1981, Boskovits and Cole: details of their critiques; Boskovits and Cole works not identified bibliographically.
 - Norman 1995: whether the volume explicitly critiques Meiss.
-- Barker 2007: chapter page range in Mormando and Worcester 2007.
 - Dohar 1995, Courtenay 1980 and Harper-Bill 1996: conclusions not read directly; Harper-Bill chapter title and pages unverified.
 - Ziegler 1969 and Gottfried 1983: specific claims about clerical quality and church reputation.
 - Nodl 2021: bibliographic details of the Vorträge und Forschungen essay on Czech historiography of plague and Hussitism.
 - A. T. Brown 2026: content not read (only title and metadata).
-- Belich 2022: subtitle from background knowledge.
-- Green, Walker-Meikle and Müller 2014: co-authors' given names and page range.

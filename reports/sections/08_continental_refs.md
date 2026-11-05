@@ -86,7 +86,7 @@ Linde, J. M. van der. 1956. *Het visioen van Herrnhut en het apostolaat der Mora
 
 López de Meneses, Amada. 1956. "Documentos acerca de la peste negra en los dominios de la Corona de Aragón." *Estudios de Edad Media de la Corona de Aragón* 6: 291–447. [BnF]
 
-López de Meneses, Amada. 1959. "Una consecuencia de la peste negra en Cataluña: El pogrom de 1348." *Sefarad* 19: 92–131, 322–64. [verify]
+López de Meneses, Amada. 1959. "Una consecuencia de la peste negra en Cataluña: El pogrom de 1348." *Sefarad* 19: 92–133, 321–65. [pages per Cantera Montenegro 2022 bibliography; Dialnet [verify]]
 
 Maimon, Arye, Mordechai Breuer, and Yacov Guggenheim, eds. 1987–2003. *Germania Judaica*. Vol. 3, *1350–1519*. 3 parts. Tübingen: Mohr Siebeck. [DNB for parts and dates; publisher [verify]]
 
@@ -114,7 +114,7 @@ Proto, Teresa. 2014. *Studio ecdotico, linguistico e musicologico dei Geißlerli
 
 Reginaldo, Lucilene. 2011. *Os Rosários dos Angolas: Irmandades de africanos e crioulos na Bahia setecentista*. São Paulo: Alameda.
 
-Reinhardt, Volker. 2021. *Die Macht der Seuche: Wie die Große Pest die Welt veränderte, 1347–1353*. München: C. H. Beck. [DNB]
+Reinhardt, Volker. 2021. *Die Macht der Seuche: Wie die Große Pest die Welt veränderte*. München: C. H. Beck. [DNB; the 2022 printing adds ": 1347–1353" to the subtitle]
 
 Reis, João José. 1986. *Rebelião escrava no Brasil: A história do levante dos malês (1835)*. São Paulo: Brasiliense. English translation: *Slave Rebellion in Brazil: The Muslim Uprising of 1835 in Bahia*. Translated by Arthur Brakel. Baltimore: Johns Hopkins University Press, 1993.
 
@@ -124,7 +124,7 @@ Runge, Paul, ed. 1969. *Die Lieder und Melodien der Geissler des Jahres 1349 nac
 
 Schmitt, Jean-Claude. 1994. *Les revenants: Les vivants et les morts dans la société médiévale*. Paris: Gallimard. [BnF] English translation: *Ghosts in the Middle Ages: The Living and the Dead in Medieval Society*. Translated by Teresa Lavender Fagan. Chicago: University of Chicago Press, 1998. [OL]
 
-Segl, Peter. 1984. "Geißler." In *Theologische Realenzyklopädie*, vol. 12, 162–69. Berlin and New York: De Gruyter. https://doi.org/10.1515/9783110867947-020. [CR; end page 169 vs. 170 [verify]]
+Segl, Peter. 1984. "Geißler." In *Theologische Realenzyklopädie*, vol. 12, 162–70. Berlin and New York: De Gruyter. https://doi.org/10.1515/9783110867947-020. [CR]
 
 Soares, Mariza de Carvalho. 2000. *Devotos da cor: Identidade étnica, religiosidade e escravidão no Rio de Janeiro, século XVIII*. Rio de Janeiro: Civilização Brasileira. English translation: *People of Faith: Slavery and African Catholics in Eighteenth-Century Rio de Janeiro*. Translated by Jerry D. Metz. Durham, NC: Duke University Press, 2011.
 
