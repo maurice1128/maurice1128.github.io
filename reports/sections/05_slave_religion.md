@@ -136,7 +136,7 @@ This supports the model's exclusion of race as a variable. The comparative evide
 ### To verify
 
 - Mays (1938): the "compensatory" and "constructive" categories.
-- Butler (1990): exact wording "African spiritual holocaust" and the chapter title.
+- J. Butler (1990): exact wording "African spiritual holocaust" and the chapter title.
 - Virginia statute of 1667 on baptism and freedom.
 - Egerton (1993) on Gabriel's plot as mainly secular; Egerton (1999) on suppression of Charleston's African Methodist church after 1822.
 - Umar ibn Said as evidence of Muslim belief beneath Christian affiliation.

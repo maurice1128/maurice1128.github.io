@@ -10,15 +10,6 @@ Skocpol and Somers (1980) identified three logics: parallel demonstration of the
 
 The transnational turn raised a different objection: cases are not independent units. Kocka (2003) argued that comparison abstracts cases from their contexts, which is both its strength and its cost. He recommended combining comparison with the study of entanglements. Werner and Zimmermann (2006) went further: their *histoire croisée* treats the observer, the cases, and the categories as mutually constituted. Seigel (2005) and Stoler (2001) added that choosing comparative units is itself political, a point that bears directly on choosing "race" or "situation" as the unit of analysis.
 
-| Position | Main proponents | Core claim | Implication for the model |
-|---|---|---|---|
-| Proximity preference | Bloch 1928 | Compare neighbouring, contemporaneous societies; distant comparison is speculative | Must be answered explicitly; it is the first objection a historian will raise |
-| Comparison as hypothesis-testing | Sewell 1967; Skocpol and Somers 1980; Tilly 1984 | Distance is irrelevant if variables are theorized and vary | Licenses the pairing as contrast of contexts and variation-finding |
-| Mechanism-based CHA | Mahoney and Rueschemeyer 2003; Mahoney 2004; Kreuzer 2023 | Causal claims rest on sequences and mechanisms within cases | Shifts the burden from cross-case matching to within-case evidence |
-| Entanglement critique | Kocka 2003; Werner and Zimmermann 2006; Seigel 2005 | Cases are linked; comparison reifies units | Converts into an asset: the cases share a Latin-Christian theodicy repertoire |
-| Incommensurability | Steinmetz 2004 | Cases embedded in different wholes cannot be compared variable by variable | Requires an explicit *tertium comparationis* and scope conditions |
-| Politics of comparison | Stoler 2001; Fredrickson 1995 | Unit choice carries political weight | Choosing "situation" over "race" must be argued, not assumed |
-
 The entanglement critique is less damaging here than it first appears. The same scriptural repertoire, including Exodus, Job, Lamentations, and providential punishment, runs from late-medieval preaching through Reformation Protestantism into Anglo-American evangelicalism. "Theological interpretation" is therefore a genuinely shared variable, transmitted rather than coincidental. That supports the model's second variable, but it also means the two cases are not fully independent tests of it.
 
 ### 11.2 Small-N critiques and the turn to process tracing

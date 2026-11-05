@@ -82,7 +82,7 @@ A third position challenges the solidarity frame from within. Jones asked whethe
 
 ### 3.7 A typology of frames and predicted effects
 
-The table summarises the argument. The arrows are analytic predictions drawn from the literature, not measured outcomes.
+The table summarises the argument. Its entries are analytic predictions drawn from the literature, not measured outcomes.
 
 | Theology type | Frame of collective suffering | Predicted effect on faith | Predicted effect on institutional trust | Historical example |
 |---|---|---|---|---|
@@ -136,7 +136,6 @@ For a Taiwan-based reader, two lines connect this research to coursework. The fi
 - Ellacuría 1993: chapter pages in *Mysterium Liberationis*.
 - Wang Hsien-chih 1988: publisher and place; obtain from Tainan Theological College library.
 - PCT 1971, 1975, 1977: official English texts and exact dates.
-- CTC-CCA 1983: whether Ahn Byung-mu's chapter is in the Orbis edition.
 - Rychetská 2022: volume and issue. Liu 2024: volume number and editor of *Modern Chinese Theologies*.
 - Fackenheim 1970: subtitle.
 - Eusebius 1965: Penguin imprint confirmed in Open Library; check title wording.
