@@ -1,0 +1,103 @@
+# References for Section 5: Enslaved and freed African Americans (c. 1619–1877)
+
+Chicago author-date. Entries marked [verify] have an element still unconfirmed (named in brackets).
+
+- *Appletons' Annual Cyclopaedia and Register of Important Events of the Year 1866*. 1867. New York: D. Appleton. [verify: title, imprint and p. 492 AME figure; known only via secondary aggregator]
+- *Appletons' Annual Cyclopaedia and Register of Important Events of the Year 1876*. 1877. New York: D. Appleton. [verify: title, imprint and p. 532 AME figure; known only via secondary aggregator]
+- Austin, Allan D. 1997. *African Muslims in Antebellum America: Transatlantic Stories and Spiritual Struggles*. New York: Routledge.
+- Bennett, Herman L. 2003. *Africans in Colonial Mexico: Absolutism, Christianity, and Afro-Creole Consciousness, 1570–1640*. Bloomington: Indiana University Press.
+- Blassingame, John W. (1972) 1979. *The Slave Community: Plantation Life in the Antebellum South*. Rev. and enl. ed. New York: Oxford University Press.
+- Blum, Edward J. 2005. *Reforging the White Republic: Race, Religion, and American Nationalism, 1865–1898*. Baton Rouge: Louisiana State University Press.
+- Boles, Richard J. 2020. *Dividing the Faith: The Rise of Segregated Churches in the Early American North*. New York: New York University Press.
+- Breen, Patrick H. 2015. *The Land Shall Be Deluged in Blood: A New History of the Nat Turner Revolt*. New York: Oxford University Press.
+- Bristol, Joan Cameron. 2007. *Christians, Blasphemers, and Witches: Afro-Mexican Ritual Practice in the Seventeenth Century*. Albuquerque: University of New Mexico Press.
+- Butler, Jon. 1990. *Awash in a Sea of Faith: Christianizing the American People*. Cambridge, MA: Harvard University Press.
+- Butler, Kevin D. 2023. *Slavery, Religion, and Race in Antebellum Missouri*. Lanham, MD: Lexington Books. https://doi.org/10.5771/9781666917000. [place of publication from publisher's standard location]
+- Callahan, Allen Dwight. 2006. *The Talking Book: African Americans and the Bible*. New Haven, CT: Yale University Press.
+- Cameron, Christopher. 2019. *Black Freethinkers: A History of African American Secularism*. Evanston, IL: Northwestern University Press. [verify: place]
+- Childs, Matt D. 2006. *The 1812 Aponte Rebellion in Cuba and the Struggle against Atlantic Slavery*. Chapel Hill: University of North Carolina Press.
+- Chireau, Yvonne P. 2003. *Black Magic: Religion and the African American Conjuring Tradition*. Berkeley: University of California Press.
+- Clarke, Erskine. 1979. *Wrestlin' Jacob: A Portrait of Religion in the Old South*. Atlanta: John Knox Press.
+- Clarke, Erskine. 2005. *Dwelling Place: A Plantation Epic*. New Haven, CT: Yale University Press.
+- Cone, James H. 1972. *The Spirituals and the Blues: An Interpretation*. New York: Seabury Press.
+- Cornelius, Janet Duitsman. 1999. *Slave Missions and the Black Church in the Antebellum South*. Columbia: University of South Carolina Press.
+- Creel, Margaret Washington. 1988. *"A Peculiar People": Slave Religion and Community-Culture among the Gullahs*. New York: New York University Press.
+- da Costa, Emília Viotti. 1994. *Crowns of Glory, Tears of Blood: The Demerara Slave Rebellion of 1823*. New York: Oxford University Press.
+- de la Fuente, Alejandro. 2004. "Slave Law and Claims-Making in Cuba: The Tannenbaum Debate Revisited." *Law and History Review* 22 (2): 339–69. https://doi.org/10.2307/4141649.
+- Degler, Carl N. 1971. *Neither Black nor White: Slavery and Race Relations in Brazil and the United States*. New York: Macmillan.
+- Dickerson, Dennis C. 2020. *The African Methodist Episcopal Church: A History*. Cambridge: Cambridge University Press.
+- Diouf, Sylviane A. (1998) 2013. *Servants of Allah: African Muslims Enslaved in the Americas*. 15th anniversary ed. New York: New York University Press.
+- Douglass, Frederick. 1845. *Narrative of the Life of Frederick Douglass, an American Slave*. Boston: Anti-Slavery Office. [verify: imprint against Frederick Douglass Papers edition]
+- Du Bois, W. E. B., ed. 1903. *The Negro Church*. Atlanta: Atlanta University Press.
+- Dubois, Laurent. 2004. *Avengers of the New World: The Story of the Haitian Revolution*. Cambridge, MA: Belknap Press of Harvard University Press.
+- Dvorak, Katharine L. 1991. *An African-American Exodus: The Segregation of the Southern Churches*. Chicago Studies in the History of American Religion 4. Brooklyn, NY: Carlson Publishing.
+- Egerton, Douglas R. 1993. *Gabriel's Rebellion: The Virginia Slave Conspiracies of 1800 and 1802*. Chapel Hill: University of North Carolina Press.
+- Egerton, Douglas R. 1999. *He Shall Go Out Free: The Lives of Denmark Vesey*. Madison, WI: Madison House.
+- Elkins, Stanley M. 1959. *Slavery: A Problem in American Institutional and Intellectual Life*. Chicago: University of Chicago Press.
+- Evans, Curtis J. 2008. *The Burden of Black Religion*. New York: Oxford University Press.
+- Forret, Jeff. 2012. Review of *Slavery, Civil War, and Salvation: African American Slaves and Christianity, 1830–1870*, by Daniel L. Fountain. *Slavery & Abolition* 33 (1): 163–65. https://doi.org/10.1080/0144039X.2012.659479.
+- Fountain, Daniel L. 2010. *Slavery, Civil War, and Salvation: African American Slaves and Christianity, 1830–1870*. Baton Rouge: Louisiana State University Press.
+- Frazier, E. Franklin. 1963. *The Negro Church in America*. Liverpool: Liverpool University Press. Reprint, New York: Schocken Books, 1964.
+- Frey, Sylvia R., and Betty Wood. 1998. *Come Shouting to Zion: African American Protestantism in the American South and British Caribbean to 1830*. Chapel Hill: University of North Carolina Press.
+- Fromont, Cécile. 2014. *The Art of Conversion: Christian Visual Culture in the Kingdom of Kongo*. Chapel Hill: Omohundro Institute and University of North Carolina Press.
+- Geggus, David Patrick. 2002. *Haitian Revolutionary Studies*. Bloomington: Indiana University Press.
+- Genovese, Eugene D. 1974. *Roll, Jordan, Roll: The World the Slaves Made*. New York: Pantheon Books.
+- Gerbner, Katharine. 2018. *Christian Slavery: Conversion and Race in the Protestant Atlantic World*. Philadelphia: University of Pennsylvania Press.
+- Gin Lum, Kathryn. 2014. *Damned Nation: Hell in America from the Revolution to Reconstruction*. New York: Oxford University Press.
+- Glasson, Travis. 2012. *Mastering Christianity: Missionary Anglicanism and Slavery in the Atlantic World*. New York: Oxford University Press.
+- Glaude, Eddie S., Jr. 2000. *Exodus! Religion, Race, and Nation in Early Nineteenth-Century Black America*. Chicago: University of Chicago Press.
+- Goetz, Rebecca Anne. 2012. *The Baptism of Early Virginia: How Christianity Created Race*. Baltimore: Johns Hopkins University Press.
+- Gomez, Michael A. 1998. *Exchanging Our Country Marks: The Transformation of African Identities in the Colonial and Antebellum South*. Chapel Hill: University of North Carolina Press.
+- Gomez, Michael A. 2005. *Black Crescent: The Experience and Legacy of African Muslims in the Americas*. Cambridge: Cambridge University Press.
+- Hahn, Steven. 2003. *A Nation Under Our Feet: Black Political Struggles in the Rural South from Slavery to the Great Migration*. Cambridge, MA: Belknap Press of Harvard University Press.
+- Harper, Matthew. 2016. *The End of Days: African American Religion and Politics in the Age of Emancipation*. Chapel Hill: University of North Carolina Press.
+- Herskovits, Melville J. 1941. *The Myth of the Negro Past*. New York: Harper & Brothers.
+- Heywood, Linda M., ed. 2002. *Central Africans and Cultural Transformations in the American Diaspora*. Cambridge: Cambridge University Press.
+- Hildebrand, Reginald F. 1995. *The Times Were Strange and Stirring: Methodist Preachers and the Crisis of Emancipation*. Durham, NC: Duke University Press.
+- Huneycutt, Maverick. 2026. "The Sound Engineers: The Inaudible Institution, Sonic Concealment and Enslaved Resistance in the Antebellum South." *Slavery & Abolition*, published online May 9, 2026. https://doi.org/10.1080/0144039X.2026.2667844.
+- Hüsgen, Jan. 2016. *Mission und Sklaverei: Die Herrnhuter Brüdergemeine und die Sklavenemanzipation in Britisch- und Dänisch-Westindien*. Stuttgart: Franz Steiner.
+- Irons, Charles F. 2008. *The Origins of Proslavery Christianity: White and Black Evangelicals in Colonial and Antebellum Virginia*. Chapel Hill: University of North Carolina Press.
+- Jones, William R. (1973) 1998. *Is God a White Racist? A Preamble to Black Theology*. Boston: Beacon Press.
+- Kiddy, Elizabeth W. 2005. *Blacks of the Rosary: Memory and History in Minas Gerais, Brazil*. University Park: Pennsylvania State University Press.
+- Klein, Herbert S. 1967. *Slavery in the Americas: A Comparative Study of Virginia and Cuba*. Chicago: University of Chicago Press.
+- Levine, Lawrence W. (1977) 2007. *Black Culture and Black Consciousness: Afro-American Folk Thought from Slavery to Freedom*. 30th anniversary ed. New York: Oxford University Press.
+- Mays, Benjamin E. 1938. *The Negro's God as Reflected in His Literature*. Boston: Chapman & Grimes.
+- Mello e Souza, Laura de. (1986) 2004. *The Devil and the Land of the Holy Cross: Witchcraft, Slavery, and Popular Religion in Colonial Brazil*. Translated by Diane Grosklaus Whitty. Austin: University of Texas Press.
+- Montgomery, William E. 1993. *Under Their Own Vine and Fig Tree: The African-American Church in the South, 1865–1900*. Baton Rouge: Louisiana State University Press.
+- Newman, Richard S. 2008. *Freedom's Prophet: Bishop Richard Allen, the AME Church, and the Black Founding Fathers*. New York: New York University Press.
+- Ortiz, Fernando. 1921. *Los cabildos afrocubanos*. Havana. [verify: whether first published in *Revista Bimestre Cubana*]
+- Peabody, Sue. 2002. "'A Dangerous Zeal': Catholic Missions to Slaves in the French Antilles, 1635–1800." *French Historical Studies* 25 (1): 53–90. https://doi.org/10.1215/00161071-25-1-53.
+- Pierce, Yolanda. 2005. *Hell Without Fires: Slavery, Christianity, and the Antebellum Spiritual Narrative*. Gainesville: University Press of Florida. [verify: place]
+- Pinn, Anthony B. 1995. *Why, Lord? Suffering and Evil in Black Theology*. New York: Continuum.
+- Pinn, Anthony B., ed. 2001. *By These Hands: A Documentary History of African American Humanism*. New York: New York University Press.
+- Raboteau, Albert J. (1978) 2004. *Slave Religion: The "Invisible Institution" in the Antebellum South*. Updated ed. New York: Oxford University Press.
+- Reginaldo, Lucilene. 2011. *Os Rosários dos Angolas: irmandades de africanos e crioulos na Bahia setecentista*. São Paulo: Alameda.
+- Reis, João José. (1986) 1993. *Slave Rebellion in Brazil: The Muslim Uprising of 1835 in Bahia*. Translated by Arthur Brakel. Baltimore: Johns Hopkins University Press.
+- Reis, João José. (1991) 2003. *Death Is a Festival: Funeral Rites and Rebellion in Nineteenth-Century Brazil*. Translated by H. Sabrina Gledhill. Chapel Hill: University of North Carolina Press. [verify: subtitle of Portuguese original, *A morte é uma festa*, São Paulo: Companhia das Letras, 1991]
+- Rucker, Walter C. 2006. *The River Flows On: Black Resistance, Culture, and Identity Formation in Early America*. Baton Rouge: Louisiana State University Press.
+- Russell-Wood, A. J. R. 1974. "Black and Mulatto Brotherhoods in Colonial Brazil: A Study in Collective Behavior." *Hispanic American Historical Review* 54 (4): 567–602. https://doi.org/10.1215/00182168-54.4.567.
+- Schwartz, Stuart B. 1982. "The Plantations of St. Benedict: The Benedictine Sugar Mills of Colonial Brazil." *The Americas* 39 (1): 1–22. https://doi.org/10.2307/981267.
+- Schweninger, Loren. 2011. Review of *Slavery, Civil War, and Salvation: African American Slaves and Christianity, 1830–1870*, by Daniel L. Fountain. *Civil War Book Review* 13 (2). https://doi.org/10.31390/cwbr.13.2.14.
+- Scott, Sean A. 2011. Review of *Slavery, Civil War, and Salvation: African American Slaves and Christianity, 1830–1870*, by Daniel L. Fountain. *Church History* 80 (3): 703–5. https://doi.org/10.1017/S0009640711001065.
+- Sensbach, Jon F. 1998. *A Separate Canaan: The Making of an Afro-Moravian World in North Carolina, 1763–1840*. Chapel Hill: Omohundro Institute and University of North Carolina Press.
+- Sensbach, Jon F. 2005. *Rebecca's Revival: Creating Black Christianity in the Atlantic World*. Cambridge, MA: Harvard University Press.
+- Smith, Theophus H. 1994. *Conjuring Culture: Biblical Formations of Black America*. New York: Oxford University Press.
+- Snay, Mitchell. 1993. *Gospel of Disunion: Religion and Separatism in the Antebellum South*. New York: Cambridge University Press.
+- Soares, Mariza de Carvalho. (2000) 2011. *People of Faith: Slavery and African Catholics in Eighteenth-Century Rio de Janeiro*. Translated by Jerry D. Metz. Durham, NC: Duke University Press.
+- Sobel, Mechal. 1979. *Trabelin' On: The Slave Journey to an Afro-Baptist Faith*. Westport, CT: Greenwood Press.
+- Sparks, Randy J. 1994. *On Jordan's Stormy Banks: Evangelicalism in Mississippi, 1773–1876*. Athens: University of Georgia Press.
+- Stowell, Daniel W. 1998. *Rebuilding Zion: The Religious Reconstruction of the South, 1863–1877*. New York: Oxford University Press.
+- Stuckey, Sterling. 1987. *Slave Culture: Nationalist Theory and the Foundations of Black America*. New York: Oxford University Press.
+- Sweet, James H. 2003. *Recreating Africa: Culture, Kinship, and Religion in the African-Portuguese World, 1441–1770*. Chapel Hill: University of North Carolina Press.
+- Tannenbaum, Frank. 1946. *Slave and Citizen: The Negro in the Americas*. New York: Alfred A. Knopf.
+- Thornton, John K. 1988. "On the Trail of Voodoo: African Christianity in Africa and the Americas." *The Americas* 44 (3): 261–78. https://doi.org/10.2307/1006906.
+- Thornton, John K. 1998a. *Africa and Africans in the Making of the Atlantic World, 1400–1800*. 2nd ed. Cambridge: Cambridge University Press.
+- Thornton, John K. 1998b. *The Kongolese Saint Anthony: Dona Beatriz Kimpa Vita and the Antonian Movement, 1684–1706*. Cambridge: Cambridge University Press.
+- Turner, Mary. 1982. *Slaves and Missionaries: The Disintegration of Jamaican Slave Society, 1787–1834*. Urbana: University of Illinois Press.
+- Turner, Nicole Myers. 2020. *Soul Liberty: The Evolution of Black Religious Politics in Postemancipation Virginia*. Chapel Hill: University of North Carolina Press. https://doi.org/10.5149/9781469655253_Turner.
+- Walker, Clarence E. 1982. *A Rock in a Weary Land: The African Methodist Episcopal Church during the Civil War and Reconstruction*. Baton Rouge: Louisiana State University Press.
+- Wells-Oghoghomeh, Alexis. 2021. *The Souls of Womenfolk: The Religious Cultures of Enslaved Women in the Lower South*. Chapel Hill: University of North Carolina Press.
+- Williams, Delores S. 1993. *Sisters in the Wilderness: The Challenge of Womanist God-Talk*. Maryknoll, NY: Orbis Books.
+- Wilmore, Gayraud S. (1972) 1998. *Black Religion and Black Radicalism: An Interpretation of the Religious History of African Americans*. 3rd ed., rev. and enl. Maryknoll, NY: Orbis Books.
+- Woodson, Carter G. 1921. *The History of the Negro Church*. Washington, DC: Associated Publishers.
+- Young, Jason R. 2007. *Rituals of Resistance: African Atlantic Religion in Kongo and the Lowcountry South in the Era of Slavery*. Baton Rouge: Louisiana State University Press.
