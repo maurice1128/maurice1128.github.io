@@ -6,7 +6,7 @@ Andersen, Francis I., and David Noel Freedman. 1989. *Amos: A New Translation wi
 
 Barmen. 1934. "Theological Declaration of Barmen." Confessional Synod of the German Evangelical Church, 31 May 1934. [verify edition and English text]
 
-Bauckham, Richard. 1993a. *The Climax of Prophecy: Studies on the Book of Revelation*. Edinburgh: T&T Clark. [verified: Open Library; Crossref review, *Scottish Journal of Theology* 52 (1999)] [verify chapter "The Economic Critique of Rome in Revelation 18"]
+Bauckham, Richard. 1993a. *The Climax of Prophecy: Studies on the Book of Revelation*. Edinburgh: T&T Clark. [verified: Open Library; Crossref review, *Scottish Journal of Theology* 52 (1999)] Ch. 10, "The Economic Critique of Rome in Revelation 18," 338–83. [verified: audit 2026-11-05 (catalogue table of contents; *AUSS* review 1995)]
 
 Bauckham, Richard. 1993b. *The Theology of the Book of Revelation*. New Testament Theology. Cambridge: Cambridge University Press. https://doi.org/10.1017/CBO9780511819858. [verified: Crossref]
 
@@ -14,7 +14,7 @@ Belhar. 1986. *Confession of Belhar*. Dutch Reformed Mission Church in South Afr
 
 Berlin, Adele. 2002. *Lamentations: A Commentary*. Old Testament Library. Louisville, KY: Westminster John Knox Press. [verified: Open Library]
 
-Billman, Kathleen D., and Daniel L. Migliore. 1999. *Rachel's Cry: Prayer of Lament and Rebirth of Hope*. Cleveland: United Church Press. Reprint, Eugene, OR: Wipf & Stock, 2007. [verified: Open Library (authors, title, publishers, years)] [verify subtitle]
+Billman, Kathleen D., and Daniel L. Migliore. 1999. *Rachel's Cry: Prayer of Lament and Rebirth of Hope*. Cleveland: United Church Press. Reprint, Eugene, OR: Wipf & Stock, 2007. [verified: Open Library (authors, title, subtitle, publishers, years)]
 
 Blenkinsopp, Joseph. 2002. *Isaiah 40–55: A New Translation with Introduction and Commentary*. Anchor Bible 19A. New York: Doubleday. [verified: Open Library; subtitle verify]
 
@@ -30,7 +30,7 @@ Brueggemann, Walter. 1986. "The Costly Loss of Lament." *Journal for the Study o
 
 Brueggemann, Walter. 1997. *Theology of the Old Testament: Testimony, Dispute, Advocacy*. Minneapolis: Fortress Press. [verified: Open Library]
 
-Calvin, John. 1960 [Latin 1559]. *Institutes of the Christian Religion*. Edited by John T. McNeill. Translated by Ford Lewis Battles. 2 vols. Library of Christian Classics 20–21. Philadelphia: Westminster Press. [verified: Open Library; Crossref reviews] [verify locus 4.20.31]
+Calvin, John. 1960 [Latin 1559]. *Institutes of the Christian Religion*. Edited by John T. McNeill. Translated by Ford Lewis Battles. 2 vols. Library of Christian Classics 20–21. Philadelphia: Westminster Press. [verified: Open Library; Crossref reviews; locus 4.20.31 checked in audit]
 
 Carson, D. A. 2006 [1990]. *How Long, O Lord? Reflections on Suffering and Evil*. 2nd ed. Grand Rapids, MI: Baker Academic. [verified: Open Library]
 
@@ -58,11 +58,11 @@ Fretheim, Terence E. 1984. *The Suffering of God: An Old Testament Perspective*.
 
 Fretheim, Terence E. 1991. *Exodus*. Interpretation. Louisville, KY: John Knox Press. [verified: Open Library]
 
-Gray, Sherman W. 1989. *The Least of My Brothers: Matthew 25:31–46; A History of Interpretation*. SBL Dissertation Series 114. Atlanta: Scholars Press. [verified: Open Library (1989, Scholars Press); Crossref (SBL reissue, doi 10.15699/9780884146681)] [verify subtitle and series number]
+Gray, Sherman W. 1989. *The Least of My Brothers: Matthew 25:31–46; A History of Interpretation*. SBL Dissertation Series 114. Atlanta: Scholars Press. [verified: Open Library (1989, Scholars Press); Crossref (SBL reissue, doi 10.15699/9780884146681); LoC LCCN 89006088 (SBLDS 114)]
 
 Green, Joel B. 1997. *The Gospel of Luke*. New International Commentary on the New Testament. Grand Rapids, MI: Eerdmans. [verified: Open Library]
 
-Gutiérrez, Gustavo. 1973 [Spanish 1971]. *A Theology of Liberation: History, Politics, and Salvation*. Translated by Caridad Inda and John Eagleson. Maryknoll, NY: Orbis Books. [verified: Open Library (Orbis 1973)] [verify translators]
+Gutiérrez, Gustavo. 1973 [Spanish 1971]. *A Theology of Liberation: History, Politics, and Salvation*. Translated by Caridad Inda and John Eagleson. Maryknoll, NY: Orbis Books. [verified: Open Library (Orbis 1973); translators checked in audit]
 
 Gutiérrez, Gustavo. 1987 [Spanish 1986]. *On Job: God-Talk and the Suffering of the Innocent*. Translated by Matthew J. O'Connell. Maryknoll, NY: Orbis Books. [verified: notes]
 
@@ -90,7 +90,7 @@ Levenson, Jon D. 1991. "Exodus and Liberation." *Horizons in Biblical Theology* 
 
 Mein, Andrew. 2007. "Profitable and Unprofitable Shepherds: Economic and Theological Perspectives on Ezekiel 34." *Journal for the Study of the Old Testament* 31 (4): 493–504. https://doi.org/10.1177/0309089207080055. [verified: Crossref, abstract read]
 
-Moyaert, Marianne. 2016. "Who Is the Suffering Servant?" In *Comparing Faithfully: Insights for Systematic Theological Reflection*, edited by Michelle Voss Roberts. New York: Fordham University Press. https://doi.org/10.5422/fordham/9780823274666.003.0012. [verified: Crossref (chapter, DOI, abstract)] [verify volume title and editor]
+Moyaert, Marianne. 2016. "Who Is the Suffering Servant?" In *Comparing Faithfully: Insights for Systematic Theological Reflection*, edited by Michelle Voss Roberts. New York: Fordham University Press. https://doi.org/10.5422/fordham/9780823274666.003.0012. [verified: Crossref (chapter, DOI, abstract); Open Library (volume title, editor, Fordham 2016)]
 
 Newsom, Carol A. 2003. *The Book of Job: A Contest of Moral Imaginations*. New York: Oxford University Press. [verified: notes]
 
@@ -100,7 +100,7 @@ Paul, Shalom M. 1991. *Amos: A Commentary on the Book of Amos*. Hermeneia. Minne
 
 PCT (Presbyterian Church in Taiwan; 台灣基督長老教會總會). 1990. 〈台灣基督長老教會對二二八事件受難者及家屬的道歉〉 [Apology to the victims of the 228 Incident and their families]. 9 February 1990. https://www.pct.org.tw/ab_doc.aspx?DocID=047. [verified: notes (contemporary_church.md)]
 
-Prothro, James B. 2023. *The Bible and Reconciliation: Confession, Repentance, and Restoration*. Grand Rapids, MI: Baker Academic. [verified: Open Library; Crossref reviews (*New Blackfriars* 106, 2025; *Antiphon* 28, 2024)] [verify series]
+Prothro, James B. 2023. *The Bible and Reconciliation: Confession, Repentance, and Restoration*. Grand Rapids, MI: Baker Academic. [verified: Open Library; Crossref reviews (*New Blackfriars* 106, 2025; *Antiphon* 28, 2024); no series]
 
 TRC (Truth and Reconciliation Commission of Canada). 2015. *Honouring the Truth, Reconciling for the Future: Summary of the Final Report of the Truth and Reconciliation Commission of Canada*. Winnipeg: TRC. [verified: notes]
 
