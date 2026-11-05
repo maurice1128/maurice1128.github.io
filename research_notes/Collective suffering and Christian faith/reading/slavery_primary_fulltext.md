@@ -396,3 +396,119 @@ Other source-critical points:
 - Usable in: Articles 1, 2, 3 (coded evidence; interviewer-bias caveat essential).
 
 ---
+## 11. *The Christian Recorder* (AME, Philadelphia), 1866–1869 sample
+
+### The Christian Recorder (1866–1869) — African Methodist Episcopal Church. 1866–69. *The Christian Recorder.* Philadelphia: AME Book Concern. Archive.org items (bound runs, DjVu OCR):
+- vol. 6, nos. 14–26 (Apr.–June 1866): https://archive.org/download/christianrecorder_1866_v6_no14_to_26/christianrecorder_1866_v6_no14_to_26_djvu.txt
+- vol. 7, nos. 27–39 (c. July–Sept. 1867): https://archive.org/download/christianrecorder_1867_v7_no27_to_39/christianrecorder_1867_v7_no27_to_39_djvu.txt
+- vol. 9, nos. 1–13 (Jan.–Mar. 1869): https://archive.org/download/christianrecorder_1869_v9_no1_to_13/christianrecorder_1869_v9_no1_to_13_djvu.txt
+- also downloaded: 1865 vol. 5 nos. 26–39 (OCR too garbled to quote) and 1868 vol. 8 nos. 16–28 (not sampled in depth).
+- Read: keyword-targeted reading (M. E. Church South; deeded; withdrew; gallery; Conference; revival) of 6 articles or letters. Partial: a sample, not a systematic content analysis. OCR comes from multi-column newspaper pages. Text runs across columns, so quotations below give the OCR string with my reading in [brackets]. Locators are issue (where the masthead date could be found) plus the approximate DjVu-text line.
+- Summary: the AME weekly reports rapid "gathering in" of freedpeople in the South and contests over church property deeded to white trustees of the M. E. Church, South. It shows rivalry with the (Northern) M. E. Church and a polemic against the Southern church's postwar attempts to regain Black members. It also reports cases of freedpeople who stayed with, or returned to, the Southern church.
+- Key passages:
+  > "The Methodist E. Church South, ul thoir Fall Session, resolved to look after tho col ored sheep of their fold ... These brethren went to V email os, Losing ton, Ao., but found the people of those places a unit iu the Church of their choice ond well satisfied to remain in tbe A. M E Church" [Versailles, Lexington, &c. (Kentucky)] — issue headed "Philadelphia, Saturday, Jan. 16, 1869", line c. 2005–2015 — whole congregations stay with the AME after the Southern church tries to win them back.
+  > "In Virginia many of our societies are worshiping in churches deeded to the Metho¬dist Episcopal CTiurcb Smith, and held by while trustee*" [Church South ... white trustees] — Jan. 16, 1869, c. 1580 — property and title remain with the former masters' church.
+  > "The people hav mg j ist smorgvd out of slavery, wilh all ii* degrading, mean, low, and diabolical ten dcncies" [having just emerged out of slavery, with all its ... tendencies] ... "ad¬ded to the church nno hundred and seventy-four souls" [one hundred and seventy-four] — Jan. 16, 1869, c. 1555–1570 (letter from Rev. W. D. W. S[chureman], Portsmouth, Va.) — postwar revival adding members. The writer, an AME minister, frames slavery as morally degrading.
+  > "Thi* Church is making desperate effort* to regain her former standing among tho colored people of tho South" — issue of March 13, 1869, editorial "The M. E. Church South", c. 44238.
+  > "This Church had u colored nmmbemhip ol over ball a million [over half a million]. For almost a generation these souls drank from her pool, and ate from her table. And wherefore? It waa the best that (iod [God] in tho unfathomable mystery of Hie providence gavo. Yet their famishing souls must eat and drink, for they would not be pagans" — Mar. 13, 1869, c. 44245 — the AME's own account of prewar membership. Black Southerners took the white church's ministrations as the only food available, not out of loyalty. Note that "over half a million" is the editor's figure and looks inflated.
+  > "We charge her with T**/-on [Treason] ... 3rd specification, Treoaon against tho Church; for she cssayod [essayed] to make it the bulwark of oppression. ... 5th specification Treason against liber¬ty; for her ministers preached a crusade against it." — Mar. 13, 1869, c. 44255–44280 — institutional complicity named as the reason for the exodus.
+  > "his tbcrao [theme] was, 'Mutual For givonea*' [Forgiveness]. True, my brother, but docs not ropcntauoe [repentance] precede forgivenoss!" — Mar. 13, 1869 — repair requires the perpetrator institution to repent.
+  > "a portion of the Ua-Jiug metohera [leading members] have laft ns (the A. M. E. Church) aud gone back to the M K. Church South ... they are trying lo gel the properly, bceause it waa 'deeded' to while trustees belonging to that body" — vol. 6 (c. May 1866), Nashville letter, c. 25530–25540 — counter-current: some return to the Southern church, with property leverage.
+  > "If w« had met op. pueiiiuo [opposition] from (he M K Church South, wa should not have been surprised, but to find it from those of the North, we are more than surprised" — vol. 6 (c. May 1866), c. 25240 — competition with the Northern M. E. Church.
+  > "Wo bavo nearly passed through our period of gathering in" [We have nearly passed through our period of gathering in] — vol. 7 (c. July–Sept. 1867), c. 7960.
+  > "Those men were members and well-wishers of a church that is under the con¬trol of the M. K Church South, which sjutaks [speaks] plain for itself why they wished tu mob ono of tho ministers of the A M. E. Church." — vol. 7 (1867), c. 28686 (on a threatened mob against AME minister Bradwell) — some freedpeople defended the Southern church against the AME.
+- Evidence for / against:
+  - CH-ALLY → institutional exodus after freedom: strongly for. The AME frames the Southern church's guilt as "treason" against God, Church and liberty, and requires repentance before return.
+  - Remedy control after emancipation: property deeds, trustees and pulpit access remain contested. This continues the Allen story, now in the South.
+  - Counter-evidence: returns to the Southern church (Nashville), the mob in defence of a Southern-controlled church (1867), and the Southern church's organised colored conference. Loyalty and patronage persisted for some.
+  - DELIV / Fountain: postwar revivals and "gathering in" fit a postwar religious mobilisation. The editorial's "over half a million" prewar members fits prewar Christianisation, though under compulsion ("the best that God ... gave"), so the evidence is mixed.
+  - POL: the "treason against the Government" specification ties church choice to Union loyalty.
+- Source-critical notes: the denominational organ of a competitor seeking members, so it is partisan about the M. E. Church South and the M. E. Church North. OCR quality is poor. Dates within bound volumes are approximate unless the masthead was found.
+- Usable in: Articles 2, 3 (postwar exodus and institutional repair; Fountain timing).
+
+---
+
+## 12. Omar ibn Said, autobiography (1831), in Jameson's 1925 edition
+
+### Autobiography of Omar ibn Said, Slave in North Carolina, 1831 (1925) — Jameson, J. Franklin, ed. 1925. "Autobiography of Omar ibn Said, Slave in North Carolina, 1831." *American Historical Review* 30 (4, July): 787–95 ("Documents"). (Published 1925; US public domain since 2021.) Archive.org item sim_american-historical-review_1925-07_30_4 — https://archive.org/download/sim_american-historical-review_1925-07_30_4/sim_american-historical-review_1925-07_30_4_djvu.txt
+- Read: the full document (editor's introduction pp. 787–91, the translated text pp. 791–95). OCR of pp. 787–90 and 793 is partly garbled (two columns, margins); pp. 791–92 and 794 are clean.
+- Summary: Omar ibn Said was a Fula scholar from Futa Toro, enslaved c. 1807 and brought to Charleston. He fled a "small, weak and wicked" master, was jailed in Fayetteville, and was bought by James Owen of Bladen County. Jameson's introduction reports from 19th-century sources that Omar was baptised into the Presbyterian Church at Fayetteville (c. 1819–22). The 1831 Arabic text begins with Surat al-Mulk ("Blessed be He in whose hands is the kingdom"). It continues with a short life, a prayer of thanks to the Owens ("They permit me to read the gospel of God"), and a contrast between his former Muslim prayer (al-Fatiha) and his present "Our Father".
+- Key passages:
+  > "Blessed be He in whose hands is the kingdom and who is Almighty; who created death and life that he might test you" — p. 791 (Surah 67, as translated) — sovereignty belongs to God alone. Modern scholars read this opening as a covert assertion against earthly ownership; that is an interpretation, not stated in the text.
+  > "Have you seen that God has destroyed me or those with me? or rather that He has shewn us mercy?" — p. 792 — theodicy under captivity, in Qur'anic voice.
+  > "O Sheikh Hunter, I cannot write my life because I have forgotten much of my own language, as well as of the Arabic. Do not be hard upon me, my brother." — p. 792 — cultural loss.
+  > "They permit me to read the gospel of God, our Lord ... According to power I open my heart, as to a great light, to receive the true way" — p. 793 (OCR partly garbled) — conversion framed under the master's permission.
+  > "When I was a Mohammedan I prayed thus: 'Thanks be to God, Lord of all worlds, the merciful the gracious ...'—But now I pray 'Our Father', etc., in the words of our Lord Jesus the Messiah." — p. 794 — the old prayer is quoted in full alongside the new.
+  > "I reside in this our country by reason of great necessity. Wicked men took me by violence and sold me to the Christians." — p. 794 — the captor named as "the Christians".
+  > "I fell into the hands of a small, weak and wicked man, who feared not God at all, nor did he read (the gospel) at all nor pray." — p. 794 — master judged by religious standards.
+  > "he was baptized and received into the Presbyterian Church at Fayetteville by the Rev. Dr. Snodgrass (which fixes the date of such reception to 1819-1822)" — p. 790 (editor's summary of a 19th-century account) — formal conversion under a benevolent master.
+- Evidence for / against:
+  - Remedy control and POW: the conversion is mediated by a "good" master's household ("They permit me"), which fits Christianity received from the dominant group under patronage. Faith in God is continuous across the conversion (the Fatiha is preserved verbatim).
+  - Against a simple suffering → Christian-faith model: Omar's devotion is Islamic in origin. His text shows religious continuity and possible dissimulation rather than conversion caused by suffering.
+  - Not representative of African American Protestant majorities.
+- Source-critical notes: translation history is layered. Jameson printed an existing English translation; the details are in the garbled pp. 789–90 and I could not read them reliably. The text was written for a white patron ("Sheikh Hunter") and probably circulated among whites, so Christian professions may be audience-shaped.
+- Usable in: Article 4 (comparative and Atlantic-Muslim perspective), Article 2 (conversion under patronage).
+
+---
+
+## Not obtained / partly obtained
+
+- Richard Allen, 1833 first edition (Martin & Boden): IA item lifeexperiencego0000rich returned HTTP 401 (lending-only). I used the 1880 reprint instead (§5).
+- Jarena Lee, *The Life and Religious Experience of Jarena Lee* (1836) as a separate item: no IA scan found. Its text is reprinted in the 1849 edition used (§6).
+- C. C. Jones, *Tenth Annual Report* (1845), the usual source of the "walked off" Philemon anecdote: not on IA. The 9th, 11th, 12th and 13th reports were searched without a match.
+- Higginson, *Atlantic Monthly* June 1867: the scan was obtained, but its two-column OCR is too garbled to quote. Quotations are from the 1870 book version.
+- *Christian Recorder* 1865 vol. 5 nos. 40–52: HTTP 500 on download. 1865 nos. 26–39 downloaded but too garbled to quote.
+- WPA via loc.gov / tile.loc.gov: not used. I used the Gutenberg transcriptions of the same LoC typescripts, so original typescript page numbers are missing except for S.C. and N.C.
+- DocSouth (docsouth.unc.edu): connection reset; and via Wayback (web.archive.org): connection reset. Not needed in the end.
+- Omar ibn Said original Arabic manuscript (LoC Omar Ibn Said Collection): not attempted (403 in earlier sessions). The 1925 translation was used.
+- Fountain (2010) itself is a copyrighted monograph and was not read. "Fountain's thesis" below is used only as the hypothesis in the brief: most enslaved people became Christians only around or after emancipation, with the war and freedom driving conversion.
+
+---
+
+## Synthesis
+
+### (a) What the full texts collectively show
+1. **Two tracks, consistently.** Every Black-authored text separates God and the gospel from the white institution that administers them. Douglass has "the Christianity of Christ" against "the Christianity of this land". Walker has "pure and undefiled religion" against "pretended preachers". Allen: "you cannot seal up the scriptures from us, and deny us a name in heaven". Jacobs: "Ole Satan's church is here below; Up to God's free church I hope to go." The WPA informants remember "nary a word 'bout havin' a soul to save" in white sermons, and real religion in hollows, brush arbors and cabins. Devotion intensifies where the community controls the space and the means of grace. Distrust targets institutions in fellowship with slaveholding.
+2. **Remedy control is explicit on both sides.** C. C. Jones (1842, p. 158): masters "may literally shut up the kingdom of heaven against men", and slaves are "in a state of almost absolute dependence upon their owners for the words of eternal life". Andrew Moss's master: "Youse my negro. I git ye to Heaven." The Black response is to seize the remedy: Turner's self-baptism "by the Spirit" after refusal by "the church"; Allen's "seek out for ourselves"; pots turned down; prayer grounds; Lee preaching without licence. Jones's own 1846 report concedes that "all attempts to suppress" Black lay leaders "have signally failed".
+3. **The church's role decides the direction.** An allied-with-perpetrators church produces distrust: Douglass's class-leaders, Jacobs's constable class-leader, the Synod's 1833 non-interference resolution, Aaron Ford's "ash in Ashpole Swamp" sermon, the Recorder's "treason" indictment. A community-owned church that delivers care produces intensified devotion: the African Church elders organising nursing in 1793 ("instruments, in the hand of God, for saving the lives of some hundreds"), prayer meetings "for the colored sick" (Gullins), the community-paid funeral sermons (Boyd), "church folks" helping Charlie Van Dyke.
+4. **Duration and recurrence.** Humiliation was serial: St George's, then incorporation, then the pulpit fight, and only then the AME in 1816 ("spiritual despotism ... so recently experienced"). Repression recurred after each revolt scare (Turner → demolition of Edenton's woods church; Walker on patrols). Repetition hardened exit and clandestine practice.
+5. **Transmission.** It runs through kin and community: Turner's grandmother and parents, mothers' night prayers (Gullins, Dan Thomas, Moss), songs passing between plantations ("de people catch 'em"), a grandmother "help start that church" (Petite), and "Many thousand go" sung "in secret". After freedom some forms were re-shaped, as spirituals gave way to "dignified" white-style hymnody (Slave Songs p. xx).
+
+### (b) For / against the model
+- **For:** points 1–5 above. The WPA coding gives 31/51 reports of white-controlled worship, mostly framed as surveillance, segregation or obedience preaching, against 26/51 reports of Black-led worship before 1865, 12 of them secret. Negative attitudes to white preaching (11) outnumber positive (6).
+- **Against / qualifications:**
+  - Trust follows perceived alignment more than institutional type. Douglass loved Cookman; Jacobs's sympathetic Episcopal rector filled the gallery; Garrettson's preaching converted Allen's master to emancipation; six WPA informants are positive about white-led religion.
+  - Faith erosion is rare but present. Jacobs's bereaved mother: "God has hid himself from me".
+  - The community's own institution also gatekeeps (Lee and the Discipline on women).
+  - After 1865 some freedpeople stayed with or returned to the Southern church: the Nashville "backsliders" and the 1867 mob.
+  - The WPA evidence is shaped by interviewers. With Black interviewers, 4 of 6 report obedience preaching, against 5 of 45 with others. Questionnaire item 19 also prompts present-day piety.
+- **Rival explanations:**
+  - *Provision/relief:* weak. In 1793 the Black church was the provider, not the recipient. Masters' "kindness" yields positive memories, not reports of conversion.
+  - *Political alignment:* real. White preachers enlisted prayer for Confederate victory (William M. Adams TX). The AME indicts the Southern church for treason against "the Government". Pet Franks (MS) voted Democrat with his former masters. Institutional trust tracks Union/Confederate alignment after 1865.
+  - *Deliverance/emancipation timing:* strong as a reinforcer. The songs fuse religious and political freedom ("We'll soon be free ... 'Dey tink de Lord mean for say de Yankees'"). Gantling: "pray for deliverance ... and in time you see, He did."
+
+### (c) For / against Fountain's timing thesis (most conversion came with or after emancipation)
+- **For:** where WPA informants date their own conversion or joining, it is mostly after 1865 (5 post vs 2 pre of 7 stated). C. C. Jones concedes much "nominal" Christianity and "very few" admissions (1842 p. 204; 1846 p. 11). Postwar AME revivals add members in bulk (Portsmouth, Va., 174 souls; "our period of gathering in"). Emancipation is read as answered prayer (Gantling), which plausibly drove adherence.
+- **Against:** religious practice before 1865 is pervasive in the same testimony: 26/51 report Black-led worship, 8 prayer for freedom before or during the war, and many attended church, some compulsorily. Large prewar membership is claimed by both sides: Bangs/Jones's Methodist "colored members", and the Recorder's "over half a million" in the M. E. Church South. Jarena Lee shows AME camp meetings reaching enslaved people in Maryland before the war. Whole Kentucky congregations "a unit" in choosing the AME after 1865 points to **institutional realignment of people already Christian**, not first conversion.
+- **Net:** the full texts support a *postwar institutional exodus and expansion* more securely than a *postwar first conversion*. The WPA rarely dates conversion (44/51 unstated), so it cannot settle Fountain's quantitative claim. The best reading for the model: suffering under a perpetrator-allied institution sustained personal and clandestine devotion, and emancipation released it into self-controlled institutions.
+
+### Surprises
+- Walker states, and then rejects, the inference that Christianity is "a plan fabricated by themselves and the devils to oppress us" (p. 40). The apostasy option was explicitly on the table.
+- Masters' conversions made them crueller: Douglass's Auld ("religious sanction ... for his slaveholding cruelty"), Jacobs's Dr Flint.
+- In one WPA memory the causation runs backwards: an enslaved man's lament after his wife and child were sold ("nobody know but Jesus!") converted his master (Emily Camster Green, MO).
+- White congregants objected that enslaved people got "two sermons" to their one (Aaron Ford, SC). This shows Black demand for preaching, and white resentment of it.
+- The planter-missionary C. C. Jones admits that Black "watchmen" cannot be suppressed and that white men "less confidence ... in their Christian profession". The mirror-image distrust was institutionalised on the white side too.
+
+### The 10 best quotations for the articles
+1. "between the Christianity of this land, and the Christianity of Christ, I recognize the widest possible difference ... I love the pure, peaceable, and impartial Christianity of Christ: I therefore hate the corrupt, slaveholding, women-whipping, cradle-plundering, partial and hypocritical Christianity of this land." — Douglass 1845, Appendix (Gutenberg #23).
+2. "It is not too much, therefore to say that the Negroes are in a state of almost absolute dependence upon their owners for the words of eternal life." — C. C. Jones 1842, p. 158.
+3. "I raised my head up and saw one of the trustees ... pulling him up off of his knees, and saying, 'You must get up—you must not kneel here.' ... we all went out of the church in a body, and they were no more plagued with us in the church." — Allen [1833] 1880, pp. 14–15.
+4. "and if you deny us your name, you cannot seal up the scriptures from us, and deny us a name in heaven." — Allen [1833] 1880, pp. 16–17.
+5. "we found a freedom to go forth, confiding in him who can preserve in the midst of a burning fiery furnace, sensible that it was our duty to do all the good we could to our suffering fellow mortals." — Jones & Allen 1794, p. 3.
+6. "The slaves begged the privilege of again meeting at their little church in the woods ... It was built by the colored people, and they had no higher happiness than to meet there and sing hymns together, and pour out their hearts in spontaneous prayer. Their request was denied, and the church was demolished." — Jacobs 1861, ch. XII.
+7. "Ole Satan's church is here below; / Up to God's free church I hope to go." — Jacobs 1861, ch. XIII.
+8. "one might believe it was a plan fabricated by themselves and the devils to oppress us. But hark! My master has taught me better than to believe it" — Walker 1830, Art. III, p. 40.
+9. "Marster say, 'Youse my negro. I git ye to Heaven. Git up off'n your knees.'" ... "She'd go in dar and pray for deliverance of de slaves." — WPA vol. XV (Tennessee), Andrew Moss.
+10. "Church was what they called it but all that preacher talked about was for us slaves to obey our masters and not to lie and steal. Nothing about Jesus was ever said, and the overseer stood there to see the preacher talked as he wanted him to talk." — WPA vol. I (Alabama), Charlie Van Dyke (interviewer Mary A. Poole).
+
+Runners-up: Turner, "Ques. Do you not find yourself mistaken now? Ans. Was not Christ crucified." (Confession, 1831). Jones, "All attempts to suppress this class of influential men among their own colour have signally failed" (*Eleventh Annual Report* 1846, p. 13). Gantling, "I have heard slaves morning and night pray for deliverance ... and in time you see, He did." (WPA vol. III, Florida). *Christian Recorder*, 13 Mar. 1869: "Treason against tho Church; for she essayed to make it the bulwark of oppression." Higginson, "'Dey tink de Lord mean for say de Yankees.'" (1870, ch. 9; *Atlantic* 1867, p. 692).

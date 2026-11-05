@@ -246,3 +246,33 @@ Verse MINORs: V3, V25, V37, V39, V49, V55, V60. Verse ERROR: V5.
 Attribution MINORs: A14, A23, A24. Attribution UNVERIFIED: A2, and A3 (partly).
 
 No fabricated references found. All 57 bibliography entries exist with the stated author, title, year and publisher. Several "[verify]" flags in the refs file can be cleared: R3, R7, R13, R26, R28, R42, R47.
+
+---
+
+## Fixes applied
+
+| Item | Action | File changed | Doc changed |
+|---|---|---|---|
+| V3 Ps 88:18 | Quoted NRSV "my companions are in darkness"; darkness as the speaker's only companion | 16_biblical.md | yes |
+| V5 Job | "thirty-five chapters" → "some thirty chapters of dialogue (chs. 3–31)" | 16_biblical.md | yes |
+| V25 Ezek 34:16 | "take over the neglected tasks"; four tasks listed; *ḥôlâ* "strengthened" rather than healed | 16_biblical.md | yes |
+| V37 Amos 7:14 | Added "on one common reading" | 16_biblical.md | yes |
+| V39 Jas 2:2–3 | "gold rings"; "Stand there," or, "Sit at my feet" (2:2–3) | 16_biblical.md | yes |
+| V49 1 Pet 4:13 | "rejoice in 'sharing Christ's sufferings'" | 16_biblical.md | yes |
+| V55 Neh 9 | Levites (9:5, Hebrew); NRSV following the Greek has "And Ezra said" at 9:6; Nehemiah removed | 16_biblical.md | yes |
+| V60 Rom 13:4 | "the ruler" → "the governing authority" | 16_biblical.md | yes |
+| T7 *ṣĕʿāqâ* | Moved from lament row to "God with the sufferer" row with Exod 3:7, 9 | 16_biblical.md | yes |
+| T22 *goggysmos* | → *gongysmos* (text and table) | 16_biblical.md | yes |
+| A2 Westermann | "[verify locus]" kept | – | – |
+| A3 Brueggemann | Quotation marks removed from pain-bearer (paraphrase) | 16_biblical.md | yes |
+| A14 Wazana | "as much as" → "more than" | 16_biblical.md | yes |
+| A20/A23 ITC 2000; PCT | Num 21:7 exception noted; PCT apology addressed to victims as well as to God (implores God's mercy) | 16_biblical.md | yes |
+| A24 PCT 1990 quotation | Completed "…應有的聲援及溫暖" ("the support and warmth they were due") | 16_biblical.md | yes |
+| R3 Bauckham 1993a | Flag removed; text cites ch. 10; ref gives ch. 10, pp. 338–83 | 16_biblical.md, 16_biblical_refs.md | yes (text; doc has no refs list for this section) |
+| R13/A30 Calvin *Inst.* 4.20.31 | "[verify locus]" removed (table, ref, To-verify list) | 16_biblical.md, 16_biblical_refs.md | yes |
+| R7 Billman & Migliore | Subtitle flag removed (ref, To-verify list) | 16_biblical.md, 16_biblical_refs.md | yes (To-verify list) |
+| R26 Gray | Flag removed; LCCN 89006088 (SBLDS 114) noted | 16_biblical_refs.md | no (not in doc) |
+| R28 Gutiérrez | "[verify translators]" removed | 16_biblical_refs.md | no (not in doc) |
+| R42 Moyaert | Editor flag removed (ref, To-verify list) | 16_biblical.md, 16_biblical_refs.md | yes (To-verify list) |
+| R47 Prothro | "[verify series]" → "no series" | 16_biblical_refs.md | no (not in doc) |
+| X1, V27, T13 (optional) | Not applied (outside requested scope) | – | – |
