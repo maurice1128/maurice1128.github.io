@@ -14,9 +14,9 @@ Burkhart, Louise M. 1989. *The Slippery Earth: Nahua-Christian Moral Dialogue in
 
 Castelli, Elizabeth A. 1998. "Gender, Theory, and *The Rise of Christianity*: A Response to Rodney Stark." *Journal of Early Christian Studies* 6 (2): 227–257.
 
-Catholic Register. 2022. "Seismic Shift Hits Religious Landscape in Canada." *Catholic Register* (Toronto). https://www.catholicregister.org/archive/item/34924-seismic-shift-hits-religious-landscape-in-canada. [verify author and date; primary source is Statistics Canada, 2021 Census]
-
 Cheng Yang-en 鄭仰恩. 2005. *Dinggen bentu de Taiwan Jidujiao: Taiwan Jidujiao shi yanjiu lunji* 定根本土的台灣基督教：台灣基督教史研究論集 [Taiwanese Christianity Rooted in the Homeland: Essays on the History of Christianity in Taiwan]. Tainan: Renguang chubanshe 人光出版社. [verify year: Open Library lists 2010]
+
+Chiu Kuo-rong. 2017. "228 Massacre Event Revisited from the Freedom of Speech and Alternative Perspectives." Translated by Peter Wolfe. *Taiwan Church News* (English edition), no. 3390, February 21, 2017. https://tcnn.org.tw/en?p=4274.
 
 Chiu Yun-fang 邱韻芳. 2004. "Zuling, Shangdi yu chuantong: Jidu Zhanglao Jiaohui yu Truku ren de zongjiao bianqian" 祖靈、上帝與傳統：基督長老教會與Truku人的宗教變遷 [Ancestral Spirits, God and Tradition: The Presbyterian Church and Religious Change among the Truku]. PhD diss., National Taiwan University.
 
@@ -32,7 +32,7 @@ Comaroff, Jean. 1985. *Body of Power, Spirit of Resistance: The Culture and Hist
 
 Diehl, Chad R. 2018. *Resurrecting Nagasaki: Reconstruction and the Formation of Atomic Narratives*. Ithaca, NY: Cornell University Press.
 
-Fan Chiang Hsiao-han 范姜曉涵. 2019. "Taiwan yuanzhuminzu dushi jiaohui zhi zhuanxing guocheng ji qi dongli yinsu" 臺灣原住民族都市教會之轉型過程及其動力因素 [The Transformation Process and Its Dynamic Factors of a Taiwanese Indigenous Urban Church]. MA thesis, National Taiwan University.
+Fan Chiang Hsiao-han 范姜曉涵. 2019. "Taiwan yuanzhuminzu dushi jiaohui zhi zhuanxing guocheng ji qi dongli yinsu" 臺灣原住民族都市教會之轉型過程及其動力因素─以基督教福音宣教會信實教會為例 [The Transformation Process and Its Dynamic Factors of a Taiwanese Indigenous Urban Church: A Case Study of Christian Gospel Mission Hsin-Shih Church]. MA thesis, Department of Anthropology, National Taiwan University.
 
 Faupel, J. F. 1962. *African Holocaust: The Story of the Uganda Martyrs*. London: Geoffrey Chapman; New York: P. J. Kenedy.
 
@@ -42,7 +42,7 @@ Forrester, Duncan B. 1980. *Caste and Christianity: Attitudes and Policies on Ca
 
 Fountain, Daniel L. 2010. *Slavery, Civil War, and Salvation: African American Slaves and Christianity, 1830–1870*. Baton Rouge: Louisiana State University Press. [cited for the working model; full entry in the section that treats it]
 
-Griener, George. 2023. "A Theology of Suffering in Post-Genocide Rwanda." In *Reinventing Theology in Post-Genocide Rwanda*, 165–180. Washington, DC: Georgetown University Press. https://doi.org/10.2307/j.ctv31nzjvq.17. [verify editors]
+Griener, George. 2023. "A Theology of Suffering in Post-Genocide Rwanda." In *Reinventing Theology in Post-Genocide Rwanda: Challenges and Hopes*, edited by Marcel Uwineza, Elisée Rutagambwa, and Michel Segatagara Kamanzi, 165–180. Washington, DC: Georgetown University Press. https://doi.org/10.2307/j.ctv31nzjvq.17.
 
 Hansen, Peter. 2009a. "Bắc Di Cư: Catholic Refugees from the North of Vietnam, and Their Role in the Southern Republic, 1954–1959." *Journal of Vietnamese Studies* 4 (3): 173–211. https://doi.org/10.1525/vs.2009.4.3.173.
 
@@ -64,6 +64,8 @@ HREOC (Human Rights and Equal Opportunity Commission). 1997. *Bringing Them Home
 
 HREOC (Human Rights and Equal Opportunity Commission). 1998. *Social Justice Report 1998*. Chap. 3, "Church Responses." Sydney: HREOC.
 
+Hopkins, Keith. 1998. "Christian Number and Its Implications." *Journal of Early Christian Studies* 6 (2): 185–226. https://doi.org/10.1353/earl.1998.0035.
+
 Huang Po Ho 黃伯和. 1996. *A Theology of Self-Determination*. Tainan: Chhut Thau Thi Theological Study Center.
 
 Huang Ying-kuei 黃應貴. 1991. "Dehanin yu shehui weiji: Dongpushe Bunongren zongjiao bianqian de zai tantao" Dehanin與社會危機：東埔社布農人宗教變遷的再探討 [Dehanin and Social Crisis: Religious Change among the Bunun of Tongpu Revisited]. *Guoli Taiwan Daxue Kaogu Renleixue Kan* 國立臺灣大學考古人類學刊 47: 105–125.
@@ -71,6 +73,8 @@ Huang Ying-kuei 黃應貴. 1991. "Dehanin yu shehui weiji: Dongpushe Bunongren z
 Huebner, Sabine R. 2021. "The 'Plague of Cyprian': A Revised View of the Origin and Spread of a 3rd-c. CE Pandemic." *Journal of Roman Archaeology* 34: 151–174. https://doi.org/10.1017/S1047759421000349.
 
 Keith, Charles. 2012. *Catholic Vietnam: A Church from Empire to Nation*. Berkeley: University of California Press.
+
+Klutz, Todd E. 1998. "The Rhetoric of Science in *The Rise of Christianity*: A Response to Rodney Stark's Sociological Account of Christianization." *Journal of Early Christian Studies* 6 (2): 162–84. https://doi.org/10.1353/earl.1998.0037.
 
 Kubai, Anne. 2007a. "Post-Genocide Rwanda: The Changing Religious Landscape." *Exchange* 36: 198–214. https://doi.org/10.1163/157254307X176606.
 
@@ -106,23 +110,23 @@ Ohadike, Don C. 1991. "Diffusion and Physiological Responses to the Influenza Pa
 
 Orsag, Mark, Amanda E. McKinney, and DeeAnn M. Reeder. 2023. *Interdisciplinary Insights from the Plague of Cyprian*. Cham: Springer. https://doi.org/10.1007/978-3-031-26094-0.
 
-PCT (Presbyterian Church in Taiwan). 1977. "Declaration on Human Rights" 人權宣言. Primary text hosted by USC US-China Institute. https://china.usc.edu/node/20514.
+PCT (Presbyterian Church in Taiwan). 1977. "Declaration on Human Rights" 〈台灣基督長老教會人權宣言〉. August 16, 1977. https://www.pct.org.tw/ab_doc.aspx?DocID=005. English text hosted by USC US-China Institute. https://china.usc.edu/node/20514.
 
 Peel, J. D. Y. 1968. *Aladura: A Religious Movement among the Yoruba*. London: Oxford University Press for the International African Institute.
 
 Pickett, J. Waskom. 1933. *Christian Mass Movements in India: A Study with Recommendations*. New York: Abingdon Press.
 
-Religio. 2023. Article on the Presbyterian Church in Taiwan. *Religio: Revue pro religionistiku* (Masaryk University) 2023 (1). https://digilib.phil.muni.cz/_flysystem/fedora/pdf/Rel2023-1-17.pdf. [verify author, title, volume, pages]
-
 Ricard, Robert. 1966. *The Spiritual Conquest of Mexico: An Essay on the Apostolate and the Evangelizing Methods of the Mendicant Orders in New Spain, 1523–1572*. Translated by Lesley Byrd Simpson. Berkeley: University of California Press.
 
 Rittner, Carol, John K. Roth, and Wendy Whitworth, eds. 2004. *Genocide in Rwanda: Complicity of the Churches?* St. Paul, MN: Paragon House; Newark, Notts.: Aegis.
 
-Rubinstein, Murray A. 1991. *The Protestant Community on Modern Taiwan: Mission, Seminary, and Church*. Armonk, NY: M. E. Sharpe.
+Rubinstein, Murray A. 1991a. *The Protestant Community on Modern Taiwan: Mission, Seminary, and Church*. Armonk, NY: M. E. Sharpe.
+
+Rubinstein, Murray A. 1991b. "Mission of Faith, Burden of Witness: The Presbyterian Church in the Evolution of Modern Taiwan, 1865–1989." *American Asian Review* 9 (2). [page range not confirmed; cited at p. 88, via Alsford, UCLan repository, n. 5]
 
 Rubinstein, Murray A. 2003. "Christianity and Democratization in Modern Taiwan: The Presbyterian Church and the Struggle for Minnan/Hakka Selfhood in the Republic of China." In *Religion in Modern Taiwan: Tradition and Innovation in a Changing Society*, edited by Philip Clart and Charles B. Jones, 204–256. Honolulu: University of Hawai'i Press.
 
-Rychetská, Magdaléna. 2022. "The Presbyterian Church in Taiwan and Its Changing Narrative on Human Rights." *Review of Religion and Chinese Society*: 1–31. https://doi.org/10.1163/22143955-08020014. [verify volume and issue]
+Rychetská, Magdaléna. 2022. "The Presbyterian Church in Taiwan and Its Changing Narrative on Human Rights." *Review of Religion and Chinese Society* 9 (1): 70–100. https://doi.org/10.1163/22143955-08020014.
 
 Shijo Chie 四條知恵. 2015. *Urakami no genbaku no katari: Nagai Takashi kara Rōma kyōkō e* 浦上の原爆の語り：永井隆からローマ教皇へ [Atomic-Bomb Narratives of Urakami: From Nagai Takashi to the Pope]. Tokyo: Miraisha 未來社.
 
@@ -134,11 +138,13 @@ Stainton, Michael. 1995. "Return Our Land: Counterhegemonic Presbyterian Aborigi
 
 Stark, Rodney. 1996. *The Rise of Christianity: A Sociologist Reconsiders History*. Princeton, NJ: Princeton University Press.
 
+Statistics Canada. 2022. "The Canadian Census: A Rich Portrait of the Country's Religious and Ethnocultural Diversity." *The Daily*, October 26, 2022. https://www150.statcan.gc.ca/n1/daily-quotidien/221026/dq221026b-eng.htm.
+
 Stern, Steve J. 1982. *Peru's Indian Peoples and the Challenge of Spanish Conquest: Huamanga to 1640*. Madison: University of Wisconsin Press.
 
 Sundkler, Bengt G. M. 1948. *Bantu Prophets in South Africa*. London: Lutterworth Press. 2nd ed., London: Oxford University Press for the International African Institute, 1961.
 
-Taipei Times. 2025. Report on the Presbyterian Church and the 228 Incident. *Taipei Times*, March 1. https://taipeitimes.com/News/taiwan/archives/2025/03/01/2003832708. [verify author and title]
+Swan, Michael. 2022. "Seismic Shift Hits Religious Landscape in Canada." *Catholic Register* (Toronto), November 3, 2022. https://www.catholicregister.org/archive/item/34924-seismic-shift-hits-religious-landscape-in-canada.
 
 Takahashi Shinji 高橋眞司. 2024. "How I Came to Criticize Nagai Takashi's Urakami Holocaust Theory." In *Shadows of Nagasaki*, edited by Chad R. Diehl, 295–311. New York: Fordham University Press. https://doi.org/10.5422/fordham/9781531504953.003.0013.
 
@@ -160,7 +166,7 @@ Turner, Harold W. 1967. *History of an African Independent Church*. 2 vols. Oxfo
 
 van 't Spijker, Gerard. n.d. Paper on post-genocide Rwandan churches. International Association for Mission Studies conference. https://missionstudies.org/archive/conference/1papers/Gerard_spijker.htm. [verify title and year]
 
-Vicedom, George F. 1967. *Faith That Moves Mountains*. [verify publisher and place]
+Vicedom, George F. 1967. *Faith That Moves Mountains: A Study Report on the Amazing Growth and Present Life of the Church among the Mountain Tribes of Taiwan*. Taipei: China Post.
 
 Viswanath, Rupa. 2014. *The Pariah Problem: Caste, Religion, and the Social in Modern India*. New York: Columbia University Press.
 
