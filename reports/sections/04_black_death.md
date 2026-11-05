@@ -94,7 +94,7 @@ Grand claims linking the Black Death to the Reformation or to secularisation com
 
 This result concerns early-sixteenth-century plague, not the Black Death: the shock eroded the old institution once an organised alternative existed. Cantoni, Dittmar and Yuchtman (2018) show that the Reformation then shifted wealth, graduates and construction to secular uses. The chain from plague to secularisation is therefore indirect.
 
-**Contrasting evidence.** Disasters can also *raise* religious authority. Belloc, Drago and Galbiati (2016) find that earthquakes delayed communal self-government in Italian episcopal cities. Chaney (2013) finds that Nile flood shocks strengthened Egypt's religious authorities without raising a proxy for popular religiosity.
+**Contrasting evidence.** Disasters can also entrench rulers who hold religious office. Belloc, Drago and Galbiati (2016) find that earthquakes delayed the move to communal self-government only in Italian cities where the bishop held political power; that this worked by strengthening religious authority is the authors' interpretation, supported indirectly, not a measured outcome. Chaney (2013) finds that Nile flood shocks strengthened Egypt's religious authorities without raising a proxy for popular religiosity.
 
 **Relation to the model.** A shock seems to strengthen a religious institution when its leaders can credibly explain or mitigate it, and to weaken it when they cannot and an alternative exists. Kreider (1979) links the two ends of the period: the post-plague economy of intercession became a main Reformation target. Leppin (2025) is discussed in section 8.
 
