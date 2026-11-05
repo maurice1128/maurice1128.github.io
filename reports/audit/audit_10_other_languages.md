@@ -222,3 +222,43 @@ In addition, two works cited in the text lack reference entries: Sandnes 1978, a
 | Partly wrong or minor | 4 (C9, C18, C20, C36) |
 | Wrong or mischaracterized | 6 (C7, C16, C23, C24, C27, C48) |
 | Misleading | 1 (C17) |
+
+## Fixes applied
+
+Applied 2026-11-05. The live doc's section 10 has no reference list of its own, so reference-entry fixes went only into `10_other_languages_refs.md`. Doc edits were made at rev 186 → 202.
+
+| Item | Action | File changed | Doc changed |
+|---|---|---|---|
+| C27 Mengel 2011 | Replaced "milder than assumed" with Mengel's actual argument: plague did reach Bohemia, serious in Moravia, 1380 epidemic worse; Hussite point reframed as long-crisis | 10_other_languages.md | yes |
+| C16/C17 Cho Kwang 1988 | "without resident clergy" → "with few and intermittent clergy" (priests 1795–1801, 1836–39, from 1845); "rejoined Rome" removed (never broke from Rome); Kakure comparison reworked as a contrast | 10_other_languages.md | yes |
+| #104/C7 Takahashi 2020 | Re-cited as a two-part article in *Misuzu* nos. 850 (Dec. 2020) pp. 20–24 and 851 (Jan. 2021) pp. 26–30; text "three books" → "two books and a two-part magazine article" | both | yes (text) |
+| #103 Takahashi 2004 | Main title 続・長崎にあって哲学する, subtitle 原爆死から平和責任へ | refs | no (no ref list in doc) |
+| C23/C24 Quintão 2002, Reginaldo 2011 | Added full entries (Annablume 2002; Alameda 2011); "not found" sentence replaced with a statement of Quintão's subject; Reginaldo 2011 cited in text; both removed from To verify | both | yes (text, To verify) |
+| #80 Reginaldo 2005 | Added dissertation subtitle; flag removed | refs | no |
+| #84/C20 Scarano | 1975 → 1976 in text, table and entry; added Brasiliana 357 and 2nd ed. 1978 | both | yes |
+| #46/C9 Kitamori | English 1966 → 1965; entry gives John Knox Press 1965, SCM 1966 | both | yes (text) |
+| #73 Ortiz 1992 | Dropped "[1921]" from entry and table; entry notes it is a compilation (cabildos essay in *Revista Bimestre Cubana* 16, 1921; Día de Reyes essay later); text says the 1992 volume reprints the 1921 essay; To-verify item narrowed to the Día de Reyes essay date | both | yes |
+| #47/C36 Kolitz | Entry and text say the French was translated from the German | both | yes (text) |
+| #4/C12 An 1992 | Translators Cho Yong-nae 趙容来 and Katsuragawa Jun 桂川潤; noted as translation of *Minjung sinhak iyagi* (1988/1991) | refs | no |
+| #25 Fukumoto | Years and vol./pages for parts (1)–(3) added (1995–96); text cite "Fukumoto 1995–96"; reading still flagged | both | yes (text) |
+| #83 Sasaki | Vol. 52, 2004; text cite "Sasaki 2004"; reading flagged | both | yes |
+| #106 Watanabe | March 1992; text cite "Watanabe 1992" | both | yes (text) |
+| #89 Shinozaki | Year flag removed; full Japanese subtitle added; reading still flagged | refs | no |
+| #31/C42 Hirooka | Vol. 26 added; page conflict (340–361 NDL vs 82–103 repository, research note) flagged in entry and To verify | both | yes (To verify) |
+| #2, #44, #45, #75, #109 Korean romanization | Kallillaea; ch'ambae (Kim Nam-sik, Kim Sŭng-t'ae, Yi Chin-gu titles); Ing'ŭllaendŭ; Ch'aetchikchil | refs | no |
+| C18 Yi Sang-dong | 1349 → 1348–49 | 10_other_languages.md | yes |
+| #22 Dols 1974 | pp. 443–455 added; flag and To-verify item removed | both | yes (To verify) |
+| #107 Yi Chin-gu 2025 | pp. 305–345 and DOI 10.36429/CRRC.48.8 added; To-verify item removed | both | yes (To verify) |
+| #91 Shlikhta 2022 | Editors DeVille and Galadza added; flag removed | refs | no |
+| #92 Silveira 2012 | Editors Reis and Azevedo added; flag removed | refs | no |
+| #65 Moreno 2005 | Publisher Universidad de Córdoba, Servicio de Publicaciones | refs | no |
+| #70 Nagai | English trans. Kodansha 1984; text "Johnston 1984" | both | yes (text) |
+| #34 Ishizaka | "[verify name reading]" removed (Naotake confirmed) | both | yes (To verify) |
+| #58 Millones 1990 | IEP co-imprint added; flag and To-verify item removed | both | yes (To verify) |
+| #18 Cone 1973 | Original *A Black Theology of Liberation* (1970); flag removed | refs | no |
+| #27/C45 Guichaoua | English trans. Wisconsin 2015 added to entry; table "[verify]" and To-verify item removed | both | yes |
+| C31 Sandnes 1978 | Added entry: *Ødegårdstid i Norge*, Oslo: Universitetsforlaget (confirmed also in Open Library) | refs | no |
+| C48 "Miyazaki 揚弘" | To-verify item rewritten: Miyazaki is 賢太郎 (confirmed); unresolved readings are Fukumoto 保信, Sasaki 博光, Shinozaki 美生子 | 10_other_languages.md | yes |
+| To-verify list | Removed resolved items: years (Sasaki/Fukumoto/Watanabe), Yi Chin-gu pages, Reginaldo, Quintão, Millones, Dols, Guichaoua | 10_other_languages.md | yes |
+| Extra details | DOIs for Fagundes 2023 and Heilman 2002; full Izdebski et al. author list; Linden English original; CTC-CCA Kim Yong Bock / Zed–Orbis; Ibn Ḥajar 1991 Riyadh edition; Miyazaki 2018 revised-ed. note; Myrdal 1978 co-imprint | refs | no |
+| Not changed | C4 Sasaki/Graus–Cohn, C15 Kang, C43 Semana "Catholic writer" (plausible, left as is); Salfeld series flag kept (not catalogue-confirmed); Sŏ et al. 1984 editor flag kept; Izdebski et al. 2022 main paper not added | — | — |
