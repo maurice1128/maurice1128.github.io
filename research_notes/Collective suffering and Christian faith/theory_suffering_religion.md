@@ -78,3 +78,15 @@ Started 2026-11-05.
   - Weber 1978 Economy and Society, ed. Roth & Wittich, Berkeley: UC Press [verified: OL]
   - Collins 2004 Interaction Ritual Chains, Princeton UP [verified: OL]
   - Erikson 1994 A New Species of Trouble, New York: Norton [verified: OL]
+- [batch 4, Crossref]:
+  - Durkheim 1995 Elementary Forms, trans. Karen E. Fields, New York: Free Press, 464 pp [verified: Crossref reviews Morrison 2003; Smith & Alexander 1996 AJS 102(2):585-592]
+  - Marx, "A Contribution to the Critique of Hegel's Philosophy of Right: Introduction," in Marx: Early Political Writings, ed. O'Malley, CUP 1994, pp.57-70, doi 10.1017/CBO9781139168007.007 [verified: Crossref; editor O'Malley from memory -> verify]
+  - Lincoln 2003 Holy Terrors, U Chicago Press (Crossref date 2002 online; print 2003) doi 10.7208/chicago/9780226481944.001.0001
+  - Stark 1999 Micro foundations of religion: a revised theory, Sociological Theory 17(3):264-289 doi 10.1111/0735-2751.00080 (drops "compensators")
+  - Riesebrodt 2010 Promise of Salvation, U Chicago Press, trans. Rendall [verified]
+  - Weber "Social Psychology of the World Religions" in From Max Weber (Routledge 2014 reissue pp.279-313, doi 10.4324/9780203759240-17); 1946 pagination [verify]
+  - Frijters, Johnston, Knott & Torgler 2024, JSSR 63(1):62-75 doi 10.1111/jssr.12879 (no rise in importance of religion after US disasters) [verified]
+  - Uecker 2008; Smith, Pargament, Brant & Oliver 2000 J Comm Psych 28(2):169-186 [verified]
+  - Abu-Raiya, Pargament, Krause & Ironson 2015 Am J Orthopsychiatry 85(6):565-575 [verified]
+  - Bruce 2011 Secularization: In Defence of an Unfashionable Theory, OUP [verified via chapters]
+  - Bourdieu religious field: still not found in Crossref

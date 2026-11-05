@@ -112,3 +112,18 @@ Verbatim:
 - CAUTION: https://brill.com/page/author_ethics has a section "Use of Artificial Intelligence writing tools" ("Its use is not prohibited, but they may only be used to improve the language ... researchers using these LLM tools must document this use in the 'Materials and methods' or the 'Acknowledgements' sections ... Failure to do so will lead to immediate rejection or retraction"). It sits under the heading **"Publishing Ethics - Life Sciences Publications"**, so it does not appear to bind RRCS. Still, a conservative reading of Brill is language-only.
 - RRCS has no journal-specific AI rule (the PDF dates from 2021). The publisher rule applies: disclose significant AI contributions in the acknowledgements; an AI-"generated" paper is refused.
 
+### Duke University Press, which publishes the Journal of Asian Studies (reached 2026-11-05)
+URL: https://www.dukeupress.edu/journals/journal-authors-editors/ethics-statement-for-journals, "Originality and the Use of AI" (no date on the page; footer © 2024). The JAS page https://www.dukeupress.edu/journal-of-asian-studies names Duke UP as publisher and links to this ethics statement. The JAS-specific submission page (read.dukeupress.edu/journal-of-asian-studies/pages/Submission_Guidelines) and the AAS guidelines PDF were [not reached] (403).
+Verbatim:
+> "Authors should submit only original work that properly cites or quotes the work of others. DUP will not accept work substantially written by generative AI. AI tools should not be used to generate insights, produce original research, or draw conclusions. Authors must disclose the use of generative AI in their work in a general statement at the beginning of their article (e.g., in an unnumbered note). It is not necessary to disclose the use of grammar or spelling tools, but authors should disclose the use of AI tools for other purposes, such as editing, formatting citations, data analysis, translations, and visualizations."
+> "Authors accept full responsibility for the accuracy and integrity of their article's content, including any portions proofread by AI."
+> "Individual journals published by the Press may have more specific guidelines for the use of generative AI."
+- AI as author: not addressed. Authorship is reserved for those who made "a significant intellectual contribution".
+- BAN: text "substantially written by generative AI", plus AI used "to generate insights ... or draw conclusions". Version (b) is at risk; AI-summarised sources feeding the argument are a grey zone.
+- Disclosure: an unnumbered note at the **beginning** of the article (unusual placement).
+
+### Edinburgh University Press, which publishes Studies in World Christianity
+- Policy page https://edinburghuniversitypress.com/publish-with-us/writing-your-book/ai-policy: [not reached] (403 to WebFetch and curl; Wayback connection reset). The SWC submissions page https://www.euppublishing.com/page/swc/submissions: [not reached] (403; the latest Wayback snapshot, 2024-05-12, could not be opened).
+- WebSearch snippet only (NOT verified on the page): EUP "will require authors to submit an AI Disclosure Form with their submissions"; for extensive use a further appendix may be requested; non-compliant manuscripts may be rejected by EUP or by journal or series editors; suspected undisclosed use is investigated under COPE guidance. The page sits under "writing-your-book", and the search summary says it covers journals too. Unconfirmed.
+- Action: before submitting, email the SWC editors or EUP journals to ask for the AI Disclosure Form and whether AI-drafted text is allowed.
+
