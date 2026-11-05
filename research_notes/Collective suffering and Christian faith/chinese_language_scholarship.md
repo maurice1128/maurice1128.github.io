@@ -197,3 +197,36 @@ Suggested phrasing: "Sinophone scholarship has addressed each case separately an
   - Airiti and NDLTD: 黑死病; 黑人靈歌; 黑人神學; 九二一 宗教; 宗教因應.
   - NCL catalog: translator lookups for Weber, Berger, Taylor, Girard, Tuchman (2016 CITIC), Moltmann (translator), Pinn (translator 周輝), and Cleage (何春蕤).
 - Exact Chinese titles for Li Huacheng items 4, 7, 12 and 13, and page ranges for all of his articles except item 1, need to be copied from CNKI.
+
+---
+
+## Verification log (Section 9 writer, 2026-11-05)
+
+Sources reached: SNNU faculty page (re-fetched), Douban subject records, Campus bookstore page, journal PDFs (輔仁宗教研究, 考古人類學刊, 台灣學誌, 臺灣文獻), Crossref, Google Scholar (5 queries). Unreachable: CNKI, Airiti, NDLTD (CAPTCHA), TGST IR (connection reset), HKU Hub (403), Open Library/LoC (no CJK hits or 403).
+
+**Updated tags for numbered items above**
+- Item 4 → [verified: SNNU page] 李化成、郭超 2024 〈中世纪中晚期西欧的修道变迁与集体鞭笞〉《世界历史》2024-1.
+- Item 7 → [verified: SNNU page] exact title 〈论黑死病对英国人口发展之影响〉《史学月刊》2006-9.
+- Item 9 → [verified: SNNU page] title uses 源自: 〈瘟疫源自中国？——14世纪黑死病发源地问题研究述评〉.
+- Item 12 → [verified: SNNU page] 〈黑死病期间西欧的伤痛与希望〉《光明日报》2020-02-24, 第14版.
+- Item 13 → [verified: SNNU page] 〈瘟疫背后的思想史——兼窥中西"天（神）谴论"之不同〉《人文杂志》2007-6. Highly relevant (punishment theodicy, cross-cultural).
+- Item 8 journal name on SNNU page: 《东北师范大学学报（哲学社会科学版）》.
+- Item 19 (Pinn) → publisher, date 2006-06-02, ISBN 9628322990 [verified: Campus]; translator 周輝 still [unverified].
+- Item 32 (Moltmann HK) → translator 阮煒, 道風書社, ISBN 9789627409533 [verified: Douban]; Douban year 1998 vs Campus 1995.
+- Item 33 (Tuchman) → 《远方之镜》, trans. 邵文实, 中信出版社 2016 [verified: Douban 26831765].
+- Item 35 (曾慶豹) → 《約瑟和他的兄弟們》, 台灣教會公報社, 2017, ISBN 9789865637378 [verified: Douban]; covers 1965–2015 PCT vs 黨國基督徒.
+- Gaps §1: 王旭东、孟庆龙《世界瘟疫史》中国社会科学出版社 2005 [verified: Douban 1664298].
+- Gaps §2: Du Bois 《黑人的灵魂》 trans. 维群, 人民文学出版社 1959 (reissued 2024) [verified: Douban].
+- Gaps §3: Weber 《宗教社会学》 康乐、简惠美, 广西师大 2005 [verified: Douban] (遠流 1993 still unverified); Berger 《神圣的帷幕》 高师宁, 上海人民 1991 [verified]; Taylor 《世俗时代》 张容南 et al., 上海三联 2016 [verified]; Girard 《替罪羊》 冯寿农, 上海人民 2022 [verified] (2002 东方 unverified); Moltmann mainland 阮炜, 上海三联 1997 (not 1994) [verified].
+- Gaps §4: 刘小枫《拯救与逍遥》 华东师大 2007 ed. [verified: Douban].
+- global_cases item 27 (邱韻芳 book): 華藝學術, 2014-02-21, ISBN 9789868961500 [verified: Douban] (notes said 2013).
+- theologies item 64 and global_cases items 29, 41: via reference list of 邱凱莉 2021 (PDF read): 王憲治編 1988《台灣鄉土神學論文集》台南：台南神學院; 鄭仰恩 2005《定根本土的台灣基督教》台南：人光; 黃伯和 1991《奔向出頭天的子民》板橋：稻鄉; 陳南州 2003《認同的神學》台北：永望; 羅光喜 2018《台灣建國神學》台北：PCT總會; 宋泉盛編 1988《出頭天─台灣人民自決運動史料》台南：人光; 蔡榮芳 2020《從宗教到政治》台北：玉山社.
+
+**New items found**
+- [verified: PDF] 邱凱莉 2021, 《輔仁宗教研究》42: 121–146 (PCT political theology 1987–2017).
+- [verified: PDF] 王梅霞 2018, 《考古人類學刊》89: 1–56, doi 10.6152/jaa.201812_(89).0001 (Seediq conversion, relocation, repentance).
+- [verified: PDF] Madsen 2012 (Chinese), 《台灣學誌》6: 53–76 (Catholic growth/decline, "麵粉基督徒" p. 62).
+- [verified: PDF] 王政文 2012, 《臺灣文獻》63(4) (19th-c. conversion conflicts).
+- [verified: Douban] 北森嘉藏《上帝之痛的神學》湯愷杰譯, 道風書社 2021; 宋泉盛《孟姜女的眼淚》鄭加泰譯, 人光 1994; Hatcher 《黑死病：一个村庄的微观史》 东方出版中心 2024; Snowden 《流行病与社会》 中央编译 2022; Byrne 《黑死病下的日常》 上海社科院 2023; McNeill 《瘟疫与人》 余新忠、毕会成译 2010/2018; 周海金《苦难及其神学问题研究》浙江人民 2014.
+- [verified: Crossref] 林津如 2023 《人文及社會科學集刊》35(2): 391–433 (post-Morakot Indigenous women); Zhao Ruijuan, HKU thesis "Disaster, disease and faith: Canadian Presbyterian mission in modern north Henan" (date unknown).
+- [Google Scholar listing only] 赵立行 2005《历史研究》; 李荷 2004《中国人民大学学报》; 龙秀清、李锦荣 2012《贵州社会科学》; 张强 2008; 雷雨田 1999《湘潭大学学报》(美国黑人神学的历史渊源); 景志龙 2008《时代文学》 (= item 22's author/journal); 张静静 2015; 黃路蘋 2021 Logos & Pneuma; 鄭筱筠 2012《宗教哲學》; 安德瑞 2009 (921 relief); 吳淑貞 2023 TGST thesis (Morakot, Rukai church).
