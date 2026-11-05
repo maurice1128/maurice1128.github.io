@@ -3,13 +3,15 @@
 > 建立日期：2026-11-05
 > 申請人背景：目前就讀/任職於國立陽明交通大學（NYCU）工程／機器人領域；目標為神學「研究」（非牧會）；正在撰寫「集體苦難與基督信仰」期刊論文系列（黑死病、美國被奴役非裔、台灣、當代教會信任；神義論、黑人神學、哀歌）。
 > 標記規則：凡未實際開啟頁面查證者標 **[未確認]**；不臆造入學要求或教師名單。所有 URL 為查證時開啟之頁面。
+> 閱讀順序：§2（海外）因查證先後寫在前，§1（台灣）在其後；§3 AI 政策、§4 教師、§5 實務路徑在最後。
 
 ## 進度紀錄
-- [ ] 1. 台灣：大學系所與神學院研究學位
-- [ ] 2. 海外學術路線學位
-- [ ] 3. 申請材料 AI 政策
-- [ ] 4. 教師研究契合度（8–12 位）
-- [ ] 5. 實務路徑
+- [x] 1. 台灣：大學系所與神學院研究學位（§1，位於 §2 之後）
+- [x] 2. 海外學術路線學位（§2）
+- [x] 3. 申請材料 AI 政策（§3）
+- [x] 4. 教師研究契合度（12 位，§4）
+- [x] 5. 實務路徑（§5）
+- 查證日：2026-11-05。無法開啟：hds.harvard.edu、ox.ac.uk 研究生招生頁、durham.ac.uk 部分頁（403）、Wayback（連線中斷）。
 
 ---
 
@@ -297,3 +299,78 @@
 3. 研究計畫：準備一段簡短的 AI 使用聲明（用途、工具、範圍、由誰撰寫最終文字），政大歷史系這類題目可直接使用。
 4. 面試：不得使用 AI 輔助（Cambridge 會要求確認）。
 5. 任何學校「未見條款」時：遵循該校學術誠信規範，並在可填「其他說明」處主動揭露。
+
+---
+
+## 4. 教師研究契合度（2026/11/5 逐一於校方頁面查證）
+
+> 只列已在校方網頁確認「目前在職」者；頭銜以頁面為準。⚠ 寄信前請再確認是否收博士生、是否休假。
+
+| # | 教師 | 學校／單位 | 頁面所示頭銜 | 與本系列的契合點（依頁面所述目前研究） | 已開啟之 URL |
+|---|---|---|---|---|---|
+| 1 | **Alexander Chow** | Edinburgh, School of Divinity；Centre for the Study of World Christianity 共同主任 | Senior Lecturer in Theology and World Christianity | 中國／東亞基督教、Chinese public theology；*Studies in World Christianity* 共同主編 → **台灣篇、東亞脈絡** | https://edwebprofiles.ed.ac.uk/profile/dr-alexander-chow |
+| 2 | **Emma Wild-Wood** | Edinburgh, School of Divinity | Professor（World Christianity PhD 核心教師） | 非洲基督教、World Christianity；與 Chow 合著 *Ecumenism and Independency in World Christianity* → 比較框架 | https://study.ed.ac.uk/programmes/postgraduate-research/68-world-christianity （個人頁未能載入） |
+| 3 | **Chloë Starr** | Yale Divinity School | Professor of Asian Christianity and Theology；Acting Senior Associate Dean for Academic Affairs | 現代中國神學三卷、*A Reader in Chinese Theology*；正研究中國小說中的基督形象；YDS MAR Asian Religions → **MAR 首選指導** | https://divinity.yale.edu/profile/chloe-starr |
+| 4 | **Willie James Jennings** | Yale Divinity School | Andrew W. Mellon Professor of Systematic Theology and Africana Studies | *The Christian Imagination: Theology and the Origins of Race*、*After Whiteness*；種族理論、去殖民 → **被奴役非裔篇、黑人神學** | https://divinity.yale.edu/profile/willie-james-jennings |
+| 5 | **Curtis J. Evans** | UChicago Divinity School（Religions in the Americas） | Associate Professor of American Religions | 奴隸制與基督教之交會、「the black church」範疇的起源（*The Burden of Black Religion*）；2024 新書 *A Theology of Brotherhood* → **黑人教會史** | https://divinity.uchicago.edu/directory/curtis-j-evans |
+| 6 | **Valerie Cooper** | Duke Divinity School | Associate Professor of Religion and Society and Black Church Studies | 非裔美國人的聖經使用、Maria Stewart（*Word, Like Fire*）、〈Black Theology〉（Oxford Handbook of Political Theology） → **黑人教會、聖經與苦難詮釋** | https://divinity.duke.edu/faculty/valerie-cooper |
+| 7 | **Raimundo César Barreto, Jr.** | Princeton Theological Seminary（History & Ecumenics；Religion & Society） | Associate Professor of World Christianity | World Christianity、宗教在公共生活、跨國網絡；World Christianity Conference 共同召集人 → **方法論與跨案例比較** | https://ptsem.edu/academics/faculty/raimundo-cesar-barreto-jr/ |
+| 8 | **Afe Adogame** | Princeton Theological Seminary | Maxwell M. Upson Professor of Religion and Society | 非洲與非洲離散基督教、宗教與遷徙/全球化/公民社會（前 Edinburgh World Christianity 副教授） → **宗教社會學、教會信任** | https://ptsem.edu/academics/faculty/afe-adogame/ |
+| 9 | **Amelia Kennedy** | Princeton Theological Seminary | Assistant Professor of the History of Medieval Christianity | 中世紀歐洲**健康、醫療、老化與失能史**與修道院 → **黑死病篇**（中世紀宗教與疾病）最直接的神學院內人選 | https://ptsem.edu/academics/faculty/amelia-kennedy/ |
+| 10 | **Mathew Guest** | Durham University, Theology and Religion | Professor in the Sociology of Religion | 英國福音派、宗教與世代變遷、宗教認同如何被制度延續 → **當代教會信任篇**（實證社會學） | https://dur.ac.uk/staff/m-j-guest/ |
+| 11 | **Lai Pan-chiu（賴品超）** | CUHK, Cultural and Religious Studies（宗教研究） | Professor | 漢語基督教神學、現代基督教思想、宗教對話、基督教與中國文化 → **CUHK MPhil-PhD 中文學術路線** | https://www2.crs.cuhk.edu.hk/faculty-staff/teaching-faculty/lai-pan-chiu |
+| 12 | **鄭仰恩** | 台灣神學研究學院（台灣神學院） | 頁面標示「研究員」；過去頁面為教會歷史學教授 [現職身分需確認] | 台灣基督教史（《定根本土的台灣基督教》）、加爾文研究；台神另設**台灣基督教歷史資料中心** → **台灣篇史料與在地指導** | https://www.tgst.edu.tw/p/404-1001-1687.php |
+
+**已查但排除／降級**：
+- Ian Forrest（Oxford；*Trustworthy Men: How Inequality and Faith Made the Medieval Church*，與「教會信任」高度相關）：Oriel College 頁面顯示 **Emeritus Fellow (2023)**、頭銜含「MP」→ 已非在職教師，不列入。https://www.oriel.ox.ac.uk/people/ian-forrest/
+- Daniel Castelo（Duke）：著有 *Theological Theodicy*（2012），但頁面說明**目前**研究轉向衛理宗、Latine theology、聖靈論 → 神義論為過去研究，契合度降級。https://divinity.duke.edu/faculty/daniel-castelo
+- Kelly Brown Douglas（Union，承接 James Cone 的 Bill & Judith Moyers Chair）：Union 個人頁 404；搜尋摘錄顯示曾任 EDS 院長、2024–26 HDS 訪問教授 → **現職未確認**，不列入。
+- Harvard（HDS）教師頁面 403，未能查證，故不列。
+- 哀歌（lament）專題：未在上述學校找到「目前」以哀歌為主軸且頁面可查證的教師 → 可在 SOP 中把哀歌放在 Jennings／Cooper（黑人聖經詮釋）或聖經學者框架下處理 [未確認其他人選]。
+
+---
+
+## 5. 實務路徑（給工程背景、目標為神學「研究」者）
+
+### 5.1 先讀哪一種學位？
+1. **工程學士 → 不可直接進 Th.M./博士**：台灣神學研究學院 Th.M. 需 M.Div. 或二年制神學碩士；華神 Th.M. 需道學碩士；Duke Th.M. 需神學碩士；PTS Th.M. 需 M.Div./MTS；Edinburgh、Cambridge、Chicago、PTS 的 PhD 明文要求相關碩士；Harvard GSAS 寫「碩士常見但非必要」；Union PhD 頁面未提 [未確認]。輔仁聖博敏需宗座 STB。
+2. **建議第一步：一個「學術型、兩年制、有論文或寫作訓練」的碩士**，擇一或並行申請：
+   - **美國**：Yale MAR（可接 Chloë Starr／Asian Religions 或 Jennings）、Duke MTS、Harvard MTS、Chicago MA（2 年、偏宗教學術、15–25 頁樣本）、Union MAR、Candler MTS、PTS MTS（⚠ 需牧者推薦信）。
+   - **英國**：Edinburgh 新 MSc Theology and Religion（2027 入學，15,000 字論文，含語言課；入學條件待公告）、Cambridge MPhil（9 個月、高門檻 GPA 3.7 且「in relevant subjects」）、Oxford MSt（9 個月，非本科可在 SOP 證明能力）、Durham MA（需相關人文 2:1）。英國一年制碩士對非本科背景風險較高（語言、背景課程時間不足）。
+   - **台灣**：**政大宗教所碩士（116 考試入學 2026/11/24–12/8 報名，筆試含專業英文與「宗教傳統與理論」）**、**輔大宗教學系碩士（不限科系；考試入學約 2027/1 上旬報名，書審＋口試、免筆試）**。學費低、可邊工作邊發表，是最穩的「轉軌」選項；之後再申請海外 PhD。
+3. **PhD 階段**：Edinburgh World Christianity PhD（題目與 Chow/Wild-Wood 高度相符；需正式研究計畫、3,000–5,000 字樣本、碩士論文 ≥67%）、PTS PhD（History & Ecumenics 的 WCHR／Medieval／Religion and the Americas）、Chicago PhD、Harvard GSAS Religion PhD、Emory GDR、CUHK MPhil-PhD（可中文樣本，HKPFS）。
+
+### 5.2 語言準備時間表（依研究篇章）
+| 語言 | 用途 | 何時需要 | 建議 |
+|---|---|---|---|
+| 學術英文（IELTS 7.0–7.5、各分項 7） | 所有海外申請；Yale 只收 IELTS；Cambridge 7.5 | 申請前 6–12 個月 | 先考 IELTS（同時滿足 Yale／Cambridge／Edinburgh／Oxford） |
+| **拉丁文** | 黑死病篇一手史料（編年史、教會文獻）；輔仁聖博敏、Oxford 教父路徑；華神 Th.D. | 碩士期間達閱讀程度 | 現在開始：1 年入門（Wheelock 程度）→ 碩一修中級／讀史料 |
+| **德文 或 法文** | 美國/英國 PhD 的現代研究語言（PTS PhD 明列至少一種現代外語閱讀） | PhD 申請前或第一年 | 碩士期間選一：德文（神學二手文獻）或法文（黑死病/歐陸史學） |
+| 希臘文／希伯來文 | 只有走聖經研究才是硬門檻（Oxford/Cambridge 聖經路徑、TTC DTh 聖經） | 非必要 | 本系列以史學／神學為主，可延後 |
+| **台語白話字（Pe̍h-ōe-jī）** | 台灣篇一手史料（如長老教會白話字報刊） | 台灣篇研究期間 | 對 Edinburgh/Yale 申請是**差異化優勢**，應在 SOP 中強調 |
+| 日文 | 日治時期台灣教會史料 | 視台灣篇時代 | 若處理 1895–1945，列入計畫 |
+
+### 5.3 文章系列與文獻回顧怎麼用
+- **Writing sample**：從系列中選**單一案例、論證最完整**的一篇（例：被奴役非裔的哀歌與神義論，或黑死病），依各校長度**重新剪裁**：Yale ≤5 頁、Duke 4–8 頁、Harvard MTS 1,000–1,500 字、Oxford 2×2,000 或 1×4,000 字、Cambridge ≤6,000 字、Edinburgh PhD 3,000–5,000 字、Chicago 15–25 頁、Emory GDR／Union PhD 約 20 頁、Harvard GSAS ≤20 頁、PTS PhD ≤30 頁、台神 Th.M. 7,000–8,000 字。必須是**申請人本人撰寫**、可附「節錄說明」。
+- **研究計畫**（Edinburgh、Cambridge 500 字、政大、台神 ≥2,000 字、聖博敏 ≤1,500 字、CUHK 附書目）：把四個案例收斂成**一個**可在學位期間完成的問題（例：「集體苦難中的哀歌實踐如何重塑對教會的信任——以台灣長老教會為中心，與黑死病與美國黑人教會比較」），文獻回顧濃縮為「既有研究缺口」一段。
+- **已發表論文**：Edinburgh 申請表有「details of any published work」欄位；政大甄試「研究報告、學術作品」、政大歷史「已出版之正式學術論文」明列為加分；美國 SOP 中可簡述。**注意**：若期刊論文曾用 AI 輔助，申請時應依校方規定揭露。
+- **推薦信**：工程背景是最大弱點 → 至少一封來自能評論「人文寫作能力」的學者（例如期刊編輯、合作的宗教/歷史學教授）；Chicago 明言可用非學術推薦人但須說明技能如何轉化為研究能力。
+
+### 5.4 建議時程（以 2026/11 為起點）
+| 時間 | 行動 |
+|---|---|
+| 2026/11–12 | 若要走台灣碩士：**政大宗教所考試入學報名 11/24–12/8**；準備「宗教傳統與理論」＋專業英文筆試。同時開始拉丁文。 |
+| 2027/1 | 輔大宗教學系碩士考試入學報名（約 1 月上旬）。 |
+| 2027 春–夏 | 考 IELTS；完成並投稿系列中 1–2 篇；與 1–2 位目標教師建立學術聯繫（先讀其近作）。 |
+| 2027/9–2028/1 | **2028 秋入學**申請季：Gates Cambridge（美國輪約 10 月中）、Cambridge 經費截止（約 12 月初）、PTS／Emory GDR PhD 12/1、Harvard GSAS 12/1、CUHK／HKPFS 12/1、Chicago 1 月初、Yale priority 1 月初、Duke 1/15（國際生最終）、Edinburgh PhD 獎學金早申請。（日期依 2027 入學資料推估，**每年須重查**。） |
+| 2028–2030 | 碩士：語言（拉丁＋德/法）、碩士論文成為 PhD 樣本。 |
+| 2030 起 | PhD 申請（Edinburgh World Christianity、PTS、Chicago、GSAS 等）。 |
+
+### 5.5 地雷
+1. **Writing sample／SOP 必須是自己的文字**：Harvard GSAS 禁止以生成式 AI 撰寫；Cambridge 個人陳述與 CV **連英文潤飾都不准用 AI**；面試不得用 AI。
+2. **揭露**：Cambridge 研究計畫中 AI 生成內容須標註；政大歷史系研究計畫須回答 AI 使用問題。保留寫作過程紀錄（草稿版本、筆記）以備詢問。
+3. **牧職型學位誤選**：台南神學院（無 Th.M.）、TTC MTS、CUHK M.Div. 都要求受洗/教會推薦且以事奉為目標 → 與研究目標不符；PTS MTS/ThM 也要牧者推薦信。
+4. **「相關背景」門檻**：Durham（相關人文 2:1）、Cambridge（GPA 3.7 in relevant subjects）、KU Leuven（神學學士）對工程學士不友善 → 先修宗教/歷史課程或先讀台灣碩士。
+5. **英國課程變動**：Edinburgh World Christianity 授課碩士已停招、改為 MSc Theology and Religion（條件待公告）。
+6. **資料可信度**：Harvard（HDS）、Oxford、Durham 部分頁面本環境無法開啟，表中已標 [未確認]；送件前一律以官網當年度為準。
+7. **AI 與「不實資料」**：任何 AI 產生之錯誤（如虛構文獻、成就）在 Cambridge 會被視同申請詐欺；在政大會依「抄襲、偽造」條款處理。

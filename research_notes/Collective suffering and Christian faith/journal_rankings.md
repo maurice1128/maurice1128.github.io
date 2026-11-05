@@ -96,3 +96,30 @@ Access log: scimagojr.com returns HTTP 403 (Cloudflare challenge) to curl and We
 | Religions (MDPI) | https://www.scijournal.org/religions | Q1 | 0.444 / 0.391 / 0.368 | Arts & Humanities |
 
 Caution: SJR in humanities categories (History, Religious Studies) is low in absolute terms, so Q1 there is easy for any well-cited journal — Religions (MDPI) and the Compass review journals are Q1 by this measure. Quartile alone does not separate flagship from mid-tier in these fields; use JUFO/Norwegian levels for that. scijournal.org also shows an "Impact Factor" figure but its values (e.g. JAS 0.41) do not match Clarivate JIFs, so it is NOT recorded as a JIF.
+
+---
+## Step 4 — Web of Science indexing, Scopus, CiteScore, JIF (checked 2026-11-05)
+
+Access log: Clarivate Master Journal List (mjl.clarivate.com) search API refuses scripted queries (HTTP 400; needs browser session/captcha). Publisher sites (OUP, Wiley, T&F, SAGE, Brill, EUP, MDPI) return 403 to scripts. **Source used for WoS index membership + CiteScore: LetPub Journal Selector** (`https://www.letpub.com/journal-selector/journal/<id>`), field "Indexing (SCI collection)" and "CiteScore / CiteScore Rank". LetPub is a third-party aggregator (Chinese editing company) that mirrors the Clarivate collection lists — reliable for membership but can lag a year. Cambridge Core "journal metrics" pages were reachable and give Clarivate JIF + CiteScore + SJR directly (and their SJR values match scijournal.org exactly, which validates Step 3's mirror).
+
+| Journal | WoS index (LetPub) | Scopus | CiteScore (LetPub; Scopus rank in category) | JIF (source) | LetPub URL |
+|---|---|---|---|---|---|
+| CSSH | SSCI + AHCI | yes | 2.4 (History 80/1936; Sociology & Pol Sci 538/1530) | 2-yr JIF **1.4**, 5-yr 1.6 (Cambridge metrics page, https://www.cambridge.org/core/journals/comparative-studies-in-society-and-history/information/about-this-journal/journal-metrics ; also "Google Scholar: ranked 14th in History") | https://www.letpub.com/journal-selector/journal/12352 |
+| Past & Present | SSCI + AHCI | yes | 3.7 (History 28/1936; Cultural Studies 93/1434) | JIF 2024 **2.4**, rank **2/542 in History** (OUP About page as quoted by WebSearch snippet of https://academic.oup.com/past/pages/About — page itself 403 to scripts) [secondary] | https://www.letpub.com/journal-selector/journal/12239 |
+| Church History | AHCI | yes | 0.4 (History 863/1936; Religious Studies 368/760) | 2-yr JIF **0.4**, 5-yr 0.5; SJR 0.117 (Cambridge metrics page, https://www.cambridge.org/core/journals/church-history/information/about-this-journal/journal-metrics). Cambridge A&I page lists **ERIH PLUS** and Clarivate AHCI (https://www.cambridge.org/core/journals/church-history/information/about-this-journal/abstracting-and-indexing) | https://www.letpub.com/journal-selector/journal/15369 |
+| Social Science History | SSCI + AHCI | yes | 1.3 (History 227/1936) | 2-yr JIF **1.3**, 5-yr 1.2 (Cambridge metrics page, https://www.cambridge.org/core/journals/social-science-history/information/about-this-journal/journal-metrics) | https://www.letpub.com/journal-selector/journal/14161 |
+| JSSR | SSCI + AHCI | yes | 4.2 (Religious Studies 20/760) | JIF 2022 2.4, Sociology 59/149 (Wikipedia citing JCR) — 2025 JIF [not confirmed] | https://www.letpub.com/journal-selector/journal/11829 |
+| Sociology of Religion | SSCI + AHCI | yes | 4.1 (Religious Studies 23/760) | [not confirmed] | https://www.letpub.com/journal-selector/journal/12837 |
+| Review of Religious Research | SSCI + AHCI | yes | 2.9 (Religious Studies 31/760) | [not confirmed] | https://www.letpub.com/journal-selector/journal/13188 |
+| Journal of Contemporary Religion | AHCI | yes | 1.6 (Religious Studies 83/760) | [not confirmed]; T&F reports SJR 2025 0.329 (WebSearch snippet) | https://www.letpub.com/journal-selector/journal/15003 |
+| Journal of Religious History | AHCI | yes | 0.6 (History 621/1936; Religious Studies 265/760) | [not confirmed] | https://www.letpub.com/journal-selector/journal/17455 |
+| Religion (T&F) | AHCI | yes | 2.5 (History 71/1936) | [not confirmed] | https://www.letpub.com/journal-selector/journal/13913 |
+| History Compass | **ESCI** | yes | 1.5 (History 164/1936) | (ESCI journals now get a JIF but no SSCI/AHCI status) [value not confirmed] | https://www.letpub.com/journal-selector/journal/14401 |
+| Religion Compass | **ESCI** | yes | 0.9 (Religious Studies 160/760) | [not confirmed] | https://www.letpub.com/journal-selector/journal/16977 |
+| Studies in World Christianity | AHCI | yes | 0.4 (Religious Studies 359/760) | [not confirmed] | https://www.letpub.com/journal-selector/journal/18999 |
+| IBMR | **ESCI** | yes | 0.6 (Religious Studies 251/760) | [not confirmed]; aggregators give best SJR quartile Q2 (researcher.life / resurchify, via WebSearch) [secondary] | https://www.letpub.com/journal-selector/journal/18585 |
+| Review of Religion and Chinese Society | **ESCI** | yes | 1.2 (Religious Studies 120/760) | [not confirmed] | https://www.letpub.com/journal-selector/journal/39644 |
+| Journal of Asian Studies | SSCI + AHCI | yes | 1.1 (History 304/1936) | Cambridge page: "Impact Factor rankings are not currently available" [JIF not confirmed] | https://www.letpub.com/journal-selector/journal/12668 |
+| Religions (MDPI) | AHCI (+ DOAJ) | yes | 1.3 (Religious Studies 109/760) | [not confirmed] | https://www.letpub.com/journal-selector/journal/24832 |
+
+Note on Review of Religious Research: since 2023 published by SAGE for the Religious Research Association [publisher change per my knowledge; register/JUFO/LetPub still show Springer — not re-confirmed from a live page].

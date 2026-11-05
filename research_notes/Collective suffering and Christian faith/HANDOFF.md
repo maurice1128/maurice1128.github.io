@@ -166,6 +166,22 @@
 - **總工作量：** 依設計書估算約 1,900–2,300 小時，相當於兩年內每週 19–23 小時。很緊，第 3 篇可能延到 2029 年。
 - 檔案：`reports/design/conferences_timeline.md`；計畫文件也已更新。
 
+## 神學院／學術路線（2026-11-05 查證，詳見 seminary_application.md）
+- **⚠ 近期截止：政大宗教所碩士的考試入學，報名 2026/11/24–12/8。** 筆試考專業英文、宗教傳統與理論；不要求受洗，也不要求教會推薦。甄試已截止。
+- **輔大宗教學系碩士**：不限科系，書面審查加口試，不考筆試，約 2027 年 1 月上旬報名。
+- **神學院的 Th.M.**（台神、華神、輔仁聖博敏）：都要先有道學碩士或神學學位，也要信仰證明。工程背景不能直接報考。
+- **海外學術型碩士**：Yale MAR（只收 IELTS，各分項 7.0）、Duke MTS、Chicago MA。之後可接博士，例如 Edinburgh 的 World Christianity 博士。
+  - 普林斯頓神學院的 MTS／ThM 要牧者推薦信。
+  - Edinburgh 的 World Christianity 授課碩士已停招。
+- **AI 規定：**
+  - Cambridge：個人陳述、CV 都禁止使用 AI，連英文潤飾也不行。
+  - Harvard GSAS：書面材料不得由 AI 產生。
+  - 政大歷史系：研究計畫必須說明是否使用 AI。
+  - 結論：**申請文件和寫作樣本必須本人撰寫。**
+- **對應的教師**：Alexander Chow、Emma Wild-Wood（Edinburgh）、Chloë Starr、Willie James Jennings（Yale）、Curtis Evans（Chicago）、Valerie Cooper（Duke）、Raimundo Barreto、Afe Adogame、Amelia Kennedy（普林斯頓神學院；Kennedy 研究中世紀疾病史）、Mathew Guest（Durham）、賴品超（香港中文大學）、鄭仰恩（台神）。
+- **建議順序**：先讀學術型碩士，再讀博士。語言方面：先考 IELTS，現在開始學拉丁文，碩士期間學德文或法文。
+- 2028 年秋季入學的主要截止日，落在 2027/12/1 到 2028/1 中旬。
+
 ## 研究問題評估（Claude 的判斷，2026-11-05）
 **優點**
 - 這是真正的謎題，目前查不到前例。
