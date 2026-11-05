@@ -2,7 +2,7 @@
 
 Compiled 2026-11-05 from the reference lists of all section files in `reports/sections/` (02_theory, 03_theologies, 04_black_death, 05_slave_religion, 06_comparative, 07_global_cases, 08_continental, 09_chinese, 10_other_languages, 10_primary_sources, 11_methodology, 12_ancient_languages, 16_biblical, 16_contemporary, 19_novelty, 20_gaps_journals). Chicago author-date (17th ed.), alphabetical by author. Works cited in several sections appear once, in the most complete corrected form. Non-Latin-script authors and titles are given in original script with romanization and an English gloss in square brackets.
 
-**1069 unique works.** 953 verified; 114 verified with a detail still to check (marked *[detail to verify: …]*); 2 unverified (marked *[unverified]*). No entry was judged likely non-existent. Evidence for every entry is in `audit/references_status.tsv`; changes to in-text keys that the merge requires are listed in `audit/references_summary.md`.
+**1069 unique works.** 954 verified; 113 verified with a detail still to check (marked *[detail to verify: …]*); 2 unverified (marked *[unverified]*). No entry was judged likely non-existent. Evidence for every entry is in `audit/references_status.tsv`; changes to in-text keys that the merge requires are listed in `audit/references_summary.md`.
 
 
 ## A
@@ -1620,7 +1620,7 @@ Quírico, Tamara. 2021. "Imagem e devoção em tempos de pandemia: Apontamentos 
 
 Rable, George C. 2010. *God's Almost Chosen Peoples: A Religious History of the American Civil War*. Chapel Hill: University of North Carolina Press.
 
-Raboteau, Albert J. 2004. *Slave Religion: The "Invisible Institution" in the Antebellum South*. Updated ed. New York: Oxford University Press. First published 1978.
+Raboteau, Albert J. (1978) 2004. *Slave Religion: The "Invisible Institution" in the Antebellum South*. Updated ed. New York: Oxford University Press.
 
 Ragin, Charles C. 2014. *The Comparative Method: Moving Beyond Qualitative and Quantitative Strategies*. Oakland: University of California Press. https://doi.org/10.1525/9780520957350. First published 1987.
 
@@ -1690,7 +1690,7 @@ Rucker, Walter C. 2006. *The River Flows On: Black Resistance, Culture, and Iden
 
 Ruiter, Stijn, and Frank van Tubergen. 2009. "Religious Attendance in Cross-National Perspective: A Multilevel Analysis of 60 Countries." *American Journal of Sociology* 115 (3): 863–95. https://doi.org/10.1086/603536.
 
-Runge, Paul, ed. 1969. *Die Lieder und Melodien der Geissler des Jahres 1349 nach der Aufzeichnung Hugo's von Reutlingen*. With a treatise on the Italian flagellant songs by Heinrich Schneegans and a contribution by Heino Pfannenschmid. Reprint, Hildesheim: Olms; Wiesbaden: Breitkopf & Härtel. *[detail to verify: original edition date (sec. 08)]*
+Runge, Paul, ed. 1900. *Die Lieder und Melodien der Geissler des Jahres 1349 nach der Aufzeichnung Hugo's von Reutlingen*. With a treatise on the Italian flagellant songs by Heinrich Schneegans and a contribution by Heino Pfannenschmid. Leipzig: Breitkopf & Härtel. Reprint, Hildesheim: Olms; Wiesbaden: Breitkopf & Härtel, 1969.
 
 Russell-Wood, A. J. R. 1974. "Black and Mulatto Brotherhoods in Colonial Brazil: A Study in Collective Behavior." *Hispanic American Historical Review* 54 (4): 567–602. https://doi.org/10.1215/00182168-54.4.567.
 

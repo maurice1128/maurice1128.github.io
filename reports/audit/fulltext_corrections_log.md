@@ -47,3 +47,22 @@ Not changed:
 - `16_contemporary_refs.md`: no entry needed changing (Huang 2017 and Yi and Su 2021 were already correct there).
 - Article 3 (plan doc and `article_3.md`) still says "Yi et al. 2021"; outside this fixer's files.
 - Sections 9–12 and 16_biblical untouched (other fixers).
+
+## Belloc consistency pass
+
+Source checked: Crossref abstract of Belloc, Drago & Galbiati, *QJE* 131(4) 2016: 1875–1926, doi 10.1093/qje/qjw020. Confirmed: earthquakes retarded the transition to self-government only in episcopal-see cities (bishop = political ruler), for damaging and felt-only quakes; "ancillary results" show a positive, significant differential effect of quakes on the construction and further ornamentation of religious buildings in episcopal vs non-episcopal cities. The religious-authority channel is the authors' interpretation, which this result supports but does not by itself establish. The time limit (effect "lasts only in the short-run", ≤ one decade) is confirmed in the 2014 draft only; the QJE full text is paywalled (OUP 403, no OA copy per OpenAlex), so the time limit is attributed to the draft. Earlier wording ("religious authority … not a measured outcome"; "only proxy … present-day churches") was true of the 2014 draft only and is now corrected. Sections 06 and 19 left to the other fixer (doc hits 4–8 in the literature review belong to section 19).
+
+| Item | Action | File changed | Doc changed |
+|---|---|---|---|
+| 04 "Contrasting evidence" | Main result kept; added published church-building/decoration result as partial support for the religious-authority channel; time limit and present-day church-count proxy explicitly attributed to the 2014 draft, which lacks the church result | 04_black_death.md (refs already list both 2014 and 2016) | yes (lit. review) |
+| 20 gap no. 3 | "infer, without measuring it" → delayed self-government + more church building; mediation channel is their reading, supported but not established | 20_gaps_journals.md | yes (lit. review) |
+| 20 table "Who controls the remedy" | "an inferred channel" → delay + church building as partial evidence | 20_gaps_journals.md | yes (lit. review) |
+| 11 objection table; 20 para. on conditionality | Bare citations; accurate, unchanged | — | no |
+| _DESIGN_BRIEF fact-check note | "not religious authority" → delay plus church building, supports but does not establish the channel | sections/_DESIGN_BRIEF.md | no (not in docs) |
+| Article 1 outline item 4 (prescribed wording) | New prescribed wording: temporary delay where bishops ruled; more church building/decoration; supports but does not establish the channel | design/article_1.md | yes (plan) |
+| Article 1 lines 11, 34, 85, 105, 145 | Bare citations / "keep the Belloc wording" now point to the corrected wording; unchanged | — | no |
+| Article 2 prior-work table | "(religious authority is the authors' inference)" → temporary delay + church building (partial support) | design/article_2.md | yes (plan) |
+| Article 2 fact-check checklist | "measured delayed self-government" → adds church building as partial support | design/article_2.md | yes (plan) |
+| Article 2 lines 84, 105; conferences_timeline line 81 | Refer to "corrected" wording; unchanged | — | no |
+| HANDOFF (已查證的重要修正) | Rewrote: delay (temporary) is the main measure; published church-building result supports, but does not prove, the channel; today's church-count proxy is from the 2014 draft only | HANDOFF.md | no (not in docs) |
+| HANDOFF (new-findings note) | Added "partial support, not proof" and pointer to this pass | HANDOFF.md | no |
