@@ -109,3 +109,17 @@ Started 2026-11-05.
   - Dehejia, DeLeire & Luttmer 2007 JPubE 91(1-2):259-279 (from quant notes)
   - Cohn 2007 P&P 196:3-36 doi 10.1093/pastj/gtm005; Nirenberg 1996 Communities of Violence, Princeton UP (2015 reissue)
 - Status: verification largely done. Next: draft section.
+- [batch 8, Crossref] Verified: Chaves & Gorski 2001 ARS 27:261-281 doi 10.1146/annurev.soc.27.1.261; Voas, Olson & Crockett 2002 ASR 67(2):212-230 doi 10.2307/3088893; Sætrevik & Sjåstad 2022 Meta-Psychology 6 doi 10.15626/MP.2020.2628 (mortality salience fails to replicate); Mitchell 1990 Theory and Society 19(5):545-577 doi 10.1007/BF00147026 (critique of Scott); Dianteill 2003 Theory and Society 32(5-6):529-549; Auriol et al 2020 QJE 135(4):1799-1848 doi 10.1093/qje/qjaa015; Immerzeel & van Tubergen 2013 ESR 29(2):359-372. Warrior 1989 NOT found -> do not cite.
+- RCOPE abstract (2000): better adjustment = benevolent reappraisal, religious forgiveness/purification, seeking religious support; poorer = reappraisals of God's powers, spiritual discontent, punishing God reappraisals. "Interpersonal religious discontent" subscale: from knowledge [verify].
+
+## Drafting notes (section plan)
+2.1 Weber (theodicy by stratum; hierocracy; charisma in distress; routinization = transmission); Riesebrodt 2010
+2.2 Berger (theodicy legitimates order; masochistic theodicy; plausibility structures)
+2.3 Durkheim (effervescence; piacular rites) + Páez 2015, Collins 2004; Erikson 1976/1994; Alexander 2004; Eyerman 2001
+2.4 Marx; Glock; Stark & Bainbridge; Finke & Stark; Iannaccone; insurance (Ager & Ciccone, Chen, Dehejia, Auriol); critiques (Stark 1971; Chaves & Gorski; Voas et al 2002; McAdam)
+2.5 Norris & Inglehart; supports; critiques (Höllinger, Molteni, Frijters 2024, Lang & Chvaja 2024)
+2.6 Pargament etc.
+2.7 Bourdieu; Scott; Walzer/Said; Smith 1996; Morris; McAdam; Lincoln; Hirschman
+2.8 Chaves; Davie; Voas & Crockett; Casanova; Martin; Taylor
+2.9 Moore; Girard; critiques Nirenberg, Cohn 2007/2018; TMT link
+2.10 synthesis table + beyond paragraph

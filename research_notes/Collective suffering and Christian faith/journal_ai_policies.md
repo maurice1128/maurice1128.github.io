@@ -152,3 +152,28 @@ URLs: https://www.tandfonline.com/action/authorSubmission?show=instructions&jour
 - Publisher confirmed by Crossref (api.crossref.org/journals/{issn}/works): IBMR (ISSN 2396-9393) is "SAGE Publications", latest item 2026-10. RRR (ISSN 0034-673X) is "SAGE Publications", latest item 2026-11-02 (DOI 10.1177/0034673x261505012). Older RRR items carry Springer DOIs (10.1007/s13644-...), so the journal moved from Springer to Sage. Springer's policy does NOT apply now.
 - IBMR writers' guidelines https://omsc.ptsem.edu/ibmr/guidelines-writers/ (reached 2026-11-05 via WebFetch): **no AI mention**. Sage's journal pages journals.sagepub.com/author-instructions/IBM and /RRR: [not reached] (403, including via the reader). The Sage publisher policy (above) applies.
 
+### Wiley journal pages (History Compass, Religion Compass, JRH, JSSR)
+Journal-specific author guidelines on onlinelibrary.wiley.com: [not reached] (403 to curl and WebFetch; Cloudflare CAPTCHA via the reader). Wayback snapshots date from 2021–2022, before the policies, and web.archive.org was resetting connections. Searches found no journal-specific AI text. **The Wiley publisher policy (July 2026) applies** to all four. Wiley says journals may add rules, so check the submission system's AI question when submitting.
+
+### Chinese-language journals
+None of the six had an AI clause that could be reached on the journal's own page. What was tried:
+- 《道風：基督教文化評論》 (漢語基督教文化研究所, ISCS, Hong Kong; ISSN 1023-2583): iscs.org.hk redirects to a JS reader page with no 稿約 text. The airiti PDF P20170411002-n (watermarked "Copyright ISCS 2026") turned out to be the 《猶太研究》 call for papers printed in the journal, not 道風's 稿約. AI policy: **[not reached]**. Search summaries of the 道風 稿約 (airiti; cup.cuhk.edu.hk/Logos) mention no AI clause.
+- 《新史學》 (新史學雜誌社): newhistoria.org.tw does not resolve. Search found no 稿約 AI clause. **[not reached]**.
+- 《臺灣史研究》 (中央研究院臺灣史研究所): ith.sinica.edu.tw reset the connection. Search found no 稿約. **[not reached]**. As an Academia Sinica journal, the Academia Sinica guideline below is the relevant institutional rule.
+- 《臺灣宗教研究》 (台灣宗教學會; editor 蔡源林; contact taireligion@gmail.com, per the airiti editorial-board PDF a0000594-r for vol. 25(1)): the board page has no AI text, and no 稿約 was found. **[not reached]**. Note: tars.org.tw is an unrelated medical association, not 台灣宗教學會.
+- 《臺灣社會學》 (中央研究院社會學研究所): the ios.sinica.edu.tw homepage loaded but is a JS front page with no journal text. **[not reached]**. Academia Sinica guideline applies institutionally.
+- 《臺灣社會學刊》 (臺灣社會學會): tsa-tw.org failed with 502. Search found no AI clause. **[not reached]**.
+- Conclusion: no Taiwanese journal AI clause was found. That is NOT evidence that none exists. Email each editor to ask before submitting.
+
+### Academia Sinica 中央研究院「使用生成式 AI 之參考指引」 (reached 2026-11-05)
+URL: https://sub.daais.sinica.edu.tw/download/中研院使用生成式AI之參考指引.pdf (PDF created 2026-01-16; a search summary dates the issue to December 2025). Verbatim:
+> 「研究人員必須對 AI 生成的內容進行確實的人工檢核，以確保使用 AI 生成內容之所有資訊、數據、引用來源的正確性。」
+> 「研究人員不應將個人資料、未公開的研究成果、機密資訊、應保密或未經同意公開之資訊提供給生成式 AI。」
+> 「研究人員在使用生成式 AI 輔助研究前，應先充分瞭解學術研究機構、經費補助機關（構）、期刊、研討會等對生成式 AI 之最新政策與規範，並於研究過程中確實遵循。研究過程中如實質性地使用生成式 AI 之協助，或研究成果包含 AI 之產出者，均應依照學術慣例予以揭露，並依著作權法正確註明。研究人員對自己的研究行為及研究成果負完全責任。」
+- No ban. Disclosure "依照學術慣例". Cites COPE 2023, NCKU (2025-01) and NYCU (2023-05) guidelines.
+
+### NSTC (國科會) (checked 2026-11-05)
+- No NSTC guideline specific to generative AI in *research or publication* was found. The NSTC-drafted 「行政院及所屬機關（構）使用生成式AI參考指引」 covers government agencies. Point 9 lets public schools and similar bodies 準用 it, but it is not a research-ethics rule (search snippets only, from iThome news/158533 and PTS 647119; the guideline itself was [not reached]).
+- 工商時報 / 中時 2026-04-29 (https://www.ctee.com.tw/news/20260429701415-431401, via WebFetch) quotes NSTC's report to the Legislative Yuan: 「在專題計畫審查，規範審查人員不得將相關內容提供給生成式AI工具。」 That binds reviewers only. The same coverage says legislators asked for guidelines, which suggests no research-wide NSTC rule as of April 2026.
+- A search snippet says the 「國科會學術倫理案件處理及審議要點」 was amended (listed on the Academia Sinica site, 2026-02-10). Whether it covers AI: [not reached].
+

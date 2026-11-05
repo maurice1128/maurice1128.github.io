@@ -28,3 +28,17 @@ MATCH	openlibrary	1896	The register of Ralph of Shrewsbury, Bishop of Bath and W
 YEAR_DIFF	crossref	1980	Selections from English Wycliffite Writings	Hudson, Anne, ed. 1978. *Selections from English Wycliffite Writings*. Cambridge: Cambridge University Press.
 NOT_FOUND				Jewish Publication Society. 1985. *Tanakh: The Holy Scriptures; The New JPS Translation according to the Traditional Hebrew Text*. Philadelphia: Jewish Publication Society.
 MATCH	openlibrary	1858	Emek habacha von Joseph ha Cohen	Joseph ha-Kohen. 1858. *Emek habacha*. Translated by M. Wiener. Leipzig: Leiner.
+WEAK	crossref	2015	A Revised Edition of Dewing's Prokopios (on H. B. Dewing and A. Kaldellis (trans., rev.), Prokopios:	Kaldellis, Anthony, rev. 2014. *The Wars of Justinian*, by Procopius. Translated by H. B. Dewing. Indianapolis: Hackett.
+NOT_FOUND				Kervyn de Lettenhove, Joseph, ed. 1882. *Poésies de Gilles li Muisis*. 2 vols. Louvain: Lefever.
+MATCH	openlibrary	1966	Kōhon Dochirīna Kirishitan	Kojima Yukie, ed. 1966. *Kōhon Dochirīna Kirishitan*. Fukui: Fukui Kokugogaku Gurūpu.
+MATCH	openlibrary	1971	Introduction to Biblical Hebrew	Lambdin, Thomas O. 1971. *Introduction to Biblical Hebrew*. New York: Scribner.
+MATCH	openlibrary	1978	Introduction to Classical Ethiopic (Geʻez)	Lambdin, Thomas O. 1978. *Introduction to Classical Ethiopic (Geʻez)*. Harvard Semitic Studies 24. Missoula, MT: Scholars Press. [verify series number]
+MATCH	openlibrary	1983	Introduction to Sahidic Coptic	Lambdin, Thomas O. 1983. *Introduction to Sahidic Coptic*. Macon, GA: Mercer University Press.
+YEAR_DIFF	openlibrary	2018	Chronique et Annales de Gilles le Muisit, Abbé de Saint-Martin de Tournai (1272-1352)	Lemaître, Henri, ed. 1906. *Chronique et annales de Gilles le Muisit, abbé de Saint-Martin de Tournai (1272–1352)*. Paris: Renouard.
+MATCH	crossref	2001	Old Church Slavonic Grammar	Lunt, Horace G. 2001. *Old Church Slavonic Grammar*. 7th rev. ed. Berlin: Mouton de Gruyter.
+MATCH	crossref	1939	The Jew in the Medieval World. A Source Book 315-1791	Marcus, Jacob R. 1938. *The Jew in the Medieval World: A Source Book, 315–1791*. Cincinnati: Union of American Hebrew Congregations. [verify place and publisher] Königshofen excerpt: https://sourcebooks.fordham.edu/jewis
+MATCH	crossref	1915	The Chronicle of Novgorod, 1016-1471	Michell, Robert, and Nevill Forbes, trans. 1914. *The Chronicle of Novgorod, 1016–1471*. Camden Third Series 25. London: Royal Historical Society. [verify series number]
+MATCH	loc	1990	El retorno de las huacas: estudios y documentos sobre el Taki Onqoy, siglo XVI. Recopilación de Lui	Millones, Luis, comp. 1990. *El retorno de las huacas: Estudios y documentos sobre el Taki Onqoy, siglo XVI*. Fuentes e investigaciones para la historia del Perú 8. Lima: Instituto de Estudios Peruanos / Sociedad Peruana
+MATCH	crossref	2011	Account of the Fables and Rites of the Incas	Molina, Cristóbal de. 2011. *Account of the Fables and Rites of the Incas*. Translated and edited by Brian S. Bauer, Vania Smith-Oka, and Gabriel E. Cantarutti. Austin: University of Texas Press. [verify third translator
+YEAR_DIFF	openlibrary	1999	Basics of biblical Greek grammar	Mounce, William D. 2019. *Basics of Biblical Greek Grammar*. 4th ed. Grand Rapids: Zondervan Academic.
+NOT_FOUND				Müller, Marcus Joseph. 1863. "Ibnulkhatîbs Bericht über die Pest." *Sitzungsberichte der Königlich Bayerischen Akademie der Wissenschaften zu München* 1863 (2): 1–?. [verify end page]

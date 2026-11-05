@@ -102,3 +102,7 @@ Status: started 2026-11-05. Verification log appended below as work proceeds.
 
 ## Plan
 Ranked recommendation: (1) Irish Famine as most-similar complement to Latin plague (same church/sacramental system, mass-mortality; differ on position & church role); (2) South African Reformed family as complement to slavery case alongside Brazil.
+
+## Status: DONE (2026-11-05)
+- Section saved: reports/sections/06_comparative.md (~3,760 words incl. tables); refs: 06_comparative_refs.md.
+- Written into Claude Doc, pending block mqbz872zda9.72 replaced (rev 204, pending_ended).
