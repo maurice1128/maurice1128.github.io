@@ -2,7 +2,7 @@
 
 Compiled 2026-11-05 from the reference lists of all section files in `reports/sections/` (02_theory, 03_theologies, 04_black_death, 05_slave_religion, 06_comparative, 07_global_cases, 08_continental, 09_chinese, 10_other_languages, 10_primary_sources, 11_methodology, 12_ancient_languages, 16_biblical, 16_contemporary, 19_novelty, 20_gaps_journals). Chicago author-date (17th ed.), alphabetical by author. Works cited in several sections appear once, in the most complete corrected form. Non-Latin-script authors and titles are given in original script with romanization and an English gloss in square brackets.
 
-**1072 unique works.** 958 verified; 111 verified with a detail still to check (marked *[detail to verify: …]*); 3 unverified (marked *[unverified]*). No entry was judged likely non-existent. Evidence for every entry is in `audit/references_status.tsv`; changes to in-text keys that the merge requires are listed in `audit/references_summary.md`.
+**1072 unique works.** 959 verified; 111 verified with a detail still to check (marked *[detail to verify: …]*); 2 unverified (marked *[unverified]*). No entry was judged likely non-existent. (Nodl 2021 was identified on 5 November 2026 during final assembly and is now verified.) Evidence for every entry is in `audit/references_status.tsv`; changes to in-text keys that the merge requires are listed in `audit/references_summary.md`.
 
 
 ## A
@@ -448,6 +448,8 @@ Courtenay, William J. 1980. "The Effect of the Black Death on English Higher Edu
 Creel, Margaret Washington. 1988. *"A Peculiar People": Slave Religion and Community-Culture among the Gullahs*. New York: New York University Press.
 
 Crenshaw, James L. 2005. *Defending God: Biblical Responses to the Problem of Evil*. New York: Oxford University Press.
+
+CTC-CCA. See Commission on Theological Concerns of the Christian Conference of Asia.
 
 Cunningham, Andrew, and Ole Peter Grell. 2000. *The Four Horsemen of the Apocalypse: Religion, War, Famine and Death in Reformation Europe*. Cambridge: Cambridge University Press.
 
@@ -1456,7 +1458,7 @@ Nirmal, Arvind P. 1990. "Towards a Christian Dalit Theology." In *A Reader in Da
 
 Nissi, Jyrki, and Ines Testoni. 2025. "Devotion to Saints as Medieval Death Anxiety Management." *Journal of Ecclesiastical History*, FirstView, 1–24. https://doi.org/10.1017/S002204692510119X.
 
-Nodl, Martin. 2021. [Essay on the Black Death and the Hussite revolution in Czech historiography.] *Vorträge und Forschungen* (Konstanzer Arbeitskreis für mittelalterliche Geschichte). Heidelberg: Heidelberg University Publishing. *[unverified]*
+Nodl, Martin. 2021. "Impacts of the Plague Epidemic on the Kingdom of Bohemia in the Second Half of the XIVth Century and at the Beginning of the XVth Century." *Studia Historica Gedanensia* 12 (2): 44–62. https://doi.org/10.4467/23916001HG.21.004.14986.
 
 Noll, Mark A. 2006. *The Civil War as a Theological Crisis*. Chapel Hill: University of North Carolina Press.
 
@@ -1527,6 +1529,8 @@ Patterson, Orlando. 1982. *Slavery and Social Death: A Comparative Study*. Cambr
 Patton, Kimberley C., and Benjamin C. Ray, eds. 2000. *A Magic Still Dwells: Comparative Religion in the Postmodern Age*. Berkeley: University of California Press.
 
 Paul, Shalom M. 1991. *Amos: A Commentary on the Book of Amos*. Hermeneia. Minneapolis: Fortress Press.
+
+PCT. See Presbyterian Church in Taiwan.
 
 Peabody, Sue. 2002. "'A Dangerous Zeal': Catholic Missions to Slaves in the French Antilles, 1635–1800." *French Historical Studies* 25 (1): 53–90. https://doi.org/10.1215/00161071-25-1-53.
 

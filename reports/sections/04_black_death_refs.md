@@ -136,7 +136,7 @@ Nirenberg, David. 1996. *Communities of Violence: Persecution of Minorities in t
 
 Nissi, Jyrki, and Ines Testoni. 2025. "Devotion to Saints as Medieval Death Anxiety Management." *Journal of Ecclesiastical History*, FirstView, 1–24. https://doi.org/10.1017/S002204692510119X.
 
-Nodl, Martin. 2021. [Essay on the Black Death and the Hussite revolution in Czech historiography.] *Vorträge und Forschungen* (Konstanzer Arbeitskreis für mittelalterliche Geschichte). Heidelberg: Heidelberg University Publishing. [verify: title, volume, editors, pages]
+Nodl, Martin. 2021. "Impacts of the Plague Epidemic on the Kingdom of Bohemia in the Second Half of the XIVth Century and at the Beginning of the XVth Century." *Studia Historica Gedanensia* 12 (2): 44–62. https://doi.org/10.4467/23916001HG.21.004.14986.
 
 Norman, Diana, ed. 1995. *Siena, Florence and Padua: Art, Society and Religion 1280–1400*. 2 vols. New Haven, CT: Yale University Press in association with the Open University.
 

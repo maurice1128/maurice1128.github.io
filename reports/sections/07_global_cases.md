@@ -44,7 +44,7 @@ The timing echoes Fountain's (2010) finding for African Americans: mass conversi
 
 **Rwanda 1994.** Rwanda is the clearest modern case of church as establishment and perpetrator. Linden (1977) traces the Catholic Church's role in the 1959 "Hutu revolution." Longman (2010) argues the churches "consistently allied themselves with the state and played ethnic politics," giving them substantial responsibility for the genocide. Rittner, Roth and Whitworth (2004) reach mostly critical conclusions about national church leaderships. Tutsi victims were members of the same churches whose hierarchies were aligned with Hutu Power.
 
-Devotion did not collapse; it moved. Pentecostalism had no real foothold before 1994. About 150 new Christian communities existed by 1997 and over 300 by 2000 (van 't Spijker n.d. *[verify]*). Kubai (2007a) links their spread to needs for healing, a rebuilt social fabric and a post-ethnic identity, though she finds Catholicism still dominant. The Catholic share fell from about 63 percent in the mid-1990s (Kubai 2007a) to roughly 50 percent in a later Pew estimate (Foreign Policy 2014 *[verify]*); the methods differ, so the drop is approximate. A seminary professor reported that many Rwandans felt "betrayed" by the church (Christianity Today 2011 *[verify]*).
+Devotion did not collapse; it moved. Pentecostalism had no real foothold before 1994. About 150 new Christian communities existed by 1997 and over 300 by 2000 (van 't Spijker 2004 *[verify]*). Kubai (2007a) links their spread to needs for healing, a rebuilt social fabric and a post-ethnic identity, though she finds Catholicism still dominant. The Catholic share fell from about 63 percent in the mid-1990s (Kubai 2007a) to roughly 50 percent in a later Pew estimate (Caryl 2014 *[verify]*); the methods differ, so the drop is approximate. A seminary professor reported that many Rwandans felt "betrayed" by the church (Newhouse 2011 *[verify]*).
 
 A smaller stream turned to Islam, citing church complicity and gratitude to Muslims who sheltered victims (Kubai 2007b). Some conversions were for protection or support, and they tapered after 1997. A 2002 press figure of 14 percent Muslim is widely considered inflated; the 2022 census reports about 2 percent *[verify against NISR tables]*. Tiemessen (2005 *[verify]*) is the most cited study of these conversions. Theological work on suffering has begun (Griener 2023). No survey measures survivors' personal faith as distinct from affiliation.
 
@@ -58,7 +58,7 @@ A smaller stream turned to Islam, citing church complicity and gratitude to Musl
 
 ### Pattern C: rejection and re-coding
 
-The Taki Onqoy ("dancing sickness," c. 1564–80) is the clearest rejection case. Its preachers taught that the huacas were punishing Andeans with disease for accepting the Christian god and called for a return to huaca worship (Stern 1982; Millones 1990). It spread from Huamanga to Cusco and La Paz and faded by about 1580. In Mexico, by contrast, Nahuas adopted Christianity after catastrophic epidemics but re-coded it in Nahua moral categories (Ricard 1966; Burkhart 1989). Friars read disease as punishment for idolatry; Andean prophets read it as punishment for apostasy. The same suffering supported opposite theodicies, and institutional power decided which prevailed. Partial rejection also appears in Canada's Indigenous "no religion" share and among Rwanda's converts to Islam.
+The Taki Onqoy ("dancing sickness," c. 1564–80) is the clearest rejection case. Its preachers taught that the huacas were punishing Andeans with disease for accepting the Christian god and called for a return to huaca worship (Stern 1982b; Millones 1990). It spread from Huamanga to Cusco and La Paz and faded by about 1580. In Mexico, by contrast, Nahuas adopted Christianity after catastrophic epidemics but re-coded it in Nahua moral categories (Ricard 1966; Burkhart 1989). Friars read disease as punishment for idolatry; Andean prophets read it as punishment for apostasy. The same suffering supported opposite theodicies, and institutional power decided which prevailed. Partial rejection also appears in Canada's Indigenous "no religion" share and among Rwanda's converts to Islam.
 
 ### Coding table
 
@@ -86,7 +86,7 @@ The Taki Onqoy ("dancing sickness," c. 1564–80) is the clearest rejection case
 | 20 | Philippines under Marcos | 1972–86 | Catholic majority under dictatorship | Liberation theology | Opposition, protector | Up | Up (survey unsourced) | Youngblood 1990 |
 | 21 | Indonesia after 1965 | 1965–71 | Abangan and suspected leftists | Refuge; "having a religion" | Protector | Up | Up | Willis 1977; Hearman 2018 |
 | 22 | Nahua Mexico | 1520s– | Conquered majority | Epidemic as judgment; Nahua re-coding | Conqueror's institution, mediator | Adopted, re-coded | Mixed | Ricard 1966; Burkhart 1989 |
-| 23 | Taki Onqoy | c. 1564–80 | Conquered Andeans | Huacas punish Christian allegiance | Perpetrator's religion | Rejected | Nil | Stern 1982; Millones 1990 |
+| 23 | Taki Onqoy | c. 1564–80 | Conquered Andeans | Huacas punish Christian allegiance | Perpetrator's religion | Rejected | Nil | Stern 1982b; Millones 1990 |
 
 ### Which cases most strengthen the series
 
@@ -117,7 +117,7 @@ The Taki Onqoy ("dancing sickness," c. 1564–80) is the clearest rejection case
 - Chi Oang 芝苑: scholarly source needed.
 - van 't Spijker, IAMS paper: title and year.
 - Tiemessen 2005: venue; Rwanda census 2022 religion tables (NISR).
-- Foreign Policy 2014, Christianity Today 2011: authors and dates.
+- Caryl 2014, Newhouse 2011: authors and dates.
 - Hansen 2009b: volume editor (*Casting Faiths*).
 - Blacket 1994: page range.
 - Takahashi Shinji's original articles coining 浦上燔祭説.

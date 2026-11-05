@@ -90,7 +90,7 @@
 - 推薦信：學術性為主；PhD 須能談碩士階段學術工作；若學術推薦人不可得，可用主管/同事但須說明專業技能如何轉化為研究能力（對工程背景申請人有用）。
 - 語言：未列入學語言要求，但研究需要的語言應在陳述中說明現況與計畫。
 - PhD 前提：須有宗教或相關領域碩士，且在擬攻讀領域有相當修課。全額學費 + 健保 + 年度生活津貼（金額未列）。
-- 截止：PhD 2027/1/5；MA priority 2027/1/5、第二輪 2027/4/2（國際生最終）。
+- 截止：PhD 2027/1/5；MA priority 2027/1/5、第二輪 **2027/4/5**（國際生最終；admissions-info 頁："Master's Programs Round 2: Monday, April 5, 2027 (Final deadline for international students)"）。
 - AI：無。
 
 ### 2.8 University of Edinburgh, School of Divinity（New College）— World Christianity（與本系列最相關）

@@ -50,7 +50,7 @@ Moreno Navarro's history of the Seville brotherhood covers six centuries of "eth
 
 In Cuba, Ortiz's study of the ethnic *cabildos* (Ortiz 1992, which reprints his 1921 essay on the cabildos) and Cabrera's *El monte* (Cabrera 1954) document devotion migrating into African-controlled bodies that kept Catholic saints. This is the re-coding branch.
 
-Taki Onqoy (1560s) is the model's rejection branch. Andean preachers called for abandoning Christianity amid epidemic and conquest. Millones's source edition (Millones 1990) and the interpretations of Curatola (1977), Stern (1982) and Millones Figueroa (2007) frame it as millenarian rejection of the conquerors' religion. A later debate asks how far the colonial records constructed the movement (Heilman 2002).
+Taki Onqoy (1560s) is the model's rejection branch. Andean preachers called for abandoning Christianity amid epidemic and conquest. Millones's source edition (Millones 1990) and the interpretations of Curatola (1977), Stern (1982a) and Millones Figueroa (2007) frame it as millenarian rejection of the conquerors' religion. A later debate asks how far the colonial records constructed the movement (Heilman 2002).
 
 On the Black Death, Castán Lanaspa (2020) argues that Spanish historiography inflated 1348–50 into a demographic catastrophe without regional evidence. Cantera Montenegro (2022) surveys Western Jewry. León Tello (1977) publishes Toledan Jewish epitaphs, from a kingdom without massacres. Lara Olmo (2023) studies Clement VI's protective bull. Arjona Castro (1985) introduces Ibn al-Khaṭīb's contagion argument.
 
@@ -72,7 +72,7 @@ Benedictow (2002) is the Norwegian synthesis. Sandnes (1978) reports the Nordic 
 
 Muslim plague writing holds the shock constant and varies the theology.
 
-Muslim jurists in 1348 and after framed plague as martyrdom (*shahāda*) for believers and as mercy, not as punishment for collective sin. They debated contagion against predestination and ruled on flight. The key texts are Ibn al-Wardī's *Risāla*, translated by Dols (1974) (the author died of plague in 1349), and Ibn Ḥajar's *Badhl al-māʿūn* (Ibn Ḥajar 1993; reviewed by Conrad 1995). Ibn al-Khaṭīb and Ibn Khātima argued for contagion; their editions remain to be verified. Dols (1977) and Stearns (2011) are the anchors.
+Muslim jurists in 1348 and after framed plague as martyrdom (*shahāda*) for believers and as mercy, not as punishment for collective sin. They debated contagion against predestination and ruled on flight. The key texts are Ibn al-Wardī's *Risāla*, translated by Dols (1974b) (the author died of plague in 1349), and Ibn Ḥajar's *Badhl al-māʿūn* (Ibn Ḥajar 1993; reviewed by Conrad 1995). Ibn al-Khaṭīb and Ibn Khātima argued for contagion; their editions remain to be verified. Dols (1977) and Stearns (2011) are the anchors.
 
 Modern Arabic scholarship is represented by Būjarra (2011). He studies the Maghreb from 1350 to 1800 as a contest among jurist, physician and ruler for authority over plague. That is the review's institutional-trust question asked inside Islam. For the model, the Muslim case allows a cleaner test of the interpretation variable. It shows that the interpretation of suffering was a choice made by institutions, not a given.
 
@@ -80,7 +80,7 @@ Modern Arabic scholarship is represented by Būjarra (2011). He studies the Magh
 
 The Jewish case shows suffering at the hands of a Christian establishment strengthening a minority's own faith and delegitimizing the persecutors' religion.
 
-The Nuremberg Memorbuch martyrology (Salfeld 1898) and Joseph ha-Kohen's *ʿEmeq ha-bakha* (Joseph ha-Kohen 1981) commemorate the 1348–49 dead as martyrs for the sanctification of the Name. Yuval's *Shene goyim be-vitnekh* (Yuval 2000; English 2006; German 2007) reconstructs the mutual images (vengeance, blood libel, messianic expectation) through which each community read the other's suffering.
+The Nuremberg Memorbuch martyrology (Salfeld 1898) and Joseph ha-Kohen's *ʿEmeq ha-bakha* (Almbladh 1981) commemorate the 1348–49 dead as martyrs for the sanctification of the Name. Yuval's *Shene goyim be-vitnekh* (Yuval 2000; English 2006; German 2007) reconstructs the mutual images (vengeance, blood libel, messianic expectation) through which each community read the other's suffering.
 
 Holocaust-era Hebrew and Yiddish texts show the loss-of-faith and protest branches inside a believing community. Shapira's Warsaw Ghetto sermons, now critically edited (Shapira 2017), move from purification theodicy to the limits of theodicy. Teichtal's *Em ha-banim semeḥah* (English ed. 1999) turns catastrophe into an indictment of his own anti-Zionist rabbinic camp. Kolitz's Yiddish monologue of Yosl Rakover keeps faith while accusing God (French trans. 1998, made from the German version). The model's loss-of-faith branch (Jones, Pinn) has Jewish parallels that should be cited.
 
@@ -105,12 +105,12 @@ French-language work is the main literature on the Rwandan church. Linden's hist
 | Japanese | Ishizaka 2017a, 2017b, 2018; Miyazaki 2014; Nakazono 2018; Nagai 1949; Takahashi 1994; Shinozaki 2013; Kitamori 1946; Kuribayashi 1991 | Plague–Reformation link; Kakure debate; theodicy appropriated by power; non-Western suffering-God theology | Nagai (Eng., Fr.); Kitamori (Eng.); others none |
 | Korean | Sŏ 1983; An 1988, 1990; Kim Sŭng-t'ae 1991; Yi Chin-gu 2025; Kim Hŭng-su 1999; Kang 2007; Cho 1988; Yi Sang-dong 2021a | Minjung/han theology; shrine-worship schism (faith migrates); war and "blessing" faith; Catholic persecution case | Minjung essays (Eng. 1981/83); An (Jpn. 1992); others none |
 | Portuguese | Scarano 1976; Reginaldo 2005, 2016; Mello e Souza 2002; Silveira 2012 | Sufferers' control inside an establishment church | Soares (Eng. 2011); others none |
-| Spanish | Moreno Navarro 1997; Ortiz 1992; Cabrera 1954; Millones 1990; Stern 1982; Castán Lanaspa 2020; Cantera Montenegro 2022 | Brotherhood template; Cuban re-coding; Andean rejection; Iberian plague revisionism | None verified |
+| Spanish | Moreno Navarro 1997; Ortiz 1992; Cabrera 1954; Millones 1990; Stern 1982a; Castán Lanaspa 2020; Cantera Montenegro 2022 | Brotherhood template; Cuban re-coding; Andean rejection; Iberian plague revisionism | None verified |
 | Czech | Graus 1949; Šmahel 1993 | Hussite revolt as long-crisis, not 1348, response | Šmahel (Ger. 2002) |
 | Polish | Guzowski 2022; Izdebski et al. 2022; Karpiński 2000; Bylina 1991, 2002 | Low-mortality control region | Guzowski in English |
 | Scandinavian | Benedictow 2002; Sandnes 1978; Myrdal 1978, 2003; Harrison 2000 | Material base of church strain; recurrence | Benedictow's English syntheses |
-| Arabic | Ibn Ḥajar 1993; Dols 1974, 1977; Būjarra 2011; Stearns 2011 | Same shock, martyrdom theology; rival authorities | Ibn al-Wardī (Eng., Dols) |
-| Hebrew/Yiddish | Salfeld 1898; Joseph ha-Kohen 1981; Yuval 2000; Shapira 2017; Teichtal 1999 | Minority martyrdom; mutual images; protest faith | Yuval (Eng., Ger.); Teichtal (Eng.); Kolitz (Fr.) |
+| Arabic | Ibn Ḥajar 1993; Dols 1974b, 1977; Būjarra 2011; Stearns 2011 | Same shock, martyrdom theology; rival authorities | Ibn al-Wardī (Eng., Dols) |
+| Hebrew/Yiddish | Salfeld 1898; Almbladh 1981; Yuval 2000; Shapira 2017; Teichtal 1999 | Minority martyrdom; mutual images; protest faith | Yuval (Eng., Ger.); Teichtal (Eng.); Kolitz (Fr.) |
 | Greek | Kantakouzenos, Gregoras (Bonn eds.); Kostis 1995 | Eastern establishment untested | Bartsocas 1966 (Eng.) |
 | Russian/Ukrainian | Nasonov 1941–55; Shlikhta 1999, 2022 | Penitential bequests; church as co-victim underground | Langer (Eng.); Shlikhta 2022 (Eng.) |
 | French (Rwanda) | Linden 1999; Guichaoua 2010; van 't Spijker 2011; Semana 2013 | Perpetrator-aligned church; migration to new churches | Linden (Eng. original); Guichaoua (Eng. 2015) |

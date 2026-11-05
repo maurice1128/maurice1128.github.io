@@ -24,8 +24,8 @@ The series contributes a mechanism, not the discovery that religious responses t
 | Element | Closest prior work | What prior work already shows | What the series adds |
 |---|---|---|---|
 | Faith/institutional-trust split | Davie 1994; Chaves 1994; Voas and Crockett 2005; Bottan and Perez-Truglia 2015; Ishchuk 2026 | Belief and belonging can diverge; religious authority can shrink while faith persists; scandal cuts attendance and identification but not measurably belief; in wartime Ukraine trust in God and trust in the Church diverge and trust is "redistributed" (abstract only) | Applies the split to historical collective suffering and explains which body gains |
-| Who controls the remedy | Weber 1946 *[verify chapter]*; Belloc, Drago, and Galbiati 2016 | Theodicy varies by social stratum; earthquakes delayed self-government where bishops ruled, and those cities built more churches, partial evidence that bishops gained from monopolising mediation | Treats control of the prescribed remedy as a variable separate from provision of care, with three plague-era routes: delegated and reclaimed, seized, and taken over by civic authorities (section 10, primary sources) |
-| Seven conditions | Weber 1946; Scott 1990; Martin 1978; Casanova 1994; Hirschman 1970; Dittmar and Meisenzahl 2020; Voas and Crockett 2005 | Stratum shapes theodicy; church–state configurations shape secularization at the level of whole societies; exit needs an alternative; transmission needs community | Adds the perpetrator's religion and recurrence, and combines all seven for historical cases (section 15.1) |
+| Who controls the remedy | Weber 1946b *[verify chapter]*; Belloc, Drago, and Galbiati 2016 | Theodicy varies by social stratum; earthquakes delayed self-government where bishops ruled, and those cities built more churches, partial evidence that bishops gained from monopolising mediation | Treats control of the prescribed remedy as a variable separate from provision of care, with three plague-era routes: delegated and reclaimed, seized, and taken over by civic authorities (section 10, primary sources) |
+| Seven conditions | Weber 1946b; Scott 1990; Martin 1978; Casanova 1994; Hirschman 1970; Dittmar and Meisenzahl 2020; Voas and Crockett 2005 | Stratum shapes theodicy; church–state configurations shape secularization at the level of whole societies; exit needs an alternative; transmission needs community | Adds the perpetrator's religion and recurrence, and combines all seven for historical cases (section 15.1) |
 | Outcomes A–F | Ishchuk 2026; Rosenberg 1962; Neiman 2002 | Trust redistribution in one war; state and medicine displacing religious explanation | Separates B (redistribution within the church) from C (exit to sufferer-controlled bodies); adds D (rejection), E (functional displacement) and F (self-correction, after Acts 6:1–7) |
 | Within-case contrasts | Slater and Ziblatt 2013; Stearns 2009 | Controlled comparison as a method; warnings against monolithic "responses" | Phase-indexed contrasts that hold Christianity constant: parish against confraternity bequests; white-led against Black-led worship; the PCT before and after 1971, party-state churches and Catholic relief districts; Taiwanese cohorts |
 
@@ -77,7 +77,7 @@ A disclosure must describe what was actually done, no more and no less. This pro
 - THCI ratings for 《臺灣史研究》 and 《新史學》 after the 2026 re-rating; Chinese journals' AI clauses.
 - Word limits: *History Compass*, *JSSR*, *JRH*; *Church History* fees.
 - IBMR's SJR quartile on scimagojr.com; all SJR quartiles and WoS indexing against SCImago and the Clarivate Master Journal List.
-- Weber 1946: chapter title and page range.
+- Weber 1946b: chapter title and page range.
 - Cohn 1992 on the 1363 turning point, read at first hand.
 - Ishchuk 2026 beyond the abstract.
 - The database searches listed in section 19.7.

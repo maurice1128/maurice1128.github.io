@@ -46,9 +46,9 @@ This section treats the cases section 7 leaves aside and does not repeat its Afr
 
 ### Modern shocks with secular competitors
 
-**The 1918 influenza and COVID-19.** The 1918 pandemic killed tens of millions in months (Phillips and Killingray 2003). In the United States, churches closed under public-health orders, and Bristow (2012) finds that Americans quickly folded the epidemic into a culture of optimism and forgetting. In South Africa, Phillips (2008) documents a wide range of religious explanations, including divine punishment. Where mission churches would not practise prayer-healing, the epidemic fed independent churches such as Aladura (section 7). COVID-19 raised prayer searches worldwide (Bentzen 2021), but in mid-2020 about two-thirds of Americans (68 percent) said their own faith had not changed much (Pew Research Center 2021; section 16). In high-security societies, pandemics now raise short-term demand without durable institutional effects.
+**The 1918 influenza and COVID-19.** The 1918 pandemic killed tens of millions in months (Phillips and Killingray 2003). In the United States, churches closed under public-health orders, and Bristow (2012) finds that Americans quickly folded the epidemic into a culture of optimism and forgetting. In South Africa, Phillips (2008) documents a wide range of religious explanations, including divine punishment. Where mission churches would not practise prayer-healing, the epidemic fed independent churches such as Aladura (section 7). COVID-19 raised prayer searches worldwide (Bentzen 2021), but in mid-2020 about two-thirds of Americans (68 percent) said their own faith had not changed much (Pew Research Center 2021c; section 16). In high-security societies, pandemics now raise short-term demand without durable institutional effects.
 
-**Clergy abuse crises.** Section 16 reviews the evidence (Bottan and Perez-Truglia 2015; CIASE 2021). Abuse is the purest case of the church as perpetrator against its own members. Belief largely persists while affiliation, attendance and giving fall. Ireland links this case to the Famine: the church that was the sufferers' own in 1850 became the harming institution by the 1990s (Ganiel 2016). Church role must therefore be time-indexed.
+**Clergy abuse crises.** Section 16 reviews the evidence (Bottan and Perez-Truglia 2015; CIASE 2021a). Abuse is the purest case of the church as perpetrator against its own members. Belief largely persists while affiliation, attendance and giving fall. Ireland links this case to the Famine: the church that was the sufferers' own in 1850 became the harming institution by the 1990s (Ganiel 2016). Church role must therefore be time-indexed.
 
 ### Coding table
 
@@ -69,8 +69,8 @@ This section treats the cases section 7 leaves aside and does not repeat its Afr
 | 13 | Korea, 1910–1987 | Colonized, then war-torn nation | Nationalism; blessing; minjung | Own church; compliant establishment split off | Strongly up | Up, then down (section 16) | Park 2003; Lee 2010; Kim and Kim 2014 |
 | 14 | Maoist China | Persecuted religious minority | Endurance; apocalyptic | Registered church compliant; house churches own | Up after 1978 | Registered down; house churches up | Bays 2012; Yang 2012; Lian Xi 2010 |
 | 15 | Apartheid South Africa | Racially excluded majority | Exodus; prophetic | NGK allied with state; mission churches own | Up | NGK down; own churches up | de Gruchy 1979; Cloete and Smit 1984; Kairos 1985 |
-| 16 | 1918 influenza; COVID-19 | Whole populations | Varied; often natural | Closed churches; health authorities lead | Short-term up | Little durable change | Phillips and Killingray 2003; Bristow 2012; Bentzen 2021; Pew Research Center 2021 |
-| 17 | Clergy abuse | Members harmed by own church | Justice, not theodicy | Church as perpetrator | Belief persists | Strongly down | Bottan and Perez-Truglia 2015; CIASE 2021; Ganiel 2016 |
+| 16 | 1918 influenza; COVID-19 | Whole populations | Varied; often natural | Closed churches; health authorities lead | Short-term up | Little durable change | Phillips and Killingray 2003; Bristow 2012; Bentzen 2021; Pew Research Center 2021c |
+| 17 | Clergy abuse | Members harmed by own church | Justice, not theodicy | Church as perpetrator | Belief persists | Strongly down | Bottan and Perez-Truglia 2015; CIASE 2021a; Ganiel 2016 |
 
 ### Patterns across cases
 

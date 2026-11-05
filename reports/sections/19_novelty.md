@@ -6,7 +6,7 @@ No work found in English, French, German or Chinese compares Black Death Christe
 
 **The core comparison appears unclaimed.** Two rounds of searching (the earlier notes and the fresh searches logged in 19.3) returned works that treat the plague or slave religion separately, or that compare one of them with a third case. Nothing paired them. The nearest structural cousins compare the Black Death with other *natural* catastrophes or epidemics (Zacharia 2018; Carmody 2012; Turner 2021), or slavery with the Holocaust (Thomas 1993; Alexander et al. 2004).
 
-**The framework is partly taken.** The idea that a shock's religious effect is conditional on institutions is established in economics (Belloc, Drago, and Galbiati 2016; Dittmar and Meisenzahl 2020; Ager and Ciccone 2018). The faith/participation split has been measured, though for scandal rather than catastrophe (Bottan and Perez-Truglia 2015). Weber tied theodicy to social stratum (Weber 1946, 267–301). A 2026 article separates "trust in God" from "trust in the Church" under war and speaks of trust being "redistributed" (Ishchuk 2026). What is not taken is the three-variable configuration, its application to historical collective suffering, and the distinction between trust redistributed inside the church and trust exiting to sufferer-controlled bodies.
+**The framework is partly taken.** The idea that a shock's religious effect is conditional on institutions is established in economics (Belloc, Drago, and Galbiati 2016; Dittmar and Meisenzahl 2020; Ager and Ciccone 2018). The faith/participation split has been measured, though for scandal rather than catastrophe (Bottan and Perez-Truglia 2015). Weber tied theodicy to social stratum (Weber 1946b, 267–301). A 2026 article separates "trust in God" from "trust in the Church" under war and speaks of trust being "redistributed" (Ishchuk 2026). What is not taken is the three-variable configuration, its application to historical collective suffering, and the distinction between trust redistributed inside the church and trust exiting to sufferer-controlled bodies.
 
 This supports the working model's structure but changes how it should be sold. The model is best presented as a historical and theological mechanism for a conditionality economists have already shown, not as the discovery of conditionality.
 
@@ -24,7 +24,7 @@ Descriptions below follow what each work actually measures, as recorded in the f
 | Chaney 2013 | Abnormal Nile floods made Egypt's highest religious authority less likely to be replaced, but did not raise a proxy for popular religiosity (abstract-level reading only; full text not obtained) | Background / partial | Moves from leaders' political power to lay faith and trust |
 | Frijters et al. 2024 | Importance of religion after adversity in the US; per the abstract, no evidence that major natural disasters raise it (near-zero estimates), with short-run *negative* effects on attendance (full text not read) | Background | Shows the direction is not universal, which motivates conditional variables |
 | Jedwab, Johnson, and Koyama 2019; 2022 | 2019: higher plague mortality *lowered* the probability of persecuting Jews where Jews were economically needed (124 towns). 2022: a survey whose claim of lost Church legitimacy is historiographical, with counter-evidence on the same pages | Partial (plague side only) | Turns the legitimacy claim into a coded outcome and tests it against redistribution |
-| Weber 1946 | Theodicy varies by social stratum: fortune for the privileged, suffering and salvation for the disprivileged | Partial: theory-level | Adds church role and a split outcome, tested on paired history |
+| Weber 1946b | Theodicy varies by social stratum: fortune for the privileged, suffering and salvation for the disprivileged | Partial: theory-level | Adds church role and a split outcome, tested on paired history |
 | Stark 1996 | Early Christians' nursing during the Antonine and Cyprianic plagues raised survival and conversion | Partial: "own church" pathway, one case | Places this as one value of the church-role variable |
 | Cunningham and Grell 2000 | Apocalyptic readings of war, famine and pestilence in Reformation Europe; reviewers note it does not explain confessional differences | Partial | Offers variables that could explain that variation |
 | Janku, Schenk, and Mauelshagen 2012 | Comparative disaster history with weight on religion (table of contents not checked) | Partial | Holds Christianity constant; adds structural oppression |
@@ -147,7 +147,7 @@ Run each string as written, record the date and hit count, and read every title.
 - Boone 2013: full text (title from a search-index entry only; Olivet repository returned HTTP 404).
 - Gao 2008: issue number and page range in 《历史研究》 (CNKI).
 - Li 2008: existence, issue and pages in 《安徽史学》 (not found in open indexes; CNKI).
-- Weber 1946: confirm the page range (267–301, standard pagination) in the volume.
+- Weber 1946b: confirm the page range (267–301, standard pagination) in the volume.
 - Bentzen 2019: whether the published version reports effects on belief but not attendance.
 - Frijters et al. 2024: full text, beyond the abstract.
 - Chaney 2013: description from the abstract only.

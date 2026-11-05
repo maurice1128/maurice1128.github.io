@@ -4,9 +4,9 @@ No single theory predicts both outcomes. Demand-side theories (deprivation, exis
 
 ### 2.1 Weber: theodicy, social stratum and hierocracy
 
-**Core claim.** Weber held that every religion of salvation must answer why fortune and suffering are distributed as they are. The answer differs by social stratum. Privileged strata want a "theodicy of good fortune" that shows their fortune is deserved. Negatively privileged strata are drawn to salvation religions that promise compensation, often through a future reversal (Weber 1946; 1963; 1978). Weber also argued that archaic religion read suffering as a sign of divine disfavour, and that salvation religions revalued it as meaningful (Weber 1946, 271).
+**Core claim.** Weber held that every religion of salvation must answer why fortune and suffering are distributed as they are. The answer differs by social stratum. Privileged strata want a "theodicy of good fortune" that shows their fortune is deserved. Negatively privileged strata are drawn to salvation religions that promise compensation, often through a future reversal (Weber 1946a; 1963; 1978). Weber also argued that archaic religion read suffering as a sign of divine disfavour, and that salvation religions revalued it as meaningful (Weber 1946a, 271).
 
-Weber's sociology of domination adds the institutional half. A church is a compulsory hierocratic organization whose staff claims a monopoly of the legitimate use of "hierocratic coercion," the granting or withholding of religious benefits (Weber 1978, pt. 1, ch. 1, §17). Charisma, by contrast, arises in times of distress and challenges routine authority; to survive a generation it must be "routinized" (Weber 1946; 1978).
+Weber's sociology of domination adds the institutional half. A church is a compulsory hierocratic organization whose staff claims a monopoly of the legitimate use of "hierocratic coercion," the granting or withholding of religious benefits (Weber 1978, pt. 1, ch. 1, §17). Charisma, by contrast, arises in times of distress and challenges routine authority; to survive a generation it must be "routinized" (Weber 1946a; 1978).
 
 **Predictions for the model.** *Power position:* the stratum's position selects the theodicy. *Theology and remedy:* where a hierocracy controls the remedy (sacraments, intercession), crisis raises dependence on it. *Church role:* failure to deliver the remedy opens space for prophets and lay movements. *Recurrence:* repeated failure turns a crisis of supply into a crisis of legitimacy. *Transmission:* only routinized movements outlive their founders. On these terms the flagellants of 1349 were charisma that was never routinized; the African Methodist Episcopal Church was charisma that was (sections 4 and 5).
 
@@ -98,7 +98,7 @@ Casanova (1994) separates three secularization theses: differentiation, decline 
 
 | Theory | Mechanism | Prediction: Black Death | Prediction: slavery (US, Brazil) | Prediction: contemporary | Key citations |
 |---|---|---|---|---|---|
-| Weber: stratified theodicy, hierocracy, charisma | Stratum selects theodicy; hierocracy controls remedy; charisma rises in distress, must be routinized | Demand for clerical remedy rises; failure breeds lay and charismatic forms; flagellants not routinized | Disprivileged adopt salvation and reversal theodicy; charisma routinized into independent churches | Weak where remedies are secular | Weber 1946; 1978; Riesebrodt 2010 |
+| Weber: stratified theodicy, hierocracy, charisma | Stratum selects theodicy; hierocracy controls remedy; charisma rises in distress, must be routinized | Demand for clerical remedy rises; failure breeds lay and charismatic forms; flagellants not routinized | Disprivileged adopt salvation and reversal theodicy; charisma routinized into independent churches | Weak where remedies are secular | Weber 1946a; 1978; Riesebrodt 2010 |
 | Berger: theodicy and plausibility | Theodicy protects the nomos; needs a social base | Penitential "masochistic" faith; strain where clergy die | Faith survives via substitute plausibility structure (invisible institution) | Pluralism erodes plausibility (later revised: pluralism relativizes rather than secularizes) | Berger 1967; 1999; 2014 |
 | Durkheim; collective trauma | Assembly renews the sacred; trauma damages bonds; meaning built later by carriers | Processions, piacular rites raise solidarity; flagellant effervescence | Hush harbor and ring shout as effervescence; cultural trauma formed after emancipation | Gatherings, vigils; human-made harm breeds distrust | Durkheim 1995; Páez et al. 2015; Erikson 1976; 1994; Eyerman 2001 |
 | Marx; deprivation; compensators | Suffering seeks compensation; deprived form sects | Penitential sects among the afflicted | Sects and own churches among the enslaved; religion as both opium and protest | Sect growth among the deprived | Marx 1994; Glock 1964; Stark and Bainbridge 1987 |
@@ -125,7 +125,7 @@ The table shows a division of labour. Demand theories predict that suffering rai
 
 ### To verify
 
-- Weber 1946: pages of "The Sociology of Charismatic Authority" (245–52 is the standard citation, not checked against the 1946 printing); p. 271 for the passage on suffering as a sign of divine disfavour, not checked against a scan.
+- Weber 1946a: pages of "The Sociology of Charismatic Authority" (245–52 is the standard citation, not checked against the 1946 printing); p. 271 for the passage on suffering as a sign of divine disfavour, not checked against a scan.
 - Weber 1978: locations of the theodicy sections (the church definition is Part One, ch. 1, §17).
 - Marx 1994: wording of the two quoted phrases in the O'Malley translation (the wording given follows the standard MECW translation).
 - Said 1986: end page 106 (standard citation, not independently confirmed).

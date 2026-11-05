@@ -49,7 +49,7 @@ Two English anthologies remain the entry point: Horrox (1994) and Aberth (2005; 
 | Petrarch, *Familiares* VIII.7–8 | 1349 | Letters | Rossi and Bosco *[verify]*; trans. Bernardo 1975 | [IA, lending](https://archive.org/details/rerumfamiliarium0001petr) | Questions divine justice without leaving faith or attacking clergy |
 | Machaut, *Jugement dou roy de Navarre* | c.1349 | Poem | Palmer 1988 | Not checked | Lay ambivalence toward flagellants and scapegoating |
 | **Church documents** | | | | | |
-| Clement VI, *Sicut Judeis*; *Quamvis perfidiam* | 4 Jul and 26 Sep 1348 | Papal bulls | Raynaldus, *Annales ecclesiastici* 25:453–55 (operative clauses; no incipits printed); Simonsohn 1988 *[verify doc. nos.]*; Horrox 1994 | [IA Raynaldus vol. 25](https://archive.org/details/annalesecclesias25barouoft) | Papal protection of Jews ignored by towns: a measurable limit on authority. Raynaldus comments that it held only around Avignon (25:455) |
+| Clement VI, *Sicut Judeis*; *Quamvis perfidiam* | 4 Jul and 26 Sep 1348 | Papal bulls | Raynaldus, *Annales ecclesiastici* 25:453–55 (operative clauses; no incipits printed); Simonsohn 1988–91 *[verify doc. nos.]*; Horrox 1994 | [IA Raynaldus vol. 25](https://archive.org/details/annalesecclesias25barouoft) | Papal protection of Jews ignored by towns: a measurable limit on authority. Raynaldus comments that it held only around Avignon (25:455) |
 | Clement VI, bull against the flagellants (the copy to Magdeburg begins *Molesta nobis*; the name *Inter sollicitudines* is unconfirmed) | 20 Oct 1349 | Papal bull | Raynaldus, *Annales ecclesiastici* 25:470–72; Fredericq vol. 3 (1906) prints 1349 flagellant documents *[verify whether it includes this bull]*; Horrox 1994 | [IA Raynaldus vol. 25](https://archive.org/details/annalesecclesias25barouoft); [IA Fredericq vol. 3 (1906)](https://archive.org/details/corpusdocumento01frgoog) | The Church suppresses organised, self-governing lay penance while expressly allowing private penance (Raynaldus 25:472) |
 | Ralph of Shrewsbury, mandate of 10 Jan 1349 (Holmes no. 2130) | 1349 | Episcopal mandate | Latin text in Wilkins 1737, 2:745–46; Holmes 1896 gives only a calendar entry (571–72); Horrox 1994 | [IA Wilkins vol. 2](https://archive.org/details/conciliamagnaebr02wilk); [IA Holmes vol. 2](https://archive.org/details/registerralphsh00holmgoog) | Lay confession permitted, "et si desit vir laicus, mulieri" (Wilkins 1737, 2:745): the institution admits it cannot supply priests. Survivors must confess again to their own priest |
 | William Zouche, letter of Jul 1348 | 1348 | Episcopal mandate | Raine 1873 | [IA](https://archive.org/details/historicalpapers00rain) | Fear channelled into processions before the plague arrives |
@@ -72,7 +72,7 @@ Two English anthologies remain the entry point: Horrox (1994) and Aberth (2005; 
 | Danse macabre; Lydgate, *Dance of Death* | 1424–25; Eng. c.1430 | Image and verse | Warren and White 1931 (EETS o.s. 181) | Print; Gallica blocked *[verify]* | Pope and cardinal dance with Death: satire within orthodox penance |
 | **Byzantine and Muslim comparanda** | | | | | |
 | John VI Kantakouzenos, *Historiae* IV.8 | c.1360s | Imperial memoir | Schopen 1828–32, vol. 3; trans. Bartsocas 1966 | [IA vol. 3 (1832)](https://archive.org/details/bub_gb_zh0AAAAAYAAJ) | Many repented and gave away goods; modelled on Thucydides |
-| Ibn al-Wardi, *Risalat al-naba'* | 1348–49 | Epistle | Dols 1974 *[verify]* | Not found | Plague as mercy and martyrdom; no anticlerical movement |
+| Ibn al-Wardi, *Risalat al-naba'* | 1348–49 | Epistle | Dols 1974b *[verify]* | Not found | Plague as mercy and martyrdom; no anticlerical movement |
 | Ibn Khatima, *Tahsil gharad al-qasid* | 1349 | Medical-religious tract | Dinanah 1927 *[verify]* | Not found | Medical and religious explanation combined |
 
 ### Slavery and African American religion (c.1619–1877): sources by type
@@ -192,9 +192,9 @@ These ten give the core comparison in a balanced form: each case has testimony, 
 - Modern critical editions: Branca (Boccaccio), Porta (Giovanni and Matteo Villani), Lisini and Iacometti (Agnolo di Tura), Rodolico (Stefani), Giuffrida (Piazza), Krüger (Megenberg, *De mortalitate*), Rossi and Bosco (Petrarch).
 - An open-access host for Hegel (1870–71), *Chroniken der deutschen Städte* 8–9.
 - Henschel (1842), de' Mussis edition details.
-- Dols (1974) on Ibn al-Wardi; Dinanah (1927) on Ibn Khatima.
+- Dols (1974b) on Ibn al-Wardi; Dinanah (1927) on Ibn Khatima.
 - Devlin (1954), Brinton's sermons; Rébouis (1888); Chiappelli (1887); Duran-Reynals and Winslow (1949); Hockey (1986–87).
-- Simonsohn (1988) document numbers; whether Fredericq vol. 2 (1896) or vol. 3 (1906) prints Clement VI's anti-flagellant bull, and whether any edition gives it the incipit *Inter sollicitudines* (Raynaldus prints the Magdeburg copy as *Molesta nobis*).
+- Simonsohn (1988–91) document numbers; whether Fredericq vol. 2 (1896) or vol. 3 (1906) prints Clement VI's anti-flagellant bull, and whether any edition gives it the incipit *Inter sollicitudines* (Raynaldus prints the Magdeburg copy as *Molesta nobis*).
 - McWilliam's 1995 second edition and Rebhorn's 2013 Norton translation of the *Decameron*.
 - Higginson (1867) page range; *Christian Recorder* database access; Eakin and Logsdon (1968) publisher.
 - Hodges (1993) as the edition containing Jea's narrative.

@@ -69,13 +69,13 @@ Neither faith nor institutional trust is directly observable in historical sourc
 | Proxy | Case | What it measures | Main bias or limit | Key sources |
 |---|---|---|---|---|
 | Pious bequests in wills | Plague | Investment in institution-mediated intercession | Propertied testators; conflates faith and institutional dependence | Cohn 1992; Chiffoleau 1980; Wray 2009 |
-| Confraternity membership and statutes | Plague; Brazil | Lay-controlled devotion inside the church | Survival of statutes uneven; membership lists rare | Henderson 1994; Chiffoleau 1979; Russell-Wood 1974; Soares 2011; Kiddy 2005; Reginaldo 2011 |
+| Confraternity membership and statutes | Plague; Brazil | Lay-controlled devotion inside the church | Survival of statutes uneven; membership lists rare | Henderson 1994; Chiffoleau 1979; Russell-Wood 1974; Soares 2000; Kiddy 2005; Reginaldo 2011 |
 | Ordinations | Plague | Clerical supply and vocations | Reflects career prospects as much as piety | Robinson 2019 |
 | Church membership counts | US South | Formal institutional affiliation | Recorded by white-led churches; masters' permission shaped access | Frey and Wood 1998; Finke and Stark 1986 |
 | Separations into independent churches | US South, after 1865 | Faith retained, establishment trust withdrawn | Visible only once separation was legally possible | Montgomery 1993; Walker 1982 |
 | Conversion narratives | US South | Timing and content of personal commitment | 1930s interviews of former child slaves; interviewer effects | Fountain 2010 |
 | Anticlerical or heterodox lay movements | Plague | Lay piety bypassing clerical mediation | Episodic; sources mostly hostile | Kieckhefer 1974 |
-| Collective defence of church practice | Brazil | Trust in lay-controlled church structures | Single events; urban bias | Reis 2003 |
+| Collective defence of church practice | Brazil | Trust in lay-controlled church structures | Single events; urban bias | Reis 1991 |
 
 Two indicators per case are needed: one for devotional intensity regardless of channel, and one for the allocation of devotion between establishment and sufferer-controlled bodies. Post-1865 separations are the cleanest measure of the model's central outcome, faith up with establishment trust down. Reis's 1836 Cemiterada, in which Bahians rioted to defend church burial, is the clearest case of faith and trust in one's own church structures rising together.
 
@@ -102,8 +102,8 @@ The plague evidence is more ambiguous than the working model assumes. Much post-
 | Medieval Europe also had race | Agreed; code Jews' position directly as a within-period contrast | Heng 2018; Hahn 2001; Bartlett 2001; Cohn 2007; Barzilay 2022 |
 | A four-year shock is not comparable to a 250-year regime | Compare generation-indexed phases; recurrence turns plague into a regime | Cohn 1992; Robinson 2019; Kreuzer 2023; Fountain 2010 |
 | The Black Death outcome is miscoded; there was no age of faith | Code plague as faith up with trust redistributed, against a realistic baseline | Gorski 2000; Duffy 1992; Stearns 2009; Henderson 1994 |
-| Power position and church role are confounded | Brazil separates them: establishment church as slaveholder, yet sufferer-controlled brotherhoods | Schwartz 1982; Russell-Wood 1974; Reis 2003; de la Fuente 2004 |
-| Weber and economists of religion already did this | Cite them; the novelty is the third variable and the faith/institution split | Belloc, Drago, and Galbiati 2016; Ager and Ciccone 2018; Weber 1946 *[verify]* |
+| Power position and church role are confounded | Brazil separates them: establishment church as slaveholder, yet sufferer-controlled brotherhoods | Schwartz 1982; Russell-Wood 1974; Reis 1991; de la Fuente 2004 |
+| Weber and economists of religion already did this | Cite them; the novelty is the third variable and the faith/institution split | Belloc, Drago, and Galbiati 2016; Ager and Ciccone 2018; Weber 1946b *[verify]* |
 | Faith is not observable in sources | Use paired indicators for intensity and for allocation between channels | See section 11.7 |
 | Suffering did not drive conversion; freedom did | Treat deliverance as a rival hypothesis and test it by phase | Fountain 2010; Harper 2016; Frey and Wood 1998 |
 
@@ -111,7 +111,7 @@ The plague evidence is more ambiguous than the working model assumes. Much post-
 
 The core article should pair two cases and use several shadow cases. Core case one is Latin Christendom under plague, about 1348–1400, with Tuscany and England as focal regions where wills, confraternity records, and ordination lists survive. Core case two is enslaved and newly freed African Americans in the US South, about 1760–1900, spanning the revivals, the late antebellum decades, and post-emancipation separation. The time window must include emancipation so that the deliverance hypothesis can be tested.
 
-Shadow cases serve as variable-separating checks rather than full cases. The Jews of 1348–51 test the power-position variable outside Christianity. Brazil is the key variable-separating case. Its establishment church was itself a large slaveholder (Schwartz 1982), yet enslaved and freed Africans held their own chartered brotherhoods (Russell-Wood 1974; Soares 2011; Reginaldo 2011). The model predicts faith up and trust in one's own church structures up, despite establishment complicity. Reis's Cemiterada supports that prediction; the Malê uprising and Inquisition prosecution of African healing show the rejection branch where alternatives existed (Reis 1993; Sweet 2003). Stark's account of early Christian growth through epidemic care is a further shadow case for the "own church" pathway (Stark 1996).
+Shadow cases serve as variable-separating checks rather than full cases. The Jews of 1348–51 test the power-position variable outside Christianity. Brazil is the key variable-separating case. Its establishment church was itself a large slaveholder (Schwartz 1982), yet enslaved and freed Africans held their own chartered brotherhoods (Russell-Wood 1974; Soares 2000; Reginaldo 2011). The model predicts faith up and trust in one's own church structures up, despite establishment complicity. Reis's Cemiterada supports that prediction; the Malê uprising and Inquisition prosecution of African healing show the rejection branch where alternatives existed (Reis 1986; Sweet 2003). Stark's account of early Christian growth through epidemic care is a further shadow case for the "own church" pathway (Stark 1996).
 
 Within each core case, process tracing should test a specified sequence with named evidence. A hoop test: if the model holds, devotion should shift to lay-controlled bodies only *after* evidence of establishment absence or complicity. A smoking-gun test: explicit contemporary statements linking clerical failure or masters' religion to a choice of alternative channel. The cross-case comparison then becomes an argument about whether the same configuration produces the same sequence in very different settings.
 
