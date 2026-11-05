@@ -90,9 +90,9 @@ Budgets are given as *JRH / HC*. The JRH version has about 6,800 words of text a
 
 ### What the author must do personally
 
-The essay cannot be ghost-assembled from notes. Reviewers in all three fields will test whether the author has read the core works. The research notes were AI-assisted, so every sentence must be the author's own. Across the series' venues, *Past & Present* will not consider AI-generated text or argument, while CSSH, *Social Science History* and *Church History* require AI use to be declared. The AI policies of the Wiley journals targeted here and of the Chinese journals are unconfirmed *[verify before submission]*.
+Reviewers in all three fields will test whether the author understands the core works, so the author must be able to defend every claim. If AI drafts any text (disclosure version (b)), it must be declared truthfully. Wiley's publisher guidelines (last updated July 2026), which cover *History Compass* and *Journal of Religious History*, allow AI-drafted text with disclosure in the Acknowledgments (drafting) and Methods (AI-assisted literature search). *Past & Present* will not consider AI-generated text or argument; CSSH, *Social Science History* and *Church History* require AI use to be declared. The Chinese journals' AI policies are unconfirmed; Academia Sinica's January 2026 guideline requires disclosure of substantial AI use *[ask the editors before submission]*. Never state "the author read every work cited" unless it is true on the day of submission.
 
-**Core works to read in full (about 15; roughly 160–190 hours):**
+**Core works (about 15). Claude reads the openly accessible ones in full; for copyrighted monographs the author must at least check every quotation and page reference against the book (roughly 160–190 hours if read in full):**
 - [ ] Cohn 1992, *The Cult of Remembrance* (read the post-1363 change in the form of piety directly)
 - [ ] Duffy 1992, *The Stripping of the Altars* (Part I at minimum)
 - [ ] Arnold 2005, *Belief and Unbelief in Medieval Europe*
