@@ -6,8 +6,6 @@ Bentzen, Jeanet Sinding. 2021. "In Crisis, We Pray: Religiosity and the COVID-19
 
 Bottan, Nicolas L., and Ricardo Perez-Truglia. 2015. "Losing My Religion: The Effects of Religious Scandals on Religious Participation and Charitable Giving." *Journal of Public Economics* 129: 106–19. https://doi.org/10.1016/j.jpubeco.2015.07.008.
 
-Brenan, Megan. 2025. "Democrats' Confidence in U.S. Institutions Sinks to New Low." Gallup, July 17, 2025. https://news.gallup.com/poll/692633/democrats-confidence-institutions-sinks-new-low.aspx.
-
 Brenan, Megan. 2026. "Americans' Religious Engagement Holds at Lower Levels." Gallup, March 3, 2026. https://news.gallup.com/poll/702572/americans-religious-engagement-holds-lower-levels.aspx.
 
 Campbell, David E., Geoffrey C. Layman, and John C. Green. 2021. *Secular Surge: A New Fault Line in American Politics*. Cambridge: Cambridge University Press. https://doi.org/10.1017/9781108923347.
@@ -34,6 +32,8 @@ Frick, Bernd, and Rob Simmons. 2017. "The Impact of Exogenous Shocks on Exits fr
 
 Fu, Yang-chih (傅仰止), Lin Pen-hsuan (林本炫), Tsai Ming-chang (蔡明璋), Liao Pei-shan (廖培珊), and Hsieh Shu-hui (謝淑惠), eds. 2019. 《台灣社會變遷基本調查計畫第七期第四次調查計畫執行報告》 [Taiwan Social Change Survey, round 7, year 4: Project report]. Taipei: Institute of Sociology, Academia Sinica. https://www2.ios.sinica.edu.tw/sc/cht/download-tscs18.pdf. [Romanizations of editors' names other than Fu: verify]
 
+Gallup. 2025. "Confidence in Institutions: Topline and Tabs." Gallup Poll Social Series, June 2–26, 2025, released July 17, 2025. Table QN7A, "Confidence in: The church or organized religion," by party ID. https://news.gallup.com/file/poll/692660/2025_07_17_Confidence%20in%20Institutions%20Topline%20and%20Tabs.pdf. Companion article: Megan Brenan, "Democrats' Confidence in U.S. Institutions Sinks to New Low," https://news.gallup.com/poll/692633/democrats-confidence-institutions-sinks-new-low.aspx.
+
 Gallup. n.d.-a. "Confidence in Institutions." Historical trends. Accessed November 5, 2026. https://news.gallup.com/poll/1597/confidence-institutions.aspx.
 
 Gallup. n.d.-b. "Honesty/Ethics in Professions." Historical trends. Accessed November 5, 2026. https://news.gallup.com/poll/1654/honesty-ethics-professions.aspx.
@@ -48,7 +48,7 @@ Hout, Michael, and Claude S. Fischer. 2014. "Explaining Why More Americans Have 
 
 Huang, C. Julia. 2009. *Charisma and Compassion: Cheng Yen and the Buddhist Tzu Chi Movement*. Cambridge, MA: Harvard University Press. https://doi.org/10.2307/j.ctv1wsgs0b.
 
-Huang, Ke-hsien (黃克先). 2017. "'Culture Wars' in a Globalized East: How Taiwanese Conservative Christianity Turned Public during the Same-Sex Marriage Controversy and a Secularist Backlash" [全球化的東方開打的「文化戰爭」：台灣保守基督教在同志婚姻合法化爭議中的現身及世俗主義的逆襲]. *Review of Religion and Chinese Society* 4 (1): 108–36. https://doi.org/10.1163/22143955-00401006. [verify English title and author; Crossref record gives Chinese title only]
+Huang, Ke-hsien (黃克先). 2017. "'Culture Wars' in a Globalized East: How Taiwanese Conservative Christianity Turned Public in Same-Sex-Marriage Controversy and Secularist Backlashes" [全球化的東方開打的「文化戰爭」：台灣保守基督教在同志婚姻合法化爭議中的現身及世俗主義的逆襲]. *Review of Religion and Chinese Society* 4 (1): 108–36. https://doi.org/10.1163/22143955-00401006. English title per library catalogue records; author confirmed via OpenAlex.
 
 Hungerman, Daniel M. 2013. "Substitution and Stigma: Evidence on Religious Markets from the Catholic Sex Abuse Scandal." *American Economic Journal: Economic Policy* 5 (3): 227–53. https://doi.org/10.1257/pol.5.3.227.
 
@@ -88,9 +88,9 @@ Pew Research Center. 2025d. "What Do Religious 'Nones' Believe?" September 4, 20
 
 Pew Research Center. 2025e. "Voting Patterns in the 2024 Election." June 26, 2025. https://www.pewresearch.org/politics/2025/06/26/voting-patterns-in-the-2024-election/.
 
-Pound, Marcus, and Ben Ryan. 2024. "Abuse Crisis in Catholic Church Has Led to Drop in Mass Attendance." Press release, Durham University. https://www.durham.ac.uk/departments/academic/arts-humanities/news/abuse-crisis-in-catholic-church-has-led-to-drop-in-mass-attendance. [verify: underlying report title, authors' full names and date; page returned 403]
+Pound, Marcus, and Gregory Ryan. 2024. "Abuse Crisis in Catholic Church Has Led to Drop in Mass Attendance." Press release, Durham University, October 10, 2024. https://www.durham.ac.uk/departments/academic/arts-humanities/news/abuse-crisis-in-catholic-church-has-led-to-drop-in-mass-attendance. Underlying report in Durham Research Online (worktribe output 3083290).
 
-Presbyterian Church in Taiwan (台灣基督長老教會總會). 1971. 〈台灣基督長老教會對國是的聲明與建議〉 [Statement and recommendations on national affairs]. December 29, 1971. https://www.pct.org.tw/ab_doc.aspx?DocID=001.
+Presbyterian Church in Taiwan (台灣基督長老教會總會). 1971. 〈台灣基督長老教會對國是的聲明與建議〉 [Statement on Our National Fate; literally "Statement and recommendations on national affairs"]. December 29, 1971. https://www.pct.org.tw/ab_doc.aspx?DocID=001.
 
 Presbyterian Church in Taiwan. 1977. 〈台灣基督長老教會人權宣言〉 [Declaration on human rights]. August 16, 1977. https://www.pct.org.tw/ab_doc.aspx?DocID=005.
 
@@ -120,4 +120,4 @@ Voas, David, and Alasdair Crockett. 2005. "Religion in Britain: Neither Believin
 
 Wu, Chyi-in (吳齊殷), Fu Yang-chih (傅仰止), Tsai Chia-hung (蔡佳泓), and Lin Pen-hsuan (林本炫), eds. 2024. 《臺灣社會變遷基本調查計畫第八期第四次調查計畫執行報告》 [Taiwan Social Change Survey, round 8, year 4: Project report]. Taipei: Institute of Sociology, Academia Sinica. https://www2.ios.sinica.edu.tw/sc/cht/download-tscs23.pdf. [Romanizations of editors' names: verify]
 
-Yi, Chin-chun (伊慶春), Lin Wen-hsu (林文旭), Lin Chang-ching (林常青), Shih Yi-jen (施奕任), Kuo Chen-lan (郭貞蘭), Huang Ke-hsien (黃克先), Yang Wen-shan (楊文山), Hsung Ray-may (熊瑞梅), and Su Kuo-hsien (蘇國賢). 2021. 《改變中的基督信仰：臺灣基督教會與基督徒的社會學分析》 [Changing Christian faith: A sociological analysis of Taiwanese churches and Christians]. Taipei: National Taiwan University Press. [verify editor roles, contributor order and romanizations]
+Yi, Chin-chun (伊慶春), and Su Kuo-hsien (蘇國賢), eds. 2021. 《改變中的基督信仰：臺灣基督教會與基督徒的社會學》 [Changing Christian faith: The sociology of Taiwanese churches and Christians]. Taipei: National Taiwan University Press. ISBN 978-986-350-439-9.
