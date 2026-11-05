@@ -127,3 +127,12 @@ Verbatim:
 - WebSearch snippet only (NOT verified on the page): EUP "will require authors to submit an AI Disclosure Form with their submissions"; for extensive use a further appendix may be requested; non-compliant manuscripts may be rejected by EUP or by journal or series editors; suspected undisclosed use is investigated under COPE guidance. The page sits under "writing-your-book", and the search summary says it covers journals too. Unconfirmed.
 - Action: before submitting, email the SWC editors or EUP journals to ask for the AI Disclosure Form and whether AI-drafted text is allowed.
 
+### MDPI, which publishes Religions (reached 2026-11-05 via the r.jina.ai reader; direct fetch gave 403)
+URL: https://www.mdpi.com/ethics, section "Artificial Intelligence" (no date on the page).
+Verbatim:
+> "Where GenAI has been used for purposes such as generating text, data, graphics, and a study design, or for data collection, analysis, or the interpretation of data, authors are required to declare this during the submission process. Furthermore, for transparency, authors are required to disclose details on how the GenAI tool was used in the Materials and Methods section and provide the GenAI tool's product details in the Acknowledgments section."
+> Recommended acknowledgement statement: "During the preparation of this manuscript/study, the author(s) used [tool name, version information] for the purposes of [description of use]. The authors have reviewed and edited the output and take full responsibility for the content of this publication."
+> "The use of GenAI tools for the purposes of text editing (e.g., grammar, structure, spelling, punctuation, and formatting) is not covered by this policy and does not need to be declared."
+> "GenAI tools and other large language models (LLMs) cannot be listed as authors, as these tools do not meet MDPI's requirements for authorship."
+- No ban on AI-generated text if it is declared. Disclosure goes in three places: the submission form, Materials and Methods, and Acknowledgments. The Religions-specific instructions were not checked separately; MDPI's policy is central.
+

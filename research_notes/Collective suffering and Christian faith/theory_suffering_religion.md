@@ -90,3 +90,5 @@ Started 2026-11-05.
   - Abu-Raiya, Pargament, Krause & Ironson 2015 Am J Orthopsychiatry 85(6):565-575 [verified]
   - Bruce 2011 Secularization: In Defence of an Unfashionable Theory, OUP [verified via chapters]
   - Bourdieu religious field: still not found in Crossref
+- Bourdieu 1991 "Genesis and Structure of the Religious Field": Google Scholar shows [CITATION] Bourdieu 1991, "Religious institutions" (= Comparative Social Research 13, ed. Calhoun). Container/pages 1-44 from memory -> [verify]
+- [2020-2026, Crossref]: Molteni 2021 A Need for Religion: Insecurity and Religiosity in the Contemporary World, Brill doi 10.1163/9789004443273; Lang & Chvaja 2024 Collabra: Psychology 10(1) doi 10.1525/collabra.126508; Pirutinsky, Cherniak & Rosmarin 2020 J Relig Health 59(5):2288-2301; Schnabel & Schieman 2022 JSSR 61(2):530-543 doi 10.1111/jssr.12720; Jedwab, Johnson & Koyama 2019 JEG 24(4):345-395; Cohn 2018 Epidemics (OUP; AHR review 2019)
