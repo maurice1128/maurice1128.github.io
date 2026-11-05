@@ -136,3 +136,19 @@ Verbatim:
 > "GenAI tools and other large language models (LLMs) cannot be listed as authors, as these tools do not meet MDPI's requirements for authorship."
 - No ban on AI-generated text if it is declared. Disclosure goes in three places: the submission form, Materials and Methods, and Acknowledgments. The Religions-specific instructions were not checked separately; MDPI's policy is central.
 
+### COPE position statement "Authorship and AI tools" (reached 2026-11-05 via the r.jina.ai reader)
+URL: https://publicationethics.org/guidance/cope-position/authorship-and-ai-tools, **"Last reviewed: 13 February 2023"**. The page's version history also shows "20 August 2024 ... Version 1 published", apparently the date the page moved to COPE's new site. Verbatim, in full:
+> "The use of artificial intelligence (AI) tools such as ChatGPT or Large Language Models in research publications is expanding rapidly. COPE joins organisations, such as WAME and the JAMA Network among others, to state that AI tools cannot be listed as an author of a paper."
+> "AI tools cannot meet the requirements for authorship as they cannot take responsibility for the submitted work. As non-legal entities, they cannot assert the presence or absence of conflicts of interest nor manage copyright and license agreements."
+> "Authors who use AI tools in the writing of a manuscript, production of images or graphical elements of the paper, or in the collection and analysis of data, must be transparent in disclosing in the Materials and Methods (or similar section) of the paper how the AI tool was used and which tool was used. Authors are fully responsible for the content of their manuscript, even those parts produced by an AI tool, and are thus liable for any breach of publication ethics."
+
+### Religion (T&F, rrel20) and Journal of Contemporary Religion (T&F/Routledge, cjcr20) (reached 2026-11-05 via the r.jina.ai reader)
+URLs: https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=rrel20 and ...journalCode=cjcr20 (no date on the pages). Both list, among the required manuscript elements:
+> "7. Declaration of generative AI use. Please include a statement disclosing whether and how generative AI has been used in the research and manuscript preparation process. If generative AI was not used, please state this (suggested wording: The authors report generative AI was not used in their research or preparation of this manuscript). Please read our guidance on using AI tools in your research and manuscript preparation to understand scenarios where their use may be permissible, and the required information that must be disclosed."
+- That links to https://authorservices.taylorandfrancis.com/editorial-policies/using-ai-in-your-research-and-manuscript-preparations/ [not separately reached; the corporate AI policy above was reached].
+- Neither journal restricts AI to language improvement. A declaration is MANDATORY, even a "not used" one, and goes in a labelled "Declaration of generative AI use" statement in the manuscript, alongside the Disclosure statement and Biographical note.
+
+### IBMR and Review of Religious Research (Sage) (checked 2026-11-05)
+- Publisher confirmed by Crossref (api.crossref.org/journals/{issn}/works): IBMR (ISSN 2396-9393) is "SAGE Publications", latest item 2026-10. RRR (ISSN 0034-673X) is "SAGE Publications", latest item 2026-11-02 (DOI 10.1177/0034673x261505012). Older RRR items carry Springer DOIs (10.1007/s13644-...), so the journal moved from Springer to Sage. Springer's policy does NOT apply now.
+- IBMR writers' guidelines https://omsc.ptsem.edu/ibmr/guidelines-writers/ (reached 2026-11-05 via WebFetch): **no AI mention**. Sage's journal pages journals.sagepub.com/author-instructions/IBM and /RRR: [not reached] (403, including via the reader). The Sage publisher policy (above) applies.
+

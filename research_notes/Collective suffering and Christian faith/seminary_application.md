@@ -103,3 +103,31 @@
   - 核心教師（頁面所列）：Dr Alexander Chow、Prof Emma Wild-Wood、Dr Pedro Feitoza、Dr Kirsteen Murray。鼓勵申請前先聯繫可能指導教授。
   - ✔ 「details of any published work」是表單欄位 → **已發表的期刊論文會被直接看見，對 PhD 申請有實質幫助**。
 - 姊妹 PhD：History of Christianity（https://study.ed.ac.uk/programmes/postgraduate-research/63-history-of-christianity）[未開啟]。
+
+### 2.9 University of Oxford, Faculty of Theology and Religion — MSt / MPhil Theology
+- ⚠ ox.ac.uk 研究生招生頁對本環境回應 403；以下分兩類：
+- 已開啟（學院網站）：https://www.theology.ox.ac.uk/mst-theology ；https://www.theology.ox.ac.uk/mphil-theology
+  - **MSt Theology**（9 個月）路徑：Biblical Studies / Christian Doctrine（Patristic 或 Modern 1780–）/ **Ecclesiastical History（可選 1000–1500、1800–至今等時段）**/ Christian Ethics / Science and Religion。評量：兩篇 ≤5,000 字論文 + ≤15,000 字學位論文 + 3 小時筆試。舊約須聖經希伯來文、新約須希臘文、教父神學須希臘文或拉丁文文本。
+  - **MPhil Theology**（21 個月）：三篇 ≤5,000 字（或一篇 ≤15,000 字）+ **≤30,000 字學位論文** + 兩場 3 小時筆試；Ecclesiastical History 路徑含通論兩卷與一個時段（如 AD 1000–1500：黑死病所在時期）。
+- 僅據搜尋摘錄（https://www.ox.ac.uk/admissions/graduate/courses/mst-theology）[未確認]：Statement of purpose 約 **500 字**（學術導向）；**寫作樣本：兩篇各 ≤2,000 字或一篇 ≤4,000 字**（含註腳、不含書目；可為長篇節錄並附說明）；入學標準：神學/宗教學或相近領域一等或高 2:1（≥67%）；**他領域背景若能在 statement 中展現對神學思想的相當掌握，亦會考慮**。
+- AI 政策（僅據搜尋摘錄，原頁 https://www.ox.ac.uk/admissions/graduate/application-guide/starting-your-application/using-ai-in-your-graduate-application 403 未開啟 → [未確認原文]）：AI 可用於「研究」申請材料，但**想法與表述須出自申請人**；超出允許範圍的使用可能在評估中對申請人不利。
+- 經費：Clarendon Fund 等 [未確認]。
+
+### 2.10 University of Cambridge, Faculty of Divinity — MPhil in Theology, Religion and Philosophy of Religion / PhD
+- 來源（已開啟）：https://www.postgraduate.study.cam.ac.uk/courses/directory/dvdvmpmtr （/requirements、/apply）；PhD：https://www.postgraduate.study.cam.ac.uk/courses/directory/dvdvpdptr/requirements
+- **MPhil**（9 個月全職）：
+  - 學術門檻：**High II.i**；一等或 2:1 且 ≥67% 或 **US GPA ≥3.7（「in relevant subjects」）**。新約須至少兩年希臘文；舊約須希伯來文、亞蘭文、希臘文；宗教哲學須強哲學背景。
+  - 材料：**研究計畫約 500 字（必繳）**；**寫作樣本 1–2 篇論文或論文節錄，合計 ≤6,000 字（必繳）**；申請前應先聯繫潛在指導教授討論論文構想。
+  - 英語：IELTS 7.5（各項 7.0）；TOEFL iBT 110（各項 25）。
+  - 時程（2027 秋入學）：2026/9/9 開放；**經費截止 2026/12/8**（Gates Cambridge 美國輪 2026/10/14）；最終截止 2027/4/28（可能提前關閉）。
+  - 搜尋摘錄：World Christianities 方向接受神學、宗教學、歷史、人類學等背景（https://www.divinity.cam.ac.uk/node/173 [未開啟]）。
+- **PhD**：須碩士 ≥67% 或 GPA ≥3.7；英語同上；3–4 年；同一經費截止。
+- **AI 政策（已開啟，原文）** https://www.postgraduate.study.cam.ac.uk/apply/how/ai-postgraduate-applications ：見 §3。
+
+### 2.11 Durham University, Department of Theology and Religion — MA Theology and Religion（V8K407）
+- 來源（已開啟）：https://www.durham.ac.uk/study/courses/theology-and-religion-v8k407/
+- 2027/9 入學；1 年全職／2 年兼職；學費：國際生全職 **£29,500/年**。
+- 結構：必修 Classic Texts（great books 模式）+ 人文學院內任選模組 + 研究型學位論文（搜尋摘錄：12,000–15,000 字 [未確認]）。
+- 入學：**2:1 學士（或同等）於神學或相關人文學科**；台灣：受認可大學學士、成績 ≥75% 或 GPA 3.0/4.0。⚠ 工程學士是否被視為「相關人文」需事先詢問。
+- 研究中心：Centre for Death and Life Studies、Centre for Catholic Studies、Michael Ramsey Centre for Anglican Studies、**International Centre for Moral Injury**（與集體苦難主題相關）；並連結 Institute for Medieval and Early Modern Studies。
+- 申請材料細節（personal statement/寫作樣本）頁面未列 [未確認]。AI：頁面未見。

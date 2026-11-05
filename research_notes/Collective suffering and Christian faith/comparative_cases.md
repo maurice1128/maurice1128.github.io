@@ -84,3 +84,21 @@ Status: started 2026-11-05. Verification log appended below as work proceeds.
 - Bristow, Nancy K. 2012. American Pandemic: The Lost Worlds of the 1918 Influenza Epidemic. OUP. [verified: CR reviews]
 - Snape, Michael. 2009. "Civilians, Soldiers and Perceptions of the Afterlife in Britain during the First World War." Studies in Church History 45: 371-403. [verified: CR]
 - Becker, Annette. 1998. War and Faith: The Religious Imagination in France, 1914-1930. Trans. Helen McPhail. Oxford: Berg. [verified: CR reviews (CHR 1999, EHR 1999); translator from memory]
+
+### Verified batch 3
+- Brown, Callum G. 2009 [2001]. The Death of Christian Britain: Understanding Secularisation 1800-2000. 2nd ed. Routledge. [verified: OL (2009)]
+- Bergen, Doris L. 1996. Twisted Cross: The German Christian Movement in the Third Reich. UNC Press. [verified: OL]
+- Elphick, Richard. 2012. The Equality of Believers: Protestant Missionaries and the Racial Politics of South Africa. U Virginia Press. [verified: OL; subtitle from memory]
+- Meier, Mischa. 2003. Das andere Zeitalter Justinians: Kontingenzerfahrung und Kontingenzbewältigung im 6. Jahrhundert n. Chr. V&R. [verified: OL; subtitle from memory]
+- Wallace, Anthony F. C. 1956. "Revitalization Movements." American Anthropologist 58 (2): 264-81. [verified: CR]
+- Barr, Colin. 2020. "The Devotional Revolution in Greater Ireland." New Hibernia Review 24 (4): 79-97. doi:10.1353/nhr.2020.0046 [verified: CR]
+- de Wet, Chris L. 2022. "Plague as Discourse in John of Ephesus's Account of the Justinianic Plague (ca. 542-544 CE)." Early Christianity 13 (3): 287-315. [verified: CR; abstract fragment: discourse "pro-imperial", a "Machtdiskurs"]
+- Newfield, Timothy P. 2022. "One Plague for Another? ..." Studies in Late Antiquity 6 (4): 575-626. [verified: CR]
+- Stauff, Derek L. 2025. Lutheran Music and the Thirty Years War: Confession, Politics, Devotion. OUP. [verified: CR]
+- Kracht, Benjamin R. 2018. Religious Revitalization among the Kiowas: The Ghost Dance, Peyote, and Christianity. U Nebraska Press. [verified: OL + CR reviews]
+- Ganiel 2016 (cited in sec 16 refs, OUP) - cross-ref only.
+- Connolly 1982 (Priests and People) NOT verified -> do not cite.
+- Unverified factual claims to flag: Malagrida 1756 pamphlet/1761 execution; Palmerston 1853 fast-day refusal; WARC Ottawa 1982 heresy/suspension; Belhar adoption 1986; Armenian canonization 2015; March First 1919 Christian signatories (16 of 33); DRC confession at TRC 1997.
+
+## Plan
+Ranked recommendation: (1) Irish Famine as most-similar complement to Latin plague (same church/sacramental system, mass-mortality; differ on position & church role); (2) South African Reformed family as complement to slavery case alongside Brazil.
