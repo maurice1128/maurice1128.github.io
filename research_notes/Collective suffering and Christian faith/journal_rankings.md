@@ -5,11 +5,46 @@ Purpose: verify the standing/tier of candidate journals for the "Collective suff
 Rules: every entry gives a source URL and the date checked. Anything not confirmed from a source is marked [not confirmed]. No rank is guessed.
 
 Sources tried (log):
-- (in progress)
+- JUFO REST API (jufo-rest.csc.fi) — worked; gives JUFO level + copies of Norwegian/Danish levels.
+- Norwegian Register (kanalregister.hkdir.no) — worked via the site's own search index; levels for 2026.
+- scimagojr.com — 403 (Cloudflare) to curl and WebFetch; Wayback snapshot of the SJR CSV exists but web.archive.org was unreachable (connection reset by proxy); resurchify/ooir 403. Used scijournal.org (SCImago-sourced; values cross-checked against Cambridge's own metric pages — identical).
+- Clarivate Master Journal List — API refused scripted queries. Used LetPub Journal Selector for WoS collection membership + CiteScore.
+- Cambridge Core journal-metrics pages — worked (JIF, CiteScore, SJR).
+- OUP, Wiley, T&F, SAGE, Brill, EUP, MDPI sites — 403 to scripts; figures from them are via WebSearch snippets and marked [secondary].
+- THCI/TSSCI — official 2022–2025 list PDFs (NSTC 人社中心), read from hss.ntu.edu.tw and university mirrors.
 
-## Per-journal records
+Bottom line first: see the **Tier table** at the end of this file.
 
-(in progress — appended as verified)
+## Per-journal records (summary; detail tables in Steps 1–5 below)
+
+| Journal | Publisher / society | Reputation note (sourced) |
+|---|---|---|
+| Comparative Studies in Society and History | Cambridge UP for the Society for the Comparative Study of Society and History (U. Michigan) | JUFO 3 (top) but Norway level 1; SSCI+AHCI; JIF 1.4; Google Scholar ranks it 14th in History (Cambridge metrics page). Interdisciplinary flagship for comparative history. |
+| Past & Present | OUP for the Past and Present Society | JUFO 3 every year since 2012; Norway 2; JIF 2024 2.4, 2nd of 542 in History (OUP page via search snippet). Top history journal. Bans AI-generated text (HANDOFF.md / journal_ai_policies.md). |
+| Church History: Studies in Christianity and Culture | Cambridge UP for the American Society of Church History | Norway 2, JUFO 2; AHCI + ERIH PLUS (Cambridge A&I page). Citation metrics are low (SJR Q3, JIF 0.4), as is typical for church-history journals. Society flagship. |
+| Social Science History | Cambridge UP for the Social Science History Association | JUFO 2, Norway 1; SSCI+AHCI; JIF 1.3. Society flagship for historical social science. |
+| JSSR | Wiley for the Society for the Scientific Study of Religion | JUFO 3, Norway 2; SSCI+AHCI; CiteScore 4.2 (20th of 760 in Religious Studies). Society flagship. |
+| Sociology of Religion | OUP for the Association for the Sociology of Religion | JUFO 3, Norway 2; SSCI+AHCI; CiteScore 4.1 (23/760); highest SJR in the set (1.235). |
+| Review of Religious Research | SAGE (since 2023; was Springer) for the Religious Research Association | JUFO 3 (raised from 2 in 2023), Norway 2; SSCI+AHCI. |
+| Journal of Contemporary Religion | Taylor & Francis (Routledge) | JUFO 3, Norway 2; AHCI; SJR Q1. T&F reports about 386 days from acceptance to online publication (WebSearch snippet) [secondary]. |
+| Journal of Religious History | Wiley for the Religious History Association (Australia) | JUFO 2, Norway 1, Denmark 2; AHCI; SJR Q2. |
+| Religion | Taylor & Francis | JUFO 3 (raised 2023), Norway 2; AHCI. T&F page reportedly gives an acceptance rate of 4% and about 10 days to first decision (WebSearch snippet of tandfonline.com/journals/rrel20) [secondary; probably desk-reject driven]. |
+| History Compass | Wiley | Review journal (state-of-the-field essays); ESCI only; JUFO 1, Norway 1; SJR Q1. |
+| Religion Compass | Wiley | Review journal; ESCI; JUFO 1, Norway 1. |
+| Studies in World Christianity | Edinburgh UP (Centre for the Study of World Christianity, Edinburgh) | AHCI; JUFO 1, Norway 1; SJR Q2. Main specialist venue for non-Western Christianity. |
+| International Bulletin of Mission Research | SAGE for the Overseas Ministries Study Center | ESCI; JUFO 1 (old title), Norway 1; SJR Q2 per aggregators [secondary]. |
+| Review of Religion and Chinese Society | Brill (Purdue Center on Religion and Chinese Society) | ESCI; Scopus SJR Q2; not in JUFO or the Norwegian register [not confirmed]. |
+| Journal of Asian Studies | **Duke UP** (since 2021; JUFO, the Norwegian register and an old Cambridge page still name Cambridge) for the Association for Asian Studies | JUFO 3, Norway 2; SSCI+AHCI. AAS flagship. Duke UP rejects mostly AI-written manuscripts (HANDOFF.md). |
+| Religions (MDPI) | MDPI, open access, APC | AHCI + Scopus Q1, but **JUFO downgraded it to 0 from 2025** (still 0 in 2026); Norway 1. MDPI flyer: median 24.5 days to first decision, 4.9 days acceptance→publication (H2 2025, via WebSearch) [secondary]. Fast, high-volume; reviewers in some fields treat it with caution. |
+| 臺灣史研究 | 中研院臺灣史研究所 | THCI 第一級 (2023 rating, 2024–26). The flagship for Taiwan history. |
+| 新史學 | 新史學雜誌社 | THCI 第一級 (2023 rating); JUFO 1. |
+| 臺灣社會學刊 | 臺灣社會學會 | TSSCI 第一級 (2024 rating, 2025–27). |
+| 台灣社會學 | 中研院社會所、臺大社會系 | TSSCI 第一級 (2024 rating, 2025–27). |
+| 臺灣宗教研究 | 台灣宗教學會 | THCI 第二級 (core) (2023 rating). |
+| 道風：漢語基督教文化評論 | 漢語基督教文化研究所 (Hong Kong) | Not in the THCI/TSSCI lists (it is not a Taiwanese journal); JUFO 1, Norway 1. The main Sino-Christian theology journal. |
+| 玄奘佛學研究 (reference) | 玄奘大學宗教與文化學系 | 第三級 = **not core** (2023 rating). |
+
+Acceptance rates and decision times: none officially published for the Cambridge, OUP, Wiley or EUP titles found [not confirmed]. LetPub's crowd-sourced figures are not recorded.
 
 ---
 ## Step 1 — Finnish JUFO levels (checked 2026-11-05)
@@ -122,4 +157,32 @@ Access log: Clarivate Master Journal List (mjl.clarivate.com) search API refuses
 | Journal of Asian Studies | SSCI + AHCI | yes | 1.1 (History 304/1936) | Cambridge page: "Impact Factor rankings are not currently available" [JIF not confirmed] | https://www.letpub.com/journal-selector/journal/12668 |
 | Religions (MDPI) | AHCI (+ DOAJ) | yes | 1.3 (Religious Studies 109/760) | [not confirmed] | https://www.letpub.com/journal-selector/journal/24832 |
 
-Note on Review of Religious Research: since 2023 published by SAGE for the Religious Research Association [publisher change per my knowledge; register/JUFO/LetPub still show Springer — not re-confirmed from a live page].
+Note on Review of Religious Research: published by SAGE for the Religious Research Association (SAGE journal home https://journals.sagepub.com/home/rrr and RRA site https://www.rraweb.org/journal-review-of-religious-research, via WebSearch 2026-11-05; ISSN portal records a 2023-01-01 transfer between Springer and SAGE). The Norwegian register, JUFO and LetPub still show Springer.
+
+Note on Journal of Asian Studies: published by Duke University Press since 2021 (see HANDOFF.md / journal_ai_policies.md). Cambridge Core's JAS page is the archive, which is why it says 'Impact Factor rankings are not currently available'.
+
+---
+## Step 5 — THCI / TSSCI (Taiwan), checked 2026-11-05
+
+System (since the 2022/2023 reform; per the official list headers): the NSTC Research Center for Humanities and Social Sciences (人文社會科學研究中心, 人社中心, hosted at NTU, https://www.hss.ntu.edu.tw) rates journals by 學門 on a 3-year rotation. Rating **第一級 / 第二級 = core journal** (THCI if the 學門 is humanities, TSSCI if social sciences). **第三級 = not core** ("無 THCI 第三級或 TSSCI 第三級"). The old "THCI Core vs THCI 收錄" distinction no longer exists.
+
+Lists read (PDFs downloaded and converted to text):
+- **2023 list** (文學一、文學二、語言學、**歷史學**、**哲學（含宗教研究）**; valid **2024-01-01 to 2026-12-31**): mirror at https://chinese.thu.edu.tw/upload/newspaper_upload/2023%E5%B9%B4%E8%A9%95%E6%AF%94%E7%B5%90%E6%9E%9C%E6%9A%A8%E6%A0%B8%E5%BF%83%E6%9C%9F%E5%88%8A%E5%90%8D%E5%96%AE.pdf (also at chinese.nccu.edu.tw/upload/36/doc/26314/2023年評比結果暨核心期刊名單.pdf)
+- **2024 list** (藝術學、人類學及族群研究、**社會學及社福社工（含傳播學）**、心理學、法律學、管理學; valid **2025-01-01 to 2027-12-31**): mirror at https://lfes.chc.edu.tw/storage/074719/posts/514/files/07-7-2024年評比結果暨核心期刊名單 .pdf
+- **2025 list** (教育、政治、經濟、區域研究及地理 + 綜合類; valid 2026–2028): https://rc052.ndhu.edu.tw/var/file/89/1089/img/457840939.pdf — none of the target journals appear in it.
+- 2022 list (hss.ntu.edu.tw) also checked — superseded.
+Official site hss.ntu.edu.tw hosts the originals (the 2022 PDF downloaded from it directly).
+
+| Journal | Publisher (per list) | 學門 | Latest rating | Core status | Valid | Source |
+|---|---|---|---|---|---|---|
+| 臺灣史研究 Taiwan Historical Research | 中央研究院臺灣史研究所 | 歷史學 | **第一級** | **THCI** | 2024–2026 | 2023 list |
+| 新史學 New History | 新史學雜誌社 | 歷史學 | **第一級** | **THCI** | 2024–2026 | 2023 list |
+| 臺灣社會學刊 Taiwanese Journal of Sociology | 臺灣社會學會 | 社會學及社福社工 | **第一級** | **TSSCI** | 2025–2027 | 2024 list |
+| 台灣社會學 Taiwanese Sociology | 中研院社會所、臺大社會系 | 社會學及社福社工 | **第一級** | **TSSCI** | 2025–2027 | 2024 list |
+| 臺灣宗教研究 Taiwan Journal of Religious Studies | 台灣宗教學會 | 哲學（含宗教研究） | **第二級** | **THCI** | 2024–2026 | 2023 list |
+| 玄奘佛學研究 Hsuan Chuang Journal of Buddhist Studies | 玄奘大學宗教與文化學系 | 哲學 | **第三級** | **not core** | 2024–2026 | 2023 list |
+| 道風：漢語基督教文化評論 (Hong Kong) | 漢語基督教文化研究所 | — | not in the 2022/2023/2024/2025 lists | not rated [not confirmed elsewhere] | | grep of all four lists |
+
+Also in the 2023 philosophy/religion list for context: 華人宗教研究 (政大華人宗教研究中心) 第三級; 臺大佛學研究, 佛光學報, 法鼓佛學學報 第二級.
+
+Timing caution: the 歷史學 and 哲學 ratings expire 2026-12-31. The next round (evaluated in 2026, list expected around the turn of 2026/27, valid 2027–2029) was not yet found online on 2026-11-05 [not confirmed]. Re-check before citing THCI status for a 2027 submission.
