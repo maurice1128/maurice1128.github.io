@@ -102,7 +102,7 @@ Le Goff, Jacques. 1984. *The Birth of Purgatory*. Translated by Arthur Goldhamme
 
 Leibniz, Gottfried Wilhelm. 1985. *Theodicy: Essays on the Goodness of God, the Freedom of Man and the Origin of Evil*. Translated by E. M. Huggard. Edited by Austin Farrer. La Salle, IL: Open Court.
 
-Liu Ya-chun. 2024. "A New 'Homeland' Theology? Remembering George Leslie Mackay amid the Continued Surge of Nationalism in Taiwan." In *Modern Chinese Theologies*, 279–96. Minneapolis: Fortress Press. https://doi.org/10.2307/jj.5736211.18. [verify volume number and editor]
+Liu Ya-chun. 2024. "A New 'Homeland' Theology? Remembering George Leslie Mackay amid the Continued Surge of Nationalism in Taiwan." In *Modern Chinese Theologies*, vol. 3, *Academic and Diasporic*, edited by Chloë Starr, 279–96. Minneapolis: Fortress Press. https://doi.org/10.2307/jj.5736211.18.
 
 Luther, Martin. 1968. "Whether One May Flee from a Deadly Plague." Translated by Carl J. Schindler. In *Luther's Works*, vol. 43, *Devotional Writings II*, edited by Gustav K. Wiencke, 119–38. Philadelphia: Fortress Press. [verify year and editor]
 
@@ -128,11 +128,11 @@ Peterson, Michael L., ed. 2016. *The Problem of Evil: Selected Readings*. 2nd ed
 
 Pinn, Anthony B. 1995. *Why, Lord? Suffering and Evil in Black Theology*. New York: Continuum.
 
-Presbyterian Church in Taiwan. 1971. "Statement on Our National Fate." 29 December 1971. [verify date and official English text]
+Presbyterian Church in Taiwan. 1971. "Statement on Our National Fate" 〈台灣基督長老教會對國是的聲明與建議〉. 29 December 1971. https://www.pct.org.tw/ab_doc.aspx?DocID=001. [official English text not located]
 
-Presbyterian Church in Taiwan. 1975. "Our Appeal." [verify official English text]
+Presbyterian Church in Taiwan. 1975. "Our Appeal" 「我們的呼籲」. Adopted by the Standing Committee, 18 November 1975. https://www.pct.org.tw/ab_doc.aspx?DocID=003. [official English text not located]
 
-Presbyterian Church in Taiwan. 1977. "A Declaration on Human Rights." 16 August 1977. [verify official English text]
+Presbyterian Church in Taiwan. 1977. "A Declaration on Human Rights" 〈台灣基督長老教會人權宣言〉. 16 August 1977. https://www.pct.org.tw/ab_doc.aspx?DocID=005. English text hosted by USC US-China Institute, https://china.usc.edu/node/20514.
 
 Raboteau, Albert J. 2004. *Slave Religion: The "Invisible Institution" in the Antebellum South*. Updated ed. New York: Oxford University Press. First published 1978.
 
@@ -142,7 +142,7 @@ Ross, Ellen M. 1997. *The Grief of God: Images of the Suffering Jesus in Late Me
 
 Rubenstein, Richard L. 1966. *After Auschwitz: Radical Theology and Contemporary Judaism*. Indianapolis: Bobbs-Merrill.
 
-Rychetská, Magdaléna. 2022. "The Presbyterian Church in Taiwan and Its Changing Narrative on Human Rights." *Review of Religion and Chinese Society*. https://doi.org/10.1163/22143955-08020014. [verify volume and issue]
+Rychetská, Magdaléna. 2022. "The Presbyterian Church in Taiwan and Its Changing Narrative on Human Rights." *Review of Religion and Chinese Society* 9 (1): 70–100. https://doi.org/10.1163/22143955-08020014.
 
 Sobrino, Jon. 1993. *Jesus the Liberator: A Historical-Theological Reading of Jesus of Nazareth*. Translated by Paul Burns and Francis McDonagh. Maryknoll, NY: Orbis Books.
 
