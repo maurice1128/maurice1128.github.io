@@ -131,3 +131,59 @@
 - 入學：**2:1 學士（或同等）於神學或相關人文學科**；台灣：受認可大學學士、成績 ≥75% 或 GPA 3.0/4.0。⚠ 工程學士是否被視為「相關人文」需事先詢問。
 - 研究中心：Centre for Death and Life Studies、Centre for Catholic Studies、Michael Ramsey Centre for Anglican Studies、**International Centre for Moral Injury**（與集體苦難主題相關）；並連結 Institute for Medieval and Early Modern Studies。
 - 申請材料細節（personal statement/寫作樣本）頁面未列 [未確認]。AI：頁面未見。
+
+### 2.12 KU Leuven, Faculty of Theology and Religious Studies — Master of Theology and Religious Studies（60 ECTS）／Research Master (MAST)
+- 來源（已開啟）：https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_53250485.htm ；入學條件 https://onderwijsaanbod.kuleuven.be/opleidingen/e/SC_53250485/toelatingsvoorwaarden
+- 結構：一年、英語授課；Truncus Communis 六門（24 ECTS，如 History of Eastern Christianity、Theological Ethics）+ 宗教學一門 + 14 學分選修（可加聖經語言或現代語言）；「研究所需語言的充分知識不可或缺」。
+- 入學：神學/宗教學學士或已完成按立培育者「encouraged to apply」；**頁面未提供工程等非相關學士的銜接/預備課程** → 工程背景可能需先修 Bachelor/預備課程 [未確認，需問招生]。
+- 材料：**3 封學術推薦信**；**英文 motivation letter、CV、writing sample（學術生涯中相關主題論文）**；神職/修會人士須附主教或會長許可函（一般申請人不需）。
+- 英語：TOEFL iBT 79–80 或 IELTS Academic 6.5–7（可先不附考試，但委員會可要求）。
+- 截止、學費：頁面未列（第三方：非 EEA 約 3/1 截止；學費低，約 €1,000–3,000/年級距 [未確認]）。
+- Research Master: Master of Advanced Studies in Theology and Religion（通往 PhD 的研究碩士）[未開啟，未確認]。
+- AI：頁面未見。
+
+### 2.13 香港中文大學（CUHK）— 崇基學院神學院 & 宗教研究（MPhil-PhD Religious Studies）
+- 來源（已開啟）：https://www.gs.cuhk.edu.hk/programmes/arts/mphil-phd-religious-studies ；https://www.gs.cuhk.edu.hk/programmes/arts/master-divinity-0
+- **MPhil-PhD Religious Studies（學術路線，推薦）**：
+  - 學士主修宗教或神學，**相關領域個案考慮**（工程背景須在計畫書中證明準備度）。
+  - MPhil：**研究計畫 + 完整書目**；PhD：研究計畫 + **英文或中文學術論文一篇**。
+  - 專業領域含 **Christian Studies / Christianity in China**、Biblical Studies、Religion, Education and Society 等。
+  - 截止：Main Round **2026/12/1**；Clearing Round 2027/3/31；**HKPFS（香港博士研究生獎學金計劃，PhD）2026/12/1** 同日截止（RGC 初步申請中午 12 時）。
+  - 學費 2027/28：HK$49,500（不論修讀模式）；可申請研究生獎學金（studentship，金額另頁 [未確認]）。
+  - **未要求教會推薦或受洗**。
+  - 搜尋摘錄：2025/10 說明會簡報將 MPhil 寫作樣本列為 optional [未確認]。
+- **M.Div.（牧職導向，參考）**：教會負責人推薦信、約 1,000 字讀書目的陳述、**受洗至少兩年**；Priority 2027/2/28、Final 2027/4/11。→ 非本申請人首選。
+- 神學碩士（MTheol）由崇基學院神學院有限公司頒授（非中大學位），需 MDiv/BD 或優良基督教研究 MA（搜尋摘錄 [未確認]）。
+- AI：頁面未見。
+
+### 2.14 Trinity Theological College, Singapore（新加坡神學院）
+- 來源（已開啟）：https://www.ttc.edu.sg/english/study-at-ttc/advanced-degrees/master-of-theology/ （及 /mth-entrance-requirements/）；https://www.ttc.edu.sg/english/study-at-ttc/advanced-degrees/master-of-letters-doctor-of-theology/ （及 /dth-entrance-requirements/）；https://www.ttc.edu.sg/english/study-at-ttc/basic-degrees/master-of-theological-studies/ （及 /mts-entrance-requirements/）
+- **MTS**（2 年）：任何學科學士；**須受洗、在所屬教會為會友至少 3 年且 good standing**；年滿 21；IELTS 6.0（讀寫 ≥5.5）或 TOEFL iBT 80。定位：**平信徒**的神學訓練（非全職事奉）。
+- **MTh**（1.5 年）：須「良好的第一個神學學位」（如 TTC MTS 或同等）；四門課 + 論文；集中領域：舊約、新約、神學與倫理、**宣教與世界宗教**、公共神學、實踐神學（無「教會史」）；IELTS 7.0（讀寫 7.0）或 TOEFL iBT 89（讀寫 24）。頁面描述為牧養或教學事工的進深研究。
+- **MLitt / DTh**：須 MTh 或同等（傑出 BD/MDiv 可經驗證考試）；研究領域含聖經、系統神學、**教會史**、教牧神學（**通常僅聖經與系統神學有指導**）；DTh 論文 ≤90,000 字、MLitt ≤50,000 字；英語同 MTh 並加聽說最低分。
+- 推薦信、研究計畫、寫作樣本、截止日：上述頁面未列，見 Application Procedure 頁 [未確認]。AI：無。
+- 評估：TTC 偏教會/事工導向且教會史指導有限 → 對本系列較非首選，除非鎖定新加坡/東南亞華人教會比較研究。
+
+---
+
+## 1. 台灣：大學宗教系所與神學院研究學位
+
+### 1.1 國立政治大學 宗教研究所（碩士班、博士班）
+- 來源（已開啟）：https://religion.nccu.edu.tw/PageDoc?fid=2786 ；116 碩博甄簡章 https://religion.nccu.edu.tw/upload/34/doc/42896/116碩博甄簡章.pdf ；116 碩士班（考試）簡章 https://religion.nccu.edu.tw/upload/34/doc/43599/116碩班簡章.pdf （PDF 已下載並讀取宗教所分則）
+- **116 學年度碩士班甄試**（代碼 1151，名額 4）：
+  - 報考資格：本科系或**相關科系**學士、國內研究所畢業、境外學歷（經所長核准）、同等學力 → 工程背景屬「相關科系」與否由系所認定，但第四款同等學力與研究所畢業生亦可報。
+  - **資料審查 60%**：自傳（含履歷）、學歷證明、**研究計畫**、成績單、**其他有利審查資料：如研究報告、學術作品等**、**推薦信 2 份**（郵寄或現場）。
+  - **面試 40%**：全體考生；面試可攜外語能力證明。
+  - 時程：報名 2026/9/29–10/13（**已截止**）；面試 2026/11/9。
+- **116 學年度碩士班考試入學**（代碼 1151，名額 3）：
+  - **筆試 50%**：專業英文 12%、宗教傳統與理論 38%；依筆試擇優至多 10 名面試。
+  - **面試 50%**：面試前上傳自傳履歷、**個人未來之研究計畫**、成績單。面試日 2027/3/8。
+  - 報名：**2026/11/24 09:00 – 12/8 15:00**（審查資料上傳至 12/8 17:00）→ **目前仍可報考**。
+  - 另有新住民組（外加 1 名，純書審含推薦信 2 封）。
+- 五年一貫：限政大學士班學生，不適用。
+- 博士班招生：上述兩份簡章未見宗教所博士班 [未確認；需查政大博士班考試簡章，通常春季]。
+- **無受洗、教會推薦或牧職要求**（國立大學、宗教學取向）。
+- 發表著作：甄試可列入「其他有利審查資料：研究報告、學術作品」→ **已發表期刊論文直接加分**。
+- AI 政策：簡章宗教所分則未見；校級簡章是否有 AI 條款 [未確認]。
+- ✔ 旁證（同一份政大 116 碩博甄簡章，已讀取）：**政大歷史學系碩士班甄試**（代碼 1121，名額 7）研究計畫欄明文要求說明：「你所繳交的研究計畫是否使用生成式 AI？如何使用？你如何確保你所呈現的研究計畫能夠真實地反映你個人的創作歷程？」；其他有利審查資料明列「**已出版之正式學術論文**」。→ 若走史學路線（黑死病、台灣教會史），政大歷史系亦是選項，且 AI 揭露為必答。
+- 政大簡章總則第（十八）點：所繳資料有「假借、冒用、偽造、變造、**抄襲**」等不實情事者，錄取前取消資格、入學後開除學籍、畢業後撤銷學位。

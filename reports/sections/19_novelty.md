@@ -30,7 +30,7 @@ Descriptions below follow what each work actually measures, as recorded in the f
 | Janku, Schenk, and Mauelshagen 2012 | Comparative disaster history with weight on religion (table of contents not checked) | Partial | Holds Christianity constant; adds structural oppression |
 | Zacharia 2018 *[verify]* | Undergraduate history honours project comparing the Black Death, the 1666 London fire and the 1755 Lisbon earthquake as "interruptions" (Scholar snippet only) | Partial: the only cross-catastrophe comparison found that includes the Black Death | Adds a human-made, long-duration case and a split outcome |
 | Turner 2021 | "A comparative history of human responses to catastrophes" in a political theology of COVID-19 (chapter, 139–56; not read) | Background / partial | Historical case comparison with coded variables, not an essay on the present |
-| Ishchuk 2026 | Ukraine, full-scale war: separates trust in God (existential) from trust in the Church (institutional legitimacy); survey data show trust "redistribution" toward the army and volunteers (abstract only) | Partial: same outcome split and the word "redistribution", one contemporary case | Historical cases; explains *which* body gains; tests church role (including a church linked to the aggressor) |
+| Ishchuk 2026 | Ukraine, full-scale war: separates trust in God (existential) from trust in the Church (institutional legitimacy); survey data show trust "redistribution" toward the army and volunteers (abstract only) | Partial: same outcome split and the word "redistribution", one contemporary case | Historical cases; explains *which* body gains; tests church role, including a church tied to the aggressor's patriarchate |
 | Thomas 1993; Alexander et al. 2004 | Slavery compared with the Holocaust (moral philosophy) and with other cultural traumas (identity formation) | Partial: slavery inside a comparison | Religious response as the outcome; a plague case |
 | Rausch 2016 | Compares Catholic and Protestant theodicies of Korea's collective historical suffering | Partial: comparative Christian theodicy of collective suffering, one nation | Cross-era design; institutional trust as outcome; a possible extra case |
 | Stearns 2009 | Reviews Christian, Muslim and Jewish plague responses; warns against monolithic "responses" | Background (but a reviewer's weapon) | Codes variation within cases, as Stearns asks |
@@ -45,7 +45,7 @@ All searches below were run on 2026-11-05 without institutional access. Two warn
 
 First, Crossref's `query.bibliographic` ignores quotation marks and ranks by relevance, so its "total results" counts every record matching any term. Those totals mean nothing. The informative datum is whether the top ten contain an overlapping work. Google Scholar's "about N results" honours phrases but is itself an estimate.
 
-Second, in Black studies "Black death" usually means premature Black mortality and its representation, not the plague (for example Winters 2020, "Nothing Matters: Black Death, Repetition, and an Ethics of Anguish"). Every Scholar hit for "Black Death" with "slave religion" or "invisible institution" was of this kind. Phrase searches therefore overstate the overlap, not understate it.
+Second, in Black studies "Black death" usually means premature Black mortality and its representation, not the plague (for example Winters 2020, "Nothing Matters: Black Death, Repetition, and an Ethics of Anguish"). All top-ten Scholar hits for "Black Death" with "slave religion" or "invisible institution" were of this kind. Phrase searches therefore overstate the overlap, not understate it.
 
 | # | Query | Database | Count | Outcome |
 |---|---|---|---|---|
@@ -135,7 +135,7 @@ Run each string as written, record the date and hit count, and read every title.
 - The faith/trust split should be credited to prior work. The model's original outcome distinction is *redistribution within* the church versus *exit* to sufferer-controlled bodies.
 - Dittmar and Meisenzahl's "available alternative" finding and Ishchuk's "redistribution" language both support adding an explicit availability-of-alternatives condition to the church-role variable.
 - "Control of the remedy" separates the project from care-and-insurance accounts and should be stated as a rival test, not an assumption.
-- Ukraine since 2022, with a church linked to the aggressor and a national church, is a live shadow case for the "allied with perpetrators" branch.
+- Ukraine since 2022, with one church historically tied to the Moscow Patriarchate and an autocephalous national church, is a live shadow case for the "allied with perpetrators" branch.
 
 ### To verify
 
