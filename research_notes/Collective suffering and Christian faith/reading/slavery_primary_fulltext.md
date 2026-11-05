@@ -109,7 +109,7 @@ Conventions
 
 ## 4. Nat Turner, *The Confessions of Nat Turner* (1831)
 
-### The Confessions of Nat Turner (1831) — Turner, Nat, and Thomas R. Gray. 1831. *The Confessions of Nat Turner, the Leader of the Late Insurrection in Southampton, Va.* Baltimore: Lucas & Deaver. Project Gutenberg eBook #15333 — https://www.gutenberg.org/cache/epub/15333/pg15333.txt
+### The Confessions of Nat Turner (1831) — Turner, Nat, and Thomas R. Gray. 1831. *The Confessions of Nat Turner, the Leader of the Late Insurrections in Southampton, Va.* Baltimore: Published by Thomas R. Gray (Lucas & Deaver, print.; Gutenberg title page reads "Lucas & Denver"). Project Gutenberg eBook #15333 — https://www.gutenberg.org/cache/epub/15333/pg15333.txt
 - Read: full (Gray's "To the Public", the court certificate, the "Confession", Gray's closing remarks, the trial record and the list of the dead). ~72 KB. No page numbers: locators by section.
 - Summary: Gray, a white lawyer, records Turner's statement of 1–3 November 1831 in jail. Turner tells of childhood marks of prophecy, affirmed by his parents and his "very religious" grandmother. He describes fasting and prayer, and the Spirit speaking "at my plough" with "Seek ye the kingdom of Heaven". He saw visions of white and black spirits in battle and blood on the corn. He and a white man (Brantley) baptised themselves "by the Spirit" after "the white people would not let us be baptised by the church". On 12 May 1828 he heard that "the Serpent was loosened" and he must "fight against the Serpent". He read the February 1831 eclipse as a sign, and the revolt followed on 21–22 August. Gray calls him "a complete fanatic".
 - Key passages:
