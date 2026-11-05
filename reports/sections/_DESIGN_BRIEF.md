@@ -6,7 +6,7 @@ You are writing ONE article design (not the article itself) for a journal series
 Evidence base (read what is relevant to your article):
 - Finished literature-review sections: /home/user/maurice1128.github.io/reports/sections/*.md (and *_refs.md for full citations)
 - Research notes: /home/user/maurice1128.github.io/research_notes/Collective suffering and Christian faith/*.md
-- Verified fact-check results: research_notes/.../wf_factcheck_key_claims.md (use its corrections: e.g., Belloc et al. 2016 measured delayed communal self-government, not religious authority; Robinson 2019 is in *Archives* 54/2; Ralph of Shrewsbury's mandate is dated 10 January 1349; Dittmar & Meisenzahl 11–14 pp, 14 baseline; Jedwab et al. needs the aggregate-increase caveat)
+- Verified fact-check results: research_notes/.../wf_factcheck_key_claims.md (use its corrections: e.g., Belloc et al. 2016 measured delayed communal self-government in bishop-ruled cities, plus more post-quake church building there, which supports but does not establish a religious-authority channel; Robinson 2019 is in *Archives* 54/2; Ralph of Shrewsbury's mandate is dated 10 January 1349; Dittmar & Meisenzahl 11–14 pp, 14 baseline; Jedwab et al. needs the aggregate-increase caveat)
 - Journal requirements: research_notes/.../methodology_and_journals.md (journal table) — mark anything not confirmed there as *[verify guidelines]*.
 
 Current model (refine for your article):

@@ -10,9 +10,9 @@
 | Design | Controlled comparison across three arms (Slater and Ziblatt 2013), with process tracing inside the PCT before and after 1971 (Mahoney 2012; Beach and Pedersen 2019); a membership series broken down by presbytery to remove Indigenous growth from the PCT totals. |
 | Core evidence | PCT General Assembly yearbooks (總會年鑑) for 1947–1990; PCT statements of 1971, 1975, 1977 and 1990; *Taiwan Church News*; Elder John Lai's Archives (laijohn.com); clergy cases in the Taiwan Transitional Justice Database; Tseng (2017) and the archival sources behind it; Madsen (2012) with mission and relief records; oral histories. |
 | Length | 9,000 words for the full draft, cut to each journal's limit (see Target journals). |
-| First-choice journal | *Studies in World Christianity* *[verify guidelines]* |
-| Second-choice journal | *Review of Religion and Chinese Society* *[verify guidelines]* |
-| Third-choice journal | *International Bulletin of Mission Research* (4,000–7,000 words including endnotes, so a shorter version); reach option: *Journal of Asian Studies* *[verify guidelines]*. *JRH* is reserved for Article 1 in the series venue plan |
+| First-choice journal | *International Bulletin of Mission Research* (Sage; AI-drafted text allowed with disclosure). Limit 4,000–7,000 words including endnotes, so cut the 9,000-word draft to about 5,800 words of text and 1,000 of endnotes (budget under Target journals) |
+| Second-choice journal | *Church History* (Cambridge; AI-drafted text allowed if declared). Also Article 2's third choice: only one article there at a time (see Target journals) |
+| Third-choice journal | *Studies in World Christianity* or *Review of Religion and Chinese Society* only if the author writes the text personally (EUP rules unverified; Brill does not accept AI-generated papers); reach option *Journal of Asian Studies*, same condition. Chinese: 《臺灣史研究》 (THCI 第一級; disclose AI use per the Academia Sinica guideline). *JRH* is reserved for Article 1 in the series venue plan |
 
 ### Research question and thesis
 
@@ -105,14 +105,17 @@ The comparison concerns human rights, democratisation and disaster ministry. It 
 
 ### Target journals
 
-| Journal | Fit | Length/style | Fees/OA | Guideline check |
-|---|---|---|---|---|
-| *Studies in World Christianity* | World Christianity, Asian church history; church–state comparison | n/v (no guidelines found; EUP site 403) | n/v | *[verify guidelines]* |
-| *Review of Religion and Chinese Society* (Brill) | Has published Rychetská 2022 and Huang Ke-hsien 2017 (both confirmed via Crossref); reserved for this article in the series venue plan | n/v (Brill page 403) | n/v | *[verify guidelines]* |
-| *International Bulletin of Mission Research* | Fits the Catholic relief and mission-church arms | 4,000–7,000 words including endnotes; Chicago 17th, endnotes only (no author-date); anonymised review. Needs a shorter version of about 6,500 words | n/v | Checked 2026-11-05 (omsc.ptsem.edu/ibmr/guidelines-writers/); no AI policy on the page |
-| *Journal of Asian Studies* | Reach option: state–society and transitional-justice framing; needs a strong quantitative series | An undated older sheet gives 10,000 words including notes and bibliography | n/v | *[verify guidelines]* |
-| 《臺灣史研究》 | Leading Taiwan history venue; best for option (b) | n/v (no 稿約 found on the ITH site) | n/v | *[verify guidelines]* |
-| 《臺灣宗教研究》 (台灣宗教學會) | Religious studies in Taiwan; suits the membership data or option (b) | n/v | n/v | Publisher confirmed via catalogue records; *[verify guidelines]* |
+| Journal | Tier (JUFO · NO · SJR Q · WoS) | Fit | Length/style | Fees/OA | Guideline check |
+|---|---|---|---|---|---|
+| *International Bulletin of Mission Research* (Sage), **1st** | JUFO 1 (old title) · NO 1 · Q2 [secondary] · ESCI [3p] | Fits the Catholic relief and mission-church arms | 4,000–7,000 words including endnotes; Chicago 17th, endnotes only (no author-date); anonymised review. Cut the 9,000-word draft to about 5,800 words of text plus about 1,000 of endnotes (§1 500, §2 600, §3 400, §4 1,300, §5 800, §6 800, §7 700, §8 500, §9 200) | n/v | Checked 2026-11-05 (omsc.ptsem.edu/ibmr/guidelines-writers/); no AI policy on the page. Sage policy applies: AI-drafted text allowed if disclosed at submission (methods or acknowledgements); no AI analysis of interview themes |
+| *Church History* (Cambridge / ASCH), **2nd** | JUFO 2 · NO 2 · Q3 · AHCI [3p]; ERIH PLUS | History of Christianity "in all places and times". Ranks higher than IBMR for a Taiwanese dossier and needs no cuts. Also Article 2's third choice: only one article there at a time; whichever needs it first takes it, and if Article 2 is not under review there, Article 3 may go here first | No cap stated; abstract 200; house style with endnotes | *[verify guidelines]* | AI-drafted text allowed if declared (tool, version, dates, use) in acknowledgments or a footnote; email submission |
+| *Studies in World Christianity* (EUP), only if the author writes the text | JUFO 1 · NO 1 · Q2 · AHCI [3p] | World Christianity, Asian church history; church–state comparison | n/v (no guidelines found; EUP site 403) | n/v | *[verify guidelines]*. EUP AI rules not reached; search snippets say EUP rejects AI-generated research. High risk for AI-drafted text (version b) |
+| *Review of Religion and Chinese Society* (Brill), only if the author writes the text | Not in JUFO or NO · Q2 · ESCI [3p] | Has published Rychetská 2022 and Huang Ke-hsien 2017 (both confirmed via Crossref) | n/v (Brill page 403) | n/v | *[verify guidelines]*. Brill (September 2026): "We do not accept papers ... generated by" AI. Version (a) only |
+| *Journal of Asian Studies* (Duke UP), reach | JUFO 3 · NO 2 · Q1 · SSCI+AHCI [3p] | Reach option: state–society and transitional-justice framing; needs a strong quantitative series | An undated older sheet gives 10,000 words including notes and bibliography | n/v | *[verify guidelines]*. Duke UP will not accept work "substantially written by generative AI". Version (a) only |
+| 《臺灣史研究》 (中研院臺灣史研究所) | THCI 第一級 (2024–26; re-rating due) | Leading Taiwan history venue; best for option (b) | n/v (no 稿約 found on the ITH site) | n/v | *[verify guidelines]*. No journal AI clause reached; the Academia Sinica guideline (January 2026) requires disclosure of substantial AI use. Ask the editors before sending AI-drafted text |
+| 《臺灣宗教研究》 (台灣宗教學會) | THCI 第二級 (core, 2024–26) | Religious studies in Taiwan; suits the membership data or option (b) | n/v | n/v | Publisher confirmed via catalogue records; *[verify guidelines]* |
+
+Tier column: JUFO and Norwegian (NO) levels are official 2026 levels; the best SJR quartile (2025, scijournal.org, a SCImago mirror) and WoS index (LetPub) are third-party data, marked [3p]; THCI ratings expire on 31 December 2026. Checked 2026-11-05 (research_notes/.../journal_rankings.md).
 
 **Trade-off.** English reaches the series' comparative audience and engages Rubinstein, Madsen and Rychetská directly. Chinese reaches Taiwan's historians and the sources' own communities, who can correct it from first-hand knowledge. Venue plan: *JRH*, 《新史學》 and 《道風》 go to Article 1, and Article 4 takes the sociology venues, so no editor receives two articles from the series at once. Recommended sequence: publish the English article first (option a); then a Chinese peer-reviewed article on option (b), which is a different question with different data. Later, write a short Chinese essay for church readers on what the evidence says about churches and sufferers. It must be new text, not a translation, must cite the English article and must be disclosed to the journal. Check each journal's prior-publication policy *[verify]*.
 
@@ -128,3 +131,12 @@ The comparison concerns human rights, democratisation and disaster ministry. It 
 ### Works cited here but not in the literature-review refs
 
 - World Council of Churches. n.d. "Presbyterian Church in Taiwan." WCC member-church profile. https://www.oikoumene.org/ja/node/15862. Accessed 5 November 2026. Source for the 1955–65 doubling of membership and congregations and for the Ten Plus One Movement figures; check both against the PCT yearbooks.
+
+## Revision log
+
+| Date | Change | Reason |
+|---|---|---|
+| 2026-11-05 | Venues reordered: 1st *International Bulletin of Mission Research* (cut to ≤7,000 words including endnotes; section budget added); 2nd *Church History*; *Studies in World Christianity* and *Review of Religion and Chinese Society* (and the *JAS* reach option) kept only if the author writes the text personally; Chinese option 《臺灣史研究》 with disclosure under the Academia Sinica guideline | The author intends AI-drafted text (disclosure version b). Brill does not accept AI-generated papers; EUP's AI rules could not be verified and may lead to rejection; Sage and Cambridge allow AI-drafted text with disclosure (journal_ai_policies.md) |
+| 2026-11-05 | *Church History* overlap with Article 2 resolved by sequencing: one article there at a time; whichever needs it first takes it; if Article 3 holds it, Article 2 waits for that decision or uses *Religion* (T&F) | *Church History* is Article 2's third choice; Article 2 reaches it only after CSSH and SSH decisions (not before 2029) |
+| 2026-11-05 | Tier column (JUFO · NO · SJR quartile · WoS index; THCI) added to Target journals, with third-party data marked [3p] | journal_rankings.md |
+| 2026-11-05 | Same changes made in the plan doc (series overview row and Venues paragraph, Article 3 At a glance and Target journals, tier columns in all four articles' journal tables, AI-use table and version (b) note, conference table, timeline) and in conferences_timeline.md | Keep the plan doc and local files consistent |

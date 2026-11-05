@@ -1,5 +1,7 @@
 # References for section 6: Comparative cases
 
+AGBU (Armenian General Benevolent Union). 2015. "Martyrs of the Armenian Genocide Canonized at the Mother See of Holy Etchmiadzin." Press release, 12 May 2015 (on the canonization of 23 April 2015). https://agbu.org/press-release/martyrs-armenian-genocide-canonized-mother-see-holy-etchmiadzin.
+
 Works cited only by cross-reference to other sections (Salfeld 1898; Cohn 2007; Finley and Koyama 2018; Bentzen 2021; Bottan and Perez-Truglia 2015; CIASE 2021; Fountain 2010) are listed in those sections' reference files and repeated here only where needed for completeness.
 
 Barović, Alek. 2026. "Guardians of Memory: The Role of the Armenian Apostolic Church in Post-Genocide Armenian Identity." *International Journal of Armenian Genocide Studies* 11 (1): 48–71. https://doi.org/10.51442/ijags.0076.
@@ -8,7 +10,7 @@ Barr, Colin. 2020. "The Devotional Revolution in Greater Ireland." *New Hibernia
 
 Bays, Daniel H. 2012. *A New History of Christianity in China*. Chichester: Wiley-Blackwell.
 
-Becker, Annette. 1994. *La guerre et la foi: De la mort à la mémoire, 1914–1930*. Paris: Armand Colin. English translation: *War and Faith: The Religious Imagination in France, 1914–1930*. Translated by Helen McPhail. Oxford: Berg, 1998. [verify translator]
+Becker, Annette. 1994. *La guerre et la foi: De la mort à la mémoire, 1914–1930*. Paris: Armand Colin. English translation: *War and Faith: The Religious Imagination in France, 1914–1930*. Translated by Helen McPhail. Oxford: Berg, 1998.
 
 Bentzen, Jeanet Sinding. 2021. "In Crisis, We Pray: Religiosity and the COVID-19 Pandemic." *Journal of Economic Behavior & Organization* 192: 541–83. https://doi.org/10.1016/j.jebo.2021.10.014.
 
@@ -18,7 +20,7 @@ Berkovits, Eliezer. 1973. *Faith after the Holocaust*. New York: Ktav.
 
 Bottan, Nicolas L., and Ricardo Perez-Truglia. 2015. "Losing My Religion: The Effects of Religious Scandals on Religious Participation and Charitable Giving." *Journal of Public Economics* 129: 106–19. (See section 16 references.)
 
-Braun, Theodore E. D., and John B. Radner, eds. 2005. *The Lisbon Earthquake of 1755: Representations and Reactions*. Oxford: Voltaire Foundation. [verify series number, SVEC 2005:02]
+Braun, Theodore E. D., and John B. Radner, eds. 2005. *The Lisbon Earthquake of 1755: Representations and Reactions*. SVEC 2005:02. Oxford: Voltaire Foundation.
 
 Brenner, Reeve Robert. 1980. *The Faith and Doubt of Holocaust Survivors*. New York: Free Press. Reissued London: Routledge, 2017. https://doi.org/10.4324/9781315131979.
 
@@ -50,13 +52,13 @@ Dowd, Gregory Evans. 1992. *A Spirited Resistance: The North American Indian Str
 
 Einbinder, Susan L. 2018. *After the Black Death: Plague and Commemoration among Iberian Jews*. Philadelphia: University of Pennsylvania Press. https://doi.org/10.9783/9780812295214.
 
-Elphick, Richard. 2012. *The Equality of Believers: Protestant Missionaries and the Racial Politics of South Africa*. Charlottesville: University of Virginia Press. [verify subtitle]
+Elphick, Richard. 2012. *The Equality of Believers: Protestant Missionaries and the Racial Politics of South Africa*. Charlottesville: University of Virginia Press.
 
 Elphick, Richard, and Rodney Davenport, eds. 1997. *Christianity in South Africa: A Political, Social, and Cultural History*. Berkeley: University of California Press.
 
 Ericksen, Robert P., and Susannah Heschel, eds. 1999. *Betrayal: German Churches and the Holocaust*. Minneapolis: Fortress Press.
 
-Evans, Richard J. 1987. *Death in Hamburg: Society and Politics in the Cholera Years, 1830–1910*. Oxford: Clarendon Press. [verify publisher]
+Evans, Richard J. 1987. *Death in Hamburg: Society and Politics in the Cholera Years, 1830–1910*. Oxford: Clarendon Press.
 
 Fackenheim, Emil L. 1970. *God's Presence in History: Jewish Affirmations and Philosophical Reflections*. New York: New York University Press.
 
@@ -76,15 +78,15 @@ Hovannisian, Richard G., ed. 1992. *The Armenian Genocide: History, Politics, Et
 
 Jenkins, Philip. 2014. *The Great and Holy War: How World War I Became a Religious Crusade*. New York: HarperOne.
 
-Kairos Theologians. 1985. *Challenge to the Church: The Kairos Document; A Theological Comment on the Political Crisis in South Africa*. Braamfontein: Kairos Theologians/Skotaville. Revised 2nd ed., Grand Rapids, MI: Eerdmans, 1986.
+Kairos Theologians. 1985. *Challenge to the Church: The Kairos Document; A Theological Comment on the Political Crisis in South Africa*. Braamfontein: Kairos Theologians, 1985. Rev. 2nd ed., Braamfontein: Skotaville; Grand Rapids, MI: Eerdmans, 1986.
 
 Kendrick, T. D. 1956. *The Lisbon Earthquake*. London: Methuen.
 
 Kerr, Donal A. 1996. *The Catholic Church and the Famine*. Blackrock: Columba Press.
 
-Kim, Sebastian C. H., and Kirsteen Kim. 2015. *A History of Korean Christianity*. Cambridge: Cambridge University Press.
+Kim, Sebastian C. H., and Kirsteen Kim. 2014. *A History of Korean Christianity*. Cambridge: Cambridge University Press. https://doi.org/10.1017/CBO9781139048071.
 
-Kim, Sung-Gun. 1989. "Korean Christianity and the Shinto Shrine Issue in the War Period, 1931–1945: A Sociological Study of Religion and Politics." PhD diss., University of Hull. [verify subtitle]
+Kim, Sung-Gun. 1989. "Korean Christianity and the Shinto Shrine Issue in the War Period, 1931–1945: A Sociological Study of Religion and Politics." PhD diss., University of Hull. (The Hull repository gives the subtitle as "A Study of Religion and Politics"; CRL and Open Library have "A Sociological Study of Religion and Politics"; https://hull-repository.worktribe.com/output/4210369.)
 
 Kracht, Benjamin R. 2018. *Religious Revitalization among the Kiowas: The Ghost Dance, Peyote, and Christianity*. Lincoln: University of Nebraska Press.
 
@@ -104,7 +106,7 @@ Little, Lester K., ed. 2007. *Plague and the End of Antiquity: The Pandemic of 5
 
 Martin, Joel W. 1991. *Sacred Revolt: The Muskogees' Struggle for a New World*. Boston: Beacon Press.
 
-Meier, Mischa. 2003. *Das andere Zeitalter Justinians: Kontingenzerfahrung und Kontingenzbewältigung im 6. Jahrhundert n. Chr*. Göttingen: Vandenhoeck & Ruprecht. [verify subtitle]
+Meier, Mischa. 2003. *Das andere Zeitalter Justinians: Kontingenzerfahrung und Kontingenzbewältigung im 6. Jahrhundert n. Chr*. Göttingen: Vandenhoeck & Ruprecht.
 
 Meier, Mischa. 2016. "The 'Justinianic Plague': The Economic Consequences of the Pandemic in the Eastern Roman Empire and Its Cultural and Religious Effects." *Early Medieval Europe* 24 (3): 267–92. https://doi.org/10.1111/emed.12152.
 
@@ -112,7 +114,7 @@ Miller, David W. 1975. "Irish Catholicism and the Great Famine." *Journal of Soc
 
 Molesky, Mark. 2015. *This Gulf of Fire: The Destruction of Lisbon, or Apocalypse in the Age of Science and Reason*. New York: Alfred A. Knopf.
 
-Mooney, James. 1896. *The Ghost-Dance Religion and the Sioux Outbreak of 1890*. Fourteenth Annual Report of the Bureau of Ethnology, part 2. Washington, DC: Government Printing Office. [verify series details]
+Mooney, James. 1896. *The Ghost-Dance Religion and the Sioux Outbreak of 1890*. Fourteenth Annual Report of the Bureau of Ethnology, 1892–93, part 2, pp. 641–1136. Washington, DC: Government Printing Office.
 
 Mordechai, Lee, and Merle Eisenberg. 2019. "Rejecting Catastrophe: The Case of the Justinianic Plague." *Past & Present* 244 (1): 3–50. https://doi.org/10.1093/pastj/gtz009.
 
@@ -127,6 +129,8 @@ Newfield, Timothy P. 2022. "One Plague for Another? Interdisciplinary Shortcomin
 Noll, Mark A. 2006. *The Civil War as a Theological Crisis*. Chapel Hill: University of North Carolina Press.
 
 Park, Chung-shin. 2003. *Protestantism and Politics in Korea*. Seattle: University of Washington Press.
+
+Pew Research Center. 2021. "More Americans Than People in Other Advanced Economies Say COVID-19 Has Strengthened Religious Faith." 27 January 2021 (survey fielded 10 June–3 August 2020). https://www.pewresearch.org/religion/2021/01/27/more-americans-than-people-in-other-advanced-economies-say-covid-19-has-strengthened-religious-faith/.
 
 Phillips, Howard. 2008. "Why Did It Happen? Religious Explanations of the 'Spanish' Flu Epidemic in South Africa." *Historically Speaking* 9 (7): 34–36. https://doi.org/10.1353/hsp.2008.0022.
 
@@ -146,7 +150,7 @@ Snape, Michael. 2009. "Civilians, Soldiers and Perceptions of the Afterlife in B
 
 Stauff, Derek L. 2025. *Lutheran Music and the Thirty Years War: Confession, Politics, Devotion*. New York: Oxford University Press. https://doi.org/10.1093/9780197749456.001.0001.
 
-Stearns, Justin K. 2011. *Infectious Ideas: Contagion in Premodern Islamic and Christian Thought in the Western Mediterranean*. Baltimore: Johns Hopkins University Press. [verify subtitle]
+Stearns, Justin K. 2011. *Infectious Ideas: Contagion in Premodern Islamic and Christian Thought in the Western Mediterranean*. Baltimore: Johns Hopkins University Press.
 
 Stout, Harry S. 2006. *Upon the Altar of the Nation: A Moral History of the Civil War*. New York: Viking.
 
@@ -168,4 +172,4 @@ Winter, Jay. 1995. *Sites of Memory, Sites of Mourning: The Great War in Europea
 
 Yang, Fenggang. 2012. *Religion in China: Survival and Revival under Communist Rule*. New York: Oxford University Press.
 
-Yuval, Israel Jacob. 2006. *Two Nations in Your Womb: Perceptions of Jews and Christians in Late Antiquity and the Middle Ages*. Translated by Barbara Harshav and Jonathan Chipman. Berkeley: University of California Press. [verify translators]
+Yuval, Israel Jacob. 2006. *Two Nations in Your Womb: Perceptions of Jews and Christians in Late Antiquity and the Middle Ages*. Translated by Barbara Harshav and Jonathan Chipman. Berkeley: University of California Press.
