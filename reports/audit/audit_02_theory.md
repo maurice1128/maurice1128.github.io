@@ -174,3 +174,40 @@ Books checked through Open Library, Crossref or catalogues and found correct: Be
 - **Voas & Chaves 2016:** not cited in section 2. Its cohort-replacement finding agrees with the Voas & Crockett summary.
 - **Jedwab et al. 2019:** the notes show the weak-state attribution in §2.9 is wrong (C-2).
 - **Finley & Koyama 2018; Dittmar & Meisenzahl 2020:** consistent.
+
+## Fixes applied
+
+Applied 2026-11-05. The live doc has no reference list for section 2 (searches for "Stark, Rodney", "Glock, Charles", "Koyama, Mark" and other entries return nothing), so reference-list changes went into `02_theory_refs.md` only. `15_synthesis.md` and the doc's synthesis section were checked for the Jedwab/contested-authority and Bentzen "surprise vs need" errors: neither repeats them, so they were not changed.
+
+| Item | Action | File changed | Doc changed |
+|---|---|---|---|
+| C-1 Stark 1971 | Changed to "psychopathology was, if anything, negatively related to religious commitment, the reverse of what deprivation theory assumed" | 02_theory.md | yes |
+| C-2 §2.9 Jedwab misattribution | Contested authority → Finley & Koyama 2018; weak states → Anderson, Johnson & Koyama 2017; Jedwab et al. 2019 → persecution less likely where mortality was higher and Jews economically needed | 02_theory.md | yes |
+| C-2 Anderson et al. 2017 ref | Added: *Economic Journal* 127 (602): 924–58, doi 10.1111/ecoj.12331 (DOI checked on Crossref; online 2016) | 02_theory_refs.md | no (no ref list in doc) |
+| C-3 Lincoln typology | Added counterrevolution as the fourth type; chapter named "Notes toward a Theory of Religion and Revolution" in text | 02_theory.md | yes |
+| Ref 15 Lincoln 1985 | Entry now cites the chapter: pp. 266–92, doi 10.1007/978-1-349-17904-6_13 (pages and DOI confirmed on Crossref, which resolves the auditor's UNV) | 02_theory_refs.md | no |
+| C-4 Bentzen | Split: unexpected shocks > expected (2019); availability/prior religiosity > "need" (2021) | 02_theory.md | yes |
+| Ref 1 Nirenberg 1996 | Added (from 04_black_death_refs.md) | 02_theory_refs.md | no |
+| Refs 2–7 end pages | Chaves 749–74 (flag removed); Stark 1971 165–76; Stark & Bainbridge 1979 117–31; Granqvist 1998 350–67; Iannaccone 1990 297–314; Said 1986 86–106 (still flagged verify) | 02_theory_refs.md | no |
+| Ref 8 Bourdieu | English translation *Comparative Social Research* 13 (1991): 1–44 confirmed; verify flags removed | 02_theory_refs.md | no |
+| Ref 9 Glock 1964 | Pages 24–36 added | 02_theory_refs.md | no |
+| Ref 10 Weber 1946 | "Social Psychology" 267–301 (Oxford ed.); "Charismatic Authority" 245–52 marked verify; note that 279–313 is the Routledge pagination | 02_theory_refs.md | no |
+| Ref 11 DOIs | Added for Kay et al. 2010, Frazier et al. 2009, Smith et al. 2000 (all checked on Crossref) | 02_theory_refs.md | no |
+| Ref 12 Exline 2013 | Editors: Pargament, Exline and Jones | 02_theory_refs.md | no |
+| Ref 13 Erikson 1994 | Subtitle flag removed; note on the 1995 paperback subtitle | 02_theory_refs.md | no |
+| Ref 14 Kirkpatrick 2005 | Year flag resolved (©2005) | 02_theory_refs.md | no |
+| Ref 16 Lincoln 2003 | Note: released late 2002, ©2003 | 02_theory_refs.md | no |
+| Ref 19 Marx 1994 | Editor flag removed; translation-wording flag kept (UNV) | 02_theory_refs.md | no |
+| Ref 20 Morris 1984, Berger 1999 | Publisher flags removed | 02_theory_refs.md | no |
+| Other resolved flags | Granqvist 2020 and Lincoln 1989 subtitles; Vail "III" | 02_theory_refs.md | no |
+| C-5 Lang & Chvaja | Added that switching participants between environments gave strong support to the insecurity theory | 02_theory.md | yes |
+| C-6 Mitchell 1990 | Now "responding to Scott's earlier *Weapons of the Weak* (Scott 1985)"; Scott 1985 added to refs | 02_theory.md; 02_theory_refs.md | yes (text) |
+| C-7 Berger | 1999 = abandoned secularization theory ("essentially mistaken"); 2014 = pluralism relativizes rather than secularizes. Synthesis-table row updated ("later revised"; adds Berger 2014). *The Many Altars of Modernity* (De Gruyter, doi 10.1515/9781614516477, Crossref) added to refs | 02_theory.md; 02_theory_refs.md | yes (text and table) |
+| C-8 Hirschman | "may protest from within or leave. Loyalty delays exit and makes voice more likely" | 02_theory.md | yes |
+| C-9 Stark & Bainbridge | Compensator argument cited to 1980 and 1987; 1979 kept for "high tension". 1980 *JSSR* 19 (2): 114–28, doi 10.2307/1386246 added | 02_theory.md; 02_theory_refs.md | yes (text) |
+| C-10 Immerzeel & van Tubergen | "both the individual and the national level"; individual insecurity (unemployment, war) noted | 02_theory.md | yes |
+| C-11 Weber church definition | "compulsory hierocratic organization whose staff claims a monopoly of the legitimate use of 'hierocratic coercion,' the granting or withholding of religious benefits (Weber 1978, pt. 1, ch. 1, §17)" | 02_theory.md | yes |
+| C-12 RCOPE | Tag replaced with "(the 'Interpersonal Religious Discontent' subscale)" | 02_theory.md | yes |
+| C-14 Weber disfavour passage | "[verify passage]" replaced with "(Weber 1946, 271)"; page still listed under To verify (not checked against a scan) | 02_theory.md | yes |
+| §3 To verify list | Confirmed items removed (Glock, Bourdieu, RCOPE, Exline domains, Kirkpatrick, Eyerman, Erikson, Lincoln, Morris/Berger publishers, Girard ch. 1, O'Malley editor, end pages). Kept: Weber 1946 charisma pages and p. 271; Weber 1978 theodicy sections; Marx translation wording; Said end page | 02_theory.md | yes |
+| 15_synthesis.md / doc synthesis | Checked; no repeat of the C-2 or C-4 errors | none | no |
