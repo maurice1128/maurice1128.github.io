@@ -105,21 +105,19 @@ The Taki Onqoy ("dancing sickness," c. 1564–80) is the clearest rejection case
 
 ### To verify
 
-- PCT 1971 and 1975 statement Chinese titles (對國是的聲明與建議; 我們的呼籲).
 - Wang Hsien-chih 王憲治, ed. 1988, homeland theology volume: Chinese title and publisher.
 - Cheng Yang-en 鄭仰恩, *Dinggen bentu de Taiwan Jidujiao*: year (2005 in notes; Open Library lists Tainan: Renguang, 2010).
-- *Religio* 2023 article on the PCT (author unknown) for the claim that membership doubled in the 1960s.
-- Worthy News (n.d.) and Taipei Times (2025) on *Taiwan Church News* 1987 and evangelical readings of persecution.
+- Double the Church movement (1955–65): page in Cheng 2005 (or Rubinstein 1991a) and the congregation counts actually achieved.
+- *Taiwan Church News* 1987: confirm the 20 February confiscation of issue 1835 against the issue itself or a non-church source (current source is the paper's 2017 retrospective, Chiu 2017).
+- Worthy News (n.d.) on evangelical readings of persecution (single informant).
 - "Flour religion" (麵粉教) claim: no scholarly source located; do not cite as fact.
-- Vicedom 1967, *Faith That Moves Mountains*: publisher.
+- Fan Chiang 2019: trace the 1985/1991 provincial-survey percentages to the original surveys and cite them directly.
 - Chiu Yun-fang 2013: publisher.
 - St Andrews Ami thesis and ANU Bunun thesis: authors and years.
 - Chi Oang 芝苑: scholarly source needed.
 - van 't Spijker, IAMS paper: title and year.
 - Tiemessen 2005: venue; Rwanda census 2022 religion tables (NISR).
-- Foreign Policy 2014, Christianity Today 2011, Catholic Register 2022: authors and dates.
-- Rychetská 2022: volume and issue.
-- Griener 2023: volume editors.
+- Foreign Policy 2014, Christianity Today 2011: authors and dates.
 - Hansen 2009b: volume editor (*Casting Faiths*).
 - Blacket 1994: page range.
 - Takahashi Shinji's original articles coining 浦上燔祭説.
