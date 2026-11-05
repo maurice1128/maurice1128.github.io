@@ -8,11 +8,11 @@ Quotations follow the New Revised Standard Version (NRSV, 1989) and are kept sho
 
 The Bible's first answer to collective suffering is not explanation but address: the sufferer speaks to God. The lament psalms ask "How long, O LORD?" (Ps 13:1) and "My God, my God, why have you forsaken me?" (Ps 22:1). Psalm 88 ends without any turn to praise; its last line leaves the speaker in darkness (88:18). Lamentations, whose Hebrew title is its opening cry *ʾêkâ* ("How!"), is written largely in the limping *qînâ* (funeral dirge) rhythm. It asks passers-by, "Is it nothing to you?" (Lam 1:12). Job protests for thirty-five chapters, and God says at the end that Job, not his friends, has "spoken of me what is right" (Job 42:7).
 
-Westermann established lament as one of the two basic forms of psalmic prayer, alongside praise (Westermann 1981), and argued for its theological weight in the Old Testament as a whole (Westermann 1974). He distinguished the dirge over the dead (*qînâ*) from the plea addressed to God; only the latter expects an answer. Brueggemann's "The Costly Loss of Lament" gave the form a social function. Lament keeps the covenant two-sided and legitimates the "pain-bearer," and it makes justice a proper question to put before God (Brueggemann 1986). A church that loses it drifts toward a one-sided worship that serves established power.
+Westermann established lament as one of the two basic forms of psalmic prayer (Westermann 1981) and argued for its weight in Old Testament theology (Westermann 1974). He distinguished the dirge over the dead (*qînâ*) from the plea to God, which expects an answer. Brueggemann's "The Costly Loss of Lament" gave the form a social function. Lament keeps the covenant two-sided and legitimates the "pain-bearer," and it makes justice a proper question to put before God (Brueggemann 1986). A church that loses it drifts toward a one-sided worship that serves established power.
 
 O'Connor stresses that God never speaks in Lamentations, leaving room for survivors' voices (O'Connor 2002). Newsom reads Job as an unresolved contest of moral imaginations (Newsom 2003). Billman and Migliore (1999) argue for recovering lament in worship and pastoral care, and Kim (2021) reads the communal laments as a residue of transgenerational trauma.
 
-For the model, lament confirms that suffering raises demand for meaning and community. It also shows that the Bible authorises complaint *to* God *within* the worshipping assembly. Lament keeps faith and protest together, which helps explain why faith can rise while trust in an institution that silences complaint falls.
+For the model, lament confirms that suffering raises demand for meaning and community, and that the Bible authorises complaint *to* God *within* the assembly. Lament holds faith and protest together, which helps explain why faith can rise while trust in an institution that silences complaint falls.
 
 ### 16.2 Interpreting suffering: retribution, its critique, and God with the sufferer
 
@@ -48,7 +48,7 @@ The New Testament warns about the church's own favouritism toward the powerful. 
 
 Interpretive caution is needed. Revelation 18 targets an imperial city, not a church, so applying it to churches is analogy, not exegesis. Amos and Micaiah confront state cults in ancient monarchies, not voluntary churches. The texts warrant a question, whether a church has become a "king's sanctuary," not a verdict on any church.
 
-For the model, these texts give biblical language for the third church role, a church allied with perpetrators. They also show the faithful response as prophetic speech and, in Revelation, separation from complicity, not abandonment of God.
+For the model, these texts name the third church role, a church allied with perpetrators. The faithful response they model is prophetic speech and separation from complicity, not abandonment of God.
 
 ### 16.5 Faith migrating to the sufferers' own community
 
@@ -58,7 +58,7 @@ Acts 6:1–7 matters most for the model, because it shows a church admitting fai
 
 Paul makes shared suffering a mark of the body: "If one member suffers, all suffer together with it" (1 Cor 12:26). The Presbyterian Church in Taiwan cited this verse in its 2009 letter after Typhoon Morakot (see section on the contemporary church). Galatians 6:2 commands, "Bear one another's burdens." James 1:27 defines pure religion as caring "for orphans and widows in their distress" (*thlipsis*). 1 Peter 4:12–19 addresses a community under "fiery ordeal" (*pyrōsis*) and calls its members to "share Christ's sufferings" (4:13). It distinguishes suffering for the faith from deserved punishment (4:15).
 
-For the model, Acts 6 is the canonical counter-case to migration. Faith did not need to leave the church because the church restructured, putting the neglected group's members in charge of the ministry that had failed them. The model should therefore treat institutional self-correction as a branch that can prevent migration.
+For the model, Acts 6 is the canonical counter-case to migration. Faith did not need to leave because the church restructured and put the neglected group in charge of the failing ministry. Institutional self-correction is a branch that can prevent migration.
 
 ### 16.6 Transmission needs community
 
@@ -74,15 +74,15 @@ The Hebrew Bible provides a liturgy for corporate confession of collective and i
 
 1 Peter 4:17 adds a New Testament principle: "the time has come for judgment to begin with the household of God" (*oikos tou theou*). The phrase echoes Ezekiel 9:6, where judgment begins "at my sanctuary."
 
-Modern churches have adopted this form. In October 1945 the leaders of the German Evangelical Church declared in Stuttgart that "through us endless sufferings" had been brought to many peoples (Conway 1987). In 1990 the Presbyterian Church in Taiwan apologised to 228 victims and their families. It confessed that, out of fear under martial law, "整體教會並未給予受難者家屬應有的聲援" ("the church as a whole did not give the victims' families the support they were due") (PCT 1990). Churches in Canada and Australia apologised for their part in removing Indigenous children (TRC 2015; HREOC 1998). John Paul II asked forgiveness of the Indigenous peoples of Latin America and of Africans deported as slaves (ITC 2000).
+Modern churches have adopted this form. In October 1945 German Protestant leaders declared at Stuttgart that "through us endless sufferings" had been brought to many peoples (Conway 1987). In 1990 the Presbyterian Church in Taiwan apologised to 228 victims and their families, confessing that out of fear under martial law "整體教會並未給予受難者家屬應有的聲援" ("the church as a whole did not give the victims' families the support they were due") (PCT 1990). Churches in Canada and Australia apologised for removing Indigenous children (TRC 2015; HREOC 1998), and John Paul II asked forgiveness of Latin America's Indigenous peoples and of Africans deported as slaves (ITC 2000).
 
 The International Theological Commission's *Memory and Reconciliation* draws a distinction that matters here. In the biblical confessions of "the sins of the fathers," it notes, confession is addressed solely to God, for sins against God rather than against other people (ITC 2000, §2.1). Modern apologies such as the PCT's are addressed to human victims, which goes beyond the biblical pattern. The same document distinguishes the Church's holiness from the sins of her members, a distinction Protestants draw differently. Whether institutions as such can repent was debated in the 1970s (Elliott 1976); Prothro (2023) offers a recent canonical survey.
 
-For the model, corporate confession is the biblical form of institutional repentance. It predicts that public, specific confession, followed by changed practice as in Acts 6, can begin to restore trust. The PCT's 1990 apology is a test case worth tracing in the descriptive articles.
+For the model, corporate confession is the biblical form of institutional repentance. Public, specific confession followed by changed practice, as in Acts 6, should begin to restore trust; the PCT's 1990 apology is a test case for the descriptive articles.
 
 ### 16.8 Counterweights, and how traditions read them
 
-A one-sided reading would make Scripture simply anti-institutional. Several texts pull the other way. Ezekiel 18 rejects the proverb about sour grapes and insists, "it is only the person who sins that shall die" (18:4). Each generation must answer for itself (Joyce 1989), and sufferers are not exempt from their own repentance. Psalm 73, Habakkuk 3:17–19 and Job 42 model faith that holds without explanation. The psalmist's crisis resolves only when he goes "into the sanctuary of God" (Ps 73:17). That is a counterweight to the claim that the worshipping institution is the problem. The meaning of Job 42:6 is itself disputed: "I despise myself and repent in dust and ashes" is one rendering among several.
+Several texts resist a simply anti-institutional reading. Ezekiel 18 rejects the sour-grapes proverb: "it is only the person who sins that shall die" (18:4). Each generation answers for itself (Joyce 1989), and sufferers are not exempt from repentance. Psalm 73, Habakkuk 3:17–19 and Job 42 model faith that holds without explanation. The psalmist's crisis resolves when he goes "into the sanctuary of God" (Ps 73:17), so worship can also be where faith recovers. Job 42:6 itself has several possible renderings.
 
 Scripture also commands order. Hebrews 13:17 says, "Obey your leaders and submit to them," while adding that leaders "will give an account," which links back to Ezekiel 34. Romans 13:1–7 calls for subjection to governing authorities and calls the ruler God's servant (*diakonos*) "for your good" (13:4). Acts 5:29 sets the limit: "We must obey God rather than any human authority." Hebrews 12:5–11 quotes Proverbs 3:11–12 and calls hardship divine discipline (*paideia*; Hebrew *mûsār*). It addresses persecution endured for the faith, however, not abuse by church leaders, and using it to silence victims of the church misreads it.
 
