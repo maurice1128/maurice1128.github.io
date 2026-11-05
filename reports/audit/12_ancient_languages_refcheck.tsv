@@ -25,3 +25,4 @@ MATCH	openlibrary	1906	Procopii Caesariensis opera omnia recognovit Jacobus Haur
 MATCH	crossref	1972	Lamentations	Hillers, Delbert R. 1972. *Lamentations*. Anchor Bible 7A. Garden City, NY: Doubleday.
 WEAK	crossref	2010	Procédures de remaniement dans un programme iconographique posthume des œuvres de Guillaume de Macha	Hoepffner, Ernest, ed. 1908. *Œuvres de Guillaume de Machaut*. Vol. 1. Société des anciens textes français. Paris: Firmin-Didot.
 MATCH	openlibrary	1896	The register of Ralph of Shrewsbury, Bishop of Bath and Wells, 1329-1363	Holmes, Thomas Scott, ed. 1896. *The Register of Ralph of Shrewsbury, Bishop of Bath and Wells, 1329–1363*. 2 vols. Somerset Record Society 9–10. [verify place and publisher] Calendars Ralph's mandate of 10 January 1349 
+YEAR_DIFF	crossref	1980	Selections from English Wycliffite Writings	Hudson, Anne, ed. 1978. *Selections from English Wycliffite Writings*. Cambridge: Cambridge University Press.
