@@ -123,3 +123,6 @@ Started 2026-11-05.
 2.8 Chaves; Davie; Voas & Crockett; Casanova; Martin; Taylor
 2.9 Moore; Girard; critiques Nirenberg, Cohn 2007/2018; TMT link
 2.10 synthesis table + beyond paragraph
+- [draft] Section saved to reports/sections/02_theory.md (~4,400 words incl. tables). Next: refs file, then Docs update.
+- [refs] 02_theory_refs.md saved (~99 entries). Next: Docs update of block mqbz872zda9.69.
+- [done] Docs update accepted (rev 205); pending block mqbz872zda9.69 resolved. Section complete.

@@ -69,3 +69,30 @@ Source: kanalregister.hkdir.no — queried through the site's own public search 
 | 新史學, 臺灣史研究, 臺灣社會學刊, 臺灣社會學, 台灣宗教研究, 玄奘佛學研究 | — | not found by ISSN (新史學 1023-2249) or romanised title [not confirmed — apparently unlisted] | |
 
 Cross-check: these match the Norway_Level copies in the JUFO records (Step 1) for every journal both list. Note CSSH is only level 1 in Norway despite JUFO 3 / DK 2.
+
+---
+## Step 3 — Scimago SJR (checked 2026-11-05)
+
+Access log: scimagojr.com returns HTTP 403 (Cloudflare challenge) to curl and WebFetch, including `journalrank.php?out=xls` and `journal_img.php`. A Wayback snapshot of the full SJR CSV exists (`http://web.archive.org/web/20251026083950/https://www.scimagojr.com/journalrank.php?out=xls`, per archive.org/wayback/available) but web.archive.org connections were reset by the network proxy, so it could not be read. resurchify.com and ooir.org: 403. **Source actually used: scijournal.org** journal pages (state "SJR and H-Index data comes from SCImago"; page attribute `data-quartile` = best SJR quartile; data year 2025, i.e. SJR 2025 release). This is a third-party mirror — the per-category quartile was NOT available, only the best quartile. Treat as [secondary source; verify on scimagojr.com in a browser].
+
+| Journal | scijournal.org URL | Best SJR quartile (2025) | SJR 2025 / 2024 / 2023 | Scopus subject areas (broad) |
+|---|---|---|---|---|
+| CSSH | https://www.scijournal.org/comparative-studies-in-society-and-history | Q1 | 0.700 / 0.477 / 0.424 | Arts & Humanities; Social Sciences |
+| Past & Present | https://www.scijournal.org/past-present | Q1 | 0.788 / 0.854 / 0.770 | Arts & Humanities; Social Sciences |
+| Church History | https://www.scijournal.org/church-history | **Q3** | 0.117 / 0.147 / 0.112 | Arts & Humanities; Social Sciences |
+| Social Science History | https://www.scijournal.org/social-science-history | Q1 | 0.277 / 0.269 / 0.381 | Arts & Humanities; Social Sciences |
+| JSSR | https://www.scijournal.org/journal-for-the-scientific-study-of-religion | Q1 | 1.068 / 1.081 / 0.979 | Arts & Humanities (+ Social Sciences per Scopus) |
+| Sociology of Religion | https://www.scijournal.org/sociol-relig | Q1 | 1.235 / 1.144 / 0.968 | Arts & Humanities; Social Sciences |
+| Review of Religious Research | https://www.scijournal.org/rev-relig-res | Q1 | 0.548 / 0.778 / 0.557 | Arts & Humanities |
+| Journal of Contemporary Religion | https://www.scijournal.org/j-of-contemporary-religion | Q1 | 0.329 / 0.309 / 0.414 (T&F's own page also gives SJR 2025 = 0.329) | Arts & Humanities; Social Sciences |
+| Journal of Religious History | https://www.scijournal.org/j-of-religious-history | **Q2** | 0.134 / 0.129 / 0.108 | Arts & Humanities |
+| Religion | https://www.scijournal.org/religion | Q1 | 0.507 / 0.493 / 0.434 | Arts & Humanities; Social Sciences |
+| History Compass | https://www.scijournal.org/history-compass | Q1 | 0.253 / 0.275 / 0.209 | Arts & Humanities |
+| Religion Compass | https://www.scijournal.org/religion-compass | Q1 | 0.302 / 0.206 / 0.140 | Arts & Humanities |
+| Studies in World Christianity | https://www.scijournal.org/studies-in-world-christianity | Q2 | 0.177 / 0.181 / 0.184 | Arts & Humanities |
+| IBMR | not found on scijournal.org | [not confirmed] | | |
+| Review of Religion and Chinese Society | https://www.scijournal.org/review-of-religion-and-chinese-society | Q2 | 0.145 / 0.296 / 0.126 (coverage listed 2014–2024) | [not shown] |
+| Journal of Asian Studies | https://www.scijournal.org/j-asian-stud | Q1 | 0.258 / 0.350 / 0.297 | Arts & Humanities; Social Sciences |
+| Religions (MDPI) | https://www.scijournal.org/religions | Q1 | 0.444 / 0.391 / 0.368 | Arts & Humanities |
+
+Caution: SJR in humanities categories (History, Religious Studies) is low in absolute terms, so Q1 there is easy for any well-cited journal — Religions (MDPI) and the Compass review journals are Q1 by this measure. Quartile alone does not separate flagship from mid-tier in these fields; use JUFO/Norwegian levels for that. scijournal.org also shows an "Impact Factor" figure but its values (e.g. JAS 0.41) do not match Clarivate JIFs, so it is NOT recorded as a JIF.

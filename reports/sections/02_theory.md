@@ -28,7 +28,7 @@ The novelty review (section 11) treats Weber as the closest prior art. The model
 
 Disaster sociology adds the opposite case. Erikson's study of the 1972 Buffalo Creek flood, caused by a coal company's dam, defined collective trauma as damage to the bonds of community itself, separate from individual injury (Erikson 1976). He later argued that human-caused and toxic disasters form "a new species of trouble" that breeds distrust of institutions (Erikson 1994). The cultural-trauma school holds that a collectivity's trauma is made, not given. Carrier groups must narrate an event as a wound to identity (Alexander et al. 2004). Eyerman (2001) treats slavery as a cultural trauma formed mainly after emancipation, through memory, by generations that had not been enslaved.
 
-**Predictions.** *Theology and church role:* suffering raises the demand for collective ritual, and solidarity accrues to whoever actually gathers the mourners. That may be the parish, the flagellant procession, the hush harbor or the ring shout. *Power and perpetrators:* natural catastrophe can produce solidarity; human-caused catastrophe erodes trust in institutions linked to the perpetrators. *Transmission and timing:* cultural trauma is built in the second generation. This fits Fountain's evidence that mass Black conversion came largely after 1865 (section 5).
+**Predictions.** *Theology and church role:* suffering raises the demand for collective ritual, and solidarity accrues to whoever actually gathers the mourners. That may be the parish, the flagellant procession, the hush harbor or the ring shout. *Power and perpetrators:* natural catastrophe can produce solidarity; human-caused catastrophe erodes trust in institutions linked to the perpetrators. *Transmission and timing:* cultural trauma is built in the second generation. This fits Fountain's evidence that mass Black conversion came largely after 1865 (Fountain 2010; section 5).
 
 **Critiques.** Durkheim neglects conflict and power: effervescence also fuels pogroms (section 2.9). The trauma concept is modern and clinical, so applying it to 1348 risks anachronism. Constructivism can understate the event itself.
 
@@ -135,6 +135,7 @@ The table shows a division of labour. Demand theories predict that suffering rai
 - Eyerman 2001: confirm the argument that slavery became cultural trauma mainly after emancipation.
 - Erikson 1994: confirm the claim about human-caused disasters and institutional distrust.
 - Lincoln 1985: pages of his chapter on religion and revolution, and the exact typology.
-- Marx 1994: editor (O'Malley) of *Marx: Early Political Writings*.
+- Marx 1994: editor (O'Malley) of *Marx: Early Political Writings*, and the wording of the two quoted phrases in that translation.
 - Morris 1984 and Berger 1999: publishers.
 - Girard 1986: whether the Machaut analysis is chapter 1 of the English edition.
+- End pages not returned by Crossref for Chaves 1994, Stark and Bainbridge 1979, Stark 1971, Iannaccone 1990, Granqvist 1998 and Said 1986.
