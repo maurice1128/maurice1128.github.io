@@ -8,7 +8,7 @@ Berger, Peter L. (彼得·贝格尔). 1991. 《神圣的帷幕》 [*The Sacred C
 
 Byrne, Joseph P. (约瑟夫·P.伯恩). 2013. 《黑死病》 [*The Black Death*]. Translated by 王晨 (Wang Chen). Shanghai: 上海社会科学院出版社.
 
-Chang Chia-lin 張家麟. ca. 2021. 〈瘟疫、政治與宗教——以台灣COVID-19擴散後管制宗教為例〉 [Plague, politics and religion: State regulation of religion in Taiwan after the spread of COVID-19]. Journal hosted by Hsuan Chuang University (probably vol. 36, no. 2), 41ff. [verify: journal title, year, pages]
+Chang Chia-lin 張家麟. 2021. 〈瘟疫、政治與宗教——以台灣COVID-19擴散後管制宗教為例〉 [The pandemic, politics, and religion: A case study on taking the control of religion after the spread of COVID-19 in Taiwan]. 《玄奘佛學研究》 [*Hsuan Chuang Journal of Buddhism Studies*], no. 36 (October): 41–74.
 
 Chen Nan-jou 陳南州. 2003. 《認同的神學》 [A theology of identification]. Taipei: 永望. [verified via reference list in Chiu 2021]
 
@@ -26,11 +26,11 @@ Fan Chiang Hsiao-han 范姜曉涵. 2019. 〈臺灣原住民族都市教會之轉
 
 Gasquet, Francis Aidan (弗朗西斯·艾丹·加斯凯). 2019. 《黑死病：大灾难、大死亡与大萧条（1348—1349）》 [*The Great Pestilence*]. Translated by 郑中求 (Zheng Zhongqiu). Beijing: 华文出版社.
 
-Girard, René (勒内·基拉尔). 2022. 《替罪羊》 [*Le Bouc émissaire*]. Translated by 冯寿农 (Feng Shounong). Shanghai: 上海人民出版社. ISBN 9787208177499. [earlier 东方出版社 2002 edition: verify]
+Girard, René (勒内·基拉尔). 2022. 《替罪羊》 [*Le Bouc émissaire*]. Translated by 冯寿农 (Feng Shounong). Shanghai: 上海人民出版社. ISBN 9787208177499. Earlier edition: 东方出版社, 2002 (Douban).
 
 Gottfried, Robert S. (罗伯特·S.戈特弗里德). 2022. 《瘟疫之王：黑死病及其后世界》 [*The Black Death: Natural and Human Disaster in Medieval Europe*]. Translated by 鹿妍 (Lu Yan). Beijing: 光明日报出版社.
 
-Grenz, Stanley J., and Roger E. Olson (葛倫斯、奧爾森). 2004. 《二十世紀神學評論》 [*20th-Century Theology*]. Translated by 劉良淑 (Liu Liang-shu) and 任孝綺 (Jen Hsiao-chi). Taipei: 校園書房. [verify: translators and year]
+Grenz, Stanley J., and Roger E. Olson (葛倫斯、奧爾森). 2004. 《二十世紀神學評論》 [*20th-Century Theology*]. Translated by 劉良淑 (Liu Liang-shu) and 任孝琦 (Jen Hsiao-chi). Taipei: 校園書房.
 
 Hatcher, John (约翰·哈彻). 2024. 《黑死病：一个村庄的微观史》 [*The Black Death: A Personal History*]. Translated by 欧阳敏 (Ouyang Min) and 王晓燕 (Wang Xiaoyan). Shanghai: 东方出版中心. ISBN 9787547323472.
 
@@ -80,7 +80,7 @@ Moltmann, Jürgen (莫爾特曼). 1995 or 1998. 《被釘十字架的上帝》 [
 
 Moltmann, Jürgen (莫尔特曼). 1997. 《被钉十字架的上帝》 [*Der gekreuzigte Gott*]. Translated by 阮炜 (Ruan Wei). Shanghai: 上海三联书店.
 
-Pinn, Anthony B. (安東尼．平). 2006. 《上帝，為什麼？黑人．苦難．惡》 [*Why, Lord? Suffering and Evil in Black Theology*]. Translated by 周輝 (Zhou Hui) [verify]. Hong Kong: 道風山基督教叢林. ISBN 9628322990.
+Pinn, Anthony B. (安東尼．平). 2006. 《上帝，為什麼？黑人．苦難．惡》 [*Why, Lord? Suffering and Evil in Black Theology*]. Translated by 周輝 (Zhou Hui) [verify]. Hong Kong: 道風山基督教叢林. ISBN 9628322990. [verify: title, publisher and translator; the Douban ISBN record is a dead page]
 
 Shaanxi Normal University, School of History and Culture. 2020. "李化成" [Li Huacheng], faculty page, posted September 17, 2020. https://his.snnu.edu.cn/info/1014/1591.htm.
 
@@ -102,7 +102,7 @@ Wang Cheng-wen 王政文. 2012. 〈改宗所引起的家庭與人際衝突：以
 
 Wang Hsien-chih 王憲治, ed. 1988. 《台灣鄉土神學論文集》 [Essays on Taiwanese homeland theology]. Tainan: 台南神學院. [verified via reference list in Chiu 2021]
 
-Wang Mei-hsia 王梅霞. 2018. 〈轉化、交織與再創造：賽德克族的宗教變遷〉 [Transformation, interweaving and re-creation: Religious change among the Seediq]. 《考古人類學刊》, no. 89: 1–56. https://doi.org/10.6152/jaa.201812_(89).0001.
+Wang Mei-hsia 王梅霞. 2018. 〈轉化、交織與再創造：賽德克族的宗教變遷〉 [Transformation, interweaving and re-creation: Religious change among the Seediq]. 《考古人類學刊》, no. 89: 1–55. https://doi.org/10.6152/jaa.201812_(89).0001.
 
 Wang Xudong 王旭东, and Meng Qinglong 孟庆龙. 2005. 《世界瘟疫史：疫病流行、应对措施及其对人类社会的影响》 [A world history of plagues]. Beijing: 中国社会科学出版社. ISBN 9787500450535.
 
@@ -114,6 +114,6 @@ Zhang Jingjing 张静静. 2015. 〈论《黑人的灵魂》中的灵歌与种族
 
 Zhao Lixing 赵立行. 2005. 〈西方学者视野中的黑死病〉 [The Black Death in the eyes of Western scholars]. 《历史研究》. [verify: issue, pages]
 
-Zheng Xiaoyun 鄭筱筠. 2012. 〈災難現場的宗教應對體系〉 [Religious response systems at disaster sites]. 《宗教哲學》. [verify: issue, pages]
+Zheng Xiaoyun 鄭筱筠. 2012. 〈災難現場的宗教應對體系〉 [Religious response systems at disaster sites]. 《宗教哲學》. [verify: issue, pages, and the disaster case studied]
 
 Zhou Haijin 周海金. 2014. 《苦难及其神学问题研究》 [Suffering and its theological problems]. Hangzhou: 浙江人民出版社. ISBN 9787213063664.

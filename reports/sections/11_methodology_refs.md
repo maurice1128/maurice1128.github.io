@@ -66,7 +66,7 @@ Gorski, Philip S. 2000. "Historicizing the Secularization Debate: Church, State,
 
 Greiner, D. James, and Donald B. Rubin. 2011. "Causal Effects of Perceived Immutable Characteristics." *Review of Economics and Statistics* 93 (3): 775–85. https://doi.org/10.1162/REST_a_00110.
 
-Hahn, Thomas. 2001. "The Difference the Middle Ages Makes: Color and Race before the Modern World." *Journal of Medieval and Early Modern Studies* 31 (1): 1–37. https://doi.org/10.1215/10829636-31-1-1.
+Hahn, Thomas. 2001. "The Difference the Middle Ages Makes: Color and Race before the Modern World." *Journal of Medieval and Early Modern Studies* 31 (1): 1–38. https://doi.org/10.1215/10829636-31-1-1.
 
 Harper, Matthew. 2016. *The End of Days: African American Religion and Politics in the Age of Emancipation*. Chapel Hill: University of North Carolina Press.
 
@@ -88,7 +88,7 @@ Kieckhefer, Richard. 1974. "Radical Tendencies in the Flagellant Movement of the
 
 Kocka, Jürgen. 2003. "Comparison and Beyond." *History and Theory* 42 (1): 39–44. https://doi.org/10.1111/1468-2303.00228.
 
-Kohler-Hausmann, Issa. 2019. "Eddie Murphy and the Dangers of Counterfactual Causal Thinking About Detecting Racial Discrimination." *Northwestern University Law Review* 113 (5): 1163–1228. [verify; only the 2017 SSRN working paper, https://doi.org/10.2139/ssrn.3050650, was confirmed]
+Kohler-Hausmann, Issa. 2019. "Eddie Murphy and the Dangers of Counterfactual Causal Thinking About Detecting Racial Discrimination." *Northwestern University Law Review* 113 (5): 1163–1228. [volume and first page confirmed via Tübingen KrimDok and core.ac.uk; issue and end page not checked. SSRN working paper 2017: https://doi.org/10.2139/ssrn.3050650]
 
 Kolchin, Peter. 1987. *Unfree Labor: American Slavery and Russian Serfdom*. Cambridge, MA: Belknap Press of Harvard University Press.
 

@@ -28,6 +28,8 @@ Bibb, Henry. 2001. *The Life and Adventures of Henry Bibb: An American Slave*. E
 
 Blassingame, John W., John R. McKivigan, and Peter P. Hinks, eds. 1999. *The Frederick Douglass Papers*. Ser. 2, *Autobiographical Writings*. Vol. 1, *Narrative*. New Haven: Yale University Press.
 
+Boccaccio, Giovanni. 1886. *The Decameron of Giovanni Boccaccio*. Translated by John Payne. London: Villon Society. Project Gutenberg eBook 23700, https://www.gutenberg.org/ebooks/23700.
+
 Boccaccio, Giovanni. 1972. *The Decameron*. Translated by G. H. McWilliam. Harmondsworth: Penguin. [verify place; 2nd ed. 1995 verify]
 
 Boccaccio, Giovanni. 1992. *Decameron*. Edited by Vittore Branca. Turin: Einaudi. [verify]
@@ -62,7 +64,7 @@ Egerton, Douglas R., and Robert L. Paquette, eds. 2017. *The Denmark Vesey Affai
 
 Fisk University Social Science Institute. 1945. *Unwritten History of Slavery: Autobiographical Accounts of Negro Ex-Slaves*. Nashville: Fisk University. Reprint, Washington, DC: Microcard Editions, 1968. [verify 1945 series details]
 
-Fredericq, Paul, ed. 1889–. *Corpus documentorum inquisitionis haereticae pravitatis Neerlandicae*. Ghent: J. Vuylsteke. [verify volume containing *Inter sollicitudines*]
+Fredericq, Paul, ed. 1889–1906. *Corpus documentorum inquisitionis haereticae pravitatis Neerlandicae*. Ghent: J. Vuylsteke. Vol. 3 (1906), with flagellant documents of 1349: https://archive.org/details/corpusdocumento01frgoog (IA metadata misdates it 1889). [verify whether vol. 2 or 3 prints Clement VI's anti-flagellant bull]
 
 Fries, Adelaide L., et al., eds. 1922–. *Records of the Moravians in North Carolina*. Raleigh: North Carolina Historical Commission.
 
@@ -76,7 +78,7 @@ Greenberg, Kenneth S., ed. 1996. *The Confessions of Nat Turner and Related Docu
 
 Hecker, J. F. C. 1844. *The Epidemics of the Middle Ages*. Translated by B. G. Babington. London: Sydenham Society.
 
-Hegel, Karl, ed. 1870–71. *Die Chroniken der oberrheinischen Städte: Straßburg*. 2 vols. Die Chroniken der deutschen Städte 8–9. Leipzig: Hirzel. [verify]
+Hegel, Karl, ed. 1870–71. *Die Chroniken der oberrheinischen Städte: Straßburg*. 2 vols. Die Chroniken der deutschen Städte 8–9. Leipzig: Hirzel.
 
 Henschel, A. W., ed. 1842. "Document zur Geschichte des schwarzen Todes." *Archiv für die gesammte Medicin* 2: 26–59. [verify]
 
@@ -90,7 +92,7 @@ Hockey, S. F., ed. 1986–87. *The Register of William Edington, Bishop of Winch
 
 Hofmeister, Adolf, ed. 1924–40. *Die Chronik des Mathias von Neuenburg*. MGH Scriptores rerum Germanicarum, Nova series 4. Berlin: Weidmann. https://www.dmgh.de/mgh_ss_rer_germ_n_s_4/index.htm.
 
-Holmes, Thomas Scott, ed. 1896. *The Register of Ralph of Shrewsbury, Bishop of Bath and Wells, 1329–1363*. 2 vols. Somerset Record Society 9–10. London. [verify series numbers]
+Holmes, Thomas Scott, ed. 1896. *The Register of Ralph of Shrewsbury, Bishop of Bath and Wells, 1329–1363*. 2 vols. Somerset Record Society 9–10. London. Vol. 2 (Somerset Record Society 10): https://archive.org/details/registerralphsh00holmgoog. Holmes calendars no. 2130 but does not print its Latin, which is in Wilkins 1737, 2:745–46.
 
 Horrox, Rosemary, ed. and trans. 1994. *The Black Death*. Manchester Medieval Sources. Manchester: Manchester University Press.
 
@@ -106,17 +108,19 @@ Kemble, Frances Anne. 1961. *Journal of a Residence on a Georgian Plantation in 
 
 Klingberg, Frank J., ed. 1956. *The Carolina Chronicle of Dr. Francis Le Jau, 1706–1717*. Berkeley: University of California Press.
 
+Krüger, Sabine. 1972. "Krise der Zeit als Ursache der Pest? Der Traktat *De mortalitate in Alamannia* des Konrad von Megenberg." In *Festschrift für Hermann Heimpel zum 70. Geburtstag*, 2:839–83. Göttingen: Vandenhoeck & Ruprecht. [verify title and pages]
+
 Lemaître, Henri, ed. 1906. *Chronique et annales de Gilles le Muisit, abbé de Saint-Martin de Tournai (1272–1352)*. Paris: Renouard.
 
 Library of Congress. n.d. *Born in Slavery: Slave Narratives from the Federal Writers' Project, 1936–1938*. Digital collection. https://www.loc.gov/collections/slave-narratives-from-the-federal-writers-project-1936-to-1938/.
 
-Liele, George, Stephen Cooke, Abraham Marshall, et al. 1916. "Letters Showing the Rise and Progress of the Early Negro Churches of Georgia and the West Indies." *Journal of Negro History* 1 (1): 69–92. https://doi.org/10.2307/2713517.
+Liele, George, Stephen Cooke, Abraham Marshall, et al. 1916. "Letters Showing the Rise and Progress of the Early Negro Churches of Georgia and the West Indies." *Journal of Negro History* 1 (1): 69–92. https://doi.org/10.2307/2713517. Scan: https://archive.org/details/journalofnegrohi01assouoft.
 
 Lisini, Alessandro, and Fabio Iacometti, eds. 1931–39. *Cronache senesi*. Rerum Italicarum Scriptores, 2nd ser., 15.6. Bologna: Zanichelli. [verify]
 
-Luff, Robert, and Georg Steer, eds. 2003. *Konrad von Megenberg, Das "Buch der Natur."* Vol. 2, *Kritischer Text*. Tübingen: Niemeyer. [verify]
+Luff, Robert, and Georg Steer, eds. 2003. *Konrad von Megenberg, Das "Buch der Natur."* Vol. 2, *Kritischer Text*. Tübingen: Niemeyer. [edits the *Buch der Natur*, not *De mortalitate*]
 
-Lumby, Joseph Rawson, ed. 1889–95. *Chronicon Henrici Knighton vel Cnitthon, monachi Leycestrensis*. 2 vols. Rolls Series 92. London: HMSO.
+Lumby, Joseph Rawson, ed. 1889–95. *Chronicon Henrici Knighton vel Cnitthon, monachi Leycestrensis*. 2 vols. Rolls Series 92. London: HMSO. Vol. 2, 1895: https://archive.org/details/chroniconhenrici02knig (IA metadata gives 1889).
 
 Marcus, Jacob R. 1938. *The Jew in the Medieval World: A Source Book, 315–1791*. Cincinnati: Union of American Hebrew Congregations. [verify place and publisher of 1938 ed.]
 
@@ -147,6 +151,8 @@ Raine, James, ed. 1873. *Historical Papers and Letters from the Northern Registe
 Randolph, Peter. 1855. *Sketches of Slave Life: Or, Illustrations of the Peculiar Institution*. Boston. https://docsouth.unc.edu/neh/randolph/randolph.html. [verify publisher]
 
 Rawick, George P., ed. 1972. *The American Slave: A Composite Autobiography*. 19 vols. Westport, CT: Greenwood. Supplement, Series 1, 1977; Supplement, Series 2, 1979. [verify volume counts]
+
+Raynaldus, Odoricus. 1872. *Annales ecclesiastici*. Edited by Augustin Theiner. Vol. 25. Bar-le-Duc: Guérin. https://archive.org/details/annalesecclesias25barouoft. [verify year; IA metadata gives 1864] 1348 §§31–34, pp. 453–55 (bulls of 4 July and 26 September 1348); 1349 §§18–22, pp. 470–72 (bull of 20 October 1349 against the flagellants).
 
 Rébouis, H. Émile. 1888. *Étude historique et critique sur la peste*. Paris: Picard. [verify]
 
@@ -182,7 +188,7 @@ Villani, Matteo. 1846. *Cronica di Matteo Villani*. Edited by Francesco Gherardi
 
 Warren, Florence, and Beatrice White, eds. 1931. *The Dance of Death*, by John Lydgate. Early English Text Society, o.s., 181. London: Oxford University Press.
 
-Wilkins, David, ed. 1737. *Concilia Magnae Britanniae et Hiberniae*. 4 vols. London: R. Gosling. [verify volume for *Effrenata*]
+Wilkins, David, ed. 1737. *Concilia Magnae Britanniae et Hiberniae*. 4 vols. London: R. Gosling. Vol. 2, pp. 745–46 (Ralph of Shrewsbury's mandate of 10 January 1349): https://archive.org/details/conciliamagnaebr02wilk. Vol. 3, pp. 1–2 (Islip, *Effrenata*, 28 May 1350): https://archive.org/details/conciliamagnaebr03wilk.
 
 Williams, Bernadette, ed. and trans. 2007. *The Annals of Ireland by Friar John Clyn*. Dublin: Four Courts Press.
 
@@ -200,7 +206,7 @@ Fountain, Daniel L. 2010. *Slavery, Civil War, and Salvation: African American S
 
 Johnson, Michael P. 2001. "Denmark Vesey and His Co-Conspirators." *William and Mary Quarterly* 58 (4): 915–76. https://doi.org/10.2307/2674506. [verify end page]
 
-Matheson, Lister M. 2005. "*Médecin sans Frontières*? The European Dissemination of John of Burgundy's Plague Treatise." *ANQ* 18 (3): 19–30. https://doi.org/10.3200/ANQQ.18.3.19-30. [verify issue: Crossref also lists issue 1]
+Matheson, Lister M. 2005. "*Médecin sans Frontières*? The European Dissemination of John of Burgundy's Plague Treatise." *ANQ* 18 (3): 19–30. https://doi.org/10.3200/ANQQ.18.3.19-30.
 
 Minton, John. 2025. *Folk Music and Song in the WPA Ex-Slave Narratives*. Jackson: University Press of Mississippi.
 

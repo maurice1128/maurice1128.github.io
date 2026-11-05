@@ -2,6 +2,8 @@
 
 Chicago author-date. Entries marked [verify] have an element still unconfirmed (named in brackets).
 
+- Allen, Richard. (1833) 1880. *The Life, Experience, and Gospel Labors of the Rt. Rev. Richard Allen: To Which Is Annexed the Rise and Progress of the African Methodist Episcopal Church in the United States of America; Containing a Narrative of the Yellow Fever in the Year of Our Lord 1793*. Philadelphia: F. Ford and M. A. Riply. https://archive.org/details/lifeexperiencego1880alle. [page numbers of the 1880 reprint; 1833 first edition not consulted]
+- Allen, William Francis, Charles Pickard Ware, and Lucy McKim Garrison, comps. 1867. *Slave Songs of the United States*. New York: A. Simpson. https://archive.org/details/slavesongsofunit00alle.
 - *Appletons' Annual Cyclopaedia and Register of Important Events of the Year 1866*. 1867. New York: D. Appleton. [verify: title, imprint and p. 492 AME figure; known only via secondary aggregator]
 - *Appletons' Annual Cyclopaedia and Register of Important Events of the Year 1876*. 1877. New York: D. Appleton. [verify: title, imprint and p. 532 AME figure; known only via secondary aggregator]
 - Austin, Allan D. 1997. *African Muslims in Antebellum America: Transatlantic Stories and Spiritual Struggles*. New York: Routledge.
@@ -17,6 +19,7 @@ Chicago author-date. Entries marked [verify] have an element still unconfirmed (
 - Cameron, Christopher. 2019. *Black Freethinkers: A History of African American Secularism*. Evanston, IL: Northwestern University Press. [verify: place]
 - Childs, Matt D. 2006. *The 1812 Aponte Rebellion in Cuba and the Struggle against Atlantic Slavery*. Chapel Hill: University of North Carolina Press.
 - Chireau, Yvonne P. 2003. *Black Magic: Religion and the African American Conjuring Tradition*. Berkeley: University of California Press.
+- *Christian Recorder*. 1866–69. Philadelphia: African Methodist Episcopal Church. Issues read: vol. 6, nos. 14–26 (Apr.–June 1866); vol. 7, nos. 27–39 (1867); vol. 9, nos. 1–13 (Jan.–Mar. 1869). Internet Archive bound runs (e.g. https://archive.org/details/christianrecorder_1869_v9_no1_to_13). [poor OCR; issue dates approximate unless the masthead was found]
 - Clarke, Erskine. 1979. *Wrestlin' Jacob: A Portrait of Religion in the Old South*. Atlanta: John Knox Press.
 - Clarke, Erskine. 2005. *Dwelling Place: A Plantation Epic*. New Haven, CT: Yale University Press.
 - Cone, James H. 1972. *The Spirituals and the Blues: An Interpretation*. New York: Seabury Press.
@@ -27,7 +30,7 @@ Chicago author-date. Entries marked [verify] have an element still unconfirmed (
 - Degler, Carl N. 1971. *Neither Black nor White: Slavery and Race Relations in Brazil and the United States*. New York: Macmillan.
 - Dickerson, Dennis C. 2020. *The African Methodist Episcopal Church: A History*. Cambridge: Cambridge University Press.
 - Diouf, Sylviane A. (1998) 2013. *Servants of Allah: African Muslims Enslaved in the Americas*. 15th anniversary ed. New York: New York University Press.
-- Douglass, Frederick. 1845. *Narrative of the Life of Frederick Douglass, an American Slave*. Boston: Anti-Slavery Office. [verify: imprint against Frederick Douglass Papers edition]
+- Douglass, Frederick. 1845. *Narrative of the Life of Frederick Douglass, an American Slave. Written by Himself*. Boston: Anti-Slavery Office. Read in Project Gutenberg eBook #23, https://www.gutenberg.org/ebooks/23. [no page numbers; cited by chapter]
 - Du Bois, W. E. B., ed. 1903. *The Negro Church*. Atlanta: Atlanta University Press.
 - Dubois, Laurent. 2004. *Avengers of the New World: The Story of the Haitian Revolution*. Cambridge, MA: Belknap Press of Harvard University Press.
 - Dvorak, Katharine L. 1991. *An African-American Exodus: The Segregation of the Southern Churches*. Chicago Studies in the History of American Religion 4. Brooklyn, NY: Carlson Publishing.
@@ -35,6 +38,7 @@ Chicago author-date. Entries marked [verify] have an element still unconfirmed (
 - Egerton, Douglas R. 1999. *He Shall Go Out Free: The Lives of Denmark Vesey*. Madison, WI: Madison House.
 - Elkins, Stanley M. 1959. *Slavery: A Problem in American Institutional and Intellectual Life*. Chicago: University of Chicago Press.
 - Evans, Curtis J. 2008. *The Burden of Black Religion*. New York: Oxford University Press.
+- Federal Writers' Project. 1941. *Slave Narratives: A Folk History of Slavery in the United States from Interviews with Former Slaves*. Typewritten records, 17 vols. Washington, DC: Library of Congress. Read in Project Gutenberg transcriptions of vols. I–IV, VII–XI and XIII–XVII and the Administrative Files. [cited by volume and informant]
 - Forret, Jeff. 2012. Review of *Slavery, Civil War, and Salvation: African American Slaves and Christianity, 1830–1870*, by Daniel L. Fountain. *Slavery & Abolition* 33 (1): 163–65. https://doi.org/10.1080/0144039X.2012.659479.
 - Fountain, Daniel L. 2010. *Slavery, Civil War, and Salvation: African American Slaves and Christianity, 1830–1870*. Baton Rouge: Louisiana State University Press.
 - Frazier, E. Franklin. 1963. *The Negro Church in America*. Liverpool: Liverpool University Press. Reprint, New York: Schocken Books, 1964.
@@ -53,13 +57,19 @@ Chicago author-date. Entries marked [verify] have an element still unconfirmed (
 - Harper, Matthew. 2016. *The End of Days: African American Religion and Politics in the Age of Emancipation*. Chapel Hill: University of North Carolina Press.
 - Herskovits, Melville J. 1941. *The Myth of the Negro Past*. New York: Harper & Brothers.
 - Heywood, Linda M., ed. 2002. *Central Africans and Cultural Transformations in the American Diaspora*. Cambridge: Cambridge University Press.
+- Higginson, Thomas Wentworth. 1870. *Army Life in a Black Regiment*. Boston: Fields, Osgood. Ch. 9, "Negro Spirituals," first published in *Atlantic Monthly* 19 (116, June 1867): 685–94. Read in Project Gutenberg eBook #6764.
 - Hildebrand, Reginald F. 1995. *The Times Were Strange and Stirring: Methodist Preachers and the Crisis of Emancipation*. Durham, NC: Duke University Press.
 - Huneycutt, Maverick. 2026. "The Sound Engineers: The Inaudible Institution, Sonic Concealment and Enslaved Resistance in the Antebellum South." *Slavery & Abolition*, published online May 9, 2026. https://doi.org/10.1080/0144039X.2026.2667844.
 - Hüsgen, Jan. 2016. *Mission und Sklaverei: Die Herrnhuter Brüdergemeine und die Sklavenemanzipation in Britisch- und Dänisch-Westindien*. Stuttgart: Franz Steiner.
 - Irons, Charles F. 2008. *The Origins of Proslavery Christianity: White and Black Evangelicals in Colonial and Antebellum Virginia*. Chapel Hill: University of North Carolina Press.
+- Jacobs, Harriet A. 1861. *Incidents in the Life of a Slave Girl. Written by Herself*. Edited by L. Maria Child. Boston: Published for the Author. Read in Project Gutenberg eBook #11030. [no page numbers; cited by chapter]
+- Jameson, J. Franklin, ed. 1925. "Autobiography of Omar ibn Said, Slave in North Carolina, 1831." *American Historical Review* 30 (4): 787–95.
+- Jones, Absalom, and Richard Allen. 1794. *A Narrative of the Proceedings of the Black People, during the Late Awful Calamity in Philadelphia, in the Year 1793: And a Refutation of Some Censures, Thrown upon Them in Some Late Publications*. Philadelphia: Printed for the authors by William W. Woodward. https://archive.org/details/b32886561.
+- Jones, Charles C. 1842. *The Religious Instruction of the Negroes in the United States*. Savannah: Thomas Purse. https://archive.org/details/religiousinstruc01jone.
 - Jones, William R. (1973) 1998. *Is God a White Racist? A Preamble to Black Theology*. Boston: Beacon Press.
 - Kiddy, Elizabeth W. 2005. *Blacks of the Rosary: Memory and History in Minas Gerais, Brazil*. University Park: Pennsylvania State University Press.
 - Klein, Herbert S. 1967. *Slavery in the Americas: A Comparative Study of Virginia and Cuba*. Chicago: University of Chicago Press.
+- Lee, Jarena. 1849. *Religious Experience and Journal of Mrs. Jarena Lee, Giving an Account of Her Call to Preach the Gospel*. Rev. and corr. from the original manuscript. Philadelphia: Printed and published for the author. https://archive.org/details/religiousexperie00leej. [reprints the 1836 *Life and Religious Experience* as its first part]
 - Levine, Lawrence W. (1977) 2007. *Black Culture and Black Consciousness: Afro-American Folk Thought from Slavery to Freedom*. 30th anniversary ed. New York: Oxford University Press.
 - Mays, Benjamin E. 1938. *The Negro's God as Reflected in His Literature*. Boston: Chapman & Grimes.
 - Mello e Souza, Laura de. (1986) 2004. *The Devil and the Land of the Holy Cross: Witchcraft, Slavery, and Popular Religion in Colonial Brazil*. Translated by Diane Grosklaus Whitty. Austin: University of Texas Press.
@@ -94,8 +104,10 @@ Chicago author-date. Entries marked [verify] have an element still unconfirmed (
 - Thornton, John K. 1998a. *Africa and Africans in the Making of the Atlantic World, 1400–1800*. 2nd ed. Cambridge: Cambridge University Press.
 - Thornton, John K. 1998b. *The Kongolese Saint Anthony: Dona Beatriz Kimpa Vita and the Antonian Movement, 1684–1706*. Cambridge: Cambridge University Press.
 - Turner, Mary. 1982. *Slaves and Missionaries: The Disintegration of Jamaican Slave Society, 1787–1834*. Urbana: University of Illinois Press.
+- Turner, Nat, and Thomas R. Gray. 1831. *The Confessions of Nat Turner, the Leader of the Late Insurrections in Southampton, Va*. Baltimore: Thomas R. Gray. Read in Project Gutenberg eBook #15333.
 - Turner, Nicole Myers. 2020. *Soul Liberty: The Evolution of Black Religious Politics in Postemancipation Virginia*. Chapel Hill: University of North Carolina Press. https://doi.org/10.5149/9781469655253_Turner.
 - Walker, Clarence E. 1982. *A Rock in a Weary Land: The African Methodist Episcopal Church during the Civil War and Reconstruction*. Baton Rouge: Louisiana State University Press.
+- Walker, David. 1830. *Walker's Appeal, in Four Articles; Together with a Preamble, to the Coloured Citizens of the World, but in Particular, and Very Expressly, to Those of the United States of America*. 3rd ed. Boston: David Walker. https://archive.org/details/walkersappealinf00walk.
 - Wells-Oghoghomeh, Alexis. 2021. *The Souls of Womenfolk: The Religious Cultures of Enslaved Women in the Lower South*. Chapel Hill: University of North Carolina Press.
 - Williams, Delores S. 1993. *Sisters in the Wilderness: The Challenge of Womanist God-Talk*. Maryknoll, NY: Orbis Books.
 - Wilmore, Gayraud S. (1972) 1998. *Black Religion and Black Radicalism: An Interpretation of the Religious History of African Americans*. 3rd ed., rev. and enl. Maryknoll, NY: Orbis Books.

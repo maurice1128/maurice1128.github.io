@@ -14,7 +14,7 @@ A fourth article matters for the model's theological variable. Its title promise
 
 Other mainland authors exist but are less central. Google Scholar lists 赵立行 (Zhao Lixing) on Western historiography of the Black Death in 《历史研究》 (Zhao 2005), 李荷 (Li He) on cultural change after the plague (Li He 2004), and 龙秀清 (Long Xiuqing) and 李锦荣 (Li Jinrong) on English monasteries (Long and Li 2012) *[verify all three]*. 王旭东 (Wang Xudong) and 孟庆龙 (Meng Qinglong) wrote a general world history of epidemics (Wang and Meng 2005). Lower-tier journals carry short essays linking the plague to the Reformation or humanism; these add little.
 
-Taiwan has no peer-reviewed article on the Black Death and religion that I could find. The leading medical historian, 李尚仁 (Li Shang-jen), wrote a public-history essay (Li Shang-jen 2020). 張家麟 (Chang Chia-lin) compared flagellant penance with Taiwanese plague-god rituals in a study of COVID-19 religious regulation (Chang ca. 2021) *[verify journal]*.
+Taiwan has no peer-reviewed article on the Black Death and religion that I could find. The leading medical historian, 李尚仁 (Li Shang-jen), wrote a public-history essay (Li Shang-jen 2020). 張家麟 (Chang Chia-lin) surveys penitential and plague-expulsion theologies (懺悔觀; 懲奸觀與驅瘟觀) before analysing state regulation of religion in Taiwan under the COVID-19 Level 3 alert (Chang 2021). Whether it explicitly compares medieval flagellant penance with Taiwanese plague-god rituals is not shown by its abstract or table of contents *[verify]*.
 
 For the model, this cluster supports the "faith up, institution strained" branch for 1348–1349. It does not test the duration problem raised by Cohn, because no Chinese work found studies the recurrences after 1361. It also does not separate the sufferers' power position from the church's role.
 
@@ -22,7 +22,7 @@ For the model, this cluster supports the "faith up, institution strained" branch
 
 This literature is thin and almost entirely theological or musicological. I found no Chinese-language historical monograph or peer-reviewed historical article on antebellum slave religion. Raboteau, Genovese, Levine and Frey and Wood appear to be untranslated, and no Chinese translation of James Cone's books was found.
 
-The most important item is a translation of Anthony Pinn's *Why, Lord?* (Pinn 2006). The bookseller's description confirms that it treats theodicy in Black theology through sermons, folklore, spirituals, blues and rap. It also confirms that Pinn challenges cherished beliefs of Black Christian communities and defends a Black humanist tradition (bookseller description of Pinn 2006). The translator's name, 周輝 (Zhou Hui), comes only from a search summary *[verify]*.
+The most important item is a translation of Anthony Pinn's *Why, Lord?* (Pinn 2006). According to a bookseller's description, it treats theodicy in Black theology through sermons, folklore, spirituals, blues and rap, and Pinn challenges cherished beliefs of Black Christian communities and defends a Black humanist tradition (bookseller description of Pinn 2006). No library catalogue record has yet confirmed the title, publisher or translator: the ISBN's Douban record is a dead page, and the translator's name, 周輝 (Zhou Hui), comes only from a search summary *[verify]*.
 
 Mainland journals add a few survey articles. 雷雨田 (Lei Yutian) wrote on the historical origins of American Black theology (Lei 1999) *[verify]*. Musicological and literary pieces treat spirituals as the expression of Black religious experience (Jing 2008; Zhang Jingjing 2015) *[verify both]*. Du Bois's *The Souls of Black Folk* has been in Chinese since 1959 (Du Bois 1959, reissued 2024). Theology textbooks such as the translated Grenz and Olson survey give Chinese readers their usual route to Cone (Grenz and Olson 2004).
 
@@ -47,14 +47,14 @@ Translation is uneven in a telling way. Mainland publishers have translated popu
 | Weber, *Sociology of Religion* (from *Economy and Society*) | 《宗教社会学》 | 康乐, 简惠美 | 广西师范大学出版社 | 2005 | Yes (Douban); Taipei 遠流 1993 edition *[verify]* |
 | Berger, *The Sacred Canopy* (1967) | 《神圣的帷幕》 | 高师宁 | 上海人民出版社 | 1991 | Yes (Douban) |
 | Taylor, *A Secular Age* (2007) | 《世俗时代》 | 张容南 et al. | 上海三联书店 | 2016 | Yes (Douban) |
-| Girard, *Le Bouc émissaire* (1982) | 《替罪羊》 | 冯寿农 | 上海人民出版社 | 2022 | Yes (Douban); earlier 2002 edition *[verify]* |
+| Girard, *Le Bouc émissaire* (1982) | 《替罪羊》 | 冯寿农 | 上海人民出版社 | 2022 | Yes (Douban); earlier 东方出版社 2002 edition also on Douban |
 | Moltmann, *Der gekreuzigte Gott* (1972) | 《被钉十字架的上帝》 | 阮炜 | 上海三联书店 | 1997 | Yes (Douban) |
 | Moltmann, same | 《被釘十字架的上帝》 | 阮煒 | 道風書社 (Hong Kong) | 1995 or 1998 | Yes; year differs between Campus and Douban |
 | Kitamori, 『神の痛みの神学』 (1946) | 《上帝之痛的神學》 | 湯愷杰 | 道風書社 | 2021 | Yes (Douban) |
-| Pinn, *Why, Lord?* (1995) | 《上帝，為什麼？黑人．苦難．惡》 | 周輝 *[verify]* | 道風山基督教叢林 | 2006 | Yes, except translator (Campus) |
+| Pinn, *Why, Lord?* (1995) | 《上帝，為什麼？黑人．苦難．惡》 | 周輝 *[verify]* | 道風山基督教叢林 | 2006 | Partial: ISBN known, but title, publisher and translator unconfirmed in any catalogue *[verify]* |
 | Du Bois, *The Souls of Black Folk* (1903) | 《黑人的灵魂》 | 维群 | 人民文学出版社 | 1959; 2024 | Yes (Douban) |
 | C. S. Song, *The Tears of Lady Meng* (1981) | 《孟姜女的眼淚》 | 鄭加泰 | 人光出版社 (Tainan) | 1994 | Yes (Douban) |
-| Grenz and Olson, *20th-Century Theology* (1992) | 《二十世紀神學評論》 | 劉良淑, 任孝綺 | 校園書房 | 2004 | Partial (translators via Wikipedia) |
+| Grenz and Olson, *20th-Century Theology* (1992) | 《二十世紀神學評論》 | 劉良淑, 任孝琦 | 校園書房 | 2004 | Yes (Douban) |
 
 I found no translation of Ziegler, Aberth, Kelly, Delumeau, Pargament, Norris and Inglehart, Gutiérrez's *On Job*, Raboteau, Genovese, Levine, or Cone's major books. Wikipedia lists a Chinese translation of Albert Cleage's *The Black Messiah*, but no catalogue record was found *[verify]*.
 
@@ -78,11 +78,11 @@ Taiwan supplies the richest Sinophone material for the model, because one polity
 
 **Indigenous mass conversion after 1945.** The anthropological literature links conversion to crisis, but crisis in a local, social sense. 黃應貴 (Huang Ying-kuei) explicitly ties Bunun religious change to social crisis (Huang Ying-kuei 1991). 王梅霞 (Wang Mei-hsia) shows that Seediq conversion followed the shock of forced village relocation under Japanese rule and rising conflict after 1945. She argues that the Christian discourse of a "changed heart" or repentance helped damp jealousy and conflict (Wang Mei-hsia 2018, 1–2). 邱韻芳 (Chiu Yun-fang) studies Truku conversion and revival (Chiu Yun-fang 2014). 周沛忻 (Chou Pei-hsin) shows that the PCT's postwar mountain mission both diverged from and cooperated with the state (Chou 2015). Survey data in 范姜曉涵 (Fan Chiang Hsiao-han) put Christian affiliation among mountain Indigenous people at about 85 percent in 1985 (Fan Chiang 2019).
 
-**Relief, refugees and institutional decline.** Richard Madsen's Chinese-language study of two Maryknoll districts is the strongest single test of the model in this corpus (Madsen 2012). Catholic numbers grew more than sevenfold within ten years of 1949, among Mainlander refugees and others in crisis. The church distributed US surplus flour, milk and clothing. Missionaries worried about "flour Christians" (麵粉基督徒), and some families were baptized to secure relief (Madsen 2012, 62). Madsen argues that decline after the mid-1960s came from reduced dependence on US relief and loss of the church's paternal authority, not from materialism. It also came from conflict after Vatican II and from the barrier between Mandarin-speaking parishes and Taiwanese or Indigenous people.
+**Relief, refugees and institutional decline.** Richard Madsen's Chinese-language study of two Maryknoll districts is the strongest single test of the model in this corpus (Madsen 2012). Catholic numbers grew more than sevenfold within ten years of 1949, among Mainlander refugees and others in crisis *[verify figure against Madsen 2012, 62]*. The church distributed US surplus flour, milk and clothing. Missionaries worried about "flour Christians" (麵粉基督徒), and some families were baptized to secure relief (Madsen 2012, 62). Madsen argues that decline after the mid-1960s came from reduced dependence on US relief and loss of the church's paternal authority, not from materialism. It also came from conflict after Vatican II and from the barrier between Mandarin-speaking parishes and Taiwanese or Indigenous people.
 
 This supports the model's claim that suffering raises demand for intercession and provision. It also adds a point the model lacks: affiliation won through material provision in a crisis can fade when the crisis ends. 王政文 (Wang Cheng-wen)'s work on nineteenth-century converts gives the long baseline of family conflict over ancestor rites (Wang Cheng-wen 2012).
 
-**Disaster religiosity.** I found no Chinese-language study that measures change in Christian faith or church trust after the 1999 Chi-Chi (921) earthquake. Google Scholar lists a study of religious charity in 921 reconstruction (An 2009) and an analysis of religious response systems at disaster sites (Zheng 2012) *[verify both]*. For Typhoon Morakot (2009), it lists a 2023 Taiwan Graduate School of Theology thesis on rebuilding the Rukai Presbytery's mission at the Kucapungane (Haocha) church (Wu 2023) *[verify]*. Post-Morakot Indigenous studies exist in social science. 林津如 (Lin Chin-ju), for example, studies Indigenous women's sovereignty practices after the disaster (Lin 2023), but I did not check whether it treats churches.
+**Disaster religiosity.** I found no Chinese-language study that measures change in Christian faith or church trust after the 1999 Chi-Chi (921) earthquake. Google Scholar lists a study of religious charity in 921 reconstruction (An 2009) *[verify]*. It also lists 鄭筱筠 (Zheng Xiaoyun)'s analysis of religious response systems at disaster sites (Zheng 2012). Its author is a mainland scholar at the Chinese Academy of Social Sciences, and its title does not mention 921, so its case may be a mainland earthquake (Wenchuan or Yushu) rather than Taiwan *[verify case before citing it as Taiwan evidence]*. For Typhoon Morakot (2009), it lists a 2023 Taiwan Graduate School of Theology thesis on rebuilding the Rukai Presbytery's mission at the Kucapungane (Haocha) church (Wu 2023) *[verify]*. Post-Morakot Indigenous studies exist in social science. 林津如 (Lin Chin-ju), for example, studies Indigenous women's sovereignty practices after the disaster (Lin 2023), but I did not check whether it treats churches.
 
 ### Assessment: how thin is the field?
 
@@ -110,10 +110,12 @@ The honest conclusion is that a comparative claim must rest mostly on English-la
 
 - Li Huacheng 2013 and 2007c: content claims (flagellants as anti-clerical crisis piety; Chinese–Western punishment theories) come from summaries and titles, not from reading the articles. Get page ranges for all Li articles from CNKI.
 - Zhao Lixing 2005; Li He 2004; Long and Li 2012; Lei 1999; Jing 2008; Zhang Jingjing 2015; Huang Luping 2021; An 2009; Zheng 2012; Wu 2023: seen only in Google Scholar listings. Confirm volume, issue and pages. An 2009 also needs its venue.
-- Pinn 2006: translator 周輝 not confirmed on the publisher or bookseller page.
-- Chang Chia-lin ca. 2021: journal name and year.
+- Pinn 2006: title, publisher and translator 周輝 not confirmed in any library catalogue; the Douban ISBN record is a dead page. Check the HKU and CUHK catalogues.
+- Chang Chia-lin 2021: whether the article actually compares the flagellants with plague-god rituals (journal, issue and pages are now confirmed).
+- Zheng 2012: which disaster it studies (possibly Wenchuan or Yushu, not 921).
+- Madsen 2012: the "more than sevenfold" growth figure, against p. 62.
 - Moltmann Hong Kong edition: 1995 (Campus) or 1998 (Douban).
-- Weber, Taipei 遠流 1993 edition; Girard, 东方出版社 2002 edition; Cleage translation by 何春蕤.
+- Weber, Taipei 遠流 1993 edition; Cleage translation by 何春蕤.
 - Chiu Yun-fang: Douban gives 2014 (華藝學術); other sources give 2013.
 - Wang Hsien-chih 1988, Huang Po-ho 1991, Chen 2003, Lo 2018, Cheng 2005, Song 1988, Tsai 2020: bibliographic data taken from the reference list in Chiu 2021, not from the books themselves.
 - Madsen 2012: the Chinese text is a translation; translator not identified.
@@ -124,8 +126,8 @@ The honest conclusion is that a comparative claim must rest mostly on English-la
 ### Searches the author should run with institutional access
 
 - **CNKI (中国知网):** SU=黑死病 AND (宗教 OR 教会 OR 鞭笞 OR 修道院); SU=瘟疫 AND 天谴; 黑人神学; 美国黑人宗教; 奴隶 AND 基督教; 灵歌 AND 宗教. Also pull full texts and page ranges for 李化成 2007c, 2008, 2013 and 李化成、郭超 2024, and check their footnotes for engagement with Ziegler, Horrox, Aberth and Cohn.
-- **Airiti Library (華藝):** 九二一 AND (宗教 OR 教會); 莫拉克 AND (教會 OR 長老教會); 災後 AND 宗教因應; 長老教會 AND 二二八; 黨國基督徒; 麵粉 AND 教會; 原住民 AND 改宗; also confirm the journal and issue for 張家麟 and 鄭筱筠.
+- **Airiti Library (華藝):** 九二一 AND (宗教 OR 教會); 莫拉克 AND (教會 OR 長老教會); 災後 AND 宗教因應; 長老教會 AND 二二八; 黨國基督徒; 麵粉 AND 教會; 原住民 AND 改宗; also confirm the issue and pages for 鄭筱筠.
 - **NDLTD (臺灣博碩士論文知識加值系統):** 黑死病; 黑人靈歌; 黑人神學; 九二一 宗教; 莫拉克 教會; 原住民 改宗 長老教會; 宗教因應 災難; and the theses of 徐欽盛 (2022) and 吳淑貞 (2023).
-- **NCL catalogue (國家圖書館) and ISBN service:** translator records for Pinn (周輝), Cleage (何春蕤), Weber (遠流 1993), Girard (2002), Moltmann (道風 edition and year); publishers and pages for 王憲治 1988, 黃伯和 1991, 陳南州 2003 and 鄭仰恩 2005.
+- **NCL catalogue (國家圖書館) and ISBN service:** translator records for Pinn (周輝), Cleage (何春蕤), Weber (遠流 1993), Moltmann (道風 edition and year); publishers and pages for 王憲治 1988, 黃伯和 1991, 陳南州 2003 and 鄭仰恩 2005.
 - **Taiwan Graduate School of Theology and Tainan Theological College libraries:** PCT General Assembly yearbooks (總會年鑑) for membership series from 1947 to 1987, needed to compare PCT and Mainland-church trajectories.
 - **CUHK and HKU repositories:** 邢福增 (Ying Fuk-tsang) on Chinese churches under Maoist persecution; the date and Chinese title of Zhao Ruijuan's HKU thesis on disaster, disease and faith in the Canadian Presbyterian mission in north Henan.

@@ -24,6 +24,8 @@ Becker, Sascha O., and Luigi Pascali. 2019. "Religion, Division of Labor, and Co
 
 Belich, James. 2022. *The World the Plague Made: The Black Death and the Rise of Europe*. Princeton, NJ: Princeton University Press. https://doi.org/10.1515/9780691222875.
 
+Belloc, Marianna, Francesco Drago, and Roberto Galbiati. 2014. "Earthquakes, Religion, and Transition to Self-Government in Italian Cities." Working draft, April 2, 2014. NBER conference paper. https://conference.nber.org/conf_papers/f72494.pdf.
+
 Belloc, Marianna, Francesco Drago, and Roberto Galbiati. 2016. "Earthquakes, Religion, and Transition to Self-Government in Italian Cities." *Quarterly Journal of Economics* 131 (4): 1875–1926. https://doi.org/10.1093/qje/qjw020.
 
 Benedictow, Ole J. 2021. *The Complete History of the Black Death*. Woodbridge: Boydell Press. https://doi.org/10.1515/9781787449312.
@@ -74,6 +76,8 @@ Finley, Theresa, and Mark Koyama. 2018. "Plague, Politics, and Pogroms: The Blac
 
 Foa, Anna. 2000. *The Jews of Europe after the Black Death*. Translated by Andrea Grover. Berkeley: University of California Press.
 
+Géraud, Hercule, ed. 1843. *Chronique latine de Guillaume de Nangis de 1113 à 1300 avec les continuations de cette chronique de 1300 à 1368*. Vol. 2. Paris: Renouard. https://archive.org/details/bub_gb_vO9W31qvfpQC.
+
 Gottfried, Robert S. 1983. *The Black Death: Natural and Human Disaster in Medieval Europe*. New York: Free Press.
 
 Graus, František. 1987. *Pest – Geissler – Judenmorde: Das 14. Jahrhundert als Krisenzeit*. Göttingen: Vandenhoeck & Ruprecht.
@@ -94,11 +98,11 @@ Henderson, John. 1994. *Piety and Charity in Late Medieval Florence*. Oxford: Cl
 
 Herlihy, David. 1997. *The Black Death and the Transformation of the West*. Edited by Samuel K. Cohn Jr. Cambridge, MA: Harvard University Press.
 
+Holmes, Thomas Scott, ed. 1896. *The Register of Ralph of Shrewsbury, Bishop of Bath and Wells, 1329–1363*. Vol. 2. Somerset Record Society 10. [London]: Printed for subscribers. https://archive.org/details/registerralphsh00holmgoog.
+
 Horrox, Rosemary, ed. and trans. 1994. *The Black Death*. Manchester Medieval Sources. Manchester: Manchester University Press.
 
 Huizinga, Johan. 1996. *The Autumn of the Middle Ages*. Translated by Rodney J. Payton and Ulrich Mammitzsch. Chicago: University of Chicago Press. Originally published as *Herfsttij der Middeleeuwen* (1919).
-
-Jedwab, Remi, Noel D. Johnson, and Mark Koyama. 2017. "Negative Shocks and Mass Persecutions: Evidence from the Black Death." MPRA Paper 78630. Munich: Munich Personal RePEc Archive.
 
 Jedwab, Remi, Noel D. Johnson, and Mark Koyama. 2019. "Negative Shocks and Mass Persecutions: Evidence from the Black Death." *Journal of Economic Growth* 24 (4): 345–95. https://doi.org/10.1007/s10887-019-09167-1.
 
@@ -111,6 +115,8 @@ Jones, Lori. 2022. *Patterns of Plague: Changing Ideas about Plague in England a
 Kieckhefer, Richard. 1974. "Radical Tendencies in the Flagellant Movement of the Mid-Fourteenth Century." *Journal of Medieval and Renaissance Studies* 4: 157–76.
 
 Kreider, Alan. 1979. *English Chantries: The Road to Dissolution*. Harvard Historical Studies 97. Cambridge, MA: Harvard University Press.
+
+Lemaître, Henri, ed. 1906. *Chronique et annales de Gilles le Muisit, abbé de Saint-Martin de Tournai (1272–1352)*. Paris: Renouard. https://archive.org/details/chroniqueetannal00lemuuoft.
 
 Leppin, Volker. 2025. *Medieval Spirituality: An Introduction*. Translated by Samuel Brandt. Waco, TX: Baylor University Press.
 
@@ -140,6 +146,8 @@ Oosterwijk, Sophie, and Stefanie Knöll, eds. 2011. *Mixed Metaphors: The Danse 
 
 Platt, Colin. 1996. *King Death: The Black Death and Its Aftermath in Late-Medieval England*. London: UCL Press.
 
+Raynaldus, Odoricus. 1872. *Annales ecclesiastici*. Edited by Augustin Theiner. Vol. 25. Bar-le-Duc: Guérin. https://archive.org/details/annalesecclesias25barouoft. [verify year: Internet Archive metadata gives 1864]
+
 Robinson, David M. 2019. "The Black Death and Clerical Recruitment: The Evidence of Ordination Lists." *Archives: The Journal of the British Records Association* 54 (2): 1–36. https://doi.org/10.3828/archives.2019.9.
 
 Robinson, David. 2022. "The Black Death and Clerical Prospects in England." In *Fourteenth Century England XII*, edited by James Bothwell and J. S. Hamilton, 129–50. Woodbridge: Boydell & Brewer. https://doi.org/10.1017/9781800105904.008.
@@ -155,6 +163,8 @@ Steinhoff, Judith B. 2006. *Sienese Painting after the Black Death: Artistic Plu
 van Os, Henk. 1981. "The Black Death and Sienese Painting: A Problem of Interpretation." *Art History* 4 (3): 237–49. https://doi.org/10.1111/j.1467-8365.1981.tb00720.x.
 
 Voigtländer, Nico, and Hans-Joachim Voth. 2012. "Persecution Perpetuated: The Medieval Origins of Anti-Semitic Violence in Nazi Germany." *Quarterly Journal of Economics* 127 (3): 1339–92. https://doi.org/10.1093/qje/qjs019.
+
+Wilkins, David, ed. 1737. *Concilia Magnae Britanniae et Hiberniae*. 4 vols. London. Vols. 2–3. https://archive.org/details/conciliamagnaebr02wilk; https://archive.org/details/conciliamagnaebr03wilk.
 
 Wingard, Tess. 2026. "Sexuality in Crisis: Sodomy and Plague in the Fourteenth-Century English Church." *Journal of Medieval History* 52 (2): 253–72. https://doi.org/10.1080/03044181.2026.2625262.
 

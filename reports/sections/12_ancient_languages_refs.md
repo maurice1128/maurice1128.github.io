@@ -4,7 +4,7 @@ Entries marked [verify] could not be fully confirmed in a catalogue in this sess
 
 Aberth, John. 2005. *The Black Death: The Great Mortality of 1348–1350; A Brief History with Documents*. Boston: Bedford/St. Martin's.
 
-Aberth, John. 2017. *The Black Death: The Great Mortality of 1348–1350; A Brief History with Documents*. 2nd ed. Boston: Bedford/St. Martin's.
+Aberth, John. 2017. *The Black Death: The Great Mortality of 1348–1350; A Brief History with Documents*. 2nd ed. New York: Bedford/St. Martin's.
 
 al-Kātib, Aḥmad ʿIṣām ʿAbd al-Qādir, ed. 1991. *Badhl al-māʿūn fī faḍl al-ṭāʿūn*, by Aḥmad ibn ʿAlī Ibn Ḥajar al-ʿAsqalānī. Riyadh: Dār al-ʿĀṣima.
 
@@ -58,7 +58,7 @@ Elliger, Karl, and Wilhelm Rudolph, eds. 1997. *Biblia Hebraica Stuttgartensia*.
 
 Eusebius. 1932. *The Ecclesiastical History*. Vol. 2. Translated by J. E. L. Oulton. Loeb Classical Library. Cambridge, MA: Harvard University Press. [verify first-edition year; Open Library record is of a 1964 printing]
 
-Fatouros, Georgios, and Tilman Krischer, trans. 1986. *Johannes Kantakuzenos: Geschichte*. Bibliothek der griechischen Literatur. Stuttgart: Hiersemann. [verify volume number and series range]
+Fatouros, Georgios, and Tilman Krischer, trans. 1982–2011. *Johannes Kantakuzenos: Geschichte*. 3 vols. (Books I–III; Book IV, with the plague chapter, not yet translated). Bibliothek der griechischen Literatur. Stuttgart: Hiersemann. [series numbers not checked]
 
 Fudge, Thomas A. 2002. *The Crusade against Heretics in Bohemia, 1418–1437: Sources and Documents for the Hussite Crusades*. Aldershot: Ashgate.
 
@@ -72,13 +72,13 @@ Hartel, Wilhelm von, ed. 1868–71. *S. Thasci Caecili Cypriani opera omnia*. 3 
 
 Haury, Jakob, ed. 1905. *Procopii Caesariensis opera omnia*. Vol. 1, *De bellis libri I–IV*. Leipzig: Teubner.
 
-Hegel, Karl, ed. 1870–71. *Die Chroniken der oberrheinischen Städte: Straßburg*. 2 vols. Die Chroniken der deutschen Städte 8–9. Leipzig: Hirzel. [verify]
+Hegel, Karl, ed. 1870–71. *Die Chroniken der oberrheinischen Städte: Straßburg*. 2 vols. Die Chroniken der deutschen Städte 8–9. Leipzig: Hirzel.
 
 Hillers, Delbert R. 1972. *Lamentations*. Anchor Bible 7A. Garden City, NY: Doubleday.
 
 Hoepffner, Ernest, ed. 1908. *Œuvres de Guillaume de Machaut*. Vol. 1. Société des anciens textes français. Paris: Firmin-Didot.
 
-Holmes, Thomas Scott, ed. 1896. *The Register of Ralph of Shrewsbury, Bishop of Bath and Wells, 1329–1363*. 2 vols. Somerset Record Society 9–10. [verify place and publisher]
+Holmes, Thomas Scott, ed. 1896. *The Register of Ralph of Shrewsbury, Bishop of Bath and Wells, 1329–1363*. 2 vols. Somerset Record Society 9–10. [verify place and publisher] Calendars Ralph's mandate of 10 January 1349 as no. 2130 without printing its Latin.
 
 Horrox, Rosemary, ed. and trans. 1994. *The Black Death*. Manchester Medieval Sources. Manchester: Manchester University Press.
 
@@ -116,6 +116,8 @@ Lunt, Horace G. 2001. *Old Church Slavonic Grammar*. 7th rev. ed. Berlin: Mouton
 
 Machen, J. Gresham. 1923. *New Testament Greek for Beginners*. New York: Macmillan.
 
+Marcus, Jacob R. 1938. *The Jew in the Medieval World: A Source Book, 315–1791*. Cincinnati: Union of American Hebrew Congregations. [verify place and publisher] Königshofen excerpt: https://sourcebooks.fordham.edu/jewish/1348-jewsblackdeath.asp.
+
 Martin, G. H., ed. and trans. 1995. *Knighton's Chronicle, 1337–1396*. Oxford Medieval Texts. Oxford: Clarendon Press.
 
 Michell, Robert, and Nevill Forbes, trans. 1914. *The Chronicle of Novgorod, 1016–1471*. Camden Third Series 25. London: Royal Historical Society. [verify series number]
@@ -150,6 +152,8 @@ Preest, David, trans., and Richard Barber, ed. 2012. *The Chronicle of Geoffrey 
 
 Rahlfs, Alfred, ed. 2006. *Septuaginta*. Revised by Robert Hanhart. Stuttgart: Deutsche Bibelgesellschaft.
 
+Raynaldus, Odoricus. 1872. *Annales ecclesiastici*. Edited by Augustin Theiner. Vol. 25. Bar-le-Duc: Guérin. https://archive.org/details/annalesecclesias25barouoft. [verify year; IA metadata gives 1864]
+
 Rodolico, Niccolò, ed. 1903–55. *Cronaca fiorentina di Marchionne di Coppo Stefani*. Rerum Italicarum Scriptores, 2nd ser., 30.1. Città di Castello: Lapi; Bologna: Zanichelli. [verify series number]
 
 Rosenthal, Franz. 2006. *A Grammar of Biblical Aramaic*. 7th expanded ed. Wiesbaden: Harrassowitz. [verify edition number]
@@ -178,9 +182,9 @@ Thackston, W. M. 1994. *An Introduction to Koranic and Classical Arabic*. Bethes
 
 Thackston, Wheeler M. 1999. *Introduction to Syriac: An Elementary Grammar with Readings from Syriac Literature*. Bethesda, MD: Ibex.
 
-Thompson, Edward Maunde, ed. 1889a. *Chronicon Galfridi le Baker de Swynebroke*. Oxford: Clarendon Press.
+Thompson, Edward Maunde, ed. 1889a. *Adae Murimuth Continuatio chronicarum; Robertus de Avesbury De gestis mirabilibus regis Edwardi tertii*. Rolls Series 93. London: HMSO.
 
-Thompson, Edward Maunde, ed. 1889b. *Adae Murimuth Continuatio chronicarum; Robertus de Avesbury De gestis mirabilibus regis Edwardi tertii*. Rolls Series 93. London: HMSO. [verify series number]
+Thompson, Edward Maunde, ed. 1889b. *Chronicon Galfridi le Baker de Swynebroke*. Oxford: Clarendon Press.
 
 Thornton, John K. 1998. *The Kongolese Saint Anthony: Dona Beatriz Kimpa Vita and the Antonian Movement, 1684–1706*. Cambridge: Cambridge University Press.
 
@@ -195,6 +199,8 @@ Watson, Nicholas, and Jacqueline Jenkins, eds. 2006. *The Writings of Julian of 
 Wheelock, Frederic M. 2011. *Wheelock's Latin*. 7th ed. Revised by Richard A. LaFleur. New York: Collins Reference.
 
 Whelan, Christal, trans. 1996. *The Beginning of Heaven and Earth: The Sacred Book of Japan's Hidden Christians*. Honolulu: University of Hawaiʻi Press.
+
+Wilkins, David, ed. 1737. *Concilia Magnae Britanniae et Hiberniae*. 4 vols. London: R. Gosling. Vol. 2, pp. 745–46 (Ralph of Shrewsbury's mandate): https://archive.org/details/conciliamagnaebr02wilk.
 
 Witakowski, Witold, trans. 1996. *Pseudo-Dionysius of Tel-Mahre, Chronicle, Part III*. Translated Texts for Historians 22. Liverpool: Liverpool University Press. https://doi.org/10.3828/978-0-85323-760-0. [verify series number]
 

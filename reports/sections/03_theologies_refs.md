@@ -30,7 +30,7 @@ Castelli, Elizabeth A. 1998. "Gender, Theory, and *The Rise of Christianity*: A 
 
 Clarke, Sathianathan. 1998. *Dalits and Christianity: Subaltern Religion and Liberation Theology in India*. Delhi: Oxford University Press.
 
-Clement VI. 1349. Bull against the flagellants, 20 October 1349. [verify incipit and translation in Horrox 1994]
+Clement VI. 1349. Bull against the flagellants, Avignon, 20 October 1349 (XIII kal. Nov., anno viii). The copy to the archbishop of Magdeburg, beginning *Molesta nobis*, is printed in Raynaldus 1872, 25:470–72. [verify the name *Inter sollicitudines* and any translation in Horrox 1994]
 
 Colledge, Edmund, and James Walsh, trans. 1978. *Julian of Norwich: Showings*. Classics of Western Spirituality. New York: Paulist Press.
 
@@ -135,6 +135,8 @@ Presbyterian Church in Taiwan. 1975. "Our Appeal" 「我們的呼籲」. Adopted
 Presbyterian Church in Taiwan. 1977. "A Declaration on Human Rights" 〈台灣基督長老教會人權宣言〉. 16 August 1977. https://www.pct.org.tw/ab_doc.aspx?DocID=005. English text hosted by USC US-China Institute, https://china.usc.edu/node/20514.
 
 Raboteau, Albert J. 2004. *Slave Religion: The "Invisible Institution" in the Antebellum South*. Updated ed. New York: Oxford University Press. First published 1978.
+
+Raynaldus, Odoricus. 1872. *Annales ecclesiastici*. Edited by Augustin Theiner. Vol. 25. Bar-le-Duc: Guérin. https://archive.org/details/annalesecclesias25barouoft. [verify year: Internet Archive metadata gives 1864]
 
 Roberts, J. Deotis. 1971. *Liberation and Reconciliation: A Black Theology*. Philadelphia: Westminster Press.
 

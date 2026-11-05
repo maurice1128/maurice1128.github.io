@@ -16,7 +16,7 @@ The working model needs two separate measurements: the intensity of faith, and c
 
 The decisive analytical move is to code each source for the *locus of control* of the devotion it records. Bequests to a lay guild rather than the parish, or a hush-harbour meeting rather than a planter-sponsored sermon, register both rising devotion and a shift of trust. Read that way, the two corpora support the model's middle outcome: faith up, establishment trust down, with faith moving into bodies the sufferers run.
 
-Two open problems in the model also have source-level answers. Samuel Cohn's argument that 1363, not 1348, marks the turning point (Cohn 1992) requires sources from the recurrences: the 1388–89 guild returns, Brinton's sermons, *ars moriendi* and the danse macabre. Daniel Fountain's claim that mass conversion came largely after emancipation (Fountain 2010) rests on ex-slave testimony *[verify which corpus]*, so it inherits that testimony's biases. It should be tested against church membership series and Freedmen's Bureau records.
+Two open problems in the model also have source-level answers. Samuel Cohn's argument that 1363, not 1348, marks the turning point (Cohn 1992) requires sources from the recurrences: the 1388–89 guild returns, Brinton's sermons, *ars moriendi* and the danse macabre. Daniel Fountain's claim that mass conversion came largely after emancipation (Fountain 2010) rests on a quantitative survey of ex-slave testimony, including the WPA narratives, in which fewer than 40 percent of datable conversions came before freedom. It therefore inherits that testimony's biases. It should be tested against church membership series and Freedmen's Bureau records.
 
 Legend for the tables. A link without a mark was opened this session (HTTP 200) or matched to an Internet Archive (IA) catalogue record with the correct title and date. "Lending" marks IA items that are borrow-only. [WB] marks a link whose existence was confirmed only by a Wayback Machine snapshot record, because the site blocks automated access. *[verify]* marks an edition, translation or link not confirmed this session.
 
@@ -33,45 +33,45 @@ Two English anthologies remain the entry point: Horrox (1994) and Aberth (2005; 
 | Marcus, *The Jew in the Medieval World* | 1938 | Anthology | Marcus 1938 | [Fordham excerpt](https://sourcebooks.fordham.edu/jewish/1348-jewsblackdeath.asp) | Poisoning accusations, coerced confessions, town correspondence |
 | Hecker, *Epidemics of the Middle Ages* | 1844 | Older reader | Hecker 1844, trans. Babington | [IA](https://archive.org/details/epidemicsofmiddlin00heck) | Appendices print flagellant documents *[verify]*; use only as a pointer |
 | **Chronicles and literary witnesses** | | | | | |
-| Boccaccio, *Decameron*, Day 1 introduction | c.1349–53 | Literary frame | Branca ed. *[verify]*; trans. McWilliam (Penguin 1972; 2nd ed. 1995 *[verify]*) | [Gutenberg](https://www.gutenberg.org/ebooks/23700); [Fordham](https://sourcebooks.fordham.edu/source/boccacio2.asp) | Supplications and processions fail; burial rites collapse. Ritual failure, not lost belief |
+| Boccaccio, *Decameron*, Day 1 introduction | c.1349–53 | Literary frame | Branca ed. *[verify]*; trans. McWilliam (Penguin 1972; 2nd ed. 1995 *[verify]*) | [Gutenberg (Payne trans. 1886)](https://www.gutenberg.org/ebooks/23700); [Fordham](https://sourcebooks.fordham.edu/source/boccacio2.asp) | Supplications and processions fail; burial rites collapse. Ritual failure, not lost belief |
 | Gabriele de' Mussis, *Historia de morbo* | c.1348–49 | Lay (notarial) chronicle | Henschel 1842 *[verify]*; Horrox 1994 | See Wheelis 2002 on reliability | Opens with God's wrath at sin: a penitential theodicy |
 | Agnolo di Tura, *Cronaca senese* | to 1351 | Lay chronicle | Lisini and Iacometti, RIS *[verify]*; excerpt in Bowsky 1971 | None open *[verify]* | Personal loss and apocalyptic resignation; no comment on clergy |
 | Matteo Villani, *Cronica* | 1348–63 | Lay chronicle | Porta 1995 *[verify]*; Dragomanni 1846 | [IA 1846](https://archive.org/details/cronicadimatteo01draggoog) | Survivors more dissolute, not reformed; also large pious legacies *[verify details]* |
 | "Jean de Venette", continuation of Nangis | c.1359–60 | Carmelite chronicle | Géraud 1843; trans. Newhall and Birdsall 1953 | [IA Géraud](https://archive.org/details/bub_gb_vO9W31qvfpQC); [IA 1953](https://archive.org/details/chronicleofjeand0000vene) | Praises nursing nuns; accuses survivors, clergy included, of greed |
-| Gilles li Muisis, *Chronique et annales* | to 1352 | Benedictine chronicle | Lemaître 1906 | [IA](https://archive.org/details/chroniqueetannal00lemuuoft) | Flagellants at Tournai; episcopal moral decrees *[verify details]* |
+| Gilles li Muisis, *Chronique et annales* | to 1352 | Benedictine chronicle | Lemaître 1906 | [IA](https://archive.org/details/chroniqueetannal00lemuuoft) | Flagellants at Tournai take over burials and the bequests that went with them. With the see vacant, the city governors, not the bishop, issue ordinances on burial, bell-ringing and morals, because the clergy were profiting from death-bells (Lemaître 1906, 240, 255) |
 | Heinrich von Herford, *Liber de rebus memorabilioribus* | c.1355 | Dominican chronicle | Potthast 1859 | [IA](https://archive.org/details/bub_gb_rfw0AAAAQAAJ) | Hostile clerical view of flagellants |
-| Closener and Königshofen, Strasbourg chronicles | 1362; c.1400 | Clerical urban chronicles | Hegel 1870–71, *Chroniken der deutschen Städte* 8–9 *[verify]* | Not located open access *[verify]* | Flagellant ritual and the burning of Strasbourg's Jews, Feb 1349 |
+| Closener and Königshofen, Strasbourg chronicles | 1362; c.1400 | Clerical urban chronicles | Hegel 1870–71, *Chroniken der deutschen Städte* 8–9 | Not located open access *[verify]* | Flagellant ritual and the burning of Strasbourg's Jews, Feb 1349 |
 | Mathias von Neuenburg, *Chronica* | to c.1355 | Chronicle | Hofmeister, MGH SS rer. Germ. N.S. 4 | [dMGH](https://www.dmgh.de/mgh_ss_rer_germ_n_s_4/index.htm) | Pogroms proceed despite papal protection *[verify details]* |
-| Henry Knighton, *Chronicon* | c.1390s | Augustinian chronicle | Martin 1995 (facing translation); Lumby 1889–95 | [IA vol. 2](https://archive.org/details/chroniconhenrici02knig) | Priest shortage, high stipends, unfit ordinands |
-| Geoffrey le Baker; Robert of Avesbury | 1350s | English chronicles | Thompson 1889b (Baker), 1889a (Avesbury); trans. Preest and Barber 2012 (Baker) | [IA Baker](https://archive.org/details/chronicongalfri00thomgoog); [IA Avesbury](https://archive.org/details/admurimuthconti00robegoog) | Mortality as punishment; flagellants watched, not joined, in London |
+| Henry Knighton, *Chronicon* | c.1390s | Augustinian chronicle | Martin 1995 (facing translation); Lumby 1889–95 | [IA vol. 2 (1895)](https://archive.org/details/chroniconhenrici02knig) | Priest shortage, high stipends, unfit ordinands |
+| Geoffrey le Baker; Robert of Avesbury | 1350s | English chronicles | Thompson 1889b (Baker), 1889a (Avesbury); trans. Preest and Barber 2012 (Baker) | [IA Baker](https://archive.org/details/chronicongalfri00thomgoog); [IA Avesbury](https://archive.org/details/admurimuthconti00robegoog) | Baker: mortality as divine punishment. Avesbury: about 120 flagellants from Zeeland and Holland did penance at St Paul's "in conspectu populi" (Thompson 1889a, 407–08); he says nothing about English uptake |
 | Friar John Clyn, *Annals* | to 1349 | Franciscan annals | Williams 2007; Butler 1849 | [IA 1849](https://archive.org/details/annalsofireland00butluoft) | Mass pilgrimage; parchment left "in case anyone survives" |
 | Michele da Piazza, *Cronaca* | 1336–61 | Franciscan chronicle | Giuffrida 1980 *[verify]* | None found | Relic cults; town and Church conflict over St Agatha *[verify]* |
 | Petrarch, *Familiares* VIII.7–8 | 1349 | Letters | Rossi and Bosco *[verify]*; trans. Bernardo 1975 | [IA, lending](https://archive.org/details/rerumfamiliarium0001petr) | Questions divine justice without leaving faith or attacking clergy |
 | Machaut, *Jugement dou roy de Navarre* | c.1349 | Poem | Palmer 1988 | Not checked | Lay ambivalence toward flagellants and scapegoating |
 | **Church documents** | | | | | |
-| Clement VI, *Sicut Judeis*; *Quamvis perfidiam* | Jul and Sep 1348 | Papal bulls | Simonsohn 1988 *[verify doc. nos.]*; Horrox 1994 | None open | Papal protection of Jews ignored by towns: a measurable limit on authority |
-| Clement VI, *Inter sollicitudines* | Oct 1349 | Papal bull | Fredericq 1889– *[verify vol.]*; Horrox 1994 | [IA (series)](https://archive.org/details/corpusdocumento01frgoog) *[verify vol.]* | The Church suppresses lay penitential devotion |
-| Ralph of Shrewsbury, letter of Jan 1349 | 1349 | Episcopal mandate | Holmes 1896 | [IA](https://archive.org/details/registerralphsh00holmgoog) | Lay confession permitted, "even to a woman": the institution admits it cannot supply priests |
+| Clement VI, *Sicut Judeis*; *Quamvis perfidiam* | 4 Jul and 26 Sep 1348 | Papal bulls | Raynaldus, *Annales ecclesiastici* 25:453–55 (operative clauses; no incipits printed); Simonsohn 1988 *[verify doc. nos.]*; Horrox 1994 | [IA Raynaldus vol. 25](https://archive.org/details/annalesecclesias25barouoft) | Papal protection of Jews ignored by towns: a measurable limit on authority. Raynaldus comments that it held only around Avignon (25:455) |
+| Clement VI, bull against the flagellants (the copy to Magdeburg begins *Molesta nobis*; the name *Inter sollicitudines* is unconfirmed) | 20 Oct 1349 | Papal bull | Raynaldus, *Annales ecclesiastici* 25:470–72; Fredericq vol. 3 (1906) prints 1349 flagellant documents *[verify whether it includes this bull]*; Horrox 1994 | [IA Raynaldus vol. 25](https://archive.org/details/annalesecclesias25barouoft); [IA Fredericq vol. 3 (1906)](https://archive.org/details/corpusdocumento01frgoog) | The Church suppresses organised, self-governing lay penance while expressly allowing private penance (Raynaldus 25:472) |
+| Ralph of Shrewsbury, mandate of 10 Jan 1349 (Holmes no. 2130) | 1349 | Episcopal mandate | Latin text in Wilkins 1737, 2:745–46; Holmes 1896 gives only a calendar entry (571–72); Horrox 1994 | [IA Wilkins vol. 2](https://archive.org/details/conciliamagnaebr02wilk); [IA Holmes vol. 2](https://archive.org/details/registerralphsh00holmgoog) | Lay confession permitted, "et si desit vir laicus, mulieri" (Wilkins 1737, 2:745): the institution admits it cannot supply priests. Survivors must confess again to their own priest |
 | William Zouche, letter of Jul 1348 | 1348 | Episcopal mandate | Raine 1873 | [IA](https://archive.org/details/historicalpapers00rain) | Fear channelled into processions before the plague arrives |
 | Episcopal registers (e.g., Gynewell, Lincoln) | 1347–50 | Serial institutional | Thompson 1911; Hockey 1986–87 (Edington) *[verify]* | Journal (paywalled) | Clerical deaths and replacements: an objective proxy for the "priest shortage" |
-| Islip, *Effrenata* | 1350/1362 *[verify date]* | Constitution | Wilkins 1737, vol. 3 *[verify vol.]* | [IA](https://archive.org/details/conciliamagnaebr02wilk) *[verify vol.]* | Hierarchy itself condemns greedy stipendiary priests |
+| Islip, *Effrenata* | 28 May 1350; reissued 1362 | Constitution | Wilkins 1737, 3:1–2 | [IA vol. 3](https://archive.org/details/conciliamagnaebr03wilk) | Hierarchy itself condemns greedy stipendiary priests |
 | Thomas Brinton, *Sermons* | 1373–89 | Episcopal sermons | Devlin 1954 *[verify]* | Not found | Recurrent plague preached as punishment; reform demanded |
 | **Wills and confraternities** | | | | | |
 | London Court of Husting wills | 1258–1688 (peak 1349) | Serial behavioural | Sharpe 1889–90 | [BHO vol. 1](https://www.british-history.ac.uk/court-husting-wills/vol1) | Bequests to parish, friars, chantries and lights show where lay trust went |
-| English guild returns | 1388–89 | Serial behavioural | Smith 1870 (EETS o.s. 40) | [IA](https://archive.org/details/englishgildsorig00smit) | Lay-run funerals, masses and lights; many post-1349 foundations *[verify count]* |
+| English guild returns | 1388–89 | Serial behavioural | Smith 1870 (EETS o.s. 40) | [IA](https://archive.org/details/englishgildsorig00smit) | Lay-run funerals, masses and lights; wardens pay friars for diriges and trentals (Smith 1870, 8). The printed ordinances contain no explicit plague wording, so post-1349 foundations cannot be counted from Smith alone |
 | Italian testaments | 1200s–1400s | Serial behavioural | Archival; model study Cohn 1992 | Print | Shift toward commemorative bequests after the 1360s recurrences |
 | **Plague tracts and ordinances** | | | | | |
 | Paris Medical Faculty, *Compendium* | Oct 1348 | Medical consilium | Rébouis 1888 *[verify]*; Horrox 1994 | Not checked | Astrology layered under divine will, not opposed to it |
 | Jacme d'Agramont, *Regiment* | 1348 | Plague tract | Trans. Duran-Reynals and Winslow 1949 *[verify]* | Not checked | Sin listed among causes; confession recommended |
 | John of Burgundy, plague treatise | 1365 | Plague tract | See Matheson 2005 | Journal | Lay medical self-help alongside prayer |
 | Ordinances of Pistoia | 1348 | Civic statute | Chiappelli 1887 *[verify]*; Horrox 1994 | Not checked | Commune overrides funeral and bell customs |
-| Konrad von Megenberg, *Tractatus de mortalitate* | c.1350 | Clerical tract | Luff and Steer 2003 *[verify]* | Not checked | Cleric rejects the poisoning charge because Jews also died *[verify]* |
+| Konrad von Megenberg, *De mortalitate in Alamannia* | c.1350 | Clerical tract | Krüger 1972 *[verify pages]* (Luff and Steer 2003 edit the separate *Buch der Natur*) | Not checked | Cleric rejects the poisoning charge because Jews also died *[verify]* |
 | **Devotional and macabre texts** | | | | | |
 | Hugo of Reutlingen, flagellant songs | 1349 | Vernacular hymns | Runge 1900 | [IA](https://archive.org/details/dieliederundmel00saltgoog) | Lay penitential devotion sung without priests: clearest evidence of devotion outside the institution |
 | *Ars moriendi* | c.1415; c.1450 | Devotional manual | O'Connor 1942; Comper 1917 (Middle English) | [IA O'Connor](https://archive.org/details/artofdyingwellde00ocon); [IA Comper](https://archive.org/details/bookofcraftofdyi00unse) | Deathbed rites handed to laypeople; despair as chief temptation |
 | Danse macabre; Lydgate, *Dance of Death* | 1424–25; Eng. c.1430 | Image and verse | Warren and White 1931 (EETS o.s. 181) | Print; Gallica blocked *[verify]* | Pope and cardinal dance with Death: satire within orthodox penance |
 | **Byzantine and Muslim comparanda** | | | | | |
-| John VI Kantakouzenos, *Historiae* IV.8 | c.1360s | Imperial memoir | Schopen 1828–32; trans. Bartsocas 1966 | [IA](https://archive.org/details/ioanniscantacuz00joangoog) | Many repented and gave away goods; modelled on Thucydides |
+| John VI Kantakouzenos, *Historiae* IV.8 | c.1360s | Imperial memoir | Schopen 1828–32, vol. 3; trans. Bartsocas 1966 | [IA vol. 3 (1832)](https://archive.org/details/bub_gb_zh0AAAAAYAAJ) | Many repented and gave away goods; modelled on Thucydides |
 | Ibn al-Wardi, *Risalat al-naba'* | 1348–49 | Epistle | Dols 1974 *[verify]* | Not found | Plague as mercy and martyrdom; no anticlerical movement |
 | Ibn Khatima, *Tahsil gharad al-qasid* | 1349 | Medical-religious tract | Dinanah 1927 *[verify]* | Not found | Medical and religious explanation combined |
 
@@ -82,7 +82,7 @@ Two bodies of evidence dominate: twentieth-century ex-slave testimony and ninete
 | Source | Date | Type | Best edition | Access | What it shows |
 |---|---|---|---|---|---|
 | **WPA and Fisk interviews** | | | | | |
-| WPA ex-slave narratives, *Born in Slavery* | 1936–38 | Interviews | Library of Congress digital collection | [LoC](https://www.loc.gov/collections/slave-narratives-from-the-federal-writers-project-1936-to-1938/) (exists via LoC API; HTML blocked) | Over 2,300 narratives *[verify count]*; hush harbours, "obey your master" sermons, conversion |
+| WPA ex-slave narratives, *Born in Slavery* | 1936–38 | Interviews | Library of Congress digital collection | [LoC](https://www.loc.gov/collections/slave-narratives-from-the-federal-writers-project-1936-to-1938/) (exists via LoC API; HTML blocked) | More than 2,300 first-person accounts (LoC); hush harbours, "obey your master" sermons, conversion |
 | Rawick, *The American Slave* | 1972; suppl. 1977, 1979 | Edited series | Rawick 1972–79 | [IA vol. 3, lending](https://archive.org/details/americanslavecom0003unse) | Citation standard; supplements add narratives not in the LoC set |
 | *God Struck Me Dead* | Interviews 1927–29; pub. 1945 | Conversion narratives | Fisk 1945; Johnson ed. 1969 | [IA 1969, lending](https://archive.org/details/godstruckmedeadr0000fisk) | Visionary conversion apart from white churches |
 | *Unwritten History of Slavery* | Interviews 1929–30; pub. 1945 | Interviews | Fisk 1945; repr. 1968 | [IA 1968, lending](https://archive.org/details/unwrittenhistory0000fisk) | Candid on galleries, obedience sermons, white churches |
@@ -110,7 +110,7 @@ Two bodies of evidence dominate: twentieth-century ex-slave testimony and ninete
 | Fanny Kemble, *Journal* | 1838–39; pub. 1863 | Outsider diary | Scott 1961 | [IA](https://archive.org/details/journalofareside12422gut) | Enslaved requests for worship; anti-slavery publication context |
 | **Church records** | | | | | |
 | *Records of the Moravians in North Carolina* | 1922– | Edited congregational records | Fries et al. 1922– | [IA vol. 1](https://archive.org/details/recordsofmoravia01frie) | Shift from shared to separate Black congregation *[verify date]* |
-| Liele, Bryan et al., letters | 1790s | Letters | *Journal of Negro History* 1916 | [IA JNH 1916](https://archive.org/details/journalofnegrohi06assouoft) | Early independent Black Baptist churches |
+| Liele, Bryan et al., letters | 1790s | Letters | *Journal of Negro History* 1 (1916): 69–92 | [IA JNH vol. 1 (1916)](https://archive.org/details/journalofnegrohi01assouoft) | Early independent Black Baptist churches |
 | Biracial church minute books | c.1780–1865 | Disciplinary records | No single edition; archival | [DocSouth church](https://docsouth.unc.edu/church/) [WB] | Membership with subordination; postwar exits |
 | Vesey trial record | 1822 | Coerced testimony | Egerton and Paquette 2017 | Print | White fear of Black ecclesiastical autonomy; razing of the AME church |
 | **Freedmen's Bureau and emancipation records** | | | | | |
@@ -167,8 +167,8 @@ The dating link should be checked, not assumed. Allen's *Life* (1833) dates the 
 These ten give the core comparison in a balanced form: each case has testimony, institutional self-report and behavioural series.
 
 1. Horrox, ed. and trans., *The Black Death* (1994). The broadest English entry to the Black Death record; use Aberth (2017) as a second reader.
-2. Ralph of Shrewsbury's letter of January 1349, in Holmes (1896) and Horrox (1994). The institution admits it cannot deliver the sacraments.
-3. Hugo of Reutlingen's flagellant songs (Runge 1900), with Closener's Strasbourg chronicle *[verify edition]*. Lay devotion outside clerical control, and its suppression.
+2. Ralph of Shrewsbury's mandate of 10 January 1349: Latin in Wilkins (1737, 2:745–46), calendared in Holmes (1896, no. 2130), English in Horrox (1994). The institution admits it cannot deliver the sacraments.
+3. Hugo of Reutlingen's flagellant songs (Runge 1900), with Closener's Strasbourg chronicle (Hegel 1870–71). Lay devotion outside clerical control, and its suppression.
 4. Knighton's *Chronicle* (Martin 1995). The canonical complaint about clerical decline, to be read against its late date.
 5. London Husting wills (Sharpe 1889–90). A free behavioural series on where lay testators placed trust.
 6. *Born in Slavery* (Library of Congress) or Rawick (1972–79). The largest testimonial base, read with Blassingame (1975) and Stewart (2016).
@@ -189,17 +189,15 @@ These ten give the core comparison in a balanced form: each case has testimony, 
 ### To verify
 
 - Contents and page ranges of Horrox (1994) and Aberth (2005; 2017) for each excerpt cited.
-- Modern critical editions: Branca (Boccaccio), Porta (Giovanni and Matteo Villani), Lisini and Iacometti (Agnolo di Tura), Rodolico (Stefani), Giuffrida (Piazza), Luff and Steer (Megenberg), Rossi and Bosco (Petrarch).
-- Hegel (1870–71), *Chroniken der deutschen Städte* 8–9, and an open-access host.
+- Modern critical editions: Branca (Boccaccio), Porta (Giovanni and Matteo Villani), Lisini and Iacometti (Agnolo di Tura), Rodolico (Stefani), Giuffrida (Piazza), Krüger (Megenberg, *De mortalitate*), Rossi and Bosco (Petrarch).
+- An open-access host for Hegel (1870–71), *Chroniken der deutschen Städte* 8–9.
 - Henschel (1842), de' Mussis edition details.
 - Dols (1974) on Ibn al-Wardi; Dinanah (1927) on Ibn Khatima.
 - Devlin (1954), Brinton's sermons; Rébouis (1888); Chiappelli (1887); Duran-Reynals and Winslow (1949); Hockey (1986–87).
-- Simonsohn (1988) document numbers; Fredericq volume for *Inter sollicitudines*; Wilkins volume and date for *Effrenata*.
+- Simonsohn (1988) document numbers; whether Fredericq vol. 2 (1896) or vol. 3 (1906) prints Clement VI's anti-flagellant bull, and whether any edition gives it the incipit *Inter sollicitudines* (Raynaldus prints the Magdeburg copy as *Molesta nobis*).
 - McWilliam's 1995 second edition and Rebhorn's 2013 Norton translation of the *Decameron*.
-- Matheson (2005): Crossref lists the article under both issue 1 and issue 3 of *ANQ* 18.
-- WPA narrative count; Higginson (1867) page range; *Christian Recorder* database access; Eakin and Logsdon (1968) publisher.
+- Higginson (1867) page range; *Christian Recorder* database access; Eakin and Logsdon (1968) publisher.
 - Hodges (1993) as the edition containing Jea's narrative.
-- The basis of Fountain's (2010) timing argument.
-- Content paraphrases marked *[verify]* in both tables, especially Villani's legacies, li Muisis's decrees, Le Jau's baptismal oath, the Liberty County walkout and the Moravian separation date.
+- Content paraphrases marked *[verify]* in both tables, especially Villani's legacies, Le Jau's baptismal oath, the Liberty County walkout and the Moravian separation date.
 - Jones and Allen (1794): appended address titles and the costs they reported; the date of the St George's walkout.
 - DocSouth links marked [WB] could not be opened from this environment.

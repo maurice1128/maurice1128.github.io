@@ -36,11 +36,11 @@ The article measures perceptions of religious political involvement; it does not
 | Prior work | What it does | What this article adds |
 |---|---|---|
 | Fu et al. 2019; Wu et al. 2024 (TSCS project reports) | Publish unweighted marginals for religion, trust and religious political speech | Weighted estimates with design-based errors; multivariate models; cohort analysis |
-| Yi et al. 2021 | Sociology of Taiwanese Christians from 2012 and 2017 national Christian surveys and a 2015 clergy survey | Places Christians inside the general population, so public trust and Christian identification can be compared |
+| Yi and Su 2021 | Sociology of Taiwanese Christians from 2012 and 2017 national Christian surveys and a 2015 clergy survey | Places Christians inside the general population, so public trust and Christian identification can be compared |
 | Huang 2017; Ho 2019 | Analyse conservative Christian mobilization, the secularist backlash and the marriage-equality movement | Measures whether the population's trust tracks attitudes to religious political speech |
 | Voas and Crockett 2005; Molteni and Biolcati 2023 | Attribute religious decline in Britain and Europe to cohort replacement | Tests cohort patterns and transmission in a non-Western, religiously plural society |
 | Hout and Fischer 2002, 2014; Djupe, Neiheisel, and Conger 2018 | Link US disaffiliation to backlash against the Religious Right | Tests a politicization pathway where Christians are a small minority and the trust item spans all religions |
-| Bottan and Perez-Truglia 2015; Hungerman 2013; Frick, Moser, and Simmons 2021 | Find that scandals cut participation, giving and membership, but not belief; damage spills over to uninvolved churches | Asks whether a spillover-like, religion-wide trust decline appears in Taiwan's survey data |
+| Bottan and Perez-Truglia 2015; Hungerman 2013; Frick, Moser, and Simmons 2021 | Find that scandals cut participation, giving and membership, but not measurably belief; switching to other denominations is short-lived; damage spills over to uninvolved churches | Asks whether a spillover-like, religion-wide trust decline appears in Taiwan's survey data |
 | Christian Ethics Movement of Korea 2026 | Descriptive trust collapse in the Korean Protestant church, tied to perceived political alignment | A second East Asian case with microdata and controls |
 
 ### Design and evidence
@@ -76,7 +76,7 @@ The article measures perceptions of religious political involvement; it does not
 2. **Theory and hypotheses (~1,300).** Purpose: set out believing without belonging as a stage, politicization backlash, scandal spillover, care versus advocacy, and transmission through community. Derive H1–H4 and the symmetric wording of H3.
    - Cite: Voas and Crockett 2005; Voas and Chaves 2016; Hout and Fischer 2002, 2014; Djupe, Neiheisel, and Conger 2018; Bottan and Perez-Truglia 2015; Hungerman 2013; Frick, Moser, and Simmons 2021; Pew Research Center 2021b; Bentzen 2019, 2021 (the devotion side).
 3. **The Taiwanese context (~700).** Purpose: Christian demography, the 2010s mobilization and the PCT's contrasting public role. The section stays descriptive and neutral, and notes that the PCT's 2014 pastoral letter is not the opposite pole on marriage.
-   - Cite: Huang 2017 *[verify English title and author]*; Ho 2019; Tseng 2017; Presbyterian Church in Taiwan 1971, 1977, 1990, 2014; Yi et al. 2021.
+   - Cite: Huang 2017 (Huang Ke-hsien, "'Culture Wars' in a Globalized East: How Taiwanese Conservative Christianity Turned Public in Same-Sex-Marriage Controversy and Secularist Backlashes"); Ho 2019; Tseng 2017; Presbyterian Church in Taiwan 1971, 1977, 1990, 2014; Yi and Su 2021.
    - Read: the PCT documents in full, in Chinese.
 4. **Data and measures (~1,100).** Purpose: a wave-by-item availability table, weights, sample sizes, harmonization and the construct problem.
    - Cite: Fu et al. 2019; Wu et al. 2024.
@@ -121,7 +121,7 @@ The article measures perceptions of religious political involvement; it does not
 - [ ] Reproduce the published unweighted figures exactly, then compute weighted ones.
 
 **Reading (about 60–80 hours)**
-- [ ] Read in full: Yi et al. 2021; Huang 2017; Ho 2019; Voas and Crockett 2005; Molteni and Biolcati 2023; Hout and Fischer 2014; Bottan and Perez-Truglia 2015; Frick, Moser, and Simmons 2021.
+- [ ] Read in full: Yi and Su 2021 (edited by Yi Chin-chun and Su Kuo-hsien); Huang 2017; Ho 2019; Voas and Crockett 2005; Molteni and Biolcati 2023; Hout and Fischer 2014; Bottan and Perez-Truglia 2015; Frick, Moser, and Simmons 2021.
 - [ ] Read the sampling and weighting chapters of Fu et al. 2019 and Wu et al. 2024.
 - [ ] Read the PCT documents (1971, 1977, 1990, 1999, 2009, 2014) in Chinese.
 
@@ -130,9 +130,7 @@ The article measures perceptions of religious political involvement; it does not
 - [ ] Write a reproducible R or Stata script, kept in version control.
 
 **Citations to verify**
-- [ ] Huang 2017: English title and author.
 - [ ] Huang 2009: coverage of the 921 earthquake.
-- [ ] Yi et al. 2021: editor roles.
 - [ ] Romanization of the TSCS editors' names.
 - [ ] Whether 2004 carries the trust item.
 - [ ] Pound and Ryan 2024: the underlying report.
