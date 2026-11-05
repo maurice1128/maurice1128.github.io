@@ -186,3 +186,42 @@ Official site hss.ntu.edu.tw hosts the originals (the 2022 PDF downloaded from i
 Also in the 2023 philosophy/religion list for context: 華人宗教研究 (政大華人宗教研究中心) 第三級; 臺大佛學研究, 佛光學報, 法鼓佛學學報 第二級.
 
 Timing caution: the 歷史學 and 哲學 ratings expire 2026-12-31. The next round (evaluated in 2026, list expected around the turn of 2026/27, valid 2027–2029) was not yet found online on 2026-11-05 [not confirmed]. Re-check before citing THCI status for a 2027 submission.
+
+---
+## Tier table (as of 2026-11-05)
+
+Article numbers follow HANDOFF.md: **A1** historiography review "Devotion and Distrust"; **A2** Black Death vs slave religion "Who Owns the Remedy?"; **A3** Taiwan churches 1965–1990; **A4** Taiwan trust in religious organisations, TSCS 2009–2018.
+SJR quartile = best quartile, SJR 2025 (from scijournal.org, a SCImago mirror). WoS = per LetPub. "—" = not listed. [nc] = not confirmed.
+
+| Journal | Indexing | SJR Q | Norway | JUFO | THCI/TSSCI | Overall tier | Suits |
+|---|---|---|---|---|---|---|---|
+| Past & Present | SSCI, AHCI, Scopus | Q1 | 2 | 3 | — | **top** | A2 in principle, but its AI-text ban rules it out (HANDOFF) |
+| CSSH | SSCI, AHCI, Scopus | Q1 | 1 | 3 | — | **top** (interdisciplinary flagship) | **A2** (1st choice) |
+| JSSR | SSCI, AHCI, Scopus | Q1 | 2 | 3 | — | **top** (society flagship) | **A4** (1st choice) |
+| Sociology of Religion | SSCI, AHCI, Scopus | Q1 | 2 | 3 | — | **top** | **A4** (2nd choice) |
+| Journal of Asian Studies | SSCI, AHCI, Scopus | Q1 | 2 | 3 | — | **top** (area-studies flagship) | A3 (stretch option) |
+| Review of Religious Research | SSCI, AHCI, Scopus | Q1 | 2 | 3 | — | **strong** | A4 (backup) |
+| Religion (T&F) | AHCI, Scopus | Q1 | 2 | 3 | — | **strong** | A2 / A1 (backup) |
+| Journal of Contemporary Religion | AHCI, Scopus | Q1 | 2 | 3 | — | **strong** | A4 (backup, for the 1990s–2010s material) |
+| Church History | AHCI, Scopus, ERIH PLUS | Q3 | 2 | 2 | — | **strong** (low citation metrics, high field standing) | **A2** (3rd choice); also A3 |
+| Social Science History | SSCI, AHCI, Scopus | Q1 | 1 | 2 | — | **strong** | **A2** (2nd choice) |
+| Journal of Religious History | AHCI, Scopus | Q2 | 1 | 2 | — | **strong / specialist** | **A1** long version |
+| Studies in World Christianity | AHCI, Scopus | Q2 | 1 | 1 | — | **specialist** | **A3** (1st choice) |
+| Review of Religion and Chinese Society | ESCI, Scopus | Q2 | — [nc] | — [nc] | — | **specialist** | **A3** (2nd choice); also A4 |
+| IBMR | ESCI, Scopus | Q2 [secondary] | 1 | 1 | — | **specialist** (mission studies) | A3 (backup) |
+| History Compass | ESCI, Scopus | Q1 | 1 | 1 | — | **review venue** | **A1** short version |
+| Religion Compass | ESCI, Scopus | Q1 | 1 | 1 | — | **review venue** | A1 (backup) |
+| Religions (MDPI) | AHCI, Scopus, DOAJ | Q1 | 1 | **0** (since 2025) | — | **caution** | Fallback only; avoid for the flagship papers |
+| 臺灣史研究 | — | — | — | — | THCI 第一級 (2024–26) | **top (Taiwan)** | **A3** Chinese version |
+| 新史學 | — | — | — | 1 | THCI 第一級 (2024–26) | **top (Taiwan)** | **A1** Chinese research review |
+| 臺灣社會學刊 | — | — | — | — | TSSCI 第一級 (2025–27) | **top (Taiwan)** | A4 Chinese version |
+| 台灣社會學 | — | — | — | — | TSSCI 第一級 (2025–27) | **top (Taiwan)** | A4 Chinese version (alternative) |
+| 臺灣宗教研究 | — | — | — | — | THCI 第二級 (core, 2024–26) | **strong (Taiwan specialist)** | A3 / A4 Chinese spin-off |
+| 道風 Logos & Pneuma (HK) | (no WoS/Scopus found) | — | 1 | 1 | not rated (not a Taiwanese journal) | **specialist** (Sino-Christian theology) | A1/A2 theological reflection piece |
+| 玄奘佛學研究 (reference) | — | — | — | — | 第三級 = **not core** | **caution** (for a Taiwan CV) | none |
+
+Key takeaways for a Taiwan-based author:
+1. Taiwanese evaluation (NSTC grants, university promotion) weights SSCI/AHCI and THCI/TSSCI core. Every first-choice English venue in the plan is SSCI or AHCI. The exceptions are History Compass and RRCS, which are ESCI only, so A1-short and the A3 backup count for less in a Taiwanese dossier.
+2. Ranking systems disagree. CSSH is JUFO 3 but Norway 1. Church History is Norway 2 but SJR Q3. In humanities, SJR quartiles are inflated: Religions (MDPI) and the Compass journals are Q1. Use JUFO and Norway levels as the reputation signal and SJR only as a Scopus check.
+3. THCI ratings for history and philosophy/religion (臺灣史研究, 新史學, 臺灣宗教研究) expire on 2026-12-31. The 2026 re-rating was not online yet; re-check before citing them for 2027 submissions.
+4. Religions (MDPI) has been JUFO 0 since 2025. That is a concrete downgrade signal, so keep it as a last resort.
