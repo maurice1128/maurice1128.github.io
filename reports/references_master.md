@@ -2,7 +2,7 @@
 
 Compiled 2026-11-05 from the reference lists of all section files in `reports/sections/` (02_theory, 03_theologies, 04_black_death, 05_slave_religion, 06_comparative, 07_global_cases, 08_continental, 09_chinese, 10_other_languages, 10_primary_sources, 11_methodology, 12_ancient_languages, 16_biblical, 16_contemporary, 19_novelty, 20_gaps_journals). Chicago author-date (17th ed.), alphabetical by author. Works cited in several sections appear once, in the most complete corrected form. Non-Latin-script authors and titles are given in original script with romanization and an English gloss in square brackets.
 
-**1069 unique works.** 954 verified; 113 verified with a detail still to check (marked *[detail to verify: …]*); 2 unverified (marked *[unverified]*). No entry was judged likely non-existent. Evidence for every entry is in `audit/references_status.tsv`; changes to in-text keys that the merge requires are listed in `audit/references_summary.md`.
+**1072 unique works.** 958 verified; 111 verified with a detail still to check (marked *[detail to verify: …]*); 3 unverified (marked *[unverified]*). No entry was judged likely non-existent. Evidence for every entry is in `audit/references_status.tsv`; changes to in-text keys that the merge requires are listed in `audit/references_summary.md`.
 
 
 ## A
@@ -18,6 +18,8 @@ Aberth, John. 2021. *The Black Death: A New History of the Great Mortality in Eu
 Abu-Raiya, Hisham, Kenneth I. Pargament, Neal Krause, and Gail Ironson. 2015. "Robust Links between Religious/Spiritual Struggles, Psychological Distress, and Well-Being in a National Sample of American Adults." *American Journal of Orthopsychiatry* 85 (6): 565–75.
 
 Adams, Marilyn McCord. 1999. *Horrendous Evils and the Goodness of God*. Ithaca, NY: Cornell University Press.
+
+AGBU (Armenian General Benevolent Union). 2015. "Martyrs of the Armenian Genocide Canonized at the Mother See of Holy Etchmiadzin." Press release, 12 May 2015 (on the canonization of 23 April 2015). https://agbu.org/press-release/martyrs-armenian-genocide-canonized-mother-see-holy-etchmiadzin.
 
 Ager, Philipp, and Antonio Ciccone. 2018. "Agricultural Risk and the Spread of Religious Communities." *Journal of the European Economic Association* 16 (4): 1021–68. https://doi.org/10.1093/jeea/jvx029.
 
@@ -230,7 +232,7 @@ Bowsky, William M., ed. 1971. *The Black Death: A Turning Point in History?* New
 
 Branca, Vittore, ed. *Decameron*, by Giovanni Boccaccio. *[detail to verify: which Branca edition (Mondadori 1976 or Einaudi 1980/1992) and year; entry lacks a year; which edition: *Tutte le opere di Giovanni Boccaccio*, vol. 4 (Milan: Mondadori, 1976), or Turin: Einaudi, 1980/1992 (sec. 12)]*
 
-Braun, Theodore E. D., and John B. Radner, eds. 2005. *The Lisbon Earthquake of 1755: Representations and Reactions*. Oxford: Voltaire Foundation.
+Braun, Theodore E. D., and John B. Radner, eds. 2005. *The Lisbon Earthquake of 1755: Representations and Reactions*. SVEC 2005:02. Oxford: Voltaire Foundation.
 
 Breen, Patrick H. 2015. *The Land Shall Be Deluged in Blood: A New History of the Nat Turner Revolt*. New York: Oxford University Press.
 
@@ -304,6 +306,8 @@ Cardoner i Planas, Antoni. 1973. *Història de la medicina a la Corona d'Aragó 
 Carey, Mathew. 1793. *A Short Account of the Malignant Fever, Lately Prevalent in Philadelphia*. Philadelphia: Printed by the author.
 
 Carmil, Devora, and Shlomo Breznitz. 1991. "Personal Trauma and World View—Are Extremely Stressful Experiences Related to Political Attitudes, Religious Beliefs, and Future Orientation?" *Journal of Traumatic Stress* 4 (3): 393–405. https://doi.org/10.1002/jts.2490040307.
+
+Carmody, Heather. 2012. "The Black Death of Europe and Cholera in 19th Century London: A Comparative Study." Honors thesis, Loyola Marymount University. https://digitalcommons.lmu.edu/honors-thesis/6.
 
 Carpentier, Élisabeth. 1962a. *Une ville devant la peste: Orvieto et la Peste noire de 1348*. Paris: S.E.V.P.E.N. 2nd rev. ed., Bruxelles: De Boeck Université, 1993 (Bibliothèque du Moyen Âge 3). *[detail to verify: 1962 series number (sec. 08)]*
 
@@ -691,7 +695,7 @@ Gallup. n.d.-b. "Honesty/Ethics in Professions." Historical trends. Accessed Nov
 
 Ganiel, Gladys. 2016. *Transforming Post-Catholic Ireland: Religious Practice in Late Modernity*. Oxford: Oxford University Press. https://doi.org/10.1093/acprof:oso/9780198745785.001.0001.
 
-Gao Chunchang 高春常. 2008. 〈大西洋视野中的北美黑奴宗教〉 [North American slave religion in Atlantic perspective]. 《历史研究》 [*Historical Research*]. *[detail to verify: issue number and pages in 《历史研究》 2008; venue, issue and pages; Google Scholar listing only (sec. 19)]*
+Gao Chunchang 高春常. 2008. 〈大西洋视野中的北美黑奴宗教〉 [North American slave religion in Atlantic perspective]. 《历史研究》 [*Historical Research*]. *[detail to verify: issue number and pages in 《历史研究》 2008]*
 
 Gasquet, Francis Aidan (弗朗西斯·艾丹·加斯凯). 2019. 《黑死病：大灾难、大死亡与大萧条（1348—1349）》 [*The Great Pestilence*]. Translated by 郑中求 (Zheng Zhongqiu). Beijing: 华文出版社.
 
@@ -880,7 +884,7 @@ Hirschman, Albert O. 1970. *Exit, Voice, and Loyalty: Responses to Decline in Fi
 
 Ho, Ming-sho. 2019. "Taiwan's Road to Marriage Equality: Politics of Legalizing Same-sex Marriage." *China Quarterly* 238: 482–503. https://doi.org/10.1017/S0305741018001765.
 
-Hockey, S. F., ed. 1986–87. *The Register of William Edington, Bishop of Winchester, 1346–1366*. 2 vols. Hampshire Record Series 7–8. *[detail to verify: imprint details (place, publisher, date) not confirmed in a catalogue (sec. 10)]*
+Hockey, S. F., ed. 1986–87. *The Register of William Edington, Bishop of Winchester, 1346–1366*. 2 vols. Hampshire Record Series 7–8.
 
 Hoepffner, Ernest, ed. 1908. *Œuvres de Guillaume de Machaut*. Vol. 1. Société des anciens textes français. Paris: Firmin-Didot.
 
@@ -1067,7 +1071,7 @@ Kim, Chwi-Woon. 2021. "Psalms of Communal Lament as a Relic of Transgenerational
 
 Kim, Sebastian C. H., and Kirsteen Kim. 2014. *A History of Korean Christianity*. Cambridge: Cambridge University Press. https://doi.org/10.1017/CBO9781139048071.
 
-Kim, Sung-Gun. 1989. "Korean Christianity and the Shinto Shrine Issue in the War Period, 1931–1945: A Sociological Study of Religion and Politics." PhD diss., University of Hull. *[detail to verify: subtitle: Hull repository 'A Study of Religion and Politics' vs. CRL/Open Library 'A Sociological Study of Religion and Politics']*
+Kim, Sung-Gun. 1989. "Korean Christianity and the Shinto Shrine Issue in the War Period, 1931–1945: A Sociological Study of Religion and Politics." PhD diss., University of Hull. (The Hull repository gives the subtitle as "A Study of Religion and Politics"; CRL and Open Library have "A Sociological Study of Religion and Politics"; https://hull-repository.worktribe.com/output/4210369.) *[detail to verify: subtitle: Hull repository 'A Study of Religion and Politics' vs. CRL/Open Library 'A Sociological Study of Religion and Politics']*
 
 Kim Hŭng-su 김흥수. 1999. *Han'guk chŏnjaeng kwa kibok sinang hwaksan yŏn'gu* 한국전쟁과 기복신앙 확산 연구 [A Study of the Korean War and the Spread of This-Worldly Blessing Faith]. Seoul: Han'guk Kidokkyo Yŏksa Yŏn'guso.
 
@@ -1184,7 +1188,7 @@ Li He 李荷. 2004. 〈灾难中的转变：黑死病对欧洲文化的影响〉
 
 Li Huacheng 李化成. 2007c. 〈瘟疫背后的思想史——兼窥中西"天（神）谴论"之不同〉 [The intellectual history behind plague: With a glance at Chinese and Western theories of Heavenly or divine punishment]. 《人文杂志》, no. 6.
 
-Li Huacheng 李化成. 2008. 〈黑死病期间的英国教会〉 [The English Church during the Black Death]. 《安徽史学》, no. 1. *[detail to verify: pages]*
+Li Huacheng 李化成. 2008. 〈黑死病期间的英国教会〉 [The English Church during the Black Death]. 《安徽史学》, no. 1. *[detail to verify: pages; on CNKI: not found in open indexes (sec. 19)]*
 
 Li Huacheng 李化成. 2013. 〈黑死病期间西欧的鞭笞者运动（1348—1349）〉 [The flagellant movement in Western Europe during the Black Death, 1348–1349]. 《历史研究》, no. 1.
 
@@ -1452,7 +1456,7 @@ Nirmal, Arvind P. 1990. "Towards a Christian Dalit Theology." In *A Reader in Da
 
 Nissi, Jyrki, and Ines Testoni. 2025. "Devotion to Saints as Medieval Death Anxiety Management." *Journal of Ecclesiastical History*, FirstView, 1–24. https://doi.org/10.1017/S002204692510119X.
 
-Nodl, Martin. 2021. [Essay on the Black Death and the Hussite revolution in Czech historiography.] *Vorträge und Forschungen* (Konstanzer Arbeitskreis für mittelalterliche Geschichte). Heidelberg: Heidelberg University Publishing. *[detail to verify: title, volume, editors, pages (sec. 04)]*
+Nodl, Martin. 2021. [Essay on the Black Death and the Hussite revolution in Czech historiography.] *Vorträge und Forschungen* (Konstanzer Arbeitskreis für mittelalterliche Geschichte). Heidelberg: Heidelberg University Publishing. *[unverified]*
 
 Noll, Mark A. 2006. *The Civil War as a Theological Crisis*. Chapel Hill: University of North Carolina Press.
 
@@ -1539,6 +1543,8 @@ Pew Research Center. 2019. "Americans See Catholic Clergy Sex Abuse as an Ongoin
 Pew Research Center. 2021a. "Faith Among Black Americans." February 16, 2021. https://www.pewresearch.org/religion/2021/02/16/faith-among-black-americans/.
 
 Pew Research Center. 2021b. "Churches and Religion in Black American Life." Chapter of *Faith Among Black Americans*, February 16, 2021. https://www.pewresearch.org/religion/2021/02/16/churches-and-religion-in-black-american-life/.
+
+Pew Research Center. 2021c. "More Americans Than People in Other Advanced Economies Say COVID-19 Has Strengthened Religious Faith." 27 January 2021 (survey fielded 10 June–3 August 2020). https://www.pewresearch.org/religion/2021/01/27/more-americans-than-people-in-other-advanced-economies-say-covid-19-has-strengthened-religious-faith/.
 
 Pew Research Center. 2024. "Religious 'Nones' in America: Who They Are and What They Believe." January 24, 2024. https://www.pewresearch.org/religion/2024/01/24/religious-nones-in-america-who-they-are-and-what-they-believe/.
 
@@ -1986,7 +1992,7 @@ TRC (Truth and Reconciliation Commission of Canada). 2015. *Honouring the Truth,
 
 Tsai Jung-fang 蔡榮芳. 2020. 《從宗教到政治：黃彰輝牧師普世神學的實踐》 [From religion to politics: The practice of Rev. Shoki Coe's ecumenical theology]. Taipei: 玉山社. *[detail to verify: catalogue record (ISBN) not seen; Google Scholar citation record only]*
 
-Tseng, Ching-pao (曾慶豹). 2017. 《約瑟和他的兄弟們：護教反共、黨國基督徒與臺灣基要派的形成》 [Joseph and his brothers: Apologetic anti-communism, party-state Christians and the formation of Taiwanese fundamentalism]. Tainan: 臺灣教會公報社 [Taiwan Church News]. *[detail to verify: edition used: ISBN 9789865637378 (Douban) vs. 9789865637446 (2017 revised edition, xx+369 pp.); give the ISBN of the copy read]*
+Tseng, Ching-pao (曾慶豹). 2017. 《約瑟和他的兄弟們：護教反共、黨國基督徒與臺灣基要派的形成》 [Joseph and his brothers: Apologetic anti-communism, party-state Christians and the formation of Taiwanese fundamentalism]. 修訂版 [rev. ed.]. Tainan: 臺灣教會公報社 [Taiwan Church News]. *[detail to verify: edition used: ISBN 9789865637378 (Douban) vs. 9789865637446 (2017 revised edition, xx+369 pp.); give the ISBN of the copy read]*
 
 Tuchman, Barbara W. (巴巴拉·W.塔奇曼). 2016. 《远方之镜》 [*A Distant Mirror: The Calamitous 14th Century*]. Translated by 邵文实 (Shao Wenshi). Beijing: 中信出版社. ISBN 9787508660134.
 
@@ -2191,7 +2197,7 @@ Yuval, Israel Jacob. 2006. *Two Nations in Your Womb: Perceptions of Jews and Ch
 
 ## Z
 
-Zacharia, Gregory. 2018. "After the Apocalypse: A Comparative Study of the Black Death, London Fire, and Lisbon Earthquake." History Honors Project 24, Macalester College. https://digitalcommons.macalester.edu/history_honors/24/.
+Zacharia, Gregory. 2018. "After the Apocalypse: A Comparative Study of the Black Death, London Fire, and Lisbon Earthquake." History Honors Projects 24, Macalester College. https://digitalcommons.macalester.edu/history_honors/24/.
 
 Zavala-Pelayo, Edgar. 2022. "Notas genealógicas sobre la defensa de la autodeterminación en la Iglesia Presbiteriana de Taiwán." *Estudios de Asia y África* 57 (3): 627–656. https://doi.org/10.24201/eaa.v57i3.2772.
 
