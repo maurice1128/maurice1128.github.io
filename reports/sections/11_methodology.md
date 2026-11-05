@@ -135,3 +135,4 @@ Within each core case, process tracing should test a specified sequence with nam
 - Fields 1990 page range in *New Left Review* I/181.
 - Content of Sewell 1967, Skocpol and Somers 1980, Lieberson 1991, and Freiberger 2019 was summarized from knowledge, not re-read in session.
 - Tannenbaum 1946, *Slave and Citizen*, if the Tannenbaum debate is cited directly rather than through de la Fuente 2004.
+- Kreuzer 2023 subtitle; Jones reissue year (Beacon, 1997 or 1998); end pages of Sewell 1967, Lieberson 1991, and Stoler 2001.
