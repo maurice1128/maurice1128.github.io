@@ -10,13 +10,13 @@ This section surveys about 120 works in twelve languages. Each was checked again
 
 Japanese scholarship touches four of the review's cases and adds one theology of its own.
 
-On the Black Death, Murakami (1983) gave Japanese readers the strong-rupture thesis: plague as the "collapse" of the medieval order. Ishizaka Naotake moved the field from synthesis to sources. His translated Italian source collection appeared serially from 2004 and as a book in 2017 (Ishizaka 2017a). Two monographs followed. *Kunan to shinsei* ("Suffering and Mentality") reads plague as a reshaping of religious sensibility (Ishizaka 2018). *Dōshite Rutā no shūkyō kaikaku wa okotta ka* ("Why Did Luther's Reformation Happen?") argues from plague and social history toward the Reformation (Ishizaka 2017b). That long causal arc is the "establishment trust down" branch stated as a thesis. Kuramochi (1995) adds popular devotions outside clerical control. Sasaki's article on the sequence of plague and anti-Jewish massacres engages the Graus and Cohn debate (Sasaki n.d. *[verify year]*).
+On the Black Death, Murakami (1983) gave Japanese readers the strong-rupture thesis: plague as the "collapse" of the medieval order. Ishizaka Naotake moved the field from synthesis to sources. His translated Italian source collection appeared serially from 2004 and as a book in 2017 (Ishizaka 2017a). Two monographs followed. *Kunan to shinsei* ("Suffering and Mentality") reads plague as a reshaping of religious sensibility (Ishizaka 2018). *Dōshite Rutā no shūkyō kaikaku wa okotta ka* ("Why Did Luther's Reformation Happen?") argues from plague and social history toward the Reformation (Ishizaka 2017b). That long causal arc is the "establishment trust down" branch stated as a thesis. Kuramochi (1995) adds popular devotions outside clerical control. Sasaki's article on the sequence of plague and anti-Jewish massacres engages the Graus and Cohn debate (Sasaki 2004).
 
 On the Kakure Kirishitan, Japanese scholarship is divided. Miyazaki Kentarō argues that hidden Christianity became a Japanese folk religion (Miyazaki 1996, 2014, 2018). Nakazono Shigeo, curator of the Ikitsuki museum, stresses continuity with sixteenth-century Kirishitan practice (Nakazono 2018). For the model, both readings agree on one point: the community had become its own church. They disagree on whether its content stayed Christian.
 
-On Nagasaki, the primary text is Nagai's *Nagasaki no kane* (Nagai 1949; English trans. Johnston). Takahashi Shinji built the critique of the "Urakami burnt-offering theory" across three books (Takahashi 1994, 2004, 2020). Shinozaki (2013) argues that the theory survived because it served the postwar emperor system. This adds a mechanism the model lacks: a theodicy from the sufferers' own church can be appropriated by power. Its later loss of credibility then reflects that appropriation, not the church's original role.
+On Nagasaki, the primary text is Nagai's *Nagasaki no kane* (Nagai 1949; English trans. Johnston 1984). Takahashi Shinji built the critique of the "Urakami burnt-offering theory" in two books and a two-part magazine article (Takahashi 1994, 2004, 2020). Shinozaki (2013) argues that the theory survived because it served the postwar emperor system. This adds a mechanism the model lacks: a theodicy from the sufferers' own church can be appropriated by power. Its later loss of credibility then reflects that appropriation, not the church's original role.
 
-Japan also produced its own theology of suffering. Kitamori Kazō's *Kami no itami no shingaku* ("Theology of the Pain of God") appeared in 1946 and in English in 1966 (Kitamori 1946). It supplies the "God who suffers" interpretation from a defeated, non-Christian society, before Moltmann. Black theology arrived early: Cone in Japanese in 1973 (Cone 1973), then Kuribayashi's adaptation to Buraku liberation (Kuribayashi 1991). Kuribayashi shows that the Exodus-and-cross reading works without any racial variable. That fits the review's claim that situation, not race, explains outcomes. Japanese research on slave religion itself is thin. It consists mainly of serial articles on slave conversion (Fukumoto n.d.; Watanabe n.d.) and surveys (Miyahira 2001; Morimoto 2006).
+Japan also produced its own theology of suffering. Kitamori Kazō's *Kami no itami no shingaku* ("Theology of the Pain of God") appeared in 1946 and in English in 1965 (Kitamori 1946). It supplies the "God who suffers" interpretation from a defeated, non-Christian society, before Moltmann. Black theology arrived early: Cone in Japanese in 1973 (Cone 1973), then Kuribayashi's adaptation to Buraku liberation (Kuribayashi 1991). Kuribayashi shows that the Exodus-and-cross reading works without any racial variable. That fits the review's claim that situation, not race, explains outcomes. Japanese research on slave religion itself is thin. It consists mainly of serial articles on slave conversion (Fukumoto 1995–96; Watanabe 1992) and surveys (Miyahira 2001; Morimoto 2006).
 
 ### Korean
 
@@ -28,17 +28,17 @@ Korean is the richest addition, because Korea supplies both theory and cases.
 
 **The Korean War.** Kim Hŭng-su (1999) argues that wartime suffering spread Christianity but reshaped it toward "this-worldly blessing" faith (*kibok sinang*). Kang In-ch'ŏl (2007) shows northern refugee Christians turning their suffering under communism into anti-communism allied with the southern state. Together they warn that "faith up" can hide a change in what faith is about. They also show a sufferers' church becoming an establishment within one generation. Yun (2015) and Pak Po-gyŏng (2010) add institutional detail.
 
-**A new comparative case.** Cho Kwang (1988) documents a lay-founded Catholic church that grew through the persecutions of 1801–1866 without resident clergy. It parallels the Kakure Kirishitan, but it rejoined Rome and became a mass church. It deserves a place in section 7.
+**A new comparative case.** Cho Kwang (1988) documents a lay-founded Catholic church that grew through the persecutions of 1801–1866 with few and intermittent clergy. Clandestine priests served it in 1795–1801, 1836–39 and from 1845. Unlike the Kakure Kirishitan, it never broke from Rome: its lay leaders sought priests from Beijing from the late 1780s. The comparison with Japan is therefore a contrast. Both were sufferer-led churches under persecution, but the Korean church kept its tie to the wider church and became a mass church, while many Kakure communities, without clergy for over two centuries, stayed apart when missionaries returned. It deserves a place in section 7.
 
-**The Black Death in Korean.** Pak Hŭng-sik studies clerical mortality and the church (Pak 2011, 2019). Yi P'il-ŭn (2013) is, by title, the only study found in any language that targets mass attendance as an outcome. Yi Sang-dong compares the flagellant waves of 1260 and 1349 (Yi 2021a), studies the pogroms (Yi 2021b) and has written a synthesis (Yi 2024). The 1260 comparison is valuable for the model. It separates penitential surges with mass mortality from those without.
+**The Black Death in Korean.** Pak Hŭng-sik studies clerical mortality and the church (Pak 2011, 2019). Yi P'il-ŭn (2013) is, by title, the only study found in any language that targets mass attendance as an outcome. Yi Sang-dong compares the flagellant waves of 1260 and 1348–49 (Yi 2021a), studies the pogroms (Yi 2021b) and has written a synthesis (Yi 2024). The 1260 comparison is valuable for the model. It separates penitential surges with mass mortality from those without.
 
 ### Portuguese (Brazil)
 
 The brotherhood (*irmandade*) literature separates church role from power position, which the US case cannot do.
 
-Scarano (1975) pioneered the field with a Rosary brotherhood in the Diamond District. Reginaldo traces Angolan members and the Atlantic roots of Black Rosary devotion in Portugal and Angola (Reginaldo 2005, 2016). Mello e Souza (2002) shows brotherhoods crowning "kings of Congo," a fusion of Catholic and African authority. Silveira (2012) and Karasch (2011) add European antecedents and community-building. Soares (2000), already treated in section 6, is available in English (2011).
+Scarano (1976) pioneered the field with a Rosary brotherhood in the Diamond District. Reginaldo traces Angolan members and the Atlantic roots of Black Rosary devotion in Portugal and Angola (Reginaldo 2005, 2011, 2016). Mello e Souza (2002) shows brotherhoods crowning "kings of Congo," a fusion of Catholic and African authority. Silveira (2012) and Karasch (2011) add European antecedents and community-building. Soares (2000), already treated in section 6, is available in English (2011).
 
-In this literature, enslaved people stayed powerless, but they partly controlled Catholic institutions inside an establishment church. Devotion rose in those institutions, and they did not leave Catholicism. This suggests that institutional control by the sufferers, not separation from the establishment, is what matters. Quintão's comparative study of Rio and Pernambuco could not be found in any catalogue *[verify]*.
+In this literature, enslaved people stayed powerless, but they partly controlled Catholic institutions inside an establishment church. Devotion rose in those institutions, and they did not leave Catholicism. This suggests that institutional control by the sufferers, not separation from the establishment, is what matters. Quintão (2002) compares the brotherhoods of *pretos* and *pardos* in eighteenth-century Rio de Janeiro and Pernambuco.
 
 Brazilian Black Death work is modest. It consists of art-historical and medieval-studies articles on devotion and fear (Quírico 2021; Dias 2017; Fagundes 2023).
 
@@ -48,7 +48,7 @@ Spanish scholarship adds the European template for Black brotherhoods, the Cuban
 
 Moreno Navarro's history of the Seville brotherhood covers six centuries of "ethnicity, power and society" (Moreno Navarro 1997). The brief's title "de los negritos" is wrong; the book reads "de los negros." Moreno argues that the Andalusian model was carried to the Americas (Moreno Navarro 2005). Mena García (2000) and Castañeda García (2011) document Panama and New Spain.
 
-In Cuba, Ortiz's study of the ethnic *cabildos* (Ortiz 1992 [1921]) and Cabrera's *El monte* (Cabrera 1954) document devotion migrating into African-controlled bodies that kept Catholic saints. This is the re-coding branch.
+In Cuba, Ortiz's study of the ethnic *cabildos* (Ortiz 1992, which reprints his 1921 essay on the cabildos) and Cabrera's *El monte* (Cabrera 1954) document devotion migrating into African-controlled bodies that kept Catholic saints. This is the re-coding branch.
 
 Taki Onqoy (1560s) is the model's rejection branch. Andean preachers called for abandoning Christianity amid epidemic and conquest. Millones's source edition (Millones 1990) and the interpretations of Curatola (1977), Stern (1982) and Millones Figueroa (2007) frame it as millenarian rejection of the conquerors' religion. A later debate asks how far the colonial records constructed the movement (Heilman 2002).
 
@@ -58,7 +58,7 @@ On the Black Death, Castán Lanaspa (2020) argues that Spanish historiography in
 
 Central European work raises a timing problem for the Hussite case.
 
-Graus's Czech study of the pre-Hussite urban poor (Graus 1949) and Šmahel's four-volume *Husitská revoluce* (Šmahel 1993; German trans. 2002) are the core texts. Mengel (2011) argues that Bohemia's Black Death was milder than assumed. If so, the Hussite revolt is not a direct plague response. It would be a response to a longer crisis plus a failing church, which fits Cohn's recurrence thesis better than a 1348 shock. Czech plague historiography could not be checked because the Czech union catalogue blocks automated access.
+Graus's Czech study of the pre-Hussite urban poor (Graus 1949) and Šmahel's four-volume *Husitská revoluce* (Šmahel 1993; German trans. 2002) are the core texts. Mengel (2011) rejects the older view that Bohemia escaped the Black Death. He argues that plague did reach the kingdom, with serious mortality at least in Moravia, and that the 1380 epidemic did the kingdom more damage. On this reading the Hussite revolt is not a direct response to 1348. It fits a longer crisis of recurring plague plus a failing church, which matches Cohn's recurrence thesis better than a single 1348 shock. Czech plague historiography could not be checked because the Czech union catalogue blocks automated access.
 
 Polish work extends the low-mortality argument. Guzowski (2022) asks whether the Black Death reached the Kingdom of Poland at all. The Izdebski team's pollen data and the ensuing debate support regional variation (Izdebski et al. 2022). Poland is therefore a natural control: the Latin church and a similar penitential culture, but a weak shock. Karpiński (2000) covers the later plague cycles. Bylina (1991, 2002) provides the baseline of heresy and rural Christianization. No scholarly Polish study of the 1349 flagellants was found.
 
@@ -82,7 +82,7 @@ The Jewish case shows suffering at the hands of a Christian establishment streng
 
 The Nuremberg Memorbuch martyrology (Salfeld 1898) and Joseph ha-Kohen's *ʿEmeq ha-bakha* (Joseph ha-Kohen 1981) commemorate the 1348–49 dead as martyrs for the sanctification of the Name. Yuval's *Shene goyim be-vitnekh* (Yuval 2000; English 2006; German 2007) reconstructs the mutual images (vengeance, blood libel, messianic expectation) through which each community read the other's suffering.
 
-Holocaust-era Hebrew and Yiddish texts show the loss-of-faith and protest branches inside a believing community. Shapira's Warsaw Ghetto sermons, now critically edited (Shapira 2017), move from purification theodicy to the limits of theodicy. Teichtal's *Em ha-banim semeḥah* (English ed. 1999) turns catastrophe into an indictment of his own anti-Zionist rabbinic camp. Kolitz's Yiddish monologue of Yosl Rakover keeps faith while accusing God (French trans. 1998). The model's loss-of-faith branch (Jones, Pinn) has Jewish parallels that should be cited.
+Holocaust-era Hebrew and Yiddish texts show the loss-of-faith and protest branches inside a believing community. Shapira's Warsaw Ghetto sermons, now critically edited (Shapira 2017), move from purification theodicy to the limits of theodicy. Teichtal's *Em ha-banim semeḥah* (English ed. 1999) turns catastrophe into an indictment of his own anti-Zionist rabbinic camp. Kolitz's Yiddish monologue of Yosl Rakover keeps faith while accusing God (French trans. 1998, made from the German version). The model's loss-of-faith branch (Jones, Pinn) has Jewish parallels that should be cited.
 
 ### Greek
 
@@ -104,8 +104,8 @@ French-language work is the main literature on the Rwandan church. Linden's hist
 |---|---|---|---|
 | Japanese | Ishizaka 2017a, 2017b, 2018; Miyazaki 2014; Nakazono 2018; Nagai 1949; Takahashi 1994; Shinozaki 2013; Kitamori 1946; Kuribayashi 1991 | Plague–Reformation link; Kakure debate; theodicy appropriated by power; non-Western suffering-God theology | Nagai (Eng., Fr.); Kitamori (Eng.); others none |
 | Korean | Sŏ 1983; An 1988, 1990; Kim Sŭng-t'ae 1991; Yi Chin-gu 2025; Kim Hŭng-su 1999; Kang 2007; Cho 1988; Yi Sang-dong 2021a | Minjung/han theology; shrine-worship schism (faith migrates); war and "blessing" faith; Catholic persecution case | Minjung essays (Eng. 1981/83); An (Jpn. 1992); others none |
-| Portuguese | Scarano 1975; Reginaldo 2005, 2016; Mello e Souza 2002; Silveira 2012 | Sufferers' control inside an establishment church | Soares (Eng. 2011); others none |
-| Spanish | Moreno Navarro 1997; Ortiz 1992 [1921]; Cabrera 1954; Millones 1990; Stern 1982; Castán Lanaspa 2020; Cantera Montenegro 2022 | Brotherhood template; Cuban re-coding; Andean rejection; Iberian plague revisionism | None verified |
+| Portuguese | Scarano 1976; Reginaldo 2005, 2016; Mello e Souza 2002; Silveira 2012 | Sufferers' control inside an establishment church | Soares (Eng. 2011); others none |
+| Spanish | Moreno Navarro 1997; Ortiz 1992; Cabrera 1954; Millones 1990; Stern 1982; Castán Lanaspa 2020; Cantera Montenegro 2022 | Brotherhood template; Cuban re-coding; Andean rejection; Iberian plague revisionism | None verified |
 | Czech | Graus 1949; Šmahel 1993 | Hussite revolt as long-crisis, not 1348, response | Šmahel (Ger. 2002) |
 | Polish | Guzowski 2022; Izdebski et al. 2022; Karpiński 2000; Bylina 1991, 2002 | Low-mortality control region | Guzowski in English |
 | Scandinavian | Benedictow 2002; Sandnes 1978; Myrdal 1978, 2003; Harrison 2000 | Material base of church strain; recurrence | Benedictow's English syntheses |
@@ -113,7 +113,7 @@ French-language work is the main literature on the Rwandan church. Linden's hist
 | Hebrew/Yiddish | Salfeld 1898; Joseph ha-Kohen 1981; Yuval 2000; Shapira 2017; Teichtal 1999 | Minority martyrdom; mutual images; protest faith | Yuval (Eng., Ger.); Teichtal (Eng.); Kolitz (Fr.) |
 | Greek | Kantakouzenos, Gregoras (Bonn eds.); Kostis 1995 | Eastern establishment untested | Bartsocas 1966 (Eng.) |
 | Russian/Ukrainian | Nasonov 1941–55; Shlikhta 1999, 2022 | Penitential bequests; church as co-victim underground | Langer (Eng.); Shlikhta 2022 (Eng.) |
-| French (Rwanda) | Linden 1999; Guichaoua 2010; van 't Spijker 2011; Semana 2013 | Perpetrator-aligned church; migration to new churches | Linden (Eng. original); Guichaoua (Eng.) *[verify]* |
+| French (Rwanda) | Linden 1999; Guichaoua 2010; van 't Spijker 2011; Semana 2013 | Perpetrator-aligned church; migration to new churches | Linden (Eng. original); Guichaoua (Eng. 2015) |
 
 ### Implications for the model
 
@@ -126,21 +126,14 @@ French-language work is the main literature on the Rwandan church. Linden's hist
 
 ### To verify
 
-- Sasaki (n.d.), Fukumoto (n.d.), Watanabe (n.d.): publication years.
-- Romanized readings of Ishizaka Naotake, Miyazaki 揚弘 and Shinozaki 美生子.
-- Hirooka (1993): conflicting page ranges in the two NDL records.
+- Romanized given names not given in NDL: Fukumoto 保信 (perhaps Yasunobu), Sasaki 博光 and Shinozaki 美生子. Ishizaka Naotake and Miyazaki Kentarō 賢太郎 are confirmed.
+- Hirooka (1993): pages are 340–361 in the NDL article index but 82–103 in the Kyoto Sangyō University repository, which labels it a research note.
 - Sŏ et al. (1984): editor or authorship of *Han: Sinhak, munhak, misul ŭi mannam*.
-- Yi Chin-gu (2025): page range.
-- Reginaldo (2005): dissertation subtitle. The 2011 Alameda book edition was not found in catalogues.
-- Quintão (2002), *Lá vem o meu parente*: not found in any catalogue.
-- Ortiz (1921): original publication in *Revista Bimestre Cubana*.
-- Millones (1990): whether IEP was a co-publisher.
-- Dols (1974): chapter title and pages within the Miles festschrift.
+- Ortiz (1992): first publication of the Día de Reyes essay (1920s); the cabildos essay appeared in *Revista Bimestre Cubana* 16 (1921).
 - Ibn al-Khaṭīb (Müller 1863) and Ibn Khātima (Dinanah 1927): editions.
 - Shapira, *Esh Kodesh* (1960); Teichtal, Hebrew original (1943); Kolitz, Yiddish original (1946).
 - Salfeld (1898): series number.
 - Pskov chronicle passages on the 1352 plague: check against Nasonov's edition.
 - Shlikhta (2011) monograph; Bociurkiw Ukrainian translation (2005).
-- Guichaoua (2010): English translation (2015).
 - Eduard Maur and other Czech plague historiography: not checked because the Czech catalogue was inaccessible.
 - Polish 1349 flagellants; Scandinavian clerical mortality; Birgitta's plague revelations: no studies located.

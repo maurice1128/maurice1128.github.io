@@ -6,3 +6,73 @@ Earlier audit (reports/audit/audit_designs.md, rows 18-22, 31-34): CSSH and SSH 
 
 ## Findings (appended as checked)
 
+### Cambridge University Press: publisher level (reached 2026-11-05)
+URL: https://www.cambridge.org/core/services/authors/publishing-ethics/research-publishing-ethics-guidelines-for-journals/authorship-and-contributorship (heading "AI Contributions to Research Content"; no version date on the page; the policy was first issued in March 2023 according to the press coverage that turned up in search: infodocket 2023-03-14; THE).
+Verbatim:
+> "AI use must be declared and clearly explained in publications such as research papers, just as we expect scholars to do with other software, tools and methodologies."
+> "AI does not meet the Cambridge requirements for authorship, given the need for accountability. AI and LLM tools may not be listed as an author on any scholarly work published by Cambridge"
+> "Authors are accountable for the accuracy, integrity and originality of their research papers, including for any use of AI."
+> "Any use of AI must not breach Cambridge's plagiarism policy. Scholarly works must be the author's own, and not present others' ideas, data, words or other material without adequate citation and transparent referencing."
+> "Please note, individual journals may have more specific requirements or guidelines for upholding this policy."
+
+### CSSH, Social Science History, Church History (Cambridge): identical journal text (reached 2026-11-05)
+URLs:
+- https://www.cambridge.org/core/journals/comparative-studies-in-society-and-history/information/author-instructions/preparing-your-materials
+- https://www.cambridge.org/core/journals/social-science-history/information/author-instructions/preparing-your-materials
+- https://www.cambridge.org/core/journals/church-history/information/author-instructions/preparing-your-materials
+No version date on the pages. All three carry the same section, "Use of Artificial Intelligence (AI) Tools". Verbatim:
+- AI as author: "We do not consider artificial intelligence (AI) tools to meet the accountability requirements of authorship, and therefore generative AI tools such as ChatGPT should not be listed as authors on any submitted content."
+- Credit: "All use of AI-generated content must comply with our plagiarism policy and best practices regarding citation and acknowledgement. You must not present ideas, words, data, or other material originally produced by third parties without appropriate acknowledgement or permission."
+- What to declare: "You should always declare and describe your use of an AI tool if you have used it to generate text or images (this includes the translation of sources or of your own work) or to analyse or extract insights from data or other materials."
+- Exempt: "Minimal and non-generative uses of AI tools in manuscript preparation do not require declaration. For instance, basic spelling or language checking, incorporation of single words or brief phrases, or minor formatting tasks such as converting section headers to bold type. It is important to note that accountability for the use of AI tools, including minimal and non-generative ones, rests with the author. Caution should be used in all cases and it is important to check your article thoroughly for unintended consequences, particularly in relation to the references."
+- Where: "If you have used AI tools to generate text within your manuscript, this should be declared in the same way you would declare your use of other language-editing services, for example in a separate acknowledgments section or in a footnote." / "If you have used AI tools to collect or analyse data, the way you have done this should be described in your methods section or general description of your methodology" / "If you have used AI tools to generate visual content ... declared in the captions of any figures"
+- How: "the name and version of the tool you used; the date(s) you used the tool for the purpose(s) described, to the extent reasonably possible; how the tool can be accessed or used by others, to the extent reasonably possible; a full description of how you used the tool; appropriate citations to any third-party text, datasets or other material used or included in the tool's output." Also, as appropriate: proprietary information, any modifications to the tool, and "any competing interests or potential bias".
+- Bans: none. AI-drafted text is allowed if declared.
+- Literature discovery and summarising: not named. "analyse or extract insights from data or other materials" covers AI summarising of sources, which therefore must be declared.
+- If unsure: "please contact the journal's editorial office."
+
+### Past & Present (OUP / Past and Present Society) (reached 2026-11-05 via WebFetch)
+URL: https://academic.oup.com/past/pages/General_Instructions, item 20 "Use of Artificial Intelligence". No version date on the page (copyright 2026).
+Verbatim:
+> "Use of Artificial Intelligence: We ask that authors follow the OUP guidelines for book authors on the responsible, appropriate, and transparent use of Generative AI. We will not consider articles which contain AI-generated text or argument; any other, legitimate use (e.g. for analysis of large datasets or translation) should be disclosed explicitly and (if necessary) implications discussed."
+> "We undertake not to use Generative AI for peer review of article submissions, book and supplement proposals, etc."
+- AI as author: not addressed on the page.
+- Ban: AI-generated text or argument, outright.
+- Allowed if disclosed: "analysis of large datasets or translation" (examples). Where to disclose: not stated.
+- Literature discovery and summarising: not named. They are arguably "other, legitimate use" and should be disclosed. Summaries that feed into argument risk "AI-generated ... argument".
+(The quote above is from WebFetch's model summary, which split it into fragments. It matches the audit's earlier direct reading word for word.)
+
+### Sociology of Religion (OUP / ASR) (reached 2026-11-05 via WebFetch)
+URL: https://academic.oup.com/socrel/pages/Instructions. No AI mention on the instructions page (only the site's "AI Discovery Assistant" menu link). Falls back to OUP's journal-level policy (below).
+
+### Wiley: publisher level
+(1) Best Practice Guidelines on Research Integrity and Publishing Ethics, https://authors.wiley.com/ethics-guidelines/index.html (redirected from authorservices.wiley.com), **"Last updated: July 2026."** Reached 2026-11-05.
+Verbatim:
+> "Authors may only use AI Technology as an additional tool in their writing process, not a replacement for their own expertise and judgement. ... Before including AI-generated content in a journal submission, authors must carefully review it to ensure the final work reflects their own expertise, voice, and originality and that it complies with Wiley's ethical and editorial standards."
+> "Authors should document all AI Technology used, including its purpose, whether it influenced key arguments or conclusions, and how they personally reviewed and verified any AI-generated content. Authors must also disclose their use of AI Technologies when submitting a manuscript to a Wiley journal. If disclosure is not provided at submission, it may be requested during peer review or after publication."
+> "Disclosure: If an author has used AI Technology to substantially edit, develop, or translate any part of a manuscript, its use must be described transparently and integrated into the manuscript ... AI Tools used solely for spelling, grammar, and general editing are not included in these disclosure requirements."
+> "AI & Authorship: ... in accordance with COPE's position statement on Authorship and AI tools these tools cannot fulfil the role of an author and must not be listed as one on an article."
+(2) AI guidelines for researchers, https://www.wiley.com/en-gb/publish/article/ai-guidelines/ (no date on the page). Reached 2026-11-05.
+- Where: "In your Acknowledgments when AI assists with manuscript drafting, editing, translation, or formatting." / "In your Methods when AI is used to assist with your research methodology, data collection or analysis, or literature review processes." Visuals go in figure captions.
+- "Wiley requires disclosure of AI when used to generate substantial text or restructure arguments. ... Simple grammar correction, formatting, and word choice suggestions typically do not require disclosure."
+- Table, drafting and editing. REQUIRES disclosure: Text generation ("AI generates or substantially rephrases text for the manuscript; ... converts notes or audio into formal academic language"), Translation, Cohesion and organization, Argument and logic, Tone and audience. NO disclosure: Language polishing, Conciseness, Formatting and compliance.
+- Table, literature review. REQUIRES: Agentic search ("AI independently generates or executes search strategies (designing full search strings, running database queries, or pre-filtering results)"), Screening and selection, "Synthesis (used in manuscript): AI clusters studies, identifies themes, or generates comparative insights across multiple papers when included in the manuscript", Citation extraction ("AI pulls references or metadata from papers or databases"). NO disclosure: Search support ("the author reviews and decides on final inclusion"), Reference management, Reference formatting, "Literature summarization: AI generates summaries of papers to support author understanding of dense or lengthy content".
+- Acknowledgments content: "AI Technology name and version; Date/year of use; The AI Technology's role in your work ...; Specific sections where the AI was used in the document; The author's role in directing or reviewing the work of the AI Technology".
+- Example: "The authors acknowledge the use of Microsoft Copilot (accessed August 2024) to generate a first draft of the Acknowledgments section ... All AI-assisted text was reviewed and revised by the authors to ensure accuracy and clarity of meaning."
+- Example (methods): "Literature screening was assisted by GPT-4 (accessed March 2024) to categorize 500+ abstracts by predefined relevance criteria. AI-assisted outputs were reviewed and validated by the authors, who confirmed the final inclusion and exclusion decisions."
+- Bans: "AI-edited photographs are not permitted in Wiley journals." "Factual and evidential images are not permitted." AI-drafted text is NOT banned at publisher level.
+- "Your manuscript must demonstrate that the substance and expression of the work are yours, with AI serving only as assistant at your direction."
+- "If you have doubts about specific scenarios or uses not covered here, err on the side of disclosure."
+
+### Taylor & Francis: publisher level (reached 2026-11-05)
+URL: https://taylorandfrancis.com/our-policies/ai-policy/ (no date or version on the page; footer © 2026 Informa plc).
+Verbatim:
+> "Taylor & Francis supports the responsible use of Generative AI tools that respect high standards of data security, confidentiality, and copyright protection in cases such as: Idea generation and idea exploration; Copyediting, language improvement and translations; Literature classification; Coding assistance"
+> "Authors are responsible for ensuring that the content of their submissions ... is created by the author. Note that some journals may not allow use of Generative AI tools beyond language improvement, therefore authors are advised to review the "Instructions for authors" on the journal homepage prior to submission."
+> "Generative AI tools must not be listed as an author because such tools are unable to assume responsibility for the submitted content or manage copyright and licensing agreements."
+> "Authors must clearly acknowledge within the article or book any use of Generative AI tools through a statement that includes: the full name of the tool used (with version number), how it was used and the reason for use. For article submissions, a specific statement of AI usage disclosure must be included."
+> "Authors should not submit manuscripts where Generative AI tools have been used in ways that replace core researcher and author responsibilities, for example: Text or code generation without rigorous revision; Synthetic data generation to substitute missing data without robust methodology; Generation of any types of content which is inaccurate including abstracts or supplemental materials. These types of cases may be subject to editorial investigation."
+> "Taylor & Francis does not permit the use of Generative AI in the creation or manipulation of outputs of research or clinical testing ..." (conceptual illustrations and data visualisations are allowed)
+- Authors are also "accountable for the originality, validity, and integrity of the content of their submissions, including the references ... This includes reviewing the outputs of any Generative AI tools and confirming content accuracy."
+- Summarising sources is not named. "Literature classification" is permitted.
+

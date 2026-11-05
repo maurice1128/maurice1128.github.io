@@ -118,3 +118,54 @@ Items the fact-check left "unverifiable" are now partly resolved: Cohn 1363 (#19
   - **Unreachable or not found 12:** the Wiley author pages for HC, RC, JRH and JSSR; *Religion* and JCR (T&F); SWC; JAS; RRCS; RRR; 臺灣史研究; 臺灣宗教研究; 臺灣社會學刊/臺灣社會學.
 - Data sources reached: the TSCS site (questionnaires, reports, sample sizes), the PCT 重要文獻 pages and the TJDB.
 - Citations: the designs cite about 200 distinct author-year works (a script count of 249 includes date strings and duplicates). **6** are absent from all refs files: the four novelty items in #26, the *Calendar of Papal Registers* (#27), and the unidentified *Religio* 2023 item. All five identifiable ones exist. **No fabricated works were found.**
+
+## Fixes applied
+
+Applied 2026-11-05 to `reports/design/article_1.md` to `article_4.md` and to the matching sections of the plan doc ("Article 1 —" to "Article 4 —", plus "Series overview"). After the edits, the doc was exported and diffed against the four files: the text is identical apart from bullet markers. The literature-review doc and the `reports/sections/` files (including the `*_refs.md` files) were not touched. Works that the refs files lack are therefore given full entries in a new "Works cited here but not in the literature-review refs" list at the end of the relevant design.
+
+| Item | Action | File changed | Doc changed |
+|---|---|---|---|
+| 1 | Removed the unidentified *Religio* 2023 source everywhere (refutation test, objections table, verify list). The 1955–65 doubling of membership and congregations is now stated as a pre-1971 baseline fact, not evidence for the own-community effect (WCC profile, oikoumene.org/ja/node/15862; fetched 2026-11-05). The refutation test now concerns post-1971 growth and cites the WCC's Ten Plus One Movement figures (from 1978: some 80 churches, about 40,000 members), to be broken down by presbytery. WCC entry added to Art. 3's works-cited list | article_3.md | yes |
+| 2 | Madsen rival rewritten. Catholic affiliation grew with US relief and declined after the mid-1960s, which Madsen attributes to lost dependence on relief and on the church's paternal authority, Vatican II conflict and language, not to materialist "flour Christians" leaving. Changed in Art. 2's prior-work and rival tables, and in Art. 3's thesis and contribution table | article_2.md, article_3.md | yes |
+| 3 | Art. 1 §7 rival renamed "provision of care" (Stark; Ager and Ciccone), with Madsen's own explanation | article_1.md | yes |
+| 4 | Page 62 removed from the timing prediction. Kept only for the "flour Christians" passage (contribution table; §6 sources) | article_3.md | yes |
+| 5 | Rubinstein attribution removed. The White Terror claim is now marked *[verify]*, to be documented from TJDB clergy cases, and added to the verify list | article_3.md | yes |
+| 6 | Werner and Zimmermann sentence reworded: *histoire croisée* lets the repertoire be treated as a common variable | article_2.md | yes |
+| 7 | CSSH budget rebuilt to about 9,000 words of text, about 4,500 of notes and bibliography and an abstract of up to 250 (about 13,750, under the 14,000 cap). Section budgets cut to sum to 9,000. SSH set at about 8,200 words of text. The overlength fallback was updated | article_2.md | yes |
+| 8 | *History Compass* version planned at 5,000–6,000 words, from the only evidence (about 5,000; 2007, 2016). The 8,000-word version (including footnotes) is assigned to *JRH*. Every section now carries a JRH/HC budget (6,800 / 5,000 words of text) | article_1.md | yes |
+| 9 | Single cutting plan: the HC version cuts §3c to 150 words and §7 to a 300-word "Questions for research", and moves the coding table to supplementary material. The JRH row now says the 8,000 version fits without cuts | article_1.md | yes |
+| 10 | Timeline restated as about 20–22 weeks (280–330 h): 11–13 weeks of reading plus 8–9 of drafting, revision and readers | article_1.md | yes |
+| 11 | ISSP described as comparators only. Taiwan's ISSP data are TSCS 2009 (Religion III) and 2018 (Religion IV), and Taiwan is not in 1991 or 1998. Dropped "church-specific wording if available" from the construct paragraph, the objections table and the outline. SRDA-delay fallback reworded | article_4.md | yes |
+| 12 | H3 rebuilt on the ISSP influence items: 宗教領袖不應該在選舉的時候影響選民投票 (2009 Q45a, 2018 Q66), 宗教團體和教會擁有太多影響力 (2009 Q47, 2018 Q68), and 宗教領袖不應該影響政府決策 (2009 Q45b) as a check. The TSCS item is now described exactly (democracy/fairness; 2014 Q55, 2018 Q81, 2023 Q71). H3 no longer tied to marriage. Refutation and symmetry paragraphs updated | article_4.md | yes |
+| 13 | Retitled "…in Taiwan, 2009–2018". Trust series stated as 2009/2014/2018 only (77c, 54(3), 86(3)); 2004 and 2023 have no trust battery. Verify item ticked as resolved; risk row rewritten | article_4.md | yes |
+| 14 | Confirmed; no change needed (figures repeated in the new sample table note) | article_4.md | yes |
+| 15 | Added a "Waves, samples and items" table: questionnaire number per wave (I in 2018, II otherwise), module Ns, unweighted Protestant n and share, and item availability. Objections row now gives the exact Protestant counts | article_4.md | yes |
+| 16 | H4 and Results (e) restricted to 2009 and 2018 (Q20–26; Q33–38); *[verify]* removed | article_4.md | yes |
+| 17 | TSCS 1985/1990 replaced by the 1985, 1994 and 1999 religion waves, with 1990 flagged as unverified (case selection, §7, SRDA task) | article_3.md | yes |
+| 18 | The full TSCS religion series is listed once in Art. 3 and in the Series overview, which also states which article uses which waves | article_3.md | yes (also Series overview) |
+| 19 | "Delayed devotional intensification" replaced by a change in the form and targets of piety after 1362–63 (concentrated, self-commemorating bequests; 3,389 testaments, 21,351 bequests; second-hand confirmation). Matching edits to Art. 1's checklists and to Art. 2's Cohn row, verify list and risk | article_1.md, article_2.md | yes |
+| 20 | Already applied in the designs before this pass (dates and DocID 031 present); no further change | — | no |
+| 21 | Art. 3 now cites the 2017 revised edition (修訂版; xx + 369 pp.). The ISBN discrepancy is recorded in the verify list. The refs files were left unchanged because they are out of scope | article_3.md | yes |
+| 22 | Confirmed; no change | — | no |
+| 23 | Seminary names corrected: Tainan Theological College and Seminary; Taiwan Graduate School of Theology 台灣神學研究學院 (formerly Taiwan Theological College and Seminary); Yushan Theological College and Seminary. Current names still *[verify]* | article_3.md | yes |
+| 24 | Already handled in the designs (20 October 1349; *Molesta nobis*; *Inter sollicitudines* not used); no change | — | no |
+| 25 | Designs already date the bulls 4 July and 26 September 1348 per Raynaldus and keep *[verify doc. nos.]* against Simonsohn; left as is | — | no |
+| 26 | All four works checked (Crossref DOI 10.1111/jssr.12879: Frijters, Johnston, Knott and Torgler, *JSSR* 63 (1): 62–75, online 31 Aug 2023; Open Library for the three books). Novelty flags removed; Alexander et al. and Frijters et al. added to the contribution table with "read before citing"; full entries added in Art. 1's works-cited list; checklist item ticked | article_1.md | yes |
+| 27 | Full entry added: Bliss and Johnson, eds., 1897, *Calendar of Entries in the Papal Registers … Papal Letters* vol. 3 (BHO checked). Cited in the measurement table | article_2.md | yes |
+| 28 | 《新史學》 row filled from the 稿約 (rev. 2026/01). The Chinese piece is scoped as a 研究討論 of about 10,000 字 and is now first choice | article_1.md | yes |
+| 29 | 道風 row reworded as a secondary copy; *[verify on ISCS site]* kept | article_1.md | yes |
+| 30 | SSH row filled: hybrid OA, APC £2,610 / US$3,655, AI use declared and not banned, abstract ≤250 | article_2.md | yes |
+| 31 | CSSH AI policy filled (declare tool, version, dates and use; AI cannot be an author). Review model kept *[verify]* | article_2.md | yes |
+| 32–34 | Confirmed. SocRel row now notes the 100–150 vs ≤150 conflict and that the page was checked live | article_4.md (34) | yes (34) |
+| 35 | JSSR limit still unconfirmed. The *[verify]* wording now says why (page 403) | article_4.md | yes |
+| 36 | IBMR row filled (4,000–7,000 incl. endnotes; Chicago 17th, notes only; anonymised); plan a version of about 6,500 words. IBMR moved to Art. 3's third choice | article_3.md | yes |
+| 37 | Confirmed; no change | — | no |
+| 38 | "Chiu's (2021)" changed to "Chiu Kai-li's (2021)" | article_1.md | yes |
+| 39 | Art. 1 standardised on Raboteau [1978] 2004 and Reis [1991] 2003 | article_1.md | yes |
+| 40 | Refs-file duplicate (2013/2014) noted in Art. 3's verify list. The refs files were left unchanged because they are out of scope | article_3.md | yes |
+| 41 | Venue plan made distinct. *JRH*, 《新史學》 and 《道風》 go to Art. 1 only; RRCS and 《臺灣宗教研究》 to Art. 3 only (Art. 3's second choice is now RRCS, third IBMR); the sociology journals to Art. 4. The rows were removed from the other articles with a pointer, and a "Venues" paragraph with sequencing rules was added to the Series overview | article_1.md, article_3.md, article_4.md | yes |
+| 42 | Kao Chun-ming sentence now says "arrested in 1980" and carries *[add a citation: PCT source or Rubinstein 2003 after checking]* | article_3.md | yes |
+| Brief: journal facts | AI rules applied across designs: P&P bans AI-generated text; CSSH, SSH and Church History require declaration; Wiley and Chinese journal policies flagged unconfirmed | article_1.md, article_2.md | yes |
+| Brief: slavery full-text notes | Fountain refinement added to Art. 2 (thesis part 3, prior-work row, §7) and Art. 1 §3b: the texts support a postwar move into Black-run churches more securely than postwar first conversion, and the WPA rarely dates conversion (44 of 51 undated). New paragraph lists the primary texts read and the coded WPA pilot sample (31/26/12; 5 vs 2 dated; interviewer and questionnaire bias). Measurement and rival tables now cite them: Liberty County *Eleventh Report*, with the *Tenth Report* walkout anecdote flagged as unverified; C. C. Jones 1842, 59 and 158; *Christian Recorder* 1869; Jones and Allen 1794 as a provision counter-case | article_1.md, article_2.md | yes |
+| Brief: Yi and Su 2021 | Art. 3 §8 now reads Yi and Su 2021 (eds. Yi Chin-chun and Su Kuo-hsien) | article_3.md | yes |
+| Brief: Series overview | Table rebuilt with current titles, three venues each, and lengths. "Venues" paragraph added | — (doc only) | yes |
