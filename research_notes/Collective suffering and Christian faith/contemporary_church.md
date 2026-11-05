@@ -40,12 +40,13 @@
   - The publisher description says it is "based on … Religion in Britain Since 1945 … but extensively revised with the majority of the text re-written." It examines the paradox that Britain has become "increasingly secular" while religion is "increasingly present in public debate."
   - Chapter 4, "Cultural Heritage, Believing without Belonging and Vicarious Religion," pp. 71–90 (Crossref).
 - **Davie, Grace. 2007.** "Vicarious Religion: A Methodological Challenge." In *Everyday Religion*, edited by Nancy T. Ammerman, 21–36. New York: Oxford University Press. https://doi.org/10.1093/acprof:oso/9780195305418.003.0001.
-  - Editor named from general knowledge [editor unverified this session].
+  - Editor named from general knowledge [editor unverified this session]. **[verified: Crossref 2026-11-05]** Editor Nancy T. Ammerman; book subtitle *Observing Modern Religious Lives*; pp. 21–36.
   - Relevance: vicarious religion means a minority practises on behalf of a majority that approves. This sits close to the model's idea of an institution that keeps residual legitimacy without participation.
 - **Critique: Voas, David, and Alasdair Crockett. 2005.** "Religion in Britain: Neither Believing nor Belonging." *Sociology* 39 (1): 11–28. https://doi.org/10.1177/0038038505048998.
   - BHPS and BSA data show "belief has in fact eroded in Britain at the same rate as two key aspects of belonging." Decline is generational. Only "about half of parental religiosity is successfully transmitted, while absence of religion is almost always passed on."
   - **Implication for the model.** Believing without belonging may be a *stage*: belief outlives belonging by about one generation. It is not a stable equilibrium.
-  - **[WF: medium, 3-0]** The verified run confirms this reading independently. Its verifier adds supporting work by Molteni & Biolcati Rinaldi (*Social Forces*, 2022/23), which attributes European attendance decline to cohort replacement **[not opened by me]**. Counter-positions it lists: Callum Brown's 1960s period shock; the general problem of separating age, period and cohort effects; and the disputed 2025 Bible Society "Quiet Revival" report (compare Pew, January 2026, in §1.2).
+  - **[WF: medium, 3-0]** The verified run confirms this reading independently. Its verifier adds supporting work by Molteni & Biolcati Rinaldi (*Social Forces*, 2022/23), which attributes European attendance decline to cohort replacement **[not opened by me]**.
+  - **[verified: Crossref 2026-11-05]** Molteni, Francesco, and Ferruccio Biolcati. 2023 [online 2022]. "Religious Decline as a Population Dynamic: Generational Replacement and Religious Attendance in Europe." *Social Forces* 101 (4): 2034–58. https://doi.org/10.1093/sf/soac099. Content not read. Counter-positions it lists: Callum Brown's 1960s period shock; the general problem of separating age, period and cohort effects; and the disputed 2025 Bible Society "Quiet Revival" report (compare Pew, January 2026, in §1.2).
 - **Voas, David, and Mark Chaves. 2016.** "Is the United States a Counterexample to the Secularization Thesis?" *American Journal of Sociology* 121 (5): 1517–56. https://doi.org/10.1086/684202.
   - "American religiosity has been declining for decades," produced by "the generational patterns underlying religious decline elsewhere in the West: each successive cohort is less religious than the preceding one. America is not an exception."
   - The debate that followed:
@@ -53,7 +54,7 @@
     - Voas, David, and Mark Chaves. 2018. "Even Intense Religiosity Is Declining in the United States: Comment." *Sociological Science* 5: 694–710. https://doi.org/10.15195/v5.a29. They reply that "even the intensely religious segment … is indeed shrinking."
 - **Taylor, Charles. 2007.** *A Secular Age.* Cambridge, MA: Belknap Press of Harvard University Press. https://doi.org/10.4159/9780674044289.
   - The book asks "what happens when a society in which it is virtually impossible not to believe in God becomes one in which faith, even for the staunchest believer, is only one human possibility among others" (publisher description via Google Books).
-  - Belknap imprint from general knowledge [unverified].
+  - Belknap imprint from general knowledge [unverified]. **[verified: Crossref 2026-11-05]** Publisher Harvard University Press, 2007; the Belknap imprint itself is not in the Crossref record.
   - Used in §8 as a major reason the historical model fails for the present.
 
 ### 1.2 United States: belief vs. belonging, with numbers
@@ -91,6 +92,7 @@
 
 **PRRI 2016 baseline [WF: high, 3-0 / medium, 2-1].** PRRI/RNS. 2016. "Exodus: Why Americans Are Leaving Religion—and Why They're Unlikely to Come Back." Survey fielded August 2016. — https://prri.org/research/prri-rns-poll-nones-atheist-leaving-religion/
 - I did not open this URL; my earlier PRRI URL returned 404. The title wording is **[unverified]**.
+- **[verified: PRRI page fetched 2026-11-05 by §16 writer]** Title "Exodus: Why Americans Are Leaving Religion—and Why They're Unlikely to Come Back"; dated 22 September 2016; recommended citation: Jones, Robert P., Daniel Cox, Betsy Cooper, and Rachel Lienesch. The individual percentages were not re-read.
 - 25% unaffiliated. 19% of all Americans left a childhood religion, vs. 9% raised unaffiliated.
 - Only 33% of the unaffiliated said they do not believe in God. 18% were "Unattached Believers."
 - Reasons for leaving (vote 2-1): 60% stopped believing; 29% negative teaching or treatment of gay and lesbian people; 19% clergy sexual-abuse scandal, and **32% among former Catholics**.
@@ -125,6 +127,7 @@
     - The church ranked first among institutions in 1973 and in most years through 1985. It reached a then-low of 44% in June 2012 (n = 1,004, ±4).
     - Gallup ties the late-1980s dip to the Bakker and Swaggart televangelist scandals, and the 2002 drop to the Boston abuse and cover-up crisis, including Cardinal Law's resignation.
     - Gallup's wording is hedged ("possibly," "likely"). These are interpretations, not tested causes.
+    - **[verified: Gallup page fetched 2026-11-05 by §16 writer]** Headline "U.S. Confidence in Organized Religion at Low Point"; author Lydia Saad; datePublished 2012-07-12.
     - The run's 2002, 2007 and 2012 values (45, 46, 44) **agree** with the Datawrapper series above.
 - **2025 by party** (fieldwork 2–26 June 2025, N = 1,402, MOE ±4). — https://news.gallup.com/poll/692633/democrats-confidence-institutions-sinks-new-low.aspx ; data https://datawrapper.dwcdn.net/L6C42/5/dataset.csv
   - Republicans **64%** (+15 since 2024); independents 30% (+2); Democrats **21%** (−1).
@@ -456,6 +459,7 @@ Retention rates:
   - By group: Catholics 37% → 30%; Protestants 44% → 40%.
   - Gallup cannot say whether the pandemic caused the drop. It says closures broke weekly habits, and in 2023 it did not expect a return to pre-pandemic levels.
   - Since 2020 the measure counts virtual as well as in-person attendance.
+  - **[verified: Gallup page fetched 2026-11-05 by §16 writer]** Headline "U.S. Church Attendance Still Lower Than Pre-Pandemic"; Jeffrey M. Jones; 26 June 2023.
   - Compare Pew (October 2026): in-person attendance in the past month reached 34% in June 2026, the highest since 2020. The 2023 "no recovery" reading may now be dated.
 - **Pew Research Center. 2020. "Americans Oppose Religious Exemptions from Coronavirus-Related Restrictions."** 7 August 2020; fieldwork 13–19 July. — https://www.pewresearch.org/religion/2020/08/07/americans-oppose-religious-exemptions-from-coronavirus-related-restrictions/
   - 79% of adults said houses of worship should follow the same rules as other organizations; 19% wanted more flexibility. Even among evangelicals, 62% said the same rules.
@@ -649,6 +653,7 @@ Retention rates:
 
 - **Huang, Ke-hsien (黃克先). 2017.** "'Culture Wars' in a Globalized East: How Taiwanese Conservative Christianity Turned Public during the Same-Sex Marriage Controversy and a Secularist Backlash." *Review of Religion and Chinese Society* 4 (1): 108–36. https://doi.org/10.1163/22143955-00401006.
   - Article in English with a Chinese title, 〈全球化的東方開打的「文化戰爭」：台灣保守基督教在同志婚姻合法化爭議中的現身及世俗主義的逆襲〉. Author per OpenAlex. The English title was reconstructed from the abstract and should be checked.
+  - **[partial: Crossref 2026-11-05]** The DOI record confirms the Chinese title, *RRCS* 4 (1): 108–36, issued 27 April 2017. It lists no author and no English title. Brill page returned 403. English title and author remain [verify].
   - Taiwanese conservative Christianity, "politically inactive for decades," mobilized from the early 2010s. Drivers were the "shifting role of the state," "transnational religious networks in East Asia," and "religious entrepreneurs."
   - It analyses the "secularist backlash," in which leaders were "portrayed as evil magicians."
   - **This is the Taiwanese case of (a″):** church mobilization on a social issue provokes a secular backlash.
