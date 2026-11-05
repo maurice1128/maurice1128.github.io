@@ -43,3 +43,12 @@ MATCH	crossref	2011	Account of the Fables and Rites of the Incas	Molina, Cristó
 YEAR_DIFF	openlibrary	1999	Basics of biblical Greek grammar	Mounce, William D. 2019. *Basics of Biblical Greek Grammar*. 4th ed. Grand Rapids: Zondervan Academic.
 NOT_FOUND				Müller, Marcus Joseph. 1863. "Ibnulkhatîbs Bericht über die Pest." *Sitzungsberichte der Königlich Bayerischen Akademie der Wissenschaften zu München* 1863 (2): 1–?. [verify end page]
 YEAR_DIFF	openlibrary	1898	Novum testamentum Graece	Nestle-Aland. 2012. *Novum Testamentum Graece*. 28th ed. Edited by the Institute for New Testament Textual Research. Stuttgart: Deutsche Bibelgesellschaft.
+YEAR_DIFF	crossref	1944	The Art of Dying Well. The Development of the Ars Moriendi	O'Connor, Mary Catharine. 1942. *The Art of Dying Well: The Development of the Ars moriendi*. New York: Columbia University Press.
+NOT_FOUND				Porta, Giuseppe, ed. 1995. *Cronica, con la continuazione di Filippo Villani*, by Matteo Villani. 2 vols. Biblioteca di scrittori italiani. Parma: Fondazione Pietro Bembo / Guanda.
+NOT_FOUND				Potthast, August, ed. 1859. *Liber de rebus memorabilioribus sive Chronicon Henrici de Hervordia*. Göttingen: Dieterich.
+WEAK	crossref	2016	I. Rahlfs als ‚Textkritiker‘ der Septuaginta	Rahlfs, Alfred, ed. 2006. *Septuaginta*. Revised by Robert Hanhart. Stuttgart: Deutsche Bibelgesellschaft.
+YEAR_DIFF	openlibrary	1636	Annales ecclesiastici Caesaris Baronii ad an. 1517 vol. XXXI, 1877	Raynaldus, Odoricus. 1872. *Annales ecclesiastici*. Edited by Augustin Theiner. Vol. 25. Bar-le-Duc: Guérin. https://archive.org/details/annalesecclesias25barouoft. [verify year; IA metadata gives 1864]
+YEAR_DIFF	crossref	1961	A Grammar of Biblical Aramaic	Rosenthal, Franz. 2006. *A Grammar of Biblical Aramaic*. 7th expanded ed. Wiesbaden: Harrassowitz. [verify edition number]
+MATCH	openlibrary	1900	Die Lieder und Melodien der Geissler des Jahres 1349 nach der Aufzeichnung Hugo's von Reutlingen	Runge, Paul, ed. 1900. *Die Lieder und Melodien der Geissler des Jahres 1349 nach der Aufzeichnung Hugo's von Reutlingen*. Leipzig: Breitkopf & Härtel.
+MATCH	openlibrary	1898	Das Martyrologium des Nürnberger Memorbuches	Salfeld, Siegmund, ed. 1898. *Das Martyrologium des Nürnberger Memorbuches*. Berlin: Simion.
+MATCH	crossref	2020	The Slave Societies Digital Archive. https://www.slavesocieties.org/	Schneider, Elena A. 2020. "The Slave Societies Digital Archive." *American Historical Review* 125 (2): 579–81. https://doi.org/10.1093/ahr/rhz750. [verify author's first name]

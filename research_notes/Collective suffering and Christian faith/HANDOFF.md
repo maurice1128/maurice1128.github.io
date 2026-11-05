@@ -99,6 +99,27 @@
   - 區分兩種流向：信任流向「教會內的平信徒團體」，或流向「受苦者自己掌控的群體」。
 - **提醒：** 標題和關鍵字不要用 "Black Death" 玩雙關。在黑人研究裡，這個詞指的是黑人的死亡，容易混淆。
 
+## 期刊的 AI 規定（已查證，2026-11-05；詳見 journal_ai_policies.md 和計畫文件）
+- 所有期刊都不允許 AI 列為作者。
+- **允許 AI 起草的文字，但必須申報：**
+  - Cambridge：CSSH、Social Science History、Church History。申報放在致謝或註腳，要寫明工具、版本、日期和用途。
+  - Wiley：History Compass、JRH、JSSR。起草的部分在致謝申報，文獻搜尋的部分在方法申報。
+  - OUP：Sociology of Religion。投稿信和正文都要申報。
+  - Sage：IBMR、RRR。但不能用 AI 分析訪談內容。
+  - Taylor & Francis：要「嚴格修改」才允許；一律要附上 AI 使用聲明。
+  - MDPI。
+- **禁止或高風險：**
+  - Past & Present：禁止 AI 生成的文字和論證。
+  - Journal of Asian Studies（Duke UP）：不接受「主要由 AI 撰寫」的稿件。
+  - Review of Religion and Chinese Society（Brill）：不接受由 AI 生成的論文。
+  - Studies in World Christianity（Edinburgh UP）：可能需要填 AI 揭露表；官網沒有打開，無法確認。
+  - 中文期刊：規定不明。中研院的指引（2026 年 1 月）要求申報實質性的 AI 使用。
+- **⚠ 對作者的意義：**
+  - 作者計畫不親自精讀、由 AI 起草，所以要用「(b) AI 起草、作者修改」那個版本的申報文字。
+  - 申報內容必須屬實，不能聲稱「作者讀過每一部引用的作品」。
+  - 第 3 篇原本的兩個首選期刊（SWC、RRCS），在 (b) 模式下風險高，需要改投。候選：IBMR（Sage）、Church History（Cambridge）。
+  - 第 4 篇如果做訪談，不能用 AI 分析訪談內容（Sage 的規定，也是一般的研究倫理）。
+
 ## 研討會與時程（已查證，2026-11-05）
 - **已經截止：**
   - Leeds 2027、Kalamazoo 2027：第 2 篇的中世紀部分改投 2028 年，約 2027 年 8–9 月提案。

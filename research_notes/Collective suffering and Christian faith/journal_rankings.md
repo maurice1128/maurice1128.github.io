@@ -40,3 +40,32 @@ Source: JUFO REST API, `https://jufo-rest.csc.fi/v1.1/etsi.php?issn=<ISSN>` / `?
 | 臺灣史研究, 臺灣社會學刊, 臺灣社會學, 台灣宗教研究, 玄奘佛學研究 | — | not found by romanised/English title searches [not confirmed — likely unlisted] | | | | |
 
 JUFO scale: 1 = basic, 2 = leading, 3 = top; 0 = does not meet level-1 criteria.
+
+---
+## Step 2 — Norwegian Register (Kanalregisteret, HK-dir) levels (checked 2026-11-05)
+
+Source: kanalregister.hkdir.no — queried through the site's own public search index (the Typesense collection `uhr_tidsskrift_cache` that the search page at https://kanalregister.hkdir.no/sok uses), by ISSN. All records returned `aar` = 2026. Record page pattern: `https://kanalregister.hkdir.no/publiseringskanaler/info/tidsskrift?pid=<id>` [page URL pattern not opened; ids below are the register's record ids]. Level 2 = top ~20% of a field; 1 = approved scholarly; 0 = not approved.
+
+| Journal | Register id | Norwegian level 2026 | Publisher per register |
+|---|---|---|---|
+| Comparative Studies in Society and History | 439327 | **1** | Cambridge UP |
+| Past & Present | 445606 | **2** | OUP, Past and Present Society |
+| Church History: Studies in Christianity and Culture | 439084 | **2** | Cambridge UP |
+| Social Science History | 447012 | **1** | Cambridge UP |
+| Journal for the Scientific Study of Religion | 442314 | **2** | Wiley, Society for the Scientific Study of Religion |
+| Sociology of Religion | 447044 | **2** | OUP |
+| Review of Religious Research | 446500 | **2** | "Springer" (register publisher field not updated) |
+| Journal of Contemporary Religion | 442700 | **2** | Taylor & Francis |
+| Journal of Religious History | 342223 | **1** | Wiley, Religious History Association |
+| Religion | 446381 | **2** | Taylor & Francis |
+| History Compass | 479850 | **1** | Wiley |
+| Religion Compass | 471669 | **1** | Blackwell |
+| Studies in World Christianity | 468910 | **1** | Edinburgh UP |
+| International Bulletin of Mission Research | 505702 | **1** | SAGE |
+| Review of Religion and Chinese Society | — | not found by title or ISSN 2214-3947 [not confirmed] | |
+| Journal of Asian Studies | 341197 | **2** | Cambridge UP |
+| Religions (MDPI) | 477528 | **1** | MDPI |
+| 道風 Logos & Pneuma ("Dao feng: Hanyu shenxue xuekan") | 481476 | **1** | Institute of Sino-Christian Studies |
+| 新史學, 臺灣史研究, 臺灣社會學刊, 臺灣社會學, 台灣宗教研究, 玄奘佛學研究 | — | not found by ISSN (新史學 1023-2249) or romanised title [not confirmed — apparently unlisted] | |
+
+Cross-check: these match the Norway_Level copies in the JUFO records (Step 1) for every journal both list. Note CSSH is only level 1 in Norway despite JUFO 3 / DK 2.
