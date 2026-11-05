@@ -371,7 +371,7 @@ About 75 works are listed below. Each is marked ✓ (core data confirmed by a ca
 1. Avalos, Hector. 1999. *Health Care and the Rise of Christianity*. Peabody, MA: Hendrickson. ✓ — [CBHD](https://cbhd.org/bibliography/health-care-and-the-rise-of-christianity)
 2. Castelli, Elizabeth A. 1998. "Gender, Theory, and *The Rise of Christianity*: A Response to Rodney Stark." *Journal of Early Christian Studies* 6 (2): 227–257. ✓ — [MUSE](https://muse.jhu.edu/article/9959/summary)
 3. Harper, Kyle. 2015. "Pandemics and Passages to Late Antiquity: Rethinking the Plague of c. 249–70 Described by Cyprian." *Journal of Roman Archaeology* 28: 223–260. ✓ — [Cambridge](https://www.cambridge.org/core/journals/journal-of-roman-archaeology/article/pandemics-and-passages-to-late-antiquity-rethinking-the-plague-of-c249270-described-by-cyprian/BF0A142F1864D05FDC0C3439D182B7B0)
-4. Harper, Kyle. 2016. "Another Eye-Witness to the Plague Described by Cyprian, with Notes on the 'Persecution of Decius'." *Journal of Roman Archaeology* 29. Pages **[unverified]**. — [Cambridge](https://core-cms.cambridgecore.org/core/journals/journal-of-roman-archaeology/article/another-eyewitness-to-the-plague-described-by-cyprian-with-notes-on-the-persecution-of-decius/1ADF910B4952926CBBFA581CB06F6CBB)
+4. Harper, Kyle. 2016. "Another Eye-Witness to the Plague Described by Cyprian, with Notes on the 'Persecution of Decius'." *Journal of Roman Archaeology* 29: 473–476. https://doi.org/10.1017/S1047759400072263. [verified: Crossref] — [Cambridge](https://core-cms.cambridgecore.org/core/journals/journal-of-roman-archaeology/article/another-eyewitness-to-the-plague-described-by-cyprian-with-notes-on-the-persecution-of-decius/1ADF910B4952926CBBFA581CB06F6CBB)
 5. Harper, Kyle. 2017. *The Fate of Rome: Climate, Disease, and the End of an Empire*. Princeton, NJ: Princeton University Press. ✓ — [Harper CV](https://www.college-de-france.fr/sites/default/files/media/document/2023-07/Kyle-Harper-CV-2023.pdf)
 6. Huebner, Sabine R. 2021. "The 'Plague of Cyprian': A Revised View of the Origin and Spread of a 3rd-c. CE Pandemic." *Journal of Roman Archaeology* 34: 151–174. https://doi.org/10.1017/S1047759421000349. ✓
 7. Stark, Rodney. 1996. *The Rise of Christianity: A Sociologist Reconsiders History*. Princeton, NJ: Princeton University Press. ✓ — [catalogue](https://www.sack.de/stark-the-rise-of-christianity/9780691027494)
@@ -402,7 +402,7 @@ About 75 works are listed below. Each is marked ✓ (core data confirmed by a ca
 26. Chiu Yun-fang 邱韻芳. 2004. "Zuling, Shangdi yu chuantong: Jidu Zhanglao Jiaohui yu Truku ren de zongjiao bianqian" 祖靈、上帝與傳統：基督長老教會與Truku人的宗教變遷 [Ancestral Spirits, God and Tradition: The Presbyterian Church and Truku Religious Change]. PhD diss., National Taiwan University. ✓
 27. Chiu Yun-fang 邱韻芳. 2013. *Zuling yu Shangdi: Hualian Tailuge ren de zongjiao bianqian yu fuzhen yundong* 祖靈與上帝：花蓮太魯閣人的宗教變遷與復振運動 [Ancestors and God: Religious Change and Revitalization among the Truku of Hualien]. Publisher (Airiti Press 華藝學術出版社) **[unverified]**. ✓ title/year
 28. Chou Pei-hsin 周沛忻. 2015. "Zhanhou Taiwan Jidu Zhanglao Jiaohui shandi chuanjiao zhi kaizhan" 戰後台灣基督長老教會山地傳教之開展 [The Development of Mountain Mission by the PCT after WWII]. *Ganzaidian dianzi xuebao* 柑仔店電子學報 9. ✓ — [NTUE](https://taiwan.ntue.edu.tw/p/450-1029-20498,c0.php?Lang=zh-tw)
-29. Cheng Yang-en 鄭仰恩. 2005. *Dinggen bentu de Taiwan Jidujiao* 定根本土的台灣基督教 [Taiwanese Christianity Rooted in the Homeland]. Publisher **[unverified]**.
+29. Cheng Yang-en 鄭仰恩. 2005. *Dinggen bentu de Taiwan Jidujiao* 定根本土的台灣基督教 [Taiwanese Christianity Rooted in the Homeland]. Publisher **[unverified]**. [Open Library lists 定根本土的台灣基督教, Tainan: Renguang chubanshe 人光出版社, first publish year 2010; year discrepancy with 2005 unresolved — verify]
 30. Clart, Philip, and Charles B. Jones, eds. 2003. *Religion in Modern Taiwan: Tradition and Innovation in a Changing Society*. Honolulu: University of Hawai'i Press. ✓
 31. Fan Chiang Hsiao-han 范姜曉涵. 2019. "Taiwan yuanzhuminzu dushi jiaohui zhi zhuanxing guocheng ji qi dongli yinsu" 臺灣原住民族都市教會之轉型過程及其動力因素 [The Transformation Process and Dynamic Factors of a Taiwanese Indigenous Urban Church]. MA thesis, National Taiwan University. ✓
 32. Huang Po Ho 黃伯和. 1996. *A Theology of Self-Determination*. Tainan: Chhut Thau Thi Theological Study Center. ✓ (via review)
@@ -412,10 +412,10 @@ About 75 works are listed below. Each is marked ✓ (core data confirmed by a ca
 36. Sia, Ek-hong (Ljavakaw). 2018. "Crafting Aboriginal Nations in Taiwan: The Presbyterian Church and the Imagination of the Aboriginal National Subject." *Asian Studies Review* 42 (2): 356–375. https://doi.org/10.1080/10357823.2018.1444732. ✓ (Chinese name **[unverified]**; do not supply one)
 37. Stainton, Michael. 1995. "Return Our Land: Counterhegemonic Presbyterian Aboriginality in Taiwan." MA thesis, York University. ✓ (via Sia 2018 reference list)
 38. Tan, Chang-kwo 譚昌國. 2003. "Tradition and Christianity: Controversial Funerals and Concepts of the Person among the Paiwan, Taiwan." *Oceania* 73 (3): 189–207. ✓
-39. Tan, Chang-kwo. 2002. "Syncretic Objects: Material Culture of Syncretism among the Paiwan Catholics, Taiwan." *Journal of Material Culture*. Volume and pages **[unverified]**.
+39. Tan, Chang-kwo. 2002. "Syncretic Objects: Material Culture of Syncretism among the Paiwan Catholics, Taiwan." *Journal of Material Culture* 7 (2): 167–187. https://doi.org/10.1177/1359183502007002638. [verified: Crossref]
 40. Vicedom, George F. 1967. *Faith That Moves Mountains*. Publisher **[unverified]**.
 41. Wang Hsien-chih 王憲治, ed. 1988. [Essay Collection on Taiwan Homeland Theology 台灣鄉土神學論文集?]. Chinese title and publisher **[unverified]**.
-42. Zavala-Pelayo, Enrique. n.d. "Genealogical Notes on the Defense of Self-Determination in the Presbyterian Church in Taiwan." *Estudios de Asia y África*. Volume and year **[unverified]**. — [EAA](https://estudiosdeasiayafrica.colmex.mx/index.php/eaa/en/article/view/2772)
+42. Zavala-Pelayo, Edgar. 2022. "Notas genealógicas sobre la defensa de la autodeterminación en la Iglesia Presbiteriana de Taiwán." *Estudios de Asia y África* 57 (3): 627–656. https://doi.org/10.24201/eaa.v57i3.2772. [verified: Crossref; first name is Edgar, not Enrique] — [EAA](https://estudiosdeasiayafrica.colmex.mx/index.php/eaa/en/article/view/2772)
 43. Presbyterian Church in Taiwan. 1977. "Declaration on Human Rights" (人權宣言). Primary text. — [USC US-China Institute](https://china.usc.edu/node/20514)
 
 **India**
@@ -429,7 +429,7 @@ About 75 works are listed below. Each is marked ✓ (core data confirmed by a ca
 
 **Africa**
 51. Comaroff, Jean. 1985. *Body of Power, Spirit of Resistance: The Culture and History of a South African People*. Chicago: University of Chicago Press. ✓
-52. Faupel, J. F. 1962. *African Holocaust: The Story of the Uganda Martyrs*. 1962 publisher **[unverified]** (later editions: London: Geoffrey Chapman, 1969; St Paul Publications, 1984).
+52. Faupel, J. F. 1962. *African Holocaust: The Story of the Uganda Martyrs*. London: Geoffrey Chapman; New York: P. J. Kenedy. [verified: Open Library] (later editions: St Paul Publications, 1984)
 53. Heerten, Lasse. 2017. *The Biafran War and Postcolonial Humanitarianism: Spectacles of Suffering*. Cambridge: Cambridge University Press. ✓
 54. Martin, Marie-Louise. 1975. *Kimbangu: An African Prophet and His Church*. Translated by D. M. Moore. Oxford: Blackwell. ✓ (German orig. *Kirche ohne Weisse*, Basel: Friedrich Reinhardt, 1971)
 55. Mokoko Gampiot, Aurélien. 2017. *Kimbanguism: An African Understanding of the Bible*. Translated by Cécile Coquet-Mokoko. University Park: Penn State University Press. ✓
@@ -439,7 +439,7 @@ About 75 works are listed below. Each is marked ✓ (core data confirmed by a ca
 59. Turner, Harold W. 1967. *History of an African Independent Church*. 2 vols. Oxford: Clarendon Press. ✓
 
 **Indigenous: Canada and Australia**
-60. Blacket, John. 1994. "Rainbow or the Serpent?" In [*Reviving Australia*?], edited by Mark Hutchinson and Stuart Piggin. Sydney: Centre for the Study of Australian Christianity. Volume title and pages **[unverified]**.
+60. Blacket, John. 1994. "Rainbow or the Serpent?" In *Reviving Australia*, edited by Mark Hutchinson and Stuart Piggin. Sydney: Centre for the Study of Australian Christianity. [volume title/year/publisher verified: Open Library; pages unverified]
 61. Human Rights and Equal Opportunity Commission. 1997. *Bringing Them Home: Report of the National Inquiry into the Separation of Aboriginal and Torres Strait Islander Children from Their Families*. Sydney: HREOC. ✓
 62. Human Rights and Equal Opportunity Commission. 1998. *Social Justice Report 1998*, chap. 3, "Church Responses." Sydney: HREOC. ✓
 63. Miller, J. R. 1996. *Shingwauk's Vision: A History of Native Residential Schools*. Toronto: University of Toronto Press. ✓
@@ -454,16 +454,16 @@ About 75 works are listed below. Each is marked ✓ (core data confirmed by a ca
 
 **Ukraine, Vietnam, Philippines, Indonesia**
 70. Bociurkiw, Bohdan R. 1996. *The Ukrainian Greek Catholic Church and the Soviet State (1939–1950)*. Edmonton: Canadian Institute of Ukrainian Studies Press. ✓
-71. Hansen, Peter. 2009. "Bắc Di Cư: Catholic Refugees from the North of Vietnam, and Their Role in the Southern Republic, 1954–1959." *Journal of Vietnamese Studies* 4 (3): 173–211. ✓ (via reprint citation)
-72. Hearman, Vannessa. 2018. "The 1965–1966 Violence, Religious Conversions and the Changing Relationship Between the Left and Indonesia's Churches." In *The Indonesian Genocide of 1965: Causes, Dynamics and Legacies*, edited by Katharine McGregor, Jess Melvin, and Annie Pohlman, 179–195. Cham: Palgrave Macmillan. ✓ (author's first name from general knowledge; Springer page lists "Hearman")
+71. Hansen, Peter. 2009. "Bắc Di Cư: Catholic Refugees from the North of Vietnam, and Their Role in the Southern Republic, 1954–1959." *Journal of Vietnamese Studies* 4 (3): 173–211. ✓ [verified: Crossref, doi:10.1525/vs.2009.4.3.173]
+72. Hearman, Vannessa. 2018. "The 1965–1966 Violence, Religious Conversions and the Changing Relationship Between the Left and Indonesia's Churches." In *The Indonesian Genocide of 1965: Causes, Dynamics and Legacies*, edited by Katharine McGregor, Jess Melvin, and Annie Pohlman, 179–195. Cham: Palgrave Macmillan. ✓ [verified: Crossref, Vannessa Hearman]
 73. Keith, Charles. 2012. *Catholic Vietnam: A Church from Empire to Nation*. Berkeley: University of California Press. ✓
-74. Willis, Avery T., Jr. 1977. *Indonesian Revival: Why Two Million Came to Christ*. South Pasadena, CA: William Carey Library. ✓ (place **[unverified]**)
+74. Willis, Avery T., Jr. 1977. *Indonesian Revival: Why Two Million Came to Christ*. South Pasadena, CA: William Carey Library. ✓ [verified: Open Library, South Pasadena, Calif.]
 75. Youngblood, Robert L. 1990. *Marcos against the Church: Economic Development and Political Repression in the Philippines*. Ithaca, NY: Cornell University Press. ✓
 
 **Latin America**
 76. Burkhart, Louise M. 1989. *The Slippery Earth: Nahua-Christian Moral Dialogue in Sixteenth-Century Mexico*. Tucson: University of Arizona Press. ✓
-77. Cook, Noble David. 1998. *Born to Die: Disease and New World Conquest, 1492–1650*. Cambridge: Cambridge University Press. **[unverified this pass]**
-78. Millones, Luis, comp. [1990]. *El retorno de las huacas: estudios y documentos sobre el Taki Onqoy, siglo XVI*. Lima: Instituto de Estudios Peruanos; Sociedad Peruana de Psicoanálisis. Year **[unverified]**.
+77. Cook, Noble David. 1998. *Born to Die: Disease and New World Conquest, 1492–1650*. Cambridge: Cambridge University Press. [verified: Open Library]
+78. Millones, Luis, comp. [1990]. *El retorno de las huacas: estudios y documentos sobre el Taki Onqoy, siglo XVI*. Lima: Instituto de Estudios Peruanos; Sociedad Peruana de Psicoanálisis, 1990. [verified: Open Library, with Sara Castro-Klarén]
 79. Ricard, Robert. 1966. *The Spiritual Conquest of Mexico: An Essay on the Apostolate and the Evangelizing Methods of the Mendicant Orders in New Spain, 1523–1572*. Translated by Lesley Byrd Simpson. Berkeley: University of California Press. ✓
 80. Stern, Steve J. 1982. *Peru's Indian Peoples and the Challenge of Spanish Conquest: Huamanga to 1640*. Madison: University of Wisconsin Press. ✓
 
@@ -474,3 +474,12 @@ About 75 works are listed below. Each is marked ✓ (core data confirmed by a ca
 ### Gaps
 - Not catalogue-verified, despite being likely relevant: Jacob Ramsay, *Mandarins and Martyrs* (Stanford 2008); Olufemi Vaughan, *Religion and the Making of Nigeria* (Duke 2016); David Stannard, *Before the Horror* (1989); Scott Simon, *Sadyaq balae!* (2012); Gabriela Ramos on Taki Onqoy (1993); Wyatt MacGaffey, *Modern Kongo Prophets* (Indiana 1983). Verify before citing.
 - The Hiroshima Christian response, the post-1989 UGCC, the Uniting Aboriginal and Islander Christian Congress and Biafran church relief need dedicated sources.
+
+### Step A verification log (section 7 writer, 2026-11-05)
+- Verified via Open Library / LoC: Ramsay 2008 *Mandarins and Martyrs* (Stanford UP); Simon 2012 *Sadyaq balae!* (Presses de l'Université Laval); Vaughan 2016 *Religion and the Making of Nigeria* (Duke UP).
+- Still unverified: Vicedom 1967 (not found in OL/LoC); Takahashi 1994 publisher (NDL search returned other Takahashi works, incl. 「祈りの長崎」批判 article, 2001 [details unverified]); Tiemessen 2005 (not in Crossref); Chiu 2013 publisher; Wang Hsien-chih ed. 1988; van 't Spijker n.d.; Herda 2000 (not in Crossref); MacGaffey 1983 (not reached).
+- New 2020–2026 works (Crossref): Rychetská, Magdaléna. 2022. "The Presbyterian Church in Taiwan and Its Changing Narrative on Human Rights." *Review of Religion and Chinese Society*, 1–31. https://doi.org/10.1163/22143955-08020014 (volume/issue not in Crossref record). [verified: Crossref]
+- Diehl, Chad R., ed. 2024. *Shadows of Nagasaki*. New York: Fordham University Press; incl. Takahashi Shinji, "How I Came to Criticize Nagai Takashi's Urakami Holocaust Theory," 295–311. [verified: Crossref]
+- Griener, George. 2023. "A Theology of Suffering in Post-Genocide Rwanda." In *Reinventing Theology in Post-Genocide Rwanda*, 165–180. Washington, DC: Georgetown University Press. [verified: Crossref; editors not in record]
+- Orsag, Mark, Amanda E. McKinney, and DeeAnn M. Reeder. 2023. *Interdisciplinary Insights from the Plague of Cyprian*. Cham: Springer. [verified: Crossref]
+- Hansen, Peter. 2009. "The Virgin Heads South: Northern Catholic Refugees and Their Clergy in South Vietnam, 1954–1964." In *Casting Faiths*, 129–151. London: Palgrave Macmillan. [verified: Crossref; editor not in record]
