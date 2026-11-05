@@ -72,7 +72,7 @@ Ishizaka Naotake 石坂尚武. 2017b. *Dōshite Rutā no shūkyō kaikaku wa oko
 
 Ishizaka Naotake 石坂尚武. 2018. *Kunan to shinsei: Itaria Runesansu-ki no kokushibyō* 苦難と心性：イタリア・ルネサンス期の黒死病 [Suffering and Mentality: The Black Death in Renaissance Italy]. Tokyo: Tōsui Shobō.
 
-Izdebski, Adam, Martin Bauch, Piotr Guzowski, and Scott Mensing. 2022. "Reply to 'Reduction in Grain Pollen Indicates Population Decline, but Not Necessarily Black Death Mortality.'" *Nature Ecology & Evolution* 6 (11): 1628–1629. https://doi.org/10.1038/s41559-022-01863-3.
+Izdebski, A., M. Bauch, P. Guzowski, S. Mensing, et al. 2022. "Reply to 'Reduction in Grain Pollen Indicates Population Decline, but Not Necessarily Black Death Mortality.'" *Nature Ecology & Evolution* 6 (11): 1628–1629. https://doi.org/10.1038/s41559-022-01863-3. [verify full author list and given names]
 
 Jensen, Henrik. 1987. *Den sorte død og livet i senmiddelalderen*. Copenhagen: Nordisk Forlag.
 
