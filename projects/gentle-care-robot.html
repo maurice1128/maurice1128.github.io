@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gentle by Knowing: Person Knowledge, Not Force Thresholds, Protects Restricted Joints in Simulated Robotic Arm Lifting — Mu-Hua Wang</title>
+<title>Gentle by Knowing: Person Knowledge Protects Restricted Joints Better Than Force Thresholds in Simulated Robotic Arm Lifting — Mu-Hua Wang</title>
 <meta name="description" content="In a musculoskeletal simulation of a robot lifting a person's forearm, knowing before contact which joint is restricted, and being willing to decline, reduced harmful outcomes (robot-caused end-range joint loads); force-magnitude guards did not substitute for that knowledge.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../css/style.css">
@@ -55,12 +55,12 @@ function gcrVideoFallback(v){
 
 <header>
   <p class="note">2026 &middot; simulation study</p>
-  <h1>Gentle by Knowing: Person Knowledge, Not Force Thresholds, Protects Restricted Joints in Simulated Robotic Arm Lifting</h1>
+  <h1>Gentle by Knowing: Person Knowledge Protects Restricted Joints Better Than Force Thresholds in Simulated Robotic Arm Lifting</h1>
   <p class="kicker">When a robot supports a multi-joint limb from outside, the joint it loads is
   not on the axis of its force sensor.</p>
   <p class="note" style="margin-top:1.6rem">Mu-Hua (Maurice) Wang · National Yang Ming
   Chiao Tung University</p>
-  <p class="note">Brief Research Report submitted to <i>Frontiers in Robotics and AI</i>, 2026.
+  <p class="note">Brief Research Report under review at <i>Frontiers in Robotics and AI</i>, 2026 (revised version).
   Simulation study.</p>
   <div class="links">
     <a href="../assets/papers/gentle_care_robot.pdf">[Paper (PDF)]</a>
@@ -90,11 +90,11 @@ function gcrVideoFallback(v){
   robot lifting their forearm can press a restricted joint into the end of its range. Robot
   safety rests on contact-force limits, but a joint load that matters is only a few newtons at
   the contact point, hidden under the limb's own weight. In a musculoskeletal simulation (MuJoCo/MyoSuite) of
-  a robot lifting the forearm from below, controllers differ only in what they know about the
-  person, from nothing to everything. Two prespecified hypotheses were tested: force-magnitude
-  guards do not reduce harmful outcomes by significantly more than 5 percentage points, and
-  knowledge of the person, with the option to decline, reduces them without losing safe
-  completions.</p>
+  a robot lifting the forearm from below, controllers differ in what they know about the
+  person, from nothing to everything. Two hypotheses from a locally kept protocol were tested: force-magnitude
+  guards do not reduce harmful outcomes by more than 5 percentage points, and
+  knowledge of the person, with the option to decline, reduces them. Whether safe completions
+  stay non-inferior was tested separately.</p>
   <figure class="fig" style="margin-top:1rem">
     <img src="../assets/gentle-care-robot/fig1_task.png" alt="Left: the capsule supporting the forearm proximally and distally, with the resulting shoulder and elbow excursions. Right: one harmful lift over time, in which the joint-limit load crosses its harm threshold before the wrist force crosses the force-guard threshold">
     <p class="cap"><b>The robot loads the joint before its force sensor notices.</b> (A, B)
@@ -113,8 +113,8 @@ function gcrVideoFallback(v){
 <section id="found">
   <h2>What we found</h2>
   <ul class="found">
-    <li><b>Force-magnitude guards did not substitute for knowledge.</b> No guard reduced harmful
-    outcomes by significantly more than the prespecified 5 percentage points. Guards prevented at
+    <li><b>Force-magnitude guards did not substitute for knowledge.</b> The tightest guard lowered
+    mean load by 29&ndash;36&nbsp;% but left 36&ndash;48&nbsp;% of persons above 0.5&nbsp;N&middot;m, moved harmful outcomes by 0&ndash;7 points and lost 38&ndash;51&nbsp;% of safe completions. A post hoc non-superiority test to 5 points was inconclusive in 6 of 16 cells. Guards prevented at
     most 13&nbsp;% of the fixed rule's harmful outcomes, mostly by aborting, and often did not trip
     before the joint was loaded (post hoc).</li>
     <li><b>Knowing the person, and being willing to decline, helped.</b> With a complete care
@@ -124,9 +124,9 @@ function gcrVideoFallback(v){
     non-inferiority was not established, and at a 2.5&nbsp;N&middot;m harm threshold it completed
     6&ndash;8 percentage points fewer lifts than the fixed rule in the conditions with a complete
     record.</li>
-    <li><b>Which joint, not how many degrees</b> (post hoc). Knowing which joint is restricted,
-    plus the settled posture, suffices to match the full policy: 183 safe and 25 harmful of the
-    same 300 persons (full policy: 174 and 25).</li>
+    <li><b>Which joint, not how many degrees</b> (post hoc). With one learner at every level,
+    per-joint flags give almost all of the benefit: 366 safe and 46 harmful of 600 persons,
+    against 354 and 53 with ranges at 20&deg; error and 239 and 4 with a merged flag.</li>
     <li><b>The record's gaps stay unprotected.</b> With half of the restrictions unrecorded, the
     reduction relative to the fixed rule shrank from &minus;0.27 to &minus;0.15, and unrecorded
     persons were harmed at exactly the fixed-rule rate (50 vs. 50 of 85).</li>
@@ -173,14 +173,14 @@ function gcrVideoFallback(v){
   <h2>The information ladder</h2>
   <figure class="fig">
     <img src="../assets/gentle-care-robot/figL_information_ladder.png" alt="Harmful outcomes against safe completions for controllers at six levels of knowledge about the person, 300 new simulated persons">
-    <p class="cap"><b>Six levels of knowledge, each paired with a decision rule;</b> 300 new
-    simulated persons, lower right is better. Hollow marker (post hoc): a policy learned from the
-    complete flag and settled posture only. Dashed arrow: the gap to perfect knowledge.</p>
+    <p class="cap"><b>Knowing the person reduces harm, mostly by deciding whom not to lift;</b> 300 new
+    simulated persons. A: lower right is better, and the line joins one learner at six levels of
+    knowledge (post hoc). B: what happens to all 300 persons, declines included.</p>
   </figure>
   <p style="color:var(--ink-2)">Declining everyone with a restriction flag removed all harmful
   outcomes but also 37&nbsp;% of safe completions; the learned policy completed 62 more lifts
-  safely at the cost of 25 harmful outcomes. The hollow marker shows that the flag rung is limited
-  by its decline-everyone rule, not by the knowledge. Perfect knowledge, a ceiling, reaches 237
+  safely at the cost of 25 harmful outcomes. With the rule held fixed (post hoc), the gap between the flag rule
+  and the learned policy is one of knowledge as well as rule. Perfect knowledge, a ceiling, reaches 237
   safe and 0 harmful: of the 63 safe completions the learned policy missed, 47 were unnecessary
   refusals, and 18 of its 25 harmful outcomes were persons with no safe lift.</p>
 </section>
@@ -190,13 +190,14 @@ function gcrVideoFallback(v){
   <h2>Force-magnitude guards</h2>
   <figure class="fig">
     <img src="../assets/gentle-care-robot/figG_force_guard.png" alt="Harmful outcomes and safe completions against force-guard threshold, for a hard limit and three widths of graded end-range resistance">
-    <p class="cap"><b>Tightening the guard removes safe completions (right) but barely changes
-    harmful outcomes (left).</b> Hard limit and graded end-range resistance of 12, 20 and 25&deg;,
-    120 new persons. Dotted: the fixed rule without a guard.</p>
+    <p class="cap"><b>Tight guards lower the load and lose safe completions, while harmful outcomes
+    change by at most 7 points.</b> Paired differences from the fixed rule with 95&nbsp;% intervals, hard limit and graded
+    end-range resistance of 12, 20 and 25&deg;, 120 new persons. Hollow: non-superiority inconclusive.</p>
   </figure>
-  <p style="color:var(--ink-2)">In the simulated arm, 0.5&nbsp;N&middot;m at a joint corresponds to only about 1&ndash;3&nbsp;N at the
-  contact, small against a forearm-and-hand weight of about 17&nbsp;N and guard thresholds of
-  25&ndash;50&nbsp;N (post hoc, one person). Among the 600 persons of rounds 24&ndash;25, every
+  <p style="color:var(--ink-2)">Over 600 persons and eight support sites (post hoc), 0.5&nbsp;N&middot;m corresponds to 0.8&ndash;4.8&nbsp;N at the
+  contact with the full lever arm. Along the lift direction it is 1.6&ndash;6.8&nbsp;N at the elbow and a median of 8&nbsp;N
+  at the shoulder (5th to 95th percentile 5&ndash;109&nbsp;N). Most of these are small against a forearm-and-hand weight of about 17&nbsp;N and guard thresholds of
+  25&ndash;50&nbsp;N. Among the 600 persons of the ladder set and replication, every
   harmful lift of the fixed rule stayed below the ISO/TS 15066 contact-force limit for the lower
   arm (160&nbsp;N; simulated peak force median 34&nbsp;N, maximum 154&nbsp;N). Force limits
   remain necessary for contact safety but are not sufficient for joints.</p>
@@ -242,7 +243,7 @@ function gcrVideoFallback(v){
 <section id="checked">
   <h2>How it was checked</h2>
   <ul class="plain">
-    <li><b>Prespecified:</b> hypotheses were written in a dated protocol before each round's data
+    <li><b>Specified in advance:</b> hypotheses were written in a locally kept, dated protocol before each round's data
     and tested on simulated persons never used before. The protocol was kept locally, not
     externally registered.</li>
     <li><b>Every hypothesis is reported, including failures</b> (Supplementary Table&nbsp;S1):
