@@ -1,4 +1,4 @@
-## 11. Rare datasets and specialized archives
+## 12. Rare datasets and specialized archives
 
 The working model can be tested, not just illustrated, because each case has at least one serial, person- or place-level source. These sources record devotion and institutional affiliation separately, so the two can be measured apart. They include sacramental registers of Afro-descendants in Catholic slave societies, papal and episcopal registers spanning 1348, county-level US denominational censuses, and a 9,915-case database of Taiwan's political prosecutions.
 

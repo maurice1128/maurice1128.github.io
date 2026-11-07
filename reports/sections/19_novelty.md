@@ -1,8 +1,8 @@
-## 19. Novelty check: what has and has not been done
+## 18. Novelty check: what has and has not been done
 
 No work found in English, French, German or Chinese compares Black Death Christendom with enslaved and freed African American Christians as two outcomes of collective suffering, and none combines power position, theodicy type and church role to explain when faith and institutional trust diverge. Each part of the framework, however, has strong prior art. The project can claim the comparison and the combination as new. It cannot claim conditionality, the faith/trust split or the observation that "the Church lost trust after 1348" as new. This verdict rests on searches without institutional access, so it is provisional until the database checks in 19.7 are run.
 
-### 19.1 Verdict
+### 18.1 Verdict
 
 **The core comparison appears unclaimed.** Two rounds of searching (the earlier notes and the fresh searches logged in 19.3) returned works that treat the plague or slave religion separately, or that compare one of them with a third case. Nothing paired them. The nearest structural cousins compare the Black Death with other *natural* catastrophes or epidemics (Zacharia 2018; Carmody 2012; Turner 2021), or slavery with the Holocaust (Thomas 1993; Alexander et al. 2004).
 
@@ -10,7 +10,7 @@ No work found in English, French, German or Chinese compares Black Death Christe
 
 This supports the working model's structure but changes how it should be sold. The model is best presented as a historical and theological mechanism for a conditionality economists have already shown, not as the discovery of conditionality.
 
-### 19.2 Closest prior works
+### 18.2 Closest prior works
 
 Descriptions below follow what each work actually measures, as recorded in the full-text reading notes where available. "Direct" would mean the same comparison or the same three-variable model; no work qualified.
 
@@ -37,10 +37,10 @@ Descriptions below follow what each work actually measures, as recorded in the f
 | Stearns 2009 | Reviews Christian, Muslim and Jewish plague responses; warns against monolithic "responses" | Background (but a reviewer's weapon) | Codes variation within cases, as Stearns asks |
 | Raboteau [1978] 2004; Fountain 2010 | The "invisible institution"; fewer than 40 percent of datable conversions before freedom | Background: the slave-side description is not new | Uses both as values of variables in a cross-case model |
 | Jones [1973] 1998; Pinn 1995; Goatley 1996 | Black theodicy: divine racism, rejection of redemptive suffering, godforsakenness in slave religion | Background, and the main source of the race objection | Brackets race as explanation while treating it as context |
-| Boone 2013 | Senior history thesis (Olivet Nazarene) on a theodicy of redemptive suffering in the Black community's epidemic service led by Absalom Jones and Richard Allen in the 1793 Philadelphia yellow fever (title from a search-index entry; repository returned 404) | Bridge item, and the closest overlap with the project's own bridge text: it reads the theodicy of Jones and Allen's 1794 *Narrative* (section 10), one case | Cross-case design; reads the *Narrative* for church role and trust, not theodicy alone |
+| Boone 2013 | Senior history thesis (Olivet Nazarene) on a theodicy of redemptive suffering in the Black community's epidemic service led by Absalom Jones and Richard Allen in the 1793 Philadelphia yellow fever (title from a search-index entry; repository returned 404) | Bridge item, and the closest overlap with the project's own bridge text: it reads the theodicy of Jones and Allen's 1794 *Narrative* (section 11), one case | Cross-case design; reads the *Narrative* for church role and trust, not theodicy alone |
 | Li 2008 *[verify on CNKI]*, 2013; Tseng 2017; Gao 2008 | Sinophone work on the Black Death, on Taiwanese churches and on North American slave religion, each separate | Background | First Sinophone-aware comparison (see section 9) |
 
-### 19.3 Fresh search log, 5 November 2026
+### 18.3 Fresh search log, 5 November 2026
 
 All searches below were run on 2026-11-05 without institutional access. Two warnings apply to the counts.
 
@@ -83,13 +83,13 @@ Second, in Black studies "Black death" usually means premature Black mortality a
 
 The earlier search (novelty notes, ten phrasings including French and German) reached the same result. Together, about forty phrasings across three engines and four languages found no overlapping comparison.
 
-### 19.4 What a null result does and does not show
+### 18.4 What a null result does and does not show
 
 A null result is evidence of absence only within what the tools index. Crossref covers DOIs, not most theses, conference papers or Chinese journals. Google Scholar's HTML interface returns only ten hits per page and weights recent, cited English work. Neither searches full text behind paywalls, ProQuest's dissertation abstracts or ATLA's subject headings. Theology is especially exposed, because seminary theses and denominational journals rarely carry DOIs.
 
 The most likely place for a missed overlap is a master's thesis or seminary paper that pairs "plague" with "slavery" under a theodicy heading. Boone's (2013) yellow-fever thesis and the honours projects of Zacharia (2018) and Carmody (2012) show that such bridge items exist. The least likely place is a peer-reviewed article in history or sociology of religion, because Scholar indexes those well and none surfaced.
 
-### 19.5 Novelty claims
+### 18.5 Novelty claims
 
 Each claim is stated against the prior work it goes beyond. None should be phrased as "the first ever" until the 19.7 searches are done; "to our knowledge, no study has" is the defensible form.
 
@@ -99,18 +99,18 @@ Each claim is stated against the prior work it goes beyond. None should be phras
 4. **Control of the remedy as distinct from provision of care.** Stark (1996) and Ager and Ciccone (2018) explain church growth by care or insurance. Belloc et al. (2016) attribute the bishop-ruler's entrenchment to a shock to religious belief, supported by more church building and decoration in episcopal-see cities after quakes. The project separates *who provides* the remedy from *who controls* the body that provides it, and tests the two against each other (Florentine church charity or white-led missions versus Black-controlled congregations).
 5. **A Sinophone-aware design.** Section 9 found no Chinese-language study that compares collective suffering across these cases or asks when it erodes church trust. The fresh Chinese-language searches confirm this. The project can read Sinophone plague and Taiwan scholarship into an English-language field.
 
-### 19.6 Reviewer risks
+### 18.6 Reviewer risks
 
 - **"Weber already did this."** Stratum-specific theodicy is classical theory. Cite Weber early and frame the contribution as adding the institutional variable and a split outcome.
 - **"Economists already showed conditionality."** Belloc et al., Dittmar and Meisenzahl, and Ager and Ciccone will be cited back. Credit them explicitly, and stress that none measures lay faith or institutional trust. Dittmar and Meisenzahl and Ager and Ciccone infer their religious channel; Belloc et al. (2016) add an indirect medieval proxy (church building and decoration after quakes) but still do not measure lay belief or trust.
 - **"The faith/trust split is old."** Believing without belonging (Davie 1994; Voas and Crockett 2005), the scandal literature and now Ishchuk (2026) all separate the two. The novelty must sit in explaining *which* body gains under collective suffering, not in the split.
-- **"The cases differ in kind."** Natural versus moral evil (Neiman 2002), a four-year shock versus a 250-year regime. Section 11 supplies the answer: phase-indexed comparison and a stated *tertium comparationis*.
+- **"The cases differ in kind."** Natural versus moral evil (Neiman 2002), a four-year shock versus a 250-year regime. Section 14 supplies the answer: phase-indexed comparison and a stated *tertium comparationis*.
 - **"Bracketing race is untenable."** Black theodicy makes race constitutive (Jones [1973] 1998; Pinn 1995). The answer is to unbundle race, not ignore it.
 - **The pun.** Scholars in Black studies use "Black death" for premature Black mortality. A title or abstract that sets "the Black Death" beside "slave religion" without care will read as wordplay at best. Use "the plague of 1347–51" or "the Black Death (plague)" in titles and keywords.
 - **The commonplace.** "Faith survived, trust in the Church fell" is repeated in student theses and popular essays; Zacharia (2018, ch. 1) argues that the Black Death exposed the Church's institutional shortcomings and opened the way to religious criticism. Any claim that this observation is new will be rejected, and specialists dispute it anyway (Cohn 1992; Stearns 2009).
 - **Residual search risk.** A thesis or seminary paper may already make the pairing. Run 19.7 before submission and report the result in the cover letter if asked.
 
-### 19.7 Searches the author must run with institutional access
+### 18.7 Searches the author must run with institutional access
 
 Run each string as written, record the date and hit count, and read every title. To strip the "Black death" false positive, add a plague anchor (1348 OR 1349 OR flagellant* OR pestilence) where the interface allows.
 

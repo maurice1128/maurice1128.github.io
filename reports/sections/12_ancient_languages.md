@@ -1,10 +1,10 @@
-## 12. Sources in ancient and historical languages
+## 13. Sources in ancient and historical languages
 
 Reading the sources in their original languages changes the evidence for both branches of the working model, and the translations used so far do not show this. Hebrew form makes lament a protest made *inside* faith. Latin and vernacular texts separate the laity's devotion from the clergy's authority. Arabic, Syriac, Nahuatl, Japanese and Kikongo sources supply the comparison cases the model needs: suffering read as martyrdom, a persecuted church's judgment on the empire, outright rejection of Christianity, and devotion that survives without any institution. Most of the key texts are available in critical editions, and many are free online. For the project, Latin comes first, then Biblical Hebrew and Koine Greek. For seminary, the usual order is Greek, then Hebrew, with Latin and Syriac after.
 
 The English anthologies of Horrox (1994) and Aberth (2005; 2017), and the primary-source guide that accompanies this review, already cover the chronicles in translation. This section adds the original-language editions, digitised manuscripts and language problems. It also gives a study path for someone who may go on to study theology.
 
-### 12.1 Biblical Hebrew and Aramaic: lament as a form of argument
+### 13.1 Biblical Hebrew and Aramaic: lament as a form of argument
 
 The standard text is *Biblia Hebraica Stuttgartensia*, 5th edition (Elliger and Rudolph 1997). It is being replaced by *Biblia Hebraica Quinta*, whose first fascicle contains the Megilloth, including Lamentations (Schenker et al. 2004). The Leningrad Codex (1008/09) underlies both editions, and a full facsimile is on the Internet Archive (Leningrad Codex n.d.). Sefaria provides an aligned Hebrew–English text. For English, the Jewish Publication Society *Tanakh* (1985) stays close to the Masoretic text. Hillers (1972) and Berlin (2002) are the standard commentaries on Lamentations.
 
@@ -16,7 +16,7 @@ Three language features matter for the argument.
 
 Exodus 3:7 ("I have surely seen the affliction of my people … I know their sufferings") provides the opposite theodicy to punishment-for-sin, one in which God sides with the afflicted. This is the text behind enslaved African Americans' theology of deliverance. The lament psalms (Pss 44, 74, 79, 89) make complaint a liturgical duty, which helps explain why protest can bind sufferers more tightly to God. Biblical Aramaic (Daniel, Ezra) adds martyr tales and the apocalyptic hope of vindication under empire. It is also the bridge to Syriac.
 
-### 12.2 Greek: participation, nursing the sick, and the Byzantine plague
+### 13.2 Greek: participation, nursing the sick, and the Byzantine plague
 
 Nestle-Aland's 28th edition (2012) is the standard New Testament text. Rahlfs–Hanhart (Rahlfs 2006) is the standard Septuagint. In the New Testament, suffering becomes *koinōnia* (participation) in Christ's *pathēmata* (Phil 3:10; Rom 8:18; Col 1:24), and the cry *heōs pote* ("how long?", Rev 6:10) keeps the lament form alive. Theologically, this vocabulary is why suffering can intensify devotion rather than refute it.
 
@@ -24,7 +24,7 @@ The earliest Christian account of a plague is Dionysius of Alexandria's letter, 
 
 For the Justinianic plague, Procopius' *Wars* 2.22–23 is edited by Haury (1905) and translated by Dewing (1914; revised by Kaldellis 2014). For the Black Death in Constantinople, the sources are John VI Kantakouzenos' *Histories* 4.8 (Schopen 1828–32, vol. 3) and Nikephoros Gregoras (Schopen and Bekker 1829–55). Bartsocas (1966) translated both passages. Van Dieten's German Gregoras (1973 and later volumes; the plague passage in Book XVI is in Teil 3, 1988) adds modern commentary. Fatouros and Krischer's German Kantakouzenos (1982–2011) covers Books I–III only, so it does not yet reach the plague chapter 4.8. All three historians write Atticising Greek and model their plague descriptions on Thucydides. Their reports of mass repentance and almsgiving must therefore be read partly as literary convention. Kantakouzenos supported the hesychasts and Gregoras opposed them. The same plague is thus described from opposite sides of a church conflict.
 
-### 12.3 Latin: the largest corpus and the clearest split
+### 13.3 Latin: the largest corpus and the clearest split
 
 Latin carries the patristic theodicies, the papal and episcopal acts, most Black Death chronicles, scholastic accounts of evil, and the colonial registers of enslaved people. It is the single most productive language for this project.
 
@@ -38,7 +38,7 @@ The Latin *ars moriendi* (O'Connor 1942) passed responsibility for the deathbed 
 
 **Colonial.** The Slave Societies Digital Archive (Vanderbilt) holds digitised baptismal, marriage and burial registers of Africans and their descendants in Brazil, Cuba, Colombia and Florida. They are in Latin, Portuguese and Spanish (Schneider 2020). Godparent choice, African "nation" labels and the age at baptism measure enrolment in the institution. Brotherhood records show devotion under lay control. These registers are the evidence needed to separate power position from church role, which the US case cannot do. The Latin is formulaic; the obstacle is the handwriting.
 
-### 12.4 Medieval vernaculars: lay voices outside clerical Latin
+### 13.4 Medieval vernaculars: lay voices outside clerical Latin
 
 Lay devotion and lay criticism of the clergy are both clearest in the vernaculars.
 
@@ -48,29 +48,29 @@ Lay devotion and lay criticism of the clergy are both clearest in the vernacular
 - **Italian.** Boccaccio's introduction to the *Decameron* (Branca's edition *[verify]*) records that processions failed and that funerals shrank to hurried burials behind a few overwhelmed priests, without abandoning belief. Matteo Villani (Porta 1995) records both moral decline and large bequests to Orsanmichele. Stefani (Rodolico 1903–55) and Agnolo di Tura (Lisini and Iacometti 1931–39) show the commune taking over ritual.
 - **Catalan, Czech and Swedish.** Peter IV's chancery letters on the 1348 attacks on Jews, Hussite texts in Old Czech (Fudge 2002 translates the Latin and Czech documents), and Magnus Eriksson's 1350 penitential letter would round out the picture. Only Fudge could be confirmed in a catalogue.
 
-### 12.5 Classical Arabic: an Islamic control case
+### 13.5 Classical Arabic: an Islamic control case
 
 Arabic plague writing lets the author test whether Latin anticlericalism after 1348 depended on Latin ecclesiology. Ibn al-Wardī (d. 1349), in rhymed prose, calls plague a martyrdom and a mercy for Muslims (Dols 1974b). Ibn Ḥajar's *Badhl al-māʿūn* (ed. al-Kātib 1991) is the juristic synthesis on plague martyrdom, the ban on flight and communal prayer. Ibn al-Khaṭīb's *Muqniʿat al-sāʾil* (Müller 1863) argues that experience proves contagion and that a hadith denying it must be reinterpreted. Here religious authority is challenged in the name of evidence, without any loss of faith. Al-Maqrīzī's *Sulūk* (Ziyāda 1934–73 *[verify]*) records communal intercession in Cairo. Dols (1977) remains the guide. In the Islamic sources, the institutional conflict is between physicians and jurists, not between laity and priests, and there is no flagellant-style movement. That is evidence that the Latin pattern depended on how the Latin Church controlled the sacraments.
 
 Arabic also reaches into the slavery case. Omar ibn Said's 1831 autobiography (Library of Congress; Alryyes 2011) opens with Qurʾān 67 on God's sovereignty over earthly masters. The Bilali Muhammad manuscript (University of Georgia) *[verify]* preserves Islamic legal learning under slavery.
 
-### 12.6 Medieval Hebrew: the victims' archive
+### 13.6 Medieval Hebrew: the victims' archive
 
 The Nuremberg *Memorbuch* (Salfeld 1898) lists the communities destroyed in 1349 for recitation in the synagogue. Joseph ha-Kohen's *ʿEmeq ha-bakha* (Almbladh 1981; German translation in Joseph ha-Kohen 1858) tells persecution as sacred history. Both turn catastrophe into liturgy within the community's own institution. This is the first branch of the working model in its clearest form. The 1096 crusade chronicles (Eidelberg 1977) supply the martyrdom template (*qiddush ha-Shem*). The difficulty rises sharply from memorial lists, which are easy, to biblicising chronicle prose and liturgical poetry (*piyyut*), which is the hardest post-biblical Hebrew.
 
-### 12.7 Syriac and Church Slavonic: dissident and civic churches
+### 13.7 Syriac and Church Slavonic: dissident and civic churches
 
 The Chronicle of Zuqnin (Pseudo-Dionysius of Tel-Mahre), Part III, preserves John of Ephesus' account of the plague of 541–44. The text is edited by Chabot in *CSCO* (online), and translations are by Witakowski (1996) and Harrak (1999). John wrote for a Miaphysite church persecuted by the imperial church. He reads the plague as judgment on the empire and as a call to almsgiving and asceticism for his own community, so devotion intensifies while the establishment is condemned. Syriac grammar is regular, and after Hebrew it is the easiest Semitic language to add.
 
 The Novgorod First Chronicle (Nasonov 1950; Michell and Forbes 1914) and the Pskov chronicles (Nasonov 1941–55) record the plague of 1352. The Pskovians asked the archbishop of Novgorod to come and bless the city, and the cities built votive churches. Devotion runs through the city's own church. Later Pskov–Novgorod anticlericalism (the *strigol'niki*) *[verify]* offers a contrasting case.
 
-### 12.8 Indigenous languages, Japanese and Kikongo: rejection and survival
+### 13.8 Indigenous languages, Japanese and Kikongo: rejection and survival
 
 Book 12 of the Florentine Codex records the smallpox of 1520 in Nahuatl. It is edited by Dibble and Anderson (Anderson and Dibble 1950–82), a facsimile is on the Library of Congress website, and the text is also in Lockhart (1993). Burkhart (1989; 1996) shows Christian ideas of sin and penance rebuilt in Nahua concepts. In the Andes, the Taki Onqoy movement of the 1560s taught that the *huacas* were sending disease to punish baptism and called Andeans to reject Christianity. It is known through Albornoz's and Molina's reports (Millones 1990; Molina 2011). The case is the rejection branch of the working model: an institution identified with the conquerors, with an alternative available.
 
 In Japan, the *Dochirina Kirishitan* (1591/1592; Kojima 1966) was the catechism lay leaders transmitted after priests were expelled. The Kakure Kirishitan scripture *Tenchi hajimari no koto* (Whelan 1996) shows faith surviving 250 years without clergy, changed in form. Some communities declined to rejoin Rome after 1873. Elison (1973) documents apostasy under persecution. In Kongo, the 1624 Kikongo catechism (Bontinck and Ndembe Nsasi 1978) shows a Christianity run by Kongolese lay teachers. Dona Beatriz Kimpa Vita's Antonian movement (Thornton 1998b), which arose amid civil war, made Christ and the saints Kongolese and was crushed by the Capuchins. Both are close fits for the "faith up, establishment trust down" outcome. Classical Chinese and Ge'ez sources could not be verified.
 
-### 12.9 Summary table
+### 13.9 Summary table
 
 | Language | Key texts | Best edition | English translation | Access |
 |---|---|---|---|---|
@@ -91,13 +91,13 @@ In Japan, the *Dochirina Kirishitan* (1591/1592; Kojima 1966) was the catechism 
 | Japanese | *Dochirina Kirishitan*; *Tenchi hajimari no koto* | Kojima 1966 | Whelan 1996; Elison 1973 | IA (lending) |
 | Kikongo | 1624 catechism; Antonian movement | Bontinck and Ndembe Nsasi 1978 | Thornton 1998b | Print |
 
-### 12.10 Which ancient languages to learn, and in what order
+### 13.10 Which ancient languages to learn, and in what order
 
 **(a) For this research program.** Latin is first and indispensable. Begin with Wheelock (2011), then read Knighton (Martin 1995) and Ralph of Shrewsbury's mandate (Wilkins 1737) against Horrox's translations, and add Collins (1985) for ecclesiastical Latin. Next, learn enough Biblical Hebrew to read Lamentations, Job and Isaiah 53 with a lexicon, using Pratico and Van Pelt (2019) or Lambdin (1971). Third is Koine Greek for the New Testament and Eusebius, using Mounce (2019). Middle English (Burrow and Turville-Petre 2005) takes weeks rather than years and opens *Piers Plowman* and Julian. A reading knowledge of German, French and Italian matters as much as any ancient language, because the critical editions and much of the scholarship are written in them. Arabic (Thackston 1994) is a long-term investment, worth it only if the Islamic comparison becomes central.
 
 **(b) For seminary or theological study.** Most programmes require Greek first (Mounce 2019, or Machen 1923 in McCartney's revision), then Hebrew (Pratico and Van Pelt 2019; Lambdin 1971), with Wallace (1996) for intermediate Greek syntax. Biblical Aramaic (Rosenthal 2006) follows Hebrew quickly. Latin (Wheelock; Collins) is essential for historical theology and Catholic studies. Syriac (Thackston 1999; Coakley 2013) is the natural next language for Eastern Christianity and early biblical versions. Coptic (Lambdin 1983), Ge'ez (Lambdin 1978) and Old Church Slavonic (Lunt 2001) are specialist options for Egyptian, Ethiopian and Slavic Christianity.
 
-### 12.11 Implications for the model
+### 13.11 Implications for the model
 
 - Original-language form supports the model's claim that **interpretation of suffering** is a separate variable. The acrostic and lament forms make protest itself a devotional act. Readings such as Job 13:15 and *ʿebed* in Isaiah 53 show the tradition holding punishment and solidarity theodicies side by side.
 - The Latin and vernacular split supports the **"faith up, establishment trust down"** outcome. Lay songs, guilds, the *ars moriendi* and Julian on one side, and the bishops' own admissions (Ralph of Shrewsbury) and papal decrees that were ignored on the other, sit in different languages and genres.

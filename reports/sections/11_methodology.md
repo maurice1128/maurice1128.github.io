@@ -1,8 +1,8 @@
-## 11. Methodological debates: comparing distant cases without a race variable
+## 14. Methodological debates: comparing distant cases without a race variable
 
 A Black Death–slavery comparison is defensible if causal weight rests on within-case process tracing, not on a two-case Millian contrast. It must also define its variables independently of either case and unbundle "race" into situational components that can be observed in both. The method literature supplies warrant for each step. It also supplies five serious objections that the article must answer in its own methods section: proximity, small N, incommensurability, entanglement, and the bracketing of race.
 
-### 11.1 Logics of comparison: why distance is not the problem
+### 14.1 Logics of comparison: why distance is not the problem
 
 Marc Bloch set the terms of the debate. He distinguished comparison of distant societies, as in Frazer's universal anthropology, from comparison of neighbouring, contemporaneous societies, and he preferred the latter for historians (Bloch 1928). A reviewer can turn this preference against a fourteenth-century/nineteenth-century pairing. Sewell's reading of Bloch is the standard reply. Comparison is a logic for testing explanatory hypotheses by checking whether a supposed cause co-varies with its effect. Its usefulness depends on the problem posed, not on the distance between cases (Sewell 1967).
 
@@ -12,7 +12,7 @@ The transnational turn raised a different objection: cases are not independent u
 
 The entanglement critique is less damaging here than it first appears. The same scriptural repertoire, including Exodus, Job, Lamentations, and providential punishment, runs from late-medieval preaching through Reformation Protestantism into Anglo-American evangelicalism. "Theological interpretation" is therefore a genuinely shared variable, transmitted rather than coincidental. That supports the model's second variable, but it also means the two cases are not fully independent tests of it.
 
-### 11.2 Small-N critiques and the turn to process tracing
+### 14.2 Small-N critiques and the turn to process tracing
 
 Lieberson (1991) supplied the sharpest critique. Mill's methods applied to a few cases assume deterministic causation, no interaction effects, no measurement error, and a complete list of causes. A two-case design meets none of these assumptions. Mahoney (2000) answered by combining nominal, ordinal, and within-case strategies, so that cross-case contrast is only one leg of inference. Steinmetz (2004) answered both Lieberson's positivist critique and the incommensurabilist critique, defending case studies and small-N comparison on critical-realist grounds.
 
@@ -24,7 +24,7 @@ The two core cases are a most-different pair. They differ in era, continent, eco
 
 The remedy is a nested design. Across cases, the pair is most-different. Within each case, sub-populations form most-similar comparisons that vary the explanatory variables while holding era and region constant. Jews and Christians in 1348–51, Black-controlled and white-controlled congregations in the American South, and Brazilian brotherhood members and non-members are such pairs. Ragin's configurational logic (Ragin 2014, first published 1987) fits the model's claim that combinations of variables, not single variables, produce the outcome.
 
-### 11.3 Comparison in the study of religion
+### 14.3 Comparison in the study of religion
 
 Comparative religion has its own methodological canon, and reviewers in religious studies will expect it. J. Z. Smith criticized comparison driven by "similarity and contiguity" as a form of magical association (Smith 1982). He called for comparison disciplined by theory and by the scholar's stated interest. In *Drudgery Divine* he described comparison as triadic: x resembles y more than z with respect to some stated feature (Smith 1990). Comparison is thus a scholarly construction, not the discovery of essential sameness.
 
@@ -32,7 +32,7 @@ Patton and Ray (2000) gathered responses to Smith that tried to bridge postmoder
 
 Applied to this project, Smith's formula forces a precise *tertium comparationis*. A defensible version would read: late-medieval Latin Christianity under plague resembles enslaved African American Christianity more than it resembles, say, mainline Protestantism after the 1918 influenza, with respect to high collective mortality or domination, low sufferer power, and an establishment clergy perceived as absent or allied with power. In Freiberger's terms the study is explanatory, cross-cultural, diachronic, and meso-scale. His "redescription and rectification" step is where the article can show that "race" redescribes the cases poorly while "power position" and "church role" redescribe both well.
 
-### 11.4 Why race is not the explanatory variable
+### 14.4 Why race is not the explanatory variable
 
 A broad consensus across history, sociology, and causal-inference methodology holds that "race" is not a well-defined causal variable. Holland's dictum of "no causation without manipulation" excludes race-as-attribute from potential-outcomes causation (Holland 1986). Sen and Wasow (2016) proposed treating race as a "bundle of sticks": separable, manipulable components such as signals, place, religion, and status. Greiner and Rubin (2011) shifted the treatment to *perceived* race at a defined moment. VanderWeele and Robinson (2014) showed how adjusting for mediators changes what a "race effect" means.
 
@@ -44,7 +44,7 @@ There are serious counter-positions. Kohler-Hausmann (2019) argues that race can
 
 Two classic comparisons supply templates. Kolchin (1987) compared American slavery with Russian serfdom, in which the unfree were not racially distinguished from their owners. Patterson (1982) compared slavery across dozens of societies and defined it by domination, natal alienation, and dishonour rather than by race. Both show that the structure of domination can be the comparative unit.
 
-### 11.5 Medieval racialization and the Jews of 1348–51
+### 14.5 Medieval racialization and the Jews of 1348–51
 
 The "no race" design must not imply that the medieval case was race-free. Heng (2011; 2018) argues that race-making existed in medieval Europe and targeted Jews, Muslims, Romani, Mongols, and Black Africans. Hahn (2001) introduced the founding special issue of the *Journal of Medieval and Early Modern Studies* on medieval race. Bartlett (2001) countered that medieval *gens* and *natio* language was largely cultural, though with descent-based elements. Whitaker (2019; 2025) traces modern racism to medieval race-thinking and narrates the rise of premodern critical race studies.
 
@@ -52,7 +52,7 @@ The plague massacres of Jews are central to this literature. Cohn (2007) placed 
 
 The design implication is to code Jews' position directly rather than through a race label. Inside the plague case, Jews form a third, within-period contrast: very low power, a non-Christian theology of suffering, and Christian authorities as complicit persecutors or unreliable protectors. The model then predicts consolidation of faith within Jews' own communal institutions, not attraction to the dominant church. Foa (2000) warns against reading Jewish history after 1348 only as catastrophe, which cautions against coding Jews solely as victims. This shadow case tests whether the mechanism generalizes beyond Christianity; it does not test the Christian outcome directly.
 
-### 11.6 Dating and recurrence: a four-year shock against a 250-year regime
+### 14.6 Dating and recurrence: a four-year shock against a 250-year regime
 
 The two cases differ sharply in temporal shape. The first plague wave struck Western Europe in roughly 1347–51 and returned repeatedly from the 1360s. North American slavery lasted from the early seventeenth century to 1865. Comparing "the Black Death" with "slavery" as wholes compares an event with a regime. Kreuzer (2023) argues that comparative-historical analysis must make such temporal properties explicit rather than treat time as background.
 
@@ -62,7 +62,7 @@ Fountain's finding is a direct challenge to the working model. If mass Christian
 
 The practical solution is to compare episodes, not wholes. Each case can be divided into phases indexed by generation since onset: the first wave and its recurrences to about 1400; and in the American case, pre-1760, the revival era to 1830, 1830–65, and 1865–1900. The model then makes phase-specific predictions. Recurrence matters because it converts a shock into a regime and turns institutional performance into a repeated test.
 
-### 11.7 Measuring "faith" against "institutional trust" in historical sources
+### 14.7 Measuring "faith" against "institutional trust" in historical sources
 
 Neither faith nor institutional trust is directly observable in historical sources. Both must be inferred from behaviour, and most behaviours load on both. A pious bequest for perpetual masses, for instance, expresses devotion and also dependence on clergy. The two constructs separate only where sources record a *choice between* establishment and alternative channels. Gorski (2000) adds a baseline warning: there was no medieval "age of faith," so a decline must be measured against a realistic pre-crisis level.
 
@@ -81,7 +81,7 @@ Two indicators per case are needed: one for devotional intensity regardless of c
 
 The plague evidence is more ambiguous than the working model assumes. Much post-plague intensification ran *through* the institution, which grew busier and richer in intercessory services (Cohn 1992; Henderson 1994). Duffy (1992) found late-medieval English religion vigorous up to the Reformation. Stearns (2009) warns against coding any community's plague response as monolithic. The plague case may therefore show faith up with trust *redistributed* to lay-run bodies inside the church, rather than eroded.
 
-### 11.8 The five strongest arguments for comparability
+### 14.8 The five strongest arguments for comparability
 
 1. **Comparison is a logic of hypothesis-testing, not of proximity.** Bloch's preference for neighbouring societies was pragmatic. Sewell showed that comparison tests explanations wherever the relevant variables vary, and Skocpol and Somers's contrast of contexts and Tilly's variation-finding accommodate distant cases (Sewell 1967; Skocpol and Somers 1980; Tilly 1984; Mahoney 2004).
 2. **Cases are matched on theorized variables, not on era or race.** Power position, theological interpretation, and church role are defined independently of either case. "Race" is unbundled into observable components, following Sen and Wasow (2016), Fields (1990), and Zuberi (2001). Kolchin (1987) and Patterson (1982) are templates for comparing American slavery with non-racial hierarchies.
@@ -89,7 +89,7 @@ The plague evidence is more ambiguous than the working model assumes. Much post-
 4. **Entanglement makes theology a shared variable.** The same scriptural theodicy repertoire circulates from Latin Christendom into Protestant evangelicalism. Histoire croisée and Smith's triadic comparison turn the link into an explicit, theorized basis for comparison (Werner and Zimmermann 2006; Kocka 2003; Smith 1990; Freiberger 2019).
 5. **Long-durée precedents are accepted when variables and mechanisms are explicit.** Voigtländer and Voth (2012) link Black Death pogroms to Nazi-era violence. Cohn compares epidemics from Athens to AIDS (Cohn 2012; 2018). Nunn and Wantchekon (2011) link the slave trade to later mistrust; Bentzen (2019) links disasters to religiosity, chiefly to religious belief rather than church attendance (as Ager and Ciccone report of its working-paper version *[verify against the published article]*); Gorski (2000) writes long-period historical sociology of religion.
 
-### 11.9 Anticipated reviewer objections
+### 14.9 Anticipated reviewer objections
 
 | Objection | Response | Citations |
 |---|---|---|
@@ -104,10 +104,10 @@ The plague evidence is more ambiguous than the working model assumes. Much post-
 | The Black Death outcome is miscoded; there was no age of faith | Code plague as faith up with trust redistributed, against a realistic baseline | Gorski 2000; Duffy 1992; Stearns 2009; Henderson 1994 |
 | Power position and church role are confounded | Brazil separates them: establishment church as slaveholder, yet sufferer-controlled brotherhoods | Schwartz 1982; Russell-Wood 1974; Reis 1991; de la Fuente 2004 |
 | Weber and economists of religion already did this | Cite them; the novelty is the third variable and the faith/institution split | Belloc, Drago, and Galbiati 2016; Ager and Ciccone 2018; Weber 1946b *[verify]* |
-| Faith is not observable in sources | Use paired indicators for intensity and for allocation between channels | See section 11.7 |
+| Faith is not observable in sources | Use paired indicators for intensity and for allocation between channels | See section 14.7 |
 | Suffering did not drive conversion; freedom did | Treat deliverance as a rival hypothesis and test it by phase | Fountain 2010; Harper 2016; Frey and Wood 1998 |
 
-### 11.10 Design recommendation for the core article
+### 14.10 Design recommendation for the core article
 
 The core article should pair two cases and use several shadow cases. Core case one is Latin Christendom under plague, about 1348–1400, with Tuscany and England as focal regions where wills, confraternity records, and ordination lists survive. Core case two is enslaved and newly freed African Americans in the US South, about 1760–1900, spanning the revivals, the late antebellum decades, and post-emancipation separation. The time window must include emancipation so that the deliverance hypothesis can be tested.
 

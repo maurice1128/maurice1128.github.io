@@ -1,4 +1,4 @@
-## 16. Implications for the contemporary church
+## 17. Implications for the contemporary church
 
 Today's evidence mostly fits the model's institutional branches, but the main driver of modern trust loss is not external collective suffering. It is institutional misconduct, above all clerical abuse, and the perceived alignment of churches with one political coalition. Belief generally outlasts belonging, exit is often aimed at a specific institution, and churches that serve their own communities retain members best. The "suffering raises demand for meaning" step, however, is weak in wealthy, pluralist societies, and believing without belonging decays across generations.
 

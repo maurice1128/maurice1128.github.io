@@ -230,7 +230,7 @@ Bourdieu, Pierre. 1971. "Genèse et structure du champ religieux." *Revue franç
 
 Bowsky, William M., ed. 1971. *The Black Death: A Turning Point in History?* New York: Holt, Rinehart and Winston.
 
-Branca, Vittore, ed. *Decameron*, by Giovanni Boccaccio. *[detail to verify: which Branca edition (Mondadori 1976 or Einaudi 1980/1992) and year; entry lacks a year; which edition: *Tutte le opere di Giovanni Boccaccio*, vol. 4 (Milan: Mondadori, 1976), or Turin: Einaudi, 1980/1992 (sec. 12)]*
+Branca, Vittore, ed. *Decameron*, by Giovanni Boccaccio. *[detail to verify: which edition and year (entry lacks a year): Tutte le opere di Giovanni Boccaccio, vol. 4 (Milan: Mondadori, 1976), or Turin: Einaudi, 1980/1992 (sec. 12)]*
 
 Braun, Theodore E. D., and John B. Radner, eds. 2005. *The Lisbon Earthquake of 1755: Representations and Reactions*. SVEC 2005:02. Oxford: Voltaire Foundation.
 
@@ -385,7 +385,7 @@ Clarke, Erskine. 2005. *Dwelling Place: A Plantation Epic*. New Haven, CT: Yale 
 
 Clarke, Sathianathan. 1998. *Dalits and Christianity: Subaltern Religion and Liberation Theology in India*. Delhi: Oxford University Press.
 
-Clement VI. 1349. Bull against the flagellants, Avignon, 20 October 1349 (XIII kal. Nov., anno viii). The copy to the archbishop of Magdeburg, beginning *Molesta nobis*, is printed in Raynaldus 1872, 25:470–72. *[detail to verify: the name *Inter sollicitudines* and any translation in Horrox 1994 (sec. 03)]*
+Clement VI. 1349. Bull against the flagellants, Avignon, 20 October 1349 (XIII kal. Nov., anno viii). The copy to the archbishop of Magdeburg, beginning *Molesta nobis*, is printed in Raynaldus 1880, 25:470–72. *[detail to verify: the name Inter sollicitudines and any translation in Horrox 1994 (sec. 03)]*
 
 Clines, David J. A. 1989. *Job 1–20*. Word Biblical Commentary 17. Dallas: Word Books.
 
@@ -1491,7 +1491,7 @@ Oosterwijk, Sophie, and Stefanie Knöll, eds. 2011. *Mixed Metaphors: The Danse 
 
 Orsag, Mark, Amanda E. McKinney, and DeeAnn M. Reeder. 2023. *Interdisciplinary Insights from the Plague of Cyprian*. Cham: Springer. https://doi.org/10.1007/978-3-031-26094-0.
 
-Ortiz, Fernando. 1921. *Los cabildos afrocubanos*. Havana. *[detail to verify: whether first published in *Revista Bimestre Cubana* (sec. 05)]*
+Ortiz, Fernando. 1921. *Los cabildos afrocubanos*. Havana. *[detail to verify: whether first published in Revista Bimestre Cubana (sec. 05)]*
 
 Ortiz, Fernando. 1992. *Los cabildos y la fiesta afrocubanos del Día de Reyes*. Havana: Editorial de Ciencias Sociales. A later compilation: "Los cabildos afrocubanos" first appeared in *Revista Bimestre Cubana* 16 (1921); the Día de Reyes essay is a separate, later piece.
 
@@ -1658,7 +1658,7 @@ Reinhardt, Volker. 2021. *Die Macht der Seuche: Wie die Große Pest die Welt ver
 
 Reis, João José. 1986. *Rebelião escrava no Brasil: A história do levante dos malês (1835)*. São Paulo: Brasiliense. English translation: *Slave Rebellion in Brazil: The Muslim Uprising of 1835 in Bahia*. Translated by Arthur Brakel. Baltimore: Johns Hopkins University Press, 1993.
 
-Reis, João José. 1991. *A morte é uma festa: Ritos fúnebres e revolta popular no Brasil do século XIX*. São Paulo: Companhia das Letras. English translation: *Death Is a Festival: Funeral Rites and Rebellion in Nineteenth-Century Brazil*. Translated by H. Sabrina Gledhill. Chapel Hill: University of North Carolina Press, 2003. *[detail to verify: subtitle (sec. 08); subtitle of Portuguese original, *A morte é uma festa*, São Paulo: Companhia das Letras, 1991 (sec. 05)]*
+Reis, João José. 1991. *A morte é uma festa: Ritos fúnebres e revolta popular no Brasil do século XIX*. São Paulo: Companhia das Letras. English translation: *Death Is a Festival: Funeral Rites and Rebellion in Nineteenth-Century Brazil*. Translated by H. Sabrina Gledhill. Chapel Hill: University of North Carolina Press, 2003. *[detail to verify: subtitle (sec. 08); subtitle of Portuguese original, A morte é uma festa, São Paulo: Companhia das Letras, 1991 (sec. 05)]*
 
 Ricard, Robert. 1966. *The Spiritual Conquest of Mexico: An Essay on the Apostolate and the Evangelizing Methods of the Mendicant Orders in New Spain, 1523–1572*. Translated by Lesley Byrd Simpson. Berkeley: University of California Press.
 

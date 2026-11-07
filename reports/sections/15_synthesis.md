@@ -13,8 +13,8 @@ Collective suffering rarely drives Christians away from God; it redistributes de
 3. **Theology of suffering, and who controls the remedy it prescribes.** A punishment frame empowers whoever administers penance; an Exodus frame needs no mediator (section 2.10). After 1348, punishment theology bound people to the clergy because the church held the remedy (section 4).
 4. **Church role, including capacity to deliver care.** The church may be the sufferers' own community, a failing establishment or an ally of the perpetrators. Trust after 1348 frayed where no priest came to the deathbed (Wilkins 1737, 2:745–46).
 5. **An organised alternative.** Exit requires a rival body (Hirschman 1970). Plague outbreaks changed German church law only once an organised Protestant alternative existed (Dittmar and Meisenzahl 2020).
-6. **Duration and recurrence.** Durable change in Tuscan and Umbrian bequests followed the 1363 recurrence, not 1348 (Cohn 1992). Recurrence turns a shock into a repeated test of institutional performance (section 11.6).
-7. **Transmission through community.** Faith that leaves an institution survives a generation only if a gathered community receives it (Voas and Crockett 2005; section 16).
+6. **Duration and recurrence.** Durable change in Tuscan and Umbrian bequests followed the 1363 recurrence, not 1348 (Cohn 1992). Recurrence turns a shock into a repeated test of institutional performance (section 14.6).
+7. **Transmission through community.** Faith that leaves an institution survives a generation only if a gathered community receives it (Voas and Crockett 2005; section 17).
 
 **Outcomes.** Six outcomes follow, plus a minor branch.
 
@@ -69,7 +69,7 @@ Church role must be coded from records of control and care, never from whether p
 
 Three rules follow. First, code each indicator from records dated before the outcome is measured. Second, code per institution and per phase, since roles change: Korea's sufferers' church became an establishment, and Ireland's became the harming institution (section 6).
 
-Third, name refuting results in advance. An own church that delivers care yet loses its members would count against the model. So would devotion moving to lay bodies before any recorded establishment failure, the hoop test of section 11.10. Outcomes then need paired indicators, one for devotional intensity and one for its allocation between channels (section 11.7).
+Third, name refuting results in advance. An own church that delivers care yet loses its members would count against the model. So would devotion moving to lay bodies before any recorded establishment failure, the hoop test of section 14.10. Outcomes then need paired indicators, one for devotional intensity and one for its allocation between channels (section 14.7).
 
 ### 15.4 Rival explanations and how they are tested
 
@@ -77,7 +77,7 @@ Six rivals can explain the same outcomes without the model's conditions, and eac
 
 | Rival | Claim | Test | Current evidence |
 |---|---|---|---|
-| Deliverance or emancipation timing | Formal commitment followed freedom, not suffering (Fountain 2010) | Phase-indexed comparison; date conversion and institutional moves separately (section 11.6) | Five of seven dated WPA conversions fall after 1865, yet 26 of 51 narratives report Black-led worship before. Supports a postwar institutional exodus more than a postwar first conversion |
+| Deliverance or emancipation timing | Formal commitment followed freedom, not suffering (Fountain 2010) | Phase-indexed comparison; date conversion and institutional moves separately (section 14.6) | Five of seven dated WPA conversions fall after 1865, yet 26 of 51 narratives report Black-led worship before. Supports a postwar institutional exodus more than a postwar first conversion |
 | Fading after the danger passes | "Cessante autem tempestate cessavit etiam peregrinatio et devotio" (li Muisis, in Lemaître 1906, 258) | Require change that outlasts the waves | Testamentary change after 1363 outlasts single waves (Cohn 1992); acute peaks alone prove little |
 | Provision or relief | Affiliation follows material aid and falls when aid ends (Madsen 2012) | Separate care delivered from sufferer control of the body delivering it | Madsen attributes decline to lost dependence on US relief and paternal authority, not materialism. In 1793 the Black church gave relief (Jones and Allen 1794). Taiwan's "flour religion" claim has no scholarly source |
 | Political alignment | Trust tracks partisan or national alignment, not suffering | Compare coalition insiders and outsiders within one church | The AME charged the Southern church with treason (*Christian Recorder*, 13 Mar. 1869). US nones grew among liberals and moderates (Hout and Fischer 2002; 2014) |
@@ -86,7 +86,7 @@ Six rivals can explain the same outcomes without the model's conditions, and eac
 
 Deliverance is the strongest rival, and it overlaps the model. Freedom gave sufferers control of churches, so the test is whether commitment follows control without deliverance. Brazil's brotherhoods under slavery and the Cyprianic Christians without state power supply that test (Russell-Wood 1974; Stark 1996).
 
-Political alignment is the main proximate driver today (section 16). It belongs in the model as a modern form of "the church sides with power," not as a replacement for it. Displacement appears only from the eighteenth century, so it limits the model's reach in modern secure societies (section 6).
+Political alignment is the main proximate driver today (section 17). It belongs in the model as a modern form of "the church sides with power," not as a replacement for it. Displacement appears only from the eighteenth century, so it limits the model's reach in modern secure societies (section 6).
 
 ### 15.5 What remains open
 

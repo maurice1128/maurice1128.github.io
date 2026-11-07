@@ -33,3 +33,46 @@ Same changes applied in the doc (rev 253 -> 307), by find/replace ("as":"text") 
 - "[unverified]" after Chen Nan-jou 2003 and Lo Kuang-hsi 2018 inserted in italics.
 - Nodl 2021: "[verify]" removed in text; its to-verify bullet now says resolved (Studia Historica Gedanensia 12 (2): 44–62).
 - Checked afterwards (0 hits): "Kim and Kim 2015", "Boone n.d", "Jones 1973", "2004, 2014"; the only "1872" left is a date range in a table (US South, 1865–1872).
+
+## Step 2: renumbering (doc rev 307 -> 385)
+Level-2 headings in current document order, old -> new number (mapped by TITLE):
+
+| Doc order | Title | Old | New | Section file |
+|---|---|---|---|---|
+| 1 | Introduction and research question | 1 | 1 | (doc only) |
+| 2 | Theoretical frameworks | 2 | 2 | 02_theory |
+| 3 | Christian theologies of suffering | 3 | 3 | 03_theologies |
+| 4 | Case 1: The Black Death | 4 | 4 | 04_black_death |
+| 5 | Case 2: Enslaved and freed African Americans | 5 | 5 | 05_slave_religion |
+| 6 | Comparative cases | 6 | 6 | 06_comparative |
+| 7 | Expanded cases | 7 | 7 | 07_global_cases |
+| 8 | Continental European scholarship | 8 | 8 | 08_continental |
+| 9 | Chinese-language scholarship | 9 | 9 | 09_chinese |
+| 10 | Scholarship and sources in further languages | 10 | 10 | 10_other_languages |
+| 11 | Guide to primary sources | 10 | 11 | 10_primary_sources |
+| 12 | Rare datasets and specialized archives | 11 | 12 | 11_rare_datasets |
+| 13 | Sources in ancient and historical languages | 12 | 13 | 12_ancient_languages |
+| 14 | Methodological debates | 11 | 14 | 11_methodology |
+| 15 | Synthesis | 15 | 15 | 15_synthesis |
+| 16 | Biblical-theological reflection | 16 | 16 | 16_biblical |
+| 17 | Implications for the contemporary church | 16 | 17 | 16_contemporary |
+| 18 | Novelty check | 19 | 18 | 19_novelty |
+| 19 | Research gaps, contribution and journal fit | 20 | 19 | 20_gaps_journals |
+| 20 | References | (pending) | 20 | references_master.md / References tab |
+
+Subsections renumbered: 12.1–12.11 -> 13.1–13.11; 11.1–11.10 -> 14.1–14.10; 19.1–19.7 -> 18.1–18.7; 20.1–20.4 -> 19.1–19.4. 2.x–4.x, 15.x and 16.x (biblical) unchanged; 17 has no numbered subsections.
+
+Cross-references: the doc was exported to markdown and every "section(s) N", "§N" and "N.M" reference was listed (112 hits). Ambiguous old numbers were resolved by context:
+- old "section 10" = Further languages (Korean literature, Hebrew texts) -> 10; = primary sources (Jones and Allen's Narrative; plague-era remedy routes) -> 11
+- old "section 11" = Methodology (comparative design, Jews of 1348–51, process tracing, core pair, phase-indexed comparison) -> 14; 11.6/11.7/11.10 -> 14.6/14.7/14.10; "novelty review (section 11)" in sec. 2 -> 18
+- old "section 12" (ancient languages) -> 13
+- old "section 16" = contemporary church (COVID, abuse, Korea trust, secure societies, Taylor, Voas and Crockett transmission, political alignment, Taiwan survey trust) -> 17. No reference pointed to the biblical section 16.
+- old "section 19"/19.x -> 18/18.x; old 20 had no inbound refs.
+Changed references (39): see reports/audit/final_assembly_renumber_map.txt (all 77 find/replace pairs, plus "19.1 Verdict -> 18.1 Verdict"); same strings applied to the section .md files (all found once; one needed the markdown form "*Narrative* (section 11)").
+Not changed (correct already): refs to sections 2–9, 15, 15.x, 2.x, 3.x, 4.5; "§17", "§50", "ITC 2000, §2.1", "§§31–34" are not cross-references.
+
+## Step 3: tabs (doc rev 386)
+- Created tab "References" (file 847f85c5-3bc3, body 602f27a0-cc92) and tab "Verification" (file 0fc38af1-c458, body 7f269564-4fb3); order: main tab a0 ("Tab 1", name untouched), References a1, Verification a2. The server set display.tabsLocation = "left".
+- Main tab: pending block "References (Chicago author-date)" replaced by "## 20. References" + a sentence with a mention chip linking to the References tab.
+- Verification tab: what was checked, counts (959/111/2/0 after Nodl), 21-row corrections table, unverified works, 111 detail-pending items grouped by new section number, institutional-access search strings (Nodl row dropped as resolved; Raynaldus row reworded for 1880).
+- References tab: filled from references_master.md in five parts (A–C, D–H, I–M, N–S, T–Z).

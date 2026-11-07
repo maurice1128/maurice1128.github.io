@@ -1,4 +1,4 @@
-## 10. Guide to primary sources
+## 11. Guide to primary sources
 
 The primary record for both cases shows the same split: devotion grows through channels that sufferers control, while distrust settles on institutions that fail them or that their oppressors run. Neither record measures "trust" directly. Every inference rests on proxies such as bequests, exits, attendance, separate foundations and complaints. This section maps those proxies, the editions in which to read them, and the biases that shape each one.
 
