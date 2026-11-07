@@ -76,3 +76,4 @@ Not changed (correct already): refs to sections 2–9, 15, 15.x, 2.x, 3.x, 4.5; 
 - Main tab: pending block "References (Chicago author-date)" replaced by "## 20. References" + a sentence with a mention chip linking to the References tab.
 - Verification tab: what was checked, counts (959/111/2/0 after Nodl), 21-row corrections table, unverified works, 111 detail-pending items grouped by new section number, institutional-access search strings (Nodl row dropped as resolved; Raynaldus row reworded for 1880).
 - References tab: filled from references_master.md in five parts (A–C, D–H, I–M, N–S, T–Z).
+- References tab progress: A–B, C, D–F written (tab rev 4). Remaining parts: G–H, I–K, L–M, N–R, S, T–Z (32 KB per-write cap; asset upload was declined).
