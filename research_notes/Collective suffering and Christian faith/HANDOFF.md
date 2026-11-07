@@ -13,7 +13,8 @@
   5. 給台灣教會的反思：戒嚴時期、1990 年的道歉、2009–2018 年信任下滑；對爭議議題保持中立
   6. 限制與結論
 - **篇幅：** 約 9,000 字，另加註釋與書目。
-- **期刊：** 實踐神學、公共神學或宣教學期刊，條件是允許 AI 起草、需申報。名單查證中。
+- **期刊：作者選定 Studies in Christian Ethics（Sage）。** 芬蘭 JUFO 2 級、挪威 2 級；Sage 允許 AI 起草，但必須申報。字數上限和引用格式還在查證。備選順序：Journal of Religious Ethics（Wiley，JUFO 3）→ Theology Today 或 Practical Theology。
+- **論文初稿（Claude 文件）：** https://claude.ai/artifact/G4DJj3NGdHu6pyQmpvg3Bj；本機檔案在 `reports/article/article_draft.md`。
 - **申報：** 用版本 (b)，內容必須屬實。
 - 計畫文件最前面已經加上這個決定。
 

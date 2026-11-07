@@ -77,3 +77,10 @@ Not changed (correct already): refs to sections 2–9, 15, 15.x, 2.x, 3.x, 4.5; 
 - Verification tab: what was checked, counts (959/111/2/0 after Nodl), 21-row corrections table, unverified works, 111 detail-pending items grouped by new section number, institutional-access search strings (Nodl row dropped as resolved; Raynaldus row reworded for 1880).
 - References tab: filled from references_master.md in five parts (A–C, D–H, I–M, N–S, T–Z).
 - References tab progress: A–B, C, D–F written (tab rev 4). Remaining parts: G–H, I–K, L–M, N–R, S, T–Z (32 KB per-write cap; asset upload was declined).
+- References tab complete (tab rev 10): all 24 letter groups A–Z written; fixed one typo introduced during transfer (fullwidth digits in Li Huacheng 2020a). Master file changes: Clement VI entry now 'Raynaldus 1880'; nested italics inside four markers flattened. In the tab, '(sec. NN)' notes inside markers were dropped (old file-based numbers); the master keeps them.
+- Contents list (bold "Contents" + 20-item numbered list with in-doc links to each H2) inserted right after the byline (main tab rev 387).
+
+## Step 4: checks (2026-11-07)
+- Main tab exported to markdown (rev 387): 20 level-2 headings, numbered 1–20 once each, in order; Contents list matches them one to one; the only pending block (References) was resolved; no other pending blocks.
+- None of the old keys remain in the main tab (checked: Raynaldus 1872, bare Weber/Dols/CIASE/Stern/Thornton forms, Kim and Kim 2015, Boone n.d., Jones 1973, Chiu Yun-fang 2014, Foreign Policy 2014, Christianity Today 2011, Kitamori 1965, Raboteau 2004, Reis 1993/2003, Runge 1969, Soares 2011, Spijker n.d., Dyson 1998, Watson and Jenkins, Joseph ha-Kohen 1981, (Chen 2003), (Lo 2018), Nodl [verify], Pew 2021 bare, CTC-CCA 1983, Simonsohn 1988 bare). All remaining "section N" references point to the new numbers.
+- References tab exported and compared line by line with the source: 1,074 entries (1,072 works + 2 "See" cross-references), letters A–Z (no X); two transcription slips found and fixed (韓國敎會 in Kim Nam-sik 1990; 阮炜 in Moltmann 1997). Verification tab written in one batch (rev 1), all sections present.

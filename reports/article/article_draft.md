@@ -116,3 +116,122 @@ The last outcome is the rarest. A church admits that it has failed a group of su
 ### 2.7 A minor branch: loss of faith
 
 Some sufferers read their suffering as unredeemable and moved toward humanism or a transformed theism. Black theologians later gave this branch its sharpest form (Jones [1973] 1998; Pinn 1995). Before 1877 it is thinly documented. One bereaved mother in Harriet Jacobs's narrative prays, "God has hid himself from me" (Jacobs 1861, ch. XIII). The sources say little about how common such loss was, and the article does not claim to measure it.
+
+## 3 Explaining the patterns: who holds the remedy?
+
+Theories of deprivation, coping and existential insecurity agree that suffering raises the demand for religion. None of them says where that demand goes. In secure societies the rise is small and short (Höllinger and Muckenhuber 2019; Frijters et al. 2024). This section sets out the conditions that direct the demand, the routes by which lay people came to hold the remedy, the coding that keeps the argument from circularity, and the rival explanations.
+
+### 3.1 Seven conditions
+
+1. **Power position.** Sufferers may be a ruling majority, subjects, a tolerated minority or enslaved. Stratum shapes which theodicy a group finds credible (Weber 1946b; Scott 1990).
+2. **The perpetrator's religion.** Suffering inflicted by outsiders of another faith tends to bind sufferers to their own church, as in Ireland. Suffering inflicted by co-religionists pushes devotion toward alternatives, as under American slavery and in Rwanda.
+3. **The theology of suffering, and who controls the remedy it prescribes.** A punishment frame empowers whoever administers penance. An Exodus frame, in which God hears the cry of the oppressed, needs no mediator. In 1348 the Canterbury chapter read pestilence as temporal punishment sent so that sinners might escape eternal punishment (Wilkins 1737, 2:738). That frame bound people to the clergy, because the church held penance. The flagellants' oath prayed that God would end the mortality and forgive sins (Lemaître 1906, 244): the same theology, performed by lay people.
+4. **Church role, including the capacity to deliver care.** A church may be the sufferers' own community, a failing establishment, or an ally of the perpetrators. Care was delivered and withheld at the same time. The Paris chronicler usually identified as Jean de Venette wrote that timid priests withdrew while the sisters of the Hôtel-Dieu served without fear of death (Géraud 1843, 2:211–12). At Tournai, many curates and chaplains who heard confessions and visited the sick died at their work (Lemaître 1906, 258). In Philadelphia in 1793, Black church leaders organised nursing and burial during the yellow fever. They wrote that they were "sensible that it was our duty to do all the good we could to our suffering fellow mortals" (Jones and Allen 1794, 3). Trust also followed the alignment of individual clergy, not only institutional type. Douglass wrote warmly of the Methodist preacher Cookman, Jacobs of a sympathetic Episcopal rector, and six coded informants speak well of white-led religion (Douglass 1845; Jacobs 1861; Federal Writers' Project 1941).
+5. **An organised alternative.** Exit requires a rival body (Hirschman 1970). Plague changed German church law only once an organised Protestant alternative existed (Dittmar and Meisenzahl 2020).
+6. **Duration and recurrence.** Durable change in Tuscan and Umbrian bequests followed the 1363 recurrence, not 1348 (Cohn 1992). A later hand in Friar John Clyn's Kilkenny annals lists further pestilences in 1362, 1373, 1382 and 1391 (Butler 1849, 37). Under slavery, humiliation was serial: St George's, a contested incorporation, a fight over the pulpit, and only then the AME (Allen [1833] 1880, 14–24). Recurrence turns a shock into a repeated test of institutional performance.
+7. **Transmission through community.** Faith that leaves an institution survives a generation only if a gathered community receives it. In Britain only about half of parental religiosity is transmitted (Voas and Crockett 2005). Enslaved Christians who rejected the slaveholders' church also built their own gathered bodies.
+
+These conditions are not independent. Power shapes which theology prevails, and theology shapes which church people trust. The comparison therefore relies on cases that separate them, above all Brazil, Korea, Rwanda and the PCT.
+
+### 3.2 Three routes of lay control
+
+The plague sources show that the remedy passed into lay hands by three distinct routes. The distinction matters, because only two of them set lay actors against the clergy.
+
+The first route was *delegated and reclaimed*. Ralph of Shrewsbury allowed the dying to confess to lay men and women, but required survivors to confess again to their own priest (Wilkins 1737, 2:745–46). Delegation was reversible and left clerical authority intact.
+
+The second route was *seized and suppressed*. The flagellants took over public penance, preaching and, at Tournai, funerals and the bequests that went with them (Lemaître 1906, 240). Clement VI condemned the movement in a bull dated 20 October 1349. The copy to the archbishop of Magdeburg printed by Raynaldus begins *Molesta nobis*; the name *Inter sollicitudines*, used in some secondary works, is unconfirmed. The bull did not ban penance as such. It expressly allowed private penance at home:
+
+> "Per praedicta tamen nequaquam intendimus prohibere, quin Christi fideles … poenitentiam … in suis hospitiis … possint facere" (Raynaldus 1880, 25:472)
+
+What it banned was organised, self-governing public penance. At Tournai the suppression came from the town governors and the king, and the penitents stopped "cum magno murmure inviti", with great murmuring and unwillingly (Lemaître 1906, 251–52).
+
+The third route was *taken over by the town*. With the see of Tournai vacant, the city governors issued ordinances on burial and bell-ringing. Li Muisis gives their reason:
+
+> "Gubernatores civitatis, videntes quod decanus, et capitulum, et clerus totus, de remedio apponendo non curabant, quia sua intererat et in facto lucrabantur, habito consilio, fecerunt ordinationes" (li Muisis, in Lemaître 1906, 255)
+
+That is, the governors acted because the dean, chapter and clergy did nothing to apply a remedy, since it was in their interest and they were profiting *[verify translation]*. The word *remedium* is the chronicler's own.
+
+Enslaved Christians took the second route, but without suppression succeeding. Nat Turner recalled that "when the white people would not let us be baptised by the church," he and a companion "were baptised by the Spirit" (Turner and Gray 1831). The Liberty County mission conceded in 1846: "All attempts to suppress this class of influential men among their own colour have signally failed" (Association for the Religious Instruction of the Negroes in Liberty County 1846, 13).
+
+### 3.3 Coding church role independently of outcomes
+
+If "own church" were inferred from the fact that people stayed, the model would only restate its outcome. Church role was therefore coded from five indicators, each recorded independently of the outcome (table 2).
+
+**Table 2.** Indicators of church role, with example records
+
+| Indicator | What it shows | Example records |
+|---|---|---|
+| Who ordains or appoints clergy | Whether sufferers can supply their own ministers | Ordination lists (Robinson 2019); AME bishops from 1816 (Allen [1833] 1880); elected brotherhood officers (Russell-Wood 1974) |
+| Who owns property | Whether exit means leaving buildings and endowments behind | Southern Methodist deeds held by white trustees (*Christian Recorder* 1866–69); orders as slaveholders (Schwartz 1982) |
+| Who administers sacraments and rites | Who holds the remedy itself | Lay confession delegated and reclaimed (Wilkins 1737, 2:745–46); flagellant funerals (Lemaître 1906, 240) |
+| Who controls funds | Who pays for, or profits from, the remedy | Clergy's profit from death-bells at Tournai (Lemaître 1906, 255); US relief channelled through Catholic districts in Taiwan (Madsen 2012) |
+| Documented care delivery | Capacity to deliver care | Absent priests (Wilkins 1737, 2:745); African Church nursing in 1793 (Jones and Allen 1794, 3) |
+
+Three rules follow. First, each indicator is coded from records dated before the outcome is measured. Second, coding is per institution and per phase, since roles change: Korea's church of the sufferers later became an establishment. Third, refuting results are named in advance. An own church that delivers care yet loses its members would count against the model. So would devotion moving to lay bodies before any recorded establishment failure, which is the hoop test (Collier 2011; Mahoney 2012).
+
+### 3.4 Rival explanations
+
+Six rivals can explain some of the same outcomes without the model's conditions (table 3).
+
+**Table 3.** Rival explanations and how they fare
+
+| Rival | Claim | How it fares |
+|---|---|---|
+| Deliverance | Formal commitment followed freedom, not suffering (Fountain 2010) | Strongest rival. Five of seven dated conversions fall after 1865, but 26 of 51 narratives report Black-led worship before. Supports a postwar institutional move more than a postwar first conversion |
+| Fading after the danger | Devotion tracks the acute threat | Real for peaks. Li Muisis: "Cessante autem tempestate cessavit etiam peregrinatio et devotio" (Lemaître 1906, 258). But bequest patterns changed durably after 1363 (Cohn 1992) |
+| Provision or relief | Affiliation follows material aid | Weak as a general account. In 1793 the Black church was the provider (Jones and Allen 1794). Madsen (2012) explains Catholic decline in Taiwan by lost dependence on US relief and paternal authority, not by materialism |
+| Political alignment | Trust tracks partisan or national alignment | Real. The AME charged the Southern church with treason for trying to make the Church "the bulwark of oppression" (*Christian Recorder*, 13 Mar. 1869). The 1990s rise of US nones was confined to moderates and liberals (Hout and Fischer 2002) |
+| Demographic composition | Post-crisis piety reflects who died or left | Plausible for Ireland (Miller 1975), though Larkin (2014) dates the change's beginnings before the Famine |
+| Functional displacement | State and medicine absorb the demand | Real from the eighteenth century (Rosenberg 1962; Pew Research Center 2025b). It limits the model's reach in secure modern societies |
+
+Deliverance is the strongest rival, and it overlaps the model. Freedom gave sufferers control of churches, so the decisive test is whether commitment follows control even without deliverance. Brazil's brotherhoods under slavery and the Cyprianic Christians without state power supply that test (Russell-Wood 1974; Stark 1996). Both point toward control.
+
+Political alignment is the main proximate driver of trust loss today. It belongs in the model as a modern form of the church siding with power, not as a replacement for it. Functional displacement appears only from the eighteenth century, so the model applies most fully where no secular competitor holds the remedy.
+
+## 4 A biblical-theological reading
+
+This section changes register. Sections 2 and 3 described and explained what happened. This one is normative: it asks what the biblical texts affirm and warn against when a people suffers and a church fails it. It does not claim that the texts caused the historical outcomes, and its conclusions do not feed back into the coding. Quotations follow the New Revised Standard Version (1989).
+
+### 4.1 Lament: complaint addressed to God
+
+The Bible's first answer to collective suffering is not explanation but address. The sufferer speaks to God. The psalms ask, "How long, O LORD?" (Ps 13:1) and "My God, my God, why have you forsaken me?" (Ps 22:1). Psalm 88 ends without any turn to praise; its last line is "my companions are in darkness" (88:18). Lamentations asks passers-by, "Is it nothing to you?" (Lam 1:12). Job protests through some thirty chapters of dialogue (chs. 3–31), and God says at the end that Job, not his friends, has "spoken of me what is right" (Job 42:7).
+
+Westermann (1981) established lament as one of the two basic forms of psalmic prayer. Brueggemann (1986) gave it a social function. In his reading, lament keeps the covenant two-sided and makes justice a proper question to put before God. A church that loses lament drifts toward a one-sided worship that serves established power. O'Connor (2002) notes that God never speaks in Lamentations, which leaves room for the survivors' voices.
+
+For the argument of this article, lament matters because it holds faith and protest together. The Bible authorises complaint *to* God *within* the assembly. That helps explain why faith can rise while trust falls in an institution that silences complaint.
+
+### 4.2 Retribution and its critique
+
+Scripture contains a retributive reading of collective disaster. Deuteronomy 28 sets blessings and curses before the people, and the history that follows explains the fall of Samaria and Jerusalem as the outcome of covenant breach (2 Kgs 17; 24–25). Amos can ask, "Does disaster befall a city, unless the LORD has done it?" (Amos 3:6).
+
+The critique of retribution is equally canonical. Job's friends defend it and are rebuked (Job 42:7). Ecclesiastes observes that the same fate meets the righteous and the wicked (Eccl 9:2). Jesus twice rejects the inference from suffering to sin. Of the man born blind he says, "Neither this man nor his parents sinned" (John 9:3). Of the Galileans killed by Pilate and the eighteen crushed at Siloam, he asks whether they were worse sinners, and answers no (Luke 13:1–5). The same passage still calls the hearers to repent. The critique limits retribution without abolishing moral accountability. Crenshaw (2005) classes punishment for sin as one canonical answer among several, none fully adequate.
+
+This bears directly on the question of the remedy. After 1348, the punishment frame bound the faithful to those who administered penance (section 3). Read canonically, that frame is one voice among several. Its critique frees sufferers from the presumption of guilt, and with it from dependence on a single mediator.
+
+### 4.3 God with the sufferer
+
+A third strand places God beside the sufferer. In Exodus 3:7 God says, "I have observed the misery of my people ... I have heard their cry ... Indeed, I know their sufferings." The Hebrew uses three verbs: see, hear and know. Exodus 3:8 adds, "I have come down to deliver them": knowledge leads to intervention. Fretheim (1984) reads such texts as showing God suffering because of, with and for Israel. The servant of Isaiah 53 is "a man of suffering" (53:3). In the New Testament, Christ can "sympathize with our weaknesses" (Heb 4:15), and the king identifies with "the least of these" (Matt 25:31–46).
+
+This strand is the theological root of the Exodus frame described in section 3. It ties God's credibility to presence with the afflicted, not to any institution's performance. It needs no mediator. That is why enslaved Christians could pray for deliverance in secret while rejecting the slaveholders' church.
+
+### 4.4 Prophetic critique of institutions
+
+The prophets judge religious leaders above all by how they treat the weak. Ezekiel 34 indicts the shepherds of Israel who feed themselves. Its charge sheet is specific: "You have not strengthened the weak, you have not healed the sick, you have not bound up the injured, you have not brought back the strayed, you have not sought the lost" (Ezek 34:4). God's answer is to remove them: "I myself will be the shepherd of my sheep" (34:15). Mein (2007) adds a caution. Read against ancient husbandry, the shepherds are hired hands who misused the owner's property, so the chapter may stress divine ownership more than compassion. Either way, leaders answer to God for the flock.
+
+Jeremiah's temple sermon attacks confidence in the institution itself: "Do not trust in these deceptive words: 'This is the temple of the LORD'" (Jer 7:4). Without justice for the alien, the orphan and the widow, the house becomes "a den of robbers" (7:11). At Bethel the priest Amaziah orders Amos away, because Bethel "is the king's sanctuary, and it is a temple of the kingdom" (Amos 7:13). Wazana (2020) argues that the dispute concerns belonging and exclusion, who may speak there, more than prophetic authority. Jesus stands in this line. He joins Isaiah 56:7 to Jeremiah 7:11 in the temple (Mark 11:15–17). In his parable, the priest and the Levite pass "by on the other side," while the Samaritan outsider is "moved with pity" and acts (Luke 10:31–33).
+
+These texts give a biblical name to the failing establishment and to the church allied with power. They also judge the institution by a concrete test of care. Interpretive caution is needed. Amos and Jeremiah confront state cults in ancient monarchies, not voluntary churches. The texts warrant a question, whether a church has become a "king's sanctuary," not a verdict on any particular church.
+
+### 4.5 Acts 6 and institutional self-correction
+
+Acts 6:1–7 shows a church admitting failure. The Hellenists complained "because their widows were being neglected in the daily distribution" (Acts 6:1). The apostles did not deny it. The community chose seven men, all with Greek names, to oversee the distribution. The names suggest, though they do not prove, that the aggrieved group received a share of control. Luke then reports that "the number of the disciples increased greatly" (6:7). Faith did not need to leave, because the church restructured and placed the neglected in charge of the failing ministry.
+
+The Hebrew Bible supplies a liturgy for such correction in corporate confession. Leviticus 26:40 envisions exiles who "confess their iniquity and the iniquity of their ancestors." Daniel prays, "we have sinned and done wrong" (Dan 9:5). Modern churches have adopted the form. In October 1945 German Protestant leaders declared at Stuttgart that "through us endless sufferings" had been brought to many peoples (Conway 1987). The International Theological Commission notes that biblical confessions of ancestral sin are addressed to God (ITC 2000, §2.1). Modern apologies, such as the Presbyterian Church in Taiwan's in 1990, are addressed to human victims as well as to God, which goes beyond the usual biblical pattern.
+
+### 4.6 Counterweights
+
+Several texts resist a simply anti-institutional reading. Ezekiel 18 rejects the proverb of inherited guilt: "it is only the person who sins that shall die" (18:4). Each generation answers for itself, and sufferers are not exempt from repentance (Joyce 1989). In Psalm 73 the psalmist's crisis resolves when he goes "into the sanctuary of God" (73:17). Worship can therefore be the place where faith recovers, not only where it is betrayed.
+
+Scripture also commands order. Hebrews 13:17 says, "Obey your leaders and submit to them," while adding that leaders "will give an account." Acts 5:29 sets the limit: "We must obey God rather than any human authority." Hebrews 12:5–11 calls hardship divine discipline, but it addresses persecution endured for the faith. Using it to silence those harmed by church leaders misreads it.
+
+Read as a whole, the canon does not say that sufferers are good and institutions bad. It asks for accountable authority, for repentance from everyone, and for faith that sometimes waits without answers. It supports the article's central distinction: trust in God can deepen while a particular religious institution stands judged for failing the sufferers. It also insists that the remedy for a failing church is repentance and reform, not only exit.
