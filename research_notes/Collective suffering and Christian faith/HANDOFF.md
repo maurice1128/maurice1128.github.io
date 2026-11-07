@@ -9,7 +9,7 @@
 
 1. 先 `git pull`，分支是 `claude/collective-suffering-faith-comparison-w15eft`。
 2. 讀這份交接文件，再看 §4「進行中、尚未完成」。
-3. 雲端工作階段結束時，有三項工作還在跑，所以本地的檔案可能不完整，要逐項核對：
+3. 雲端工作階段已經直接收尾，背景工作都已停止，以下三項沒有完成，請接著做：
    - **論文初稿**：`reports/article/article_draft.md`。最後確認時寫到第 4 節，約 6,500 字。
    - **期刊研究**：`single_article_venues.md`。Studies in Christian Ethics 的投稿規範可能還沒查完。
    - **文獻探討最後一批修正**：`reports/audit/final_assembly_log.md` 的最後一段。
