@@ -130,9 +130,9 @@ Odds ratio 4.06 (2.17–7.59); χ² = 20.4, df 1, p = 6×10⁻⁶; Fisher exact 
 
 The direction matches the critique made by Blassingame (1975) and Escott (1979): informants were more critical of white religion when speaking to Black interviewers. Black interviewers are concentrated in Arkansas (26 of 47) and Florida (11), so the comparison is confounded with state. The documented-white group is only 11 narratives.
 
-### 3.6 Reliability (step 5)
+### 3.6 Intra-coder stability (step 5)
 
-Forty narratives (seed 20261113) were recoded after all 400 first codes were complete. The coder worked from freshly generated, shuffled extracts and did not see the first codes.
+Forty narratives (seed 20261113) were recoded by the same coder after all 400 first codes were complete. The coder worked from freshly generated, shuffled extracts and did not see the first codes. This measures intra-coder stability, not inter-rater reliability; the independent second coding is reported in "Independent second-coder reliability" at the end of this file.
 
 | variable | agreement | Cohen's κ |
 |---|---|---|
@@ -146,7 +146,7 @@ Forty narratives (seed 20261113) were recoded after all 400 first codes were com
 
 The disagreements concern mild positive tone (Mahala Jewel, Frank Menefee), whether "when we had a black preacher that was Heaven" counts as devotion (Anthony Dawson), and an incidental church attendance (Julia Grace). They are listed in the analysis output.
 
-**Caveat: these are not independent inter-rater statistics.** The same coder (the model) produced both passes within one working session, with only a short pause after the first pass, and may have remembered first-pass judgements. The κ values are therefore an upper bound on reliability. An independent second coder, human or a separate model session given only `codebook.md`, should recode the 40 IDs in `double_code.csv` before these figures are cited as inter-rater reliability.
+**Caveat: these are not independent inter-rater statistics.** The same coder (the model) produced both passes within one working session, with only a short pause after the first pass, and may have remembered first-pass judgements. The κ values are therefore an upper bound on reliability and should be cited only as intra-coder stability. A separate model session given only `codebook.md` has since recoded the same 40 IDs blind; cite those figures (last section of this file, and `reliability_independent.md`) for inter-rater reliability.
 
 ## 4. Limits (what the data can and cannot show)
 
@@ -167,7 +167,7 @@ The disagreements concern mild positive tone (Mahala Jewel, Frank Menefee), whet
 6. **Segmentation and extracts.**
    - About 1.6% of TOC entries could not be segmented separately.
    - The coder read keyword-selected extracts, not complete narratives. A religion statement without any listed keyword (e.g. "the Lord") could be missed. Extracts were capped at about 3,200 characters, and 19 longer narratives were truncated.
-7. **Single coder; reliability not independent** (§3.6).
+7. **Single first coder.** The same-session recode (§3.6) is intra-coder stability only. The independent second coding covers 40 narratives, was done by a separate session of the same model and not by a human rater, and could not assess `prayed_for_freedom` (last section).
 
 ## 5. Bearing on the article's claims
 
@@ -183,7 +183,9 @@ The disagreements concern mild positive tone (Mahala Jewel, Frank Menefee), whet
 
 - `codebook.md`: categories, decision rules and examples (written before coding).
 - `data.csv`: 400 rows, one per sampled narrative. It holds the informant, state, volume, Gutenberg eBook number, segment line range, interviewer and documented race with source, age, hearsay flag, all codes, notes, and a verbatim snippet with a `pg<eBook>.txt line N; vol., "informant"` locator for every substantive code.
-- `double_code.csv`: the blind recodes of the 40 reliability narratives.
+- `double_code.csv`: the first coder's own same-session recodes of the 40 reliability narratives (intra-coder stability).
+- `second_coder.csv`: the independent blind second coding of the same 40 narratives, with snippets, locators and notes.
+- `reliability_independent.md`: the independent reliability table, every disagreement with both codes and snippets, and their classification.
 - `corpus_screen.csv`: all 2,143 segmented narratives, with locator, keyword hits, religion flag and sampled flag.
 - `analysis.py`: re-runnable; prints every table above.
 - `pipeline/`: the segmentation, screening and sampling, extract-generation and merge/verification scripts, plus the list of Gutenberg eBook numbers. The raw downloads are not redistributed; they are re-downloadable from the URLs above.
@@ -197,3 +199,24 @@ Escott, Paul D. 1979. *Slavery Remembered: A Record of Twentieth-Century Slave N
 Federal Writers' Project. 1941. *Slave Narratives: A Folk History of Slavery in the United States from Interviews with Former Slaves*. 17 vols. Washington, DC: Library of Congress. Project Gutenberg eBooks as listed in §1.
 
 Fountain, Daniel L. 2010. *Slavery, Civil War, and Salvation: African American Slaves and Christianity, 1830–1870*. Baton Rouge: Louisiana State University Press.
+
+## Independent second-coder reliability
+
+Added 2026-11-11. A separate model session recoded the 40 narratives in `double_code.csv` blind: it was given only `codebook.md` and the identifiers and source locators, re-downloaded the Gutenberg texts, read each narrative in full (not the keyword extracts), and saved `second_coder.csv` before opening any first-coder code, `results.md` or `analysis.py`. The table compares the first codes in `data.csv` with that second coding; `analysis.py` section 10 re-prints it, and `reliability_independent.md` lists every disagreement with both codes, snippets and a classification.
+
+| variable | agreement (n = 40) | Cohen's κ | non-`ns` cases, first / second coder |
+|---|---|---|---|
+| wc_white, wc_blackled, wc_secret, wc_forbidden | 40/40 = 100% each | 1.00 each | 20/20, 3/3, 6/6, 1/1 |
+| worship_control; black_control_pre1865 (derived) | 40/40 = 100% | 1.00 | 24 / 24 |
+| obedience_preaching | 40/40 = 100% | 1.00 | 5 / 5 |
+| attitude_white_preachers | 35/40 = 87.5% | 0.82 (0.63 among the 21 where both state an attitude) | 21 / 21 |
+| conversion_timing | 39/40 = 97.5% | 0.79 | 2 / 3 |
+| faith_commitment_before_freedom | 37/40 = 92.5% | 0.83 | 11 / 14 |
+| faith_subject | 37/40 = 92.5% | 0.85 | 11 / 14 |
+| postwar_church_any | 33/40 = 82.5% | 0.64 | 12 / 19 |
+| postwar_black_church | 39/40 = 97.5% | 0.79 | 2 / 3 |
+| prayed_for_freedom | 40/40 = 100% | NA (all 40 `ns` for both coders) | 0 / 0 |
+| interviewer_race (context) | 38/40 = 95% | 0.85 | 7 / 9 |
+| hearsay_only (context) | 37/40 = 92.5% | 0.63 | 3 / 6 |
+
+The worship-control flags and obedience preaching were reproduced exactly, but agreement is lower for attitude to white preachers (the neutral–positive boundary), faith before freedom and above all postwar church attendance, and in all 20 disagreements on hypothesis variables the first coder has `ns` or `neutral` where the second coder has a substantive code (5 from text outside the keyword extract, 8 from codebook ambiguity, 7 from judgement), so the first-pass counts for those three variables are conservative lower bounds. These figures come from 40 narratives coded by a second session of the same model and not by a human rater, they leave `prayed_for_freedom` untested, and they supersede the same-session recode in §3.6, which is intra-coder stability only.

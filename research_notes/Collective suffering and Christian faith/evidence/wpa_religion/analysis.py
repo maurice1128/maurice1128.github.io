@@ -1,7 +1,9 @@
 """Re-runnable analysis for the WPA religion coding (project wpa_religion).
 
-Reads data.csv (400 coded narratives), double_code.csv (40 blind recodes) and
-corpus_screen.csv (all 2,143 segmented narratives, keyword screen). Prints the
+Reads data.csv (400 coded narratives), double_code.csv (the first coder's own
+same-session recodes of 40 narratives: intra-coder stability), corpus_screen.csv
+(all 2,143 segmented narratives, keyword screen) and, if present,
+second_coder.csv (independent blind second coding of the same 40). Prints the
 tables reported in results.md. Standard library only.
 
     python3 analysis.py

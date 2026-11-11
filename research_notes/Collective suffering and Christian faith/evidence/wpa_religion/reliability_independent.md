@@ -72,7 +72,7 @@ Context variables:
 
 | # | narrative | variable | first coder | second coder | class |
 |---|---|---|---|---|---|
-| 16 | J.M. Parker (AR-II-5-076) | interviewer_race | unknown ("not recorded") | Black: "Interviewer: Samuel S. Taylor" stands at l. 6903, five lines above the segment start at l. 6908 | outside segment |
+| 16 | J.M. Parker (AR-II-5-076) | interviewer_race | unknown ("not recorded") | Black: "Interviewer: Samuel S. Taylor" stands at l. 6904, four lines above the segment start at l. 6908 | outside segment |
 | 17 | Alice Green (GA-IV-2-005) | interviewer_race | unknown (Corry Fowler) | white: the entry holds two interviews; the second (l. 1084 onward) is "Written by: Sadie B. Hornsby" | outside extract, and no codebook rule for two interviewers |
 | 18 | Alice Green | hearsay_only | n | y: age 76 is given only in the second interview's header, and she "warn't no bigger dan dis here little Sallie Mae" (a child of two or three) when the war ended | outside extract |
 | 19 | John F. Van Hook | hearsay_only | n | y: born 1862; "What I know about the things that took place during the war was told me by my mother and other old people." (l. 1979–1980) | outside extract, and codebook ambiguity |
