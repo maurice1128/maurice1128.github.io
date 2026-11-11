@@ -104,6 +104,51 @@ def find_start(lines, cur, sur, first, limit):
             return j
     return None
 
+HEADER_LINE = re.compile(r'^(Interviewer|Interviewed by|Written by|Name of [Ii]nterviewer|By:|Field ?[Ww]orker|Reported by|'
+                         r'Research Worker|\[HW|\[Date|District|Federal Writers|[A-Z][A-Z \-\',\.]{3,60}$)')
+HEADER_MAX_LINES = 12   # non-blank lines a header block may hold
+HEADER_MAX_WIDTH = 78   # a longer line is running prose, not a header line
+
+def header_start(lines, s, floor):
+    """Index of the first line of the header block above heading line s.
+
+    Narratives are separated by a run of three or more blank lines (usually four). The worker's
+    credit stands between that run and the informant's name: "Interviewer: ...", "Worker: ...",
+    "NAME OF WORKER--...", "Prepared by ...", "X, Field Worker", "Miriam Logan, Reporter",
+    "[HW: Dist. 5 / Ex-Slave #63] ... Driskell". So the segment starts at the first non-blank line
+    after the run. The block is taken only if it is short (HEADER_MAX_LINES) and every line is
+    narrow (HEADER_MAX_WIDTH); otherwise the heading sits inside running text and the older rule
+    applies, which backs over contiguous lines of a known header shape within eight lines.
+
+    Until 2026-11-11 only the older rule was used. It stopped at lines such as "No. Words: 1,426"
+    or "Lebanon, Ohio", so the credit stayed in the tail of the previous segment.
+    """
+    first, blanks, n = s, 0, 0
+    j = s - 1
+    while j > floor:
+        t = lines[j].strip()
+        if not t:
+            blanks += 1
+        else:
+            if blanks >= 3: return first          # reached the text of the previous narrative
+            if len(t) > HEADER_MAX_WIDTH: break   # prose: not a header block
+            n += 1
+            if n > HEADER_MAX_LINES: break
+            blanks = 0; first = j
+        j -= 1
+    else:
+        return first                              # reached the end of the INFORMANTS list: first narrative
+    s0 = s
+    for b in range(1, 9):
+        if s - b <= floor: break
+        pl = lines[s - b].strip()
+        if not pl: continue
+        if HEADER_LINE.match(pl) and not pl.startswith('"'):
+            s0 = s - b
+        else:
+            break
+    return s0
+
 WINDOW = 2500
 
 def main(raw, out):
@@ -178,16 +223,8 @@ def main(raw, out):
         for n, (k, s) in enumerate(idx):
             e = ents[k]
             end = idx[n + 1][1] if n + 1 < len(idx) else vol_end
-            # back up over header lines just above the heading
-            s0 = s
-            for b in range(1, 9):
-                if s - b <= tend: break
-                pl = lines[s - b].strip()
-                if not pl: continue
-                if re.match(r'^(Interviewer|Interviewed by|Written by|Name of [Ii]nterviewer|By:|Field ?[Ww]orker|Reported by|Research Worker|\[HW|\[Date|District|Federal Writers|[A-Z][A-Z \-\',\.]{3,60}$)', pl) and not pl.startswith('"'):
-                    s0 = s - b
-                else:
-                    break
+            # start the segment at its header block, not at the heading line
+            s0 = header_start(lines, s, tend)
             if n > 0 and s0 <= idx[n - 1][1]: s0 = s
             text = '\n'.join(lines[s0:end])
             recs.append({'nid': f'{state}-{vol}-{k+1:03d}', 'pg_id': pid, 'state': state, 'volume': vol,

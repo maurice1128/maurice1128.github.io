@@ -1,6 +1,13 @@
 """Merge coding batches into data.csv: derive categories, verify verbatim snippets against the
 Gutenberg text, attach locators (eBook no., volume, informant, line numbers), and code interviewer race
-by documented rules. Usage: python3 -I merge.py WORK_DIR OUT_CSV [codes_subdir] """
+by documented rules. Usage: python3 -I merge.py WORK_DIR OUT_CSV [codes_subdir]
+
+NOTE (2026-11-11): the interviewer, interviewer_race and interviewer_race_source columns of the
+published data.csv were corrected by hand after this script ran (codebook.md section 8,
+interviewer_race_corrections.md, interviewer_name_corrections.csv). This script reads the coder's
+"iv" field and scans the first 45 and last 20 lines of a segment, so it does not apply the rules for
+two interviewers, appended interviews or surname-only credits. Re-running it would undo those
+corrections; re-apply interviewer_name_corrections.csv afterwards. """
 import re, sys, os, json, csv, glob
 
 BLACK_NAMES = {  # documented Black interviewers / Negro-unit members (see codebook §8)

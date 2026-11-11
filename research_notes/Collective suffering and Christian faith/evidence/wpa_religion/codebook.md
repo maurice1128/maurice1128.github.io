@@ -75,6 +75,18 @@ The informant's own conversion, "getting religion", baptism as a believer, or jo
 - **white:** an in-text marker "[HW: (White)]" (Georgia: Sadie B. Hornsby, Grace McCune). The marker applies to every narrative by that interviewer.
 - **unknown:** otherwise. Most white interviewers are not documented as white, so "unknown" mostly means probably white but undocumented, and is reported as such.
 
+**Rules added 2026-11-11, after coding.** The codebook as written before coding did not cover these cases. They were decided when the interviewer columns were corrected (`interviewer_race_corrections.md`), and `data.csv` follows them.
+
+- **Two or more interviews of one informant by different interviewers.** The unit is the entry, so it gets one value.
+  - `interviewer` lists every credited interviewer in text order, separated by "; ".
+  - `interviewer_race` is Black if any of them is documented Black. Otherwise it is white if any of them is documented white. Otherwise it is unknown.
+  - `interviewer_race_source` names the interviewer who carries the documentation and gives the line of each credit.
+  - Reasons. The variable exists to set apart testimony given to a Black interviewer (`results.md` §3.4 C and §3.5), so an entry partly taken down by a documented Black interviewer cannot stand among the narratives given to white or unknown interviewers only. "Unknown" means undocumented and probably white, so a documented white interviewer beside an undocumented one is the same case with documentation.
+  - The rule decides six entries in the sample: Henry Brown, SC (Jessie A. Butler; Augustus Ladson) is Black; Alice Green, GA (Corry Fowler; Sadie B. Hornsby) is white; Sarah Douglas, AR (Pernella M. Anderson; Carol Graham) and Isaiah Green, GA (Minnie B. Ross; Edwin Driskell) stay Black; Tom Windham and Rachel Harris, AR, stay unknown. No sampled entry has both a documented Black and a documented white interviewer; if one did, the first clause would make it Black.
+- **Where the credit stands.** The header is the block of short lines between the run of blank lines that ends the previous narrative and the informant's own text. It often lies above the informant's name ("Worker:", "Reporter:", "Prepared by", "Field Worker", or a bare name). The footer is the "Source: … / Interviewer: …" block that closes the informant's text. A block that follows the narrative after a run of three or more blank lines is the header of the next narrative and is not used. An editor ("Edited by", "Editor:"), rewriter or typist is not the interviewer.
+- **Segments that also hold another informant's interview.** `interviewer` and `interviewer_race` follow the worker credited on the TOC-named informant's own interview. A credit that heads another informant's interview inside the segment is not used.
+- **Surname-only credits in the Georgia Atlanta district.** "Driskell", "E. Driskell" or "E.F. Driskell" in a District 5 header is read as Edwin Driskell of the Georgia Negro unit. The same position carries "By E. Driskell" (pg13602.txt l. 8647) and "Edwin Driskell" (pg22166.txt l. 1563); "Whitley" beside it is the typist ("Typed by A.M. Whitley").
+
 ### 9. Context fields (not hypothesis variables)
 - `age_1937`: the informant's stated age at the interview, or computed from a stated birth year (1937 assumed if the interview is undated); best effort, may be blank.
 - `hearsay_only`: y if every religion statement coded is explicitly second-hand ("I heard them say") or the informant was born after about 1860 and reports nothing first-hand.
