@@ -5,6 +5,64 @@
 
 ---
 
+## ◆ 雲端工作階段已結束（2026-11-11）。作者已轉到本地，從這裡接手
+雲端的修訂稿和人工驗證工具包做到一半就停了，所以目前的狀態是：
+
+**已完成、可以直接用**
+- SSH 稿第一版：`reports/article/ssh/`
+  - manuscript_ssh.md、tables_ssh.md、supplement_ssh.md、title_page_ssh.md、bio_note_ssh.md、cover_letter_ssh.md
+  - author_notes_ssh.md：列出 38 部沒有人讀過全文的著作、引文核對表。
+- 兩份審查報告：
+  - `reports/article/ssh/audit_ssh.md`：獨立查核，最後有依優先順序排列的修正清單。
+  - `reports/article/ssh/mock_review_ssh.md`：模擬審稿，最後有 Revision plan，分成 (a) 現在能做、(b) 需要讀文獻、(c) 需要人做。
+- 三份資料集和分析：`evidence/{husting_wills,gild_foundations,wpa_religion}/`
+- 轉檔與字數工具：`reports/article/ssh/build/`
+  - build_docx.py：輸出到 `../submission/`
+  - wordcount.py
+
+**做到一半，要注意**
+- **倫敦遺囑的資料檔處於中間狀態：**
+  - `data.csv` 已經套用 17 筆更正，明細在 `corrections.csv`。主要是埋葬地點的判定規則修正。
+  - `analysis.py` 和 `results.md` 還沒重跑。**論文、表格、results.md 裡的數字，對應的是更正前的 `data_v1_as_analysed.csv`。**
+  - 下一步：重跑 analysis.py，把 results.md、tables_ssh.md、manuscript_ssh.md 的數字全部更新。同時把 1349 年單獨分期：1320–48／1349／1350–60／1361–75／1376–1400。
+- **人工驗證工具包還沒產出：** `reports/article/ssh/human_validation/` 不存在。規格如下：
+  - WPA：從已編碼的訪談抽 60 份，再從被關鍵字篩掉的訪談抽 20 份。
+  - 遺囑：100 份。
+  - 兄弟會：60 個。
+  - 各附一個「最低版本」的子樣本。
+  - Excel 編碼表不能含模型的編碼。
+  - 附中文編碼說明。
+  - score_validation.py：計算人與模型的 kappa、precision、recall。
+- **修訂稿還沒動到論文本身。** 要做的修訂如下，照 audit_ssh.md 和 mock_review_ssh.md 的 (a) 部分：
+  1. 重做遺囑分析，把 1349 年單獨分出來。
+  2. 類型學改成「條件」和「反應」用不同的資料判定，補上各團體 × 各時期的矩陣，並改稱「提出的類型學」。
+  3. G1–G3 改寫成命題 P1–P3；G4、G5 降為留待研究的問題。1794 年那句「old proverb」講的是黑人護士被忽視，不能當作「虔誠消退」的證據。
+  4. 拿掉影子案例表的 Panel B、台灣那一段和註腳 5。
+  5. 案例設計：
+     - 說明為什麼把瘟疫和奴隸制放在一起比較。
+     - 歐陸文本只當背景。
+     - 美國案例要分開主人、州法、宗派三個層次。
+     - Edenton 拆毀教堂的是奴隸主。
+  6. WPA：
+     - 加做排除德州的穩健性檢查。
+     - 交代訂定類別時用過的 51 份前導樣本。
+     - 修正兩處行號：Mathews 是 2120–21，Davis 是 7131–33。
+  7. 統計：
+     - 寫明分母。
+     - 完整母體不做檢定。
+     - 兄弟會依地點群聚。
+     - 標明未做多重比較校正。
+  8. 方法揭露：
+     - 編碼由語言模型完成。
+     - 翻譯有 AI 協助。
+     - 拿掉不屬實的「I read」。
+     - 留下 [[HUMAN VALIDATION: …]] 佔位。
+
+**只有作者能做的三件事，沒做不能投稿**
+1. 人工驗證編碼，最好再找第二個人一起做。
+2. 填 AI 申報的工具名稱、版本、日期。
+3. 取得並閱讀專門史學著作。在本地用 Chrome 加學校帳號，可以交給本地 Claude 讀，但論文裡不能宣稱作者讀過。
+
 ## ★★★ 現況（2026-11-11 深夜）：SSH 稿第一版經模擬審稿判定「目前不能投」，修訂中
 - **模擬審稿**（`reports/article/ssh/mock_review_ssh.md`）：三位審稿人的意見分別是大修、拒絕、大修，編輯的決定是「以目前形式拒絕，歡迎重投」。
 - **獨立查核**（`reports/article/ssh/audit_ssh.md`）：
