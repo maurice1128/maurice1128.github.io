@@ -35,7 +35,7 @@ Prepared 2026-11-11. Compares the first coder's codes in `data.csv` with a blind
 | postwar_church_any | 33/40 = 82.5% | 0.64 | 12 / 19 | 0.69 |
 | postwar_black_church | 39/40 = 97.5% | 0.79 | 2 / 3 | 0.79 |
 | prayed_for_freedom | 40/40 = 100% | NA (all `ns` in both) | 0 / 0 | NA |
-| *context:* interviewer_race | 38/40 = 95% | 0.85 | 7 / 9 documented | – |
+| *context:* interviewer_race | 38/40 = 95% (39/40 after the Parker correction, see below) | 0.85 (0.93 after) | 7 / 9 documented (8 / 9 after) | – |
 | *context:* hearsay_only | 37/40 = 92.5% | 0.63 | 3 / 6 y | – |
 
 Across the 14 hypothesis variables, 540 of 560 cells agree (96.4%), and 29 of the 40 narratives agree on every one of them.
@@ -115,12 +115,14 @@ These were fixed before unblinding and happen to match the first coder in most c
 4. **Postwar church, any (106 of 400, 26.5%).** This should be reworded as "at least 106". It excludes undated joining statements and incidental attendance, which an independent coder counted in 7 further narratives of the 40 (19 against 12). The share of identifiable postwar churches that are Black-run (41 of 46) is not affected; the one disagreement there comes from truncated text.
 5. **Conversion timing (25 of 28 after 1865).** Not affected. The only disagreement is the Uncle Jake sketch.
 6. **Prayer for freedom (13 of 400).** Reliability is still unknown, because no subsample narrative was coded y or n by either coder. This should be stated wherever the figure is used.
-7. **Interviewer race (§3.5).** See the side finding below; the Black-interviewer count is understated.
+7. **Interviewer race (§3.5).** The Black-interviewer count was understated. It has since been corrected in `data.csv` (47 → 53) and §3.5 of `results.md` was re-run; see the side finding below and `interviewer_race_corrections.md`.
 
 ## Side findings outside the reliability comparison
 
-- **Interviewer credit lines cut off by segmentation.** J.M. Parker's interviewer line sits just above his segment start, so the first coder recorded "not recorded". A check of all 179 "not recorded" rows in `data.csv` found four more with a documented Black interviewer in the eight lines above the segment start and `interviewer_race` = unknown: Mary Watson, William Brown and Cora Armstrong (all AR, Samuel S. Taylor) and Claude Augusta Wilson (FL, "Negro Writers' Unit", James Johnson). With Parker that is five rows, which would raise the Black-interviewer group from 47 to 52. Re-running the two attitude comparisons of §3.5 with those five moved gives 6/52 against 16/348 (Fisher p = 0.05, was 0.03) and, among those stating an attitude, 6/20 against 16/154 (p = 0.02, unchanged). `data.csv` was not changed here.
-- **The same check shows many "not recorded" rows do have a named worker** above the segment start (North Carolina "Worker:" lines, Ohio "Reporter:" lines, South Carolina "Prepared by" lines). Their race is undocumented, so `interviewer_race` is unaffected, but the `interviewer` column is incomplete.
+- **Interviewer credit lines missed by the first pass (corrected later the same day).** J.M. Parker's interviewer line sits just above his segment start, so the first coder recorded "not recorded". A full check of all 400 segments and the ten lines above each found six rows coded unknown that carry a documented Black interviewer's credit: J.M. Parker, Mary Watson and William Brown (AR, Samuel S. Taylor), Cora Armstrong (AR, Pernella Anderson), Claude Augusta Wilson (FL, "Negro Writers' Unit") and Milton Hammond (GA, Minnie B. Ross). `data.csv` has been corrected for these six, raising the Black-interviewer group from 47 to 53. The evidence lines and the before-and-after output are in `interviewer_race_corrections.md`.
+  - *Correction to the first version of this note.* It reported five rows, credited Cora Armstrong to Samuel S. Taylor, and estimated that the main §3.5 p-value would weaken to about 0.05. All three points were wrong. The Taylor line above Cora Armstrong's segment belongs to the preceding informant, and her own piece is credited to Pernella Anderson. Milton Hammond was missed because his credit is a bare name. With all six rows corrected the §3.5 contrasts strengthen instead: negative attitude 7/53 against 15/347, Fisher p = 0.0168 (was 0.0328); among those stating an attitude 7/21 against 15/153, p = 0.00721 (was 0.0185).
+  - Because of the Parker correction, `analysis.py` section 10 now prints 39/40 (κ 0.93) for `interviewer_race`; the blind comparison was 38/40 (κ 0.85).
+- **About 30 rows still marked "not recorded" do have a named worker** above the segment start (North Carolina "Worker:" lines, Ohio "Reporter:" lines, South Carolina "Prepared by" lines). Their race is undocumented, so `interviewer_race` is unaffected, but the `interviewer` column is incomplete.
 
 ## Files
 

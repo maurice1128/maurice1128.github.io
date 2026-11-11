@@ -86,7 +86,7 @@ Typical secret description: "Sometimes at night us gather 'round the fireplace a
 - **Prayer for freedom: 13 (3.2%, CI 1.9–5.5); 1 explicit denial.** The reliability of this code is untested: neither coder coded any of the 40 double-coded narratives y or n, so κ is undefined. Nine of the 13 come from secret or mixed-worship narratives. Example: "she was praying to herself: 'Oh, Lord, please send the Yankees on and let them set us free'" (Minnie Davis, vol. IV-1, pg13602.txt l. 7102).
 - **Conversion timing:** dated in **only 28 of 400 (7.0%)**. Of these, after 1865: **25 (89.3%, CI 72.8–96.3)**; before 1865: 3. One pre-1865 case is W.E. Northcross's 1897 autobiography: "I confessed a hope in Christ at the age of thirteen years" (born 1840; vol. I, pg36020.txt l. 9772).
 - **Postwar church:**
-  - some postwar membership, attendance or office is mentioned in at least 106 narratives (26.5%, CI 22.4–31.0). The first coder did not count undated statements of having joined a church or incidental attendance; the independent second coder counted them and found 19 against 12 in the 40-narrative subsample (κ = 0.64), so the true figure is higher;
+  - some postwar membership, attendance or office is mentioned in at least 106 narratives (26.5%, CI 22.4–31.0). The first coder did not count undated statements of having joined a church or incidental attendance; the independent second coder counted them and found 19 against 12 in the 40-narrative subsample (κ = 0.64), so the count would be higher under that broader rule;
   - the church is identifiable as Black-run in 41 (10.2% of 400; 41 of the 46 where control could be judged, 89.1%), via AME, AME Zion, CME, "colored" church, the informant as pastor or deacon, or a withdrawal;
   - 5 are explicitly not in a church or are in a white-run one.
   - Example: "Thomas was at one time a member of Shiloh, but is now a member of the Mt. Sinai colored church" (vol. XIV-3, pg36022.txt l. 848).
@@ -232,3 +232,26 @@ Added 2026-11-11. A separate model session recoded the 40 narratives in `double_
 | hearsay_only (context) | 37/40 = 92.5% | 0.63 | 3 / 6 |
 
 The worship-control flags and obedience preaching were reproduced exactly, but agreement is lower for attitude to white preachers (the neutral–positive boundary), faith before freedom and above all postwar church attendance, and in all 20 disagreements on hypothesis variables the first coder has `ns` or `neutral` where the second coder has a substantive code (5 from text outside the keyword extract, 8 from codebook ambiguity, 7 from judgement), so the first-pass counts for those three variables are conservative lower bounds. These figures come from 40 narratives coded by a second session of the same model and not by a human rater, they leave `prayed_for_freedom` untested, and they supersede the same-session recode in §3.6, which is intra-coder stability only.
+
+## Change log
+
+All entries are dated 2026-11-11. Numbers not listed here are unchanged from the first version, including the worship-control table (§3.1), obedience preaching (25/37), the key test (§3.4 A and B, OR 4.06) and conversion timing (25 of 28).
+
+1. **Reliability wording.** §3.6 retitled from "Reliability" to "Intra-coder stability" and its caveat reworded, so that the same-session recode is no longer presented as inter-rater reliability. Limit 7 in §4 and the `double_code.csv` entry in §6 reworded to match.
+2. **Independent second coding added.** New section "Independent second-coder reliability", new files `second_coder.csv` and `reliability_independent.md`, and a new section 10 in `analysis.py`.
+3. **Interviewer attributions corrected in `data.csv` (six rows).** AR-II-5-076 (J.M. Parker), AR-II-7-019 (Mary Watson), AR-II-1-091 (William Brown), AR-II-1-024 (Cora Armstrong), FL-III-050 (Claude Augusta Wilson) and GA-IV-2-012 (Milton Hammond) changed from unknown to Black, with the interviewer's name and source filled in. Evidence lines are in the new file `interviewer_race_corrections.md`. An earlier note in `reliability_independent.md` gave five rows and credited Cora Armstrong to Samuel S. Taylor; both points were wrong and are corrected there.
+4. **Numbers that changed because of entry 3,** as `analysis.py` prints them:
+   - §2: Black 47, white 11, unknown 342 → Black 53, white 11, unknown 336.
+   - §3.4 C, white or unknown interviewers only: n = 185, 45.8% against 17.6%, p = 4.825e-05 → n = 182, 37/81 = 45.7% (35.3–56.5) against 18/101 = 17.8% (11.6–26.4), Fisher p = 7.966e-05.
+   - §3.5, whole table. Obedience-only preaching 6/47 against 19/353, p = 0.0986 → 7/53 against 18/347, p = 0.0343. Negative attitude, all narratives, 6/47 against 16/353, p = 0.0328 → 7/53 against 15/347, p = 0.0168. Negative attitude among those stating one, 6/19 against 16/155, p = 0.0185 → 7/21 against 15/153, p = 0.00721. Positive attitude among those stating one, 3/19 against 36/155, p = 0.572 → 3/21 against 36/153, p = 0.416. Black control of worship 9/47 against 83/353, p = 0.583 → 11/53 against 81/347, p = 0.861. Faith before freedom 11/47 against 61/353, p = 0.314 → 12/53 against 60/347, p = 0.341. Postwar Black-run church 8/47 against 33/353, p = 0.122 → 10/53 against 31/347, p = 0.0471. A prayer-for-freedom row was added (4/53 against 9/347, p = 0.0789), CIs were added to every cell, and the commentary now warns that the p-values are fragile and unadjusted.
+   - §3.5 text: Arkansas 26 of 47 and Florida 11 → Arkansas 30 of 53 and Florida 12.
+   - §4, limit 3: interviewer race documented for 58 of 400 → 64 of 400.
+   - Independent reliability table, `interviewer_race` row: 38/40, κ 0.85 at the blind comparison; `analysis.py` now prints 39/40, κ 0.93.
+5. **Rewordings that follow from the independent second coding** (no count changed):
+   - §3.2: the neutral attitude share is given as an upper bound ("at most 113") and the positive share as a lower bound ("at least 39"), with the subsample evidence. CI added for the neutral share.
+   - §3.3: faith before freedom is given as a conservative lower bound ("at least 72"); postwar church as "at least 106"; prayer for freedom is marked as untested for reliability. CIs added for these three counts.
+   - §3.4, "How to read this": a sentence on the faith undercount and whether it differs by worship control.
+   - §4, limits 5 and 6: the same three cautions, the share of disagreements due to the extract method, and the interviewer credit lines.
+   - Headline: two sentences added, one on faith as a lower bound and one on the independent reliability result.
+6. **Two wording errors corrected in §5.** "Roughly four times as likely to show devotion" described an odds ratio as a ratio of proportions; it now reads "about four times the odds (47.8% against 18.4%)". "Almost all reports of praying for freedom" now reads "10 of the 13".
+7. **Open items, not changed.** Two entries with two interviews by different interviewers (Alice Green, GA; Henry Brown, SC) are still coded unknown pending a codebook rule. Cora Armstrong's `age_1937` (86) is the preceding informant's age; her own text implies about 82. The `interviewer` name column is incomplete for about 30 rows.
