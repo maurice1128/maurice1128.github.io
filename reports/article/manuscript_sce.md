@@ -2,7 +2,7 @@
 
 ## Abstract
 
-When a community suffers together, what does a church owe the people whose trust it asks? This article argues that at such times a church's authority is tested by how it holds the remedy it proclaims: whether it stands with those who suffer, delivers care, shares or guards the means of grace, and corrects its own failures. Faith in God and trust in a church are treated as distinct. Three historical scenes are read closely from primary sources, as an interpretive lens and not as a test of causes: the plague of 1348–62, when a bishop delegated confession to lay people and then reclaimed it; enslaved Christians in North America, whose masters controlled access to the word; and the Presbyterian Church in Taiwan, which in 1990 confessed its failure toward the victims of the violence of 1947. The scenes yield three questions: who holds the remedy, with whom the church stands, and whether it can correct itself. A biblical-theological reading supplies the norm, drawing on lament, the critique of retribution, Ezekiel 34, Jeremiah 7, Amos 7 and Acts 6. The article ends with questions for churches in Taiwan today and takes no position on contested issues.
+When a community suffers together, what does a church owe the people whose trust it asks? This article argues that a church's authority is then tested by how it holds the remedy it proclaims: whether it stands with those who suffer, delivers care, shares or guards the means of grace, and corrects its own failures. Faith in God and trust in a church are treated as distinct. Three historical scenes are read closely from primary sources, as an interpretive lens and not as a test of causes: the plague of 1348–62, when a bishop let the dying confess to lay people and required survivors to confess again to a priest; enslaved Christians in North America, whose masters controlled access to the word; and the Presbyterian Church in Taiwan, which in 1990 confessed its failure towards the victims of 1947. The scenes yield three questions: who holds the remedy, with whom the church stands, and whether it can correct itself. Scripture supplies the norm: lament, the critique of retribution, Ezekiel 34, Jeremiah 7, Amos 7 and Acts 6. The article ends with questions for churches in Taiwan today and takes no position on contested issues.
 
 **Keywords:** collective suffering; trust in the church; means of grace; lament; ecclesial repentance; Taiwan
 
@@ -10,19 +10,19 @@ When a community suffers together, what does a church owe the people whose trust
 
 On 10 January 1349, with plague in his diocese, Ralph of Shrewsbury, bishop of Bath and Wells, told his clergy to announce that the dying who could find no priest might confess their sins to a lay person, *et si desit vir laicus, mulieri* ('and if a man is lacking, to a woman').[^1] The church of his day taught that the remedy for the plague was penance, and that priests held it. The bishop now recorded that he could not deliver it. He had to decide what to do with a remedy that he held but could not bring to the people who needed it.
 
-This article is about that decision in a general form. When a community suffers together, what does a church owe the people whose trust it asks? The question is ethical before it is historical or sociological. It does not ask how churches can keep their members. It asks what makes a church's claim to be trusted a warranted claim, at the moment when that claim is most exposed.
+This article asks about that decision in a general form. When a community suffers together, what does a church owe the people whose trust it asks? The question is ethical before it is historical or sociological. It does not ask how churches can keep their members. It asks what makes a church's claim to be trusted a warranted claim, at the moment when that claim is most exposed.
 
-Two things need to be kept apart from the start. *Faith* here means devotion directed to God: prayer, lament and the search for meaning. *Trust in the church* means confidence that a particular body, with its ministers and its rites, can be relied on to carry that devotion and to care for those who hold it. The two have different objects, and they can move apart. A study of Catholic abuse scandals in the United States found lasting falls in Catholic affiliation and attendance, and no statistically significant fall in belief in God, though its estimates for belief are imprecise.[^2] A recent study of Ukraine at war draws the same conceptual line between trust in God and trust in the church.[^3] The observation that faith can survive while trust in a church falls is therefore not new. It is common in student work on the Black Death, and historians of late-medieval religion have given reasons to doubt it for that case.[^4] I do not offer it as a finding.
+Two things need to be kept apart from the start. *Faith* here means devotion directed to God: prayer, lament and the search for meaning. *Trust in the church* means confidence that a particular body, with its ministers and its rites, can be relied on to carry that devotion and to care for those who hold it. The two have different objects, and they can move apart. A study of Catholic abuse scandals in the United States found lasting falls in Catholic affiliation and attendance, and no statistically significant fall in belief in God, though its estimates for belief are imprecise.[^2] A recent study of Ukraine at war draws the same conceptual line between trust in God and trust in the church.[^3] The observation that faith can survive while trust in a church falls is therefore not new. It appears in student work on the Black Death, and historians have given reasons to doubt it for that case.[^4] I do not offer it as a finding.
 
-My thesis is normative. When a community suffers together, a church's authority is tested by how it holds the remedy it proclaims: whether it stands with those who suffer, whether it delivers care, whether it shares or guards the means of grace, and whether it corrects its own failures. By 'remedy' I mean whatever a church announces as God's answer to suffering, together with the means by which it offers that answer: the word, the sacraments, prayer, burial, absolution and material care. The word is borrowed from one of the sources. The abbot Gilles li Muisis wrote that the clergy of Tournai took no care *de remedio apponendo* ('to apply a remedy').[^5] The verb 'holds' is also chosen with care. A church does not make the remedy it proclaims. It receives it and holds it for others, as a steward holds what belongs to someone else (1 Cor. 4:1–2). A steward can be asked for an account, and the thesis is that collective suffering is one of the times when the account falls due.
+My thesis is normative. When a community suffers together, a church's authority is tested by how it holds the remedy it proclaims: whether it stands with those who suffer, whether it delivers care, whether it shares or guards the means of grace, and whether it corrects its own failures. By 'remedy' I mean whatever a church announces as God's answer to suffering, together with the means by which it offers that answer: the word, the sacraments, prayer, burial, absolution and material care. The word is borrowed from one of the sources. The abbot Gilles li Muisis wrote that the clergy of Tournai took no care *de remedio apponendo* ('to apply a remedy').[^5] The verb 'holds' matters as well. A church does not make the remedy it proclaims. It receives it and holds it for others, as a steward holds what belongs to someone else (1 Cor. 4:1–2). A steward can be asked for an account, and collective suffering is one of the times when the account falls due.
 
-The parts of this argument have long histories, and the debts should be stated. Weber tied theodicy to social position: the fortunate want assurance that their fortune is deserved, while the disprivileged look for compensation and reversal.[^6] Martin and Casanova showed that the public fate of churches depends on how they stand toward states and elites.[^7] Economists have shown that the religious effects of disasters depend on who holds authority. Belloc, Drago and Galbiati found that earthquakes in medieval Italian cities delayed the move to communal self-government where the bishop was also the political ruler, and that such cities then built and decorated more religious buildings. They do not measure lay belief or trust.[^8] Among student theses, Zacharia compares the Black Death with the fire of London and the Lisbon earthquake, and Boone's title announces a study of redemptive suffering in the service of Black Philadelphians during the yellow fever of 1793.[^9] What I add is not a new fact. It is a way of putting an ethical question to cases like these, and a set of questions that a church can put to itself.
+The debts of this argument should be stated. Weber tied theodicy to social position: the fortunate want assurance that their fortune is deserved, while the disprivileged look for compensation and reversal.[^6] Martin and Casanova showed that the public fate of churches depends on how they stand towards states and elites.[^7] Among economists, Belloc, Drago and Galbiati found that earthquakes in medieval Italian cities delayed the move to communal self-government where the bishop was also the political ruler, and that such cities then built and decorated more religious buildings. They do not measure lay belief or trust.[^8] Among student theses, Zacharia compares the Black Death with the fire of London and the Lisbon earthquake, and Boone's title announces a study of redemptive suffering in the service of Black Philadelphians during the yellow fever of 1793.[^9] I add no new fact. I offer a way of putting an ethical question to cases like these, and a set of questions that a church can put to itself.
 
-The method is to read three scenes closely, from primary sources, as an interpretive lens and not as a test of causes. The scenes are the plague of 1348–62 in Latin Christendom, the religion of enslaved Christians in North America, and the Presbyterian Church in Taiwan between 1947 and 1990. I chose them for three reasons. They differ in who inflicted the suffering: no human agent, fellow Christians, and a state. They differ in who controlled the church: a clerical hierarchy, slaveholders, and the sufferers' own assemblies. And in each scene people on the spot wrote about who held the remedy, in texts that are public and can be quoted, so that readers can check what I say against what the sources say.
+The method is to read three scenes closely, from primary sources, as an interpretive lens and not as a test of causes. The scenes are the plague of 1348–62 in Latin Christendom, the religion of enslaved Christians in North America, and the Presbyterian Church in Taiwan between 1947 and 1990. I chose them for three reasons. They differ in who inflicted the suffering: no human agent, fellow Christians, and a state. They differ in who controlled the church: a clerical hierarchy, slaveholders, and the sufferers' own assemblies. And in each scene people on the spot wrote about who held the remedy, in public texts that can be quoted and checked.
 
-The limits follow from the method. Three scenes chosen by one reader cannot establish a rule, and I do not generalise from them. I make no claim that suffering caused any change in trust, or that the conduct of any church caused people to trust it. Statements of fact rest on quoted sources. Where I interpret, I say so and name a rival reading in the same paragraph. The sources are partial: clerical chroniclers, abolitionist narratives, a planter's handbook and a church's own statements. Three supplementary analyses of public records are described in the appendix, and the argument does not depend on them.
+The limits follow from the method. Three scenes chosen by one reader cannot establish a rule, and I do not generalise from them. I make no claim that suffering caused any change in trust, or that the conduct of any church caused people to trust it. Statements of fact rest on quoted sources. Where I interpret, I say so and name a rival reading in the same paragraph. The sources are partial: clerical chroniclers, abolitionist narratives, a planter's handbook and a church's own statements. Three supplementary analyses are described in the appendix, and the argument does not depend on them.
 
-Section 2 presents the scenes. Section 3 draws three questions from them and defines the questions so that the answers do not depend on how things turned out. Section 4 turns to Scripture, because scenes can show a pattern but cannot say what ought to be done. Section 5 puts the questions to the record of the church in Taiwan, and section 6 concludes.
+Section 2 presents the scenes. Section 3 draws three questions from them, defined so that the answers do not depend on how things turned out. Section 4 turns to Scripture, because scenes cannot say what ought to be done. Section 5 puts the questions to the record of the church in Taiwan.
 
 ## 2 Three scenes
 
@@ -38,13 +38,13 @@ That is, no priests can be found who are willing, out of zeal or for any stipend
 
 The same shortage is recorded at the top of the hierarchy. On 12 October 1349 Clement VI allowed the archbishop of York additional ordinations, because priests able to administer the sacraments *nequeunt inveniri* ('cannot be found').[^14] In 1350 Archbishop Islip's mandate *Effrenata* complained that the priests who had survived were leaving the cure of souls for privately paid masses and demanding *stipendia ... excessiva* ('excessive stipends'); he reissued it in 1362, after the second plague.[^15] These are the hierarchy's own records of its clergy's failure. They are not the whole record. The Paris chronicler usually identified as Jean de Venette wrote that in many towns *sacerdotes timidi recedebant* ('timid priests withdrew'). He also wrote that the sisters of the Hôtel-Dieu, *mori non timentes* ('not fearing to die'), nursed the sick with all gentleness and humility, and that their number had to be renewed many times because of death.[^16] At Tournai, li Muisis recorded that many curates and chaplains who heard confessions and gave the sacraments died.[^17] At Avignon, according to the papal biography printed by Raynaldus, the pope appointed physicians to visit the poor and bought a field for a cemetery.[^18] Care was withheld and delivered in the same months, by different members of the same church.
 
-Some lay people did not wait to be given the remedy. Companies of flagellants reached Tournai in August 1349. Li Muisis, who watched them, wrote that a large part of the common people approved of what they did *plus quam divinum officium* ('more than the divine office') and very often mocked the clergy who thought otherwise.[^19] By Advent the companies were carrying and burying the dead with cross and candles, and the dying were often persuaded to leave them gifts, as was customary for curates, chaplains, hospitals and the poor.[^20] The movement did not set out to leave the church. Its oath required a recruit to ask leave of his curate and to defend the rights of holy Church.[^21] Clement VI condemned it on 20 October 1349. He charged that the flagellants despised the keys of the Church and carried the cross *sine superioris licentia* ('without the licence of a superior'). The same letter states that it does not forbid the faithful to do penance in their own homes, apart from such companies and assemblies.[^22] At Tournai the companies were stopped in Lent 1350 by proclamation of the town and of the king, and they ceased, li Muisis says, *cum magno murmure inviti* ('with great murmuring, unwillingly').[^23]
+Some lay people did not wait to be given the remedy. Companies of flagellants reached Tournai in August 1349. Li Muisis wrote that a large part of the common people approved of what they did *plus quam divinum officium* ('more than the divine office') and very often mocked the clergy who thought otherwise.[^19] By Advent the companies were carrying and burying the dead with cross and candles, and the dying were often persuaded to leave them gifts, as was customary for curates, chaplains, hospitals and the poor.[^20] The movement did not set out to leave the church. Its oath required a recruit to ask leave of his curate and to defend the rights of holy Church.[^21] Clement VI condemned it on 20 October 1349. He charged that the flagellants despised the keys of the Church and carried the cross *sine superioris licentia* ('without the licence of a superior'). The same letter states that it does not forbid the faithful to do penance in their own homes, apart from such companies and assemblies.[^22] At Tournai the companies were stopped in Lent 1350 by proclamation of the town and of the king, and they ceased, li Muisis says, *cum magno murmure inviti* ('with great murmuring, unwillingly').[^23]
 
 A third party also acted. The bishop of Tournai had died, and in every parish the curates, parish clerks and gravediggers were ringing bells for the dead by day and night, for their own profit, until the whole town was afraid. Li Muisis, himself an abbot, explains what followed:
 
 > *Gubernatores civitatis, videntes quod decanus, et capitulum, et clerus totus, de remedio apponendo non curabant, quia sua intererat et in facto lucrabantur, habito consilio, fecerunt ordinationes.*
 
-The governors of the city, seeing that the dean, the chapter and the whole clergy took no care to apply a remedy, because it was in their interest and they were profiting by the matter, took counsel and made ordinances.[^24] The ordinances covered burial, bell-ringing and public morals.
+The governors of the city, seeing that the dean, the chapter and the whole clergy took no care to apply a remedy, because it was in their interest and they were profiting by the matter, took counsel and made ordinances.[^24]
 
 I read these texts as showing three routes by which the remedy passed for a time into lay hands. It was delegated by a bishop and then reclaimed. It was seized by a lay movement and then suppressed. And it was taken over by a town government when the clergy would not act. This is an interpretation, and its base is narrow: one diocesan mandate, one papal letter and one chronicle, all written by senior clergy. A rival reading is that very little passed anywhere, because most devotion still ran through the church. Venette says that the dying left many inheritances and goods to churches and religious houses.[^25] Cohn's study of wills in six Tuscan and Umbrian cities finds that the form of pious bequests changed after the second plague of 1363, and that the bequests still went to church institutions.[^26] Henderson places the charity of Florentine confraternities within a network of church, state, guild and hospital, and Duffy describes English parish religion on the eve of the Reformation as vigorous.[^27] Robinson's study of ordination lists finds that the men ordained in the plague years came from much the same backgrounds as their predecessors, which undercuts the old account of an inferior replacement clergy.[^28] To say that devotion was 'redistributed' and not lost would therefore be an interpretation too. Li Muisis offers a third reading in a single line. When the plague eased, the pilgrimages to the relics of St Sebastian stopped: *Cessante autem tempestate cessavit etiam peregrinatio et devotio* ('when the storm ceased, the pilgrimage and the devotion ceased as well').[^29] Devotion may simply have followed the danger.
 
@@ -64,7 +64,7 @@ People on the other side of that power described its use. Harriet Jacobs, writin
 
 Worship went on out of sight, in what Raboteau called the 'invisible institution'.[^34] Interviews with former slaves recorded in 1936–38 contain many memories of it. They need caution: most informants were children before 1865, the dialect on the page is the interviewers', and what informants said seems to have varied with who was asking.[^35] One informant in Tennessee, Andrew Moss, recalled his master's words, 'Youse my negro. I git ye to Heaven. Git up off'n your knees', and his mother going into her prayer ground, a muscadine bush, to 'pray for deliverance of de slaves'.[^36] A supplementary analysis codes a random sample of these interviews for who controlled worship before 1865: [[EVIDENCE:wpa_religion]]. From the masters' side, the report of Jones's mission in Liberty County conceded in 1846, of the Black lay leaders known as watchmen, that 'All attempts to suppress this class of influential men among their own colour have signally failed'.[^37]
 
-Black Christian writers drew a line between the remedy and those who claimed to hold it. Frederick Douglass put it most sharply in the appendix to his *Narrative*: 'I love the pure, peaceable, and impartial Christianity of Christ: I therefore hate the corrupt, slaveholding, women-whipping, cradle-plundering, partial and hypocritical Christianity of this land.' He added that 'The man who robs me of my earnings at the end of each week meets me as a class-leader on Sunday morning, to show me the way of life'.[^38] David Walker stated a more radical conclusion and refused it. From the way Europeans had conducted religion, 'one might believe it was a plan fabricated by themselves and the devils to oppress us. But hark! My master has taught me better than to believe it'.[^39] Neither Douglass nor Jacobs rejected white ministers as such. Douglass wrote, 'We slaves loved Mr. Cookman', a Methodist preacher who, they believed, had helped to persuade a rich slaveholder to free his slaves. Jacobs describes an Episcopal rector whose sermons drew enslaved hearers because 'it was the first time they had ever been addressed as human beings'.[^40] In these texts trust attaches to conduct and not to office.
+Black Christian writers drew a line between the remedy and those who claimed to hold it. Frederick Douglass put it most sharply in the appendix to his *Narrative*: 'I love the pure, peaceable, and impartial Christianity of Christ: I therefore hate the corrupt, slaveholding, women-whipping, cradle-plundering, partial and hypocritical Christianity of this land.' He added that 'The man who robs me of my earnings at the end of each week meets me as a class-leader on Sunday morning, to show me the way of life'.[^38] David Walker stated a more radical conclusion and refused it. From the way Europeans had conducted religion, 'one might believe it was a plan fabricated by themselves and the devils to oppress us. But hark! My master has taught me better than to believe it'.[^39] Neither Douglass nor Jacobs rejected white ministers as such. Douglass wrote, 'We slaves loved Mr. Cookman', a Methodist preacher who, they believed, had helped to persuade a rich slaveholder to free his slaves. Jacobs describes an Episcopal rector whose sermons many enslaved people gladly went to hear: 'it was the first time they had ever been addressed as human beings'.[^40] In these texts trust attaches to conduct and not to office.
 
 Free Black Methodists in Philadelphia made the separation in institutional form. Richard Allen recalled that at St George's church a trustee took hold of Absalom Jones during prayer, 'pulling him up off of his knees, and saying, "You must get up—you must not kneel here."' When the prayer was over, 'we all went out of the church in a body, and they were no more plagued with us in the church.'[^41] Threatened with expulsion from the Methodist connection, they replied: 'if you deny us your name, you cannot seal up the scriptures from us, and deny us a name in heaven.'[^42] Allen remained a Methodist by conviction. What he contested was the white elders' control of the pulpit and the property, and in 1816 Black Methodists founded the African Methodist Episcopal (AME) Church, in the words Allen records, to 'preserve us from that spiritual despotism which we have so recently experienced'.[^43] The same community had already shown what it did with a remedy in its own hands. During the yellow fever of 1793, Jones and Allen organised Black Philadelphians to nurse the sick and bury the dead, 'sensible that it was our duty to do all the good we could to our suffering fellow mortals'.[^44]
 
@@ -98,7 +98,7 @@ The scenes differ in almost every circumstance. What they share is a structure: 
 
 Five records, then, answer the three questions: who ordains, who owns, who administers, who funds, and who visibly cares. All five can be read before any outcome is known, and apart from it.
 
-**Rival readings.** A lens is one way of looking, and the same scenes can be looked at in other ways. Three should be named.
+**Rival readings.** The same scenes can be read in other ways, and three should be named.
 
 The first is deliverance. On this reading what binds people to a church is rescue and not the church's conduct. Enslaved people committed themselves to churches when they were freed, and would have done so whoever held the remedy. Fountain's work gives this reading its strongest form, and the second scene cannot refute it, because freedom and control of worship arrived together.[^58]
 
@@ -126,13 +126,13 @@ Scenes show what churches did. They do not show what a church owes. For that I t
 
 **Counterweights.** The canon does not say that sufferers are right and institutions wrong. Ezekiel 18 rejects inherited guilt, 'it is only the person who sins that shall die' (Ezek. 18:4), so that each generation answers for itself, sufferers included.[^73] In Psalm 73 the psalmist's crisis turns when he goes 'into the sanctuary of God' (Ps. 73:17), so the assembly can be the place where faith recovers. Hebrews commands, 'Obey your leaders and submit to them', and adds that leaders 'will give an account' (Heb. 13:17). Acts sets the limit: 'We must obey God rather than any human authority' (Acts 5:29).
 
-Traditions weigh these texts differently, and each sees something. Liberation and Black theologies begin from Exodus and the prophets and insist on God's partiality for the oppressed, which guards against spiritualising injustice.[^74] Catholic teaching holds to the continuity and holiness of the Church while confessing the sins of her members, which guards against fragmentation.[^75] Reformed theology makes every office answerable to the Word and sets limits to rulers.[^76] Evangelical readings give full weight to personal repentance, to God's sovereignty and to faithful endurance. A critic could fairly say that my reading leans toward the first of these. I accept the correction that the others offer. The first remedy for a failing church is repentance and reform, and although leaving may sometimes be right, it is not what these texts chiefly commend.
+Traditions weigh these texts differently, and each sees something. Liberation and Black theologies begin from Exodus and the prophets and insist on God's partiality for the oppressed, which guards against spiritualising injustice.[^74] Catholic teaching holds to the continuity and holiness of the Church while confessing the sins of her members, which guards against fragmentation.[^75] Reformed theology makes every office answerable to the Word and sets limits to rulers.[^76] Evangelical readings give full weight to personal repentance, to God's sovereignty and to faithful endurance. A critic could fairly say that my reading leans towards the first of these. I accept the correction that the others offer. The first remedy for a failing church is repentance and reform, and although leaving may sometimes be right, it is not what these texts chiefly commend.
 
 Read together, the texts say four things to a church that holds a remedy. The remedy and the flock belong to God (Ezek. 34). God is with those who cry out, and their complaint is prayer (Exod. 3:7; Ps. 88). Those who hold office will give an account (Heb. 13:17). And a church that has failed can say so and change (Acts 6; Neh. 9). This is the normative content of the three questions.
 
 ## 5 Reflections for the church in Taiwan
 
-Taiwan serves as the worked example for two reasons. One of its churches has left an unusually explicit public record of where it stood and of where it failed to stand. And survey data exist on how far people in Taiwan trust religious bodies. I set out what that record shows, and then put the questions.
+Taiwan serves as the worked example for two reasons. One of its churches has left an unusually explicit public record of where it stood and of where it failed to stand. And survey data exist on how far people in Taiwan trust religious bodies.
 
 **What the record shows.** The first part of the record is the sequence described in section 2.3: three public statements between 1971 and 1977, a pastoral letter in 1989, and in 1990 an apology addressed to the victims of 1947 and their families and to God.
 
@@ -154,15 +154,15 @@ A further item bears on public speech. In 2018, 67.6 per cent of respondents dis
 
 *Has the church listened before it speaks?* Scripture lets the sufferer speak first, and Acts 6 begins with a complaint that was heard. Before a church speaks in public on a contested matter, it can ask whether it has listened to the people whom the matter touches most closely, and whether they could recognise their own situation in what the church says. The survey figure for 2018 is not an argument for silence. The 1990 apology judged a silence, not a statement. The figure is a reason to ask what gives a church standing to speak, and the norm of section 4 locates that standing in presence with those who suffer.
 
-None of these questions tells a church what to conclude. Churches that answer them honestly may still disagree with one another. The questions concern how a church holds what it has been given, whatever position it takes.
+None of these questions tells a church what to conclude, and churches that answer them honestly may still disagree. The questions concern how a church holds what it has been given, whatever position it takes.
 
 ## 6 Conclusion
 
 I began with a bishop who held a remedy that he could not deliver and who lent it, for a time, to lay men and women. The argument since has been that his position is the position of every church when a community suffers together. A church proclaims a remedy that it did not make and does not own. Its claim to be trusted is tested by how it holds that remedy: whether it is present with those who suffer, whether care reaches them, whether it shares the means of grace or guards them, and whether it can name its own failures and change.
 
-Three scenes gave this claim a shape. They did not prove it, and they were not asked to. They cannot show that suffering erodes trust, that standing with sufferers earns it, or that confession restores it. Rival readings of each scene remain open, and I have named them. The scenes do show that the questions are real ones. A bishop, a planter, a formerly enslaved bishop, an abbot and a general assembly each wrote, in their own words, about who held the remedy and for whom.
+Three scenes gave this claim a shape. They did not prove it, and they were not asked to. They cannot show that suffering erodes trust, that standing with sufferers earns it, or that confession restores it. Rival readings of each scene remain open, and I have named them. The scenes do show that the questions are real ones. A bishop, a planter, a formerly enslaved bishop, an abbot and a church assembly each wrote, in their own words, about who held the remedy and for whom.
 
-The norm comes from Scripture. The flock is God's and not the shepherds'. God is found beside those who cry out, and their complaint is prayer. Those who hold office will give an account. A church that has failed can confess and reform, and reform is the first remedy for failure.
+The norm comes from Scripture. The flock is God's and not the shepherds'. God is found beside those who cry out. Those who hold office will give an account. A church that has failed can confess and reform.
 
 For churches in Taiwan, and for others, the result is a set of questions and not a programme. They can be asked by churches that disagree about much else. They ask a church to attend less to whether it is trusted and more to whether it is trustworthy with what it has been given.
 
@@ -182,15 +182,15 @@ Three supplementary analyses of public sources were undertaken to see how far th
 
 [[EVIDENCE:wpa_religion]]
 
-[^1]: David Wilkins (ed.), *Concilia Magnae Britanniae et Hiberniae* (4 vols.; London: R. Gosling, 1737), vol. 2, pp. 745-46 (p. 745); my translation *[author to check translation]*. On the date and place of issue see section 2.1.
+[^1]: David Wilkins (ed.), *Concilia Magnae Britanniae et Hiberniae* (4 vols.; London: R. Gosling, 1737), vol. 2, p. 745 (my translation) *[author to check translation]*.
 
-[^2]: Nicolas L. Bottan and Ricardo Perez-Truglia, 'Losing My Religion: The Effects of Religious Scandals on Religious Participation and Charitable Giving', *Journal of Public Economics* 129 (2015), pp. 106-19 (p. 114). The units of analysis are zip codes and counties.
+[^2]: Nicolas L. Bottan and Ricardo Perez-Truglia, 'Losing My Religion: The Effects of Religious Scandals on Religious Participation and Charitable Giving', *Journal of Public Economics* 129 (2015), pp. 106-19 (p. 114).
 
-[^3]: Nataliia Ishchuk, 'The Reconfiguration of Institutional Trust in the Church in Ukraine During the Full-Scale Russian–Ukrainian War', *Occasional Papers on Religion in Eastern Europe* 46.4 (2026), https://doi.org/10.55221/2693-2229.2782. I cite the abstract for its conceptual distinction only, not for its findings.
+[^3]: Nataliia Ishchuk, 'The Reconfiguration of Institutional Trust in the Church in Ukraine During the Full-Scale Russian–Ukrainian War', *Occasional Papers on Religion in Eastern Europe* 46.4 (2026), https://doi.org/10.55221/2693-2229.2782. I cite the abstract, for its conceptual distinction only.
 
-[^4]: For the commonplace see Gregory Zacharia, 'After the Apocalypse: A Comparative Study of the Black Death, London Fire, and Lisbon Earthquake' (History Honors Projects 24, Macalester College, 2018), ch. 1, as summarised in the repository abstract. For reasons to doubt it see the studies by Cohn, Henderson, Duffy and Robinson cited in section 2.1.
+[^4]: Gregory Zacharia, 'After the Apocalypse: A Comparative Study of the Black Death, London Fire, and Lisbon Earthquake' (History Honors Projects 24, Macalester College, 2018), ch. 1 (per the repository abstract). For doubts see the studies cited in section 2.1.
 
-[^5]: Henri Lemaître (ed.), *Chronique et annales de Gilles le Muisit, abbé de Saint-Martin de Tournai (1272–1352)* (Paris: Renouard, 1906), p. 255; my translation *[author to check translation]*. The sentence is quoted in full in section 2.
+[^5]: Henri Lemaître (ed.), *Chronique et annales de Gilles le Muisit, abbé de Saint-Martin de Tournai (1272–1352)* (Paris: Renouard, 1906), p. 255 (my translation) *[author to check translation]*.
 
 [^6]: Max Weber, 'The Social Psychology of the World Religions', in H.H. Gerth and C. Wright Mills (eds. and trans.), *From Max Weber: Essays in Sociology* (New York: Oxford University Press, 1946), pp. 267-301.
 
@@ -202,33 +202,33 @@ Three supplementary analyses of public sources were undertaken to see how far th
 
 [^10]: Wilkins, *Concilia*, vol. 2, pp. 738-39 (letter of the prior and chapter of Canterbury, *sede vacante*, 1348).
 
-[^11]: The register dates the mandate at Wiveliscombe, *iv Id. Jan.* 1348, old style, which is 10 January 1349: T.S. Holmes (ed.), *The Register of Ralph of Shrewsbury, Bishop of Bath and Wells, 1329–1363* (2 vols.; Somerset Record Society, 9–10; London, 1896), vol. 2, pp. 571-72 (no. 2130) *[verify place and publisher]*. Holmes calendars the entry and refers to Wilkins for the Latin.
+[^11]: T.S. Holmes (ed.), *The Register of Ralph of Shrewsbury, Bishop of Bath and Wells, 1329–1363* (2 vols.; Somerset Record Society, 9–10; London, 1896), vol. 2, pp. 571-72 (no. 2130), dated at Wiveliscombe, *iv Id. Jan.* 1348, old style *[verify place and publisher]*.
 
-[^12]: Wilkins, *Concilia*, vol. 2, p. 745; my translation *[author to check translation]*. Spelling is normalised from Wilkins's long-s print.
+[^12]: Wilkins, *Concilia*, vol. 2, p. 745, spelling normalised (my translation) *[author to check translation]*.
 
-[^13]: Wilkins, *Concilia*, vol. 2, pp. 745-46: '*quod si convalescant, eadem peccata confiteantur iterum, ut tenentur, suo proprio sacerdoti*' (p. 746); my translations *[author to check translation]*.
+[^13]: Wilkins, *Concilia*, vol. 2, pp. 745-46 (my translations) *[author to check translation]*.
 
-[^14]: James Raine (ed.), *Historical Papers and Letters from the Northern Registers* (Rolls Series, 61; London: Longman, 1873), p. 401; my translation *[author to check translation]*.
+[^14]: James Raine (ed.), *Historical Papers and Letters from the Northern Registers* (London: Longman, 1873), p. 401 (my translation) *[author to check translation]*.
 
-[^15]: Wilkins, *Concilia*, vol. 3, pp. 1-2 (28 May 1350); my translation *[author to check translation]*. *[verify page of the 1362 reissue in vol. 3.]*
+[^15]: Wilkins, *Concilia*, vol. 3, pp. 1-2 (28 May 1350) (my translation) *[author to check translation; verify page of the 1362 reissue]*.
 
-[^16]: Hercule Géraud (ed.), *Chronique latine de Guillaume de Nangis de 1113 à 1300 avec les continuations de cette chronique de 1300 à 1368* (2 vols.; Paris: Renouard, 1843), vol. 2, pp. 211-12; my translations *[author to check translation]*. The continuator was a Carmelite friar, which may colour his contrast between secular priests and religious.
+[^16]: Hercule Géraud (ed.), *Chronique latine de Guillaume de Nangis de 1113 à 1300 avec les continuations de cette chronique de 1300 à 1368* (2 vols.; Paris: Renouard, 1843), vol. 2, pp. 211-12 (my translations) *[author to check translation]*. The continuator was a Carmelite friar.
 
 [^17]: Lemaître, *Chronique et annales*, p. 258.
 
 [^18]: Odoricus Raynaldus, *Annales ecclesiastici* (ed. Augustin Theiner; Bar-le-Duc: Ex typis Consociationis Sancti Pauli, 1880), vol. 25, p. 454 (1348, §32) *[verify imprint date against the title page]*.
 
-[^19]: Lemaître, *Chronique et annales*, p. 239: '*magna pars vulgi factum talium plus quam divinum officium approbabant*'; my translation *[author to check translation]*. The companies' arrival on 15 August 1349 is at p. 231.
+[^19]: Lemaître, *Chronique et annales*, p. 239 (arrival on 15 August 1349: p. 231) (my translation) *[author to check translation]*.
 
 [^20]: Lemaître, *Chronique et annales*, p. 240.
 
 [^21]: Lemaître, *Chronique et annales*, p. 243.
 
-[^22]: Raynaldus, *Annales ecclesiastici*, vol. 25, pp. 470-72 (1349, §§18–22). The letter is dated at Avignon, *XIII kal. Novembris*; the copy printed is addressed to the archbishop of Magdeburg and begins *Molesta nobis*. The charges are at p. 471 ('*claves Ecclesiae vilipendunt*') and the saving clause at p. 472 ('*in suis hospitiis*'); my translations *[author to check translation]*.
+[^22]: Raynaldus, *Annales ecclesiastici*, vol. 25, pp. 470-72 (1349, §§18–22), dated at Avignon, *XIII kal. Novembris*. The copy printed, to the archbishop of Magdeburg, begins *Molesta nobis*. Charges: p. 471; saving clause: p. 472 (my translation) *[author to check translation]*.
 
-[^23]: Lemaître, *Chronique et annales*, pp. 251-52; my translation *[author to check translation]*. Li Muisis adds that the pope's mandate was announced but the bull itself was not shown.
+[^23]: Lemaître, *Chronique et annales*, pp. 251-52 (my translation) *[author to check translation]*.
 
-[^24]: Lemaître, *Chronique et annales*, p. 255; my translation *[author to check translation]*.
+[^24]: Lemaître, *Chronique et annales*, p. 255 (my translation) *[author to check translation]*.
 
 [^25]: Géraud, *Chronique latine*, vol. 2, p. 213.
 
@@ -238,13 +238,13 @@ Three supplementary analyses of public sources were undertaken to see how far th
 
 [^28]: David M. Robinson, 'The Black Death and Clerical Recruitment: The Evidence of Ordination Lists', *Archives* 54.2 (2019), pp. 1-36 *[author to check this summary against the article]*.
 
-[^29]: Lemaître, *Chronique et annales*, p. 258; my translation *[author to check translation]*.
+[^29]: Lemaître, *Chronique et annales*, p. 258 (my translation) *[author to check translation]*.
 
 [^30]: Charles C. Jones, *The Religious Instruction of the Negroes in the United States* (Savannah: Thomas Purse, 1842), p. 158.
 
 [^31]: Jones, *Religious Instruction*, p. 73.
 
-[^32]: Harriet A. Jacobs, *Incidents in the Life of a Slave Girl. Written by Herself* (ed. L. Maria Child; Boston: Published for the Author, 1861), ch. XII. The edition read has no page numbers.
+[^32]: Harriet A. Jacobs, *Incidents in the Life of a Slave Girl. Written by Herself* (ed. L. Maria Child; Boston: Published for the Author, 1861), ch. XII (edition unpaginated).
 
 [^33]: Jacobs, *Incidents*, ch. XIII.
 
@@ -256,7 +256,7 @@ Three supplementary analyses of public sources were undertaken to see how far th
 
 [^37]: Association for the Religious Instruction of the Negroes in Liberty County, *Eleventh Annual Report* (Savannah: P.G. Thomas, 1846), p. 13.
 
-[^38]: Frederick Douglass, *Narrative of the Life of Frederick Douglass, an American Slave. Written by Himself* (Boston: Anti-Slavery Office, 1845), Appendix. The edition read has no page numbers.
+[^38]: Frederick Douglass, *Narrative of the Life of Frederick Douglass, an American Slave. Written by Himself* (Boston: Anti-Slavery Office, 1845), Appendix (edition unpaginated).
 
 [^39]: David Walker, *Walker's Appeal, in Four Articles* (Boston: David Walker, 3rd edn, 1830), p. 40.
 
@@ -266,13 +266,13 @@ Three supplementary analyses of public sources were undertaken to see how far th
 
 [^42]: Allen, *Life, Experience, and Gospel Labors*, pp. 16-17.
 
-[^43]: Allen, *Life, Experience, and Gospel Labors*, p. 24; for his attachment to Methodism see p. 18, and for the dispute over the church's property p. 21.
+[^43]: Allen, *Life, Experience, and Gospel Labors*, p. 24; see also pp. 18, 21.
 
 [^44]: Absalom Jones and Richard Allen, *A Narrative of the Proceedings of the Black People, during the Late Awful Calamity in Philadelphia, in the Year 1793* (Philadelphia: William W. Woodward, 1794), p. 3.
 
 [^45]: William E. Montgomery, *Under Their Own Vine and Fig Tree: The African-American Church in the South, 1865–1900* (Baton Rouge: Louisiana State University Press, 1993).
 
-[^46]: *Christian Recorder* (Philadelphia), 16 January 1869 (Kentucky; Virginia); vol. 6 (c. May 1866), letter from Nashville (members returning to the Southern church). The scans are hard to read and the issues should be checked *[author to check against the page images]*.
+[^46]: *Christian Recorder* (Philadelphia), 16 January 1869 (Kentucky; Virginia); vol. 6 (c. May 1866), letter from Nashville (returns to the Southern church) *[author to check against the page images]*.
 
 [^47]: Daniel L. Fountain, *Slavery, Civil War, and Salvation: African American Slaves and Christianity, 1830–1870* (Baton Rouge: Louisiana State University Press, 2010) *[author to check this summary against the book and add pages]*.
 
@@ -280,11 +280,11 @@ Three supplementary analyses of public sources were undertaken to see how far th
 
 [^49]: Cheng Yang-en, *Dinggen bentu de Taiwan Jidujiao* [Taiwanese Christianity Rooted in the Homeland] (Tainan: Renguang, 2005) *[verify page and the figures achieved]*.
 
-[^50]: Presbyterian Church in Taiwan, 'Statement on Our National Fate' [台灣基督長老教會對國是的聲明與建議] (29 December 1971), https://www.pct.org.tw/ab_doc.aspx?DocID=001; my translation *[author to check translation]*.
+[^50]: Presbyterian Church in Taiwan, 'Statement on Our National Fate' [台灣基督長老教會對國是的聲明與建議] (29 December 1971), https://www.pct.org.tw/ab_doc.aspx?DocID=001 (my translation) *[author to check translation]*.
 
 [^51]: Presbyterian Church in Taiwan, 'Our Appeal' [我們的呼籲] (18 November 1975), https://www.pct.org.tw/ab_doc.aspx?DocID=003.
 
-[^52]: Presbyterian Church in Taiwan, 'A Declaration on Human Rights' [台灣基督長老教會人權宣言] (16 August 1977), https://www.pct.org.tw/ab_doc.aspx?DocID=005. The quoted phrase follows the English text hosted at https://china.usc.edu/node/20514.
+[^52]: Presbyterian Church in Taiwan, 'A Declaration on Human Rights' [台灣基督長老教會人權宣言] (16 August 1977), https://www.pct.org.tw/ab_doc.aspx?DocID=005. English text: https://china.usc.edu/node/20514.
 
 [^53]: Magdaléna Rychetská, 'The Presbyterian Church in Taiwan and Its Changing Narrative on Human Rights', *Review of Religion and Chinese Society* 9.1 (2022), pp. 70-100.
 
@@ -292,7 +292,7 @@ Three supplementary analyses of public sources were undertaken to see how far th
 
 [^55]: The letter is listed among the church's public documents (pct.org.tw, document 031) *[author to add full reference]*.
 
-[^56]: Presbyterian Church in Taiwan, 'Apology to the Victims of the 228 Incident and Their Families' [台灣基督長老教會對二二八事件受難者及家屬的道歉] (9 February 1990), https://www.pct.org.tw/ab_doc.aspx?DocID=047; my translation *[author to check translation]*.
+[^56]: Presbyterian Church in Taiwan, 'Apology to the Victims of the 228 Incident and Their Families' [台灣基督長老教會對二二八事件受難者及家屬的道歉] (9 February 1990), https://www.pct.org.tw/ab_doc.aspx?DocID=047 (my translation) *[author to check translation]*.
 
 [^57]: Chiu Kai-li, '從人民自決到獨立建國' [From People's Self-Determination to Independent Nation-Building: A Postcolonial Analysis of Thirty Years of Presbyterian Church in Taiwan Political Theology after Martial Law], *Fu Jen Religious Studies* [輔仁宗教研究] 42 (2021), pp. 121-46 (p. 121).
 
@@ -314,9 +314,9 @@ Three supplementary analyses of public sources were undertaken to see how far th
 
 [^66]: James L. Crenshaw, *Defending God: Biblical Responses to the Problem of Evil* (New York: Oxford University Press, 2005).
 
-[^67]: Terence E. Fretheim, *The Suffering of God: An Old Testament Perspective* (Overtures to Biblical Theology, 14; Philadelphia: Fortress Press, 1984).
+[^67]: Terence E. Fretheim, *The Suffering of God: An Old Testament Perspective* (Philadelphia: Fortress Press, 1984).
 
-[^68]: For commentary on the chapter see Daniel I. Block, *The Book of Ezekiel: Chapters 25–48* (New International Commentary on the Old Testament; Grand Rapids, MI: Eerdmans, 1998) *[author to add page reference and to check Block's reading of 34:1–16]*.
+[^68]: For commentary see Daniel I. Block, *The Book of Ezekiel: Chapters 25–48* (Grand Rapids, MI: Eerdmans, 1998) *[author to add pages on 34:1–16]*.
 
 [^69]: Andrew Mein, 'Profitable and Unprofitable Shepherds: Economic and Theological Perspectives on Ezekiel 34', *Journal for the Study of the Old Testament* 31.4 (2007), pp. 493-504.
 
@@ -326,13 +326,13 @@ Three supplementary analyses of public sources were undertaken to see how far th
 
 [^72]: John S. Conway, 'How Shall the Nations Repent? The Stuttgart Declaration of Guilt, October 1945', *Journal of Ecclesiastical History* 38.4 (1987), pp. 596-622; Presbyterian Church in Taiwan, 'Apology'.
 
-[^73]: Paul Joyce, *Divine Initiative and Human Response in Ezekiel* (Journal for the Study of the Old Testament Supplement Series, 51; Sheffield: JSOT Press, 1989).
+[^73]: Paul Joyce, *Divine Initiative and Human Response in Ezekiel* (Sheffield: JSOT Press, 1989).
 
 [^74]: James H. Cone, *God of the Oppressed* (New York: Seabury Press, 1975).
 
 [^75]: International Theological Commission, *Memory and Reconciliation*.
 
-[^76]: John Calvin, *Institutes of the Christian Religion* (ed. John T. McNeill; trans. Ford Lewis Battles; 2 vols.; Library of Christian Classics, 20–21; Philadelphia: Westminster Press, 1960), 4.20.31.
+[^76]: John Calvin, *Institutes of the Christian Religion* (ed. John T. McNeill; trans. Ford Lewis Battles; 2 vols.; Philadelphia: Westminster Press, 1960), 4.20.31.
 
 [^77]: Fu Yang-chih et al. (eds.), *Taiwan Social Change Survey, Round 7, Year 4: Project Report* [台灣社會變遷基本調查計畫第七期第四次調查計畫執行報告] (Taipei: Institute of Sociology, Academia Sinica, 2019), appendix 4, p. 222.
 
