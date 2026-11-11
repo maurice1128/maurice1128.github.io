@@ -280,3 +280,30 @@ for v in VARS:
     po, k = kappa(x, y)
     dis = [p[0]['nid'] for p in pairs if p[0][v] != p[1][v]]
     print(f"  {v:34} agreement {100*po:5.1f}%  kappa {k:5.2f}   disagreements: {', '.join(dis) if dis else '-'}")
+
+# ---------------------------------------------------------------- 10. independent second coder
+SC_PATH = os.path.join(HERE, 'second_coder.csv')
+if os.path.exists(SC_PATH):
+    hdr('10. Independent second coder (separate blind session, full narratives): first codes in data.csv vs second_coder.csv')
+    SC = {r['nid']: r for r in csv.DictReader(open(SC_PATH, encoding='utf-8'))}
+    ids = [r['nid'] for r in DC]
+    SNIP = {'attitude_white_preachers': 'att', 'conversion_timing': 'conv', 'faith_commitment_before_freedom': 'faith',
+            'faith_subject': 'faith', 'postwar_church_any': 'post', 'postwar_black_church': 'post',
+            'prayed_for_freedom': 'free', 'obedience_preaching': 'obed'}
+    print(f"n = {len(ids)}")
+    for v in VARS + ['interviewer_race', 'hearsay_only']:
+        x = [first[i][v] for i in ids]; y = [SC[i][v] for i in ids]
+        po, k = kappa(x, y)
+        ks = '   NA' if k != k else f"{k:5.2f}"
+        dis = [i for i in ids if first[i][v] != SC[i][v]]
+        print(f"  {v:34} agreement {sum(a == b for a, b in zip(x, y)):2}/{len(ids)} = {100*po:5.1f}%  kappa {ks}   disagreements: {', '.join(dis) if dis else '-'}")
+    print("  disagreements (first -> second), with snippets:")
+    for i in ids:
+        for v in VARS + ['interviewer_race', 'hearsay_only']:
+            if first[i][v] != SC[i][v]:
+                k = None if v in ('interviewer_race', 'hearsay_only') else SNIP.get(v, 'wc')
+                s1 = first[i].get('snip_' + k, '') if k else ''
+                s2 = SC[i].get('snip_' + k, '') if k else ''
+                print(f"    {i} {first[i]['informant']} | {v}: {first[i][v]} -> {SC[i][v]}")
+                if s1: print(f"        first:  {s1[:160]}")
+                if s2: print(f"        second: {s2[:160]}")
