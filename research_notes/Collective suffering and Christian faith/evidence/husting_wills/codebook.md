@@ -63,7 +63,7 @@ Written before coding (2026-11-11). Rules were drafted from keyword-in-context l
 - `church_corporate` — Dean and Chapter of S. Paul's, a prior/abbot/abbess and convent, master and brethren of a hospital or house.
 - `private` — none of the above named: property left to wife, heirs, executors or others charged with the chantry ("charged with the maintenance of a chantry"), or provision with no holder named.
 
-If several are named, all are recorded (`;`-separated); binary flags `trustee_lay_corporate`, `trustee_parish_body`, `trustee_church_corporate`, `trustee_private` are derived.
+If several are named, all are recorded (`;`-separated) in `chantry_trustee`; binary flags per holder type are derived in `analysis.py`. Detection is by co-occurrence of the holder's name with chantry/obit language in the same sentence; this variable was not double-coded.
 
 ## `burial_site` (from the "To be buried …" clause)
 
