@@ -1,0 +1,405 @@
+{
+ "7": {
+  "founders": "craft",
+  "founders_snip": "Katharine, and All Saints, to promote charity and devotion. | Founded by 10 skinners."
+ },
+ "21": {
+  "founders": "mixed",
+  "founders_snip": "No date, but founded by Sir Robert Aylsham, monk, and others To find 2 torches on Sundays and principal feasts to burn at the Elevation of the Host.",
+  "check_note": "founders: \"Sir Robert Aylsham, monk, and others\""
+ },
+ "36": {
+  "founders": "mixed",
+  "founders_snip": "1349) Founded to improve divine service and for the benefit of souls of the dead. | _\u2014 \" Founded by W. | Everswell, chaplain, and Nicholas, Clerk, because they two alone were insufficient to carry out the purpose in mind.",
+  "check_note": "founders: chaplain + \"Nicholas, Clerk\" (clerk may be surname); others then associated"
+ },
+ "54": {
+  "founders": "parishioners",
+  "founders_snip": "Four men began to find the light and were then joined by others, and then two masters were chosen, ete."
+ },
+ "73": {
+  "founders": "parishioners",
+  "founders_snip": "1376-7 At its foundation all the charitably disposed gathered together and discussed how they could maintain and inorease divine service. | barley at the foundation of the gild."
+ },
+ "79": {
+  "founders": "parishioners",
+  "founders_snip": "1360 Founded by John Coke and others in the desire that the health of their souls might be much increased."
+ },
+ "93": {
+  "founders": "parishioners",
+  "founders_snip": "1358 Founded out of a special devotion which certain devout men had ave ep Virgin."
+ },
+ "109": {
+  "founders": "parishioners",
+  "founders_snip": "1339 Begun in honour of Corpus Christi out of devotion of the townsmen."
+ },
+ "110": {
+  "founders": "parishioners",
+  "founders_snip": "1379 Begun out of the devotion of the people in honour of the Exaltation."
+ },
+ "111": {
+  "founders": "parishioners",
+  "founders_snip": "1347 The beginning of the fraternity was thus: One Roger de Wolsthorp carved an image of the Saviour on the Cross, His mother and St. | He founded a chantry in honour of Him who died on the Croas for the souls of bis friends and himself, his benefactors and all the faithful departed and so rests in "
+ },
+ "112": {
+  "founders": "parishioners",
+  "founders_snip": "Founded by Roger de Wolsthorp (ef."
+ },
+ "117": {
+  "founders": "craft",
+  "founders_snip": "No date The tilers of the town having a devotion to the B.V.M., and desiring to honour her on behalf of their craft, have agreed to subseribe yearly towards a candle to burn before her image."
+ },
+ "119": {
+  "founders": "parishioners",
+  "founders_snip": "Founded by Robt."
+ },
+ "120": {
+  "founders": "craft",
+  "founders_snip": "No date The beginning was on this wise: Certain shepherds (named) and other shepherds and herdsmen believing that their flocks would be better cared for if they themselves made some devotion to the holy Virgin Mary, especially as they were very often obliged by their duties to absent themselves from"
+ },
+ "122": {
+  "founders": "parishioners",
+  "founders_snip": "es a Founded by Simon Sarson (who makes the return), Simon Rogerson and Thomas de Burham."
+ },
+ "123": {
+  "founders": "parishioners",
+  "founders_snip": "No date They have a devotion to the B.V.M. | Founded by Wm."
+ },
+ "140.ii": {
+  "founders": "parishioners",
+  "founders_snip": "1363 Founded by certain parishioners of St."
+ },
+ "166": {
+  "founders": "parishioners",
+  "founders_snip": "John in 1358, and for some time he and other devout people found a light for it."
+ },
+ "167": {
+  "founders": "parishioners",
+  "founders_snip": "1370 John de Toft caused an altar to be made in the parish church in honour of the Trinity, and provided its furniture, and so a gild was formed which provided a chaplain."
+ },
+ "175": {
+  "founders": "parishioners",
+  "founders_snip": "1365 Certain poor men, noting the poverty of the Reetor to be such that the church in its feeble state scarcely provided for his maintenance, decided at their own charges to found a fraternity in augmentation of divine worship. | Each one gives as he pleases of his goods towards the Rector\u2019s mainten"
+ },
+ "176": {
+  "founders": "parishioners",
+  "founders_snip": "Mary out of the devotion of certain men."
+ },
+ "180": {
+  "founders": "mixed",
+  "founders_snip": "There was a monk who caused a chapel to be built and had a chaplain to celebrate for his soul and the souls of the benefactors of the chapel.",
+  "check_note": "founders: a monk founded chapel/chaplaincy; after his death \"certain men\" continued it clergy: alderman collects chaplain's salary (lay control)",
+  "clergy_gov": 0,
+  "clergy_snip": "There was a monk who caused a chapel to be built and had a chaplain to celebrate for his soul and the souls of the benefactors of the chapel. | After his death certain men continued the salary of the chaplain in honour of God and St. | The alderman collects the chaplain\u2019s salary. | They have all the"
+ },
+ "184.i": {
+  "founders": "parishioners",
+  "founders_snip": "1365 Out of the devotion of the parishioners."
+ },
+ "184.ii": {
+  "founders": "parishioners",
+  "founders_snip": "St. James",
+  "check_note": "founders: \"Mutatis mutandis as in (i.)\" -> devotion of the parishioners"
+ },
+ "184.iii": {
+  "founders": "parishioners",
+  "founders_snip": "1367 Out of the devotion of the parishioners in honour of the Holy Trinity."
+ },
+ "184.iv": {
+  "founders": "parishioners",
+  "founders_snip": "1359 Out of the devotion of the parishioners of St."
+ },
+ "189": {
+  "founders": "parishioners",
+  "founders_snip": "1365 OE EE E eEOOOOO Out of the devotion of certain poor men in honour of the Conception of St."
+ },
+ "191": {
+  "founders": "parishioners",
+  "founders_snip": "1375 Founded by good men for amendment of their lives and souls, and to nourish more love between the brothers and sisters, in worship of Almighty God, St."
+ },
+ "199": {
+  "founders": "parishioners",
+  "founders_snip": "Then with 9 others they began a company or fraternity to find 5 torches burning in the chapel for the King, Queen and the fraternity living and dead."
+ },
+ "201": {
+  "founders": "parishioners",
+  "founders_snip": "No date Out of the devotion of certain poor men in honour of the Conception of the B.V.M., on which feast they have mass and offer and find a chaplain to celebrate for souls, etc."
+ },
+ "203": {
+  "founders": "parishioners",
+  "founders_snip": "Later, when a chapel was built and many of the founders were dead, the survivors made ordinances for the maintenance of the chaplain and light.",
+  "clergy_gov": 0,
+  "clergy_snip": "Later, when a chapel was built and many of the founders were dead, the survivors made ordinances for the maintenance of the chaplain and light."
+ },
+ "205": {
+  "founders": "mixed",
+  "founders_snip": "1339 en _\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014E7E George Clerk, citizen of London, seeng the church was too small for the people, built on a new chapel in the south aisle to our Lady. | Master Piers de Berkhampstede, Vicar, and others (named), seeing the light was too small (built) a beam with 31 candles in honour of our Lady ",
+  "check_note": "founders: \"Master Piers de Berkhampstede, Vicar, and others (named)\"",
+  "clergy_gov": 1,
+  "clergy_snip": "Master Piers de Berkhampstede, Vicar, and others (named), seeing the light was too small (built) a beam with 31 candles in honour of our Lady and St. | The chaplain to be chosen by the vicar (if a brother), the 2 wardens, and 12 of the better brethren."
+ },
+ "207": {
+  "founders": "parishioners",
+  "founders_snip": "Richard Barnes and 30 others have founded a gild."
+ },
+ "208.i": {
+  "founders": "parishioners",
+  "founders_snip": "Afterwards united with (ii.) Rauf Capelyn (and others named), out of great devotion to God and our Lady, caused the \u201canthem Salve Regina\u201d to be sung and lights to burn at the time in honour of the 5 principal joys of our Lady. | They were joined by others, and afterwards found a chaplain to sing for"
+ },
+ "208.ii": {
+  "founders": "parishioners",
+  "founders_snip": "The good people of the country joined with the fraternity of St."
+ },
+ "233": {
+  "founders": "parishioners",
+  "founders_snip": "1379 Out of the devotion of the parishioners, in honour of St."
+ },
+ "235": {
+  "founders": "parishioners",
+  "founders_snip": "From the devotion of certain men in honour of St."
+ },
+ "255": {
+  "founders": "craft",
+  "founders_snip": "1362 Begun by young merchants in view of the need of repairs to the north side of the church. | If it shall please the King they will make a chapel joined to the church \u2014 have a chaplain celebrating daily for the good estate, ete., and forsouls. | They were afterwards joined by young merchants of to"
+ },
+ "272": {
+  "founders": "parishioners",
+  "founders_snip": "Founded by six of the town who had made pilgrimage to Canterbury."
+ },
+ "279": {
+  "founders": "parishioners",
+  "founders_snip": ".\u201d and designed this devotion to last for the period of their lives. | Others seeing their devotion offered to join them and some 13 drew up the ordinances."
+ },
+ "291": {
+  "founders": "clergy",
+  "founders_snip": "1278 Founded by the devotion of the chaplains, in honour of Corpus Christi, and to increase divine worship."
+ },
+ "292": {
+  "founders": "parishioners",
+  "founders_snip": "1380 The poor men of the parish founded this gild for the help and amendment of their poor parish church, They offer a light yearly on the Sunday before St."
+ },
+ "301": {
+  "founders": "craft",
+  "founders_snip": "\u2018Founded by divers artificers and labourers.\u201d No craft statutes."
+ },
+ "304": {
+  "founders": "craft",
+  "founders_snip": "William, the increase of divine worship, and to provide 2 chaplains in relief of those who serve God in the cathedral. | a Founded by peltyers and other good men."
+ },
+ "318": {
+  "founders": "parishioners",
+  "founders_snip": "1371 Nicholas de Worstede (and others named) seeing that the church was so little adorned and so lacking in ecclesiastical ornaments, vestments, lights, ete., founded the gild to remedy this, out of their devotion ..."
+ },
+ "333.i": {
+  "founders": "parishioners",
+  "founders_snip": "2] Out of the devotion of the parishioners and in honour of St."
+ },
+ "339": {
+  "founders": "parishioners",
+  "founders_snip": "Founded by John Maryot and John Goddyspole."
+ },
+ "340": {
+  "founders": "parishioners",
+  "founders_snip": "1385-6 Out of devotion certain men founded the gild to maintain and adorn with lights, etc."
+ },
+ "342": {
+  "founders": "parishioners",
+  "founders_snip": "1382-3 The principal cause and intent of the founding was thus: Certain men out of devotion to St. | (They aimed also) at increasing the devotion of the brethren and of the people, and fostering love and charity."
+ },
+ "348": {
+  "founders": "parishioners",
+  "founders_snip": "No date Out of the devotion of certain of the faithful, both men and women, for their eternal welfare."
+ },
+ "355": {
+  "founders": "parishioners",
+  "founders_snip": "1369 John Skete and others, of their devotion, maintain 3 candles and 2 tapers burning at mass on festivals, and propose to maintain a chaplain when funds permit."
+ },
+ "358": {
+  "founders": "parishioners",
+  "founders_snip": "Begun by 31 brethren and sisters."
+ },
+ "367": {
+  "founders": "parishioners",
+  "founders_snip": "1348 Hugo Falstolf and others out of their devotion found a candle to be carried before the priest on his way with the CORPUSXP to visit the sick."
+ },
+ "373": {
+  "founders": "craft",
+  "founders_snip": "1364 Begun by cobblers and tanners in honour of the Trinity and the bettering of the brotherhood."
+ },
+ "378": {
+  "founders": "parishioners",
+  "founders_snip": "Holy Trinity and Holy Cross"
+ },
+ "380": {
+  "founders": "parishioners",
+  "founders_snip": "1350 Certain burgesses had such devotion that they ordained (in honour of God, the B.V.M. | Later the devotion increased and they appointed another to celebrate daily. | Consequently its townsfolk can freely bequeath lands, etc., to whomsoever they will, regular or secular, to churches, altars, ligh"
+ },
+ "386": {
+  "founders": "parishioners",
+  "founders_snip": "Deed 1367 It is not to the King\u2019s damage that Simon de Surflete and others should assign certain tenements to 2 chaplains to found a chantry for mass for the said Simon and for others daily.",
+  "clergy_gov": 1,
+  "clergy_snip": "Deed 1367 It is not to the King\u2019s damage that Simon de Surflete and others should assign certain tenements to 2 chaplains to found a chantry for mass for the said Simon and for others daily. | | Letters of Archbishop of York assenting to a deed of Simon and others which constitutes the fraternity."
+ },
+ "391": {
+  "founders": "parishioners",
+  "founders_snip": "Therefore certain men and women founded a fraternity to the end that scholars of the University and visitors coming there to sleep, could hear a mass between 5and6a.m. | a Royal license 1350 to alienate certain messuages to found a chantry, granted to Nicholas Gerland."
+ },
+ "400": {
+  "founders": "parishioners",
+  "founders_snip": "Newly founded Founded by parishioners to provide lights before the image of St."
+ },
+ "415": {
+  "founders": "clergy",
+  "founders_snip": "1282 Founded by certain priests in honour of the Lord Jesus Christ, the B.V.M."
+ },
+ "426": {
+  "founders": "parishioners",
+  "founders_snip": "1366 Certain men and women out of devotion to Holy Cross gathered from their corn to provide a chaplain to celebrate once a week, 3 lights before the cross in the nave."
+ },
+ "435": {
+  "founders": "mixed",
+  "founders_snip": "Founded by the rector and certain parishioners."
+ },
+ "436": {
+  "founders": "parishioners",
+  "founders_snip": "Corpus Christi",
+  "clergy_gov": 0,
+  "clergy_snip": "to begin and have a gild in honour of the CORPUSXP and Blood of Christ and a chaplain celebrating for their welfare. | They meet at the Bishop of Chester\u2019s palace ~*"
+ },
+ "448": {
+  "founders": "mixed",
+  "founders_snip": "Founded by 20 men and women (named) and the vicar."
+ },
+ "469": {
+  "founders": "parishioners",
+  "founders_snip": "1352 One John Balauncer having a great devotion to and affection for the CORPUSXP Jesus Christ, assembled some good people of the parish ..."
+ },
+ "470": {
+  "founders": "craft",
+  "founders_snip": "1350 Minstrels and other good people have founded a fraternity to last the period of their lives."
+ },
+ "471": {
+  "founders": "parishioners",
+  "founders_snip": "1342 John Enefeld, brewer (and others including an attorney, a chandler and a whittawyer), seeing the great poverty of the church of All Saints and that its tower is in danger of collapse, and that the parishioners are too poor to help, out of their great devotion have rebuilt the tower and the chap",
+  "check_note": "founders: John Enefeld, brewer, with an attorney, a chandler and a whittawyer (lay, mixed trades)"
+ },
+ "253": {
+  "founders": "clergy",
+  "founders_snip": "It was with this in mind that the gild wag begun.",
+  "check_note": "founders: Clerk's Gild (clerks)"
+ },
+ "417": {
+  "founders": "clergy",
+  "founders_snip": "The gild claim also to have been founded temp. | Founded to chant at the funerals of the monks of Bury.",
+  "check_note": "founders: Clerks of Glemsford",
+  "clergy_excluded": 0
+ },
+ "169": {
+  "founders": "parishioners",
+  "founders_snip": "St. Mary"
+ },
+ "61": {
+  "founders": "not_stated",
+  "founders_snip": "III To found a chantry of two chaplains in the parish church to sing for all members of the fraternity. | Several townsmen and others have joined the fraternity, in order to be partakers in the prayers of the chaplains."
+ },
+ "209": {
+  "founders": "not_stated",
+  "founders_snip": "1379 (a) The brethren of the fraternity humbly represent that when it was first begun they found the chapel at the charnel-house in the cemetery of St. | Paul\u2019s in a ruinous condition, its windows were broken and thealtar so foul that none of the chaplainsofchantries there could sing for the souls o"
+ },
+ "213": {
+  "founders": "not_stated",
+  "founders_snip": "1384 Begun of love and charity and to help them of the brotherhood that fall in poverty by God\u2019s will, and to do other deeds of charity.",
+  "clergy_gov": 0,
+  "clergy_snip": "The two wardens to pay the priest when they have one.",
+  "check_note": "clergy: wardens pay the priest (lay control)"
+ },
+ "234": {
+  "founders": "not_stated",
+  "founders_snip": "1359 From the devotion which they have to St. | 7 Vicar is governor of the wild. | Brethren enjoined to make bequests to the gild.",
+  "clergy_gov": 1,
+  "clergy_snip": "The chaplain to wear a habit of linen and wool and other ornaments. | 7 Vicar is governor of the wild."
+ },
+ "274": {
+  "founders": "not_stated",
+  "founders_snip": "Others, seeing their devotion, made gifts to perpetuate it."
+ },
+ "6": {
+  "clergy_gov": 1,
+  "clergy_snip": "Transgressors against the statutes to be punished by Bishop of ly or his officer."
+ },
+ "9": {
+  "clergy_gov": 1,
+  "clergy_snip": "To maintain a chaplain to celebrate for the brethren and sisters and all present and future benefactors: Seven candles to burn before the Virgin\u2019s image on Sundays and festivals. | a year subscription for maintenance of chaplain, and the light and other charges. | The appointment of a chaplain to be"
+ },
+ "10": {
+  "clergy_gov": 1,
+  "clergy_snip": "No date \u2018While fortune smiles\u201d a chaplain to be maintained to celebrate. | 100 masses for a dead member if the gild have a chaplain. | Bishop of Ely has \u2014\u2014\u2014 jurisdiction."
+ },
+ "77": {
+  "clergy_gov": 1,
+  "clergy_snip": "1341 A chaplain celebrates on solemn days and festivals. | The vicar is custos of the gild."
+ },
+ "236": {
+  "clergy_gov": 1,
+  "clergy_snip": "If he who ought to carry the \u201c flower\u201d be dead or away the subprior to carry it. | This \u201cflower\u201d and all \u201c flowers\u2019? that have been or shall be devised, shall not be removed or changed without the consent of the prior and convent and of the whole fraternity. | (Defective.) Fragments seem to imply a "
+ },
+ "385": {
+  "clergy_gov": 1,
+  "clergy_snip": "III., Thomas Abbot of Rufford and the convent granted an annual rent to Master W. | de Codynton, perpetual chaplain, and his successors to celebrate daily at the C. | The chaplain to say daily placebo and dirige and mass of Corpus Christi, and weekly a mass of the Virgin. | , The presentation to the"
+ },
+ "387": {
+  "clergy_gov": 1,
+  "clergy_snip": "Deed 1305 (? for 1335) Grant of certain tenements, ratified by letters of Archbishop of York, for a chantry."
+ },
+ "404": {
+  "clergy_gov": 1,
+  "clergy_snip": "Every priest of the gild to remember the dead man by name for a year after death, and all the brethren generally. | Governed by a prior (or cantor).",
+  "check_note": "clergy: \"Governed by a prior (or cantor)\": title may be a gild office, ambiguous"
+ },
+ "69": {
+  "clergy_gov": 0,
+  "clergy_snip": "Other ordinances for maintaining 2 chaplains singing for the King and Queen, the Duke of Lancaster, the whole kingdom, and all brethren and sisters deceased."
+ },
+ "103": {
+  "clergy_gov": 0,
+  "clergy_snip": "Chaplain celebrating daily for John, Duke of Lancaster and the brethren and \u2014 of the gild. | A master holds lands by royal license, to provide the feast and support the chaplain."
+ },
+ "124": {
+  "clergy_gov": 0,
+  "clergy_snip": "A chaplain to celebrate at St. | The alderman to exhort the chaplain to remember on the sixth day of each week all the brethren, quick and dead, at his mass, and pour forth his prayers for them. | Each Saturday the chaplain, together with the parish priest, shall, if it please them, say an antiphon ",
+  "check_note": "clergy: lay alderman directs the chaplain (lay control)"
+ },
+ "163": {
+  "clergy_gov": 0,
+  "clergy_snip": "at the Trinity altar a chantry in memory of Master Thomas of Lowth (Canon of Lincoln), of one chaplain singing for his soul and the souls of their benefactors."
+ },
+ "182": {
+  "clergy_gov": 0,
+  "clergy_snip": "They bind themselves to find a chaplain to celebrate divine service in honour of the B.V.M., the chaplain to be their 13th brother. | oe Number limited to 12 plus the chaplain elected by them.",
+  "check_note": "clergy: chaplain elected by the brethren (lay control)"
+ },
+ "402": {
+  "clergy_gov": 0,
+  "clergy_snip": "The gild consists of a master and 12 priests, also laymen and women.",
+  "check_note": "clergy: gild \"consists of a master and 12 priests, also laymen and women\": clergy members, no governing role stated"
+ },
+ "437": {
+  "clergy_gov": 0,
+  "clergy_snip": "III TL TT SL aR Chantries of 6 chaplains in churches of Holy Trinity and St. | John Baptist for 2 chaplains celebrating, etc. | Later license to admit men and women to gid and find 7 chaplains in the new chapel because thechantriesof the originallicense had not been founded. | a The Latin ordinances",
+  "check_note": "clergy: gild ordinances form a rule for the chaplains (lay control)"
+ },
+ "466": {
+  "clergy_gov": 0,
+  "clergy_snip": "Date obliterated On account of the great number of people and pilgrims resorting to the church because of the good \u2018hostellrie \u201d there, and the poverty of the parishioners, it was agreed to find a chaplain singing for the King\u2019s ancestors, etc., and for souls ."
+ },
+ "222": {
+  "content_free": 0,
+  "lights": 1,
+  "lights_snip": "Yearly a candle.",
+  "check_note": "short entry \"Yearly a candle.\" read as content"
+ },
+ "459": {
+  "inherit_from": "458",
+  "check_note": "OCR \"As in 459\" corrected to 458 from page image context (Worton)"
+ }
+}

@@ -152,6 +152,30 @@ print('  observed rate ratio %.2f -> h = %.4f per year (half-life %.0f years)' %
 for hh in (0.01, 0.02, 0.03, 0.05):
     print('  h=%.2f: survival alone gives rate ratio %.2f' % (hh, surv_ratio(hh)))
 print('  (A one-off Black Death loss of fraction L of pre-1349 gilds multiplies the ratio by 1/(1-L).)')
+print('-' * 78)
+print('Trend check: annual rate of surviving foundations by period, and log-linear extrapolation of the')
+print('pre-1349 trend (1300-09 ... 1340-48) into the post-1349 periods. Survivors-to-1389 already rise')
+print('steeply before 1349, so part of any post-1349 excess is expected from recency alone.')
+def trend(sel, label):
+    print('  [%s]' % label)
+    bins = [(1300, 1309), (1310, 1319), (1320, 1329), (1330, 1339), (1340, 1348), (1349, 1359), (1360, 1369), (1370, 1379), (1380, 1389)]
+    rate = []
+    for a, b in bins:
+        k = sum(1 for r in sel if a <= yr(r) <= b)
+        rate.append((a, b, k, k / (b - a + 1)))
+    xs = [(a + b) / 2 for a, b, k, rr in rate[:5]]
+    ys = [math.log(max(rr, 0.05)) for a, b, k, rr in rate[:5]]
+    mx, my = sum(xs) / 5, sum(ys) / 5
+    slope = sum((x - mx) * (y - my) for x, y in zip(xs, ys)) / sum((x - mx) ** 2 for x in xs)
+    icpt = my - slope * mx
+    print('  pre-1349 log-linear growth: x%.2f per decade' % math.exp(10 * slope))
+    for a, b, k, rr in rate:
+        pred = math.exp(icpt + slope * (a + b) / 2)
+        print('  %d-%d  n=%3d  %.2f/yr   pre-trend projection %.2f/yr%s' % (a, b, k, rr, pred, '' if a < 1349 else '   observed/projected %.2f' % (rr / pred)))
+
+trend(in14, 'exact + approx years')
+trend([r for r in in14 if r['date_class'] == 'exact'], 'exact years only')
+print('  NB 1380-89 counts only gilds founded before the returns of Nov 1388-Feb 1389.')
 
 print('=' * 78)
 print('E. STATED PURPOSES (units with any stated content; inherited "as in (a)" included)')

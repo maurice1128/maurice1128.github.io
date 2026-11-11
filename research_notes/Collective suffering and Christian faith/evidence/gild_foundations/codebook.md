@@ -79,3 +79,18 @@ If column 2 gives only "No date" but column 3 or 5 gives a foundation year (e.g.
 - Cambridge, Annunciation B.V.M. (cert. 4), "1379": date_class=exact, found_year=1379, period=post; lights=1 ("A candle before the image of the Virgin"); funeral=1 ("Four torches … for funerals of members at whose requiems the brethren will attend"); masses=1 ("requiems"); aid=1 (benefits column: "Brethren who become poor … 7d. weekly"); clergy_excluded=1 ("No chaplain … shall be admitted").
 - Bottisham, Holy Trinity (cert. 3a), "Time without memory": date_class=time_out_of_mind; lights=1; masses=1 ("attend mass for a dead brother or sister"); alms_general=1 ("A halfpenny to the poor in soul-alms"); other=fabric.
 - Cambridge, St Katharine (cert. 6): clergy_gov=1 ("Transgressors against the statutes to be punished by Bishop of Ely or his officer").
+
+## Amendments made during coding (dated 2026-11-11; recorded, not silently applied)
+
+1. **Unit definition confirmed.** Westlake's own county totals (Norfolk 164, Lincolnshire 123, Cambridgeshire 60, Suffolk 39; p. 38) count gilds, not certificates. Our unit list (509 gilds on 471 certificates) reproduces those four totals exactly. Where one certificate names several gilds in a single cell ("Gilds of B.V.M., St. John Baptist and St. Nicholas", Desborough; Sawston i–iii; Swaffham Bulbeck i–iv), each gild is a unit and they share the text.
+2. **Extra date classes** needed for statements the pre-coding list did not foresee:
+   - `recent` — "lately begun", "newly", "just begun", "lately founded" (11). Period = post (a gild described as recent in 1388–9); no decade.
+   - `document_dated` — the year given is that of statutes, ordinances, a deed, licence, charter or a "renewal", not of foundation (19). The year is stored as `tpq_year` (terminus ante quem), not `found_year`. If it is ≤1348 the gild must be a pre-1349 foundation (period = pre); otherwise the period is indeterminate. Regnal years converted (17 Edw. III = 1343; 14 Edw. III = 1340; 38 Edw. III = 1364).
+   - `reign` — "temp. Edw. III" (period indeterminate) and "temp. Ric. II" (period = post).
+   - `document_or_tradition` — pre-1300 charters or traditions (Athelstan, Henry I, Henry II, King John) and "Date torn. 7 Ed." (1279, 1313 or 1333: pre-1349 on every reading).
+   - `rel_pestilence` — dated only relative to the pestilence: Tydd St Giles, "Ordinances made immediately after the 'first pestilence' (i.e., c. 1349)" (found_year 1349 is Westlake's gloss); Lynn St James, "A long time before the great pestilence" (period = pre, no year).
+   - "Before the statute of Mortmain" (1279) and "Of old time. Renewed 1377" are `time_out_of_mind`.
+3. **Westlake's "c." dates** are kept as `approx` with the year. They show heaping on years ending in 9 (1389 minus 20, 40, 60 or 80 years), i.e., they render returns that say "for forty years" and the like. The analysis reports results with and without them.
+4. **Founders** could not be coded reliably by keyword; they were coded by reading every sentence of columns 3 and 5 that contains a founding verb (list in pipeline/make_overrides.py, with the snippet stored in `founders_snip`). Named laymen "and others", "certain men", townsmen, burgesses, parishioners and "poor men of the parish" are coded `parishioners` (lay, non-craft). Clerks' gilds (Lynn Clerk's Gild; Clerks of Glemsford) are coded `clergy`.
+5. **Clergy role in governance** was screened by keyword and then decided by reading each hit; cases where the laity direct, pay or elect the chaplain are coded 0 and noted as lay control.
+6. Cross-references "Mutatis mutandis as in N" are treated like "General purpose as in (a)" (inheritance).
