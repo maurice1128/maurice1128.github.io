@@ -32,6 +32,19 @@
   - Studies in Christian Ethics 投稿規範（Sage 官網），以及 2022–2026 年類似主題的文章 5–10 篇。
 - **作者貼過的連結**（陽明交大 Primo，搜尋 DOI 10.1007/s12311-017-0897-y）：看起來是神經科學期刊 *The Cerebellum* 的文章，和本題無關，可能貼錯了，要跟作者確認。
 
+- **稿件檔案（改寫中）：** 都在 `reports/article/`。
+  - `manuscript_sce.md`：匿名正文
+  - `title_page_sce.md`：標題頁
+  - `quotation_checklist.md`：給作者核對的引文清單
+  - `works_cited_check.md`
+  - 舊版 `article_draft.md` 是歷史取向的寫法，只當素材用。
+- **作者的指示（2026-11-11）：** 一直做到可以投稿為止。順序：
+  1. 完成改寫
+  2. 補上三項證據，放進附錄
+  3. 獨立查核，再做一次模擬審稿
+  4. 轉成 Word 檔，寫投稿信
+  5. 交給作者核對引文、填個人資料
+
 ## 0. 給下一個工作階段（本地 Claude）的第一件事
 
 1. 先 `git pull`，分支是 `claude/collective-suffering-faith-comparison-w15eft`。
@@ -51,11 +64,15 @@
 - **目標期刊：Studies in Christian Ethics（Sage）**
   - 等級：芬蘭 JUFO 2、挪威 2。
   - 雙盲審查，有自己的引用格式。
-  - 投稿規範（Sage 鏡像頁）：https://sage.cnpereading.com/storage/ext/submission-guidelines/page/author-instructions_SCE.html
-  - **字數上限、引用格式、APC 都還沒確認。** 要讀完上面那個頁面。
-  - Sage 允許 AI 起草的文字，但必須申報。
-  - 一般投稿應該免費；開放取用（Sage Choice）才要付 APC。這兩點都待查證。
-  - 審查時間：人文期刊一般是第一次審查 3–6 個月，到刊登約 1–2 年。SCE 的實際數字待查證。
+  - 投稿規範已查證（2026-11-11，依 Sage 鏡像頁；官網當時回 403，投稿前要再對一次）。整理在 `reports/article/_SCE_GUIDELINES.md`：
+    - **投稿和刊登都不收費**；開放取用（Sage Choice）是自選的。
+    - 雙盲審查，兩位審稿人；可能直接被編輯退稿。
+    - 摘要 150–200 字，關鍵字 4–6 個。
+    - **用註腳，期刊有自己的格式**，不是 author-date。
+    - 英式拼字，用 -ise；引文用單引號。
+    - 頁面沒寫字數上限、審查時間。
+    - 投稿系統：https://mc.manuscriptcentral.com/sce
+    - 要交兩份：完全匿名的正文，和另一份標題頁（含各項聲明、AI 申報）。
 - **備選期刊**：Journal of Religious Ethics（Wiley，JUFO 3）→ Theology Today（Sage）或 Practical Theology（T&F）。
 - **不要投**：
   - Past & Present：禁止 AI 生成的文字。
