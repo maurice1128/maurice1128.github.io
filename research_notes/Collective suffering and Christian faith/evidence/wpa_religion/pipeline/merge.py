@@ -14,6 +14,8 @@ BLACK_NAMES = {  # documented Black interviewers / Negro-unit members (see codeb
     'adella s. dixon': 'in-text [HW: (Colored)]; Notable Folklorists of Color (GA)',
     'ardella s. dixon': 'Notable Folklorists of Color (GA)',
     'edwin driskell': 'Notable Folklorists of Color (GA)',
+    'driskell': 'GA header credit "Driskell" / "E. Driskell" / "E.F. Driskell" = Edwin Driskell (typed in full above '
+                'Isaiah Green; "By E. Driskell" above Lewis Favor); Notable Folklorists of Color (GA)',
     'louise oliphant': 'Notable Folklorists of Color (GA)',
     'willie h. cole': 'Notable Folklorists of Color (GA)',
     'augustus ladson': 'Notable Folklorists of Color (SC)',
@@ -92,14 +94,67 @@ def race_in_zone(zone):
     return None
 
 
-def interviewer_race(seg):
+# Entries whose segment holds more than the TOC-named informant's single interview. Ranges are 1-based
+# line numbers in pg<eBook>.txt, inclusive, one per interview of the TOC-named informant, each starting
+# at that interview's header block. Checked by eye against the Gutenberg text on 2026-11-11.
+#   - same-surname neighbours whose own heading was not found, so the segment begins with the
+#     neighbour's narrative (Armstrong, Boyd, Turner, Mitchell);
+#   - two interviews of the same informant by different interviewers (Green, Douglas, Harris);
+#   - narratives of other informants appended to the segment because their TOC entry could not be
+#     located (the rest). Their credit lines are not this entry's interviewer (codebook section 8).
+OWN_LINES = {
+    'AR-II-1-024': [(2230, 2272)],                # Cora Armstrong; 1997-2225 is Campbell Armstrong (S.S. Taylor)
+    'AR-II-1-067': [(6187, 6291)],                # Mal Boyd; 6128-6182 is Jack Boyd (Irene Robertson)
+    'AR-II-6-114': [(10487, 10661)],              # Henry Turner; 10404-10482 is Emma Turner (Bernice Bowden)
+    'AR-II-5-035': [(3379, 3499)],                # Moses Mitchell; his form begins in the 'Mitchell, Mary' segment
+    'GA-IV-2-005': [(931, 1079), (1084, 1326)],   # Alice Green: Corry Fowler, then Sadie B. Hornsby
+    'AR-II-2-051': [(5697, 5762), (5767, 5809)],  # Sarah Douglas: Pernella M. Anderson, then Carol Graham
+    'AR-II-3-048': [(4985, 5048), (5053, 5112)],  # Rachel Harris: Bernice Bowden, then Irene Robertson
+    'AR-II-2-018': [(2080, 2155)],                # Zenia Culp; 2160-2211 is Albert Cummins (Mrs. W.M. Ball)
+    'AR-II-2-042': [(4529, 4588)],                # Katie Dillon; 4593-4720 is Alice Dixon (Pernella Anderson)
+    'AR-II-3-064': [(6817, 6896)],                # Bert Higgins; 6901-7065 is Annie Hill (S.S. Taylor)
+    'AR-II-5-044': [(4311, 4339)],                # Tom Morgan; 4344-4428 is Charity Morris (Pernella Anderson)
+    'AR-II-6-024': [(2348, 2451)],                # William Henry Rooks; 2456-2630 is Amanda Rosa (S.S. Taylor)
+    'AR-II-1-091': [(9060, 9275)],                # William Brown (N. Little Rock); header 9060-9064 is a stub segment
+                                                  # because the INFORMANTS list has two 'Brown, William' entries
+    'AR-II-7-065': [(6044, 6146), (6151, 6206)],  # Tom Windham: Bernice Bowden (two pieces), then Martin - Barker
+    'GA-IV-2-006': [(1327, 1560), (1561, 1656)],  # Isaiah Green: Minnie B. Ross, then Edwin Driskell
+    'SC-XIV-1-028': [(3636, 3737), (3738, 3892)], # Henry Brown: Jessie A. Butler, then Augustus Ladson
+    'SC-XIV-4-056': [(6397, 6530)],               # Willis Williams; header 6397-6405 is in the 'Williams, Mary' stub
+    'NC-XI-2-049': [(5574, 5720)],                # Porter Scales; 5389-5569 is Catherine Scales (same writer)
+}
+
+def own_text(nid, seg, off=0, file_lines=None):
+    """Lines of each interview of the TOC-named informant, as a list of line lists.
+    Default: the whole segment. For OWN_LINES entries the ranges are taken from the Gutenberg file
+    (file_lines, needed where a header stands outside the segment) or else clipped to the segment."""
     L = seg['text'].split('\n')
-    cut = len(L)  # GA handwritten signatures ('[HW: Dist. 5 / Ex Slave #1 / Ross]') belong to the narrative they follow
-    pre = []
-    for zone in ('\n'.join(pre + L[:45]), '\n'.join(L[:cut][-20:])):
-        r = race_in_zone(zone)
-        if r: return r
+    if nid not in OWN_LINES: return [L]
+    if file_lines is not None:
+        return [file_lines[a - 1:b] for a, b in OWN_LINES[nid]]
+    base = seg['start_line'] + off          # file line of the segment's first line
+    return [L[max(0, a - base):max(0, b - base + 1)] for a, b in OWN_LINES[nid]]
+
+def interviewer_race(seg, nid=None, off=0, file_lines=None):
+    """Documented race of the interviewer(s) of this entry (codebook section 8).
+
+    Each interview of the TOC-named informant is searched in its first 45 and last 20 lines.
+    Several interviewers (codebook section 8, rule added 2026-11-11): Black if any of them is
+    documented Black, else white if any is documented white, else unknown."""
+    found = []
+    for own in own_text(nid, seg, off, file_lines):
+        for zone in ('\n'.join(own[:45]), '\n'.join(own[-20:])):
+            r = race_in_zone(zone)
+            if r: found.append(r); break
+    for want in ('Black', 'white'):
+        src = [s for r, s in found if r == want]
+        if src: return want, '; '.join(dict.fromkeys(src))
     return 'unknown', ''
+
+def file_lines_of(raw, pg_id, _cache={}):
+    if pg_id not in _cache:
+        _cache[pg_id] = open(os.path.join(raw, f'pg{pg_id}.txt'), encoding='utf-8', errors='replace').read().replace('\r', '').split('\n')
+    return _cache[pg_id]
 
 def derive_wc(flags):
     f = set(flags)
@@ -119,7 +174,8 @@ def file_offsets(raw):
     return off
 
 def main(work, out_csv, sub='codes'):
-    OFF = file_offsets(os.path.join(work, '..', 'raw'))
+    RAW = os.path.join(work, '..', 'raw')
+    OFF = file_offsets(RAW)
     segs = {}
     for l in open(os.path.join(work, 'segments.jsonl')):
         r = json.loads(l); segs[r['nid']] = r
@@ -143,7 +199,7 @@ def main(work, out_csv, sub='codes'):
         flags = [x for x in c.get('wc', '') if x in 'WBSF']
         wc = derive_wc(flags)
         bc = 'ns' if not flags else ('y' if ('B' in flags or 'S' in flags) else 'n')
-        race, rsrc = interviewer_race(seg)
+        race, rsrc = interviewer_race(seg, nid, OFF[seg['pg_id']], file_lines_of(RAW, seg['pg_id']))
         row = {'nid': nid, 'code_order': smp.get('code_order', ''), 'state': seg['state'], 'volume': seg['volume'],
                'gutenberg_ebook': seg['pg_id'], 'informant': seg['toc_name'],
                'segment_lines': f"{seg['start_line'] + OFF[seg['pg_id']]}-{seg['end_line'] + OFF[seg['pg_id']]}",

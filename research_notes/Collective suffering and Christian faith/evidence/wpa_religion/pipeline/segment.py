@@ -106,6 +106,54 @@ def find_start(lines, cur, sur, first, limit):
 
 WINDOW = 2500
 
+HEADER_MAX = 12    # most non-empty lines a header block above the heading may have
+HEADER_RE = re.compile(r'^(Interviewer|Interviewed by|Written by|Name of [Ii]nterviewer|By:|Field ?[Ww]orker|Reported by|'
+                       r'Research Worker|\[HW|\[Date|District|Federal Writers|[A-Z][A-Z \-\',\.]{3,60}$)')
+
+def header_start(lines, s, floor):
+    """Index of the first line of the header block that the heading line s belongs to.
+
+    The Gutenberg transcriptions separate narratives by a run of three or more blank lines
+    (normally four). The interviewer credit ("Interviewer: ...", "Worker: ...", "NAME OF WORKER--...",
+    "Prepared by ...", "X, Field Worker", "[HW: Dist. 5 / Ex-Slave #63 ... Driskell]") stands between
+    that run and the informant's name, so the segment has to start at the first non-empty line after
+    the run, not at the name. Until 2026-11-11 only lines matching HEADER_RE were backed over, which
+    stopped at lines such as "Subject: Ex-slavery" or "No. Words: 1,426" and left the credit line in
+    the tail of the previous segment.
+
+    Walk up from s to the nearest run of >= 3 blank lines. The block is accepted if it has at most
+    HEADER_MAX non-empty lines and no wrapped prose (three consecutive lines of 60+ characters).
+    Otherwise fall back to the old rule (contiguous HEADER_RE lines within 8 lines).
+    """
+    first, blanks, block = s, 0, []
+    j = s - 1
+    found = False
+    while j > floor:
+        t = lines[j].strip()
+        if t:
+            if blanks >= 3: found = True; break
+            blanks = 0; block.append(t); first = j
+            if len(block) > HEADER_MAX: break
+        else:
+            blanks += 1
+        j -= 1
+    if found:
+        run = 0
+        for t in block:
+            run = run + 1 if len(t) >= 60 else 0
+            if run >= 3: found = False; break
+    if found: return first
+    s0 = s
+    for b in range(1, 9):
+        if s - b <= floor: break
+        pl = lines[s - b].strip()
+        if not pl: continue
+        if HEADER_RE.match(pl) and not pl.startswith('"'):
+            s0 = s - b
+        else:
+            break
+    return s0
+
 def main(raw, out):
     os.makedirs(out, exist_ok=True)
     recs, problems = [], []
@@ -178,16 +226,8 @@ def main(raw, out):
         for n, (k, s) in enumerate(idx):
             e = ents[k]
             end = idx[n + 1][1] if n + 1 < len(idx) else vol_end
-            # back up over header lines just above the heading
-            s0 = s
-            for b in range(1, 9):
-                if s - b <= tend: break
-                pl = lines[s - b].strip()
-                if not pl: continue
-                if re.match(r'^(Interviewer|Interviewed by|Written by|Name of [Ii]nterviewer|By:|Field ?[Ww]orker|Reported by|Research Worker|\[HW|\[Date|District|Federal Writers|[A-Z][A-Z \-\',\.]{3,60}$)', pl) and not pl.startswith('"'):
-                    s0 = s - b
-                else:
-                    break
+            # back up over the header block (credit lines etc.) above the heading
+            s0 = header_start(lines, s, tend)
             if n > 0 and s0 <= idx[n - 1][1]: s0 = s
             text = '\n'.join(lines[s0:end])
             recs.append({'nid': f'{state}-{vol}-{k+1:03d}', 'pg_id': pid, 'state': state, 'volume': vol,

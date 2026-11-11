@@ -2,6 +2,8 @@
 
 Prepared 2026-11-11 under `_EVIDENCE_BRIEF.md`. All counts come from `data.csv`, `double_code.csv` and `corpus_screen.csv` in this folder. Running `python3 analysis.py` re-prints every table. Each coded value in `data.csv` carries a verbatim snippet and a locator (Gutenberg eBook number, line number in the plain-text file, volume and informant). The merge script checked all 400 rows against the source text and found no non-verbatim snippets.
 
+**Correction, 2026-11-11.** Interviewer credit lines that stand above the old segment start had been missed or taken from the next narrative; `interviewer` was corrected in 116 rows and `interviewer_race` in 12 (Black 47 → 56, white 11 → 12, unknown 342 → 332), which changes only the interviewer-race figures in §2, the interviewer row of §3.4, §3.5, §4 item 3 and the `interviewer_race` row of the last table; details are in §2 and `interviewer_corrections.csv`.
+
 ## Headline (for an article appendix)
 
 We drew a state-stratified random sample of 400 of the 1,418 WPA ex-slave narratives (Library of Congress deposit, Project Gutenberg edition) that mention religion, and coded it against a pre-registered codebook. Of the 206 narratives that describe how worship was organised before 1865, 44.7% (95% CI 38.0–51.5) report some Black-controlled worship, either permitted Black-led meetings or secret meetings. 53.4% report white-supervised worship only. Where preaching content is described, two-thirds of reports are obedience-only sermons (25/37, 67.6%, CI 51.5–80.4). Narratives that report Black control of worship report personal faith or prayer before freedom far more often than those that do not: 47.8% against 18.4%, an odds ratio of 4.1 (CI 2.2–7.6; state-stratified Mantel–Haenszel OR 3.4; Fisher p < 0.0001). The gap is smaller when the measure is restricted to the informant's own or a relative's faith (22.8% against 14.0%, OR 1.8, CI 0.9–3.7). Much of the association therefore comes from the same passages that describe secret or Black-led meetings. Only 28 of the 400 narratives date the informant's own conversion, and 25 of these fall after 1865. That pattern fits Fountain's emancipation-timing argument, but the informants' youth in 1865 (median age 83 in 1937) largely predetermines it, so the timing data cannot adjudicate between the two accounts.
@@ -36,6 +38,8 @@ Locators in `data.csv` cite the line number in the downloaded `pg<eBook>.txt` fi
 
 **Segmentation (step 1).** Each volume's INFORMANTS list was parsed: 2,178 informant entries, including the Kentucky "combined interviews" but excluding the excerpt compilations in Florida and Georgia pt. 4. Each entry was then located in the body by searching forward for a heading containing the informant's name, with a fallback that uses the surname and a block break (`pipeline/segment.py`). 2,143 narratives were segmented (98.4%). The 35 entries that could not be located separately remain inside a neighbouring segment. When such a merged segment was sampled, only the TOC-named informant was coded and `notes` records the merge (9 cases). Botkin's own introduction speaks of "some two thousand narratives" (Administrative Files, #13847).
 
+**Segment start (changed 2026-11-11).** The first version of `segment.py` started each segment at the heading that names the informant. In most states the header block above that heading carries the interviewer credit ("Interviewer: …", "Worker: …", "NAME OF WORKER--…", "Prepared by …", "X, Field Worker", or a bare name), so the credit was left at the end of the previous segment. `segment.py` now starts a segment at the first line after the run of three or more blank lines that separates narratives in the Gutenberg text, provided that block has at most 12 lines and no wrapped prose. Effect on the 2,143 segments: 925 starts move up (by 1–11 lines, one by 20), 4 move down past a stray note, and the previous segments end correspondingly earlier. The keyword screen gives the same result for every narrative (the same 1,418), so the sample of 400 and the double-coding subsample are identical, and every snippet locator still falls inside its segment. `segment_lines` in `data.csv` and the line columns of `corpus_screen.csv` now follow the new boundaries; `second_coder.csv` keeps the boundaries the second coder was given. Boundaries can still be wrong where two INFORMANTS entries share a surname (for example the two "Brown, William" entries, where the header forms a stub segment of its own). The sampled entries concerned, and those that hold two interviews or an appended narrative, are listed in `OWN_LINES` in `pipeline/merge.py` with the line ranges of the informant's own interview or interviews.
+
 **Keyword screen (step 2).** A narrative counted as mentioning religion if it contained at least one core term. The core terms were church (including dialect *chu'ch*), preach, pray/prayer, baptiz/baptis, convert, religion/'ligion, Jesus, camp meeting, brush or bush or hush arbor/harbor, a turned pot or kettle, sermon, Bible, deacon, revival, mourner, prayer meeting and Sunday school. Street names such as "Church St." were excluded. "Lord" and "God" were excluded because they are frequent exclamations. **1,418 of 2,143 narratives mention religion (66.2%, CI 64.1–68.1).** With "Lord/God" included the figure is 1,581. `corpus_screen.csv` gives the result for every narrative.
 
 **Sample (step 3).** 400 narratives were drawn from the 1,418, proportionally by state using largest-remainder allocation, with `random.Random(20261111)` and no replacement within state. The allocation was AL 26, AR 94, FL 12, GA 40, IN 10, KS 0, KY 5, MD 5, MO 15, MS 7, NC 33, OH 7, OK 18, SC 58, TN 6, TX 61, VA 3. Coding order was shuffled (seed 20261112) so that coder drift is not confounded with state. The double-coding subsample of 40 used seed 20261113. All of this is in `pipeline/screen_sample.py`.
@@ -43,13 +47,21 @@ Locators in `data.csv` cite the line number in the downloaded `pg<eBook>.txt` fi
 **Coding.** The codebook (`codebook.md`) was written before any sampled narrative was read. For each narrative the coder read compact extracts: every paragraph containing a religion term (with trimming of long paragraphs to the matching sentences ±1), plus the header and footer (`pipeline/packets.py`). Every non-`ns` code carries a verbatim snippet. `pipeline/merge.py` verifies each snippet against the Gutenberg text (all 400 rows pass), derives `worship_control` and `black_control_pre1865` from the component flags, and assigns `interviewer_race` by documented rules.
 
 **Interviewer race.** Race was coded only where it is documented:
-- **In-text markers:** "Negro Writers' Unit" in Florida footers; "colored" or "(Colored)" after the interviewer's name (Pernella Anderson, Adella S. Dixon, Levi D. Shelby Jr.); and "[HW: (White)]" (Sadie B. Hornsby and Grace McCune, Georgia).
+- **In-text markers:** "Negro Writers' Unit" in Florida header blocks; "colored" or "(Colored)" after the interviewer's name (Pernella Anderson, Adella S. Dixon, Levi D. Shelby Jr.); and "[HW: (White)]" (Sadie B. Hornsby and Grace McCune, Georgia).
 - **Published lists:**
   - Encyclopedia of Arkansas, "WPA Slave Narratives" (https://encyclopediaofarkansas.net/entries/WPA-Slave-Narratives-4041), names Samuel S. Taylor and Pernella M. Anderson as Black interviewers.
-  - Notable Folklorists of Color, "The Negro Units and Projects of the Federal Writers' Project…" (https://notablefolkloristsofcolor.org/centers-and-landscapes/the-negro-units-of-the-federal-writers-project-and-state-writers-projects-1935-1943/), lists Negro-unit members for Florida, Georgia (including Minnie B. Ross), South Carolina and Virginia (including Susie Byrd, Claude W. Anderson and David Hoggard).
-- **One weaker attribution:** Hannah Austin (GA) is assigned to Minnie B. Ross from a handwritten "Ross" signature, which an AccessGenealogy index also attributes to Ross.
+  - Notable Folklorists of Color, "The Negro Units and Projects of the Federal Writers' Project…" (https://notablefolkloristsofcolor.org/centers-and-landscapes/the-negro-units-of-the-federal-writers-project-and-state-writers-projects-1935-1943/), lists Negro-unit members for Florida, Georgia (including Minnie B. Ross and Edwin Driskell), South Carolina (including Augustus Ladson) and Virginia (including Susie Byrd, Claude W. Anderson and David Hoggard).
+- **Surname-only header credits (Georgia, District 5):** Atlanta narratives are headed "Driskell", "E. Driskell" or "E.F. Driskell", typed or handwritten, sometimes with the typist "Whitley". These are read as Edwin Driskell: all 13 such lines in the four Georgia volumes stand between a narrative break and the next title, one heads the first narrative of pt. 3, and the same position reads "By E. Driskell / Typed by A.M. Whitley" above Lewis Favor and "Edwin Driskell" above Isaiah Green's second interview. Three sampled narratives are affected (Mose Davis, George Eason, Jennie Kendricks).
+- **Entries with more than one interviewer** (rule added 2026-11-11, `codebook.md` §8): all interviewers are listed, and the entry is coded Black if any of them is documented Black, otherwise white if any is documented white. Four sampled entries have a documented interviewer among two: Sarah Douglas (AR; Pernella M. Anderson and Carol Graham), Isaiah Green (GA; Minnie B. Ross and Edwin Driskell), Henry Brown (SC; Jessie A. Butler and Augustus Ladson) and Alice Green (GA; Corry Fowler and Sadie B. Hornsby, coded white).
+- **Appended narratives:** where a segment also holds the narrative of another informant whose own entry could not be located, that narrative's credit is not counted (for example Tom Morgan, AR: his own interviewer is Irene Robertson; the Pernella Anderson interview in his segment is Charity Morris's).
 
-Results: Black 47, white 11, unknown 342. "Unknown" is mostly white interviewers, but they are undocumented. Handwritten Georgia footers naming "Driskell" were treated as reviewer notes, not interviewer credits, because one of them sits under a narrative headed "Written by Grace McCune [HW: (white)]".
+Results: Black 56, white 12, unknown 332. "Unknown" is mostly white interviewers, but they are undocumented.
+
+**Correction of 2026-11-11.** The first version read the credit from the first and last lines of the old segments, which begin below the header block. Every sampled narrative was therefore re-read at its header and footer in freshly downloaded texts (`pipeline/interviewer_fix.py`; each change with its evidence line is in `interviewer_corrections.csv`):
+- `interviewer` changed in 116 rows. 72 were "not recorded" although the header or footer names the worker; 109 remain "not recorded" from the first version (61 Texas, 18 Oklahoma, 12 Missouri and 18 others, where the text names nobody). 35 carried the credit of the next narrative, whose header had been read as this narrative's footer, or of an appended narrative; 34 of them now have their own credit and 1 (Alec Bostwick, GA) has none and is "not recorded", which makes 110. 4 named the editor where the footer names the interviewer. 5 gained a second interviewer.
+- `interviewer_race` changed in 12 rows. Ten moved from unknown to Black: J.M. Parker, Mary Watson and William Brown (AR, Samuel S. Taylor); Cora Armstrong (AR, "Interviewer: Pernella Anderson, colored"; the Taylor line above her segment heads Campbell Armstrong's narrative); Claude Augusta Wilson (FL, Negro Writers' Unit, James Johnson); Milton Hammond (GA, Minnie B. Ross); Mose Davis, George Eason and Jennie Kendricks (GA, Driskell); Henry Brown (SC, second interview by Augustus Ladson). Tom Morgan (AR) moved from Black to unknown and Alice Green (GA) from unknown to white.
+- The first version's statement that handwritten Georgia "Driskell" blocks are reviewer notes under the preceding narrative is withdrawn: they head the following narrative. For the same reason Hannah Austin's attribution to Minnie B. Ross no longer rests on a handwritten "Ross" (that block heads Celestia Avery); her own header has "Minnie B. Ross" typed.
+- No code column was changed. Four Arkansas rows were found to draw snippets from an appended narrative of another informant (Katie Dillon, Bert Higgins, Tom Morgan, and two of three snippets for William Henry Rooks); their codes are left as they were and need a separate check.
 
 ## 3. Results (n = 400 unless stated; Wilson 95% CIs)
 
@@ -110,25 +122,25 @@ Odds ratio 4.06 (2.17–7.59); χ² = 20.4, df 1, p = 6×10⁻⁶; Fisher exact 
 | informant's own or kin's faith only | 21/92 = 22.8% | 16/114 = 14.0% | OR 1.81 (0.88–3.72); p = 0.14 |
 | faith evidence not part of the worship snippet | 28/92 = 30.4% | 20/114 = 17.5% | OR 2.06 (1.07–3.96); p = 0.03 |
 | excluding hearsay-only narratives (n = 188) | 46.3% | 19.8% | p = 0.0001 |
-| white or unknown interviewers only (n = 185) | 45.8% | 17.6% | p = 5×10⁻⁵ |
+| white or unknown interviewers only (n = 179) | 46.2% | 18.8% | p = 0.0001 |
 | informants aged 80+ (n = 110) | 44.7% | 14.3% | p = 0.0005 |
 | stratified by state | – | – | Mantel–Haenszel OR 3.36 |
 
 **How to read this.** The co-occurrence is robust to interviewer race, informant age, hearsay and state. It is sensitive to how faith is measured. When an informant describes secret or Black-led worship, the same sentences usually describe people praying and shouting. When the outcome is restricted to the informant's own or a relative's faith, the difference shrinks and loses statistical significance. A narrative that remembers its own community's worship tends also to remember its piety. These data show association within testimony, not that control of worship produced faith.
 
-### 3.5 Interviewer race (documented Black n = 47 vs white or unknown n = 353)
+### 3.5 Interviewer race (documented Black n = 56 vs white or unknown n = 344)
 
 | reported | Black interviewer | white/unknown | Fisher p |
 |---|---|---|---|
-| obedience-only preaching | 6/47 (12.8%) | 19/353 (5.4%) | 0.10 |
-| negative attitude, all narratives | 6/47 (12.8%) | 16/353 (4.5%) | 0.03 |
-| negative attitude, among those stating an attitude | 6/19 (31.6%) | 16/155 (10.3%) | 0.02 |
-| positive attitude, among those stating an attitude | 3/19 (15.8%) | 36/155 (23.2%) | 0.57 |
-| Black control of worship | 9/47 (19.1%) | 83/353 (23.5%) | 0.58 |
-| faith before freedom | 11/47 (23.4%) | 61/353 (17.3%) | 0.31 |
-| postwar Black-run church | 8/47 (17.0%) | 33/353 (9.3%) | 0.12 |
+| obedience-only preaching | 7/56 (12.5%) | 18/344 (5.2%) | 0.07 |
+| negative attitude, all narratives | 7/56 (12.5%) | 15/344 (4.4%) | 0.02 |
+| negative attitude, among those stating an attitude | 7/22 (31.8%) | 15/152 (9.9%) | 0.01 |
+| positive attitude, among those stating an attitude | 3/22 (13.6%) | 36/152 (23.7%) | 0.41 |
+| Black control of worship | 14/56 (25.0%) | 78/344 (22.7%) | 0.73 |
+| faith before freedom | 12/56 (21.4%) | 60/344 (17.4%) | 0.46 |
+| postwar Black-run church | 10/56 (17.9%) | 31/344 (9.0%) | 0.06 |
 
-The direction matches the critique made by Blassingame (1975) and Escott (1979): informants were more critical of white religion when speaking to Black interviewers. Black interviewers are concentrated in Arkansas (26 of 47) and Florida (11), so the comparison is confounded with state. The documented-white group is only 11 narratives.
+The direction matches the critique made by Blassingame (1975) and Escott (1979): informants were more critical of white religion when speaking to Black interviewers. Black interviewers are concentrated in Arkansas (29 of 56) and Florida (12), so the comparison is confounded with state. The documented-white group is only 12 narratives. Before the correction of 2026-11-11 (§2) the groups were 47 and 353 and the two negative-attitude rows read 6/47 against 16/353 (p = 0.03) and 6/19 against 16/155 (p = 0.02); the direction and size of the difference are unchanged.
 
 ### 3.6 Intra-coder stability (step 5)
 
@@ -156,7 +168,7 @@ The disagreements concern mild positive tone (Mahala Jewel, Frank Menefee), whet
    - Proportions are conditional on a narrative mentioning religion. 48.5% of sampled narratives say nothing about pre-1865 worship; their religion talk is postwar or present-day.
 2. **Informants' age.** Median age at interview was 83 (IQR 78–88; age recorded for 301), so the typical informant was about 11 in 1865. 29.6% were 79 or younger (under about 7 in 1865), and 8.3% were 72 or younger (born after slavery, or infants). Their accounts of slavery-era worship are partly childhood memory and partly family report; 21 narratives are hearsay-only. The same age structure makes post-1865 conversions almost inevitable, so the 25-of-28 figure cannot by itself support Fountain's (2010) claim that most enslaved people converted only after emancipation.
 3. **Interview context.** The interviews took place in the 1930s Jim Crow South, mostly by white interviewers, with informants who often depended on white relief. Positive memories of masters and their religion should be read accordingly.
-   - Interviewer race is documented for only 58 of 400 narratives.
+   - Interviewer race is documented for only 68 of 400 narratives.
    - State editors revised the texts: dialect was imposed under Lomax's guidance, and handwritten edits appear in the Georgia volumes. Some narratives are interviewer paraphrase, e.g. Florida, Charles Grandy (VA) and Squires Jackson (FL); these are coded only where the paraphrase reports what the informant said.
 4. **Questionnaire prompts.** The national questionnaire asked "Did the slaves have a church on your plantation? … Who was your favorite preacher?" (item 10). It also asked "Tell why you joined a church and why you think all people should be religious" (item 19; Administrative Files, #13847). Item 19 inflates present-day and postwar church statements. Item 10 steers toward plantation churches, which are often white-run, rather than toward clandestine worship.
 5. **Measurement.**
@@ -182,13 +194,14 @@ The disagreements concern mild positive tone (Mahala Jewel, Frank Menefee), whet
 ## 6. Files
 
 - `codebook.md`: categories, decision rules and examples (written before coding).
-- `data.csv`: 400 rows, one per sampled narrative. It holds the informant, state, volume, Gutenberg eBook number, segment line range, interviewer and documented race with source, age, hearsay flag, all codes, notes, and a verbatim snippet with a `pg<eBook>.txt line N; vol., "informant"` locator for every substantive code.
+- `data.csv`: 400 rows, one per sampled narrative. It holds the informant, state, volume, Gutenberg eBook number, segment line range (header block included since 2026-11-11), interviewer and documented race with source, age, hearsay flag, all codes, notes, and a verbatim snippet with a `pg<eBook>.txt line N; vol., "informant"` locator for every substantive code.
 - `double_code.csv`: the first coder's own same-session recodes of the 40 reliability narratives (intra-coder stability).
 - `second_coder.csv`: the independent blind second coding of the same 40 narratives, with snippets, locators and notes.
 - `reliability_independent.md`: the independent reliability table, every disagreement with both codes and snippets, and their classification.
 - `corpus_screen.csv`: all 2,143 segmented narratives, with locator, keyword hits, religion flag and sampled flag.
+- `interviewer_corrections.csv`: the 117 rows whose `interviewer` or `interviewer_race` changed on 2026-11-11, with old and new values and the Gutenberg line that shows the credit.
 - `analysis.py`: re-runnable; prints every table above.
-- `pipeline/`: the segmentation, screening and sampling, extract-generation and merge/verification scripts, plus the list of Gutenberg eBook numbers. The raw downloads are not redistributed; they are re-downloadable from the URLs above.
+- `pipeline/`: the segmentation, screening and sampling, extract-generation and merge/verification scripts, the interviewer correction of 2026-11-11 (`interviewer_fix.py`), plus the list of Gutenberg eBook numbers. The raw downloads are not redistributed; they are re-downloadable from the URLs above.
 
 ## References
 
@@ -216,7 +229,7 @@ Added 2026-11-11. A separate model session recoded the 40 narratives in `double_
 | postwar_church_any | 33/40 = 82.5% | 0.64 | 12 / 19 |
 | postwar_black_church | 39/40 = 97.5% | 0.79 | 2 / 3 |
 | prayed_for_freedom | 40/40 = 100% | NA (all 40 `ns` for both coders) | 0 / 0 |
-| interviewer_race (context) | 38/40 = 95% | 0.85 | 7 / 9 |
+| interviewer_race (context) | 40/40 = 100% after the correction of 2026-11-11; 38/40 = 95% at the blind comparison | 1.00; 0.85 at the blind comparison | 9 / 9; 7 / 9 at the blind comparison |
 | hearsay_only (context) | 37/40 = 92.5% | 0.63 | 3 / 6 |
 
-The worship-control flags and obedience preaching were reproduced exactly, but agreement is lower for attitude to white preachers (the neutral–positive boundary), faith before freedom and above all postwar church attendance, and in all 20 disagreements on hypothesis variables the first coder has `ns` or `neutral` where the second coder has a substantive code (5 from text outside the keyword extract, 8 from codebook ambiguity, 7 from judgement), so the first-pass counts for those three variables are conservative lower bounds. These figures come from 40 narratives coded by a second session of the same model and not by a human rater, they leave `prayed_for_freedom` untested, and they supersede the same-session recode in §3.6, which is intra-coder stability only.
+The worship-control flags and obedience preaching were reproduced exactly, but agreement is lower for attitude to white preachers (the neutral–positive boundary), faith before freedom and above all postwar church attendance, and in all 20 disagreements on hypothesis variables the first coder has `ns` or `neutral` where the second coder has a substantive code (5 from text outside the keyword extract, 8 from codebook ambiguity, 7 from judgement), so the first-pass counts for those three variables are conservative lower bounds. These figures come from 40 narratives coded by a second session of the same model and not by a human rater, they leave `prayed_for_freedom` untested, and they supersede the same-session recode in §3.6, which is intra-coder stability only. The `interviewer_race` row is no longer a blind figure: the two disagreements (J.M. Parker, Alice Green) were first-coder errors that the correction of 2026-11-11 removed from `data.csv`, so `analysis.py` now prints 40/40.

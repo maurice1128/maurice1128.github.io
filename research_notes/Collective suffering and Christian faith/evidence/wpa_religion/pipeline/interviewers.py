@@ -15,6 +15,16 @@ PATS = [
     r'Writer\s*[:\-]\s*(.+)',
     r'Story [Tt]eller.*\n(?:.*\n)?\s*(?:Editor)\s*:\s*(.+)',
     r'--_?Written by ([^_\n]+)',
+    # credit forms that were missed until 2026-11-11 (see results.md section 2, "Correction")
+    r'NAME OF WORKER\s*--\s*(.+)',
+    r'^\W*Worker\s*:\s*(.+)',
+    r'Reporter\s*:\s*(.+)',
+    r'^\W*(.+?),\s*Reporter\b',
+    r'Prepared by\s+([^=\n]+)',
+    r'^\W*(.+?),\s*Field Worker\b',
+    r'^\W*(.+?),\s*Interviewing\b',
+    r'Personal interview by\s+([^,\n]+)',
+    r'^\W*By\s+((?:Miss |Mrs\. |Mr\. )?[A-Z][\w\.]+(?: [A-Z][\w\.]+){1,3})\s*(?:,|$)',
 ]
 
 def extract(text):
