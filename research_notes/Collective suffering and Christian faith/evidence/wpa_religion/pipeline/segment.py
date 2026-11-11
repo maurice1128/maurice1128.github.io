@@ -106,6 +106,26 @@ def find_start(lines, cur, sur, first, limit):
 
 WINDOW = 2500
 
+def header_start(lines, s, floor):
+    """Index of the first line of the header block that sits above heading index s.
+    In these volumes a narrative is set off from the one before it by a run of three or more
+    blank lines, and its header (interviewer or worker credit, project, district, date) is a
+    block of short lines between that gap and the heading. Walk up from the heading over short
+    lines; accept the block only if it ends at such a gap. If running prose (a line of 66+
+    characters that is not a bracketed [HW:]/[TR:] note) or more than 14 lines come first, the
+    lines above belong to the previous narrative and the start stays at the heading."""
+    top, blanks, n = s, 0, 0
+    for j in range(s - 1, floor, -1):
+        t = lines[j].strip()
+        if not t:
+            blanks += 1
+            if blanks >= 3: return top
+            continue
+        blanks = 0
+        if (len(t) >= 66 and not t.startswith('[')) or n >= 14: return s
+        n += 1; top = j
+    return s
+
 def main(raw, out):
     os.makedirs(out, exist_ok=True)
     recs, problems = [], []
@@ -178,16 +198,9 @@ def main(raw, out):
         for n, (k, s) in enumerate(idx):
             e = ents[k]
             end = idx[n + 1][1] if n + 1 < len(idx) else vol_end
-            # back up over header lines just above the heading
-            s0 = s
-            for b in range(1, 9):
-                if s - b <= tend: break
-                pl = lines[s - b].strip()
-                if not pl: continue
-                if re.match(r'^(Interviewer|Interviewed by|Written by|Name of [Ii]nterviewer|By:|Field ?[Ww]orker|Reported by|Research Worker|\[HW|\[Date|District|Federal Writers|[A-Z][A-Z \-\',\.]{3,60}$)', pl) and not pl.startswith('"'):
-                    s0 = s - b
-                else:
-                    break
+            # back up to the top of the header block above the heading (credit lines such as
+            # "Interviewer:", "Worker:", "Prepared by", a field worker's name, project and district lines)
+            s0 = header_start(lines, s, tend)
             if n > 0 and s0 <= idx[n - 1][1]: s0 = s
             text = '\n'.join(lines[s0:end])
             recs.append({'nid': f'{state}-{vol}-{k+1:03d}', 'pg_id': pid, 'state': state, 'volume': vol,

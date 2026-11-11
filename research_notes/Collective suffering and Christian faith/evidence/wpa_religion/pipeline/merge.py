@@ -14,6 +14,7 @@ BLACK_NAMES = {  # documented Black interviewers / Negro-unit members (see codeb
     'adella s. dixon': 'in-text [HW: (Colored)]; Notable Folklorists of Color (GA)',
     'ardella s. dixon': 'Notable Folklorists of Color (GA)',
     'edwin driskell': 'Notable Folklorists of Color (GA)',
+    'e. driskell': 'Notable Folklorists of Color (GA), as Edwin Driskell',
     'louise oliphant': 'Notable Folklorists of Color (GA)',
     'willie h. cole': 'Notable Folklorists of Color (GA)',
     'augustus ladson': 'Notable Folklorists of Color (SC)',
@@ -81,10 +82,14 @@ def race_in_zone(zone):
     zl = zone.lower()
     if re.search(r"negro writers'? unit|negro unit", zl):
         return 'Black', 'in-text: (Negro Writers\' Unit)'
-    if re.search(r'interviewer[^\n]*\b(colored|negro)\b|\[hw:\s*\(colored\)\]', zl):
+    # the marker must stand on the credit line itself, not in running text ("the interviewer asked the old Negro")
+    if re.search(r'(?m)^[ \t]*(?:name of )?interviewers?[ \t]*[:\-][^\n]*\b(colored|negro)\b|\[hw:\s*\(colored\)\]', zl):
         return 'Black', 'in-text: interviewer marked colored'
     for n, src in BLACK_NAMES.items():
         if n in zl: return 'Black', f'{n}: {src}'
+    # Georgia, Atlanta district 5: header blocks that give the worker by surname only ("Whitley / 1-22-36 / Driskell")
+    if re.search(r'(?m)^[ \t]*driskell\]?[ \t]*$', zl):
+        return 'Black', 'driskell: header gives surname only (Atlanta, Dist. 5) = Edwin Driskell, Notable Folklorists of Color (GA)'
     if re.search(r'\[hw:\s*\(white\)\]', zl):
         return 'white', 'in-text: [HW: (White)]'
     for n, src in WHITE_NAMES.items():
@@ -93,10 +98,15 @@ def race_in_zone(zone):
 
 
 def interviewer_race(seg):
+    """Race by the documented rules, read from the narrative's own header (first 45 lines) and footer
+    (last 20 lines). This is only right when the segment starts at the top of its header block and
+    ends before the next narrative's header: segment.py now does that (header_start). The first run
+    of the project used segments that started at the title line, so a credit line above the title
+    was missed and the next narrative's header was read as this one's footer; data.csv was corrected
+    for that by fix_interviewers.py, which also handles merged segments and entries with two
+    interviewers (codebook section 8)."""
     L = seg['text'].split('\n')
-    cut = len(L)  # GA handwritten signatures ('[HW: Dist. 5 / Ex Slave #1 / Ross]') belong to the narrative they follow
-    pre = []
-    for zone in ('\n'.join(pre + L[:45]), '\n'.join(L[:cut][-20:])):
+    for zone in ('\n'.join(L[:45]), '\n'.join(L[-20:])):
         r = race_in_zone(zone)
         if r: return r
     return 'unknown', ''

@@ -68,12 +68,17 @@ The informant's own conversion, "getting religion", baptism as a believer, or jo
 - **ns:** otherwise.
 
 ### 8. Interviewer and `interviewer_race` (Black / white / unknown)
-- **interviewer:** as given in the narrative's header or footer (typed or handwritten [HW]), else "not recorded".
+- **interviewer:** as given in the narrative's header or footer (typed or handwritten [HW]), else "not recorded". The header includes the block of short lines above the title (credit, project, district, date), which follows the run of blank lines that ends the previous narrative. A credit in that block belongs to the narrative below it, not to the one above.
 - **Black:** (a) an in-text marker ("Negro Writers' Unit" in the Florida volume; "colored" or "[HW: (Colored)]" after the name), or (b) the name is documented as a member of a Negro unit or as a Black interviewer in a published source:
   - Encyclopedia of Arkansas, "WPA Slave Narratives": Samuel S. Taylor and Pernella M. Anderson, Arkansas.
   - Notable Folklorists of Color, "The Negro Units and Projects of the Federal Writers' Project…": Florida, Georgia, South Carolina and Virginia unit members. These include Georgia's Minnie B. Ross, Ardella/Adella S. Dixon, Edwin Driskell, Louise Oliphant and Willie H. Cole; South Carolina's Augustus Ladson and Laura Lee Middleton; and Virginia's Susie R. C. Byrd, Claude W. Anderson, Thelma Dunston and David Hoggard.
 - **white:** an in-text marker "[HW: (White)]" (Georgia: Sadie B. Hornsby, Grace McCune). The marker applies to every narrative by that interviewer.
 - **unknown:** otherwise. Most white interviewers are not documented as white, so "unknown" mostly means probably white but undocumented, and is reported as such.
+- **Rules added on 2026-11-11, after coding, when the interviewer columns were corrected** (`results.md` §2):
+  - *Two interviewers.* If one entry holds interviews of the same informant by different interviewers, `interviewer` lists them in text order joined by " + ". `interviewer_race` is coded only if every interviewer of the entry has the same documented race. Otherwise it is `unknown`, and `interviewer_race_source` says which interviewer is documented and which is not. Reason: the entry's codes pool testimony from all its interviews, so the race of the audience is not single.
+  - *Merged segments.* If a segment also holds another informant's interview, the interviewer is the one credited on the TOC-named informant's own interview.
+  - *Editor and interviewer.* If the header names only an editor ("Edited by") and the footer names the interviewer ("Interviewer:"), the interviewer is recorded.
+  - *Surname only.* Georgia headers from the Atlanta district that give the worker as "Driskell" or "E. Driskell" are read as Edwin Driskell of the Georgia Negro unit, and the source field says so.
 
 ### 9. Context fields (not hypothesis variables)
 - `age_1937`: the informant's stated age at the interview, or computed from a stated birth year (1937 assumed if the interview is undated); best effort, may be blank.
