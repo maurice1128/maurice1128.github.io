@@ -19,7 +19,13 @@ This script
      (one row per changed narrative, old and new values, evidence line).
 No code column is touched.
 
-Usage: python3 -I interviewer_fix.py WORK_DIR RAW_DIR PROJECT_DIR [--dry]
+Six of the rows (the unknown -> Black cases found by name search: Parker, Watson, William Brown, Cora
+Armstrong, Wilson, Hammond) had already been corrected by hand earlier on the same day
+(interviewer_race_corrections.md). This script reaches the same values for them. So that the audit
+file lists every change since the first version, old values are read from a copy of the first
+version of data.csv when one is given (git show 0819d5f:<path>/data.csv > FIRST.csv).
+
+Usage: python3 -I interviewer_fix.py WORK_DIR RAW_DIR PROJECT_DIR [--dry] [--baseline FIRST.csv]
 """
 import csv, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -176,7 +182,7 @@ def find_evidence(lines, a, b, key):
         if key in t.lower() and len(t) < 110: return i + 1
     return None
 
-def main(work, raw, proj, dry=False):
+def main(work, raw, proj, dry=False, baseline=None):
     OFF = merge.file_offsets(raw)
     segs = {}
     for l in open(os.path.join(work, 'segments.jsonl')):
@@ -184,11 +190,14 @@ def main(work, raw, proj, dry=False):
     dpath = os.path.join(proj, 'data.csv')
     rows = list(csv.DictReader(open(dpath, encoding='utf-8', newline='')))
     fields = list(rows[0].keys())
+    first = {r['nid']: r for r in csv.DictReader(open(baseline, encoding='utf-8', newline=''))} if baseline else {}
     audit, problems = [], []
     for r in rows:
         nid = r['nid']; seg = segs[nid]; off = OFF[seg['pg_id']]
         fl = merge.file_lines_of(raw, seg['pg_id'])
-        old = (r['interviewer'], r['interviewer_race'], r['interviewer_race_source'], r['segment_lines'])
+        o = first.get(nid, r)
+        old = (o['interviewer'], o['interviewer_race'], o['interviewer_race_source'], o['segment_lines'])
+        earlier = bool(first) and (r['interviewer'], r['interviewer_race']) != old[:2]
         a, b = seg['start_line'] + off, seg['end_line'] + off
         ev_line, note = '', RACE_NOTES.get(nid, '')
         if nid in IV:
@@ -218,7 +227,7 @@ def main(work, raw, proj, dry=False):
                           'interviewer_race_source_new': new[2],
                           'evidence_line': ev_line,
                           'evidence_text': fl[ev_line - 1].strip() if ev_line else '',
-                          'note': note})
+                          'note': (note + ' ' if note and earlier else note) + ('[these values were already set by the hand correction recorded in interviewer_race_corrections.md]' if earlier else '')})
     for p in problems: print('PROBLEM', p)
     if problems: sys.exit(1)
     import collections
@@ -247,4 +256,5 @@ def main(work, raw, proj, dry=False):
     return audit
 
 if __name__ == '__main__':
-    main(sys.argv[1], sys.argv[2], sys.argv[3], '--dry' in sys.argv)
+    main(sys.argv[1], sys.argv[2], sys.argv[3], '--dry' in sys.argv,
+         sys.argv[sys.argv.index('--baseline') + 1] if '--baseline' in sys.argv else None)
