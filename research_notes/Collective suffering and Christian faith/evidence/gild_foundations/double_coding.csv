@@ -1,0 +1,52 @@
+unit_id,date_class,decade,period,pest_mention,funeral,masses,chaplain,lights,aid,alms_general,feast,other,founders,clergy_gov,note
+G0006,not_stated,,,0,0,1,0,1,0,1,0,1,not_stated,0,inherits (a)
+G0008,not_stated,,,0,0,1,0,1,0,1,0,1,not_stated,0,inherits (a)
+G0009,not_stated,,,0,0,1,0,1,0,1,0,1,not_stated,0,inherits (a)
+G0023,time_out_of_mind,,,0,0,0,0,1,0,0,0,0,not_stated,0,
+G0025,exact,1330,pre,0,0,1,0,1,0,1,0,0,not_stated,0,
+G0033,approx,1370,post,0,0,1,0,1,0,0,0,0,not_stated,0,
+G0034,approx,1350,post,0,1,1,0,1,1,1,1,1,not_stated,0,
+G0038,exact,1370,post,0,0,0,0,1,1,0,0,0,not_stated,0,
+G0042,recent,,post,0,0,0,0,0,0,0,0,1,not_stated,0,
+G0087,not_stated,,,0,0,0,1,1,0,0,0,0,not_stated,0,
+G0115,not_stated,,,0,0,1,1,1,0,0,0,0,not_stated,0,
+G0119,not_stated,,,0,1,1,1,0,0,0,0,0,not_stated,0,
+G0125,exact,1350,post,0,0,1,1,1,0,1,1,0,not_stated,0,
+G0127,not_stated,,,0,1,1,1,1,0,0,0,0,not_stated,0,
+G0140,not_stated,,,0,1,0,1,1,0,1,0,1,not_stated,0,
+G0143,not_stated,,,0,1,1,1,1,0,0,0,0,not_stated,0,
+G0156,not_stated,,,0,0,0,0,0,0,0,0,1,not_stated,0,
+G0183,exact,1320,pre,0,1,1,0,1,1,1,0,1,craft,0,
+G0185,exact,1360,post,0,0,0,0,1,0,0,0,1,not_stated,0,
+G0193,exact,1370,post,0,0,0,1,1,1,0,0,0,parishioners,0,"coded from visible text; 'Other regulations as in 166' not expanded"
+G0195,exact,1310,pre,0,1,1,1,1,1,1,0,0,parishioners,0,
+G0213,exact,1360,post,0,0,0,0,1,0,1,1,0,parishioners,0,
+G0214,exact,1350,post,0,0,0,0,0,0,0,0,1,parishioners,0,
+G0217,not_stated,,,0,0,0,0,0,0,0,0,0,not_stated,0,content-free
+G0231,not_stated,,,0,0,1,1,1,0,0,0,0,parishioners,0,
+G0234,not_stated,,,0,0,0,1,1,0,0,0,1,not_stated,0,
+G0242,time_out_of_mind,,,0,1,1,0,1,0,0,0,0,craft,0,
+G0243,approx,1380,post,0,1,1,0,1,0,0,0,0,not_stated,0,
+G0250,exact,1360,post,0,0,0,0,1,0,0,0,0,not_stated,0,"visible text only; 'mutatis mutandis as in 218' not expanded"
+G0255,time_out_of_mind,,,0,0,0,0,1,0,1,0,0,not_stated,0,
+G0278,not_stated,,,0,0,1,0,1,0,0,0,0,not_stated,0,
+G0279,exact,1370,post,0,1,1,1,1,1,0,1,0,not_stated,0,
+G0282,rel_pestilence,,pre,1,1,1,0,1,1,0,0,0,not_stated,0,
+G0308,time_out_of_mind,,,0,1,0,1,1,0,0,0,0,not_stated,0,
+G0313,not_stated,,,0,1,1,0,1,1,1,0,0,not_stated,0,
+G0343,exact,1380,post,0,1,1,0,1,0,1,1,1,not_stated,0,
+G0346,exact,1300,pre,0,1,0,0,1,1,1,0,0,not_stated,0,
+G0350,time_out_of_mind,,,0,1,1,0,1,0,0,0,0,not_stated,0,
+G0369,exact,1230,early,0,1,0,0,1,0,0,0,0,not_stated,0,
+G0391,exact,1380,post,0,0,1,0,1,1,0,0,0,not_stated,0,
+G0402,exact,1340,pre,0,0,0,0,1,0,0,0,0,parishioners,0,"'This they have done for 40 years'"
+G0408,exact,1360,post,0,1,1,0,1,1,1,0,0,craft,0,
+G0424,document_dated,,pre,0,0,0,1,0,0,0,0,0,not_stated,1,
+G0427,exact,1370,post,0,1,1,1,0,1,1,0,0,not_stated,0,
+G0450,exact,1340,pre,0,1,1,0,1,0,1,0,0,not_stated,0,
+G0454,exact,1060,early,0,1,0,0,0,1,0,0,1,clergy,0,
+G0458,exact,1370,post,0,0,0,1,1,0,0,0,1,not_stated,0,
+G0462,exact,1370,post,0,0,0,0,0,0,0,0,0,not_stated,0,"visible text only; 'Mutatis mutandis as in 423' not expanded"
+G0478,document_dated,,,0,0,0,1,1,1,0,0,0,not_stated,0,
+G0491,exact,1350,post,0,1,0,1,1,0,0,0,1,not_stated,0,
+G0500,not_stated,,,0,0,0,0,0,0,0,0,0,not_stated,0,content-free

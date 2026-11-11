@@ -1,0 +1,77 @@
+The novelty review (section 11) -> The novelty review (section 18)
+gathered community survives (section 16) -> gathered community survives (section 17)
+weakens in secure societies (section 16) -> weakens in secure societies (section 17)
+can be met by secular meaning (section 16) -> can be met by secular meaning (section 17)
+The Jews of 1348–51 (section 11) -> The Jews of 1348–51 (section 14)
+The comparative design (section 11) -> The comparative design (section 14)
+when coding sources (section 11.7) -> when coding sources (section 14.7)
+section 16 records the later fall in trust -> section 17 records the later fall in trust
+(Pew Research Center 2021c; section 16) -> (Pew Research Center 2021c; section 17)
+Section 16 reviews the evidence -> Section 17 reviews the evidence
+Up, then down (section 16) -> Up, then down (section 17)
+section 16's COVID evidence -> section 17's COVID evidence
+Section 11 recommends a core pair -> Section 14 recommends a core pair
+evidence section 11 asks process tracing -> evidence section 14 asks process tracing
+treated in sections 4, 10 and 12 -> treated in sections 4, 10 and 13
+(Salfeld 1898; sections 10 and 12) -> (Salfeld 1898; sections 10 and 13)
+not the Christian outcome (section 11) -> not the Christian outcome (section 14)
+(Dols 1977; sections 10 and 12) -> (Dols 1977; sections 10 and 13)
+See section 11.7 -> See section 14.7
+institutional performance (section 11.6) -> institutional performance (section 14.6)
+(Voas and Crockett 2005; section 16) -> (Voas and Crockett 2005; section 17)
+the hoop test of section 11.10 -> the hoop test of section 14.10
+its allocation between channels (section 11.7) -> its allocation between channels (section 14.7)
+institutional moves separately (section 11.6) -> institutional moves separately (section 14.6)
+main proximate driver today (section 16) -> main proximate driver today (section 17)
+Narrative (section 10) -> Narrative (section 11)
+Section 11 supplies the answer -> Section 14 supplies the answer
+load on both (section 11.7) -> load on both (section 14.7)
+historical collective suffering (section 19) -> historical collective suffering (section 18)
+(sections 15.4, 19.5) -> (sections 15.4, 18.5)
+(sections 4, 11.6) -> (sections 4, 14.6)
+(sections 4, 5, 19.5) -> (sections 4, 5, 18.5)
+(sections 9, 19.5) -> (sections 9, 18.5)
+(sections 7, 16) -> (sections 7, 17)
+(section 19.1) -> (section 18.1)
+database searches in section 19.7 -> database searches in section 18.7
+(section 10, primary sources) -> (section 11)
+split outcome (section 19.6) -> split outcome (section 18.6)
+searches listed in section 19.7 -> searches listed in section 18.7
+10. Guide to primary sources -> 11. Guide to primary sources
+11. Rare datasets -> 12. Rare datasets
+12. Sources in ancient -> 13. Sources in ancient
+11. Methodological debates -> 14. Methodological debates
+16. Implications for the contemporary church -> 17. Implications for the contemporary church
+19. Novelty check -> 18. Novelty check
+20. Research gaps -> 19. Research gaps
+12.1 Biblical Hebrew -> 13.1 Biblical Hebrew
+12.2 Greek: participation, -> 13.2 Greek: participation,
+12.3 Latin: the -> 13.3 Latin: the
+12.4 Medieval vernaculars: -> 13.4 Medieval vernaculars:
+12.5 Classical Arabic: -> 13.5 Classical Arabic:
+12.6 Medieval Hebrew: -> 13.6 Medieval Hebrew:
+12.7 Syriac and -> 13.7 Syriac and
+12.8 Indigenous languages, -> 13.8 Indigenous languages,
+12.9 Summary table -> 13.9 Summary table
+12.10 Which ancient -> 13.10 Which ancient
+12.11 Implications for -> 13.11 Implications for
+11.1 Logics of -> 14.1 Logics of
+11.2 Small-N critiques -> 14.2 Small-N critiques
+11.3 Comparison in -> 14.3 Comparison in
+11.4 Why race -> 14.4 Why race
+11.5 Medieval racialization -> 14.5 Medieval racialization
+11.6 Dating and -> 14.6 Dating and
+11.7 Measuring "faith" -> 14.7 Measuring "faith"
+11.8 The five -> 14.8 The five
+11.9 Anticipated reviewer -> 14.9 Anticipated reviewer
+11.10 Design recommendation -> 14.10 Design recommendation
+19.2 Closest prior -> 18.2 Closest prior
+19.3 Fresh search -> 18.3 Fresh search
+19.4 What a -> 18.4 What a
+19.5 Novelty claims -> 18.5 Novelty claims
+19.6 Reviewer risks -> 18.6 Reviewer risks
+19.7 Searches the -> 18.7 Searches the
+20.1 Gaps the -> 19.1 Gaps the
+20.2 Contribution of -> 19.2 Contribution of
+20.3 Journal fit -> 19.3 Journal fit
+20.4 AI-use disclosure -> 19.4 AI-use disclosure
