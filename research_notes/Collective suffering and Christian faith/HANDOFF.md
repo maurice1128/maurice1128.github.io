@@ -1,9 +1,36 @@
 # Handoff：集體苦難、信仰與教會信任
 
-最後更新：2026-11-07。作者要從雲端工作階段轉到本地。
+最後更新：2026-11-11。作者要從雲端工作階段轉到本地。
 詳細的歷史紀錄：`HANDOFF_history_2026-11-07.md`（同一個資料夾）。
 
 ---
+
+## ★ 最新方向（2026-11-11）
+- **改寫成倫理論文。** 作者只會讀這一篇論文，所以論點要靠神學倫理的推理撐起來。歷史只用三個場景，以一手史料的原文為主：黑死病、被奴役的基督徒、台灣長老教會。
+- **歷史推論要保守：**
+  - 只寫有原文支持的史實。
+  - 推論要明說是詮釋，並把對立的解釋寫出來。
+  - 不寫因果，例如「長老教會的立場造成了信任」這種說法不能寫。
+  - 史實和推論分別有多穩固，見本次對話的評估（第一層：史實穩；第二層：推論中到弱）。
+- **證據補強（雲端已經開始，進行中）：** 輸出在 `evidence/<project>/`，包括 codebook、data.csv、analysis.py、results.md。
+  1. `husting_wills`：倫敦市政法庭（Court of Husting）的遺囑，1320–1400 年，比較兩波瘟疫前後的宗教捐贈去向。
+  2. `gild_foundations`：英格蘭堂區兄弟會的成立年份與宗旨，依 1388–89 年的調查申報（Westlake 1919）。
+  3. `wpa_religion`：WPA 前奴隸訪談全集，分層隨機抽 400 份，系統編碼。
+  - 共同規範：`evidence/_EVIDENCE_BRIEF.md`。每項都要做 10% 雙重編碼並計算 kappa，表格附信賴區間，不寫因果。
+  - 結果放進附錄，正文只寫結論和限制。
+- **作者要辦的：** 申請 SRDA 會員，才能下載台灣社會變遷調查的原始資料做加權分析。台灣那部分的推論要靠這個補強。
+- **在本地用 Chrome 讀付費文章：** 作者的 Chrome 已登入陽明交大圖書館。本地 Claude 若有 Claude in Chrome，請用它讀以下全文（只供個人研究，不得轉傳），並把重點和頁碼寫進 `reading/paywalled_fulltext.md`：
+  - Cohn 1992，*The Cult of Remembrance*：查證「1363 年轉折」的說法。
+  - Robinson 2019，*Archives* 54/2：神職人員招募。
+  - Fountain 2010，*Slavery, Civil War, and Salvation*：方法和那個「不到四成」的數字。
+  - Belloc, Drago & Galbiati 2016，QJE 正式版：「延後最多約十年」、教堂興建。
+  - Madsen 2012（華藝）、邱凱莉 2021（華藝）、王梅霞 2018：台灣部分。
+  - 曾慶豹 2017：黨國基督徒。
+  - Raboteau 1978/2004：Invisible Institution。
+  - Larkin 1972（AHR）：虔誠革命。
+  - Bottan & Perez-Truglia 2015、Frick, Moser & Simmons 2021：當代教會信任。
+  - Studies in Christian Ethics 投稿規範（Sage 官網），以及 2022–2026 年類似主題的文章 5–10 篇。
+- **作者貼過的連結**（陽明交大 Primo，搜尋 DOI 10.1007/s12311-017-0897-y）：看起來是神經科學期刊 *The Cerebellum* 的文章，和本題無關，可能貼錯了，要跟作者確認。
 
 ## 0. 給下一個工作階段（本地 Claude）的第一件事
 
