@@ -1,6 +1,13 @@
 """Rule-based coder for Husting will entries (project husting_wills).
 Implements codebook.md. Deterministic: same input -> same output.
 Usage: python3 -I code_wills.py wills.json out.csv [--with-text]
+
+Amended 2026-11-11 after the independent audit (see results.md, change log):
+  (1) the burial-clause rule now also matches "TO be buried" and the misprint "To he buried"
+      (five entries were missed);
+  (2) two descriptive columns were added for wills with a chantry or obit: holder_private_named
+      (a wife, heir, executor or other private person is named in the chantry/obit sentence)
+      and parish_body_kind (rector_only / lay_only / both). No other rule was changed.
 """
 import sys, re, json, csv
 
@@ -155,6 +162,11 @@ TRUSTEE = {
     'church_corporate': re.compile(r"Dean and Chapter|Prior(?:ess)? and (?:Convent|Canons|Nuns)|Abbot and Convent|Abbess and Convent|Master and Brethren|Warden and Brethren|"
                                    r"Master and (?:Chaplains|Fellows)|Minor Canons|college of|College of|their successors", re.I),
 }
+SOULS = re.compile(r"(?:for (?:the )?(?:good|welfare|health|benefit) of )?(?:(?:his|her|their|the|my) )?(?:own )?souls?\b[^;.]*", re.I)
+PRIVATE_HOLDER = re.compile(r"\b(?:wife|husband|sons?|daughters?|heirs?|executors?|brothers?|sisters?|kinsm[ae]n|kinswom[ae]n|nephews?|"
+                            r"nieces?|mother|father|apprentices?|servants?|feoffees?|assigns)\b", re.I)
+PB_RECTOR = re.compile(r"\b(?:rectors?|vicars?|parsons?)\b", re.I)
+PB_LAY = re.compile(r"churchwardens?|parishioners|wardens of the (?:said |same )?(?:church|fabric|works?)|good men of the parish", re.I)
 LAY_EXCL = re.compile(r"(?:held (?:of|under)|by grant of|holden of|leasehold)[^.;]{0,40}(?:Mayor|Commonalty|Wardens)", re.I)
 
 
@@ -231,7 +243,7 @@ def code(r):
     for s in sents:
         work = s
         # ---- burial clause
-        bm = re.search(r"(?:If (?:he|she) die[^,]*,\s*)?(?:desires? |wills? |directs? )?(?:[Tt]o be buried|[Bb]ody to be buried|desires? burial|[Hh]is burial (?:to be )?(?:in|at))[^;]*?(?=;|, to (?:the|which|whose)|, and (?:he |she )?leaves|$)", work)
+        bm = re.search(r"(?:If (?:he|she) die[^,]*,\s*)?(?:desires? |wills? |directs? )?(?:[Tt][Oo] [bh]e buried|[Bb]ody to be buried|desires? burial|[Hh]is burial (?:to be )?(?:in|at))[^;]*?(?=;|, to (?:the|which|whose)|, and (?:he |she )?leaves|$)", work)
         if bm:
             bt = bm.group(0)
             if burial_site == 'none_stated':
@@ -422,6 +434,27 @@ def code(r):
                         trustees.append(k)
         if not trustees:
             trustees = ['private']
+    # ---- holder detail (added after the audit; descriptive, not double-coded)
+    private_named = ''
+    pb_kind = ''
+    if flags['chantry'] or flags['obit']:
+        named = 0
+        has_rector = has_lay = 0
+        for s in chantry_sents:
+            # drop "for the good of his soul and the souls of ..." so that kin named as souls are not read as holders
+            t = SOULS.sub(' ', s)
+            if PRIVATE_HOLDER.search(t):
+                named = 1
+            if TRUSTEE['parish_body'].search(s):
+                if PB_RECTOR.search(s):
+                    has_rector = 1
+                if PB_LAY.search(s):
+                    has_lay = 1
+        private_named = named
+        if 'parish_body' in trustees:
+            pb_kind = 'both' if (has_rector and has_lay) else 'lay_only' if has_lay else 'rector_only'
+    out['holder_private_named'] = private_named
+    out['parish_body_kind'] = pb_kind
     out['chantry_perpetual'] = perp
     out['chantry_temporary'] = temp
     out['chantry_trustee'] = ';'.join(trustees)
@@ -449,6 +482,8 @@ def main():
         row['chantry_perpetual'] = c['chantry_perpetual']
         row['chantry_temporary'] = c['chantry_temporary']
         row['chantry_trustee'] = c['chantry_trustee']
+        row['holder_private_named'] = c['holder_private_named']
+        row['parish_body_kind'] = c['parish_body_kind']
         for v in VARS:
             row[v + '_snip'] = c[v + '_snip']
         row['entry_words'] = len(re.sub(r'Roll [\d.]+\s*\([^)]*\)\.?', '', r['text']).split())
