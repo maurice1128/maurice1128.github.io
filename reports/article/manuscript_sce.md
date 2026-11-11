@@ -130,6 +130,58 @@ Traditions weigh these texts differently, and each sees something. Liberation an
 
 Read together, the texts say four things to a church that holds a remedy. The remedy and the flock belong to God (Ezek. 34). God is with those who cry out, and their complaint is prayer (Exod. 3:7; Ps. 88). Those who hold office will give an account (Heb. 13:17). And a church that has failed can say so and change (Acts 6; Neh. 9). This is the normative content of the three questions.
 
+## 5 Reflections for the church in Taiwan
+
+Taiwan serves as the worked example for two reasons. One of its churches has left an unusually explicit public record of where it stood and of where it failed to stand. And survey data exist on how far people in Taiwan trust religious bodies. I set out what that record shows, and then put the questions.
+
+**What the record shows.** The first part of the record is the sequence described in section 2.3: three public statements between 1971 and 1977, a pastoral letter in 1989, and in 1990 an apology addressed to the victims of 1947 and their families and to God.
+
+The second part is a survey series. The Taiwan Social Change Survey asked respondents how much they trusted religious groups and churches. The share answering that they trusted them completely or very much was 21.5 per cent in 2009, 13.3 per cent in 2014 and 10.7 per cent in 2018. The share expressing distrust was 16.0, 22.0 and 26.9 per cent in the same years.[^77] Three cautions govern any use of these figures. They come from published frequency tables and appear to be unweighted. The question covers religious groups of every tradition, and in these surveys Protestants were about 4 to 6 per cent of respondents, so the figures say nothing specific about Christian churches. And the series runs only from 2009 to 2018, because the 2023 survey did not repeat the question. The fall was already under way between 2009 and 2014. Its causes are unknown, and I offer no explanation of it.
+
+A further item bears on public speech. In 2018, 67.6 per cent of respondents disapproved of religious leaders commenting publicly on whether the country is democratic; the figure was 62.3 per cent in 2014 and 60.6 per cent in 2023.[^78] The year 2018 was also the year of national referendums, among them questions on same-sex marriage, in which church-based groups campaigned.[^79] The coincidence in time is all that can be reported, and no causal link has been shown. On the question of marriage the PCT's own position is on record. Its pastoral letter of 10 June 2014 defines marriage as the voluntary union of one adult man and one adult woman, calls churches and members to accept people of same-sex orientation, and states that same-sex sexual acts are contrary to the Bible.[^80] I report these three points and take no view on them.
+
+**Questions.** The lens and the norm together yield questions that a church in Taiwan might ask itself when it faces a matter that divides society or a disaster that strikes it. They are meant for churches of every tradition and political leaning, and they recommend no position on any contested issue.
+
+*Is care delivered, and seen by those who need it?* Ezekiel's charge lists five tasks: strengthening the weak, healing the sick, binding up the injured, bringing back the strayed and seeking the lost. After an earthquake, a typhoon, an epidemic or a political injury, who among those affected could say that the church was present? This question comes first because it does not depend on agreement about anything else.
+
+*Whose remedy is it?* Who decides who may receive what a church offers, whether word, sacrament, burial, counsel or relief, and on what conditions? When a church cannot reach people, does it lend what it holds, as Ralph of Shrewsbury did, or guard it? And when lay people or outsiders take up work that the church has left undone, does the church treat them as partners or as rivals?
+
+*With whom does the church stand?* Amos 7 offers the test of the king's sanctuary. The 'king' may be a government, an opposition, a party, a majority or a donor. A church close to those who hold power can lose its freedom to speak, and so can a church that has bound itself to those who seek power. Chiu's criticism of the PCT's theology shows that the question can be put even to a church that has stood with people under pressure. It is easier to put to others than to oneself.
+
+*What has not yet been confessed, and what has changed?* The apology of 1990 was addressed to the people who had been failed. Acts 6 goes one step further, since there the neglected group received a share in running the ministry that had neglected them. A church can ask what failures of its own it has not yet named, to whom it would have to name them, and whether anything in its ordering of authority, property or funds would change as a result.
+
+*What community will carry faith to the next generation?* Faith and trust in a church are distinct, but faith is handed on in communities. A British study found that only about half of parental religiosity is passed on to children.[^81] Whether the same holds in Taiwan is not known. The question for a church is practical: if younger people cannot trust it, what gathered body will be there to receive and form their faith?
+
+*Has the church listened before it speaks?* Scripture lets the sufferer speak first, and Acts 6 begins with a complaint that was heard. Before a church speaks in public on a contested matter, it can ask whether it has listened to the people whom the matter touches most closely, and whether they could recognise their own situation in what the church says. The survey figure for 2018 is not an argument for silence. The 1990 apology judged a silence, not a statement. The figure is a reason to ask what gives a church standing to speak, and the norm of section 4 locates that standing in presence with those who suffer.
+
+None of these questions tells a church what to conclude. Churches that answer them honestly may still disagree with one another. The questions concern how a church holds what it has been given, whatever position it takes.
+
+## 6 Conclusion
+
+I began with a bishop who held a remedy that he could not deliver and who lent it, for a time, to lay men and women. The argument since has been that his position is the position of every church when a community suffers together. A church proclaims a remedy that it did not make and does not own. Its claim to be trusted is tested by how it holds that remedy: whether it is present with those who suffer, whether care reaches them, whether it shares the means of grace or guards them, and whether it can name its own failures and change.
+
+Three scenes gave this claim a shape. They did not prove it, and they were not asked to. They cannot show that suffering erodes trust, that standing with sufferers earns it, or that confession restores it. Rival readings of each scene remain open, and I have named them. The scenes do show that the questions are real ones. A bishop, a planter, a formerly enslaved bishop, an abbot and a general assembly each wrote, in their own words, about who held the remedy and for whom.
+
+The norm comes from Scripture. The flock is God's and not the shepherds'. God is found beside those who cry out, and their complaint is prayer. Those who hold office will give an account. A church that has failed can confess and reform, and reform is the first remedy for failure.
+
+For churches in Taiwan, and for others, the result is a set of questions and not a programme. They can be asked by churches that disagree about much else. They ask a church to attend less to whether it is trusted and more to whether it is trustworthy with what it has been given.
+
+## Appendix: Supplementary evidence
+
+Three supplementary analyses of public sources were undertaken to see how far the readings in section 2 can be supported by counts as well as by quotation. Each follows a codebook written before coding began, records the source locator and the passage on which every code rests, has a random tenth of its units coded a second time to measure agreement, and reports proportions with their intervals. None of them can support a causal claim, and the argument of the article does not depend on them. The editions used are cited with the results. Coded data and analysis scripts are available at [repository link to be added].
+
+**A.1 London wills, 1320–1400.** This analysis reports, for wills enrolled in the London Court of Husting, the proportion of testators who left bequests to each kind of religious recipient in the periods before and after the plagues of 1348–49 and 1361.
+
+[[EVIDENCE:husting_wills]]
+
+**A.2 English parish fraternities in the returns of 1388–89.** This analysis reports the foundation dates that the fraternities gave, how many of them fall before and after 1349, and the purposes and benefits that the returns describe.
+
+[[EVIDENCE:gild_foundations]]
+
+**A.3 Interviews with former slaves, 1936–38.** This analysis reports, for a stratified random sample of 400 narratives from the Federal Writers' Project collection, how informants described the control of worship before 1865, the content of preaching, and the churches they joined afterwards.
+
+[[EVIDENCE:wpa_religion]]
+
 [^1]: David Wilkins (ed.), *Concilia Magnae Britanniae et Hiberniae* (4 vols.; London: R. Gosling, 1737), vol. 2, pp. 745-46 (p. 745); my translation *[author to check translation]*. On the date and place of issue see section 2.1.
 
 [^2]: Nicolas L. Bottan and Ricardo Perez-Truglia, 'Losing My Religion: The Effects of Religious Scandals on Religious Participation and Charitable Giving', *Journal of Public Economics* 129 (2015), pp. 106-19 (p. 114). The units of analysis are zip codes and counties.
@@ -281,3 +333,13 @@ Read together, the texts say four things to a church that holds a remedy. The re
 [^75]: International Theological Commission, *Memory and Reconciliation*.
 
 [^76]: John Calvin, *Institutes of the Christian Religion* (ed. John T. McNeill; trans. Ford Lewis Battles; 2 vols.; Library of Christian Classics, 20–21; Philadelphia: Westminster Press, 1960), 4.20.31.
+
+[^77]: Fu Yang-chih et al. (eds.), *Taiwan Social Change Survey, Round 7, Year 4: Project Report* [台灣社會變遷基本調查計畫第七期第四次調查計畫執行報告] (Taipei: Institute of Sociology, Academia Sinica, 2019), appendix 4, p. 222.
+
+[^78]: Wu Chyi-in et al. (eds.), *Taiwan Social Change Survey, Round 8, Year 4: Project Report* [臺灣社會變遷基本調查計畫第八期第四次調查計畫執行報告] (Taipei: Institute of Sociology, Academia Sinica, 2024), pp. 326-27. The Protestant share of respondents was 4.0 per cent in 2009, 5.5 per cent in 2018 and 5.6 per cent in 2023.
+
+[^79]: Ming-sho Ho, 'Taiwan's Road to Marriage Equality: Politics of Legalizing Same-sex Marriage', *China Quarterly* 238 (2019), pp. 482-503.
+
+[^80]: Presbyterian Church in Taiwan, 'Pastoral Letter on Same-Sex Marriage' [台灣基督長老教會同性婚姻議題牧函] (10 June 2014), https://www.pct.org.tw/ab_doc.aspx?DocID=118.
+
+[^81]: David Voas and Alasdair Crockett, 'Religion in Britain: Neither Believing nor Belonging', *Sociology* 39.1 (2005), pp. 11-28.
