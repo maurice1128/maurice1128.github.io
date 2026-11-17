@@ -329,18 +329,61 @@
 <section class="tabpanel" id="cat-learning" aria-label="Learning motor skills">
 <p class="divider">&mdash; Learning motor skills &mdash;</p>
 
-<div class="tw">
-<table>
-  <thead><tr><th style="width:62%">Project</th><th>Status</th></tr></thead>
-  <tbody>
-    <tr><td><a href="projects/hand-modularity.html">Learned In-Betweeners Make Simulated Dexterous Hands Learn Faster</a><span class="sub">Both layers of a modular motion model tested on simulated dexterous hands, one change at a time, with the main comparisons registered before the runs.</span></td>
-    <td><span class="sub" style="margin-top:0">Submitted to IEEE Robotics and Automation Letters (manuscript 26-6874)</span></td></tr>
-    <tr><td><a href="projects/motor-prior.html">Withdrawn Teachers and Learned Body Models in Muscle-Driven Motor Learning</a><span class="sub">One soft actor-critic learner on six muscle-driven bodies, tested with controls that change one thing at a time.</span></td>
-    <td><span class="sub" style="margin-top:0">Under review at IEEE Transactions on Cognitive and Developmental Systems (TCDS-2026-0625)</span></td></tr>
-    <tr><td><a href="projects/hand-composition.html">Labels that cover only part of a recording can hide compositional difficulty in hand-motion data</a><span class="sub">Held-out-combination tests ask whether a motion model handles action&ndash;object combinations it never saw.</span></td>
-    <td><span class="sub" style="margin-top:0">Under review at <i>Machine Learning</i> (Springer), submitted November 2026</span></td></tr>
-  </tbody>
-</table>
+<div class="entry">
+  <div class="thumb">
+    <video src="assets/hand-modularity/thumb.mp4"
+           poster="assets/hand-modularity/thumb_poster.jpg"
+           autoplay muted loop playsinline preload="metadata" aria-label="Variant B, the best flat policy for each stage, carrying the ball during stage 2 of 3 of one test episode."></video>
+  </div>
+  <div class="meta">
+    <a class="title" href="projects/hand-modularity.html">Learned In-Betweeners Make Simulated Dexterous Hands Learn Faster</a>
+    <div class="authors"><b>Mu-Hua Wang</b></div>
+    <div class="venue">Submitted to IEEE Robotics and Automation Letters (manuscript 26-6874)</div>
+    <p class="desc">Both layers of a modular motion model tested on simulated dexterous hands, one change at a time, with the main comparisons registered before the runs. As the action space of a PPO policy, keyframes joined by a learned in-betweener lead a continuous latent at the same decision rate on held-out skill sequences (0.59 against 0.22 at 1.5&nbsp;M frames, 17 of 20 seeds) and reach the training plateau sooner; at 5&nbsp;M frames the data do not separate them. At the skill level, choosing the best policy for each stage completes 97 of 400 test episodes against 61 for the best single policy; separately trained skills complete 45.</p>
+    <p class="against"><b>Scope:</b> simulation only, one task per layer; the early lead is significant on the cube only; the selection pipeline ran once; the registered prediction that separately trained skills win failed.</p>
+    <div class="links">
+      <a href="projects/hand-modularity.html">[Project page]</a>
+      <a href="assets/hand-modularity/paper.pdf">[Paper]</a>
+    </div>
+  </div>
+</div>
+
+<div class="entry">
+  <div class="thumb">
+    <video src="assets/motor-prior/thumb.mp4"
+           poster="assets/motor-prior/thumb_poster.jpg"
+           autoplay muted loop playsinline preload="metadata" aria-label="Two simulated muscle-driven fingers reach for the same target: the one using a learned body model gets there, model-free learning falls short (seed 0, not a statistic)."></video>
+  </div>
+  <div class="meta">
+    <a class="title" href="projects/motor-prior.html">Withdrawn Teachers and Learned Body Models in Muscle-Driven Motor Learning</a>
+    <div class="authors"><b>Mu-Hua Wang</b></div>
+    <div class="venue">Under review at IEEE Transactions on Cognitive and Developmental Systems (TCDS-2026-0625)</div>
+    <p class="desc">One soft actor-critic learner on six muscle-driven bodies, tested with controls that change one thing at a time. On a muscle-driven finger, a learner whose competent teacher is withdrawn ends 43.25&nbsp;mm ahead of one never guided, and the share of the teacher's benefit it keeps rises from 24% to 101% with the time it was taught. On planar arms, a random body model becomes increasingly harmful as joints are added (trained minus random: &minus;357.20&nbsp;mm on four joints), and the trained model avoids that harm.</p>
+    <p class="against"><b>Scope:</b> simulation only, single reach task, one teacher and one random model per body; on the elbow no teacher benefit survives withdrawal, and the trained model's advantage over matched model-free learning is not shown to grow with joints.</p>
+    <div class="links">
+      <a href="projects/motor-prior.html">[Project page]</a>
+      <a href="assets/motor-prior/paper.pdf">[Paper]</a>
+      <a href="https://github.com/maurice1128/two-routes-motor-prior">[Code]</a>
+    </div>
+  </div>
+</div>
+
+<div class="entry">
+  <div class="thumb">
+    <video src="assets/hand-composition/thumb.mp4"
+           poster="assets/hand-composition/thumb_poster.jpg"
+           autoplay muted loop playsinline preload="metadata" aria-label="Animated schematic: recordings whose label covers only the first clip carry held-out red motion into the training set, and the penalty meter stays near the control."></video>
+  </div>
+  <div class="meta">
+    <a class="title" href="projects/hand-composition.html">Labels that cover only part of a recording can hide compositional difficulty in hand-motion data</a>
+    <div class="authors"><b>Mu-Hua Wang</b></div>
+    <div class="venue">Under review at <i>Machine Learning</i> (Springer), submitted November 2026</div>
+    <p class="desc">Held-out-combination tests ask whether a motion model handles action&ndash;object combinations it never saw. On recorded motion a correct label may describe only part of its recording, so holding the label out leaves the motion in training. Joining OakInk-Image clips and changing only label coverage moves the penalty from +17.03&nbsp;% (full) to +3.87&nbsp;% (half), with every estimate calibrated against a no-effect control over 40 random splits. On TACO the drop repeats with 256 recordings per model (+11.14&nbsp;% &rarr; +3.69&nbsp;%).</p>
+    <p class="against"><b>Scope:</b> offline datasets and one model class, no robot experiment; on TACO the first test with 64 recordings per model was not significant (p&nbsp;=&nbsp;0.095), and under the Nadeau&ndash;Bengio correction no full-versus-half comparison is significant.</p>
+    <div class="links">
+      <a href="projects/hand-composition.html">[Project page]</a>
+    </div>
+  </div>
 </div>
 
 </section>
