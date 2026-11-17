@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Online fusion of model-based and learned prediction for humanoid walking over delayed links &mdash; Mu-Hua Wang</title>
+<meta name="description" content="A plug-in predictor in front of a frozen humanoid walking policy: in simulation on three humanoids, the round-trip delay tolerated at 90% survival rises from 41-46 ms to 147-180 ms without retraining the policy.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container">
+
+<nav>
+  <ul>
+    <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#interactive">Try it</a></li>
+    <li><a href="#result">Result</a></li>
+    <li><a href="#method">Method</a></li>
+    <li><a href="#limits">Limits</a></li>
+    <li><a href="../cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<header>
+  <p class="note">Humanoid locomotion, delay compensation &middot; simulation only &middot; Submitted to <i>IEEE Robotics and Automation Letters</i> (26-7088), November 2026</p>
+  <h1>Online fusion of model-based and learned prediction for humanoid walking policies over delayed links, without retraining</h1>
+  <p class="kicker">A walking policy that runs on a remote computer steers a body it sees late, and the
+  robot falls: pretrained humanoid policies start to fall at round trips of 41&ndash;46&nbsp;ms. Retraining for
+  delay would replace the policy. Here it stays frozen: a physics-model predictor and learned forward models
+  both predict the present state, and each sensor channel is weighted by how wrong each prediction proved one
+  delay later, when the reading of that moment arrives. In simulation on three humanoids the round trip
+  tolerated at 90% survival rises to 147&ndash;180&nbsp;ms. Nothing here was tested on hardware.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; National Yang Ming Chiao Tung
+  University &middot; sole author</p>
+  <div class="links">
+    <a href="../index.html">[All projects]</a>
+  </div>
+</header>
+
+<hr>
+<section>
+  <figure class="fig wide">
+    <video src="../assets/walking-over-delay/lead.mp4" poster="../assets/walking-over-delay/lead_poster.jpg"
+           autoplay muted loop playsinline controls preload="metadata"
+           aria-label="Side-by-side simulation clips of three humanoid robots. In each clip a 140 ms round-trip delay switches on at 5 seconds. On the left, with no predictor, the robot falls. On the right, with online fusion, the same robot with the same random seed keeps walking."></video>
+    <p class="cap">Three 10&nbsp;s clips (Unitree G1, H1, H1-2 in MuJoCo). Each shows the same robot and the
+    same random seed (seed 40) with no predictor (left) and with online fusion (right); a 140&nbsp;ms round trip
+    switches on at 5&nbsp;s. One run per robot, <b>not a statistic</b>. Over the 20 test seeds, online fusion
+    stays up in 20 of 20 runs at 140&nbsp;ms on each robot; with no predictor 0 of 20 stay up at 120&nbsp;ms,
+    the longest round trip tested without a predictor.</p>
+  </figure>
+</section>
+
+<hr>
+<section id="interactive">
+  <h2>Drag the delay: with no predictor every run is down by 80&nbsp;ms, with online fusion all 20 still stand at 140&nbsp;ms</h2>
+  <p class="desc">Each mark is one simulated run on a clean link with standard walking, seeds 40&ndash;59:
+  upright if the robot stayed up for the 30&nbsp;s with the delay on, flat if it fell. The slider steps through
+  the round trips that were tested, so every count is measured, not interpolated. No predictor was tested from 20
+  to 120&nbsp;ms and online fusion from 60 to 250&nbsp;ms.</p>
+  <div class="ctrl">
+    <div class="ctrl-row">
+      <div class="readout"><span id="rtOut">60 ms</span><small>round trip</small></div>
+      <input id="rt" type="range" min="0" max="14" step="1" value="2"
+             aria-label="Round trip: 20, 40, 60, 80, 100, 120, 140, 150, 160, 170, 180, 190, 200, 220 or 250 milliseconds">
+    </div>
+    <svg id="runsSvg" viewBox="0 0 640 186" role="img" style="margin-top:1.2rem;max-width:100%"
+         aria-label="Runs that stay up out of 20, for H1, G1 and H1-2, with no predictor and with online fusion, at the selected round trip"></svg>
+  </div>
+</section>
+
+<hr>
+<section id="result">
+  <h2>A frozen policy tolerates three to four times the round-trip delay</h2>
+  <p>Each run walks undelayed for 5&nbsp;s, then for 30&nbsp;s with the delay on, and survives if the robot
+  stays up to the end. The limit at 90% survival moves from 41&ndash;46&nbsp;ms with no predictor to
+  147&ndash;180&nbsp;ms with online fusion (3.2&ndash;4.4 times), and at 50% survival from 49&ndash;65&nbsp;ms to
+  178&ndash;205&nbsp;ms. Over 12 conditions (three robots; standard walking, a hidden 10% payload, halved
+  friction, lateral pushes) online fusion's mean limit at 50% survival is 54.1&nbsp;ms above a tuned classical
+  predictor (95% interval 49.0 to 59.8) and 25.0&nbsp;ms above a policy retrained for delay (20.1 to 29.1).</p>
+
+  <div class="stats">
+    <div><span class="big">41&ndash;46 &rarr; 147&ndash;180 ms</span><h3>Round trip at 90% survival</h3><p>no predictor vs online fusion, three humanoids, 20 seeds per point</p></div>
+    <div><span class="big">14 / 23 ms</span><h3>Worst shortfall over 12 conditions</h3><p>from the best of five methods, at 50% / 90% survival; the other four: 23&ndash;95 / 33&ndash;104&nbsp;ms</p></div>
+    <div><span class="big">48&ndash;80% &rarr; 93&ndash;100%</span><h3>Recorded Wi-Fi, +10 ms</h3><p>mean survival over two traces, predictor alone vs with 200&nbsp;ms command plans</p></div>
+  </div>
+
+  <figure class="fig">
+    <img src="../assets/walking-over-delay/fig1_survival.png" alt="Three line charts, one per robot (H1, G1, H1-2), of the share of runs that stay up against round-trip delay in milliseconds. With no predictor survival collapses below 100 ms. Online fusion stays near 100% until about 150 to 180 ms. The classical predictor is close to online fusion on H1 and far behind on G1 and H1-2. A black arrow in each panel marks the move of the 90% limit: 41 to 180 ms on H1, 46 to 147 ms on G1, 42 to 157 ms on H1-2.">
+    <p class="cap">Survival against round trip on a clean link, 20 seeds per point. Arrows show how far the 90%
+    limit moves from no predictor to online fusion: H1 41 &rarr; 180&nbsp;ms, G1 46 &rarr; 147&nbsp;ms, H1-2 42
+    &rarr; 157&nbsp;ms. The classical predictor is close on H1 and far behind on G1 and H1-2. On G1 the retrained
+    student and static fusion hold 90% survival longer than online fusion.</p>
+  </figure>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Clean link, limit at 50% / 90% survival (ms)</th><th>H1</th><th>G1</th><th>H1-2</th></tr></thead>
+      <tbody>
+        <tr><td>No predictor</td><td class="n">49 / 41</td><td class="n">65 / 46</td><td class="n">51 / 42</td></tr>
+        <tr><td>Classical predictor (mismatched physics model, tuned filters)</td><td class="n">175 / 145</td><td class="n">120 / 71</td><td class="n">103 / 65</td></tr>
+        <tr><td>True model (privileged)</td><td class="n">202 / 160</td><td class="n">162 / 120</td><td class="n">137 / 107</td></tr>
+        <tr><td>Student (policy retrained for delay)</td><td class="n">164 / 147</td><td class="n">184 / 170</td><td class="n">146 / 127</td></tr>
+        <tr><td>Static fusion (fixed weights)</td><td class="n">180 / 170</td><td class="n">202 / 170</td><td class="n">175 / 164</td></tr>
+        <tr><td><b>Online fusion</b></td><td class="n"><b>194 / 180</b></td><td class="n"><b>205 / 147</b></td><td class="n"><b>178 / 157</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="box mark">
+    <p>Most of the gain comes from fusing the two predictions. Updating the weights online adds 9&nbsp;ms of mean
+    limit over static fusion at 50% survival (95% interval 6 to 13) and 5&nbsp;ms at 90% (&minus;1 to 11, not
+    resolved). What the online checks remove is the worst case: over 12 conditions online fusion is at most
+    14 / 23&nbsp;ms short of the best of five methods, against 23&ndash;95 / 33&ndash;104&nbsp;ms for the others.</p>
+  </div>
+</section>
+
+<hr>
+<section id="method">
+  <h2>A prediction can be checked one delay later</h2>
+  <figure class="fig">
+    <img src="../assets/walking-over-delay/fig2_concept.png" alt="Block diagram. On the remote computer a physics-model prediction and a forward-model prediction both replay the commands just sent and feed a frozen walking policy through a per-channel weight w. Each late sensor reading from the robot is compared with what each predictor said about that moment, and the comparison sets the weight. The robot keeps only PD control and a buffer of planned commands.">
+    <p class="cap">The predictor sits in front of the frozen policy on the remote computer, where the commands are
+    known. The robot keeps only PD control and a buffer of planned commands.</p>
+  </figure>
+  <p>The policies are the public pretrained walking policies for Unitree G1, H1 and H1-2, run in MuJoCo and not
+  modified. The classical half re-simulates the delay interval in a deliberately mismatched physics model under
+  the commands sent, with filters for base velocity and tilt tuned in its favor. The learned half is five
+  forward-model networks fitted on 12&nbsp;min of ordinary undelayed walking, with noisy readings and no clean
+  state. The two are combined per sensor channel by inverse error variance, and the variances follow the check
+  that becomes possible when each late reading arrives. The components are established ones (state predictors,
+  inverse-error forecast combination, adaptive noise estimation); the work applies them to a frozen learned
+  walking policy and measures when each alternative wins.</p>
+  <p>The predictor needs the commands: without them in either half, the limit at 50% survival falls from
+  178&ndash;205&nbsp;ms to 90&ndash;114&nbsp;ms. When the body changes in mid-walk, online weights raise survival
+  over weights frozen just before the change by .11, .08 and .06 on H1, G1 and H1-2; with no change the same
+  comparison gives .01, &minus;.01 and .08, so a response to the change is shown on H1 and G1 and not on H1-2.</p>
+</section>
+
+<hr>
+<section id="link">
+  <h2>The same predictor carries the robot through lost packets</h2>
+  <p>Each command packet also carries the next 200&nbsp;ms of commands, obtained by running the predictor and a
+  copy of the policy further ahead; the robot plays the entry for the current time. On two recorded 10-minute
+  traces of one home Wi-Fi link with 10&nbsp;ms added, mean survival is 38&ndash;68% with no predictor,
+  48&ndash;80% with the predictor alone and 93&ndash;100% with plans. Over the traces and added delays, plans add
+  .28, .31 and .38 of survival on H1, G1 and H1-2 (95% intervals .20&ndash;.37, .23&ndash;.39, .29&ndash;.47).
+  With 140&nbsp;ms added, survival is still only 25&ndash;60%. Plans raise the compute per control step from
+  1.4&ndash;2.9&nbsp;ms to 7.1&ndash;9.8&nbsp;ms on one laptop core.</p>
+</section>
+
+<hr>
+<section id="limits">
+  <h2>Where this stops</h2>
+  <p class="against"><b>Scope:</b> simulation only, on flat ground at one commanded speed, for three pretrained
+  policies from one public repository; none of it is evidence about hardware. On G1 the retrained student and
+  static fusion reach 170&nbsp;ms at 90% survival against 147&nbsp;ms for online fusion. On a body the predictor
+  was not fitted on (15% heavier, 20% lower friction, 10% weaker PD) online fusion gives up 58&ndash;97&nbsp;ms at
+  50% survival, and the privileged true-model predictor goes further than online fusion on H1 (202&nbsp;ms).
+  With command plans, online and static fusion are not separated, so the Wi-Fi result rests on the plans. There
+  is no comparison with delay-randomized training, the recorded links come from one home network, and the plan
+  length was chosen on the same traces. The simulation, training and analysis code and the manuscript text were
+  written with an AI assistant (Claude, Anthropic) under the author's direction, as disclosed in the
+  manuscript.</p>
+</section>
+
+<footer>
+  <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang &middot;
+  <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
+</footer>
+
+</div>
+<script>
+// Runs that stay up out of 20 (seeds 40-59), clean link, standard walking.
+// Source: FACTS.md verified number 20 (results/<robot>/phase7_onlinerest_finnone.csv and _finrt.csv).
+// The slider moves between tested round trips only; a missing key means that round trip was not tested.
+(function () {
+  var NS = 'http://www.w3.org/2000/svg';
+  var RT = [20, 40, 60, 80, 100, 120, 140, 150, 160, 170, 180, 190, 200, 220, 250];
+  var ROBOTS = ['H1', 'G1', 'H1-2'];
+  var NONE = [
+    {20: 20, 40: 19, 60: 0, 80: 0, 100: 0, 120: 0},
+    {20: 20, 40: 20, 60: 13, 80: 0, 100: 0, 120: 0},
+    {20: 20, 40: 20, 60: 1, 80: 0, 100: 0, 120: 0}
+  ];
+  var ON = [
+    {60: 20, 100: 20, 120: 20, 140: 20, 150: 20, 160: 20, 170: 19, 180: 18, 190: 13, 200: 6, 220: 2, 250: 0},
+    {60: 20, 100: 20, 120: 20, 140: 20, 150: 17, 160: 17, 170: 17, 180: 15, 190: 12, 200: 12, 220: 4, 250: 0},
+    {60: 20, 100: 20, 120: 20, 140: 20, 150: 20, 160: 17, 170: 13, 180: 9, 190: 1, 200: 0, 220: 0, 250: 0}
+  ];
+  var HEADS = ['No predictor', 'Online fusion'], DATA = [NONE, ON], SLOT = 12;
+  // side by side on a wide screen, stacked on a phone so the marks stay readable
+  var WIDE = {box: '0 0 640 186', groups: [{x: 62, head: 14, base: [70, 122, 174], names: true},
+                                           {x: 356, head: 14, base: [70, 122, 174], names: false}]};
+  var NARROW = {box: '0 0 330 246', groups: [{x: 44, head: 14, base: [46, 78, 110], names: true},
+                                             {x: 44, head: 148, base: [180, 212, 244], names: true}]};
+  var svg = document.getElementById('runsSvg');
+  var slider = document.getElementById('rt'), out = document.getElementById('rtOut');
+  function el(tag, attrs, text) {
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text !== undefined) e.textContent = text;
+    svg.appendChild(e);
+    return e;
+  }
+  function draw() {
+    var ms = RT[+slider.value], said = [];
+    var width = svg.getBoundingClientRect().width;
+    var lay = width > 0 && width < 480 ? NARROW : WIDE;
+    out.textContent = ms + ' ms';
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    svg.setAttribute('viewBox', lay.box);
+    lay.groups.forEach(function (g, k) {
+      el('text', {x: g.x, y: g.head, 'font-size': 13, 'font-weight': 700, fill: 'currentColor'}, HEADS[k]);
+      ROBOTS.forEach(function (name, r) {
+        var base = g.base[r];
+        if (g.names) el('text', {x: 0, y: base - 3, 'font-size': 13, 'font-weight': 700, fill: 'currentColor'}, name);
+        el('line', {x1: g.x, y1: base + 0.5, x2: g.x + 20 * SLOT, y2: base + 0.5,
+                    stroke: 'currentColor', 'stroke-opacity': 0.35});
+        if (!(ms in DATA[k][r])) {
+          el('text', {x: g.x, y: base - 6, 'font-size': 12, fill: 'currentColor', 'fill-opacity': 0.6}, 'not tested');
+          said.push(name + ', ' + HEADS[k].toLowerCase() + ': not tested');
+          return;
+        }
+        var up = DATA[k][r][ms];
+        for (var i = 0; i < 20; i++) {
+          var x = g.x + i * SLOT;
+          if (i < up) {
+            el('rect', {x: x + 3.5, y: base - 18, width: 5, height: 18, fill: 'currentColor'});
+          } else {
+            el('rect', {x: x + 0.5, y: base - 4, width: 11, height: 4}).style.fill = 'var(--plot-b)';
+          }
+        }
+        el('text', {x: g.x + 20 * SLOT + 6, y: base - 3, 'font-size': 12, fill: 'currentColor'}, up + '/20');
+        said.push(name + ', ' + HEADS[k].toLowerCase() + ': ' + up + ' of 20 stay up');
+      });
+    });
+    svg.setAttribute('aria-label', 'At a ' + ms + ' ms round trip. ' + said.join('. ') + '.');
+  }
+  slider.addEventListener('input', draw);
+  window.addEventListener('resize', draw);
+  draw();
+})();
+</script>
+</body>
+</html>

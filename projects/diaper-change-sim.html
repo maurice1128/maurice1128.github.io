@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulated Robot Diaper Changing &mdash; Mu-Hua Wang</title>
+<meta name="description" content="A contact-accurate simulation of two robot hands changing an adult diaper on a deformable older-adult body. One reference run fastens all four tabs at a peak hand force of 28.5 N; two fit measures still fail; simulation only.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container">
+
+<nav>
+  <ul>
+    <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#result">Result</a></li>
+    <li><a href="#failure">Failure</a></li>
+    <li><a href="#method">Method</a></li>
+    <li><a href="#gpu">GPU check</a></li>
+    <li><a href="#limits">Limits</a></li>
+    <li><a href="../cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<header>
+  <p class="note">Assistive robotics &middot; simulation only &middot; work in progress, no manuscript</p>
+  <h1>Can two robot hands put an adult diaper on a bedridden body without pushing harder than 40&nbsp;N?</h1>
+  <p class="kicker">Changing an adult diaper is one of the most frequent and physically demanding jobs in long-term
+  care, and our literature search (November 2026) found no robot study of it. I built a simulation in which a
+  deformable older-adult pelvis and thighs, a skeleton, a foam mattress, a tape-type adult brief and two force-gated
+  hands share one contact model where nothing can pass through anything else. In one reference run the two hands
+  fasten all four tabs at a peak hand force of 28.5&nbsp;N, and a second run reproduces it bit for bit. Two fit
+  measures still fail, the result rests on one run, and nothing has been checked against a physical diaper yet.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; independent &middot; sole developer</p>
+  <div class="links">
+    <a href="../index.html">[All projects]</a>
+  </div>
+</header>
+
+<hr>
+<section>
+  <figure class="fig">
+    <video id="dv" src="../assets/diaper-change-sim/lead.mp4" poster="../assets/diaper-change-sim/lead_poster.jpg"
+           autoplay muted loop playsinline preload="auto"
+           aria-label="Simulated older-adult body lying on a bed, seen obliquely and from above. A white adult brief is drawn up between the legs, smoothed, and its two side wings are wrapped around and taped; the legs then close."></video>
+  </figure>
+  <div class="ctrl" id="scrub">
+    <div class="ctrl-row">
+      <button type="button" id="dvplay" aria-label="Play or pause">pause</button>
+      <input type="range" id="dvt" min="0" max="338" step="1" value="0" aria-label="Simulated time in the reference run">
+      <div class="readout" id="rt">&ndash;<small>simulated time</small></div>
+      <div class="readout" id="rtabs">&ndash;<small>tabs fastened</small></div>
+      <div class="readout" id="rf">&ndash;<small>highest hand force now</small></div>
+    </div>
+    <p id="rstep" style="margin:8px 0 6px">&nbsp;</p>
+    <svg id="fplot" viewBox="0 0 800 170" width="100%" role="img"
+         aria-label="Force on each force-gated hand over the run, with the 20 N pause threshold and the 40 N limit; a vertical line marks the current time.">
+    </svg>
+  </div>
+  <p class="cap">Drag the slider to step through the reference dressing run (internal label chg6vhpd), simulated time
+  69.8&ndash;83.2&nbsp;s; left oblique view, right top view; the hands are not drawn. The curves are the forces on the six
+  force-gated hands (thin lines), the dotted line the 20&nbsp;N pause threshold, the red line the 40&nbsp;N limit. One run,
+  <b>not a statistic</b>: it is the only run that meets all of the platform&rsquo;s own validity rules.</p>
+</section>
+
+<hr>
+<section id="result">
+  <h2>Two hands fasten all four tabs within the force limit, but two fit measures still fail</h2>
+  <p>A run counts as valid only if all four tabs are fastened and stay fastened, no force gate fails, no hand stays
+  above the 40&nbsp;N limit, no extra hand is used, and a rerun with the same settings gives the same result. These rules
+  were written before the run. The reference run meets all of them.</p>
+
+  <div class="stats">
+    <div><span class="big">4 / 4</span><h3>Tabs fastened</h3><p>one run, two hands, at the end of the sequence</p></div>
+    <div><span class="big">28.5 N</span><h3>Peak hand force</h3><p>highest of all hands and stages; limit 40&nbsp;N</p></div>
+    <div><span class="big">7 / 7</span><h3>Stages bit-identical</h3><p>two independent runs, single-threaded</p></div>
+  </div>
+
+  <figure class="fig">
+    <img src="../assets/diaper-change-sim/fig1_dress_keyframes.png" alt="Four pairs of rendered frames from the reference run. Top row oblique view, bottom row top view. a: front panel being drawn up between the legs. b: front panel smoothed and spread over the abdomen. c: left wing wrapped, two of four tabs fastened. d: right wing wrapped and legs back together, four of four tabs fastened.">
+    <p class="cap">Key frames of the same run: (a) front panel drawn up, (b) smoothed, (c) left wing wrapped, 2 of 4 tabs,
+    (d) right wing wrapped and legs closed, 4 of 4 tabs.</p>
+  </figure>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Fit measure at the end of the run</th><th>Pass range</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td>Tabs fastened</td><td>4</td><td class="n">4</td></tr>
+        <tr><td>Absorbent core short of covering the anus</td><td>0&ndash;30 mm</td><td class="n"><b>34.87 mm (fails)</b></td></tr>
+        <tr><td>Front waist edge relative to the waist line</td><td>&plusmn;50 mm</td><td class="n"><b>&minus;114.28 mm (fails)</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>A second sample, in which the dressing follows a simulated diaper change, also fastens 4 of 4 tabs, but its
+  front-panel stage fails and its waist edge ends at &minus;141.3&nbsp;mm. Robustness therefore rests on one run.</p>
+</section>
+
+<hr>
+<section id="failure">
+  <h2>The soiled brief springs back 123&nbsp;mm the moment the hand lets go</h2>
+  <p>Changing the diaper means turning the person on their side, rolling the soiled brief under the body, laying the new
+  one, turning back and pulling the old one out. The whole sequence runs end to end, but pulling the old brief out
+  passed the force gate in only 2 of 5 runs. Tracing the failures back led here: after the hand squeezes the soiled brief
+  under the body and opens, its back wing jumps out again, and when the person is turned it ends up pinned under the
+  lower hip.</p>
+  <figure class="fig">
+    <video src="../assets/diaper-change-sim/springback.mp4" poster="../assets/diaper-change-sim/springback_poster.jpg"
+           autoplay muted loop playsinline controls preload="metadata"
+           aria-label="Cross-section through the body, the soiled brief and the mattress. Red dots, the brief's back wing, are pushed toward and under the body; when the hand opens they jump back to the left, far from the outline marking where they had been pushed."></video>
+    <p class="cap">Cross-section, 5&times; slower than simulated time. Red: the soiled brief&rsquo;s back wing; open red
+    circles: where it was at the furthest push. After the hand opens, the wing ends 123&nbsp;mm from that position and
+    67&nbsp;mm above the mattress. One run (internal label mono12), <b>not a statistic</b>.</p>
+  </figure>
+  <div class="box mark">
+    <p>A prediction that failed: real nonwoven fabric keeps a crease, so I added bend plasticity to the brief and replayed
+    the push through it beforehand; that check said the wing would stay. Run for real, it still sprang back 123&nbsp;mm.
+    Rather than tune the plasticity until it stays, the question now waits for a bending-recovery measurement on a real
+    brief.</p>
+  </div>
+</section>
+
+<hr>
+<section id="method">
+  <h2>Tissue, skeleton, mattress, brief and hands share one contact energy</h2>
+  <p>Everything is solved together with Incremental Potential Contact (IPC), a barrier method that keeps every pair of
+  surfaces apart, using implicit Euler steps of 5&nbsp;ms. The soft tissue is a hyperelastic (Ogden) tetrahedral mesh
+  coupled to a MuJoCo skeleton. The brief has direction-dependent stretch, bending, tension-only elastics, bend
+  plasticity and adhesive tabs, with parameters taken from published sources. Each hand grips cloth through springs
+  and is run by a force gate: it advances below 20&nbsp;N, pauses and re-plans between 20 and 40&nbsp;N, and backs off
+  at 40&nbsp;N. The steps follow Taiwanese nursing textbooks.</p>
+  <p>This accuracy is slow: the dressing sequence, 13.5 simulated seconds, takes 12.0 hours on one CPU thread, and the
+  diaper change, 21.7 simulated seconds, 16.2 hours. The platform is therefore meant as a reference against which a
+  fast simulator can be checked, not as a place to train a robot.</p>
+
+  <h2>A 43.5&nbsp;N spike was the controller teleporting, not the cloth</h2>
+  <p>The 40&nbsp;N gate matches the end-effector force limit of the arm the platform targets (Kinova Gen3). A kinematic and
+  static-torque check found that a two-arm layout reaches every hand target from 69 of 90 base positions, using at most
+  0.52 of rated joint torque. One step did not fit: the hand that folds the soiled brief peaked at 43.5&nbsp;N. Stepping
+  through its force record showed the jump came one 5&nbsp;ms step after the hand paused, when the re-planned target was
+  applied all at once &mdash; a move no arm can make.</p>
+  <figure class="fig">
+    <img src="../assets/diaper-change-sim/fig3_fold_force.png" alt="Line plot of hand force against simulated time for the hand folding the soiled brief. The red curve, before the fix, jumps vertically from about 20 N to 34 N and later to 43.5 N right after each pause. The black curve, after the fix, rises smoothly but still reaches 41.5 N before backing off.">
+    <p class="cap">Force on the folding hand, one run each. Red: re-planned target applied in one step (peak 43.5&nbsp;N).
+    Black: target moved at the hand&rsquo;s own speed (peak 41.5&nbsp;N). The jump is gone, but the hand still reaches the
+    limit where it pushes the edge under the body, so the fix alone does not bring this step under 40&nbsp;N.</p>
+  </figure>
+</section>
+
+<hr>
+<section id="gpu">
+  <h2>A fast GPU simulator with the same cloth law matches one drop test but lets the dressed brief slide</h2>
+  <p>To train a robot later, a GPU simulator (Newton) is needed. The same cloth equations were written into it and
+  compared with the reference, first in drop tests against the spread of six repeated reference runs, then by handing
+  the dressed state from the reference run over to Newton and letting it rest.</p>
+  <figure class="fig">
+    <img src="../assets/diaper-change-sim/fig2_ipc_vs_newton.png" alt="Two panels. Left: dot plot of the error of Newton relative to the IPC reference for six drop-test measures and four solver settings; only the setting with the reference's friction comes close for flat length, flat width and plate area. Right: mean cloth drift over two seconds after hand-off, rising for all four Newton settings, highest for the two damped ones; the reference stays at zero.">
+    <p class="cap">(a) Drop tests: error relative to the reference mean; grey band = reference &plusmn;1 standard
+    deviation over 6 runs. (b) Mean drift of the dressed brief after hand-off to Newton; the reference stays at 0.0&nbsp;mm.
+    Each Newton value is one run.</p>
+  </figure>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Measure</th><th>Reference</th><th>Newton</th></tr></thead>
+      <tbody>
+        <tr><td>Plate drape, projected area</td><td class="n">0.1297 &plusmn; 0.0016 m&sup2;</td><td class="n">&minus;10 %</td></tr>
+        <tr><td>Flat drop, length</td><td class="n">662 &plusmn; 8 mm</td><td class="n">+3 %</td></tr>
+        <tr><td>Rod drape, back hang</td><td class="n">313 &plusmn; 8 mm</td><td class="n"><b>+23 % (outside tolerance)</b></td></tr>
+        <tr><td>Dressed brief, mean drift after 2 s</td><td class="n">0.00 mm</td><td class="n"><b>8.64 mm</b></td></tr>
+        <tr><td>Same, 3&times; the solver iterations, after 1.5 s</td><td class="n">&mdash;</td><td class="n">3.68 mm</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="box mark">
+    <p>Another prediction that failed: adding damping equal to the reference&rsquo;s numerical damping was expected to
+    halve the drift. It made it worse (27.77&nbsp;mm and 13.70&nbsp;mm after 2&nbsp;s, against 8.64&nbsp;mm without),
+    because in Newton&rsquo;s vertex-by-vertex solver the extra term slows convergence at a fixed iteration count. The
+    reference&rsquo;s 0.00&nbsp;mm is partly due to its own stopping rule, not only physics.</p>
+  </div>
+</section>
+
+<hr>
+<section id="limits">
+  <h2>Where this stops</h2>
+  <p class="against"><b>Scope:</b> simulation only; one body model and one brief; the valid dressing result is one run
+  (a second sample fails one stage); two fit measures fail; pulling the old brief out fails in 3 of 5 runs; one step
+  still needs more than the arm&rsquo;s 40&nbsp;N; nothing has been validated against a physical diaper or a person.</p>
+  <p>The force-gate thresholds and some material values are estimates, not measurements. Hand motions are faster than
+  a person&rsquo;s (13.5 simulated seconds for the whole dressing), which inflates some forces. Bit-for-bit
+  reproducibility holds only with single-threaded solvers. The GPU comparison ran on a CPU; GPU speed has not been
+  measured. Measurements on a real brief (flat dimensions, bending recovery) and physical checks (drape, wing pull,
+  dressing a cylinder or manikin) are planned and not done. Most of the code was written with an AI coding assistant
+  (Claude Code) under my direction; the study design, run criteria and decisions are mine.</p>
+</section>
+
+<footer>
+  <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang &middot;
+  <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
+</footer>
+
+</div>
+<script>
+(function () {
+  var v = document.getElementById('dv'), sl = document.getElementById('dvt'), btn = document.getElementById('dvplay');
+  var rt = document.getElementById('rt'), rtabs = document.getElementById('rtabs'), rf = document.getElementById('rf');
+  var rstep = document.getElementById('rstep'), svg = document.getElementById('fplot'), NS = 'http://www.w3.org/2000/svg';
+  var D = null, T0 = 69.7, T1 = 83.3, X0 = 40, X1 = 790, Y0 = 150, Y1 = 10, FM = 45, cursor = null, dragging = false;
+  function sx(t) { return X0 + (t - T0) / (T1 - T0) * (X1 - X0); }
+  function sy(f) { return Y0 - f / FM * (Y0 - Y1); }
+  function el(n, a) { var e = document.createElementNS(NS, n); for (var k in a) e.setAttribute(k, a[k]); svg.appendChild(e); return e; }
+  function lab(s, x, y, anchor) { var e = el('text', {x: x, y: y, 'font-size': 11, 'text-anchor': anchor || 'start', fill: 'var(--ink-3)', 'font-family': 'Helvetica,Arial,sans-serif'}); e.textContent = s; return e; }
+  function draw() {
+    el('line', {x1: X0, x2: X1, y1: Y0, y2: Y0, stroke: 'var(--rule)'});
+    el('line', {x1: X0, x2: X1, y1: sy(20), y2: sy(20), stroke: 'var(--ink-3)', 'stroke-dasharray': '2 3'});
+    el('line', {x1: X0, x2: X1, y1: sy(40), y2: sy(40), stroke: 'var(--plot-b)', 'stroke-width': 1.2});
+    lab('40 N', X0 - 4, sy(40) + 4, 'end'); lab('20 N', X0 - 4, sy(20) + 4, 'end'); lab('0', X0 - 4, Y0 + 4, 'end');
+    [70, 72, 74, 76, 78, 80, 82].forEach(function (t) { lab(t + ' s', sx(t), Y0 + 15, 'middle'); });
+    D.hands.forEach(function (h) {
+      var p = h.t.map(function (t, i) { return sx(t).toFixed(1) + ',' + sy(h.F[i]).toFixed(1); }).join(' ');
+      el('polyline', {points: p, fill: 'none', stroke: 'var(--plot-a)', 'stroke-width': 1});
+    });
+    D.tabs_t.forEach(function (t) { el('line', {x1: sx(t), x2: sx(t), y1: Y0, y2: Y0 - 6, stroke: 'var(--ink-3)'}); });
+    lab('tab fastened ▴', sx(D.tabs_t[3]) + 6, Y0 - 2);
+    cursor = el('line', {x1: X0, x2: X0, y1: Y1, y2: Y0, stroke: 'var(--ink)', 'stroke-width': 1});
+  }
+  function forceAt(h, t) {
+    if (t < h.t[0] || t > h.t[h.t.length - 1]) return null;
+    for (var i = 1; i < h.t.length; i++) if (h.t[i] >= t) { var a = (t - h.t[i - 1]) / (h.t[i] - h.t[i - 1] || 1); return h.F[i - 1] + a * (h.F[i] - h.F[i - 1]); }
+    return h.F[h.F.length - 1];
+  }
+  function show(k) {
+    k = Math.max(0, Math.min(D.t.length - 1, k)); var t = D.t[k];
+    rt.firstChild.nodeValue = t.toFixed(2) + ' s';
+    rtabs.firstChild.nodeValue = D.tabs_t.filter(function (x) { return x <= t; }).length + ' / 4';
+    var best = null, who = '';
+    D.hands.forEach(function (h) { var f = forceAt(h, t); if (f !== null && (best === null || f > best)) { best = f; who = h.name; } });
+    rf.firstChild.nodeValue = best === null ? '–' : best.toFixed(1) + ' N';
+    rstep.textContent = D.steps[D.stage[k]] + (best === null ? '' : ' · ' + who);
+    cursor.setAttribute('x1', sx(t)); cursor.setAttribute('x2', sx(t));
+    if (!dragging) sl.value = k;
+  }
+  function frame() { return Math.min(D.t.length - 1, Math.floor(v.currentTime * D.fps)); }
+  fetch('../assets/diaper-change-sim/scrub.json').then(function (r) { return r.json(); }).then(function (d) {
+    D = d; draw(); show(0);
+    (function tick() { if (!v.paused && !dragging) show(frame()); requestAnimationFrame(tick); })();
+    sl.addEventListener('input', function () { dragging = true; v.pause(); btn.textContent = 'play'; var k = +sl.value; v.currentTime = (k + 0.5) / D.fps; show(k); });
+    sl.addEventListener('change', function () { dragging = false; });
+    btn.addEventListener('click', function () { if (v.paused) { v.play(); btn.textContent = 'pause'; } else { v.pause(); btn.textContent = 'play'; } });
+  }).catch(function () { document.getElementById('scrub').style.display = 'none'; });
+})();
+</script>
+</body>
+</html>

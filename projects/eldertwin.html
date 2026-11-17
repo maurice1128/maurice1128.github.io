@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ElderTwin: adult day-care simulation testbed &mdash; Mu-Hua Wang</title>
+<meta name="description" content="A MuJoCo simulation of an adult day-care center with reactive, command-issuing virtual older adults, built to test whether care-robot safety conclusions change when generic pedestrians are replaced by older adults.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container">
+
+<nav>
+  <ul>
+    <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#platform">Platform</a></li>
+    <li><a href="#method">Method</a></li>
+    <li><a href="#limits">Limits</a></li>
+    <li><a href="../cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<header>
+  <p class="note">Care robotics &middot; simulation only &middot; Work in progress &middot; simulation platform, no manuscript</p>
+  <h1>ElderTwin: an adult day-care simulation testbed for care-robot evaluation</h1>
+  <p class="kicker">Simulators used to test robots among people model pedestrians as generic,
+  cooperative adults. ElderTwin is a MuJoCo model of a typical Taiwanese adult day-care center
+  (a template, not a particular center) whose virtual older adults follow a timetable, walk with
+  walkers or use wheelchairs, ask a Stretch&nbsp;4 robot for help by speech and pointing, and react
+  to it. The planned study asks whether the safety ranking of the robot's navigation policies
+  changes when generic pedestrians are replaced by older adults. The platform is built; the
+  pre-specified experiments have not been run, so this page reports no study results.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; sole developer &middot; project assigned by Prof. Yi-Ting Chen, Department of Computer Science,
+  National Yang Ming Chiao Tung University &middot; 2026&ndash;present</p>
+  <div class="links">
+    <a href="../index.html">[All projects]</a>
+  </div>
+</header>
+
+<hr>
+<section>
+  <figure class="fig wide">
+    <video src="../assets/eldertwin/lead.mp4" poster="../assets/eldertwin/lead_poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Real-time simulation of lunch in the day-care center, seen from above and behind the robot: older adults eat at a long table, one in a wheelchair, while staff in teal walk past the white Stretch 4 robot waiting between the tables."></video>
+    <p class="cap">Lunch in the simulated day-care center at real-time speed. Older adults eat at the
+    long table while staff walk past the robot, which waits between the tables. A 12-second excerpt
+    (40&ndash;52&nbsp;s) of one 190.8-second run (seed 9001), one of 4 lunch runs recorded, chosen
+    because people pass close to the robot; <b>not a statistic</b>.</p>
+  </figure>
+</section>
+
+<hr>
+<section id="platform">
+  <h2>The platform runs end to end and is checked by a large automated test suite</h2>
+  <p>All numbers below are listed under "Verified numbers" in the project's FACTS file, with their
+  source (git history and the full test log of 2026-11-17).</p>
+
+  <div class="stats">
+    <div><span class="big">4,873</span><h3>Automated tests passed</h3><p>full suite, run from a fresh environment on an external drive; 1 failure (a project-bookkeeping check, not program behaviour), 43 skipped</p></div>
+    <div><span class="big">5,842</span><h3>Commits</h3><p>2026-10-16 to 2026-11-16, main branch</p></div>
+    <div><span class="big">84,830</span><h3>Lines of Python</h3><p>source code in 14 modules; 91,512 further lines of tests</p></div>
+  </div>
+
+  <div class="figrow">
+    <figure class="fig">
+      <img src="../assets/eldertwin/fig1_dining.jpg" alt="Simulated lunch time: older adults, one in a wheelchair, seated at a long table, seen from the robot's camera; other residents stand near armchairs in the background.">
+      <p class="cap">Lunch, seen from the Stretch&nbsp;4 camera. One of 465 photos the simulated
+      robot took in 40 patrol runs, the second of the two &ldquo;dining together&rdquo; shots
+      picked for the most visible faces (5 faces; the first had 6); <b>not a statistic</b>.</p>
+    </figure>
+    <figure class="fig">
+      <img src="../assets/eldertwin/fig2_walker.jpg" alt="A virtual older adult walking with a four-legged walker among standing residents, seen from the robot's camera.">
+      <p class="cap">An older adult walking with a walker among other residents. One of the same
+      465 photos, the &ldquo;walking with an aid&rdquo; shot with the most visible faces (7 faces);
+      <b>not a statistic</b>.</p>
+    </figure>
+  </div>
+</section>
+
+<hr>
+<section id="method">
+  <h2>Older adults are modelled from the literature, and every assumed value is marked</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Part</th><th>What it does</th></tr></thead>
+      <tbody>
+        <tr><td>World</td><td>MuJoCo 3.16.0 (pinned); geometric non-penetration of bodies, aids, furniture and the robot</td></tr>
+        <tr><td>Bodies</td><td>SMPL-X statistical bodies; slow gait, walkers, wheelchairs, sitting down and standing up, reaching for objects</td></tr>
+        <tr><td>Behaviour</td><td>daily timetable; requests by speech and pointing; reactions to the robot; crowd navigation</td></tr>
+        <tr><td>Robot</td><td>Hello Robot Stretch&nbsp;4 model; navigation, yielding, fetch-and-return, handover, contact guard</td></tr>
+        <tr><td>Measurement</td><td>contacts and who initiated them, a realistic person tracker, a realism comparison suite, video review, pre-specified analysis</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Planned study 1 compares seven navigation policies (including the robot's shipped controller
+  and one that yields) in four corridor widths, with generic pedestrians and with older adults.
+  Planned study 2 compares strategies for picking up and returning an object an older adult has
+  dropped. I am the sole developer; I wrote the software with AI coding assistants, set the research
+  questions, made the design decisions and reviewed the results and videos.</p>
+  <div class="box mark">
+    <p>In an earlier version of the model, apparent reversals of the corridor safety ranking
+    disappeared once pedestrians' bodies were kept out of the walls: they had depended on a
+    simulation artifact. Whole-body non-penetration was rebuilt before the study is run again.</p>
+  </div>
+</section>
+
+<hr>
+<section id="limits">
+  <h2>No safety result yet: the platform is built, the study has not been run</h2>
+  <p class="against"><b>Scope:</b> simulation only; the virtual older adults are not validated
+  against real older adults; the pre-specified experiments have not been run, so no safety result
+  is reported; when run, the study can show whether the human model changes a simulated safety
+  conclusion, not which policy is safe.</p>
+</section>
+
+<footer>
+  <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang &middot;
+  <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
+</footer>
+
+</div>
+</body>
+</html>

@@ -26,7 +26,7 @@ ERR = [0, 2, 5, 8, 12]
 CAM = [0.845, 0.824, 0.659, 0.600, 0.549]
 PLATE = [0.877, 0.822, 0.775, 0.759, 0.731]
 GAIN = [0.032, -0.002, 0.116, 0.159, 0.182]
-# cluster_degeneracy.txt - t interval on the five per-body gains, the unit Table 4 reports
+# cluster_degeneracy.txt - t interval on the five per-body gains, the unit Table 3 reports
 LO = [-0.068, -0.101, 0.018, 0.035, 0.075]
 HI = [0.134, 0.096, 0.223, 0.293, 0.300]
 
@@ -50,13 +50,13 @@ fig, ax = plt.subplots(2, 2, figsize=(7.2, 6.0))
 a.axvspan(2, 5, color=GREY, alpha=0.15, lw=0)
 a.text(3.5, 0.97, "field's\nconvention", ha='center', va='top', fontsize=7, color=GREY)
 a.axhline(MAJ, ls=':', color=GREY, lw=1.2)
-a.text(12.4, MAJ + 0.022, 'chance', ha='right', fontsize=7, color=GREY)
+a.text(12.4, MAJ + 0.022, 'majority-class baseline', ha='right', fontsize=7, color=GREY)
 a.plot(ERR, CAM, 'o-', color=NAVY, lw=2, ms=5, label='camera (sagittal)')
 a.plot(ERR, PLATE, 's--', color=RED, lw=1.8, ms=5, label='+ force plate')
 a.set_ylim(0.10, 1.04); a.set_xlim(-0.4, 12.8)
-a.set_xlabel('capture error (deg)'); a.set_ylabel('top-1 accuracy')
+a.set_xlabel('capture error (deg)'); a.set_ylabel('rank-1 accuracy')
 a.set_title('(a)  identification tolerates large capture error', loc='left', fontsize=9.5)
-a.legend(frameon=False, fontsize=8, loc='lower left')
+a.legend(frameon=False, fontsize=8, loc='lower left', ncol=2, bbox_to_anchor=(0.0, -0.01))
 
 # (b) marginal value of kinetics --------------------------------------------------------------------
 b.axhline(0, color=GREY, lw=1)
@@ -78,9 +78,9 @@ for (k, (v2, v8)), col in zip(SEV.items(), shades):
     c.plot([2, 8], [v2, v8], 'o-', color=col, lw=2, ms=6, label=k)
 c.axhline(MAJ, ls=':', color=GREY, lw=1.2)
 c.set_xlim(0.5, 9.5); c.set_ylim(0.10, 1.07); c.set_xticks([2, 8])
-c.set_xlabel('capture error (deg)'); c.set_ylabel('top-1 accuracy')
-c.set_title('(c)  the moderate case loses most between 2 and 8 deg', loc='left', fontsize=9.5)
-c.legend(frameon=False, fontsize=8, loc='lower left', bbox_to_anchor=(0.0, 0.02))
+c.set_xlabel('capture error (deg)'); c.set_ylabel('rank-1 accuracy')
+c.set_title('(c)  the moderate case loses most', loc='left', fontsize=9.5)
+c.legend(frameon=False, fontsize=7, loc='lower center', ncol=3, bbox_to_anchor=(0.5, -0.01), columnspacing=0.8, handlelength=1.2)
 
 # (d) by muscle group ---------------------------------------------------------------------------
 x = np.arange(len(GROUPS))

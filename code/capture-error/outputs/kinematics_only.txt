@@ -1,0 +1,20 @@
+=== WHAT A CAMERA ALONE DELIVERS ===
+The reported "camera" tier is 33 features: 18 sagittal kinematics, 9 asymmetry, 9
+spatiotemporal minus exclusions. In this model the spatiotemporal features are derived from
+vertical ground reaction force, so a camera without a force plate would not have them.
+The kinematics-only tier is the 27 kinematic and asymmetry features.
+
+ capture error  33-feature  27-feature  difference
+           0 deg       0.845       0.824      -0.021
+           2 deg       0.824       0.875      +0.051
+           5 deg       0.659       0.742      +0.083
+           8 deg       0.600       0.623      +0.023
+          12 deg       0.549       0.536      -0.013
+
+  33-feature: 0.845 at 0 deg -> 0.549 at 12 deg, 2.4x the 0.227 baseline at the end
+  27-feature: 0.824 at 0 deg -> 0.536 at 12 deg, 2.4x
+  mean cost of dropping the force-derived timing features: +0.025
+
+READING: if the 27-feature curve stays well above baseline the tolerance claim holds for a
+camera on its own, and the paper should report this curve as its headline. If it collapses,
+the reported curve describes an instrumented setup and the claim has to say so.

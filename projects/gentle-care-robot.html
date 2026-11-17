@@ -3,68 +3,42 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gentle by Knowing: Person Knowledge Protects Restricted Joints Better Than Force Thresholds in Simulated Robotic Arm Lifting — Mu-Hua Wang</title>
-<meta name="description" content="In a musculoskeletal simulation of a robot lifting a person's forearm, knowing before contact which joint is restricted, and being willing to decline, reduced harmful outcomes (robot-caused end-range joint loads); force-magnitude guards did not substitute for that knowledge.">
+<title>Gentle by knowing: person knowledge protects restricted joints better than force thresholds &mdash; Mu-Hua Wang</title>
+<meta name="description" content="In a musculoskeletal simulation of a robot lifting a person's forearm, force-magnitude guards lowered joint load but did not keep it under the harm threshold; knowing which joint is restricted, and declining, reduced harmful outcomes from 110 to 25 of 300 new simulated persons.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../css/style.css">
-<style>
-  /* page-local: findings list and missing-video fallback */
-  ul.found{margin:0;padding-left:20px;color:var(--ink-2)}
-  ul.found li{margin-bottom:9px}
-  ul.found li b{color:var(--ink)}
-  ul.plain{margin:0 0 10px;padding-left:20px;color:var(--ink-2)}
-  ul.plain li{margin-bottom:6px}
-  .vmissing{border:1px solid var(--rule-2);background:var(--box);padding:40px 12px;
-    text-align:center;margin:0}
-</style>
-<script>
-/* If a video file is missing, show its poster image instead; if that is missing too,
-   show a short note. Called from each <source onerror>, so it cannot miss the event. */
-function gcrVideoFallback(v){
-  if(!v || v.dataset.done) return; v.dataset.done='1';
-  var img=new Image();
-  img.alt=v.getAttribute('aria-label')||'';
-  img.onload=function(){ v.replaceWith(img); };
-  img.onerror=function(){
-    var p=document.createElement('p');
-    p.className='note vmissing';
-    p.textContent='Video in preparation.';
-    v.replaceWith(p);
-  };
-  var poster=v.getAttribute('poster');
-  if(poster){ img.src=poster; } else { img.onerror(); }
-}
-</script>
 </head>
 <body>
 <div class="container">
 
 <nav>
   <ul>
-    <li class="back"><a href="../index.html">← Home</a></li>
-    <li><a href="#found">Findings</a></li>
-    <li><a href="#videos">Videos</a></li>
-    <li><a href="#ladder">Ladder</a></li>
+    <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#result">Result</a></li>
     <li><a href="#force">Force guards</a></li>
+    <li><a href="#ladder">Ladder</a></li>
+    <li><a href="#play">Try it</a></li>
     <li><a href="#robust">Robustness</a></li>
     <li><a href="#limits">Limits</a></li>
-    <li><a href="#checked">How it was checked</a></li>
     <li><a href="../cv.html">CV</a></li>
   </ul>
 </nav>
 
 <header>
-  <p class="note">2026 &middot; simulation study</p>
-  <h1>Gentle by Knowing: Person Knowledge Protects Restricted Joints Better Than Force Thresholds in Simulated Robotic Arm Lifting</h1>
-  <p class="kicker">When a robot supports a multi-joint limb from outside, the joint it loads is
-  not on the axis of its force sensor.</p>
-  <p class="note" style="margin-top:1.6rem">Mu-Hua (Maurice) Wang · National Yang Ming
-  Chiao Tung University</p>
-  <p class="note">Brief Research Report under review at <i>Frontiers in Robotics and AI</i>, 2026 (revised version).
-  Simulation study.</p>
+  <p class="note">Physical human&ndash;robot interaction &middot; simulation &middot; Under review at <i>Frontiers in Robotics and AI</i> (Brief Research Report), manuscript 2019057 &middot; peer review completed, both reviewers endorsed publication</p>
+  <h1>Gentle by knowing: person knowledge protects restricted joints better than force thresholds in simulated robotic arm lifting</h1>
+  <p class="kicker">A robot cannot feel its way to gentleness. When it supports a multi-joint limb
+  from outside, the joint it loads is not on the axis of its force sensor. In a musculoskeletal simulation of a robot lifting the forearm of
+  persons with restricted shoulders or elbows, the tightest force-magnitude guard lowered mean joint
+  load by 29&ndash;36&nbsp;% but moved harmful outcomes by only 0&ndash;7 points. With a complete care
+  record, a policy learned offline reduced harmful outcomes from 110 to 25 of 300 new simulated
+  persons, mainly by declining 91 of them. Safe completions were 174 vs. 177, and non-inferiority was
+  not established. Everything is simulated, with one body structure.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; National Yang Ming Chiao Tung
+  University &middot; sole author</p>
   <div class="links">
-    <a href="../assets/papers/gentle_care_robot.pdf">[Paper (PDF)]</a>
-    <a href="../assets/papers/gentle_care_robot_supplement.pdf">[Supplement (PDF)]</a>
+    <a href="../assets/gentle-care-robot/paper.pdf">[Paper (PDF)]</a>
+    <a href="../assets/gentle-care-robot/supplement.pdf">[Supplement (PDF)]</a>
     <a href="https://github.com/maurice1128/gentle-by-knowing">[Code &amp; data]</a>
     <a href="../index.html">[All projects]</a>
   </div>
@@ -73,192 +47,312 @@ function gcrVideoFallback(v){
 <hr>
 <section>
   <figure class="fig">
-    <video autoplay muted loop playsinline controls preload="metadata"
-           poster="../assets/gentle-care-robot/fixed_vs_learned_poster.png"
-           aria-label="The same simulated person lifted by the fixed rule and by the learned policy">
-      <source src="../assets/gentle-care-robot/fixed_vs_learned.mp4" type="video/mp4" onerror="gcrVideoFallback(this.parentNode)">
-    </video>
-    <p class="cap"><b>Same simulated person, two robots:</b> a fixed rule that knows nothing
-    about the person (left), and a learned policy that reads the care record first (right).</p>
+    <video src="../assets/gentle-care-robot/fixed_vs_learned.mp4"
+           poster="../assets/gentle-care-robot/fixed_vs_learned_poster.jpg"
+           autoplay muted loop playsinline controls preload="metadata"
+           aria-label="The same simulated person, whose elbow is restricted, lifted by the fixed rule and by the learned policy, shown side by side with each joint's load."></video>
+    <p class="cap"><b>Same simulated person, two robots</b> (0.25&times; speed). Left: the fixed rule,
+    which knows nothing about the person, presses the restricted elbow to a peak load of
+    3.34&nbsp;N&middot;m. Right: the learned policy reads the care record, picks a different support
+    and lifts with 0.00&nbsp;N&middot;m. One person of the 300-person ladder set (seed 2258), chosen as
+    an illustration: <b>not a statistic</b>.</p>
   </figure>
 </section>
 
 <hr>
-<section>
-  <h2>The question</h2>
-  <p style="color:var(--ink-2)">Many care recipients cannot move a shoulder or elbow freely, and a
-  robot lifting their forearm can press a restricted joint into the end of its range. Robot
-  safety rests on contact-force limits, but a joint load that matters is only a few newtons at
-  the contact point, hidden under the limb's own weight. In a musculoskeletal simulation (MuJoCo/MyoSuite) of
-  a robot lifting the forearm from below, controllers differ in what they know about the
-  person, from nothing to everything. Two hypotheses from a locally kept protocol were tested: force-magnitude
-  guards do not reduce harmful outcomes by more than 5 percentage points, and
-  knowledge of the person, with the option to decline, reduces them. Whether safe completions
-  stay non-inferior was tested separately.</p>
-  <figure class="fig" style="margin-top:1rem">
-    <img src="../assets/gentle-care-robot/fig1_task.png" alt="Left: the capsule supporting the forearm proximally and distally, with the resulting shoulder and elbow excursions. Right: one harmful lift over time, in which the joint-limit load crosses its harm threshold before the wrist force crosses the force-guard threshold">
-    <p class="cap"><b>The robot loads the joint before its force sensor notices.</b> (A, B)
-    Proximal support elevates mainly the shoulder, distal support also flexes the elbow. (C) One
-    harmful lift of the fixed rule (restricted elbow): the robot-caused joint-limit load passes
-    0.5&nbsp;N&middot;m at 0.588&nbsp;s, before the wrist force exceeds the tightest force-guard
-    threshold (25.05&nbsp;N) at 0.624&nbsp;s.</p>
-  </figure>
-  <p class="note" style="margin-top:1rem"><b>What "harm" means here.</b> The load the robot
-  presses into the shoulder-elevation and elbow-flexion limits, summed over the two joints. A
-  <i>harmful outcome</i> is a load of at least 0.5&nbsp;N&middot;m; a <i>safe completion</i> is a
-  completed lift below it. This is a mechanical exposure proxy, not injury.</p>
-</section>
+<section id="result">
+  <h2>Knowing which joint is restricted, and declining, protected joints that force guards could not</h2>
+  <p>Many care recipients cannot move a shoulder or elbow freely, and a robot lifting their forearm
+  can press a restricted joint into the end of its range. Contact-force limits do not sense that joint.
+  A <i>harmful outcome</i> here is a robot-caused end-range joint load of at least
+  0.5&nbsp;N&middot;m, summed over shoulder elevation and elbow flexion: a mechanical-exposure proxy,
+  not injury. A <i>safe completion</i> is a completed lift below it. Controllers ranged from a fixed
+  rule that knows nothing, through a restriction flag and joint ranges with 20&deg; error, to an oracle
+  that knows every outcome, and all but the fixed rule and the force guards could decline.</p>
 
-<hr>
-<section id="found">
-  <h2>What we found</h2>
-  <ul class="found">
-    <li><b>Force-magnitude guards did not substitute for knowledge.</b> The tightest guard lowered
-    mean load by 29&ndash;36&nbsp;% but left 36&ndash;48&nbsp;% of persons above 0.5&nbsp;N&middot;m, moved harmful outcomes by 0&ndash;7 points and lost 38&ndash;51&nbsp;% of safe completions. A post hoc non-superiority test to 5 points was inconclusive in 6 of 16 cells. Guards prevented at
-    most 13&nbsp;% of the fixed rule's harmful outcomes, mostly by aborting, and often did not trip
-    before the joint was loaded (post hoc).</li>
-    <li><b>Knowing the person, and being willing to decline, helped.</b> With a complete care
-    record (joint ranges with 20&deg; error), a policy learned offline in simulation reduced
-    harmful outcomes from 110 to 25 of 300 new simulated persons, about a quarter of the fixed
-    rule's harmful outcomes, by declining 91 of them. Safe completions were 174 vs. 177;
-    non-inferiority was not established, and at a 2.5&nbsp;N&middot;m harm threshold it completed
-    6&ndash;8 percentage points fewer lifts than the fixed rule in the conditions with a complete
-    record.</li>
-    <li><b>Which joint, not how many degrees</b> (post hoc). With one learner at every level,
-    per-joint flags give almost all of the benefit: 366 safe and 46 harmful of 600 persons,
-    against 354 and 53 with ranges at 20&deg; error and 239 and 4 with a merged flag.</li>
-    <li><b>The record's gaps stay unprotected.</b> With half of the restrictions unrecorded, the
-    reduction relative to the fixed rule shrank from &minus;0.27 to &minus;0.15, and unrecorded
-    persons were harmed at exactly the fixed-rule rate (50 vs. 50 of 85).</li>
-  </ul>
-</section>
-
-<hr>
-<section id="videos">
-  <h2>Videos</h2>
-  <div class="figrow">
-    <figure class="fig">
-      <video autoplay muted loop playsinline preload="metadata"
-             poster="../assets/gentle-care-robot/lift_proximal_vs_distal_poster.png"
-             aria-label="Proximal versus distal support of the forearm">
-        <source src="../assets/gentle-care-robot/lift_proximal_vs_distal.mp4" type="video/mp4" onerror="gcrVideoFallback(this.parentNode)">
-      </video>
-      <p class="cap"><b>Where the robot holds the arm decides which joint moves</b> (the figure's
-      panels A and B, in motion).</p>
-    </figure>
-    <figure class="fig">
-      <video autoplay muted loop playsinline preload="metadata"
-             poster="../assets/gentle-care-robot/force_guard_too_late_poster.png"
-             aria-label="One harmful lift and its contact-force trace against a force-guard threshold">
-        <source src="../assets/gentle-care-robot/force_guard_too_late.mp4" type="video/mp4" onerror="gcrVideoFallback(this.parentNode)">
-      </video>
-      <p class="cap"><b>The lift of panel C, in slow motion:</b> even the tightest guard would
-      trip only at 0.64&nbsp;s, after the joint load had passed 0.5&nbsp;N&middot;m. In many other
-      harmful lifts the guard never tripped at all.</p>
-    </figure>
+  <div class="stats">
+    <div><span class="big">110 &rarr; 25</span><h3>Harmful outcomes</h3><p>of 300 new simulated persons, fixed rule vs. learned policy, complete record</p></div>
+    <div><span class="big">174 vs. 177</span><h3>Safe completions</h3><p>learned policy vs. fixed rule; non-inferiority not established (&minus;0.01 [&minus;0.05, +0.03])</p></div>
+    <div><span class="big">0&ndash;7 pts</span><h3>Change in harmful outcomes</h3><p>tightest force guard vs. fixed rule, while mean load fell 29&ndash;36&nbsp;%</p></div>
+    <div><span class="big">&minus;0.27</span><h3>Replication</h3><p>learned policy minus fixed rule, harmful-outcome rate, 300 further new persons [&minus;0.32, &minus;0.21]</p></div>
   </div>
-  <figure class="fig" style="margin-top:1.4rem">
-    <video autoplay muted loop playsinline preload="metadata"
-           poster="../assets/gentle-care-robot/learned_declines_poster.png"
-           aria-label="The learned policy declining to lift">
-      <source src="../assets/gentle-care-robot/learned_declines.mp4" type="video/mp4" onerror="gcrVideoFallback(this.parentNode)">
-    </video>
-    <p class="cap"><b>Declining is a decision, not a failure:</b> when no lift is predicted to
-    be safe, the learned policy hands the task back to a human carer.</p>
-  </figure>
-</section>
 
-<hr>
-<section id="ladder">
-  <h2>The information ladder</h2>
-  <figure class="fig">
-    <img src="../assets/gentle-care-robot/figL_information_ladder.png" alt="Harmful outcomes against safe completions for controllers at six levels of knowledge about the person, 300 new simulated persons">
-    <p class="cap"><b>Knowing the person reduces harm, mostly by deciding whom not to lift;</b> 300 new
-    simulated persons. A: lower right is better, and the line joins one learner at six levels of
-    knowledge (post hoc). B: what happens to all 300 persons, declines included.</p>
+  <div class="box mark">
+    <ul>
+      <li><b>Force-magnitude guards lowered the load but did not keep it under 0.5&nbsp;N&middot;m.</b>
+      The tightest guard left 36&ndash;48&nbsp;% of persons above the threshold and lost
+      38&ndash;51&nbsp;% of safe completions.</li>
+      <li><b>Most of the benefit came from deciding whom not to lift</b> (91 of 300 declined), but,
+      post hoc, the learned policy also harmed fewer of the persons it did lift: 53 vs. 95 of 423.</li>
+      <li><b>Which joint, not how many degrees</b> (post hoc). With one learner at every level of
+      knowledge, per-joint flags gave almost all of the benefit.</li>
+      <li><b>Gaps in the record stay unprotected.</b> Persons whose restriction was not recorded were
+      harmed exactly as often as under the fixed rule (50 vs. 50 of 85).</li>
+    </ul>
+  </div>
+
+  <figure class="fig" style="margin-top:1.4rem">
+    <img src="../assets/gentle-care-robot/fig1_task.png" alt="Panels A and B: the capsule supporting the forearm near the elbow and near the wrist, with the shoulder and elbow angles each support produces. Panel C: one harmful lift over time; the joint-limit load crosses 0.5 newton-metres before the wrist force crosses the tightest force-guard threshold.">
+    <p class="cap"><b>The robot loads the joint before its force sensor notices.</b> (A, B) Proximal
+    support elevates mainly the shoulder; distal support also flexes the elbow. (C) One harmful lift of
+    the fixed rule (seed 2222, restricted elbow): the joint-limit load passes 0.5&nbsp;N&middot;m at
+    0.588&nbsp;s, before the wrist force exceeds the tightest guard threshold (25.05&nbsp;N) at
+    0.624&nbsp;s. One lift: <b>not a statistic</b>.</p>
   </figure>
-  <p style="color:var(--ink-2)">Declining everyone with a restriction flag removed all harmful
-  outcomes but also 37&nbsp;% of safe completions; the learned policy completed 62 more lifts
-  safely at the cost of 25 harmful outcomes. With the rule held fixed (post hoc), the gap between the flag rule
-  and the learned policy is one of knowledge as well as rule. Perfect knowledge, a ceiling, reaches 237
-  safe and 0 harmful: of the 63 safe completions the learned policy missed, 47 were unnecessary
-  refusals, and 18 of its 25 harmful outcomes were persons with no safe lift.</p>
 </section>
 
 <hr>
 <section id="force">
-  <h2>Force-magnitude guards</h2>
+  <h2>Force guards trip late because the joint load hides under the limb's weight</h2>
   <figure class="fig">
-    <img src="../assets/gentle-care-robot/figG_force_guard.png" alt="Harmful outcomes and safe completions against force-guard threshold, for a hard limit and three widths of graded end-range resistance">
+    <img src="../assets/gentle-care-robot/fig2_force_guard.png" alt="Paired differences from the fixed rule, with 95 percent intervals, in harmful-outcome rate, safe-completion rate and mean load, for four force-guard thresholds under a hard joint limit and under graded end-range resistance of 12, 20 and 25 degrees.">
     <p class="cap"><b>Tight guards lower the load and lose safe completions, while harmful outcomes
-    change by at most 7 points.</b> Paired differences from the fixed rule with 95&nbsp;% intervals, hard limit and graded
-    end-range resistance of 12, 20 and 25&deg;, 120 new persons. Hollow: non-superiority inconclusive.</p>
+    change by at most 7 points.</b> Paired differences from the fixed rule (95&nbsp;% intervals), hard
+    limit and graded end-range resistance of 12, 20 and 25&deg;, 120 new persons per condition. Hollow
+    markers: a post hoc non-superiority test to 5 points is inconclusive (6 of these 16 cells).</p>
   </figure>
-  <p style="color:var(--ink-2)">Over 600 persons and eight support sites (post hoc), 0.5&nbsp;N&middot;m corresponds to 0.8&ndash;4.8&nbsp;N at the
-  contact with the full lever arm. Along the lift direction it is 1.6&ndash;6.8&nbsp;N at the elbow and a median of 8&nbsp;N
-  at the shoulder (5th to 95th percentile 5&ndash;109&nbsp;N). Most of these are small against a forearm-and-hand weight of about 17&nbsp;N and guard thresholds of
-  25&ndash;50&nbsp;N. Among the 600 persons of the ladder set and replication, every
-  harmful lift of the fixed rule stayed below the ISO/TS 15066 contact-force limit for the lower
-  arm (160&nbsp;N; simulated peak force median 34&nbsp;N, maximum 154&nbsp;N). Force limits
-  remain necessary for contact safety but are not sufficient for joints.</p>
+  <p>Over 600 persons and eight support sites (post hoc), 0.5&nbsp;N&middot;m corresponds to
+  0.8&ndash;4.8&nbsp;N at the contact with the full lever arm; along the lift direction it is
+  1.6&ndash;6.8&nbsp;N at the elbow and a median of 8&nbsp;N at the shoulder (5th to 95th percentile
+  5&ndash;109&nbsp;N). Most of these are small against a forearm-and-hand weight of about 17&nbsp;N and
+  guard thresholds of 25&ndash;50&nbsp;N. Each guard prevented only 0&ndash;13&nbsp;% of the fixed
+  rule's harmful outcomes, and every harmful lift of the fixed rule stayed below the ISO/TS 15066
+  quasi-static force limit for the lower arm (160&nbsp;N). Force limits remain necessary for contact
+  safety; they are not sufficient for joints.</p>
+  <div class="figrow" style="margin-top:1.2rem">
+    <figure class="fig">
+      <video src="../assets/gentle-care-robot/force_guard_too_late.mp4"
+             poster="../assets/gentle-care-robot/force_guard_too_late_poster.jpg"
+             autoplay muted loop playsinline preload="metadata"
+             aria-label="The harmful lift of panel C in slow motion, with the joint load and the wrist force plotted against the force-guard threshold."></video>
+      <p class="cap"><b>The lift of panel C, at 0.25&times; speed</b> (seed 2222, <b>not a
+      statistic</b>). In the 7 other harmful, elbow-restricted lifts examined when the videos were
+      made, the load crossed 0.5&nbsp;N&middot;m 10&ndash;56&nbsp;ms before the guard tripped in all
+      7.</p>
+    </figure>
+    <figure class="fig">
+      <video src="../assets/gentle-care-robot/lift_proximal_vs_distal.mp4"
+             poster="../assets/gentle-care-robot/lift_proximal_vs_distal_poster.jpg"
+             autoplay muted loop playsinline preload="metadata"
+             aria-label="Proximal and distal support of the same unrestricted simulated person, with the resulting shoulder and elbow angles."></video>
+      <p class="cap"><b>Where the robot holds the arm decides which joint moves</b> (panels A and B in
+      motion; seed 104, unrestricted, 0.25&times; speed). Proximal: shoulder +16.0&deg;, elbow
+      &minus;2.5&deg;. Distal: shoulder +8.8&deg;, elbow +9.6&deg;.</p>
+    </figure>
+  </div>
 </section>
 
 <hr>
-<section id="robust">
-  <h2>Robustness</h2>
+<section id="ladder">
+  <h2>Knowledge helps mostly by telling the robot whom not to lift</h2>
   <figure class="fig">
-    <img src="../assets/gentle-care-robot/figR_robustness.png" alt="Forest plot of paired differences between the learned policy and the fixed rule or body model across confirmation conditions">
-    <p class="cap"><b>Learned policy minus fixed rule (grey) or body model (blue),</b> paired
-    95&nbsp;% CIs, in every prespecified confirmation condition, without retraining. Posture
-    conditions were compared with the body model only.</p>
+    <img src="../assets/gentle-care-robot/fig3_information_ladder.png" alt="Panel A: harmful outcomes against safe completions for each controller and for one learner at six levels of knowledge, 300 new simulated persons. Panel B: stacked bars of safe completions, harmful outcomes, failed lifts and declines for each controller.">
+    <p class="cap"><b>The information ladder, 300 new simulated persons.</b> (A) Lower right is better;
+    purple points are one learner with the decision rule held fixed at six levels of knowledge (post
+    hoc). (B) What happens to all 300 persons, declines included.</p>
   </figure>
-  <p style="color:var(--ink-2)">The reduction replicated on new persons (&minus;0.27
-  [&minus;0.32, &minus;0.21] against the fixed rule) and held under posture noise, over-estimated
-  records, a shifted population with more and tighter restrictions, graded end-range resistance
-  and two physics perturbations. Safe completions relative to the fixed rule: &minus;0.01
-  [&minus;0.06, +0.04] in the replication, +0.02 [&minus;0.03, +0.07] in the shifted population,
-  +0.06 [0.00, +0.12] under 20&deg; graded resistance. With half the restrictions unrecorded (64
-  vs. 108 harmful), declining everyone flagged harmed fewer persons (50 vs. 64) at 29 fewer safe
-  completions.</p>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Controller (ladder set, 300 persons)</th><th>Safe</th><th>Harmful</th><th>Declined</th></tr></thead>
+      <tbody>
+        <tr><td>Fixed rule F (knows nothing)</td><td class="n">177</td><td class="n">110</td><td class="n">0</td></tr>
+        <tr><td>Decline everyone flagged (CAT)</td><td class="n">112</td><td class="n">0</td><td class="n">179</td></tr>
+        <tr><td>Population body model M (ranges, 20&deg; error)</td><td class="n">162</td><td class="n">67</td><td class="n">59</td></tr>
+        <tr><td><b>Learned policy L (ranges, 20&deg; error)</b></td><td class="n"><b>174</b></td><td class="n"><b>25</b></td><td class="n"><b>91</b></td></tr>
+        <tr><td>Oracle O (knows every outcome)</td><td class="n">237</td><td class="n">0</td><td class="n">63</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:1rem">Declining everyone flagged removed every harmful outcome but 37&nbsp;% of
+  safe completions. The learned policy completed 62 more lifts safely at the cost of 25 harmful
+  outcomes, so with a decline counted as free it is preferable while one harmful outcome weighs less
+  than about 2.5 completions. Against the body model it had fewer harmful outcomes (&minus;0.14
+  [&minus;0.19, &minus;0.09]) and no fewer safe completions (+0.04 [0.00, +0.08]).</p>
+</section>
+
+<hr>
+<section id="play">
+  <h2>Slide how cautious the robot is: naming the restricted joint gives almost all of the benefit</h2>
+  <p>The controllers above change their decision rule as well as their knowledge. Here one learner
+  with one rule sees six levels of knowledge about each person. It lifts only if its predicted chance
+  of a safe completion reaches <i>&tau;</i>, and declines otherwise. Raise <i>&tau;</i> and every level
+  trades safe completions for fewer harmful outcomes; what differs is how good a trade each level can
+  get.</p>
+  <div class="ctrl" style="margin-top:1rem">
+    <div class="ctrl-row">
+      <span class="readout" id="tauOut">0.65<small>decline threshold &tau;</small></span>
+      <input id="tau" type="range" min="0" max="20" step="1" value="13"
+             aria-label="Decline threshold tau, from 0.00 to 1.00 in steps of 0.05">
+    </div>
+    <svg id="tauPlot" viewBox="0 0 640 400" width="100%" role="img"
+         aria-label="Harmful outcomes against safe completions, out of 600 simulated persons, for one learner at six levels of knowledge. Each grey line is one level's trade-off as tau changes; the dot marks the current tau. The cross marks the fixed rule at 348 safe and 218 harmful."
+         style="margin-top:.6rem;max-width:100%"></svg>
+    <div class="tw" style="margin-top:.6rem">
+      <table>
+        <thead><tr><th>Learner knows</th><th>Safe</th><th>Harmful</th></tr></thead>
+        <tbody id="tauRows"></tbody>
+      </table>
+    </div>
+    <p class="note" style="margin-top:.6rem">Of 600 new simulated persons (ladder set and replication);
+    fixed rule: 348 safe, 218 harmful. Post hoc and descriptive: the curves are read on the same
+    persons, not a confirmation test. Data: <a href="../assets/gentle-care-robot/tau_sweep.json">tau_sweep.json</a>,
+    copied from the public repository.</p>
+  </div>
+  <div class="box mark" style="margin-top:1.2rem">
+    <p>At no more than 46 harmful outcomes, posture alone allows 41 safe completions, one merged flag
+    280, per-joint flags 366 and ranges with 20&deg; error 335. A merged flag adds most of the benefit
+    and naming the joint adds the rest; with 20&deg; error, the recorded degrees were not shown to add
+    to the flags (harmful +0.01 [&minus;0.01, +0.03], safe &minus;0.02 [&minus;0.04, 0.00]).</p>
+  </div>
+</section>
+<script>
+(function () {
+  var svg = document.getElementById('tauPlot'), slider = document.getElementById('tau');
+  var out = document.getElementById('tauOut'), rows = document.getElementById('tauRows');
+  var NS = 'http://www.w3.org/2000/svg', D = null;
+  var W = 640, H = 400, L = 58, R = 150, T = 16, B = 46, XMAX = 450, YMAX = 230;
+  function x(v) { return L + v / XMAX * (W - L - R); }
+  function y(v) { return H - B - v / YMAX * (H - T - B); }
+  function el(tag, attrs, text) {
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text !== undefined) e.textContent = text;
+    svg.appendChild(e); return e;
+  }
+  function axes() {
+    el('line', {x1: L, y1: H - B, x2: W - R, y2: H - B, stroke: 'currentColor', 'stroke-width': 1});
+    el('line', {x1: L, y1: T, x2: L, y2: H - B, stroke: 'currentColor', 'stroke-width': 1});
+    [0, 100, 200, 300, 400].forEach(function (v) {
+      el('line', {x1: x(v), y1: H - B, x2: x(v), y2: H - B + 5, stroke: 'currentColor'});
+      el('text', {x: x(v), y: H - B + 19, 'text-anchor': 'middle', 'font-size': 13, fill: 'currentColor'}, v);
+    });
+    [0, 50, 100, 150, 200].forEach(function (v) {
+      el('line', {x1: L - 5, y1: y(v), x2: L, y2: y(v), stroke: 'currentColor'});
+      el('text', {x: L - 9, y: y(v) + 4, 'text-anchor': 'end', 'font-size': 13, fill: 'currentColor'}, v);
+    });
+    el('text', {x: (L + W - R) / 2, y: H - 6, 'text-anchor': 'middle', 'font-size': 13, fill: 'currentColor'}, 'safe completions (of 600) → better');
+    el('text', {x: 16, y: (T + H - B) / 2, 'text-anchor': 'middle', 'font-size': 13, fill: 'currentColor',
+                transform: 'rotate(-90 16 ' + (T + H - B) / 2 + ')'}, 'harmful outcomes (of 600) ↓ better');
+  }
+  var dots = [], labels = [], leads = [];
+  function build() {
+    axes();
+    var f = D.fixed_rule, cx = x(f[0]), cy = y(f[1]);
+    el('path', {d: 'M' + (cx - 6) + ' ' + (cy - 6) + 'L' + (cx + 6) + ' ' + (cy + 6) + 'M' + (cx - 6) + ' ' + (cy + 6) + 'L' + (cx + 6) + ' ' + (cy - 6),
+                stroke: 'currentColor', 'stroke-width': 2});
+    el('text', {x: cx + 9, y: cy + 4, 'font-size': 12, fill: 'currentColor'}, 'fixed rule');
+    D.levels.forEach(function (lv) {
+      var pts = lv.curve.map(function (p) { return x(p[0]) + ',' + y(p[1]); }).join(' ');
+      el('polyline', {points: pts, fill: 'none', stroke: 'currentColor', 'stroke-opacity': 0.3, 'stroke-width': 1.5});
+    });
+    D.levels.forEach(function (lv) {
+      var strong = lv.key === 'joint flags';
+      leads.push(el('line', {stroke: 'currentColor', 'stroke-opacity': 0.45, 'stroke-width': 1}));
+      dots.push(el('circle', {r: strong ? 6.5 : 4.5, fill: strong ? 'currentColor' : 'none', stroke: 'currentColor', 'stroke-width': 2}));
+      labels.push(el('text', {'font-size': 12, fill: 'currentColor', 'font-weight': strong ? 700 : 400}, lv.label));
+    });
+  }
+  function update() {
+    var i = +slider.value, html = '';
+    out.firstChild.nodeValue = D.taus[i].toFixed(2);
+    // labels sit in a column right of the plot, in the order of the dots' heights, at least 17 px apart
+    var order = D.levels.map(function (lv, j) { return {j: j, py: y(lv.curve[i][1])}; })
+                        .sort(function (a, b) { return a.py - b.py; });
+    var gap = 17, ly = [], prev = -1e9;
+    order.forEach(function (o) { prev = Math.max(o.py, prev + gap); ly.push(prev); });
+    var over = ly[ly.length - 1] - (H - B);
+    if (over > 0) ly = ly.map(function (v) { return v - over; });
+    var lx = W - R + 26;
+    order.forEach(function (o, k) {
+      var p = D.levels[o.j].curve[i], j = o.j;
+      dots[j].setAttribute('cx', x(p[0])); dots[j].setAttribute('cy', y(p[1]));
+      leads[j].setAttribute('x1', x(p[0]) + 7); leads[j].setAttribute('y1', y(p[1]));
+      leads[j].setAttribute('x2', lx - 4); leads[j].setAttribute('y2', ly[k] - 4);
+      labels[j].setAttribute('x', lx); labels[j].setAttribute('y', ly[k]);
+    });
+    D.levels.forEach(function (lv, j) {
+      var p = lv.curve[i];
+      var b = lv.key === 'joint flags';
+      html += '<tr><td>' + (b ? '<b>' + lv.label + '</b>' : lv.label) + '</td><td class="n">' + p[0] + '</td><td class="n">' + p[1] + '</td></tr>';
+    });
+    rows.innerHTML = html;
+  }
+  fetch('../assets/gentle-care-robot/tau_sweep.json').then(function (r) { return r.json(); }).then(function (d) {
+    D = d; build(); update(); slider.addEventListener('input', update);
+  }).catch(function () {
+    rows.innerHTML = '<tr><td colspan="3">The interactive chart needs the data file; open the page from the website.</td></tr>';
+  });
+})();
+</script>
+
+<hr>
+<section id="robust">
+  <h2>The reduction replicated, and shrank by almost half when the record had gaps</h2>
+  <figure class="fig">
+    <img src="../assets/gentle-care-robot/fig4_robustness.png" alt="Forest plot of paired differences in harmful-outcome rate and safe-completion rate between the learned policy and the fixed rule or the body model, across nine confirmation conditions.">
+    <p class="cap"><b>Learned policy minus fixed rule (grey) or body model (blue)</b>, paired 95&nbsp;%
+    intervals, in every prespecified confirmation condition of the locally kept protocol, without
+    retraining.</p>
+  </figure>
+  <p>On 300 further new persons the reduction against the fixed rule replicated (&minus;0.27
+  [&minus;0.32, &minus;0.21]). It held in a shifted population with more and tighter restrictions (38
+  vs. 170 harmful of 250) and under graded end-range resistance. Safe completions relative to the fixed
+  rule were &minus;0.01 [&minus;0.06, +0.04] in the replication, +0.02 [&minus;0.03, +0.07] in the
+  shifted population and +0.06 [0.00, +0.12] under 20&deg; graded resistance. With half of the
+  restrictions unrecorded, the reduction shrank from &minus;0.27 to &minus;0.15 (64 vs. 108 harmful),
+  and declining everyone flagged harmed fewer persons than the learned policy (50 vs. 64) at 29 fewer
+  safe completions.</p>
+  <figure class="fig" style="margin-top:1.2rem">
+    <video src="../assets/gentle-care-robot/learned_declines.mp4"
+           poster="../assets/gentle-care-robot/learned_declines_poster.jpg"
+           autoplay muted loop playsinline preload="metadata"
+           aria-label="A simulated person with a restricted shoulder and elbow: the fixed rule lifts and loads the joints, while the learned policy declines."></video>
+    <p class="cap"><b>Declining is a decision, not a failure</b> (seed 2248, shoulder and elbow
+    restricted, 0.25&times; speed, <b>not a statistic</b>). The fixed rule lifts and reaches
+    4.30&nbsp;N&middot;m; the learned policy's best predicted chance of a safe completion is 0.32, below
+    its threshold of 0.65, so it hands the task back to a human carer.</p>
+  </figure>
 </section>
 
 <hr>
 <section id="limits">
-  <h2>Limits</h2>
-  <ul class="plain">
-    <li><b>Simulation only:</b> no robot or human data; one task, single-point support, a passive
-    simulated person who neither resists nor winces.</li>
-    <li><b>Harm is a mechanical exposure proxy</b> without a dose&ndash;response. The population
-    is severely affected by design, so only differences between controllers are interpreted.
-    Elbow flexion, not the more common loss of extension, was restricted, and the complete flag
-    is an idealisation.</li>
-    <li><b>Physics perturbations kept the joint geometry;</b> the fixed rule's harm rate barely
-    moved (36&nbsp;% and 40&nbsp;%).</li>
-    <li><b>Only force-magnitude guards were tested;</b> estimating joint torques from the force
-    vector with a limb model, compliant control or slower lifting may narrow the gap.</li>
-  </ul>
-</section>
-
-<hr>
-<section id="checked">
-  <h2>How it was checked</h2>
-  <ul class="plain">
-    <li><b>Specified in advance:</b> hypotheses were written in a locally kept, dated protocol before each round's data
-    and tested on simulated persons never used before. The protocol was kept locally, not
-    externally registered.</li>
-    <li><b>Every hypothesis is reported, including failures</b> (Supplementary Table&nbsp;S1):
-    probing the individual body did not replicate and added harm; choosing the support site
-    without declining was not shown to reduce harm.</li>
-    <li><b>Not a straw man:</b> the best of all 48 fixed strategies, chosen with hindsight,
-    harmed 203 of 600 persons; the learned policy harmed 53.</li>
-  </ul>
+  <h2>Where this stops</h2>
+  <p class="against"><b>Scope:</b> simulation only (MuJoCo/MyoSuite), no robot or human data; one task
+  with single-point support and a passive simulated person; training and test share one body structure
+  and joint-limit geometry, so transfer to other bodies is untested; the complete care record is an
+  idealisation, and harm is a mechanical-exposure proxy, not injury.</p>
+  <div class="box">
+    <ul>
+      <li><b>Not established:</b> safe-completion non-inferiority of the learned policy against the
+      fixed rule (&minus;0.01 [&minus;0.05, +0.03]), and against the body model in the replication. At
+      the secondary 2.5&nbsp;N&middot;m threshold the learned policy completed 4&ndash;8 points fewer
+      lifts than the fixed rule.</li>
+      <li><b>Failed predictions:</b> identifying the body by two gentle probe lifts was supported in a
+      first set of 40 persons but not in its replication of 120, and probing harmed more persons than
+      the same rule without it (29 vs. 21 of 120). Choosing the support site without declining was not
+      shown to reduce harm.</li>
+      <li><b>Force guards:</b> only force-magnitude guards with thresholds set across persons were
+      tested. A guard that estimates joint torque from the force vector with a limb model is the most
+      informative next comparison.</li>
+      <li><b>Physics perturbations</b> (threefold reflex gain, wider individual variation) kept the
+      joint-limit geometry, and the fixed rule's harm rate barely moved (36&nbsp;% and 40&nbsp;%), so
+      they test muscle dynamics and body variation, not body structure.</li>
+      <li><b>Protocol:</b> hypotheses were written in a locally kept, dated protocol before each
+      round's data and tested on simulated persons never used before. It was not externally
+      registered, and rounds 17&ndash;26 are not corrected for multiplicity. Every hypothesis,
+      including the failures, is in Supplementary Table&nbsp;S1. As a check against a straw-man
+      baseline, the best of all 48 fixed strategies chosen with hindsight harmed 203 of 600 persons;
+      the learned policy harmed 53.</li>
+      <li><b>Tools:</b> simulation and analysis code was written and run with Claude (Anthropic)
+      through Claude Code under the author's direction; the author verified all code and results, as
+      stated in the paper.</li>
+    </ul>
+  </div>
 </section>
 
 <footer>
-  <p><a href="../index.html">← Back to all projects</a> · Mu-Hua (Maurice) Wang
-  · <a href="mailto:may.be13@nycu.edu.tw">may.be13@nycu.edu.tw</a></p>
-  <p style="margin-top:.6rem">All results are simulated. Counts are simulated persons;
-  intervals are paired 95&nbsp;% confidence intervals.</p>
+  <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang &middot;
+  <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
 </footer>
 
 </div>

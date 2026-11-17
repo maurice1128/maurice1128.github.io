@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ataxia-like foot placement in learned humanoids &mdash; Mu-Hua Wang</title>
+<meta name="description" content="In simulation, Unitree's learned humanoids place their feet with ataxia-like lateral variability; sensor noise and the fixed gait clock are the causes, and two fixes bring G1 near healthy gait.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container">
+
+<nav>
+  <ul>
+    <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#result">Result</a></li>
+    <li><a href="#fixes">Fixes</a></li>
+    <li><a href="#video">Video</a></li>
+    <li><a href="#limits">Limits</a></li>
+    <li><a href="../cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<header>
+  <p class="note">Humanoid locomotion &middot; simulation (MuJoCo, Isaac Gym) &middot; Manuscript prepared for IEEE RA-L (not yet submitted), 2026</p>
+  <h1>Ataxia-like foot placement in learned humanoids: sensor noise and gait clocks as causes</h1>
+  <p class="kicker">Learned humanoids walk oddly, but &ldquo;oddly&rdquo; has no measure. I scored the official
+  walking policies of three Unitree humanoids (G1, H1, H1-2) with the clinical gait measures used for cerebellar
+  ataxia, normalised for body size. At their training sensor noise they scatter their feet sideways
+  2.1&ndash;2.9&times; as much as healthy young adults (in leg lengths). The scatter comes from the sensor
+  noise, and the short, fast steps from a fixed gait clock; fixing both brings G1 near healthy gait.
+  All of this is in simulation; no real robot has been tested.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; National Yang Ming Chiao Tung
+  University &middot; sole author</p>
+  <div class="links">
+    <a href="../index.html">[All projects]</a>
+  </div>
+</header>
+
+<hr>
+<section>
+  <figure class="fig">
+    <video src="../assets/humanoid-gait-ataxia/lead.mp4" poster="../assets/humanoid-gait-ataxia/lead_poster.jpg"
+           autoplay muted loop playsinline controls preload="metadata"
+           aria-label="Two simulated Unitree G1 robots walk along two narrow lanes over a pit. The official policy on the left steps off the lane and falls; its distilled student on the right walks across."></video>
+    <p class="cap">G1 on two lanes over a pit, 3&nbsp;cm to spare on each side of the sole, at the training sensor
+    noise. Left: Unitree&rsquo;s official policy. Right: the same policy after self-distillation (DAgger).
+    Real-time replay of one walk each, the first noise seed with that outcome: <b>not a statistic</b>.
+    Over 20 walks each, the official policy crosses in 0 of 20 and the student in 20 of 20.</p>
+  </figure>
+</section>
+
+<hr>
+<section id="result">
+  <h2>The robots share where an ataxia patient&rsquo;s foot lands, not the rest of the gait</h2>
+  <p>From simulated foot and pelvis trajectories I compute the measures clinicians use for cerebellar ataxia,
+  including the lateral step deviation of Ilg et al. (2020), and divide each by the value of 24 healthy young
+  adults (Fukuchi et al., 2018) matched at the same Froude number. Each condition is 20 walks of 35&nbsp;s at
+  0.5&nbsp;m/s.</p>
+
+  <div class="stats">
+    <div><span class="big">3.91 / 6.56 / 5.31</span><h3>Lateral step deviation</h3><p>G1 / H1 / H1-2, &times; healthy young adults (healthy range 0.65&ndash;1.37), 20 walks each</p></div>
+    <div><span class="big">0.39 / 0.25 / 0.90</span><h3>Same, clean sensors</h3><p>the same policies read without noise: more regular than people</p></div>
+  </div>
+
+  <div class="ctrl" style="margin-bottom:18px">
+    <div class="ctrl-row">
+      <label for="sig"><b>Sensor noise</b> (1&times; = training noise)</label>
+      <input id="sig" type="range" min="0" max="5" step="1" value="3" aria-describedby="feetcap">
+      <div class="readout" id="sigv"><small>noise</small>&ndash;</div>
+    </div>
+    <div class="ctrl-row" style="margin-top:8px">
+      <div class="readout" id="ro"><small>official, lat. step dev.</small>&ndash;</div>
+      <div class="readout" id="rs"><small>distilled, lat. step dev.</small>&ndash;</div>
+      <div class="readout"><small>healthy upper bound</small>1.37&times;</div>
+    </div>
+    <div class="tw"><svg id="feet" viewBox="0 0 900 330" width="100%" style="min-width:620px" role="img" aria-label="Top view of 24 foot placements of the official G1 policy and of its distilled student at the chosen noise level"></svg></div>
+    <p class="cap" id="feetcap">Drag the slider. Touch-downs of G1 from one simulated walk per noise level (noise seed 0, 24 steps after the
+    first 5&nbsp;s; <b>not a statistic</b>), top view with the lateral axis exaggerated; dark dots are the left foot, red the right.
+    The two numbers are the means over 10 walks (20 at 1&times;), as multiples of healthy young adults.</p>
+  </div>
+
+  <figure class="fig">
+    <img src="../assets/humanoid-gait-ataxia/fig1_battery.png" alt="Dot chart of six gait measures for G1, H1 and H1-2 on a log scale, as multiples of healthy young adults with a green healthy band. Official policies show step variability far above the band; distilled students fall close to it; retrained G1 stars lie inside it.">
+    <p class="cap">Gait measures as a multiple of Froude-matched healthy young adults (1, log scale; band:
+    their 5th&ndash;95th percentile). Open: official policies at training noise. Filled: after DAgger.
+    Stars: G1 retrained with a human-fitted clock and stance window, then distilled.</p>
+  </figure>
+
+  <p>Only the spatial step variability is ataxia-like. Cadence goes the opposite way from patients
+  (1.78&ndash;2.00&times; healthy), and once base width is divided by hip separation the stance is not wide.
+  Reading the sensors without noise removes the excess; the policies leave the healthy range at 0.37, 0.18 and
+  0.20 times their training noise (G1, H1, H1-2). A policy that imitates human motion capture (GMT) scatters
+  its feet too (3.35&times;). The same G1 policy, put back into the simulator it was trained in (Isaac Gym),
+  gives 3.92&times; with noise and 0.37&times; without, so the effect is not a simulator artefact.</p>
+</section>
+
+<hr>
+<section id="fixes">
+  <h2>Training the policy to act well on noisy readings removes most of the scatter; an observer does not</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Lateral step deviation (&times; healthy)</th><th>G1</th><th>H1</th><th>H1-2</th></tr></thead>
+      <tbody>
+        <tr><td>Official policy, training noise</td><td class="n">3.91</td><td class="n">6.56</td><td class="n">5.31</td></tr>
+        <tr><td>+ fitted Kalman-style observer</td><td class="n">4.09</td><td class="n">8.47</td><td class="n">5.66</td></tr>
+        <tr><td><b>Self-distilled (DAgger), 3 training seeds</b></td><td class="n"><b>1.05&ndash;1.20</b></td><td class="n"><b>2.90&ndash;2.94</b></td><td class="n"><b>1.57&ndash;1.66</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The student starts as a copy of the policy and learns to output, on noisy readings, the action the frozen
+  policy takes on clean ones. The observer reduces the estimation error but not the scatter, and on G1 3 of 20
+  walks fall with it. On lanes with 3&nbsp;cm to spare, the official G1 policy crosses in 0 of 20 walks, its
+  student in 20 of 20.</p>
+
+  <div class="ctrl" style="margin-bottom:18px">
+    <div class="ctrl-row">
+      <label for="mar"><b>Room on each side of the sole</b></label>
+      <input id="mar" type="range" min="0" max="2" step="1" value="1">
+      <div class="readout" id="marv"><small>margin</small>&ndash;</div>
+    </div>
+    <div class="tw"><svg id="lane" viewBox="0 0 900 560" width="100%" style="min-width:620px" role="img" aria-label="Share of 20 walks that cross the lanes, for each controller, at the chosen margin"></svg></div>
+    <p class="cap">Share of 20 walks that cross two lanes over a pit, starting 4&nbsp;m from the robot, at the training noise.
+    Dark: official policy and its first student. Red: G1 retrained with the human clock and stance window, fine-tuned
+    with steering (and, lower rows, with small pushes); each training seed shown separately. They differ widely between seeds.
+    The lanes start later than in the video above, after the start-up transient of the slower clocks, so the official
+    policy&rsquo;s rate differs from its 0 of 20 there.</p>
+  </div>
+
+  <h2>A clock that follows speed fixes the short, fast steps</h2>
+  <p>All three policies step to a fixed 0.8&nbsp;s gait clock at every speed. I retrained G1 in Isaac Gym with
+  a clock whose period follows the human cadence&ndash;speed relation, a floor on stance width and a stance window
+  fitted to people, then distilled it. On four of five training seeds no battery measure lies above the healthy
+  range: lateral step deviation 0.60&ndash;0.79&times; and double support 0.86&ndash;0.92&times; healthy. The remaining
+  seed (seed 3) walks too wide (base width 1.42&times;).</p>
+
+  <div class="ctrl" style="margin-bottom:18px">
+    <div class="ctrl-row">
+      <label for="ctl"><b>Controller</b></label>
+      <input id="ctl" type="range" min="0" max="2" step="1" value="0">
+      <div class="readout" id="ctlv" style="min-width:0"><small>showing</small>&ndash;</div>
+    </div>
+    <div class="tw"><svg id="bat" viewBox="0 0 900 340" width="100%" style="min-width:620px" role="img" aria-label="Six gait measures of the chosen G1 controller against the healthy range and ataxia patients"></svg></div>
+    <p class="cap" id="batnote"></p>
+    <p class="cap">G1 at 0.5&nbsp;m/s and training noise, 20 walks. Grey band: healthy young adults&rsquo; 5th&ndash;95th percentile;
+    line at 1: their mean; diamonds: ataxia patients (Buckley et al., 2018; no value tabulated for lateral step deviation).</p>
+  </div>
+
+  <div class="box mark">
+    <p>A prediction that missed: the noise level at which a teacher policy scores what its student will score
+    has a median of 0.31&times; the training noise over ten teachers. Registered in advance for two new seeds,
+    it predicted 1.92 and 1.60&times;; the students scored 1.64 and 1.36&times;, outside both predicted
+    intervals, though within the 25% tolerance registered with them.</p>
+  </div>
+</section>
+
+<hr>
+<section id="video">
+  <h2>Supplementary video: lanes, gait clocks and pushes</h2>
+  <figure class="fig">
+    <video src="../assets/humanoid-gait-ataxia/video_full.mp4" poster="../assets/humanoid-gait-ataxia/video_full_poster.png"
+           autoplay muted loop playsinline controls preload="metadata"
+           aria-label="Captioned 67-second video: official policy and distilled student on narrow lanes, fixed against speed-following gait clock, official against human stance window, and a push that the first student does not survive while the final student does."></video>
+    <p class="cap">Real-time replay in simulation, 67&nbsp;s, captions only. Each clip is one walk at the training noise; where
+    a clip shows an outcome it is the first noise seed with that outcome, so the clips are <b>not a statistic</b>. The
+    captions give the rates: 0 of 20 against 20 of 20 on the lanes; the first student survives pushes of 0.3 body weight
+    in 25% of 20 walks, the final student in 100%.</p>
+  </figure>
+</section>
+
+<hr>
+<section id="limits">
+  <h2>Where this stops</h2>
+  <p class="against"><b>Scope:</b> simulation only. The sensor noise is the noise the policies were trained with,
+  not a measured noise of a real G1, which is unknown. Retraining covers G1 only, with five seeds for the final
+  method. The healthy reference is 24 young adults walking on a treadmill, which lowers their variability, so the
+  robots&rsquo; ratios may read high. &ldquo;Ataxia-like&rdquo; describes where the foot lands and nothing more;
+  the cause found, noisy sensing, is closer to sensory than to cerebellar ataxia. The decisive test, injecting the
+  training noise on a real G1 and comparing foot placement of the official and the distilled policy, has not been
+  done.</p>
+</section>
+
+<footer>
+  <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang &middot;
+  <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
+</footer>
+
+</div>
+<script>
+// Interactive figures. Data: ../assets/humanoid-gait-ataxia/interactive.json, built from the raw results
+// (research/humanoid-gait-ataxia/evidence/site_data/make_site_data.py). Colours come from the site's CSS variables.
+(function () {
+  var NS = 'http://www.w3.org/2000/svg', D = null;
+  function css(n) { return getComputedStyle(document.documentElement).getPropertyValue(n).trim(); }
+  function el(p, t, a, txt) {
+    var e = document.createElementNS(NS, t);
+    for (var k in a) e.setAttribute(k, a[k]);
+    if (txt != null) e.textContent = txt;
+    p.appendChild(e); return e;
+  }
+  function txt(p, x, y, s, anchor) {
+    return el(p, 'text', {x: x, y: y, fill: css('--ink-3'), 'font-size': 17, 'font-family': css('--mono'), 'text-anchor': anchor || 'start'}, s);
+  }
+  function setReadout(id, label, value) {
+    var r = document.getElementById(id); r.textContent = '';
+    var s = document.createElement('small'); s.textContent = label; r.appendChild(s);
+    r.appendChild(document.createTextNode(value));
+  }
+  var sig = document.getElementById('sig'), mar = document.getElementById('mar'), ctl = document.getElementById('ctl');
+
+  function drawFeet() {
+    var n = D.noise[+sig.value], svg = document.getElementById('feet'); svg.textContent = '';
+    setReadout('sigv', 'noise', n.sigma + '×');
+    setReadout('ro', 'official, lat. step dev.', n.official.ilg.toFixed(2) + '×');
+    setReadout('rs', 'distilled, lat. step dev.', n.student.ilg.toFixed(2) + '×');
+    [['Official policy', n.official.feet, 10], ['Distilled student', n.student.feet, 175]].forEach(function (c) {
+      var pts = c[1], top = c[2], h = 140, x0 = 90, x1 = 890, mid = top + h / 2 + 6, sy = h / 2 / 0.20;
+      var maxx = Math.max.apply(null, pts.map(function (p) { return p[0]; }));
+      txt(svg, 0, top + 14, c[0]);
+      el(svg, 'line', {x1: x0, x2: x1, y1: mid, y2: mid, stroke: css('--rule')});
+      [-15, 15].forEach(function (cm) { txt(svg, 0, mid - cm / 100 * sy + 4, (cm > 0 ? '+' : '') + cm + ' cm'); });
+      pts.forEach(function (p) {
+        var y = Math.max(top + 18, Math.min(top + h + 14, mid - p[1] * sy));
+        el(svg, 'circle', {cx: x0 + p[0] / maxx * (x1 - x0), cy: y, r: 5, fill: p[2] ? css('--plot-b') : css('--plot-a')});
+      });
+    });
+  }
+
+  var CTL = [['official', 'Official policy'], ['student', 'Distilled student'], ['human', 'Human clock + stance, distilled (seed 1)']];
+  var NOTES = {
+    official: 'Cadence is nearly twice the human value, steps are short, and lateral step deviation is far above the healthy range.',
+    student: 'Variability falls sharply, but step length and cadence do not change: those need a new clock.',
+    human: 'First of five seeds; no measure is above the healthy range, as on seeds 2, 4 and 5 (seed 3: base width 1.42×). Stride-time CV is below the range because the clock acts as a metronome, which is not healthier than people.'
+  };
+  function drawBat() {
+    var B = D.battery, k = CTL[+ctl.value][0], svg = document.getElementById('bat'); svg.textContent = '';
+    setReadout('ctlv', 'showing', CTL[+ctl.value][1]);
+    var x0 = 200, x1 = 880, lo = Math.log(0.1), hi = Math.log(5), row = 46;
+    function X(v) { return x0 + (Math.log(v) - lo) / (hi - lo) * (x1 - x0); }
+    [0.25, 0.5, 1, 2, 4].forEach(function (v) {
+      el(svg, 'line', {x1: X(v), x2: X(v), y1: 6, y2: row * 6 + 6, stroke: v === 1 ? css('--ink') : css('--rule-2')});
+      txt(svg, X(v), row * 6 + 26, v + '×', 'middle');
+    });
+    B.measures.forEach(function (m, i) {
+      var y = i * row + 30, v = B[k][i];
+      txt(svg, 0, y + 4, m);
+      el(svg, 'rect', {x: X(B.band[i][0]), y: y - 14, width: X(B.band[i][1]) - X(B.band[i][0]), height: 28, fill: css('--rule')});
+      if (B.ataxia[i]) el(svg, 'path', {d: 'M' + X(B.ataxia[i]) + ' ' + (y - 8) + 'l8 8l-8 8l-8-8z', fill: css('--ink-3')});
+      el(svg, 'circle', {cx: X(v), cy: y, r: 9, fill: css('--plot-b')});
+      txt(svg, X(v) + 14, y - 8, v.toFixed(2));
+    });
+    document.getElementById('batnote').textContent = NOTES[k];
+  }
+
+  function drawLane() {
+    var i = +mar.value, svg = document.getElementById('lane'); svg.textContent = '';
+    setReadout('marv', 'margin', D.lane_margins[i] + ' cm');
+    var x0 = 310, x1 = 820, row = 46;
+    D.lanes.forEach(function (r, j) {
+      var y = j * row + 8, v = r[1][i];
+      txt(svg, 0, y + 21, r[0]);
+      el(svg, 'rect', {x: x0, y: y, width: x1 - x0, height: 30, fill: css('--rule-2')});
+      el(svg, 'rect', {x: x0, y: y, width: (x1 - x0) * v, height: 30, fill: r[2] ? css('--plot-b') : css('--plot-a')});
+      txt(svg, x1 + 10, y + 21, Math.round(v * D.n_lane_walks) + '/' + D.n_lane_walks);
+    });
+  }
+
+  function all() { if (D) { drawFeet(); drawBat(); drawLane(); } }
+  sig.addEventListener('input', drawFeet); ctl.addEventListener('input', drawBat); mar.addEventListener('input', drawLane);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', all);
+  new MutationObserver(all).observe(document.documentElement, {attributes: true, attributeFilter: ['data-theme']});
+  fetch('../assets/humanoid-gait-ataxia/interactive.json').then(function (r) { return r.json(); })
+    .then(function (d) { D = d; all(); })
+    .catch(function () { ['feetcap', 'batnote'].forEach(function (id) { document.getElementById(id).textContent = 'The interactive data could not be loaded.'; }); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test the Swallow Before the Robot Pours &mdash; Mu-Hua Wang</title>
+<meta name="description" content="A GPU particle model of a 5 mL water swallow in a CT-derived throat, a phantom generated from the same lumen, and a cup controller that holds the liquid at the rim, built to test robot cup-feeding for people with dysphagia. Simulation and design only.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+/* page-specific: the "where did the 5 mL go" chart */
+#flowSvg{width:100%;height:auto;display:block}
+#flowSvg .lab{fill:var(--ink-2);font-family:var(--sans);font-size:11px}
+#flowSvg .sub{fill:var(--ink-3);font-family:var(--sans);font-size:9px}
+#flowSvg .ax{fill:var(--ink-3);font-family:var(--mono);font-size:9px}
+#flowSvg .grid{stroke:var(--rule-2);stroke-width:1}
+#flowSvg .sep{stroke:var(--rule);stroke-width:1}
+#flowSvg .old{fill:var(--ink-3)}
+#flowSvg .new{fill:var(--plot-b)}
+#flowSvg .val{fill:var(--ink-2);font-family:var(--mono);font-size:9px}
+#flowSvg .lim{stroke:var(--ink);stroke-width:1;stroke-dasharray:3 3}
+.ctrl button{font-family:var(--sans);font-weight:700;font-size:.9em;background:var(--bg);color:var(--ink);
+  border:1px solid var(--rule);padding:4px 12px;cursor:pointer}
+.ctrl button:hover{border-color:var(--ink)}
+.flow-steps{margin:0 0 14px;padding-left:22px;color:var(--ink-2)}
+.flow-steps li{margin-bottom:4px}
+</style>
+</head>
+<body>
+<div class="container">
+
+<nav>
+  <ul>
+    <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#why">Why</a></li>
+    <li><a href="#patient">Virtual patient</a></li>
+    <li><a href="#cup">Cup</a></li>
+    <li><a href="#phantom">Phantom</a></li>
+    <li><a href="#limits">Limits</a></li>
+    <li><a href="../cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<header>
+  <p class="note">Robot-assisted care &middot; simulation and design &middot; platform in progress, no manuscript</p>
+  <h1>Test the swallow before the robot pours</h1>
+  <p class="kicker">A robot arm could hold a cup for someone who has trouble swallowing, but nobody should
+  tune it on a patient. So I built a virtual one: 40,000 water particles swallowed through a throat taken
+  from a real CT scan, moving on a literature timetable. Its first version left 2.13&nbsp;mL of a 5&nbsp;mL
+  sip stuck in the throat; after the motion errors were found and fixed one by one, 0.12&nbsp;mL remains, inside the
+  healthy reference of 0.4&nbsp;mL. The other healthy test, zero water into the airway, still fails. Everything
+  here is simulation or design; nothing has touched a person, a robot or a printer yet.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; National Yang Ming Chiao Tung
+  University &middot; student research assistant in Prof. Yi-Ting Chen&rsquo;s lab (Department of Computer
+  Science, NYCU); advisor: Yi-Ting Chen &middot; the code was written with an AI coding assistant (Claude Code)</p>
+  <div class="links">
+    <a href="#flow">[Interactive: where the 5 mL goes]</a>
+    <a href="../index.html">[All projects]</a>
+  </div>
+</header>
+
+<hr>
+<section>
+  <figure class="fig">
+    <video src="../assets/dysphagia-cup-feeding/lead.mp4" poster="../assets/dysphagia-cup-feeding/lead_poster.jpg"
+           autoplay muted loop playsinline controls preload="metadata"
+           aria-label="Three-dimensional particle simulation of a 5 mL water swallow inside a CT-derived human throat: the larynx rises, the epiglottis folds down and the water passes into the oesophagus."></video>
+    <p class="cap">The current baseline run (<code>h13_tb_slow</code>): 5&nbsp;mL of water, upright, 1.6&nbsp;s of
+    swallow, 40,000 fluid and 2,120,355 wall particles at 0.5&nbsp;mm spacing. One run of a deterministic
+    simulation, <b>not a statistic</b>; it took about 28 minutes on one GPU. Geometry: Seifelnasr et&nbsp;al.,
+    <i>Data in Brief</i> 58:111204 (2025), CC&nbsp;BY&nbsp;4.0.</p>
+  </figure>
+
+  <div class="stats">
+    <div><span class="big">2.13 &rarr; 0.12 mL</span><h3>Throat residue after a 5 mL sip</h3><p>first version &rarr; current; healthy reference &le; 0.4 mL</p></div>
+    <div><span class="big">0.0125 mL</span><h3>Water into the airway</h3><p>healthy target is 0; this test still fails</p></div>
+    <div><span class="big">87 / 88</span><h3>Airway particles that were artefacts</h3><p>isolated single particles, found by tracing each one</p></div>
+    <div><span class="big">2.04 &rarr; 0.87 mm</span><h3>Liquid sway at the lip</h3><p>cup controller without &rarr; with slosh notch (2D, 100 users per cell)</p></div>
+  </div>
+</section>
+
+<hr>
+<section id="why">
+  <h2>The step caregivers miss most is the one a robot repeats best</h2>
+  <p>A speech therapist&rsquo;s prescription for someone with dysphagia has two kinds of rules. Some are set once
+  before the meal: food texture, sitting posture. Others have to be enforced at every sip: how much goes in,
+  and waiting until the last mouthful is swallowed. In a direct observation of 447 hospitalised older adults
+  (Mateos-Nozal et&nbsp;al., 2022 &mdash; not my data), texture was followed 94.1% of the time and posture 88.4%,
+  but the liquid sip size only 43.3%.</p>
+  <p>I walked through the care pathway step by step and listed every problem that a published number supports:</p>
+  <ol class="flow-steps">
+    <li><b>Screening</b> &rarr; <b>bedside assessment</b> &rarr; <b>instrumental exam</b> (videofluoroscopy, endoscopy)</li>
+    <li><b>Prescription</b> (texture, posture, sip size, pacing)</li>
+    <li><b>Every meal</b>: someone has to feed, sip by sip &mdash; where most of the gaps are</li>
+    <li><b>Going home</b>: family and paid carers take over</li>
+  </ol>
+  <p>That gave 27 pain points, drawn from a 1,818-record literature library and an evidence table of 83 graded
+  claims (559 rows). Robot arms that tilt a cup to a person&rsquo;s mouth already exist (Schr&ouml;er et&nbsp;al.
+  2015; Alwala et&nbsp;al. 2022, 2023), and swallow detection has been wired into a feeding robot (Ling et&nbsp;al.
+  2025). What I could not find in the literature I searched is a way to test the delivery itself &mdash; cup,
+  sip size, speed, head angle &mdash; against a swallow. That is what the rest of this page builds.</p>
+  <div class="box">
+    <p>A rating sheet asking speech therapists to score five candidate robot functions is ready; <b>0 have
+    been returned</b>, because it has not been sent yet. The ranking of pain points above is mine, not a
+    clinician&rsquo;s.</p>
+  </div>
+</section>
+
+<hr>
+<section id="patient">
+  <h2>The first virtual patient could not clear its own throat</h2>
+  <p>The throat is a real CT scan (one 18-year-old man) voxelised at 0.5&nbsp;mm. The walls are 2.1 million
+  particles that move on a prescribed timetable: the larynx rises and moves forward (trajectory from the
+  ArtiSynth muscle model), the airway closes, the epiglottis folds, a constriction wave runs down the pharynx,
+  and the upper oesophageal sphincter opens &mdash; with timings and amplitudes taken from videofluoroscopy
+  studies of healthy adults. The water is a GPU weakly-compressible SPH solver written for this project.</p>
+  <p>The first version looked fine in a movie and failed on numbers: 2.13&nbsp;mL of the 5&nbsp;mL never left the
+  throat. Scrub through both runs below.</p>
+
+  <div id="flow" class="ctrl" style="margin-bottom:14px">
+    <svg id="flowSvg" viewBox="0 0 640 340" role="img"
+         aria-label="Bar chart of how much of the 5 mL is in each throat region over time, for the first model version and the current one."></svg>
+    <div class="ctrl-row" style="margin-top:.8rem">
+      <button type="button" id="playBtn" aria-label="Play or pause the time scrubber">Play</button>
+      <input type="range" id="tSlider" min="0" max="1000" value="1000" aria-label="Simulation time">
+      <div class="readout"><span id="tOut">&ndash;</span><small>time after start</small></div>
+    </div>
+    <div class="ctrl-row" style="margin-top:1rem;border-top:1px solid var(--rule-2);padding-top:1rem">
+      <div class="readout"><span id="oldOut">&ndash;</span><small>residue, first version</small></div>
+      <div class="readout"><span id="newOut">&ndash;</span><small>residue, current</small></div>
+      <p class="note" style="margin:0;flex:1;min-width:180px">Grey: first version (<code>h2_thin</code>, run to 2.0&nbsp;s).
+      Red: current (<code>h13_tb_slow</code>, 1.6&nbsp;s). Residue = oropharynx + valleculae + pyriform/hypopharynx.
+      Dashed line: healthy reference 0.4&nbsp;mL.</p>
+    </div>
+    <p class="note" id="flowMsg" style="margin:.6rem 0 0"></p>
+  </div>
+
+  <figure class="fig">
+    <img src="../assets/dysphagia-cup-feeding/fig_residue.png"
+         alt="Throat residue for successive model versions: 2.13, 1.16, 0.50 and 0.12 mL, with a retracted version that reached 0.27 mL only by leaking water out of the domain, against the 0.4 mL healthy line.">
+    <p class="cap">Residue after a 5&nbsp;mL water sip for each model version, one run each. <code>h9_up</code> reached
+    0.27&nbsp;mL, but only because 0.23&nbsp;mL was squeezed out of the computational domain; it was retracted.</p>
+  </figure>
+
+  <div class="box mark">
+    <p><b>I kept being wrong about why.</b> Each fix came with a diagnosis, and two of them did not survive the
+    next run. Narrowing the closing gap of the constriction wave barely changed the residue, so it was not a
+    water film in the gap; moving the start of the wave upward made it worse and was rolled back. What
+    actually worked was measuring the walls themselves: the side walls of the pyriform recesses were never told
+    to move, the floor above the sphincter did not open with it, and the tongue base and epiglottis did not move as
+    far as the measurements in Logemann (1992) say they should.</p>
+  </div>
+</section>
+
+<hr>
+<section id="aspiration">
+  <h2>The water left in the airway is mostly a numerical artefact &mdash; and the test still counts as failed</h2>
+  <p>Healthy adults swallowing thin liquid aspirate nothing (Steele et&nbsp;al. 2019, 39 participants). The current
+  baseline still sends 0.0125&nbsp;mL &mdash; 100 particles &mdash; into the trachea. Rather than tune it away, I wrote a
+  tracker that recovers each particle&rsquo;s identity from snapshots (checked against stored identities: 0.12%
+  mismatches over 1,145,012 particle-frames) and followed the 88 particles that left through the trachea back
+  to where they came from.</p>
+  <figure class="fig">
+    <img src="../assets/dysphagia-cup-feeding/fig_asp_trace.png"
+         alt="Traced paths of the 88 particles that left through the trachea; 87 of them entered the airway alone, with no other water within 1 mm, mostly after the larynx reopened.">
+    <p class="cap">87 of the 88 particles entered the airway alone (no more than two other water particles within
+    1&nbsp;mm), at a median 1,624&nbsp;mm/s, mostly after the larynx had reopened: single particles bounced off the
+    elastic wall, not a stream of water. One run (<code>h13_tb_slow</code>), <b>not a statistic</b>.</p>
+  </figure>
+  <p>A deposition rule (an isolated droplet that hits a wet wall sticks) brings it to 0.001&nbsp;mL in one run. That rule
+  is inferred from droplet-impact literature, not measured in a throat, so the baseline is <b>not</b> declared
+  passed.</p>
+
+  <h3 style="margin-top:1.2rem">What the virtual patient can and cannot tell apart yet</h3>
+  <p>Differences in aspiration smaller than 0.02&nbsp;mL are reported as <b>inconclusive</b>; they are smaller than
+  what this resolution can separate.</p>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Change from the healthy baseline (one run each)</th><th>Aspiration</th><th>Throat residue</th></tr></thead>
+      <tbody>
+        <tr><td>None (baseline, water)</td><td class="n">0.0125 mL</td><td class="n">0.12 mL</td></tr>
+        <tr><td>Airway entrance closes only 50% (a sweep value, not a patient measurement)</td><td class="n"><b>+0.029 mL</b></td><td class="n">inconclusive</td></tr>
+        <tr><td>Thickened liquid, IDDSI level 1</td><td class="n">inconclusive</td><td class="n"><b>0.43 mL</b></td></tr>
+        <tr><td>Thickened liquid, IDDSI level 2</td><td class="n">inconclusive</td><td class="n"><b>0.59 mL</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr>
+<section id="cup">
+  <h2>Don&rsquo;t pour &mdash; hold the liquid at the rim and let the lips decide</h2>
+  <p>For people who can swallow but cannot use their hands, a robot that pours sets the pace for them. The
+  controller here does the opposite: it follows the head with the cup, keeps the liquid level just below the
+  rim, and lets the person sip. Following a moving head shakes the cup, and the liquid sloshes, so the
+  reference trajectory is passed through a notch filter at the cup&rsquo;s first slosh mode (2.95&nbsp;Hz, Q&nbsp;2)
+  before a 1.5&nbsp;Hz tracking loop. Lip position is estimated from the lip force read through the arm&rsquo;s joint
+  torques.</p>
+  <figure class="fig wide">
+    <video src="../assets/dysphagia-cup-feeding/cup_compare.mp4" poster="../assets/dysphagia-cup-feeding/cup_compare_poster.jpg"
+           autoplay muted loop playsinline controls preload="metadata"
+           aria-label="Side-by-side 3D fluid simulation of a tilted mug following the same head sway: tight camera tracking makes the liquid surge at the lip-side rim, force tracking with a slosh notch keeps it nearly still."></video>
+    <p class="cap">Same 6&nbsp;s head-sway sequence, front&ndash;back motion only, DualSPHysics 3D SPH. Tight camera
+    tracking at 4&nbsp;Hz: lip-side level &sigma;&nbsp;3.06&nbsp;mm. Force tracking with the notch at 1.5&nbsp;Hz (ideal force
+    sensing): &sigma;&nbsp;0.54&nbsp;mm. One sway sequence, <b>not a statistic</b>.</p>
+  </figure>
+
+  <figure class="fig">
+    <img src="../assets/dysphagia-cup-feeding/fig_notch.png"
+         alt="Bar charts comparing the same force-tracking controller without and with the slosh notch: liquid-level sway 2.04 versus 0.87 mm, intake by gravity flow 28.9 versus 1.0 percent, 90th-percentile spill 0.48 versus 0.018 mL.">
+    <p class="cap">Same force-tracking controller at 1.5&nbsp;Hz, with and without the notch, in a 2D model with
+    rule-based virtual users (head sway &sigma; 2.5&nbsp;mm; 100 users &times; 35&nbsp;s per cell; medians except spill,
+    which is the 90th percentile). &ldquo;Intake by gravity flow&rdquo; is liquid that ran into the mouth without the
+    user sipping &mdash; what holding the rim is meant to prevent.</p>
+  </figure>
+
+  <figure class="fig">
+    <img src="../assets/dysphagia-cup-feeding/fig_cup_follow3d.png"
+         alt="Highest liquid level along the lip-contact arc of a mug following head sway in 3D SPH, for ideal force control, the final design and a stress test.">
+    <p class="cap">3D SPH check with both front&ndash;back and side sway: lip-arc level &sigma; 0.55&nbsp;mm with ideal force
+    control, 0.41&nbsp;mm for the final design with realistic delay and noise, 0.63&nbsp;mm when delay, noise, a lip
+    stiffness estimate off by half and a force bias all happen together. One 6&nbsp;s sway sequence.</p>
+  </figure>
+
+  <h3 style="margin-top:1.2rem">Breaking it on purpose</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Injected fault (100 users &times; 20 s per cell)</th><th>Naive response</th><th>Response kept</th></tr></thead>
+      <tbody>
+        <tr><td>Noisy lip force, clipped at zero <i>before</i> filtering: noise rectifies into a bias and the cup drifts away (time unsealed while drinking, median)</td><td class="n">82%</td><td class="n"><b>3%</b><span class="sub">filter first, then clip</span></td></tr>
+        <tr><td>Lip-force signal drops to zero: the arm thinks it lost contact and pushes (peak lip force, max)</td><td class="n">18.9 N</td><td class="n"><b>4.1 N</b><span class="sub">0.25 s watchdog, back off 5 mm</span></td></tr>
+        <tr><td>Head suddenly drops (spill, median)</td><td class="n">1.57 mL<span class="sub">no reaction</span></td><td class="n"><b>0.00 mL</b><span class="sub">tilt back in place</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="box mark">
+    <p><b>The intuitive fix spilled the most.</b> When the head drops, pulling the cup away feels safest. Doing that
+    together with tilting back spilled a median 18.00&nbsp;mL; tilting back in place spilled 0.00&nbsp;mL. A fast
+    translation throws the liquid out of an open cup.</p>
+  </div>
+  <p>Two task-level results came out of the same work. The mug is opaque, so the liquid level has to be inferred:
+  geometry plus weighing gives a 95th-percentile error of 4.59&nbsp;mm, recalibrating at the start of every sip
+  brings it to 1.57&nbsp;mm (Monte Carlo, 1,500 random cups per cell). And if the prescription asks for a chin-down
+  posture, the face limits how far a cup can tilt: at 20&deg; of head flexion an ordinary 90&nbsp;mm-deep, 75&nbsp;mm-wide
+  cup leaves 43.4&nbsp;mL that cannot be reached (geometry only, one face model).</p>
+</section>
+
+<hr>
+<section id="phantom">
+  <h2>A phantom throat cut from the same numbers (designed, not yet printed)</h2>
+  <p>A simulation needs something physical to disagree with. The phantom&rsquo;s shell is grown from the
+  simulation&rsquo;s own lumen, so the printed cavity and the simulated one are the same shape: 76.15&nbsp;mL in CAD
+  against 76.32&nbsp;mL simulated, slice-by-slice area differing by 0.57% on average (4.5% at worst, at the floor of
+  the pyriform recess). A detachable trachea section is weighed to measure aspirated water.</p>
+  <figure class="fig">
+    <img src="../assets/dysphagia-cup-feeding/fig_phantom.png"
+         alt="CAD design of the level-1 phantom throat: assembled view, mid-sagittal section and exploded view showing the upper body, lid, nozzle, drain plugs and detachable trachea module.">
+    <p class="cap">Level-1 phantom, design only. An independent checker found 0 failed assembly checks across 11
+    parts and 5 head tilts. A print checker passed 75 of 90 parts and flagged 15 &mdash; all small thin edges
+    or water troughs that are meant to hold liquid; 0 were unprintable, and every level-1 and mouth-module part
+    passed. These checks cover ideal geometry only; a later pass found tolerance and timing
+    problems still open.</p>
+  </figure>
+</section>
+
+<hr>
+<section id="limits">
+  <h2>Where this stops</h2>
+  <p class="against"><b>Scope:</b> simulation and design only. No robot trial, no participant, no printed part,
+  no clinician has rated anything yet. The virtual patient is one person&rsquo;s anatomy, with no oral phase in the
+  baseline, no surface tension, and a laryngeal rise smaller than the literature value; it passes the healthy
+  residue reference but not the zero-aspiration one. The cup controller results come from a 2D model with
+  rule-based virtual users and one 3D sway sequence; how deep below the rim a person can still sip is a guess
+  (1&ndash;3&nbsp;mm) that has not been measured.</p>
+  <ul>
+    <li>Every simulation number on this page is a single deterministic run unless a user count is given.</li>
+    <li>The model does not predict pneumonia and cannot replace a swallow study.</li>
+    <li>Swallow timing sweeps (a half-closed airway, thicker liquids) are sensitivity tests, not models of a
+    specific patient group.</li>
+    <li>A 1.6&nbsp;s swallow takes about 28 minutes to compute; this is not a real-time simulator.</li>
+  </ul>
+</section>
+
+<footer>
+  <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang &middot;
+  <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
+</footer>
+
+</div>
+<script>
+(function(){
+  var svg=document.getElementById('flowSvg'), slider=document.getElementById('tSlider'),
+      tOut=document.getElementById('tOut'), oldOut=document.getElementById('oldOut'),
+      newOut=document.getElementById('newOut'), msg=document.getElementById('flowMsg'),
+      btn=document.getElementById('playBtn');
+  var NS='http://www.w3.org/2000/svg';
+  var ROWS=[
+    ['oral_pharynx','Oropharynx','residue'],
+    ['valleculae','Valleculae','residue'],
+    ['pyriform_hypopharynx','Pyriform / hypopharynx','residue'],
+    ['vestibule','Laryngeal vestibule','airway'],
+    ['subglottis_trachea','Below the vocal folds','airway'],
+    ['esophagus_channel','Oesophagus (in domain)',''],
+    ['out_esophagus','Swallowed (left via oesophagus)',''],
+    ['out_trachea','Aspirated (left via trachea)','airway'],
+    ['leak','Leaked out of the domain','error']
+  ];
+  var X0=190, X1=620, VMAX=5, TOP=26, RH=33, runs=null, tmax=2.0, playing=false, timer=null;
+  function el(n,a,txt){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;svg.appendChild(e);return e;}
+  function px(v){return X0+(X1-X0)*Math.max(0,Math.min(v,VMAX))/VMAX;}
+  function at(run,key,t){var T=run.t,Y=run[key];if(!Y)return 0;var i=0;while(i<T.length-1&&T[i+1]<=t)i++;return Y[i];}
+  var bars={};
+  function build(){
+    for(var m=0;m<=VMAX;m++){el('line',{x1:px(m),x2:px(m),y1:TOP-6,y2:TOP+RH*ROWS.length-4,'class':'grid'});
+      el('text',{x:px(m),y:TOP-10,'text-anchor':'middle','class':'ax'},m+' mL');}
+    el('line',{x1:px(0.4),x2:px(0.4),y1:TOP-6,y2:TOP+RH*3-4,'class':'lim'});
+    el('rect',{x:0,y:TOP-18,width:9,height:7,'class':'old'}); el('text',{x:13,y:TOP-11,'class':'sub'},'first version');
+    el('rect',{x:80,y:TOP-18,width:9,height:7,'class':'new'}); el('text',{x:93,y:TOP-11,'class':'sub'},'current');
+    ROWS.forEach(function(r,i){
+      var y=TOP+RH*i;
+      if(i===3||i===6)el('line',{x1:0,x2:X1,y1:y-3,y2:y-3,'class':'sep'});
+      el('text',{x:0,y:y+11,'class':'lab'},r[1]);
+      if(r[2])el('text',{x:0,y:y+23,'class':'sub'},r[2]==='residue'?'counts as residue':(r[2]==='airway'?'airway':'numerical error'));
+      bars[r[0]]={o:el('rect',{x:X0,y:y+2,width:0,height:10,'class':'old'}),
+                  n:el('rect',{x:X0,y:y+14,width:0,height:10,'class':'new'}),
+                  ov:el('text',{x:X0,y:y+11,'class':'val'},''),nv:el('text',{x:X0,y:y+23,'class':'val'},'')};
+    });
+  }
+  function fmt(v){return v.toFixed(2)+' mL';}
+  function draw(){
+    var t=tmax*slider.value/1000, A=runs.h2_thin, B=runs.h13_tb_slow;
+    tOut.textContent=t.toFixed(2)+' s';
+    var ro=0,rn=0;
+    ROWS.forEach(function(r){
+      var vo=at(A,r[0],t), vn=at(B,r[0],t), b=bars[r[0]];
+      if(r[2]==='residue'){ro+=vo;rn+=vn;}
+      b.o.setAttribute('width',px(vo)-X0); b.n.setAttribute('width',px(vn)-X0);
+      b.ov.setAttribute('x',px(vo)+4); b.ov.textContent=vo.toFixed(2);
+      b.nv.setAttribute('x',px(vn)+4); b.nv.textContent=vn.toFixed(2);
+    });
+    if(A.pharynx_total){ro=at(A,'pharynx_total',t);rn=at(B,'pharynx_total',t);}
+    oldOut.textContent=fmt(ro); newOut.textContent=fmt(rn);
+  }
+  function stop(){playing=false;btn.textContent='Play';clearInterval(timer);}
+  btn.addEventListener('click',function(){
+    if(!runs)return;
+    if(playing){stop();return;}
+    if(+slider.value>=1000)slider.value=0;
+    playing=true;btn.textContent='Pause';
+    timer=setInterval(function(){var v=+slider.value+6;if(v>=1000){v=1000;stop();}slider.value=v;draw();},40);
+  });
+  slider.addEventListener('input',function(){if(playing)stop();if(runs)draw();});
+  build();
+  fetch('../assets/dysphagia-cup-feeding/regions.json').then(function(r){return r.json();}).then(function(d){
+    runs=d.runs;
+    tmax=Math.max(runs.h2_thin.t[runs.h2_thin.t.length-1],runs.h13_tb_slow.t[runs.h13_tb_slow.t.length-1]);
+    draw();
+  }).catch(function(){msg.textContent='The data file could not be loaded (open this page through a web server, not as a local file).';});
+})();
+</script>
+</body>
+</html>

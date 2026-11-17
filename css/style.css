@@ -90,6 +90,18 @@ a.title:hover{text-decoration:underline}
 /* -- year / group divider ------------------------------------ */
 .divider{font-weight:700;color:var(--ink-3);font-size:1.2em;margin:22px 0 14px}
 
+/* -- category tabs (homepage research) ----------------------- */
+.tabs{display:flex;flex-wrap:wrap;gap:6px 17px;margin:0 0 18px;border-bottom:1px solid var(--rule)}
+.tabs a{font-family:var(--sans);font-weight:700;color:var(--link);padding:0 0 7px;
+  border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs a:hover{color:var(--link-hover)}
+.tabs a[aria-current]{color:var(--ink);border-bottom-color:var(--ink)}
+.tabpanel>.note{margin-top:-8px}
+.js .tabpanel{display:none}
+.js .tabpanel.on{display:block}
+.js .tabpanel>.divider{display:none}
+.js .tabpanel>.note{margin-top:0;margin-bottom:16px}
+
 /* -- numbered list (publications) ---------------------------- */
 ol.pubs{margin:0;padding-left:22px}
 ol.pubs li{margin-bottom:10px;color:var(--ink-2)}

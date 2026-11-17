@@ -30,8 +30,8 @@ import voi_analysis as V
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 import os as _os
-_FROZEN = r'C:\Users\maurice\Desktop\stroke_scone\results_frozen'
-RES = _FROZEN if _os.path.isdir(_FROZEN) else r'C:\Users\maurice\Documents\SCONE\results'
+_FROZEN = r'E:\MocapError_capture-error-tolerance_JBiomech_2026\01_PROJECT_stroke_scone\results_frozen'
+RES = _FROZEN if _os.path.isdir(_FROZEN) else r'E:\MocapError_capture-error-tolerance_JBiomech_2026\02_DATA_scone_results'
 LEVELS = [0.0, 2.0, 5.0, 8.0, 12.0]
 
 

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What language models carry into the next task &mdash; Mu-Hua Wang</title>
+<meta name="description" content="Across 14 language models, a failed task shifts an unrelated later choice in 7, but with the dialogue format held fixed failure shifts it in only 1 of 6; much of what carries over is the format of the last conversation.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container">
+
+<nav>
+  <ul>
+    <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#result">Result</a></li>
+    <li><a href="#format">Format</a></li>
+    <li><a href="#steering">Steering</a></li>
+    <li><a href="#limits">Limits</a></li>
+    <li><a href="../cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<header>
+  <p class="note">Language models &middot; behavioural and interpretability analysis &middot; Manuscript prepared for ACL 2027 via ACL Rolling Review (not yet submitted), 2026</p>
+  <h1>Not the failure but the format: what language models carry into the next task</h1>
+  <p class="kicker">Language-model agents move from task to task within one session, so what one task leaves
+  behind can change the next decision. I tested 14 models: after a puzzle is rejected five times and the task is
+  closed, 7 of 14 choose differently in an unrelated later choice. With controls registered in advance, most of
+  this turns out to be the format of the last conversation: with the format held fixed, failure still
+  shifts the choice in only 1 of 6 models. A direction taken from the model&rsquo;s failed dialogues steers the
+  choice no further than random directions of equal norm. The effects are small, and their direction depends on
+  the model.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; National Yang Ming Chiao Tung
+  University &middot; author list not final</p>
+  <div class="links">
+    <a href="../index.html">[All projects]</a>
+  </div>
+</header>
+
+<hr>
+<section>
+  <figure class="fig">
+    <img src="../assets/llm-task-carryover/fig1_carryover.png" alt="Left: the design. Six puzzle turns, either an unsolvable item rejected five times (T) or solvable items that are accepted (C1), then a task-closing sentence, then a choice among a negative, a neutral and a positive passage. Right: the difference T minus C1 for 11 open models and three Claude models, with 95 percent intervals; some models move toward the positive passage, others toward the negative one.">
+    <p class="cap">Design and the main behavioural result: failed minus fluent dialogue (T &minus; C1) per model,
+    with 95% intervals over item-by-seed variants. Open models: clipped log-odds of choosing the negative over the
+    positive passage; Claude: net choice share. Panel (d) is a separate agentic decision (persist or report).</p>
+  </figure>
+</section>
+
+<hr>
+<section id="result">
+  <h2>A failed task changes an unrelated later choice in half the models</h2>
+  <p>Each model first works through six puzzle turns. In the failure condition (T) an unsolvable item is
+  rejected five times; in the fluent condition (C1) solvable items are accepted. A sentence then closes the
+  task, and the model picks one of three passages on one topic: negative, neutral or positive. Conditions,
+  contrasts and corrections were committed to git before the data they govern; the few decisions made after
+  seeing data are disclosed in the manuscript.</p>
+
+  <div class="stats">
+    <div><span class="big">7 / 14</span><h3>Models whose choice shifts</h3><p>after a failed task (T vs C1), Holm-corrected across models</p></div>
+    <div><span class="big">&minus;0.486</span><h3>Largest open-model shift</h3><p>Qwen2.5 1.5B, clipped log-odds, 95% CI [&minus;0.63, &minus;0.35], 90 variants</p></div>
+    <div><span class="big">26</span><h3>Registration commits</h3><p>of the analysis plan in git, from 2026-11-13</p></div>
+  </div>
+
+  <p>The direction depends on the model: Qwen2.5 1.5B, Gemma&nbsp;3 12B and 27B, Llama&nbsp;3.2 3B and Claude
+  Haiku&nbsp;5.5 move toward the positive passage, Claude Sonnet&nbsp;5.5 and Opus&nbsp;5.5 toward the
+  negative one. In absolute terms the shifts are 7 to 22 points of net choice share.</p>
+</section>
+
+<hr>
+<section id="format">
+  <h2>Most of what carries over is the format, not the failure</h2>
+  <p>A failed exchange differs from a fluent one in more than failure: it repeats, it is harder, and its turns
+  have a different format. In a second, crossed design the turn format is the same in every condition. There,
+  failure and repetition together still shift the choice in only 1 of 6 models. Changing only the format of a
+  fluent dialogue, with the same items, shifts it in Qwen2.5 3B, Claude Haiku&nbsp;5.5 and Sonnet&nbsp;5.5.</p>
+
+  <h3 style="margin-top:18px">Read two of the dialogues side by side</h3>
+  <p>Pick two conditions and a turn. Lines that appear in only one of the two messages are in bold, so in
+  C3 against N3 you see that the puzzle is the same and only the wrapper around it changes.</p>
+  <div class="ctrl" id="dlg">
+    <div class="ctrl-row">
+      <label>Left <select id="dlgA" aria-label="Condition shown on the left"></select></label>
+      <label>Right <select id="dlgB" aria-label="Condition shown on the right"></select></label>
+    </div>
+    <div class="ctrl-row" style="margin-top:10px">
+      <input type="range" id="dlgTurn" min="1" max="6" value="2" aria-label="Turn of the dialogue">
+      <span class="readout" id="dlgTurnOut">2 / 6<small>turn</small></span>
+    </div>
+    <div class="figrow" style="margin-top:12px">
+      <div><p class="note" id="dlgAName"></p><div class="box" id="dlgAUser"></div>
+        <p class="note">Model reply</p><p class="desc" id="dlgAReply"></p></div>
+      <div><p class="note" id="dlgBName"></p><div class="box" id="dlgBUser"></div>
+        <p class="note">Model reply</p><p class="desc" id="dlgBReply"></p></div>
+    </div>
+    <p class="note">After turn 6, every condition receives the same request:</p>
+    <div class="box" id="dlgProbe"></div>
+    <noscript><p class="note">The dialogue viewer needs JavaScript.</p></noscript>
+  </div>
+  <p class="cap">Qwen2.5 3B Instruct, the first row of the trial plan (number-set puzzles, seed 15), taken
+  without looking at the outcome: <b>not a statistic</b>. Replies are cut after 420 characters. A single
+  passage choice is close to certain either way; the effect lives in the average over 360 trials per condition,
+  below.</p>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Format only (N3 &minus; C3), same items</th><th>Mean</th><th>95% CI</th><th>Holm p</th></tr></thead>
+      <tbody>
+        <tr><td>Qwen2.5 3B (clipped log-odds)</td><td class="n">+0.412</td><td class="n">[+0.189, +0.634]</td><td class="n">.0021</td></tr>
+        <tr><td>Claude Haiku 5.5 (net choice share)</td><td class="n">&minus;0.301</td><td class="n">[&minus;0.389, &minus;0.214]</td><td class="n">.0005</td></tr>
+        <tr><td>Claude Sonnet 5.5 (net choice share)</td><td class="n">+0.137</td><td class="n">[+0.067, +0.210]</td><td class="n">.0005</td></tr>
+        <tr><td>Qwen2.5 3B, new seeds</td><td class="n">+0.381</td><td class="n">[+0.177, +0.588]</td><td class="n">.0010</td></tr>
+        <tr><td>Gemma 3 4B, new seeds</td><td class="n">&minus;0.300</td><td class="n">[&minus;0.518, &minus;0.079]</td><td class="n">.0086</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Gemma&nbsp;3 4B did not pass the first test (Holm p = .068), so its replication counts only
+  as &ldquo;same direction&rdquo;.</p>
+
+  <p>Is a format effect larger than the effect of edits that should not matter? A registered placebo test
+  rewrote the same fluent dialogue in eight harmless ways (another acknowledgement word, another neutral
+  sentence, another turn order) and asked whether the format change beats all eight.</p>
+
+  <div class="ctrl" id="plc">
+    <div class="ctrl-row">
+      <span id="plcModels" role="radiogroup" aria-label="Model"></span>
+      <span class="readout" id="plcRank"></span>
+    </div>
+    <div class="tw" style="margin-top:10px">
+      <table>
+        <thead><tr><th>Edit to the C3 dialogue</th><th>Shift of the later choice (95% CI)</th><th>Mean</th><th>p</th></tr></thead>
+        <tbody id="plcBody"></tbody>
+      </table>
+    </div>
+    <noscript>
+      <img src="../assets/llm-task-carryover/fig3_placebo.png" alt="Three panels, one per model. In each, a black point shows the format change N3 minus C3 and eight grey points show harmless rewrites p1 to p8, all with 95 percent intervals. In Qwen2.5 3B the black point is the largest, barely above rewrite p7. In Gemma 3 4B rewrite p7 is further from zero than the black point. In Llama 3.2 3B rewrite p8 is larger than the black point.">
+    </noscript>
+  </div>
+  <figure class="fig" style="margin-top:8px">
+    <p class="cap">Clipped log-odds, difference from C3; the axis runs from &minus;0.7 to +0.7, and filled points
+    have p &lt; .05 (two-sided sign-flip, 90 variants). Placebo test, seeds 96&ndash;113, 90 variants per model. The format change is significant in all
+    three models (Holm p = .0204, .0204 and .0003), but it beats all eight harmless rewrites only in Qwen2.5 3B
+    (+0.307 vs +0.299 for the closest rewrite). In Gemma&nbsp;3 4B and Llama&nbsp;3.2 3B one rewrite moves the
+    choice further, and 3 to 4 of the 8 rewrites are significant in every model.</p>
+  </figure>
+
+  <div class="box mark">
+    <p>The later choice is sensitive to the surface of the previous conversation. A format change shifts it
+    reproducibly within a model, but by about as much as other harmless edits, and in a direction that differs
+    between models. What a model carries into its next task is thus often the shape of the last conversation
+    rather than its failure.</p>
+  </div>
+</section>
+
+<hr>
+<section id="steering">
+  <h2>A &ldquo;failure direction&rdquo; steers no better than random directions</h2>
+  <p>If failure left a specific internal state, the residual-stream direction that separates failed from
+  fluent dialogues should move the choice like failure does. In the two open models with the strongest
+  behaviour it does not: it moves the choice the opposite way, and no further than a typical one of 100
+  random directions of the same norm. This was registered before the data, and the prediction failed.</p>
+
+  <div class="stats">
+    <div><span class="big">62 / 100</span><h3>Qwen2.5 1.5B</h3><p>random directions with an effect at or below the failure direction (rank p = .62)</p></div>
+    <div><span class="big">82 / 100</span><h3>Llama 3.2 3B</h3><p>random directions with an effect at or below the failure direction (rank p = .82)</p></div>
+  </div>
+
+  <figure class="fig">
+    <img src="../assets/llm-task-carryover/fig2_steering_random.png" alt="Two histograms, one for Qwen2.5 1.5B and one for Llama 3.2 3B, of the effect of steering along 100 random directions. Vertical lines mark the failure, repetition and word directions and the behavioural effect of failure. The failure direction lies inside the random distribution and on the opposite side of zero from the behavioural effect.">
+    <p class="cap">Steered minus unsteered fluent dialogue (clipped log-odds, odd seeds, 45 variants). Gray:
+    100 random directions of equal norm. Dotted: the behavioural effect of failure.</p>
+  </figure>
+</section>
+
+<hr>
+<section id="limits">
+  <h2>Where this stops</h2>
+  <p class="against"><b>Scope:</b> one readout (a choice among three passages) after one kind of prior task
+  (puzzles); open models up to 27B, and Claude models through their choices only. The shifts are small (7 to 22
+  points of net choice share). The original prediction that failure itself carries over held in only 1 of 6
+  models once the format was fixed; the steering prediction failed; the format effect beat all eight harmless
+  rewrites in only 1 of 3 models. Further registered experiments are still running, and the manuscript has not
+  been peer reviewed. Nothing here measures or implies feelings in language models.</p>
+</section>
+
+<footer>
+  <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang &middot;
+  <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
+</footer>
+
+</div>
+<script>
+/* Dialogue viewer and placebo explorer. Data: ../assets/llm-task-carryover/dialogues.json and placebo.json
+   (made by tools/make_web_data.py in the project repository). No external code. */
+(function () {
+  var A = "../assets/llm-task-carryover/";
+  function $(id) { return document.getElementById(id); }
+  function fail(id) { var e = $(id); if (e) { var p = document.createElement("p"); p.className = "note";
+    p.textContent = "Could not load the data for this panel."; e.appendChild(p); } }
+
+  /* text with line breaks; lines missing from `other` in bold (other === null: no highlighting) */
+  function lines(el, text, other) {
+    el.textContent = "";
+    var seen = {};
+    if (other !== null) other.split("\n").forEach(function (s) { seen[s.trim()] = 1; });
+    text.split("\n").forEach(function (ln, k) {
+      if (k) el.appendChild(document.createElement("br"));
+      var t = document.createTextNode(ln);
+      if (other !== null && ln.trim() && !seen[ln.trim()]) {
+        var b = document.createElement("b"); b.appendChild(t); el.appendChild(b);
+      } else el.appendChild(t);
+    });
+  }
+
+  fetch(A + "dialogues.json").then(function (r) { return r.json(); }).then(function (d) {
+    var cs = d.conditions, selA = $("dlgA"), selB = $("dlgB"), turn = $("dlgTurn");
+    [selA, selB].forEach(function (s, k) {
+      cs.forEach(function (c, j) {
+        var o = document.createElement("option"); o.value = j; o.textContent = c.group; s.appendChild(o);
+      });
+      s.value = k ? 3 : 2;
+    });
+    function draw() {
+      var t = +turn.value, a = cs[+selA.value], b = cs[+selB.value];
+      $("dlgTurnOut").firstChild.nodeValue = t + " / 6";
+      $("dlgAName").textContent = a.group + ": " + a.label;
+      $("dlgBName").textContent = b.group + ": " + b.label;
+      lines($("dlgAUser"), a.turns[t - 1].user, b.turns[t - 1].user);
+      lines($("dlgBUser"), b.turns[t - 1].user, a.turns[t - 1].user);
+      lines($("dlgAReply"), a.turns[t - 1].reply, null);
+      lines($("dlgBReply"), b.turns[t - 1].reply, null);
+    }
+    [selA, selB, turn].forEach(function (e) { e.addEventListener("input", draw); e.addEventListener("change", draw); });
+    lines($("dlgProbe"), d.probe, null);
+    draw();
+  }).catch(function () { fail("dlg"); });
+
+  fetch(A + "placebo.json").then(function (r) { return r.json(); }).then(function (P) {
+    var NS = "http://www.w3.org/2000/svg", X0 = -0.7, X1 = 0.7, W = 220, H = 18, cur = 0;
+    function x(v) { return (Math.max(X0, Math.min(X1, v)) - X0) / (X1 - X0) * W; }
+    function svgEl(n, a) { var e = document.createElementNS(NS, n); for (var k in a) e.setAttribute(k, a[k]); return e; }
+    function num(v) { return (v < 0 ? "−" : "+") + Math.abs(v).toFixed(3); }
+    function pval(p) { return p.toFixed(4).replace(/^0/, ""); }
+    var box = $("plcModels");
+    P.forEach(function (m, k) {
+      var l = document.createElement("label"), i = document.createElement("input");
+      l.style.marginRight = "14px";
+      i.type = "radio"; i.name = "plcm"; i.value = k; i.checked = !k;
+      i.addEventListener("change", function () { cur = k; draw(); });
+      l.appendChild(i); l.appendChild(document.createTextNode(" " + m.model)); box.appendChild(l);
+    });
+    function draw() {
+      var rows = P[cur].rows, body = $("plcBody"), f = Math.abs(rows[0].mean);
+      var rank = 1 + rows.slice(1).filter(function (r) { return Math.abs(r.mean) >= f; }).length;
+      var ro = $("plcRank"); ro.textContent = rank + " / 9";
+      var sm = document.createElement("small"); sm.textContent = "rank of the format change"; ro.appendChild(sm);
+      body.textContent = "";
+      rows.forEach(function (r, k) {
+        var tr = document.createElement("tr"), td1 = document.createElement("td");
+        var name = document.createElement(k ? "span" : "b"); name.textContent = k ? "p" + k : "Format change (N3)";
+        var sub = document.createElement("span"); sub.className = "sub"; sub.textContent = r.desc;
+        td1.appendChild(name); td1.appendChild(sub);
+        var td2 = document.createElement("td"), op = k ? 0.55 : 1;
+        var svg = svgEl("svg", { width: W, height: H, viewBox: "0 0 " + W + " " + H, role: "img",
+          "aria-label": num(r.mean) + ", 95% interval " + num(r.lo) + " to " + num(r.hi) });
+        svg.appendChild(svgEl("line", { x1: x(0), x2: x(0), y1: 0, y2: H, stroke: "currentColor", "stroke-opacity": 0.3 }));
+        svg.appendChild(svgEl("line", { x1: x(r.lo), x2: x(r.hi), y1: H / 2, y2: H / 2, stroke: "currentColor",
+          "stroke-opacity": op, "stroke-width": k ? 1.5 : 2.5 }));
+        svg.appendChild(svgEl("circle", { cx: x(r.mean), cy: H / 2, r: k ? 4 : 5, stroke: "currentColor",
+          "stroke-opacity": op, "stroke-width": 1.5, fill: r.p < 0.05 ? "currentColor" : "none", "fill-opacity": op }));
+        td2.appendChild(svg);
+        function cell(text) {
+          var td = document.createElement("td"), w = document.createElement(k ? "span" : "b");
+          td.className = "n"; w.textContent = text; td.appendChild(w); return td;
+        }
+        [td1, td2, cell(num(r.mean)), cell(pval(r.p))].forEach(function (td) { tr.appendChild(td); });
+        body.appendChild(tr);
+      });
+    }
+    draw();
+  }).catch(function () { fail("plc"); });
+})();
+</script>
+</body>
+</html>

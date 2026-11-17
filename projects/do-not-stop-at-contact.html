@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do Not Stop at First Contact &mdash; Mu-Hua Wang</title>
+<meta name="description" content="A care robot that pushes 2.4 degrees past first contact keeps its stated pain risk close to the truth when its noise model is wrong; a pre-registered MuJoCo simulation study.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container">
+<style>
+  /* page-specific: the two SVG demos and their toggle buttons; shared classes are not restyled */
+  .demo svg{width:100%;height:auto;display:block}
+  .demo .grid{stroke:var(--rule-2);stroke-width:1}
+  .demo .ax{fill:var(--ink-3);font-family:var(--mono);font-size:10px}
+  .demo .axl{fill:var(--ink-3);font-family:var(--sans);font-size:10px;font-weight:700}
+  .demo .floor{fill:var(--box);stroke:none}
+  .demo .floorline{stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3}
+  .demo .curve{fill:none;stroke:var(--ink);stroke-width:1.6}
+  .demo .cut{fill:var(--ink-3)}
+  .demo .contact{fill:var(--bg);stroke:var(--ink);stroke-width:1.6}
+  .demo .extra{fill:var(--plot-b)}
+  .demo .bar{stroke:var(--ink-2);stroke-width:1.2}
+  .demo .band{fill:var(--ink);opacity:.10}
+  .demo .bandedge{stroke:var(--ink-3);stroke-width:1;stroke-dasharray:2 3}
+  .demo .ov{fill:var(--plot-b);opacity:.10}
+  .demo .lab{fill:var(--ink-2);font-family:var(--sans);font-size:10.5px}
+  .demo .labr{fill:var(--plot-b);font-family:var(--sans);font-size:10.5px;font-weight:700}
+  .demo .stopline{stroke:var(--ink-2);stroke-width:1.2}
+  .demo .sl{fill:none;stroke-width:1.8;stroke-linejoin:round}
+  .demo .ci{opacity:.12}
+  .demo .target{stroke:var(--ink-3);stroke-width:1;stroke-dasharray:4 3}
+  .demo .real{fill:var(--box)}
+  .demo .now{stroke:var(--ink);stroke-width:1;stroke-dasharray:2 2}
+  .demo .ctrl-row{margin-top:8px}
+  .demo .hint{font-size:.93em;color:var(--ink-3);margin:8px 0 0}
+  .demo .verdict{font-family:var(--sans);font-size:.88em;font-weight:700;margin-top:8px;color:var(--ink-2)}
+  .demo .readouts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px 18px;margin-top:10px}
+  .demo .readouts .readout{min-width:0}
+  .seg{display:inline-flex;border:1px solid var(--rule)}
+  .seg button{font-family:var(--sans);font-size:.82em;font-weight:700;background:var(--bg);
+    color:var(--ink-3);border:0;padding:5px 11px;cursor:pointer}
+  .seg button+button{border-left:1px solid var(--rule)}
+  .seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+  .btn{font-family:var(--sans);font-size:.82em;font-weight:700;background:var(--bg);color:var(--ink);
+    border:1px solid var(--rule);padding:5px 11px;cursor:pointer}
+</style>
+
+<nav>
+  <ul>
+    <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#problem">Problem</a></li>
+    <li><a href="#result">Result</a></li>
+    <li><a href="#alternatives">Alternatives</a></li>
+    <li><a href="#limits">Limits</a></li>
+    <li><a href="../cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<header>
+  <p class="note">Physical human&ndash;robot interaction &middot; simulation (MuJoCo) &middot; Submitted to IEEE Robotics and Automation Letters (manuscript 26-6751), October 2026</p>
+  <h1>Do not stop at first contact: deliberate overshoot makes a care robot's pain risk robust to its noise model</h1>
+  <p class="kicker">A care robot that stops a limb at the first sensed resistance seems safe, but its one
+  reading sits at the force sensor's detection floor, so the pain risk it states depends on a noise level it
+  assumes and cannot check. Pushing 2.4&deg; past first contact on purpose adds readings above the floor. On a
+  MuJoCo leg, as the assumed noise ranges from the true noise to seven times it, realised pain at a stated
+  5&nbsp;% stays at 5.0&ndash;6.3&nbsp;% with the overshoot and rises from 6.7 to 17.1&nbsp;% when the robot
+  stops at contact. All of it is simulation, and the overshoot hurts more simulated persons while probing.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; National Yang Ming Chiao Tung
+  University &middot; sole author</p>
+  <div class="links">
+    <span class="off">[Paper: on request while under review]</span>
+    <a href="../index.html">[All projects]</a>
+  </div>
+</header>
+
+<hr>
+<section>
+  <figure class="fig">
+    <video src="../assets/do-not-stop-at-contact/lead.mp4" poster="../assets/do-not-stop-at-contact/lead_poster.jpg"
+           autoplay muted loop playsinline controls preload="metadata"
+           aria-label="Two simulated probes side by side. A robot arm lifts a supine person's hip through a thigh cuff. Left: it stops at the first reading above the 8 newton-metre floor. Right: it continues 2.4 degrees and takes two more readings above the floor."></video>
+    <p class="cap">One illustrative probe of a median simulated person: stop at first contact (left) and a
+    2.4&deg; overshoot (right), with the force readings below each. The torque curve and noise are the
+    illustrative values used on this page (true noise 0.56&nbsp;Nm, floor 8&nbsp;Nm); <b>not study data and
+    not a statistic</b>. Arm model from MuJoCo Menagerie.</p>
+  </figure>
+</section>
+
+<hr>
+<section id="problem">
+  <h2>Stopping at contact leaves one reading, right at the floor</h2>
+  <div class="figrow">
+    <div>
+      <p class="desc">A robot that changes an older adult's diaper has to lift and open the hip. Too little
+      and the task fails; too far and it hurts, and how far is too far differs from person to person. So the
+      robot probes first: it moves the leg slowly and feels for passive resistance, then stops each later
+      motion at the angle where it predicts a 5&nbsp;% risk of pain.</p>
+      <p class="desc">The usual rule is to stop at the first sensed contact, as collision detection does. A
+      force sensor reports nothing below its detection floor (8&nbsp;Nm here), so that rule leaves the robot
+      one reading at the floor. Whether that reading is real resistance or noise depends on how noisy the
+      robot believes its readings are at contact, and that noise is not the sensor's factory specification:
+      cuff slip, friction and the person's own movement add to it, and a care setting cannot measure it for
+      each person.</p>
+    </div>
+    <figure class="fig">
+      <img src="../assets/do-not-stop-at-contact/scene.png" alt="MuJoCo rendering: a UR5e robot arm lifts the leg of a supine older adult through a thigh cuff on a care bed." loading="lazy">
+      <p class="cap">The simulated task: a robot arm opens a supine older adult's hip through a cuff with a
+      force sensor. MuJoCo rendering for visualisation; arm model from MuJoCo Menagerie.</p>
+    </figure>
+  </div>
+  <div class="box mark">
+    <p><b>The idea.</b> An astronomer who sees a faint star at the detection limit has to correct for it with
+    a noise model. A robot can choose where it measures. Pushing <b>2.4&deg; past first contact</b> takes two
+    more readings above the floor, which measure both the limb and the noise. The probe ends at a median of
+    11.3&nbsp;Nm, below the simulated pain threshold of 99&nbsp;% of the older adults.</p>
+  </div>
+
+  <div class="ctrl demo">
+    <h3>Try it: one probe near the floor</h3>
+    <p class="desc">The black curve is the true passive torque; readings carry the cuff's true noise
+    (0.56&nbsp;Nm), and anything under the 8&nbsp;Nm floor is reported as zero (grey ticks). The slider sets
+    the noise the robot <i>assumes</i>. The bar on each reading is &plusmn;2 assumed standard deviations; the
+    grey band marks the hip angles where the true curve passes through the contact reading's bar.</p>
+    <div class="ctrl-row">
+      <div class="seg" role="group" aria-label="Stopping rule">
+        <button type="button" id="modeStop" aria-pressed="true">Stop at contact</button>
+        <button type="button" id="modeOver" aria-pressed="false">Overshoot 2.4&deg;</button>
+      </div>
+      <button type="button" class="btn" id="reprobe">Probe again</button>
+    </div>
+    <svg id="probeSvg" viewBox="0 0 640 300" role="img" aria-label="Passive torque against hip angle with the probe's readings"></svg>
+    <div class="ctrl-row">
+      <label for="sigHat" class="note">Assumed noise</label>
+      <input type="range" id="sigHat" min="0" max="1000" value="793" aria-describedby="sigHatOut">
+      <div class="readout" id="sigHatOut">2.0 Nm<small>3.6&times; the true noise</small></div>
+    </div>
+    <p class="verdict" id="probeVerdict"></p>
+    <p class="hint">An illustration of the mechanism with illustrative values, not the study's estimator.
+    The study infers the person with a censored likelihood over all readings, including the zeros.</p>
+  </div>
+</section>
+
+<hr>
+<section id="result">
+  <h2>With the overshoot, the stated 5&nbsp;% stays close to the truth when the noise model is wrong</h2>
+  <p class="desc">The same 200 simulated older adults, probed once on a MuJoCo leg, then evaluated with six
+  assumed noise levels. Each robot states a 5&nbsp;% risk of pain; the chart shows how often it actually
+  hurt. Bands are 95&nbsp;% bootstrap intervals over persons.</p>
+
+  <div class="ctrl demo">
+    <svg id="sweepSvg" viewBox="0 0 640 300" role="img" aria-label="Realised pain at a stated 5 percent against the assumed noise, for both stopping rules"></svg>
+    <div class="ctrl-row">
+      <label for="lvl" class="note">Assumed noise</label>
+      <input type="range" id="lvl" min="0" max="5" step="1" value="4" aria-describedby="lvlOut">
+      <div class="readout" id="lvlOut">2.0 Nm<small>3.6&times; true</small></div>
+    </div>
+    <div class="readouts">
+      <div class="readout" id="rStop">12.81 %<small>stop at contact</small></div>
+      <div class="readout" id="rOver">5.13 %<small>overshoot 2.4&deg;</small></div>
+      <div class="readout" id="rDiff">+7.68 pts<small>difference, p &lt; 10&#8315;&#8308;</small></div>
+    </div>
+  </div>
+
+  <div class="stats" style="margin-top:14px">
+    <div><span class="big">5.0&ndash;6.3 %</span><h3>Overshoot</h3><p>Realised pain at a stated 5&nbsp;%, assumed noise from the true value to 7&times;.</p></div>
+    <div><span class="big">6.7&ndash;17.1 %</span><h3>Stop at contact</h3><p>Same 200 persons, same range of assumed noise.</p></div>
+    <div><span class="big">14 / 14</span><h3>Comparisons lower</h3><p>Default noise model, three simulated populations: 12&ndash;22&nbsp;% falls to 5&ndash;9&nbsp;%.</p></div>
+  </div>
+  <p class="desc">With less assumed noise than there is, stop-at-contact is conservative (1.90&nbsp;% at
+  0.14&nbsp;Nm), but then it opens the hip less than the person tolerates. With a matched noise model the
+  difference was not detected (6.72 against 6.30&nbsp;%, p&nbsp;=&nbsp;0.7). The gap opens when the robot
+  assumes more noise than the cuff has.</p>
+  <figure class="fig">
+    <img src="../assets/do-not-stop-at-contact/fig1_teaser.png" alt="Paper figure 1, three panels: the simulated robot and person; readings near first contact, with one circle at the 8 newton-metre floor for stop-at-contact and two squares above it for the overshoot; and realised pain at a stated 5 percent across the realistic range of assumed noise." loading="lazy">
+    <p class="cap"><b>Paper Fig. 1.</b> (b) Stopping at contact leaves one reading at the floor (circle);
+    the overshoot adds two above it (squares). (c) Realised pain at a stated 5&nbsp;% as the assumed noise
+    ranges from the true noise to 7&times;.</p>
+  </figure>
+</section>
+
+<hr>
+<section id="alternatives">
+  <h2>Simpler fixes are less robust than the overshoot</h2>
+  <p class="desc">Each fix below keeps stop-at-contact and tries to repair it. Realised pain (%) at a stated
+  5&nbsp;%, MuJoCo leg, older-adult world; each experiment uses its own 200 new simulated persons, so the
+  overshoot's own value differs a little between rows.</p>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Fix</th><th>Stop at contact</th><th>Overshoot</th><th>Why it falls short</th></tr></thead>
+      <tbody>
+        <tr><td>Infer the noise jointly with the limb (prior centre 0.14&ndash;4&nbsp;Nm, two person sets)</td><td class="n">6.1&ndash;13.9</td><td class="n">9.1&ndash;9.9</td><td>The noise inferred at contact follows its prior (0.28 to 0.86&nbsp;Nm); the overshoot's lands at 0.50&ndash;0.55&nbsp;Nm, near the true 0.56</td></tr>
+        <tr><td>Dwell at contact for 2 or 5 readings</td><td class="n">18.6 / 17.9</td><td class="n">9.1</td><td>Extra readings come from the same position</td></tr>
+        <tr><td>Lower the floor to 4 or 2&nbsp;Nm</td><td class="n">13.7 / 15.3</td><td class="n">4.2 / 4.0</td><td>The stopping reading sits at the new floor</td></tr>
+        <tr><td>Keep the raw signal below the floor, with literature-sized low-torque disturbances</td><td class="n">4.7&ndash;46.8</td><td class="n">3.5&ndash;9.2</td><td>Needs a correct model of the low-torque region</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="desc">The raw signal worked in the clean simulator (10.4 against 9.1&nbsp;%, difference not
+  detected, p&nbsp;=&nbsp;0.2). It became unreliable once the low-torque region carried disturbances at sizes
+  reported in the literature: the passive hip moment at rest, skin&ndash;sheet friction, muscle tone and
+  paratonia. The overshoot uses only readings above the floor.</p>
+  <figure class="fig">
+    <img src="../assets/do-not-stop-at-contact/fig3_noise_sweep.png" alt="Paper figure 3, two panels of realised pain at a stated 5 percent. Left: analytic readings for five combinations of true and assumed noise. Right: MuJoCo leg across six assumed noise levels; the stop-at-contact line rises steeply with the assumed noise while the overshoot line stays near 5 percent." loading="lazy">
+    <p class="cap"><b>Paper Fig. 3.</b> (a) Analytic readings, five combinations of true and assumed noise.
+    (b) MuJoCo leg, the same 200 persons evaluated with six assumed noise levels; diamonds mark noise
+    inferred jointly with the limb, placed at the median inferred noise.</p>
+  </figure>
+</section>
+
+<hr>
+<section id="cost">
+  <h2>The overshoot hurts more persons while probing and fewer overall</h2>
+  <div class="stats">
+    <div><span class="big">2.5&ndash;7 %</span><h3>Hurt while probing</h3><p>Against 0.5&ndash;3.5&nbsp;% for stop-at-contact, higher in every comparison.</p></div>
+    <div><span class="big">28&ndash;54 %</span><h3>Fewer hurt at least once</h3><p>Probing and use together, because persons hurt during use fall by 33&ndash;54&nbsp;%.</p></div>
+    <div><span class="big">0 %</span><h3>With a 4 or 2&nbsp;Nm floor</h3><p>No simulated person was hurt while probing, with either rule.</p></div>
+  </div>
+  <figure class="fig">
+    <video src="../assets/do-not-stop-at-contact/orbit.mp4" poster="../assets/do-not-stop-at-contact/orbit_poster.jpg"
+           autoplay muted loop playsinline controls preload="metadata"
+           aria-label="The camera circles a care bed while a robot arm lifts and lowers a supine person's leg."></video>
+    <p class="cap">The simulated care scene from all sides. Visualisation only; <b>not study data and not a
+    statistic</b>.</p>
+  </figure>
+</section>
+
+<hr>
+<section id="limits">
+  <h2>Where this stops</h2>
+  <p class="against"><b>Scope:</b> simulation only, 200 simulated persons per experiment; the overshoot hurts
+  more persons while probing (2.5&ndash;7&nbsp;% against 0.5&ndash;3.5&nbsp;%) but fewer overall, and the
+  between-person spread of pain thresholds must come from human studies.</p>
+  <div class="box mark">
+    <ul>
+      <li><b>Simulation only.</b> A MuJoCo leg with parameters from published torque&ndash;angle and tolerance data; no person was probed.</li>
+      <li><b>Not exactly 5&nbsp;% everywhere.</b> With the default noise model the overshoot's realised pain ranges from 5 to 9&nbsp;% across the 14 comparisons.</li>
+      <li><b>Pain itself cannot be probed.</b> Without the between-person spread of pain thresholds from human studies, realised pain with the overshoot rises from 7.3 to 22.7&nbsp;%.</li>
+      <li><b>Calibrated across persons, not for each person.</b> A stated 5&nbsp;% is a population rate.</li>
+      <li><b>One cell favours the raw signal.</b> With every disturbance at its high value, the raw signal lands closer to 5&nbsp;% (4.7 against 3.5&nbsp;%).</li>
+      <li><b>Pre-registered.</b> 99 predictions were written before their evaluation persons were run; the failed ones stay in the log, to be released with the code.</li>
+    </ul>
+  </div>
+  <p class="desc">The next step is a bench leg with a real cuff and force sensor, to measure the reading error
+  at contact without pain.</p>
+</section>
+
+<footer>
+  <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang &middot;
+  <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
+  <p style="margin-top:.6rem">The manuscript is under double-anonymous review and is not reproduced here;
+  the full text is available on request.</p>
+</footer>
+
+<script>
+(function(){
+  var NS='http://www.w3.org/2000/svg';
+  function el(tag,attrs,parent){var e=document.createElementNS(NS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e}
+  function txt(s,attrs,parent){var e=el('text',attrs,parent);e.textContent=s;return e}
+
+  /* ---------- demo 1: one probe near the floor (illustration) ---------- */
+  var TRUE_SIG=0.56, FLOOR=8, K=2.2, R0=30, L=15.5, STEP=1.2;
+  function torque(a){var v=K*(Math.exp((a-R0)/L)-1);return v>0?v:0}
+  var A0=40, A1=64, T0=0, T1=20;
+  var P={l:46,r:620,t:16,b:262};
+  function X(a){return P.l+(a-A0)/(A1-A0)*(P.r-P.l)}
+  function Y(t){return P.b-(t-T0)/(T1-T0)*(P.b-P.t)}
+  function invT(t){ if(t<=0) return A0; return R0+L*Math.log(t/K+1) }
+  var seed=7;
+  function rnd(){seed=(seed*1103515245+12345)%2147483648;return seed/2147483648}
+  function gauss(){var u=1-rnd(),v=rnd();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v)}
+  var probe=[];
+  function makeProbe(){
+    probe=[];var a=44,contact=-1;
+    for(var i=0;i<40;i++){
+      var y=torque(a)+TRUE_SIG*gauss();
+      probe.push({a:a,y:y,cut:y<FLOOR});
+      if(contact<0&&y>=FLOOR){contact=probe.length-1}
+      if(contact>=0&&probe.length-1>=contact+2)break;
+      a+=STEP;
+    }
+    probe.contact=contact;
+  }
+  var mode='stop', sigHat=2.0;
+  var svg=document.getElementById('probeSvg');
+  function sliderToSig(v){return 0.14*Math.pow(4/0.14,v/1000)}
+  function drawProbe(){
+    while(svg.firstChild)svg.removeChild(svg.firstChild);
+    el('rect',{class:'floor',x:P.l,y:Y(FLOOR),width:P.r-P.l,height:P.b-Y(FLOOR)},svg);
+    for(var t=0;t<=20;t+=5){el('line',{class:'grid',x1:P.l,y1:Y(t),x2:P.r,y2:Y(t)},svg);txt(t+'',{class:'ax',x:P.l-6,y:Y(t)+3,'text-anchor':'end'},svg)}
+    for(var a=40;a<=64;a+=4){txt(a+'°',{class:'ax',x:X(a),y:P.b+14,'text-anchor':'middle'},svg)}
+    txt('hip angle',{class:'axl',x:(P.l+P.r)/2,y:P.b+30,'text-anchor':'middle'},svg);
+    txt('torque (Nm)',{class:'axl',x:P.l,y:P.t-4},svg);
+    el('line',{class:'floorline',x1:P.l,y1:Y(FLOOR),x2:P.r,y2:Y(FLOOR)},svg);
+    txt('detection floor 8 Nm: below it the sensor reports 0',{class:'lab',x:P.r-4,y:Y(FLOOR)+14,'text-anchor':'end'},svg);
+    var c=probe.contact, cr=probe[c];
+    // band of angles consistent with the contact reading under the assumed noise
+    var lo=Math.max(cr.y-2*sigHat,0.01), hi=cr.y+2*sigHat;
+    var a1=Math.max(invT(lo),A0), a2=Math.min(invT(hi),A1);
+    if(mode==='stop'){
+      el('rect',{class:'band',x:X(a1),y:P.t,width:Math.max(X(a2)-X(a1),1),height:P.b-P.t},svg);
+      el('line',{class:'bandedge',x1:X(a1),y1:P.t,x2:X(a1),y2:P.b},svg);
+      el('line',{class:'bandedge',x1:X(a2),y1:P.t,x2:X(a2),y2:P.b},svg);
+    }
+    if(mode==='over'){var oa=cr.a, ob=probe[probe.length-1].a;
+      el('rect',{class:'ov',x:X(oa),y:P.t,width:X(ob)-X(oa),height:P.b-P.t},svg)}
+    // true curve
+    var d='';for(var aa=A0;aa<=A1+0.001;aa+=0.25){d+=(d?'L':'M')+X(aa).toFixed(1)+' '+Y(Math.min(torque(aa),T1+2)).toFixed(1)}
+    el('path',{class:'curve',d:d},svg);
+    // readings
+    var last=mode==='stop'?c:probe.length-1;
+    for(var i=0;i<=last;i++){
+      var p=probe[i];
+      if(p.cut){el('rect',{class:'cut',x:X(p.a)-1,y:P.b-7,width:2,height:7},svg);continue}
+      var yy=Y(p.y);
+      el('line',{class:'bar',x1:X(p.a),y1:Y(Math.min(p.y+2*sigHat,T1)),x2:X(p.a),y2:Y(Math.max(p.y-2*sigHat,0))},svg);
+      if(i===c) el('circle',{class:'contact',cx:X(p.a),cy:yy,r:4.5},svg);
+      else el('rect',{class:'extra',x:X(p.a)-4,y:yy-4,width:8,height:8},svg);
+    }
+    el('line',{class:'stopline',x1:X(probe[last].a),y1:P.t+4,x2:X(probe[last].a),y2:P.b},svg);
+    txt(mode==='stop'?'stops here':'stops 2.4° later',{class:mode==='stop'?'lab':'labr',x:X(probe[last].a)+5,y:P.t+14},svg);
+    var w=(a2-a1);
+    document.getElementById('sigHatOut').innerHTML=sigHat.toFixed(sigHat<1?2:1)+' Nm<small>'+(sigHat/TRUE_SIG).toFixed(1)+'× the true noise</small>';
+    document.getElementById('probeVerdict').textContent = mode==='stop'
+      ? 'One reading at the floor. Under this assumption, resistance could have reached it anywhere across '+w.toFixed(1)+'° of hip angle, and the band moves with the slider.'
+      : 'Two more readings above the floor. They follow the curve where it is steep, so they show how stiff the limb is and, by their scatter, how noisy the cuff is; neither depends on the slider.';
+  }
+  function setMode(m){mode=m;document.getElementById('modeStop').setAttribute('aria-pressed',m==='stop');document.getElementById('modeOver').setAttribute('aria-pressed',m==='over');drawProbe()}
+  document.getElementById('modeStop').addEventListener('click',function(){setMode('stop')});
+  document.getElementById('modeOver').addEventListener('click',function(){setMode('over')});
+  document.getElementById('reprobe').addEventListener('click',function(){makeProbe();drawProbe()});
+  var sl=document.getElementById('sigHat');
+  sl.addEventListener('input',function(){sigHat=sliderToSig(+sl.value);drawProbe()});
+  sigHat=sliderToSig(+sl.value);
+  makeProbe();drawProbe();
+
+  /* ---------- demo 2: E23 results (real numbers) ---------- */
+  var LV=[0.14,0.28,0.56,1.12,2.0,4.0];
+  var STOP=[[1.90,0.73,3.44],[2.91,1.39,4.69],[6.72,4.23,9.51],[10.01,6.93,13.50],[12.81,9.30,16.67],[17.12,13.08,21.51]];
+  var OVER=[[7.10,4.56,9.97],[5.23,2.92,7.76],[6.30,3.69,9.15],[5.97,3.62,8.72],[5.13,2.92,7.77],[4.99,2.86,7.31]];
+  var DIFF=['−5.20 pts<small>difference, p &lt; 10&#8315;&#8308;</small>','−2.32 pts<small>difference, p = 0.02</small>','+0.42 pts<small>difference, p = 0.7</small>','+4.05 pts<small>difference, p = 0.002</small>','+7.68 pts<small>difference, p &lt; 10&#8315;&#8308;</small>','+12.12 pts<small>difference, p &lt; 10&#8315;&#8308;</small>'];
+  var S2=document.getElementById('sweepSvg');
+  var Q={l:46,r:620,t:16,b:252};
+  function X2(i){return Q.l+20+i/5*(Q.r-Q.l-40)}
+  function Y2(v){return Q.b-v/25*(Q.b-Q.t)}
+  var cur=4;
+  function drawSweep(){
+    while(S2.firstChild)S2.removeChild(S2.firstChild);
+    el('rect',{class:'real',x:X2(2),y:Q.t,width:X2(5)-X2(2)+10,height:Q.b-Q.t},S2);
+    txt('realistic range: true noise to 7×',{class:'lab',x:X2(2)+6,y:Q.t+12},S2);
+    for(var v=0;v<=25;v+=5){el('line',{class:'grid',x1:Q.l,y1:Y2(v),x2:Q.r,y2:Y2(v)},S2);txt(v+'%',{class:'ax',x:Q.l-6,y:Y2(v)+3,'text-anchor':'end'},S2)}
+    el('line',{class:'target',x1:Q.l,y1:Y2(5),x2:Q.r,y2:Y2(5)},S2);
+    txt('stated 5%',{class:'lab',x:Q.r-2,y:Y2(5)-5,'text-anchor':'end'},S2);
+    LV.forEach(function(l,i){txt((l<1?l.toFixed(2):l.toFixed(l%1?2:0)).replace(/^0/,'')+'',{class:'ax',x:X2(i),y:Q.b+14,'text-anchor':'middle'},S2);
+      txt('×'+(l/0.56).toFixed(l<0.5?2:1).replace(/\.0$/,''),{class:'ax',x:X2(i),y:Q.b+26,'text-anchor':'middle'},S2)});
+    txt('assumed noise (Nm) and multiple of the true noise',{class:'axl',x:(Q.l+Q.r)/2,y:Q.b+42,'text-anchor':'middle'},S2);
+    function series(D,color,cls){
+      var up='',dn='';
+      for(var i=0;i<6;i++){up+=(i?'L':'M')+X2(i)+' '+Y2(D[i][2])}
+      for(var j=5;j>=0;j--){dn+='L'+X2(j)+' '+Y2(D[j][1])}
+      el('path',{class:'ci',d:up+dn+'Z',style:'fill:'+color},S2);
+      var d='';for(var k=0;k<6;k++){d+=(k?'L':'M')+X2(k)+' '+Y2(D[k][0])}
+      el('path',{class:'sl',d:d,style:'stroke:'+color},S2);
+      for(var m=0;m<6;m++){el('circle',{cx:X2(m),cy:Y2(D[m][0]),r:m===cur?5:3,style:'fill:'+(m===cur?color:'var(--bg)')+';stroke:'+color+';stroke-width:1.6'},S2)}
+    }
+    series(STOP,'var(--ink)');
+    series(OVER,'var(--plot-b)');
+    el('line',{class:'now',x1:X2(cur),y1:Q.t,x2:X2(cur),y2:Q.b},S2);
+    txt('stop at contact',{class:'lab',x:X2(5)-8,y:Y2(STOP[5][0])-8,'text-anchor':'end'},S2);
+    txt('overshoot 2.4°',{class:'labr',x:X2(5)-8,y:Y2(OVER[5][1])+14,'text-anchor':'end'},S2);
+    var l=LV[cur];
+    document.getElementById('lvlOut').innerHTML=(l<1?l.toFixed(2):l.toFixed(1))+' Nm<small>'+(l/0.56).toFixed(l<0.5?2:1)+'× true</small>';
+    document.getElementById('rStop').innerHTML=STOP[cur][0].toFixed(2)+' %<small>stop at contact ['+STOP[cur][1].toFixed(2)+', '+STOP[cur][2].toFixed(2)+']</small>';
+    document.getElementById('rOver').innerHTML=OVER[cur][0].toFixed(2)+' %<small>overshoot 2.4° ['+OVER[cur][1].toFixed(2)+', '+OVER[cur][2].toFixed(2)+']</small>';
+    document.getElementById('rDiff').innerHTML=DIFF[cur];
+  }
+  var lv=document.getElementById('lvl');
+  lv.addEventListener('input',function(){cur=+lv.value;drawSweep()});
+  drawSweep();
+})();
+</script>
+
+
+</div>
+</body>
+</html>

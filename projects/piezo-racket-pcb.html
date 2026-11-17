@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eleven piezo channels inside a table-tennis handle &mdash; Mu-Hua Wang</title>
+<meta name="description" content="A 6-layer, 18 x 75 mm sensing board designed to fit inside a racket handle and record 11 piezoelectric film channels. Designed and checked before fabrication; not yet built.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container">
+
+<nav>
+  <ul>
+    <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#board">Board</a></li>
+    <li><a href="#film">Film</a></li>
+    <li><a href="#checks">Checks</a></li>
+    <li><a href="#limits">Limits</a></li>
+    <li><a href="../cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<header>
+  <p class="note">Embedded sensing hardware &middot; design and pre-fabrication checks &middot; hardware design, not yet fabricated, 2026</p>
+  <h1>Eleven piezo channels inside a table-tennis handle</h1>
+  <p class="kicker">Where a ball lands on the blade, and how hard, shows up as vibration in the blade. Cabled sensors
+  may change how a racket feels, so every part of this recorder has to fit inside the handle: charge amplifiers for
+  11 film electrodes, two synchronised ADCs, an IMU, Wi-Fi and a charger, on an 18&nbsp;&times;&nbsp;75&nbsp;mm,
+  6-layer board. The design is finished and checked; the board has not been built, so nothing below is a
+  measurement.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; advisor: Jing-Chen Hong (Institute of Electrical and Control
+  Engineering, NYCU) &middot; designed with an AI coding assistant (Claude Code) under my direction</p>
+  <div class="links">
+    <a href="../assets/piezo-racket-pcb/schematic.pdf">[Schematic (PDF)]</a>
+    <a href="../index.html">[All projects]</a>
+  </div>
+</header>
+
+<hr>
+<section id="board">
+  <h2>Look through the board one copper layer at a time</h2>
+  <p>This is the real copper of the final board file, not a rendering. Drag the slider to sink from the top layer to
+  the bottom; the other layers stay faint so you can see what lies above and below. Click a dot to see what that
+  part does.</p>
+  <div class="ctrl" style="margin-bottom:18px">
+    <div class="ctrl-row">
+      <label for="lay"><b>Layer</b></label>
+      <input type="range" id="lay" min="0" max="5" step="1" value="0" aria-label="Copper layer, top to bottom">
+      <div class="readout" id="layv" style="min-width:0"><small>showing</small>&ndash;</div>
+    </div>
+    <div class="tw" style="margin:12px 0 6px"><svg id="pcb" viewBox="-1 -1 77 25" width="100%" style="min-width:620px" role="img" aria-label="The 18 by 75 millimetre board seen from the top, turned on its side, with the selected copper layer drawn dark and the other five faint"></svg></div>
+    <p class="cap" id="layw">Loading the board&hellip;</p>
+    <p class="cap" id="partv"><b>Part:</b> click a dot.</p>
+  </div>
+  <p class="cap">Copper exported with KiCad from <code>racket_mainboard_v2.kicad_pcb</code> (SHA-256 begins 4EF31612, 2026-11-08),
+  turned so the blade end is on the left and the USB-C end on the right. Bottom-side parts are drawn as hollow dots.</p>
+
+  <div class="stats">
+    <div><span class="big">18 &times; 75 mm</span><h3>Board</h3><p>6 layers, 0.8 mm thick</p></div>
+    <div><span class="big">11</span><h3>Analog channels</h3><p>charge amplifiers (OPA4376 &times; 3)</p></div>
+    <div><span class="big">2 &times; 8 ch</span><h3>ADCs</h3><p>ADS131M08, 24-bit words, shared 8.192 MHz clock</p></div>
+    <div><span class="big">235</span><h3>Parts</h3><p>199 placed by the assembler, 52 kinds</p></div>
+  </div>
+</section>
+
+<hr>
+<section id="film">
+  <h2>Ten strips on two films should place a hit without a sensor at every spot</h2>
+  <p>The forehand film carries five horizontal strips (R1&ndash;R5) and the backhand film five vertical ones
+  (C1&ndash;C5). A ball that lands where an R strip and a C strip cross should excite that pair more than the rest, so
+  ten channels can name a grid of places. Checking the drawing for this page turned up a flaw: the label says 25
+  crossings, but at the rounded corners three pairs (R1&times;C5, R5&times;C1, R5&times;C5) do not overlap at all, so
+  only 22 of the 25 pairs actually cross. Click anywhere on the blade to see which pair would answer.</p>
+  <div class="ctrl" style="margin-bottom:18px">
+    <div class="ctrl-row">
+      <div class="readout" id="filmv" style="min-width:0"><small>nearest pair</small>click the blade</div>
+    </div>
+    <div style="max-width:420px;margin:10px auto 0"><svg id="blade" viewBox="-82 -86 164 182" width="100%" role="img" aria-label="Racket blade outline with five horizontal front strips and five vertical back strips; the strip pair nearest the clicked point is highlighted"></svg></div>
+    <p class="cap">Strip outlines computed by the film-drawing script; blade outline |x/75|<sup>2.3</sup> +
+    |y/78.5|<sup>2.3</sup> = 1 (mm); strips 20&nbsp;mm wide on a 26&nbsp;mm pitch. Grey: front strips. Red: back
+    strips. This shows the intended read-out, <b>not a recorded hit</b>; the eleventh channel is a small film on the
+    handle.</p>
+  </div>
+</section>
+
+<hr>
+<section id="checks">
+  <h2>A simulation found a mistake 50 times the noise floor before anything was ordered</h2>
+  <p>Without hardware, the only way to find mistakes is to check the design in ways that do not share its
+  assumptions. Two loop-back paths (an LED timing signal and an IMU interrupt fed back into spare ADC channels) were
+  pushing a small direct current into the reference voltage that all eleven amplifiers share.</p>
+  <div class="box mark">
+    <p>The board-level simulation showed an error of about <b>1.2&nbsp;mV</b> at the differential input (with the
+    film shield in place), <b>50&times; the ADC noise</b>. Nothing in the rule checks flags this, because the circuit
+    is wired exactly as drawn. The LED loop-back resistors were reconnected to ground and the IMU loop-back resistor
+    was left unfitted; the copper change touched only the ground and reference nets.</p>
+  </div>
+
+  <p>The other results, including the ones that did not pass:</p>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Check (simulated unless noted)</th><th>Result</th><th>Line it must clear</th><th></th></tr></thead>
+      <tbody>
+        <tr><td>Input noise</td><td class="n">1.15 &micro;Vrms front end, 21.3 &micro;Vrms ADC</td><td>ADC should dominate</td><td><span class="tag">pass</span></td></tr>
+        <tr><td>Worst digital crosstalk into an input<span class="sub">assumed stack-up; with the factory&rsquo;s stack-ups 8.1 and 6.7 &micro;V</span></td><td class="n">9.3 &micro;V</td><td>below 21.3 &micro;V ADC noise</td><td><span class="tag">pass</span></td></tr>
+        <tr><td>Reference buffer phase margin</td><td class="n">62&deg; (56&ndash;71&deg;)</td><td>&ge; 45&deg;</td><td><span class="tag">pass</span></td></tr>
+        <tr><td>Amplifier phase margin, 220 &Omega; input resistor<span class="sub">same amplifier without it: &minus;33 to 27&deg;, it oscillates</span></td><td class="n">54&ndash;76&deg;</td><td>&ge; 45&deg;</td><td><span class="tag">pass</span></td></tr>
+        <tr><td>On-board radiated emission estimate<span class="sub">board traces only; not a whole-device test</span></td><td class="n">margin +20.9 to +25.0 dB</td><td>FCC Part 15 Class B, 3 m (reference only)</td><td><span class="tag">estimate only</span></td></tr>
+        <tr><td>Channel-to-channel delay from &plusmn;5% capacitors</td><td class="n">1.87 &micro;s</td><td>&le; 1 &micro;s</td><td><span class="tag hit">fail &rarr; calibrate</span></td></tr>
+        <tr><td>Board temperature inside the handle (3D model), charging over USB with Wi-Fi on (30 &deg;C room)</td><td class="n">about 80&ndash;100 &deg;C</td><td>most parts 85 &deg;C</td><td><span class="tag hit">fail &rarr; firmware forbids it</span></td></tr>
+        <tr><td>32 kS/s per channel with the stock ESP-IDF SPI driver<span class="sub">from vendor documentation, not simulated</span></td><td class="n">not reachable</td><td>one read every 31.25 &micro;s</td><td><span class="tag hit">fail &rarr; own driver or 16 kS/s</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="cap">Sources: board simulation report (2026-11-06, updated 2026-11-08) and ESP32 timing budget (2026-11-07).
+  The delay failure is why every channel has a small charge-injection capacitor: one pulse into all eleven
+  inputs measures the board-side part of each channel&rsquo;s delay so it can be corrected.</p>
+</section>
+
+<hr>
+<section>
+  <h2>The checker that reads the factory files was itself broken on purpose</h2>
+  <p>Under the project&rsquo;s rule set, KiCad&rsquo;s design-rule and schematic-parity checks report 0 violations,
+  0 unconnected items and 0 mismatches. But those checks run inside the same tool that drew the board. So a separate
+  program reads only the files the factory receives (copper, solder-mask and outline layers and the drill file),
+  rebuilds which pad connects to which from copper and drill, and compares that with the schematic: 150 nets and 701
+  pads, 0 opens, 0 shorts. A checker that never fails proves little, so it was given eight copies of the board, each
+  damaged in one way. Its first version missed one of them, a gap only slightly too narrow, because it had no
+  pass/fail threshold; it was rewritten and then caught all eight.</p>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Damage planted in the Gerber files</th><th>Caught</th></tr></thead>
+      <tbody>
+        <tr><td>Deleted a trace segment on a USB data line</td><td><span class="tag hit">yes</span></td></tr>
+        <tr><td>Added a sliver of copper shorting two nets on an inner layer</td><td><span class="tag hit">yes</span></td></tr>
+        <tr><td>Deleted a drill hole, so a via no longer joins its layers</td><td><span class="tag hit">yes</span></td></tr>
+        <tr><td>Removed the pad from a via that still carries copper</td><td><span class="tag hit">yes</span></td></tr>
+        <tr><td>Narrowed the gap between two nets below the board&rsquo;s own spacing rule (three copies, three different gaps)</td><td><span class="tag hit">yes</span></td></tr>
+        <tr><td>Left a pad without its solder-mask opening</td><td><span class="tag hit">yes</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="cap">8 of 8 damaged copies flagged (2026-11-08). The same checker re-run on the final factory files on
+  2026-11-18 passed every rule.</p>
+</section>
+
+<hr>
+<section>
+  <h2>I set the goals and the trade-offs; an AI assistant did most of the calculation, code and routing</h2>
+  <p>I decided what the board must do and every trade-off that followed: all electronics inside the handle, both
+  players&rsquo; rackets recorded, a spare ADC channel for an LED timing loop-back so the data can be lined up with a
+  camera, a single ground, a longer board and six layers instead of four. Claude Code wrote the 117 scripts
+  (12,959 non-blank lines) that generate the schematic, place and route the board, run the simulations and check the
+  output, and drafted the calculations and reports. My part of the checking was to ask for the kind of
+  pre-fabrication review a board house would expect, to ask for independent ways to test the answers, and to decide
+  which results to trust.</p>
+</section>
+
+<hr>
+<section id="limits">
+  <h2>Where this stops</h2>
+  <p class="against"><b>Scope:</b> design, simulation and file checks only. No board has been made, powered or
+  tested, and no hit has been recorded, so the film read-out above is the intended design, not a result. The
+  simulations use estimated film properties. In the thermal model the board overheats if charged with Wi-Fi on; the
+  design relies on a firmware rule to prevent it. 32 kS/s per channel needs a driver that does not exist yet. The emission figure covers board traces
+  only. ERC still lists 3 warnings of one kind (bidirectional pins tied to a power-output flag on the IMU).</p>
+</section>
+
+<footer>
+  <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang &middot;
+  <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
+</footer>
+
+</div>
+<script>
+(function () {
+  var NS = 'http://www.w3.org/2000/svg', A = '../assets/piezo-racket-pcb/';
+  function css(n) { return getComputedStyle(document.documentElement).getPropertyValue(n).trim(); }
+  function el(p, tag, at) { var e = document.createElementNS(NS, tag); for (var k in at) e.setAttribute(k, at[k]); p.appendChild(e); return e; }
+  function $(id) { return document.getElementById(id); }
+
+  /* ---------- board explorer ---------- */
+  var B = null, groups = [], dots = [], sel = -1;
+  var pcb = $('pcb'), lay = $('lay');
+  function paintBoard() {
+    if (!B) return;
+    var k = +lay.value, ink = css('--ink'), red = css('--plot-b'), faint = css('--ink-3');
+    groups.forEach(function (g, i) {
+      g.style.color = i === k ? ink : faint;
+      g.setAttribute('opacity', i === k ? 1 : 0.13);
+      if (i === k) pcb.appendChild(g);
+    });
+    var side = k < 3 ? 'F' : 'B';
+    dots.forEach(function (d, i) {
+      pcb.appendChild(d);
+      var p = B.parts[i], on = p.side === side;
+      d.setAttribute('stroke', red);
+      d.setAttribute('fill', i === sel ? red : (p.side === 'F' ? red : css('--bg')));
+      d.setAttribute('fill-opacity', i === sel ? 1 : (p.side === 'F' ? 0.75 : 1));
+      d.setAttribute('opacity', on || i === sel ? 1 : 0.45);
+    });
+    var L = B.layers[k];
+    $('layv').innerHTML = '<small>showing</small>' + L.title;
+    $('layw').innerHTML = '<b>' + L.title + ':</b> ' + L.what;
+  }
+  function pickPart(i) {
+    sel = i; var p = B.parts[i];
+    $('partv').innerHTML = '<b>' + p.ref + '</b> (' + (p.side === 'F' ? 'top' : 'bottom') + ' side): ' + p.label;
+    paintBoard();
+  }
+  lay.addEventListener('input', paintBoard);
+  fetch(A + 'board.json').then(function (r) { return r.json(); }).then(function (d) {
+    B = d;
+    /* rotate: board x (0..18, left to right) and y (0..75, blade to butt) -> screen X = y, Y = 18 - x */
+    d.layers.forEach(function (L) {
+      var g = document.createElementNS(NS, 'g');
+      g.setAttribute('transform', 'matrix(0,-1,1,0,0,' + d.w + ')');
+      g.innerHTML = L.svg;
+      pcb.appendChild(g); groups.push(g);
+    });
+    el(pcb, 'text', {x: 0, y: 21.6, 'font-size': 1.8, 'font-family': 'Helvetica, Arial, sans-serif', fill: css('--ink-3')}).textContent = 'blade end';
+    var t2 = el(pcb, 'text', {x: 75, y: 21.6, 'font-size': 1.8, 'text-anchor': 'end', 'font-family': 'Helvetica, Arial, sans-serif', fill: css('--ink-3')});
+    t2.textContent = 'USB-C end';
+    el(pcb, 'path', {d: 'M32.5 20.6 h10 M32.5 20 v1.2 M42.5 20 v1.2', stroke: css('--ink-3'), 'stroke-width': 0.15, fill: 'none'});
+    var t3 = el(pcb, 'text', {x: 37.5, y: 23.2, 'font-size': 1.6, 'text-anchor': 'middle', 'font-family': 'Helvetica, Arial, sans-serif', fill: css('--ink-3')});
+    t3.textContent = '10 mm';
+    d.parts.forEach(function (p, i) {
+      var c = el(pcb, 'circle', {cx: p.y, cy: d.w - p.x, r: 0.9, 'stroke-width': 0.3, tabindex: 0, role: 'button', 'aria-label': p.ref + ': ' + p.label});
+      c.style.cursor = 'pointer';
+      c.addEventListener('click', function () { pickPart(i); });
+      c.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pickPart(i); } });
+      dots.push(c);
+    });
+    paintBoard();
+  }).catch(function () { $('layw').textContent = 'The board data could not be loaded.'; });
+
+  /* ---------- film strips ---------- */
+  var N = 2.3, AX = 75, BY = 78.5, blade = $('blade'), pick = null;
+  /* strip outlines [x0, x1, y0, y1] in mm (x right, y toward the blade tip), from gen_drawings_v2.py */
+  var RS = [[-46.42, 31.92, 42, 62], [-65.98, 57.75, 16, 36], [-71.7, 64.36, -10, 10], [-65.98, 57.75, -36, -16], [-46.42, 31.92, -62, -42]];
+  var CS = [[-62, -42, -24.33, 44.14], [-36, -16, -59.84, 68.4], [-10, 10, -67.79, 75.15], [16, 36, -59.84, 68.4], [42, 62, -24.33, 44.14]];
+  function overlap(r, c) { return Math.min(r[1], c[1]) > Math.max(r[0], c[0]) && Math.min(r[3], c[3]) > Math.max(r[2], c[2]); }
+  function dist(s, x, y) { var dx = Math.max(s[0] - x, 0, x - s[1]), dy = Math.max(s[2] - y, 0, y - s[3]); return Math.hypot(dx, dy) + Math.abs(y - (s[2] + s[3]) / 2) * 1e-3 + Math.abs(x - (s[0] + s[1]) / 2) * 1e-3; }
+  function drawFilm() {
+    blade.innerHTML = '';
+    var ink = css('--plot-a'), red = css('--plot-b'), g3 = css('--ink-3');
+    var pts = [];
+    for (var s = 0; s <= 360; s += 3) {
+      var t = s * Math.PI / 180, c = Math.cos(t), sn = Math.sin(t);
+      pts.push((AX * Math.sign(c) * Math.pow(Math.abs(c), 2 / N)).toFixed(2) + ',' + (-BY * Math.sign(sn) * Math.pow(Math.abs(sn), 2 / N)).toFixed(2));
+    }
+    el(blade, 'polygon', {points: pts.join(' '), fill: 'none', stroke: g3, 'stroke-width': 0.8});
+    el(blade, 'rect', {x: -12, y: 79, width: 24, height: 16, fill: 'none', stroke: g3, 'stroke-width': 0.8});
+    RS.forEach(function (s, i) {           /* y up -> screen y = -y */
+      var on = pick && pick[0] === i;
+      el(blade, 'rect', {x: s[0], y: -s[3], width: s[1] - s[0], height: s[3] - s[2], fill: ink, 'fill-opacity': on ? 0.55 : 0.16});
+      el(blade, 'text', {x: s[0] + 3, y: -(s[2] + s[3]) / 2 + 2, 'font-size': 6, 'font-family': 'Helvetica, Arial, sans-serif', fill: ink}).textContent = 'R' + (i + 1);
+    });
+    CS.forEach(function (s, j) {
+      var on = pick && pick[1] === j;
+      el(blade, 'rect', {x: s[0], y: -s[3], width: s[1] - s[0], height: s[3] - s[2], fill: red, 'fill-opacity': on ? 0.55 : 0.14});
+      el(blade, 'text', {x: (s[0] + s[1]) / 2, y: -s[3] + 7, 'font-size': 6, 'text-anchor': 'middle', 'font-family': 'Helvetica, Arial, sans-serif', fill: red}).textContent = 'C' + (j + 1);
+    });
+    if (pick) el(blade, 'circle', {cx: pick[2], cy: -pick[3], r: 3.2, fill: css('--bg'), stroke: ink, 'stroke-width': 1.2});
+  }
+  blade.addEventListener('click', function (e) {
+    var r = blade.getBoundingClientRect(), vb = blade.viewBox.baseVal;
+    var x = vb.x + (e.clientX - r.left) / r.width * vb.width, y = -(vb.y + (e.clientY - r.top) / r.height * vb.height);
+    if (Math.pow(Math.abs(x / AX), N) + Math.pow(Math.abs(y / BY), N) > 1) return;
+    var i = 0, j = 0;
+    RS.forEach(function (s, k) { if (dist(s, x, y) < dist(RS[i], x, y)) i = k; });
+    CS.forEach(function (s, k) { if (dist(s, x, y) < dist(CS[j], x, y)) j = k; });
+    pick = [i, j, x, y];
+    $('filmv').innerHTML = '<small>nearest pair</small>R' + (i + 1) + ' &times; C' + (j + 1) +
+      (overlap(RS[i], CS[j]) ? '' : ' <span class="tag">these two do not overlap</span>');
+    drawFilm();
+  });
+  blade.style.cursor = 'crosshair';
+
+  function all() { paintBoard(); drawFilm(); }
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', all);
+  new MutationObserver(all).observe(document.documentElement, {attributes: true, attributeFilter: ['data-theme']});
+  drawFilm();
+})();
+</script>
+</body>
+</html>

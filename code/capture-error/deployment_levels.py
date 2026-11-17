@@ -25,8 +25,8 @@ import glob, os, re, numpy as np, pandas as pd
 import scone_ident as si
 
 import os as _os
-_FROZEN = r'C:\Users\maurice\Desktop\stroke_scone\results_frozen'
-RES = _FROZEN if _os.path.isdir(_FROZEN) else r'C:\Users\maurice\Documents\SCONE\results'
+_FROZEN = r'E:\MocapError_capture-error-tolerance_JBiomech_2026\01_PROJECT_stroke_scone\results_frozen'
+RES = _FROZEN if _os.path.isdir(_FROZEN) else r'E:\MocapError_capture-error-tolerance_JBiomech_2026\02_DATA_scone_results'
 M = si.MECHS
 BW = 9.81 * 70.0   # approximate body weight (N) for normalising GRF; H0914 ~70 kg
 

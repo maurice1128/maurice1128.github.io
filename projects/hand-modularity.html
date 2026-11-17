@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Learned In-Betweeners Make Simulated Dexterous Hands Learn Faster &mdash; Mu-Hua Wang</title>
-<meta name="description" content="MotionBricks builds motion from reusable parts. Both of its layers tested on simulated dexterous hands, with the main comparisons registered before the runs. Keyframes joined by a learned in-betweener learn faster than a continuous latent at the same decision rate, and selecting the best policy for each stage improves skill chaining; training skills separately does not.">
+<meta name="description" content="Both layers of a modular motion model tested on simulated dexterous hands, with the main comparisons registered before the runs. Keyframes joined by a learned in-betweener learn faster than a continuous latent at the same decision rate; selecting the best policy for each stage raises multistage success, while training the skills separately does not.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -14,106 +14,120 @@
 <nav>
   <ul>
     <li class="back"><a href="../index.html">&larr; Home</a></li>
-    <li><a href="#lead">Faster</a></li>
+    <li><a href="#faster">Faster</a></li>
     <li><a href="#layers">Both layers</a></li>
-    <li><a href="#selection">Better</a></li>
+    <li><a href="#selection">Selection</a></li>
     <li><a href="#conditions">When it pays</a></li>
+    <li><a href="#limits">Limits</a></li>
     <li><a href="../cv.html">CV</a></li>
   </ul>
 </nav>
 
 <header>
-  <p class="note">Dexterous manipulation &middot; simulation &middot; pre-registered comparisons
-  &middot; manuscript prepared for IEEE Robotics and Automation Letters (not yet submitted)</p>
+  <p class="note">Dexterous manipulation &middot; simulation &middot; registered comparisons
+  &middot; submitted to IEEE Robotics and Automation Letters (manuscript 26-6874)</p>
   <h1>Learned in-betweeners make simulated dexterous hands learn faster</h1>
-  <p class="kicker">MotionBricks builds motion from reusable parts. We tested both of its layers on
-  simulated dexterous hands, registering the main comparisons before running them. Keyframes joined
-  by a learned in-betweener lead a continuous latent that decides at the same rate and reach the
-  training plateau sooner; straight-line keyframes and fixed primitives do not. At the skill level,
-  choosing the best policy for each stage completes more episodes; training the skills separately
-  does not. The gains come from a learned in-betweener and from per-stage selection, not from training the skills separately.</p>
+  <p class="kicker">Modular motion models such as MotionBricks build motion from reusable parts, but
+  earlier work changed the prior, the decision rate, the data and the training procedure at once. We
+  tested each of MotionBricks&rsquo; two layers on simulated dexterous hands, changing one thing at a
+  time and registering the main comparisons before running them. Keyframes joined by a learned
+  in-betweener lead a continuous latent that decides at the same rate (0.59 against 0.22 on
+  held-out skill sequences at 1.5&nbsp;M frames) and reach the training plateau sooner; at
+  5&nbsp;M frames the data do not separate the two. At the skill level, choosing the best policy
+  for each stage completes more episodes (97 against 61 of 400); training the skills separately
+  does not (45).</p>
   <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; National Yang Ming Chiao Tung
   University &middot; sole author</p>
   <div class="links">
-    <a href="../assets/papers/hand_modularity_faster_not_better.pdf">[Paper (PDF)]</a>
+    <a href="../assets/hand-modularity/paper.pdf">[Paper (PDF)]</a>
     <a href="../index.html">[All projects]</a>
   </div>
-  <p class="note">Everything shown is in simulation. Code and the full pre-registration log follow on
-  acceptance.</p>
+  <p class="note">Everything shown is in simulation. The PDF is the version submitted to RA-L, with
+  the author named. Code and the full registration log will be posted after the review decision.</p>
 </header>
 
 <hr>
 <section>
   <figure class="fig wide">
-    <video src="../assets/hand-modularity/arms.mp4" poster="../assets/hand-modularity/arms_poster.jpg"
+    <video src="../assets/hand-modularity/lead.mp4" poster="../assets/hand-modularity/lead_poster.jpg"
            autoplay muted loop playsinline controls preload="metadata"
            aria-label="Three policies on the same test start, left to right A, B, C: grasp the ball, carry it to a target, carry it to a second target."></video>
     <p class="cap">Same start, three ways to run grasp &rarr; carry &rarr; carry again (left to
     right: A, B, C). <b>B</b>, the best flat policy for each stage, finishes all three stages in
-    3.3&nbsp;s. <b>A</b>, one flat policy for every stage, grasps the ball but never delivers it
-    before the 14&nbsp;s limit; <b>C</b>, separately trained skills, never completes the grasp.
-    This is one test episode, the first on which B finished all three stages, <b>not a
-    statistic</b>: B did so in 47 of 400 test episodes. The counts are below.</p>
+    3.3&nbsp;s. <b>A</b>, one flat policy for every stage, grasps the ball but never delivers it;
+    <b>C</b>, separately trained skills, never completes the grasp. This is one test episode, the
+    first on which B finished all three stages, <b>not a statistic</b>: B did so in 47 of 400 test
+    episodes. The counts are below.</p>
   </figure>
 </section>
 
 <hr>
-<section id="lead">
-  <h2>A learned in-betweener learns faster</h2>
+<section id="faster">
+  <h2>A learned in-betweener learns faster, and the lead is early</h2>
   <p>Each hand-motion prior became the action space of a PPO policy on a simulated Shadow Hand
-  holding a cube under changing tilts. Policies trained on two-skill sequences and were scored on
-  three-skill sequences they never saw. Over the first 2.5&nbsp;M frames the keyframe interface&rsquo;s
-  mean training success was <b>0.39</b>, against 0.25 for plain PPO and 0.27 for the continuous
-  latent (10 seeds each, exact two-sided Mann&ndash;Whitney p&nbsp;=&nbsp;1.1&times;10<sup>&minus;5</sup> for both, post hoc). The latent also
-  takes one decision every 16 frames, so the difference is not the decision rate.</p>
+  holding a 5&nbsp;cm, 0.20&nbsp;kg cube under a 1.5&nbsp;g lateral acceleration, every prior
+  deciding once every 16 frames. Policies trained on two-skill sequences and were scored on
+  three-skill sequences they never saw. At 1.5&nbsp;M frames the keyframe interface succeeded on
+  <b>0.59</b> of held-out sequences against the continuous latent&rsquo;s 0.22 (20 seeds;
+  difference +0.38, 95&nbsp;% CI 0.23 to 0.52; higher in 17 of 20 seeds; registered). Over the
+  first 2.5&nbsp;M frames its mean training success was 0.39, against 0.25 for plain PPO and 0.27
+  for the latent (10 seeds each; higher in every seed pair, exact two-sided Mann&ndash;Whitney
+  p&nbsp;=&nbsp;1.1&nbsp;&times;&nbsp;10<sup>&minus;5</sup> for both, post hoc). Because the latent
+  also decides once every 16 frames, the difference is not the decision rate.</p>
+
+  <div class="stats">
+    <div><span class="big">0.59</span><h3>vs 0.22</h3><p>held-out success at 1.5&nbsp;M frames, keyframe vs continuous latent, 20 seeds</p></div>
+    <div><span class="big">17 / 20</span><h3>seeds</h3><p>in which the keyframe interface led (registered)</p></div>
+    <div><span class="big">0.44</span><h3>vs 0.49</h3><p>at 5&nbsp;M frames, 10 seeds: inconclusive (difference &minus;0.04, 95&nbsp;% CI &minus;0.22 to 0.13)</p></div>
+  </div>
 
   <figure class="fig">
-    <img src="../assets/hand-modularity/learning_curve.png"
-         alt="Success against training frames for the keyframe interface, the continuous latent and plain PPO. The keyframe interface rises first; the other two catch up on the training sequences by about 2.5 to 5 million frames.">
-    <p class="cap">Lines: success on the training sequences, mean and standard error over 10 seeds.
-    Dots: success on the held-out sequences for the same 10 seeds at 1.5&nbsp;M and 5&nbsp;M frames.
-    At 1.5&nbsp;M frames the keyframe interface won on held-out sequences in <b>17 of 20 seeds</b>
-    (0.59 against 0.22, declared; difference +0.38, 95&nbsp;% CI 0.23 to 0.52). At 5&nbsp;M frames the
-    data do not separate it from the continuous latent on held-out sequences (0.44 against 0.49,
-    inconclusive); it stays above plain PPO (0.44 against 0.22), which also decides every frame. On
-    the training sequences the three end within 0.07 of each other.</p>
+    <img src="../assets/hand-modularity/fig1_learning_curve.png"
+         alt="Success against training frames for the keyframe interface, the continuous latent and plain PPO. The keyframe interface rises first; the other two catch up on the training sequences later.">
+    <p class="cap">Lines: success on the training sequences, mean and standard error over 10 seeds;
+    the keyframe interface reaches its plateau of 0.69 by 2&nbsp;M frames. Dots: success on the
+    held-out sequences for the same seeds. At 5&nbsp;M frames the data do not separate the keyframe
+    interface from the continuous latent on held-out sequences (0.44 against 0.49, inconclusive); it
+    stays above plain PPO (0.44 against 0.22), which also changes the decision rate, since plain PPO
+    decides every frame. On the training sequences the three end within 0.07 of each other.</p>
   </figure>
 
   <figure class="fig">
     <video src="../assets/hand-modularity/cube.mp4" poster="../assets/hand-modularity/cube_poster.jpg"
            autoplay muted loop playsinline controls preload="metadata"
-           aria-label="Left, keyframe interface; right, continuous latent. Same held-out sequence at 1.5 million frames."></video>
+           aria-label="Left, keyframe interface; right, continuous latent. Same held-out sequence at 1.5 million frames; the latent drops the cube during the first hold."></video>
     <p class="cap">At 1.5&nbsp;M frames, on a held-out sequence (hold under a y tilt, hold under an
     x tilt, release). Left, the keyframe interface holds both tilts and releases; right, the
-    continuous latent loses the cube at 1.8&nbsp;s, during the first hold, <b>which also appears in
-    training</b>. RL seed 13, whose success is closest to the 20-seed means; the episode is the
-    first evaluation episode (of 100) in which the keyframe policy succeeds and the latent fails.
-    Real time.</p>
+    continuous latent loses the cube during the first hold. RL seed 13, whose success is closest to
+    the 20-seed means; the episode is the first evaluation episode (of 100) in which the keyframe
+    policy succeeds and the latent fails, <b>not a statistic</b>. Real time.</p>
   </figure>
 
-  <p class="note">On three other objects (a heavier cube, a sphere and a cylinder) the lead was
-  smaller and not significant (pooled test, p&nbsp;=&nbsp;0.067).</p>
+  <p class="note">On three other objects (a heavier cube, a sphere and a cylinder) the early lead
+  was smaller and not significant (pooled test, p&nbsp;=&nbsp;0.067).</p>
 </section>
 
 <hr>
 <section id="layers">
-  <h2>Both of MotionBricks&rsquo; layers, tested</h2>
+  <h2>The gain belongs to the learned in-betweener, and a loose success rule lets a skill cheat</h2>
   <div class="figrow">
     <div class="box">
       <p class="note" style="margin-bottom:6px">Motion level &middot; poses joined by a learned
       in-betweener</p>
       <h3>Faster</h3>
-      <p>The same target poses joined by straight lines never learned to release, so on this
-      task the learned in-betweener, not the keyframes alone, carries the gain. Not every modular action
-      space helps: a bank of fixed primitives is the weakest prior.</p>
+      <p>The same target poses joined by straight lines never learned to release (0 of 10 seeds), so
+      on this task the learned in-betweener, not the keyframes alone, carries the gain. Not every
+      modular action space helps: a bank of 16 fixed primitives is the weakest learned prior
+      (0.08).</p>
     </div>
     <div class="box">
       <p class="note" style="margin-bottom:6px">Skill level &middot; units that act, chained</p>
       <h3>Selection, not separate training</h3>
-      <p>Adroit relocate, extended into grasp then carry, with the 25 human demonstrations of D4RL
-      and behaviour cloning; PPO from scratch never completed a carry. A stage counts as done only
-      after its goal has held for 25 consecutive steps: with a one-step criterion, a carry skill
-      learned to fling the ball through the target (video).</p>
+      <p>Adroit relocate, extended into grasp the ball, then carry it to a target in the air once
+      or twice, with behaviour cloning from the 25 human demonstrations of D4RL; PPO from scratch
+      never completed a carry. A stage counts as done only after its goal has held for 25
+      consecutive steps: with a one-step criterion, a carry skill learned to fling the ball through
+      the target (video).</p>
     </div>
   </div>
 
@@ -124,24 +138,26 @@
            aria-label="A carry skill throws the ball through the target and is counted as a success."></video>
     <p class="cap"><b>The fling</b>, shown at quarter speed. Under a one-step success criterion, a
     PPO carry skill learned to <b>throw</b> the ball through the target, at 3.0 to 5.4&nbsp;m/s at
-    the counted step in these three episodes (median 3.7&nbsp;m/s over all episodes), and each throw
-    counted as a success. After the counted step the hand is driven to its neutral pose so the
-    ball&rsquo;s path stays visible. This policy predates the strict 25-step criterion and is used
-    in <b>no reported result</b>.</p>
+    the counted step in these three episodes (median 3.7&nbsp;m/s over all episodes), leaving an end
+    state the next skill cannot start from. After the counted step the hand is driven to its
+    neutral pose so the ball&rsquo;s path stays visible. This policy predates the 25-step criterion
+    and is used in <b>no reported result</b>; not a statistic.</p>
   </figure>
 </section>
 
 <hr>
 <section id="selection">
-  <h2>Per-stage selection, not separate training</h2>
-  <p>A pre-registered test on fresh seeds, with 20 trainings per side and 400 test episodes never
-  used for any choice. <b>A</b> is the best of 20 flat policies, used for every stage. <b>B</b> uses
-  the same 20 flat policies, the best grasper for the grasp and the best carrier for every carry.
-  <b>C</b> trains 10 grasp skills and 10 carry skills separately and chains the best of each.</p>
+  <h2>Selecting the best policy for each stage helps; training skills separately does not</h2>
+  <p>A registered test on fresh seeds, with 20 trainings per side
+  and 400 test episodes never used for any choice. <b>A</b> is the best of 20 flat policies, used
+  for every stage. <b>B</b> uses the same 20 flat policies, the best grasper for the grasp and the
+  best carrier for every carry. <b>C</b> trains 10 grasp skills and 10 carry skills separately and
+  chains the best of each. A against B changes only the selection; B against C changes only the
+  training.</p>
 
   <div class="tw">
     <table>
-      <thead><tr><th>Arm</th><th>Grasp, then carry</th><th>Grasp, carry, carry again</th></tr></thead>
+      <thead><tr><th>Variant</th><th>Grasp, then carry</th><th>Grasp, carry, carry again</th></tr></thead>
       <tbody>
         <tr><td>A &middot; best flat policy, every stage</td>
             <td class="n">61 / 400</td><td class="n">12 / 400</td></tr>
@@ -153,64 +169,79 @@
     </table>
   </div>
   <p class="note" style="margin-top:.6rem">Episodes that completed every stage, of the 400 test
-  episodes.</p>
+  episodes. Fisher&rsquo;s exact test against A: B, p&nbsp;=&nbsp;0.002 (two stages) and
+  p&nbsp;&lt;&nbsp;10<sup>&minus;5</sup> (three stages); C, p&nbsp;=&nbsp;0.12 and
+  p&nbsp;=&nbsp;0.23. The selection pipeline ran once.</p>
 
   <div class="box mark" style="margin-top:1.2rem">
-    <p>Our declared prediction, <b>C above A, failed in the wrong direction</b>
-    (p&nbsp;=&nbsp;0.12), and so did the prediction that C would match B. Per stage, C lost at the
-    grasp (0.57 against A&rsquo;s 0.77), while its carry after a grasp matched A&rsquo;s (0.20). B
-    won through the carry: its carrier completed 0.34 of carries after a grasp, against A&rsquo;s
-    0.20. B beat A at two stages (p&nbsp;=&nbsp;0.002) and nearly quadrupled it at three
-    (p&nbsp;&lt;&nbsp;10<sup>&minus;5</sup>).</p>
-    <p><b>The benefit belongs to modular deployment, not modular training.</b></p>
+    <p>Our registered prediction, that separately trained skills beat the best flat policy,
+    <b>failed</b> (45 against 61, p&nbsp;=&nbsp;0.12), and separate training lost to per-stage
+    selection (45 against 97, p&nbsp;&lt;&nbsp;10<sup>&minus;5</sup>). Per stage, C lost at the grasp
+    (0.57 against A&rsquo;s 0.77). B won through the carry: its carrier completed 0.34 of carries
+    after a grasp, against A&rsquo;s 0.20.</p>
+    <p><b>In this run, the gain comes from per-stage selection, not from training the skills
+    separately.</b></p>
   </div>
 
   <figure class="fig">
-    <img src="../assets/hand-modularity/selection_pools.png"
+    <img src="../assets/hand-modularity/fig4_selection_pools.png"
          alt="Histogram over all 184,756 pools of 10 flat policies: per-stage selection (B) lies mostly above whole-policy selection (A), and almost always above separately trained skills (C, dashed line).">
-    <p class="cap"><b>Not a matter of pool size.</b> B chose from 20 policies per stage and C from 10.
-    A post hoc check, written down before it ran, repeated B&rsquo;s choice on every pool of 10 flat
-    policies (184&nbsp;756 of them), scoring each by the product of per-stage test rates. Per-stage
-    selection beat separate training in <b>99&nbsp;%</b> of pools (mean 0.23 against 0.10), and in
-    96&nbsp;% of 10&nbsp;000 redrawn pools; it beat whole-policy selection in 82&nbsp;%.</p>
+    <p class="cap"><b>Not a matter of pool size.</b> B chose from 20 policies per stage and C from
+    10. A post hoc check, whose analysis plan was fixed before it ran, repeated B&rsquo;s choice on
+    every pool of 10 flat policies (184&nbsp;756 of them), scoring each by the product of per-stage
+    test rates. Per-stage selection beat separate training in <b>99&nbsp;%</b> of pools (mean 0.23
+    against 0.10), and in 96&nbsp;% of 10&nbsp;000 redrawn pools; it beat whole-policy selection in
+    82&nbsp;%. The pools are subsets of the same 20 policies scored on the same test episodes, so
+    this shows the result does not hinge on pool size, <b>not that it replicates</b>.</p>
   </figure>
 </section>
 
 <hr>
 <section id="conditions">
-  <h2>When separately trained modules would pay</h2>
+  <h2>When separately trained modules would pay: four hypotheses, and neither task meets the last</h2>
   <p>A chain of modules succeeds with probability &prod;&nbsp;P(module&nbsp;<i>i</i> | end states of
-  module&nbsp;<i>i</i>&minus;1), so the cost of separate modules sits at the hand-offs. We formulated
-  four conditions during the study and offer them as hypotheses. MotionBricks, in animation,
-  plausibly meets all four; neither dexterous task meets the last.</p>
+  module&nbsp;<i>i</i>&minus;1), so the cost of separate modules sits at the hand-offs. We
+  formulated four conditions during the study and offer them as hypotheses, not results.
+  MotionBricks, in animation, plausibly meets all four.</p>
   <div class="tw">
     <table>
       <thead><tr><th>Condition</th><th>Motion level</th><th>Skill level</th></tr></thead>
       <tbody>
         <tr><td>Solution lies inside the modules</td>
-            <td><b>partly</b> &mdash; the grip needs 83&deg; of mean finger flexion; the most-flexed grips we measure in OakInk and TACO reach 73&ndash;76&deg;;
-            a residual covers the gap</td>
+            <td><b>partly</b> &mdash; the grip needs 83&deg; of mean finger flexion; the most-flexed
+            grips we measure in OakInk and TACO reach 73&ndash;76&deg;; a residual covers the gap</td>
             <td><b>yes</b> &mdash; skills learned on the task</td></tr>
         <tr><td>Clean hand-offs</td>
             <td><b>yes</b> &mdash; poses only</td>
-            <td><b>if enforced</b> &mdash; a one-step stage let carry fling the ball</td></tr>
+            <td><b>only when enforced</b> &mdash; a one-step stage lets carry fling the ball</td></tr>
         <tr><td>Something to amortise</td>
             <td><b>partly</b> &mdash; faster exploration, one task</td>
             <td><b>yes</b> &mdash; PPO from scratch never carries</td></tr>
         <tr><td>A flat learner cannot match it</td>
-            <td><b>no</b> &mdash; ends level with the latent</td>
+            <td><b>no</b> &mdash; plain PPO ends within 0.07 on the training sequences</td>
             <td><b>no</b> &mdash; flat policies selected per stage did best</td></tr>
       </tbody>
     </table>
   </div>
 </section>
 
+<hr>
+<section id="limits">
+  <h2>Where this stops</h2>
+  <p class="against"><b>Scope:</b> everything is in simulation, with one task per layer. The early
+  lead is significant on the cube only (three other objects, p&nbsp;=&nbsp;0.067), and at
+  5&nbsp;M frames the data do not separate the keyframe interface from the continuous latent. All
+  interfaces share one set of PPO settings. The skill-level selection pipeline ran once, with
+  behaviour cloning from 25 demonstrations, and the registered prediction that separately trained
+  skills beat the best flat policy failed. The comparison with plain PPO changes the decision rate as
+  well as the prior. Stronger baselines (learned skill priors, action chunking adapted to RL,
+  terminal-state regularization), interface-specific tuning and repeated selection pipelines are the
+  next steps.</p>
+</section>
 
 <footer>
   <p><a href="../index.html">&larr; Back to all projects</a> &middot; Mu-Hua Wang &middot;
   <a href="mailto:mauricewang1128@gmail.com">mauricewang1128@gmail.com</a></p>
-  <p style="margin-top:6px">Everything shown is in simulation. Code and the full pre-registration
-  log will be added after review.</p>
 </footer>
 
 </div>

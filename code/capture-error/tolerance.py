@@ -41,8 +41,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 WHITE_ONLY = '--white-only' in sys.argv
 LEVELS = [0.0, 1.0, 2.0, 3.0, 4.5, 6.0, 8.0, 11.0, 15.0, 20.0]
 
-# proportion of the total error budget carried by each component (structured model)
+# amplitude share of each component (structured model); the components are independent, so they add
+# in quadrature, and RMS_NORM rescales them to make the scale the total RMS error, as in the white model
 MIX = dict(offset=0.55, drift=0.30, white=0.15)
+RMS_NORM = float(np.sqrt(sum(v ** 2 for v in MIX.values())))
 
 
 def noisy_signals(tag, rng, scale, white_only):
@@ -60,14 +62,15 @@ def noisy_signals(tag, rng, scale, white_only):
                 if white_only:
                     x = x + rng.normal(0, scale, n)
                 else:
+                    s = scale / RMS_NORM
                     # offset: one constant per joint per side per trial - does not average out
-                    x = x + rng.normal(0, scale * MIX['offset'])
+                    x = x + rng.normal(0, s * MIX['offset'])
                     # drift: a slow wander across the trial, random phase
                     ph = rng.uniform(0, 2 * np.pi)
-                    x = x + scale * MIX['drift'] * np.sqrt(2) * np.sin(
+                    x = x + s * MIX['drift'] * np.sqrt(2) * np.sin(
                         np.linspace(0, np.pi, n) + ph)
                     # white: per-frame jitter
-                    x = x + rng.normal(0, scale * MIX['white'], n)
+                    x = x + rng.normal(0, s * MIX['white'], n)
             out[(j, side)] = x
     return out
 

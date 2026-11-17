@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Partial Labels Hide Compositional Difficulty &mdash; Mu-Hua Wang</title>
-<meta name="description" content="Held-out label combinations are the usual test of compositional generalisation. On hand-motion data, a correct label that describes only part of a recording leaves the held-out motion in training and hides the difficulty.">
+<title>Labels that cover only part of a recording can hide compositional difficulty &mdash; Mu-Hua Wang</title>
+<meta name="description" content="When a correct label describes only part of a motion recording, a held-out-combination test measures much less difficulty: on OakInk-Image the penalty falls from +17.03 % to +3.87 % when the label covers half of each joined recording.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -14,90 +14,136 @@
 <nav>
   <ul>
     <li class="back"><a href="../index.html">&larr; Home</a></li>
-    <li><a href="#idea">The idea</a></li>
-    <li><a href="#result">The result</a></li>
-    <li><a href="#taco">A test on new data</a></li>
-    <li><a href="#checked">How it was checked</a></li>
+    <li><a href="#idea">Idea</a></li>
+    <li><a href="#result">Result</a></li>
+    <li><a href="#method">Method</a></li>
+    <li><a href="#limits">Limits</a></li>
     <li><a href="../cv.html">CV</a></li>
   </ul>
 </nav>
 
 <header>
-  <p class="note">Manuscript prepared for Transactions on Machine Learning Research (not yet submitted) &middot; 2026 &middot; sole author</p>
-  <h1>Partial labels hide compositional difficulty in hand-motion data</h1>
-  <p class="kicker">To test whether a motion model can recombine what it learned, one holds out a combination of labels.
-  When a correct label describes only part of a recording, the held-out motion stays in training under other labels,
-  and the difficulty disappears from the measurement.</p>
-  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; National Yang Ming Chiao Tung University</p>
+  <p class="note">Machine-learning evaluation &middot; hand-motion datasets, offline &middot; Under review at <i>Machine Learning</i> (Springer), submitted November 2026</p>
+  <h1>Labels that cover only part of a recording can hide compositional difficulty in hand-motion data</h1>
+  <p class="kicker">To test whether a motion model can handle combinations it never saw, you hold out some label
+  combinations from training. But on recorded motion, a correct label often describes only part of its recording,
+  so the held-out motion can stay in training under another label. When OakInk-Image clips are joined in pairs and
+  only the label's coverage changes, the measured penalty drops from +17.03 % to +3.87 %. On TACO it drops from
+  +11.14 % to +3.69 % with 256 recordings per model; a smaller first test with 64 was not significant.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; National Yang Ming Chiao Tung
+  University &middot; sole author</p>
   <div class="links">
-    <a href="../assets/papers/hand_label_alignment.pdf">[Paper (PDF)]</a>
-    <a href="https://github.com/maurice1128/hand-composition-axes">[Code &amp; results]</a>
     <a href="../index.html">[All projects]</a>
   </div>
-  <p class="note">Not posted to any preprint server.</p>
 </header>
 
 <hr>
 <section id="idea">
-  <h2>The idea in 20 seconds</h2>
+  <h2>Holding out a label does not hold out its motion</h2>
   <figure class="fig">
-    <video src="../assets/hand-composition/label_alignment.mp4" poster="../assets/hand-composition/label_alignment_poster.png"
-           autoplay muted loop playsinline controls preload="metadata"></video>
-    <p class="cap">Schematic. A model is trained without one combination (red) and tested on it. When each label
-    describes its whole recording, the red motion leaves training and the model pays a clear penalty. When a label
-    describes only the first half, red motion stays in training under other labels and the penalty falls to near the
-    control. Numbers are from OakInk-Image (40 seeds each) and TACO (40 seeds).</p>
+    <video src="../assets/hand-composition/lead.mp4" poster="../assets/hand-composition/lead_poster.jpg"
+           autoplay muted loop playsinline controls preload="metadata"
+           aria-label="Animated schematic. Six recordings, each with one label and two clips, are sorted into a held-out box and a training box. First, each label describes both of its clips: no red motion reaches training and the penalty meter rises to plus 17.03 percent. Second, each label describes only its first clip: red second clips slip into training under other labels and the meter rises only to plus 3.87 percent, close to the control at plus 2.96 percent."></video>
+    <p class="cap"><b>Schematic, not data.</b> The six recordings are illustrative; the meter shows the measured
+    means: OakInk-Image, 40 random splits per version, 64 recordings per model; no-effect control +2.96 %. The end
+    card adds TACO (256 recordings per model, 40 splits).</p>
   </figure>
-  <p>A common test of compositional generalisation holds out a combination of labels &mdash; an action with a tool,
-  say &mdash; while keeping each label in training, then scores the model on the held-out combination. The split is
-  made on labels. In public hand-motion datasets a label often names one thing about a recording that contains more,
-  so a label can be correct and still describe only part of what is scored.</p>
+  <p>The usual test holds out label combinations, say an action with a tool, while every action and every tool
+  still appears in training. It then compares a model that never saw the held-out combinations with one that also
+  saw other recordings of them; the share of test error this exposure removes is the <b>penalty</b>. The split is
+  made on labels, but the model learns from motion. If a recording labelled &ldquo;mug, drink&rdquo; also contains
+  the hand passing the mug, holding out &ldquo;mug, pass&rdquo; leaves that passing motion in training, and every
+  label-level leak check still passes.</p>
 </section>
 
 <hr>
 <section id="result">
-  <h2>The result: correct labels that describe only half hide the penalty</h2>
+  <h2>Halving label coverage removes most of the measured difficulty</h2>
+  <p>Pick a dataset and move the slider from full to half label coverage. Each dot is one random split.</p>
+
+  <div class="ctrl" id="explorer">
+    <div class="ctrl-row" role="radiogroup" aria-label="Dataset">
+      <label><input type="radio" name="ds" value="oakink" checked> OakInk-Image</label>
+      <label><input type="radio" name="ds" value="fingers"> OakInk-Image, fingers only</label>
+      <label><input type="radio" name="ds" value="taco256"> TACO, 256 recordings</label>
+      <label><input type="radio" name="ds" value="taco64"> TACO, 64 recordings</label>
+    </div>
+    <div class="ctrl-row" style="margin-top:1rem">
+      <div class="readout"><span id="covOut">full</span><small>label coverage</small></div>
+      <input id="cov" type="range" min="0" max="1" step="1" value="0" aria-label="Label coverage, full or half">
+      <button id="draw" type="button">Draw one split</button>
+    </div>
+    <svg id="plot" viewBox="0 0 640 230" width="100%" role="img"
+         aria-label="Per-split penalties for the chosen dataset and label coverage, with the no-effect control as a grey band and the mean as a vertical line."></svg>
+    <div class="ctrl-row" style="margin-top:.6rem;border-top:1px solid var(--rule-2);padding-top:.8rem">
+      <div class="readout"><span id="meanOut" aria-live="polite">+17.03 %</span><small>mean of 40 splits</small></div>
+      <p class="note" id="noteOut" style="flex:1;min-width:11rem" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div><span class="big">+17.03 % &rarr; +3.87 %</span><h3>OakInk-Image penalty</h3><p>full vs half label coverage, 40 splits, 64 recordings per model</p></div>
+    <div><span class="big">+11.14 % &rarr; +3.69 %</span><h3>TACO penalty</h3><p>same manipulation, 40 splits, 256 recordings per model</p></div>
+    <div><span class="big">82 %</span><h3>lost even where the label still applies</h3><p>first-clip slices, OakInk-Image, bootstrap 95 % CI 65 % to 97 %</p></div>
+  </div>
+
+  <p>The last number is the one that surprised me. In the half-coverage version, test slices taken from the first
+  clip still show the held-out combination, and the label still describes them, yet they lose most of their
+  penalty too. So what changed is the training data, not what is scored.</p>
+
   <figure class="fig">
-    <img src="../assets/hand-composition/fig2_window_classes.png" alt="Penalty by window class for the aligned and misaligned versions">
-    <p class="cap">OakInk-Image clips joined in pairs, with the same number of trajectories, the same 33 object
-    categories and the same training volume in both versions. Blue (aligned): the label describes both clips. Red
-    (misaligned): it describes only the first. Grey band: the zero-truth control.</p>
+    <img src="../assets/hand-composition/fig3_slice_position.png" alt="Penalty by position of the test slice: first clip, across the join, second clip. For both OakInk-Image and TACO, the half-coverage version has a much lower penalty than the full-coverage version in every position, close to the grey band of the no-effect control.">
+    <p class="cap">Penalty by where the test slice lies, on OakInk-Image (left, 64 recordings per model) and TACO
+    (right, 256). Means with 95 % intervals over 40 splits; grey bands are the no-effect control.</p>
   </figure>
-  <ul>
-    <li>When the label described both halves, the penalty was <b>+17.0 %</b> of the naive error. When it described
-    only the first half, it fell to <b>+3.9 %</b>, at most 2.9 points above the control.</li>
-    <li>The windows the label <i>did</i> describe lost <b>82 %</b> of their penalty above the control (95 % CI 65 % to
-    97 %). So the change was mostly in what the training sets contained, not in what was scored.</li>
-  </ul>
 </section>
 
 <hr>
-<section id="taco">
-  <h2>A test on new data</h2>
+<section id="method">
+  <h2>Every estimate is read against a known zero, never against zero</h2>
   <figure class="fig">
-    <img src="../assets/hand-composition/fig1_per_seed.png" alt="Per-seed penalties for controls and real label grids">
-    <p class="cap">Each point is one seed. Grey: the zero-truth control and permuted label grids. Blue: real label
-    grids.</p>
+    <img src="../assets/hand-composition/fig2_penalty_test.png" alt="Schematic of the test: a grid of actions by tools with two held-out cells; an unexposed model and an exposed model trained on the same number of recordings, the exposed one also seeing other recordings of the held-out combinations; both are scored on the same test set and the penalty is the relative difference of their errors.">
+    <p class="cap">The penalty compares two models trained on the same number of recordings: one never sees the
+    held-out combinations, the other also sees other recordings of them.</p>
   </figure>
-  <p>Before its data were opened, it was written down that TACO, whose labels each name one tool-use action, would
-  show a penalty above the control. It did: <b>+10.6 %</b> over 40 seeds, and 14.0 points above its own permuted
-  grid. Single seeds ranged from &minus;3.8 % to +27.4 %, so one split is not enough to read the result.</p>
+  <p>The model is a variational autoencoder of hand motion, and the penalty uses its reconstruction error. Two
+  models trained on different data always differ a little, so a positive penalty alone proves nothing. Each result
+  is repeated over 40 random splits and read against references whose answer is known in advance:</p>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Check</th><th>Result</th></tr></thead>
+      <tbody>
+        <tr><td>OakInk-Image, shuffled vs real labels</td><td class="n">+3.65 % vs +15.2 %</td></tr>
+        <tr><td>Combination effect planted into real GRAB poses</td><td class="n">+13.15 % (vs +0.71 % without)</td></tr>
+        <tr><td>TACO action &times; tool, declared in advance</td><td class="n">+10.6 % (95 % CI 8.0 to 13.3)</td></tr>
+        <tr><td>Same TACO test, single splits</td><td class="n">&minus;3.8 % to +27.4 %</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <figure class="fig">
+    <img src="../assets/hand-composition/fig4_controls_per_split.png" alt="Dot plot of per-split penalties for the no-effect control, shuffled labels and real labels on OakInk-Image, TACO and GRAB. Real labels on OakInk-Image and TACO sit well above their shuffled versions; on GRAB neither is detected above the control.">
+    <p class="cap">Each point is one random split. Real labels on OakInk-Image and TACO carry a penalty that shuffled
+    labels do not; on GRAB no penalty above the control is detected at this power for either. A single split, as most
+    benchmarks report, can land almost anywhere in this spread.</p>
+  </figure>
+  <div class="box mark">
+    <p><b>The first TACO test did not work.</b> With 64 recordings per model the drop was +6.44 % &rarr; +3.67 %,
+    p = 0.095: not significant, inconclusive at this power. I then declared a second test with 256 recordings, before
+    training it, on the same splits; that one showed the drop (p = 4.1 &times; 10<sup>&minus;6</sup>). Both are in
+    the paper, not pooled.</p>
+  </div>
 </section>
 
 <hr>
-<section id="checked">
-  <h2>How it was checked</h2>
-  <ul>
-    <li><b>A known zero.</b> A synthetic dataset in which held-out pairs are predictable by construction returned
-    +2.6 %. Every penalty is read against this control, not against zero.</li>
-    <li><b>A shuffled grid.</b> With the label grid permuted, the penalty fell to +3.7 % on OakInk-Image and +1.4 % on
-    GRAB.</li>
-    <li><b>A planted effect.</b> An interaction planted on GRAB&rsquo;s real poses was recovered (+13.15 %).</li>
-    <li><b>Written down first.</b> The settings and readings of the main experiments were written down before
-    training; every sweep run, including those not in the main text, is listed in the paper.</li>
-  </ul>
-  <p class="against"><b>Scope:</b> one prior architecture; the error is reconstruction, not generation; the label
-  condition was changed on one dataset and tested on one other.</p>
+<section id="limits">
+  <h2>Where this stops</h2>
+  <p class="against"><b>Scope:</b> offline datasets and one model class (reconstruction error of a variational
+  autoencoder), with no robot experiment. The main evidence is OakInk-Image; on TACO the drop holds with 256
+  recordings per model across splits, but was not significant with 64 (p = 0.095), and with held-out cells treated
+  as a sample its p-value is 0.029 to 0.074 depending on the model. Under the more conservative Nadeau&ndash;Bengio
+  correction no full-versus-half-coverage comparison is significant (p = 0.14 and 0.25). Part of OakInk-Image's
+  penalty comes from wrist translation; the leak into the unexposed model and the dilution of the exposed model's
+  held-out recordings change together and are not separated.</p>
 </section>
 
 <footer>
@@ -106,5 +152,88 @@
 </footer>
 
 </div>
+
+<script>
+/* Per-split explorer. Data: ../assets/hand-composition/splits.json, built from runs/<sweep>/results.json by
+   scripts/build_web_splits_hand_composition.py. Text numbers below are the manuscript's (FACTS.md, section 5). */
+(function () {
+  var TEXT = {
+    oakink:  {mean: ["+17.03 %", "+3.87 %"], note: "Full &rarr; half: 13.2 points lower (95 % CI 9.1 to 17.2, p = 2.1 &times; 10<sup>&minus;8</sup>). Half coverage sits at most 2.9 points above the no-effect control."},
+    fingers: {mean: ["+9.26 %", "+1.69 %"], note: "Wrist translation removed and the join smoothed: still 7.6 points lower (p = 3.6 &times; 10<sup>&minus;6</sup>)."},
+    taco256: {mean: ["+11.14 %", "+3.69 %"], note: "A second dataset: 7.45 points lower (95 % CI 4.45 to 10.44, p = 4.1 &times; 10<sup>&minus;6</sup>). With held-out cells treated as a sample, p = 0.029 to 0.074."},
+    taco64:  {mean: ["+6.44 %", "+3.67 %"], note: "The first TACO test: p = 0.095, not significant. Inconclusive at this power."}
+  };
+  var X0 = -25, X1 = 45, L = 40, R = 620, BASE = 105;
+  var svg = document.getElementById("plot"), NS = "http://www.w3.org/2000/svg";
+  var cov = document.getElementById("cov"), covOut = document.getElementById("covOut");
+  var meanOut = document.getElementById("meanOut"), noteOut = document.getElementById("noteOut");
+  var data = null, ds = "oakink", dots = [], band, meanLine, ghostLine, pick = null, anim = null;
+  function x(v) { return L + (Math.max(X0, Math.min(X1, v)) - X0) / (X1 - X0) * (R - L); }
+  function css(n) { return getComputedStyle(document.documentElement).getPropertyValue(n).trim(); }
+  function el(tag, a) { var e = document.createElementNS(NS, tag); for (var k in a) e.setAttribute(k, a[k]); svg.appendChild(e); return e; }
+  function mean(a) { return a.reduce(function (s, v) { return s + v; }, 0) / a.length; }
+  function build() {
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    band = el("rect", {y: 20, height: 160});
+    el("line", {x1: L, x2: R, y1: 190, y2: 190, "stroke-width": 1, "data-r": "ax"});
+    for (var t = -20; t <= 40; t += 10) {
+      el("line", {x1: x(t), x2: x(t), y1: 190, y2: 195, "data-r": "ax"});
+      var tx = el("text", {x: x(t), y: 210, "text-anchor": "middle", "font-size": 12, "data-r": "lab"}); tx.textContent = t;
+    }
+    var cap = el("text", {x: (L + R) / 2, y: 226, "text-anchor": "middle", "font-size": 12, "data-r": "lab"});
+    cap.textContent = "penalty (% of the unexposed model’s error)";
+    var bl = el("text", {x: 0, y: 34, "font-size": 11, "data-r": "lab", "data-band": "1"}); bl.textContent = "no-effect control";
+    ghostLine = el("line", {y1: 26, y2: 182, "stroke-width": 1.5, "stroke-dasharray": "4 4", "data-r": "ghost"});
+    meanLine = el("line", {y1: 26, y2: 182, "stroke-width": 2.5, "data-r": "mean"});
+    dots = [];
+    for (var i = 0; i < 40; i++) dots.push(el("circle", {r: 5, cy: BASE + ((i * 37) % 11 - 5) * 14, "data-r": "dot"}));
+    colour();
+  }
+  function colour() {
+    var a = css("--plot-a"), b = css("--plot-b"), g = css("--rule"), m = css("--ink-3"), ink = css("--ink");
+    svg.querySelectorAll("[data-r=ax]").forEach(function (e) { e.setAttribute("stroke", m); });
+    svg.querySelectorAll("[data-r=lab]").forEach(function (e) { e.setAttribute("fill", m); });
+    band.setAttribute("fill", css("--rule-2"));
+    var half = cov.value === "1";
+    dots.forEach(function (d) { d.setAttribute("fill", half ? b : a); d.setAttribute("fill-opacity", 0.75); d.setAttribute("stroke", "none"); });
+    meanLine.setAttribute("stroke", half ? b : a); ghostLine.setAttribute("stroke", g);
+    if (pick !== null) { dots[pick].setAttribute("stroke", ink); dots[pick].setAttribute("stroke-width", 3); dots[pick].setAttribute("fill-opacity", 1); }
+  }
+  function render(animate) {
+    var d = data[ds], half = cov.value === "1", v = half ? d.half : d.full, other = half ? d.full : d.half;
+    band.setAttribute("x", x(d.control[0])); band.setAttribute("width", x(d.control[1]) - x(d.control[0]));
+    svg.querySelector("[data-band]").setAttribute("x", x(d.control[1]) + 6);
+    ghostLine.setAttribute("x1", x(mean(other))); ghostLine.setAttribute("x2", x(mean(other)));
+    var from = dots.map(function (e) { return +e.getAttribute("cx") || x(v[0]); });
+    var to = v.map(x), m0 = +meanLine.getAttribute("x1") || x(mean(v)), m1 = x(mean(v));
+    if (anim) cancelAnimationFrame(anim);
+    var t0 = null, dur = animate ? 450 : 0;
+    function step(ts) {
+      if (t0 === null) t0 = ts;
+      var p = dur ? Math.min(1, (ts - t0) / dur) : 1, e = p * p * (3 - 2 * p);
+      dots.forEach(function (c, i) { c.setAttribute("cx", from[i] + (to[i] - from[i]) * e); });
+      meanLine.setAttribute("x1", m0 + (m1 - m0) * e); meanLine.setAttribute("x2", m0 + (m1 - m0) * e);
+      if (p < 1) anim = requestAnimationFrame(step);
+    }
+    anim = requestAnimationFrame(step);
+    covOut.textContent = half ? "half" : "full";
+    meanOut.textContent = TEXT[ds].mean[half ? 1 : 0];
+    noteOut.innerHTML = pick === null ? TEXT[ds].note :
+      "The ringed dot is one split, which is all a single-split benchmark would report. The other dots show how far one split can land from the mean.";
+    colour();
+  }
+  document.querySelectorAll('input[name="ds"]').forEach(function (r) {
+    r.addEventListener("change", function () { ds = r.value; pick = null; render(true); });
+  });
+  cov.addEventListener("input", function () { render(true); });
+  document.getElementById("draw").addEventListener("click", function () { pick = Math.floor(Math.random() * 40); render(false); });
+  if (window.matchMedia) window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", colour);
+  fetch("../assets/hand-composition/splits.json").then(function (r) { return r.json(); }).then(function (j) {
+    data = j; build(); render(false);
+  }).catch(function () {
+    document.getElementById("explorer").insertAdjacentHTML("beforeend", '<p class="note">The interactive chart could not load its data.</p>');
+  });
+})();
+</script>
 </body>
 </html>

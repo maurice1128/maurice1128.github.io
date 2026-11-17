@@ -18,8 +18,8 @@ import glob, os, re, subprocess, sys
 import numpy as np
 
 import os as _os
-_FROZEN = r'C:\Users\maurice\Desktop\stroke_scone\results_frozen'
-RES = _FROZEN if _os.path.isdir(_FROZEN) else r'C:\Users\maurice\Documents\SCONE\results'
+_FROZEN = r'E:\MocapError_capture-error-tolerance_JBiomech_2026\01_PROJECT_stroke_scone\results_frozen'
+RES = _FROZEN if _os.path.isdir(_FROZEN) else r'E:\MocapError_capture-error-tolerance_JBiomech_2026\02_DATA_scone_results'
 SCONE = r'C:\Program Files\SCONE\bin\sconecmd.exe'
 OBJ_MAX = 5.0        # CMA objective; > 5 indicates a poor / unstable gait
 FALL_FRAC = 0.70     # pelvis must stay above 70% of its steady-state median height
