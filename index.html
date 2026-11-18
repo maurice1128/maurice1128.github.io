@@ -35,15 +35,14 @@
     about that person to move them without harm, and handling deformable material safely against
     skin.</p>
 
-    <p>My work so far covers the first two and has begun the third. I built and clinically
-    validated an RGB multi-view markerless motion capture system at National Yang Ming Chiao Tung
-    University, and took it into hospitals and day-care centres. I have studied, in simulation,
+    <p>My work so far covers the first two and has begun the third. I led the real-time pipeline of an RGB multi-view markerless motion capture system at National Yang Ming
+    Chiao Tung University, validated it against VICON, and took it into a hospital and a day-care centre. I have studied, in simulation,
     what a robot must know about a person before it moves their limb, and how it should read a
     force sensor at the moment of first contact.</p>
 
     <p>Since September 2026 I have been a student research assistant in Prof. Yi-Ting Chen&rsquo;s
-    lab at NYCU, working on robot cup-feeding for people with dysphagia. With Prof. Jing-Chen Hong
-    I am designing piezoelectric contact sensing. I hold a B.S. in Biomedical Engineering from
+    lab at NYCU, working on robot cup-feeding for people with dysphagia. I am also a student research
+    assistant in Prof. Jing-Chen Hong&rsquo;s lab, working on piezoelectric contact sensing. I hold a B.S. in Biomedical Engineering from
     NYCU and an M.S. place there on approved leave.</p>
 
     <p class="tight"><b>Note on how the projects below are written.</b> Each carries a
@@ -57,8 +56,7 @@
   <b>Contact:</b> may.be13@nycu.edu.tw &nbsp;&middot;&nbsp; mauricewang1128@gmail.com
   &nbsp;&middot;&nbsp; Taipei, Taiwan &nbsp;&middot;&nbsp;
   <a href="cv.html">CV</a> &nbsp;&middot;&nbsp;
-  <a href="assets/cv/WangMuHua_CV_2page.pdf">CV (PDF, 2 pages)</a> &nbsp;&middot;&nbsp;
-  <a href="assets/cv/WangMuHua_CV_full.pdf">CV (PDF, full)</a>
+  <a href="assets/cv/WangMuHua_CV_2page.pdf">CV (PDF, 2 pages)</a>
 </p>
 
 <hr>
@@ -93,7 +91,7 @@
   <div class="meta">
     <a class="title" href="projects/gentle-care-robot.html">Gentle by knowing: person knowledge protects restricted joints better than force thresholds in simulated robotic arm lifting</a>
     <div class="authors"><b>Mu-Hua Wang</b></div>
-    <div class="venue">Under review at <i>Frontiers in Robotics and AI</i> (Brief Research Report), manuscript 2019057 &middot; <b>peer review completed, both reviewers endorsed publication</b></div>
+    <div class="venue">Under review at <i>Frontiers in Robotics and AI</i>, manuscript 2019057 &middot; <b>peer review completed, both reviewers endorsed publication</b></div>
     <p class="desc">A simulated robot lifts the forearm of persons with restricted shoulders or elbows (MuJoCo/MyoSuite). When it supports the limb from outside, the loaded joint is not on the axis of its force sensor: the tightest force-magnitude guard lowered mean joint load by 29&ndash;36&nbsp;% but moved harmful outcomes by only 0&ndash;7 points. With a complete care record, a policy learned offline reduced harmful outcomes from 110 to 25 of 300 new simulated persons, mainly by declining 91 of them, with 174 vs. 177 safe completions. The reduction replicated on 300 further persons (&minus;0.27 [&minus;0.32, &minus;0.21]).</p>
     <p class="against"><b>Scope:</b> simulation only, one body structure shared by training and test; safe-completion non-inferiority not established; the reduction shrank by almost half with half of the restrictions unrecorded; harm is a mechanical-exposure proxy, not injury.</p>
     <div class="links">
@@ -174,7 +172,7 @@
 
 <section class="tabpanel" id="cat-touch" aria-label="Touch sensing">
 <p class="divider">&mdash; Touch sensing &mdash;</p>
-<p class="note">Piezoelectric sensing of impact and contact. Design stage: nothing here has been built or measured yet.</p>
+<p class="note">Piezoelectric sensing of impact and contact. First measurements are on a real racket; the in-handle board is designed, not yet built.</p>
 
 <div class="entry">
   <div class="thumb">
@@ -182,10 +180,10 @@
   </div>
   <div class="meta">
     <a class="title" href="projects/piezo-racket-pcb.html">Eleven Piezo Channels Inside a Table-Tennis Handle: an In-Racket Sensing Board</a>
-    <div class="authors"><b>Mu-Hua Wang</b> &middot; advisor: Jing-Chen Hong</div>
-    <div class="venue">Hardware design, not yet fabricated, 2026</div>
-    <p class="desc">A 6-layer, 18&nbsp;&times;&nbsp;75&nbsp;mm board designed to sit inside a racket handle and record 11 piezoelectric film channels, with two synchronised ADCs, an IMU, Wi-Fi and charging (235 parts). Before ordering, a board-level simulation found a reference error 50&times; the ADC noise floor, which was fixed; an independent checker that rebuilds connectivity from the factory files found 0 opens and 0 shorts and caught 8 of 8 deliberately damaged copies. The page lets you look through the six copper layers and click the blade to see which film strips would answer.</p>
-    <p class="against"><b>Scope:</b> design, simulation and file checks only; no board built, no hit recorded; charging with Wi-Fi on overheats (about 80&ndash;100&nbsp;&deg;C, simulated) and 32&nbsp;kS/s per channel needs a driver not yet written.</p>
+    <div class="authors"><b>Mu-Hua Wang</b> &middot; student research assistant, Prof. Jing-Chen Hong&rsquo;s lab</div>
+    <div class="venue">Measured on a real blade; in-handle board designed, not yet fabricated, 2026</div>
+    <p class="desc">Tried first on a real blade: four piezo discs, 4 channels at 96&nbsp;kHz. Taps and ball drops put the blade&rsquo;s modes near 280&nbsp;Hz, 750&nbsp;Hz and 1&nbsp;kHz, with 99% of the energy below 5&nbsp;kHz. Then a 6-layer, 18&nbsp;&times;&nbsp;75&nbsp;mm board designed to sit inside the handle and record 11 piezoelectric film channels, with two synchronised ADCs, an IMU, Wi-Fi and charging (235 parts). Before ordering, a board-level simulation found a bias error 50&times; the ADC noise floor, which was fixed; an independent checker that rebuilds connectivity from the factory files caught 8 of 8 deliberately damaged copies. The page lets you look through the six copper layers and click the blade to see which film strips would answer.</p>
+    <p class="against"><b>Scope:</b> the board is design, simulation and file checks only, not built. The measurements used off-the-shelf ceramic discs and an audio interface, uncalibrated, in fractions of full scale; charging with Wi-Fi on overheats (about 80&ndash;100&nbsp;&deg;C, simulated) and 32&nbsp;kS/s per channel needs a driver not yet written.</p>
     <div class="links">
       <a href="projects/piezo-racket-pcb.html">[Project page]</a>
       <a href="assets/piezo-racket-pcb/schematic.pdf">[Schematic (PDF)]</a>
@@ -203,23 +201,23 @@
   <div class="meta">
     <span class="title">RGB Multi-View 3D Markerless Motion Capture (NTKCAP)</span>
     <div class="authors">NYCU &middot; research assistant Oct 2023 &ndash; Sep 2024, team lead Oct
-    2024 &ndash; Sep 2025 &middot; advisor Prof. Hui-Ting Shih</div>
+    2024 &ndash; Sep 2025 &middot; advisors Prof. Hui-Ting Shih and Prof. You-Yin Chen</div>
     <p class="desc">Real-time whole-body pose sensing for clinical use &mdash; the perception layer
-    a robot working over a bed has to have. I wrote the pipeline, ran the validation experiments,
-    and collected the clinical data myself.</p>
+    a robot working over a bed has to have. I led the real-time pipeline, ran the VICON validation,
+    and collected data in a hospital and a day-care centre.</p>
     <ul style="margin:6px 0 0;padding-left:20px;color:var(--ink-2)">
       <li>GPU acceleration and CPU parallelism across capture, inference, triangulation and inverse
       kinematics; DLT triangulation with occlusion handling; and <b>ROWV</b>, an outlier-rejection
-      algorithm for small-sample settings, faster and more accurate than KNN and RANSAC on this
-      problem.</li>
-      <li>VICON comparison over 21 participants, plus 104 walking trials from 11 participants on a
-      nine-camera ring.</li>
-      <li>Shipped the product, not only the algorithm: clinician-facing PyQt6 GUI, SQL and cloud
-      pipeline with ICD-10 coding, Unreal Engine rehabilitation game.</li>
+      algorithm for small-sample settings.</li>
+      <li>Validated against VICON over 21 participants.</li>
+      <li>Built as a product, not only an algorithm: a clinician-facing PyQt6 GUI; with the team, an SQL
+      and cloud pipeline with ICD-10 coding and an Unreal Engine rehabilitation game.</li>
+      <li>Prototyped camera streaming from an Ameba AMB82 board over the network, so the system would
+      not need a workstation on site. One board streams; synchronising several is unfinished.</li>
       <li>Field deployment: 2 signed hospital MOUs (Taipei Veterans General; Taipei City Hospital),
-      200+ stroke and knee-pain patients in Vietnam, 40+ stroke patients with exoskeleton at
-      Kaohsiung Chang Gung, 20+ elderly at a Kaohsiung daycare centre, amputee feedback trials with
-      NYCU Physical Therapy. Led a 5-person team; 4 conference presentations, 6 media features.</li>
+      40+ stroke patients at Kaohsiung Chang Gung Memorial Hospital, including walking with an
+      exoskeleton, 20+ older adults at a Kaohsiung day-care centre, amputee feedback trials with
+      NYCU Physical Therapy. Led the 5-person team in the second year; 4 conference papers, 6 media features.</li>
     </ul>
     <div class="links">
       <a href="https://www.youtube.com/watch?v=za70fA9GLbw">[System demo video]</a>
@@ -233,7 +231,7 @@
   <video src="assets/systems/ntkcap_gui.mp4" poster="assets/systems/ntkcap_gui.jpg"
          autoplay muted loop playsinline preload="metadata"
          aria-label="The clinician GUI running: four synchronised camera views with keypoint overlay, the ankle-flexion trace, and the reconstructed skeleton"></video>
-  <figcaption><b>The clinician-facing application, running.</b> Four of the nine synchronised camera views
+  <figcaption><b>The clinician-facing application, running.</b> Four synchronised camera views
   with the detected keypoints overlaid, the ankle-flexion trace for both limbs with the gait events
   marked, and the reconstructed skeleton &mdash; all from ordinary RGB video, with nothing worn or
   attached to the participant.</figcaption>
@@ -472,7 +470,7 @@
   <thead><tr><th style="width:50%">Under review</th><th>Role</th><th>Status</th></tr></thead>
   <tbody>
     <tr><td><a href="projects/gentle-care-robot.html">Gentle by knowing: person knowledge protects restricted joints better than force thresholds in simulated robotic arm lifting</a> <a href="assets/gentle-care-robot/paper.pdf">[PDF]</a></td>
-    <td class="n">sole author</td><td><span class="tag hit" style="white-space:normal">Under review at <i>Frontiers in Robotics and AI</i> (Brief Research Report), manuscript 2019057 &middot; <b>peer review completed, both reviewers endorsed publication</b></span></td></tr>
+    <td class="n">sole author</td><td><span class="tag hit" style="white-space:normal">Under review at <i>Frontiers in Robotics and AI</i>, manuscript 2019057 &middot; <b>peer review completed, both reviewers endorsed publication</b></span></td></tr>
     <tr><td><a href="projects/do-not-stop-at-contact.html">Do Not Stop at First Contact: Deliberate Overshoot Makes a Care Robot's Pain Risk Robust to Its Noise Model</a></td>
     <td class="n">sole author</td><td><span class="tag hit" style="white-space:normal">Submitted to IEEE Robotics and Automation Letters (manuscript 26-6751), October 2026</span></td></tr>
     <tr><td><a href="projects/walking-over-delay.html">Online Fusion of Model-Based and Learned Prediction for Humanoid Walking Policies over Delayed Links, Without Retraining</a></td>
@@ -511,7 +509,7 @@
   <dt>Email</dt><dd>may.be13@nycu.edu.tw &middot; mauricewang1128@gmail.com</dd>
   <dt>Location</dt><dd>Taipei, Taiwan</dd>
   <dt>Looking for</dt><dd>An M.S. place in robot learning / embodied AI</dd>
-  <dt>CV</dt><dd><a href="assets/cv/WangMuHua_CV_2page.pdf">two-page PDF</a> &middot; <a href="assets/cv/WangMuHua_CV_full.pdf">full PDF</a> &middot; <a href="cv.html">web version</a></dd>
+  <dt>CV</dt><dd><a href="assets/cv/WangMuHua_CV_2page.pdf">two-page PDF</a> &middot; <a href="cv.html">web version</a></dd>
   <dt>Available</dt><dd>Manuscripts, run artifacts and code, on request. None is published.</dd>
 </dl>
 

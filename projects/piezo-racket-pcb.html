@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Eleven piezo channels inside a table-tennis handle &mdash; Mu-Hua Wang</title>
-<meta name="description" content="A 6-layer, 18 x 75 mm sensing board designed to fit inside a racket handle and record 11 piezoelectric film channels. Designed and checked before fabrication; not yet built.">
+<meta name="description" content="Piezoelectric sensing on a table-tennis blade: first measurements with four piezo discs, then a 6-layer, 18 x 75 mm board designed to fit inside the handle and record 11 film channels. The board is designed and checked, not yet built.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ctext x='16' y='24' font-size='24' font-family='Helvetica' font-weight='bold' text-anchor='middle' fill='%23000'%3EW%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -14,6 +14,7 @@
 <nav>
   <ul>
     <li class="back"><a href="../index.html">&larr; Home</a></li>
+    <li><a href="#measured">Measured</a></li>
     <li><a href="#board">Board</a></li>
     <li><a href="#film">Film</a></li>
     <li><a href="#checks">Checks</a></li>
@@ -23,20 +24,48 @@
 </nav>
 
 <header>
-  <p class="note">Embedded sensing hardware &middot; design and pre-fabrication checks &middot; hardware design, not yet fabricated, 2026</p>
+  <p class="note">Embedded sensing hardware &middot; first measurements on a real blade &middot; in-handle board designed, not yet fabricated, 2026</p>
   <h1>Eleven piezo channels inside a table-tennis handle</h1>
   <p class="kicker">Where a ball lands on the blade, and how hard, shows up as vibration in the blade. Cabled sensors
   may change how a racket feels, so every part of this recorder has to fit inside the handle: charge amplifiers for
   11 film electrodes, two synchronised ADCs, an IMU, Wi-Fi and a charger, on an 18&nbsp;&times;&nbsp;75&nbsp;mm,
-  6-layer board. The design is finished and checked; the board has not been built, so nothing below is a
-  measurement.</p>
-  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; advisor: Jing-Chen Hong (Institute of Electrical and Control
-  Engineering, NYCU) </p>
+  6-layer board. The sensing idea has been tried on a real blade with off-the-shelf piezo discs. The board itself is
+  designed and checked but not built, so everything said about the board below is design, not measurement.</p>
+  <p class="note" style="margin-top:1.6rem">Mu-Hua Wang &middot; student research assistant in Prof. Jing-Chen Hong&rsquo;s lab (Institute of Electrical and Control
+  Engineering, NYCU), since September 2026</p>
   <div class="links">
     <a href="../assets/piezo-racket-pcb/schematic.pdf">[Schematic (PDF)]</a>
     <a href="../index.html">[All projects]</a>
   </div>
 </header>
+
+<hr>
+<section id="measured">
+  <h2>On a real blade first: the modes sit near 280&nbsp;Hz, 750&nbsp;Hz and 1&nbsp;kHz</h2>
+  <p>Before there was a board to build, the sensing idea was tried with parts off the shelf: four 35&nbsp;mm ceramic
+  piezo discs (about 20&nbsp;nF each) glued to the back of a blade at the left, centre, right and top, each on its own
+  shielded cable into an audio interface recording four channels at 96&nbsp;kHz, 24-bit. On 30 and 31 October 2026 the
+  blade was tapped by hand and struck with dropped and bounced balls.</p>
+  <div class="stats">
+    <div><span class="big">4 ch &middot; 96 kHz</span><h3>Recording</h3><p>24-bit, 10.4 &micro;s per sample</p></div>
+    <div><span class="big">&minus;102 to &minus;106</span><h3>Noise floor, dBFS</h3><p>RMS, racket at rest</p></div>
+    <div><span class="big">280 / 750 / 1k Hz</span><h3>Blade modes</h3><p>99% of the energy below 5 kHz</p></div>
+    <div><span class="big">20&ndash;170 &micro;s</span><h3>Arrival spread</h3><p>the centre disc heard the hit first</p></div>
+  </div>
+  <p>A hit is easy to see, and it is low in frequency: almost all of it sits below 5&nbsp;kHz. The discs do not
+  hear it at the same moment. The differences are tens of microseconds, which is the scale the board&rsquo;s shared
+  ADC clock has to respect.</p>
+  <div class="box mark">
+    <p><b>One result I withdrew.</b> On 10 November the same rig recorded serves from two players. One analysis of the
+    low-frequency swing before impact seemed to carry across players. Plotting the raw waveforms showed a 60&nbsp;Hz
+    mains hum on one channel of one player&rsquo;s recordings, which had lifted the signal. With a 60&nbsp;Hz notch
+    filter the cross-player figure fell to near chance, and I dropped the claim.</p>
+  </div>
+  <p class="cap">The serve recordings are data from people and are not shown on this page. These first measurements used
+  ceramic discs and an audio interface, <b>not</b> the film and charge amplifiers the board is designed for; amplitudes
+  are fractions of the interface&rsquo;s full scale, not volts or charge, and the channels were not calibrated against
+  each other.</p>
+</section>
 
 <hr>
 <section id="board">
@@ -88,7 +117,7 @@
 <hr>
 <section id="checks">
   <h2>A simulation found a mistake 50 times the noise floor before anything was ordered</h2>
-  <p>Without hardware, the only way to find mistakes is to check the design in ways that do not share its
+  <p>Without the board in hand, the only way to find mistakes is to check the design in ways that do not share its
   assumptions. Two loop-back paths (an LED timing signal and an IMU interrupt fed back into spare ADC channels) were
   pushing a small direct current into the reference voltage that all eleven amplifiers share.</p>
   <div class="box mark">
@@ -160,8 +189,9 @@
 <hr>
 <section id="limits">
   <h2>Where this stops</h2>
-  <p class="against"><b>Scope:</b> design, simulation and file checks only. No board has been made, powered or
-  tested, and no hit has been recorded, so the film read-out above is the intended design, not a result. The
+  <p class="against"><b>Scope:</b> the board is design, simulation and file checks only. No board has been made, powered or
+  tested, so the film read-out above is the intended design, not a result. The measurements at the top used ceramic
+  discs and an audio interface, uncalibrated, with the impact point not controlled. The
   simulations use estimated film properties. In the thermal model the board overheats if charged with Wi-Fi on; the
   design relies on a firmware rule to prevent it. 32 kS/s per channel needs a driver that does not exist yet. The emission figure covers board traces
   only. ERC still lists 3 warnings of one kind (bidirectional pins tied to a power-output flag on the IMU).</p>
