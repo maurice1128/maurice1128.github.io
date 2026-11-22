@@ -2,7 +2,7 @@
 
 Code and derived data for **"How much joint-angle error can the identification of a weak muscle
 group tolerate? A predictive-simulation study"** (Wang &amp; Shih). Status: manuscript prepared for
-*Journal of Biomechanics* (not yet submitted). Version of 2026-11-17.
+*Journal of Biomechanics* (submitted November 2026, BM-D-26-02122). Version of 2026-11-17.
 
 Every number in the paper is produced by one of the scripts here, run on the frozen dataset in this
 folder. Nothing is copied by hand between the analysis and the manuscript.
