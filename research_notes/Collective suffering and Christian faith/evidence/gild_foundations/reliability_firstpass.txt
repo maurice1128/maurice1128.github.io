@@ -1,0 +1,27 @@
+Blind double coding, first pass (primary = rule-based codes as they stood before adjudication;
+second = independent reading of page images by the model for a random 10%, seed 1389, n = 51).
+Output of analysis.py section H at that point, recorded verbatim:
+
+  date_class    agreement 100.0%  kappa 1.00
+  decade        agreement 100.0%  kappa 1.00
+  period        agreement 100.0%  kappa 1.00
+  pest_mention  agreement 100.0%  kappa 1.00
+  funeral       agreement 90.2%  kappa 0.80  disagreements: G0193,G0242,G0250,G0391,G0462
+  masses        agreement 90.2%  kappa 0.80  disagreements: G0140,G0193,G0243,G0350,G0462
+  chaplain      agreement 96.1%  kappa 0.91  disagreements: G0143,G0462
+  lights        agreement 96.1%  kappa 0.88  disagreements: G0458,G0462
+  aid           agreement 90.2%  kappa 0.78  disagreements: G0119,G0213,G0214,G0242,G0278
+  alms_general  agreement 86.3%  kappa 0.70  disagreements: G0140,G0183,G0193,G0213,G0214,G0231,G0250
+  feast         agreement 90.2%  kappa 0.39  disagreements: G0034,G0125,G0193,G0195,G0279
+  other         agreement 86.3%  kappa 0.70  disagreements: G0193,G0195,G0242,G0243,G0408,G0454,G0462
+  founders      agreement 96.1%  kappa 0.88  disagreements: G0195,G0308
+  clergy_gov    agreement 100.0%  kappa 1.00
+
+Adjudication: 4 of the disagreements (G0193, G0195, G0250, G0462) arise because the second coder read only
+the visible text and did not expand Westlake's cross-references ("as in 166", "mutatis mutandis as in 423"),
+which the codebook requires; G0391 (burial at the gild's expense) follows the codebook in the primary codes.
+Rule errors found and corrected in scripts/code.py: column-header text leaking into the benefits column
+(aid false positives G0119, G0214, G0278); "brother ... poor person" and "at gild's expense" over-matching
+(aid); "collected alms", "certain poor men" over-matching (alms_general); gild feasts written in lower case
+("to feast with", "provide the feast", "ordinances re feasts") missed (feast); OCR misreadings "masa",
+"lighta"; "No craft statutes" read as craft regulation (other); founders of G0195 (cert. 169) added manually.
